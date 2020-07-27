@@ -1,4 +1,4 @@
-@*
+/*
  * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,12 +12,25 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *@
+ */
 
-@this()
+package acceptance.specs
 
-@(headBlock: Option[Html] = None)
-@headBlock
-<!--[if lte IE 8]><script src='@controllers.routes.Assets.versioned("javascripts/html5shiv.min.js")'></script><![endif]-->
-<!--[if lte IE 8]><link href='@controllers.routes.Assets.versioned("stylesheets/application-ie-8.css")' rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if gt IE 8]><!--><link href='@controllers.routes.Assets.versioned("stylesheets/application.css")' media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+import acceptance.pages.ErrorPage
+import org.openqa.selenium.By
+
+class ErrorPageSpec extends BaseAcceptanceSpec {
+  feature("Error page") {
+
+    scenario("The page has the correct title") {
+      Given("the user clears their cookies so no language cookies are set")
+      deleteAllCookies
+
+      When("the user visits a non-existent page")
+      go to ErrorPage
+
+      Then("the title should be visible in the default language")
+      driver.findElement(By.cssSelector("h1")).getText shouldBe "This page can’t be found"
+    }
+  }
+}
