@@ -1,0 +1,9 @@
+@import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+
+@this(layout: Layout)
+
+@(pageTitle: String, heading: String, message: String)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
+@layout(pageTitle = Some(pageTitle)) {
+    <h1 class="govuk-heading-xl">@{Text(heading).asHtml}</h1>
+    <p class="govuk-body">@{Text(message).asHtml}</p>
+}

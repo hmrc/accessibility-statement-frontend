@@ -1,0 +1,13 @@
+@import uk.gov.hmrc.accessibilitystatementfrontend.controllers.routes.LanguageSwitchController._
+@import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+@import uk.gov.hmrc.hmrcfrontend.views.html.components.HmrcLanguageSelect
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.LanguageSelect
+
+@this(hmrcLanguageSelect: HmrcLanguageSelect)
+
+@()(implicit messages: Messages, appConfig: AppConfig)
+@hmrcLanguageSelect(LanguageSelect(
+  if (messages.lang.code == "cy") Cy else En,
+  (En, switchToLanguage("en").url),
+  (Cy, switchToLanguage("cy").url)
+))

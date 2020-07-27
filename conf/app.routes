@@ -1,0 +1,7 @@
+# microservice specific routes
+
+->         /govuk-frontend          govuk.Routes
+->         /hmrc-frontend           hmrcfrontend.Routes
+GET        /hello-world             uk.gov.hmrc.accessibilitystatementfrontend.controllers.HelloWorldController.helloWorld
+GET        /language/:lang          uk.gov.hmrc.accessibilitystatementfrontend.controllers.LanguageSwitchController.switchToLanguage(lang: String)
+GET        /assets/*file            controllers.Assets.versioned(path = "/public", file: Asset)
