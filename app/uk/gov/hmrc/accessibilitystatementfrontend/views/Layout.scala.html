@@ -16,11 +16,11 @@
 
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 @import uk.gov.hmrc.accessibilitystatementfrontend.views.FooterLinks
-@import uk.gov.hmrc.govukfrontend.views.Layouts
 
 @this(
         govukLayout: GovukLayout,
         head: Head,
+        hmrcBanner: HmrcBanner,
         languageSelect: LanguageSelect
 )
 @(pageTitle: Option[String] = None,
@@ -29,6 +29,7 @@
 )(contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
 @beforeContentBlock = {
+    @hmrcBanner(Banner())
     @languageSelect()
 }
 
