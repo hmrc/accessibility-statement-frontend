@@ -37,7 +37,7 @@ class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerS
 
   "Given a running instance of accessibility statement frontend, calling GET on the root path" should {
     "return OK with expected page" in {
-      val request = FakeRequest(GET, "/accessibility-statement-frontend")
+      val request = FakeRequest(GET, "/accessibility-statement")
       val result = route(app, request).get
 
       status(result) shouldBe OK

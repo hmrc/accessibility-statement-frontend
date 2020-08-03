@@ -16,8 +16,11 @@
 
 package acceptance.specs
 
+import java.util
+
 import acceptance.pages.StatementPage
-import org.openqa.selenium.By
+import org.openqa.selenium.{By, WebElement}
+import collection.JavaConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {
   feature("Statement page") {
@@ -32,7 +35,12 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       Then("the default statement page should be displayed in the default language")
       eventually {
         driver.findElement(By.cssSelector("h1")).getText shouldBe "accessibility-statement-frontend"
-        tagName("p").element.text shouldBe "This is your new service"
+        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should contain("This is your new service")
+      }
+
+      And("the HMRC banner should be displayed")
+      eventually {
+        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should contain("HM Revenue & Customs")
       }
     }
   }
