@@ -39,6 +39,7 @@ lazy val microservice = Project(appName, file("."))
   .settings(
     majorVersion                     := 0,
     scalaVersion                     := "2.12.11",
+    playDefaultPort                  := 12346,
     libraryDependencies              ++= AppDependencies.compile ++ AppDependencies.test,
     resolvers += "hmrc-releases" at "https://artefacts.tax.service.gov.uk/artifactory/hmrc-releases/",
     TwirlKeys.templateImports ++= Seq(
