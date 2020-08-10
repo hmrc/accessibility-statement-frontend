@@ -35,10 +35,12 @@ lazy val acceptanceTestSettings =
 
 lazy val microservice = Project(appName, file("."))
   .enablePlugins(play.sbt.PlayScala, SbtAutoBuildPlugin, SbtGitVersioning, SbtDistributablesPlugin, SbtArtifactory)
+  .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
   .configs(AcceptanceTest, IntegrationTest)
   .settings(
     majorVersion                     := 0,
     scalaVersion                     := "2.12.11",
+    playDefaultPort                  := 12346,
     libraryDependencies              ++= AppDependencies.compile ++ AppDependencies.test,
     resolvers += "hmrc-releases" at "https://artefacts.tax.service.gov.uk/artifactory/hmrc-releases/",
     TwirlKeys.templateImports ++= Seq(
