@@ -31,7 +31,8 @@ case class LanguageSwitchController @Inject()(configuration: Configuration,
                                               appConfig: AppConfig
                                              ) extends LanguageController(configuration, languageUtils, cc) {
 
-  override def fallbackURL: String = routes.StatementController.getStatement().url
+  // TODO: We need a proper fallback URL for this service
+  override def fallbackURL: String = routes.StatementController.getStatement("disguised-remuneration").url
 
   override protected def languageMap: Map[String, Lang] = {
     val englishLanguageOnly = Map("en" -> Lang("en"))

@@ -15,12 +15,100 @@
  *@
 
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 
 @this(layout: Layout)
 
-@()(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
+@(statement: AccessibilityStatement)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
-@layout(pageTitle = Some("accessibility-statement-frontend")) {
-    <h1 class="govuk-heading-xl">accessibility-statement-frontend</h1>
-    <p class="govuk-body">@{messages("service.text")}</p>
+@layout(pageTitle = statement.serviceHeaderName, serviceUrl = statement.serviceUrl) {
+    <h1 class="govuk-heading-xl">@{messages("introduction.heading", statement.serviceName)}</h1>
+    <p class="govuk-body-l">@{messages("introduction.lede")}</p>
+    <p class="govuk-body">
+        @{messages("introduction.p1_1")}
+        <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.p1_2")}</a>
+        @{messages("introduction.p1_3")}</p>
+    <p class="govuk-body">@{messages("introduction.p2", statement.serviceName, statement.serviceDomain)}. </p>
+
+    <h2 class="govuk-heading-l">@{messages("using-service.heading")}</h2>
+    <p class="govuk-body">@{statement.serviceDescription}</p>
+    <p class="govuk-body">@{messages("using-service.p2")}</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>@{messages("using-service.l1")}</li>
+        <li>@{messages("using-service.l2")}</li>
+        <li>@{messages("using-service.l3")}</li>
+        <li>@{messages("using-service.l4")}</li>
+        <li>@{messages("using-service.l5")}</li>
+    </ul>
+    <p class="govuk-body">@{messages("using-service.p3")}</p>
+    <p class="govuk-body">@{messages("using-service.p4_0")}
+        <a class="govuk-link" href="https://mcmw.abilitynet.org.uk">@{messages("using-service.p4_1")}</a>
+        @{messages("using-service.p4_2")}
+    </p>
+
+    <h2 class="govuk-heading-l">@{messages("accessibility.heading")}</h2>
+    <p class="govuk-body">@{messages("accessibility.p1_1")}
+        <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("accessibility.p1_2")}</a>
+    @{if(statement.accessibilityProblems.isEmpty) {
+        <p class="govuk-body">{messages("accessibility.no_issues")}</p>
+    } }
+    <ul class="govuk-list govuk-list--bullet">
+    @for(problem <- statement.accessibilityProblems) {
+        <li>@problem</li>
+    }
+    </ul>
+
+    <h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
+    @{if(statement.accessibilitySupportEmail.isDefined || statement.accessibilitySupportPhone.isDefined) {
+        <p class="govuk-body">{messages("contact.p3")}</p>
+        <ul class="govuk-list govuk-list--bullet">
+            {if(statement.accessibilitySupportEmail.isDefined) {
+                <li>{messages("contact.email", statement.accessibilitySupportEmail.get)}</li>
+            } }
+            {if(statement.accessibilitySupportPhone.isDefined) {
+                <li>{messages("contact.phone", statement.accessibilitySupportPhone.get)}</li>
+            } }
+        </ul>
+    } else {
+        <p class="govuk-body">{messages("contact.default")}</p>
+    }}
+    @{if(statement.serviceSendsOutboundMessages)  {
+        <p class="govuk-body">{messages("contact.p4")}</p>
+    } }
+
+    <h2 class="govuk-heading-l">@{messages("reporting.heading")}</h2>
+    <p class="govuk-body">
+        @{messages("reporting.p_1")}
+        <a class="govuk-link" href="@{statement.contactFrontendServiceUrl}" target="_blank">@{messages("reporting.p_2")}</a>.
+    </p>
+
+    <h2 class="govuk-heading-l">@{messages("complaints.heading")}</h2>
+    <p class="govuk-body">
+        @{messages("complaints.p_1")}
+        <a class="govuk-link" href="https://www.equalityadvisoryservice.com/">@{messages("complaints.p_2")}</a>
+        @{messages("complaints.p_3")}
+        <a class="govuk-link" href="https://www.equalityni.org/Home">@{messages("complaints.p_4")}</a>
+        @{messages("complaints.p_5")}
+    </p>
+
+    <h2 class="govuk-heading-l">@{messages("in-person-contact.heading")}</h2>
+    <p class="govuk-body">@{messages("in-person-contact.p1")}
+    </p>
+    <p class="govuk-body">@{messages("in-person-contact.p2")}</p>
+    <p class="govuk-body">@{messages("in-person-contact.p3_1")}
+        <a class="govuk-link" href="https://www.gov.uk/dealing-hmrc-additional-needs">@{messages("in-person-contact.p3_2")}</a>
+    </p>
+
+    <h2 class="govuk-heading-l">@{messages("technical.heading")}</h2>
+    <p class="govuk-body">@{messages("technical.p1")}</p>
+    <p class="govuk-body">@{messages("technical.p2_1")}
+        <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.p2_2")}</a>
+    </p>
+
+    <h2 class="govuk-heading-l">@{messages("testing.heading")}</h2>
+    <p class="govuk-body">@{messages("testing.p1", statement.serviceLastTestedDate)}</p>
+    <p class="govuk-body">@{messages("testing.p2_1")}
+        <a class="govuk-link" href="http://www.digitalaccessibilitycentre.org/">@{messages("testing.p2_2")}</a>
+        @{messages("testing.p2_3")}</p>
+    <p class="govuk-body">@{messages("testing.p3", statement.statementCreatedDate, statement.statementLastUpdatedDate)}</p>
 }

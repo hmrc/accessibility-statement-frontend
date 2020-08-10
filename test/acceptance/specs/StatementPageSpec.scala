@@ -16,10 +16,8 @@
 
 package acceptance.specs
 
-import java.util
-
 import acceptance.pages.StatementPage
-import org.openqa.selenium.{By, WebElement}
+import org.openqa.selenium.By
 import collection.JavaConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {

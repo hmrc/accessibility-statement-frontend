@@ -19,7 +19,6 @@ package acceptance.pages
 import acceptance.config.AcceptanceTestConfiguration
 
 object StatementPage extends BasePage {
-//  val url = AcceptanceTestConfiguration.url("accessibility-statement-frontend", Some("/accessibility-statement"))
   val url = AcceptanceTestConfiguration.url("accessibility-statement-frontend")
   val title = "Service test page"
 }

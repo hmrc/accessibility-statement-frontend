@@ -43,7 +43,7 @@ class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerS
       status(result) shouldBe OK
       contentType(result) shouldBe Some("text/html")
       contentAsString(result) should include("accessibility-statement-frontend")
-      contentAsString(result) should include("This is your new service")
+      contentAsString(result) should include("This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")
     }
   }
 }

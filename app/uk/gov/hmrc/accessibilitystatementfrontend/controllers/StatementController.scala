@@ -20,20 +20,25 @@ import javax.inject.{Inject, Singleton}
 import play.api.mvc._
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
-import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
+import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
+import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{ErrorTemplate, StatementPage}
 
 import scala.concurrent.Future
 
 @Singleton
-class StatementController @Inject()(
+class StatementController @Inject()( statementsRepo: AccessibilityStatementsRepo,
                                      appConfig: AppConfig,
                                      mcc: MessagesControllerComponents,
-                                     statementPage: StatementPage)
+                                     statementPage: StatementPage,
+                                     errorPage: ErrorTemplate
+                                   )
     extends FrontendController(mcc) {
 
   implicit val config: AppConfig = appConfig
 
-  def getStatement(): Action[AnyContent] = Action.async { implicit request =>
-    Future.successful(Ok(statementPage()))
+  def getStatement(service: String): Action[AnyContent] = Action.async { implicit request =>
+    statementsRepo.accessibilityStatements.find(statement => statement.serviceKey == service) match {
+      case Some(accessibilityStatement) => Future.successful(Ok(statementPage(accessibilityStatement)))
+    }
   }
 }
