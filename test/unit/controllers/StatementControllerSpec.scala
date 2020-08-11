@@ -16,6 +16,7 @@
 
 package unit.controllers
 
+import helpers.TestAccessibilityStatementRepo
 import org.scalatest.{Matchers, WordSpec}
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.http.Status
@@ -28,6 +29,8 @@ import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 import uk.gov.hmrc.play.bootstrap.tools.Stubs.stubMessagesControllerComponents
 
+import scala.concurrent.ExecutionContext.Implicits.global
+
 class StatementControllerSpec extends WordSpec with Matchers with GuiceOneAppPerSuite {
   private val fakeRequest = FakeRequest("GET", "/")
 
@@ -39,16 +42,16 @@ class StatementControllerSpec extends WordSpec with Matchers with GuiceOneAppPer
 
   val statementPage: StatementPage = app.injector.instanceOf[StatementPage]
 
-  private val controller = new StatementController(appConfig, stubMessagesControllerComponents(), statementPage)
+  private val controller = new StatementController(TestAccessibilityStatementRepo(), appConfig, stubMessagesControllerComponents(), statementPage)
 
-  "GET /" should {
+  "GET /test-service" should {
     "return 200" in {
-      val result = controller.getStatement()(fakeRequest)
+      val result = controller.getStatement("test-service")(fakeRequest)
       status(result) shouldBe Status.OK
     }
 
     "return HTML" in {
-      val result = controller.getStatement()(fakeRequest)
+      val result = controller.getStatement("test-service")(fakeRequest)
       contentType(result) shouldBe Some("text/html")
       charset(result)     shouldBe Some("utf-8")
     }

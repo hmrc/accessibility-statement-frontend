@@ -16,12 +16,15 @@
 
 package it
 
-import org.scalatest.{Matchers, WordSpecLike}
+import org.scalatest.{Matchers, TestSuite, WordSpecLike}
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Application
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import play.api.test.Helpers.{GET, route, _}
+import play.api.inject.bind
+import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
+import helpers.TestAccessibilityStatementRepo
 
 class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerSuite {
 
@@ -32,18 +35,18 @@ class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerS
         "auditing.enabled" -> false
       )
     )
+    .overrides(bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo])
     .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
 
   "Given a running instance of accessibility statement frontend, calling GET on the root path" should {
     "return OK with expected page" in {
-      val request = FakeRequest(GET, "/accessibility-statement")
+      val request = FakeRequest(GET, "/accessibility-statement/test-service")
       val result = route(app, request).get
 
       status(result) shouldBe OK
       contentType(result) shouldBe Some("text/html")
-      contentAsString(result) should include("accessibility-statement-frontend")
-      contentAsString(result) should include("This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")
+      contentAsString(result) should include("Accessibility statement for test service name")
     }
   }
 }

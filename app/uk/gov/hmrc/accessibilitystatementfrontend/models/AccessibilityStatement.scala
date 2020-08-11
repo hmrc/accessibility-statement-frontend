@@ -16,6 +16,7 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
+import java.text.SimpleDateFormat
 import java.util.Date
 
 case class AccessibilityStatement(serviceKey: String,
@@ -31,10 +32,20 @@ case class AccessibilityStatement(serviceKey: String,
                                   accessibilitySupportEmail: Option[String],
                                   accessibilitySupportPhone: Option[String],
                                   serviceSendsOutboundMessages: Boolean,
-                                 // TODO: These should be dates
-                                  serviceLastTestedDate: String,
-                                  statementCreatedDate: String,
-                                  statementLastUpdatedDate: String)
+                                  serviceLastTestedDate: Date,
+                                  statementCreatedDate: Date,
+                                  statementLastUpdatedDate: Date) {
+
+  val formattedLastTestedDate: String  = formattedDate(serviceLastTestedDate)
+  val formattedCreatedDate: String     = formattedDate(statementCreatedDate)
+  val formattedLastUpdatedDate: String = formattedDate(statementLastUpdatedDate)
+
+  private def formattedDate(date: Date): String = {
+    val format = "dd MMMMM YYYY"
+    val simpleDateFormat = new SimpleDateFormat(format)
+    simpleDateFormat.format(date)
+  }
+}
 
 sealed trait ComplianceStatus
 

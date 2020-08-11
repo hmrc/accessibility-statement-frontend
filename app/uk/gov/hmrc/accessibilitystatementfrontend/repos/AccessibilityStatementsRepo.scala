@@ -16,7 +16,9 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.repos
 
-import javax.inject.Inject
+import java.util.{Calendar, GregorianCalendar}
+
+import javax.inject.{Inject, Singleton}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 
@@ -24,6 +26,7 @@ trait AccessibilityStatementsRepo {
   val accessibilityStatements: Seq[AccessibilityStatement]
 }
 
+@Singleton
 case class StubStatementsRepo @Inject()(appConfig: AppConfig) extends AccessibilityStatementsRepo {
   override val accessibilityStatements: Seq[AccessibilityStatement] = Seq(
     AccessibilityStatement(
@@ -32,17 +35,17 @@ case class StubStatementsRepo @Inject()(appConfig: AppConfig) extends Accessibil
       serviceHeaderName = "Send your loan charge details",
       serviceDescription = "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
       serviceDomain = "www.tax.service.gov.uk/disguised-remuneration/",
-      serviceUrl = "example-fully-accessible-service",
-      contactFrontendServiceUrl = s"${appConfig.contactHmrcUnauthenticatedLink}?serviceName=example-fully-accessible-service",
+      serviceUrl = "/disguised-remuneration",
+      contactFrontendServiceUrl = s"${appConfig.contactHmrcUnauthenticatedLink}?service=disguised-remuneration",
       complianceStatus = FullCompliance,
       accessibilityProblems = Seq(),
       milestones = Seq(),
       accessibilitySupportEmail = None,
       accessibilitySupportPhone = None,
       serviceSendsOutboundMessages = false,
-      serviceLastTestedDate = "9 December 2019",
-      statementCreatedDate = "23 September 2019",
-      statementLastUpdatedDate = "1 April 2019"
+      serviceLastTestedDate = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
+      statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+      statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
     )
   )
 }

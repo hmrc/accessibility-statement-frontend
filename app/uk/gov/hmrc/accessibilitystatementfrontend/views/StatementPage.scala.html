@@ -28,7 +28,10 @@
         @{messages("introduction.p1_1")}
         <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.p1_2")}</a>
         @{messages("introduction.p1_3")}</p>
-    <p class="govuk-body">@{messages("introduction.p2", statement.serviceName, statement.serviceDomain)}. </p>
+    <p class="govuk-body">@{messages("introduction.p2_1", statement.serviceName)}. </p>
+    <a class="govuk-link" href="@{statement.serviceDomain}">@{statement.serviceDomain}</a>.
+
+    <p class="govuk-body">@{messages("introduction.p2_1", statement.serviceName, statement.serviceDomain)}. </p>
 
     <h2 class="govuk-heading-l">@{messages("using-service.heading")}</h2>
     <p class="govuk-body">@{statement.serviceDescription}</p>
@@ -106,9 +109,9 @@
     </p>
 
     <h2 class="govuk-heading-l">@{messages("testing.heading")}</h2>
-    <p class="govuk-body">@{messages("testing.p1", statement.serviceLastTestedDate)}</p>
+    <p class="govuk-body">@{messages("testing.p1", statement.formattedLastTestedDate)}</p>
     <p class="govuk-body">@{messages("testing.p2_1")}
         <a class="govuk-link" href="http://www.digitalaccessibilitycentre.org/">@{messages("testing.p2_2")}</a>
         @{messages("testing.p2_3")}</p>
-    <p class="govuk-body">@{messages("testing.p3", statement.statementCreatedDate, statement.statementLastUpdatedDate)}</p>
+    <p class="govuk-body">@{messages("testing.p3", statement.formattedCreatedDate, statement.formattedLastUpdatedDate)}</p>
 }
