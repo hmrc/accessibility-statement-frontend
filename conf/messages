@@ -15,7 +15,7 @@ introduction.lede=This accessibility statement explains how accessible this serv
 introduction.p1_1=This service is part of the wider GOV.UK website. There is a separate
 introduction.p1_2=accessibility statement
 introduction.p1_3=for the main GOV.UK website.
-introduction.p2_1=This page only contains information about the {0} service, available at {1}.
+introduction.p2_1=This page only contains information about the {0} service, available at 
 
 ## Using the service
 using-service.heading=Using this service

@@ -28,10 +28,8 @@
         @{messages("introduction.p1_1")}
         <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.p1_2")}</a>
         @{messages("introduction.p1_3")}</p>
-    <p class="govuk-body">@{messages("introduction.p2_1", statement.serviceName)}. </p>
+    <p class="govuk-body">@{messages("introduction.p2_1", statement.serviceName)}
     <a class="govuk-link" href="@{statement.serviceDomain}">@{statement.serviceDomain}</a>.
-
-    <p class="govuk-body">@{messages("introduction.p2_1", statement.serviceName, statement.serviceDomain)}. </p>
 
     <h2 class="govuk-heading-l">@{messages("using-service.heading")}</h2>
     <p class="govuk-body">@{statement.serviceDescription}</p>
