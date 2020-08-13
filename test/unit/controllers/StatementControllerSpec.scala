@@ -25,7 +25,7 @@ import play.api.test.Helpers._
 import play.api.{Configuration, Environment}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController
-import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
+import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 import uk.gov.hmrc.play.bootstrap.tools.Stubs.stubMessagesControllerComponents
 
@@ -41,8 +41,9 @@ class StatementControllerSpec extends WordSpec with Matchers with GuiceOneAppPer
   private val appConfig     = new AppConfig(configuration, serviceConfig)
 
   val statementPage: StatementPage = app.injector.instanceOf[StatementPage]
+  val notFoundPage: NotFoundPage = app.injector.instanceOf[NotFoundPage]
 
-  private val controller = new StatementController(TestAccessibilityStatementRepo(), appConfig, stubMessagesControllerComponents(), statementPage)
+  private val controller = new StatementController(TestAccessibilityStatementRepo(), appConfig, stubMessagesControllerComponents(), statementPage, notFoundPage)
 
   "GET /test-service" should {
     "return 200" in {

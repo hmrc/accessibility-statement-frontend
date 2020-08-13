@@ -24,21 +24,13 @@ class StatementPageSpec extends BaseAcceptanceSpec {
   feature("Statement page") {
 
     scenario("The user visits a statement page") {
-      Given("the user clears their cookies")
-      deleteAllCookies
-
       When("the user visits the default statement page")
       go to StatementPage
 
       Then("the default statement page should be displayed in the default language")
       eventually {
-        driver.findElement(By.cssSelector("h1")).getText shouldBe "accessibility-statement-frontend"
-        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should contain("This is your new service")
-      }
-
-      And("the HMRC banner should be displayed")
-      eventually {
-        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should contain("HM Revenue & Customs")
+        driver.findElement(By.cssSelector("h1")).getText shouldBe "Accessibility statement for send your loan charge details"
+        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should contain("This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")
       }
     }
   }

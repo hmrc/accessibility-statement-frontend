@@ -21,7 +21,7 @@ import play.api.mvc._
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
-import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
+import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
 
 import scala.concurrent.{ExecutionContext, Future}
 
@@ -29,7 +29,8 @@ import scala.concurrent.{ExecutionContext, Future}
 class StatementController @Inject()( statementsRepo: AccessibilityStatementsRepo,
                                      appConfig: AppConfig,
                                      mcc: MessagesControllerComponents,
-                                     statementPage: StatementPage
+                                     statementPage: StatementPage,
+                                     notFoundPage: NotFoundPage
                                    )(implicit executionContext: ExecutionContext)
     extends FrontendController(mcc) {
 
@@ -38,7 +39,7 @@ class StatementController @Inject()( statementsRepo: AccessibilityStatementsRepo
   def getStatement(service: String): Action[AnyContent] = Action.async { implicit request =>
     statementsRepo.accessibilityStatements.find(_.serviceKey == service) match {
       case Some(accessibilityStatement) => Future.successful(Ok(statementPage(accessibilityStatement)))
-      case None => Future(throw new Exception("Sorry, this page cannot be found"))
+      case None => Future.successful(NotFound(notFoundPage()))
     }
   }
 }

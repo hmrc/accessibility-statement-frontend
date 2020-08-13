@@ -14,11 +14,20 @@
  * limitations under the License.
  */
 
-package acceptance.pages
+package acceptance.specs
 
-import acceptance.config.AcceptanceTestConfiguration
+import acceptance.pages.NotFoundPage
+import org.openqa.selenium.By
 
-object ErrorPage extends BasePage {
-  val url: String          = AcceptanceTestConfiguration.url("accessibility-statement-frontend") + "/non-existent-page"
-  val title                = "This page can’t be found"
+class NotFoundPageSpec extends BaseAcceptanceSpec {
+  feature("Not Found page") {
+
+    scenario("The page has the correct title") {
+      When("the user visits a non-existent page")
+      go to NotFoundPage
+
+      Then("the title should be visible in the default language")
+      driver.findElement(By.cssSelector("h1")).getText shouldBe "Page not found"
+    }
+  }
 }
