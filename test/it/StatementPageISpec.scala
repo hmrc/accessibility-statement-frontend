@@ -16,15 +16,15 @@
 
 package it
 
-import org.scalatest.{Matchers, TestSuite, WordSpecLike}
+import helpers.TestAccessibilityStatementRepo
+import org.scalatest.{Matchers, WordSpecLike}
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Application
+import play.api.inject.bind
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import play.api.test.Helpers.{GET, route, _}
-import play.api.inject.bind
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
-import helpers.TestAccessibilityStatementRepo
 
 class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerSuite {
 

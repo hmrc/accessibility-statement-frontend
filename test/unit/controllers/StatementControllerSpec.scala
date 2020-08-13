@@ -29,8 +29,6 @@ import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, Stat
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 import uk.gov.hmrc.play.bootstrap.tools.Stubs.stubMessagesControllerComponents
 
-import scala.concurrent.ExecutionContext.Implicits.global
-
 class StatementControllerSpec extends WordSpec with Matchers with GuiceOneAppPerSuite {
   private val fakeRequest = FakeRequest("GET", "/")
 
@@ -38,7 +36,7 @@ class StatementControllerSpec extends WordSpec with Matchers with GuiceOneAppPer
   private val configuration = Configuration.load(env)
 
   private val serviceConfig = new ServicesConfig(configuration)
-  private val appConfig     = new AppConfig(configuration, serviceConfig)
+  private val appConfig     = AppConfig(configuration, serviceConfig)
 
   val statementPage: StatementPage = app.injector.instanceOf[StatementPage]
   val notFoundPage: NotFoundPage = app.injector.instanceOf[NotFoundPage]

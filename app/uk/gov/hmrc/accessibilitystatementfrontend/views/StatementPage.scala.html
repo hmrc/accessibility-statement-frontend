@@ -50,7 +50,7 @@
 
     <h2 class="govuk-heading-l">@{messages("accessibility.heading")}</h2>
     @{if(statement.isFullyCompliant) {
-        <p class="govuk-body">{messages("accessibility.fully-compliant.part1")}<a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.fully-compliant.part2")}</a></p>
+        <p class="govuk-body">{messages("accessibility.fully-compliant.part1")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.fully-compliant.part2")}</a></p>
     } }
     @{if(statement.accessibilityProblems.isEmpty) {
         <p class="govuk-body">{messages("accessibility.no_issues")}</p>

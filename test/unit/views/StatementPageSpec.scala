@@ -18,7 +18,6 @@ package unit.views
 
 import java.util.{Calendar, GregorianCalendar}
 
-import helpers.TestAccessibilityStatementRepo
 import org.scalatest.{Matchers, WordSpec}
 import play.api.Configuration
 import play.api.i18n.{Messages, MessagesApi}
@@ -28,6 +27,9 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
+import play.api.test.Helpers.contentAsString
+import akka.util.Timeout
+import scala.concurrent.duration._
 
 class StatementPageSpec extends WordSpec with Matchers {
 
@@ -42,6 +44,8 @@ class StatementPageSpec extends WordSpec with Matchers {
 
   val messagesApi: MessagesApi = app.injector.instanceOf[MessagesApi]
   implicit val messages: Messages = messagesApi.preferred(fakeRequest)
+
+  implicit val timeout: Timeout = Timeout(Duration(2, SECONDS))
 
   private val fullyAccessibleServiceStatement = AccessibilityStatement(
     serviceKey = "fully-accessible-service",
@@ -66,26 +70,30 @@ class StatementPageSpec extends WordSpec with Matchers {
     "return HTML containing the header containing the service name" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-      statementPageHtml.toString() should include("""<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name</h1>""")
+
+      contentAsString(statementPageHtml) should include("""<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name</h1>""")
     }
 
     "return HTML containing the expected introduction with link to the service" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-      statementPageHtml.toString() should include("""<a class="govuk-link" href="www.tax.service.gov.uk/test/">www.tax.service.gov.uk/test/</a>.""")
+
+      contentAsString(statementPageHtml) should include("""<a class="govuk-link" href="www.tax.service.gov.uk/test/">www.tax.service.gov.uk/test/</a>.""")
     }
 
     "return HTML containing the expected using service information with service description" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-      statementPageHtml.toString() should include("""<p class="govuk-body">Fully accessible description.</p>""")
+
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">Fully accessible description.</p>""")
     }
 
     "return HTML containing the expected accessibility information stating that the service is fully compliant" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-      statementPageHtml.toString() should include("""<p class="govuk-body">This service is fully compliant with the<a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
-      statementPageHtml.toString() should include("""<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
+
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">This service is fully compliant with the<a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
     }
 
     "return HTML containing the contact information with phone number if configured" in {
@@ -94,10 +102,11 @@ class StatementPageSpec extends WordSpec with Matchers {
 
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(statementWithPhoneNumber)
-      statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
-      statementPageHtml.toString() should include("""<li>call 0111-222-33333</li>""")
-      statementPageHtml.toString() should not include ("""<li>email """)
-      statementPageHtml.toString() should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
+      contentAsString(statementPageHtml) should include("""<li>call 0111-222-33333</li>""")
+      contentAsString(statementPageHtml) should not include ("""<li>email """)
+      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
 
     }
 
@@ -107,32 +116,36 @@ class StatementPageSpec extends WordSpec with Matchers {
 
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(statementWithEmailAddress)
-      statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
-      statementPageHtml.toString() should include("""<li>email accessible-support@spec.com</li>""")
-      statementPageHtml.toString() should not include ("""<li>call """)
-      statementPageHtml.toString() should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
+      contentAsString(statementPageHtml) should include("""<li>email accessible-support@spec.com</li>""")
+      contentAsString(statementPageHtml) should not include ("""<li>call """)
+      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
 
     }
 
     "return HTML containing the default contact information if no phone or email configured" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-      statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
-      statementPageHtml.toString() should not include ("""<li>call """)
-      statementPageHtml.toString() should not include ("""<li>email """)
+
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+      contentAsString(statementPageHtml) should not include ("""<li>call """)
+      contentAsString(statementPageHtml) should not include ("""<li>email """)
     }
 
     "return HTML containing report a problem information with a contact link" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-      statementPageHtml.toString() should include("""<a class="govuk-link" href="http://tax.service.gov.uk:9250/contact-hmrc-unauthenticated?service=some.contact-frontend" target="_blank">accessibility problem (opens in a new window or tab)</a>.""")
+
+      contentAsString(statementPageHtml) should include("""<a class="govuk-link" href="http://tax.service.gov.uk:9250/contact-hmrc-unauthenticated?service=some.contact-frontend" target="_blank">accessibility problem (opens in a new window or tab)</a>.""")
     }
 
     "return HTML containing the correctly formatted dates of when the service was tested" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-      statementPageHtml.toString() should include("""<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>""")
-      statementPageHtml.toString() should include("""<p class="govuk-body">This page was prepared on 15 March 2020. It was last updated on 01 May 2020.</p>""")
+
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>""")
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">This page was prepared on 15 March 2020. It was last updated on 01 May 2020.</p>""")
     }
   }
 }
