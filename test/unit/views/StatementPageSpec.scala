@@ -114,5 +114,12 @@ class StatementPageSpec extends WordSpec with Matchers {
       statementPageHtml.toString() should not include("""<li>call """)
       statementPageHtml.toString() should not include("""<li>email """)
     }
+
+    "return HTML containing the correctly formatted dates of when the service was tested" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
+      statementPageHtml.toString() should include("""<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>""")
+      statementPageHtml.toString() should include("""<p class="govuk-body">This page was prepared on 15 March 2020. It was last updated on 01 May 2020.</p>""")
+    }
   }
 }
