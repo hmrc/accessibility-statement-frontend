@@ -39,12 +39,18 @@ case class AccessibilityStatement(serviceKey: String,
   val formattedLastTestedDate: String  = formattedDate(serviceLastTestedDate)
   val formattedCreatedDate: String     = formattedDate(statementCreatedDate)
   val formattedLastUpdatedDate: String = formattedDate(statementLastUpdatedDate)
+  val isFullyCompliant: Boolean        = complianceStatus match {
+    case FullCompliance     => true
+    case PartialCompliance  => false
+  }
 
   private def formattedDate(date: Date): String = {
     val format = "dd MMMMM YYYY"
     val simpleDateFormat = new SimpleDateFormat(format)
     simpleDateFormat.format(date)
   }
+
+
 }
 
 sealed trait ComplianceStatus

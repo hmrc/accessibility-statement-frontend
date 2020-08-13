@@ -48,8 +48,11 @@
     </p>
 
     <h2 class="govuk-heading-l">@{messages("accessibility.heading")}</h2>
-    <p class="govuk-body">@{messages("accessibility.paragraph1.part1")}
-        <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("accessibility.paragraph1.part2")}</a>
+
+    @{if(statement.isFullyCompliant) {
+        <p class="govuk-body">{messages("accessibility.paragraph1.part1")}
+        <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.paragraph1.part2")}</a></p>
+    } }
     @{if(statement.accessibilityProblems.isEmpty) {
         <p class="govuk-body">{messages("accessibility.no_issues")}</p>
     } }
