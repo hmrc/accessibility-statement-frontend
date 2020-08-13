@@ -81,7 +81,7 @@
 
     <h2 class="govuk-heading-l">@{messages("reporting.heading")}</h2>
     <p class="govuk-body">@{messages("reporting.report-problem.part1")}
-        <a class="govuk-link" href="@{statement.contactFrontendServiceUrl}" target="_blank">@{messages("reporting.report-problem.part2")}</a>.
+        <a class="govuk-link" href="@{appConfig.contactHmrcUnauthenticatedLink}?service=@{statement.contactFrontendServiceId}" target="_blank">@{messages("reporting.report-problem.part2")}</a>.
     </p>
 
     <h2 class="govuk-heading-l">@{messages("complaints.heading")}</h2>

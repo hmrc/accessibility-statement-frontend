@@ -18,12 +18,12 @@ package uk.gov.hmrc.accessibilitystatementfrontend.controllers
 
 import javax.inject.{Inject, Singleton}
 import play.api.mvc._
-import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
+import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.Future
 
 @Singleton
 class StatementController @Inject()( statementsRepo: AccessibilityStatementsRepo,
@@ -31,8 +31,7 @@ class StatementController @Inject()( statementsRepo: AccessibilityStatementsRepo
                                      mcc: MessagesControllerComponents,
                                      statementPage: StatementPage,
                                      notFoundPage: NotFoundPage
-                                   )(implicit executionContext: ExecutionContext)
-    extends FrontendController(mcc) {
+                                   ) extends FrontendController(mcc) {
 
   implicit val config: AppConfig = appConfig
 

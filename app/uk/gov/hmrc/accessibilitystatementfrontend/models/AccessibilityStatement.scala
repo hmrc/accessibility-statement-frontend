@@ -25,7 +25,7 @@ case class AccessibilityStatement(serviceKey: String,
                                   serviceDescription: String,
                                   serviceDomain: String,
                                   serviceUrl: String,
-                                  contactFrontendServiceUrl: String,
+                                  contactFrontendServiceId: String,
                                   complianceStatus: ComplianceStatus,
                                   accessibilityProblems: Seq[String],
                                   milestones: Seq[Milestone],
@@ -39,6 +39,7 @@ case class AccessibilityStatement(serviceKey: String,
   val formattedLastTestedDate: String  = formattedDate(serviceLastTestedDate)
   val formattedCreatedDate: String     = formattedDate(statementCreatedDate)
   val formattedLastUpdatedDate: String = formattedDate(statementLastUpdatedDate)
+
   val isFullyCompliant: Boolean        = complianceStatus match {
     case FullCompliance     => true
     case PartialCompliance  => false
@@ -49,8 +50,6 @@ case class AccessibilityStatement(serviceKey: String,
     val simpleDateFormat = new SimpleDateFormat(format)
     simpleDateFormat.format(date)
   }
-
-
 }
 
 sealed trait ComplianceStatus

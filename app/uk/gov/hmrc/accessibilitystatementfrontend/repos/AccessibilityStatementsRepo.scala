@@ -36,7 +36,7 @@ case class StubStatementsRepo @Inject()(appConfig: AppConfig) extends Accessibil
       serviceDescription = "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
       serviceDomain = "www.tax.service.gov.uk/disguised-remuneration/",
       serviceUrl = "/disguised-remuneration",
-      contactFrontendServiceUrl = s"${appConfig.contactHmrcUnauthenticatedLink}?service=disguised-remuneration",
+      contactFrontendServiceId = s"${appConfig.contactHmrcUnauthenticatedLink}?service=disguised-remuneration",
       complianceStatus = FullCompliance,
       accessibilityProblems = Seq(),
       milestones = Seq(),

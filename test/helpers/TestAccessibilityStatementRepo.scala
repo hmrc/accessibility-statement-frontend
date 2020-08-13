@@ -30,7 +30,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
       serviceDescription = "Test description.",
       serviceDomain = "www.tax.service.gov.uk/test/",
       serviceUrl = "some.test.service",
-      contactFrontendServiceUrl = s"some.contact-frontend",
+      contactFrontendServiceId = s"some.contact-frontend",
       complianceStatus = FullCompliance,
       accessibilityProblems = Seq(),
       milestones = Seq(),

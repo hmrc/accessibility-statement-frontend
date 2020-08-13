@@ -20,18 +20,25 @@ import java.util.{Calendar, GregorianCalendar}
 
 import helpers.TestAccessibilityStatementRepo
 import org.scalatest.{Matchers, WordSpec}
+import play.api.Configuration
 import play.api.i18n.{Messages, MessagesApi}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
+import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 class StatementPageSpec extends WordSpec with Matchers {
 
   private val app = new GuiceApplicationBuilder().build()
   implicit val fakeRequest: FakeRequest[_] = FakeRequest()
-  implicit val appConfig: AppConfig = app.injector.instanceOf[AppConfig]
+  private val configuration = Configuration.from(Map(
+    "microservice.services.contact-frontend.protocol" -> "http",
+    "microservice.services.contact-frontend.host" -> "tax.service.gov.uk",
+    "microservice.services.contact-frontend.port" -> 9250
+  ))
+  implicit val appConfig: AppConfig = new AppConfig(configuration, new ServicesConfig(configuration))
 
   val messagesApi: MessagesApi = app.injector.instanceOf[MessagesApi]
   implicit val messages: Messages = messagesApi.preferred(fakeRequest)
@@ -43,7 +50,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     serviceDescription = "Fully accessible description.",
     serviceDomain = "www.tax.service.gov.uk/test/",
     serviceUrl = "fully-accessible",
-    contactFrontendServiceUrl = "some.contact-frontend",
+    contactFrontendServiceId = "some.contact-frontend",
     complianceStatus = FullCompliance,
     accessibilityProblems = Seq(),
     milestones = Seq(),
@@ -89,8 +96,8 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml = statementPage(statementWithPhoneNumber)
       statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
       statementPageHtml.toString() should include("""<li>call 0111-222-33333</li>""")
-      statementPageHtml.toString() should not include("""<li>email """)
-      statementPageHtml.toString() should not include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+      statementPageHtml.toString() should not include ("""<li>email """)
+      statementPageHtml.toString() should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
 
     }
 
@@ -102,8 +109,8 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml = statementPage(statementWithEmailAddress)
       statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
       statementPageHtml.toString() should include("""<li>email accessible-support@spec.com</li>""")
-      statementPageHtml.toString() should not include("""<li>call """)
-      statementPageHtml.toString() should not include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+      statementPageHtml.toString() should not include ("""<li>call """)
+      statementPageHtml.toString() should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
 
     }
 
@@ -111,8 +118,14 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
       statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
-      statementPageHtml.toString() should not include("""<li>call """)
-      statementPageHtml.toString() should not include("""<li>email """)
+      statementPageHtml.toString() should not include ("""<li>call """)
+      statementPageHtml.toString() should not include ("""<li>email """)
+    }
+
+    "return HTML containing report a problem information with a contact link" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
+      statementPageHtml.toString() should include("""<a class="govuk-link" href="http://tax.service.gov.uk:9250/contact-hmrc-unauthenticated?service=some.contact-frontend" target="_blank">accessibility problem (opens in a new window or tab)</a>.""")
     }
 
     "return HTML containing the correctly formatted dates of when the service was tested" in {
