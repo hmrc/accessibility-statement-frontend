@@ -56,7 +56,7 @@ class StatementPageSpec extends WordSpec with Matchers {
   )
 
   "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
-    "return HTML containing the expected header" in {
+    "return HTML containing the header containing the service name" in {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
       statementPageHtml.toString() should include("""<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name</h1>""")
@@ -66,6 +66,53 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
       statementPageHtml.toString() should include("""<a class="govuk-link" href="www.tax.service.gov.uk/test/">www.tax.service.gov.uk/test/</a>.""")
+    }
+
+    "return HTML containing the expected using service information with service description" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
+      statementPageHtml.toString() should include("""<p class="govuk-body">Fully accessible description.</p>""")
+    }
+
+    "return HTML containing the expected accessibility information stating that the service is fully compliant" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
+      statementPageHtml.toString() should include("""<p class="govuk-body">This service is fully compliant with the<a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
+      statementPageHtml.toString() should include("""<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
+    }
+
+    "return HTML containing the contact information with phone number if configured" in {
+      val statementWithPhoneNumber = fullyAccessibleServiceStatement
+        .copy(accessibilitySupportPhone = Some("0111-222-33333"))
+
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(statementWithPhoneNumber)
+      statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
+      statementPageHtml.toString() should include("""<li>call 0111-222-33333</li>""")
+      statementPageHtml.toString() should not include("""<li>email """)
+      statementPageHtml.toString() should not include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+
+    }
+
+    "return HTML containing the contact information with email address if configured" in {
+      val statementWithEmailAddress = fullyAccessibleServiceStatement
+        .copy(accessibilitySupportEmail = Some("accessible-support@spec.com"))
+
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(statementWithEmailAddress)
+      statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
+      statementPageHtml.toString() should include("""<li>email accessible-support@spec.com</li>""")
+      statementPageHtml.toString() should not include("""<li>call """)
+      statementPageHtml.toString() should not include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+
+    }
+
+    "return HTML containing the default contact information if no phone or email configured" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
+      statementPageHtml.toString() should include("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
+      statementPageHtml.toString() should not include("""<li>call """)
+      statementPageHtml.toString() should not include("""<li>email """)
     }
   }
 }
