@@ -92,7 +92,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
-      contentAsString(statementPageHtml) should include("""<p class="govuk-body">This service is fully compliant with the<a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">This service is fully compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
       contentAsString(statementPageHtml) should include("""<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
     }
 
