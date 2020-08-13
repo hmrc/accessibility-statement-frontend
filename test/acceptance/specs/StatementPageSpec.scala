@@ -22,8 +22,10 @@ import collection.JavaConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {
   feature("Statement page") {
-
     scenario("The user visits a statement page") {
+      Given("the user does not have welsh language selected")
+      deleteAllCookies
+
       When("the user visits the default statement page")
       go to StatementPage
 
