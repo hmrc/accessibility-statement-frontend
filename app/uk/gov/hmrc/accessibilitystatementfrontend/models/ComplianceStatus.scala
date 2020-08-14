@@ -14,12 +14,20 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.accessibilitystatementfrontend
+package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-import com.google.inject.AbstractModule
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+import io.circe.Decoder
 
-class AccessibilityStatementModule extends AbstractModule {
-  override def configure() =
-    bind(classOf[AccessibilityStatementsRepo]).to(classOf[AccessibilityStatementsSourceRepo])
+sealed trait ComplianceStatus
+
+object ComplianceStatus {
+  implicit val decoder: Decoder[ComplianceStatus] = Decoder.decodeString.emap {
+    case "full"    => Right(FullCompliance)
+    case "partial" => Right(PartialCompliance)
+    case status    => Left(s"""Unrecognised compliance status "$status"""")
+  }
 }
+
+case object FullCompliance extends ComplianceStatus
+
+case object PartialCompliance extends ComplianceStatus

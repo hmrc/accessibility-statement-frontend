@@ -19,6 +19,7 @@ package uk.gov.hmrc.accessibilitystatementfrontend.config
 import javax.inject.{Inject, Singleton}
 import play.api.Configuration
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
+import scala.io.Source
 
 @Singleton
 case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesConfig) {
@@ -26,5 +27,10 @@ case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesCo
 
   val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())
 
-  val welshLanguageSupportEnabled: Boolean = config.getOptional[Boolean]("features.welsh-language-support").getOrElse(false)
+  val welshLanguageSupportEnabled: Boolean =
+    config.getOptional[Boolean]("features.welsh-language-support").getOrElse(false)
+
+  def statementsSource: Source = Source.fromResource("services.yml")
+
+  def statementSource(service: String): Source = Source.fromResource(s"services/$service.yml")
 }

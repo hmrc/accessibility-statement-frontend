@@ -26,19 +26,20 @@ import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import scala.concurrent.Future
 
 @Singleton
-class StatementController @Inject()( statementsRepo: AccessibilityStatementsRepo,
-                                     appConfig: AppConfig,
-                                     mcc: MessagesControllerComponents,
-                                     statementPage: StatementPage,
-                                     notFoundPage: NotFoundPage
-                                   ) extends FrontendController(mcc) {
+class StatementController @Inject()(
+  statementsRepo: AccessibilityStatementsRepo,
+  appConfig: AppConfig,
+  mcc: MessagesControllerComponents,
+  statementPage: StatementPage,
+  notFoundPage: NotFoundPage)
+    extends FrontendController(mcc) {
 
   implicit val config: AppConfig = appConfig
 
   def getStatement(service: String): Action[AnyContent] = Action.async { implicit request =>
-    statementsRepo.accessibilityStatements.find(_.serviceKey == service) match {
+    statementsRepo.findByServiceKey(service) match {
       case Some(accessibilityStatement) => Future.successful(Ok(statementPage(accessibilityStatement)))
-      case None => Future.successful(NotFound(notFoundPage()))
+      case None                         => Future.successful(NotFound(notFoundPage()))
     }
   }
 }

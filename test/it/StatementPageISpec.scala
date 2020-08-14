@@ -16,6 +16,7 @@
 
 package it
 
+import org.scalatest.{Matchers, WordSpecLike}
 import helpers.TestAccessibilityStatementRepo
 import org.scalatest.{Matchers, WordSpecLike}
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
@@ -42,10 +43,10 @@ class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerS
   "Given a running instance of accessibility statement frontend, calling GET on the root path" should {
     "return OK with expected page" in {
       val request = FakeRequest(GET, "/accessibility-statement/test-service")
-      val result = route(app, request).get
+      val result  = route(app, request).get
 
-      status(result) shouldBe OK
-      contentType(result) shouldBe Some("text/html")
+      status(result)          shouldBe OK
+      contentType(result)     shouldBe Some("text/html")
       contentAsString(result) should include("Accessibility statement for test service name")
     }
   }

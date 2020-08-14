@@ -14,12 +14,10 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.accessibilitystatementfrontend
+package uk.gov.hmrc.accessibilitystatementfrontend.parsers
 
-import com.google.inject.AbstractModule
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+import javax.inject.{Inject, Singleton}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 
-class AccessibilityStatementModule extends AbstractModule {
-  override def configure() =
-    bind(classOf[AccessibilityStatementsRepo]).to(classOf[AccessibilityStatementsSourceRepo])
-}
+@Singleton
+class AccessibilityStatementParser @Inject() extends YamlParser[AccessibilityStatement]
