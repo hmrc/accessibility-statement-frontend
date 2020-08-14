@@ -23,13 +23,11 @@ import play.api.Configuration
 import play.api.i18n.{Messages, MessagesApi}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
+import play.api.test.Helpers._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
-import play.api.test.Helpers.contentAsString
-import akka.util.Timeout
-import scala.concurrent.duration._
 
 class StatementPageSpec extends WordSpec with Matchers {
 
@@ -44,8 +42,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
   val messagesApi: MessagesApi = app.injector.instanceOf[MessagesApi]
   implicit val messages: Messages = messagesApi.preferred(fakeRequest)
-
-  implicit val timeout: Timeout = Timeout(Duration(2, SECONDS))
 
   private val fullyAccessibleServiceStatement = AccessibilityStatement(
     serviceKey = "fully-accessible-service",
