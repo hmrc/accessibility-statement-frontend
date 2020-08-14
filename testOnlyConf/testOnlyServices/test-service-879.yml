@@ -1,0 +1,47 @@
+serviceUrl: /test-service-879
+serviceDomain: www.example.com
+serviceDescription: Nam incidunt eos accusantium cumque itaque. Sed quidem dolor facilis
+  architecto rerum. Nobis voluptate optio accusamus ab quia. Eos odio quis dolorum
+  eveniet illo. Assumenda ducimus omnis fugit nemo reiciendis. Ducimus voluptatem
+  sit deserunt cumque aut. Iste est sit qui sed dolorem. Odio quae enim excepturi
+  dicta consectetur. Possimus at quisquam nesciunt corrupti dignissimos. Accusamus
+  quibusdam quia itaque repellendus praesentium.
+complianceStatus: partial
+statementCreatedDate: '2019-05-27'
+accessibilityProblems:
+- Adipisci occaecati nulla fuga et veniam. Architecto placeat porro ullam soluta beatae.
+  Est quia consectetur quia ipsa consectetur. Corrupti non amet delectus voluptatem
+  ex. In molestiae voluptas iusto omnis quidem. Voluptatem quo eum repudiandae dolores
+  beatae. Rerum voluptas ipsa ut enim earum. Rerum ut repellat minus quas velit. Minus
+  quae voluptates eaque id voluptas. Et a quaerat eaque officiis quia.
+serviceSendsOutboundMessages: false
+accessibilitySupportEmail: test-service-879@example.com
+accessibilitySupportPhone: 08081 570000
+serviceName: Eos nihil doloremque sit iure distinctio.
+milestones:
+- description: Commodi aut quam consequatur veritatis officiis. Quibusdam minima voluptas
+    soluta consequuntur ut. Saepe reprehenderit sit id qui quia. Ea aut et autem pariatur
+    debitis. Est aut similique non fugiat repellendus. Quod in dolore voluptatem est
+    ratione. Quas excepturi molestiae eos eos eveniet. Error et dignissimos accusamus
+    natus perspiciatis. Error qui omnis atque consectetur natus. Quasi est et illo
+    dolore nihil.
+  date: '2019-07-06'
+- description: Voluptatum aut iusto sit est dolore. Quas recusandae quas assumenda
+    itaque et. Ab adipisci sed magni tempore quia. Non dolor incidunt maiores vero
+    pariatur. Non vel et aut asperiores provident. Voluptas repellendus eaque recusandae
+    perferendis et. Neque consequatur odit illo iure vitae. Id ex deleniti qui excepturi
+    magni. Ipsam asperiores eligendi magnam ipsum necessitatibus. Qui maiores eum
+    odio quae excepturi.
+  date: '2018-08-08'
+- description: Id laborum non beatae excepturi voluptatem. Assumenda harum nobis dolorem
+    voluptas nemo. Consectetur mollitia voluptas ea ex unde. Porro rerum vitae totam
+    nam a. Veritatis sint labore aliquam fugit adipisci. Corrupti atque sit atque
+    est est. Officiis ea possimus tempora ex vitae. Itaque odio consectetur in rerum
+    nulla. Veniam beatae perferendis voluptatem laboriosam porro. Voluptates fugit
+    dolore reprehenderit amet eum.
+  date: '2018-05-10'
+statementLastUpdatedDate: '2020-04-25'
+serviceLastTestedDate: '2018-06-10'
+serviceKey: test-service-879
+contactFrontendServiceId: test-service-879
+serviceHeaderName: Id ipsum est commodi sit consectetur.

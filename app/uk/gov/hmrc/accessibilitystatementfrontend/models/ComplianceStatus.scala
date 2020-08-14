@@ -16,7 +16,7 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-import io.circe.Decoder
+import io.circe.{Decoder, Encoder}
 
 sealed trait ComplianceStatus
 
@@ -26,8 +26,13 @@ object ComplianceStatus {
     case "partial" => Right(PartialCompliance)
     case status    => Left(s"""Unrecognised compliance status "$status"""")
   }
+  implicit val encoder: Encoder[ComplianceStatus] = Encoder.encodeString.contramap[ComplianceStatus](_.toString)
 }
 
-case object FullCompliance extends ComplianceStatus
+case object FullCompliance extends ComplianceStatus {
+  override def toString = "full"
+}
 
-case object PartialCompliance extends ComplianceStatus
+case object PartialCompliance extends ComplianceStatus {
+  override def toString = "partial"
+}

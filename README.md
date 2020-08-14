@@ -9,7 +9,7 @@ Create a YAML file of the form:
 ```yaml
 serviceKey: discounted-icecreams        # A unique name for the statement used for routing e.g. https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams
 serviceName: Discounted Icecreams       # The service name that will appear in the title of the accessibility statement.
-  Do not include the word service at the end, as this will be added by the templates
+                                        # Do not include the word service at the end, as this will be added by the templates
 serviceHeaderName: Icecreams            # The service name as it should appear in the grey Gov.UK header bar
 serviceDescription: |                   # A description of the service
   Use this paragraph to describe your service. It can go over multiple lines
@@ -86,6 +86,22 @@ sbt -Dbrowser=chrome acceptance:test
 
 The Chrome driver is available at https://chromedriver.chromium.org/
 
+## Performance testing
+
+The repository https://github.com/hmrc/accessibility-statement-performance-tests contains 
+Gatling performance tests designed to be run against a production-like environment.
+
+While the service expects to attract a low volume of traffic, the fact that the
+accessibility statements load into memory at start-up means the service may require
+more memory than a regular service. For this reason, performance testing has
+been carried out with the service ingesting well above the maximum number of statements
+expected to exist on the platform for the foreseeable future.
+
+The shell script `./generate_test_data.sh` creates fake accessibility statement
+YAML files in testOnlyConf/testOnlyServices for the purposes of load testing the application.
+
+To run the application using this test data run `./run_with_test_data.sh`
+ 
 ### License
 
 This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").

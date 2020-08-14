@@ -25,6 +25,7 @@ object AppDependencies {
     "org.pegdown"            % "pegdown"                  % "1.6.0"  % "test",
     "uk.gov.hmrc"            %% "webdriver-factory"       % "0.11.0" % "test",
     "org.scalatestplus.play" %% "scalatestplus-play"      % "4.0.3"  % "test",
-    "org.mockito"            %% "mockito-scala-scalatest" % "1.14.8" % "test"
+    "org.mockito"            %% "mockito-scala-scalatest" % "1.14.8" % "test",
+    "com.github.stevenchen3" %% "scala-faker"             % "0.1.1"  % "test"
   )
 }

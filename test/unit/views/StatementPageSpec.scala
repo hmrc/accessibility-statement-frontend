@@ -24,7 +24,7 @@ import play.api.i18n.{Messages, MessagesApi}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -126,21 +126,18 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should not return information on non compliance" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
-      contentAsString(statementPageHtml) should not include(
-        """<h3 class="govuk-heading-m">Non-accessible content</h3>""")
-      contentAsString(statementPageHtml) should not include(
-        """<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
-      contentAsString(statementPageHtml) should not include(
-        """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
+      contentAsString(statementPageHtml) should not include ("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
+      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
+      contentAsString(statementPageHtml) should not include ("""<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
     }
   }
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is partially compliant" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
       contentAsString(statementPageHtml) should include(
@@ -148,19 +145,17 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing a list of the known accessibility issues" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">Some people may find parts of this service difficult to use:</p>""")
-      contentAsString(statementPageHtml) should include(
-        """<li>This is the first accessibility problem</li>""")
-      contentAsString(statementPageHtml) should include(
-        """<li>And then this is another one</li>""")
+      contentAsString(statementPageHtml) should include("""<li>This is the first accessibility problem</li>""")
+      contentAsString(statementPageHtml) should include("""<li>And then this is another one</li>""")
     }
 
     "return HTML stating that the service has known compliance issues" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
       contentAsString(statementPageHtml) should include(
@@ -169,18 +164,16 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing a list of non-accessible content, and when it will be fixed" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
-      contentAsString(statementPageHtml) should include(
-        """<h3 class="govuk-heading-m">Non-accessible content</h3>""")
+      contentAsString(statementPageHtml) should include("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
       contentAsString(statementPageHtml) should include(
         """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
 
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">First milestone to be fixed</p>""")
+      contentAsString(statementPageHtml) should include("""<p class="govuk-body">First milestone to be fixed</p>""")
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>""")
 
@@ -197,7 +190,7 @@ class StatementPageSpec extends WordSpec with Matchers {
   }
 
   trait Setup {
-    val app                          = new GuiceApplicationBuilder().build()
+    val app                                  = new GuiceApplicationBuilder().build()
     implicit val fakeRequest: FakeRequest[_] = FakeRequest()
     val configuration = Configuration.from(
       Map(
@@ -205,7 +198,8 @@ class StatementPageSpec extends WordSpec with Matchers {
         "microservice.services.contact-frontend.host"     -> "tax.service.gov.uk",
         "microservice.services.contact-frontend.port"     -> 9250
       ))
-    implicit val appConfig: AppConfig = new AppConfig(configuration, new ServicesConfig(configuration))
+    implicit val sourceConfig: SourceConfig = app.injector.instanceOf[SourceConfig]
+    implicit val appConfig: AppConfig       = AppConfig(configuration, new ServicesConfig(configuration), sourceConfig)
 
     val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
     implicit val messages: Messages = messagesApi.preferred(fakeRequest)
@@ -230,19 +224,19 @@ class StatementPageSpec extends WordSpec with Matchers {
     )
 
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
-      serviceKey                   = "partially-accessible-service",
-      serviceName                  = "partially accessible service name",
-      serviceHeaderName            = "Partially Accessible Name",
-      serviceDescription           = "Partially accessible description.",
-      serviceDomain                = "www.tax.service.gov.uk",
-      serviceUrl                   = "/partially-accessible",
-      contactFrontendServiceId     = "pas",
-      complianceStatus             = PartialCompliance,
-      accessibilityProblems        = Seq(
+      serviceKey               = "partially-accessible-service",
+      serviceName              = "partially accessible service name",
+      serviceHeaderName        = "Partially Accessible Name",
+      serviceDescription       = "Partially accessible description.",
+      serviceDomain            = "www.tax.service.gov.uk",
+      serviceUrl               = "/partially-accessible",
+      contactFrontendServiceId = "pas",
+      complianceStatus         = PartialCompliance,
+      accessibilityProblems = Seq(
         "This is the first accessibility problem",
         "And then this is another one",
       ),
-      milestones                   = Seq(
+      milestones = Seq(
         Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
         Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
         Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)

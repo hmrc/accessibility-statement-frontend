@@ -22,7 +22,7 @@ import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 import scala.io.Source
 
 @Singleton
-case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesConfig) {
+case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesConfig, sourceConfig: SourceConfig) {
   val contactHmrcUnauthenticatedLink = s"${servicesConfig.baseUrl("contact-frontend")}/contact-hmrc-unauthenticated"
 
   val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())
@@ -30,7 +30,6 @@ case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesCo
   val welshLanguageSupportEnabled: Boolean =
     config.getOptional[Boolean]("features.welsh-language-support").getOrElse(false)
 
-  def statementsSource: Source = Source.fromResource("services.yml")
-
-  def statementSource(service: String): Source = Source.fromResource(s"services/$service.yml")
+  def statementsSource: Source                 = sourceConfig.statementsSource
+  def statementSource(service: String): Source = sourceConfig.statementSource(service)
 }

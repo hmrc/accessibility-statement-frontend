@@ -18,9 +18,7 @@ package uk.gov.hmrc.accessibilitystatementfrontend
 
 import java.text.SimpleDateFormat
 import java.util.Date
-
-import io.circe.Decoder
-
+import io.circe.{Decoder, Encoder}
 import scala.util.Try
 
 package object models {
@@ -35,4 +33,6 @@ package object models {
     val simpleDateFormat = new SimpleDateFormat(format)
     simpleDateFormat.format(date)
   }
+
+  implicit val dateEncoder: Encoder[Date] = Encoder.encodeString.contramap[Date](format.format)
 }
