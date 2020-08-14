@@ -37,10 +37,10 @@ case class AccessibilityStatementsSourceRepo @Inject()(
   private val accessibilityStatements: Map[String, AccessibilityStatement] = {
     val services = statementsParser.parseFromSource(statementsSource).valueOr(throw _).services
     val statements = services map { service =>
-      statementParser.parseFromSource(statementSource(service)).valueOr(throw _)
+      service -> statementParser.parseFromSource(statementSource(service)).valueOr(throw _)
     }
 
-    (services zip statements).toMap
+    statements.toMap
   }
 
   def findByServiceKey(serviceKey: String): Option[AccessibilityStatement] =

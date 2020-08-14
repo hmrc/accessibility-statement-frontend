@@ -6,19 +6,16 @@ import sbt._
 object AppDependencies {
   private val circeVersion = "0.12.0"
 
-  private val circeDependencies = Seq(
-    "io.circe" %% "circe-core",
-    "io.circe" %% "circe-generic",
-    "io.circe" %% "circe-parser",
-    "io.circe" %% "circe-yaml"
-  ).map(_ % circeVersion)
-
   val compile = Seq(
     "uk.gov.hmrc" %% "bootstrap-frontend-play-27" % "2.24.0",
     "uk.gov.hmrc" %% "play-frontend-hmrc"         % "0.17.0-play-27",
     "uk.gov.hmrc" %% "play-frontend-govuk"        % "0.49.0-play-27",
-    "uk.gov.hmrc" %% "play-language"              % "4.3.0-play-27"
-  ) ++ circeDependencies
+    "uk.gov.hmrc" %% "play-language"              % "4.3.0-play-27",
+    "io.circe"    %% "circe-core"                 % circeVersion,
+    "io.circe"    %% "circe-generic"              % circeVersion,
+    "io.circe"    %% "circe-parser"               % circeVersion,
+    "io.circe"    %% "circe-yaml"                 % circeVersion
+  )
 
   val test = Seq(
     "uk.gov.hmrc"            %% "bootstrap-test-play-27"  % "2.24.0" % "test",
