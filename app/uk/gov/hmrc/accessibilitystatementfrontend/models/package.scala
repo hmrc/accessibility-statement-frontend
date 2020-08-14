@@ -16,6 +16,7 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend
 
+import java.text.SimpleDateFormat
 import java.util.Date
 
 import io.circe.Decoder
@@ -27,5 +28,11 @@ package object models {
 
   implicit val dateDecoder: Decoder[Date] = Decoder.decodeString.emapTry { (str: String) =>
     Try(format.parse(str))
+  }
+
+  def prettyPrintDate(date: Date): String = {
+    val format           = "dd MMMMM YYYY"
+    val simpleDateFormat = new SimpleDateFormat(format)
+    simpleDateFormat.format(date)
   }
 }

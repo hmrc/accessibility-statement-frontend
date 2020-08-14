@@ -1,5 +1,5 @@
 serviceKey: online-payments
-serviceName: Online Payments
+serviceName: Online Payments Service
 serviceHeaderName: Pay your tax
 serviceDescription: |
   The Online Payments service is HMRC’s Digital card payment journey.
@@ -13,7 +13,7 @@ serviceUrl: /pay
 contactFrontendServiceId: pay-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - at one point we display location information on a map - however,
+  - At one point we display location information on a map - however,
     there’s also a postcode lookup tool that’s accessible to visually
     impaired users using assistive technology
   - At one point we display a payment iFrame, which is controlled by Barclaycard.

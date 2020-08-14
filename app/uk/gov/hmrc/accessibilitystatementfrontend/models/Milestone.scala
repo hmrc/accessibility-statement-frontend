@@ -20,7 +20,9 @@ import java.util.Date
 import io.circe.Decoder
 import io.circe.generic.semiauto.deriveDecoder
 
-case class Milestone(description: String, date: Date)
+case class Milestone(description: String, date: Date) {
+  def formattedDate: String = prettyPrintDate(date)
+}
 
 object Milestone {
   implicit val d: Decoder[Milestone] = deriveDecoder[Milestone]

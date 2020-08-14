@@ -16,6 +16,7 @@
 
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.prettyPrintDate
 
 @this(layout: Layout)
 
@@ -51,10 +52,14 @@
 
     <h2 class="govuk-heading-l">@{messages("accessibility.heading")}</h2>
     @{if(statement.isFullyCompliant) {
-        <p class="govuk-body">{messages("accessibility.fully-compliant.part1")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.fully-compliant.part2")}</a></p>
+        <p class="govuk-body">{messages("accessibility.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a></p>
+    } else {
+        <p class="govuk-body">{messages("accessibility.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a></p>
     } }
     @{if(statement.accessibilityProblems.isEmpty) {
-        <p class="govuk-body">{messages("accessibility.no_issues")}</p>
+        <p class="govuk-body">{messages("accessibility.no-issues")}</p>
+    } else {
+        <p class="govuk-body">{messages("accessibility.has-issues")}</p>
     } }
     <ul class="govuk-list govuk-list--bullet">
     @for(problem <- statement.accessibilityProblems) {
@@ -103,15 +108,26 @@
 
     <h2 class="govuk-heading-l">@{messages("technical.heading")}</h2>
     <p class="govuk-body">@{messages("technical.commitment")}</p>
-    <p class="govuk-body">@{messages("technical.compliance.part1")}
-        <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.part2")}</a>
-    </p>
+    @{if(statement.isFullyCompliant) {
+        <p class="govuk-body">{messages("technical.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("technical.compliance.guidelines")}</a></p>
+    } else {
+        <p class="govuk-body">{messages("technical.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("technical.compliance.guidelines")}</a>{messages("technical.compliance.partial.reasons")}
+        </p>
+        <h3 class="govuk-heading-m">{messages("technical.non-compliance.header")}</h3>
+        <p class="govuk-body">{messages("technical.non-compliance.introduction")}</p>
+        <h4 class="govuk-heading-s">{messages("technical.non-compliance.accessibility")}</h4>
+    } }
+    @for(milestone <- statement.milestones) {
+        <p class="govuk-body">@{milestone.description}</p>
+        <p class="govuk-body">@{messages("technical.non-compliance.milestone.fix-by")} @{prettyPrintDate(milestone.date)}</p>
+
+    }
 
     <h2 class="govuk-heading-l">@{messages("testing.heading")}</h2>
-    <p class="govuk-body">@{messages("testing.last-tested", statement.formattedLastTestedDate)}</p>
+    <p class="govuk-body">@{messages("testing.last-tested", prettyPrintDate(statement.serviceLastTestedDate))}</p>
     <p class="govuk-body">@{messages("testing.details.part1")}
         <a class="govuk-link" href="http://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>
         @{messages("testing.details.part3")}
     </p>
-    <p class="govuk-body">@{messages("testing.created-and-updated", statement.formattedCreatedDate, statement.formattedLastUpdatedDate)}</p>
+    <p class="govuk-body">@{messages("testing.created-and-updated", prettyPrintDate(statement.statementCreatedDate), prettyPrintDate(statement.statementLastUpdatedDate))}</p>
 }

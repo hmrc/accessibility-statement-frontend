@@ -25,7 +25,7 @@ import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
@@ -51,7 +51,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     serviceDescription           = "Fully accessible description.",
     serviceDomain                = "www.tax.service.gov.uk",
     serviceUrl                   = "/fully-accessible",
-    contactFrontendServiceId     = "some.contact-frontend",
+    contactFrontendServiceId     = "fas",
     complianceStatus             = FullCompliance,
     accessibilityProblems        = Seq(),
     milestones                   = Seq(),
@@ -63,7 +63,33 @@ class StatementPageSpec extends WordSpec with Matchers {
     statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
   )
 
-  "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
+  private val partiallyAccessibleServiceStatement = AccessibilityStatement(
+    serviceKey                   = "partially-accessible-service",
+    serviceName                  = "partially accessible service name",
+    serviceHeaderName            = "Partially Accessible Name",
+    serviceDescription           = "Partially accessible description.",
+    serviceDomain                = "www.tax.service.gov.uk",
+    serviceUrl                   = "/partially-accessible",
+    contactFrontendServiceId     = "pas",
+    complianceStatus             = PartialCompliance,
+    accessibilityProblems        = Seq(
+      "This is the first accessibility problem",
+      "And then this is another one",
+    ),
+    milestones                   = Seq(
+      Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
+      Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
+      Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
+    ),
+    accessibilitySupportEmail    = None,
+    accessibilitySupportPhone    = None,
+    serviceSendsOutboundMessages = false,
+    serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
+    statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
+    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime
+  )
+
+  "Given any Accessibilty Statement for a service, rendering a Statement Page" should {
     "return HTML containing the header containing the service name" in {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
@@ -85,16 +111,6 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
       contentAsString(statementPageHtml) should include("""<p class="govuk-body">Fully accessible description.</p>""")
-    }
-
-    "return HTML containing the expected accessibility information stating that the service is fully compliant" in {
-      val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
-
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">This service is fully compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
     }
 
     "return HTML containing the contact information with phone number if configured" in {
@@ -142,7 +158,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="http://tax.service.gov.uk:9250/contact-hmrc-unauthenticated?service=some.contact-frontend" target="_blank">accessibility problem (opens in a new window or tab)</a>.""")
+        """<a class="govuk-link" href="http://tax.service.gov.uk:9250/contact-hmrc-unauthenticated?service=fas" target="_blank">accessibility problem (opens in a new window or tab)</a>.""")
     }
 
     "return HTML containing the correctly formatted dates of when the service was tested" in {
@@ -153,6 +169,88 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>""")
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">This page was prepared on 15 March 2020. It was last updated on 01 May 2020.</p>""")
+    }
+  }
+
+  "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
+    "return HTML containing the expected accessibility information stating that the service is fully compliant" in {
+      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">This service is fully compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
+    }
+
+    "should not return information on non compliance" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
+
+      contentAsString(statementPageHtml) should not include(
+        """<h3 class="govuk-heading-m">Non-accessible content</h3>""")
+      contentAsString(statementPageHtml) should not include(
+        """<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
+      contentAsString(statementPageHtml) should not include(
+        """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
+    }
+  }
+
+  "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
+    "return HTML containing the expected accessibility information stating that the service is partially compliant" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
+    }
+
+    "return HTML containing a list of the known accessibility issues" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">Some people may find parts of this service difficult to use:</p>""")
+      contentAsString(statementPageHtml) should include(
+        """<li>This is the first accessibility problem</li>""")
+      contentAsString(statementPageHtml) should include(
+        """<li>And then this is another one</li>""")
+    }
+
+    "return HTML stating that the service has known compliance issues" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>, due to the non-compliances listed below."""
+      )
+    }
+
+    "return HTML containing a list of non-accessible content, and when it will be fixed" in {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
+
+      contentAsString(statementPageHtml) should include(
+        """<h3 class="govuk-heading-m">Non-accessible content</h3>""")
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
+      contentAsString(statementPageHtml) should include(
+        """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">First milestone to be fixed</p>""")
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>""")
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">Second milestone we&#x27;ll look at</p>""")
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">We plan to fix this compliance issue by 20 June 2022</p>""")
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">Then we&#x27;ll get to this third milestone</p>""")
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">We plan to fix this compliance issue by 02 September 2022</p>""")
     }
   }
 }
