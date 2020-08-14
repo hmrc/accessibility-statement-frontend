@@ -15,26 +15,26 @@ serviceDescription: |                   # A description of the service
   like this.
 serviceDomain: www.tax.service.gov.uk   # The domain name underwhich this service exists (exclude the https:// and the path)
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
-contactFrontendServiceId: icecreams    # The service id passed to contact-frontend and hmrc-deskpro
-complianceStatus: partial               # Whether this service is fully or partially compliant
-accessibilityProblems:
+contactFrontendServiceId: icecreams     # The service id passed to contact-frontend and hmrc-deskpro
+complianceStatus: partial               # full|partial
+accessibilityProblems:                  # If there are no issues enter []
   - a description of the first problem
   - another description of a problem
   - a description of the last problem
-milestones:
+milestones:                             # If there are no issues enter []
   - description: The X page does not have Y and also does not display Z. This doesn't meet WCAG success
       criterion X.Y.Z (Criterion Description).
-    date: 2020-10-31                    # The date that this issue will be fixed by
+    date: 2020-10-31                    # The date that this issue will be fixed by in ISO format YYYY-MM-DD
   - description: |
       The service has errors in X and incorrectly nested Z which means assistive technologies
       cannot use the service reliably. This does not meet WCAG success criterion
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
 serviceSendsOutboundMessages: false     # Set to true if the service sends or asks for documents from service users
-serviceLastTestedDate: 2019-09-15
+serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD
 statementVisibility: public             # If set to public, the statement will be visible in production
-statementCreatedDate: 2019-09-30
-statementLastUpdatedDate: 2019-09-30
+statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
+statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 ```
 
 Save the YAML file to e.g. `conf/services/discounted-icecreams.yml` The name of the file without the yml extension 
@@ -43,7 +43,7 @@ has to match the value of the serviceKey.
 We support a JSON-compatible subset of YAML. Multi-line strings are allowed but no markup is allowed within
  textual descriptions.
 
-Open up `conf/services.yml` and add the key to your service to the end
+Open up `conf/services.yml` and add the key to your service at the end:
 
 ```yaml
 services:
