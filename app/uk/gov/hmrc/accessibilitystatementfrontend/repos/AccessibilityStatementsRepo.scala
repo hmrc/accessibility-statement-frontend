@@ -19,7 +19,6 @@ package uk.gov.hmrc.accessibilitystatementfrontend.repos
 import java.util.{Calendar, GregorianCalendar}
 
 import javax.inject.{Inject, Singleton}
-import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 
 trait AccessibilityStatementsRepo {
@@ -27,7 +26,7 @@ trait AccessibilityStatementsRepo {
 }
 
 @Singleton
-case class StubStatementsRepo @Inject()(appConfig: AppConfig) extends AccessibilityStatementsRepo {
+case class StubStatementsRepo @Inject()() extends AccessibilityStatementsRepo {
   override val accessibilityStatements: Seq[AccessibilityStatement] = Seq(
     AccessibilityStatement(
       serviceKey = "disguised-remuneration",
