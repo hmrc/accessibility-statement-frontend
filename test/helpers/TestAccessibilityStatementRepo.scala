@@ -18,28 +18,32 @@ package helpers
 
 import java.util.{Calendar, GregorianCalendar}
 
+import org.mockito.scalatest.MockitoSugar
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
+import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
-case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo {
-  override val accessibilityStatements: Seq[AccessibilityStatement] = Seq(
+case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
+  private val repo = mock[AccessibilityStatementsSourceRepo]
+  when(repo.findByServiceKey("test-service")) thenReturn Some(
     AccessibilityStatement(
-      serviceKey = "test-service",
-      serviceName = "test service name",
-      serviceHeaderName = "Test Service Name",
-      serviceDescription = "Test description.",
-      serviceDomain = "www.tax.service.gov.uk/test/",
-      serviceUrl = "some.test.service",
-      contactFrontendServiceId = s"some.contact-frontend",
-      complianceStatus = FullCompliance,
-      accessibilityProblems = Seq(),
-      milestones = Seq(),
-      accessibilitySupportEmail = None,
-      accessibilitySupportPhone = None,
+      serviceKey                   = "test-service",
+      serviceName                  = "test service name",
+      serviceHeaderName            = "Test Service Name",
+      serviceDescription           = "Test description.",
+      serviceDomain                = "www.tax.service.gov.uk/test/",
+      serviceUrl                   = "some.test.service",
+      contactFrontendServiceId     = s"some.contact-frontend",
+      complianceStatus             = FullCompliance,
+      accessibilityProblems        = Seq(),
+      milestones                   = Seq(),
+      accessibilitySupportEmail    = None,
+      accessibilitySupportPhone    = None,
       serviceSendsOutboundMessages = false,
-      serviceLastTestedDate = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
-      statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
-      statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
-    )
-  )
+      serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
+      statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
+      statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+    ))
+  when(repo.findByServiceKey("unknown-service")) thenReturn None
+
+  def findByServiceKey(serviceKey: String): Option[AccessibilityStatement] = repo.findByServiceKey(serviceKey)
 }

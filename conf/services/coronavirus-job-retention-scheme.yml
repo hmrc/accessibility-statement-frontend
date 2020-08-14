@@ -1,0 +1,23 @@
+serviceKey: coronavirus-job-retention-scheme
+serviceName: Coronavirus Job Retention Scheme
+serviceHeaderName: Coronavirus Job Retention Scheme
+contactFrontendServiceId: cjrs
+serviceDescription: |
+  The Coronavirus Job Retention Scheme service allows employers or their
+  agent to make a claim for 80% of their furloughed employees wages, if they
+  have been put on a leave of absence for a minimum of 3 weeks because of
+  the coronavirus (COVID-19) outbreak. Employers can claim up to £2,500 per
+  month per furloughed employee, plus the cost of employer National Insurance
+  contributions and pension contributions (up to the level of the minimum
+  automatic enrolment employer pension contribution).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /coronavirus-job-retention-scheme
+complianceStatus: full
+accessibilityProblems: []
+milestones: []
+serviceSendsOutboundMessages: false
+serviceLastTestedDate: 2020-07-07
+statementCreatedDate: 2020-04-20
+statementLastUpdatedDate: 2020-04-20
+accessibilitySupportEmail: 0111 111 111
+accessibilitySupportPhone: accessibility@example.com

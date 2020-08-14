@@ -14,12 +14,23 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.accessibilitystatementfrontend
+package uk.gov.hmrc.accessibilitystatementfrontend.parsers
 
-import com.google.inject.AbstractModule
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+import io.circe._
+import io.circe.{yaml => circeYaml}
 
-class AccessibilityStatementModule extends AbstractModule {
-  override def configure() =
-    bind(classOf[AccessibilityStatementsRepo]).to(classOf[AccessibilityStatementsSourceRepo])
+import scala.io.Source
+
+class YamlParser[T: Decoder] {
+  def parse(yaml: String): Either[Error, T] =
+    circeYaml.parser
+      .parse(yaml)
+      .flatMap(_.as[T])
+
+  def parseFromSource(source: Source): Either[Error, T] =
+    try {
+      parse(source.mkString)
+    } finally {
+      source.close()
+    }
 }

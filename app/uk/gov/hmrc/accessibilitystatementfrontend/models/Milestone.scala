@@ -14,12 +14,14 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.accessibilitystatementfrontend
+package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-import com.google.inject.AbstractModule
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+import java.util.Date
+import io.circe.Decoder
+import io.circe.generic.semiauto.deriveDecoder
 
-class AccessibilityStatementModule extends AbstractModule {
-  override def configure() =
-    bind(classOf[AccessibilityStatementsRepo]).to(classOf[AccessibilityStatementsSourceRepo])
+case class Milestone(description: String, date: Date)
+
+object Milestone {
+  implicit val d: Decoder[Milestone] = deriveDecoder[Milestone]
 }

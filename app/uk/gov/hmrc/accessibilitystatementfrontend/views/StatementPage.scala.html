@@ -20,6 +20,7 @@
 @this(layout: Layout)
 
 @(statement: AccessibilityStatement)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
+@serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
 
 @layout(pageTitle = statement.serviceHeaderName, serviceUrl = statement.serviceUrl, serviceName = statement.serviceHeaderName) {
     <h1 class="govuk-heading-xl">@{messages("introduction.heading", statement.serviceName)}</h1>
@@ -30,7 +31,7 @@
         @{messages("introduction.scope.part3")}
     </p>
     <p class="govuk-body">@{messages("introduction.service-name", statement.serviceName)}
-    <a class="govuk-link" href="@{statement.serviceDomain}">@{statement.serviceDomain}</a>.
+    <a class="govuk-link" href="@{serviceAbsoluteUrl}">@{serviceAbsoluteUrl}</a>.
 
     <h2 class="govuk-heading-l">@{messages("using-service.heading")}</h2>
     <p class="govuk-body">@{statement.serviceDescription}</p>

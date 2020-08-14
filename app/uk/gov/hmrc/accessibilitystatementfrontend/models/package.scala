@@ -16,10 +16,16 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend
 
-import com.google.inject.AbstractModule
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+import java.util.Date
 
-class AccessibilityStatementModule extends AbstractModule {
-  override def configure() =
-    bind(classOf[AccessibilityStatementsRepo]).to(classOf[AccessibilityStatementsSourceRepo])
+import io.circe.Decoder
+
+import scala.util.Try
+
+package object models {
+  private val format = new java.text.SimpleDateFormat("yyyy-MM-dd")
+
+  implicit val dateDecoder: Decoder[Date] = Decoder.decodeString.emapTry { (str: String) =>
+    Try(format.parse(str))
+  }
 }

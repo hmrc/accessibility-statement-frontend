@@ -16,32 +16,33 @@
 
 package unit.controllers
 
+import play.api.inject.bind
 import helpers.TestAccessibilityStatementRepo
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 import org.scalatest.{Matchers, WordSpec}
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.http.Status
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import play.api.{Configuration, Environment}
-import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+import play.twirl.api.Html
 import uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController
-import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
-import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
-import uk.gov.hmrc.play.bootstrap.tools.Stubs.stubMessagesControllerComponents
+import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
+import org.mockito.MockitoSugar
+import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.Application
+import play.api.inject.guice.GuiceApplicationBuilder
 
-class StatementControllerSpec extends WordSpec with Matchers with GuiceOneAppPerSuite {
+class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
   private val fakeRequest = FakeRequest("GET", "/")
 
-  private val env           = Environment.simple()
-  private val configuration = Configuration.load(env)
+  override def fakeApplication(): Application =
+    new GuiceApplicationBuilder()
+      .overrides(bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo])
+      .build()
 
-  private val serviceConfig = new ServicesConfig(configuration)
-  private val appConfig     = AppConfig(configuration, serviceConfig)
+  private val controller = app.injector.instanceOf[StatementController]
 
-  val statementPage: StatementPage = app.injector.instanceOf[StatementPage]
-  val notFoundPage: NotFoundPage = app.injector.instanceOf[NotFoundPage]
-
-  private val controller = new StatementController(TestAccessibilityStatementRepo(), appConfig, stubMessagesControllerComponents(), statementPage, notFoundPage)
+  def asDocument(html: Html): Document = Jsoup.parse(html.toString())
 
   "GET /test-service" should {
     "return 200" in {
@@ -53,6 +54,20 @@ class StatementControllerSpec extends WordSpec with Matchers with GuiceOneAppPer
       val result = controller.getStatement("test-service")(fakeRequest)
       contentType(result) shouldBe Some("text/html")
       charset(result)     shouldBe Some("utf-8")
+    }
+
+    "return 404" in {
+      val result = controller.getStatement("unknown-service")(fakeRequest)
+      status(result) shouldBe Status.NOT_FOUND
+    }
+
+    "return the correct 404 page content" in {
+      val result  = controller.getStatement("unknown-service")(fakeRequest)
+      val content = Jsoup.parse(contentAsString(result))
+
+      val headers = content.select("h1")
+      headers.size       shouldBe 1
+      headers.first.text shouldBe "Page not found"
     }
   }
 }

@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.accessibilitystatementfrontend
+package uk.gov.hmrc.accessibilitystatementfrontend.config
 
-import com.google.inject.AbstractModule
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+import javax.inject.{Inject, Singleton}
+import play.api.http.DefaultHttpFilters
+import play.filters.csp.CSPFilter
+import uk.gov.hmrc.play.bootstrap.frontend.filters.FrontendFilters
 
-class AccessibilityStatementModule extends AbstractModule {
-  override def configure() =
-    bind(classOf[AccessibilityStatementsRepo]).to(classOf[AccessibilityStatementsSourceRepo])
-}
+@Singleton
+class FrontendFiltersWithCSP @Inject()(defaultFilters: FrontendFilters, cspFilter: CSPFilter)
+    extends DefaultHttpFilters(cspFilter +: defaultFilters.filters: _*)

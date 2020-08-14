@@ -16,35 +16,33 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.repos
 
-import java.util.{Calendar, GregorianCalendar}
-
 import javax.inject.{Inject, Singleton}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+import uk.gov.hmrc.accessibilitystatementfrontend.models._
+import uk.gov.hmrc.accessibilitystatementfrontend.parsers._
+import cats.syntax.either._
 
 trait AccessibilityStatementsRepo {
-  val accessibilityStatements: Seq[AccessibilityStatement]
+  def findByServiceKey(serviceKey: String): Option[AccessibilityStatement]
 }
 
 @Singleton
-case class StubStatementsRepo @Inject()() extends AccessibilityStatementsRepo {
-  override val accessibilityStatements: Seq[AccessibilityStatement] = Seq(
-    AccessibilityStatement(
-      serviceKey = "disguised-remuneration",
-      serviceName = "send your loan charge details",
-      serviceHeaderName = "Send your loan charge details",
-      serviceDescription = "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
-      serviceDomain = "www.tax.service.gov.uk/disguised-remuneration/",
-      serviceUrl = "/disguised-remuneration",
-      contactFrontendServiceId = "disguised-remuneration",
-      complianceStatus = FullCompliance,
-      accessibilityProblems = Seq(),
-      milestones = Seq(),
-      accessibilitySupportEmail = None,
-      accessibilitySupportPhone = None,
-      serviceSendsOutboundMessages = false,
-      serviceLastTestedDate = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
-      statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
-      statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
-    )
-  )
+case class AccessibilityStatementsSourceRepo @Inject()(
+  appConfig: AppConfig,
+  statementsParser: AccessibilityStatementsParser,
+  statementParser: AccessibilityStatementParser)
+    extends AccessibilityStatementsRepo {
+  import appConfig._
+
+  private val accessibilityStatements: Map[String, AccessibilityStatement] = {
+    val services = statementsParser.parseFromSource(statementsSource).valueOr(throw _).services
+    val statements = services map { service =>
+      statementParser.parseFromSource(statementSource(service)).valueOr(throw _)
+    }
+
+    (services zip statements).toMap
+  }
+
+  def findByServiceKey(serviceKey: String): Option[AccessibilityStatement] =
+    accessibilityStatements.get(serviceKey)
 }

@@ -31,11 +31,15 @@ class StatementPageSpec extends BaseAcceptanceSpec {
 
       Then("the default statement page should be displayed in the default language")
       eventually {
-        driver.findElement(By.cssSelector("h1")).getText shouldBe "Accessibility statement for send your loan charge details"
+        driver
+          .findElement(By.cssSelector("h1"))
+          .getText shouldBe "Accessibility statement for Send your loan charge details"
         driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should
-          contain("This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")
+          contain(
+            "This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")
         driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should
-          contain("This service is fully compliant with the Web Content Accessibility Guidelines version 2.1 AA standard")
+          contain(
+            "This service is fully compliant with the Web Content Accessibility Guidelines version 2.1 AA standard")
       }
     }
   }
