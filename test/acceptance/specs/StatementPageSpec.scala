@@ -16,17 +16,14 @@
 
 package acceptance.specs
 
-import java.util
-
 import acceptance.pages.StatementPage
-import org.openqa.selenium.{By, WebElement}
+import org.openqa.selenium.By
 import collection.JavaConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {
   feature("Statement page") {
-
-    scenario("The user visits a statement page") {
-      Given("the user clears their cookies")
+    scenario("The user visits a statement page for a fully accessible service") {
+      Given("the user does not have welsh language selected")
       deleteAllCookies
 
       When("the user visits the default statement page")
@@ -34,13 +31,11 @@ class StatementPageSpec extends BaseAcceptanceSpec {
 
       Then("the default statement page should be displayed in the default language")
       eventually {
-        driver.findElement(By.cssSelector("h1")).getText shouldBe "accessibility-statement-frontend"
-        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should contain("This is your new service")
-      }
-
-      And("the HMRC banner should be displayed")
-      eventually {
-        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should contain("HM Revenue & Customs")
+        driver.findElement(By.cssSelector("h1")).getText shouldBe "Accessibility statement for send your loan charge details"
+        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should
+          contain("This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")
+        driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should
+          contain("This service is fully compliant with the Web Content Accessibility Guidelines version 2.1 AA standard")
       }
     }
   }

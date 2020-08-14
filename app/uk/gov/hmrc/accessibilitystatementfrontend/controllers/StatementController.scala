@@ -18,22 +18,27 @@ package uk.gov.hmrc.accessibilitystatementfrontend.controllers
 
 import javax.inject.{Inject, Singleton}
 import play.api.mvc._
-import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
-import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
+import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
+import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
+import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 
 import scala.concurrent.Future
 
 @Singleton
-class StatementController @Inject()(
+class StatementController @Inject()( statementsRepo: AccessibilityStatementsRepo,
                                      appConfig: AppConfig,
                                      mcc: MessagesControllerComponents,
-                                     statementPage: StatementPage)
-    extends FrontendController(mcc) {
+                                     statementPage: StatementPage,
+                                     notFoundPage: NotFoundPage
+                                   ) extends FrontendController(mcc) {
 
   implicit val config: AppConfig = appConfig
 
-  def getStatement(): Action[AnyContent] = Action.async { implicit request =>
-    Future.successful(Ok(statementPage()))
+  def getStatement(service: String): Action[AnyContent] = Action.async { implicit request =>
+    statementsRepo.accessibilityStatements.find(_.serviceKey == service) match {
+      case Some(accessibilityStatement) => Future.successful(Ok(statementPage(accessibilityStatement)))
+      case None => Future.successful(NotFound(notFoundPage()))
+    }
   }
 }

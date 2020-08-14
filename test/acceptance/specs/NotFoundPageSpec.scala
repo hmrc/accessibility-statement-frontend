@@ -1,4 +1,4 @@
-@*
+/*
  * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,14 +12,25 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *@
+ */
 
-@import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+package acceptance.specs
 
-@this(layout: Layout)
+import acceptance.pages.NotFoundPage
+import org.openqa.selenium.By
 
-@(pageTitle: String, heading: String, message: String)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
-@layout(pageTitle = pageTitle, serviceUrl = messages("service.homePageUrl"), serviceName = messages("general.serviceName")) {
-    <h1 class="govuk-heading-xl">@{Text(heading).asHtml}</h1>
-    <p class="govuk-body">@{Text(message).asHtml}</p>
+class NotFoundPageSpec extends BaseAcceptanceSpec {
+  feature("Not Found page") {
+
+    scenario("The page has the correct title") {
+      Given("the user does not have welsh language selected")
+      deleteAllCookies
+
+      When("the user visits a non-existent page")
+      go to NotFoundPage
+
+      Then("the title should be visible in the default language")
+      driver.findElement(By.cssSelector("h1")).getText shouldBe "Page not found"
+    }
+  }
 }

@@ -1,6 +1,4 @@
-service.name = accessibility-statement-frontend
-service.homePageUrl = /accessibility-statement-frontend
-service.text = This is your new service
+service.homePageUrl = /
 
 footer.cookies.text = Cookies
 footer.cookies.url = /help/cookies
@@ -10,3 +8,78 @@ footer.termsConditions.text = Terms and conditions
 footer.termsConditions.url = /help/terms-and-conditions
 footer.govukHelp.text = Help using GOV.UK
 footer.govukHelp.url = https://www.gov.uk/help
+general.serviceName = Accessibility statement
+
+## introduction
+introduction.heading=Accessibility statement for {0}
+introduction.lede=This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.
+introduction.scope.part1=This service is part of the wider GOV.UK website. There is a separate
+introduction.scope.part2=accessibility statement
+introduction.scope.part3=for the main GOV.UK website.
+introduction.service-name=This page only contains information about the {0} service, available at 
+
+## Using the service
+using-service.heading=Using this service
+using-service.should-be-able=This service is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service. This means you should be able to:
+using-service.bullet1=change colours, contrast levels and fonts
+using-service.bullet2=zoom in up to 300% without the text spilling off the screen
+using-service.bullet3=get from the start of the service to the end using just a keyboard
+using-service.bullet4=get from the start of the service to the end using speech recognition software
+using-service.bullet5=listen to the service using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
+using-service.simple-text=We have also made the text in the service as simple as possible to understand.
+using-service.making-device-easier.part1=AbilityNet
+using-service.making-device-easier.part2=has advice on making your device easier to use if you have a disability.
+
+## Accessibility
+accessibility.heading=How accessible this service is
+accessibility.fully-compliant.part1=This service is fully compliant with the
+accessibility.fully-compliant.part2=Web Content Accessibility Guidelines version 2.1 AA standard
+accessibility.no_issues=There are no known accessibility issues within this service.
+
+## Contact
+contact.heading=What to do if you have difficulty using this service
+contact.us-by=If you have difficulty using this service, contact us by:
+contact.email=email {0}
+contact.phone=call {0}
+contact.send-documents=As part of providing this service, we may need to send you messages or documents. We’ll ask you how you want us to send messages or documents to you, but contact us if you need them in a different format. For example large print, audio recording or braille.
+contact.default=If you have difficulty using this service, use the ''Get help with this page'' link on the page in the online service.
+
+## Reporting problems
+reporting.heading=Reporting accessibility problems with this service
+reporting.report-problem.part1=We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements, report the
+reporting.report-problem.part2=accessibility problem (opens in a new window or tab)
+
+## Complaints
+complaints.heading=What to do if you are not happy with how we respond to your complaint
+complaints.additional-contacts.part1=The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ''accessibility regulations''). If you are not happy with how we respond to your complaint,
+complaints.additional-contacts.part2=contact the Equality Advisory and Support Service (EASS)
+complaints.additional-contacts.part3=or the
+complaints.additional-contacts.part4=Equality Commission for Northern Ireland (ECNI)
+complaints.additional-contacts.part5=if you live in Northern Ireland.
+
+## In person contact
+in-person-contact.heading=Contacting us by phone or getting a visit from us in person
+in-person-contact.text-relay=We provide a text relay service if you are deaf, hearing impaired or have a speech impediment.
+in-person-contact.bsl=We can provide a British Sign Language (BSL) interpreter, or you can arrange a visit from an HMRC advisor to help you complete the service.
+in-person-contact.find-out-how.part1=Find out how to
+in-person-contact.find-out-how.part2=contact us.
+
+## Technical information
+technical.heading=Technical information about this service’s accessibility
+technical.commitment=HMRC is committed to making this service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+technical.compliance.part1=This service is fully compliant with the
+technical.compliance.part2=Web Content Accessibility Guidelines version 2.1 AA standard.
+
+## Testing
+testing.heading=How we tested this service
+testing.last-tested=The service was last tested on {0} and was checked for compliance with WCAG 2.1 AA.
+testing.details.part1=The service was built using parts that were tested by the
+testing.details.part2=Digital Accessibility Centre.
+testing.details.part3=The full service was tested by HMRC and included disabled users.
+testing.created-and-updated=This page was prepared on {0}. It was last updated on {1}.
+
+## Not Found Page
+notFound.pageTitle=Page not found
+notFound.heading=Page not found
+notFound.paragraph1=If you typed the web address, check it is correct.
+notFound.paragraph2=If you pasted the web address, check you copied the entire address.

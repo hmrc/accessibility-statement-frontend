@@ -16,26 +16,39 @@
 
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 @import uk.gov.hmrc.accessibilitystatementfrontend.views.FooterLinks
+@import uk.gov.hmrc.govukfrontend.views.viewmodels.header.Header
 
 @this(
         govukLayout: GovukLayout,
+        govukHeader: GovukHeader,
         head: Head,
         hmrcBanner: HmrcBanner,
         languageSelect: LanguageSelect
 )
-@(pageTitle: Option[String] = None,
+@(
+        pageTitle: String,
+        serviceUrl: String,
+        serviceName: String,
         headBlock: Option[Html] = None,
-        scriptsBlock: Option[Html] = None
-)(contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
+        scriptsBlock: Option[Html] = None)(
+        contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
 @beforeContentBlock = {
-    @hmrcBanner(Banner())
     @languageSelect()
 }
 
+@headerBlock = {
+    @govukHeader(Header(
+        homepageUrl = Some("https://www.gov.uk/"),
+        serviceName = Some(serviceName),
+        serviceUrl = Some(serviceUrl),
+        containerClasses = None))
+}
+
 @govukLayout(
-    pageTitle = pageTitle,
+    pageTitle = Some(pageTitle),
     headBlock = Some(head(headBlock)),
+    headerBlock = Some(headerBlock),
     scriptsBlock = scriptsBlock,
     beforeContentBlock = Some(beforeContentBlock),
     footerItems = FooterLinks()

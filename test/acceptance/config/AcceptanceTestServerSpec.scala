@@ -26,7 +26,7 @@ import scala.util.Try
 class AcceptanceTestServerSpec extends WordSpec with AcceptanceTestServer with Matchers with TryValues with BeforeAndAfterAll {
   override lazy val port = 6001
 
-  val url = new URL(s"http://localhost:$port/accessibility-statement")
+  val url = new URL(s"http://localhost:$port/accessibility-statement/disguised-remuneration")
   val expectedFailureMessage = "Connection refused"
 
   private def getTestPageResponseCode = {

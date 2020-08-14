@@ -14,23 +14,13 @@
  * limitations under the License.
  */
 
-package acceptance.specs
+package uk.gov.hmrc.accessibilitystatementfrontend
 
-import acceptance.pages.ErrorPage
-import org.openqa.selenium.By
+import com.google.inject.AbstractModule
+import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, StubStatementsRepo}
 
-class ErrorPageSpec extends BaseAcceptanceSpec {
-  feature("Error page") {
-
-    scenario("The page has the correct title") {
-      Given("the user clears their cookies so no language cookies are set")
-      deleteAllCookies
-
-      When("the user visits a non-existent page")
-      go to ErrorPage
-
-      Then("the title should be visible in the default language")
-      driver.findElement(By.cssSelector("h1")).getText shouldBe "This page can’t be found"
+class AccessibilityStatementModule extends AbstractModule  {
+    override def configure() = {
+      bind(classOf[AccessibilityStatementsRepo]).to(classOf[StubStatementsRepo])
     }
-  }
 }
