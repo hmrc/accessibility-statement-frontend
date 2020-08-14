@@ -19,7 +19,6 @@ package uk.gov.hmrc.accessibilitystatementfrontend.repos
 import java.util.{Calendar, GregorianCalendar}
 
 import javax.inject.{Inject, Singleton}
-import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 
 trait AccessibilityStatementsRepo {
@@ -27,7 +26,7 @@ trait AccessibilityStatementsRepo {
 }
 
 @Singleton
-case class StubStatementsRepo @Inject()(appConfig: AppConfig) extends AccessibilityStatementsRepo {
+case class StubStatementsRepo @Inject()() extends AccessibilityStatementsRepo {
   override val accessibilityStatements: Seq[AccessibilityStatement] = Seq(
     AccessibilityStatement(
       serviceKey = "disguised-remuneration",
@@ -36,7 +35,7 @@ case class StubStatementsRepo @Inject()(appConfig: AppConfig) extends Accessibil
       serviceDescription = "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
       serviceDomain = "www.tax.service.gov.uk/disguised-remuneration/",
       serviceUrl = "/disguised-remuneration",
-      contactFrontendServiceId = s"${appConfig.contactHmrcUnauthenticatedLink}?service=disguised-remuneration",
+      contactFrontendServiceId = "disguised-remuneration",
       complianceStatus = FullCompliance,
       accessibilityProblems = Seq(),
       milestones = Seq(),
