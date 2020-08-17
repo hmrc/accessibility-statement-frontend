@@ -8,7 +8,8 @@ Create a YAML file of the form:
 
 ```yaml
 serviceKey: discounted-icecreams        # A unique name for the statement used for routing e.g. https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams
-serviceName: Discounted Icecreams       # The service name that will appear in the title of the accessibility statement
+serviceName: Discounted Icecreams       # The service name that will appear in the title of the accessibility statement.
+  Do not include the word service at the end, as this will be added by the templates
 serviceHeaderName: Icecreams            # The service name as it should appear in the grey Gov.UK header bar
 serviceDescription: |                   # A description of the service
   Use this paragraph to describe your service. It can go over multiple lines
