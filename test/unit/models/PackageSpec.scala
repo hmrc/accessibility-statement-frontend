@@ -18,7 +18,7 @@ package unit.models
 
 import java.util.{Calendar, GregorianCalendar}
 import org.scalatest.{Matchers, WordSpec}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.prettyPrintDate
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{prettyPrintDate, reportAccessibilityProblemLink}
 
 class PackageSpec extends WordSpec with Matchers {
   "Given a date, calling prettyPrintDate" should {
@@ -30,6 +30,49 @@ class PackageSpec extends WordSpec with Matchers {
       prettyPrintDate(firstDate) should equal("28 February 2020")
       prettyPrintDate(secondDate) should equal("15 March 2020")
       prettyPrintDate(thirdDate) should equal("01 May 2020")
+    }
+  }
+
+  "Given a contact frontend URL and a service name, calling the report problem link" should {
+    val reportAccessibilityBaseUrl = "http://my.test.url/contact/accessibility-unauthenticated"
+    val somethingServiceId = "something-service"
+
+    "return the expected" in {
+      val url = reportAccessibilityProblemLink(
+        reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
+        serviceId = somethingServiceId,
+        userAction = None,
+        referrerUrl = None
+        )
+      url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service")
+    }
+
+    "return the expected URL when userAction is passed through" in {
+      val url = reportAccessibilityProblemLink(
+        reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
+        serviceId = somethingServiceId,
+        userAction = Some("did-something"),
+        referrerUrl = None)
+      url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service&userAction=did-something")
+    }
+
+    "return the expected URL when referrerUrl is passed through" in {
+      val url = reportAccessibilityProblemLink(
+        reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
+        serviceId = somethingServiceId,
+        referrerUrl = Some("from-this-start"),
+        userAction = None)
+      url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service&referrerUrl=from-this-start")
+    }
+
+    "return the expected URL when userAction and referrerUrl are passed through" in {
+      val url = reportAccessibilityProblemLink(
+        reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
+        serviceId = somethingServiceId,
+        userAction = Some("did-something"),
+        referrerUrl = Some("from-this-start")
+      )
+      url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service&userAction=did-something&referrerUrl=from-this-start")
     }
   }
 }

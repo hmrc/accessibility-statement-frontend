@@ -46,23 +46,23 @@ class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar w
 
   "GET /test-service" should {
     "return 200" in {
-      val result = controller.getStatement("test-service")(fakeRequest)
+      val result = controller.getStatement("test-service", None, None)(fakeRequest)
       status(result) shouldBe Status.OK
     }
 
     "return HTML" in {
-      val result = controller.getStatement("test-service")(fakeRequest)
+      val result = controller.getStatement("test-service", None, None)(fakeRequest)
       contentType(result) shouldBe Some("text/html")
       charset(result)     shouldBe Some("utf-8")
     }
 
     "return 404" in {
-      val result = controller.getStatement("unknown-service")(fakeRequest)
+      val result = controller.getStatement("unknown-service", None, None)(fakeRequest)
       status(result) shouldBe Status.NOT_FOUND
     }
 
     "return the correct 404 page content" in {
-      val result  = controller.getStatement("unknown-service")(fakeRequest)
+      val result  = controller.getStatement("unknown-service", None, None)(fakeRequest)
       val content = Jsoup.parse(contentAsString(result))
 
       val headers = content.select("h1")

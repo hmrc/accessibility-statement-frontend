@@ -36,9 +36,11 @@ class StatementController @Inject()(
 
   implicit val config: AppConfig = appConfig
 
-  def getStatement(service: String): Action[AnyContent] = Action.async { implicit request =>
+  def getStatement(service: String,
+                   userAction: Option[String],
+                   referrerUrl: Option[String]): Action[AnyContent] = Action.async { implicit request =>
     statementsRepo.findByServiceKey(service) match {
-      case Some(accessibilityStatement) => Future.successful(Ok(statementPage(accessibilityStatement)))
+      case Some(accessibilityStatement) => Future.successful(Ok(statementPage(accessibilityStatement, userAction, referrerUrl)))
       case None                         => Future.successful(NotFound(notFoundPage()))
     }
   }

@@ -20,13 +20,17 @@ import javax.inject.{Inject, Singleton}
 import scala.io.Source
 
 trait SourceConfig {
-  def statementsSource(): Source = Source.fromResource("services.yml")
+  def statementsSource(): Source
 
-  def statementSource(service: String): Source = Source.fromResource(s"services/$service.yml")
+  def statementSource(service: String): Source
 }
 
 @Singleton
-case class ProductionSourceConfig @Inject()() extends SourceConfig
+case class ProductionSourceConfig @Inject()() extends SourceConfig {
+  override def statementsSource(): Source = Source.fromResource("services.yml")
+
+  override def statementSource(service: String): Source = Source.fromResource(s"services/$service.yml")
+}
 
 @Singleton
 case class TestOnlySourceConfig @Inject()() extends SourceConfig {

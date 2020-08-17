@@ -29,10 +29,23 @@ package object models {
   }
 
   def prettyPrintDate(date: Date): String = {
-    val format           = "dd MMMMM YYYY"
+    val format = "dd MMMMM YYYY"
     val simpleDateFormat = new SimpleDateFormat(format)
     simpleDateFormat.format(date)
   }
 
   implicit val dateEncoder: Encoder[Date] = Encoder.encodeString.contramap[Date](format.format)
+
+  def reportAccessibilityProblemLink(reportAccessibilityProblemUrl: String,
+                                     serviceId: String,
+                                     userAction: Option[String],
+                                     referrerUrl: Option[String]): String = {
+    val queryStringParameters = Seq(
+      Some(s"service=$serviceId"),
+      userAction.map(ua => s"userAction=$ua"),
+      referrerUrl.map(ru => s"referrerUrl=$ru")
+    )
+    val queryString = queryStringParameters.flatten.mkString("&")
+    s"$reportAccessibilityProblemUrl?$queryString"
+  }
 }
