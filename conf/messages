@@ -11,12 +11,12 @@ footer.govukHelp.url = https://www.gov.uk/help
 general.serviceName = Accessibility statement
 
 ## introduction
-introduction.heading=Accessibility statement for {0}
+introduction.heading=Accessibility statement for {0} service
 introduction.lede=This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.
 introduction.scope.part1=This service is part of the wider GOV.UK website. There is a separate
 introduction.scope.part2=accessibility statement
 introduction.scope.part3=for the main GOV.UK website.
-introduction.service-name=This page only contains information about the {0} service, available at 
+introduction.service-name=This page only contains information about the {0} Service, available at 
 
 ## Using the service
 using-service.heading=Using this service
@@ -32,9 +32,11 @@ using-service.making-device-easier.part2=has advice on making your device easier
 
 ## Accessibility
 accessibility.heading=How accessible this service is
-accessibility.fully-compliant.part1=This service is fully compliant with the
-accessibility.fully-compliant.part2=Web Content Accessibility Guidelines version 2.1 AA standard
-accessibility.no_issues=There are no known accessibility issues within this service.
+accessibility.compliance.full=This service is fully compliant with the
+accessibility.compliance.partial=This service is partially compliant with the
+accessibility.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
+accessibility.no-issues=There are no known accessibility issues within this service.
+accessibility.has-issues=Some people may find parts of this service difficult to use:
 
 ## Contact
 contact.heading=What to do if you have difficulty using this service
@@ -67,8 +69,14 @@ in-person-contact.find-out-how.part2=contact us.
 ## Technical information
 technical.heading=Technical information about this service’s accessibility
 technical.commitment=HMRC is committed to making this service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
-technical.compliance.part1=This service is fully compliant with the
-technical.compliance.part2=Web Content Accessibility Guidelines version 2.1 AA standard.
+technical.compliance.full=This service is fully compliant with the
+technical.compliance.partial=This service is partially compliant with the
+technical.compliance.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
+technical.compliance.partial.reasons=, due to the non-compliances listed below.
+technical.non-compliance.header=Non-accessible content
+technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
+technical.non-compliance.accessibility=Non-compliance with the accessibility regulations
+technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by
 
 ## Testing
 testing.heading=How we tested this service
