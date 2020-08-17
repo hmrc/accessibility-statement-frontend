@@ -43,6 +43,7 @@ lazy val microservice = Project(appName, file("."))
     playDefaultPort                  := 12346,
     libraryDependencies              ++= AppDependencies.compile ++ AppDependencies.test,
     resolvers += "hmrc-releases" at "https://artefacts.tax.service.gov.uk/artifactory/hmrc-releases/",
+    Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
     TwirlKeys.templateImports ++= Seq(
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
       "uk.gov.hmrc.govukfrontend.views.html.components._",
@@ -64,3 +65,6 @@ lazy val microservice = Project(appName, file("."))
     publishingSettings,
     resolvers += Resolver.jcenterRepo
   )
+
+val generateFakeStatements = inputKey[Unit]("Generate fake accessibility statements.")
+fullRunInputTask(generateFakeStatements, Test, "helpers.FakeStatementGenerator")

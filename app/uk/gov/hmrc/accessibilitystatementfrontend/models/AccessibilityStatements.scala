@@ -16,8 +16,8 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-import io.circe.Decoder
-import io.circe.generic.semiauto.deriveDecoder
+import io.circe.{Decoder, Encoder}
+import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 
 case class AccessibilityStatements(
   services: Seq[String]
@@ -25,4 +25,5 @@ case class AccessibilityStatements(
 
 object AccessibilityStatements {
   implicit val d: Decoder[AccessibilityStatements] = deriveDecoder[AccessibilityStatements]
+  implicit val e: Encoder[AccessibilityStatements] = deriveEncoder[AccessibilityStatements]
 }

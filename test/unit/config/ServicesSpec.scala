@@ -17,13 +17,11 @@
 package unit.config
 
 import org.scalatest.TryValues
-
 import cats.syntax.either._
 import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser, AccessibilityStatementsParser}
-
 import scala.util.Try
 
 class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
@@ -57,7 +55,9 @@ class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
       s"include a correctly formatted accessibility statement yaml file for $service" in {
         val source = appConfig.statementSource(service)
 
-        statementParser.parseFromSource(source).valueOr(throw _)
+        val statementTry = Try(statementParser.parseFromSource(source).valueOr(throw _))
+
+        statementTry must be a 'success
       }
     }
   }

@@ -17,8 +17,8 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
 import java.util.Date
-import io.circe.Decoder
-import io.circe.generic.semiauto.deriveDecoder
+import io.circe.{Decoder, Encoder}
+import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 
 case class AccessibilityStatement(
   serviceKey: String,
@@ -45,5 +45,6 @@ case class AccessibilityStatement(
 }
 
 object AccessibilityStatement {
+  implicit val e: Encoder[AccessibilityStatement] = deriveEncoder[AccessibilityStatement]
   implicit val d: Decoder[AccessibilityStatement] = deriveDecoder[AccessibilityStatement]
 }
