@@ -34,7 +34,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       eventually {
         driver
           .findElement(By.cssSelector("h1"))
-          .getText shouldBe "Accessibility statement for Send your loan charge details"
+          .getText shouldBe "Accessibility statement for Send your loan charge details service"
         driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should
           contain(
             "This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")
@@ -55,7 +55,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       eventually {
         driver
           .findElement(By.cssSelector("h1"))
-          .getText shouldBe "Accessibility statement for Online Payments Service"
+          .getText shouldBe "Accessibility statement for Online Payments service"
         driver.findElements(By.cssSelector("p")).asScala.toList.map(_.getText) should
           contain(
             "This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.")

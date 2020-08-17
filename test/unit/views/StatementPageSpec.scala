@@ -31,74 +31,16 @@ import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 class StatementPageSpec extends WordSpec with Matchers {
 
-  private val app                          = new GuiceApplicationBuilder().build()
-  implicit val fakeRequest: FakeRequest[_] = FakeRequest()
-  private val configuration = Configuration.from(
-    Map(
-      "microservice.services.contact-frontend.protocol" -> "http",
-      "microservice.services.contact-frontend.host"     -> "tax.service.gov.uk",
-      "microservice.services.contact-frontend.port"     -> 9250
-    ))
-  implicit val appConfig: AppConfig = new AppConfig(configuration, new ServicesConfig(configuration))
-
-  val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
-  implicit val messages: Messages = messagesApi.preferred(fakeRequest)
-
-  private val fullyAccessibleServiceStatement = AccessibilityStatement(
-    serviceKey                   = "fully-accessible-service",
-    serviceName                  = "fully accessible service name",
-    serviceHeaderName            = "Fully Accessible Name",
-    serviceDescription           = "Fully accessible description.",
-    serviceDomain                = "www.tax.service.gov.uk",
-    serviceUrl                   = "/fully-accessible",
-    contactFrontendServiceId     = "fas",
-    complianceStatus             = FullCompliance,
-    accessibilityProblems        = Seq(),
-    milestones                   = Seq(),
-    accessibilitySupportEmail    = None,
-    accessibilitySupportPhone    = None,
-    serviceSendsOutboundMessages = false,
-    serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
-    statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
-  )
-
-  private val partiallyAccessibleServiceStatement = AccessibilityStatement(
-    serviceKey                   = "partially-accessible-service",
-    serviceName                  = "partially accessible service name",
-    serviceHeaderName            = "Partially Accessible Name",
-    serviceDescription           = "Partially accessible description.",
-    serviceDomain                = "www.tax.service.gov.uk",
-    serviceUrl                   = "/partially-accessible",
-    contactFrontendServiceId     = "pas",
-    complianceStatus             = PartialCompliance,
-    accessibilityProblems        = Seq(
-      "This is the first accessibility problem",
-      "And then this is another one",
-    ),
-    milestones                   = Seq(
-      Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
-      Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
-      Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
-    ),
-    accessibilitySupportEmail    = None,
-    accessibilitySupportPhone    = None,
-    serviceSendsOutboundMessages = false,
-    serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
-    statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime
-  )
-
-  "Given any Accessibilty Statement for a service, rendering a Statement Page" should {
-    "return HTML containing the header containing the service name" in {
+  "Given any Accessibility Statement for a service, rendering a Statement Page" should {
+    "return HTML containing the header containing the service name" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
       contentAsString(statementPageHtml) should include(
-        """<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name</h1>""")
+        """<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name service</h1>""")
     }
 
-    "return HTML containing the expected introduction with link to the service" in {
+    "return HTML containing the expected introduction with link to the service" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
@@ -106,14 +48,14 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<a class="govuk-link" href="https://www.tax.service.gov.uk/fully-accessible">https://www.tax.service.gov.uk/fully-accessible</a>.""")
     }
 
-    "return HTML containing the expected using service information with service description" in {
+    "return HTML containing the expected using service information with service description" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
       contentAsString(statementPageHtml) should include("""<p class="govuk-body">Fully accessible description.</p>""")
     }
 
-    "return HTML containing the contact information with phone number if configured" in {
+    "return HTML containing the contact information with phone number if configured" in new Setup {
       val statementWithPhoneNumber = fullyAccessibleServiceStatement
         .copy(accessibilitySupportPhone = Some("0111-222-33333"))
 
@@ -128,7 +70,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     }
 
-    "return HTML containing the contact information with email address if configured" in {
+    "return HTML containing the contact information with email address if configured" in new Setup {
       val statementWithEmailAddress = fullyAccessibleServiceStatement
         .copy(accessibilitySupportEmail = Some("accessible-support@spec.com"))
 
@@ -143,7 +85,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     }
 
-    "return HTML containing the default contact information if no phone or email configured" in {
+    "return HTML containing the default contact information if no phone or email configured" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
@@ -153,7 +95,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should not include ("""<li>email """)
     }
 
-    "return HTML containing report a problem information with a contact link" in {
+    "return HTML containing report a problem information with a contact link" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
@@ -161,7 +103,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<a class="govuk-link" href="http://tax.service.gov.uk:9250/contact-hmrc-unauthenticated?service=fas" target="_blank">accessibility problem (opens in a new window or tab)</a>.""")
     }
 
-    "return HTML containing the correctly formatted dates of when the service was tested" in {
+    "return HTML containing the correctly formatted dates of when the service was tested" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
@@ -173,7 +115,7 @@ class StatementPageSpec extends WordSpec with Matchers {
   }
 
   "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
-    "return HTML containing the expected accessibility information stating that the service is fully compliant" in {
+    "return HTML containing the expected accessibility information stating that the service is fully compliant" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
@@ -183,7 +125,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
     }
 
-    "should not return information on non compliance" in {
+    "should not return information on non compliance" in new Setup {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement)
 
@@ -197,7 +139,7 @@ class StatementPageSpec extends WordSpec with Matchers {
   }
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
-    "return HTML containing the expected accessibility information stating that the service is partially compliant" in {
+    "return HTML containing the expected accessibility information stating that the service is partially compliant" in new Setup {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
@@ -205,7 +147,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
     }
 
-    "return HTML containing a list of the known accessibility issues" in {
+    "return HTML containing a list of the known accessibility issues" in new Setup {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
@@ -217,7 +159,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<li>And then this is another one</li>""")
     }
 
-    "return HTML stating that the service has known compliance issues" in {
+    "return HTML stating that the service has known compliance issues" in new Setup {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
@@ -226,7 +168,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
     }
 
-    "return HTML containing a list of non-accessible content, and when it will be fixed" in {
+    "return HTML containing a list of non-accessible content, and when it will be fixed" in new Setup {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement)
 
@@ -252,5 +194,65 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">We plan to fix this compliance issue by 02 September 2022</p>""")
     }
+  }
+
+  trait Setup {
+    val app                          = new GuiceApplicationBuilder().build()
+    implicit val fakeRequest: FakeRequest[_] = FakeRequest()
+    val configuration = Configuration.from(
+      Map(
+        "microservice.services.contact-frontend.protocol" -> "http",
+        "microservice.services.contact-frontend.host"     -> "tax.service.gov.uk",
+        "microservice.services.contact-frontend.port"     -> 9250
+      ))
+    implicit val appConfig: AppConfig = new AppConfig(configuration, new ServicesConfig(configuration))
+
+    val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
+    implicit val messages: Messages = messagesApi.preferred(fakeRequest)
+
+    val fullyAccessibleServiceStatement = AccessibilityStatement(
+      serviceKey                   = "fully-accessible-service",
+      serviceName                  = "fully accessible service name",
+      serviceHeaderName            = "Fully Accessible Name",
+      serviceDescription           = "Fully accessible description.",
+      serviceDomain                = "www.tax.service.gov.uk",
+      serviceUrl                   = "/fully-accessible",
+      contactFrontendServiceId     = "fas",
+      complianceStatus             = FullCompliance,
+      accessibilityProblems        = Seq(),
+      milestones                   = Seq(),
+      accessibilitySupportEmail    = None,
+      accessibilitySupportPhone    = None,
+      serviceSendsOutboundMessages = false,
+      serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
+      statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
+      statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+    )
+
+    val partiallyAccessibleServiceStatement = AccessibilityStatement(
+      serviceKey                   = "partially-accessible-service",
+      serviceName                  = "partially accessible service name",
+      serviceHeaderName            = "Partially Accessible Name",
+      serviceDescription           = "Partially accessible description.",
+      serviceDomain                = "www.tax.service.gov.uk",
+      serviceUrl                   = "/partially-accessible",
+      contactFrontendServiceId     = "pas",
+      complianceStatus             = PartialCompliance,
+      accessibilityProblems        = Seq(
+        "This is the first accessibility problem",
+        "And then this is another one",
+      ),
+      milestones                   = Seq(
+        Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
+        Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
+        Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
+      ),
+      accessibilitySupportEmail    = None,
+      accessibilitySupportPhone    = None,
+      serviceSendsOutboundMessages = false,
+      serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
+      statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
+      statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime
+    )
   }
 }

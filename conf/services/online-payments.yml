@@ -1,5 +1,5 @@
 serviceKey: online-payments
-serviceName: Online Payments Service
+serviceName: Online Payments
 serviceHeaderName: Pay your tax
 serviceDescription: |
   The Online Payments service is HMRC’s Digital card payment journey.
