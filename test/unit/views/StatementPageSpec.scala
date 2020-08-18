@@ -202,7 +202,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     val app = new GuiceApplicationBuilder().build()
     implicit val fakeRequest: FakeRequest[_] = FakeRequest()
     val configuration = Configuration.from(
-        Map("contact-frontend.host" -> "https://www.tax.service.gov.uk"))
+        Map("platform.frontend.host" -> "https://www.tax.service.gov.uk"))
 
     implicit val sourceConfig: ProductionSourceConfig       = app.injector.instanceOf[ProductionSourceConfig]
     implicit val testOnlySourceConfig: TestOnlySourceConfig = app.injector.instanceOf[TestOnlySourceConfig]
