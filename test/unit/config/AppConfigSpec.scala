@@ -35,11 +35,7 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
     override def statementsSource(): Source               = Source.fromString("statements")
     override def statementSource(service: String): Source = Source.fromString("statement")
   }
-  private val contactFrontendSettings = Map(
-    "microservice.services.contact-frontend.protocol" -> "http",
-    "microservice.services.contact-frontend.host"     -> "tax.service.gov.uk",
-    "microservice.services.contact-frontend.port"     -> 9250
-  )
+  private val contactFrontendSettings = Map("contact-frontend.host" -> "https://www.tax.service.gov.uk")
   private val productionConfiguration = Configuration.from(contactFrontendSettings)
   private val testConfiguration       = Configuration.from(contactFrontendSettings + ("features.use-test-data" -> true))
 
@@ -48,7 +44,6 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
       val appConfig: AppConfig =
         AppConfig(
           productionConfiguration,
-          new ServicesConfig(productionConfiguration),
           sourceConfig,
           testOnlySourceConfig)
       appConfig.statementsSource.mkString       must be("statements")
@@ -57,7 +52,7 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
 
     "retrieve the test only source" in {
       val appConfig: AppConfig =
-        AppConfig(testConfiguration, new ServicesConfig(testConfiguration), sourceConfig, testOnlySourceConfig)
+        AppConfig(testConfiguration, sourceConfig, testOnlySourceConfig)
       appConfig.statementsSource.mkString       must be("test-only-statements")
       appConfig.statementSource("foo").mkString must be("test-only-statement")
     }

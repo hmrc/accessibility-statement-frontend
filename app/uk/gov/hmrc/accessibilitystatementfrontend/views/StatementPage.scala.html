@@ -16,11 +16,12 @@
 
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
-@import uk.gov.hmrc.accessibilitystatementfrontend.models.prettyPrintDate
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.{prettyPrintDate, reportAccessibilityProblemLink}
 
 @this(layout: Layout)
 
-@(statement: AccessibilityStatement)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
+@(statement: AccessibilityStatement, referrerUrl: Option[String])(
+        implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
 
 @layout(pageTitle = statement.serviceHeaderName, serviceUrl = statement.serviceUrl, serviceName = statement.serviceHeaderName) {
@@ -87,7 +88,7 @@
 
     <h2 class="govuk-heading-l">@{messages("reporting.heading")}</h2>
     <p class="govuk-body">@{messages("reporting.report-problem.part1")}
-        <a class="govuk-link" href="@{appConfig.contactHmrcUnauthenticatedLink}?service=@{statement.contactFrontendServiceId}" target="_blank">@{messages("reporting.report-problem.part2")}</a>.
+        <a class="govuk-link" href="@{reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl)}" target="_blank">@{messages("reporting.report-problem.part2")}</a>.
     </p>
 
     <h2 class="govuk-heading-l">@{messages("complaints.heading")}</h2>

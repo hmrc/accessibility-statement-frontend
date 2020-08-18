@@ -18,16 +18,16 @@ package uk.gov.hmrc.accessibilitystatementfrontend.config
 
 import javax.inject.{Inject, Singleton}
 import play.api.Configuration
-import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 import scala.io.Source
 
 @Singleton
 case class AppConfig @Inject()(
   config: Configuration,
-  servicesConfig: ServicesConfig,
   productionSourceConfig: ProductionSourceConfig,
   testOnlySourceConfig: TestOnlySourceConfig) {
-  val contactHmrcUnauthenticatedLink = s"${servicesConfig.baseUrl("contact-frontend")}/contact-hmrc-unauthenticated"
+
+  private val contactHost = config.get[String]("contact-frontend.host")
+  val reportAccessibilityProblemUrl = s"$contactHost/contact/accessibility-unauthenticated"
 
   val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())
 
@@ -37,7 +37,7 @@ case class AppConfig @Inject()(
   private val testDataEnabled: Boolean =
     config.getOptional[Boolean]("features.use-test-data").getOrElse(false)
 
-  def statementsSource: Source =
+  def statementsSource(): Source =
     if (testDataEnabled) testOnlySourceConfig.statementsSource() else productionSourceConfig.statementsSource()
 
   def statementSource(service: String): Source =

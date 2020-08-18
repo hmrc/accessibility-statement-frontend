@@ -101,7 +101,24 @@ The shell script `./generate_test_data.sh` creates fake accessibility statement
 YAML files in testOnlyConf/testOnlyServices for the purposes of load testing the application.
 
 To run the application using this test data run `./run_with_test_data.sh`
- 
+
+## Adding to your service
+When adding to your service, an additional parameter should be added to your query string, 
+to help end users report any accessibility that they find. this is:
+```
+referrerUrl (the full page URL in your service from which the user clicked on the Accessibility link)
+```
+This will be passed through on the call to `contact-frontend`, for example:
+```
+http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=some.referrer.url
+```
+will bind the following URL in your statement page
+```
+http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=some.referrer.url
+```
+This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
+end user discovered the accessibility issue.
+
 ### License
 
 This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
