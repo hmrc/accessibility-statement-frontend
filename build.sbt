@@ -33,10 +33,17 @@ lazy val acceptanceTestSettings =
       addTestReportOption(AcceptanceTest, "acceptance-test-reports")
     )
 
+lazy val ZapTest = config("zap") extend (Test)
+lazy val zapTestSettings =
+  inConfig(ZapTest)(Defaults.testTasks) ++
+    Seq(
+      testOptions in ZapTest := Seq(Tests.Filter(_ startsWith "zap"))
+    )
+
 lazy val microservice = Project(appName, file("."))
   .enablePlugins(play.sbt.PlayScala, SbtAutoBuildPlugin, SbtGitVersioning, SbtDistributablesPlugin, SbtArtifactory)
   .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
-  .configs(AcceptanceTest, IntegrationTest)
+  .configs(AcceptanceTest, IntegrationTest, ZapTest)
   .settings(
     majorVersion                     := 0,
     scalaVersion                     := "2.12.11",
@@ -62,6 +69,7 @@ lazy val microservice = Project(appName, file("."))
     unitTestSettings,
     acceptanceTestSettings,
     integrationTestSettings,
+    zapTestSettings,
     publishingSettings,
     resolvers += Resolver.jcenterRepo
   )

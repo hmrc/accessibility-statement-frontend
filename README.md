@@ -102,19 +102,33 @@ YAML files in testOnlyConf/testOnlyServices for the purposes of load testing the
 
 To run the application using this test data run `./run_with_test_data.sh`
 
+## Running ZAP scan locally
+
+To run the ZAP scan, you will need a copy of the ZAP proxy running locally on port 11000: https://www.zaproxy.org/, with the 
+following options configured:
+
+* under HUD, uncheck 'Enable when using the ZAP Desktop' (stops ZAP converting requests to HTTPS)
+* under API, check 'Disable the API key'
+
+```
+./run_zap_tests.sh
+```
+
+More information on HMRC's ZAP scanning automation library can be found at https://github.com/hmrc/zap-automation
+
 ## Adding to your service
 When adding to your service, an additional parameter should be added to your query string, 
 to help end users report any accessibility that they find. this is:
 ```
-referrerUrl (the full page URL in your service from which the user clicked on the Accessibility link)
+referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
 ```
 This will be passed through on the call to `contact-frontend`, for example:
 ```
-http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=some.referrer.url
+http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
 ```
 will bind the following URL in your statement page
 ```
-http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=some.referrer.url
+http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
 ```
 This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
 end user discovered the accessibility issue.
