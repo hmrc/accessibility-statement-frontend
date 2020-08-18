@@ -38,11 +38,9 @@ package object models {
 
   def reportAccessibilityProblemLink(reportAccessibilityProblemUrl: String,
                                      serviceId: String,
-                                     userAction: Option[String],
                                      referrerUrl: Option[String]): String = {
     val queryStringParameters = Seq(
       Some(s"service=$serviceId"),
-      userAction.map(ua => s"userAction=$ua"),
       referrerUrl.map(ru => s"referrerUrl=$ru")
     )
     val queryString = queryStringParameters.flatten.mkString("&")

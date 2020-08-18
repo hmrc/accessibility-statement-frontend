@@ -41,38 +41,17 @@ class PackageSpec extends WordSpec with Matchers {
       val url = reportAccessibilityProblemLink(
         reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
         serviceId = somethingServiceId,
-        userAction = None,
         referrerUrl = None
         )
       url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service")
-    }
-
-    "return the expected URL when userAction is passed through" in {
-      val url = reportAccessibilityProblemLink(
-        reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
-        serviceId = somethingServiceId,
-        userAction = Some("did-something"),
-        referrerUrl = None)
-      url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service&userAction=did-something")
     }
 
     "return the expected URL when referrerUrl is passed through" in {
       val url = reportAccessibilityProblemLink(
         reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
         serviceId = somethingServiceId,
-        referrerUrl = Some("from-this-start"),
-        userAction = None)
+        referrerUrl = Some("from-this-start"))
       url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service&referrerUrl=from-this-start")
-    }
-
-    "return the expected URL when userAction and referrerUrl are passed through" in {
-      val url = reportAccessibilityProblemLink(
-        reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
-        serviceId = somethingServiceId,
-        userAction = Some("did-something"),
-        referrerUrl = Some("from-this-start")
-      )
-      url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service&userAction=did-something&referrerUrl=from-this-start")
     }
   }
 }
