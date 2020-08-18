@@ -24,7 +24,7 @@ import play.api.i18n.{Messages, MessagesApi}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, SourceConfig, TestOnlySourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -198,8 +198,12 @@ class StatementPageSpec extends WordSpec with Matchers {
         "microservice.services.contact-frontend.host"     -> "tax.service.gov.uk",
         "microservice.services.contact-frontend.port"     -> 9250
       ))
-    implicit val sourceConfig: SourceConfig = app.injector.instanceOf[SourceConfig]
-    implicit val appConfig: AppConfig       = AppConfig(configuration, new ServicesConfig(configuration), sourceConfig)
+
+    implicit val sourceConfig: ProductionSourceConfig       = app.injector.instanceOf[ProductionSourceConfig]
+    implicit val testOnlySourceConfig: TestOnlySourceConfig = app.injector.instanceOf[TestOnlySourceConfig]
+
+    implicit val appConfig: AppConfig =
+      AppConfig(configuration, new ServicesConfig(configuration), sourceConfig, testOnlySourceConfig)
 
     val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
     implicit val messages: Messages = messagesApi.preferred(fakeRequest)

@@ -2,6 +2,6 @@
 sbt \
   -J-Xmx256m \
   -J-Xms256m \
-  -Dconfig.resource=testOnlyApplication.conf \
+  -Dfeatures.use-test-data=true \
   -Dapplication.router=testOnlyDoNotUseInAppConf.Routes \
   run
