@@ -94,7 +94,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing report a problem information with a contact link" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
 
       contentAsString(statementPageHtml) should include(
@@ -102,7 +102,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing report a problem information with a contact link and referrer URL" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         referrerUrl = Some("came-from-here")
@@ -135,7 +135,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should not return information on non compliance" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
 
       contentAsString(statementPageHtml) should not include ("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
@@ -146,7 +146,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is partially compliant" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
 
       contentAsString(statementPageHtml) should include(
@@ -154,7 +154,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing a list of the known accessibility issues" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
 
       contentAsString(statementPageHtml) should include(
@@ -164,7 +164,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML stating that the service has known compliance issues" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
 
       contentAsString(statementPageHtml) should include(
@@ -173,7 +173,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing a list of non-accessible content, and when it will be fixed" in new Setup {
-      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
 
       contentAsString(statementPageHtml) should include("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
@@ -199,10 +199,9 @@ class StatementPageSpec extends WordSpec with Matchers {
   }
 
   trait Setup {
-    val app = new GuiceApplicationBuilder().build()
+    val app                                  = new GuiceApplicationBuilder().build()
     implicit val fakeRequest: FakeRequest[_] = FakeRequest()
-    val configuration = Configuration.from(
-        Map("platform.frontend.host" -> "https://www.tax.service.gov.uk"))
+    val configuration                        = Configuration.from(Map("platform.frontend.host" -> "https://www.tax.service.gov.uk"))
 
     implicit val sourceConfig: ProductionSourceConfig       = app.injector.instanceOf[ProductionSourceConfig]
     implicit val testOnlySourceConfig: TestOnlySourceConfig = app.injector.instanceOf[TestOnlySourceConfig]
@@ -210,37 +209,35 @@ class StatementPageSpec extends WordSpec with Matchers {
     implicit val appConfig: AppConfig =
       AppConfig(configuration, sourceConfig, testOnlySourceConfig)
 
-    val messagesApi: MessagesApi = app.injector.instanceOf[MessagesApi]
+    val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
     implicit val messages: Messages = messagesApi.preferred(fakeRequest)
 
     val fullyAccessibleServiceStatement = AccessibilityStatement(
-      serviceKey = "fully-accessible-service",
-      serviceName = "fully accessible service name",
-      serviceHeaderName = "Fully Accessible Name",
-      serviceDescription = "Fully accessible description.",
-      serviceDomain = "www.tax.service.gov.uk",
-      serviceUrl = "/fully-accessible",
-      contactFrontendServiceId = "fas",
-      complianceStatus = FullCompliance,
-      accessibilityProblems = Seq(),
-      milestones = Seq(),
-      accessibilitySupportEmail = None,
-      accessibilitySupportPhone = None,
+      serviceName                  = "fully accessible service name",
+      serviceHeaderName            = "Fully Accessible Name",
+      serviceDescription           = "Fully accessible description.",
+      serviceDomain                = "www.tax.service.gov.uk",
+      serviceUrl                   = "/fully-accessible",
+      contactFrontendServiceId     = "fas",
+      complianceStatus             = FullCompliance,
+      accessibilityProblems        = Seq(),
+      milestones                   = Seq(),
+      accessibilitySupportEmail    = None,
+      accessibilitySupportPhone    = None,
       serviceSendsOutboundMessages = false,
-      serviceLastTestedDate = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
-      statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
-      statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+      serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
+      statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
+      statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
     )
 
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
-      serviceKey = "partially-accessible-service",
-      serviceName = "partially accessible service name",
-      serviceHeaderName = "Partially Accessible Name",
-      serviceDescription = "Partially accessible description.",
-      serviceDomain = "www.tax.service.gov.uk",
-      serviceUrl = "/partially-accessible",
+      serviceName              = "partially accessible service name",
+      serviceHeaderName        = "Partially Accessible Name",
+      serviceDescription       = "Partially accessible description.",
+      serviceDomain            = "www.tax.service.gov.uk",
+      serviceUrl               = "/partially-accessible",
       contactFrontendServiceId = "pas",
-      complianceStatus = PartialCompliance,
+      complianceStatus         = PartialCompliance,
       accessibilityProblems = Seq(
         "This is the first accessibility problem",
         "And then this is another one",
@@ -250,12 +247,12 @@ class StatementPageSpec extends WordSpec with Matchers {
         Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
         Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
       ),
-      accessibilitySupportEmail = None,
-      accessibilitySupportPhone = None,
+      accessibilitySupportEmail    = None,
+      accessibilitySupportPhone    = None,
       serviceSendsOutboundMessages = false,
-      serviceLastTestedDate = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
-      statementCreatedDate = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
-      statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime
+      serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
+      statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
+      statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime
     )
   }
 }

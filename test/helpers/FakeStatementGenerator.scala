@@ -58,7 +58,6 @@ object FakeStatementGenerator extends App {
     }
 
     AccessibilityStatement(
-      serviceKey                   = serviceKey,
       serviceName                  = Lorem().sentence,
       serviceHeaderName            = Lorem().sentence,
       serviceDescription           = Lorem().paragraph,

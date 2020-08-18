@@ -26,7 +26,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
   private val parser = new AccessibilityStatementParser
 
   private val fullyAccessibleStatement = AccessibilityStatement(
-    serviceKey        = "disguised-remuneration",
     serviceName       = "Send your loan charge details",
     serviceHeaderName = "Send your loan charge details",
     serviceDescription =
@@ -48,8 +47,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
   "parse" should {
     "parse a fully accessible statement" in {
       val statementYaml =
-        """serviceKey: disguised-remuneration
-          |serviceName: Send your loan charge details
+        """serviceName: Send your loan charge details
           |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
@@ -70,8 +68,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
     "parse a partially accessible statement" in {
       val statementYaml =
-        """serviceKey: online-payments
-          |serviceName: Online Payments
+        """serviceName: Online Payments
           |serviceHeaderName: Pay your tax
           |serviceDescription: |
           |  The Online Payments service is HMRC’s Digital card payment journey.
@@ -102,7 +99,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
         AccessibilityStatement(
-          serviceKey        = "online-payments",
           serviceName       = "Online Payments",
           serviceHeaderName = "Pay your tax",
           serviceDescription =
@@ -150,7 +146,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
     "let Java parsing errors throw when date input is unparseable" in {
       val problemStatementYaml =
-        """serviceKey: disguised-remuneration
+        """
         |serviceName: Send your loan charge details
         |serviceHeaderName: Send your loan charge details
         |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
@@ -173,7 +169,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
     "throw a DecodingError if the compliance status is incorrect" in {
       val problemStatementYaml =
-        """serviceKey: disguised-remuneration
+        """
           |serviceName: Send your loan charge details
           |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
@@ -196,8 +192,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
     "throw an error if the serviceName is missing" in {
       val problemStatementYaml =
-        """serviceKey: disguised-remuneration
-          |serviceName:
+        """serviceName:
           |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
@@ -219,7 +214,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
     "throw an error if complianceStatus is missing" in {
       val problemStatementYaml =
-        """serviceKey: disguised-remuneration
+        """
           |serviceName: Send your loan charge details
           |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.

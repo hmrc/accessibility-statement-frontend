@@ -26,7 +26,6 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
   private val repo = mock[AccessibilityStatementsSourceRepo]
   when(repo.findByServiceKey("test-service")) thenReturn Some(
     AccessibilityStatement(
-      serviceKey                   = "test-service",
       serviceName                  = "test service name",
       serviceHeaderName            = "Test Service Name",
       serviceDescription           = "Test description.",
