@@ -68,6 +68,15 @@ lazy val microservice = Project(appName, file("."))
       "com.github.ghik" % "silencer-lib" % silencerVersion % Provided cross CrossVersion.full
     ),
     // ***************
+    generateServicesFile := {
+      println("Generating services.yml file...")
+      val servicesDirectory = (baseDirectory.value / "conf/services").toPath
+      val servicesYamlFile  = ((Compile / resourceManaged).value / "services.yml")
+      ServicesGenerator(servicesDirectory, servicesYamlFile.toPath).generate
+      println("Task completed")
+      Seq(servicesYamlFile)
+    },
+    Compile / resourceGenerators += generateServicesFile.taskValue,
     unitTestSettings,
     acceptanceTestSettings,
     integrationTestSettings,
@@ -76,5 +85,6 @@ lazy val microservice = Project(appName, file("."))
     resolvers += Resolver.jcenterRepo
   )
 
+val generateServicesFile = taskKey[Seq[File]]("Generate services file")
 val generateFakeStatements = inputKey[Unit]("Generate fake accessibility statements.")
 fullRunInputTask(generateFakeStatements, Test, "helpers.FakeStatementGenerator")
