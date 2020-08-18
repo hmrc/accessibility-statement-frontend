@@ -44,7 +44,6 @@ class AccessibilityStatementsRepoSpec
   when(appConfig.statementSource("bar-service")) thenReturn barSource
 
   private val fooStatement = AccessibilityStatement(
-    serviceKey        = "foo-service",
     serviceName       = "Send your loan charge details",
     serviceHeaderName = "Send your loan charge details",
     serviceDescription =
@@ -62,7 +61,7 @@ class AccessibilityStatementsRepoSpec
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
-  private val barStatement    = fooStatement.copy(serviceKey = "bar-service")
+  private val barStatement    = fooStatement.copy(serviceName = "Bar Service")
   private val statementParser = mock[AccessibilityStatementParser]
   when(statementParser.parseFromSource(fooSource)) thenReturn Right(fooStatement)
   when(statementParser.parseFromSource(barSource)) thenReturn Right(barStatement)

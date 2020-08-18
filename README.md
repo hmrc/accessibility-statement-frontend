@@ -7,7 +7,6 @@ Accessibility Statement Frontend is a service for providing for accessibility st
 Create a YAML file of the form:
 
 ```yaml
-serviceKey: discounted-icecreams        # A unique name for the statement used for routing e.g. https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams
 serviceName: Discounted Icecreams       # The service name that will appear in the title of the accessibility statement.
                                         # Do not include the word service at the end, as this will be added by the templates
 serviceHeaderName: Icecreams            # The service name as it should appear in the grey Gov.UK header bar
@@ -54,7 +53,8 @@ services:
   - online-payments
   - disguised-remuneration
   - pay-what-you-owe-in-instalments
-  - discounted-icecreams              # It's crucial this key matches the serviceKey in your service's statement YAML file
+  - discounted-icecreams              # A unique name for the statement used for routing e.g. https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams
+                                      # It's crucial this key matches the name of your service's statement YAML file
 ``` 
 
 Before opening a PR, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams

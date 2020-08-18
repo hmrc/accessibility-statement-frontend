@@ -1,21 +1,19 @@
-serviceLastTestedDate: '2020-03-15'
-serviceKey: test-service-052
-accessibilitySupportEmail: test-service-052@example.com
 accessibilityProblems: []
-serviceDescription: Reiciendis laboriosam quia nihil dolorem eveniet. Deserunt et
-  doloremque similique vero et. Nihil aliquam saepe doloremque nam atque. Praesentium
-  ipsa eius sed impedit dolores. Dolorum dolor neque placeat amet non. Quos est optio
-  ipsum dolore eos. Illo facere ipsa qui est aut. Doloremque temporibus recusandae
-  qui non occaecati. Dicta eaque qui id praesentium dicta. Voluptas vel quae ex blanditiis
-  adipisci.
-statementCreatedDate: '2020-02-15'
-complianceStatus: full
+serviceName: Architecto iure libero ut ab repellat.
 accessibilitySupportPhone: 08081 570000
-serviceHeaderName: Dolor reprehenderit velit error nihil aliquid.
-milestones: []
-statementLastUpdatedDate: '2019-07-09'
-contactFrontendServiceId: test-service-052
-serviceName: Officia assumenda et omnis totam omnis.
-serviceUrl: /test-service-052
 serviceDomain: www.example.com
+serviceDescription: Sed dolor magni officia et tenetur. Voluptas commodi est fugiat
+  est iste. Sit expedita et minima at voluptas. Voluptatibus occaecati nemo ipsa veniam
+  eaque. Sit mollitia vero aliquid quos vel. Quas rerum exercitationem blanditiis
+  et non. Nam qui ut totam nihil numquam. Dicta saepe ut ipsa ullam ea. Non aspernatur
+  accusantium at assumenda aut. Fugit culpa voluptas vel blanditiis quia.
+serviceHeaderName: Adipisci adipisci non dolor ut deleniti.
+accessibilitySupportEmail: test-service-052@example.com
+statementCreatedDate: '2020-03-08'
+milestones: []
+contactFrontendServiceId: test-service-052
+serviceUrl: /test-service-052
+complianceStatus: full
+serviceLastTestedDate: '2018-10-19'
+statementLastUpdatedDate: '2018-04-25'
 serviceSendsOutboundMessages: false
