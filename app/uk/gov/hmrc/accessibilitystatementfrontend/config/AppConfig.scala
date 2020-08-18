@@ -26,7 +26,7 @@ case class AppConfig @Inject()(
   productionSourceConfig: ProductionSourceConfig,
   testOnlySourceConfig: TestOnlySourceConfig) {
 
-  private val contactHost = config.get[String]("contact-frontend.host")
+  private val contactHost = config.get[String]("platform.frontend.host")
   val reportAccessibilityProblemUrl = s"$contactHost/contact/accessibility-unauthenticated"
 
   val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())

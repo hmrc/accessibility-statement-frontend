@@ -35,7 +35,7 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
     override def statementsSource(): Source               = Source.fromString("statements")
     override def statementSource(service: String): Source = Source.fromString("statement")
   }
-  private val contactFrontendSettings = Map("contact-frontend.host" -> "https://www.tax.service.gov.uk")
+  private val contactFrontendSettings = Map("platform.frontend.host" -> "https://www.tax.service.gov.uk")
   private val productionConfiguration = Configuration.from(contactFrontendSettings)
   private val testConfiguration       = Configuration.from(contactFrontendSettings + ("features.use-test-data" -> true))
 
