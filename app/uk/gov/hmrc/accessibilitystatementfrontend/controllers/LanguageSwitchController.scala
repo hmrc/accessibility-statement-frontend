@@ -20,9 +20,9 @@ import com.google.inject.Inject
 import javax.inject.Singleton
 import play.api.Configuration
 import play.api.i18n.Lang
+import play.api.mvc.ControllerComponents
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.play.language.{LanguageController, LanguageUtils}
-import play.api.mvc.ControllerComponents
 
 @Singleton
 case class LanguageSwitchController @Inject()(configuration: Configuration,
@@ -31,8 +31,7 @@ case class LanguageSwitchController @Inject()(configuration: Configuration,
                                               appConfig: AppConfig
                                              ) extends LanguageController(configuration, languageUtils, cc) {
 
-  // TODO: We need a proper fallback URL for this service
-  override def fallbackURL: String = routes.StatementController.getStatement("disguised-remuneration", None).url
+  override def fallbackURL: String = "https://www.gov.uk/government/organisations/hm-revenue-customs"
 
   override protected def languageMap: Map[String, Lang] = {
     val englishLanguageOnly = Map("en" -> Lang("en"))

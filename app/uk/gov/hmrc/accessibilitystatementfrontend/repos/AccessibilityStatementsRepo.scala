@@ -21,10 +21,13 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers._
 import cats.syntax.either._
+import play.api.Logging
 import play.api.i18n.Lang
 
 trait AccessibilityStatementsRepo {
   def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[AccessibilityStatement]
+
+  def findByServiceKeyDefaultLanguage(serviceKey: String): Option[AccessibilityStatement]
 }
 
 @Singleton
@@ -32,7 +35,7 @@ case class AccessibilityStatementsSourceRepo @Inject()(
   appConfig: AppConfig,
   statementsParser: AccessibilityStatementsParser,
   statementParser: AccessibilityStatementParser)
-    extends AccessibilityStatementsRepo {
+    extends AccessibilityStatementsRepo with Logging {
   import appConfig._
 
   type RepoKey = (String, Lang)
@@ -53,13 +56,15 @@ case class AccessibilityStatementsSourceRepo @Inject()(
       }
       (serviceName, statementLanguage) -> statementParser.parseFromSource(statementSource(serviceFileName)).valueOr(throw _)
     }
+
+    logger.info(s"Accessibility statements parsed, total number of parsed statements is: ${statements.size}")
+
     statements.toMap
   }
 
-  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[AccessibilityStatement] = {
-    if (language.code == cy.code)
-      accessibilityStatements.get((serviceKey, cy)) orElse accessibilityStatements.get((serviceKey, en))
-    else
-      accessibilityStatements.get((serviceKey, en))
-  }
+  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[AccessibilityStatement] =
+    accessibilityStatements.get((serviceKey, language))
+
+  def findByServiceKeyDefaultLanguage(serviceKey: String): Option[AccessibilityStatement] =
+    accessibilityStatements.get((serviceKey, en))
 }
