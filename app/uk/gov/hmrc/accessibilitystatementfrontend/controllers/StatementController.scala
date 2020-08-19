@@ -17,8 +17,8 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.controllers
 
 import javax.inject.{Inject, Singleton}
-import play.api.{Logger, Logging}
-import play.api.i18n.{I18nSupport, Lang, MessagesApi}
+import play.api.Logging
+import play.api.i18n.{I18nSupport, Lang}
 import play.api.mvc._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
@@ -44,15 +44,16 @@ class StatementController @Inject()(
 
     statementsRepo.findByServiceKeyAndLanguage(service, statementLanguage) match {
       case Some(accessibilityStatement) =>
+        implicit val messagesLang: Lang = statementLanguage
         Future.successful(Ok(statementPage(accessibilityStatement, referrerUrl)))
       case None                         =>
         logger.warn(s"No statement found for service: $service for language $statementLanguage")
         logger.warn(s"Checking for statement for $service using default language")
-        if (statementsRepo.findByServiceKeyDefaultLanguage(service).isDefined) {
-          val redirectUrl =  routes.StatementController.getStatement(service, referrerUrl).url
-          Future.successful(Redirect(redirectUrl).withLang(Lang("en")))
-        } else {
-          Future.successful(NotFound(notFoundPage()))
+        statementsRepo.findByServiceKeyDefaultLanguage(service) match {
+          case Some(statementInDefaultLanguage) =>
+            implicit val messagesLang: Lang = Lang("en")
+            Future.successful(Ok(statementPage(statementInDefaultLanguage, referrerUrl)))
+          case None =>Future.successful(NotFound(notFoundPage()))
         }
     }
   }
