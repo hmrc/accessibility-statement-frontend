@@ -23,20 +23,16 @@ import uk.gov.hmrc.accessibilitystatementfrontend.parsers._
 import cats.syntax.either._
 import play.api.i18n.Lang
 
-import scala.io.Source
-import scala.util.Try
-
 trait AccessibilityStatementsRepo {
   def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[AccessibilityStatement]
 }
 
 @Singleton
 case class AccessibilityStatementsSourceRepo @Inject()(
-                                                        appConfig: AppConfig,
-                                                        statementsParser: AccessibilityStatementsParser,
-                                                        statementParser: AccessibilityStatementParser)
-  extends AccessibilityStatementsRepo {
-
+  appConfig: AppConfig,
+  statementsParser: AccessibilityStatementsParser,
+  statementParser: AccessibilityStatementParser)
+    extends AccessibilityStatementsRepo {
   import appConfig._
 
   type RepoKey = (String, Lang)
@@ -47,28 +43,23 @@ case class AccessibilityStatementsSourceRepo @Inject()(
 
   private val accessibilityStatements: Map[RepoKey, AccessibilityStatement] = {
     val services: Seq[String] = statementsParser.parseFromSource(statementsSource).valueOr(throw _).services
-
-    val statements: Seq[RepoEntry] = services flatMap { service =>
-      val statementAndKeyEnglish = statementAndKeyFromSource((service, en), statementSource(service))
-      Try(statementSource(s"$service.cy")).toOption match {
-        case Some(welshStatementSource) =>
-          val statementAndKeyWelsh = statementAndKeyFromSource((service, cy), welshStatementSource)
-          Seq(statementAndKeyEnglish, statementAndKeyWelsh)
-        case None => Seq(statementAndKeyEnglish)
+    val statements: Seq[RepoEntry] = services map { serviceFileName =>
+      val welshLanguageSuffix = ".cy"
+      val (serviceName: String, statementLanguage: Lang) = {
+        if (serviceFileName.endsWith(welshLanguageSuffix))
+          (serviceFileName.dropRight(welshLanguageSuffix.length), cy)
+        else
+          (serviceFileName, en)
       }
+      (serviceName, statementLanguage) -> statementParser.parseFromSource(statementSource(serviceFileName)).valueOr(throw _)
     }
-
     statements.toMap
   }
 
-  private def statementAndKeyFromSource(repoKey: RepoKey, source: Source): RepoEntry = {
-    repoKey -> statementParser.parseFromSource(source).valueOr(throw _)
-  }
-
   def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[AccessibilityStatement] = {
-    if (language.code == cy.code) {
+    if (language.code == cy.code)
       accessibilityStatements.get((serviceKey, cy)) orElse accessibilityStatements.get((serviceKey, en))
-    }
-    else accessibilityStatements.get((serviceKey, en))
+    else
+      accessibilityStatements.get((serviceKey, en))
   }
 }
