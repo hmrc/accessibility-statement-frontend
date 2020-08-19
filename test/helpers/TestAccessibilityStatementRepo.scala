@@ -47,4 +47,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
 
   def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[AccessibilityStatement] =
     repo.findByServiceKeyAndLanguage(serviceKey, language)
+
+  def findByServiceKeyDefaultLanguage(serviceKey: String): Option[AccessibilityStatement] =
+    findByServiceKeyAndLanguage(serviceKey, Lang("en"))
 }

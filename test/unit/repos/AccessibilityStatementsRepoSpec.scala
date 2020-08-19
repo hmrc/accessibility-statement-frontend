@@ -87,12 +87,22 @@ class AccessibilityStatementsRepoSpec
       repo.findByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(Some(fooStatementWelsh))
     }
 
-    "find a different service" in {
+    "find a different service for English" in {
       repo.findByServiceKeyAndLanguage("bar-service", Lang("en")) should be(Some(barStatement))
     }
 
-    "fall back to English if no Welsh exists" in {
-      repo.findByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(Some(barStatement))
+    "return None if English but no Welsh exists" in {
+      repo.findByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(None)
+    }
+  }
+
+  "findByServiceKeyDefaultLanguage" should {
+    "find the correct service for English statement" in {
+      repo.findByServiceKeyDefaultLanguage("foo-service") should be(Some(fooStatement))
+    }
+
+    "find a different service for English" in {
+      repo.findByServiceKeyDefaultLanguage("bar-service") should be(Some(barStatement))
     }
   }
 }
