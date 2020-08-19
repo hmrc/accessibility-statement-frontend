@@ -17,6 +17,7 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.controllers
 
 import javax.inject.{Inject, Singleton}
+import play.api.i18n.Lang
 import play.api.mvc._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
@@ -37,7 +38,7 @@ class StatementController @Inject()(
   implicit val config: AppConfig = appConfig
 
   def getStatement(service: String, referrerUrl: Option[String]): Action[AnyContent] = Action.async { implicit request =>
-    statementsRepo.findByServiceKey(service) match {
+    statementsRepo.findByServiceKeyAndLanguage(service, Lang("en")) match {
       case Some(accessibilityStatement) => Future.successful(Ok(statementPage(accessibilityStatement, referrerUrl)))
       case None                         => Future.successful(NotFound(notFoundPage()))
     }

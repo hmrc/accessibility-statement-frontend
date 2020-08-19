@@ -24,7 +24,7 @@ import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatements
 
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
   private val repo = mock[AccessibilityStatementsSourceRepo]
-  when(repo.findByServiceKey("test-service")) thenReturn Some(
+  when(repo.findByServiceKeyAndLanguage("test-service")) thenReturn Some(
     AccessibilityStatement(
       serviceName                  = "test service name",
       serviceHeaderName            = "Test Service Name",
@@ -42,7 +42,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
       statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
     ))
-  when(repo.findByServiceKey("unknown-service")) thenReturn None
+  when(repo.findByServiceKeyAndLanguage("unknown-service")) thenReturn None
 
-  def findByServiceKey(serviceKey: String): Option[AccessibilityStatement] = repo.findByServiceKey(serviceKey)
+  def findByServiceKeyAndLanguage(serviceKey: String): Option[AccessibilityStatement] = repo.findByServiceKeyAndLanguage(serviceKey)
 }

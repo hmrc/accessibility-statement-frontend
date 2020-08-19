@@ -70,11 +70,11 @@ class AccessibilityStatementsRepoSpec
 
   "findByServiceKey" should {
     "find the correct service" in {
-      repo.findByServiceKey("foo-service") should be(Some(fooStatement))
+      repo.findByServiceKeyAndLanguage("foo-service") should be(Some(fooStatement))
     }
 
     "find a different service" in {
-      repo.findByServiceKey("bar-service") should be(Some(barStatement))
+      repo.findByServiceKeyAndLanguage("bar-service") should be(Some(barStatement))
     }
   }
 }
