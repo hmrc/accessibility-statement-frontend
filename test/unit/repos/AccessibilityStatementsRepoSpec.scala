@@ -39,11 +39,15 @@ class AccessibilityStatementsRepoSpec
   when(statementsParser.parseFromSource(any[Source])) thenReturn Right(
     AccessibilityStatements(Seq("foo-service", "bar-service", "foo-service.cy")))
 
-  private val fooSource = Source.fromString("foo-source")
+  private val fooSource      = Source.fromString("foo-source")
   private val fooSourceWelsh = Source.fromString("foo-source.cy")
-  private val barSource = Source.fromString("bar-source")
+  private val barSource      = Source.fromString("bar-source")
 
   private val appConfig = mock[AppConfig]
+  when(appConfig.en) thenReturn "en"
+  when(appConfig.cy) thenReturn "cy"
+  when(appConfig.defaultLanguage) thenReturn Lang("en")
+
   when(appConfig.statementSource("foo-service")) thenReturn fooSource
   when(appConfig.statementSource("foo-service.cy")) thenReturn fooSourceWelsh
   when(appConfig.statementSource("bar-service")) thenReturn barSource
@@ -67,9 +71,10 @@ class AccessibilityStatementsRepoSpec
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
   private val fooStatementWelsh = fooStatement.copy(
-    serviceDescription = "Mae'r gwasanaeth hwn yn caniatáu ichi roi gwybod am fanylion eich cynllun tâl benthyciad cydnabyddiaeth gudd a rhoi cyfrif am eich atebolrwydd tâl benthyciad."
+    serviceDescription =
+      "Mae'r gwasanaeth hwn yn caniatáu ichi roi gwybod am fanylion eich cynllun tâl benthyciad cydnabyddiaeth gudd a rhoi cyfrif am eich atebolrwydd tâl benthyciad."
   )
-  private val barStatement    = fooStatement.copy(serviceName = "Bar Service")
+  private val barStatement = fooStatement.copy(serviceName = "Bar Service")
 
   private val statementParser = mock[AccessibilityStatementParser]
   when(statementParser.parseFromSource(fooSource)) thenReturn Right(fooStatement)
@@ -80,29 +85,33 @@ class AccessibilityStatementsRepoSpec
 
   "findByServiceKeyAndLanguage" should {
     "find the correct service for English statement" in {
-      repo.findByServiceKeyAndLanguage("foo-service", Lang("en")) should be(Some(fooStatement))
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("en")) should be(Some((fooStatement, Lang("en"))))
     }
 
     "find the correct service for Welsh statement if exists" in {
-      repo.findByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(Some(fooStatementWelsh))
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(Some((fooStatementWelsh, Lang("cy"))))
     }
 
     "find a different service for English" in {
-      repo.findByServiceKeyAndLanguage("bar-service", Lang("en")) should be(Some(barStatement))
-    }
-
-    "return None if English but no Welsh exists" in {
-      repo.findByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(None)
+      repo.findByServiceKeyAndLanguage("bar-service", Lang("en")) should be(Some((barStatement, Lang("en"))))
     }
   }
 
-  "findByServiceKeyDefaultLanguage" should {
-    "find the correct service for English statement" in {
-      repo.findByServiceKeyDefaultLanguage("foo-service") should be(Some(fooStatement))
+  "existsByServiceKeyAndLanguage" should {
+    "return true if a statement exists for the given service and language" in {
+      repo.existsByServiceKeyAndLanguage("foo-service", Lang("en")) should be(true)
     }
 
-    "find a different service for English" in {
-      repo.findByServiceKeyDefaultLanguage("bar-service") should be(Some(barStatement))
+    "return true if a statement exists for the given service and different language" in {
+      repo.existsByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(true)
+    }
+
+    "return true if a statement exists for the given different service and language" in {
+      repo.existsByServiceKeyAndLanguage("bar-service", Lang("en")) should be(true)
+    }
+
+    "return false if a statement doesn't exist for the given service and language" in {
+      repo.existsByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(false)
     }
   }
 }

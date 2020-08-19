@@ -17,12 +17,11 @@
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.{prettyPrintDate, reportAccessibilityProblemLink}
-@import play.api.i18n.Lang
 
 @this()
 
 @(statement: AccessibilityStatement, referrerUrl: Option[String])(
-        implicit request: Request[_], messages: Messages, appConfig: AppConfig, messagesLang: Lang)
+        implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
 <h1 class="govuk-heading-xl">@{messages("introduction.heading", statement.serviceName)}</h1>
 <p class="govuk-body-l">@{messages("introduction.lede")}</p>

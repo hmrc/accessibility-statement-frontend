@@ -1,4 +1,4 @@
-@*
+/*
  * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,19 +12,16 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *@
+ */
 
-@import uk.gov.hmrc.accessibilitystatementfrontend.controllers.routes.LanguageSwitchController._
-@import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
-@import uk.gov.hmrc.hmrcfrontend.views.html.components.HmrcLanguageSelect
-@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.LanguageSelect
+package helpers
 
-@this(hmrcLanguageSelect: HmrcLanguageSelect)
+import uk.gov.hmrc.accessibilitystatementfrontend.config.ProductionSourceConfig
 
-@()(implicit messages: Messages, appConfig: AppConfig)
-@import appConfig._
-@hmrcLanguageSelect(LanguageSelect(
-  if (messages.lang.code == cy) Cy else En,
-  (En, switchToLanguage(en).url),
-  (Cy, switchToLanguage(cy).url)
-))
+import scala.io.Source
+
+case class IntegrationTestSourceConfig() extends ProductionSourceConfig {
+  override def statementsSource(): Source = Source.fromResource("integrationTestServices.yml")
+
+  override def statementSource(service: String): Source = Source.fromResource(s"integrationTestServices/$service.yml")
+}

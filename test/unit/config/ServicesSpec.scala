@@ -22,25 +22,27 @@ import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser, AccessibilityStatementsParser}
+
 import scala.util.Try
 
 class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
   private val statementsParser = new AccessibilityStatementsParser
   private val statementParser  = new AccessibilityStatementParser
-  private val appConfig        = app.injector.instanceOf[AppConfig]
-
-  private val services: Seq[String] =
-    statementsParser.parseFromSource(appConfig.statementsSource).valueOr(throw _).services
 
   "the services yaml file" should {
+    val appConfig = app.injector.instanceOf[AppConfig]
+
     "exist" in {
-      val sourceTry = Try(appConfig.statementsSource)
+      val sourceTry = Try(appConfig.statementsSource())
 
       sourceTry must be a 'success
     }
   }
 
   "the configuration files" should {
+    val appConfig             = app.injector.instanceOf[AppConfig]
+    val services: Seq[String] = statementsParser.parseFromSource(appConfig.statementsSource()).valueOr(throw _).services
+
     services.foreach { (service: String) =>
       s"include $service's accessibility statement yaml file" in {
         val sourceTry = Try(appConfig.statementSource(service))
@@ -51,6 +53,8 @@ class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
   }
 
   "the configuration files" should {
+    val appConfig             = app.injector.instanceOf[AppConfig]
+    val services: Seq[String] = statementsParser.parseFromSource(appConfig.statementsSource()).valueOr(throw _).services
     services.foreach { (service: String) =>
       s"include a correctly formatted accessibility statement yaml file for $service" in {
         val source = appConfig.statementSource(service)
@@ -61,4 +65,5 @@ class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
       }
     }
   }
+
 }

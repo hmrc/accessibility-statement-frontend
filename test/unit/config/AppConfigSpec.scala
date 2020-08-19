@@ -49,7 +49,7 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
     "retrieve the test only source" in {
       val appConfig: AppConfig =
         AppConfig(testConfiguration, sourceConfig, testOnlySourceConfig)
-      appConfig.statementsSource.mkString       must be("test-only-statements")
+      appConfig.statementsSource().mkString     must be("test-only-statements")
       appConfig.statementSource("foo").mkString must be("test-only-statement")
     }
   }

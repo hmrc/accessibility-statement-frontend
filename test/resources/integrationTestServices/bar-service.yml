@@ -1,0 +1,21 @@
+serviceSendsOutboundMessages: false
+statementCreatedDate: '2019-09-23'
+serviceLastTestedDate: '2019-12-09'
+statementLastUpdatedDate: '2019-04-01'
+accessibilitySupportPhone: 08081 570000
+milestones:
+  - description: Bar milestone 1
+    date: 2020-12-01
+  - description: Bar milestone 2
+    date: 2020-12-02
+serviceDomain: www.example.com
+serviceUrl: /bar
+serviceHeaderName: Bar
+serviceName: Bar
+contactFrontendServiceId: bar
+complianceStatus: partial
+serviceDescription: The bar service allows you to do bar
+accessibilityProblems:
+  - Bar problem 1
+  - Bar problem 2
+accessibilitySupportEmail: bar@example.com

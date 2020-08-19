@@ -28,12 +28,11 @@
         pageTitle: String,
         serviceUrl: String,
         serviceName: String,
-        headBlock: Option[Html] = None,
-        scriptsBlock: Option[Html] = None)(
+        isWelshTranslationAvailable: Boolean)(
         contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
 @beforeContentBlock = {
-    @languageSelect()
+    @if(isWelshTranslationAvailable) {@languageSelect()}
 }
 
 @headerBlock = {
@@ -46,9 +45,9 @@
 
 @govukLayout(
     pageTitle = Some(pageTitle),
-    headBlock = Some(head(headBlock)),
+    headBlock = Some(head()),
     headerBlock = Some(headerBlock),
-    scriptsBlock = scriptsBlock,
+    scriptsBlock = None,
     beforeContentBlock = Some(beforeContentBlock),
     footerItems = FooterLinks()
 )(contentBlock)

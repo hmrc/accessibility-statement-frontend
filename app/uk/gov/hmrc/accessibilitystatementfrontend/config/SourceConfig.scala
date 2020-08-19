@@ -25,15 +25,18 @@ trait SourceConfig {
   def statementSource(service: String): Source
 }
 
+trait ProductionSourceConfig extends SourceConfig
+trait TestOnlySourceConfig extends SourceConfig
+
 @Singleton
-case class ProductionSourceConfig @Inject()() extends SourceConfig {
+case class DefaultProductionSourceConfig @Inject()() extends ProductionSourceConfig {
   override def statementsSource(): Source = Source.fromResource("services.yml")
 
   override def statementSource(service: String): Source = Source.fromResource(s"services/$service.yml")
 }
 
 @Singleton
-case class TestOnlySourceConfig @Inject()() extends SourceConfig {
+case class DefaultTestOnlySourceConfig @Inject()() extends TestOnlySourceConfig {
   override def statementsSource(): Source = Source.fromResource("testOnlyServices.yml")
 
   override def statementSource(service: String): Source = Source.fromResource(s"testOnlyServices/$service.yml")

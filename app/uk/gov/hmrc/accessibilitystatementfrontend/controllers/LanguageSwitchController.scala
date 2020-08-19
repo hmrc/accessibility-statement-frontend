@@ -25,17 +25,19 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.play.language.{LanguageController, LanguageUtils}
 
 @Singleton
-case class LanguageSwitchController @Inject()(configuration: Configuration,
-                                              languageUtils: LanguageUtils,
-                                              cc: ControllerComponents,
-                                              appConfig: AppConfig
-                                             ) extends LanguageController(configuration, languageUtils, cc) {
+case class LanguageSwitchController @Inject()(
+  configuration: Configuration,
+  languageUtils: LanguageUtils,
+  cc: ControllerComponents,
+  appConfig: AppConfig)
+    extends LanguageController(configuration, languageUtils, cc) {
+  import appConfig._
 
   override def fallbackURL: String = "https://www.gov.uk/government/organisations/hm-revenue-customs"
 
   override protected def languageMap: Map[String, Lang] = {
-    val englishLanguageOnly = Map("en" -> Lang("en"))
-    if (appConfig.welshLanguageSupportEnabled) englishLanguageOnly ++ Map("cy" -> Lang("cy"))
+    val englishLanguageOnly = Map(en -> Lang(en))
+    if (appConfig.welshLanguageSupportEnabled) englishLanguageOnly ++ Map(cy -> Lang(cy))
     else englishLanguageOnly
   }
 }
