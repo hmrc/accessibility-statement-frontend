@@ -14,12 +14,12 @@
  * limitations under the License.
  *@
 
-@this(layout: Layout)
+@this(hmrcReportTechnicalIssue: HmrcReportTechnicalIssue)
 
-@()(implicit request: MessagesRequest[_], messages: Messages, appConfig: AppConfig)
+@()(implicit request: Request[_], messages: Messages)
 
-@layout(pageTitle = messages("notFound.pageTitle"), serviceUrl = "//gov.uk", serviceName = messages("general.serviceName")) {
- <h1 class="govuk-heading-xl">@{messages("notFound.heading")}</h1>
- <p class="govuk-body">@{messages("notFound.paragraph1")}</p>
- <p class="govuk-body">@{messages("notFound.paragraph2")}</p>
-}
+@hmrcReportTechnicalIssue(ReportTechnicalIssue(
+    serviceCode = "accessibility-statement",
+    language = Some(messages.lang.code),
+    classList = None
+))
