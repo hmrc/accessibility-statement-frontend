@@ -19,12 +19,13 @@ package helpers
 import java.util.{Calendar, GregorianCalendar}
 
 import org.mockito.scalatest.MockitoSugar
+import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
   private val repo = mock[AccessibilityStatementsSourceRepo]
-  when(repo.findByServiceKeyAndLanguage("test-service")) thenReturn Some(
+  when(repo.findByServiceKeyAndLanguage("test-service", Lang("en"))) thenReturn Some(
     AccessibilityStatement(
       serviceName                  = "test service name",
       serviceHeaderName            = "Test Service Name",
@@ -42,7 +43,8 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
       statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
     ))
-  when(repo.findByServiceKeyAndLanguage("unknown-service")) thenReturn None
+  when(repo.findByServiceKeyAndLanguage("unknown-service", Lang("en"))) thenReturn None
 
-  def findByServiceKeyAndLanguage(serviceKey: String): Option[AccessibilityStatement] = repo.findByServiceKeyAndLanguage(serviceKey)
+  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[AccessibilityStatement] =
+    repo.findByServiceKeyAndLanguage(serviceKey, language)
 }

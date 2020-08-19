@@ -21,6 +21,7 @@ import java.util.{Calendar, GregorianCalendar}
 import org.mockito.MockitoSugar
 import org.mockito.ArgumentMatchers._
 import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
+import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser, AccessibilityStatementsParser}
@@ -36,11 +37,15 @@ class AccessibilityStatementsRepoSpec
     with BeforeAndAfterEach {
   private val statementsParser = mock[AccessibilityStatementsParser]
   when(statementsParser.parseFromSource(any[Source])) thenReturn Right(
-    AccessibilityStatements(Seq("foo-service", "bar-service")))
+    AccessibilityStatements(Seq("foo-service", "bar-service", "foo-service.cy")))
+
   private val fooSource = Source.fromString("foo-source")
+  private val fooSourceWelsh = Source.fromString("foo-source.cy")
   private val barSource = Source.fromString("bar-source")
+
   private val appConfig = mock[AppConfig]
   when(appConfig.statementSource("foo-service")) thenReturn fooSource
+  when(appConfig.statementSource("foo-service.cy")) thenReturn fooSourceWelsh
   when(appConfig.statementSource("bar-service")) thenReturn barSource
 
   private val fooStatement = AccessibilityStatement(
@@ -61,20 +66,33 @@ class AccessibilityStatementsRepoSpec
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
+  private val fooStatementWelsh = fooStatement.copy(
+    serviceDescription = "Mae'r gwasanaeth hwn yn caniatáu ichi roi gwybod am fanylion eich cynllun tâl benthyciad cydnabyddiaeth gudd a rhoi cyfrif am eich atebolrwydd tâl benthyciad."
+  )
   private val barStatement    = fooStatement.copy(serviceName = "Bar Service")
+
   private val statementParser = mock[AccessibilityStatementParser]
   when(statementParser.parseFromSource(fooSource)) thenReturn Right(fooStatement)
+  when(statementParser.parseFromSource(fooSourceWelsh)) thenReturn Right(fooStatementWelsh)
   when(statementParser.parseFromSource(barSource)) thenReturn Right(barStatement)
 
   private val repo = AccessibilityStatementsSourceRepo(appConfig, statementsParser, statementParser)
 
-  "findByServiceKey" should {
-    "find the correct service" in {
-      repo.findByServiceKeyAndLanguage("foo-service") should be(Some(fooStatement))
+  "findByServiceKeyAndLanguage" should {
+    "find the correct service for English statement" in {
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("en")) should be(Some(fooStatement))
+    }
+
+    "find the correct service for Welsh statement if exists" in {
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(Some(fooStatementWelsh))
     }
 
     "find a different service" in {
-      repo.findByServiceKeyAndLanguage("bar-service") should be(Some(barStatement))
+      repo.findByServiceKeyAndLanguage("bar-service", Lang("en")) should be(Some(barStatement))
+    }
+
+    "fall back to English if no Welsh exists" in {
+      repo.findByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(Some(barStatement))
     }
   }
 }
