@@ -21,7 +21,6 @@ import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Configuration
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, TestOnlySourceConfig}
-import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 import scala.io.Source
 
@@ -42,10 +41,7 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
   "statementsSource" should {
     "retrieve the production source" in {
       val appConfig: AppConfig =
-        AppConfig(
-          productionConfiguration,
-          sourceConfig,
-          testOnlySourceConfig)
+        AppConfig(productionConfiguration, sourceConfig, testOnlySourceConfig)
       appConfig.statementsSource.mkString       must be("statements")
       appConfig.statementSource("foo").mkString must be("statement")
     }
