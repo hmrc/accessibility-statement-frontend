@@ -1,20 +1,21 @@
-serviceDomain: www.example.com
-serviceDescription: Voluptatem id pariatur nam id et. Qui eos harum corporis nihil
-  odio. Rerum dolorem ipsam fuga dolorem voluptatum. Reiciendis autem quia repellat
-  quaerat sunt. Dolores doloribus facere soluta vero dolores. Rerum qui nihil alias
-  quo et. Recusandae incidunt maiores iure atque laudantium. Omnis rem accusantium
-  tempore omnis ut. Vero nihil fugit sed aut consequatur. Dolorem corporis hic et
-  voluptas iure.
-serviceUrl: /test-service-722
-complianceStatus: full
+statementLastUpdatedDate: '2020-04-11'
 milestones: []
+accessibilitySupportPhone: 08081 570000
+serviceDomain: www.example.com
+serviceLastTestedDate: '2019-06-26'
+serviceDescription: Itaque et cum repellendus laborum dolorem. Voluptatem id non dolorum
+  est vel. Omnis doloremque assumenda iure earum cum. Magnam officia nihil ipsa ut
+  velit. Voluptatem illum provident voluptatum est impedit. Quasi expedita rerum quia
+  modi corrupti. Officiis est dolor natus doloremque aliquam. Qui voluptatem omnis
+  voluptatibus aliquam tempore. Laboriosam qui laboriosam dolores libero itaque. Officiis
+  tenetur pariatur beatae est ratione.
+complianceStatus: full
+serviceSendsOutboundMessages: false
+serviceName: Et nobis vitae recusandae possimus molestiae.
+statementVisibility: draft
+contactFrontendServiceId: test-service-722
+serviceHeaderName: Voluptate ex praesentium nihil ad consectetur.
 accessibilitySupportEmail: test-service-722@example.com
 accessibilityProblems: []
-serviceLastTestedDate: '2018-02-10'
-serviceHeaderName: Repellat aut praesentium hic quia aliquam.
-statementCreatedDate: '2020-06-08'
-statementLastUpdatedDate: '2019-12-22'
-serviceSendsOutboundMessages: false
-accessibilitySupportPhone: 08081 570000
-serviceName: Excepturi harum quaerat nam minima magni.
-contactFrontendServiceId: test-service-722
+serviceUrl: /test-service-722
+statementCreatedDate: '2019-02-02'

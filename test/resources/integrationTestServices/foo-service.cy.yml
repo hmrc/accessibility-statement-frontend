@@ -10,6 +10,7 @@ serviceHeaderName: Foo
 serviceName: Foo
 contactFrontendServiceId: foo
 complianceStatus: full
+statementVisibility: public
 serviceDescription: Mae'r gwasanaeth foo yn caniatáu ichi wneud foo
 accessibilityProblems: []
 accessibilitySupportEmail: foo@example.com

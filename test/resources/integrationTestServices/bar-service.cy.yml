@@ -14,6 +14,7 @@ serviceHeaderName: Bar
 serviceName: Bar
 contactFrontendServiceId: bar
 complianceStatus: partial
+statementVisibility: public
 serviceDescription: Mae'r gwasanaeth bar yn caniatáu ichi wneud bar
 accessibilityProblems:
   - Bar problem 1

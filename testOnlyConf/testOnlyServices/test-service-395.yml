@@ -1,20 +1,21 @@
-serviceName: Omnis perferendis ipsum vel dignissimos esse.
-accessibilitySupportPhone: 08081 570000
-serviceLastTestedDate: '2019-01-25'
-complianceStatus: full
-milestones: []
+statementVisibility: draft
+statementCreatedDate: '2018-07-01'
+serviceDescription: Et fuga aut non voluptatum et. Culpa recusandae illo eos sed nostrum.
+  Aut hic laudantium praesentium aut assumenda. Quidem aliquid natus consequatur vero
+  nesciunt. Fugiat reiciendis vero sit modi et. Explicabo repudiandae architecto quo
+  assumenda occaecati. Voluptatem delectus sed exercitationem magni voluptatem. Sunt
+  nam quod eius aliquid rerum. Libero vitae hic deleniti nihil nihil. Facilis qui
+  provident fugiat quia commodi.
 serviceUrl: /test-service-395
-statementCreatedDate: '2019-04-14'
-statementLastUpdatedDate: '2018-01-25'
-serviceHeaderName: Ipsa velit officiis veritatis recusandae saepe.
-serviceDescription: Aspernatur ut debitis quod blanditiis molestiae. Et repudiandae
-  nobis eligendi aliquid blanditiis. Sit sint delectus soluta sed sint. Aut repellendus
-  culpa velit dolorem aut. Quae est debitis vero voluptatibus saepe. Placeat nulla
-  qui minus quas error. Corrupti et molestiae iste amet et. Necessitatibus praesentium
-  numquam animi non similique. Quo qui accusamus dolor exercitationem ipsum. Quos
-  ut nisi rem voluptas consequatur.
-contactFrontendServiceId: test-service-395
-accessibilitySupportEmail: test-service-395@example.com
-accessibilityProblems: []
 serviceDomain: www.example.com
+accessibilitySupportEmail: test-service-395@example.com
+accessibilitySupportPhone: 08081 570000
+serviceName: Qui dignissimos vero exercitationem in non.
+contactFrontendServiceId: test-service-395
+serviceLastTestedDate: '2018-07-16'
+accessibilityProblems: []
+serviceHeaderName: Quia dolore voluptatibus adipisci suscipit rerum.
+milestones: []
+complianceStatus: full
 serviceSendsOutboundMessages: false
+statementLastUpdatedDate: '2018-04-21'

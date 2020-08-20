@@ -43,30 +43,26 @@ case class AccessibilityStatementsSourceRepo @Inject()(
 
   private val accessibilityStatements: Map[RepoKey, AccessibilityStatement] = {
     logger.info(s"Starting to parse accessibility statements")
-
-    val services: Seq[String] = statementsParser.parseFromSource(statementsSource()).valueOr(throw _).services
+    val services: Seq[String] = getServices
 
     logger.info(s"Found ${services.size} accessibility statements")
 
-    val statements: Seq[RepoEntry] = services map { serviceFileName =>
+    val statements: Seq[RepoEntry] = services flatMap { serviceFileName =>
       logger.info(s"Parsing accessibility statement $serviceFileName")
 
-      val welshLanguageSuffix = s".$cy"
-      val (serviceName: String, languageCode: String) = {
-        if (serviceFileName.endsWith(welshLanguageSuffix)) {
-          (serviceFileName.dropRight(welshLanguageSuffix.length), cy)
-        } else {
-          (serviceFileName, en)
-        }
-      }
+      val (serviceName, languageCode) = serviceFileNameToNameAndLanguage(serviceFileName)
+      val statement                   = getStatement(serviceFileName)
 
-      (serviceName, languageCode) -> statementParser
-        .parseFromSource(statementSource(serviceFileName))
-        .valueOr(throw _)
+      if (isStatementVisible(statement)) {
+        Seq((serviceName, languageCode) -> statement)
+      } else {
+        logger.info(s"Skipping accessibility statement $serviceFileName as marked as draft")
+
+        Seq.empty
+      }
     }
 
     logger.info(s"Accessibility statements parsed, total number of parsed statements is: ${statements.size}")
-
     statements.toMap
   }
 
@@ -75,4 +71,24 @@ case class AccessibilityStatementsSourceRepo @Inject()(
 
   def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)] =
     accessibilityStatements.get((serviceKey, language.code)).map((_, language))
+
+  private def serviceFileNameToNameAndLanguage(serviceFileName: String): (String, String) = {
+    val welshLanguageSuffix = s".$cy"
+
+    if (serviceFileName.endsWith(welshLanguageSuffix)) {
+      (serviceFileName.dropRight(welshLanguageSuffix.length), cy)
+    } else {
+      (serviceFileName, en)
+    }
+  }
+
+  private def getServices: Seq[String] = statementsParser.parseFromSource(statementsSource()).valueOr(throw _).services
+
+  private def getStatement(serviceFileName: String) =
+    statementParser
+      .parseFromSource(statementSource(serviceFileName))
+      .valueOr(throw _)
+
+  private def isStatementVisible(statement: AccessibilityStatement) =
+    showDraftStatementsEnabled || statement.statementVisibility == Public
 }

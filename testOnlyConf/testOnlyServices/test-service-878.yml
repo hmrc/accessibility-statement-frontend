@@ -1,20 +1,21 @@
-serviceDescription: Porro voluptatum provident vero sunt eligendi. Reprehenderit iste
-  iure officia et doloribus. Autem enim ipsa non sint earum. Quia voluptate enim eos
-  possimus ducimus. Facilis occaecati ut accusantium nam asperiores. Tenetur quae
-  quibusdam dolores nesciunt fugiat. Rem quisquam consequatur id eos voluptate. Eos
-  vel fugiat perspiciatis qui sed. Corrupti autem sit amet dolorem minima. Qui ipsam
-  dolores sint rerum ut.
-serviceUrl: /test-service-878
-accessibilitySupportPhone: 08081 570000
-statementCreatedDate: '2019-04-28'
+serviceHeaderName: Totam et facilis repudiandae est numquam.
 accessibilityProblems: []
-serviceDomain: www.example.com
 accessibilitySupportEmail: test-service-878@example.com
+serviceName: Iure qui molestiae sit quibusdam illo.
+statementLastUpdatedDate: '2020-01-11'
+serviceDomain: www.example.com
+serviceDescription: Et nostrum labore ut exercitationem quibusdam. Accusantium quo
+  unde eum consequatur quia. Asperiores consequuntur et cum omnis aspernatur. Sit
+  rem dolorum mollitia eligendi et. Est quia ea repellendus cum aut. Ullam aspernatur
+  architecto quo rerum voluptatem. Quod mollitia commodi nam eaque officia. Dolores
+  aut nemo quia veritatis asperiores. Ea non ipsa rerum deserunt eum. Quidem ipsam
+  eius asperiores dolor aut.
+serviceUrl: /test-service-878
+statementVisibility: draft
 contactFrontendServiceId: test-service-878
+statementCreatedDate: '2019-10-07'
+serviceLastTestedDate: '2020-01-07'
 complianceStatus: full
-serviceHeaderName: Occaecati assumenda dolores quasi placeat numquam.
-serviceName: Illum eum laudantium vitae optio vitae.
-statementLastUpdatedDate: '2018-12-03'
-serviceLastTestedDate: '2020-07-03'
-milestones: []
 serviceSendsOutboundMessages: false
+milestones: []
+accessibilitySupportPhone: 08081 570000

@@ -26,7 +26,7 @@ import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, SourceConfig, TestOnlySourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 
 class StatementPageSpec extends WordSpec with Matchers {
@@ -253,6 +253,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       accessibilitySupportEmail    = None,
       accessibilitySupportPhone    = None,
       serviceSendsOutboundMessages = false,
+      statementVisibility          = Draft,
       serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
       statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
@@ -278,6 +279,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       accessibilitySupportEmail    = None,
       accessibilitySupportPhone    = None,
       serviceSendsOutboundMessages = false,
+      statementVisibility          = Draft,
       serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
       statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime

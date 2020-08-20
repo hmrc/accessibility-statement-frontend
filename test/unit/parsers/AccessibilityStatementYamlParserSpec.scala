@@ -19,7 +19,7 @@ package unit.parsers
 import java.util.{Calendar, GregorianCalendar}
 
 import org.scalatest.{EitherValues, Matchers, WordSpec}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with EitherValues {
@@ -39,6 +39,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     accessibilitySupportEmail    = None,
     accessibilitySupportPhone    = None,
     serviceSendsOutboundMessages = false,
+    statementVisibility          = Draft,
     serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
@@ -58,12 +59,33 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |milestones: []
           |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
-          |statementVisibility: public
+          |statementVisibility: draft
           |statementCreatedDate: 2019-09-23
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(fullyAccessibleStatement)
+    }
+
+    "parse a fully accessible public statement" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceHeaderName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |accessibilityProblems: []
+          |milestones: []
+          |serviceSendsOutboundMessages: false
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: public
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(fullyAccessibleStatement.copy(statementVisibility = Public))
     }
 
     "parse a partially accessible statement" in {
@@ -91,7 +113,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |    date: 2020-03-31
           |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-09-25
-          |statementVisibility: public
+          |statementVisibility: draft
           |statementCreatedDate: 2019-10-09
           |statementLastUpdatedDate: 2019-10-09
           |""".stripMargin('|')
@@ -124,6 +146,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           accessibilitySupportEmail    = None,
           accessibilitySupportPhone    = None,
           serviceSendsOutboundMessages = false,
+          statementVisibility          = Draft,
           serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
           statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime

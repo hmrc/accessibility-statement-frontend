@@ -1,20 +1,21 @@
-serviceDomain: www.example.com
-statementLastUpdatedDate: '2019-08-03'
-serviceDescription: Asperiores provident saepe optio eligendi quis. Aut commodi repellat
-  dolores ut occaecati. Id ad est omnis beatae voluptatem. Dolorem blanditiis sit
-  culpa eos sunt. Rerum ipsam pariatur quia eum quia. Dolorem voluptas et nesciunt
-  autem alias. Aliquid voluptas accusantium eos occaecati velit. Exercitationem dignissimos
-  soluta distinctio et sequi. Dolor voluptas et unde dolorum ipsa. Aliquid exercitationem
-  ducimus reprehenderit voluptatem nesciunt.
-statementCreatedDate: '2018-05-14'
-contactFrontendServiceId: test-service-237
-serviceName: Rerum unde nobis inventore aut assumenda.
-complianceStatus: full
-serviceLastTestedDate: '2018-10-16'
 accessibilitySupportEmail: test-service-237@example.com
+serviceDomain: www.example.com
+serviceLastTestedDate: '2019-03-19'
+serviceDescription: Autem iste labore est occaecati dolorem. Illum aut ab ad eum occaecati.
+  Culpa quidem quibusdam voluptatum aut eos. Ut repellat impedit blanditiis consequatur
+  est. Voluptatibus porro quas rem exercitationem quo. Sit labore debitis et maiores
+  in. Ullam impedit et fugit necessitatibus unde. Quis error dolore dolorem neque
+  quia. Dolorum assumenda aliquam enim consequatur illum. Sit facere quidem non facere
+  consequatur.
 accessibilitySupportPhone: 08081 570000
-serviceHeaderName: Possimus dolorum modi sed minima sit.
+statementLastUpdatedDate: '2019-08-25'
+serviceName: Eum et est maiores provident distinctio.
+statementCreatedDate: '2018-04-30'
+contactFrontendServiceId: test-service-237
+serviceSendsOutboundMessages: false
+serviceHeaderName: Consectetur numquam delectus vero autem cum.
+serviceUrl: /test-service-237
+complianceStatus: full
+statementVisibility: draft
 milestones: []
 accessibilityProblems: []
-serviceSendsOutboundMessages: false
-serviceUrl: /test-service-237

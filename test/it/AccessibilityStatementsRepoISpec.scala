@@ -25,7 +25,7 @@ import play.api.i18n.Lang
 import play.api.inject.bind
 import play.api.inject.guice.GuiceApplicationBuilder
 import uk.gov.hmrc.accessibilitystatementfrontend.config.ProductionSourceConfig
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
 class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with EitherValues with BeforeAndAfterEach {
@@ -55,6 +55,7 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     accessibilitySupportEmail    = Some("foo@example.com"),
     accessibilitySupportPhone    = Some("08081 570000"),
     serviceSendsOutboundMessages = false,
+    statementVisibility          = Public,
     serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
@@ -81,6 +82,7 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     accessibilitySupportEmail    = Some("bar@example.com"),
     accessibilitySupportPhone    = Some("08081 570000"),
     serviceSendsOutboundMessages = false,
+    statementVisibility          = Public,
     serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime

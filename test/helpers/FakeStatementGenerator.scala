@@ -22,7 +22,7 @@ import io.circe.syntax._
 import io.circe.yaml.syntax._
 import io.alphash.faker._
 import org.joda.time.DateTime
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, FullCompliance, Milestone, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Milestone, PartialCompliance}
 import java.io.PrintWriter
 
 object FakeStatementGenerator extends App {
@@ -70,6 +70,7 @@ object FakeStatementGenerator extends App {
       accessibilitySupportEmail    = Some(s"$serviceKey@example.com"),
       accessibilitySupportPhone    = Some("08081 570000"), // This number is guaranteed to not relate to a real individual: https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama
       serviceSendsOutboundMessages = false,
+      statementVisibility          = Draft,
       serviceLastTestedDate        = generateDate,
       statementCreatedDate         = generateDate,
       statementLastUpdatedDate     = generateDate
