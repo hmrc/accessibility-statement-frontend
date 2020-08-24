@@ -39,6 +39,9 @@ case class AppConfig @Inject()(
   private val testDataEnabled: Boolean =
     config.getOptional[Boolean]("features.use-test-data").getOrElse(false)
 
+  val showDraftStatementsEnabled: Boolean =
+    config.getOptional[Boolean]("features.show-draft-statements").getOrElse(false)
+
   def statementsSource(): Source =
     if (testDataEnabled) testOnlySourceConfig.statementsSource() else productionSourceConfig.statementsSource()
 

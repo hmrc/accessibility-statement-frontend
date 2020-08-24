@@ -10,6 +10,7 @@ serviceHeaderName: Foo
 serviceName: Foo
 contactFrontendServiceId: foo
 complianceStatus: full
+statementVisibility: public
 serviceDescription: The foo service allows you to do foo
 accessibilityProblems: []
 accessibilitySupportEmail: foo@example.com

@@ -33,6 +33,7 @@ case class AccessibilityStatement(
   accessibilitySupportEmail: Option[String],
   accessibilitySupportPhone: Option[String],
   serviceSendsOutboundMessages: Boolean,
+  statementVisibility: Visibility,
   serviceLastTestedDate: Date,
   statementCreatedDate: Date,
   statementLastUpdatedDate: Date) {

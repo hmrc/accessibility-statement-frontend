@@ -1,19 +1,20 @@
-serviceDomain: www.example.com
-serviceDescription: Corrupti voluptatem eos veniam id nulla. Aliquam et ut qui unde
-  alias. Est est mollitia vel ab eum. Non reprehenderit doloremque iure at doloribus.
-  Optio molestiae consectetur corrupti minus omnis. Accusantium enim quo voluptas
-  accusamus et. Saepe voluptatem ex quia voluptas debitis. Ad quia quae recusandae
-  ullam sit. Ut sit aut id nam nisi. Quia ut error quas qui voluptatem.
-serviceName: Doloremque id sit vel et ullam.
-complianceStatus: full
-serviceLastTestedDate: '2020-02-07'
-serviceSendsOutboundMessages: false
-statementLastUpdatedDate: '2019-09-16'
-contactFrontendServiceId: test-service-602
-accessibilitySupportPhone: 08081 570000
-statementCreatedDate: '2020-03-29'
-accessibilityProblems: []
 milestones: []
-serviceHeaderName: Aut magnam rerum sapiente odit dolores.
+contactFrontendServiceId: test-service-602
+statementVisibility: draft
+accessibilityProblems: []
+serviceDomain: www.example.com
+accessibilitySupportPhone: 08081 570000
 accessibilitySupportEmail: test-service-602@example.com
+complianceStatus: full
+statementCreatedDate: '2018-09-26'
+serviceName: Excepturi fugit ut quo tempora sed.
+serviceLastTestedDate: '2019-09-09'
+statementLastUpdatedDate: '2018-03-06'
+serviceDescription: Ullam rerum magnam est voluptates magnam. Ea quis nihil odit totam
+  iusto. Voluptas ut sit repellat laboriosam a. Minus sed tempora totam minima perferendis.
+  Delectus dolor sequi sapiente excepturi deleniti. Repellat quia ea culpa et corporis.
+  Qui perspiciatis velit qui aut facere. Non quisquam dolorum sapiente consequatur
+  eum. Neque rem laboriosam fugiat nihil amet. Aut expedita accusantium quod et aspernatur.
 serviceUrl: /test-service-602
+serviceHeaderName: Distinctio voluptatem omnis id illo voluptatum.
+serviceSendsOutboundMessages: false

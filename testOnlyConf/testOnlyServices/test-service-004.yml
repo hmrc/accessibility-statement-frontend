@@ -1,19 +1,20 @@
-serviceDomain: www.example.com
-complianceStatus: full
-serviceUrl: /test-service-004
-serviceHeaderName: Quo corporis sit optio qui adipisci.
-serviceDescription: Id odit dolorem ut nihil beatae. Aut inventore dolorem fuga aliquid
-  eum. Nobis perferendis incidunt facere commodi dolore. Maiores accusantium sunt
-  in sit corporis. Ut et rerum rerum ut qui. Et aliquam numquam est ut natus. Quis
-  voluptas repudiandae et voluptatibus ex. Doloremque et natus eos aliquid laudantium.
-  Cum enim temporibus minus autem minus. Illo veritatis qui nihil qui alias.
-accessibilitySupportEmail: test-service-004@example.com
-statementLastUpdatedDate: '2020-01-07'
-accessibilityProblems: []
-contactFrontendServiceId: test-service-004
-milestones: []
 serviceSendsOutboundMessages: false
+serviceHeaderName: Quasi enim nostrum maiores natus reiciendis.
+serviceName: Laboriosam ipsa sed illum deserunt totam.
+serviceDescription: Id quas cum aspernatur et quos. Et impedit libero aliquid harum
+  consequatur. Aut sunt occaecati ut quo tempora. Est at error deleniti cumque velit.
+  Ut voluptatem vel ab minus fugiat. Velit est a aut qui nobis. Dolore nobis magni
+  voluptatem eligendi molestiae. Mollitia nesciunt aut harum atque aut. Tenetur eos
+  rem suscipit quae id. Qui esse sequi possimus accusantium in.
+complianceStatus: full
+statementCreatedDate: '2019-07-18'
+serviceUrl: /test-service-004
+contactFrontendServiceId: test-service-004
+statementVisibility: draft
+accessibilitySupportEmail: test-service-004@example.com
+accessibilityProblems: []
+serviceLastTestedDate: '2018-06-29'
+serviceDomain: www.example.com
 accessibilitySupportPhone: 08081 570000
-statementCreatedDate: '2020-05-21'
-serviceLastTestedDate: '2018-08-17'
-serviceName: Reprehenderit velit laboriosam est autem repellendus.
+statementLastUpdatedDate: '2018-01-22'
+milestones: []

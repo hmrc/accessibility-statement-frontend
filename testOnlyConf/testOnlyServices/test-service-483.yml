@@ -1,19 +1,21 @@
-serviceLastTestedDate: '2019-02-19'
 contactFrontendServiceId: test-service-483
-accessibilityProblems: []
-statementLastUpdatedDate: '2019-09-07'
-serviceName: Et autem et quaerat eveniet fuga.
-statementCreatedDate: '2018-05-05'
-accessibilitySupportPhone: 08081 570000
-complianceStatus: full
-serviceDescription: Vel nihil natus provident est totam. Facilis fugiat vero sunt
-  tenetur sed. Sed enim vel accusantium velit ut. Aut ut eos incidunt aut nobis. Sed
-  fugit sapiente dolorum unde id. Sapiente ut qui qui rem suscipit. Nisi quibusdam
-  sed sint sapiente quis. Nisi in rem nesciunt et voluptate. Dolores totam alias deleniti
-  consequatur consectetur. Non cupiditate facilis sequi velit molestias.
-serviceSendsOutboundMessages: false
-accessibilitySupportEmail: test-service-483@example.com
-serviceHeaderName: Aspernatur velit hic doloremque laudantium qui.
-serviceDomain: www.example.com
-milestones: []
 serviceUrl: /test-service-483
+accessibilitySupportPhone: 08081 570000
+statementVisibility: draft
+milestones: []
+statementCreatedDate: '2018-08-19'
+statementLastUpdatedDate: '2019-05-02'
+serviceHeaderName: Porro aut modi ut error quisquam.
+serviceDomain: www.example.com
+serviceLastTestedDate: '2019-05-05'
+accessibilityProblems: []
+complianceStatus: full
+serviceDescription: Et maiores cumque magnam eum quo. Aut impedit inventore sunt possimus
+  officiis. Voluptas qui fuga error porro modi. Et consequatur quibusdam aperiam ut
+  optio. Et in voluptas in sint necessitatibus. Sit adipisci culpa repellendus porro
+  et. Culpa qui dolorem alias praesentium inventore. Vel sed voluptatem nesciunt deleniti
+  temporibus. Perspiciatis blanditiis dolores unde est repudiandae. Delectus commodi
+  quo iure cum distinctio.
+serviceSendsOutboundMessages: false
+serviceName: Ipsam dolorum reprehenderit fuga vitae nihil.
+accessibilitySupportEmail: test-service-483@example.com

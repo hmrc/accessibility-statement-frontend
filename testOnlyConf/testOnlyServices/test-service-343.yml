@@ -1,20 +1,20 @@
-contactFrontendServiceId: test-service-343
-statementLastUpdatedDate: '2020-06-15'
-serviceDomain: www.example.com
 accessibilitySupportEmail: test-service-343@example.com
-serviceHeaderName: Exercitationem consequatur amet dolores ea assumenda.
-serviceDescription: Optio possimus reiciendis dicta accusantium non. Odio velit quis
-  suscipit molestiae porro. Ea et dolorum quae aperiam itaque. Qui unde facere maxime
-  tempora eligendi. Ratione reprehenderit ratione voluptatem qui possimus. Sunt totam
-  repellendus distinctio voluptatibus in. Qui est facere in est dolor. Facilis praesentium
-  ex similique rerum accusantium. Enim et aspernatur dolores sed aut. Qui quibusdam
-  aperiam neque necessitatibus minima.
-serviceName: Quibusdam nulla autem qui minima fugit.
-serviceUrl: /test-service-343
-serviceSendsOutboundMessages: false
-statementCreatedDate: '2018-07-22'
-milestones: []
+contactFrontendServiceId: test-service-343
+statementVisibility: draft
+statementLastUpdatedDate: '2020-03-09'
 complianceStatus: full
+serviceDomain: www.example.com
 accessibilitySupportPhone: 08081 570000
+serviceLastTestedDate: '2019-03-29'
+milestones: []
+statementCreatedDate: '2020-03-06'
+serviceSendsOutboundMessages: false
+serviceHeaderName: Dolorem magnam voluptatem non temporibus vitae.
+serviceName: Similique ipsam est libero voluptatum beatae.
+serviceDescription: Et ab ratione amet id est. Quia eos est cupiditate repellat doloribus.
+  Esse corrupti magni soluta minima non. Vel ullam vitae et non eligendi. Natus ea
+  sit nihil laborum accusantium. Consequatur molestias officia possimus doloremque
+  et. Et quasi enim et vitae ut. Ratione minima voluptate aut laborum sunt. Hic ea
+  officiis ut ipsam impedit. A sint atque mollitia placeat accusamus.
+serviceUrl: /test-service-343
 accessibilityProblems: []
-serviceLastTestedDate: '2018-09-25'

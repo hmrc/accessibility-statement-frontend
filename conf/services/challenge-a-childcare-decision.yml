@@ -31,6 +31,6 @@ milestones:
     date: 2020-06-30
 serviceSendsOutboundMessages: false
 serviceLastTestedDate: 2019-06-06
-statementVisibility: public
+statementVisibility: draft
 statementCreatedDate: 2019-09-23
 statementLastUpdatedDate: 2020-03-26

@@ -20,7 +20,7 @@ import java.util.{Calendar, GregorianCalendar}
 
 import org.mockito.scalatest.MockitoSugar
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
@@ -40,6 +40,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     accessibilitySupportEmail    = None,
     accessibilitySupportPhone    = None,
     serviceSendsOutboundMessages = false,
+    statementVisibility          = Draft,
     serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
     statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
