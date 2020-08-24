@@ -37,25 +37,12 @@ statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 ```
 
-Save the YAML file to e.g. `conf/services/discounted-icecreams.yml` The name of the file without the yml extension 
-has to match the value of the serviceKey.
+Save the YAML file to `conf/services/name-of-service.yml` where name-of-service is replaced with the relative url of the
+ accessibility statement e.g. `conf/services/discounted-icecreams.yml` will result in the accessibility statement being  
+ visible at https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams
 
 We support a JSON-compatible subset of YAML. Multi-line strings are allowed but no markup is allowed within
  textual descriptions.
-
-Open up `conf/services.yml` and add the key to your service at the end:
-
-```yaml
-services:
-  - challenge-a-childcare-decision
-  - coronavirus-job-retention-scheme
-  - direct-debit
-  - online-payments
-  - disguised-remuneration
-  - pay-what-you-owe-in-instalments
-  - discounted-icecreams              # A unique name for the statement used for routing e.g. https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams
-                                      # It's crucial this key matches the name of your service's statement YAML file
-``` 
 
 Before opening a PR, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run all the tests locally as described below.
