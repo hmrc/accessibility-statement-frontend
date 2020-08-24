@@ -18,6 +18,7 @@ package unit.views
 
 import java.util.{Calendar, GregorianCalendar}
 
+import org.jsoup.Jsoup
 import org.scalatest.{Matchers, WordSpec}
 import play.api.Configuration
 import play.api.i18n.{Messages, MessagesApi}
@@ -33,7 +34,7 @@ class StatementPageSpec extends WordSpec with Matchers {
   "Given any Accessibility Statement for a service, rendering a Statement Page" should {
     "return HTML containing the header containing the service name" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name service</h1>""")
@@ -41,7 +42,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     "return HTML containing the expected introduction with link to the service" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<a class="govuk-link" href="https://www.tax.service.gov.uk/fully-accessible">https://www.tax.service.gov.uk/fully-accessible</a>.""")
@@ -49,7 +50,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     "return HTML containing the expected using service information with service description" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include("""<p class="govuk-body">Fully accessible description.</p>""")
     }
@@ -59,7 +60,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         .copy(accessibilitySupportPhone = Some("0111-222-33333"))
 
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(statementWithPhoneNumber, None)
+      val statementPageHtml = statementPage(statementWithPhoneNumber, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
@@ -74,7 +75,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         .copy(accessibilitySupportEmail = Some("accessible-support@spec.com"))
 
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(statementWithEmailAddress, None)
+      val statementPageHtml = statementPage(statementWithEmailAddress, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
@@ -85,7 +86,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     "return HTML containing the default contact information if no phone or email configured" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
@@ -95,7 +96,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     "return HTML containing report a problem information with a contact link" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas" target="_blank">accessibility problem (opens in a new window or tab)</a>.""")
@@ -105,7 +106,8 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
-        referrerUrl = Some("came-from-here")
+        referrerUrl                 = Some("came-from-here"),
+        isWelshTranslationAvailable = false
       )
 
       contentAsString(statementPageHtml) should include(
@@ -114,7 +116,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     "return HTML containing the correctly formatted dates of when the service was tested" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>""")
@@ -126,7 +128,7 @@ class StatementPageSpec extends WordSpec with Matchers {
   "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is fully compliant" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">This service is fully compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
@@ -136,7 +138,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     "should not return information on non compliance" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None)
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should not include ("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
       contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
@@ -146,16 +148,18 @@ class StatementPageSpec extends WordSpec with Matchers {
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is partially compliant" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml =
+        statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a></p>""")
     }
 
     "return HTML containing a list of the known accessibility issues" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml =
+        statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">Some people may find parts of this service difficult to use:</p>""")
@@ -164,8 +168,9 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML stating that the service has known compliance issues" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml =
+        statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>, due to the non-compliances listed below."""
@@ -173,8 +178,9 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing a list of non-accessible content, and when it will be fixed" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(partiallyAccessibleServiceStatement, None)
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml =
+        statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
       contentAsString(statementPageHtml) should include(
@@ -195,6 +201,28 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<p class="govuk-body">Then we&#x27;ll get to this third milestone</p>""")
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">We plan to fix this compliance issue by 02 September 2022</p>""")
+    }
+
+    "return HTML containing a language toggle" in new Setup {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml =
+        statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = true)
+
+      val content = Jsoup.parse(contentAsString(statementPageHtml))
+
+      val languageSelect = content.select(".hmrc-language-select")
+      languageSelect.size shouldBe 1
+    }
+
+    "not return HTML containing a language toggle if only English is available" in new Setup {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml =
+        statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
+
+      val content = Jsoup.parse(contentAsString(statementPageHtml))
+
+      val languageSelect = content.select(".hmrc-language-select")
+      languageSelect.size shouldBe 0
     }
   }
 

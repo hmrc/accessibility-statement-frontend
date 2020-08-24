@@ -1,4 +1,4 @@
-@*
+/*
  * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,19 +12,23 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *@
+ */
 
-@import uk.gov.hmrc.accessibilitystatementfrontend.controllers.routes.LanguageSwitchController._
-@import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
-@import uk.gov.hmrc.hmrcfrontend.views.html.components.HmrcLanguageSelect
-@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.LanguageSelect
+package it
 
-@this(hmrcLanguageSelect: HmrcLanguageSelect)
+import org.scalatest.TryValues
+import org.scalatestplus.play.PlaySpec
+import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 
-@()(implicit messages: Messages, appConfig: AppConfig)
-@import appConfig._
-@hmrcLanguageSelect(LanguageSelect(
-  if (messages.lang.code == cy) Cy else En,
-  (En, switchToLanguage(en).url),
-  (Cy, switchToLanguage(cy).url)
-))
+import scala.util.Try
+
+class RepositoryISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
+  "the repository" should {
+    "instantiate without error" in {
+      val repository = Try(app.injector.instanceOf[AccessibilityStatementsRepo])
+
+      repository must be a 'success
+    }
+  }
+}

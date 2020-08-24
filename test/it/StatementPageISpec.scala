@@ -16,7 +16,6 @@
 
 package it
 
-import org.scalatest.{Matchers, WordSpecLike}
 import helpers.TestAccessibilityStatementRepo
 import org.scalatest.{Matchers, WordSpecLike}
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
@@ -47,7 +46,7 @@ class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerS
 
       status(result)          shouldBe OK
       contentType(result)     shouldBe Some("text/html")
-      contentAsString(result) should include("Accessibility statement for test service name")
+      contentAsString(result) should include("Accessibility statement for Test (English) service")
     }
   }
 }

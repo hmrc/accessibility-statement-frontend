@@ -1,0 +1,15 @@
+serviceSendsOutboundMessages: false
+statementCreatedDate: '2019-09-23'
+serviceLastTestedDate: '2019-12-09'
+statementLastUpdatedDate: '2019-04-01'
+accessibilitySupportPhone: 08081 570000
+milestones: []
+serviceDomain: www.example.com
+serviceUrl: /foo
+serviceHeaderName: Foo
+serviceName: Foo
+contactFrontendServiceId: foo
+complianceStatus: full
+serviceDescription: The foo service allows you to do foo
+accessibilityProblems: []
+accessibilitySupportEmail: foo@example.com

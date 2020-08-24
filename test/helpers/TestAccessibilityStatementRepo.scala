@@ -19,30 +19,44 @@ package helpers
 import java.util.{Calendar, GregorianCalendar}
 
 import org.mockito.scalatest.MockitoSugar
+import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
+  private val en   = Lang("en")
+  private val cy   = Lang("cy")
   private val repo = mock[AccessibilityStatementsSourceRepo]
-  when(repo.findByServiceKey("test-service")) thenReturn Some(
-    AccessibilityStatement(
-      serviceName                  = "test service name",
-      serviceHeaderName            = "Test Service Name",
-      serviceDescription           = "Test description.",
-      serviceDomain                = "www.tax.service.gov.uk/test/",
-      serviceUrl                   = "some.test.service",
-      contactFrontendServiceId     = s"some.contact-frontend",
-      complianceStatus             = FullCompliance,
-      accessibilityProblems        = Seq(),
-      milestones                   = Seq(),
-      accessibilitySupportEmail    = None,
-      accessibilitySupportPhone    = None,
-      serviceSendsOutboundMessages = false,
-      serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
-      statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
-      statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
-    ))
-  when(repo.findByServiceKey("unknown-service")) thenReturn None
+  private val englishStatement = AccessibilityStatement(
+    serviceName                  = "Test (English)",
+    serviceHeaderName            = "Test Service Name",
+    serviceDescription           = "Test description.",
+    serviceDomain                = "www.tax.service.gov.uk/test/",
+    serviceUrl                   = "some.test.service",
+    contactFrontendServiceId     = s"some.contact-frontend",
+    complianceStatus             = FullCompliance,
+    accessibilityProblems        = Seq(),
+    milestones                   = Seq(),
+    accessibilitySupportEmail    = None,
+    accessibilitySupportPhone    = None,
+    serviceSendsOutboundMessages = false,
+    serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
+    statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
+    statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+  )
+  private val welshStatement       = englishStatement.copy(serviceName = "Test (Welsh)")
+  private val englishOnlyStatement = englishStatement.copy(serviceName = "English Only")
 
-  def findByServiceKey(serviceKey: String): Option[AccessibilityStatement] = repo.findByServiceKey(serviceKey)
+  when(repo.findByServiceKeyAndLanguage("test-service", en)) thenReturn Some((englishStatement, en))
+  when(repo.findByServiceKeyAndLanguage("test-service", cy)) thenReturn Some((welshStatement, cy))
+  when(repo.findByServiceKeyAndLanguage("unknown-service", cy)) thenReturn None
+  when(repo.findByServiceKeyAndLanguage("unknown-service", en)) thenReturn None
+  when(repo.findByServiceKeyAndLanguage("english-service", en)) thenReturn Some((englishOnlyStatement, en))
+  when(repo.findByServiceKeyAndLanguage("english-service", cy)) thenReturn None
+
+  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)] =
+    repo.findByServiceKeyAndLanguage(serviceKey, language)
+
+  def existsByServiceKeyAndLanguage(serviceKey: String, language: Lang): Boolean =
+    findByServiceKeyAndLanguage(serviceKey, language).isDefined
 }

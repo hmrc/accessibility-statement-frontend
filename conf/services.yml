@@ -4,4 +4,5 @@ services:
   - direct-debit
   - online-payments
   - disguised-remuneration
+  - disguised-remuneration.cy
   - pay-what-you-owe-in-instalments

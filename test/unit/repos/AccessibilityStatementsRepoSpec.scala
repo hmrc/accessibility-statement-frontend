@@ -21,6 +21,7 @@ import java.util.{Calendar, GregorianCalendar}
 import org.mockito.MockitoSugar
 import org.mockito.ArgumentMatchers._
 import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
+import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, FullCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser, AccessibilityStatementsParser}
@@ -36,11 +37,19 @@ class AccessibilityStatementsRepoSpec
     with BeforeAndAfterEach {
   private val statementsParser = mock[AccessibilityStatementsParser]
   when(statementsParser.parseFromSource(any[Source])) thenReturn Right(
-    AccessibilityStatements(Seq("foo-service", "bar-service")))
-  private val fooSource = Source.fromString("foo-source")
-  private val barSource = Source.fromString("bar-source")
+    AccessibilityStatements(Seq("foo-service", "bar-service", "foo-service.cy")))
+
+  private val fooSource      = Source.fromString("foo-source")
+  private val fooSourceWelsh = Source.fromString("foo-source.cy")
+  private val barSource      = Source.fromString("bar-source")
+
   private val appConfig = mock[AppConfig]
+  when(appConfig.en) thenReturn "en"
+  when(appConfig.cy) thenReturn "cy"
+  when(appConfig.defaultLanguage) thenReturn Lang("en")
+
   when(appConfig.statementSource("foo-service")) thenReturn fooSource
+  when(appConfig.statementSource("foo-service.cy")) thenReturn fooSourceWelsh
   when(appConfig.statementSource("bar-service")) thenReturn barSource
 
   private val fooStatement = AccessibilityStatement(
@@ -61,20 +70,48 @@ class AccessibilityStatementsRepoSpec
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
-  private val barStatement    = fooStatement.copy(serviceName = "Bar Service")
+  private val fooStatementWelsh = fooStatement.copy(
+    serviceDescription =
+      "Mae'r gwasanaeth hwn yn caniatáu ichi roi gwybod am fanylion eich cynllun tâl benthyciad cydnabyddiaeth gudd a rhoi cyfrif am eich atebolrwydd tâl benthyciad."
+  )
+  private val barStatement = fooStatement.copy(serviceName = "Bar Service")
+
   private val statementParser = mock[AccessibilityStatementParser]
   when(statementParser.parseFromSource(fooSource)) thenReturn Right(fooStatement)
+  when(statementParser.parseFromSource(fooSourceWelsh)) thenReturn Right(fooStatementWelsh)
   when(statementParser.parseFromSource(barSource)) thenReturn Right(barStatement)
 
   private val repo = AccessibilityStatementsSourceRepo(appConfig, statementsParser, statementParser)
 
-  "findByServiceKey" should {
-    "find the correct service" in {
-      repo.findByServiceKey("foo-service") should be(Some(fooStatement))
+  "findByServiceKeyAndLanguage" should {
+    "find the correct service for English statement" in {
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("en")) should be(Some((fooStatement, Lang("en"))))
     }
 
-    "find a different service" in {
-      repo.findByServiceKey("bar-service") should be(Some(barStatement))
+    "find the correct service for Welsh statement if exists" in {
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(Some((fooStatementWelsh, Lang("cy"))))
+    }
+
+    "find a different service for English" in {
+      repo.findByServiceKeyAndLanguage("bar-service", Lang("en")) should be(Some((barStatement, Lang("en"))))
+    }
+  }
+
+  "existsByServiceKeyAndLanguage" should {
+    "return true if a statement exists for the given service and language" in {
+      repo.existsByServiceKeyAndLanguage("foo-service", Lang("en")) should be(true)
+    }
+
+    "return true if a statement exists for the given service and different language" in {
+      repo.existsByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(true)
+    }
+
+    "return true if a statement exists for the given different service and language" in {
+      repo.existsByServiceKeyAndLanguage("bar-service", Lang("en")) should be(true)
+    }
+
+    "return false if a statement doesn't exist for the given service and language" in {
+      repo.existsByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(false)
     }
   }
 }

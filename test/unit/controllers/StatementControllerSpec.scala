@@ -31,9 +31,15 @@ import org.mockito.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Application
 import play.api.inject.guice.GuiceApplicationBuilder
+import play.api.mvc.Cookie
 
 class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
   private val fakeRequest = FakeRequest("GET", "/")
+  private val welshRequest = fakeRequest.withCookies(
+    Cookie(
+      "PLAY_LANG",
+      "cy"
+    ))
 
   override def fakeApplication(): Application =
     new GuiceApplicationBuilder()
@@ -54,6 +60,49 @@ class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar w
       val result = controller.getStatement("test-service", None)(fakeRequest)
       contentType(result) shouldBe Some("text/html")
       charset(result)     shouldBe Some("utf-8")
+    }
+
+    "return the English statement by default" in {
+      val result  = controller.getStatement("test-service", None)(fakeRequest)
+      val content = Jsoup.parse(contentAsString(result))
+
+      val headers = content.select("h1")
+      headers.size       shouldBe 1
+      headers.first.text shouldBe "Accessibility statement for Test (English) service"
+    }
+
+    "return the Welsh statement if requested" in {
+      val result  = controller.getStatement("test-service", None)(welshRequest)
+      val content = Jsoup.parse(contentAsString(result))
+
+      val headers = content.select("h1")
+      headers.size       shouldBe 1
+      headers.first.text shouldBe "Datganiad hygyrchedd ar gyfer Test (Welsh)"
+    }
+
+    "fallback to the English statement if no Welsh translation is available" in {
+      val result  = controller.getStatement("english-service", None)(welshRequest)
+      val content = Jsoup.parse(contentAsString(result))
+
+      val headers = content.select("h1")
+      headers.size       shouldBe 1
+      headers.first.text shouldBe "Accessibility statement for English Only service"
+    }
+
+    "return HTML containing a language toggle" in {
+      val result  = controller.getStatement("test-service", None)(fakeRequest)
+      val content = Jsoup.parse(contentAsString(result))
+
+      val languageSelect = content.select(".hmrc-language-select")
+      languageSelect.size shouldBe 1
+    }
+
+    "not return HTML containing a language toggle if only English is available" in {
+      val result  = controller.getStatement("english-service", None)(fakeRequest)
+      val content = Jsoup.parse(contentAsString(result))
+
+      val languageSelect = content.select(".hmrc-language-select")
+      languageSelect.size shouldBe 0
     }
 
     "return 404" in {

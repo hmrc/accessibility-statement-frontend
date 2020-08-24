@@ -21,9 +21,12 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers._
 import cats.syntax.either._
+import play.api.Logging
+import play.api.i18n.Lang
 
 trait AccessibilityStatementsRepo {
-  def findByServiceKey(serviceKey: String): Option[AccessibilityStatement]
+  def existsByServiceKeyAndLanguage(serviceKey: String, language: Lang): Boolean
+  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)]
 }
 
 @Singleton
@@ -31,18 +34,45 @@ case class AccessibilityStatementsSourceRepo @Inject()(
   appConfig: AppConfig,
   statementsParser: AccessibilityStatementsParser,
   statementParser: AccessibilityStatementParser)
-    extends AccessibilityStatementsRepo {
+    extends AccessibilityStatementsRepo
+    with Logging {
   import appConfig._
 
-  private val accessibilityStatements: Map[String, AccessibilityStatement] = {
-    val services = statementsParser.parseFromSource(statementsSource).valueOr(throw _).services
-    val statements = services map { service =>
-      service -> statementParser.parseFromSource(statementSource(service)).valueOr(throw _)
+  type RepoKey   = (String, String)
+  type RepoEntry = (RepoKey, AccessibilityStatement)
+
+  private val accessibilityStatements: Map[RepoKey, AccessibilityStatement] = {
+    logger.info(s"Starting to parse accessibility statements")
+
+    val services: Seq[String] = statementsParser.parseFromSource(statementsSource()).valueOr(throw _).services
+
+    logger.info(s"Found ${services.size} accessibility statements")
+
+    val statements: Seq[RepoEntry] = services map { serviceFileName =>
+      logger.info(s"Parsing accessibility statement $serviceFileName")
+
+      val welshLanguageSuffix = s".$cy"
+      val (serviceName: String, languageCode: String) = {
+        if (serviceFileName.endsWith(welshLanguageSuffix)) {
+          (serviceFileName.dropRight(welshLanguageSuffix.length), cy)
+        } else {
+          (serviceFileName, en)
+        }
+      }
+
+      (serviceName, languageCode) -> statementParser
+        .parseFromSource(statementSource(serviceFileName))
+        .valueOr(throw _)
     }
+
+    logger.info(s"Accessibility statements parsed, total number of parsed statements is: ${statements.size}")
 
     statements.toMap
   }
 
-  def findByServiceKey(serviceKey: String): Option[AccessibilityStatement] =
-    accessibilityStatements.get(serviceKey)
+  def existsByServiceKeyAndLanguage(serviceKey: String, language: Lang): Boolean =
+    accessibilityStatements.isDefinedAt((serviceKey, language.code))
+
+  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)] =
+    accessibilityStatements.get((serviceKey, language.code)).map((_, language))
 }

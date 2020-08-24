@@ -87,8 +87,7 @@ class LanguageSwitchControllerSpec extends WordSpec with Matchers with GuiceOneA
     "redirect to the default url if no REFERER header set" in new {
       val controller = buildAppWithWelshLanguageSupport().injector.instanceOf[LanguageSwitchController]
       val result = controller.switchToLanguage("en")(fakeRequest)
-      // TODO: This should be the correct fallback URL
-      redirectLocation(result) shouldBe Some("/accessibility-statement/disguised-remuneration")
+      redirectLocation(result) shouldBe Some("https://www.gov.uk/government/organisations/hm-revenue-customs")
     }
   }
 }
