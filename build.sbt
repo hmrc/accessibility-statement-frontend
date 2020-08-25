@@ -69,6 +69,7 @@ lazy val microservice = Project(appName, file("."))
     ),
     // ***************
     unitTestSettings,
+    pipelineStages in Assets := Seq(gzip),
     acceptanceTestSettings,
     integrationTestSettings,
     zapTestSettings,
