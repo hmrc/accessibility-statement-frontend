@@ -17,12 +17,15 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.config
 
 import javax.inject.{Inject, Singleton}
+import play.api.Logging
 import scala.io.Source
 
-trait SourceConfig {
-  def statementsSource(): Source
+case class StatementSource(source: Source, filename: String)
 
-  def statementSource(service: String): Source
+trait SourceConfig extends Logging {
+  def statementsSource(): StatementSource
+
+  def statementSource(service: String): StatementSource
 }
 
 trait ProductionSourceConfig extends SourceConfig
@@ -30,14 +33,26 @@ trait TestOnlySourceConfig extends SourceConfig
 
 @Singleton
 case class DefaultProductionSourceConfig @Inject()() extends ProductionSourceConfig {
-  override def statementsSource(): Source = Source.fromResource("services.yml")
+  override def statementsSource(): StatementSource = {
+    val filename = "services.yml"
+    StatementSource(Source.fromResource(filename), filename)
+  }
 
-  override def statementSource(service: String): Source = Source.fromResource(s"services/$service.yml")
+  override def statementSource(service: String): StatementSource = {
+    val filename = s"services/$service.yml"
+    StatementSource(Source.fromResource(filename), filename)
+  }
 }
 
 @Singleton
 case class DefaultTestOnlySourceConfig @Inject()() extends TestOnlySourceConfig {
-  override def statementsSource(): Source = Source.fromResource("testOnlyServices.yml")
+  override def statementsSource(): StatementSource = {
+    val filename = "testOnlyServices.yml"
+    StatementSource(Source.fromResource(filename), filename)
+  }
 
-  override def statementSource(service: String): Source = Source.fromResource(s"testOnlyServices/$service.yml")
+  override def statementSource(service: String): StatementSource = {
+    val filename = s"testOnlyServices/$service.yml"
+    StatementSource(Source.fromResource(filename), filename)
+  }
 }

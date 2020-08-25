@@ -20,20 +20,25 @@ import org.scalatest.TryValues
 import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Configuration
-import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, TestOnlySourceConfig}
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, StatementSource, TestOnlySourceConfig}
 
 import scala.io.Source
 
 class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
 
   private val testOnlySourceConfig = new TestOnlySourceConfig {
-    override def statementsSource(): Source               = Source.fromString("test-only-statements")
-    override def statementSource(service: String): Source = Source.fromString("test-only-statement")
+    override def statementsSource(): StatementSource =
+      StatementSource(source = Source.fromString("test-only-statements"), filename = "test-statements.yml")
+    override def statementSource(service: String): StatementSource =
+      StatementSource(source = Source.fromString("test-only-statement"), filename = "services/test-statement.yml")
   }
+
   private val sourceConfig = new ProductionSourceConfig {
-    override def statementsSource(): Source               = Source.fromString("statements")
-    override def statementSource(service: String): Source = Source.fromString("statement")
+    override def statementsSource(): StatementSource =
+      StatementSource(source = Source.fromString("statements"), filename = "statements.yml")
+    override def statementSource(service: String): StatementSource =
+      StatementSource(source = Source.fromString("statement"), filename = "services/statement.yml")
   }
   private val minimalSettings = Map(
     "tracking-consent-frontend.url" -> "https://localhost:12345/tracking-consent/tracking.js",
@@ -47,15 +52,15 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
     "retrieve the production source" in {
       val appConfig: AppConfig =
         AppConfig(productionConfiguration, servicesConfig, sourceConfig, testOnlySourceConfig)
-      appConfig.statementsSource.mkString       must be("statements")
-      appConfig.statementSource("foo").mkString must be("statement")
+      appConfig.statementsSource().source.mkString       must be("statements")
+      appConfig.statementSource("foo").source.mkString must be("statement")
     }
 
     "retrieve the test only source" in {
       val appConfig: AppConfig =
         AppConfig(testConfiguration, servicesConfig, sourceConfig, testOnlySourceConfig)
-      appConfig.statementsSource().mkString     must be("test-only-statements")
-      appConfig.statementSource("foo").mkString must be("test-only-statement")
+      appConfig.statementsSource().source.mkString     must be("test-only-statements")
+      appConfig.statementSource("foo").source.mkString must be("test-only-statement")
     }
   }
 }

@@ -17,10 +17,11 @@
 package unit.parsers
 
 import java.util.{Calendar, GregorianCalendar}
-
 import org.scalatest.{EitherValues, Matchers, WordSpec}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
+import scala.io.Source
 
 class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with EitherValues {
   private val parser = new AccessibilityStatementParser
@@ -256,6 +257,14 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val parsed = parser.parse(problemStatementYaml)
 
       parsed.left.value.getMessage should startWith("String: DownField(complianceStatus)")
+    }
+
+    "return a wrapped error if the file is not found" in {
+      val filename = "non-existent-service.yml"
+      val servicesYaml = StatementSource(Source.fromResource(filename), filename)
+      val parsed = parser.parseFromSource(servicesYaml)
+      parsed.isLeft shouldBe true
+      parsed.left.value.isInstanceOf[NullPointerException] shouldBe true
     }
   }
 }

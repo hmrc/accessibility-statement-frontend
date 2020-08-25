@@ -17,8 +17,10 @@
 package unit.parsers
 
 import org.scalatest.{EitherValues, Matchers, WordSpec}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatements
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementsParser
+import scala.io.Source
 
 class AccessibilityStatementsYamlParserSpec extends WordSpec with Matchers with EitherValues {
   private val parser = new AccessibilityStatementsParser
@@ -33,6 +35,14 @@ class AccessibilityStatementsYamlParserSpec extends WordSpec with Matchers with 
       val parsed = parser.parse(servicesYaml)
       parsed.right.value should equal(
         AccessibilityStatements(Seq("disguised-remuneration", "coronavirus-job-retention-scheme")))
+    }
+
+    "return a wrapped error if the file is not found" in {
+      val filename = "invalid-services.yml"
+      val servicesYaml = StatementSource(Source.fromResource(filename), filename)
+      val parsed = parser.parseFromSource(servicesYaml)
+      parsed.isLeft shouldBe true
+      parsed.left.value.isInstanceOf[NullPointerException] shouldBe true
     }
   }
 }
