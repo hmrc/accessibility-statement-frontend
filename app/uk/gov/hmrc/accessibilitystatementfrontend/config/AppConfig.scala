@@ -28,8 +28,14 @@ case class AppConfig @Inject()(
   productionSourceConfig: ProductionSourceConfig,
   testOnlySourceConfig: TestOnlySourceConfig) {
 
-  private val contactHost           = config.get[String]("platform.frontend.host")
-  val reportAccessibilityProblemUrl = s"$contactHost/contact/accessibility-unauthenticated"
+  private val platformFrontendHost = config.getOptional[String]("platform.frontend.host")
+  val languageControllerHostUrl: String = platformFrontendHost.getOrElse(
+    config.get[String]("language-controller.host")
+  )
+
+  private val contactFrontendHostUrl: String =
+    platformFrontendHost.getOrElse(config.get[String]("contact.frontend.host"))
+  val reportAccessibilityProblemUrl = s"$contactFrontendHostUrl/contact/accessibility-unauthenticated"
 
   val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())
 
