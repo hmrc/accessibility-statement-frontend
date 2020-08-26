@@ -21,6 +21,7 @@ import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Configuration
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, TestOnlySourceConfig}
+import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 import scala.io.Source
 
@@ -34,21 +35,25 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
     override def statementsSource(): Source               = Source.fromString("statements")
     override def statementSource(service: String): Source = Source.fromString("statement")
   }
-  private val contactFrontendSettings = Map("platform.frontend.host" -> "https://www.tax.service.gov.uk")
-  private val productionConfiguration = Configuration.from(contactFrontendSettings)
-  private val testConfiguration       = Configuration.from(contactFrontendSettings + ("features.use-test-data" -> true))
+  private val minimalSettings = Map(
+    "tracking-consent-frontend.url" -> "https://localhost:12345/tracking-consent/tracking.js",
+    "platform.frontend.host"        -> "https://www.tax.service.gov.uk")
+  private val minimalConfiguration           = Configuration.from(minimalSettings)
+  private val servicesConfig: ServicesConfig = new ServicesConfig(minimalConfiguration)
+  private val productionConfiguration        = minimalConfiguration
+  private val testConfiguration              = Configuration.from(minimalSettings + ("features.use-test-data" -> true))
 
   "statementsSource" should {
     "retrieve the production source" in {
       val appConfig: AppConfig =
-        AppConfig(productionConfiguration, sourceConfig, testOnlySourceConfig)
+        AppConfig(productionConfiguration, servicesConfig, sourceConfig, testOnlySourceConfig)
       appConfig.statementsSource.mkString       must be("statements")
       appConfig.statementSource("foo").mkString must be("statement")
     }
 
     "retrieve the test only source" in {
       val appConfig: AppConfig =
-        AppConfig(testConfiguration, sourceConfig, testOnlySourceConfig)
+        AppConfig(testConfiguration, servicesConfig, sourceConfig, testOnlySourceConfig)
       appConfig.statementsSource().mkString     must be("test-only-statements")
       appConfig.statementSource("foo").mkString must be("test-only-statement")
     }

@@ -28,6 +28,7 @@ import play.api.test.Helpers._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, SourceConfig, TestOnlySourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
+import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 class StatementPageSpec extends WordSpec with Matchers {
 
@@ -233,9 +234,10 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     implicit val sourceConfig: ProductionSourceConfig       = app.injector.instanceOf[ProductionSourceConfig]
     implicit val testOnlySourceConfig: TestOnlySourceConfig = app.injector.instanceOf[TestOnlySourceConfig]
+    implicit val servicesConfig: ServicesConfig             = app.injector.instanceOf[ServicesConfig]
 
     implicit val appConfig: AppConfig =
-      AppConfig(configuration, sourceConfig, testOnlySourceConfig)
+      AppConfig(configuration, servicesConfig, sourceConfig, testOnlySourceConfig)
 
     val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
     implicit val messages: Messages = messagesApi.preferred(fakeRequest)
