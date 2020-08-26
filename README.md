@@ -133,6 +133,14 @@ http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icec
 This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
 end user discovered the accessibility issue.
 
+## Service Manager config for local development
+
+When developing locally you can run
+
+```
+sm --start A11Y_STATEMENT_ALL
+```:wq
+
 ### License
 
 This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
