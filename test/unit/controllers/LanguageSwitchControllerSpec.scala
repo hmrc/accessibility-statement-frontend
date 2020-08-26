@@ -107,7 +107,7 @@ class LanguageSwitchControllerSpec extends WordSpec with MustMatchers with Guice
         )
       }
 
-      exception.getMessage must include("Configuration key 'language-controller.host' is set to null")
+      exception.getMessage must include("Could not find config key 'language-controller.host'")
     }
   }
 }

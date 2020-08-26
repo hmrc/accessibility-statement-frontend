@@ -19,22 +19,23 @@ package uk.gov.hmrc.accessibilitystatementfrontend.config
 import javax.inject.{Inject, Singleton}
 import play.api.Configuration
 import play.api.i18n.Lang
-
+import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 import scala.io.Source
 
 @Singleton
 case class AppConfig @Inject()(
   config: Configuration,
+  servicesConfig: ServicesConfig,
   productionSourceConfig: ProductionSourceConfig,
   testOnlySourceConfig: TestOnlySourceConfig) {
 
   private val platformFrontendHost = config.getOptional[String]("platform.frontend.host")
   val languageControllerHostUrl: String = platformFrontendHost.getOrElse(
-    config.get[String]("language-controller.host")
+    servicesConfig.getString("language-controller.host")
   )
 
   private val contactFrontendHostUrl: String =
-    platformFrontendHost.getOrElse(config.get[String]("contact.frontend.host"))
+    platformFrontendHost.getOrElse(servicesConfig.getString("contact.frontend.host"))
   val reportAccessibilityProblemUrl = s"$contactFrontendHostUrl/contact/accessibility-unauthenticated"
 
   val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())
@@ -58,4 +59,6 @@ case class AppConfig @Inject()(
   val en: String            = "en"
   val cy: String            = "cy"
   val defaultLanguage: Lang = Lang(en)
+
+  val trackingConsentUrl: String = servicesConfig.getString("tracking-consent-frontend.url")
 }
