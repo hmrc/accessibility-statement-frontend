@@ -85,7 +85,7 @@ testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o 
 testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page
-notFound.pageTitle=Page not found
-notFound.heading=Page not found
-notFound.paragraph1=If you typed the web address, check it is correct.
-notFound.paragraph2=If you pasted the web address, check you copied the entire address.
+notFound.pageTitle=Heb ddod o hyd i’r dudalen
+notFound.heading=Heb ddod o hyd i’r dudalen
+notFound.paragraph1=Os gwnaethoch deipio’r cyfeiriad gwe, dylech wirio ei fod yn gywir.
+notFound.paragraph2=Os gwnaethoch bastio’r cyfeiriad gwe, dylech wirio’ch bod wedi copïo’r cyfeiriad yn llawn.
