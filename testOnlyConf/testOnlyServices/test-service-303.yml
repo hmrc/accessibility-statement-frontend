@@ -1,21 +1,17 @@
-accessibilitySupportEmail: test-service-303@example.com
-contactFrontendServiceId: test-service-303
-serviceSendsOutboundMessages: false
-serviceHeaderName: Veniam eveniet laborum voluptatem nobis consectetur.
-serviceUrl: /test-service-303
-serviceDomain: www.example.com
-serviceDescription: Occaecati nobis velit recusandae molestiae voluptates. Asperiores
-  voluptates veritatis distinctio mollitia reiciendis. Et voluptatibus quibusdam sequi
-  vitae placeat. Error ad sequi non in dolores. Cumque asperiores sed ut adipisci
-  similique. Aliquam exercitationem dolore illo tempore nostrum. Ratione sit veritatis
-  labore voluptates quaerat. Nobis corrupti ullam aut non odit. Eos quidem eos molestiae
-  velit quae. Assumenda sed sit voluptas nemo qui.
-statementVisibility: draft
-accessibilitySupportPhone: 08081 570000
-complianceStatus: full
 accessibilityProblems: []
-statementLastUpdatedDate: '2018-09-25'
-serviceLastTestedDate: '2019-10-07'
+statementCreatedDate: '2018-06-01'
+statementLastUpdatedDate: '2019-05-17'
+serviceName: Quod illo doloremque eos qui quis.
+serviceHeaderName: Eveniet rem sit natus nam velit.
+serviceDomain: www.example.com
 milestones: []
-serviceName: Ut itaque repellat corrupti libero ut.
-statementCreatedDate: '2018-02-27'
+serviceUrl: /test-service-303
+serviceDescription: Nulla corporis id sunt iusto sit. Neque aut dolorem ut ipsam neque.
+  Illo voluptate fugiat et ad aspernatur. Eos nostrum eos ratione quos autem. Commodi
+  vero similique laudantium quia vel. Ullam aut qui est consequatur eaque. Reiciendis
+  sit iusto molestiae saepe consequatur. Qui optio magni voluptas neque qui. Aliquam
+  dolores enim voluptatum praesentium aut. Sed veniam molestiae veniam sed consequuntur.
+serviceLastTestedDate: '2018-03-29'
+contactFrontendServiceId: test-service-303
+statementVisibility: draft
+complianceStatus: full

@@ -1,20 +1,18 @@
-serviceSendsOutboundMessages: false
-serviceHeaderName: Quasi enim nostrum maiores natus reiciendis.
-serviceName: Laboriosam ipsa sed illum deserunt totam.
-serviceDescription: Id quas cum aspernatur et quos. Et impedit libero aliquid harum
-  consequatur. Aut sunt occaecati ut quo tempora. Est at error deleniti cumque velit.
-  Ut voluptatem vel ab minus fugiat. Velit est a aut qui nobis. Dolore nobis magni
-  voluptatem eligendi molestiae. Mollitia nesciunt aut harum atque aut. Tenetur eos
-  rem suscipit quae id. Qui esse sequi possimus accusantium in.
-complianceStatus: full
-statementCreatedDate: '2019-07-18'
-serviceUrl: /test-service-004
-contactFrontendServiceId: test-service-004
-statementVisibility: draft
-accessibilitySupportEmail: test-service-004@example.com
-accessibilityProblems: []
-serviceLastTestedDate: '2018-06-29'
-serviceDomain: www.example.com
-accessibilitySupportPhone: 08081 570000
-statementLastUpdatedDate: '2018-01-22'
 milestones: []
+contactFrontendServiceId: test-service-004
+accessibilityProblems: []
+serviceHeaderName: Exercitationem explicabo ut officia voluptatem odio.
+serviceDescription: Quo velit animi est et molestiae. Praesentium recusandae assumenda
+  fugit beatae amet. Qui voluptatum inventore neque est itaque. Repellat nisi cum
+  magnam est ratione. Deleniti sit facere repellendus reiciendis quasi. Dicta dolorem
+  provident molestias culpa eum. Et nulla quod non ipsa repellendus. Minus vitae ut
+  ut qui blanditiis. Pariatur facere dolore quod qui molestiae. Laborum aliquid quisquam
+  vitae animi voluptas.
+serviceName: Praesentium est placeat fugit distinctio non.
+statementLastUpdatedDate: '2019-06-28'
+statementVisibility: draft
+serviceDomain: www.example.com
+statementCreatedDate: '2018-11-09'
+serviceUrl: /test-service-004
+complianceStatus: full
+serviceLastTestedDate: '2019-09-10'

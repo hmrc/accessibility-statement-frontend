@@ -1,21 +1,17 @@
-complianceStatus: full
-serviceLastTestedDate: '2019-09-02'
-serviceDomain: www.example.com
-contactFrontendServiceId: test-service-588
-accessibilityProblems: []
-serviceDescription: Esse ad ex qui autem est. At doloremque necessitatibus molestias
-  nihil aut. Voluptatem ipsum non voluptatibus doloribus iure. Odio et earum sit omnis
-  quisquam. Quis aperiam fugiat ut non laborum. Facilis iusto nemo ea sed aliquid.
-  Architecto ea et fugit aperiam aspernatur. Adipisci iure quia similique dolorem
-  qui. Laudantium consequatur veritatis in optio corrupti. Beatae voluptatibus fuga
-  perspiciatis aut natus.
 serviceUrl: /test-service-588
-serviceSendsOutboundMessages: false
-statementCreatedDate: '2020-06-19'
-statementLastUpdatedDate: '2020-01-18'
-statementVisibility: draft
-serviceName: Voluptatum nulla fugit et odio deleniti.
+serviceLastTestedDate: '2018-08-31'
+statementCreatedDate: '2020-06-13'
+accessibilityProblems: []
+contactFrontendServiceId: test-service-588
 milestones: []
-accessibilitySupportPhone: 08081 570000
-serviceHeaderName: Qui ex sint odit ratione quae.
-accessibilitySupportEmail: test-service-588@example.com
+serviceDomain: www.example.com
+serviceName: Ut rerum esse laboriosam modi debitis.
+serviceHeaderName: Nesciunt optio sit eos accusamus libero.
+serviceDescription: Voluptates atque et est doloremque aut. Est illum ut magni deleniti
+  deleniti. Nisi delectus dolor non minima numquam. Numquam qui architecto sunt accusamus
+  quas. Minus voluptas autem nisi sed sint. Ut esse rem quibusdam rem et. Deserunt
+  ratione ducimus non quia nesciunt. Ratione perferendis saepe consequatur occaecati
+  qui. Rem sed et voluptates aut nisi. Aut sint in iure culpa et.
+complianceStatus: full
+statementVisibility: draft
+statementLastUpdatedDate: '2020-05-06'

@@ -1,21 +1,18 @@
-contactFrontendServiceId: test-service-012
-accessibilitySupportEmail: test-service-012@example.com
-milestones: []
-serviceSendsOutboundMessages: false
-serviceHeaderName: Sapiente doloremque corporis maxime itaque provident.
-statementVisibility: draft
-serviceDomain: www.example.com
+statementCreatedDate: '2020-02-24'
+statementLastUpdatedDate: '2018-07-10'
 accessibilityProblems: []
-statementLastUpdatedDate: '2019-11-02'
-serviceDescription: Corporis earum velit aut dolore laborum. Est voluptatem dolorem
-  ducimus eos unde. Eligendi quis optio quia accusantium libero. Et doloremque minima
-  nam maiores repellat. Id ducimus doloribus laudantium porro architecto. Nulla voluptatum
-  voluptatum est velit voluptates. Facilis deleniti dolore ducimus iusto ea. Velit
-  unde corrupti quis sunt sunt. Aut doloremque a nesciunt consequatur soluta. Alias
-  animi vero iste eaque aut.
-serviceName: Quo officia quibusdam eligendi aliquam sunt.
-serviceLastTestedDate: '2018-06-07'
-accessibilitySupportPhone: 08081 570000
-complianceStatus: full
+serviceDomain: www.example.com
+contactFrontendServiceId: test-service-012
+serviceLastTestedDate: '2019-09-01'
 serviceUrl: /test-service-012
-statementCreatedDate: '2018-08-30'
+milestones: []
+serviceDescription: Animi non qui voluptatem magni sunt. Libero repudiandae voluptatem
+  voluptatem dolor architecto. Blanditiis amet qui unde omnis rem. Deleniti velit
+  voluptate cumque expedita quidem. Minima dolor enim aliquam rem amet. Qui omnis
+  aperiam eum laborum iusto. Quas at quia repudiandae laborum pariatur. Debitis rerum
+  et quidem sit cupiditate. Sequi eum hic dolorum ipsum qui. Quas et facilis voluptatem
+  in recusandae.
+statementVisibility: draft
+serviceName: Error molestiae aspernatur porro sit et.
+serviceHeaderName: Incidunt quidem beatae cupiditate vel vel.
+complianceStatus: full

@@ -1,20 +1,18 @@
-serviceDomain: www.example.com
 contactFrontendServiceId: test-service-550
-serviceName: Aut voluptas non ut hic fuga.
-serviceDescription: Nam repellendus sit et molestiae animi. Facere est dolor voluptas
-  adipisci nobis. Vitae magni eum quia molestiae sint. Est consectetur dicta iusto
-  est nihil. Officiis dolores sit eligendi quas velit. Ut dolorem et cum natus sint.
-  Quia et et laudantium et ea. Et et dolor sed et omnis. Ipsa quas est possimus et
-  ut. Consequatur quia fugiat quo in illum.
-serviceHeaderName: Dolorem libero ullam quibusdam vel est.
-milestones: []
-serviceLastTestedDate: '2018-02-21'
-serviceSendsOutboundMessages: false
-statementVisibility: draft
 accessibilityProblems: []
-complianceStatus: full
-accessibilitySupportPhone: 08081 570000
+serviceHeaderName: Eligendi itaque unde a mollitia quia.
+milestones: []
+serviceName: Magnam aspernatur numquam ea sit eum.
+serviceDescription: Sunt molestiae fuga sed ut dolor. Architecto consequuntur ut illo
+  reprehenderit excepturi. Occaecati velit itaque ducimus distinctio quasi. Vel qui
+  sint nobis sed repellat. Et sit unde qui et a. Libero doloribus laudantium consectetur
+  ipsa libero. Magnam quis vel enim provident optio. Totam temporibus necessitatibus
+  a itaque adipisci. Iusto rerum vitae consequatur officiis ullam. Voluptate deserunt
+  perferendis odit a quam.
+statementCreatedDate: '2019-01-16'
+serviceLastTestedDate: '2020-02-22'
+serviceDomain: www.example.com
+statementVisibility: draft
+statementLastUpdatedDate: '2020-07-06'
 serviceUrl: /test-service-550
-statementCreatedDate: '2019-05-05'
-statementLastUpdatedDate: '2019-12-20'
-accessibilitySupportEmail: test-service-550@example.com
+complianceStatus: full

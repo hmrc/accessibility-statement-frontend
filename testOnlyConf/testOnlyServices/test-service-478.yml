@@ -1,21 +1,18 @@
-serviceUrl: /test-service-478
-serviceHeaderName: Nemo atque eos suscipit et iste.
-serviceDomain: www.example.com
+serviceName: Quia perferendis ab nemo laudantium qui.
 complianceStatus: full
-statementVisibility: draft
-serviceDescription: Facilis quis eligendi et possimus laborum. Quia aliquam quam explicabo
-  quasi soluta. Pariatur veritatis dolores qui sunt consectetur. Ut eos perspiciatis
-  ipsa libero voluptatem. Est in doloribus ab voluptas qui. Dolore nihil nobis labore
-  repudiandae corporis. Quia veritatis ipsam nulla labore dignissimos. Adipisci tempore
-  quia cupiditate facere atque. Dolor et magni velit rerum magnam. Quia distinctio
-  iure quo maxime iure.
-milestones: []
-serviceSendsOutboundMessages: false
-accessibilitySupportEmail: test-service-478@example.com
+statementLastUpdatedDate: '2020-06-02'
+statementCreatedDate: '2018-06-06'
 accessibilityProblems: []
-serviceLastTestedDate: '2019-12-12'
+serviceDescription: Quos et et illum omnis architecto. Esse voluptas perferendis ut
+  eos dolore. Voluptas iure dolor eligendi earum voluptate. Autem laborum placeat
+  eaque qui consequuntur. Veritatis blanditiis accusantium at dignissimos exercitationem.
+  Omnis fuga aut nam voluptas consequatur. Consequuntur eveniet numquam eos blanditiis
+  hic. In labore qui qui minus optio. Qui beatae et assumenda sit eaque. Sequi laborum
+  sunt exercitationem quia ratione.
+serviceHeaderName: Doloribus eaque perspiciatis consequatur corrupti ea.
+serviceLastTestedDate: '2020-01-30'
+serviceUrl: /test-service-478
+milestones: []
+statementVisibility: draft
 contactFrontendServiceId: test-service-478
-statementCreatedDate: '2019-03-28'
-accessibilitySupportPhone: 08081 570000
-statementLastUpdatedDate: '2019-07-22'
-serviceName: Ut libero est recusandae sed consequatur.
+serviceDomain: www.example.com

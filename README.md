@@ -30,7 +30,6 @@ milestones:                             # If there are no issues do not include 
       cannot use the service reliably. This does not meet WCAG success criterion
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
-serviceSendsOutboundMessages: false     # Set to true if the service sends or asks for documents from service users
 serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD
 statementVisibility: public             # If set to public, the statement will be visible in production
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD

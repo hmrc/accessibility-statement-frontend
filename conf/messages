@@ -13,10 +13,9 @@ general.serviceName = Accessibility statement
 ## introduction
 introduction.heading=Accessibility statement for {0} service
 introduction.lede=This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.
-introduction.scope.part1=This service is part of the wider GOV.UK website. There is a separate
-introduction.scope.part2=accessibility statement
-introduction.scope.part3=for the main GOV.UK website.
-introduction.service-name=This page only contains information about the {0} Service, available at 
+introduction.scope.part1='This service is part of the wider GOV.UK website. There is a '
+introduction.scope.part2=separate accessibility statement for the main GOV.UK website.
+introduction.service-name=This page only contains information about the {0} Service, available at {1}.
 
 ## Using the service
 using-service.heading=Using this service
@@ -41,11 +40,9 @@ accessibility.has-issues=Some people may find parts of this service difficult to
 
 ## Contact
 contact.heading=What to do if you have difficulty using this service
-contact.us-by=If you have difficulty using this service, contact us by:
-contact.email=email {0}
-contact.phone=call {0}
-contact.send-documents=As part of providing this service, we may need to send you messages or documents. We’ll ask you how you want us to send messages or documents to you, but contact us if you need them in a different format. For example large print, audio recording or braille.
-contact.default=If you have difficulty using this service, use the ''Get help with this page'' link on the page in the online service.
+contact.extra-support.part1='You can '
+contact.extra-support.part2=contact HMRC for extra support
+contact.extra-support.part3=' if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.'
 
 ## Reporting problems
 reporting.heading=Reporting accessibility problems with this service
@@ -53,7 +50,7 @@ reporting.report-problem.part1=We are always looking to improve the accessibilit
 reporting.report-problem.part2=accessibility problem (opens in a new window or tab)
 
 ## Complaints
-complaints.heading=What to do if you are not happy with how we respond to your complaint
+complaints.heading=If you are not happy with our response
 complaints.additional-contacts.part1=The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ''accessibility regulations''). If you are not happy with how we respond to your complaint,
 complaints.additional-contacts.part2=contact the Equality Advisory and Support Service (EASS)
 complaints.additional-contacts.part3=or the
@@ -64,15 +61,15 @@ complaints.additional-contacts.part5=if you live in Northern Ireland.
 in-person-contact.heading=Contacting us by phone or getting a visit from us in person
 in-person-contact.text-relay=We provide a text relay service if you are deaf, hearing impaired or have a speech impediment.
 in-person-contact.bsl=We can provide a British Sign Language (BSL) interpreter, or you can arrange a visit from an HMRC advisor to help you complete the service.
-in-person-contact.find-out-how.part1=Find out how to
-in-person-contact.find-out-how.part2=contact us.
+in-person-contact.find-out-how.part1='Find out ' 
+in-person-contact.find-out-how.part2=how to get extra support from HMRC.
 
 ## Technical information
 technical.heading=Technical information about this service’s accessibility
 technical.commitment=HMRC is committed to making this service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
 technical.compliance.full=This service is fully compliant with the
-technical.compliance.partial=This service is partially compliant with the
-technical.compliance.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
+technical.compliance.partial='This service is partially compliant with the Web Content Accessibility Guidelines version 2.1 '
+technical.compliance.guidelines=AA standard
 technical.compliance.partial.reasons=, due to the non-compliances listed below.
 technical.non-compliance.header=Non-accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
@@ -85,7 +82,7 @@ testing.last-tested=The service was last tested on {0} and was checked for compl
 testing.details.part1=The service was built using parts that were tested by the
 testing.details.part2=Digital Accessibility Centre.
 testing.details.part3=The full service was tested by HMRC and included disabled users.
-testing.created-and-updated=This page was prepared on {0}. It was last updated on {1}.
+testing.created-and-updated=This page was published on {0}. It was last updated on {1}.
 
 ## Not Found Page
 notFound.pageTitle=Page not found

@@ -41,12 +41,12 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name service</h1>""")
     }
 
-    "return HTML containing the expected introduction with link to the service" in new Setup {
+    "return HTML containing the expected introduction with service URL in the body" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/fully-accessible">https://www.tax.service.gov.uk/fully-accessible</a>.""")
+        """<p class="govuk-body">This page only contains information about the fully accessible service name Service, available at https://www.tax.service.gov.uk/fully-accessible.""")
     }
 
     "return HTML containing the expected using service information with service description" in new Setup {
@@ -56,43 +56,12 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include("""<p class="govuk-body">Fully accessible description.</p>""")
     }
 
-    "return HTML containing the contact information with phone number if configured" in new Setup {
-      val statementWithPhoneNumber = fullyAccessibleServiceStatement
-        .copy(accessibilitySupportPhone = Some("0111-222-33333"))
-
-      val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(statementWithPhoneNumber, None, isWelshTranslationAvailable = false)
-
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
-      contentAsString(statementPageHtml) should include("""<li>call 0111-222-33333</li>""")
-      contentAsString(statementPageHtml) should not include ("""<li>email """)
-      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
-
-    }
-
-    "return HTML containing the contact information with email address if configured" in new Setup {
-      val statementWithEmailAddress = fullyAccessibleServiceStatement
-        .copy(accessibilitySupportEmail = Some("accessible-support@spec.com"))
-
-      val statementPage     = app.injector.instanceOf[StatementPage]
-      val statementPageHtml = statementPage(statementWithEmailAddress, None, isWelshTranslationAvailable = false)
-
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">If you have difficulty using this service, contact us by:</p>""")
-      contentAsString(statementPageHtml) should include("""<li>email accessible-support@spec.com</li>""")
-      contentAsString(statementPageHtml) should not include ("""<li>call """)
-      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
-    }
-
-    "return HTML containing the default contact information if no phone or email configured" in new Setup {
+    "return HTML containing the default contact information" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">If you have difficulty using this service, use the 'Get help with this page' link on the page in the online service.</p>""")
-      contentAsString(statementPageHtml) should not include ("""<li>call """)
-      contentAsString(statementPageHtml) should not include ("""<li>email """)
+        """<a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support" target="_blank">contact HMRC for extra support</a>""")
     }
 
     "return HTML containing report a problem information with a contact link" in new Setup {
@@ -122,7 +91,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>""")
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">This page was prepared on 15 March 2020. It was last updated on 01 May 2020.</p>""")
+        """<p class="govuk-body">This page was published on 15 March 2020. It was last updated on 01 May 2020.</p>""")
     }
 
     "not include a list item of accessibility problems if accessibility problems is empty" in new Setup {
@@ -211,7 +180,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>, due to the non-compliances listed below."""
+        """<p class="govuk-body">This service is partially compliant with the Web Content Accessibility Guidelines version 2.1  <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">AA standard</a>, due to the non-compliances listed below."""
       )
     }
 
@@ -289,9 +258,6 @@ class StatementPageSpec extends WordSpec with Matchers {
       complianceStatus             = FullCompliance,
       accessibilityProblems        = None,
       milestones                   = None,
-      accessibilitySupportEmail    = None,
-      accessibilitySupportPhone    = None,
-      serviceSendsOutboundMessages = false,
       statementVisibility          = Draft,
       serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
       statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
@@ -315,9 +281,6 @@ class StatementPageSpec extends WordSpec with Matchers {
         Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
         Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
       )),
-      accessibilitySupportEmail    = None,
-      accessibilitySupportPhone    = None,
-      serviceSendsOutboundMessages = false,
       statementVisibility          = Draft,
       serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
       statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,

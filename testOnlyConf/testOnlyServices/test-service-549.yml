@@ -1,21 +1,17 @@
-contactFrontendServiceId: test-service-549
-statementVisibility: draft
-serviceSendsOutboundMessages: false
-accessibilitySupportPhone: 08081 570000
-serviceLastTestedDate: '2018-04-16'
-serviceDomain: www.example.com
-serviceUrl: /test-service-549
-accessibilitySupportEmail: test-service-549@example.com
-serviceHeaderName: Delectus et quasi sunt earum excepturi.
-complianceStatus: full
-statementLastUpdatedDate: '2018-09-19'
-accessibilityProblems: []
-statementCreatedDate: '2019-08-05'
 milestones: []
-serviceDescription: Ratione ex repellat nulla quam ab. Et non cupiditate in est quisquam.
-  Molestiae repellat iste debitis architecto occaecati. Est veniam dicta atque dolores
-  quia. Aut laborum voluptatem aut repellat assumenda. Tempore delectus nostrum tempora
-  qui possimus. Accusamus assumenda officiis qui placeat ut. Perferendis fugit dolorem
-  rerum culpa est. Et consequuntur cum distinctio rerum occaecati. Fugit facere aut
-  dolores aut et.
-serviceName: Fugiat magnam totam hic aspernatur iure.
+serviceDescription: Non totam sed accusamus odit temporibus. Atque repudiandae nihil
+  aut voluptatibus qui. Fugit ea et quo non ut. Commodi dolore qui rerum expedita
+  dolores. Fugit odio qui ad vel culpa. Et non saepe omnis cupiditate quae. Nam consectetur
+  eligendi eos nisi assumenda. Nulla dolor facere veritatis cumque commodi. Tempora
+  quia est corporis et eum. Accusamus aut culpa non sit qui.
+serviceUrl: /test-service-549
+accessibilityProblems: []
+serviceLastTestedDate: '2019-09-25'
+serviceDomain: www.example.com
+complianceStatus: full
+contactFrontendServiceId: test-service-549
+serviceName: Harum esse amet aut ea in.
+serviceHeaderName: Voluptatibus voluptas officiis odio qui ipsam.
+statementCreatedDate: '2018-03-05'
+statementLastUpdatedDate: '2020-02-11'
+statementVisibility: draft

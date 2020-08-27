@@ -1,20 +1,18 @@
-serviceDomain: www.example.com
-accessibilitySupportPhone: 08081 570000
-serviceUrl: /test-service-042
-serviceDescription: Ut molestiae praesentium mollitia corporis modi. Ut mollitia voluptate
-  et minus quia. Voluptates est sed reiciendis et ad. Et et non repellat sunt non.
-  Sed et asperiores sint voluptatibus dolor. Aliquam voluptate et asperiores iusto
-  quas. Cumque consequatur occaecati voluptatum sunt nihil. Neque assumenda aut sit
-  ipsam impedit. Voluptatem voluptas neque ut inventore ut. Et esse est ut quasi molestiae.
-serviceSendsOutboundMessages: false
-statementCreatedDate: '2020-07-10'
+statementCreatedDate: '2019-07-04'
+statementLastUpdatedDate: '2020-04-26'
 complianceStatus: full
-statementVisibility: draft
-serviceLastTestedDate: '2020-01-10'
-serviceName: Dolores nobis perspiciatis quibusdam cum non.
-serviceHeaderName: Dolore facilis saepe aliquam vero quis.
-statementLastUpdatedDate: '2019-08-15'
-accessibilitySupportEmail: test-service-042@example.com
+serviceHeaderName: Dolore inventore tempore possimus quod ipsa.
+serviceName: Enim id nostrum repellendus assumenda ducimus.
+serviceDescription: Iusto necessitatibus et nostrum cumque iste. Cumque neque aperiam
+  dolor libero repudiandae. Magnam autem incidunt laudantium ab non. Voluptatum voluptatibus
+  veritatis praesentium dolorum eius. Qui dicta tempora cupiditate sunt aut. Omnis
+  occaecati non nobis porro eius. Vel quia odit ducimus adipisci eos. Suscipit veritatis
+  enim et perferendis et. Quod beatae aperiam eveniet quae ipsum. Voluptas et deleniti
+  excepturi explicabo amet.
+serviceUrl: /test-service-042
+serviceLastTestedDate: '2018-04-01'
 milestones: []
-contactFrontendServiceId: test-service-042
 accessibilityProblems: []
+statementVisibility: draft
+serviceDomain: www.example.com
+contactFrontendServiceId: test-service-042

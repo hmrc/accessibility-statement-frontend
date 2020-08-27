@@ -1,21 +1,17 @@
-accessibilitySupportEmail: test-service-529@example.com
+serviceUrl: /test-service-529
+milestones: []
+serviceDomain: www.example.com
+serviceDescription: Adipisci sint minima qui enim esse. Quisquam nisi sint vitae et
+  omnis. Ducimus nisi sed sunt voluptatem eum. Enim alias suscipit ut voluptatem quae.
+  Vel sapiente aut incidunt odio rerum. Quibusdam nesciunt neque optio aut eius. Esse
+  nihil et reiciendis vel aut. Consequatur tempore totam et cumque pariatur. Et assumenda
+  quo dolor nostrum ducimus. Voluptatem laudantium nostrum fugiat fugit animi.
+serviceLastTestedDate: '2020-04-13'
+serviceHeaderName: Ullam et voluptatum alias et velit.
+serviceName: Id enim sint soluta harum suscipit.
 complianceStatus: full
 accessibilityProblems: []
-serviceDomain: www.example.com
-serviceHeaderName: Voluptatem ex cumque optio necessitatibus eum.
-serviceUrl: /test-service-529
-serviceLastTestedDate: '2018-01-14'
-serviceName: Sint et vitae ipsa quia ratione.
-milestones: []
-serviceSendsOutboundMessages: false
-accessibilitySupportPhone: 08081 570000
-statementLastUpdatedDate: '2020-06-10'
-statementCreatedDate: '2018-01-04'
-serviceDescription: Molestias ab suscipit dolore qui inventore. Consequatur voluptatem
-  dolor repudiandae iure neque. Quo qui sit velit dolore et. Natus ipsum et non aut
-  sed. Esse vitae et corporis autem voluptates. Accusamus accusantium provident fugit
-  sequi nihil. Et voluptatibus voluptatem quae soluta eius. Consequatur aliquam tempora
-  cumque et numquam. Neque cupiditate ut velit modi ut. Laudantium dignissimos iure
-  molestiae sint voluptas.
 contactFrontendServiceId: test-service-529
+statementLastUpdatedDate: '2020-01-12'
 statementVisibility: draft
+statementCreatedDate: '2020-04-26'
