@@ -16,12 +16,18 @@
 
 package helpers
 
-import uk.gov.hmrc.accessibilitystatementfrontend.config.ProductionSourceConfig
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{ProductionSourceConfig, StatementSource}
 
 import scala.io.Source
 
 case class IntegrationTestSourceConfig() extends ProductionSourceConfig {
-  override def statementsSource(): Source = Source.fromResource("integrationTestServices.yml")
+  override def statementsSource() = {
+    val filename = "integrationTestServices.yml"
+    StatementSource(Source.fromResource(filename), filename)
+  }
 
-  override def statementSource(service: String): Source = Source.fromResource(s"integrationTestServices/$service.yml")
+  override def statementSource(service: String) = {
+    val filename = s"integrationTestServices/$service.yml"
+    StatementSource(Source.fromResource(filename), filename)
+  }
 }

@@ -20,7 +20,6 @@ import javax.inject.{Inject, Singleton}
 import play.api.Configuration
 import play.api.i18n.Lang
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
-import scala.io.Source
 
 @Singleton
 case class AppConfig @Inject()(
@@ -49,10 +48,10 @@ case class AppConfig @Inject()(
   val showDraftStatementsEnabled: Boolean =
     config.getOptional[Boolean]("features.show-draft-statements").getOrElse(false)
 
-  def statementsSource(): Source =
+  def statementsSource(): StatementSource =
     if (testDataEnabled) testOnlySourceConfig.statementsSource() else productionSourceConfig.statementsSource()
 
-  def statementSource(service: String): Source =
+  def statementSource(service: String): StatementSource =
     if (testDataEnabled) testOnlySourceConfig.statementSource(service)
     else productionSourceConfig.statementSource(service)
 

@@ -18,11 +18,11 @@ package unit.repos
 
 import java.util.{Calendar, GregorianCalendar}
 
-import org.mockito.MockitoSugar
 import org.mockito.ArgumentMatchers._
+import org.mockito.MockitoSugar
 import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, StatementSource}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser, AccessibilityStatementsParser}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
@@ -35,14 +35,15 @@ class AccessibilityStatementsRepoSpec
     with EitherValues
     with MockitoSugar
     with BeforeAndAfterEach {
+
   private val statementsParser = mock[AccessibilityStatementsParser]
-  when(statementsParser.parseFromSource(any[Source])) thenReturn Right(
+  when(statementsParser.parseFromSource(any[StatementSource])) thenReturn Right(
     AccessibilityStatements(Seq("foo-service", "bar-service", "foo-service.cy", "draft-service")))
 
-  private val fooSource      = Source.fromString("foo-source")
-  private val fooSourceWelsh = Source.fromString("foo-source.cy")
-  private val barSource      = Source.fromString("bar-source")
-  private val draftSource    = Source.fromString("draft-source")
+  private val fooSource      = StatementSource(Source.fromString("foo-source"), "services/foo-service.yml")
+  private val fooSourceWelsh = StatementSource(Source.fromString("foo-source.cy"), "services/foo-service.cy.yml")
+  private val barSource      = StatementSource(Source.fromString("bar-source"), "services/bar-service.yml")
+  private val draftSource    = StatementSource(Source.fromString("draft-source"), "services/draft-source.yml")
 
   def buildAppConfig(showDraftStatementsEnabled: Boolean) = {
     val appConfig = mock[AppConfig]

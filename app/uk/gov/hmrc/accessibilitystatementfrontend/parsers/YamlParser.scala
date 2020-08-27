@@ -16,21 +16,39 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.parsers
 
-import io.circe._
-import io.circe.{yaml => circeYaml}
+import io.circe.{yaml => circeYaml, _}
+import play.api.Logging
+import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
 
 import scala.io.Source
+import scala.util.{Try, Success, Failure}
 
-class YamlParser[T: Decoder] {
+class YamlParser[T: Decoder] extends Logging {
   def parse(yaml: String): Either[Error, T] =
     circeYaml.parser
       .parse(yaml)
       .flatMap(_.as[T])
 
-  def parseFromSource(source: Source): Either[Error, T] =
-    try {
-      parse(source.mkString)
-    } finally {
-      source.close()
+  def parseFromSource(statementSource: StatementSource): Either[Throwable, T] = {
+    logger.info(s"Parsing YAML source file for source: ${statementSource.filename}")
+
+    val parsedYaml = yamlAsString(statementSource.source).flatMap(parse)
+
+    parsedYaml match {
+      case Right(parsed) =>
+        Right(parsed)
+      case Left(error) =>
+        logger.error(s"Parsing error for source ${statementSource.filename}, error is: $error")
+        Left(error)
     }
+  }
+
+  private def yamlAsString(source: Source) = {
+    Try(source.mkString) match {
+      case Success(yamlAsString) =>
+        source.close()
+        Right(yamlAsString)
+      case Failure(exception) => Left(exception)
+    }
+  }
 }

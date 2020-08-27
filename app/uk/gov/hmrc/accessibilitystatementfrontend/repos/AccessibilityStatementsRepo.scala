@@ -43,7 +43,7 @@ case class AccessibilityStatementsSourceRepo @Inject()(
 
   private val accessibilityStatements: Map[RepoKey, AccessibilityStatement] = {
     logger.info(s"Starting to parse accessibility statements")
-    val services: Seq[String] = getServices
+    val services: Seq[String] = getServices()
 
     logger.info(s"Found ${services.size} accessibility statements")
 
@@ -57,7 +57,6 @@ case class AccessibilityStatementsSourceRepo @Inject()(
         Seq((serviceName, languageCode) -> statement)
       } else {
         logger.info(s"Skipping accessibility statement $serviceFileName as marked as draft")
-
         Seq.empty
       }
     }
@@ -82,7 +81,7 @@ case class AccessibilityStatementsSourceRepo @Inject()(
     }
   }
 
-  private def getServices: Seq[String] = statementsParser.parseFromSource(statementsSource()).valueOr(throw _).services
+  private def getServices(): Seq[String] = statementsParser.parseFromSource(statementsSource()).valueOr(throw _).services
 
   private def getStatement(serviceFileName: String) =
     statementParser
