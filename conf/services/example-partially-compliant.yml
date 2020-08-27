@@ -1,0 +1,27 @@
+serviceName: Discounted Cupcakes
+serviceHeaderName: Cupcakes
+serviceDescription: |
+  Use this paragraph to describe your service. It can go over multiple lines
+  like this.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /cupcakes
+contactFrontendServiceId: cupcakes
+complianceStatus: partial
+accessibilityProblems:
+  - This is one example accessibility problem
+  - This is a second one, they can go over multiple lines
+    like this
+  - This is a third accessibility problem
+milestones:
+  - description: Description of a first milesone to fix
+    date: 2020-07-31
+  - description: Description of a second milesone to fix
+      which can go on multiple lines
+    date: 2020-03-31
+  - description: Description of a third milesone to fix
+    date: 2020-03-31
+serviceLastTestedDate: 2019-09-15
+statementVisibility: draft
+statementCreatedDate: 2019-09-30
+statementLastUpdatedDate: 2019-09-30
+serviceSendsOutboundMessages: false
