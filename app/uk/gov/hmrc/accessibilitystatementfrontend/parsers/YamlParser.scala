@@ -48,14 +48,7 @@ class YamlParser[T: Decoder] extends Logging {
       case Success(yamlAsString) =>
         source.close()
         Right(yamlAsString)
-      case Failure(exception) =>
-        exception match {
-          case isNull: NullPointerException => Left(isNull)
-          case otherError =>
-            source.close()
-            Left(otherError)
-
-        }
+      case Failure(exception) => Left(exception)
     }
   }
 }
