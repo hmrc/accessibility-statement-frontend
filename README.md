@@ -37,8 +37,11 @@ statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 ```
 
-Save the YAML file to e.g. `conf/services/discounted-icecreams.yml` The name of the file without the yml extension 
-has to match the value of the serviceKey.
+You can also use the following files as examples to copy:
+- [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
+- [/conf/services/example-partially-compliant.yml]((https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml))
+
+Save the YAML file to e.g. `conf/services/discounted-icecreams.yml`
 
 We support a JSON-compatible subset of YAML. Multi-line strings are allowed but no markup is allowed within
  textual descriptions.
