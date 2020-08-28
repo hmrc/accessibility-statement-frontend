@@ -50,8 +50,8 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceUrl                   = "/foo",
     contactFrontendServiceId     = "foo",
     complianceStatus             = FullCompliance,
-    accessibilityProblems        = Seq(),
-    milestones                   = Seq(),
+    accessibilityProblems        = None,
+    milestones                   = None,
     accessibilitySupportEmail    = Some("foo@example.com"),
     accessibilitySupportPhone    = Some("08081 570000"),
     serviceSendsOutboundMessages = false,
@@ -71,14 +71,14 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceUrl               = "/bar",
     contactFrontendServiceId = "bar",
     complianceStatus         = PartialCompliance,
-    accessibilityProblems = Seq(
+    accessibilityProblems    = Some(Seq(
       "Bar problem 1",
       "Bar problem 2"
-    ),
-    milestones = Seq(
+    )),
+    milestones = Some(Seq(
       Milestone(description = "Bar milestone 1", date = new GregorianCalendar(2020, Calendar.DECEMBER, 1).getTime),
       Milestone(description = "Bar milestone 2", date = new GregorianCalendar(2020, Calendar.DECEMBER, 2).getTime)
-    ),
+    )),
     accessibilitySupportEmail    = Some("bar@example.com"),
     accessibilitySupportPhone    = Some("08081 570000"),
     serviceSendsOutboundMessages = false,

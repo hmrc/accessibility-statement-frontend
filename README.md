@@ -17,11 +17,11 @@ serviceDomain: www.tax.service.gov.uk   # The domain name underwhich this servic
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
 contactFrontendServiceId: icecreams     # The service id passed to contact-frontend and hmrc-deskpro
 complianceStatus: partial               # full|partial
-accessibilityProblems:                  # If there are no issues enter []
+accessibilityProblems:                  # If there are no issues do not include this section
   - a description of the first problem
   - another description of a problem
   - a description of the last problem
-milestones:                             # If there are no issues enter []
+milestones:                             # If there are no issues do not include this section
   - description: The X page does not have Y and also does not display Z. This doesn't meet WCAG success
       criterion X.Y.Z (Criterion Description).
     date: 2020-10-31                    # The date that this issue will be fixed by in ISO format YYYY-MM-DD
@@ -39,7 +39,7 @@ statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
-- [/conf/services/example-partially-compliant.yml]((https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml))
+- [/conf/services/example-partially-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml)
 
 Save the YAML file to e.g. `conf/services/discounted-icecreams.yml`
 

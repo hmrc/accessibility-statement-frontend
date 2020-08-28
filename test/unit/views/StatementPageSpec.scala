@@ -25,7 +25,7 @@ import play.api.i18n.{Messages, MessagesApi}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, SourceConfig, TestOnlySourceConfig}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ProductionSourceConfig, TestOnlySourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -145,13 +145,40 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<p class="govuk-body">There are no known accessibility issues within this service.</p>""")
     }
 
-    "should not return information on non compliance" in new Setup {
+    "should not return information on non compliance if milestones are empty" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should not include ("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
       contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
       contentAsString(statementPageHtml) should not include ("""<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
+    }
+
+    "should not return information on non compliance even if milestones are non-empty" in new Setup {
+      val statementPage     = app.injector.instanceOf[StatementPage]
+      val fullyAccessibleWithMilestones = fullyAccessibleServiceStatement.copy(
+        milestones = partiallyAccessibleServiceStatement.milestones
+      )
+      val statementPageHtml = statementPage(fullyAccessibleWithMilestones, None, isWelshTranslationAvailable = false)
+
+      contentAsString(statementPageHtml) should not include("""<p class="govuk-body">First milestone to be fixed</p>""")
+      contentAsString(statementPageHtml) should not include(
+        """<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>""")
+    }
+
+    "should return information on accessibility problems if problems are non-empty" in new Setup {
+      val statementPage     = app.injector.instanceOf[StatementPage]
+      val fullyAccessibleWithProblems = fullyAccessibleServiceStatement.copy(
+        accessibilityProblems = partiallyAccessibleServiceStatement.accessibilityProblems
+      )
+      val statementPageHtml = statementPage(fullyAccessibleWithProblems, None, isWelshTranslationAvailable = false)
+
+      contentAsString(statementPageHtml) should include(
+        """<p class="govuk-body">Some people may find parts of this service difficult to use:</p>""")
+      contentAsString(statementPageHtml) should include(
+        """<ul class="govuk-list govuk-list--bullet" id="accessibility-problems">""")
+      contentAsString(statementPageHtml) should include("""<li>This is the first accessibility problem</li>""")
+      contentAsString(statementPageHtml) should include("""<li>And then this is another one</li>""")
     }
   }
 
@@ -260,8 +287,8 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceUrl                   = "/fully-accessible",
       contactFrontendServiceId     = "fas",
       complianceStatus             = FullCompliance,
-      accessibilityProblems        = Seq(),
-      milestones                   = Seq(),
+      accessibilityProblems        = None,
+      milestones                   = None,
       accessibilitySupportEmail    = None,
       accessibilitySupportPhone    = None,
       serviceSendsOutboundMessages = false,
@@ -279,15 +306,15 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceUrl               = "/partially-accessible",
       contactFrontendServiceId = "pas",
       complianceStatus         = PartialCompliance,
-      accessibilityProblems = Seq(
+      accessibilityProblems    = Some(Seq(
         "This is the first accessibility problem",
         "And then this is another one",
-      ),
-      milestones = Seq(
+      )),
+      milestones = Some(Seq(
         Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
         Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
         Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
-      ),
+      )),
       accessibilitySupportEmail    = None,
       accessibilitySupportPhone    = None,
       serviceSendsOutboundMessages = false,

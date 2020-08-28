@@ -55,18 +55,16 @@
 } else {
     <p class="govuk-body">{messages("accessibility.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a></p>
 } }
-@{if(statement.accessibilityProblems.isEmpty) {
-    <p class="govuk-body">{messages("accessibility.no-issues")}</p>
-} else {
-    <p class="govuk-body">{messages("accessibility.has-issues")}</p>
-} }
 
-@if(statement.accessibilityProblems.nonEmpty) {
+@if(statement.accessibilityProblems.getOrElse(Seq()).nonEmpty) {
+    <p class="govuk-body">@{messages("accessibility.has-issues")}</p>
     <ul class="govuk-list govuk-list--bullet" id="accessibility-problems">
-    @for(problem <- statement.accessibilityProblems) {
+    @for(problem <- statement.accessibilityProblems.get) {
         <li>@problem</li>
     }
     </ul>
+} else {
+    <p class="govuk-body">@messages("accessibility.no-issues")</p>
 }
 
 <h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
@@ -119,10 +117,13 @@
     <p class="govuk-body">{messages("technical.non-compliance.introduction")}</p>
     <h4 class="govuk-heading-s">{messages("technical.non-compliance.accessibility")}</h4>
 } }
-@for(milestone <- statement.milestones) {
-    <p class="govuk-body">@{milestone.description}</p>
-    <p class="govuk-body">@{messages("technical.non-compliance.milestone.fix-by")} @{prettyPrintDate(milestone.date)}</p>
 
+@if(statement.milestones.getOrElse(Seq()).nonEmpty && !statement.isFullyCompliant) {
+    @for(milestone <- statement.milestones.get) {
+        <p class="govuk-body">@{milestone.description}</p>
+        <p class="govuk-body">@{messages("technical.non-compliance.milestone.fix-by")} @{prettyPrintDate(milestone.date)}</p>
+
+    }
 }
 
 <h2 class="govuk-heading-l">@{messages("testing.heading")}</h2>
