@@ -60,11 +60,14 @@
 } else {
     <p class="govuk-body">{messages("accessibility.has-issues")}</p>
 } }
-<ul class="govuk-list govuk-list--bullet">
-@for(problem <- statement.accessibilityProblems) {
-    <li>@problem</li>
+
+@if(statement.accessibilityProblems.nonEmpty) {
+    <ul class="govuk-list govuk-list--bullet" id="accessibility-problems">
+    @for(problem <- statement.accessibilityProblems) {
+        <li>@problem</li>
+    }
+    </ul>
 }
-</ul>
 
 <h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
 @{if(statement.accessibilitySupportEmail.isDefined || statement.accessibilitySupportPhone.isDefined) {

@@ -124,6 +124,14 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">This page was prepared on 15 March 2020. It was last updated on 01 May 2020.</p>""")
     }
+
+    "not include a list item of accessibility problems if accessibility problems is empty" in new Setup {
+      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
+
+      contentAsString(statementPageHtml) should not include(
+        """<ul class="govuk-list govuk-list--bullet" id="accessibility-problems">""")
+    }
   }
 
   "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
@@ -164,6 +172,8 @@ class StatementPageSpec extends WordSpec with Matchers {
 
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">Some people may find parts of this service difficult to use:</p>""")
+      contentAsString(statementPageHtml) should include(
+        """<ul class="govuk-list govuk-list--bullet" id="accessibility-problems">""")
       contentAsString(statementPageHtml) should include("""<li>This is the first accessibility problem</li>""")
       contentAsString(statementPageHtml) should include("""<li>And then this is another one</li>""")
     }
