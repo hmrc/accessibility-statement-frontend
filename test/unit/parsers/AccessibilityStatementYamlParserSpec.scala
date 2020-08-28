@@ -19,7 +19,7 @@ package unit.parsers
 import java.util.{Calendar, GregorianCalendar}
 import org.scalatest.{EitherValues, Matchers, WordSpec}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Milestone, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import scala.io.Source
 
@@ -35,8 +35,8 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     serviceUrl                   = "/disguised-remuneration",
     contactFrontendServiceId     = "disguised-remuneration",
     complianceStatus             = FullCompliance,
-    accessibilityProblems        = Seq(),
-    milestones                   = Seq(),
+    accessibilityProblems        = None,
+    milestones                   = None,
     accessibilitySupportEmail    = None,
     accessibilitySupportPhone    = None,
     serviceSendsOutboundMessages = false,
@@ -56,8 +56,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
-          |accessibilityProblems: []
-          |milestones: []
           |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: draft
@@ -77,8 +75,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
-          |accessibilityProblems: []
-          |milestones: []
           |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public
@@ -130,11 +126,11 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceUrl               = "/pay",
           contactFrontendServiceId = "pay-frontend",
           complianceStatus         = PartialCompliance,
-          accessibilityProblems = Seq(
+          accessibilityProblems = Some(Seq(
             "at one point we display location information on a map - however, there’s also a postcode lookup tool ...",
             "At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users ..."
-          ),
-          milestones = Seq(
+          )),
+          milestones = Some(Seq(
             Milestone(
               "We use a Barclaycard iFrame to take the card details and payments for the charge ...",
               new GregorianCalendar(2020, Calendar.JULY, 31).getTime
@@ -143,7 +139,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
               "We use titles on our webpages in order to describe the topic or purpose of the page that the user ...",
               new GregorianCalendar(2020, Calendar.MARCH, 31).getTime
             )
-          ),
+          )),
           accessibilitySupportEmail    = None,
           accessibilitySupportPhone    = None,
           serviceSendsOutboundMessages = false,
@@ -178,8 +174,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
         |serviceUrl: /disguised-remuneration
         |contactFrontendServiceId: disguised-remuneration
         |complianceStatus: full
-        |accessibilityProblems: []
-        |milestones: []
         |serviceSendsOutboundMessages: false
         |serviceLastTestedDate: 2019-12-09
         |statementVisibility: public
@@ -201,8 +195,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: unrecognised
-          |accessibilityProblems: []
-          |milestones: []
           |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public
@@ -223,8 +215,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
-          |accessibilityProblems: []
-          |milestones: []
           |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public
@@ -246,8 +236,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus:
-          |accessibilityProblems: []
-          |milestones: []
           |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public

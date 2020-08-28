@@ -65,8 +65,8 @@ object FakeStatementGenerator extends App {
       serviceUrl                   = s"/$serviceKey",
       contactFrontendServiceId     = serviceKey,
       complianceStatus             = complianceStatus,
-      accessibilityProblems        = accessibilityProblems,
-      milestones                   = milestones,
+      accessibilityProblems        = if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems),
+      milestones                   = if (milestones.isEmpty) None else Some(milestones),
       accessibilitySupportEmail    = Some(s"$serviceKey@example.com"),
       accessibilitySupportPhone    = Some("08081 570000"), // This number is guaranteed to not relate to a real individual: https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama
       serviceSendsOutboundMessages = false,
