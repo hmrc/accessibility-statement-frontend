@@ -1,10 +1,10 @@
-serviceName: Discounted Cupcakes
+serviceName: Discounted Doughnuts
 serviceHeaderName: Cupcakes
 serviceDescription: |
   Use this paragraph to describe your service. It can go over multiple lines
   like this.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /cupcakes
+serviceUrl: /doughnuts
 contactFrontendServiceId: cupcakes
 complianceStatus: partial
 accessibilityProblems:
