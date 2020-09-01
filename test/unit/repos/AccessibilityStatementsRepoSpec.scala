@@ -22,8 +22,8 @@ import org.mockito.MockitoSugar
 import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, StatementSource}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Public}
-import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser, AccessibilityStatementsParser}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
 import scala.io.Source
@@ -60,16 +60,16 @@ class AccessibilityStatementsRepoSpec
     serviceHeaderName = "Send your loan charge details",
     serviceDescription =
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
-    serviceDomain                = "www.tax.service.gov.uk",
-    serviceUrl                   = "/disguised-remuneration",
-    contactFrontendServiceId     = "disguised-remuneration",
-    complianceStatus             = FullCompliance,
-    accessibilityProblems        = None,
-    milestones                   = None,
-    statementVisibility          = Public,
-    serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
-    statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
+    serviceDomain            = "www.tax.service.gov.uk",
+    serviceUrl               = "/disguised-remuneration",
+    contactFrontendServiceId = "disguised-remuneration",
+    complianceStatus         = FullCompliance,
+    accessibilityProblems    = None,
+    milestones               = None,
+    statementVisibility      = Public,
+    serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
+    statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+    statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription =

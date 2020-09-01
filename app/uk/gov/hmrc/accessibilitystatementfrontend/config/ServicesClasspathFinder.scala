@@ -21,6 +21,8 @@ import javax.inject.Inject
 import play.api.Logging
 
 case class ServicesClasspathFinder @Inject()(appConfig: AppConfig) extends ServicesFinder with Logging {
+  import appConfig._
+
   def findAll: Seq[String] = {
     val fileNames    = getFilenames()
     val yamlFilename = "([0-9a-z\\-]+)(\\.cy)?\\.yml".r
@@ -36,8 +38,13 @@ case class ServicesClasspathFinder @Inject()(appConfig: AppConfig) extends Servi
   }
 
   private def getFilenames(): Seq[String] = {
-    val path: String = getClass.getClassLoader.getResource(appConfig.servicesDirectory).getPath
-    val files        = new File(path).listFiles()
-    files.toSeq.filter(_.isFile).map(_.getName).sorted
+    val servicesDirectoryPath = new File(getClass.getClassLoader.getResource(servicesDirectory).getPath)
+    if (servicesDirectoryPath.isDirectory) {
+      servicesDirectoryPath.listFiles().toSeq.filter(_.isFile).map(_.getName).sorted
+    } else {
+      logger.error(
+        s"Services directory $servicesDirectory is not a directory, please check the services.directory parameter in application.conf")
+      Seq.empty
+    }
   }
 }

@@ -67,5 +67,14 @@ class ServicesClasspathFinderSpec extends WordSpec with Matchers with MockitoSug
       verify(mockLogger).warn(contains("Service-7!*-.yml contains illegal characters"))(any())
       verify(mockLogger).warn(contains("y ml contains illegal characters"))(any())
     }
+
+    "return an empty sequence and log an error if the services directory is not a directory" in {
+      val mockLogger     = mock[Logger]
+      val servicesFinder = buildServicesFinder("fixtures/services-not-a-directory", mockLogger)
+
+      servicesFinder.findAll should equal(Seq.empty)
+      verify(mockLogger).error(contains("Services directory fixtures/services-not-a-directory is not a directory"))(
+        any())
+    }
   }
 }
