@@ -17,7 +17,7 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.repos
 
 import javax.inject.{Inject, Singleton}
-import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder}
 import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers._
 import cats.syntax.either._
@@ -32,18 +32,19 @@ trait AccessibilityStatementsRepo {
 @Singleton
 case class AccessibilityStatementsSourceRepo @Inject()(
   appConfig: AppConfig,
-  statementsParser: AccessibilityStatementsParser,
+  servicesFinder: ServicesFinder,
   statementParser: AccessibilityStatementParser)
     extends AccessibilityStatementsRepo
     with Logging {
   import appConfig._
+  import servicesFinder._
 
   type RepoKey   = (String, String)
   type RepoEntry = (RepoKey, AccessibilityStatement)
 
   private val accessibilityStatements: Map[RepoKey, AccessibilityStatement] = {
     logger.info(s"Starting to parse accessibility statements")
-    val services: Seq[String] = getServices()
+    val services: Seq[String] = findAll()
 
     logger.info(s"Found ${services.size} accessibility statements")
 
@@ -80,8 +81,6 @@ case class AccessibilityStatementsSourceRepo @Inject()(
       (serviceFileName, en)
     }
   }
-
-  private def getServices(): Seq[String] = statementsParser.parseFromSource(statementsSource()).valueOr(throw _).services
 
   private def getStatement(serviceFileName: String) =
     statementParser

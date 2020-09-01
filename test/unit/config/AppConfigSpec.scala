@@ -42,7 +42,9 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
   }
   private val minimalSettings = Map(
     "tracking-consent-frontend.url" -> "https://localhost:12345/tracking-consent/tracking.js",
-    "platform.frontend.host"        -> "https://www.tax.service.gov.uk")
+    "platform.frontend.host"        -> "https://www.tax.service.gov.uk",
+    "services.directory"            -> "services"
+  )
   private val minimalConfiguration           = Configuration.from(minimalSettings)
   private val servicesConfig: ServicesConfig = new ServicesConfig(minimalConfiguration)
   private val productionConfiguration        = minimalConfiguration
@@ -52,7 +54,7 @@ class AppConfigSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
     "retrieve the production source" in {
       val appConfig: AppConfig =
         AppConfig(productionConfiguration, servicesConfig, sourceConfig, testOnlySourceConfig)
-      appConfig.statementsSource().source.mkString       must be("statements")
+      appConfig.statementsSource().source.mkString     must be("statements")
       appConfig.statementSource("foo").source.mkString must be("statement")
     }
 

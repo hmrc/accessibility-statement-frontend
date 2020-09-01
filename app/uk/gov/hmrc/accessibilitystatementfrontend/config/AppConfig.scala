@@ -60,4 +60,6 @@ case class AppConfig @Inject()(
   val defaultLanguage: Lang = Lang(en)
 
   val trackingConsentUrl: String = servicesConfig.getString("tracking-consent-frontend.url")
+
+  val servicesDirectory: String = servicesConfig.getString("services.directory")
 }
