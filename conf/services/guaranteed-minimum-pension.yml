@@ -16,39 +16,39 @@ accessibilityProblems:
   - Screen readers  may not read out hint text on some questions when navigating forms. Use browse mode to read the hint text that appears after the question to help you enter data in the correct format.
   - We use error messages to help users navigate the service and they should be informative and descriptive. Some error messages in the service do not include clear descriptions to help the user to fix the problem.
 milestones:
-  - description: We use focus order to help users navigate sequentially through content. On the ‘Enter Scheme Contracted Out Number (SCON)’ page 
+  - description: "We use focus order to help users navigate sequentially through content. On the ‘Enter Scheme Contracted Out Number (SCON)’ page 
     the focus order is illogical which is disorientating for screen reader users. This fails WCAG 2.1 Reference: 2.4.3 Focus Order. The focus 
-    should be reset to allow the natural flow of the page to occur.
+    should be reset to allow the natural flow of the page to occur."
     date: 2021-06-30
-  - description: On some question pages throughout the service the legend attribute has been hidden from screen reader users. This makes the 
+  - description: "On some question pages throughout the service the legend attribute has been hidden from screen reader users. This makes the 
     experience disorientating as the relationship between the question and the answer buttons are lost. This fails WCAG 2.1 Reference: 1.3.1 
-    Info and Relationships.
+    Info and Relationships."
     date: 2021-06-30
-  - description: On some question pages throughout the service the in-page error link does not function as expected which can be a problem for users with 
-    screen readers. This fails WCAG 2.1 Reference: 2.4.1 Bypass Blocks. Error summary links should take users to the correct place. 
+  - description: "On some question pages throughout the service the in-page error link does not function as expected which can be a problem for users with 
+    screen readers. This fails WCAG 2.1 Reference: 2.4.1 Bypass Blocks. Error summary links should take users to the correct place. "
     date: 2021-06-30
-  - description: In the users’ dashboard there is a panel asking for help with user research and it contains a non-descriptive link/button where the hypertext 
-    has been hidden from screen reader users. This fails WCAG 2.1 Reference: 4.1.2 Name, Role, Value. A change in the coding and some additional information to give the link/button more context will resolve this issue. 
+  - description: "In the users’ dashboard there is a panel asking for help with user research and it contains a non-descriptive link/button where the hypertext 
+    has been hidden from screen reader users. This fails WCAG 2.1 Reference: 4.1.2 Name, Role, Value. A change in the coding and some additional information to give the link/button more context will resolve this issue."
     date: 2021-06-30
-  - description: We use tables in this service to present and order information, however in the table for ‘Scheme member details’ the table semantics have been removed incorrectly, making this page difficult for some 
+  - description: "We use tables in this service to present and order information, however in the table for ‘Scheme member details’ the table semantics have been removed incorrectly, making this page difficult for some 
     users to understand. This fails WCAG 2.1 Reference: 1.3.1 Info and Relationships. We will make changes so that the table is conveyed 
-    correctly to screen reader users.
+    correctly to screen reader users."
     date: 2021-06-30
-  - description: We use a timeout feature in this service, however users of various assistive technologies found that the timeout feature 
-    had a number of issues, including the timeout period being too short, with insufficient warning, and no option given to extend the session. 
+  - description: "We use a timeout feature in this service, however users of various assistive technologies found that the timeout feature 
+    had a number of issues, including the timeout period being too short, with insufficient warning, and no option given to extend the session.
     This fails WCAG 2.1 Reference: 2.2.1 Timing Adjustable. We will take measures to ensure the issues with the timeout feature are fixed.
-    date: 2021-06-30
-  - description: On some pages in the service there is non-descriptive labelling, meaning the hint text, which is designed to help users, 
+    date: 2021-06-30"
+  - description: "On some pages in the service there is non-descriptive labelling, meaning the hint text, which is designed to help users, 
     becomes difficult to understand, especially for users that rely on audio feedback, or users of JAWS, NVDA and VoiceOver for iPhone. 
-    This fails WCAG 2.1 Reference: 2.4.6 Headings and Labels. Correct labelling will resolve this issue.
+    This fails WCAG 2.1 Reference: 2.4.6 Headings and Labels. Correct labelling will resolve this issue."
     date: 2021-06-30 
-  - description: We use error messages to help users navigate the service and they should be informative and descriptive. On the ‘Has the 
+  - description: "We use error messages to help users navigate the service and they should be informative and descriptive. On the ‘Has the 
     member left the scheme?’ question, the error message presented to users is not descriptive. This fails WCAG 2.1 Reference: 3.3.3 Error 
-    Suggestion. This will be fixed with correct error messages.
+    Suggestion. This will be fixed with correct error messages."
     date: 2021-06-30
-  - description: In the users’ dashboard on the panel asking for help with user research there is an image/icon where the colour contrast 
+  - description: "In the users’ dashboard on the panel asking for help with user research there is an image/icon where the colour contrast 
     is difficult to see for low vision users. This fails WCAG 2.1 Reference: 1.4.11 Non-text Contrast. This icon is now obsolete and will 
-    be removed in favour of descriptive text reading ‘opens in a new tab’.
+    be removed in favour of descriptive text reading ‘opens in a new tab’."
     date: 2021-06-30
 serviceLastTestedDate: 2020-07-24
 statementVisibility: draft
