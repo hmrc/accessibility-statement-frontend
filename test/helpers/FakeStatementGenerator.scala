@@ -49,28 +49,30 @@ object FakeStatementGenerator extends App {
   private def generateStatement(serviceKey: String) = {
     val complianceStatus = if (r.nextBoolean) FullCompliance else PartialCompliance
     val accessibilityProblems = complianceStatus match {
-      case FullCompliance    => Seq.empty
-      case PartialCompliance => (0 to r.nextInt(10)).map(_ => Lorem().paragraph)
+      case FullCompliance => Seq.empty
+      case _              => (0 to r.nextInt(10)).map(_ => Lorem().paragraph)
     }
     val milestones = complianceStatus match {
-      case FullCompliance    => Seq.empty
-      case PartialCompliance => (0 to r.nextInt(10)).map(_ => generateMilestone)
+      case FullCompliance => Seq.empty
+      case _              => (0 to r.nextInt(10)).map(_ => generateMilestone)
     }
 
     AccessibilityStatement(
-      serviceName              = Lorem().sentence,
-      serviceHeaderName        = Lorem().sentence,
-      serviceDescription       = Lorem().paragraph,
-      serviceDomain            = "www.example.com",
-      serviceUrl               = s"/$serviceKey",
-      contactFrontendServiceId = serviceKey,
-      complianceStatus         = complianceStatus,
-      accessibilityProblems    = if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems),
-      milestones               = if (milestones.isEmpty) None else Some(milestones),
-      statementVisibility      = Draft,
-      serviceLastTestedDate    = generateDate,
-      statementCreatedDate     = generateDate,
-      statementLastUpdatedDate = generateDate
+      serviceName                  = Lorem().sentence,
+      serviceHeaderName            = Lorem().sentence,
+      serviceDescription           = Lorem().paragraph,
+      serviceDomain                = "www.example.com",
+      serviceUrl                   = s"/$serviceKey",
+      contactFrontendServiceId     = serviceKey,
+      complianceStatus             = complianceStatus,
+      accessibilityProblems        = if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems),
+      milestones                   = if (milestones.isEmpty) None else Some(milestones),
+      automatedTestingOnly         = None,
+      statementVisibility          = Draft,
+      serviceLastTestedDate        = generateDate,
+      statementCreatedDate         = generateDate,
+      statementLastUpdatedDate     = generateDate,
+      testingNotes                 = None
     )
   }
 

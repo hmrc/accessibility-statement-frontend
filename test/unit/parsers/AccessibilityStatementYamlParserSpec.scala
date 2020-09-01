@@ -37,10 +37,12 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     complianceStatus             = FullCompliance,
     accessibilityProblems        = None,
     milestones                   = None,
+    automatedTestingOnly         = None,
     statementVisibility          = Draft,
     serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
+    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
+    testingNotes                 = None
   )
 
   "parse" should {
@@ -120,7 +122,8 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceUrl               = "/pay",
           contactFrontendServiceId = "pay-frontend",
           complianceStatus         = PartialCompliance,
-          accessibilityProblems = Some(Seq(
+          automatedTestingOnly     = None,
+          accessibilityProblems    = Some(Seq(
             "at one point we display location information on a map - however, there’s also a postcode lookup tool ...",
             "At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users ..."
           )),
@@ -137,7 +140,8 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           statementVisibility          = Draft,
           serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
           statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime
+          statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          testingNotes                 = None
         ))
     }
 

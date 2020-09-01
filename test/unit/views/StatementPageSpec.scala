@@ -189,7 +189,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
       contentAsString(statementPageHtml) should include("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
+        """<p class="govuk-body">The content listed below is non-accessible for the following reasons.""")
       contentAsString(statementPageHtml) should include(
         """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
 
@@ -246,19 +246,21 @@ class StatementPageSpec extends WordSpec with Matchers {
     implicit val messages: Messages = messagesApi.preferred(fakeRequest)
 
     val fullyAccessibleServiceStatement = AccessibilityStatement(
-      serviceName              = "fully accessible service name",
-      serviceHeaderName        = "Fully Accessible Name",
-      serviceDescription       = "Fully accessible description.",
-      serviceDomain            = "www.tax.service.gov.uk",
-      serviceUrl               = "/fully-accessible",
-      contactFrontendServiceId = "fas",
-      complianceStatus         = FullCompliance,
-      accessibilityProblems    = None,
-      milestones               = None,
-      statementVisibility      = Draft,
-      serviceLastTestedDate    = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
-      statementCreatedDate     = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
-      statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+      serviceName                  = "fully accessible service name",
+      serviceHeaderName            = "Fully Accessible Name",
+      serviceDescription           = "Fully accessible description.",
+      serviceDomain                = "www.tax.service.gov.uk",
+      serviceUrl                   = "/fully-accessible",
+      contactFrontendServiceId     = "fas",
+      complianceStatus             = FullCompliance,
+      accessibilityProblems        = None,
+      milestones                   = None,
+      automatedTestingOnly         = None,
+      statementVisibility          = Draft,
+      serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
+      statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
+      statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
+      testingNotes                 = None
     )
 
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
@@ -269,23 +271,21 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceUrl               = "/partially-accessible",
       contactFrontendServiceId = "pas",
       complianceStatus         = PartialCompliance,
-      accessibilityProblems = Some(
-        Seq(
-          "This is the first accessibility problem",
-          "And then this is another one",
-        )),
-      milestones = Some(
-        Seq(
-          Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
-          Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
-          Milestone(
-            "Then we'll get to this third milestone",
-            new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
-        )),
-      statementVisibility      = Draft,
-      serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
-      statementCreatedDate     = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
-      statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime
+      automatedTestingOnly     = None,
+      accessibilityProblems = Some(Seq(
+        "This is the first accessibility problem",
+        "And then this is another one",
+      )),
+      milestones = Some(Seq(
+        Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
+        Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
+        Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
+      )),
+      statementVisibility          = Draft,
+      serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
+      statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
+      statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime,
+      testingNotes                 = None
     )
   }
 }
