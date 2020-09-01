@@ -11,9 +11,8 @@ general.serviceName = Datganiad hygyrchedd
 introduction.heading=Datganiad hygyrchedd ar gyfer {0}
 introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r gwasanaeth hwn, beth i’w wneud os ydych yn cael anhawster i’w ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r gwasanaeth.
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
-introduction.scope.part2=datganiad hygyrchedd
-introduction.scope.part3=ar wahân ar gyfer prif wefan GOV.UK.
-introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn
+introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK.
+introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
 
 ## Using the service
 using-service.heading=Defnyddio’r gwasanaeth hwn
@@ -38,11 +37,9 @@ accessibility.has-issues=Some people may find parts of this service difficult to
 
 ## Contact
 contact.heading=Beth i’w wneud os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn
-contact.us-by=Os ydych yn cael anhawster wrth ddefnyddio’r gwnasaneth hwn, cysylltwch â ni drwy:
-contact.email=e-bostio {0}
-contact.phone=ffonio {0}
-contact.send-documents=Fel rhan o ddarparu’r gwasanaeth hwn, mae’n bosibl y bydd angen i ni anfon negeseuon neu ddogfennau atoch. Byddwn yn gofyn i chi sut yr ydych am i ni anfon negeseuon neu ddogfennau atoch, ond cysylltwch â ni os bydd eu hangen arnoch mewn fformat gwahanol. Er enghraifft print bras, recordiad sain neu Braille.
-contact.default=Os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn, ewch i’r cysylltiad ‘Help gyda’r dudalen hon’ ar dudalen y gwasanaeth ar-lein.
+contact.extra-support.part1='You can '
+contact.extra-support.part2=contact HMRC for extra support
+contact.extra-support.part3=' if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.'
 
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn

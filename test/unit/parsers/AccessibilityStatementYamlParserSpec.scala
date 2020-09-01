@@ -37,9 +37,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     complianceStatus             = FullCompliance,
     accessibilityProblems        = None,
     milestones                   = None,
-    accessibilitySupportEmail    = None,
-    accessibilitySupportPhone    = None,
-    serviceSendsOutboundMessages = false,
     statementVisibility          = Draft,
     serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
@@ -56,7 +53,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
-          |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: draft
           |statementCreatedDate: 2019-09-23
@@ -75,7 +71,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
-          |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public
           |statementCreatedDate: 2019-09-23
@@ -108,7 +103,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |  - description: We use titles on our webpages in order to describe the topic or purpose of
           |      the page that the user ...
           |    date: 2020-03-31
-          |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-09-25
           |statementVisibility: draft
           |statementCreatedDate: 2019-10-09
@@ -140,9 +134,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
               new GregorianCalendar(2020, Calendar.MARCH, 31).getTime
             )
           )),
-          accessibilitySupportEmail    = None,
-          accessibilitySupportPhone    = None,
-          serviceSendsOutboundMessages = false,
           statementVisibility          = Draft,
           serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
           statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
@@ -174,7 +165,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
         |serviceUrl: /disguised-remuneration
         |contactFrontendServiceId: disguised-remuneration
         |complianceStatus: full
-        |serviceSendsOutboundMessages: false
         |serviceLastTestedDate: 2019-12-09
         |statementVisibility: public
         |statementCreatedDate: 2019-x9-23
@@ -195,7 +185,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: unrecognised
-          |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public
           |statementCreatedDate: 2019-09-23
@@ -215,7 +204,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
-          |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public
           |statementCreatedDate: 2019-09-23
@@ -236,7 +224,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /disguised-remuneration
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus:
-          |serviceSendsOutboundMessages: false
           |serviceLastTestedDate: 2019-12-09
           |statementVisibility: public
           |statementCreatedDate: 2019-09-23

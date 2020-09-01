@@ -1,20 +1,18 @@
-statementVisibility: draft
-complianceStatus: full
-accessibilitySupportPhone: 08081 570000
-serviceUrl: /test-service-351
 serviceDomain: www.example.com
-accessibilitySupportEmail: test-service-351@example.com
-serviceDescription: Ipsam nihil modi doloremque voluptatum ab. Architecto sit est
-  reiciendis optio aut. Aut nostrum voluptatem eum non facilis. Earum quia qui repudiandae
-  enim iure. Quod ipsum temporibus est sequi voluptatum. Aut facere rerum velit et
-  rerum. Aliquid quos laboriosam cum non quam. Nisi sit et voluptatem alias quaerat.
-  Ea excepturi sit magnam hic ut. Alias et sint necessitatibus beatae occaecati.
-statementLastUpdatedDate: '2019-06-22'
-serviceLastTestedDate: '2018-07-25'
-contactFrontendServiceId: test-service-351
+serviceHeaderName: Sed aut non doloribus quae architecto.
+serviceLastTestedDate: '2019-08-07'
 accessibilityProblems: []
-serviceSendsOutboundMessages: false
-serviceHeaderName: Iusto nobis inventore id culpa sit.
+statementCreatedDate: '2020-04-08'
+serviceUrl: /test-service-351
+serviceDescription: Aliquid non illo consequatur aut itaque. Soluta similique voluptates
+  et et delectus. Non placeat explicabo quod sint et. Exercitationem velit sed laborum
+  quo ad. Qui ad non eos eum voluptatem. Est perferendis est saepe culpa debitis.
+  Laborum fuga facilis voluptas omnis voluptatibus. Sunt ad sequi consectetur eaque
+  fugiat. Id autem exercitationem sapiente mollitia et. Velit in quia laborum soluta
+  nostrum.
+serviceName: Iusto natus provident magnam dolore qui.
 milestones: []
-serviceName: Qui assumenda nostrum ut incidunt similique.
-statementCreatedDate: '2020-02-29'
+complianceStatus: full
+statementLastUpdatedDate: '2019-03-25'
+contactFrontendServiceId: test-service-351
+statementVisibility: draft

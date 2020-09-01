@@ -47,7 +47,6 @@ milestones:
       prevents some screen reading software from narrating the label. This means
       the service does not meet WCAG success criterion 2.4.6.
     date: 2020-03-31
-serviceSendsOutboundMessages: false
 serviceLastTestedDate: 2020-09-25
 statementVisibility: draft
 statementCreatedDate: 2019-10-09

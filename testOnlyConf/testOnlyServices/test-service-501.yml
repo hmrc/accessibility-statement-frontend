@@ -1,21 +1,18 @@
-serviceDomain: www.example.com
-complianceStatus: full
-accessibilityProblems: []
-contactFrontendServiceId: test-service-501
-serviceDescription: Et nemo quis provident illo incidunt. Vitae deserunt doloremque
-  distinctio aliquid ea. Laboriosam eaque vitae praesentium rerum officia. Sunt a
-  fuga labore qui quia. Quis eligendi saepe dolorum inventore voluptas. Blanditiis
-  ab provident laboriosam maiores magni. Officiis laboriosam magnam odit aut nihil.
-  Natus eveniet nulla et voluptatum quae. Nisi eius necessitatibus et deserunt exercitationem.
-  In dicta voluptatem autem modi aut.
-statementVisibility: draft
-statementCreatedDate: '2018-10-30'
-accessibilitySupportEmail: test-service-501@example.com
-serviceLastTestedDate: '2019-07-12'
 milestones: []
+serviceDomain: www.example.com
 serviceUrl: /test-service-501
-serviceSendsOutboundMessages: false
-statementLastUpdatedDate: '2018-01-01'
-accessibilitySupportPhone: 08081 570000
-serviceHeaderName: Consequatur delectus et earum non dignissimos.
-serviceName: Reprehenderit nostrum voluptatibus quasi quidem aspernatur.
+statementLastUpdatedDate: '2020-03-05'
+serviceName: Similique libero totam vitae veniam commodi.
+serviceDescription: Ex et consequatur corrupti repellat voluptate. Qui dolores autem
+  eligendi quidem aut. Voluptatem dolores vitae cum corrupti laboriosam. Saepe facere
+  necessitatibus et rem qui. Exercitationem consequatur earum reprehenderit modi possimus.
+  Nihil expedita harum quis nulla porro. Rerum in totam eligendi enim veritatis. Laboriosam
+  minus veritatis voluptate voluptates et. Dolorem voluptatibus neque autem rem tempora.
+  Porro cum quod nostrum magnam accusantium.
+complianceStatus: full
+serviceHeaderName: Nisi qui sunt ea qui sunt.
+serviceLastTestedDate: '2018-03-29'
+contactFrontendServiceId: test-service-501
+statementVisibility: draft
+statementCreatedDate: '2018-05-29'
+accessibilityProblems: []

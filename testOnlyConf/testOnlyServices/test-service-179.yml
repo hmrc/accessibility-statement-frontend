@@ -1,21 +1,18 @@
-serviceDomain: www.example.com
-accessibilitySupportPhone: 08081 570000
-serviceSendsOutboundMessages: false
-serviceUrl: /test-service-179
-statementLastUpdatedDate: '2020-05-12'
-statementCreatedDate: '2019-10-03'
 statementVisibility: draft
-serviceDescription: Aut soluta consequatur optio rerum nesciunt. Temporibus autem
-  labore qui rerum tempore. Vero et aliquid accusamus dolorem sint. Voluptatem voluptatem
-  sit voluptas vitae eos. Neque adipisci sunt dignissimos veritatis quod. Ad enim
-  est qui est dolorem. Maiores accusamus quisquam occaecati et est. Ea necessitatibus
-  qui eligendi repellat fugiat. Quo quo et velit nesciunt et. Voluptatum atque et
-  eos voluptatem et.
-contactFrontendServiceId: test-service-179
-serviceHeaderName: Dolor quaerat qui est voluptatum velit.
-accessibilitySupportEmail: test-service-179@example.com
-accessibilityProblems: []
-serviceName: Repudiandae consequatur nesciunt autem odio autem.
-serviceLastTestedDate: '2020-04-19'
-complianceStatus: full
 milestones: []
+statementCreatedDate: '2018-12-24'
+accessibilityProblems: []
+statementLastUpdatedDate: '2019-05-15'
+serviceDescription: Dignissimos aut esse ut in minima. Voluptate fugit consequatur
+  et ut labore. Rerum molestias sunt consequatur dicta aliquam. Veniam veniam quam
+  doloribus omnis accusantium. Adipisci reiciendis corrupti quam dolores qui. Labore
+  molestias fuga ullam deleniti voluptatem. Qui dolorem rerum nostrum illum consectetur.
+  Dolores nemo culpa molestiae dolorem veritatis. Itaque cum est est maxime quisquam.
+  Voluptatem ut odit qui accusamus excepturi.
+complianceStatus: full
+contactFrontendServiceId: test-service-179
+serviceUrl: /test-service-179
+serviceLastTestedDate: '2018-11-05'
+serviceName: Sunt debitis ipsa earum voluptatum aut.
+serviceHeaderName: Repudiandae beatae est excepturi mollitia natus.
+serviceDomain: www.example.com

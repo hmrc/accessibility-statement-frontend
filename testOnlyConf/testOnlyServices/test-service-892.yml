@@ -1,21 +1,18 @@
-accessibilitySupportEmail: test-service-892@example.com
 serviceUrl: /test-service-892
-complianceStatus: full
-serviceHeaderName: Eos accusamus at eveniet et tempore.
-statementCreatedDate: '2019-04-27'
-serviceDomain: www.example.com
-statementVisibility: draft
-statementLastUpdatedDate: '2019-07-09'
-serviceSendsOutboundMessages: false
 accessibilityProblems: []
-serviceName: Voluptate suscipit aut temporibus asperiores odio.
-accessibilitySupportPhone: 08081 570000
-serviceLastTestedDate: '2018-03-20'
+serviceHeaderName: Eaque ex quia magni quidem aut.
+serviceDomain: www.example.com
+statementCreatedDate: '2019-12-18'
+serviceDescription: Ab numquam architecto deserunt cum repellendus. Voluptas harum
+  labore hic tempore magnam. Cupiditate omnis qui aut tempore beatae. Sed aut nihil
+  distinctio hic porro. Atque commodi et cupiditate dolores praesentium. Excepturi
+  maiores quo quos nulla placeat. Accusamus voluptatem vel ratione magni omnis. Enim
+  ex molestiae atque ratione quibusdam. Beatae quis maiores repudiandae aut reiciendis.
+  Sit explicabo quia et occaecati et.
 milestones: []
-serviceDescription: Distinctio dolore amet placeat laboriosam neque. Et voluptatum
-  minima aperiam occaecati quam. Odit fugit et laborum id hic. Inventore quia quia
-  et dicta expedita. Modi a qui porro quasi dolores. Magni maiores est sed quidem
-  autem. Natus aspernatur voluptatem repellendus beatae et. Commodi et doloribus consequatur
-  voluptatem id. Est perspiciatis pariatur deserunt sed asperiores. Assumenda voluptatibus
-  dolorum aliquam quisquam amet.
+statementVisibility: draft
+serviceName: Quia est illum blanditiis inventore ipsum.
+serviceLastTestedDate: '2018-04-28'
+statementLastUpdatedDate: '2019-12-04'
+complianceStatus: full
 contactFrontendServiceId: test-service-892

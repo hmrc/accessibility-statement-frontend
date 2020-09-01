@@ -6,7 +6,6 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /disguised-remuneration
 contactFrontendServiceId: disguised-remuneration-frontend
 complianceStatus: full
-serviceSendsOutboundMessages: false
 serviceLastTestedDate: 2019-12-09
 statementVisibility: draft
 statementCreatedDate: 2019-09-23

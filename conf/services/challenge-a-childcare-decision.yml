@@ -28,7 +28,6 @@ milestones:
       Some error messages may not contain the full information needed to help people to answer
       questions. This does not meet WCAG 2.1 success criterion 3.3.3 (error suggestion).
     date: 2020-06-30
-serviceSendsOutboundMessages: false
 serviceLastTestedDate: 2019-06-06
 statementVisibility: draft
 statementCreatedDate: 2019-09-23

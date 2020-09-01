@@ -1,20 +1,17 @@
-serviceDomain: www.example.com
-accessibilityProblems: []
+serviceLastTestedDate: '2018-09-01'
+serviceHeaderName: Quam voluptatem aliquid saepe ipsam occaecati.
 complianceStatus: full
-accessibilitySupportPhone: 08081 570000
-statementLastUpdatedDate: '2019-03-15'
-statementCreatedDate: '2018-05-03'
-serviceDescription: Earum aspernatur ipsam nobis magnam saepe. Nobis et delectus inventore
-  officia nulla. Reprehenderit sed perspiciatis dolorum et fugit. Iure ex dolore rerum
-  et ad. Cumque quam pariatur ut illo omnis. Quia sed ea quo ipsa nobis. Odit debitis
-  dolores rerum molestiae dolore. Totam error eos praesentium totam sunt. Repudiandae
-  aut voluptas quia ab qui. Qui beatae doloremque accusamus est doloremque.
-serviceSendsOutboundMessages: false
 serviceUrl: /test-service-148
-serviceHeaderName: Placeat explicabo quisquam vel provident voluptas.
-contactFrontendServiceId: test-service-148
+statementLastUpdatedDate: '2019-12-04'
+serviceDescription: Non dolores in aspernatur quod ut. Qui aut quos cum omnis et.
+  Reiciendis aperiam consequatur et aliquid vel. Id minima dolorum temporibus possimus
+  iste. Nulla porro asperiores error doloribus aut. Omnis optio tempora necessitatibus
+  corporis et. Ut quaerat illum alias quia et. Est adipisci qui harum quibusdam eum.
+  Earum ex et quibusdam non dolorem. Et qui saepe omnis iste ad.
+accessibilityProblems: []
+serviceName: Quibusdam et beatae doloribus ut quia.
 milestones: []
-serviceName: Qui qui similique deleniti corporis et.
-accessibilitySupportEmail: test-service-148@example.com
-serviceLastTestedDate: '2020-07-26'
+serviceDomain: www.example.com
+contactFrontendServiceId: test-service-148
+statementCreatedDate: '2019-08-05'
 statementVisibility: draft

@@ -1,21 +1,18 @@
+statementCreatedDate: '2018-09-20'
+statementLastUpdatedDate: '2020-03-05'
+serviceLastTestedDate: '2019-01-13'
+serviceDescription: Dolores pariatur blanditiis dicta qui quia. Laboriosam qui suscipit
+  reiciendis vel dolor. Vitae ut totam quod necessitatibus sequi. Consequatur recusandae
+  esse odio ea aut. Corrupti repellat sint nihil ut ea. Voluptatem beatae temporibus
+  perferendis laborum veniam. Id id sit voluptate quas delectus. Aliquam enim mollitia
+  et dicta quam. Autem sit quam aspernatur aut assumenda. Corrupti voluptatum totam
+  quo aperiam vitae.
 contactFrontendServiceId: test-service-770
-statementCreatedDate: '2019-09-09'
-serviceDomain: www.example.com
-serviceDescription: Dolore assumenda dolorum sed distinctio totam. Dignissimos aut
-  et exercitationem maiores dolores. Ut expedita repellat amet nesciunt ratione. Cum
-  molestias impedit in dicta esse. Aliquid qui temporibus ut qui voluptates. Quia
-  suscipit aut saepe sequi consequatur. Fuga quasi veniam enim dicta qui. Similique
-  aut vel debitis nemo possimus. Ut saepe qui rem dolor ab. Earum similique voluptatem
-  vel quod facere.
-serviceLastTestedDate: '2020-02-01'
-statementLastUpdatedDate: '2020-03-21'
-accessibilitySupportPhone: 08081 570000
 milestones: []
-serviceUrl: /test-service-770
+serviceName: Qui unde ut fugiat totam occaecati.
+serviceHeaderName: Facere excepturi veniam quia aliquam sunt.
+serviceDomain: www.example.com
 accessibilityProblems: []
-serviceName: Corporis autem vel facere cum consequatur.
 statementVisibility: draft
 complianceStatus: full
-accessibilitySupportEmail: test-service-770@example.com
-serviceHeaderName: Molestiae ut sit natus id odit.
-serviceSendsOutboundMessages: false
+serviceUrl: /test-service-770

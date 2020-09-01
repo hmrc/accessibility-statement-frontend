@@ -1,21 +1,17 @@
-serviceSendsOutboundMessages: false
-accessibilitySupportEmail: test-service-227@example.com
+statementCreatedDate: '2020-01-15'
+statementVisibility: draft
+serviceLastTestedDate: '2018-10-06'
 accessibilityProblems: []
-contactFrontendServiceId: test-service-227
+serviceDescription: Quasi rerum deserunt quia et autem. Ratione ut et quisquam pariatur
+  omnis. Laborum ut a maiores et veritatis. Aut quae et quis rem sit. Aliquid delectus
+  debitis amet asperiores nihil. Repellat enim ut corporis quibusdam sed. Quia iusto
+  aut vitae vitae eos. Qui sit cupiditate neque et sed. Quas voluptatem necessitatibus
+  ab magni id. Optio suscipit perferendis qui possimus labore.
+statementLastUpdatedDate: '2019-08-05'
+milestones: []
+serviceUrl: /test-service-227
 serviceDomain: www.example.com
 complianceStatus: full
-statementLastUpdatedDate: '2019-06-16'
-statementVisibility: draft
-serviceUrl: /test-service-227
-serviceDescription: Neque at saepe quibusdam officia dolores. Hic et atque id nemo
-  nulla. Velit praesentium consectetur eos perspiciatis sequi. Ut aut aut ut officiis
-  consequuntur. Eum deserunt qui consequatur aperiam aut. Minus ad sint aliquid deserunt
-  excepturi. Et quibusdam consequatur tempora et quia. Temporibus nam et eos quisquam
-  id. Doloribus magni voluptatibus quo quis pariatur. Facilis fugiat sit at facere
-  magnam.
-milestones: []
-accessibilitySupportPhone: 08081 570000
-serviceHeaderName: Dolor placeat deleniti sed nobis veritatis.
-serviceLastTestedDate: '2018-07-13'
-serviceName: Dolores rerum eum ut voluptas sed.
-statementCreatedDate: '2018-06-18'
+serviceName: In officiis enim eum autem aut.
+serviceHeaderName: Quam aut ut explicabo nobis ipsum.
+contactFrontendServiceId: test-service-227

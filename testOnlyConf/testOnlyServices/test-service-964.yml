@@ -1,20 +1,18 @@
-statementLastUpdatedDate: '2018-09-25'
-accessibilitySupportEmail: test-service-964@example.com
-serviceUrl: /test-service-964
-serviceLastTestedDate: '2020-04-24'
-complianceStatus: full
-serviceName: Quod hic nihil a optio ut.
-serviceDescription: Nihil sit nisi et odit fuga. Repellat velit aut eos sit qui. Odit
-  vero qui architecto asperiores enim. Aut libero dicta et mollitia consequatur. Alias
-  magnam porro reprehenderit ad earum. Incidunt culpa harum quia suscipit dolore.
-  Aut excepturi non a et pariatur. Consectetur neque recusandae facilis suscipit rerum.
-  Quae cum possimus sint dolor ipsa. Quia doloremque voluptatem similique sunt officiis.
-accessibilitySupportPhone: 08081 570000
 serviceDomain: www.example.com
+complianceStatus: full
 statementVisibility: draft
-contactFrontendServiceId: test-service-964
-serviceHeaderName: Ipsa non sed voluptas voluptas tempore.
+serviceHeaderName: Et voluptatem voluptas dolorem et commodi.
+serviceDescription: Totam adipisci in aut accusamus labore. Exercitationem et impedit
+  quis commodi voluptatem. Voluptatem consequatur corporis sed nemo alias. Possimus
+  praesentium deleniti minima velit iure. Aut sint in placeat et voluptas. Error ut
+  illum sint ipsam quis. Dolore nisi dolorem facere quae sit. Corporis aliquam eligendi
+  rerum similique nam. Est cupiditate saepe culpa vitae facere. Qui commodi voluptas
+  maiores possimus optio.
+serviceName: Omnis enim error ipsa dolor laudantium.
+statementLastUpdatedDate: '2018-03-19'
+serviceUrl: /test-service-964
 milestones: []
-serviceSendsOutboundMessages: false
 accessibilityProblems: []
-statementCreatedDate: '2019-07-07'
+statementCreatedDate: '2018-05-15'
+serviceLastTestedDate: '2018-06-10'
+contactFrontendServiceId: test-service-964
