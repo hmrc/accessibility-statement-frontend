@@ -33,8 +33,9 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
   private val app: Application = new GuiceApplicationBuilder()
     .configure(
       Map(
-        "metrics.enabled"  -> false,
-        "auditing.enabled" -> false
+        "metrics.enabled"    -> false,
+        "auditing.enabled"   -> false,
+        "services.directory" -> "integrationTestServices"
       )
     )
     .overrides(bind[ProductionSourceConfig].to[IntegrationTestSourceConfig])
@@ -43,19 +44,19 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
   private val repo = app.injector.instanceOf[AccessibilityStatementsSourceRepo]
 
   private val fooStatement = AccessibilityStatement(
-    serviceName                  = "Foo",
-    serviceHeaderName            = "Foo",
-    serviceDescription           = "The foo service allows you to do foo",
-    serviceDomain                = "www.example.com",
-    serviceUrl                   = "/foo",
-    contactFrontendServiceId     = "foo",
-    complianceStatus             = FullCompliance,
-    accessibilityProblems        = None,
-    milestones                   = None,
-    statementVisibility          = Public,
-    serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
-    statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
+    serviceName              = "Foo",
+    serviceHeaderName        = "Foo",
+    serviceDescription       = "The foo service allows you to do foo",
+    serviceDomain            = "www.example.com",
+    serviceUrl               = "/foo",
+    contactFrontendServiceId = "foo",
+    complianceStatus         = FullCompliance,
+    accessibilityProblems    = None,
+    milestones               = None,
+    statementVisibility      = Public,
+    serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
+    statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+    statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription = "Mae'r gwasanaeth foo yn caniatáu ichi wneud foo"
@@ -68,18 +69,20 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceUrl               = "/bar",
     contactFrontendServiceId = "bar",
     complianceStatus         = PartialCompliance,
-    accessibilityProblems    = Some(Seq(
-      "Bar problem 1",
-      "Bar problem 2"
-    )),
-    milestones = Some(Seq(
-      Milestone(description = "Bar milestone 1", date = new GregorianCalendar(2020, Calendar.DECEMBER, 1).getTime),
-      Milestone(description = "Bar milestone 2", date = new GregorianCalendar(2020, Calendar.DECEMBER, 2).getTime)
-    )),
-    statementVisibility          = Public,
-    serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
-    statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
+    accessibilityProblems = Some(
+      Seq(
+        "Bar problem 1",
+        "Bar problem 2"
+      )),
+    milestones = Some(
+      Seq(
+        Milestone(description = "Bar milestone 1", date = new GregorianCalendar(2020, Calendar.DECEMBER, 1).getTime),
+        Milestone(description = "Bar milestone 2", date = new GregorianCalendar(2020, Calendar.DECEMBER, 2).getTime)
+      )),
+    statementVisibility      = Public,
+    serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
+    statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+    statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
 
   private val barStatementWelsh = barStatement.copy(

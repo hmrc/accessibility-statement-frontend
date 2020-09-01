@@ -13,7 +13,7 @@ serviceHeaderName: Icecreams            # The service name as it should appear i
 serviceDescription: |                   # A description of the service
   Use this paragraph to describe your service. It can go over multiple lines
   like this.
-serviceDomain: www.tax.service.gov.uk   # The domain name underwhich this service exists (exclude the https:// and the path)
+serviceDomain: www.tax.service.gov.uk   # The domain name under which this service exists (exclude the https:// and the path)
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
 contactFrontendServiceId: icecreams     # The service id passed to contact-frontend and hmrc-deskpro
 complianceStatus: partial               # full|partial
@@ -40,24 +40,13 @@ You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
 - [/conf/services/example-partially-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml)
 
-Save the YAML file to e.g. `conf/services/discounted-icecreams.yml`
+Save the YAML file to the `conf/services` directory.
 
-We support a JSON-compatible subset of YAML. Multi-line strings are allowed but no markup is allowed within
- textual descriptions.
+The filename must be of the form <my-service>.yml. The name of the file will become the URL of the accessibility statement 
+e.g. `conf/services/discounted-icecreams.yml` will create an accessibility statement at 
+`https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams`.
 
-Open up `conf/services.yml` and add the key to your service at the end:
-
-```yaml
-services:
-  - challenge-a-childcare-decision
-  - coronavirus-job-retention-scheme
-  - direct-debit
-  - online-payments
-  - disguised-remuneration
-  - pay-what-you-owe-in-instalments
-  - discounted-icecreams              # A unique name for the statement used for routing e.g. https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams
-                                      # It's crucial this key matches the name of your service's statement YAML file
-``` 
+Also note, the filename can contain only lower case letters, dashes or numbers. The filename extension must be `.yml`
 
 Before opening a PR, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run all the tests locally as described below.

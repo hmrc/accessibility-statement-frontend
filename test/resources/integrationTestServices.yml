@@ -1,5 +1,0 @@
-services:
-  - foo-service
-  - foo-service.cy
-  - bar-service
-  - bar-service.cy

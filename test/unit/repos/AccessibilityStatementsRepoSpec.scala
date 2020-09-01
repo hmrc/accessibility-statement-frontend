@@ -18,13 +18,12 @@ package unit.repos
 
 import java.util.{Calendar, GregorianCalendar}
 
-import org.mockito.ArgumentMatchers._
 import org.mockito.MockitoSugar
 import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, StatementSource}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Public}
-import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser, AccessibilityStatementsParser}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, StatementSource}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
 import scala.io.Source
@@ -35,10 +34,6 @@ class AccessibilityStatementsRepoSpec
     with EitherValues
     with MockitoSugar
     with BeforeAndAfterEach {
-
-  private val statementsParser = mock[AccessibilityStatementsParser]
-  when(statementsParser.parseFromSource(any[StatementSource])) thenReturn Right(
-    AccessibilityStatements(Seq("foo-service", "bar-service", "foo-service.cy", "draft-service")))
 
   private val fooSource      = StatementSource(Source.fromString("foo-source"), "services/foo-service.yml")
   private val fooSourceWelsh = StatementSource(Source.fromString("foo-source.cy"), "services/foo-service.cy.yml")
@@ -65,16 +60,16 @@ class AccessibilityStatementsRepoSpec
     serviceHeaderName = "Send your loan charge details",
     serviceDescription =
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
-    serviceDomain                = "www.tax.service.gov.uk",
-    serviceUrl                   = "/disguised-remuneration",
-    contactFrontendServiceId     = "disguised-remuneration",
-    complianceStatus             = FullCompliance,
-    accessibilityProblems        = None,
-    milestones                   = None,
-    statementVisibility          = Public,
-    serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
-    statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
+    serviceDomain            = "www.tax.service.gov.uk",
+    serviceUrl               = "/disguised-remuneration",
+    contactFrontendServiceId = "disguised-remuneration",
+    complianceStatus         = FullCompliance,
+    accessibilityProblems    = None,
+    milestones               = None,
+    statementVisibility      = Public,
+    serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
+    statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+    statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription =
@@ -89,7 +84,10 @@ class AccessibilityStatementsRepoSpec
   when(statementParser.parseFromSource(barSource)) thenReturn Right(barStatement)
   when(statementParser.parseFromSource(draftSource)) thenReturn Right(draftStatement)
 
-  private val repo = AccessibilityStatementsSourceRepo(appConfig, statementsParser, statementParser)
+  private val servicesFinder = mock[ServicesFinder]
+  when(servicesFinder.findAll()) thenReturn Seq("foo-service", "bar-service", "foo-service.cy", "draft-service")
+
+  private val repo = AccessibilityStatementsSourceRepo(appConfig, servicesFinder, statementParser)
 
   "findByServiceKeyAndLanguage" should {
     "find the correct service for English statement" in {
@@ -110,7 +108,7 @@ class AccessibilityStatementsRepoSpec
 
     "find a draft service if feature show draft toggle is enabled" in {
       val appConfigWithDraftsEnabled = buildAppConfig(showDraftStatementsEnabled = true)
-      val repo                       = AccessibilityStatementsSourceRepo(appConfigWithDraftsEnabled, statementsParser, statementParser)
+      val repo                       = AccessibilityStatementsSourceRepo(appConfigWithDraftsEnabled, servicesFinder, statementParser)
 
       repo.findByServiceKeyAndLanguage("draft-service", Lang("en")) should be(Some((draftStatement, Lang("en"))))
     }
