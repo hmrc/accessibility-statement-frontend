@@ -36,8 +36,8 @@ milestones:
     date: 2021-06-30
   - description: "We use a timeout feature in this service, however users of various assistive technologies found that the timeout feature 
     had a number of issues, including the timeout period being too short, with insufficient warning, and no option given to extend the session.
-    This fails WCAG 2.1 Reference: 2.2.1 Timing Adjustable. We will take measures to ensure the issues with the timeout feature are fixed.
-    date: 2021-06-30"
+    This fails WCAG 2.1 Reference: 2.2.1 Timing Adjustable. We will take measures to ensure the issues with the timeout feature are fixed."
+    date: 2021-06-30
   - description: "On some pages in the service there is non-descriptive labelling, meaning the hint text, which is designed to help users, 
     becomes difficult to understand, especially for users that rely on audio feedback, or users of JAWS, NVDA and VoiceOver for iPhone. 
     This fails WCAG 2.1 Reference: 2.4.6 Headings and Labels. Correct labelling will resolve this issue."
