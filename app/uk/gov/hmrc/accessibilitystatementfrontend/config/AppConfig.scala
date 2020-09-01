@@ -22,11 +22,7 @@ import play.api.i18n.Lang
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 @Singleton
-case class AppConfig @Inject()(
-  config: Configuration,
-  servicesConfig: ServicesConfig,
-  productionSourceConfig: ProductionSourceConfig,
-  testOnlySourceConfig: TestOnlySourceConfig) {
+case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesConfig) {
 
   private val platformFrontendHost = config.getOptional[String]("platform.frontend.host")
   val languageControllerHostUrl: String = platformFrontendHost.getOrElse(
@@ -42,18 +38,8 @@ case class AppConfig @Inject()(
   val welshLanguageSupportEnabled: Boolean =
     config.getOptional[Boolean]("features.welsh-language-support").getOrElse(false)
 
-  private val testDataEnabled: Boolean =
-    config.getOptional[Boolean]("features.use-test-data").getOrElse(false)
-
   val showDraftStatementsEnabled: Boolean =
     config.getOptional[Boolean]("features.show-draft-statements").getOrElse(false)
-
-  def statementsSource(): StatementSource =
-    if (testDataEnabled) testOnlySourceConfig.statementsSource() else productionSourceConfig.statementsSource()
-
-  def statementSource(service: String): StatementSource =
-    if (testDataEnabled) testOnlySourceConfig.statementSource(service)
-    else productionSourceConfig.statementSource(service)
 
   val en: String            = "en"
   val cy: String            = "cy"

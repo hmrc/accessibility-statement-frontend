@@ -17,42 +17,21 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.config
 
 import javax.inject.{Inject, Singleton}
-import play.api.Logging
 import scala.io.Source
 
 case class StatementSource(source: Source, filename: String)
 
-trait SourceConfig extends Logging {
-  def statementsSource(): StatementSource
-
-  def statementSource(service: String): StatementSource
-}
-
-trait ProductionSourceConfig extends SourceConfig
-trait TestOnlySourceConfig extends SourceConfig
-
 @Singleton
-case class DefaultProductionSourceConfig @Inject()() extends ProductionSourceConfig {
-  override def statementsSource(): StatementSource = {
-    val filename = "services.yml"
+case class SourceConfig @Inject()(appConfig: AppConfig) {
+  import appConfig._
+
+  def statementsSource(): StatementSource = {
+    val filename = s"$servicesDirectory.yml"
     StatementSource(Source.fromResource(filename), filename)
   }
 
-  override def statementSource(service: String): StatementSource = {
-    val filename = s"services/$service.yml"
-    StatementSource(Source.fromResource(filename), filename)
-  }
-}
-
-@Singleton
-case class DefaultTestOnlySourceConfig @Inject()() extends TestOnlySourceConfig {
-  override def statementsSource(): StatementSource = {
-    val filename = "testOnlyServices.yml"
-    StatementSource(Source.fromResource(filename), filename)
-  }
-
-  override def statementSource(service: String): StatementSource = {
-    val filename = s"testOnlyServices/$service.yml"
+  def statementSource(service: String): StatementSource = {
+    val filename = s"$servicesDirectory/$service.yml"
     StatementSource(Source.fromResource(filename), filename)
   }
 }

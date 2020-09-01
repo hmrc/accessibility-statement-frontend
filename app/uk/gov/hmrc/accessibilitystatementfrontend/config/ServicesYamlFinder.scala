@@ -20,9 +20,9 @@ import cats.syntax.either._
 import javax.inject.Inject
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementsParser
 
-class ServicesYamlFinder @Inject()(appConfig: AppConfig, statementsParser: AccessibilityStatementsParser)
+class ServicesYamlFinder @Inject()(sourceConfig: SourceConfig, statementsParser: AccessibilityStatementsParser)
     extends ServicesFinder {
-  import appConfig._
+  import sourceConfig._
 
   def findAll(): Seq[String] = statementsParser.parseFromSource(statementsSource()).valueOr(throw _).services
 }

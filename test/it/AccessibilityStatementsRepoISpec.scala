@@ -18,13 +18,10 @@ package it
 
 import java.util.{Calendar, GregorianCalendar}
 
-import helpers.IntegrationTestSourceConfig
 import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
 import play.api.Application
 import play.api.i18n.Lang
-import play.api.inject.bind
 import play.api.inject.guice.GuiceApplicationBuilder
-import uk.gov.hmrc.accessibilitystatementfrontend.config.ProductionSourceConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
@@ -38,7 +35,6 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
         "services.directory" -> "integrationTestServices"
       )
     )
-    .overrides(bind[ProductionSourceConfig].to[IntegrationTestSourceConfig])
     .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
   private val repo = app.injector.instanceOf[AccessibilityStatementsSourceRepo]
