@@ -72,7 +72,7 @@ class AccessibilityStatementsRepoSpec
     serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    testingNotes                 = None
+    additionalTestingDetails                 = None
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription =

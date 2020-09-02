@@ -30,10 +30,14 @@ milestones:                             # If there are no issues do not include 
       cannot use the service reliably. This does not meet WCAG success criterion
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
-serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD
+serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If you statement has not yet been tested, use 2020-11-30
 statementVisibility: public             # If set to public, the statement will be visible in production
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
+automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
+additionalTestingDetails: |             # Only add this value if your service has only had automated testing
+  If your service has only had automated testing, add a text description of testing tools used, e.g.
+  It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```
 
 You can also use the following files as examples to copy:

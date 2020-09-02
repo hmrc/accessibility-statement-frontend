@@ -69,14 +69,18 @@ in-person-contact.find-out-how.part2=how to get extra support from HMRC.
 ## Technical information
 technical.heading=Technical information about this service’s accessibility
 technical.commitment=HMRC is committed to making this service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
-technical.compliance.full=This service is fully compliant with the
-technical.compliance.partial='This service is partially compliant with the Web Content Accessibility Guidelines version 2.1 '
-technical.compliance.guidelines=AA standard
+technical.compliance.full='This service is fully compliant with the '
+technical.compliance.partial='This service is partially compliant with the '
+technical.compliance.noncompliant='This service is non compliant with the '
+technical.compliance.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
+technical.compliance.full.reasons=.
 technical.compliance.partial.reasons=, due to the non-compliances listed below.
 technical.non-compliance.header=Non-accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non-compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by
+technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.
+technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 December 2020.
 
 ## Testing
 testing.heading=How we tested this service

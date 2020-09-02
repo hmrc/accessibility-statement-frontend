@@ -42,7 +42,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    testingNotes                 = None
+    additionalTestingDetails                 = None
   )
 
   "parse" should {
@@ -141,7 +141,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
           statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          testingNotes                 = None
+          additionalTestingDetails                 = None
         ))
     }
 

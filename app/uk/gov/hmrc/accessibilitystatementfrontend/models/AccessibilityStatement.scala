@@ -21,31 +21,36 @@ import io.circe.{Decoder, Encoder}
 import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 
 case class AccessibilityStatement(
-  serviceName: String,
-  serviceHeaderName: String,
-  serviceDescription: String,
-  serviceDomain: String,
-  serviceUrl: String,
-  contactFrontendServiceId: String,
-  complianceStatus: ComplianceStatus,
-  accessibilityProblems: Option[Seq[String]],
-  milestones: Option[Seq[Milestone]],
-  automatedTestingOnly: Option[Boolean],
-  statementVisibility: Visibility,
-  serviceLastTestedDate: Date,
-  statementCreatedDate: Date,
-  statementLastUpdatedDate: Date,
-  testingNotes: Option[String]) {
+                                   serviceName: String,
+                                   serviceHeaderName: String,
+                                   serviceDescription: String,
+                                   serviceDomain: String,
+                                   serviceUrl: String,
+                                   contactFrontendServiceId: String,
+                                   complianceStatus: ComplianceStatus,
+                                   accessibilityProblems: Option[Seq[String]],
+                                   milestones: Option[Seq[Milestone]],
+                                   automatedTestingOnly: Option[Boolean],
+                                   statementVisibility: Visibility,
+                                   serviceLastTestedDate: Date,
+                                   statementCreatedDate: Date,
+                                   statementLastUpdatedDate: Date,
+                                   additionalTestingDetails: Option[String]
+                                 ) {
 
   val isFullyCompliant: Boolean = complianceStatus match {
-    case FullCompliance    => true
-    case PartialCompliance => false
-    case NoCompliance      => false
+    case FullCompliance => true
+    case _              => false
   }
+
   val isNonCompliant: Boolean = complianceStatus match {
-    case FullCompliance    => false
-    case PartialCompliance => false
-    case NoCompliance      => true
+    case NoCompliance => true
+    case _            => false
+  }
+
+  val isPartiallyCompliant: Boolean = complianceStatus match {
+    case PartialCompliance => true
+    case _                 => false
   }
 }
 
