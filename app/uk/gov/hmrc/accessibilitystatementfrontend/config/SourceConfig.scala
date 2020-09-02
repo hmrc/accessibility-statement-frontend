@@ -25,11 +25,6 @@ case class StatementSource(source: Source, filename: String)
 case class SourceConfig @Inject()(appConfig: AppConfig) {
   import appConfig._
 
-  def statementsSource(): StatementSource = {
-    val filename = s"$servicesDirectory.yml"
-    StatementSource(Source.fromResource(filename), filename)
-  }
-
   def statementSource(service: String): StatementSource = {
     val filename = s"$servicesDirectory/$service.yml"
     StatementSource(Source.fromResource(filename), filename)
