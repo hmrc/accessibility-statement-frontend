@@ -22,7 +22,7 @@ import io.circe.syntax._
 import io.circe.yaml.syntax._
 import io.alphash.faker._
 import org.joda.time.DateTime
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Milestone, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance}
 import java.io.PrintWriter
 
 object FakeStatementGenerator extends App {
@@ -58,26 +58,21 @@ object FakeStatementGenerator extends App {
     }
 
     AccessibilityStatement(
-      serviceName                  = Lorem().sentence,
-      serviceHeaderName            = Lorem().sentence,
-      serviceDescription           = Lorem().paragraph,
-      serviceDomain                = "www.example.com",
-      serviceUrl                   = s"/$serviceKey",
-      contactFrontendServiceId     = serviceKey,
-      complianceStatus             = complianceStatus,
-      accessibilityProblems        = if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems),
-      milestones                   = if (milestones.isEmpty) None else Some(milestones),
-      statementVisibility          = Draft,
-      serviceLastTestedDate        = generateDate,
-      statementCreatedDate         = generateDate,
-      statementLastUpdatedDate     = generateDate
+      serviceName              = Lorem().sentence,
+      serviceHeaderName        = Lorem().sentence,
+      serviceDescription       = Lorem().paragraph,
+      serviceDomain            = "www.example.com",
+      serviceUrl               = s"/$serviceKey",
+      contactFrontendServiceId = serviceKey,
+      complianceStatus         = complianceStatus,
+      accessibilityProblems    = if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems),
+      milestones               = if (milestones.isEmpty) None else Some(milestones),
+      statementVisibility      = Draft,
+      serviceLastTestedDate    = generateDate,
+      statementCreatedDate     = generateDate,
+      statementLastUpdatedDate = generateDate
     )
   }
-
-  private def generateServices(serviceKeys: Seq[String]) =
-    AccessibilityStatements(serviceKeys)
-
-  private def generateServicesAsYaml(serviceKeys: Seq[String]) = generateServices(serviceKeys).asJson.asYaml.spaces2
 
   private def generateAsFile(filename: String)(block: => String) {
     val out = new PrintWriter(filename)
@@ -88,11 +83,6 @@ object FakeStatementGenerator extends App {
       out.close()
     }
   }
-
-  private def generateServicesAsFile(serviceKeys: Seq[String]): Unit =
-    generateAsFile(s"testOnlyConf/testOnlyServices.yml") {
-      generateServicesAsYaml(serviceKeys)
-    }
 
   private def generateStatementAsYaml(serviceKey: String) = generateStatement(serviceKey).asJson.asYaml.spaces2
 
@@ -107,5 +97,4 @@ object FakeStatementGenerator extends App {
   val serviceKeys = generateServiceKeys(args(0).toInt)
 
   generateStatementsAsFiles(serviceKeys)
-  generateServicesAsFile(serviceKeys)
 }
