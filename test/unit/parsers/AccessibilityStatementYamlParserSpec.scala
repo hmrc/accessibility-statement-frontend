@@ -39,7 +39,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     milestones                   = None,
     automatedTestingOnly         = None,
     statementVisibility          = Draft,
-    serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
+    serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
     automatedTestingDetails                 = None
@@ -138,10 +138,10 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
             )
           )),
           statementVisibility          = Draft,
-          serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
+          serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
           statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails                 = None
+          automatedTestingDetails      = None
         ))
     }
 
@@ -203,7 +203,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
             )
           )),
           statementVisibility          = Draft,
-          serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
+          serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
           statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           automatedTestingDetails      = Some("This has only been tested via automated tools."),
@@ -219,7 +219,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceUrl: /discounted-doughnuts
           |contactFrontendServiceId: discounted-doughnuts
           |complianceStatus: noncompliant
-          |serviceLastTestedDate: 2019-09-25
           |statementVisibility: draft
           |statementCreatedDate: 2019-10-09
           |statementLastUpdatedDate: 2019-10-09
@@ -240,7 +239,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           accessibilityProblems    = None,
           milestones               = None,
           statementVisibility      = Draft,
-          serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
+          serviceLastTestedDate    = None,
           statementCreatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           automatedTestingDetails  = None

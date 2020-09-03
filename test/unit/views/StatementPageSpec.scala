@@ -328,7 +328,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       milestones                   = None,
       automatedTestingOnly         = None,
       statementVisibility          = Draft,
-      serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
+      serviceLastTestedDate        = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
       statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
       automatedTestingDetails                 = None
@@ -353,7 +353,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
       )),
       statementVisibility          = Draft,
-      serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
+      serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.APRIL, 21).getTime),
       statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime,
       automatedTestingDetails                 = None

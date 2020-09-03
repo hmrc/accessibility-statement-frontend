@@ -69,10 +69,10 @@ object FakeStatementGenerator extends App {
       milestones                   = if (milestones.isEmpty) None else Some(milestones),
       automatedTestingOnly         = None,
       statementVisibility          = Draft,
-      serviceLastTestedDate        = generateDate,
+      serviceLastTestedDate        = Some(generateDate),
       statementCreatedDate         = generateDate,
       statementLastUpdatedDate     = generateDate,
-      automatedTestingDetails                 = None
+      automatedTestingDetails      = None
     )
   }
 

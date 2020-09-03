@@ -39,7 +39,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     milestones                   = None,
     automatedTestingOnly         = None,
     statementVisibility          = Draft,
-    serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
+    serviceLastTestedDate        = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
     statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
     automatedTestingDetails                 = None

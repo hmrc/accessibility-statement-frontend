@@ -32,7 +32,7 @@ case class AccessibilityStatement(
                                    milestones: Option[Seq[Milestone]],
                                    automatedTestingOnly: Option[Boolean],
                                    statementVisibility: Visibility,
-                                   serviceLastTestedDate: Date,
+                                   serviceLastTestedDate: Option[Date],
                                    statementCreatedDate: Date,
                                    statementLastUpdatedDate: Date,
                                    automatedTestingDetails: Option[String]

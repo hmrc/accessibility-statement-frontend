@@ -142,7 +142,13 @@
 @if(statement.isNonCompliant) {
     <p class="govuk-body">@{messages("testing.details.noncompliant")}</p>
 } else {
-    <p class="govuk-body">@{messages(if(statement.automatedTestingOnly.getOrElse(false)) "testing.last-tested.automated" else "testing.last-tested", prettyPrintDate(statement.serviceLastTestedDate))}</p>
+    @if(statement.serviceLastTestedDate.isDefined) {
+        @if(statement.automatedTestingOnly.getOrElse(false)) {
+            <p class="govuk-body">@{messages("testing.last-tested.automated", prettyPrintDate(statement.serviceLastTestedDate.get))}</p>
+        } else {
+            <p class="govuk-body">@{messages("testing.last-tested", prettyPrintDate(statement.serviceLastTestedDate.get))}</p>
+        }
+    }
     <p class="govuk-body">@{messages("testing.details.part1")}
         <a class="govuk-link" href="http://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>@{messages(if(statement.automatedTestingOnly.getOrElse(false)) "testing.details.part3.automated" else "testing.details.part3")}
     </p>
