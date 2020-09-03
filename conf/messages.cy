@@ -9,7 +9,7 @@ general.serviceName = Datganiad hygyrchedd
 
 ## introduction
 introduction.heading=Datganiad hygyrchedd ar gyfer {0}
-introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r gwasanaeth hwn, beth i’w wneud os ydych yn cael anhawster i’w ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r gwasanaeth.
+introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r gwasanaeth hwn, beth i’w wneud os ydych yn cael anhawster wrth ei ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r gwasanaeth.
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
 introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK.
 introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
@@ -23,9 +23,8 @@ using-service.bullet3=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio
 using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio meddalwedd adnabod lleferydd
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
-using-service.making-device-easier.part1='Mae gan '
-using-service.making-device-easier.part2=AbilityNet
-using-service.making-device-easier.part3=gyngor ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.
+using-service.making-device-easier.part1=Mae gan AbilityNet
+using-service.making-device-easier.part2=' gyngor ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
@@ -38,18 +37,18 @@ accessibility.no-issues=Nid oes unrhyw broblemau hygyrchedd hysbys yn y gwasanae
 accessibility.has-issues=Some people may find parts of this service difficult to use:
 
 ## Contact
-contact.heading=Beth i’w wneud os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn
-contact.extra-support.part1='You can '
-contact.extra-support.part2=contact HMRC for extra support
-contact.extra-support.part3=' if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.'
+contact.heading=Yr hyn i’w wneud os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn
+contact.extra-support.part1='Gallwch '
+contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol
+contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwahanol, megis print bras, recordiad sain neu Braille.'
 
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn
-reporting.report-problem.part1='Rydym bob amser yn ceisio gwella hygyrchedd y gwasanaeth hwn. Os byddwch yn dod o hyd i unrhyw broblemau nad ydynt wedi’u rhestru ar y dudalen hon, neu os ydych o’r farn nad ydym yn bodloni gofynion hygyrchedd, rhowch wybod am y '
-reporting.report-problem.part2=broblem hygyrchedd (yn agor ffenestr neu dab newydd)
+reporting.report-problem.part1='Rydym bob amser yn ceisio gwella hygyrchedd y gwasanaeth hwn. Os byddwch yn dod o hyd i unrhyw broblem nad yw wedi’i rhestru ar y dudalen hon, neu os ydych o’r farn nad ydym yn bodloni gofynion hygyrchedd, '
+reporting.report-problem.part2=rhowch wybod am y broblem hygyrchedd (yn agor ffenestr neu dab newydd)
 
 ## Complaints
-complaints.heading=Beth i’w wneud os nad ydych yn hapus â sut rydym yn ateb eich cwyn
+complaints.heading=Os ydych yn anfodlon ar ein hymateb
 complaints.additional-contacts.part1=Mae’r Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) yn gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018 (y ’rheoliadau hygyrchedd’). Os nad ydych yn hapus â sut rydym yn ateb eich cwyn,
 complaints.additional-contacts.part2=cysylltwch â’r Gwasanaeth Cynghori a Chymorth Cydraddoldeb (EASS)
 complaints.additional-contacts.part3=neu’r
@@ -58,10 +57,10 @@ complaints.additional-contacts.part5=os ydych yn byw yng Ngogledd Iwerddon.
 
 ## In person contact
 in-person-contact.heading=Cysylltu â ni dros y ffôn neu gael ymweliad personol gennym
-in-person-contact.text-relay=Rydym yn cynnig gwasanaeth text relay os ydych yn fyddar, â nam ar eich clyw neu os oes gennych nam ar eich lleferydd.
+in-person-contact.text-relay=Rydym yn cynnig gwasanaeth ‘text relay’ os ydych yn fyddar, â nam ar eich clyw neu os oes gennych nam ar eich lleferydd.
 in-person-contact.bsl=Gallwn ddarparu dehonglydd Iaith Arwyddion Prydain (BSL), neu gallwch drefnu ymweliad gan ymgynghorydd CThEM i’ch helpu i gwblhau’r gwasanaeth.
-in-person-contact.find-out-how.part1='Gwybodaeth am sut i '
-in-person-contact.find-out-how.part2=gysylltu â ni.
+in-person-contact.find-out-how.part1='Dysgwch '
+in-person-contact.find-out-how.part2=sut i gael cymorth ychwanegol oddi wrth CThEM
 
 ## Technical information
 technical.heading=Gwybodaeth dechnegol am hygyrchedd y gwasanaeth hwn
@@ -81,14 +80,14 @@ technical.non-compliance.automated.test-by=The service will also book a full acc
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
-testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ’AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0}} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.last-tested.automated=The service was last tested on {0} using automated testing tools and was checked for compliance with WCAG 2.1 AA.
-testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y '
-testing.details.part2=Ganolfan Hygyrchedd Digidol (Digital Accessibility Centre).
+testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y Ganolfan Hygyrchedd Digidol '
+testing.details.part2=(Digital Accessibility Centre).
 testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
 testing.details.part3.automated=.
 testing.details.noncompliant=The service has not been tested for compliance with WCAG 2.1 AA.
-testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
+testing.created-and-updated=Cyhoeddwyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page
 notFound.pageTitle=Heb ddod o hyd i’r dudalen
