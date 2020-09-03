@@ -30,8 +30,8 @@ using-service.making-device-easier.part2=' gyngor ar wneud eich dyfais yn haws i
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
 accessibility.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 accessibility.compliance.partial=This service is partially compliant with the
-accessibility.compliance.noncompliant=This service is non compliant with the
-accessibility.compliance.noncompliant.explanation=. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.
+accessibility.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
+accessibility.compliance.noncompliant.explanation=. Nid yw’r gwasanaeth hwn wedi cael ei wirio eto i weld a yw’n cydymffurfio neu beidio, felly gall rhai defnyddwyr ei chael yn anodd defnyddio rhannau o’r gwasanaeth. 
 accessibility.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
 accessibility.no-issues=Nid oes unrhyw broblemau hygyrchedd hysbys yn y gwasanaeth hwn.
 accessibility.has-issues=Some people may find parts of this service difficult to use:
@@ -67,15 +67,15 @@ technical.heading=Gwybodaeth dechnegol am hygyrchedd y gwasanaeth hwn
 technical.commitment=Mae CThEM wedi ymrwymo i wneud y gwasanaeth hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
 technical.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 technical.compliance.partial=This service is partially compliant with the
-technical.compliance.noncompliant='This service is non compliant with the '
+technical.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio '
 technical.compliance.guidelines=safon ’AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-technical.compliance.partial.reasons=, due to the non-compliances listed below.
+technical.compliance.partial.reasons=, fersiwn 2.1, oherwydd y diffyg cydymffurfio a restrir isod.
 technical.compliance.full.reasons=.
-technical.non-compliance.header=Non-accessible content
-technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
-technical.non-compliance.accessibility=Non-compliance with the accessibility regulations
+technical.non-compliance.header=Cynnwys nad yw’n hygyrch
+technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
+technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
 technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by
-technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.
+technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 30 Tachwedd 2020. 
 technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 December 2020.
 
 ## Testing
@@ -86,7 +86,7 @@ testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd 
 testing.details.part2=(Digital Accessibility Centre).
 testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
 testing.details.part3.automated=.
-testing.details.noncompliant=The service has not been tested for compliance with WCAG 2.1 AA.
+testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.created-and-updated=Cyhoeddwyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page
