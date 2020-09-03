@@ -26,9 +26,8 @@ using-service.bullet3=get from the start of the service to the end using just a 
 using-service.bullet4=get from the start of the service to the end using speech recognition software
 using-service.bullet5=listen to the service using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
 using-service.simple-text=We have also made the text in the service as simple as possible to understand.
-using-service.making-device-easier.part1=
-using-service.making-device-easier.part2=AbilityNet
-using-service.making-device-easier.part3=has advice on making your device easier to use if you have a disability.
+using-service.making-device-easier.part1=AbilityNet
+using-service.making-device-easier.part2=has advice on making your device easier to use if you have a disability.
 
 ## Accessibility
 accessibility.heading=How accessible this service is
