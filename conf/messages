@@ -34,6 +34,8 @@ using-service.making-device-easier.part3=has advice on making your device easier
 accessibility.heading=How accessible this service is
 accessibility.compliance.full=This service is fully compliant with the
 accessibility.compliance.partial=This service is partially compliant with the
+accessibility.compliance.noncompliant=This service is non compliant with the
+accessibility.compliance.noncompliant.explanation=. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.
 accessibility.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
 accessibility.no-issues=There are no known accessibility issues within this service.
 accessibility.has-issues=Some people may find parts of this service difficult to use:
@@ -67,21 +69,28 @@ in-person-contact.find-out-how.part2=how to get extra support from HMRC.
 ## Technical information
 technical.heading=Technical information about this service’s accessibility
 technical.commitment=HMRC is committed to making this service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
-technical.compliance.full=This service is fully compliant with the
-technical.compliance.partial='This service is partially compliant with the Web Content Accessibility Guidelines version 2.1 '
-technical.compliance.guidelines=AA standard
+technical.compliance.full='This service is fully compliant with the '
+technical.compliance.partial='This service is partially compliant with the '
+technical.compliance.noncompliant='This service is non compliant with the '
+technical.compliance.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
+technical.compliance.full.reasons=.
 technical.compliance.partial.reasons=, due to the non-compliances listed below.
 technical.non-compliance.header=Non-accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non-compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by
+technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.
+technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 December 2020.
 
 ## Testing
 testing.heading=How we tested this service
 testing.last-tested=The service was last tested on {0} and was checked for compliance with WCAG 2.1 AA.
+testing.last-tested.automated=The service was last tested on {0} using automated testing tools and was checked for compliance with WCAG 2.1 AA.
 testing.details.part1=The service was built using parts that were tested by the
-testing.details.part2=Digital Accessibility Centre.
-testing.details.part3=The full service was tested by HMRC and included disabled users.
+testing.details.part2=Digital Accessibility Centre
+testing.details.part3=. The full service was tested by HMRC and included disabled users.
+testing.details.part3.automated=.
+testing.details.noncompliant=The service has not been tested for compliance with WCAG 2.1 AA.
 testing.created-and-updated=This page was published on {0}. It was last updated on {1}.
 
 ## Not Found Page

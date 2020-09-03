@@ -16,7 +16,7 @@ serviceDescription: |                   # A description of the service
 serviceDomain: www.tax.service.gov.uk   # The domain name under which this service exists (exclude the https:// and the path)
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
 contactFrontendServiceId: icecreams     # The service id passed to contact-frontend and hmrc-deskpro
-complianceStatus: partial               # full|partial
+complianceStatus: partial               # full|partial|noncompliant
 accessibilityProblems:                  # If there are no issues do not include this section
   - a description of the first problem
   - another description of a problem
@@ -30,10 +30,14 @@ milestones:                             # If there are no issues do not include 
       cannot use the service reliably. This does not meet WCAG success criterion
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
-serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD
+serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If your statemenent's compliance status is noncompliant, you can omit this line
 statementVisibility: public             # If set to public, the statement will be visible in production
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
+automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
+automatedTestingDetails: |             # Only add this value if your service has only had automated testing
+  If your service has only had automated testing, add a text description of testing tools used, e.g.
+  It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```
 
 You can also use the following files as examples to copy:

@@ -31,6 +31,8 @@ using-service.making-device-easier.part3=gyngor ar wneud eich dyfais yn haws i�
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
 accessibility.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 accessibility.compliance.partial=This service is partially compliant with the
+accessibility.compliance.noncompliant=This service is non compliant with the
+accessibility.compliance.noncompliant.explanation=. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.
 accessibility.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
 accessibility.no-issues=Nid oes unrhyw broblemau hygyrchedd hysbys yn y gwasanaeth hwn.
 accessibility.has-issues=Some people may find parts of this service difficult to use:
@@ -66,19 +68,26 @@ technical.heading=Gwybodaeth dechnegol am hygyrchedd y gwasanaeth hwn
 technical.commitment=Mae CThEM wedi ymrwymo i wneud y gwasanaeth hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
 technical.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 technical.compliance.partial=This service is partially compliant with the
+technical.compliance.noncompliant='This service is non compliant with the '
 technical.compliance.guidelines=safon ’AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
 technical.compliance.partial.reasons=, due to the non-compliances listed below.
+technical.compliance.full.reasons=.
 technical.non-compliance.header=Non-accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non-compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by
+technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.
+technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 December 2020.
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
 testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ’AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.last-tested.automated=The service was last tested on {0} using automated testing tools and was checked for compliance with WCAG 2.1 AA.
 testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y '
 testing.details.part2=Ganolfan Hygyrchedd Digidol (Digital Accessibility Centre).
 testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
+testing.details.part3.automated=.
+testing.details.noncompliant=The service has not been tested for compliance with WCAG 2.1 AA.
 testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page

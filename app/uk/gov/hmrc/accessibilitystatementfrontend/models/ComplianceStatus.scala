@@ -24,6 +24,7 @@ object ComplianceStatus {
   implicit val decoder: Decoder[ComplianceStatus] = Decoder.decodeString.emap {
     case "full"    => Right(FullCompliance)
     case "partial" => Right(PartialCompliance)
+    case "noncompliant" => Right(NoCompliance)
     case status    => Left(s"""Unrecognised compliance status "$status"""")
   }
   implicit val encoder: Encoder[ComplianceStatus] = Encoder.encodeString.contramap[ComplianceStatus](_.toString)
@@ -35,4 +36,8 @@ case object FullCompliance extends ComplianceStatus {
 
 case object PartialCompliance extends ComplianceStatus {
   override def toString = "partial"
+}
+
+case object NoCompliance extends ComplianceStatus {
+  override def toString = "noncompliant"
 }

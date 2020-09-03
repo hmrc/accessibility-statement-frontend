@@ -1,0 +1,26 @@
+serviceName: Your service name
+serviceHeaderName: Your header name
+serviceDescription: |
+  [This is the description of your service]
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /the/url/of/your/service
+contactFrontendServiceId: automated-example-frontend
+complianceStatus: partial
+automatedTestingOnly: true
+accessibilityProblems:
+  - At some point we display pages where the formatting for individual
+    elements on screen are not fully suitable for screen reading technologies
+    and results in a difficult to navigate page due to incomplete information.
+    However using a screen reader to read back the entire page will provide
+    all the information needed to navigate the page with confidence.
+milestones:
+  - description: We use a Barclaycard iFrame to take the card details and payments for
+      the charge or tax users are paying. This iFrame does not give users the
+      chance to confirm their details once they have entered them. This does
+      not meet WCAG 2.1 success criterion 3.3.6.
+    date: 2020-07-31
+serviceSendsOutboundMessages: false
+serviceLastTestedDate: 2019-12-09
+statementVisibility: draft
+statementCreatedDate: 2019-09-23
+statementLastUpdatedDate: 2019-04-01
