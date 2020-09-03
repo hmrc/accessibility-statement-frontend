@@ -331,7 +331,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceLastTestedDate        = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime,
       statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
-      additionalTestingDetails                 = None
+      automatedTestingDetails                 = None
     )
 
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
@@ -356,7 +356,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.APRIL, 21).getTime,
       statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
       statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime,
-      additionalTestingDetails                 = None
+      automatedTestingDetails                 = None
     )
 
     val nonCompliantServiceStatement = partiallyAccessibleServiceStatement.copy(
@@ -375,7 +375,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceDomain            = "www.tax.service.gov.uk",
       serviceUrl               = "/automated-accessible",
       contactFrontendServiceId = "aas",
-      additionalTestingDetails = Some("This service was tested using automated tools only"),
+      automatedTestingDetails = Some("This service was tested using automated tools only"),
       automatedTestingOnly     = Some(true)
     )
   }

@@ -35,7 +35,7 @@ case class AccessibilityStatement(
                                    serviceLastTestedDate: Date,
                                    statementCreatedDate: Date,
                                    statementLastUpdatedDate: Date,
-                                   additionalTestingDetails: Option[String]
+                                   automatedTestingDetails: Option[String]
                                  ) {
 
   val isFullyCompliant: Boolean = complianceStatus match {

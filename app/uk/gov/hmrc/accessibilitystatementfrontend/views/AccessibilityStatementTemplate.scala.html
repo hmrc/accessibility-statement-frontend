@@ -63,7 +63,7 @@
     } }
 }
 @if(statement.isNonCompliant) {
-    <p class="govuk-body">@{messages("accessibility.compliance.noncompliant")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("accessibility.guidelines")}</a>@{messages("accessibility.compliance.noncompliant.explination")}</p>
+    <p class="govuk-body">@{messages("accessibility.compliance.noncompliant")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("accessibility.guidelines")}</a>@{messages("accessibility.compliance.noncompliant.explanation")}</p>
 } else {
     @fullyOrPartiallyCompliantContent
 }

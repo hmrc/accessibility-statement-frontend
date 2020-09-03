@@ -54,7 +54,7 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    additionalTestingDetails             = None
+    automatedTestingDetails             = None
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription = "Mae'r gwasanaeth foo yn caniatáu ichi wneud foo"
@@ -82,7 +82,7 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    additionalTestingDetails             = None
+    automatedTestingDetails             = None
   )
 
   private val barStatementWelsh = barStatement.copy(

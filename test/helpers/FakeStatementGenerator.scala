@@ -72,7 +72,7 @@ object FakeStatementGenerator extends App {
       serviceLastTestedDate        = generateDate,
       statementCreatedDate         = generateDate,
       statementLastUpdatedDate     = generateDate,
-      additionalTestingDetails                 = None
+      automatedTestingDetails                 = None
     )
   }
 

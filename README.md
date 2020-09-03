@@ -35,7 +35,7 @@ statementVisibility: public             # If set to public, the statement will b
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
-additionalTestingDetails: |             # Only add this value if your service has only had automated testing
+automatedTestingDetails: |             # Only add this value if your service has only had automated testing
   If your service has only had automated testing, add a text description of testing tools used, e.g.
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```

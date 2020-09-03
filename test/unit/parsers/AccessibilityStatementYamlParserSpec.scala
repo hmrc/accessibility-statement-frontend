@@ -19,7 +19,7 @@ package unit.parsers
 import java.util.{Calendar, GregorianCalendar}
 import org.scalatest.{EitherValues, Matchers, WordSpec}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public, NoCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import scala.io.Source
 
@@ -42,7 +42,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime,
     statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    additionalTestingDetails                 = None
+    automatedTestingDetails                 = None
   )
 
   "parse" should {
@@ -141,7 +141,109 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
           statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          additionalTestingDetails                 = None
+          automatedTestingDetails                 = None
+        ))
+    }
+
+    "parse a partially accessible statement with automated testing" in {
+      val statementYaml =
+        """serviceName: Online Payments
+          |serviceHeaderName: Pay your tax
+          |serviceDescription: |
+          |  The Online Payments service is HMRC’s Digital card payment journey.
+          |  It allows users to pay their tax liabilities.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /pay
+          |contactFrontendServiceId: pay-frontend
+          |complianceStatus: partial
+          |accessibilityProblems:
+          |  - at one point we display location information on a map - however,
+          |    there’s also a postcode lookup tool ...
+          |  - At one point we display a payment iFrame, which is controlled by Barclaycard.
+          |    Visually impaired users ...
+          |milestones:
+          |  - description: We use a Barclaycard iFrame to take the card details and payments for
+          |      the charge ...
+          |    date: 2020-07-31
+          |  - description: We use titles on our webpages in order to describe the topic or purpose of
+          |      the page that the user ...
+          |    date: 2020-03-31
+          |serviceLastTestedDate: 2019-09-25
+          |statementVisibility: draft
+          |statementCreatedDate: 2019-10-09
+          |statementLastUpdatedDate: 2019-10-09
+          |automatedTestingOnly: true
+          |automatedTestingDetails: This has only been tested via automated tools.
+          |""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        AccessibilityStatement(
+          serviceName       = "Online Payments",
+          serviceHeaderName = "Pay your tax",
+          serviceDescription =
+            "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
+          serviceDomain            = "www.tax.service.gov.uk",
+          serviceUrl               = "/pay",
+          contactFrontendServiceId = "pay-frontend",
+          complianceStatus         = PartialCompliance,
+          automatedTestingOnly     = Some(true),
+          accessibilityProblems    = Some(Seq(
+            "at one point we display location information on a map - however, there’s also a postcode lookup tool ...",
+            "At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users ..."
+          )),
+          milestones = Some(Seq(
+            Milestone(
+              "We use a Barclaycard iFrame to take the card details and payments for the charge ...",
+              new GregorianCalendar(2020, Calendar.JULY, 31).getTime
+            ),
+            Milestone(
+              "We use titles on our webpages in order to describe the topic or purpose of the page that the user ...",
+              new GregorianCalendar(2020, Calendar.MARCH, 31).getTime
+            )
+          )),
+          statementVisibility          = Draft,
+          serviceLastTestedDate        = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
+          statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          automatedTestingDetails      = Some("This has only been tested via automated tools."),
+        ))
+    }
+
+    "parse a non compliant service statement" in {
+      val statementYaml =
+        """serviceName: Discounted Doughnuts
+          |serviceHeaderName: Discounts
+          |serviceDescription: This is a non compliant service. People can eat doughnuts.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /discounted-doughnuts
+          |contactFrontendServiceId: discounted-doughnuts
+          |complianceStatus: noncompliant
+          |serviceLastTestedDate: 2019-09-25
+          |statementVisibility: draft
+          |statementCreatedDate: 2019-10-09
+          |statementLastUpdatedDate: 2019-10-09
+          |""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        AccessibilityStatement(
+          serviceName       = "Discounted Doughnuts",
+          serviceHeaderName = "Discounts",
+          serviceDescription =
+            "This is a non compliant service. People can eat doughnuts.",
+          serviceDomain            = "www.tax.service.gov.uk",
+          serviceUrl               = "/discounted-doughnuts",
+          contactFrontendServiceId = "discounted-doughnuts",
+          complianceStatus         = NoCompliance,
+          automatedTestingOnly     = None,
+          accessibilityProblems    = None,
+          milestones               = None,
+          statementVisibility      = Draft,
+          serviceLastTestedDate    = new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime,
+          statementCreatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          automatedTestingDetails  = None
         ))
     }
 
