@@ -1,0 +1,56 @@
+serviceName: Excise Movement and Control System
+# Do not include the word service at the end, as this will be added by the templates
+serviceHeaderName: EMCS            # The service name as it should appear in the grey Gov.UK header bar
+serviceDescription: |                   # A description of the service
+  Excise Movement and Control System (EMCS) is a UK and EU-wide computer system that’s used to record duty suspended movements of excise goods taking place within the UK and the EU.
+
+  EMCS captures and processes information about the movements online, validates the data entered and allows real time notification of the dispatch and receipt of duty suspended excise goods.
+
+  It allows the exchange of secure online messages containing specific consignment and movement information between UK and EU trading partners.
+
+serviceDomain: www.tax.service.gov.uk  # The domain name under which this service exists (exclude the https:// and the path)
+serviceUrl: /emcs                  # The relative URL to the service (omitting www.tax.service.gov.uk)
+contactFrontendServiceId: hmrc-emcs     # The service id passed to contact-frontend and hmrc-deskpro
+complianceStatus: partial               # full|partial
+accessibilityProblems:                  # If there are no issues do not include this section
+  - Screen reader users may have difficulty due to superfluous radio buttons, empty heading, non-descriptive links, page titles and legend attributes, a timeout without informing users and instructions that rely heavily on visual locations.
+  - Keyboard-only users may experience issues with the tab order, elements that do not receive focus via the focus indicator, and a skip to content link that is not visible or focusable.
+  - Low vision users have an issue relating to the reflow of each page whereby content could not be read in a single column, which requires the use of horizontal scrolling.
+  - Cognitive impaired, Dyslexic and voice activation users should be able to navigate through the service using assistive technology without encountering any accessibility barriers.
+milestones: # If there are no issues do not include this section
+  - description: "A skip link is not visible for keyboard-only users preventing them from skipping blocks of content. WCAG Reference: 1.3.1 Understanding Info and Relationships."
+    date: 2021-09-30
+  - description: "Focus Order: the tab order is illogical. This relates to WCAG Reference: 2.4.3 Focus Order."
+    date: 2021-09-30
+  - description: "The image link of “Your HMRC Services” is described as “HM Revenue and Customs” for Screen Readers. This is not descriptive as per WCAG Reference(s): Success Criterion 2.4.4 Link Purpose."
+    date: 2021-09-30
+  - description: "Pagination links are numbered but don’t provide screen readers a clear indication of what they relate to. WCAG Reference: Success Criterion 2.4.4 Link Purpose."
+    date: 2021-09-30
+  - description: "Sorting links are described by screen readers as “Black up pointing triangle”. WCAG Reference(s): Success Criterion 2.4.4 Link Purpose."
+    date: 2021-09-30
+  - description: "Users are timed out of the service after a short length of time with no warning or option to extend the session. WCAG Reference: Success Criterion 2.2.1 Timing Adjustable."
+    date: 2021-09-30
+  - description: "The phrase ‘Below’ is used to  indicate where items were situated on a page. This is a visual reference which may confuse some screen reader users. WCAG Reference: 1.3.3 Sensory Characteristics."
+    date: 2021-09-30
+  - description: "Progress keys on status images are inaccessible to screen readers. WCAG Reference: 1.3.3 Sensory Characteristics."
+    date: 2021-09-30
+  - description: "Page Titles are not descriptive. WCAG Reference: 2.4.2 Page Titled."
+    date: 2021-09-30
+  - description: "There is an empty heading making it confusing to screen reader users about what the section contains. WCAG Reference 1.3.1 Info and Relationships."
+    date: 2021-09-30
+  - description: "Help information is contained within a legend duplicating information and making it difficult to understand the context in which it is displayed. WCAG Reference: 1.3.1 Info and Relationships."
+    date: 2021-09-30
+  - description: "A radio button contains the instruction “Please make a selection below” which is unnecessary and confusing. WCAG Reference: 1.3.1 Info and Relationships."
+    date: 2021-09-30
+  - description: "Pages cannot be presented in a single column without a loss of content. WCAG Reference: 1.4.10 Reflow."
+    date: 2021-09-30
+  - description: "There is no visible focus indicator surrounding the Help Icon image link. This will be problematic for a keyboard-only user as there is a temporary loss of focus when tabbing through the page. WCAG Reference: 2.4.7 Focus Visible."
+    date: 2021-09-30
+  - description: "Certina headings are non-descriptive. WCAG Reference: 2.4.6 Headings and Labels."
+    date: 2021-09-30
+  - description: "It is not clear for a screen reader that search results have appeared on the page. Once the ‘Search’ button has been initiated, user focus is taken to the top of the page. WCAG Reference: 4.1.3 Status Messages."
+    date: 2021-09-30
+serviceLastTestedDate: 2020-07-31       # In ISO format YYYY-MM-DD
+statementVisibility: draft             # If set to public, the statement will be visible in production
+statementCreatedDate: 2020-09-23        # In ISO format YYYY-MM-DD
+statementLastUpdatedDate: 2020-09-23    # In ISO format YYYY-MM-DD
