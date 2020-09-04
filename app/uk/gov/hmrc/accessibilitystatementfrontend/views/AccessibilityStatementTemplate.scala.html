@@ -128,7 +128,7 @@
     }
 
     @if(statement.automatedTestingOnly.getOrElse(false)) {
-        <p class="govuk-body">@{messages("technical.non-compliance.automated.test-by")}</p>>
+        <p class="govuk-body">@{messages("technical.non-compliance.automated.test-by")}</p>
     }
 }
 
@@ -154,4 +154,3 @@
 }
 
 <p class="govuk-body">@{messages("testing.created-and-updated", prettyPrintDate(statement.statementCreatedDate), prettyPrintDate(statement.statementLastUpdatedDate))}</p>
-
