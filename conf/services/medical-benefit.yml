@@ -1,7 +1,8 @@
 serviceName: Check or Update Your Medical Insurance benefit
 serviceHeaderName: Check or update your medical insurance benefit
-serviceDescription: Check the value of a benefit you’re currently getting. Remove a benefit you’ve never had from an employer or report
-  that you’ve stopped getting a benefit
+serviceDescription: |
+  You can use this service to check the value of a benefit you’re currently getting, remove 
+  a benefit you’ve never had from an employer, and report that you’ve stopped getting a benefit.
 serviceDomain: www.tax.service.gov.uk 
 serviceUrl: /paye/benefits/medical-benefit
 contactFrontendServiceId: medical-benefit
