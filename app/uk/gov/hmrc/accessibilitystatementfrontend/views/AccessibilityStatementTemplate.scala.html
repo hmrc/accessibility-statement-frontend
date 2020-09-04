@@ -124,12 +124,11 @@
 
 @if(statement.milestones.getOrElse(Seq()).nonEmpty && statement.isPartiallyCompliant) {
     @for(milestone <- statement.milestones.get) {
-        <p class="govuk-body">@{milestone.description}</p>
-        <p class="govuk-body">@{messages("technical.non-compliance.milestone.fix-by")} @{prettyPrintDate(milestone.date)}</p>
+        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by")} @{prettyPrintDate(milestone.date)}</p>
     }
 
     @if(statement.automatedTestingOnly.getOrElse(false)) {
-        <p class="govuk-body">@{messages("technical.non-compliance.automated.test-by")}</p>>
+        <p class="govuk-body">@{messages("technical.non-compliance.automated.test-by")}</p>
     }
 }
 
@@ -155,4 +154,3 @@
 }
 
 <p class="govuk-body">@{messages("testing.created-and-updated", prettyPrintDate(statement.statementCreatedDate), prettyPrintDate(statement.statementLastUpdatedDate))}</p>
-

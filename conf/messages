@@ -97,3 +97,17 @@ notFound.pageTitle=Page not found
 notFound.heading=Page not found
 notFound.paragraph1=If you typed the web address, check it is correct.
 notFound.paragraph2=If you pasted the web address, check you copied the entire address.
+
+## Date formatting
+dates.month.1=January
+dates.month.2=February
+dates.month.3=March
+dates.month.4=April
+dates.month.5=May
+dates.month.6=June
+dates.month.7=July
+dates.month.8=August
+dates.month.9=September
+dates.month.10=October
+dates.month.11=November
+dates.month.12=December

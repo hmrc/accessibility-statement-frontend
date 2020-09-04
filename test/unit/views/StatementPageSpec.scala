@@ -193,19 +193,14 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include(
         """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
 
-      contentAsString(statementPageHtml) should include("""<p class="govuk-body">First milestone to be fixed</p>""")
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>""")
+      contentAsString(statementPageHtml) should include("""First milestone to be fixed""")
+      contentAsString(statementPageHtml) should include("""We plan to fix this compliance issue by 15 January 2022""")
 
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">Second milestone we&#x27;ll look at</p>""")
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">We plan to fix this compliance issue by 20 June 2022</p>""")
+      contentAsString(statementPageHtml) should include("""Second milestone we&#x27;ll look at""")
+      contentAsString(statementPageHtml) should include("""We plan to fix this compliance issue by 20 June 2022""")
 
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">Then we&#x27;ll get to this third milestone</p>""")
-      contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">We plan to fix this compliance issue by 02 September 2022</p>""")
+      contentAsString(statementPageHtml) should include("""Then we&#x27;ll get to this third milestone""")
+      contentAsString(statementPageHtml) should include("""We plan to fix this compliance issue by 02 September 2022""")
     }
 
     "return HTML containing a language toggle" in new Setup {
@@ -247,8 +242,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml =
         statementPage(nonCompliantServiceStatement, None, isWelshTranslationAvailable = false)
 
-      contentAsString(statementPageHtml) should not include(
-        """<ul class="govuk-list govuk-list--bullet" id="accessibility-problems">""")
+      contentAsString(statementPageHtml) should not include ("""<ul class="govuk-list govuk-list--bullet" id="accessibility-problems">""")
     }
 
     "return HTML which states that the service has not been tested for accessibility" in new Setup {
@@ -261,22 +255,21 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should not return information on non compliance even if milestones are non-empty" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(nonCompliantServiceStatement, None, isWelshTranslationAvailable = false)
 
-      contentAsString(statementPageHtml) should not include("""<p class="govuk-body">First milestone to be fixed</p>""")
-      contentAsString(statementPageHtml) should not include(
-        """<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>""")
+      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">First milestone to be fixed</p>""")
+      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>""")
     }
 
     "should return HTML with a fixed date for carrying out an assessment" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(nonCompliantServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-      """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.</p>""")
+        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.</p>""")
     }
   }
 
@@ -284,7 +277,7 @@ class StatementPageSpec extends WordSpec with Matchers {
     "rendering a Statement Page" should {
 
     "return HTML with information that the testing was automated" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(automatedTestingServiceStatement, None, isWelshTranslationAvailable = false)
 
@@ -293,12 +286,12 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML with the date for carrying out a full assessment" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPage = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(automatedTestingServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-      """ <p class="govuk-body">The service will also book a full accessibility audit by 31 December 2020.</p>""")
+        """ <p class="govuk-body">The service will also book a full accessibility audit by 31 December 2020.</p>""")
     }
   }
 
@@ -317,21 +310,21 @@ class StatementPageSpec extends WordSpec with Matchers {
     implicit val messages: Messages = messagesApi.preferred(fakeRequest)
 
     val fullyAccessibleServiceStatement = AccessibilityStatement(
-      serviceName                  = "fully accessible service name",
-      serviceHeaderName            = "Fully Accessible Name",
-      serviceDescription           = "Fully accessible description.",
-      serviceDomain                = "www.tax.service.gov.uk",
-      serviceUrl                   = "/fully-accessible",
-      contactFrontendServiceId     = "fas",
-      complianceStatus             = FullCompliance,
-      accessibilityProblems        = None,
-      milestones                   = None,
-      automatedTestingOnly         = None,
-      statementVisibility          = Draft,
-      serviceLastTestedDate        = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
-      statementCreatedDate         = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
-      statementLastUpdatedDate     = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
-      automatedTestingDetails                 = None
+      serviceName              = "fully accessible service name",
+      serviceHeaderName        = "Fully Accessible Name",
+      serviceDescription       = "Fully accessible description.",
+      serviceDomain            = "www.tax.service.gov.uk",
+      serviceUrl               = "/fully-accessible",
+      contactFrontendServiceId = "fas",
+      complianceStatus         = FullCompliance,
+      accessibilityProblems    = None,
+      milestones               = None,
+      automatedTestingOnly     = None,
+      statementVisibility      = Draft,
+      serviceLastTestedDate    = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
+      statementCreatedDate     = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
+      statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
+      automatedTestingDetails  = None
     )
 
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
@@ -343,20 +336,24 @@ class StatementPageSpec extends WordSpec with Matchers {
       contactFrontendServiceId = "pas",
       complianceStatus         = PartialCompliance,
       automatedTestingOnly     = None,
-      accessibilityProblems = Some(Seq(
-        "This is the first accessibility problem",
-        "And then this is another one",
-      )),
-      milestones = Some(Seq(
-        Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
-        Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
-        Milestone("Then we'll get to this third milestone", new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
-      )),
-      statementVisibility          = Draft,
-      serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.APRIL, 21).getTime),
-      statementCreatedDate         = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
-      statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime,
-      automatedTestingDetails                 = None
+      accessibilityProblems = Some(
+        Seq(
+          "This is the first accessibility problem",
+          "And then this is another one",
+        )),
+      milestones = Some(
+        Seq(
+          Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
+          Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
+          Milestone(
+            "Then we'll get to this third milestone",
+            new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
+        )),
+      statementVisibility      = Draft,
+      serviceLastTestedDate    = Some(new GregorianCalendar(2019, Calendar.APRIL, 21).getTime),
+      statementCreatedDate     = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
+      statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime,
+      automatedTestingDetails  = None
     )
 
     val nonCompliantServiceStatement = partiallyAccessibleServiceStatement.copy(
@@ -375,7 +372,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceDomain            = "www.tax.service.gov.uk",
       serviceUrl               = "/automated-accessible",
       contactFrontendServiceId = "aas",
-      automatedTestingDetails = Some("This service was tested using automated tools only"),
+      automatedTestingDetails  = Some("This service was tested using automated tools only"),
       automatedTestingOnly     = Some(true)
     )
   }

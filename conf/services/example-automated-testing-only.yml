@@ -1,7 +1,7 @@
-serviceName: Your service name
-serviceHeaderName: Your header name
+serviceName: Discounted Shortbread (Automated)
+serviceHeaderName: Discounted Shortbread Automated
 serviceDescription: |
-  [This is the description of your service]
+  This is a partially compliant service which has only had automated testing.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /the/url/of/your/service
 contactFrontendServiceId: automated-example-frontend
@@ -19,8 +19,8 @@ milestones:
       chance to confirm their details once they have entered them. This does
       not meet WCAG 2.1 success criterion 3.3.6.
     date: 2020-07-31
-serviceSendsOutboundMessages: false
 serviceLastTestedDate: 2019-12-09
 statementVisibility: draft
 statementCreatedDate: 2019-09-23
 statementLastUpdatedDate: 2019-04-01
+automatedTestingDetails: This service was tested using automated tools My Test Tool One and some other test tool.
