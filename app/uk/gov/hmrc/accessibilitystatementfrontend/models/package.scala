@@ -20,6 +20,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import io.circe.{Decoder, Encoder}
 import scala.util.Try
+import play.api.i18n.Messages
 
 package object models {
   private val format = new java.text.SimpleDateFormat("yyyy-MM-dd")
@@ -28,10 +29,12 @@ package object models {
     Try(format.parse(str))
   }
 
-  def prettyPrintDate(date: Date): String = {
-    val format = "dd MMMMM YYYY"
-    val simpleDateFormat = new SimpleDateFormat(format)
-    simpleDateFormat.format(date)
+  def prettyPrintDate(date: Date)(implicit messages: Messages): String = {
+    val dayNumber = new SimpleDateFormat("dd").format(date)
+    val monthNumber = new SimpleDateFormat("M").format(date)
+    val year = new SimpleDateFormat("YYYY").format(date)
+    val monthName = messages(s"dates.month.$monthNumber")
+    s"$dayNumber $monthName $year"
   }
 
   implicit val dateEncoder: Encoder[Date] = Encoder.encodeString.contramap[Date](format.format)

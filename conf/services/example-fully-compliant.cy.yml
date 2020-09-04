@@ -1,8 +1,8 @@
-serviceName: Discounted Icecreams
-serviceHeaderName: Icecreams
+serviceName: Discounted Icecreams Welsh
+serviceHeaderName: Icecreams Welsh
 serviceDescription: |
-  Use this paragraph to describe your service. It can go over multiple lines
-  like this.
+  Defnyddiwch y paragraff hwn i ddisgrifio'ch gwasanaeth. Gall fynd dros sawl llinell
+  fel hyn.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /icecreams
 contactFrontendServiceId: icecreams
