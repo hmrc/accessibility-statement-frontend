@@ -134,7 +134,7 @@ When developing locally you can run
 
 ```
 sm --start A11Y_STATEMENT_ALL
-```:wq
+```
 
 ### License
 
