@@ -20,8 +20,7 @@ accessibilityProblems:
   - Page titles are duplicated throughout the process and are duplicated for each section. This is confusing and disorientating for all users as it is not clear that the page has changed or updated.
   - There are compatibility issues in this service that will cause difficulties for users of assistive technologies such as missing labels and descriptions for many fields, and improperly nested tags. Duplicate IDs occur on some pages and this causes issues for screen readers, and users of JavaScript methods like getElementById and querySelector. In the micro accounts section, unclosed elements and missing end tags mean screen readers may skip important content. There are many references to non-existent IDs which can result in assistive technologies relaying information incorrectly.
   - There are icons, links, headings and other features throughout this service that have low or poor colour contrast and so are difficult to navigate for colour blind and low vision users.
-
-  milestones:
+milestones:
   - description: |
       Links displaying information about the ‘Status of a Submission’ in the service dashboard are not accessible to
       keyboard only or screen reader users. This is because the ‘click’ function only responds to mouse users. Also,
@@ -109,7 +108,6 @@ accessibilityProblems:
       make it easier for users to see and hear content including separating foreground from background.
       We are working to have all colour contrast issues fixed in this service.
     date: 2021-07-30
-
 serviceLastTestedDate: 2015-07-01
 statementVisibility: public
 statementCreatedDate: 2020-09-23
