@@ -85,7 +85,7 @@
 
 <h2 class="govuk-heading-l">@{messages("reporting.heading")}</h2>
 <p class="govuk-body">@{messages("reporting.report-problem.part1")}
-    <a class="govuk-link" href="@{reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl)}" target="_blank">@{messages("reporting.report-problem.part2")}</a>.
+    <a class="govuk-link" href="@{reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl)}" target="_blank">@{messages("reporting.report-problem.part2")}</a>@messages("reporting.report-problem.part3")
 </p>
 
 <h2 class="govuk-heading-l">@{messages("complaints.heading")}</h2>
@@ -124,7 +124,7 @@
 
 @if(statement.milestones.getOrElse(Seq()).nonEmpty && statement.isPartiallyCompliant) {
     @for(milestone <- statement.milestones.get) {
-        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by")} @{prettyPrintDate(milestone.date)}</p>
+        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by", prettyPrintDate(milestone.date))}</p>
     }
 
     @if(statement.automatedTestingOnly.getOrElse(false)) {

@@ -46,6 +46,7 @@ contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwah
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn
 reporting.report-problem.part1='Rydym bob amser yn ceisio gwella hygyrchedd y gwasanaeth hwn. Os byddwch yn dod o hyd i unrhyw broblem nad yw wedi’i rhestru ar y dudalen hon, neu os ydych o’r farn nad ydym yn bodloni gofynion hygyrchedd, '
 reporting.report-problem.part2=rhowch wybod am y broblem hygyrchedd (yn agor ffenestr neu dab newydd)
+reporting.report-problem.part3=.
 
 ## Complaints
 complaints.heading=Os ydych yn anfodlon ar ein hymateb

@@ -49,6 +49,7 @@ contact.extra-support.part3=' if you need help with filling in forms or getting 
 reporting.heading=Reporting accessibility problems with this service
 reporting.report-problem.part1=We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements, report the
 reporting.report-problem.part2=accessibility problem (opens in a new window or tab)
+reporting.report-problem.part3=.
 
 ## Complaints
 complaints.heading=If you are not happy with our response
@@ -77,7 +78,7 @@ technical.compliance.partial.reasons=, due to the non-compliances listed below.
 technical.non-compliance.header=Non-accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non-compliance with the accessibility regulations
-technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by
+technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by {0}.
 technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.
 technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 December 2020.
 
