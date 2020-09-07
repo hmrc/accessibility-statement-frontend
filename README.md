@@ -43,6 +43,8 @@ automatedTestingDetails: |             # Only add this value if your service has
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
 - [/conf/services/example-partially-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml)
+- [/conf/services/example-non-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-non-compliant.yml)
+- [/conf/services/example-automated-testing-only.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-automated-testing-only.yml)
 
 Save the YAML file to the `conf/services` directory.
 
