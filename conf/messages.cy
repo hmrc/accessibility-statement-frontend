@@ -80,7 +80,7 @@ technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu arc
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
-testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0}} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau profi awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y Ganolfan Hygyrchedd Digidol '
 testing.details.part2=(Digital Accessibility Centre).
