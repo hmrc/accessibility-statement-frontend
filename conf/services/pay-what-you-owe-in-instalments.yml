@@ -23,7 +23,7 @@ milestones:
       criterion 2.4.6 (Headings and Labels).
     date: 2020-09-30
   - description: Some error messages are not descriptive enough for people with visual
-      impairments. This does not meet WCAG Success Criterion 3.3.3 (Error Suggestion)
+      impairments. This does not meet WCAG Success Criterion 3.3.3 (Error Suggestion).
     date: 2020-09-30
   - name: meet this criterion
     description: The service is not fully compliant with WCAG 2.2.1 (timing adjustable) as
