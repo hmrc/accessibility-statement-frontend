@@ -46,7 +46,6 @@ contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwah
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn
 reporting.report-problem.part1='Rydym bob amser yn ceisio gwella hygyrchedd y gwasanaeth hwn. Os byddwch yn dod o hyd i unrhyw broblem nad yw wedi’i rhestru ar y dudalen hon, neu os ydych o’r farn nad ydym yn bodloni gofynion hygyrchedd, '
 reporting.report-problem.part2=rhowch wybod am y broblem hygyrchedd (yn agor ffenestr neu dab newydd)
-reporting.report-problem.part3=.
 
 ## Complaints
 complaints.heading=Os ydych yn anfodlon ar ein hymateb
@@ -71,7 +70,6 @@ technical.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol
 technical.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio '
 technical.compliance.guidelines=safon ’AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
 technical.compliance.partial.reasons=, fersiwn 2.1, oherwydd y diffyg cydymffurfio a restrir isod.
-technical.compliance.full.reasons=.
 technical.non-compliance.header=Cynnwys nad yw’n hygyrch
 technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
@@ -86,7 +84,6 @@ testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan 
 testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y Ganolfan Hygyrchedd Digidol '
 testing.details.part2=(Digital Accessibility Centre).
 testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
-testing.details.part3.automated=.
 testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.created-and-updated=Cyhoeddwyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 

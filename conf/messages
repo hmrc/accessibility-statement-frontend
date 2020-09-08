@@ -49,7 +49,6 @@ contact.extra-support.part3=' if you need help with filling in forms or getting 
 reporting.heading=Reporting accessibility problems with this service
 reporting.report-problem.part1=We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements, report the
 reporting.report-problem.part2=accessibility problem (opens in a new window or tab)
-reporting.report-problem.part3=.
 
 ## Complaints
 complaints.heading=If you are not happy with our response
@@ -73,7 +72,6 @@ technical.compliance.full='This service is fully compliant with the '
 technical.compliance.partial='This service is partially compliant with the '
 technical.compliance.noncompliant='This service is non compliant with the '
 technical.compliance.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
-technical.compliance.full.reasons=.
 technical.compliance.partial.reasons=, due to the non-compliances listed below.
 technical.non-compliance.header=Non-accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
@@ -89,7 +87,6 @@ testing.last-tested.automated=The service was last tested on {0} using automated
 testing.details.part1=The service was built using parts that were tested by the
 testing.details.part2=Digital Accessibility Centre
 testing.details.part3=. The full service was tested by HMRC and included disabled users.
-testing.details.part3.automated=.
 testing.details.noncompliant=The service has not been tested for compliance with WCAG 2.1 AA.
 testing.created-and-updated=This page was published on {0}. It was last updated on {1}.
 
@@ -112,3 +109,5 @@ dates.month.9=September
 dates.month.10=October
 dates.month.11=November
 dates.month.12=December
+
+general.fullstop=.
