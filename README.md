@@ -57,6 +57,23 @@ Also note, the filename can contain only lower case letters, dashes or numbers. 
 Before opening a PR, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run all the tests locally as described below.
 
+## Adding to your service
+When adding to your service, an additional parameter should be added to your query string, 
+to help end users report any accessibility that they find. this is:
+```
+referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
+```
+This will be passed through on the call to `contact-frontend`, for example:
+```
+http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
+```
+will bind the following URL in your statement page
+```
+http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
+```
+This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
+end user discovered the accessibility issue.
+
 ## To run locally
 
 To run the application:
@@ -112,23 +129,6 @@ following options configured:
 ```
 
 More information on HMRC's ZAP scanning automation library can be found at https://github.com/hmrc/zap-automation
-
-## Adding to your service
-When adding to your service, an additional parameter should be added to your query string, 
-to help end users report any accessibility that they find. this is:
-```
-referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
-```
-This will be passed through on the call to `contact-frontend`, for example:
-```
-http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
-```
-will bind the following URL in your statement page
-```
-http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
-```
-This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
-end user discovered the accessibility issue.
 
 ## Service Manager config for local development
 
