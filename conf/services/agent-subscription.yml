@@ -4,7 +4,7 @@ serviceDescription: |
   This service enables you to create an HMRC agent services account for your tax agent firm.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-subscription
-#contactFrontendServiceId: cupcakes
+contactFrontendServiceId: AOSS
 complianceStatus: partial
 accessibilityProblems:
   - Some of the links in the service are not descriptive
