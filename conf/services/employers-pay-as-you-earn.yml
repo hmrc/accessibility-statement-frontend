@@ -1,0 +1,13 @@
+serviceName: PAYE for employers
+serviceHeaderName: Business tax account
+serviceDescription: |
+  Employers use PAYE Online for employers to send payroll reports or expenses and
+  benefit returns to HMRC. The service also allows employers to access tax codes and
+  notices about their employees. 
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /business-account/epaye
+contactFrontendServiceId: BTA
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-10
+statementLastUpdatedDate: 2029-09-10
