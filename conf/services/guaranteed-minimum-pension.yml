@@ -7,7 +7,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /guaranteed-minimum-pension
 contactFrontendServiceId: guaranteed-minimum-pension
 complianceStatus: partial
-accessibilityProblems:
+accessibilityProblems://test do not merge
   - We use focus order to help users navigate through the content. On the ‘Enter Scheme Contracted Out Number’ page the focus order is illogical which is disorientating for screen reader users and anyone using a keyboard, or something that emulates a keyboard such as alternative input devices like switches and voice recognition tools. It also means some content is skipped which will be a problem for those who are blind or partially sighted, as they may not realise content appears before the form element. 
   - Some questions are hidden from JAWS users when navigating in forms mode. If a question isn’t announced when you navigate to a Yes or No radio button, use browse mode to read the question.
   - On some question pages throughout the service the in-page error link does not function as expected which can be a problem for users with screen readers and users that can’t use a mouse (such as keyboard-only users, voice input users, or those who use alternative input devices like switches).
