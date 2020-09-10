@@ -15,7 +15,7 @@ introduction.heading=Accessibility statement for {0} service
 introduction.lede=This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.
 introduction.scope.part1='This service is part of the wider GOV.UK website. There is a '
 introduction.scope.part2=separate accessibility statement for the main GOV.UK website.
-introduction.service-name=This page only contains information about the {0} Service, available at {1}.
+introduction.service-name=This page only contains information about the {0} service, available at {1}.
 
 ## Using the service
 using-service.heading=Using this service
@@ -26,8 +26,8 @@ using-service.bullet3=get from the start of the service to the end using just a 
 using-service.bullet4=get from the start of the service to the end using speech recognition software
 using-service.bullet5=listen to the service using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
 using-service.simple-text=We have also made the text in the service as simple as possible to understand.
-using-service.making-device-easier.part1=AbilityNet
-using-service.making-device-easier.part2=has advice on making your device easier to use if you have a disability.
+using-service.making-device-easier.part1=AbilityNet has advice
+using-service.making-device-easier.part2=on making your device easier to use if you have a disability.
 
 ## Accessibility
 accessibility.heading=How accessible this service is
@@ -83,7 +83,7 @@ technical.non-compliance.automated.test-by=The service will also book a full acc
 ## Testing
 testing.heading=How we tested this service
 testing.last-tested=The service was last tested on {0} and was checked for compliance with WCAG 2.1 AA.
-testing.last-tested.automated=The service was last tested on {0} using automated testing tools and was checked for compliance with WCAG 2.1 AA.
+testing.last-tested.automated=The service was last tested on {0} using automated tools and was checked for compliance with WCAG 2.1 AA.
 testing.details.part1=The service was built using parts that were tested by the
 testing.details.part2=Digital Accessibility Centre
 testing.details.part3=. The full service was tested by HMRC and included disabled users.
