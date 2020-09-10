@@ -24,7 +24,7 @@ using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
 using-service.making-device-easier.part1=Mae gan AbilityNet gyngor
-using-service.making-device-easier.part2='ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
+using-service.making-device-easier.part2=' ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
