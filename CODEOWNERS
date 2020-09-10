@@ -12,7 +12,7 @@
 /conf/testOnlyDoNotUseInAppConf.routes  @HMRC/PlatUI
 .gitignore                              @HMRC/PlatUI
 .scalafmt.conf                          @HMRC/PlatUI
-CODEOWNERS                              @JoPintoPaul @matthewmascord @natcarey
+CODEOWNERS                              @HMRC/PlatUI
 LICENSE                                 @HMRC/PlatUI
 README.md                               @HMRC/PlatUI
 build.sbt                               @HMRC/PlatUI
