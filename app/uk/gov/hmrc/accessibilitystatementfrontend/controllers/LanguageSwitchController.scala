@@ -53,6 +53,7 @@ case class LanguageSwitchController @Inject()(
       Redirect(redirectURL).withLang(Lang.apply(lang.code))
     } else {
       Redirect(redirectURL)
+      //TODO TEST IF THIS IS ACCEPTED
     }
   }
 }
