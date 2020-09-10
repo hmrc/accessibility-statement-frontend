@@ -1,0 +1,12 @@
+serviceName: Discounted Snacks
+serviceHeaderName: Snacks Service
+serviceDescription: |
+  You can use this service to get discounted snacks
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /snack
+contactFrontendServiceId: snack
+complianceStatus: full
+serviceLastTestedDate: 2019-09-15
+statementVisibility: draft
+statementCreatedDate: 2019-09-30
+statementLastUpdatedDate: 2019-09-30
