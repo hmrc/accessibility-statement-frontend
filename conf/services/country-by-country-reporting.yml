@@ -9,7 +9,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /country-by-country-reporting
 contactFrontendServiceId: country-by-country-reporting
 complianceStatus: noncompliant
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23
 

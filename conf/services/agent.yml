@@ -5,7 +5,7 @@ serviceDescription: |
   their clients, amend client details online, access client services such as online filing and payment plans, confirm
   that they still act for a given client, and access old portal PAYE for agents features such as Tax codes.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /agents
+serviceUrl: /agent
 contactFrontendServiceId: agents-online-self-serve
 complianceStatus: noncompliant
 statementVisibility: public
