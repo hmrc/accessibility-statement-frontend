@@ -1,0 +1,14 @@
+serviceName: Fulfilment House Due Diligence Scheme
+serviceHeaderName: Apply for the Fulfilment House Due Diligence Scheme
+serviceDescription: |
+  The Fulfilment House Due Diligence Scheme service lets third country goods fulfilment businesses (houses) register
+  for the scheme online, to ensure that they perform proper due diligence on the goods they fulfil, on their overseas
+  clients, and carry out “fit and proper” person checks.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /fhdds
+contactFrontendServiceId: fulfilment-house-due-diligence-scheme
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
+

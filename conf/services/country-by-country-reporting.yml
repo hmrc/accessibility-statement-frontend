@@ -1,0 +1,15 @@
+serviceName: Country by Country Reporting
+serviceHeaderName: Send a country-by-country report
+serviceDescription: |
+  There is a statutory requirement for UK headed Multinational enterprises (MNEs), or UK sub-groups of MNEs, to make an
+  annual country-by-country report to provide HMRC with information about global activities, profits and taxes.
+  The country-by-country reporting service provides a digital platform where these entities can file their reports to
+  HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /country-by-country-reporting
+contactFrontendServiceId: country-by-country-reporting
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
+
