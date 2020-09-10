@@ -290,6 +290,15 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include(
         """ <p class="govuk-body">The service will also book a full accessibility audit by 31 December 2020.</p>""")
     }
+
+    "return HTML with the description of the automated tools used" in new Setup {
+      val statementPage = app.injector.instanceOf[StatementPage]
+      val statementPageHtml =
+        statementPage(automatedTestingServiceStatement, None, isWelshTranslationAvailable = false)
+
+      contentAsString(statementPageHtml) should include(
+        """ <p class="govuk-body">The content listed below is non-accessible for the following reasons. This service was tested using automated tools only.</p>""")
+    }
   }
 
   trait Setup {
@@ -369,7 +378,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceDomain            = "www.tax.service.gov.uk",
       serviceUrl               = "/automated-accessible",
       contactFrontendServiceId = "aas",
-      automatedTestingDetails  = Some("This service was tested using automated tools only"),
+      automatedTestingDetails  = Some("This service was tested using automated tools only."),
       automatedTestingOnly     = Some(true)
     )
   }

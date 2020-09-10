@@ -118,7 +118,7 @@
         </p>
     }
     <h3 class="govuk-heading-m">@{messages("technical.non-compliance.header")}</h3>
-    <p class="govuk-body">@{messages("technical.non-compliance.introduction")}</p>
+    <p class="govuk-body">@{messages("technical.non-compliance.introduction")} @if(statement.automatedTestingOnly.getOrElse(false)) {@statement.automatedTestingDetails.getOrElse("")}</p>
     <h4 class="govuk-heading-s">@{messages("technical.non-compliance.accessibility")}</h4>
 }
 
