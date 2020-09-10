@@ -1,0 +1,12 @@
+serviceName: Discounted Snacks
+serviceHeaderName: Snacks
+serviceDescription: |
+  This is a service to claim discounted snacks. Tasty tasty snacks.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /snacks
+contactFrontendServiceId: snacks
+complianceStatus: full
+serviceLastTestedDate: 2019-09-15
+statementVisibility: draft
+statementCreatedDate: 2019-09-30
+statementLastUpdatedDate: 2019-09-30
