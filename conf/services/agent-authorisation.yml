@@ -1,0 +1,25 @@
+serviceName: agent request authorisation from client to act on their behalf for a service
+serviceHeaderName: agent request authorisation from client to act on their behalf for a service
+serviceDescription: |
+  This service allows you to as an agent create an authorisation request to act on behalf of a client for a specific HMRC service.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-services/invitations/agents
+#contactFrontendServiceId: cupcakes
+complianceStatus: partial
+#accessibilityProblems:
+#  - This is one example accessibility problem
+#  - This is a second one, they can go over multiple lines
+#    like this
+#  - This is a third accessibility problem
+#milestones:
+#  - description: Description of a first milestone to fix.
+#    date: 2020-07-31
+#  - description: Description of a second milestone to fix.
+#      which can go on multiple lines
+#    date: 2020-03-31
+#  - description: Description of a third milestone to fix.
+#    date: 2020-03-31
+serviceLastTestedDate: 2019-08-22
+statementVisibility: draft
+statementCreatedDate: 2019-09-23
+statementLastUpdatedDate: 2019-09-23

@@ -1,0 +1,29 @@
+serviceName: manage non-UK applications for agent services accounts
+serviceHeaderName: manage non-UK applications for agent services accounts
+serviceDescription: |
+  This service allows HMRC staff to view and process applications from overseas agents for approval to create an agent services account.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-services/check-application
+#contactFrontendServiceId: cupcakes
+complianceStatus: partial
+accessibilityProblems:
+  - the 'Application details' page does not have a heading level one to indicate where the main content starts
+milestones:
+  - The 'Application details' page does not have a heading level one to indicate where the main content starts.
+  This doesn't meet WCAG success criterion 2.4.6 (Headings and Labels) and 2.4.10 (Section Headings).
+  #    date: 2020-07-31
+  - description:   The input field on the 'Manage non-UK applications for agent services accounts'
+  page does not have a descriptive label, which may make it unclear to some users what they need to enter into the field.
+  This doesn't meet WCAG success criterion 2.4.6 (Headings and Labels).
+  The input field on the 'Manage non-UK applications for agent services accounts' page does not have a descriptive label,
+  which may make it unclear to some users what they need to enter into the field. This doesn't meet WCAG success criterion 2.4.6 (Headings and Labels).
+  #    date: 2020-03-31
+  - description:   We have carried out an in-house expert review of the service and fixed these accessibility issues.
+  #    date: 2020-03-31
+  - description:   We will arrange a further formal external audit of the full service as soon as possible,
+  - as part of our roadmap for making sure the service is fully compliant.
+#    date: 2020-03-31
+serviceLastTestedDate: 2019-10-23
+statementVisibility: draft
+statementCreatedDate: 2019-09-23
+#statementLastUpdatedDate: 2019-09-23

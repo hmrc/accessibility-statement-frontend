@@ -1,0 +1,49 @@
+serviceName: apply for an agent services account if you are not in the UK
+serviceHeaderName: apply for an agent services account if you are not in the UK
+serviceDescription: |
+  This service allows you to apply to HMRC for approval to create an agent services account, if your agent business is based outside the UK.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-services/apply-from-outside-uk
+#contactFrontendServiceId: cupcakes
+complianceStatus: partial
+accessibilityProblems:
+  - Some of the pages in the service have a redundant fieldset, which could prevent users browsing out of context from understanding what is being selected
+  - The input field on the 'Do you have any tax registration numbers in your country?' page is unlabelled, which may prevent some users from understanding what they need to enter into the field
+  - The 'Have you applied for money laundering supervision with HMRC?' page does not have a fieldset and legend attribute, so the purpose of the radio buttons may be unclear for some users
+  - The 'Remove' button on the 'Your tax registration numbers' page does not have a descriptive link
+  - The 'Your tax registration numbers' page does not have a legend attribute, so the purpose of the radio buttons may be unclear for some users
+milestones:
+  - descripion: Some of the pages in the service have a redundant fieldset, which could prevent users browsing out of context
+  from understanding what is being selected. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships) and 4.1.1 (Parsing).
+  #    date: 2020-07-31
+  - description: The input field on the 'Do you have any tax registration numbers in your country?' page is unlabelled,
+  which may prevent some users from understanding what they need to enter into the field. This doesn’t meet WCAG success
+  criterion 1.3.1 (Info and Relationships) and 3.3.2 (Labels or Instructions).
+  #    date: 2020-03-31
+  - description:   The 'Have you applied for money laundering supervision with HMRC?' page does not have a fieldset and
+  legend attribute, so the purpose of the radio buttons may be unclear for some users. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships).
+  #    date: 2020-03-31
+  - description:   The 'Remove' button on the 'Your tax registration numbers' page does not have a descriptive link.
+  This doesn’t meet WCAG 2.1 success criterion 2.4.4 (Link Purpose in context).
+  #    date: 2020-03-31
+  - description: The 'Your tax registration numbers' page does not have a legend attribute, so the purpose of the radio buttons may be unclear for some users.
+  This doesn’t meet WCAG success criterion 4.1.1 (Parsing).
+  #    date: 2020-03-31
+  - description:  The current visible focus indicator on some pages in this service does not meet the required ratio of 3:1.
+  This doesn't meet WCAG success criterion 1.4.11 (Non-text Contrast).
+    #    date: 2020-03-31
+  - description:   The 'Edit' button on the 'Your tax registration numbers' page does not have a descriptive label to give the button more context.
+  This doesn't meet WCAG success criterion 2.4.6 (Headings and Labels).
+  #    date: 2020-03-31
+  - description:   The 'Your contact details' page does not use an autocomplete feature to allow users to fill this information in automatically.
+  This doesn't meet WCAG success criterion 1.3.5 (Identify Input Purpose).
+    #    date: 2020-03-31
+  - description: We have carried out an in-house expert review of the service and fixed these accessibility issues.
+  #    date: 2020-03-31
+  - description: We will arrange a further formal external audit of the full service as soon as possible, as part of our roadmap
+  for making sure the service is fully compliant.
+  #    date: 2020-03-31
+serviceLastTestedDate: 2019-10-23
+statementVisibility: draft
+statementCreatedDate: 2019-09-23
+#statementLastUpdatedDate: 2019-09-23
