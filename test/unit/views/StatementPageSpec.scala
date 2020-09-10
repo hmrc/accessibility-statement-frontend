@@ -46,7 +46,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">This page only contains information about the fully accessible service name Service, available at https://www.tax.service.gov.uk/fully-accessible.""")
+        """<p class="govuk-body">This page only contains information about the fully accessible service name service, available at https://www.tax.service.gov.uk/fully-accessible.""")
     }
 
     "return HTML containing the expected using service information with service description" in new Setup {
@@ -193,11 +193,14 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include(
         """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
 
-      contentAsString(statementPageHtml) should include("""First milestone to be fixed. We plan to fix this compliance issue by 15 January 2022.""")
+      contentAsString(statementPageHtml) should include(
+        """First milestone to be fixed. We plan to fix this compliance issue by 15 January 2022.""")
 
-      contentAsString(statementPageHtml) should include("""Second milestone we&#x27;ll look at. We plan to fix this compliance issue by 20 June 2022.""")
+      contentAsString(statementPageHtml) should include(
+        """Second milestone we&#x27;ll look at. We plan to fix this compliance issue by 20 June 2022.""")
 
-      contentAsString(statementPageHtml) should include("""Then we&#x27;ll get to this third milestone. We plan to fix this compliance issue by 02 September 2022.""")
+      contentAsString(statementPageHtml) should include(
+        """Then we&#x27;ll get to this third milestone. We plan to fix this compliance issue by 02 September 2022.""")
     }
 
     "return HTML containing a language toggle" in new Setup {
@@ -279,7 +282,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         statementPage(automatedTestingServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">The service was last tested on 21 April 2019 using automated testing tools and was checked for compliance with WCAG 2.1 AA.</p>""")
+        """<p class="govuk-body">The service was last tested on 21 April 2019 using automated tools and was checked for compliance with WCAG 2.1 AA.</p>""")
     }
 
     "return HTML with the date for carrying out a full assessment" in new Setup {
