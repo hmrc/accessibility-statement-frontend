@@ -129,8 +129,8 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
       val statementPageHtml = statementPage(fullyAccessibleWithMilestones, None, isWelshTranslationAvailable = false)
 
-      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">First milestone to be fixed</p>""")
-      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>""")
+      contentAsString(statementPageHtml) should not include ("""First milestone to be fixed""")
+      contentAsString(statementPageHtml) should not include ("""We plan to fix this compliance issue by""")
     }
 
     "should return information on accessibility problems if problems are non-empty" in new Setup {
@@ -193,14 +193,11 @@ class StatementPageSpec extends WordSpec with Matchers {
       contentAsString(statementPageHtml) should include(
         """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
 
-      contentAsString(statementPageHtml) should include("""First milestone to be fixed""")
-      contentAsString(statementPageHtml) should include("""We plan to fix this compliance issue by 15 January 2022""")
+      contentAsString(statementPageHtml) should include("""First milestone to be fixed. We plan to fix this compliance issue by 15 January 2022.""")
 
-      contentAsString(statementPageHtml) should include("""Second milestone we&#x27;ll look at""")
-      contentAsString(statementPageHtml) should include("""We plan to fix this compliance issue by 20 June 2022""")
+      contentAsString(statementPageHtml) should include("""Second milestone we&#x27;ll look at. We plan to fix this compliance issue by 20 June 2022.""")
 
-      contentAsString(statementPageHtml) should include("""Then we&#x27;ll get to this third milestone""")
-      contentAsString(statementPageHtml) should include("""We plan to fix this compliance issue by 02 September 2022""")
+      contentAsString(statementPageHtml) should include("""Then we&#x27;ll get to this third milestone. We plan to fix this compliance issue by 02 September 2022.""")
     }
 
     "return HTML containing a language toggle" in new Setup {
@@ -343,10 +340,10 @@ class StatementPageSpec extends WordSpec with Matchers {
         )),
       milestones = Some(
         Seq(
-          Milestone("First milestone to be fixed", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
-          Milestone("Second milestone we'll look at", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
+          Milestone("First milestone to be fixed.", new GregorianCalendar(2022, Calendar.JANUARY, 15).getTime),
+          Milestone("Second milestone we'll look at.", new GregorianCalendar(2022, Calendar.JUNE, 20).getTime),
           Milestone(
-            "Then we'll get to this third milestone",
+            "Then we'll get to this third milestone.",
             new GregorianCalendar(2022, Calendar.SEPTEMBER, 2).getTime)
         )),
       statementVisibility      = Draft,
