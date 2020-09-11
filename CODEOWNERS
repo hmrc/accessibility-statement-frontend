@@ -9,11 +9,12 @@ CODEOWNERS                              @HMRC/PlatUI
 LICENSE                                 @HMRC/PlatUI
 README.md                               @HMRC/PlatUI
 repository.yaml                         @HMRC/PlatUI
-*.sh                                    @HMRC/PlatUI
-*.js                                    @HMRC/PlatUI
-*.xml                                   @HMRC/PlatUI
 *.conf                                  @HMRC/PlatUI
+*.html                                  @HMRC/PlatUI
+*.java                                  @HMRC/PlatUI
+*.js                                    @HMRC/PlatUI
 *.routes                                @HMRC/PlatUI
 *.sbt                                   @HMRC/PlatUI
 *.scala                                 @HMRC/PlatUI
-*.html                                  @HMRC/PlatUI
+*.sh                                    @HMRC/PlatUI
+*.xml                                   @HMRC/PlatUI
