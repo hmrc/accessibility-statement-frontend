@@ -1,0 +1,23 @@
+serviceName: HMRC Developer Hub
+serviceHeaderName: HMRC Developer Hub
+serviceDescription: |
+  The HMRC Developer Hub supports third party software developers to integrate their software with HMRC APIs.
+serviceDomain: developer.service.hmrc.gov.uk
+serviceUrl: /api-documentation
+contactFrontendServiceId: hmrc-developer-hub
+complianceStatus: partial
+accessibilityProblems:
+ - Non-descriptive radio buttons
+ - Skip Links
+ - List Items
+ - Focus Order
+ - Page Titles
+ - Time-out
+ - Colours of non-text elements
+ - Time-out
+ - Visual Presentation
+ - Headings
+serviceLastTestedDate: 2019-08-01
+statementVisibility: draft
+statementCreatedDate: 2019-08-23
+statementLastUpdatedDate: 2019-08-23
