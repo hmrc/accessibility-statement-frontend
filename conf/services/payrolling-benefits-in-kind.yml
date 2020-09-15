@@ -1,0 +1,12 @@
+serviceName: Payrolling benefits and expenses
+serviceHeaderName: Payrolling benefits and expenses
+serviceDescription: |
+  The Payrolling benefits and expenses service allows employers to 'tax at source' some or
+  all of the benefits and expenses they offer their employees.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /payrollbik
+contactFrontendServiceId: scp
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2020-09-14
+statementLastUpdatedDate: 2020-09-14

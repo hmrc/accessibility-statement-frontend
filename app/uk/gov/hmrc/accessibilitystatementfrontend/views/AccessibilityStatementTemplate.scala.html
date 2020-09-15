@@ -85,7 +85,7 @@
 
 <h2 class="govuk-heading-l">@{messages("reporting.heading")}</h2>
 <p class="govuk-body">@{messages("reporting.report-problem.part1")}
-    <a class="govuk-link" href="@{reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl)}" target="_blank">@{messages("reporting.report-problem.part2")}</a>.
+    <a class="govuk-link" href="@{reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl)}" target="_blank">@{messages("reporting.report-problem.part2")}</a>@messages("general.fullstop")
 </p>
 
 <h2 class="govuk-heading-l">@{messages("complaints.heading")}</h2>
@@ -108,7 +108,7 @@
 <p class="govuk-body">@{messages("technical.commitment")}</p>
 
 @if(statement.isFullyCompliant) {
-    <p class="govuk-body">@{messages("technical.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.full.reasons")}</p>
+    <p class="govuk-body">@{messages("technical.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("general.fullstop")}</p>
 } else {
     @if(statement.isNonCompliant) {
         <p class="govuk-body">@{messages("technical.compliance.noncompliant")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
@@ -118,13 +118,13 @@
         </p>
     }
     <h3 class="govuk-heading-m">@{messages("technical.non-compliance.header")}</h3>
-    <p class="govuk-body">@{messages("technical.non-compliance.introduction")}</p>
+    <p class="govuk-body">@{messages("technical.non-compliance.introduction")} @if(statement.automatedTestingOnly.getOrElse(false)) {@statement.automatedTestingDetails.getOrElse("")}</p>
     <h4 class="govuk-heading-s">@{messages("technical.non-compliance.accessibility")}</h4>
 }
 
 @if(statement.milestones.getOrElse(Seq()).nonEmpty && statement.isPartiallyCompliant) {
     @for(milestone <- statement.milestones.get) {
-        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by")} @{prettyPrintDate(milestone.date)}</p>
+        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by", prettyPrintDate(milestone.date))}</p>
     }
 
     @if(statement.automatedTestingOnly.getOrElse(false)) {
@@ -149,7 +149,7 @@
         }
     }
     <p class="govuk-body">@{messages("testing.details.part1")}
-        <a class="govuk-link" href="http://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>@{messages(if(statement.automatedTestingOnly.getOrElse(false)) "testing.details.part3.automated" else "testing.details.part3")}
+        <a class="govuk-link" href="http://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>@{messages(if(statement.automatedTestingOnly.getOrElse(false)) "general.fullstop" else "testing.details.part3")}
     </p>
 }
 

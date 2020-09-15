@@ -23,8 +23,8 @@ using-service.bullet3=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio
 using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio meddalwedd adnabod lleferydd
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
-using-service.making-device-easier.part1=Mae gan AbilityNet
-using-service.making-device-easier.part2=' gyngor ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
+using-service.making-device-easier.part1=Mae gan AbilityNet gyngor
+using-service.making-device-easier.part2=' ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
@@ -70,22 +70,20 @@ technical.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol
 technical.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio '
 technical.compliance.guidelines=safon ’AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
 technical.compliance.partial.reasons=, fersiwn 2.1, oherwydd y diffyg cydymffurfio a restrir isod.
-technical.compliance.full.reasons=.
 technical.non-compliance.header=Cynnwys nad yw’n hygyrch
 technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
-technical.non-compliance.milestone.fix-by='Bydd hyn yn cael ei drwsio erbyn '
+technical.non-compliance.milestone.fix-by=Bydd hyn yn cael ei drwsio erbyn {0}.
 technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 30 Tachwedd 2020. 
 technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Rhagfyr 2020.
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
 testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau profi awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y Ganolfan Hygyrchedd Digidol '
 testing.details.part2=(Digital Accessibility Centre).
 testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
-testing.details.part3.automated=.
 testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.created-and-updated=Cyhoeddwyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
