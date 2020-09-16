@@ -1,10 +1,22 @@
-# accessibility-statement-frontend
+# Accessibility Statement Frontend
 
 Accessibility Statement Frontend is a service for providing for accessibility statements across HMRC.
 
+## Prerequisites
+
+Adding an accessibility statement involves creating a structured text file known as
+a [YAML](https://en.wikipedia.org/wiki/YAML) (YAML Ain't Markup Language) file and 
+adding to this repository.
+
+Creating such a file does not require any coding skills and can be done in a simple text editor, online 
+ YAML editor or even directly within Github. However, if you are a developer you may 
+prefer to use your preferred IDE and git to upload the YAML file to the repository.
+
 ## To add your service's accessibility statement
 
-Create a YAML file of the form:
+First create a YAML file similar to the one listed below. This example includes all possible fields. Your statement
+may not need all of these fields depending on whether your service is fully, partially or non-compliant. Note 
+that the text following the # characters are comments and will not appear in the fully rendered accessibility statement.
 
 ```yaml
 serviceName: Discounted Icecreams       # The service name that will appear in the title of the accessibility statement.
@@ -30,7 +42,7 @@ milestones:                             # If there are no issues do not include 
       cannot use the service reliably. This does not meet WCAG success criterion
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
-serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If your statemenent's compliance status is noncompliant, you can omit this line
+serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
 statementVisibility: public             # If set to public, the statement will be visible in production
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
@@ -48,22 +60,25 @@ You can also use the following files as examples to copy:
 
 Save the YAML file to the `conf/services` directory.
 
-The filename must be of the form <my-service>.yml. The name of the file will become the URL of the accessibility statement 
+The filename must be of the form &lt;my-service&gt;.yml. The name of the file will become the URL of the accessibility statement 
 e.g. `conf/services/discounted-icecreams.yml` will create an accessibility statement at 
 `https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams`.
 
-Also note, the filename can contain only lower case letters, dashes or numbers. The filename extension must be `.yml`
+The filename can contain only lower case letters, dashes or numbers, and the filename extension must be `.yml`
 
-Before opening a PR, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
-and run all the tests locally as described below.
+Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
+and run the unit and integration tests locally as described below.
 
 ## Adding to your service
 
+Adding the accessibility statement to your service requires basic knowledge of the Play framework, the MDTP platform, and
+ the ability and permission to build & deploy your service.
+ 
 ### Users of play-ui (version 8.12.0 or above) or play-frontend-hmrc (version 0.19.0 or above)
 
 If you are using [hmrc/play-ui](https://github.com/hmrc/play-ui#accessibility-statements)
  or [hmrc/play-frontend-hmrc](https://github.com/hmrc/play-frontend-hmrc#accessibility-statements), you can add the 
- `accessibility-statement.service-path` key to your application.conf. This key is 
+ `accessibility-statement.service-path` key to your `conf/application.conf` file. This key is 
  the path to your accessibility statement under https://www.tax.service.gov.uk/accessibility-statement.
                                                                        
 For example, if your accessibility statement is https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams, 
@@ -84,8 +99,12 @@ for occasions where it is not convenient to use hmrcFooter.
 
 ### Users of older versions of play-ui or Java-based services
  
-When adding to your service, an additional parameter should be added to your query string, 
-to help end users report any accessibility that they find. This is:
+If you are not able to upgrade to the minimum supported versions of play-ui or play-frontend-hmrc listed above, you 
+will need to manually add a footer link to the accessibility statement entitled 'Accessibility statement' after the 
+Cookies link in the gov.uk footer.
+ 
+The link should have an additional querystring parameter added to help end users report any accessibility that they 
+find. This is:
 
 ```
 referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
@@ -107,6 +126,19 @@ as shown in the following code: https://github.com/hmrc/play-ui/blob/master/src/
 This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
 end user discovered the accessibility issue.
 
+## Creating accessibility statements in the Welsh language
+
+To create a version of your accessibility statement in the Welsh language, create a copy of the English language
+version and save with the suffix `.cy.yml`. For example, if your English language statement is in
+`/conf/services/discounted-icecreams.yml`, the Welsh version should be saved as
+`/conf/services/discounted-icecreams.cy.yml`.
+
+Translate the following fields into Welsh only: serviceName, serviceHeaderName, serviceDescription, accessibilityProblems
+and milestone description. All other fields must be left untouched.
+
+Open a PR to get the file merged into the repository. Once merged and deployed, the language toggle will 
+automatically appear on the statement and will translate all content, including the legal text into Welsh.
+
 ## To run locally
 
 To run the application:
@@ -115,13 +147,28 @@ sbt run
 ```
 
 Navigate to the desired accessibility statement e.g. http://localhost:12346/accessibility-statement/disguised-remuneration
-where disguised-remuneration is the serviceKey defined in the accessibility statement YAML file.
+where disguised-remuneration is the filename of the accessibility statement YAML file with the language and yaml suffix
+removed.
 
-## Running unit and integration tests together
+## Running unit and integration tests
 
 ```
 sbt test it:test
 ```
+
+## Generating a report
+
+It is possible to generate a tab-separated-value (TSV) file containing information on all the accessibility statements
+that exist in the repository. This TSV file can then easily be imported into your favourite spreadsheet application
+for further analysis.
+
+To generate the report, clone the repository locally and run
+
+```
+sbt "generateReport report.tsv"
+```
+
+If all goes well, the report `report.tsv` will be created in the root directory.
 
 ## Running UI acceptance tests
 
@@ -170,6 +217,9 @@ When developing locally you can run
 ```
 sm --start A11Y_STATEMENT_ALL
 ```
+
+This is useful if you have already merged your accessibility statement into the repository and now wish to test
+the linking to the accessibility statement from your own service.
 
 ### License
 
