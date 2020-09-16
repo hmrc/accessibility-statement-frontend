@@ -1,0 +1,13 @@
+serviceName: Employment Intermediaries
+serviceHeaderName: Submit an employment intermediary report
+serviceDescription: |
+  Employment intermediaries must send information to HMRC about workers they have placed in work but who fall outside
+  of their PAYE/RTI system. This service lets employment intermediaries meet their legislative reporting requirements
+  by providing a platform where they can upload their reports to HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /employment-intermediary-report
+contactFrontendServiceId: employment-intermediaries
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17

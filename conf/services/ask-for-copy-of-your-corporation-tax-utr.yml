@@ -1,0 +1,24 @@
+serviceName: Ask for a copy of your Corporation Tax UTR
+serviceHeaderName: Ask for a copy of your Corporation Tax UTR
+serviceDescription: |
+  This service is for corporations that have lost or forgotten their Corporation Tax Unique Tax Reference (CT UTR). 
+  It enables users to ask for a copy of the CT UTR to be sent by post to the company’s registered address.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /ask-for-copy-of-your-corporation-tax-utr
+contactFrontendServiceId: ask-for-copy-of-your-corporation-tax-utr
+complianceStatus: partial
+accessibilityProblems:
+  - the article tag appears before the heading at the start of the main content. This can make it more difficult for users with screen readers to locate the main content as it adds more noise.
+  - the skip to main content link moves the focus to the Welsh language switcher instead of the main part of the page.
+  - the highlighted state of the selectable elements does not match the recommended colour contrast in the GOV.UK Design System.
+milestones:
+  - description: The article tag appears before the heading at the start of the main content. This can make it more difficult for users with screen readers to locate the main content as it adds more noise. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-18
+  - description: The skip to main content link moves the focus to the Welsh language switcher instead of the main part of the page. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2020-12-18
+  - description: The highlighted state of the selectable elements does not match the recommended colour contrast in the GOV.UK Design System. This doesn’t meet WCAG 2.1 success criterion 1.4.11 (Non-text Contrast). We plan to make the colour contrast stronger so that it matches what is recommended in the GOV.UK Design System.
+    date: 2020-12-18
+serviceLastTestedDate: 2020-08-20
+statementCreatedDate: 2020-09-14
+statementLastUpdatedDate: 2020-09-14
+statementVisibility: draft

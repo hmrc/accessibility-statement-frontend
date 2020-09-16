@@ -1,0 +1,15 @@
+serviceName: Soft Drinks Industry Levy
+serviceHeaderName: Soft Drinks Industry Levy
+serviceDescription: |
+  Soft Drinks Industry Levy is a business tax that is applied to the production and importation of soft drinks that
+  contain added sugar. The levy applies to producers and importers of these types of soft drinks, which are charged at
+  different rates according to the total sugar content.
+  The service is designed to enable these business users to submit their SDIL returns and make payments.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /soft-drinks-industry-levy
+contactFrontendServiceId: soft-drinks-industry-levy
+complianceStatus: full
+serviceLastTestedDate: 2020-07-15
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17

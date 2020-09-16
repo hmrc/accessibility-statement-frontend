@@ -22,7 +22,7 @@ import io.circe.syntax._
 import io.circe.yaml.syntax._
 import io.alphash.faker._
 import org.joda.time.DateTime
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, AccessibilityStatements, Draft, FullCompliance, Milestone, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance}
 import java.io.PrintWriter
 
 object FakeStatementGenerator extends App {
@@ -49,12 +49,12 @@ object FakeStatementGenerator extends App {
   private def generateStatement(serviceKey: String) = {
     val complianceStatus = if (r.nextBoolean) FullCompliance else PartialCompliance
     val accessibilityProblems = complianceStatus match {
-      case FullCompliance    => Seq.empty
-      case PartialCompliance => (0 to r.nextInt(10)).map(_ => Lorem().paragraph)
+      case FullCompliance => Seq.empty
+      case _              => (0 to r.nextInt(10)).map(_ => Lorem().paragraph)
     }
     val milestones = complianceStatus match {
-      case FullCompliance    => Seq.empty
-      case PartialCompliance => (0 to r.nextInt(10)).map(_ => generateMilestone)
+      case FullCompliance => Seq.empty
+      case _              => (0 to r.nextInt(10)).map(_ => generateMilestone)
     }
 
     AccessibilityStatement(
@@ -67,17 +67,14 @@ object FakeStatementGenerator extends App {
       complianceStatus             = complianceStatus,
       accessibilityProblems        = if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems),
       milestones                   = if (milestones.isEmpty) None else Some(milestones),
+      automatedTestingOnly         = None,
       statementVisibility          = Draft,
-      serviceLastTestedDate        = generateDate,
+      serviceLastTestedDate        = Some(generateDate),
       statementCreatedDate         = generateDate,
-      statementLastUpdatedDate     = generateDate
+      statementLastUpdatedDate     = generateDate,
+      automatedTestingDetails      = None
     )
   }
-
-  private def generateServices(serviceKeys: Seq[String]) =
-    AccessibilityStatements(serviceKeys)
-
-  private def generateServicesAsYaml(serviceKeys: Seq[String]) = generateServices(serviceKeys).asJson.asYaml.spaces2
 
   private def generateAsFile(filename: String)(block: => String) {
     val out = new PrintWriter(filename)
@@ -88,11 +85,6 @@ object FakeStatementGenerator extends App {
       out.close()
     }
   }
-
-  private def generateServicesAsFile(serviceKeys: Seq[String]): Unit =
-    generateAsFile(s"testOnlyConf/testOnlyServices.yml") {
-      generateServicesAsYaml(serviceKeys)
-    }
 
   private def generateStatementAsYaml(serviceKey: String) = generateStatement(serviceKey).asJson.asYaml.spaces2
 
@@ -107,5 +99,4 @@ object FakeStatementGenerator extends App {
   val serviceKeys = generateServiceKeys(args(0).toInt)
 
   generateStatementsAsFiles(serviceKeys)
-  generateServicesAsFile(serviceKeys)
 }

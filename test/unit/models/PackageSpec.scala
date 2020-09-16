@@ -17,12 +17,22 @@
 package unit.models
 
 import java.util.{Calendar, GregorianCalendar}
+
 import org.scalatest.{Matchers, WordSpec}
+import play.api.i18n.Messages
+import play.api.inject.guice.GuiceApplicationBuilder
+import play.api.mvc.{Cookie, MessagesControllerComponents}
+import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{prettyPrintDate, reportAccessibilityProblemLink}
 
 class PackageSpec extends WordSpec with Matchers {
   "Given a date, calling prettyPrintDate" should {
-    "return the date as a string in the format 01 January 2020" in {
+    "return the date as a string in the format 01 January 2020 in English if no language cookie set" in {
+      val app = new GuiceApplicationBuilder().build()
+      val mcc = app.injector.instanceOf[MessagesControllerComponents]
+      val requestDefaultLanguage = FakeRequest()
+      implicit val messages: Messages = mcc.messagesApi.preferred(requestDefaultLanguage)
+
       val firstDate = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime
       val secondDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime
       val thirdDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
@@ -30,6 +40,36 @@ class PackageSpec extends WordSpec with Matchers {
       prettyPrintDate(firstDate) should equal("28 February 2020")
       prettyPrintDate(secondDate) should equal("15 March 2020")
       prettyPrintDate(thirdDate) should equal("01 May 2020")
+    }
+
+    "return the date as a string in the format 01 January 2020 in English if language cookie set to en" in {
+      val app = new GuiceApplicationBuilder().build()
+      val mcc = app.injector.instanceOf[MessagesControllerComponents]
+      val requestEnglishLanguage = FakeRequest().withCookies(Cookie("PLAY_LANG", "en"))
+      implicit val messages: Messages = mcc.messagesApi.preferred(requestEnglishLanguage)
+
+      val firstDate = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime
+      val secondDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime
+      val thirdDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+
+      prettyPrintDate(firstDate) should equal("28 February 2020")
+      prettyPrintDate(secondDate) should equal("15 March 2020")
+      prettyPrintDate(thirdDate) should equal("01 May 2020")
+    }
+
+    "return the date as a string in the format 01 January 2020 in Welsh if language cookie set to cy" in {
+      val app = new GuiceApplicationBuilder().build()
+      val mcc = app.injector.instanceOf[MessagesControllerComponents]
+      val requestWelshLanguage = FakeRequest().withCookies(Cookie("PLAY_LANG", "cy"))
+      implicit val messages: Messages = mcc.messagesApi.preferred(requestWelshLanguage)
+
+      val firstDate = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime
+      val secondDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime
+      val thirdDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+
+      prettyPrintDate(firstDate) should equal("28 Chwefror 2020")
+      prettyPrintDate(secondDate) should equal("15 Mawrth 2020")
+      prettyPrintDate(thirdDate) should equal("01 Mai 2020")
     }
   }
 

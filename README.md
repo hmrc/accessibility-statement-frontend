@@ -16,7 +16,7 @@ serviceDescription: |                   # A description of the service
 serviceDomain: www.tax.service.gov.uk   # The domain name under which this service exists (exclude the https:// and the path)
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
 contactFrontendServiceId: icecreams     # The service id passed to contact-frontend and hmrc-deskpro
-complianceStatus: partial               # full|partial
+complianceStatus: partial               # full|partial|noncompliant
 accessibilityProblems:                  # If there are no issues do not include this section
   - a description of the first problem
   - another description of a problem
@@ -30,15 +30,21 @@ milestones:                             # If there are no issues do not include 
       cannot use the service reliably. This does not meet WCAG success criterion
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
-serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD
+serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If your statemenent's compliance status is noncompliant, you can omit this line
 statementVisibility: public             # If set to public, the statement will be visible in production
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
+automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
+automatedTestingDetails: |             # Only add this value if your service has only had automated testing
+  If your service has only had automated testing, add a text description of testing tools used, e.g.
+  It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
 - [/conf/services/example-partially-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml)
+- [/conf/services/example-non-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-non-compliant.yml)
+- [/conf/services/example-automated-testing-only.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-automated-testing-only.yml)
 
 Save the YAML file to the `conf/services` directory.
 
@@ -50,6 +56,56 @@ Also note, the filename can contain only lower case letters, dashes or numbers. 
 
 Before opening a PR, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run all the tests locally as described below.
+
+## Adding to your service
+
+### Users of play-ui (version 8.12.0 or above) or play-frontend-hmrc (version 0.19.0 or above)
+
+If you are using [hmrc/play-ui](https://github.com/hmrc/play-ui#accessibility-statements)
+ or [hmrc/play-frontend-hmrc](https://github.com/hmrc/play-frontend-hmrc#accessibility-statements), you can add the 
+ `accessibility-statement.service-path` key to your application.conf. This key is 
+ the path to your accessibility statement under https://www.tax.service.gov.uk/accessibility-statement.
+                                                                       
+For example, if your accessibility statement is https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams, 
+this property must be set to `/discounted-icecreams` as follows:
+
+```
+accessibility-statement.service-path = "/discounted-icecreams"
+```
+
+Once this is set, the play-ui [FooterLinks](https://github.com/hmrc/play-ui/blob/master/src/main/twirl/uk/gov/hmrc/play/views/layouts/FooterLinks.scala.html)
+  component will auto-generate the correct link to your accessibility statement, including
+the full referrerUrl parameter as described below. Likewise, the new
+ [hmrcFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-26/twirl/uk/gov/hmrc/hmrcfrontend/views/components/hmrcFooter.scala.html)
+ component will deliver the full govukFooter including the standardised links.
+ 
+Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
+for occasions where it is not convenient to use hmrcFooter.
+
+### Users of older versions of play-ui or Java-based services
+ 
+When adding to your service, an additional parameter should be added to your query string, 
+to help end users report any accessibility that they find. This is:
+
+```
+referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
+```
+This will be passed through on the call to `contact-frontend`, for example:
+```
+http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
+```
+will bind the following URL in your statement page
+```
+http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
+```
+
+The referrerUrl parameter should be dynamic, not hard-coded, and based on the request the user made to the page
+they were visiting when clicking on the 'Accessibility statement' link. It can be constructed from the
+`platform.frontend.host` configuration key (available only when running on the MDTP platform) and the `request.path` 
+as shown in the following code: https://github.com/hmrc/play-ui/blob/master/src/main/play-26/uk/gov/hmrc/play/config/AccessibilityStatementConfig.scala#L43
+
+This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
+end user discovered the accessibility issue.
 
 ## To run locally
 
@@ -107,30 +163,13 @@ following options configured:
 
 More information on HMRC's ZAP scanning automation library can be found at https://github.com/hmrc/zap-automation
 
-## Adding to your service
-When adding to your service, an additional parameter should be added to your query string, 
-to help end users report any accessibility that they find. this is:
-```
-referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
-```
-This will be passed through on the call to `contact-frontend`, for example:
-```
-http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
-```
-will bind the following URL in your statement page
-```
-http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
-```
-This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
-end user discovered the accessibility issue.
-
 ## Service Manager config for local development
 
 When developing locally you can run
 
 ```
 sm --start A11Y_STATEMENT_ALL
-```:wq
+```
 
 ### License
 

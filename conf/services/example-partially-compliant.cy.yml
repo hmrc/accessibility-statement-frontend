@@ -1,0 +1,26 @@
+serviceName: Discounted Cupcakes Welsh
+serviceHeaderName: Cupcakes Welsh
+serviceDescription: |
+  Defnyddiwch y paragraff hwn i ddisgrifio'ch gwasanaeth. Gall fynd dros sawl llinell
+  fel hyn.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /cupcakes
+contactFrontendServiceId: cupcakes
+complianceStatus: partial
+accessibilityProblems:
+  - Dyma un enghraifft o broblem hygyrchedd
+  - Ail un yw hwn, gallant fynd dros sawl llinell
+    fel hyn
+  - Mae hon yn drydedd broblem hygyrchedd
+milestones:
+  - description: Disgrifiad o garreg filltir gyntaf i'w thrwsio.
+    date: 2020-07-31
+  - description: Disgrifiad o ail garreg filltir i'w thrwsio
+      a all fynd ar sawl llinell.
+    date: 2020-03-31
+  - description: Disgrifiad o drydedd garreg filltir i'w thrwsio.
+    date: 2020-03-31
+serviceLastTestedDate: 2019-09-15
+statementVisibility: draft
+statementCreatedDate: 2019-09-30
+statementLastUpdatedDate: 2019-09-30

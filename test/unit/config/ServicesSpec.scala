@@ -20,8 +20,9 @@ import org.scalatest.TryValues
 import cats.syntax.either._
 import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder}
-import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{AccessibilityStatementParser}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{ServicesFinder, SourceConfig}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
+import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.util.Try
 
@@ -29,17 +30,24 @@ class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
   private val statementParser = new AccessibilityStatementParser
 
   "the configuration files" should {
-    val appConfig      = app.injector.instanceOf[AppConfig]
+    val sourceConfig   = app.injector.instanceOf[SourceConfig]
     val servicesFinder = app.injector.instanceOf[ServicesFinder]
 
-    val services: Seq[String] = servicesFinder.findAll()
-    services.foreach { (service: String) =>
+    servicesFinder.findAll().foreach { (service: String) =>
+      val source = sourceConfig.statementSource(service)
+
+      val statementTry = Try(statementParser.parseFromSource(source).valueOr(throw _))
+
       s"include a correctly formatted accessibility statement yaml file for $service" in {
-        val source = appConfig.statementSource(service)
-
-        val statementTry = Try(statementParser.parseFromSource(source).valueOr(throw _))
-
         statementTry must be a 'success
+      }
+
+      s"not contain missing milestones for $service" in {
+        val statement: AccessibilityStatement = statementTry.get
+
+        val hasMilestones = statement.milestones.getOrElse(Seq.empty).nonEmpty
+
+        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant must be(true)
       }
     }
   }

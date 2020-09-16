@@ -17,7 +17,7 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.repos
 
 import javax.inject.{Inject, Singleton}
-import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder}
+import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers._
 import cats.syntax.either._
@@ -33,10 +33,12 @@ trait AccessibilityStatementsRepo {
 case class AccessibilityStatementsSourceRepo @Inject()(
   appConfig: AppConfig,
   servicesFinder: ServicesFinder,
-  statementParser: AccessibilityStatementParser)
+  statementParser: AccessibilityStatementParser,
+  sourceConfig: SourceConfig)
     extends AccessibilityStatementsRepo
     with Logging {
   import appConfig._
+  import sourceConfig._
   import servicesFinder._
 
   type RepoKey   = (String, String)

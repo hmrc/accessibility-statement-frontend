@@ -19,11 +19,16 @@ package acceptance.pages
 import acceptance.config.AcceptanceTestConfiguration
 
 object FullyAccessibleStatementPage extends BasePage {
-  val url = AcceptanceTestConfiguration.url("accessibility-statement-frontend") + "/disguised-remuneration"
+  val url = AcceptanceTestConfiguration.url("accessibility-statement-frontend") + "/example-fully-compliant"
   val title = "Service test page"
 }
 
 object PartiallyAccessibleStatementPage extends BasePage {
-  val url = AcceptanceTestConfiguration.url("accessibility-statement-frontend") + "/online-payments"
+  val url = AcceptanceTestConfiguration.url("accessibility-statement-frontend") + "/example-partially-compliant"
+  val title = "Service test page"
+}
+
+object NonAccessibleStatementPage extends BasePage {
+  val url = AcceptanceTestConfiguration.url("accessibility-statement-frontend") + "/example-non-compliant"
   val title = "Service test page"
 }
