@@ -5,7 +5,7 @@ serviceDescription: |
 serviceDomain: developer.service.hmrc.gov.uk
 serviceUrl: /api-documentation
 contactFrontendServiceId: hmrc-developer-hub
-complianceStatus: partial
+complianceStatus: noncompliant
 accessibilityProblems:
  - Non-descriptive radio buttons - There are several radio buttons that were not descriptive of what the user would be subscribing to.
  - Skip Links - Skip link to enable users to skip to the relevant content on the page did not function.
@@ -15,6 +15,6 @@ accessibilityProblems:
  - Time-out - Users were timed out of the service.
  - Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
 serviceLastTestedDate: 2019-08-01
-statementVisibility: public
+statementVisibility: draft
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23
