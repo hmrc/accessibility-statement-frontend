@@ -5,7 +5,7 @@ serviceDescription: |
 serviceDomain: developer.service.hmrc.gov.uk
 serviceUrl: /api-documentation
 contactFrontendServiceId: hmrc-developer-hub
-complianceStatus: noncompliant
+complianceStatus: partial
 accessibilityProblems:
  - Non-descriptive radio buttons - There are several radio buttons that were not descriptive of what the user would be subscribing to.
  - Skip Links - Skip link to enable users to skip to the relevant content on the page did not function.
@@ -14,7 +14,24 @@ accessibilityProblems:
  - Page Titles - The page titles and <h1> did not update as the user travels through the 'delete client' section.
  - Time-out - Users were timed out of the service.
  - Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
+
+milestones:
+- description: Non-descriptive radio buttons - There are several radio buttons that were not descriptive of what the user would be subscribing to.
+  date: 2020-11-06
+- description: Skip Links - Skip link to enable users to skip to the relevant content on the page did not function.
+  date: 2020-11-06
+- description: List Items - There was a list present that had not been marked up as a list.
+  date: 2020-11-06
+- description: Focus Order - When a user chose to add another Client Secret, focus was returned to the top of the page.
+  date: 2020-11-06
+- description: Page Titles - The page titles and <h1> did not update as the user travels through the 'delete client' section.
+  date: 2020-11-06
+- description: Time-out - Users were timed out of the service.
+  date: 2020-11-06
+- description: Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
+  date: 2020-11-06
+
 serviceLastTestedDate: 2019-08-01
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23
