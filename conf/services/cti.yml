@@ -1,0 +1,33 @@
+serviceName: Council Tax valuation list
+serviceHeaderName: Council Tax valuation list
+serviceDescription: |
+  Find out the Council Tax band for a home in England or Wales by looking up its postcode.
+serviceDomain: cti.voa.gov.uk
+serviceUrl: /cti
+contactFrontendServiceId: cti
+complianceStatus: partial
+accessibilityProblems:
+  - The focus order of the page when navigating via keyboard commands is not always logical.
+  - The colour contrast of some fonts fails to meet the expected ratio to meet WCAG 2.1 AA.
+  - Some links lack description for screen reader users.
+  - When the page is resized to 400% via browser controls, two-way scrolling is forced.
+  - Some tables contain empty table cells which can be confusing for screen reader users.
+milestones:
+  - description: Resolve focus issue for keyboard navigation.
+    date: 2020-10-05
+  - description: Ensure colour contrast complies with the expected ratio to meet WCAG 2.1 AA.
+    date: 2020-10-05
+  - description: Provide suitable link descriptions for screen reader users.
+    date: 2020-10-05	
+  - description: Prevent two-way scrolling when page is resized to 400%.
+    date: 2020-10-05
+  - description: Ensure tables do not contain empty table cells.
+    date: 2020-10-05
+  - description: |
+      Further accessibility testing is required in order to determine the changes necessary to reach AA compliance
+      for the whole site.
+    date: 2020-10-12	
+serviceLastTestedDate: 2019-11-28
+statementVisibility: draft
+statementCreatedDate: 2020-09-16
+statementLastUpdatedDate: 2020-09-16
