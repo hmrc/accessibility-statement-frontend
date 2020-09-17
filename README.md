@@ -57,6 +57,56 @@ Also note, the filename can contain only lower case letters, dashes or numbers. 
 Before opening a PR, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run all the tests locally as described below.
 
+## Adding to your service
+
+### Users of play-ui (version 8.12.0 or above) or play-frontend-hmrc (version 0.19.0 or above)
+
+If you are using [hmrc/play-ui](https://github.com/hmrc/play-ui#accessibility-statements)
+ or [hmrc/play-frontend-hmrc](https://github.com/hmrc/play-frontend-hmrc#accessibility-statements), you can add the 
+ `accessibility-statement.service-path` key to your application.conf. This key is 
+ the path to your accessibility statement under https://www.tax.service.gov.uk/accessibility-statement.
+                                                                       
+For example, if your accessibility statement is https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams, 
+this property must be set to `/discounted-icecreams` as follows:
+
+```
+accessibility-statement.service-path = "/discounted-icecreams"
+```
+
+Once this is set, the play-ui [FooterLinks](https://github.com/hmrc/play-ui/blob/master/src/main/twirl/uk/gov/hmrc/play/views/layouts/FooterLinks.scala.html)
+  component will auto-generate the correct link to your accessibility statement, including
+the full referrerUrl parameter as described below. Likewise, the new
+ [hmrcFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-26/twirl/uk/gov/hmrc/hmrcfrontend/views/components/hmrcFooter.scala.html)
+ component will deliver the full govukFooter including the standardised links.
+ 
+Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
+for occasions where it is not convenient to use hmrcFooter.
+
+### Users of older versions of play-ui or Java-based services
+ 
+When adding to your service, an additional parameter should be added to your query string, 
+to help end users report any accessibility that they find. This is:
+
+```
+referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
+```
+This will be passed through on the call to `contact-frontend`, for example:
+```
+http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
+```
+will bind the following URL in your statement page
+```
+http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
+```
+
+The referrerUrl parameter should be dynamic, not hard-coded, and based on the request the user made to the page
+they were visiting when clicking on the 'Accessibility statement' link. It can be constructed from the
+`platform.frontend.host` configuration key (available only when running on the MDTP platform) and the `request.path` 
+as shown in the following code: https://github.com/hmrc/play-ui/blob/master/src/main/play-26/uk/gov/hmrc/play/config/AccessibilityStatementConfig.scala#L43
+
+This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
+end user discovered the accessibility issue.
+
 ## To run locally
 
 To run the application:
@@ -112,23 +162,6 @@ following options configured:
 ```
 
 More information on HMRC's ZAP scanning automation library can be found at https://github.com/hmrc/zap-automation
-
-## Adding to your service
-When adding to your service, an additional parameter should be added to your query string, 
-to help end users report any accessibility that they find. this is:
-```
-referrerUrl (the full, absolute, URI encoded page URL in your service from which the user clicked on the Accessibility link)
-```
-This will be passed through on the call to `contact-frontend`, for example:
-```
-http://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams?referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
-```
-will bind the following URL in your statement page
-```
-http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icecreams&referrerUrl=https%3A%2F%2Fwww.tax.service.gov.uk%2Fyour-service
-```
-This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
-end user discovered the accessibility issue.
 
 ## Service Manager config for local development
 

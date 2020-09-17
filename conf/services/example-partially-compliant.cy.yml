@@ -13,12 +13,12 @@ accessibilityProblems:
     fel hyn
   - Mae hon yn drydedd broblem hygyrchedd
 milestones:
-  - description: Disgrifiad o garreg filltir gyntaf i'w thrwsio
+  - description: Disgrifiad o garreg filltir gyntaf i'w thrwsio.
     date: 2020-07-31
   - description: Disgrifiad o ail garreg filltir i'w thrwsio
-      a all fynd ar sawl llinell
+      a all fynd ar sawl llinell.
     date: 2020-03-31
-  - description: Disgrifiad o drydedd garreg filltir i'w thrwsio
+  - description: Disgrifiad o drydedd garreg filltir i'w thrwsio.
     date: 2020-03-31
 serviceLastTestedDate: 2019-09-15
 statementVisibility: draft
