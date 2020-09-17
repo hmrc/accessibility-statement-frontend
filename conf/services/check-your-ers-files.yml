@@ -1,0 +1,12 @@
+serviceName: Check your ERS files
+serviceHeaderName: Check your ERS files
+serviceDescription: |
+  Employers, or agents acting on their behalf, can use this service to check for errors in the files they need to upload as part of
+  their Employment Related Securities (ERS) annual return.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-your-ers-files
+contactFrontendServiceId: ERS-CHECKING
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-14
+statementLastUpdatedDate: 2019-09-14
