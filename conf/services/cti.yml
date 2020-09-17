@@ -10,7 +10,7 @@ accessibilityProblems:
   - The colour contrast of some fonts fails to meet the expected ratio to meet WCAG 2.1 AA.
   - Some links lack description for screen reader users.
   - When the page is resized to 400% via browser controls, two-way scrolling is forced.
-  - Some tables comtain empty table cells which can be confusing for screen reader users.
+  - Some tables contain empty table cells which can be confusing for screen reader users.
 milestones:
   - description: Resolve focus issue for keyboard navigation.
     date: 2020-10-05
