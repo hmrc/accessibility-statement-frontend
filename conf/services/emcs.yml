@@ -1,6 +1,6 @@
 serviceName: Excise Movement and Control System
 serviceHeaderName: EMCS
-serviceDescription: "Excise Movement and Control System (EMCS) is a UK and EU-wide computer system that’s used to record duty suspended movements of excise goods taking place within the UK and the EU. EMCS captures and processes information about the movements online, validates the data entered and allows real time notification of the dispatch and receipt of duty suspended excise goods. It allows the exchange of secure online messages containing specific consignment and movement information between UK and EU trading partners."
+serviceDescription: "The Excise Movement and Control System (EMCS) service lets users record duty suspended movements of excise goods taking place within the UK and the EU. It allows real time notification of the dispatch and receipt of duty suspended excise goods and the exchange of secure online messages between UK and EU trading partners."
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /emcs
 contactFrontendServiceId: hmrc-emcs
