@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package unit.config
+package it
 
-import org.scalatest.TryValues
 import cats.syntax.either._
+import org.scalatest.TryValues
 import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{ServicesFinder, SourceConfig}
@@ -26,7 +26,7 @@ import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatement
 
 import scala.util.Try
 
-class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
+class ServicesISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
   private val statementParser = new AccessibilityStatementParser
 
   "the configuration files" should {
