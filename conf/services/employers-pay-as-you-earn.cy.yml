@@ -1,0 +1,12 @@
+serviceName: TWE i gyflogwyr
+serviceHeaderName: Cyfrif treth busnes
+serviceDescription: |
+  Mae’r gwasanaeth TWE Ar-lein i gyflogwyr yn galluogi cyflogwyr i fwrw golwg dros eu rhwymedigaethau i CThEM.
+  Gall cyflogwyr hefyd weld eu hanes taliadau a’u datganiadau blynyddol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /business-account/epaye
+contactFrontendServiceId: BTA
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-10
+statementLastUpdatedDate: 2020-09-10
