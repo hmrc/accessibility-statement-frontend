@@ -1,0 +1,34 @@
+serviceName: Digital Communication Preference
+serviceHeaderName: Digital Communication Preference
+serviceDescription: |
+  The Digital Contact Preference service is a collection of micro services that worktogether to achieve the business objective of helping customers 
+  'go paperless with HMRC'. It also includes the Email service, which sends transactional email to HMRC customers. The Message service and relevant 
+  renderers provide 'Message Inbox' functionality. Users' desire to receive paperless communication is captured by the Preference service. These 
+  services rely upon scheduled jobs, which push data from one Microservice to another.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /personal-account
+contactFrontendServiceId: personal-account
+complianceStatus: partial
+accessibilityProblems:
+  - Colour contrast issues on the top HMRC logo
+  - On check your settings page on verify state - Links with the same name have a similar purpose
+  - Manual tab navigation is not working properly on few pages.
+milestones:
+  - description: Colour contrast issues on the top HMRC
+    date: 2020-12-31
+  - description: Colour contrast issues on the footer logo
+    date: 2020-12-31
+  - description: On check your settings page on verify state - Links with the same name have a similar purpose
+    date: 2020-12-31
+  - description: Manual tab navigation is not working properly on choose paperless language page
+    date: 2020-12-31
+  - description: Manual tab navigation is not working properly on opt-in interrupt page.
+    date: 2020-12-31
+  - description: Manual tab navigation is not working properly on reopt-in interrupt page.
+    date: 2020-12-31
+statementVisibility: draft
+serviceLastTestedDate: 2020-09-15
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17
+automatedTestingOnly: true
+automatedTestingDetails: This service was tested using automated tools Axe.
