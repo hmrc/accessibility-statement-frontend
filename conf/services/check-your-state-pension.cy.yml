@@ -1,0 +1,57 @@
+serviceName: Gwirio rhagolwg o’ch Pensiwn y Wladwriaeth
+serviceHeaderName: Gwirio rhagolwg o’ch Pensiwn y Wladwriaeth
+serviceDescription: |
+  Mae’r gwasanaeth Gwirio’ch Pensiwn y Wladwriaeth yn caniatáu i unrhyw un o dan oedran pensiwn sydd â rhif Yswiriant Gwladol 
+  ddysgu gwybodaeth am eu pensiwn. Mae’n caniatáu i chi weld rhagolwg o’ch pensiwn, pryd y byddwch yn cael eich pensiwn a sut y gallwch 
+  gynyddu’r swm yn eich pensiwn. Mae hefyd yn rhoi mynediad i chi i’ch cofnod Yswiriant Gwladol llawn.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-your-state-pension/account
+contactFrontendServiceId: check-your-state-pension
+complianceStatus: partial
+accessibilityProblems:
+  - ar y tudalennau cofnodion Yswiriant Gwladol, nid yw pennawd yr adran wedi’i gysylltu â’r pennyn. Gall hyn ei gwneud hi’n anoddach i ddeall y cynnwys.
+  - mewn rhai lleoedd, mae dyddiadau’n cael eu darllen fel rhifau sengl yn hytrach na dyddiadau. Gall hyn fod yn ddryslyd ac yn anodd ei ddilyn i ddefnyddwyr â thechnoleg gynorthwyol.
+  - ar bob tudalen mae problem gyda ffocws y bysellfwrdd ar yr is-adran ‘Eich cyfrif’. Mae hyn yn ei gwneud hi’n anodd i rai defnyddwyr fynd at y cysylltiadau yn yr adran hon.
+  - ar rai tudalennau, mae tag llywio yn y pennyn. Gall hyn ei gwneud hi’n anoddach i gyrraedd y prif gynnwys ac mae’n ychwanegu sŵn ychwanegol i ddefnyddwyr sydd â darllenwyr sgrin.
+  - ar y dudalen ‘Eich cofnod Yswiriant Gwladol’, mae’r tag disgrifiad manwl ar goll. Gall hyn ei gwneud hi’n anoddach i dechnolegau cynorthwyol ddarllen y cynnwys yn gywir a heb chwalu.
+  - ar bob tudalen, mae’r dewis iaith ym mhrif gynnwys y dudalen. Gall hyn ei gwneud hi’n anoddach i gyrraedd y prif gynnwys ac mae’n ychwanegu sŵn ychwanegol i ddefnyddwyr sydd â darllenwyr sgrin.
+  - ar rai tudalennau, mae tag yr erthygl yn ymddangos cyn y pennawd ar ddechrau’r prif gynnwys. Gall hyn ei gwneud hi’n anoddach i ddefnyddwyr sy’n defnyddio darllenwyr sgrin ddod o hyd i’r prif gynnwys gan ei fod yn ychwanegu mwy o sŵn.
+  - ar dudalen crynodeb ‘Eich Pensiwn y Wladwriaeth’, mae’r botwm argraffu yn ymddangos ar y dudalen ar gyfer defnyddwyr sydd heb alluogi javascript. Fodd bynnag, dim ond pan fydd javascript wedi’i alluogi y mae’r botwm argraffu yn gweithio.
+  - ar y dudalen ‘Eich cofnod Yswiriant Gwladol’, mae’r cysylltiad ‘Yn ôl’ yn ymddangos ar y dudalen ar gyfer defnyddwyr sydd heb alluogi javascript. Fodd bynnag, dim ond pan fydd javascript wedi’i alluogi y mae’r cysylltiad ‘Yn ôl’ yn gweithio.
+  - ar y dudalen ‘Eich cofnod Yswiriant Gwladol’, mae’r cysylltiad ‘Yn ôl’ ar ôl cynnwys y brif dudalen. Gallai hyn ei gwneud hi’n anoddach i ddefnyddwyr dod o hyd iddo.
+  - ar y dudalen ‘Eich cofnod Yswiriant Gwladol’, mae’r cysylltiad ‘Bwrw golwg dros y manylion’ yn ymddangos ar y dudalen ar gyfer defnyddwyr sydd heb alluogi javascript. Fodd bynnag, dim ond pan fydd javascript wedi’i alluogi y mae’r cysylltiad
+    ‘Bwrw golwg dros y manylion’ yn gweithio.
+milestones:
+  - description: |
+      ar y tudalennau cofnodion Yswiriant Gwladol, nid yw pennawd yr adran wedi’i gysylltu â’r pennyn. Gall hyn ei gwneud hi’n anoddach i ddeall y cynnwys. 
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Maen Prawf Deall Llwyddiant 3.1.5 - Lefel Darllen.
+    date: 2021-07-31
+  - description: |
+      mewn rhai lleoedd, mae dyddiadau’n cael eu darllen fel rhifau sengl yn hytrach na dyddiadau. Gall hyn fod yn ddryslyd ac yn anodd ei ddilyn i ddefnyddwyr â thechnoleg gynorthwyol. 
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Maen Prawf Deall Llwyddiant 3.1.5 - Lefel Darllen.
+    date: 2021-07-31
+  - description: |
+      ar bob tudalen mae problem gyda ffocws y bysellfwrdd ar yr is-adran ‘Eich cyfrif’. Mae hyn yn ei gwneud hi’n anodd i rai defnyddwyr fynd at y cysylltiadau yn yr adran hon. 
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Maen Prawf Deall Llwyddiant 2.4.3 - Trefn Ffocws.
+    date: 2021-07-31
+  - description: |
+      ar rai tudalennau, mae tag llywio yn y pennyn. Gall hyn ei gwneud hi’n anoddach i gyrraedd y prif gynnwys ac mae’n ychwanegu sŵn ychwanegol i ddefnyddwyr sydd â darllenwyr sgrin. 
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Maen Prawf Deall Llwyddiant 2.4.1 - Blociau Ffordd Osgoi.
+    date: 2021-07-31
+  - description: |
+      ar y dudalen ‘Eich cofnod Yswiriant Gwladol’, mae’r tag disgrifiad manwl ar goll. Gall hyn ei gwneud hi’n anoddach i dechnolegau cynorthwyol ddarllen y cynnwys yn gywir a heb chwalu.  
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Maen Prawf Deall Llwyddiant 2.4.1 - Blociau Ffordd Osgoi.
+    date: 2021-07-31
+  - description: |
+      ar bob tudalen, mae’r dewis iaith ym mhrif gynnwys y dudalen. Gall hyn ei gwneud hi’n anoddach i gyrraedd y prif gynnwys ac mae’n ychwanegu sŵn ychwanegol i ddefnyddwyr sydd â darllenwyr sgrin.
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Maen Prawf Deall Llwyddiant 2.4.1 - Blociau Ffordd Osgoi.
+    date: 2021-07-31
+  - description: |
+      ar rai tudalennau, mae tag yr erthygl yn ymddangos cyn y pennawd ar ddechrau’r prif gynnwys. Gall hyn ei gwneud hi’n anoddach i ddefnyddwyr sy’n defnyddio darllenwyr sgrin ddod o hyd i’r prif gynnwys gan ei fod yn ychwanegu mwy o sŵn. 
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Maen Prawf Deall Llwyddiant 3.1.5 - Lefel Darllen.
+    date: 2021-07-31
+
+serviceLastTestedDate: 2020-08-21
+statementVisibility: public
+statementCreatedDate: 2020-09-15
+statementLastUpdatedDate: 2020-09-15
