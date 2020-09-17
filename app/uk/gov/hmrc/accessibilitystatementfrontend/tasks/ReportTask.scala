@@ -27,8 +27,26 @@ import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 
 class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRepo) {
-  private val isoDateFormat          = new java.text.SimpleDateFormat("yyyy-MM-dd")
-  private def getIsoDate(date: Date) = isoDateFormat.format(date)
+  private val isoDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd")
+  private val mkRow         = (cells: Seq[String]) => cells.mkString("\t")
+
+  private val headerCells = Seq(
+    "serviceKey",
+    "language",
+    "serviceName",
+    "serviceHeaderName",
+    "serviceDomain",
+    "serviceUrl",
+    "contactFrontendServiceId",
+    "complianceStatus",
+    "problemCount",
+    "milestoneCount",
+    "automatedTestingOnly",
+    "statementVisibility",
+    "serviceLastTestedDate",
+    "statementCreatedDate",
+    "statementLastUpdatedDate"
+  )
 
   def generate(args: Seq[String]): Unit = {
     if (args.length < 1) {
@@ -51,22 +69,41 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
 
   private def getRows = getHeader +: accessibilityStatementRepo.findAll.map(getRow)
 
-  private def getHeader =
-    "serviceKey\tlanguage\tserviceName\tserviceHeaderName\tserviceDomain\tserviceUrl\tcontactFrontendServiceId\tcomplianceStatus\tproblemCount\tmilestoneCount\tautomatedTestingOnly\tstatementVisibility\tserviceLastTestedDate\tstatementCreatedDate\tstatementLastUpdatedDate"
+  private def getHeader = mkRow(headerCells)
 
-  private def getRow(statementTuple: (String, Lang, AccessibilityStatement)): String = {
+  private def getRow(statementTuple: (String, Lang, AccessibilityStatement)): String =
+    mkRow(getRowCells(statementTuple))
+
+  private def getRowCells(statementTuple: (String, Lang, AccessibilityStatement)): Seq[String] = {
     val (serviceKey, language, statement) = statementTuple
 
     import statement._
 
-    val milestoneCount = milestones.getOrElse(Seq.empty).size
-    val problemsCount  = accessibilityProblems.getOrElse(Seq.empty).size
+    val milestoneCount = milestones.getOrElse(Seq.empty).size.toString
+    val problemsCount  = accessibilityProblems.getOrElse(Seq.empty).size.toString
     val lastTestedDate = serviceLastTestedDate.map(getIsoDate).getOrElse("")
     val languageCode   = language.code
 
-    s"$serviceKey\t$languageCode\t$serviceName\t$serviceHeaderName\t$serviceDomain\t$serviceUrl\t$contactFrontendServiceId\t$complianceStatus\t$problemsCount\t$milestoneCount\t${automatedTestingOnly
-      .getOrElse(false)}\t$statementVisibility\t$lastTestedDate\t${getIsoDate(statementCreatedDate)}\t${getIsoDate(statementLastUpdatedDate)}"
+    Seq(
+      serviceKey,
+      languageCode,
+      serviceName,
+      serviceHeaderName,
+      serviceDomain,
+      serviceUrl,
+      contactFrontendServiceId,
+      complianceStatus.toString,
+      problemsCount,
+      milestoneCount,
+      automatedTestingOnly.getOrElse(false).toString,
+      statementVisibility.toString,
+      lastTestedDate,
+      getIsoDate(statementCreatedDate),
+      getIsoDate(statementLastUpdatedDate)
+    )
   }
+
+  private def getIsoDate(date: Date) = isoDateFormat.format(date)
 }
 
 object ReportTask extends App {
