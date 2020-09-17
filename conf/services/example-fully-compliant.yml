@@ -1,8 +1,8 @@
 serviceName: Discounted Icecreams
 serviceHeaderName: Icecreams
 serviceDescription: |
-  Use this paragraph to describe your service. It can go over multiple lines
-  like this.
+  Use this paragraph to describe your service. It can go over
+  multiple lines like this.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /icecreams
 contactFrontendServiceId: icecreams
