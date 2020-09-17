@@ -10,7 +10,7 @@ adding to this repository.
 
 Creating such a file does not require any coding skills and can be done in a simple text editor, online 
  YAML editor or even directly within Github. However, if you are a developer you may 
-prefer to use your preferred IDE and git to upload the YAML file to the repository.
+prefer to use your preferred IDE and Git to upload the YAML file to the repository.
 
 ## To add your service's accessibility statement
 
