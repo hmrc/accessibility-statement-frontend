@@ -1,0 +1,16 @@
+serviceName: Bank account reputation frontend
+serviceHeaderName: Bank account reputation frontend
+serviceDescription: |
+  This is a internal front end for BARS - Bank Account Reputation Service
+  The following BARS services can be availed through this UI:
+  * Validate Bank Details (BARS Validate Bank Details)
+  * Metadata Lookup (BARS Metadata)
+  * Mod Check (BARS Modulus Check)
+  * Assess Existence and Reputation (BARS Assess v2)
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /bank-account-reputation-frontend
+contactFrontendServiceId: bank-account-reputation-frontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17
