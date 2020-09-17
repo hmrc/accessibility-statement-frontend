@@ -19,11 +19,13 @@ milestones:
     date: 2020-10-05
   - description: Provide suitable link descriptions for screen reader users.
     date: 2020-10-05	
- - description: Prevent two-way scrolling when page is resized to 400%.
+  - description: Prevent two-way scrolling when page is resized to 400%.
     date: 2020-10-05
- - description: Ensure tables do not contain empty table cells.
+  - description: Ensure tables do not contain empty table cells.
     date: 2020-10-05
-  - description: Further accessibility testing is required in order to determine the changes necessary to reach AA compliance for the whole site.
+  - description: |
+      Further accessibility testing is required in order to determine the changes necessary to reach AA compliance
+      for the whole site.
     date: 2020-10-12	
 serviceLastTestedDate: 2019-11-28
 statementVisibility: draft
