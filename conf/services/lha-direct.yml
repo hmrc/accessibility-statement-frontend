@@ -35,7 +35,6 @@ milestones:
   - description: When the show help buttons are actioned, screen reader users are not informed of the change of content
     and the arrows do not change position to indicate the change to sighted users of the service.
     date: 2019-11-28
-	
 serviceLastTestedDate: 2019-11-28
 statementVisibility: draft
 statementCreatedDate: 2019-12-04
