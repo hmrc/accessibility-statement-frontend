@@ -1,7 +1,7 @@
 serviceName: Council Tax valuation list
 serviceHeaderName: Council Tax valuation list
 serviceDescription: Find out the Council Tax band for a home in England or Wales by looking up its postcode.
-serviceDomain: http://cti.voa.gov.uk
+serviceDomain: cti.voa.gov.uk
 serviceUrl: /cti
 contactFrontendServiceId: cti
 complianceStatus: partial
