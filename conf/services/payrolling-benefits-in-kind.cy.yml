@@ -1,0 +1,12 @@
+serviceName: Talu buddiannau a threuliau drwy’r gyflogres
+serviceHeaderName: Talu buddiannau a threuliau drwy’r gyflogres
+serviceDescription: |
+  Mae’r gwasanaeth talu buddiannau a threuliau drwy’r gyflogres yn galluogi cyflogwyr i ‘drethu wrth y ffynhonnell’ rai o’r buddiannau
+  a threuliau y maent yn eu cynnig i’w cyflogeion, neu bob un ohonynt.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /payrollbik
+contactFrontendServiceId: scp
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17

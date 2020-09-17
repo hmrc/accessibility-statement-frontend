@@ -21,6 +21,7 @@ import cats.syntax.either._
 import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{ServicesFinder, SourceConfig}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.util.Try
@@ -33,12 +34,20 @@ class ServicesSpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
     val servicesFinder = app.injector.instanceOf[ServicesFinder]
 
     servicesFinder.findAll().foreach { (service: String) =>
+      val source = sourceConfig.statementSource(service)
+
+      val statementTry = Try(statementParser.parseFromSource(source).valueOr(throw _))
+
       s"include a correctly formatted accessibility statement yaml file for $service" in {
-        val source = sourceConfig.statementSource(service)
-
-        val statementTry = Try(statementParser.parseFromSource(source).valueOr(throw _))
-
         statementTry must be a 'success
+      }
+
+      s"not contain missing milestones for $service" in {
+        val statement: AccessibilityStatement = statementTry.get
+
+        val hasMilestones = statement.milestones.getOrElse(Seq.empty).nonEmpty
+
+        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant must be(true)
       }
     }
   }
