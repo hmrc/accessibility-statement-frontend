@@ -1,0 +1,12 @@
+serviceName: Gwirio’ch ffeiliau ERS
+serviceHeaderName: Gwirio’ch ffeiliau ERS	
+serviceDescription: |
+  Gall cyflogwyr, neu asiantau sy’n gweithredu ar eu rhan, ddefnyddio’r gwasanaeth hwn i wirio am wallau yn y ffeiliau y mae angen
+  iddynt eu huwchlwytho fel rhan o’u Datganiad Blynyddol ar gyfer Gwarantau ar sail Cyflogaeth (ERS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-your-ers-files
+contactFrontendServiceId: ERS-CHECKING
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-14
+statementLastUpdatedDate: 2019-09-14
