@@ -19,6 +19,7 @@ package unit.views
 import java.util.{Calendar, GregorianCalendar}
 
 import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 import org.scalatest.{Matchers, WordSpec}
 import play.api.Configuration
 import play.api.i18n.{Messages, MessagesApi}
@@ -31,7 +32,6 @@ import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 class StatementPageSpec extends WordSpec with Matchers {
-
   "Given any Accessibility Statement for a service, rendering a Statement Page" should {
     "return HTML containing the header containing the service name" in new Setup {
       val statementPage     = app.injector.instanceOf[StatementPage]
@@ -39,6 +39,16 @@ class StatementPageSpec extends WordSpec with Matchers {
 
       contentAsString(statementPageHtml) should include(
         """<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name service</h1>""")
+    }
+
+    "return HTML containing the correct TITLE element" in new Setup {
+      val statementPage     = app.injector.instanceOf[StatementPage]
+      val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
+      val content           = Jsoup.parse(contentAsString(statementPageHtml))
+
+      val title = content.select("title")
+      title.size       shouldBe 1
+      title.first.text shouldBe "Accessibility statement for fully accessible service name service - GOV.UK"
     }
 
     "return HTML containing the expected introduction with service URL in the body" in new Setup {
