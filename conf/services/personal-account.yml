@@ -14,13 +14,13 @@ accessibilityProblems:
   - On check your settings page on verify state - Links with the same name have a similar purpose
   - Manual tab navigation is not working properly on few pages.
 milestones:
-  - description: Colour contrast issues on the top HMRC
+  - description: Colour contrast issues on the top HMRC.
     date: 2020-12-31
-  - description: Colour contrast issues on the footer logo
+  - description: Colour contrast issues on the footer logo.
     date: 2020-12-31
-  - description: On check your settings page on verify state - Links with the same name have a similar purpose
+  - description: On check your settings page on verify state - Links with the same name have a similar purpose.
     date: 2020-12-31
-  - description: Manual tab navigation is not working properly on choose paperless language page
+  - description: Manual tab navigation is not working properly on choose paperless language page.
     date: 2020-12-31
   - description: Manual tab navigation is not working properly on opt-in interrupt page.
     date: 2020-12-31
