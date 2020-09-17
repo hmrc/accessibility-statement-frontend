@@ -7,6 +7,6 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /payrollbik
 contactFrontendServiceId: scp
 complianceStatus: noncompliant
-statementVisibility: draft
-statementCreatedDate: 2020-09-14
-statementLastUpdatedDate: 2020-09-14
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17
