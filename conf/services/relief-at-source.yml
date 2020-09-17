@@ -1,0 +1,12 @@
+serviceName: Relief at Source
+serviceHeaderName: Relief at Source
+serviceDescription: |
+  The relief at source service helps employers and agents apply for tax relief on pension scheme contributions.
+  Members will get tax relief based on their residency status, at the relevant basic rate that applies in the UK, Scotland or Wales.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /relief-at-source
+contactFrontendServiceId: RAS
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17
