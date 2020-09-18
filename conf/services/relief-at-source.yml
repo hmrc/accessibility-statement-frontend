@@ -7,6 +7,6 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /relief-at-source
 contactFrontendServiceId: RAS
 complianceStatus: noncompliant
-statementVisibility: draft
-statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18
