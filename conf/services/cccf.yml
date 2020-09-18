@@ -1,8 +1,8 @@
 serviceName: CCCF Company Car & Car Fuel (Calculator)
 serviceHeaderName: CCCF
 serviceDescription: "The Company Car and Car Fuel (CCCF) Benefits calculator allows users to calculate Company Car and Car Fuel Benefits, and the Tax Liability at basic and higher rates."
-serviceDomain: www.tax.service.gov.uk
-serviceUrl: /cccf
+serviceDomain: cccfcalculator.hmrc.gov.uk
+serviceUrl: /
 contactFrontendServiceId: hmrc-cccf
 complianceStatus: partial
 accessibilityProblems:
