@@ -39,6 +39,9 @@ case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesCo
   val cy: String            = "cy"
   val defaultLanguage: Lang = Lang(en)
 
+  val trackingConsentEnabled: Boolean =
+    config.getOptional[Boolean]("features.tracking-consent").getOrElse(false)
+
   val trackingConsentUrl: String = servicesConfig.getString("tracking-consent-frontend.url")
 
   val servicesDirectory: String = servicesConfig.getString("services.directory")
