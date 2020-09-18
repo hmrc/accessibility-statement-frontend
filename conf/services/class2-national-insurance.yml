@@ -1,0 +1,13 @@
+serviceName: Update your self-employment details
+serviceHeaderName: Update your self-employment details
+serviceDescription: |
+  The Update your self-employment details service allows anyone that is registered for Self Assessment to check
+  and update the dates of their self-employment. This allows them to keep their Class 2 National Insurance
+  contributions up to date.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /national-insurance/class2/
+contactFrontendServiceId: c2ni
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-18
+statementLastUpdatedDate: 2019-09-18
