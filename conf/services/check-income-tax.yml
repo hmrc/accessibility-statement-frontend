@@ -67,11 +67,11 @@ milestones:
       Criterion 1.4.12: Text Spacing.
     date: 2020-07-31
   - description: |
-      some pages cannot be presented in a single column without losing content. This means you will have to scroll
+      Some pages cannot be presented in a single column without losing content. This means you will have to scroll
       horizontally to read everything on the page. This fails WCAG 2.1: 1.4.10: Reflow.
     date: 2020-07-31
   - description: |
-      in the ‘Employment name’ page, the highlighted state of the selectable elements does not match the recommended
+      In the ‘Employment name’ page, the highlighted state of the selectable elements does not match the recommended
       colour contrast in the GOV.UK Design System. This fails WCAG 2.1: 1.4.1: Non-text Contrast.
     date: 2020-07-31
 
