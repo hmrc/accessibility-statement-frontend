@@ -23,7 +23,6 @@ import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 @Singleton
 case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesConfig) {
-
   private val platformFrontendHost = config.getOptional[String]("platform.frontend.host")
   val languageControllerHostUrl: String = platformFrontendHost.getOrElse(
     servicesConfig.getString("language-controller.host")
@@ -32,11 +31,6 @@ case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesCo
   private val contactFrontendHostUrl: String =
     platformFrontendHost.getOrElse(servicesConfig.getString("contact.frontend.host"))
   val reportAccessibilityProblemUrl = s"$contactFrontendHostUrl/contact/accessibility-unauthenticated"
-
-  val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())
-
-  val welshLanguageSupportEnabled: Boolean =
-    config.getOptional[Boolean]("features.welsh-language-support").getOrElse(false)
 
   val showDraftStatementsEnabled: Boolean =
     config.getOptional[Boolean]("features.show-draft-statements").getOrElse(false)

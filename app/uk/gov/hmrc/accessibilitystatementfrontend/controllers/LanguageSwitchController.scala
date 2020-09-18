@@ -32,27 +32,9 @@ case class LanguageSwitchController @Inject()(
   appConfig: AppConfig)
     extends LanguageController(configuration, languageUtils, cc) {
   import appConfig._
-  import languageUtils._
 
   override def fallbackURL: String = "https://www.gov.uk/government/organisations/hm-revenue-customs"
 
-  override protected def languageMap: Map[String, Lang] = {
-    val englishLanguageOnly = Map(en -> Lang(en))
-    if (welshLanguageSupportEnabled) englishLanguageOnly ++ Map(cy -> Lang(cy))
-    else englishLanguageOnly
-  }
-
-  // FIXME: overriding method for now due to issue with hmrc/play-language
-  override def switchToLanguage(language: String): Action[AnyContent] = Action { implicit request =>
-    val redirectURL: String =
-      request.headers.get(REFERER).find(_.startsWith(languageControllerHostUrl)).getOrElse(fallbackURL)
-
-    if (welshLanguageSupportEnabled) {
-      val lang: Lang = languageMap.getOrElse(language, getCurrentLang)
-
-      Redirect(redirectURL).withLang(Lang.apply(lang.code))
-    } else {
-      Redirect(redirectURL)
-    }
-  }
+  override protected def languageMap: Map[String, Lang] =
+    Map(en -> Lang(en), cy -> Lang(cy))
 }
