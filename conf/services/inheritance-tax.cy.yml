@@ -1,0 +1,13 @@
+serviceName: Inheritance Tax
+serviceHeaderName: Register to complete an Inheritance Tax estate report
+serviceDescription: |
+  Register to complete an Inheritance Tax estate report is a service that allows users
+  to tell HMRC about the value of a person’s estate (the property, money and possessions)
+  after their death. Funds from the estate are used to pay Inheritance Tax to HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /inheritance-tax/what-do-you-want-to-do
+contactFrontendServiceId: IHT
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17
