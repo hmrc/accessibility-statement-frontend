@@ -1,0 +1,12 @@
+serviceName: Trusted Helpers
+serviceHeaderName: Trusted Helpers
+serviceDescription: |
+  Help friends or family with their tax
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /trusted-helpers
+contactFrontendServiceId: trusted-helpers
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-18
+statementLastUpdatedDate: 2019-09-18
+
