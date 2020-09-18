@@ -1,17 +1,17 @@
 serviceName: CCCF Company Car & Car Fuel (Calculator)
 serviceHeaderName: CCCF
-serviceDescription: "The Company Car and Car Fuel (CCCF) Benefits calculator allows users to calculate Company Car and Car Fuel Benefits, and the Tax Liability at basic and higher rates. "
+serviceDescription: "The Company Car and Car Fuel (CCCF) Benefits calculator allows users to calculate Company Car and Car Fuel Benefits, and the Tax Liability at basic and higher rates."
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /cccf
 contactFrontendServiceId: hmrc-cccf
 complianceStatus: partial
 accessibilityProblems:
-  - The timed refresh can make users lose their place in the page and prevent them from completing their calculations
-  - Not all labels and functions have been put in place for keyboard navigation and screen readers, so the information given to users may be incomplete, in the wrong order or unclear
-  - In some places the background and foreground colours do not have enough colour contrast, making it harder for users to see and read the content
-  - Some of the images in the service do not have alternate text for people who have visual impairments or are unable to load images
-  - Some page titles, headings and links are not descriptive
-  - Users cannot skip to the main content when using keyboard navigation or a screen reader
+  - the timed refresh can make users lose their place in the page and prevent them from completing their calculations
+  - not all labels and functions have been put in place for keyboard navigation and screen readers, so the information given to users may be incomplete, in the wrong order or unclear
+  - in some places the background and foreground colours do not have enough colour contrast, making it harder for users to see and read the content
+  - some of the images in the service do not have alternate text for people who have visual impairments or are unable to load images
+  - some page titles, headings and links are not descriptive
+  - users cannot skip to the main content when using keyboard navigation or a screen reader
 milestones:
   - description: "The timed refresh can make users lose their place in the page and prevent them from completing their calculations. This doesn’t meet WCAG 2.1 success criteria 2.2.1 (timing adjustable), 2.2.4 (interruptions) or 3.2.5 (change on request)."
     date: 2021-09-23
