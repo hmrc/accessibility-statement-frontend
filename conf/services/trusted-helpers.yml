@@ -1,7 +1,8 @@
 serviceName: Trusted Helpers
 serviceHeaderName: Trusted Helpers
 serviceDescription: |
-  Help friends or family with their tax
+  The Trusted Helpers service allows someone to act on behalf of another person when dealing with HMRC by post,
+  telephone, and online. It can be set up by either person.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trusted-helpers
 contactFrontendServiceId: trusted-helpers
