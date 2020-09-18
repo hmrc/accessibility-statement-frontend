@@ -1,0 +1,13 @@
+serviceName: ATED registration
+serviceHeaderName: Submit and view your ATED returns
+serviceDescription: |
+  This service allows users to register their business for Annual Tax on Enveloped Dwellings (ATED).
+  ATED is an annual tax payable mainly by companies that own UK residential properties valued at more than £500,000 each.
+  These are called enveloped dwellings.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /ated-subscription
+contactFrontendServiceId: ATED
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-16
+statementLastUpdatedDate: 2020-09-16
