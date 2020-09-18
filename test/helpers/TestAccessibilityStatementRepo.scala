@@ -53,7 +53,8 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     milestones = Some(
       Seq(
         Milestone("milestone 1", new GregorianCalendar(2020, Calendar.MAY, 1).getTime),
-        Milestone("milestone 2", new GregorianCalendar(2020, Calendar.MAY, 1).getTime)))
+        Milestone("milestone 2", new GregorianCalendar(2020, Calendar.MAY, 10).getTime)
+      ))
   )
   private val withAutomatedTesting = withMilestones.copy(
     serviceName             = "With Automated Testing",

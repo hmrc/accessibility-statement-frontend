@@ -31,7 +31,7 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
   private val mkRow         = (cells: Seq[String]) => cells.mkString("\t")
 
   private val headerCells = Seq(
-    "serviceKey",
+    "url",
     "language",
     "serviceName",
     "serviceHeaderName",
@@ -41,6 +41,7 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
     "complianceStatus",
     "problemCount",
     "milestoneCount",
+    "earliestMilestoneDate",
     "automatedTestingOnly",
     "statementVisibility",
     "serviceLastTestedDate",
@@ -82,10 +83,13 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
     val milestoneCount = milestones.getOrElse(Seq.empty).size.toString
     val problemsCount  = accessibilityProblems.getOrElse(Seq.empty).size.toString
     val lastTestedDate = serviceLastTestedDate.map(getIsoDate).getOrElse("")
-    val languageCode   = language.code
+    val earliestMilestoneDate =
+      milestones.getOrElse(Seq.empty).map(_.date).sorted.headOption.map(getIsoDate).getOrElse("")
+    val languageCode = language.code
+    val url          = s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
 
     Seq(
-      serviceKey,
+      url,
       languageCode,
       serviceName,
       serviceHeaderName,
@@ -95,6 +99,7 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
       complianceStatus.toString,
       problemsCount,
       milestoneCount,
+      earliestMilestoneDate,
       automatedTestingOnly.getOrElse(false).toString,
       statementVisibility.toString,
       lastTestedDate,
