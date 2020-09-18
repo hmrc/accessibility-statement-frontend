@@ -1,0 +1,13 @@
+serviceName: Annual tax summary
+serviceHeaderName: Annual tax summary
+serviceDescription: |
+  Both individuals and agents can use the Annual Tax Summaries service to find out how much an individual paid in
+  Income Tax in previous tax years, and see a breakdown of how this was spent by the government.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /annual-tax-summary
+contactFrontendServiceId: annual-tax-summary
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-18
+statementLastUpdatedDate: 2019-09-18
+
