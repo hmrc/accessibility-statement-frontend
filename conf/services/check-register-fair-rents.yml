@@ -1,0 +1,14 @@
+serviceName: Register of fair rents
+serviceHeaderName: Register of fair rents
+serviceDescription: |
+  This service allows you to search for rents that have been entered into the fair
+  rent register. You can also find other information on these rents such as the
+  date they were registered, the rented property’s address, and the landlord.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-register-fair-rents/search
+contactFrontendServiceId: RENTREG
+complianceStatus: full
+serviceLastTestedDate: 2020-08-06
+statementVisibility: draft
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
