@@ -2,7 +2,8 @@ serviceName: Local Housing Allowance
 serviceHeaderName:  LHA Direct
 serviceDescription: |
    This service allows the member of the public to view the local housing allowance rates either by selecing the local council name or entering the postcode.
-serviceDomain: https://lha-direct.voa.gov.uk/
+serviceDomain: lha-direct.voa.gov.uk
+serviceUrl: /
 contactFrontendServiceId: lhadirect
 complianceStatus: partial
 accessibilityProblems:
