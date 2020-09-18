@@ -2,7 +2,7 @@ serviceName: Stamp Duty Land Tax (SDLT)
 serviceHeaderName: SDLT
 serviceDescription: "The Stamp Duty Land Tax (SDLT) service allows users, solicitors, agents and conveyancers to file returns and pay SDLT after the purchase of property or land."
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /calculate-stamp-duty-land-tax
+serviceUrl: /stamp-taxes
 contactFrontendServiceId: hmrc-sdlt
 complianceStatus: partial
 accessibilityProblems:
