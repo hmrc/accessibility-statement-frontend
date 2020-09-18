@@ -28,7 +28,7 @@ milestones:
   - description: There were issues encountered with the focus order of the page when navigating via keyboard commands.
     date: 2020-09-10
   - description: The PDF documents are inaccessible for screen reader users.
-    date: ''
+    date: 2025-09-10
   - description: There are images used within the table that are not marked up in way that is clear for screen reader users.
     date: 2020-09-10
   - description: There are form fields present on the page that are labelled non-descriptively.
