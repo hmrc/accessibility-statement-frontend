@@ -1,0 +1,12 @@
+serviceName: agent services account
+serviceHeaderName: Agent services account
+serviceDescription: |
+  You use this service to manage your HMRC agent services account for your tax agent.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-services-account
+contactFrontendServiceId: AOSS
+complianceStatus: full
+serviceLastTestedDate: 2019-8-22
+statementVisibility: draft
+statementCreatedDate: 2019-09-23
+statementLastUpdatedDate: 2020-09-18
