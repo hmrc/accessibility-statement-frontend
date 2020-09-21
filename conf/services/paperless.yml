@@ -1,0 +1,25 @@
+serviceName: Digital Communication Preference
+serviceHeaderName: Digital Communication Preference
+serviceDescription: |
+  The Digital Contact Preference service allows HMRC customers to choose how they get their tax letters, such as notices to file returns, or penalties. Customers can select traditional post, or can choose to receive online tax letters. Selecting online tax letters means the service sends the majority of a customer’s tax letters to a secure inbox. The customer can then access and print them at any time. HMRC holds these letters for 7 years.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /paperless
+contactFrontendServiceId: personal-account
+complianceStatus: partial
+accessibilityProblems:
+  - The HMRC logo in all page banners and footers does not have clear enough colour contrast
+  - On one page some links have similar wording, but go to different places
+  - Some tabs are difficult to navigate using just a keyboard
+milestones:
+  - description: On all pages, the colour contrast with the banner HMRC logo is not clear enough.  This does not meet WCAG 2.1 success criterion 1.4.3 Contrast (Minimum).
+    date: 2020-12-31
+  - description: On all pages, the colour contrast with the footer HMRC logo is not clear enough. This does not meet WCAG 2.1 success criterion 1.4.3 Contrast (Minimum).
+    date: 2020-12-31
+  - description: On one page, links which take the user to change different inputs have the same link wording. This does not meet WCAG 2.1 success criterion 2.4.9 Link Purpose (Link Only).
+    date: 2020-12-31
+statementVisibility: draft
+serviceLastTestedDate: 2020-09-16
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17
+automatedTestingOnly: true
+automatedTestingDetails: This service was tested using automated tools Axe.
