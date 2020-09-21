@@ -1,0 +1,14 @@
+serviceName: Valuation office Agency contact form
+serviceHeaderName: Valuation Office Agency contact form
+serviceDescription: |
+  This service allows you to send a message to the Valuation Office Agency (VOA)
+  about your Council Tax or business rates. You can also find the contact details
+  of other teams if your query is about something else
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /valuation-office-agency-contact-frontend/you-enquiry
+contactFrontendServiceId: Contact Forms
+complianceStatus: full
+serviceLastTestedDate: 2020-09-06
+statementVisibility: draft
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
