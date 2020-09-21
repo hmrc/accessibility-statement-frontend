@@ -1,0 +1,13 @@
+serviceName: Check or update your company car tax
+serviceHeaderName: Check or update your company car tax
+serviceDescription: |
+  The Check or update your company car tax service allows anyone that pays tax on a company car to update
+  HMRC’s records by adding, removing, amending or replacing a company car. They can also use the service to claim for
+  Fuel Benefit online.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /paye/company-car
+contactFrontendServiceId: company-car
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-18
+statementLastUpdatedDate: 2019-09-18

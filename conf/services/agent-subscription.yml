@@ -1,0 +1,46 @@
+serviceName: create an agent services account
+serviceHeaderName: Create an agent services account
+serviceDescription: |
+  This service enables you to create an HMRC agent services account for your tax agent firm.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-subscripion/start
+contactFrontendServiceId: AOSS
+complianceStatus: partial
+accessibilityProblems:
+  - Some of the links in the service are not descriptive
+  - The autocomplete functions on some pages in this service may cause issues for people using a screen reader
+  - Some of the pages in the service have a redundant fieldset, which could prevent users browsing out of context from understanding what is being selected
+  - The 'Have you applied for money laundering supervision with HMRC?' page does not have a fieldset and legend attribute, so the purpose of the radio buttons may be unclear for some users
+  - The input field on the 'What is your Corporation Tax Unique Tax Reference (UTR)?' page is unlabelled, which may prevent some users from understanding what they need to enter into the field
+milestones:
+  - description: |
+      Some of the links in the service are not descriptive. This doesn’t meet WCAG 2.1 success criterion 2.4.4 (Link Purpose in context).
+    date: 2021-07-30
+  - description: |
+      The autocomplete functions on some pages in this service may cause issues for people using a screen reader. This doesn't meet WCAG success criterion 4.1.2 (Name, Role, Value).
+    date: 2021-07-30
+  - description: |
+      Some of the pages in the service have a redundant fieldset, which could prevent users browsing out of context from understanding what is being selected. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships) and 4.1.1 (Parsing).
+    date: 2021-07-30
+  - description: |
+      The 'Have you applied for money laundering supervision with HMRC?' page does not have a fieldset and legend attribute, so the purpose of the radio buttons may be unclear for some users. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships).
+    date: 2021-07-30
+  - description: |
+      The input field on the 'What is your Corporation Tax Unique Tax Reference (UTR)?' page is unlabelled, which may prevent some users from understanding what they need to enter into the field. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships) and 3.3.2 (Labels or Instructions).
+    date: 2021-07-30
+  - description: |
+      The error link in the 'Client details' page does not link to the error. This doesn't meet WCAG success criterion 2.4.1 (Bypass Blocks).
+    date: 2021-07-30
+  - description: |
+      The error validation message in the 'What type of business are you?' page is not descriptive. This doesn’t meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2021-07-30
+  - description: |
+      We have carried out an in-house expert review of the service and fixed these accessibility issues.
+    date: 2021-07-30
+  - description: |
+      We will arrange a further formal external audit of the full service as soon as possible, as part of our roadmap for making sure the service is fully compliant.
+    date: 2021-07-30
+serviceLastTestedDate: 2019-8-22
+statementVisibility: draft
+statementCreatedDate: 2019-09-23
+statementLastUpdatedDate: 2019-09-23

@@ -1,0 +1,12 @@
+serviceName: manage your tax agents
+serviceHeaderName: Manage your tax agents
+serviceDescription: |
+  This service is for clients to track relationships with their agents.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /manage-your-tax-agents t
+contactFrontendServiceId: AOSS
+complianceStatus: full
+serviceLastTestedDate: 2020-9-1
+statementVisibility: draft
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18
