@@ -1,4 +1,3 @@
-import uk.gov.hmrc.SbtArtifactory
 import uk.gov.hmrc.sbtdistributables.SbtDistributablesPlugin.publishingSettings
 import play.sbt.PlayImport.PlayKeys.playDefaultPort
 import sbt.Keys.testOptions
@@ -43,7 +42,7 @@ lazy val zapTestSettings =
     )
 
 lazy val microservice = Project(appName, file("."))
-  .enablePlugins(play.sbt.PlayScala, SbtAutoBuildPlugin, SbtGitVersioning, SbtDistributablesPlugin, SbtArtifactory)
+  .enablePlugins(play.sbt.PlayScala, SbtAutoBuildPlugin, SbtGitVersioning, SbtDistributablesPlugin)
   .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
   .configs(AcceptanceTest, IntegrationTest, ZapTest)
   .settings(
@@ -51,7 +50,6 @@ lazy val microservice = Project(appName, file("."))
     scalaVersion                     := "2.12.11",
     playDefaultPort                  := 12346,
     libraryDependencies              ++= AppDependencies.compile ++ AppDependencies.test,
-    resolvers += "hmrc-releases" at "https://artefacts.tax.service.gov.uk/artifactory/hmrc-releases/",
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
     TwirlKeys.templateImports ++= Seq(
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
