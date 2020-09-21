@@ -1,0 +1,10 @@
+serviceName: Repayments
+serviceHeaderName: Check how much Income Tax you paid
+serviceDescription: The Repayments service allows users that have overpaid tax to claim back money owed by HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /repayments
+contactFrontendServiceId: repayments
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-21
+statementLastUpdatedDate: 2019-09-21
