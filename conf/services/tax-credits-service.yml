@@ -1,0 +1,10 @@
+serviceName: Tax Credits
+serviceHeaderName: Tax Credits service
+serviceDescription: The Tax Credits service can be used by anyone currently receiving tax credits to check upcoming payments, or to report a change of circumstances for themselves or anyone else on their claim.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-credits-service
+contactFrontendServiceId: tax-credits-service
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-21
+statementLastUpdatedDate: 2019-09-21
