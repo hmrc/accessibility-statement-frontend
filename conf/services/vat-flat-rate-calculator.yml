@@ -1,0 +1,13 @@
+serviceName: VAT Flat Rate Scheme
+serviceHeaderName: Check your VAT flat rate
+serviceDescription: |
+  The VAT FRS calculator allows you to work out if you have a limited cost business and
+  are eligible for the VAT Flat Rate Scheme. This scheme allows you to pay a fixed rate
+  of VAT to HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-your-vat-flat-rate/vat-return-period
+contactFrontendServiceId: VFR
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-09-21
