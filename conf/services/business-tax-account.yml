@@ -1,0 +1,11 @@
+serviceName: Business tax account
+serviceHeaderName: Business tax account
+serviceDescription: |
+  The business tax account lets businesses manage their taxes and other services in one place.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /business-account
+contactFrontendServiceId: BTA
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2020-09-15
+statementLastUpdatedDate: 2020-09-21
