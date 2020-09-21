@@ -35,8 +35,7 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
     "language",
     "serviceName",
     "serviceHeaderName",
-    "serviceDomain",
-    "serviceUrl",
+    "serviceAbsoluteUrl",
     "contactFrontendServiceId",
     "complianceStatus",
     "problemCount",
@@ -85,16 +84,16 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
     val lastTestedDate = serviceLastTestedDate.map(getIsoDate).getOrElse("")
     val earliestMilestoneDate =
       milestones.getOrElse(Seq.empty).map(_.date).sorted.headOption.map(getIsoDate).getOrElse("")
-    val languageCode = language.code
-    val url          = s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
+    val languageCode       = language.code
+    val url                = s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
+    val serviceAbsoluteUrl = s"https://$serviceDomain$serviceUrl"
 
     Seq(
       url,
       languageCode,
       serviceName,
       serviceHeaderName,
-      serviceDomain,
-      serviceUrl,
+      serviceAbsoluteUrl,
       contactFrontendServiceId,
       complianceStatus.toString,
       problemsCount,
