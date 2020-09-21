@@ -1,9 +1,9 @@
-serviceName: Account Management
-serviceHeaderName: Account Portal
-serviceDescription: "The Account Management service allows users to manage their Government Gateway Account. This includes password changes, account details changes, mailbox access, authorising clients and information about how to authorise an agent."
+serviceName: Automatic Exchange of Information (AEOI)
+serviceHeaderName: AEOI
+serviceDescription: "The Automatic Exchange of Information (AEOI) service allows the exchange of information between tax authorities of different countries to help stop tax evasion."
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /account/portal
-contactFrontendServiceId: hmrc-account-portal
+serviceUrl: /fatca
+contactFrontendServiceId: hmrc-fatca
 complianceStatus: partial
 accessibilityProblems:
   - the service times out without giving users due warning or the option to extend their session
