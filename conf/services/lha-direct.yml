@@ -7,34 +7,34 @@ serviceUrl: /
 contactFrontendServiceId: LHA Direct Accessibility (VOA)
 complianceStatus: partial
 accessibilityProblems:
-  - Some links were found to lack description for screen reader users.
-  - No Skip link present.
-  - Skip links not functioning.
-  - Colour contrast.
-  - Focus Order.
-  - Inaccessible PDF.
-  - Table mark-up.
-  - Form elements.
-  - The state of an element was not clear to users.
+  - Some links were found to lack description for screen reader users
+  - No Skip link present
+  - Skip links not functioning
+  - Colour contrast
+  - Focus Order
+  - Inaccessible PDF
+  - Table mark-up
+  - Form elements
+  - The state of an element was not clear to users
 milestones:
   - description: Some links were found to lack description for screen reader users.
-    date: 2020-09-10
+    date: 2020-10-31
   - description: There is a skip link present on the page that does not become visible for keyboard only users.
-    date: 2020-09-10
+    date: 2020-10-31
   - description: Error-handling was not immediately clear for screen reader users.
-    date: 2020-09-10
+    date: 2020-10-31
   - description: The colour contrast fails to meet the expected ratio to meet WCAG 2.1 AA
-    date: 2020-09-10
+    date: 2020-10-31
   - description: There were issues encountered with the focus order of the page when navigating via keyboard commands.
-    date: 2020-09-10
+    date: 2020-10-31
   - description: There are images used within the table that are not marked up in way that is clear for screen reader users.
-    date: 2020-09-10
+    date: 2020-10-31
   - description: There are form fields present on the page that are labelled non-descriptively.
-    date: 2020-09-10
+    date: 2020-10-31
   - description: When the show help buttons are actioned, screen reader users are not informed of the change of content
       and the arrows do not change position to indicate the change to sighted users of the service.
-    date: 2020-09-10
+    date: 2020-10-31
 serviceLastTestedDate: 2019-11-28
 statementVisibility: draft
-statementCreatedDate: 2019-12-04
-statementLastUpdatedDate: 2019-12-04
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-21
