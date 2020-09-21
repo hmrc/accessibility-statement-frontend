@@ -1,0 +1,11 @@
+serviceName: Manage permissions for tax software
+serviceHeaderName: Manage permissions for tax software
+serviceDescription: |
+  You may be using software to interact with HM Revenue and Customs (HMRC), for example to send your Self Assessment tax return.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /applications-manage-authority
+contactFrontendServiceId: api-revocation-frontend
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2019-09-23
+statementLastUpdatedDate: 2019-09-23
