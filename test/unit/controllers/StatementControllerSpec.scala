@@ -48,8 +48,6 @@ class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar w
 
   private val controller = app.injector.instanceOf[StatementController]
 
-  def asDocument(html: Html): Document = Jsoup.parse(html.toString())
-
   "GET /test-service" should {
     "return 200" in {
       val result = controller.getStatement("test-service", None)(fakeRequest)
