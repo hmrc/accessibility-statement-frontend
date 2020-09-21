@@ -7,6 +7,6 @@ serviceUrl: /www.gov.uk/guidance/pension-administrators-register-as-an-administr
 contactFrontendServiceId: PODS
 complianceStatus: full
 serviceLastTestedDate: 2020-03-19
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-18
 statementLastUpdatedDate: 2020-09-18
