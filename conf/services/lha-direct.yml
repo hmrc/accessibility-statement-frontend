@@ -27,6 +27,8 @@ milestones:
     date: 2020-10-31
   - description: There were issues encountered with the focus order of the page when navigating via keyboard commands.
     date: 2020-10-31
+  - description: The PDF documents are inaccessible for screen reader users.
+    date: 2021-03-31
   - description: There are images used within the table that are not marked up in way that is clear for screen reader users.
     date: 2020-10-31
   - description: There are form fields present on the page that are labelled non-descriptively.
@@ -35,6 +37,6 @@ milestones:
       and the arrows do not change position to indicate the change to sighted users of the service.
     date: 2020-10-31
 serviceLastTestedDate: 2019-11-28
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2020-09-21
