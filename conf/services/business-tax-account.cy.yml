@@ -1,0 +1,11 @@
+serviceName: Cyfrif treth busnes
+serviceHeaderName: Cyfrif treth busnes
+serviceDescription: |
+  Mae’r cyfrif treth busnes yn gadael i fusnesau reoli eu trethi a gwasanaethau eraill yn yr un lle.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /business-account
+contactFrontendServiceId: BTA
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2020-09-15
+statementLastUpdatedDate: 2020-09-21
