@@ -1,0 +1,17 @@
+serviceName: Manage permissions for tax software
+serviceHeaderName: Manage permissions for tax software
+serviceDescription: |
+  Manage permissions is a service that allows end users of third party software to grant authority to their software to interact with HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /applications-manage-authority
+contactFrontendServiceId: oauth
+complianceStatus: partial
+accessibilityProblems:
+- Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
+milestones:
+- description: Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
+  date: 2020-11-06
+serviceLastTestedDate: 2019-08-01
+statementVisibility: draft
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
