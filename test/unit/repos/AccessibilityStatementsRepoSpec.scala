@@ -65,14 +65,14 @@ class AccessibilityStatementsRepoSpec
     serviceUrl               = "/disguised-remuneration",
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus         = FullCompliance,
-    automatedTestingOnly         = None,
+    automatedTestingOnly     = None,
     accessibilityProblems    = None,
     milestones               = None,
     statementVisibility      = Public,
     serviceLastTestedDate    = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails                 = None
+    automatedTestingDetails  = None
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription =
@@ -133,6 +133,17 @@ class AccessibilityStatementsRepoSpec
 
     "return false if a statement doesn't exist for the given service and language" in {
       repo.existsByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(false)
+    }
+  }
+
+  "findAll" should {
+    "return a sequence of all the statements available in service name and language order" in {
+      repo.findAll should equal(
+        Seq(
+          ("bar-service", Lang("en"), barStatement),
+          ("foo-service", Lang("cy"), fooStatementWelsh),
+          ("foo-service", Lang("en"), fooStatement)
+        ))
     }
   }
 }

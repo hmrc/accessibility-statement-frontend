@@ -27,6 +27,7 @@ import play.api.i18n.Lang
 trait AccessibilityStatementsRepo {
   def existsByServiceKeyAndLanguage(serviceKey: String, language: Lang): Boolean
   def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)]
+  def findAll: Seq[(String, Lang, AccessibilityStatement)]
 }
 
 @Singleton
@@ -39,14 +40,15 @@ case class AccessibilityStatementsSourceRepo @Inject()(
     with Logging {
   import appConfig._
   import sourceConfig._
-  import servicesFinder._
+
+  implicit val langOrdering: Ordering[Lang] = (l1, l2) => l1.code compare l2.code
 
   type RepoKey   = (String, String)
   type RepoEntry = (RepoKey, AccessibilityStatement)
 
   private val accessibilityStatements: Map[RepoKey, AccessibilityStatement] = {
     logger.info(s"Starting to parse accessibility statements")
-    val services: Seq[String] = findAll()
+    val services: Seq[String] = servicesFinder.findAll()
 
     logger.info(s"Found ${services.size} accessibility statements")
 
@@ -73,6 +75,15 @@ case class AccessibilityStatementsSourceRepo @Inject()(
 
   def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)] =
     accessibilityStatements.get((serviceKey, language.code)).map((_, language))
+
+  def findAll: Seq[(String, Lang, AccessibilityStatement)] = {
+    val triples = accessibilityStatements.toSeq map {
+      case ((serviceKey: String, lang: String), statement: AccessibilityStatement) =>
+        (serviceKey, Lang(lang), statement)
+    }
+
+    triples.sorted
+  }
 
   private def serviceFileNameToNameAndLanguage(serviceFileName: String): (String, String) = {
     val welshLanguageSuffix = s".$cy"
