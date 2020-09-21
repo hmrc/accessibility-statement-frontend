@@ -165,10 +165,18 @@ for further analysis.
 To generate the report, clone the repository locally and run
 
 ```
-sbt "generateReport report.tsv"
+sbt generateReport
 ```
 
-If all goes well, the report `report.tsv` will be created in the root directory.
+If all goes well, the report `target/report.tsv` will be created.
+
+Optionally, the filename of the report can be customised. For example,
+
+```
+sbt "generateReport alternativeName.tsv"
+```
+
+will generate the report in `target/alternativeName.tsv`
 
 ## Running UI acceptance tests
 

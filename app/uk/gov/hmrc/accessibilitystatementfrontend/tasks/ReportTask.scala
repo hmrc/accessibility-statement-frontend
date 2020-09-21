@@ -48,16 +48,11 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
     "statementLastUpdatedDate"
   )
 
-  def generate(args: Seq[String]): Unit = {
-    if (args.length < 1) {
-      throw new Exception("Report filename missing in arguments")
-    }
+  def generate(args: Seq[String]): Unit =
+    writeRows(args.headOption.getOrElse("report.tsv"))
 
-    writeRows(args.head)
-  }
-
-  private def writeRows(path: String): Unit = {
-    val reportWriter = new PrintWriter(new File(path))
+  private def writeRows(filename: String): Unit = {
+    val reportWriter = new PrintWriter(new File(s"target/$filename"))
     try {
       for (row <- getRows) {
         reportWriter.println(row)

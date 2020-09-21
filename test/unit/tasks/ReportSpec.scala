@@ -26,9 +26,9 @@ import scala.util.Try
 class ReportSpec extends WordSpec with Matchers with TryValues {
   private def createReportFile: String = {
     import java.io.File
-    val file = File.createTempFile("report-test", "txt")
+    val file = File.createTempFile("report-test", "txt", new File("target"))
     file.deleteOnExit()
-    file.getAbsolutePath
+    file.getName
   }
 
   "ReportTask" should {
@@ -36,11 +36,11 @@ class ReportSpec extends WordSpec with Matchers with TryValues {
     val reportTask = new ReportTask(repo)
 
     "generate a report" in {
-      val reportFile = createReportFile
+      val reportFilename = createReportFile
 
-      reportTask.generate(Array(reportFile))
+      reportTask.generate(Seq(reportFilename))
 
-      val report = Source.fromFile(reportFile, "UTF-8")
+      val report = Source.fromFile(s"target/$reportFilename", "UTF-8")
       val result = Try(report.getLines.toSeq)
 
       result should be a 'success
@@ -55,14 +55,6 @@ class ReportSpec extends WordSpec with Matchers with TryValues {
         ))
 
       report.close()
-    }
-
-    "throw an error if no arguments are supplied" in {
-      val thrown = intercept[Exception] {
-        reportTask.generate(Seq.empty)
-      }
-
-      thrown.getMessage should startWith regex "Report filename missing in arguments"
     }
   }
 }
