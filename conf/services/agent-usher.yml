@@ -6,6 +6,8 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-usher
 contactFrontendServiceId: AOSS
 complianceStatus: partial
+automatedTestingOnly: true
+automatedTestingDetails: It was tested using the automated tool AXE plugin for Chrome.
 accessibilityProblems:
   - There is no timeout dialog box in this service, so users will not be warned before being logged out
   - The opt-in page contains images that are not clickable (to enlarge) and appear blurred
