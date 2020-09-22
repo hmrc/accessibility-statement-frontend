@@ -2,7 +2,7 @@ serviceName: helpdesk support for agent services users by phone
 serviceHeaderName: Helpdesk support for agent services users by phone
 serviceDescription: |
   This service lets HMRC staff help agents' clients deal with authorisation requests or applications from overseas agents to approve an agent services account and review agent assurance checks.
-serviceDomain: www.tax.service.gov.uk
+serviceDomain: www.admin.tax.service.gov.uk
 serviceUrl: /agent-services/check-application
 contactFrontendServiceId: AOSS
 complianceStatus: partial
