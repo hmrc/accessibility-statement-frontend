@@ -11,7 +11,7 @@ accessibilityProblems:
   - Page titles don’t include the service name. This does not follow HMRC's design pattern
     and does not make it clear what service you are on when using a screen reader.
     We will be updating these so they follow our pattern.
-  - Some of the information is read out twice by a screen reader because the designs do not follow the pattern.
+  - Some of the information is read out twice by a screen reader because the designs do not follow the pattern. We will fix this so that all of the information is only read once.
   - On one of the pages, there is a link to guidance which opens in the same tab, meaning users lose their progress.
     We will change this so it opens in a new tab and users can carry on with the journey.
   - On all pages, error messages are not linked to the fields they relate to. This means they will not be read by assistive technology
@@ -27,11 +27,6 @@ milestones:
       When there is an error on the page, we usually put the word ‘Error’ into the page title. We have not done this in the service.
       This fails WCAG 2.1 - Understanding Success Criterion 3.3.1 - Error Identification. We will be updating our page titles to 
       contain the word ‘Error’ when there is an error on the page.
-    date: 2021-07-31
-  - description: |
-      When there is an error, the keyboard focus is on the wrong part of the page. This makes it more difficult to work out if there has been an error.
-      This fails WCAG 2.1 - Understanding Success Criterion 3.3.1 - Error Identification. We will fix this so the error state has keyboard focus and the 
-      user knows there has been an error.
     date: 2021-07-31
   - description: |
       When there is an error, the keyboard focus is on the wrong part of the page. This makes it more difficult to work out if there has been an error.
