@@ -1,6 +1,6 @@
 serviceName: Landing
 serviceHeaderName: Landing
-serviceDescription: "This service is a landing page for the Import Control System and Pensions services."
+serviceDescription: "The Landing service is a landing page for the Import Control System and Pensions services."
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /ics
 contactFrontendServiceId: hmrc-ics
