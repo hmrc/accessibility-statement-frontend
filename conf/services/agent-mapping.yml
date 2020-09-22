@@ -10,7 +10,7 @@ automatedTestingOnly: true
 automatedTestingDetails: It was tested using the automated tool Automated Accessibility Test job on Jenkins, including AXE.
 milestones:
   - description: |
-      The contrast between foreground and background colours doesn’t meet WCAG 2 AA contrast ratio thresholds
+      The contrast between the foreground and background colours may not meet WCAG 2.1 AA contrast ratio thresholds
     date: 2020-12-31
 serviceLastTestedDate: 2020-9-21
 statementVisibility: public
