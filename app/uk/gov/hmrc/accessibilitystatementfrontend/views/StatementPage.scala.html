@@ -21,9 +21,10 @@
 
 @(statement: AccessibilityStatement, referrerUrl: Option[String], isWelshTranslationAvailable: Boolean)(
         implicit request: Request[_], messages: Messages, appConfig: AppConfig)
+
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
 
-@layout(pageTitle = statement.serviceHeaderName, serviceUrl = statement.serviceUrl, serviceName = statement.serviceHeaderName, isWelshTranslationAvailable = isWelshTranslationAvailable) {
+@layout(pageTitle = messages("general.pageTitle", statement.serviceName), serviceUrl = serviceAbsoluteUrl.body, serviceName = statement.serviceHeaderName, isWelshTranslationAvailable = isWelshTranslationAvailable) {
     @accessibilityStatementTemplate(statement, referrerUrl)
     @a11yReportTechnicalIssue()
 }

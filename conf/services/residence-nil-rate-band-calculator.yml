@@ -1,0 +1,15 @@
+
+serviceName: Resident Nil Rate Band calculator
+serviceHeaderName: Calculate the available RNRB
+serviceDescription: |
+  The Resident Nil Rate Band (RNRB) calculator works out the additional threshold
+  on an estate before Inheritance Tax is due. The additional threshold for tax year
+  2020 to 2021 is £175,000. The RNRB is only applied if the owner of the estate died
+  on or after 6 April 2017.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /calculate-additional-inheritance-tax-threshold/date-of-death
+contactFrontendServiceId: RNRB
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-09-21

@@ -1,0 +1,14 @@
+serviceName: Rent and lease details
+serviceHeaderName: Rent and lease details
+serviceDescription: |
+  This service allows you to send the rent details from your lease to the 
+  Valuation Office Agency (VOA). You can also tell the VOA if you are not
+  connected to the property anymore.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /sending-rental-information/login
+contactFrontendServiceId: RALD
+complianceStatus: full
+serviceLastTestedDate: 2020-06-02
+statementVisibility: draft
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23

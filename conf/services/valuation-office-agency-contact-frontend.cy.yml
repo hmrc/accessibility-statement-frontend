@@ -1,0 +1,14 @@
+serviceName: Ffurflen Gysylltu Asiantaeth y Swyddfa Brisio
+serviceHeaderName: Ffurflen Gysylltu Asiantaeth y Swyddfa Brisio
+serviceDescription: |
+  Mae’r gwasanaeth yma yn caniatáu i chi ddanfon neges i Asiantaeth y Swyddfa
+  Brisio am eich Treth Gyngor neu ardrethi annomestig. Gallwch hefyd ddod o hyd
+  i fanylion cyswllt timau eraill os ydy’ch ymholiad yn ymwneud â rhywbeth arall.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /valuation-office-agency-contact-frontend/you-enquiry
+contactFrontendServiceId: Contact Forms
+complianceStatus: full
+serviceLastTestedDate: 2020-09-06
+statementVisibility: draft
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23

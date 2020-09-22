@@ -1,0 +1,14 @@
+serviceName: Childcare calculator
+serviceHeaderName: Childcare calculator
+serviceDescription: |
+  The Childcare calculator helps parents find out how much support
+  they can get towards approved childcare. Support includes free
+  childcare for children aged between 2 and 4, and help with childcare
+  costs if your child is under 16 (or under 17 and disabled).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /childcare-calc
+contactFrontendServiceId: childcarecalculatorfrontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18

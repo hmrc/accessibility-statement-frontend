@@ -1,0 +1,10 @@
+serviceName: Check how much Income Tax you paid
+serviceHeaderName: Check how much Income Tax you paid
+serviceDescription: The Check how much Income Tax you paid service allows users that have received a P800 tax calculation to see why they have either overpaid or underpaid tax, and allows them to pay any tax owed.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-you-paid
+contactFrontendServiceId: tax-you-paid
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-21
+statementLastUpdatedDate: 2019-09-21

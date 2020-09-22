@@ -1,0 +1,12 @@
+serviceName: Chwilio drwy’r Cynllun Cofrestru Cyfanwerthwyr Alcohol
+serviceHeaderName: Gwiriwch a yw cyfanwerthwr neu gynhyrchydd alcohol wedi’i gymeradwyo
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn galluogi defnyddwyr i wirio a yw busnes wedi
+  cofrestru gyda’r Cynllun Cofrestru Cyfanwerthwyr Alcohol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-the-awrs-register
+contactFrontendServiceId: AWRS-LOOKUP
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18

@@ -1,11 +1,6 @@
 service.text = Dyma'ch gwasanaeth newydd
-
-footer.cookies.text = Cwcis
-footer.privacy.text = Polisi preifatrwydd
-footer.termsConditions.text = Telerau ac amodau
-footer.govukHelp.text = Help wrth ddefnyddio GOV.UK
-
 general.serviceName = Datganiad hygyrchedd
+general.pageTitle = Datganiad hygyrchedd ar gyfer {0} - GOV.UK
 
 ## introduction
 introduction.heading=Datganiad hygyrchedd ar gyfer {0}
