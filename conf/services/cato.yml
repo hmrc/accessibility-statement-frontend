@@ -1,6 +1,6 @@
 serviceName: Company Accounts and Tax Online
 serviceHeaderName: Company Accounts and Tax Online
-serviceDescription: The Company and Accounts Tax Online filing service is a free service that lets unrepresented
+serviceDescription: The Company Accounts and Tax Online filing service is a free service that lets unrepresented
   companies with straightforward tax affairs file their Company Tax Return with HMRC and their accounts with Companies House.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /cato
