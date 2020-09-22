@@ -9,6 +9,6 @@ serviceUrl: /sending-rental-information/login
 contactFrontendServiceId: RALD
 complianceStatus: full
 serviceLastTestedDate: 2020-06-02
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23
