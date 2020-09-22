@@ -1,8 +1,9 @@
-﻿serviceName: Check and challenge your business rates valuation
-serviceHeaderName: Check and challenge your business rates valuation
-serviceDescription: |
-  This service allows you to check the rateable value of your property
-  - this is set by the Valuation Office Agency (VOA) and used by your local council to calculate your business rates bill. You can also:
+﻿serviceName: check and challenge your business rates valuation
+serviceHeaderName: check and challenge your business rates valuation
+serviceDescription: 
+  This service allows you to check the rateable value of your property,
+  this is set by the Valuation Office Agency (VOA) and used by your local
+  council to calculate your business rates bill. You can also
   - request changes to property or valuation details if you think they’re wrong
   - claim an interest in a property
   - view the valuation details of other properties
@@ -13,20 +14,24 @@ contactFrontendServiceId: CCA Accesibility (VOA)
 complianceStatus: partial
 accessibilityProblems:
   - There are tables present which are not marked correctly
-  - There are form elements present which do not have a programmatically associated label
-  - There are some grouped radio buttons whose legend attribute has been left blank
+  - There are form elements present which do not have a programmatically 
+  associated label
+  - There are some grouped radio buttons whose legend attribute has been 
+  left blank 
   - There is a date input which has no shared label
   - There is an issue with tables and links without column headers
   - There is an issue with tables having captions
   - There is a issues with Skip links on error text not moving the focus
-  - There are issues with sortable tables, the purpose of the links in the table is not clear to all users
+  - There are issues with sortable tables, the purpose of the links in the 
+    table is not clear to all users 
   - There are links which do not have descriptions
-  - There is an issue with a status message being displayed not making screen readers aware
+  - There is an issue with a status message being displayed not making 
+    screen readers aware
   - There are duplicate ID's on radio buttons
 milestones:
-  - description: A retest by DAC has been schedule to test all these issues
+  - description: A retest by DAC has been schedule to test all these issues.
     date: 2020-09-22
 serviceLastTestedDate: 2020-02-04
 statementVisibility: draft
 statementCreatedDate: 2020-09-15
-statementLastUpdatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-22
