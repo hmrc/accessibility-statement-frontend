@@ -10,7 +10,7 @@ automatedTestingOnly: true
 automatedTestingDetails: It was tested using the automated tool Automated Accessibility Test job on Jenkins, including AXE.
 milestones:
   - description: |
-      We have carried out an in-house expert review of the service and fixed all known accessibility issues.
+      The contrast between foreground and background colours doesn’t meet WCAG 2 AA contrast ratio thresholds
     date: 2020-12-31
 serviceLastTestedDate: 2020-12-31
 statementVisibility: public
