@@ -1,0 +1,13 @@
+serviceName: Personal tax account
+serviceHeaderName: Personal tax account
+serviceDescription: |
+  Individuals can use the Personal Tax Account service to access any of the personal tax digital services 
+  they have registered for, and review any messages from HMRC. They can also use it to update 
+  their contact preferences and personal details with HMRC, and get a copy of their National Insurance number.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /personal-account
+contactFrontendServiceId: personal-account
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-21
+statementLastUpdatedDate: 2019-09-21
