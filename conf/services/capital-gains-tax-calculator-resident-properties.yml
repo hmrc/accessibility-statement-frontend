@@ -1,0 +1,13 @@
+serviceName: Capital Gains Tax
+serviceHeaderName: Capital Gains Tax
+serviceDescription: |
+  The Capital Gains Tax calculator lets you work out the amount payable to HMRC
+  for resident and non-resident Capital Gains Tax. This is the tax on your profit
+  when you sell items like property or shares that have increased in value.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: calculate-your-capital-gains/resident/properties
+contactFrontendServiceId: CGT
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
