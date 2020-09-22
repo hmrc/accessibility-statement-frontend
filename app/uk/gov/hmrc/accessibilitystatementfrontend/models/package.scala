@@ -32,7 +32,7 @@ package object models {
   def prettyPrintDate(date: Date)(implicit messages: Messages): String = {
     val dayNumber   = new SimpleDateFormat("dd").format(date)
     val monthNumber = new SimpleDateFormat("M").format(date)
-    val year        = new SimpleDateFormat("YYYY").format(date)
+    val year        = new SimpleDateFormat("yyyy").format(date)
     val monthName   = messages(s"dates.month.$monthNumber")
     s"$dayNumber $monthName $year"
   }

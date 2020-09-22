@@ -71,6 +71,17 @@ class PackageSpec extends WordSpec with Matchers {
       prettyPrintDate(secondDate) should equal("15 Mawrth 2020")
       prettyPrintDate(thirdDate) should equal("01 Mai 2020")
     }
+
+    // Known issue with using YYYY in openjdk for 31 December: https://bugs.openjdk.java.net/browse/JDK-8194625
+    "return the correct date for 31 December" in {
+      val app = new GuiceApplicationBuilder().build()
+      val mcc = app.injector.instanceOf[MessagesControllerComponents]
+      val requestDefaultLanguage = FakeRequest()
+      implicit val messages: Messages = mcc.messagesApi.preferred(requestDefaultLanguage)
+
+      val lastDateOfYear = new GregorianCalendar(2020, Calendar.DECEMBER, 31).getTime
+      prettyPrintDate(lastDateOfYear) should equal("31 December 2020")
+    }
   }
 
   "Given a contact frontend URL and a service name, calling the report problem link" should {
