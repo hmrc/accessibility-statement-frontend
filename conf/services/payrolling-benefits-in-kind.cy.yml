@@ -5,8 +5,8 @@ serviceDescription: |
   a threuliau y maent yn eu cynnig i’w cyflogeion, neu bob un ohonynt.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /payrollbik
-contactFrontendServiceId: scp
+contactFrontendServiceId: pbik
 complianceStatus: noncompliant
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-22
