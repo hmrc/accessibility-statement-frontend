@@ -6,6 +6,6 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submit-your-ers-annual-return
 contactFrontendServiceId: ERS-RETURNS
 complianceStatus: noncompliant
-statementVisibility: draft
-statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
