@@ -1,0 +1,13 @@
+serviceName: Feedback
+serviceHeaderName: Feedback
+serviceDescription: |
+  You can use the feedback survey to tell us how we can make our services better. We might link the feedback
+  you send us to other information about you, like your gender and age. This helps us to better understand how we
+  can improve services.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /feedback
+contactFrontendServiceId: feedbackfrontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
