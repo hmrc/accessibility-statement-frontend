@@ -13,16 +13,16 @@ accessibilityProblems:
 milestones:
   - description: |
      There is no timeout dialog box in this service, so users will not be warned before being logged out
-    date: 2020-12-30
+    date: 2020-12-31
   - description: |
      The opt-in page contains images that are not clickable (to enlarge) and appear blurred
-    date: 2020-12-30
+    date: 2020-12-31
   - description: |
       Some of the pages in the service have a redundant fieldset, which could prevent users browsing out of context from understanding what is being selected. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships) and 4.1.1 (Parsing).
-    date: 2021-07-30
+    date: 2020-07-31
   - description: |
      There is no error summary on the opt-in page, just a form field error. The error summary would normally allow a user to quickly identify errors and allow them to navigate directly to the error
-    date: 2020-12-30
+    date: 2020-12-31
 serviceLastTestedDate: 2019-8-22
 statementVisibility: public
 statementCreatedDate: 2019-09-23
