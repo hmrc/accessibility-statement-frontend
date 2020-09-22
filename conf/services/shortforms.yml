@@ -1,6 +1,6 @@
 serviceName: ShortForms
 serviceHeaderName: ShortForms
-serviceDescription: "This service allows users to complete a wide variety of short forms such as registering for Self Assessment."
+serviceDescription: "The ShortForms service allows users to complete a variety of short forms, such as the form to register for Self Assessment."
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /shortforms
 contactFrontendServiceId: hmrc-shortforms
