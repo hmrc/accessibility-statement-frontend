@@ -14,20 +14,20 @@ accessibilityProblems:
   - Some tables contain empty table cells which can be confusing for screen reader users.
 milestones:
   - description: Resolve focus issue for keyboard navigation.
-    date: 2020-10-05
+    date: 2020-10-31
   - description: Ensure colour contrast complies with the expected ratio to meet WCAG 2.1 AA.
-    date: 2020-10-05
+    date: 2020-10-31
   - description: Provide suitable link descriptions for screen reader users.
-    date: 2020-10-05	
+    date: 2020-10-31	
   - description: Prevent two-way scrolling when page is resized to 400%.
-    date: 2020-10-05
+    date: 2020-10-31
   - description: Ensure tables do not contain empty table cells.
-    date: 2020-10-05
+    date: 2020-10-31
   - description: |
       Further accessibility testing is required in order to determine the changes necessary to reach AA compliance
       for the whole site.
-    date: 2020-10-12	
+    date: 2020-11-30	
 serviceLastTestedDate: 2019-11-28
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-16
-statementLastUpdatedDate: 2020-09-16
+statementLastUpdatedDate: 2020-09-22
