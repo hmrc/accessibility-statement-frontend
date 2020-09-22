@@ -1,0 +1,12 @@
+serviceName: copy across authorisations
+serviceHeaderName: Copy across authorisations
+serviceDescription: |
+  You use this service to copy across client authorisations from old agent accounts to your new agent services account.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-mapping
+contactFrontendServiceId: AOSS
+complianceStatus: full
+serviceLastTestedDate: 2020-9-21
+statementVisibility: draft
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
