@@ -1,0 +1,14 @@
+serviceName: Manylion rhent a phrydles
+serviceHeaderName: Manylion rhent a phrydles
+serviceDescription: |
+  Mae'r gwasanaeth hwn yn caniatáu ichi anfon manylion rhent eich prydles
+  at Asiantaeth y Swyddfa Brisio (VOA). Gallwch hefyd hysbysu'r VOA os
+  nad oes gennych chi gysylltiad â'r eiddo bellach.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /sending-rental-information/login
+contactFrontendServiceId: RALD
+complianceStatus: full
+serviceLastTestedDate: 2020-06-02
+statementVisibility: draft
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
