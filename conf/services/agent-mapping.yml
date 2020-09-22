@@ -1,9 +1,9 @@
-serviceName: manage your tax agents
-serviceHeaderName: Manage your tax agents
+serviceName: copy across authorisations
+serviceHeaderName: Copy across authorisations
 serviceDescription: |
-  This service is for clients to track relationships with their agents.
+  You use this service to copy across client authorisations from old agent accounts to your new agent services account.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /manage-your-tax-agents
+serviceUrl: /agent-mapping
 contactFrontendServiceId: AOSS
 complianceStatus: partial
 automatedTestingOnly: true
@@ -12,7 +12,7 @@ milestones:
   - description: |
       We have carried out an in-house expert review of the service and fixed all known accessibility issues.
     date: 2020-12-31
-serviceLastTestedDate: 2020-12-31
+serviceLastTestedDate: 2020-9-21
 statementVisibility: public
-statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2020-09-18
+statementCreatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-09-21

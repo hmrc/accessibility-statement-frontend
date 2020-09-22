@@ -7,6 +7,6 @@ serviceUrl: /agent-services-account
 contactFrontendServiceId: AOSS
 complianceStatus: full
 serviceLastTestedDate: 2019-8-22
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2020-09-18
+statementLastUpdatedDate: 2019-9-23
