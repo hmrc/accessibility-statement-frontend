@@ -1,0 +1,60 @@
+serviceName: Check your State Pension forecast
+serviceHeaderName: Check your State Pension forecast
+serviceDescription: |
+  The Check your State Pension forecast service allows anyone under pension age with a National Insurance number to find out 
+  information about their pension. It allows you to see your pension forecast, when you will get your pension and how you can 
+  increase the amount in your pension. It also gives you access to your full National Insurance record.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-your-state-pension/account
+contactFrontendServiceId: check-your-state-pension
+complianceStatus: partial
+accessibilityProblems:
+  - on the National Insurance record pages, the section heading is not linked to the header. This can make it more difficult to understand the content.
+  - in some places, dates are read out as single numbers rather than dates. This could be confusing and hard to follow for users with assistive technology.
+  - on every page there is a problem with the keyboard focus on the ‘Your account’ sub-section. This makes it difficult for some users to access links in this section.
+  - on some pages, there is a nav tag in the header. This can make it more difficult to get to the main content and adds extra noise for users with screen readers.
+  - on the ‘Your National Insurance record’ page, the detailed description tag is missing. This might make it more difficult for assistive technologies to read the content .
+    accurately and without crashing.
+  - on every page, the language selection is in the main content of the page. This can make it more difficult to get to the main content and adds extra noise for users with screen readers.
+  - on some pages, the article tag appears before the heading at the start of the main content. This can make it more difficult for users with screen readers to locate the main content as it adds more noise.
+  - on the ‘Your State Pension' summary page, the print button appears on the page for users who have disabled javascript. However the print button only works when javascript is enabled.
+  - on the ‘Your National Insurance record' page, the ‘Back’ link appears on the page for users who have disabled javascript. However the ‘Back’ link only works when javascript is enabled.
+  - on the ‘Your National Insurance record' page, the ‘Back’ link is after the main page content. This could make it more difficult for users to locate.
+  - on the ‘Your National Insurance record' page, the ‘View details’ link appears on the page for users who have disabled javascript. However the ‘View details’ link only works when javascript is enabled.
+milestones:
+  - description: |
+      On the National Insurance record pages, the section heading is not linked to the header. This can make it more difficult to understand the content.
+      This fails WCAG 2.1 - Understanding Success Criterion 3.1.5 - Reading Level.
+    date: 2021-07-31
+  - description: |
+      In some places, dates are read out as single numbers rather than dates. This could be confusing and hard to follow for users with assistive technology.
+      This fails WCAG 2.1 - Understanding Success Criterion 3.1.5 - Reading Level.
+    date: 2021-07-31
+  - description: |
+      On every page there is a problem with the keyboard focus on the ‘Your account’ sub-section. This makes it difficult for 
+      some users to access links in this section. This fails WCAG 2.1 - Understanding Success Criterion 2.4.3 - Focus Order.
+    date: 2021-07-31
+  - description: |
+      On some pages, there is a nav tag in the header. This can make it more difficult to get to the main content and adds extra noise for users with screen readers. 
+      This fails WCAG 2.1 - Understanding Success Criterion 2.4.1 - Bypass Blocks.
+    date: 2021-07-31
+  - description: |
+      On the ‘Your National Insurance record’ page, the detailed description tag is missing. 
+      This might make it more difficult for assistive technologies to read the content accurately and without crashing. 
+      This fails WCAG 2.1 - Understanding Success Criterion 2.4.1 - Bypass Blocks.
+    date: 2021-07-31
+  - description: |
+      On every page, the language selection is in the main content of the page. 
+      This can make it more difficult to get to the main content and adds extra noise for users with screen readers. 
+      This fails WCAG 2.1 - Understanding Success Criterion 2.4.1 - Bypass Blocks.
+    date: 2021-07-31
+  - description: |
+      On some pages, the article tag appears before the heading at the start of the main content. 
+      This can make it more difficult for users with screen readers to locate the main content as it adds more noise. 
+      This fails WCAG 2.1 - Understanding Success Criterion 3.1.5 - Reading Level.
+    date: 2021-07-31
+
+serviceLastTestedDate: 2020-08-21
+statementVisibility: public
+statementCreatedDate: 2020-09-15
+statementLastUpdatedDate: 2020-09-15
