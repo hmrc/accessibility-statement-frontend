@@ -1,0 +1,14 @@
+﻿serviceName: billing authority reports
+serviceHeaderName: billing authority reports
+serviceDescription: |
+  This service allows you to send Council Tax reports to the Valuation
+  Office Agency (VOA). You can tell the VOA about new properties,
+  or changes to existing ones.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /voa-bar-xml-frontend
+contactFrontendServiceId: AutoBARS
+complianceStatus: full
+serviceLastTestedDate: 2020-09-22
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
