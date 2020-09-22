@@ -1,0 +1,12 @@
+serviceName: Gwasanaeth Ffurflenni Digidol
+serviceHeaderName: Gwasanaeth Ffurflenni Digidol
+serviceDescription: |
+  Mae’r Gwasanaeth Ffurflenni Digidol (DFS) yn cael ei ddefnyddio gan wasanaethau eraill
+  yn CThEM i gasglu gwybodaeth oddi wrth gwsmeriaid yn ddigidol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /digital-forms/form
+contactFrontendServiceId: dfs-digital-forms-frontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
