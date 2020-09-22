@@ -5,8 +5,14 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-your-tax-agents
 contactFrontendServiceId: AOSS
-complianceStatus: full
-serviceLastTestedDate: 2020-9-1
+complianceStatus: partial
+automatedTestingOnly: true
+automatedTestingDetails: It was tested using the automated tool Automated Accessibility Test job on Jenkins, including AXE.
+milestones:
+  - description: |
+      We have carried out an in-house expert review of the service and fixed all known accessibility issues.
+    date: 2020-12-31
+serviceLastTestedDate: 2020-12-31
 statementVisibility: public
 statementCreatedDate: 2020-09-18
 statementLastUpdatedDate: 2020-09-18
