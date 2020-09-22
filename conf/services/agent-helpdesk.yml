@@ -21,6 +21,6 @@ milestones:
       The reject reason page does not contain form field errors, only an error summary, which means the user may not be able to identify which form field the error is for
     date: 2020-12-31
 serviceLastTestedDate: 2020-9-21
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-22
 statementLastUpdatedDate: 2020-09-22

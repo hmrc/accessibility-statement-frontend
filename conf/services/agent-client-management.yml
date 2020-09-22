@@ -7,6 +7,6 @@ serviceUrl: /manage-your-tax-agents
 contactFrontendServiceId: AOSS
 complianceStatus: full
 serviceLastTestedDate: 2020-9-1
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-18
 statementLastUpdatedDate: 2020-09-18

@@ -24,6 +24,6 @@ milestones:
      There is no error summary on the opt-in page, just a form field error. The error summary would normally allow a user to quickly identify errors and allow them to navigate directly to the error
     date: 2020-12-30
 serviceLastTestedDate: 2019-8-22
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2019-09-23
 statementLastUpdatedDate: 2019-09-23
