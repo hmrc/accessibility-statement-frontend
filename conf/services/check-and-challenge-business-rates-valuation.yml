@@ -1,6 +1,6 @@
 ﻿serviceName: check and challenge your business rates valuation
 serviceHeaderName: check and challenge your business rates valuation
-serviceDescription: 
+serviceDescription: |
   This service allows you to check the rateable value of your property,
   this is set by the Valuation Office Agency (VOA) and used by your local
   council to calculate your business rates bill. You can also
@@ -15,9 +15,9 @@ complianceStatus: partial
 accessibilityProblems:
   - There are tables present which are not marked correctly
   - There are form elements present which do not have a programmatically 
-  associated label
+    associated label
   - There are some grouped radio buttons whose legend attribute has been 
-  left blank 
+    left blank 
   - There is a date input which has no shared label
   - There is an issue with tables and links without column headers
   - There is an issue with tables having captions

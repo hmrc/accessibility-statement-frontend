@@ -11,18 +11,18 @@ complianceStatus: partial
 accessibilityProblems:
   - There are tables present which are not marked correctly
   - There are form elements present which do not have a programmatically 
-  associated label
+    associated label
   - There are links contained within a table which have the same text but 
-  refer to different destinations
+    refer to different destinations
   - There are aria attributes present which are not valid
   - There are elements which expand content but do not inform users of the 
-  state of the content
+    state of the content
   - There are non-text elements which fail to meet the minimum required 
-  contrast ratio
+    contrast ratio
   - There is an element which has no visible focus state indicator
   - Error handling does not comply with GOV.UK Design System
   - There is a status message displayed on screen which is not read to 
-  screen reader users when the page loads
+    screen reader users when the page loads
 milestones:
   - description: A retest by DAC has been scheduled to test all these issues. 
     date: 2020-09-22
