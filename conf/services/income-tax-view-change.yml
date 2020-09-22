@@ -35,6 +35,6 @@ milestones:
       This doesn’t meet WCAG 2.1 success criterion 3.2.1 (Language of parts).
     date: 2020-12-31
 serviceLastTestedDate: 2020-08-18
-statementVisibility: draft
-statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2020-09-21
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
