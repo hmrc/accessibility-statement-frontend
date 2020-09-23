@@ -1,9 +1,9 @@
-serviceName: SIC Code Search
+serviceName: Postal Address Capture (PAC)
 serviceHeaderName: SIC
-serviceDescription: "The SIC Code Search service allows users to search for Standard Industrial Classification codes which describe the nature of a company's business. These codes are required when registering a company for VAT and when submitting the first and subsequent annual returns."
+serviceDescription: "The Postal Address Capture (PAC) service allows users to search for an address using a postcode."
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /sic-code-search
-contactFrontendServiceId: hmrc-sic
+serviceUrl: /postal-address-capture
+contactFrontendServiceId: hmrc-pac
 complianceStatus: partial
 accessibilityProblems:
   - the service times out without giving users due warning or the option to extend their session
