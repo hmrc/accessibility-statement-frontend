@@ -1,0 +1,10 @@
+serviceName: Lwfans Priodas
+serviceHeaderName: Gwneud cais am Lwfans Priodas
+serviceDescription: Mae’r gwasanaethau Lwfans Priodasol yn galluogi cyplau cymwys i drosglwyddo rhan o’u Lwfans Personol i’w partneriaid. Gallwch hefyd wrthod neu ganslo trosglwyddo Lwfans Personol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /marriage-allowance-application
+contactFrontendServiceId: marriage-allowance-application
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2019-09-21
+statementLastUpdatedDate: 2019-09-21
