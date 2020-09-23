@@ -27,7 +27,7 @@ serviceDescription: |                   # A description of the service
   like this.
 serviceDomain: www.tax.service.gov.uk   # The domain name under which this service exists (exclude the https:// and the path)
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
-contactFrontendServiceId: icecreams     # The service id passed to contact-frontend and hmrc-deskpro
+contactFrontendServiceId: icecreams     # A unique identifier for your service (see notes below)
 complianceStatus: partial               # full|partial|noncompliant
 accessibilityProblems:                  # If there are no issues do not include this section
   - a description of the first problem
@@ -125,6 +125,28 @@ as shown in the following code: https://github.com/hmrc/play-ui/blob/master/src/
 
 This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
 end user discovered the accessibility issue.
+
+## A note on contactFrontendServiceId
+
+contactFrontendServiceId is used to help associate accessibility queries from members of the public to your service 
+in Deskpro. This helps with the routing of tickets to your team if they cannot be dealt with by 1st or 2nd line support.
+
+If you are already integrating with contact-frontend to allow service users to report technical issues, you will find it 
+added as a querystring parameter `service` in URLs to contact-frontend.
+
+If you look in your service's frontend source code, you should see URLs constructed similar to
+
+`s"$contactHost/contact/problem_reports_ajax?service=foo"`
+
+or
+
+`s"$contactHost/contact/problem_reports_nonjs?service=foo"`
+
+The contactFrontendServiceId here would be `foo`.
+
+If your service is *not* already integrating with contact-frontend or onboarded with Deskpro, we advise choosing an
+ identifier that is specific to your service and unlikely to be used by any other service, avoiding any special characters
+ or whitespace.
 
 ## Creating accessibility statements in the Welsh language
 
