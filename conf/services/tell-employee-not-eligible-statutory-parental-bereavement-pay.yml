@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Tell the employee they are not eligible for Statutory Parental Bereavement Pay (SPBP1)
+serviceHeaderName: Tell the employee they are not eligible for Statutory Parental Bereavement Pay (SPBP1)
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/tell-employee-not-eligible-statutory-parental-bereavement-pay
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

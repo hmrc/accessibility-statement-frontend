@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Apply for an advance payment of Statutory Parental Bereavement Pay (SPBP4)
+serviceHeaderName: Apply for an advance payment of Statutory Parental Bereavement Pay (SPBP4)
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/apply-for-advance-payment-statutory-parental-bereavement-pay-unauth
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

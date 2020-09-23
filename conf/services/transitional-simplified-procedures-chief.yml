@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Activate a badge to make CHIEF declarations
+serviceHeaderName: Activate a badge to make CHIEF declarations
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/transitional-simplified-procedures-chief
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

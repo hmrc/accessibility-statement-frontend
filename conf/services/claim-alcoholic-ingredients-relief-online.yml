@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Claim Alcoholic Ingredients Relief online
+serviceHeaderName: Claim Alcoholic Ingredients Relief online
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/claim-alcoholic-ingredients-relief-online
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

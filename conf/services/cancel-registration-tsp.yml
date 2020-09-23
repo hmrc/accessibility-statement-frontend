@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Cancel your registration for transitional simplified procedures
+serviceHeaderName: Cancel your registration for transitional simplified procedures
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/cancel-registration-tsp
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

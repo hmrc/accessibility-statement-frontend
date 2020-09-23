@@ -1,8 +1,9 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
-serviceDescription: ''
+serviceName: Send your Lottery Duty return
+serviceHeaderName: Send your Lottery Duty return
+serviceDescription: |
+  Fill in your Lottery Duty return online
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/send-your-lottery-duty-return
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

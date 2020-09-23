@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Send details to support an R&D Expenditure Credit (RDEC) claim
+serviceHeaderName: Send details to support an R&D Expenditure Credit (RDEC) claim
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/send-details-to-support-r-and-d-expenditure-credit-claim
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

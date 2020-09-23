@@ -1,8 +1,9 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
-serviceDescription: ''
+serviceName: Gas for use as road fuel
+serviceHeaderName: Gas for use as road fuel
+serviceDescription: |
+  Fill in your gas for use as road fuel return form online
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/CE930-gas-as-road-fuel
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
