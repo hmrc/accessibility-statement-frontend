@@ -104,5 +104,16 @@ class PackageSpec extends WordSpec with Matchers {
         referrerUrl = Some("from-this-start"))
       url should be("http://my.test.url/contact/accessibility-unauthenticated?service=something-service&referrerUrl=from-this-start")
     }
+
+    "properly encode and pass through a referrerUrl" in {
+      val referrerUrl = "http://my.test.url/my-path?someKey=someValue&someOtherKey=someOtherValue"
+      val url = reportAccessibilityProblemLink(
+        reportAccessibilityProblemUrl = reportAccessibilityBaseUrl,
+        serviceId = somethingServiceId,
+        referrerUrl = Some(referrerUrl))
+      val expectedUrl = "http://my.test.url/contact/accessibility-unauthenticated?service=something-service" +
+        "&referrerUrl=http%3A%2F%2Fmy.test.url%2Fmy-path%3FsomeKey%3DsomeValue%26someOtherKey%3DsomeOtherValue"
+      url should be(expectedUrl)
+    }
   }
 }
