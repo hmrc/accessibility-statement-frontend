@@ -2,7 +2,7 @@ serviceName: Online Tax Registration Service (OTRS)
 serviceHeaderName: OTRS
 serviceDescription: "The Online Tax Registration Service (OTRS) allows users to register for tax services online."
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /otrs
+serviceUrl: /business-registration
 contactFrontendServiceId: hmrc-otrs
 complianceStatus: partial
 accessibilityProblems:
