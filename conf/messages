@@ -39,8 +39,8 @@ contact.extra-support.part3=' if you need help with filling in forms or getting 
 
 ## Reporting problems
 reporting.heading=Reporting accessibility problems with this service
-reporting.report-problem.part1=We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements, report the
-reporting.report-problem.part2=accessibility problem (opens in a new window or tab)
+reporting.report-problem.part1='We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements, '
+reporting.report-problem.part2=report the accessibility problem (opens in a new window or tab)
 
 ## Complaints
 complaints.heading=If you are not happy with our response
