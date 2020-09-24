@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Record Statutory Parental Bereavement Pay claims (SPBP2)
+serviceHeaderName: Record Statutory Parental Bereavement Pay claims (SPBP2)
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/record-claims-statutory-parental-bereavement-pay
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

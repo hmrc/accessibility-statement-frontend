@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Register for duty on gas for use as road fuel
+serviceHeaderName: Register for duty on gas for use as road fuel
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/register-for-duty-on-gas-for-use-as-road-fuel
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

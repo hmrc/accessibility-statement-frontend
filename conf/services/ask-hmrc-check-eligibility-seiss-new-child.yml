@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Ask HMRC to verify you had a new child which affected your eligibility for the Self-Employment Support Scheme
+serviceHeaderName: Ask HMRC to verify you had a new child which affected your eligibility for the Self-Employment Support Scheme
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/ask-hmrc-check-eligibility-seiss-new-child
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

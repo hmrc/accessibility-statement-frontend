@@ -1,8 +1,8 @@
-serviceName: Challenge a Childcare Service application decision
-serviceHeaderName: Challenge a Childcare Service application decision
+serviceName: Election for exemption from tax on UK capital gains - offshore collective investment vehicles
+serviceHeaderName: Election for exemption from tax on UK capital gains - offshore collective investment vehicles
 serviceDescription: ''
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
+serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-civ-auth
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
