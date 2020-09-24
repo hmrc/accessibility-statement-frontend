@@ -1,4 +1,4 @@
-serviceName: NICE National Insurance Contributions Employees (calcualtor)
+serviceName: NICE National Insurance Contributions Employees (calculator)
 serviceHeaderName: NICE (Calculator)
 serviceDescription: "The National Insurance Contributions Employee (NICE) calculator allows users to calculate National Insurance contributions for employees."
 serviceDomain: nicecalculator.hmrc.gov.uk
