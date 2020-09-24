@@ -22,7 +22,7 @@ import scala.io.Source
 case class StatementSource(source: Source, filename: String)
 
 @Singleton
-case class SourceConfig @Inject()(appConfig: AppConfig) {
+case class SourceConfig @Inject() (appConfig: AppConfig) {
   import appConfig._
 
   def statementSource(service: String): StatementSource = {

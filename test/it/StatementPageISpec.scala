@@ -35,7 +35,9 @@ class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerS
         "auditing.enabled" -> false
       )
     )
-    .overrides(bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo])
+    .overrides(
+      bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo]
+    )
     .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
 
@@ -44,9 +46,11 @@ class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerS
       val request = FakeRequest(GET, "/accessibility-statement/test-service")
       val result  = route(app, request).get
 
-      status(result)          shouldBe OK
-      contentType(result)     shouldBe Some("text/html")
-      contentAsString(result) should include("Accessibility statement for Test (English) service")
+      status(result)        shouldBe OK
+      contentType(result)   shouldBe Some("text/html")
+      contentAsString(result) should include(
+        "Accessibility statement for Test (English) service"
+      )
     }
   }
 }

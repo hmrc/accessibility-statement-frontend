@@ -25,15 +25,16 @@ import uk.gov.hmrc.play.language.{LanguageController, LanguageUtils}
 import play.api.mvc._
 
 @Singleton
-case class LanguageSwitchController @Inject()(
+case class LanguageSwitchController @Inject() (
   configuration: Configuration,
   languageUtils: LanguageUtils,
   cc: ControllerComponents,
-  appConfig: AppConfig)
-    extends LanguageController(configuration, languageUtils, cc) {
+  appConfig: AppConfig
+) extends LanguageController(configuration, languageUtils, cc) {
   import appConfig._
 
-  override def fallbackURL: String = "https://www.gov.uk/government/organisations/hm-revenue-customs"
+  override def fallbackURL: String =
+    "https://www.gov.uk/government/organisations/hm-revenue-customs"
 
   override protected def languageMap: Map[String, Lang] =
     Map(en -> Lang(en), cy -> Lang(cy))

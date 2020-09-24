@@ -27,8 +27,12 @@ import java.io.PrintWriter
 
 object FakeStatementGenerator extends App {
   private val dateFormat = "yyyy-MM-dd"
-  private val startDate  = new DateTime(new GregorianCalendar(2018, Calendar.JANUARY, 1).getTime)
-  private val endDate    = new DateTime(new GregorianCalendar(2020, Calendar.JULY, 31).getTime)
+  private val startDate  = new DateTime(
+    new GregorianCalendar(2018, Calendar.JANUARY, 1).getTime
+  )
+  private val endDate    = new DateTime(
+    new GregorianCalendar(2020, Calendar.JULY, 31).getTime
+  )
   private val r          = new scala.util.Random(100)
 
   private def serviceKey(n: Int) = {
@@ -39,54 +43,59 @@ object FakeStatementGenerator extends App {
 
   private def generateServiceKeys(total: Int) = (0 until total).map(serviceKey)
 
-  private def generateDate = parseDate(Datetime().datetime(startDate, endDate, Some(dateFormat)))
+  private def generateDate = parseDate(
+    Datetime().datetime(startDate, endDate, Some(dateFormat))
+  )
 
-  private def parseDate(input: String): Date = new java.text.SimpleDateFormat("yyyy-MM-dd").parse(input)
+  private def parseDate(input: String): Date =
+    new java.text.SimpleDateFormat("yyyy-MM-dd").parse(input)
 
   private def generateMilestone =
     Milestone(description = Lorem().paragraph, date = generateDate)
 
   private def generateStatement(serviceKey: String) = {
-    val complianceStatus = if (r.nextBoolean) FullCompliance else PartialCompliance
+    val complianceStatus      =
+      if (r.nextBoolean) FullCompliance else PartialCompliance
     val accessibilityProblems = complianceStatus match {
       case FullCompliance => Seq.empty
       case _              => (0 to r.nextInt(10)).map(_ => Lorem().paragraph)
     }
-    val milestones = complianceStatus match {
+    val milestones            = complianceStatus match {
       case FullCompliance => Seq.empty
       case _              => (0 to r.nextInt(10)).map(_ => generateMilestone)
     }
 
     AccessibilityStatement(
-      serviceName                  = Lorem().sentence,
-      serviceHeaderName            = Lorem().sentence,
-      serviceDescription           = Lorem().paragraph,
-      serviceDomain                = "www.example.com",
-      serviceUrl                   = s"/$serviceKey",
-      contactFrontendServiceId     = serviceKey,
-      complianceStatus             = complianceStatus,
-      accessibilityProblems        = if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems),
-      milestones                   = if (milestones.isEmpty) None else Some(milestones),
-      automatedTestingOnly         = None,
-      statementVisibility          = Draft,
-      serviceLastTestedDate        = Some(generateDate),
-      statementCreatedDate         = generateDate,
-      statementLastUpdatedDate     = generateDate,
-      automatedTestingDetails      = None
+      serviceName = Lorem().sentence,
+      serviceHeaderName = Lorem().sentence,
+      serviceDescription = Lorem().paragraph,
+      serviceDomain = "www.example.com",
+      serviceUrl = s"/$serviceKey",
+      contactFrontendServiceId = serviceKey,
+      complianceStatus = complianceStatus,
+      accessibilityProblems =
+        if (accessibilityProblems.isEmpty) None
+        else Some(accessibilityProblems),
+      milestones = if (milestones.isEmpty) None else Some(milestones),
+      automatedTestingOnly = None,
+      statementVisibility = Draft,
+      serviceLastTestedDate = Some(generateDate),
+      statementCreatedDate = generateDate,
+      statementLastUpdatedDate = generateDate,
+      automatedTestingDetails = None
     )
   }
 
   private def generateAsFile(filename: String)(block: => String) {
     val out = new PrintWriter(filename)
 
-    try {
-      out.print(block)
-    } finally {
-      out.close()
-    }
+    try out.print(block)
+    finally out.close()
   }
 
-  private def generateStatementAsYaml(serviceKey: String) = generateStatement(serviceKey).asJson.asYaml.spaces2
+  private def generateStatementAsYaml(serviceKey: String) = generateStatement(
+    serviceKey
+  ).asJson.asYaml.spaces2
 
   private def generateStatementAsFile(serviceKey: String): Unit =
     generateAsFile(s"testOnlyConf/testOnlyServices/$serviceKey.yml") {

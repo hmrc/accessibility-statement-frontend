@@ -38,18 +38,24 @@ package object models {
     s"$dayNumber $monthName $year"
   }
 
-  implicit val dateEncoder: Encoder[Date] = Encoder.encodeString.contramap[Date](format.format)
+  implicit val dateEncoder: Encoder[Date] =
+    Encoder.encodeString.contramap[Date](format.format)
 
   def reportAccessibilityProblemLink(
     reportAccessibilityProblemUrl: String,
     serviceId: String,
-    referrerUrl: Option[String]): String = {
+    referrerUrl: Option[String]
+  ): String = {
     val queryString = encodedQueryString(serviceId, referrerUrl)
     s"$reportAccessibilityProblemUrl?$queryString"
   }
 
-  private def encodedQueryString(serviceId: String, referrerUrl: Option[String]): String = {
-    val encodedReferrerUrl = referrerUrl.map(url => URLEncoder.encode(url, "UTF-8"))
+  private def encodedQueryString(
+    serviceId: String,
+    referrerUrl: Option[String]
+  ): String = {
+    val encodedReferrerUrl    =
+      referrerUrl.map(url => URLEncoder.encode(url, "UTF-8"))
     val queryStringParameters = Seq(
       Some(s"service=$serviceId"),
       encodedReferrerUrl.map(ru => s"referrerUrl=$ru")

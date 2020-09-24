@@ -14,7 +14,7 @@ lazy val unitTestSettings =
       addTestReportOption(Test, "test-reports")
     )
 
-lazy val IntegrationTest = config("it") extend (Test)
+lazy val IntegrationTest = config("it") extend Test
 lazy val integrationTestSettings =
   inConfig(IntegrationTest)(Defaults.testTasks) ++
     Seq(
@@ -22,7 +22,7 @@ lazy val integrationTestSettings =
       addTestReportOption(IntegrationTest, "it-test-reports")
     )
 
-lazy val AcceptanceTest = config("acceptance") extend (Test)
+lazy val AcceptanceTest = config("acceptance") extend Test
 lazy val acceptanceTestSettings =
   inConfig(AcceptanceTest)(Defaults.testTasks) ++
     Seq(
@@ -32,7 +32,7 @@ lazy val acceptanceTestSettings =
       addTestReportOption(AcceptanceTest, "acceptance-test-reports")
     )
 
-lazy val ZapTest = config("zap") extend (Test)
+lazy val ZapTest = config("zap") extend Test
 lazy val zapTestSettings =
   inConfig(ZapTest)(Defaults.testTasks) ++
     Seq(
@@ -46,10 +46,10 @@ lazy val microservice = Project(appName, file("."))
   .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
   .configs(AcceptanceTest, IntegrationTest, ZapTest)
   .settings(
-    majorVersion                     := 0,
-    scalaVersion                     := "2.12.11",
-    playDefaultPort                  := 12346,
-    libraryDependencies              ++= AppDependencies.compile ++ AppDependencies.test,
+    majorVersion := 0,
+    scalaVersion := "2.12.11",
+    playDefaultPort := 12346,
+    libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
     TwirlKeys.templateImports ++= Seq(
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",

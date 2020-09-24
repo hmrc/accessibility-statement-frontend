@@ -32,12 +32,13 @@ class ServicesISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
   private val statementParser = new AccessibilityStatementParser
 
   "parsing the configuration files" should {
-    val sourceConfig = app.injector.instanceOf[SourceConfig]
+    val sourceConfig   = app.injector.instanceOf[SourceConfig]
     val servicesFinder = app.injector.instanceOf[ServicesFinder]
 
     servicesFinder.findAll().foreach { (service: String) =>
-      val source = sourceConfig.statementSource(service)
-      val statementTry = Try(statementParser.parseFromSource(source).valueOr(throw _))
+      val source       = sourceConfig.statementSource(service)
+      val statementTry =
+        Try(statementParser.parseFromSource(source).valueOr(throw _))
 
       s"enforce a correctly formatted accessibility statement yaml file for $service" in {
         statementTry must be a 'success
@@ -45,12 +46,14 @@ class ServicesISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
 
       s"enforce statement not contain missing milestones for $service" in {
         val statement: AccessibilityStatement = statementTry.get
-        val hasMilestones = statement.milestones.getOrElse(Seq.empty).nonEmpty
-        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant must be(true)
+        val hasMilestones                     = statement.milestones.getOrElse(Seq.empty).nonEmpty
+        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant must be(
+          true
+        )
       }
 
       s"enforce serviceDomain in the format of aaaa.bbbb.cccc for $service" in {
-        val domainRegex = "([a-z0-9-]*[\\.]*)*[a-z0-9]*"
+        val domainRegex                       = "([a-z0-9-]*[\\.]*)*[a-z0-9]*"
         val statement: AccessibilityStatement = statementTry.get
         statement.serviceDomain.matches(domainRegex) must be(true)
       }
@@ -62,19 +65,28 @@ class ServicesISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
 
       s"enforce serviceDescription exists for public statement $service" in {
         val statement: AccessibilityStatement = statementTry.get
-        statement.serviceDescription.trim.length > 0 || statement.statementVisibility == Draft must be(true)
+        statement.serviceDescription.trim.length > 0 || statement.statementVisibility == Draft must be(
+          true
+        )
       }
     }
   }
 
   "the file names in the directory" should {
     val servicesFinder = app.injector.instanceOf[ServicesFinder]
-    val appConfig = app.injector.instanceOf[AppConfig]
+    val appConfig      = app.injector.instanceOf[AppConfig]
 
     val servicesDirectoryPath =
-      new File(getClass.getClassLoader.getResource(appConfig.servicesDirectory).getPath)
-    val fileNames =
-      servicesDirectoryPath.listFiles().toSeq.filter(_.isFile).map(_.getName).sorted
+      new File(
+        getClass.getClassLoader.getResource(appConfig.servicesDirectory).getPath
+      )
+    val fileNames             =
+      servicesDirectoryPath
+        .listFiles()
+        .toSeq
+        .filter(_.isFile)
+        .map(_.getName)
+        .sorted
 
     fileNames.foreach { fileName =>
       s"end in extension .yml for $fileName" in {
@@ -83,7 +95,7 @@ class ServicesISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
 
       s"should match to a service returned by the service finder for $fileName" in {
         val serviceName = fileName.split("\\.").head
-        val services = servicesFinder.findAll()
+        val services    = servicesFinder.findAll()
         services.contains(serviceName) must be(true)
       }
     }
