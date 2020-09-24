@@ -48,7 +48,7 @@ class StatementPageSpec extends WordSpec with Matchers {
 
       val title = content.select("title")
       title.size       shouldBe 1
-      title.first.text shouldBe "Accessibility statement for fully accessible service name service - GOV.UK"
+      title.first.text shouldBe "Accessibility statement for fully accessible service name service — GOV.UK"
     }
 
     "return HTML containing the expected introduction with service URL in the body" in new Setup {
@@ -127,8 +127,8 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
-      contentAsString(statementPageHtml) should not include ("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
-      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>""")
+      contentAsString(statementPageHtml) should not include ("""<h3 class="govuk-heading-m">Non—accessible content</h3>""")
+      contentAsString(statementPageHtml) should not include ("""<p class="govuk-body">The content listed below is non—accessible for the following reasons.</p>""")
       contentAsString(statementPageHtml) should not include ("""<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
     }
 
@@ -188,7 +188,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """This service is partially compliant with the  <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>, due to the non-compliances listed below."""
+        """This service is partially compliant with the  <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>, due to the non—compliances listed below."""
       )
     }
 
@@ -197,9 +197,9 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml =
         statementPage(partiallyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
-      contentAsString(statementPageHtml) should include("""<h3 class="govuk-heading-m">Non-accessible content</h3>""")
+      contentAsString(statementPageHtml) should include("""<h3 class="govuk-heading-m">Non—accessible content</h3>""")
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">The content listed below is non-accessible for the following reasons.""")
+        """<p class="govuk-body">The content listed below is non—accessible for the following reasons.""")
       contentAsString(statementPageHtml) should include(
         """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>""")
 
@@ -310,7 +310,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         statementPage(automatedTestingServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """ <p class="govuk-body">The content listed below is non-accessible for the following reasons. This service was tested using automated tools only.</p>""")
+        """ <p class="govuk-body">The content listed below is non—accessible for the following reasons. This service was tested using automated tools only.</p>""")
     }
   }
 
