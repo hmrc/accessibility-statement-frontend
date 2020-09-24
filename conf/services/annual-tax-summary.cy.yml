@@ -1,0 +1,12 @@
+serviceName: Crynodeb treth blynyddol
+serviceHeaderName: Crynodeb treth blynyddol
+serviceDescription: |
+  Gall unigolion ac asiantau ddefnyddio’r gwasanaeth Crynodebau Treth Blynyddol i gael gwybod faint o Dreth Incwm a dalodd unigolyn mewn blynyddoedd treth blaenorol, a gweld dadansoddiad o sut y cafodd hyn ei wario gan y llywodraeth
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /annual-tax-summary
+contactFrontendServiceId: annual-tax-summary
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-24
+statementLastUpdatedDate: 2020-09-24
+
