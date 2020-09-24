@@ -128,11 +128,10 @@ end user discovered the accessibility issue.
 
 ## A note on contactFrontendServiceId
 
-contactFrontendServiceId is used to help associate accessibility queries from members of the public to your service 
-in Deskpro. This helps with the routing of tickets to your team if they cannot be dealt with by 1st or 2nd line support.
+contactFrontendServiceId helps identify your service when members of the general public report accessibility problems.
 
-If you are already integrating with contact-frontend to allow service users to report technical issues, you will find it 
-added as a querystring parameter `service` in URLs to contact-frontend.
+If your service is already integrating with contact-frontend's *Get help with this page* form, you will find it added 
+as a querystring parameter `service` in URLs to contact-frontend.
 
 If you look in your service's frontend source code, you should see URLs constructed similar to
 
@@ -144,7 +143,7 @@ or
 
 The contactFrontendServiceId here would be `foo`.
 
-If your service is *not* already integrating with contact-frontend or onboarded with Deskpro, we advise choosing an
+If your service is *not* already integrating with contact-frontend, we advise choosing an
  identifier that is specific to your service and unlikely to be used by any other service, avoiding any special characters
  or whitespace.
 
