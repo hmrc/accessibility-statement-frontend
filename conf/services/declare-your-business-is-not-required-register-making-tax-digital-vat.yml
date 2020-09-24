@@ -1,9 +1,9 @@
-serviceName: C118-1-1 Apply for AEO
-serviceHeaderName: C118-1-1 Apply for AEO
+serviceName: Declare your business is not required to register for Making Tax Digital for VAT
+serviceHeaderName: Declare your business is not required to register for Making Tax Digital for VAT
 serviceDescription: |
-  Use this form to apply for Authorised Economic Operator (AEO) status.
+  Use this form to tell HMRC your business is not required to register for Making Tax Digital for VAT.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/C118-1-1-Apply-for-AEO
+serviceUrl: /submissions/new-form/declare-your-business-is-not-required-register-making-tax-digital-vat
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

@@ -1,6 +1,7 @@
 serviceName: Challenge a Childcare Service application decision
 serviceHeaderName: Challenge a Childcare Service application decision
-serviceDescription: ''
+serviceDescription: |
+  Use this form to challenge a Childcare Service application decision.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/Challenge-a-childcare-decision
 contactFrontendServiceId: GForm

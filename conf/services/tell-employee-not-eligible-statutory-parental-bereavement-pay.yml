@@ -1,6 +1,7 @@
 serviceName: Tell the employee they are not eligible for Statutory Parental Bereavement Pay (SPBP1)
 serviceHeaderName: Tell the employee they are not eligible for Statutory Parental Bereavement Pay (SPBP1)
-serviceDescription: ''
+serviceDescription: |
+  Use this form to tell the employee they are not eligible for Statutory Parental Bereavement Pay.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/tell-employee-not-eligible-statutory-parental-bereavement-pay
 contactFrontendServiceId: GForm
@@ -28,6 +29,6 @@ milestones:
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2021-03-31
 serviceLastTestedDate: 2020-09-18
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23
