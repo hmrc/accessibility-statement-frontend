@@ -79,7 +79,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       val statementPageHtml = statementPage(fullyAccessibleServiceStatement, None, isWelshTranslationAvailable = false)
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas" target="_blank">report the accessibility problem (opens in a new window or tab)</a>.""")
+        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas" target="_blank">report the accessibility problem (opens in a new tab)</a>.""")
     }
 
     "return HTML containing report a problem information with a contact link and referrer URL" in new Setup {
@@ -91,7 +91,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas&amp;referrerUrl=came-from-here" target="_blank">report the accessibility problem (opens in a new window or tab)</a>""")
+        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas&amp;referrerUrl=came-from-here" target="_blank">report the accessibility problem (opens in a new tab)</a>""")
     }
 
     "return HTML containing the correctly formatted dates of when the service was tested" in new Setup {
