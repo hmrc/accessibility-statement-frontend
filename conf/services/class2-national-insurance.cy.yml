@@ -1,0 +1,11 @@
+serviceName: Diweddaru eich manylion hunangyflogaeth
+serviceHeaderName: Diweddaru eich manylion hunangyflogaeth
+serviceDescription: |
+  Mae’r gwasanaeth Diweddaru’ch manylion hunangyflogaeth yn galluogi unrhyw un sydd wedi cofrestru ar gyfer Hunanasesiad i wirio a diweddaru dyddiadau eu hunangyflogaeth. Mae hyn yn eu galluogi i fod ar y blaen gyda’u cyfraniadau Yswiriant Gwladol Dosbarth 2.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /national-insurance/class2/
+contactFrontendServiceId: c2ni
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23

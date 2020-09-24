@@ -9,5 +9,5 @@ serviceUrl: /paye/company-car
 contactFrontendServiceId: company-car
 complianceStatus: noncompliant
 statementVisibility: public
-statementCreatedDate: 2019-09-18
-statementLastUpdatedDate: 2019-09-18
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23
