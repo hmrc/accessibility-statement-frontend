@@ -23,7 +23,7 @@ import org.scalatest.TryValues
 import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.util.Try
@@ -58,6 +58,11 @@ class ServicesISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
       s"enforce serviceUrl starting with / for $service" in {
         val statement: AccessibilityStatement = statementTry.get
         statement.serviceUrl.startsWith("/") must be(true)
+      }
+
+      s"enforce serviceDescription exists for public statement $service" in {
+        val statement: AccessibilityStatement = statementTry.get
+        statement.serviceDescription.trim.length > 0 || statement.statementVisibility == Draft must be(true)
       }
     }
   }
