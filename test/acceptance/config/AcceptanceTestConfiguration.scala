@@ -24,11 +24,14 @@ object AcceptanceTestConfiguration {
   val defaultConfig: Config = config.getConfig("local")
   val envConfig: Config     = config.getConfig(env).withFallback(defaultConfig)
 
-  def url(service: String): String = s"$environmentHost:${servicePort(service)}${serviceRoute(service)}"
+  def url(service: String): String =
+    s"$environmentHost:${servicePort(service)}${serviceRoute(service)}"
 
   def environmentHost: String = envConfig.getString("services.host")
 
-  def servicePort(serviceName: String): String = envConfig.getString(s"services.$serviceName.port")
+  def servicePort(serviceName: String): String =
+    envConfig.getString(s"services.$serviceName.port")
 
-  def serviceRoute(serviceName: String): String = envConfig.getString(s"services.$serviceName.productionRoute")
+  def serviceRoute(serviceName: String): String =
+    envConfig.getString(s"services.$serviceName.productionRoute")
 }

@@ -30,34 +30,54 @@ import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import scala.concurrent.Future
 
 @Singleton
-class StatementController @Inject()(
+class StatementController @Inject() (
   statementsRepo: AccessibilityStatementsRepo,
   appConfig: AppConfig,
   mcc: MessagesControllerComponents,
   statementPage: StatementPage,
-  notFoundPage: NotFoundPage)
-    extends FrontendController(mcc)
+  notFoundPage: NotFoundPage
+) extends FrontendController(mcc)
     with Logging {
 
   implicit val config: AppConfig = appConfig
   import appConfig._
 
-  def getStatement(service: String, referrerUrl: Option[String]): Action[AnyContent] = Action.async {
-    implicit request =>
-      val isWelshTranslationAvailable = statementsRepo.existsByServiceKeyAndLanguage(service, Lang(cy))
+  def getStatement(
+    service: String,
+    referrerUrl: Option[String]
+  ): Action[AnyContent] =
+    Action.async { implicit request =>
+      val isWelshTranslationAvailable =
+        statementsRepo.existsByServiceKeyAndLanguage(service, Lang(cy))
 
-      getStatementInLanguage(service, language = messagesApi.preferred(request).lang) match {
+      getStatementInLanguage(
+        service,
+        language = messagesApi.preferred(request).lang
+      ) match {
         case Some((accessibilityStatement, language)) =>
           Future.successful(
-            Ok(getStatementPageInLanguage(accessibilityStatement, referrerUrl, language, isWelshTranslationAvailable)))
-        case None =>
+            Ok(
+              getStatementPageInLanguage(
+                accessibilityStatement,
+                referrerUrl,
+                language,
+                isWelshTranslationAvailable
+              )
+            )
+          )
+        case None                                     =>
           Future.successful(NotFound(notFoundPage()))
       }
-  }
+    }
 
-  private def getStatementInLanguage(service: String, language: Lang): Option[(AccessibilityStatement, Lang)] = {
+  private def getStatementInLanguage(
+    service: String,
+    language: Lang
+  ): Option[(AccessibilityStatement, Lang)] = {
     lazy val statementInDefaultLanguage = {
-      logger.warn(s"No statement found for service: $service for language $language")
+      logger.warn(
+        s"No statement found for service: $service for language $language"
+      )
       logger.warn(s"Checking for statement for $service using default language")
 
       statementsRepo.findByServiceKeyAndLanguage(service, defaultLanguage)
@@ -73,7 +93,8 @@ class StatementController @Inject()(
     statement: AccessibilityStatement,
     referrerUrl: Option[String],
     language: Lang,
-    isWelshTranslationAvailable: Boolean)(implicit request: Request[_]): HtmlFormat.Appendable = {
+    isWelshTranslationAvailable: Boolean
+  )(implicit request: Request[_]): HtmlFormat.Appendable = {
     implicit val messages: Messages = messagesApi.preferred(Seq(language))
 
     statementPage(statement, referrerUrl, isWelshTranslationAvailable)

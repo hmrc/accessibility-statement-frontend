@@ -19,6 +19,8 @@ package acceptance.pages
 import acceptance.config.AcceptanceTestConfiguration
 
 object NotFoundPage extends BasePage {
-  val url: String          = AcceptanceTestConfiguration.url("accessibility-statement-frontend") + "/non-existent-page"
-  val title                = "This page can’t be found"
+  val url: String = AcceptanceTestConfiguration.url(
+    "accessibility-statement-frontend"
+  ) + "/non-existent-page"
+  val title       = "This page can’t be found"
 }

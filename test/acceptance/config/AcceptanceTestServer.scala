@@ -36,12 +36,15 @@ trait AcceptanceTestServer extends TestSuiteMixin with GuiceFakeApplicationFacto
     .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
 
-  private def runSuiteWithTestServer(testName: Option[String], args: Args): Status = {
+  private def runSuiteWithTestServer(
+    testName: Option[String],
+    args: Args
+  ): Status = {
     val testServer = TestServer(port, app)
     testServer.start()
     try {
       val status = super.run(testName, args)
-      status.whenCompleted { _ => testServer.stop() }
+      status.whenCompleted(_ => testServer.stop())
       status
     } catch {
       case exception: Throwable =>
@@ -51,15 +54,12 @@ trait AcceptanceTestServer extends TestSuiteMixin with GuiceFakeApplicationFacto
   }
 
   /**
-   * Invoke suite with a test server if running locally.
-   * See org.scalatest.SuiteMixin.run
-   *
-   */
-  abstract override def run(testName: Option[String], args: Args): Status = {
-    if (env == "local") {
+    * Invoke suite with a test server if running locally.
+    * See org.scalatest.SuiteMixin.run
+    */
+  abstract override def run(testName: Option[String], args: Args): Status =
+    if (env == "local")
       runSuiteWithTestServer(testName, args)
-    } else {
+    else
       super.run(testName, args)
-    }
-  }
 }

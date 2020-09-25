@@ -53,10 +53,13 @@ case class AccessibilityStatement(
     case _                 => false
   }
 
-  def compare(that: AccessibilityStatement): Int = this.serviceName.compare(that.serviceName)
+  def compare(that: AccessibilityStatement): Int =
+    this.serviceName.compare(that.serviceName)
 }
 
 object AccessibilityStatement {
-  implicit val e: Encoder[AccessibilityStatement] = deriveEncoder[AccessibilityStatement]
-  implicit val d: Decoder[AccessibilityStatement] = deriveDecoder[AccessibilityStatement]
+  implicit val e: Encoder[AccessibilityStatement] =
+    deriveEncoder[AccessibilityStatement]
+  implicit val d: Decoder[AccessibilityStatement] =
+    deriveDecoder[AccessibilityStatement]
 }

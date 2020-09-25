@@ -19,7 +19,7 @@ package unit.parsers
 import java.util.{Calendar, GregorianCalendar}
 import org.scalatest.{EitherValues, Matchers, WordSpec}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public, NoCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import scala.io.Source
 
@@ -27,22 +27,22 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
   private val parser = new AccessibilityStatementParser
 
   private val fullyAccessibleStatement = AccessibilityStatement(
-    serviceName       = "Send your loan charge details",
+    serviceName = "Send your loan charge details",
     serviceHeaderName = "Send your loan charge details",
     serviceDescription =
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
-    serviceDomain                = "www.tax.service.gov.uk",
-    serviceUrl                   = "/disguised-remuneration",
-    contactFrontendServiceId     = "disguised-remuneration",
-    complianceStatus             = FullCompliance,
-    accessibilityProblems        = None,
-    milestones                   = None,
-    automatedTestingOnly         = None,
-    statementVisibility          = Draft,
-    serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
-    statementCreatedDate         = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
-    statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails                 = None
+    serviceDomain = "www.tax.service.gov.uk",
+    serviceUrl = "/disguised-remuneration",
+    contactFrontendServiceId = "disguised-remuneration",
+    complianceStatus = FullCompliance,
+    accessibilityProblems = None,
+    milestones = None,
+    automatedTestingOnly = None,
+    statementVisibility = Draft,
+    serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
+    statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+    statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
+    automatedTestingDetails = None
   )
 
   "parse" should {
@@ -79,7 +79,9 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(fullyAccessibleStatement.copy(statementVisibility = Public))
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(statementVisibility = Public)
+      )
     }
 
     "parse a partially accessible statement" in {
@@ -114,35 +116,40 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
         AccessibilityStatement(
-          serviceName       = "Online Payments",
+          serviceName = "Online Payments",
           serviceHeaderName = "Pay your tax",
           serviceDescription =
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
-          serviceDomain            = "www.tax.service.gov.uk",
-          serviceUrl               = "/pay",
+          serviceDomain = "www.tax.service.gov.uk",
+          serviceUrl = "/pay",
           contactFrontendServiceId = "pay-frontend",
-          complianceStatus         = PartialCompliance,
-          automatedTestingOnly     = None,
-          accessibilityProblems    = Some(Seq(
-            "at one point we display location information on a map - however, there’s also a postcode lookup tool ...",
-            "At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users ..."
-          )),
-          milestones = Some(Seq(
-            Milestone(
-              "We use a Barclaycard iFrame to take the card details and payments for the charge ...",
-              new GregorianCalendar(2020, Calendar.JULY, 31).getTime
-            ),
-            Milestone(
-              "We use titles on our webpages in order to describe the topic or purpose of the page that the user ...",
-              new GregorianCalendar(2020, Calendar.MARCH, 31).getTime
+          complianceStatus = PartialCompliance,
+          automatedTestingOnly = None,
+          accessibilityProblems = Some(
+            Seq(
+              "at one point we display location information on a map - however, there’s also a postcode lookup tool ...",
+              "At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users ..."
             )
-          )),
-          statementVisibility          = Draft,
-          serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
-          statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails      = None
-        ))
+          ),
+          milestones = Some(
+            Seq(
+              Milestone(
+                "We use a Barclaycard iFrame to take the card details and payments for the charge ...",
+                new GregorianCalendar(2020, Calendar.JULY, 31).getTime
+              ),
+              Milestone(
+                "We use titles on our webpages in order to describe the topic or purpose of the page that the user ...",
+                new GregorianCalendar(2020, Calendar.MARCH, 31).getTime
+              )
+            )
+          ),
+          statementVisibility = Draft,
+          serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
+          statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          automatedTestingDetails = None
+        )
+      )
     }
 
     "parse a partially accessible statement with automated testing" in {
@@ -179,35 +186,40 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
         AccessibilityStatement(
-          serviceName       = "Online Payments",
+          serviceName = "Online Payments",
           serviceHeaderName = "Pay your tax",
           serviceDescription =
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
-          serviceDomain            = "www.tax.service.gov.uk",
-          serviceUrl               = "/pay",
+          serviceDomain = "www.tax.service.gov.uk",
+          serviceUrl = "/pay",
           contactFrontendServiceId = "pay-frontend",
-          complianceStatus         = PartialCompliance,
-          automatedTestingOnly     = Some(true),
-          accessibilityProblems    = Some(Seq(
-            "at one point we display location information on a map - however, there’s also a postcode lookup tool ...",
-            "At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users ..."
-          )),
-          milestones = Some(Seq(
-            Milestone(
-              "We use a Barclaycard iFrame to take the card details and payments for the charge ...",
-              new GregorianCalendar(2020, Calendar.JULY, 31).getTime
-            ),
-            Milestone(
-              "We use titles on our webpages in order to describe the topic or purpose of the page that the user ...",
-              new GregorianCalendar(2020, Calendar.MARCH, 31).getTime
+          complianceStatus = PartialCompliance,
+          automatedTestingOnly = Some(true),
+          accessibilityProblems = Some(
+            Seq(
+              "at one point we display location information on a map - however, there’s also a postcode lookup tool ...",
+              "At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users ..."
             )
-          )),
-          statementVisibility          = Draft,
-          serviceLastTestedDate        = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
-          statementCreatedDate         = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          statementLastUpdatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails      = Some("This has only been tested via automated tools."),
-        ))
+          ),
+          milestones = Some(
+            Seq(
+              Milestone(
+                "We use a Barclaycard iFrame to take the card details and payments for the charge ...",
+                new GregorianCalendar(2020, Calendar.JULY, 31).getTime
+              ),
+              Milestone(
+                "We use titles on our webpages in order to describe the topic or purpose of the page that the user ...",
+                new GregorianCalendar(2020, Calendar.MARCH, 31).getTime
+              )
+            )
+          ),
+          statementVisibility = Draft,
+          serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
+          statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          automatedTestingDetails = Some("This has only been tested via automated tools.")
+        )
+      )
     }
 
     "parse a non compliant service statement" in {
@@ -227,37 +239,41 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
         AccessibilityStatement(
-          serviceName       = "Discounted Doughnuts",
+          serviceName = "Discounted Doughnuts",
           serviceHeaderName = "Discounts",
-          serviceDescription =
-            "This is a non compliant service. People can eat doughnuts.",
-          serviceDomain            = "www.tax.service.gov.uk",
-          serviceUrl               = "/discounted-doughnuts",
+          serviceDescription = "This is a non compliant service. People can eat doughnuts.",
+          serviceDomain = "www.tax.service.gov.uk",
+          serviceUrl = "/discounted-doughnuts",
           contactFrontendServiceId = "discounted-doughnuts",
-          complianceStatus         = NoCompliance,
-          automatedTestingOnly     = None,
-          accessibilityProblems    = None,
-          milestones               = None,
-          statementVisibility      = Draft,
-          serviceLastTestedDate    = None,
-          statementCreatedDate     = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
+          complianceStatus = NoCompliance,
+          automatedTestingOnly = None,
+          accessibilityProblems = None,
+          milestones = None,
+          statementVisibility = Draft,
+          serviceLastTestedDate = None,
+          statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails  = None
-        ))
+          automatedTestingDetails = None
+        )
+      )
     }
 
     "let Circe parsing errors throw with malformed YAML" in {
       val malformed = """- 1
             |2""".stripMargin
       val parsed    = parser.parse(malformed)
-      parsed.left.value.getMessage should startWith("while scanning a simple key")
+      parsed.left.value.getMessage should startWith(
+        "while scanning a simple key"
+      )
     }
 
     "let Circe decoding errors throw when input misses fields" in {
       val malformed = """- 1
                         |- 2""".stripMargin
       val parsed    = parser.parse(malformed)
-      parsed.left.value.getMessage should startWith("Attempt to decode value on failed cursor")
+      parsed.left.value.getMessage should startWith(
+        "Attempt to decode value on failed cursor"
+      )
     }
 
     "let Java parsing errors throw when date input is unparseable" in {
@@ -277,7 +293,9 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
       val parsed = parser.parse(problemStatementYaml)
 
-      parsed.left.value.getMessage should startWith("java.text.ParseException: Unparseable date: \"2019-x9-23\"")
+      parsed.left.value.getMessage should startWith(
+        "java.text.ParseException: Unparseable date: \"2019-x9-23\""
+      )
     }
 
     "throw a DecodingError if the compliance status is incorrect" in {
@@ -297,7 +315,9 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
       val parsed = parser.parse(problemStatementYaml)
 
-      parsed.left.value.getMessage should startWith("Unrecognised compliance status \"unrecognised\"")
+      parsed.left.value.getMessage should startWith(
+        "Unrecognised compliance status \"unrecognised\""
+      )
     }
 
     "throw an error if the serviceName is missing" in {
@@ -316,7 +336,9 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
       val parsed = parser.parse(problemStatementYaml)
 
-      parsed.left.value.getMessage should startWith("String: DownField(serviceName)")
+      parsed.left.value.getMessage should startWith(
+        "String: DownField(serviceName)"
+      )
     }
 
     "throw an error if complianceStatus is missing" in {
@@ -336,14 +358,17 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
       val parsed = parser.parse(problemStatementYaml)
 
-      parsed.left.value.getMessage should startWith("String: DownField(complianceStatus)")
+      parsed.left.value.getMessage should startWith(
+        "String: DownField(complianceStatus)"
+      )
     }
 
     "return a wrapped error if the file is not found" in {
-      val filename = "non-existent-service.yml"
-      val servicesYaml = StatementSource(Source.fromResource(filename), filename)
-      val parsed = parser.parseFromSource(servicesYaml)
-      parsed.isLeft shouldBe true
+      val filename     = "non-existent-service.yml"
+      val servicesYaml =
+        StatementSource(Source.fromResource(filename), filename)
+      val parsed       = parser.parseFromSource(servicesYaml)
+      parsed.isLeft                                        shouldBe true
       parsed.left.value.isInstanceOf[NullPointerException] shouldBe true
     }
   }

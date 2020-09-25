@@ -20,7 +20,7 @@ import java.io.File
 import javax.inject.Inject
 import play.api.Logging
 
-case class ServicesClasspathFinder @Inject()(appConfig: AppConfig) extends ServicesFinder with Logging {
+case class ServicesClasspathFinder @Inject() (appConfig: AppConfig) extends ServicesFinder with Logging {
   import appConfig._
 
   def findAll: Seq[String] = {
@@ -30,20 +30,29 @@ case class ServicesClasspathFinder @Inject()(appConfig: AppConfig) extends Servi
       case yamlFilename(fileNameWithoutExtension, welshExtensionOrNull) =>
         val welshExtension = Option(welshExtensionOrNull).getOrElse("")
         Seq(s"$fileNameWithoutExtension$welshExtension")
-      case fileName =>
+      case fileName                                                     =>
         logger.warn(
-          s"""File $fileName contains illegal characters or missing a .yml extension, please use lower case letters, numbers or dashes only.""")
+          s"""File $fileName contains illegal characters or missing a .yml extension, please use lower case letters, numbers or dashes only."""
+        )
         Seq.empty
     }
   }
 
   private def getFilenames(): Seq[String] = {
-    val servicesDirectoryPath = new File(getClass.getClassLoader.getResource(servicesDirectory).getPath)
-    if (servicesDirectoryPath.isDirectory) {
-      servicesDirectoryPath.listFiles().toSeq.filter(_.isFile).map(_.getName).sorted
-    } else {
+    val servicesDirectoryPath = new File(
+      getClass.getClassLoader.getResource(servicesDirectory).getPath
+    )
+    if (servicesDirectoryPath.isDirectory)
+      servicesDirectoryPath
+        .listFiles()
+        .toSeq
+        .filter(_.isFile)
+        .map(_.getName)
+        .sorted
+    else {
       logger.error(
-        s"Services directory $servicesDirectory is not a directory, please check the services.directory parameter in application.conf")
+        s"Services directory $servicesDirectory is not a directory, please check the services.directory parameter in application.conf"
+      )
       Seq.empty
     }
   }

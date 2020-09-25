@@ -26,7 +26,8 @@ object Visibility {
     case "draft"  => Right(Draft)
     case status   => Left(s"""Unrecognised visibility "$status"""")
   }
-  implicit val encoder: Encoder[Visibility] = Encoder.encodeString.contramap[Visibility](_.toString)
+  implicit val encoder: Encoder[Visibility] =
+    Encoder.encodeString.contramap[Visibility](_.toString)
 }
 
 case object Public extends Visibility {

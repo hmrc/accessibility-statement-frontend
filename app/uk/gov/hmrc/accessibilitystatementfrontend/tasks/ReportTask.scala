@@ -26,7 +26,9 @@ import play.api.inject.guice.GuiceApplicationBuilder
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 
-class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRepo) {
+class ReportTask @Inject() (
+  accessibilityStatementRepo: AccessibilityStatementsRepo
+) {
   private val isoDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd")
   private val mkRow         = (cells: Seq[String]) => cells.mkString("\t")
 
@@ -53,35 +55,43 @@ class ReportTask @Inject()(accessibilityStatementRepo: AccessibilityStatementsRe
 
   private def writeRows(filename: String): Unit = {
     val reportWriter = new PrintWriter(new File(s"target/$filename"))
-    try {
-      for (row <- getRows) {
-        reportWriter.println(row)
-      }
-    } finally {
-      reportWriter.close()
-    }
+    try for (row <- getRows)
+      reportWriter.println(row)
+    finally reportWriter.close()
   }
 
-  private def getRows = getHeader +: accessibilityStatementRepo.findAll.map(getRow)
+  private def getRows =
+    getHeader +: accessibilityStatementRepo.findAll.map(getRow)
 
   private def getHeader = mkRow(headerCells)
 
-  private def getRow(statementTuple: (String, Lang, AccessibilityStatement)): String =
+  private def getRow(
+    statementTuple: (String, Lang, AccessibilityStatement)
+  ): String =
     mkRow(getRowCells(statementTuple))
 
-  private def getRowCells(statementTuple: (String, Lang, AccessibilityStatement)): Seq[String] = {
+  private def getRowCells(
+    statementTuple: (String, Lang, AccessibilityStatement)
+  ): Seq[String] = {
     val (serviceKey, language, statement) = statementTuple
 
     import statement._
 
-    val milestoneCount = milestones.getOrElse(Seq.empty).size.toString
-    val problemsCount  = accessibilityProblems.getOrElse(Seq.empty).size.toString
-    val lastTestedDate = serviceLastTestedDate.map(getIsoDate).getOrElse("")
+    val milestoneCount        = milestones.getOrElse(Seq.empty).size.toString
+    val problemsCount         = accessibilityProblems.getOrElse(Seq.empty).size.toString
+    val lastTestedDate        = serviceLastTestedDate.map(getIsoDate).getOrElse("")
     val earliestMilestoneDate =
-      milestones.getOrElse(Seq.empty).map(_.date).sorted.headOption.map(getIsoDate).getOrElse("")
-    val languageCode       = language.code
-    val url                = s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
-    val serviceAbsoluteUrl = s"https://$serviceDomain$serviceUrl"
+      milestones
+        .getOrElse(Seq.empty)
+        .map(_.date)
+        .sorted
+        .headOption
+        .map(getIsoDate)
+        .getOrElse("")
+    val languageCode          = language.code
+    val url                   =
+      s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
+    val serviceAbsoluteUrl    = s"https://$serviceDomain$serviceUrl"
 
     Seq(
       url,
