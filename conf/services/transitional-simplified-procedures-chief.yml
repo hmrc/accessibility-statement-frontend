@@ -1,6 +1,7 @@
 serviceName: Activate a badge to make CHIEF declarations
 serviceHeaderName: Activate a badge to make CHIEF declarations
-serviceDescription: ''
+serviceDescription: |
+  Use this form to activate a badge to make CHIEF declarations.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/transitional-simplified-procedures-chief
 contactFrontendServiceId: GForm
@@ -28,6 +29,6 @@ milestones:
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2021-03-31
 serviceLastTestedDate: 2020-09-18
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23

@@ -1,6 +1,7 @@
 serviceName: Tell HMRC your organisation failed to prevent the facilitation of tax evasion
 serviceHeaderName: Tell HMRC your organisation failed to prevent the facilitation of tax evasion
-serviceDescription: ''
+serviceDescription: |
+  Use this form to tell HMRC your organisation failed to prevent the facilitation of tax evasion.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/tell-hmrc-your-organisation-failed-to-prevent-the-facilitation-of-tax-evasion
 contactFrontendServiceId: GForm
@@ -28,6 +29,6 @@ milestones:
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2021-03-31
 serviceLastTestedDate: 2020-09-18
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23

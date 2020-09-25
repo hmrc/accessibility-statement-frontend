@@ -1,9 +1,9 @@
-serviceName: C118-1-1 Apply for AEO
-serviceHeaderName: C118-1-1 Apply for AEO
+serviceName: Report a suspicious HMRC phone call
+serviceHeaderName: Report a suspicious HMRC phone call
 serviceDescription: |
-  Use this form to apply for Authorised Economic Operator (AEO) status.
+  Use this form to report a suspicious HMRC phone call.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/C118-1-1-Apply-for-AEO
+serviceUrl: /submissions/new-form/report-a-suspicious-HMRC-phone-call
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
