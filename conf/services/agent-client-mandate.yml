@@ -3,7 +3,7 @@ serviceHeaderName: Submit and view your ATED returns
 serviceDescription: |
   The agent client mandate service allows agents to manage tax accounts and subscriptions on behalf of their clients.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /mandate
+serviceUrl: /mandate/agent/summary
 contactFrontendServiceId: agent-client-mandate-frontend
 complianceStatus: noncompliant
 statementVisibility: public
