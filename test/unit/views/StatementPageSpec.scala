@@ -298,13 +298,13 @@ class StatementPageSpec extends WordSpec with Matchers {
         )
 
       contentAsString(statementPageHtml) should include(
-        """<h3 class="govuk-heading-m">Non-accessible content</h3>"""
+        """<h3 class="govuk-heading-m">Non‐accessible content</h3>"""
       )
       contentAsString(statementPageHtml) should include(
         """<p class="govuk-body">The content listed below is non-accessible for the following reasons."""
       )
       contentAsString(statementPageHtml) should include(
-        """<h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>"""
+        """<h4 class="govuk-heading-s">Non‐compliance with the accessibility regulations</h4>"""
       )
 
       contentAsString(statementPageHtml) should include(
