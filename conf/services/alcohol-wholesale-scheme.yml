@@ -4,7 +4,7 @@ serviceDescription: |
   The Alcohol Wholesaler Registration Scheme (AWRS) approves businesses to sell alcohol wholesale to other businesses.
   Approved wholesalers are given an AWRS Unique Reference Number (URN).
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /alcohol-wholesale-scheme
+serviceUrl: /alcohol-wholesale-scheme/landing-page
 contactFrontendServiceId: AWRS
 complianceStatus: noncompliant
 statementVisibility: public
