@@ -23,26 +23,37 @@ import org.scalatest.{BeforeAndAfterAll, Matchers, TryValues, WordSpec}
 
 import scala.util.Try
 
-class AcceptanceTestServerSpec extends WordSpec with AcceptanceTestServer with Matchers with TryValues with BeforeAndAfterAll {
+class AcceptanceTestServerSpec
+    extends WordSpec
+    with AcceptanceTestServer
+    with Matchers
+    with TryValues
+    with BeforeAndAfterAll {
   override lazy val port = 6001
 
-  val url = new URL(s"http://localhost:$port/accessibility-statement/disguised-remuneration")
+  val url                    = new URL(
+    s"http://localhost:$port/accessibility-statement/disguised-remuneration"
+  )
   val expectedFailureMessage = "Connection refused"
 
   private def getTestPageResponseCode = {
     val con = url.openConnection().asInstanceOf[HttpURLConnection]
 
-    try con.getResponseCode finally con.disconnect()
+    try con.getResponseCode
+    finally con.disconnect()
   }
 
   override def beforeAll() {
-    val connectException = the[ConnectException] thrownBy getTestPageResponseCode
+    val connectException =
+      the[ConnectException] thrownBy getTestPageResponseCode
     connectException.getMessage should include(expectedFailureMessage)
   }
 
   override def afterAll() {
-    val connectException = the[ConnectException] thrownBy getTestPageResponseCode
-    connectException.getMessage should include(expectedFailureMessage)  }
+    val connectException =
+      the[ConnectException] thrownBy getTestPageResponseCode
+    connectException.getMessage should include(expectedFailureMessage)
+  }
 
   "TestServer" should {
     "create an HTTP endpoint if running locally" in {
@@ -50,15 +61,16 @@ class AcceptanceTestServerSpec extends WordSpec with AcceptanceTestServer with M
         getTestPageResponseCode
       }
 
-      if (env == "local") {
+      if (env == "local")
         connectionTry.success.value should be(200)
-      }
     }
 
     "not create an HTTP endpoint if not running locally" in {
       if (env != "local") {
-        val connectException = the[ConnectException] thrownBy getTestPageResponseCode
-        connectException.getMessage should include(expectedFailureMessage)      }
+        val connectException =
+          the[ConnectException] thrownBy getTestPageResponseCode
+        connectException.getMessage should include(expectedFailureMessage)
+      }
     }
   }
 }

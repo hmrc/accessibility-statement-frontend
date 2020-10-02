@@ -1,0 +1,11 @@
+serviceName: Claim tax relief on expenses for working from home
+serviceHeaderName: Claim tax relief on expenses for working from home
+serviceDescription: |
+  This service allows individuals to claim tax relief on expenses for working from home because of coronavirus (COVID-19).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /employee-working-from-home-expenses
+contactFrontendServiceId: EEWFH
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-28
+statementLastUpdatedDate: 2020-09-28

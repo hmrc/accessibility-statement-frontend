@@ -1,0 +1,13 @@
+serviceName: Stamp Duty Land Tax Calculator
+serviceHeaderName: Stamp Duty Land Tax Calculator
+serviceDescription: |
+  The Stamp Duty Land Tax (SDLT) calculator service works out the tax payable for most transactions when you buy a
+   property or land over a certain price in England and Northern Ireland. There are different rules for a corporate
+   body purchasing residential property over a certain price.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /calculate-stamp-duty-land-tax
+contactFrontendServiceId: SDLTC
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18

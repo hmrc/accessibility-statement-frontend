@@ -1,0 +1,21 @@
+serviceName: Take-home pay calculator
+serviceHeaderName: Estimate your take-home pay
+serviceDescription: This service lets people calculate their take-home pay.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /estimate-paye-take-home-pay/your-pay
+contactFrontendServiceId: PayeTaxCalculator
+complianceStatus: partial
+accessibilityProblems:
+  - A timeout warning is not provided to users, and no option to extend the session is available.
+  - There is an instance whereby there are duplicated headings on a single page.
+  - On the 'How much do you get paid?' screen, the 'back' link provided is placed within the Nav landmark; this does not comply with GOV.UK Design System guidelines.
+  - On the 'How much do you get paid?' screen, the error handling message does not match that of the error summary presented at the top of the page.
+milestones:
+  - description: A timeout warning is not provided to users, and no option to extend the session is available.
+    date: 2020-12-31
+  - description: There is an instance whereby there are duplicated headings on a single page.
+    date: 2020-12-31
+serviceLastTestedDate: 2020-08-18
+statementVisibility: public
+statementCreatedDate: 2020-09-09
+statementLastUpdatedDate: 2020-09-21

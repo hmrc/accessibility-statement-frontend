@@ -1,4 +1,3 @@
-import uk.gov.hmrc.SbtArtifactory
 import uk.gov.hmrc.sbtdistributables.SbtDistributablesPlugin.publishingSettings
 import play.sbt.PlayImport.PlayKeys.playDefaultPort
 import sbt.Keys.testOptions
@@ -15,7 +14,7 @@ lazy val unitTestSettings =
       addTestReportOption(Test, "test-reports")
     )
 
-lazy val IntegrationTest = config("it") extend (Test)
+lazy val IntegrationTest         = config("it") extend Test
 lazy val integrationTestSettings =
   inConfig(IntegrationTest)(Defaults.testTasks) ++
     Seq(
@@ -23,7 +22,7 @@ lazy val integrationTestSettings =
       addTestReportOption(IntegrationTest, "it-test-reports")
     )
 
-lazy val AcceptanceTest = config("acceptance") extend (Test)
+lazy val AcceptanceTest         = config("acceptance") extend Test
 lazy val acceptanceTestSettings =
   inConfig(AcceptanceTest)(Defaults.testTasks) ++
     Seq(
@@ -33,7 +32,7 @@ lazy val acceptanceTestSettings =
       addTestReportOption(AcceptanceTest, "acceptance-test-reports")
     )
 
-lazy val ZapTest = config("zap") extend (Test)
+lazy val ZapTest         = config("zap") extend Test
 lazy val zapTestSettings =
   inConfig(ZapTest)(Defaults.testTasks) ++
     Seq(
@@ -43,15 +42,14 @@ lazy val zapTestSettings =
     )
 
 lazy val microservice = Project(appName, file("."))
-  .enablePlugins(play.sbt.PlayScala, SbtAutoBuildPlugin, SbtGitVersioning, SbtDistributablesPlugin, SbtArtifactory)
+  .enablePlugins(play.sbt.PlayScala, SbtAutoBuildPlugin, SbtGitVersioning, SbtDistributablesPlugin)
   .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
   .configs(AcceptanceTest, IntegrationTest, ZapTest)
   .settings(
-    majorVersion                     := 0,
-    scalaVersion                     := "2.12.11",
-    playDefaultPort                  := 12346,
-    libraryDependencies              ++= AppDependencies.compile ++ AppDependencies.test,
-    resolvers += "hmrc-releases" at "https://artefacts.tax.service.gov.uk/artifactory/hmrc-releases/",
+    majorVersion := 0,
+    scalaVersion := "2.12.11",
+    playDefaultPort := 12346,
+    libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
     TwirlKeys.templateImports ++= Seq(
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
@@ -79,3 +77,6 @@ lazy val microservice = Project(appName, file("."))
 
 val generateFakeStatements = inputKey[Unit]("Generate fake accessibility statements.")
 fullRunInputTask(generateFakeStatements, Test, "helpers.FakeStatementGenerator")
+
+val generateReport = inputKey[Unit]("Generate a report on the accessibility statements.")
+fullRunInputTask(generateReport, Compile, "uk.gov.hmrc.accessibilitystatementfrontend.tasks.ReportTask")

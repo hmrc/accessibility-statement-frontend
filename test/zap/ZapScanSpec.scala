@@ -23,9 +23,12 @@ import uk.gov.hmrc.zap.ZapTest
 import uk.gov.hmrc.zap.config.ZapConfiguration
 
 class ZapScanSpec extends WordSpec with ZapTest with AcceptanceTestServer {
-  val zapConfig: Config = ConfigFactory.load().getConfig("zap-automation-config")
+  val zapConfig: Config =
+    ConfigFactory.load().getConfig("zap-automation-config")
 
-  override val zapConfiguration: ZapConfiguration = new ZapConfiguration(zapConfig)
+  override val zapConfiguration: ZapConfiguration = new ZapConfiguration(
+    zapConfig
+  )
 
   "Kicking off the zap scan" should {
     "should complete successfully" in {

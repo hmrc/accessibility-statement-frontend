@@ -34,21 +34,22 @@ import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.mvc.Cookie
 
 class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
-  private val fakeRequest = FakeRequest("GET", "/")
+  private val fakeRequest  = FakeRequest("GET", "/")
   private val welshRequest = fakeRequest.withCookies(
     Cookie(
       "PLAY_LANG",
       "cy"
-    ))
+    )
+  )
 
   override def fakeApplication(): Application =
     new GuiceApplicationBuilder()
-      .overrides(bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo])
+      .overrides(
+        bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo]
+      )
       .build()
 
   private val controller = app.injector.instanceOf[StatementController]
-
-  def asDocument(html: Html): Document = Jsoup.parse(html.toString())
 
   "GET /test-service" should {
     "return 200" in {
@@ -81,7 +82,8 @@ class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar w
     }
 
     "fallback to the English statement if no Welsh translation is available" in {
-      val result  = controller.getStatement("english-service", None)(welshRequest)
+      val result  =
+        controller.getStatement("english-service", None)(welshRequest)
       val content = Jsoup.parse(contentAsString(result))
 
       val headers = content.select("h1")

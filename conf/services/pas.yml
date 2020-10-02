@@ -1,0 +1,31 @@
+serviceName: PAYE Penalties and Appeals Service (PAS)
+serviceHeaderName: PAS
+serviceDescription: "The Pay As You Earn (PAYE) Penalties and Appeals Service (PAS) allows users to administer penalties and appeals, view penalty information and register appeals."
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pas
+contactFrontendServiceId: hmrc-pas
+complianceStatus: partial
+accessibilityProblems:
+  - the service times out without giving users due warning or the option to extend their session
+  - some of the instructions for the service are only shown in images rather than explained in text
+  - some page titles, headings and links are not descriptive
+  - not all labels and functions have been put in place for keyboard navigation and screen readers, so the information given to users may be incomplete, in the wrong order or unclear
+  - pages cannot be formatted as a single column, which means users may have to scroll horizontally to find the information they need
+  - users cannot skip to the main content when using keyboard navigation or a screen reader
+milestones:
+  - description: "The service times out without giving users due warning or the option to extend their session, which can cause issues for people that cannot complete the task within the time limit. This doesn’t meet WCAG 2.1 success criterion 2.2.1 (timing adjustable)."
+    date: 2021-09-23
+  - description: "Some of the instructions for the service are only shown in images rather than explained in text, which makes the service harder to use for people with visual impairments. This doesn’t meet WCAG 2.1 success criteria 1.1.1 (non-text content) or 1.3.3 (sensory characteristics)."
+    date: 2021-09-23
+  - description: "Some page titles, headings and links are not descriptive, so users may find it harder to navigate the service using assistive technologies. This doesn’t meet WCAG 2.1 success criteria 2.4.2 (page titled), 2.4.4 (link purpose) or 2.4.6 (headings and labels)."
+    date: 2021-09-23
+  - description: "Not all labels and functions have been put in place for keyboard navigation and screen readers, so the information given to users may be incomplete, in the wrong order or unclear. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships), 2.4.3 (focus order), 2.4.7 (focus visible) or 4.1.3 (status messages)."
+    date: 2021-09-23
+  - description: "Pages cannot be formatted as a single column, which means users may have to scroll horizontally to find the information they need. This doesn’t meet WCAG 2.1 success criterion 1.4.10 (reflow)."
+    date: 2021-09-23
+  - description: "Users cannot always skip to the main content when using keyboard navigation or a screen reader, which means these users may have to go through the same information on multiple pages, for example, headers and menu links. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (bypass blocks)."
+    date: 2021-09-23
+serviceLastTestedDate: 2020-07-13
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23

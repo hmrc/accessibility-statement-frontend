@@ -26,62 +26,91 @@ import play.api.i18n.Lang
 
 trait AccessibilityStatementsRepo {
   def existsByServiceKeyAndLanguage(serviceKey: String, language: Lang): Boolean
-  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)]
+  def findByServiceKeyAndLanguage(
+    serviceKey: String,
+    language: Lang
+  ): Option[(AccessibilityStatement, Lang)]
+  def findAll: Seq[(String, Lang, AccessibilityStatement)]
 }
 
 @Singleton
-case class AccessibilityStatementsSourceRepo @Inject()(
+case class AccessibilityStatementsSourceRepo @Inject() (
   appConfig: AppConfig,
   servicesFinder: ServicesFinder,
   statementParser: AccessibilityStatementParser,
-  sourceConfig: SourceConfig)
-    extends AccessibilityStatementsRepo
+  sourceConfig: SourceConfig
+) extends AccessibilityStatementsRepo
     with Logging {
   import appConfig._
   import sourceConfig._
-  import servicesFinder._
+
+  implicit val langOrdering: Ordering[Lang] = (l1, l2) => l1.code compare l2.code
 
   type RepoKey   = (String, String)
   type RepoEntry = (RepoKey, AccessibilityStatement)
 
   private val accessibilityStatements: Map[RepoKey, AccessibilityStatement] = {
     logger.info(s"Starting to parse accessibility statements")
-    val services: Seq[String] = findAll()
+    val services: Seq[String] = servicesFinder.findAll()
 
     logger.info(s"Found ${services.size} accessibility statements")
 
     val statements: Seq[RepoEntry] = services flatMap { serviceFileName =>
       logger.info(s"Parsing accessibility statement $serviceFileName")
 
-      val (serviceName, languageCode) = serviceFileNameToNameAndLanguage(serviceFileName)
+      val (serviceName, languageCode) =
+        serviceFileNameToNameAndLanguage(serviceFileName)
       val statement                   = getStatement(serviceFileName)
 
-      if (isStatementVisible(statement)) {
+      if (isStatementVisible(statement))
         Seq((serviceName, languageCode) -> statement)
-      } else {
-        logger.info(s"Skipping accessibility statement $serviceFileName as marked as draft")
+      else {
+        logger.info(
+          s"Skipping accessibility statement $serviceFileName as marked as draft"
+        )
         Seq.empty
       }
     }
 
-    logger.info(s"Accessibility statements parsed, total number of parsed statements is: ${statements.size}")
+    logger.info(
+      s"Accessibility statements parsed, total number of parsed statements is: ${statements.size}"
+    )
     statements.toMap
   }
 
-  def existsByServiceKeyAndLanguage(serviceKey: String, language: Lang): Boolean =
+  def existsByServiceKeyAndLanguage(
+    serviceKey: String,
+    language: Lang
+  ): Boolean =
     accessibilityStatements.isDefinedAt((serviceKey, language.code))
 
-  def findByServiceKeyAndLanguage(serviceKey: String, language: Lang): Option[(AccessibilityStatement, Lang)] =
+  def findByServiceKeyAndLanguage(
+    serviceKey: String,
+    language: Lang
+  ): Option[(AccessibilityStatement, Lang)] =
     accessibilityStatements.get((serviceKey, language.code)).map((_, language))
 
-  private def serviceFileNameToNameAndLanguage(serviceFileName: String): (String, String) = {
+  def findAll: Seq[(String, Lang, AccessibilityStatement)] = {
+    val triples = accessibilityStatements.toSeq map {
+      case (
+            (serviceKey: String, lang: String),
+            statement: AccessibilityStatement
+          ) =>
+        (serviceKey, Lang(lang), statement)
+    }
+
+    triples.sorted
+  }
+
+  private def serviceFileNameToNameAndLanguage(
+    serviceFileName: String
+  ): (String, String) = {
     val welshLanguageSuffix = s".$cy"
 
-    if (serviceFileName.endsWith(welshLanguageSuffix)) {
+    if (serviceFileName.endsWith(welshLanguageSuffix))
       (serviceFileName.dropRight(welshLanguageSuffix.length), cy)
-    } else {
+    else
       (serviceFileName, en)
-    }
   }
 
   private def getStatement(serviceFileName: String) =

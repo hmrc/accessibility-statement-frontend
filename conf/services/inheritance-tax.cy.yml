@@ -1,0 +1,13 @@
+serviceName: Treth Etifeddiant
+serviceHeaderName: Cofrestru i lenwi adroddiad ystâd
+serviceDescription: |
+  Mae cofrestru i lenwi adroddiad ystâd Treth Etifeddiant yn wasanaeth sy’n caniatáu
+  i ddefnyddwyr roi wybod i CThEM am werth ystâd person (yr eiddo, yr arian a’r meddiannau)
+  ar ôl iddo farw. Defnyddir arian o’r ystâd i dalu Treth Etifeddiant i CThEM.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /inheritance-tax/what-do-you-want-to-do
+contactFrontendServiceId: IHT
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+statementLastUpdatedDate: 2020-09-17

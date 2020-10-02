@@ -21,5 +21,7 @@ import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatements
 
 class AccessibilityStatementModule extends AbstractModule {
   override def configure() =
-    bind(classOf[AccessibilityStatementsRepo]).to(classOf[AccessibilityStatementsSourceRepo])
+    bind(classOf[AccessibilityStatementsRepo]).to(
+      classOf[AccessibilityStatementsSourceRepo]
+    )
 }

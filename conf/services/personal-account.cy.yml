@@ -1,0 +1,11 @@
+serviceName: Cyfrif treth personol
+serviceHeaderName: Cyfrif treth personol
+serviceDescription: |
+  Gall unigolion ddefnyddio’r gwasanaeth Cyfrif Treth Personol i gael mynediad at unrhyw un o’r gwasanaethau digidol treth personol y maent wedi cofrestru ar eu cyfer, ac adolygu unrhyw negeseuon gan CThEM. Gallant hefyd ei ddefnyddio i ddiweddaru eu dulliau cysylltu dewisol a’u manylion personol gyda CThEM, a chael copi o’u rhif Yswiriant Gwladol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /personal-account
+contactFrontendServiceId: personal-account
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23

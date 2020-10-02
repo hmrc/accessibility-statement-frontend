@@ -28,10 +28,13 @@ trait AppHelpers {
         Map(elems: _*) ++ Map(
           "metrics.enabled"  -> false,
           "auditing.enabled" -> false
-        ))
+        )
+      )
       .disable[com.kenshoo.play.metrics.PlayModule]
       .build()
 
-  def buildAppWithWelshLanguageSupport[A](welshLanguageSupport: Boolean = true) =
+  def buildAppWithWelshLanguageSupport[A](
+    welshLanguageSupport: Boolean = true
+  ) =
     buildApp("features.welsh-language-support" -> welshLanguageSupport.toString)
 }

@@ -1,0 +1,12 @@
+serviceName: Cyflwyno’ch Datganiad Blynyddol ar gyfer ERS
+serviceHeaderName: Cyflwyno’ch Datganiad Blynyddol ar gyfer ERS
+serviceDescription: |
+  Gall cyflogwyr, neu asiantau sy’n gweithredu ar eu rhan, ddefnyddio’r gwasanaeth hwn i gyflwyno Datganiadau Blynyddol ar gyfer Gwarantau ar sail Cyflogaeth ar ôl diwedd y flwyddyn dreth.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submit-your-ers-annual-return
+contactFrontendServiceId: ERS-RETURNS
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
+

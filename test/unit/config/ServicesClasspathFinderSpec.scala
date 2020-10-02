@@ -24,7 +24,10 @@ import play.api.Logger
 
 class ServicesClasspathFinderSpec extends WordSpec with Matchers with MockitoSugar {
 
-  def buildServicesFinder(servicesPath: String, mockLogger: Logger = mock[Logger]): ServicesClasspathFinder = {
+  def buildServicesFinder(
+    servicesPath: String,
+    mockLogger: Logger = mock[Logger]
+  ): ServicesClasspathFinder = {
     val appConfig = mock[AppConfig]
     when(appConfig.servicesDirectory) thenReturn servicesPath
     new ServicesClasspathFinder(appConfig) {
@@ -36,45 +39,65 @@ class ServicesClasspathFinderSpec extends WordSpec with Matchers with MockitoSug
     "return a list of services" in {
       val servicesFinder = buildServicesFinder("fixtures/services")
 
-      servicesFinder.findAll should equal(Seq("service-1", "service-2", "service-3"))
+      servicesFinder.findAll should equal(
+        Seq("service-1", "service-2", "service-3")
+      )
     }
 
     "generate a list of services including Welsh language statements" in {
       val servicesFinder = buildServicesFinder("fixtures/services-with-welsh")
 
-      servicesFinder.findAll should equal(Seq("service-1", "service-2.cy", "service-2", "service-3"))
+      servicesFinder.findAll should equal(
+        Seq("service-1", "service-2.cy", "service-2", "service-3")
+      )
     }
 
     "ignore any directories" in {
       val servicesFinder = buildServicesFinder("fixtures/services-with-subdirs")
 
-      servicesFinder.findAll should equal(Seq("service-1", "service-2", "service-3"))
+      servicesFinder.findAll should equal(
+        Seq("service-1", "service-2", "service-3")
+      )
     }
 
     "ignore any files with incorrect extensions" in {
       val mockLogger     = mock[Logger]
-      val servicesFinder = buildServicesFinder("fixtures/services-suffix", mockLogger)
+      val servicesFinder =
+        buildServicesFinder("fixtures/services-suffix", mockLogger)
 
       servicesFinder.findAll should equal(Seq("service-1", "service-2"))
-      verify(mockLogger).warn(contains("service-3.ymls contains illegal characters"))(any())
+      verify(mockLogger).warn(
+        contains("service-3.ymls contains illegal characters")
+      )(any())
     }
 
     "ignore yaml files with illegal characters" in {
       val mockLogger     = mock[Logger]
-      val servicesFinder = buildServicesFinder("fixtures/services-illegal-characters", mockLogger)
+      val servicesFinder =
+        buildServicesFinder("fixtures/services-illegal-characters", mockLogger)
 
       servicesFinder.findAll should equal(Seq.empty)
-      verify(mockLogger).warn(contains("Service-7!*-.yml contains illegal characters"))(any())
-      verify(mockLogger).warn(contains("y ml contains illegal characters"))(any())
+      verify(mockLogger).warn(
+        contains("Service-7!*-.yml contains illegal characters")
+      )(any())
+      verify(mockLogger).warn(contains("y ml contains illegal characters"))(
+        any()
+      )
     }
 
     "return an empty sequence and log an error if the services directory is not a directory" in {
       val mockLogger     = mock[Logger]
-      val servicesFinder = buildServicesFinder("fixtures/services-not-a-directory", mockLogger)
+      val servicesFinder =
+        buildServicesFinder("fixtures/services-not-a-directory", mockLogger)
 
       servicesFinder.findAll should equal(Seq.empty)
-      verify(mockLogger).error(contains("Services directory fixtures/services-not-a-directory is not a directory"))(
-        any())
+      verify(mockLogger).error(
+        contains(
+          "Services directory fixtures/services-not-a-directory is not a directory"
+        )
+      )(
+        any()
+      )
     }
   }
 }

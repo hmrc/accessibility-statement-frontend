@@ -37,52 +37,60 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     )
     .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
-  private val repo = app.injector.instanceOf[AccessibilityStatementsSourceRepo]
+  private val repo             = app.injector.instanceOf[AccessibilityStatementsSourceRepo]
 
-  private val fooStatement = AccessibilityStatement(
-    serviceName              = "Foo",
-    serviceHeaderName        = "Foo",
-    serviceDescription       = "The foo service allows you to do foo",
-    serviceDomain            = "www.example.com",
-    serviceUrl               = "/foo",
+  private val fooStatement      = AccessibilityStatement(
+    serviceName = "Foo",
+    serviceHeaderName = "Foo",
+    serviceDescription = "The foo service allows you to do foo",
+    serviceDomain = "www.example.com",
+    serviceUrl = "/foo",
     contactFrontendServiceId = "foo",
-    complianceStatus         = FullCompliance,
-    automatedTestingOnly     = None,
-    accessibilityProblems    = None,
-    milestones               = None,
-    statementVisibility      = Public,
-    serviceLastTestedDate    = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
-    statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+    complianceStatus = FullCompliance,
+    automatedTestingOnly = None,
+    accessibilityProblems = None,
+    milestones = None,
+    statementVisibility = Public,
+    serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
+    statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails             = None
+    automatedTestingDetails = None
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription = "Mae'r gwasanaeth foo yn caniatáu ichi wneud foo"
   )
-  private val barStatement = AccessibilityStatement(
-    serviceName              = "Bar",
-    serviceHeaderName        = "Bar",
-    serviceDescription       = "The bar service allows you to do bar",
-    serviceDomain            = "www.example.com",
-    serviceUrl               = "/bar",
+  private val barStatement      = AccessibilityStatement(
+    serviceName = "Bar",
+    serviceHeaderName = "Bar",
+    serviceDescription = "The bar service allows you to do bar",
+    serviceDomain = "www.example.com",
+    serviceUrl = "/bar",
     contactFrontendServiceId = "bar",
-    complianceStatus         = PartialCompliance,
-    automatedTestingOnly     = None,
+    complianceStatus = PartialCompliance,
+    automatedTestingOnly = None,
     accessibilityProblems = Some(
       Seq(
         "Bar problem 1",
         "Bar problem 2"
-      )),
+      )
+    ),
     milestones = Some(
       Seq(
-        Milestone(description = "Bar milestone 1", date = new GregorianCalendar(2020, Calendar.DECEMBER, 1).getTime),
-        Milestone(description = "Bar milestone 2", date = new GregorianCalendar(2020, Calendar.DECEMBER, 2).getTime)
-      )),
-    statementVisibility      = Public,
-    serviceLastTestedDate    = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
-    statementCreatedDate     = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
+        Milestone(
+          description = "Bar milestone 1",
+          date = new GregorianCalendar(2020, Calendar.DECEMBER, 1).getTime
+        ),
+        Milestone(
+          description = "Bar milestone 2",
+          date = new GregorianCalendar(2020, Calendar.DECEMBER, 2).getTime
+        )
+      )
+    ),
+    statementVisibility = Public,
+    serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
+    statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails             = None
+    automatedTestingDetails = None
   )
 
   private val barStatementWelsh = barStatement.copy(
@@ -90,19 +98,27 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
   )
   "findByServiceKeyAndLanguage" should {
     "find the correct service for English statement" in {
-      repo.findByServiceKeyAndLanguage("foo-service", Lang("en")) should be(Some((fooStatement, Lang("en"))))
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("en")) should be(
+        Some((fooStatement, Lang("en")))
+      )
     }
 
     "find the correct service for Welsh statement if exists" in {
-      repo.findByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(Some((fooStatementWelsh, Lang("cy"))))
+      repo.findByServiceKeyAndLanguage("foo-service", Lang("cy")) should be(
+        Some((fooStatementWelsh, Lang("cy")))
+      )
     }
 
     "find a different service for English" in {
-      repo.findByServiceKeyAndLanguage("bar-service", Lang("en")) should be(Some((barStatement, Lang("en"))))
+      repo.findByServiceKeyAndLanguage("bar-service", Lang("en")) should be(
+        Some((barStatement, Lang("en")))
+      )
     }
 
     "find a different service for Welsh" in {
-      repo.findByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(Some((barStatementWelsh, Lang("cy"))))
+      repo.findByServiceKeyAndLanguage("bar-service", Lang("cy")) should be(
+        Some((barStatementWelsh, Lang("cy")))
+      )
     }
   }
 }
