@@ -1,5 +1,5 @@
-serviceName: Pension Annual Allowance Calculator
-serviceHeaderName: Check if you have an annual allowance tax charge on your pension savings
+serviceName: Gwirio a oes gennych dâl treth lwfans blynyddol ar eich cynilion pensiwn
+serviceHeaderName: Gwirio a oes gennych dâl treth lwfans blynyddol ar eich cynilion pensiwn
 serviceDescription: |
   This service enables users to use a calculator to check if their pension savings are more than your annual allowance, 
   or if they have any unused annual allowance to carry forward.
