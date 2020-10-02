@@ -1,5 +1,5 @@
 serviceName: Check how Much Income Tax You Paid This Year And Last Year
-serviceHeaderName: Check how much Income Tax you paid this year and last year
+serviceHeaderName: Check how Much Income Tax You Paid This Year And Last Year
 serviceDescription: view your current or previous years' income tax calculations.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /browse/tax/income-tax
