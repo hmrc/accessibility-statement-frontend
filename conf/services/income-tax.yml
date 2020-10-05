@@ -1,12 +1,12 @@
-serviceName: Tax calculation and repayment service
-serviceHeaderName: Tax calculation and repayment service
+serviceName: Check how Much Income Tax You Paid This Year And Last Year
+serviceHeaderName: Check how Much Income Tax You Paid This Year And Last Year
 serviceDescription: view your current or previous years' income tax calculations.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /browse/tax/income-tax
 contactFrontendServiceId: income-tax
 complianceStatus: partial
 accessibilityProblems:
-  - When an error shows, the ‘error’ prefix does not currently show on the page title. People who use screen readers may not know that the page contains errors. We plan to add the ‘Error’ prefix to all page titles when an error shows.
+  - When an error shows, the ‘error’ prefix does not currently show on the page title. People who use screen-readers may not know that the page contains errors. We plan to add the ‘Error’ prefix to all page titles when an error shows.
   - When an error has been triggered, it is not clear for screen reader users that this error is different from any other text on the screen. We will add in the word ‘error’ to make it clearer that an error has been triggered.
   - When using the tab key to navigate the page, there is important information that is placed after the ‘Continue’ button. People using screen readers may miss this information. We plan to make sure all important information is above the continue button so this is not missed.
   - Some page titles do not include the name of the service. We plan to add the name of the service to all page titles.
