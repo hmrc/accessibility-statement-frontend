@@ -5,7 +5,7 @@ serviceDescription: |
   about your Council Tax or business rates. You can also find the contact details
   of other teams if your query is about something else
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /valuation-office-agency-contact-frontend/you-enquiry
+serviceUrl: /valuation-office-agency-contact-frontend/your-enquiry
 contactFrontendServiceId: Contact Forms
 complianceStatus: full
 serviceLastTestedDate: 2020-09-06
