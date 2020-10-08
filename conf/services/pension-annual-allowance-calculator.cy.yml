@@ -1,8 +1,7 @@
-serviceName: Gwirio a oes gennych dâl treth lwfans blynyddol ar eich cynilion pensiwn
-serviceHeaderName: Gwirio a oes gennych dâl treth lwfans blynyddol ar eich cynilion pensiwn
+serviceName: Cyfrifiannell Lwfans Blynyddol Pensiwn
+serviceHeaderName: Gwiriwch a oes gennych dâl treth lwfans blynyddol ar eich cynilion pensiwn
 serviceDescription: |
-  This service enables users to use a calculator to check if their pension savings are more than your annual allowance, 
-  or if they have any unused annual allowance to carry forward.
+  serviceDescription: Mae’r gwasanaeth hwn yn galluogi defnyddwyr i ddefnyddio cyfrifiannell i wirio a yw eu cynilion pensiwn yn fwy na’ch lwfans blynyddol, neu i wirio a oes ganddynt unrhyw lwfans blynyddol heb ei ddefnyddio i’w gario ymlaen.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pension-annual-allowance-calculator
 contactFrontendServiceId: pension-annual-allowance-calculator
@@ -52,6 +51,10 @@ milestones:
   - description: |
       Mae gan rai o’r tudalennau flychau gwirio sydd heb ffocws wrth ddefnyddio modd cyferbynnedd uchel. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.7 (Focus Visible): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
       Byddwn yn cywiro hyn fel bod gan y blychau gwirio ffocws y bysellfwrdd. 
+    date: 2021-07-31
+  - description: |
+      Ar dudalen lle rydym yn gofyn am ddyddiad, rydym yn defnyddio’r math anghywir o fewnbwn rhifol, a gall hyn achosi trafferth wrth ddefnyddio dyfeisiau penodol. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Maen Prawf Deall Llwyddiant 4.1.2: Enw, Rôl, Gwerth. 
+      Byddwn yn diweddaru hyn er mwyn defnyddio’r math cywir o fewnbwn rhifol fel y gall defnyddwyr roi’r wybodaeth i ni heb anhawster.
     date: 2021-07-31
   - description: |
       Ar dudalennau lle rydym yn gofyn am swm o arian, nid ydym yn dangos y bysellfwrdd ar gyfer rhifau ar ddyfeisiau symudol ar hyn o bryd. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.2 (Name, Role, Value): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 

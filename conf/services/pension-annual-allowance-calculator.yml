@@ -58,6 +58,10 @@ milestones:
       Understanding Success Criterion 2.4.7 - Focus Visible. We will fix this so the checkboxes have keyboard focus.
     date: 2021-07-31
   - description: |
+      On a page where we ask for a date, we use the wrong type of number input, which can cause issues when using certain devices. This fails WCAG 2.1: 
+      Understanding Success Criterion 4.1.2: Name, Role, Value. We will update this to use the right type of number input so users can give us the information without difficulty. 
+    date: 2021-07-31
+  - description: |
       On pages where we ask for an amount of money, we currently do not show the keyboard for numbers on a mobile device. This fails WCAG 2.1 - 
       Understanding Success Criterion 4.1.2 - Name, Role, Value. We will update the service so a user can access those pages using a number keypad on mobile devices.
     date: 2021-07-31
