@@ -1,0 +1,14 @@
+serviceName: Treth Enillion Cyfalaf
+serviceHeaderName: Treth Enillion Cyfalaf
+serviceDescription: |
+  Mae’r gyfrifiannell Treth Enillion Cyfalaf yn eich galluogi i gyfrifo’r swm sy’n
+  daladwy i CThEM ar gyfer Treth Enillion Cyfalaf breswyl a dibreswyl. Dyma’r dreth
+  a godir ar eich elw pan fyddwch yn gwerthu eitemau megis eiddo neu gyfranddaliadau
+  sydd wedi cynyddu mewn gwerth.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /calculate-your-capital-gains/non-resident
+contactFrontendServiceId: CGT
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22
