@@ -29,13 +29,13 @@ milestones:
       Nid oes priodoledd allwedd gan y dudalen ‘Eich rhifau cofrestru treth’, felly gall pwrpas y botymau radio fod yn aneglur i rai defnyddwyr
     date: 2020-12-31
   - description: |
-      The current visible focus indicator on some pages in this service does not meet the required ratio of 3:1. This does not meet WCAG success criterion 1.4.11 (Non-text Contrast).
+      Nid yw’r dangosydd ffocws gweladwy presennol ar rai tudalennau yn y gwasanaeth hwn yn bodloni’r gofynion o ran cymhareb, sef 3:1. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast), Canllawiau Hygyrchedd Cynnwys y We.
     date: 2020-12-31
   - description: |
-      The 'Edit' button on the 'Your tax registration numbers' page does not have a descriptive label. This does not meet WCAG success criterion 2.4.6 (Headings and Labels).
+      Nid oes gan y botwm ‘Golygu’ ar y dudalen ‘Eich rhifau cofrestru treth’ label disgrifiadol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels), Canllawiau Hygyrchedd Cynnwys y We.
     date: 2020-12-31
   - description: |
-      The 'Your contact details' page does not use an autocomplete feature. This does not meet WCAG success criterion 1.3.5 (Identify Input Purpose).
+      Nid yw’r dudalen ‘Eich manylion cyswllt’ yn defnyddio nodwedd awtogwblhau. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose), Canllawiau Hygyrchedd Cynnwys y We.
     date: 2020-12-31
   - description: |
       Rydym wedi cynnal adolygiad arbenigol mewnol o’r gwasanaeth ac wedi trwsio’r materion hyn o ran hygyrchedd.
