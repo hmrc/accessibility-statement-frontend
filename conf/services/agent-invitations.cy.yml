@@ -1,0 +1,18 @@
+serviceName: gofyn i gleient eich awdurdodi
+serviceHeaderName: Gofyn i gleient eich awdurdodi
+serviceDescription: |
+  Mae’r gwasanaeth hwn ar gyfer asiantau, er mwyn iddynt greu cais am awdurdodiad i weithredu ar ran cleient ar gyfer gwasanaeth penodol CThEM. Mae hefyd ar gyfer cleientiaid, er mwyn iddynt ateb y cais hwn.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /invitations
+contactFrontendServiceId: AOSS
+complianceStatus: partial
+automatedTestingOnly: true
+automatedTestingDetails: Cafodd ei brofi gan ddefnyddio’r twlsyn awtomataidd Prawf Hygyrchedd Awtomataidd ar Jenkins, gan gynnwys AXE.
+milestones:
+  - description: |
+      Mae’n bosibl nad yw’r cyferbynnedd rhwng y lliwiau yn y blaendir a’r lliwiau yn y cefndir yn bodloni trothwyon cymhareb gyferbynnedd safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+    date: 2020-12-31
+serviceLastTestedDate: 2020-9-21
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22

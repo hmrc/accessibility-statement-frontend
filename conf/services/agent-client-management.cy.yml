@@ -1,0 +1,18 @@
+serviceName: rheoli’ch asiantau treth
+serviceHeaderName: Rheoli’ch asiantau treth
+serviceDescription: |
+  Mae’r gwasanaeth hwn ar gyfer cleientiaid, er mwyn iddynt olrhain eu perthnasau â’u hasiantau.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /manage-your-tax-agents
+contactFrontendServiceId: AOSS
+complianceStatus: partial
+automatedTestingOnly: true
+automatedTestingDetails: Cafodd ei brofi gan ddefnyddio’r twlsyn awtomataidd Prawf Hygyrchedd Awtomataidd ar Jenkins, gan gynnwys AXE.
+milestones:
+  - description: |
+      Mae’n bosibl nad yw’r cyferbynnedd rhwng y lliwiau yn y blaendir a’r lliwiau yn y cefndir yn bodloni trothwyon cymhareb gyferbynnedd safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+    date: 2020-12-31
+serviceLastTestedDate: 2020-12-31
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18
