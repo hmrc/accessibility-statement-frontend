@@ -1,5 +1,5 @@
-serviceName: confirm-if-stopped-trading-before-seiss-grant-claimed
-serviceHeaderName: confirm-if-stopped-trading-before-seiss-grant-claimed
+serviceName: Confirm whether you stopped trading before you claimed a Self-Employment Income Support Scheme grant
+serviceHeaderName: Confirm whether you stopped trading before you claimed a Self-Employment Income Support Scheme grant
 serviceDescription: |
   Use this form to confirm whether you stopped trading before you claimed a Self-Employment Income Support Scheme grant.
 serviceDomain: www.tax.service.gov.uk
@@ -14,7 +14,7 @@ accessibilityProblems:
 milestones:
   - description: |
       You cannot skip to the main content when using a keyboard to navigate, or a screen reader.
-      This does not meet WCAG 2.1 (level A) success criterion 2.4.1 (Bypass Blocks).
+      This does not meet WCAG 2.1 (level A) success sbcriterion 2.4.1 (Bypass Blocks).
     date: 2021-03-31
   - description: |
       Some links, headings and labels may not provide enough information about what to do next, or what happens next.
