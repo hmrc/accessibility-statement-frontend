@@ -1,7 +1,7 @@
 serviceName: Cyfrifiannell Lwfans Blynyddol Pensiwn
 serviceHeaderName: Gwiriwch a oes gennych dâl treth lwfans blynyddol ar eich cynilion pensiwn
 serviceDescription: |
-  serviceDescription: Mae’r gwasanaeth hwn yn galluogi defnyddwyr i ddefnyddio cyfrifiannell i wirio a yw eu cynilion pensiwn yn fwy na’ch lwfans blynyddol, neu i wirio a oes ganddynt unrhyw lwfans blynyddol heb ei ddefnyddio i’w gario ymlaen.
+  Mae’r gwasanaeth hwn yn galluogi defnyddwyr i ddefnyddio cyfrifiannell i wirio a yw eu cynilion pensiwn yn fwy na’u lwfans blynyddol, neu i wirio a oes ganddynt unrhyw lwfans blynyddol heb ei ddefnyddio i’w gario ymlaen.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pension-annual-allowance-calculator
 contactFrontendServiceId: pension-annual-allowance-calculator

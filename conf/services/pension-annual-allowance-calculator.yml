@@ -1,8 +1,7 @@
 serviceName: Pension Annual Allowance Calculator
 serviceHeaderName: Check if you have an annual allowance tax charge on your pension savings
 serviceDescription: |
-  This service enables users to use a calculator to check if their pension savings are more than your annual allowance, 
-  or if they have any unused annual allowance to carry forward.
+  This service enables users to use a calculator to check if their pension savings are more than their annual allowance, or if they have any unused annual allowance to carry forward.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pension-annual-allowance-calculator
 contactFrontendServiceId: pension-annual-allowance-calculator
