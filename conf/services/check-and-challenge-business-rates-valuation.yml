@@ -10,76 +10,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /business-rates-dashboard
 contactFrontendServiceId: CCA
-complianceStatus: partial
-accessibilityProblems:
-  - There are tables present which are not marked correctly
-  - There are form elements present which do not have a programmatically
-    associated label
-  - There are some grouped radio buttons whose legend attribute has been
-    left blank
-  - There is a date input which has no shared label
-  - There is an issue with tables and links without column headers
-  - There is an issue with tables having captions
-  - There are issues with skip links on error text not moving the focus
-  - There are issues with sortable tables, the purpose of the links in the
-    table is not clear to all users
-  - There are links which do not have descriptions
-  - There is an issue with a status message being displayed not making
-    screen readers aware
-  - There are duplicate IDs on radio buttons
-milestones:
-  - description: |
-      There are tables present which are not marked correctly. This does not
-      meet WCAG 2.1 success criterion 1.3.1 (info and relationships).
-    date: 2020-09-22
-  - description: |
-      There are form elements present which do not have a programmatically
-      associated label. This does not meet WCAG 2.1 success criterion 1.3.1
-      (info and relationships) and 4.1.2 (name, role, value).
-    date: 2020-09-22
-  - description: |
-      There are some grouped radio buttons whose legend attribute has been
-      left blank. This does not meet WCAG 2.1 success criterion 1.3.1 (info and
-      relationships) and 3.3.2 (labels or instructions).
-    date: 2020-09-22
-  - description: |
-      There is a date input which has no shared label. This does not meet
-      WCAG 2.1 success criterion 1.3.1 (info and relationships) and 3.3.2
-      (labels or instructions).
-    date: 2020-09-22
-  - description: |
-      There is an issue with tables and links without column headers. This does
-      not meet WCAG 2.1 success criterion 1.3.1 (info and relationships).
-    date: 2020-09-22
-  - description: |
-      There is an issue with tables having captions. This does not meet WCAG 2.1
-      success criterion 1.3.1 (info and relationships)
-    date: 2020-09-22
-  - description: |
-      There are issues with skip links on error text not moving the focus. This
-      does not meet WCAG 2.1 success criterion 2.4.1 (bypass blocks).
-    date: 2020-09-22
-  - description: |
-      There are issues with sortable tables, the purpose of the links in the
-      table is not clear to all users. This does not meet WCAG 2.1 success
-      criterion 1.3.1 (info and relationships), 2.4.4 (link purpose in context),
-      2.4.9 (link purpose link only) and 4.1.2 (name, role, value).
-    date: 2020-09-22
-  - description: |
-      There are links which do not have descriptions. This does not meet WCAG 2.1
-      success criterion 2.4.4 (link purpose in context) and 2.4.9 (link purpose
-      link only).
-    date: 2020-09-22
-  - description: |
-      There is an issue with a status message being displayed not making
-      screen readers aware. This does not meet WCAG 2.1 success criterion 4.1.3
-      (status messages).
-    date: 2020-09-22
-  - description: |
-      There are duplicate IDs on radio buttons. This does not meet WCAG 2.1 success
-      criterion 4.1.1 (parsing).
-    date: 2020-09-22
-serviceLastTestedDate: 2020-02-04
+complianceStatus: full
+serviceLastTestedDate: 2020-10-06
 statementVisibility: public
 statementCreatedDate: 2020-09-15
-statementLastUpdatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-10-07
