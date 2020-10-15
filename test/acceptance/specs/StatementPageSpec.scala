@@ -53,7 +53,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
           .toList
           .map(_.getText) should
           contain(
-            "This service is fully compliant with the Web Content Accessibility Guidelines version 2.1 AA standard"
+            "This service is fully compliant with the Web Content Accessibility Guidelines version 2.1 AA standard."
           )
       }
     }
@@ -88,7 +88,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
           .toList
           .map(_.getText) should
           contain(
-            "This service is partially compliant with the Web Content Accessibility Guidelines version 2.1 AA standard"
+            "This service is partially compliant with the Web Content Accessibility Guidelines version 2.1 AA standard."
           )
       }
     }
