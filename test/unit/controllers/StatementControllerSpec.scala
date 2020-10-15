@@ -19,12 +19,10 @@ package unit.controllers
 import play.api.inject.bind
 import helpers.TestAccessibilityStatementRepo
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
 import org.scalatest.{Matchers, WordSpec}
 import play.api.http.Status
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import play.twirl.api.Html
 import uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 import org.mockito.MockitoSugar
