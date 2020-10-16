@@ -1,0 +1,194 @@
+serviceName: UK Trade Info
+serviceHeaderName: UK Trade Info
+serviceDescription: |
+  UK Trade Info publishes detailed UK trade data and statistical information produced by HM Revenue and Customs (HMRC).
+serviceDomain: www.uktradeinfo.com
+serviceUrl: /home
+contactFrontendServiceId: uktradeinfo
+complianceStatus: partial
+accessibilityProblems:
+  - some pages may be difficult for assistive technologies to parse because of an incorrect meta element
+  - on pages with Related content sections, the navigation elements do not all have unique labels, which may make navigating the page difficult
+  - on the Privacy page, there is no visible keyboard focus on links in the main content
+  - screen readers users may have difficulty using the breadcrumb trail navigation displayed on some pages
+  - top navigation links do not indicate to screen reader users which section they are currently in
+  - on some pages, screen readers users will hear the same text repeated for the search heading and label
+  - on the Find commodity data page, the code used for the Related content section may cause issues for screen readers users
+  - the Bulk datasets guidance and technical specifications page contains repeated text, which may cause issues for screen reader users
+  - the main content of the Bulk datasets guidance and technical specifications page does not have hierarchical headings and subheadings
+  - search fields do not have a search role on the heading to identify the section
+  - some search fields do not correctly identify the type of input required
+  - some pages have skipped heading levels, which could be confusing for users of assistive technologies
+  - some page titles do not match the page heading
+  - some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute
+  - on the homepage, images and link text do not appear in high contrast for the items under Featured, and the keyboard focus (the vertical white line) is partly displayed
+  - the pagination of search results pages may be confusing for users of screen readers
+  - the filename of the trader search results and data tables CSV file is always the same when downloading results, which may be confusing for users
+  - some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute
+  - the fieldset for filtering trader search results by trader type has a missing legend to describe the purpose of the radio buttons
+  - company details pages have a duplicate class attribute
+  - on search results pages, the purpose of the Traders search type link is not obvious
+  - some links do not have unique accessible names to allow users of screen readers to distinguish them
+  - some of the links in the website are not descriptive
+  - on search results pages, the error message when no text is entered does not match the hint text page on the page
+  - on some pages, error messages are not differentiated from other text when viewing in greyscale
+  - commodity details pages have multiple heading level 1 tags
+  - on pages with Related content sections, the Related content heading level 2 tag should be within the nav element to define the relationship and allow screen readers to bypass it
+  - on the Find commodity data page, the search heading and label are not wrapped in the search role to identify the section
+  - commodity codes shown in search results and commodity details pages are read out as individual digits for users of screen readers
+  - trying to search without entering any text into the search field may cause an error in the service
+  - search result pages may be difficult for assistive technologies to parse because of incorrect markup. compliance issue by 31 December 2020
+  - on search results pages, aria-label is used on an element that does not reliably convey this attribute
+  - links in search results are not read out as a single link with a screen reader on mobile devices, which makes the information hard to follow
+  - the error message displayed when trying to search without entering any search term is not associated with the input field
+  - screen reader users may have difficulty using the interactive data tables
+  - data tables are not introduced with a heading to help screen reader users to know what the main topic of the page is
+  - the icon used to expand down one level in a hierarchy in data tables is not labelled, and the expand and collapse icons in the grid do not have accessible names, which may cause difficulties for screen reader users
+  - text size in data tables and the feedback page does not increase with zoom or font size
+  - keyboard users will not be able to access all of the functionality of the interactive data tables
+  - keyboard users are not able to navigate to content below interactive data tables
+  - there are 2 aria-labels for the main navigation, which may cause difficulty for screen reader users
+  - the pages titles of data tables include acronyms that are not well known
+  - data tables may be difficult to use with Voice Over on iOS
+  - when changing the inputs on data tables, users are not alerted of a change in the grid
+  - using the context menu on data tables may cause difficulties for screen reader users
+  - the guide to using data tables is not linked to at the beginning of the page
+  - the link provided on selecting Share or link to this table is not visible and alerted to screen readers
+  - the input to share or link to a table does not have a label describing its purpose and is not updating when changing data
+  - data table grids do not have an accessible name describing their purpose, which may cause difficulties for screen reader users
+  - some links in the feedback page open in a new tab without informing the user. Also, the report abuse link takes users to a page from which they cannot go back
+  - page titles on the feedback form do not identify their purpose
+  - callout boxes used on some pages do not meet the required contrast ratio of 4.5:1 between text and the background behind the text
+  - some pages do not have breadcrumb trail navigation
+  - on the homepage, the links See all news and See all statistical releases do not have sufficient spacing between them, making the links difficult to read and comprehend
+  - search results are not introduced by a heading
+  - when larger text is set on iOS, the menu button is displayed behind the service name
+  - the feedback form does not allow keyboard users to tab to all options on the form
+  - parts of the data tables interface does not have sufficient colour contrast against the background
+  - 400% zoom causes the drill options in data tables to overlap
+  - the data tables and feedback form do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus
+milestones:
+  - description: Some pages may be difficult for assistive technologies to parse because of an incorrect meta element. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: On pages with Related content sections, the navigation elements do not all have unique labels, which may make navigating the page difficult. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: On the Privacy page, there is no visible keyboard focus on links in the main content. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
+    date: 2020-12-31
+  - description: Screen readers users may have difficulty using the breadcrumb trail navigation displayed on some pages. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: Top navigation links do not indicate to screen reader users which section they are currently in. This does not meet WCAG 2.1 success criterion 1.3.3 (Sensory Characteristics).
+    date: 2020-12-31
+  - description: On some pages, screen readers users will hear the same text repeated for the search heading and label. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or Instructions).
+    date: 2020-12-31
+  - description: On the Find commodity data page, the code used for the Related content section may cause issues for screen readers users. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2020-12-31
+  - description: The Bulk datasets guidance and technical specifications page contains repeated text, which may cause issues for screen reader users. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value) and 2.4.4 (Link Purpose (in Context)).
+    date: 2020-12-31
+  - description: The main content of the Bulk datasets guidance and technical specifications page does not have hierarchical headings and subheadings. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: Search fields do not have a search role on the heading to identify the section. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2020-12-31
+  - description: Some search fields do not correctly identify the type of input required. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or Instructions).
+    date: 2020-12-31
+  - description: Some pages have skipped heading levels, which could be confusing for users of assistive technologies. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: Some page titles do not match the page heading. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
+    date: 2020-12-31
+  - description: Some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute . This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: On the homepage, images and link text do not appear in high contrast for the items under Featured, and the keyboard focus (the vertical white line) is partly displayed. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: The pagination of search results pages may be confusing for users of screen readers. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: The filename of the trader search results and data tables CSV file is always the same when downloading results, which may be confusing for users. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
+    date: 2020-12-31
+  - description: Some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute . This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: The fieldset for filtering trader search results by trader type has a missing legend to describe the purpose of the radio buttons. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
+    date: 2020-12-31
+  - description: Company details pages have a duplicate class attribute. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: On search results pages, the purpose of the Traders search type link is not obvious. This does not meet WCAG 2.1 success criterion 2.4.4 (Link Purpose (in Context)).
+    date: 2020-12-31
+  - description: Some links do not have unique accessible names to allow users of screen readers to distinguish them. This does not meet WCAG 2.1 success criterion 2.4.4 (Link Purpose (in Context)).
+    date: 2020-12-31
+  - description: Some of the links in the website are not descriptive. This does not meet WCAG 2.1 success criterion 2.4.4 (Link Purpose (in Context)).
+    date: 2020-12-31
+  - description: On search results pages, the error message when no text is entered does not match the hint text page on the page. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification).
+    date: 2020-12-31
+  - description: On some pages, error messages are not differentiated from other text when viewing in greyscale. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification).
+    date: 2020-12-31
+  - description: Commodity details pages have multiple heading level 1 tags. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2020-12-31
+  - description: On pages with Related content sections, the Related content heading level 2 tag should be within the nav element to define the relationship and allow screen readers to bypass it. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2020-12-31
+  - description: On the Find commodity data page, the search heading and label are not wrapped in the search role to identify the section. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2020-12-31
+  - description: Commodity codes shown in search results and commodity details pages are read out as individual digits for users of screen readers. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: Trying to search without entering any text into the search field may cause an error in the service. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: Search result pages may be difficult for assistive technologies to parse because of incorrect markup. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: On search results pages, aria-label is used on an element that does not reliably convey this attribute. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
+    date: 2020-12-31
+  - description: Links in search results are not read out as a single link with a screen reader on mobile devices, which makes the information hard to follow. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: The error message displayed when trying to search without entering any search term is not associated with the input field. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification).
+    date: 2020-12-31
+  - description: Screen reader users may have difficulty using the interactive data tables. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: Data tables are not introduced with a heading to help screen reader users to know what the main topic of the page is. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: The icon used to expand down one level in a hierarchy in data tables is not labelled, and the expand and collapse icons in the grid do not have accessible names, which may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: Text size in data tables and the feedback page does not increase with zoom or font size. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
+    date: 2020-12-31
+  - description: Keyboard users will not be able to access all of the functionality of the interactive data tables. This does not meet WCAG 2.1 success criterion 2.1.1 (Keyboard).
+    date: 2020-12-31
+  - description: Keyboard users are not able to navigate to content below interactive data tables. This does not meet WCAG 2.1 success criterion 2.1.2 (No Keyboard Trap).
+    date: 2020-12-31
+  - description: There are 2 aria-labels for the main navigation, which may cause difficulty for screen reader users. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2020-12-31
+  - description: The pages titles of data tables include acronyms that are not well known. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
+    date: 2020-12-31
+  - description: Data tables may be difficult to use with Voice Over on iOS. This does not meet WCAG 2.1 success criterion 2.5.1 (Pointer Gestures).
+    date: 2020-12-31
+  - description: When changing the inputs on data tables, users are not alerted of a change in the grid. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
+    date: 2020-12-31
+  - description: Using the context menu on data tables may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
+    date: 2020-12-31
+  - description: The guide to using data tables is not linked to at the beginning of the page. This does not meet WCAG 2.1 success criterion 3.2.2 (Labels Or Instructions).
+    date: 2020-12-31
+  - description: The link provided on selecting Share or link to this table is not visible and alerted to screen readers. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
+    date: 2020-12-31
+  - description: The input to share or link to a table does not have a label describing its purpose and is not updating when changing data. This does not meet WCAG 2.1 success criterion 3.2.2 (Labels Or Instructions).
+    date: 2020-12-31
+  - description: Data table grids do not have an accessible name describing their purpose, which may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 3.2.2 (Labels Or Instructions).
+    date: 2020-12-31
+  - description: Some links in the feedback page open in a new tab without informing the user. Also, the report abuse link takes users to a page from which they cannot go back. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
+    date: 2020-12-31
+  - description: Page titles on the feedback form do not identify their purpose. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
+    date: 2020-12-31
+  - description: Callout boxes used on some pages do not meet the required contrast ratio of 4.5:1 between text and the background behind the text. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast (Minimum)).
+    date: 2020-12-31
+  - description: Some pages do not have breadcrumb trail navigation. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
+    date: 2020-12-31
+  - description: On the homepage, the links See all news and See all statistical releases do not have sufficient spacing between them, making the links difficult to read and comprehend. This does not meet WCAG 2.1 success criterion 1.4.12 (Text Spacing).
+    date: 2020-12-31
+  - description: Search results are not introduced by a heading. This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels).
+    date: 2020-12-31
+  - description: When larger text is set on iOS, the menu button is displayed behind the service name. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
+    date: 2020-12-31
+  - description: The feedback form does not allow keyboard users to tab to all options on the form. This does not meet WCAG 2.1 success criterion 2.1.1 (Keyboard). We plan to replace this temporary form with an accessible version.
+    date: 2020-12-31
+  - description: Parts of the data tables interface does not have sufficient colour contrast against the background. This does not meet WCAG 2.1 success criterion 1.4.3 Contrast (Minimum).
+    date: 2020-12-31
+  - description: 400% zoom causes the drill options in data tables to overlap. This does not meet WCAG 2.1 success criterion 1.4.10 (Reflow).
+    date: 2020-12-31
+  - description: The data tables and feedback form do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
+    date: 2020-12-31
+serviceLastTestedDate: 2020-07-09
+statementVisibility: public
+statementCreatedDate: 2020-10-19
+statementLastUpdatedDate: 2020-10-19
