@@ -1,6 +1,6 @@
 serviceName: Tax calculation and repayment service
 serviceHeaderName: Tax calculation and repayment service
-serviceDescription: view your current or previous years' income tax calculations.
+serviceDescription: The Check how much Income Tax you paid service allows users that have received a P800 tax calculation to see why they have either overpaid or underpaid tax, and allows them to pay any tax owed.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /browse/tax/income-tax
 contactFrontendServiceId: income-tax
