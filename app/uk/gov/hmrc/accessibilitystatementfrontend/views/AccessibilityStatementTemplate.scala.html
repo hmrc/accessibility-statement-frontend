@@ -29,6 +29,7 @@
 <p class="govuk-body">
     @{messages("introduction.scope.part1")}
     <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.scope.part2")}</a>
+    @{messages("general.fullstop")}
 </p>
 <p class="govuk-body">@{messages("introduction.service-name", statement.serviceName, serviceAbsoluteUrl)}</p>
 
@@ -52,9 +53,9 @@
 
 @fullyOrPartiallyCompliantContent = {
     @{if(statement.isFullyCompliant) {
-        <p class="govuk-body">{messages("accessibility.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a></p>
+        <p class="govuk-body">{messages("accessibility.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>
     } else {
-        <p class="govuk-body">{messages("accessibility.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a></p>
+        <p class="govuk-body">{messages("accessibility.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>
     } }
     @{if(statement.accessibilityProblems.isEmpty) {
         <p class="govuk-body">{messages("accessibility.no-issues")}</p>
@@ -100,8 +101,10 @@
 <h2 class="govuk-heading-l">@{messages("in-person-contact.heading")}</h2>
 <p class="govuk-body">@{messages("in-person-contact.text-relay")}</p>
 <p class="govuk-body">@{messages("in-person-contact.bsl")}</p>
-<p class="govuk-body">@{messages("in-person-contact.find-out-how.part1")}
+<p class="govuk-body">
+    @{messages("in-person-contact.find-out-how.part1")}
     <a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support">@{messages("in-person-contact.find-out-how.part2")}</a>
+    @{messages("general.fullstop")}
 </p>
 
 <h2 class="govuk-heading-l">@{messages("technical.heading")}</h2>
