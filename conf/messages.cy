@@ -6,7 +6,7 @@ general.pageTitle = Datganiad hygyrchedd ar gyfer {0} - GOV.UK
 introduction.heading=Datganiad hygyrchedd ar gyfer {0}
 introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r gwasanaeth hwn, beth i’w wneud os ydych yn cael anhawster wrth ei ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r gwasanaeth.
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
-introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK.
+introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK
 introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
 
 ## Using the service

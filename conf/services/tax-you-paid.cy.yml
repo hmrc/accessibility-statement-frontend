@@ -1,10 +1,39 @@
-serviceName: Gwiriwch faint o Dreth Incwm a daloch
+serviceName: Gwasanaeth ad-daliad a chyfrifiad treth
 serviceHeaderName: Gwiriwch faint o Dreth Incwm a daloch
 serviceDescription: Mae’r gwasanaeth Gwiriwch faint o Dreth Incwm a daloch yn galluogi defnyddwyr sydd wedi cael Cyfrifiad Treth P800 i weld pam eu bod naill ai wedi gordalu neu dandalu treth, ac yn eu galluogi i dalu unrhyw dreth sy’n ddyledus.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /tax-you-paid
 contactFrontendServiceId: tax-you-paid
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - Pan fo gwall yn dangos, nid yw’r rhagddodiad ‘gwall’ yn dangos ar deitl y dudalen ar hyn o bryd. Mae’n bosibl na fydd y rhai sy’n defnyddio darllenwyr sgrin yn gwybod bod y dudalen yn cynnwys gwallau. Rydym y bwriadu ychwanegu’r rhagddodiad ‘Gwall’ at deitl bob tudalen pan fo gwall yn dangos.
+  - Pan fo gwall yn codi, nid yw’n glir i’r rhai sy’n defnyddio darllenwyr sgrin fod y gwallau hyn yn wahanol i unrhyw destun arall ar y sgrin. Byddwn yn ychwanegu’r gair ‘gwall’ er mwyn ei gwneud yn gliriach bod gwall wedi codi.
+  - Wrth ddefnyddio’r allwedd ‘Tab’ er mwyn llywio’r dudalen, mae gwybodaeth bwysig sy’n cael ei rhoi ar ôl y botwm ‘Parhau’. Mae’n bosibl i bobl sy’n defnyddio darllenwyd sgrin fethu’r wybodaeth hon. Rydym yn bwriadu gwneud yn siŵr bod yr wybodaeth bwysig i gyd uwchben y botwm parhau fel nad yw’n cael ei methu.
+  - Nid yw teitlau rhai tudalennau yn cynnwys enw’r gwasanaeth. Rydym yn bwriadu ychwanegu enw’r gwasanaeth at bob teitl tudalen.
+  - Ar bob tudalen, nid yw’r awgrymiadau yn gysylltiedig â’r meysydd y maent yn berthnasol iddynt. Mae hyn yn golygu na fyddant yn cael eu darllen gan y dechnoleg gynorthwyol os yw’r defnyddiwr yn symud yn syth i’r maes. Byddwn yn cywiro hyn fel eu bod i gyd yn cysylltu â’r maes ac yn cael eu darllen yn uchel yn gywir.
+  - Os oes nifer o negeseuon gwall ar sgrin, nid yw’r rhestr o negeseuon yn cael ei ddangos yn yr un drefn â meysydd y ffurflen ar y dudalen. Rydym yn bwriadu dangos y cysylltiadau gwall yn yr un drefn â meysydd mewnbwn y ffurflen.
+  - Mae ychydig o’r wybodaeth yn cael ei darllen yn uchel ddwywaith gan ddarllenwr sgrin oherwydd nad yw’r cynlluniau’n dilyn y patrwm. Byddwn yn cywiro hyn fel bod yr wybodaeth i gyd yn cael ei darllen yn uchel unwaith yn unig.
+milestones:
+  - description: |
+      Wrth ddefnyddio technolegau cynorthwyol, mae rhai botymau’n disgrifio URL y dudalen yn hytrach na disgrifio’r hyn y mae’r botymau yn ei wneud. Nid yw hyn yn bodloni 4.1.2 (Name, Role, Value (Level A) Understanding Name, Role, Value, How to Meet Name, Role, Value), Canllawiau Hygyrchedd Cynnwys y We.
+      Rydym yn bwriadu cywiro’r gwall hwn ac ychwanegu’r label disgrifiadol cywir at bob botwm.
+    date: 2021-07-31
+  - description: |
+      Ar rai tudalennau, mae’n bosibl na fydd y botymau radio yn gwneud synnwyr tu allan i gyd-destun. Mae’n bosibl nad yw’n glir pa gwestiwn y mae’r botymau radio yn cyfeirio ato. Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, How to Meet Info and Relationships)
+      a 4.1.1 (Parsing (Level A) Understanding Parsing, How to Meet Parsing), Canllawiau Hygyrchedd Cynnwys y We.
+      Rydym yn bwriadu grwpio’r prif gwestiwn gyda’r botymau cywir wrth adeiladu’r tudalen.
+    date: 2021-07-31
+  - description: |
+      Wrth ddefnyddio Internet Explorer, nid yw rhywfaint o’r wybodaeth ar y dudalen yn hygrych.
+      Gall hyn achosi dryswch i bobl sy’n defnyddio darllenwyr sgrin. Nid yw hyn yn bodloni 2.1.1
+      (Keyboard (Level A) Understanding Keyboard, How to Meet Keyboard) a 4.1.2 (Name, Role, Value (Level A) Understanding Name, Role, Value, How to Meet Name, Role, Value),
+      Canllawiau Hygyrchedd Cynnwys y We. Rydym yn bwriadu gwneud yn siŵr bod y rhai sy’n defnyddio bysellfwrdd yn unig yn gallu ehangu’r cynnwys ar draws bob porwr.
+    date: 2021-07-31
+  - description: |
+      Pan fo’r dudalen yn llwytho neges wall, ni fydd rhai o’r neges yn cael ei disgrifio’n awtomatig i bobl sy’n defnyddio darllenwyr sgrin. Nid yw hyn yn bodloni 4.1.3
+      (Status Messages (Level AA) Understanding Status Messages, How to Meet Status Messages), Canllawiau Hygyrchedd Cynnwys y We. Rydym yn bwriadu gwneud yn siŵr bod pob
+      neges wall yn cael ei dangos a’i disgrifio cyn gynted â bod y dudalen yn llwytho.
+    date: 2021-07-31
 statementVisibility: public
 statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-10-16
