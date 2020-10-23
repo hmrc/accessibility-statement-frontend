@@ -1,7 +1,7 @@
 serviceName: find your business rates valuation
 serviceHeaderName: find your business rates valuation
 serviceDescription: |
-  This service allows you search for and check the rateable value of your 
+  This service allows you to search for and check the rateable value of your
   property - this is set by the Valuation Office Agency (VOA) and used by 
   your local council to calculate your business rates bill.
 serviceDomain: www.tax.service.gov.uk
