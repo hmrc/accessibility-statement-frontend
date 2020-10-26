@@ -1,6 +1,6 @@
-serviceName: Gwasanaeth ad-daliad a chyfrifiad treth
-serviceHeaderName: Gwiriwch faint o Dreth Incwm a daloch
-serviceDescription: Mae’r gwasanaeth Gwiriwch faint o Dreth Incwm a daloch yn galluogi defnyddwyr sydd wedi cael Cyfrifiad Treth P800 i weld pam eu bod naill ai wedi gordalu neu dandalu treth, ac yn eu galluogi i dalu unrhyw dreth sy’n ddyledus.
+serviceName: Gwirio faint o Dreth Incwm a daloch
+serviceHeaderName: Gwirio faint o Dreth Incwm a daloch
+serviceDescription: Mae’r gwasanaeth Gwirio faint o Dreth Incwm a daloch yn galluogi defnyddwyr sydd wedi cael Cyfrifiad Treth P800 i weld pam eu bod naill ai wedi gordalu neu dandalu treth, ac yn eu galluogi i dalu unrhyw dreth sy’n ddyledus.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /tax-you-paid
 contactFrontendServiceId: tax-you-paid
@@ -30,7 +30,7 @@ milestones:
       Canllawiau Hygyrchedd Cynnwys y We. Rydym yn bwriadu gwneud yn siŵr bod y rhai sy’n defnyddio bysellfwrdd yn unig yn gallu ehangu’r cynnwys ar draws bob porwr.
     date: 2021-07-31
   - description: |
-      Pan fo’r dudalen yn llwytho neges wall, ni fydd rhai o’r neges yn cael ei disgrifio’n awtomatig i bobl sy’n defnyddio darllenwyr sgrin. Nid yw hyn yn bodloni 4.1.3
+      Pan fo’r dudalen yn llwytho neges wall, ni fydd rhai o'r negeseuon yn cael ei disgrifio’n awtomatig i bobl sy’n defnyddio darllenwyr sgrin. Nid yw hyn yn bodloni 4.1.3
       (Status Messages (Level AA) Understanding Status Messages, How to Meet Status Messages), Canllawiau Hygyrchedd Cynnwys y We. Rydym yn bwriadu gwneud yn siŵr bod pob
       neges wall yn cael ei dangos a’i disgrifio cyn gynted â bod y dudalen yn llwytho.
     date: 2021-07-31
