@@ -10,7 +10,7 @@ accessibilityProblems:
 - Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
 milestones:
 - description: Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
-  date: 2020-11-06
+  date: 2021-03-31
 serviceLastTestedDate: 2019-08-01
 statementVisibility: public
 statementCreatedDate: 2020-09-23
