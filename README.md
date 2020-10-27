@@ -69,6 +69,9 @@ The filename can contain only lower case letters, dashes or numbers, and the fil
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run the unit and integration tests locally as described below.
 
+## Release an accessibility statement to Production
+Production releases for ```accessibility-statement-frontend``` are managed by PlatUI. If you would like the team to release your accessibility statement to Production, please contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/).
+
 ## Adding to your service
 
 Adding the accessibility statement to your service requires basic knowledge of the Play framework, the MDTP platform, and
