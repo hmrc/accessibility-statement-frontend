@@ -8,6 +8,5 @@ serviceUrl: /annual-tax-summary
 contactFrontendServiceId: annual-tax-summary
 complianceStatus: noncompliant
 statementVisibility: public
-statementCreatedDate: 2019-09-18
-statementLastUpdatedDate: 2019-09-18
-
+statementCreatedDate: 2020-09-24
+statementLastUpdatedDate: 2020-09-24

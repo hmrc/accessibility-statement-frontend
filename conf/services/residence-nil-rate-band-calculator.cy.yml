@@ -1,0 +1,15 @@
+
+serviceName: Cyfrifiannell Haen Cyfradd Sero ar gyfer Cartrefi
+serviceHeaderName: Cyfrifwch yr RNRB sydd ar gael
+serviceDescription: |
+  Mae’r gyfrifiannell Haen Cyfradd Sero ar gyfer Cartrefi (RNRB) yn cyfrifo’r trothwy ychwanegol
+  sydd ar ystâd cyn bod Treth Etifeddiant yn ddyledus. Y trothwy ychwanegol ar gyfer blwyddyn dreth
+  2020 i 2021 yw £175,000. Mae’r RNRB ond yn berthnasol os bu farw perchennog yr ystâd ar neu ar
+  ôl 6 Ebrill 2017.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /calculate-additional-inheritance-tax-threshold/date-of-death
+contactFrontendServiceId: RNRB
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-09-21

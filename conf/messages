@@ -1,20 +1,12 @@
 service.homePageUrl = /
-
-footer.cookies.text = Cookies
-footer.cookies.url = /help/cookies
-footer.privacy.text = Privacy policy
-footer.privacy.url = /help/privacy
-footer.termsConditions.text = Terms and conditions
-footer.termsConditions.url = /help/terms-and-conditions
-footer.govukHelp.text = Help using GOV.UK
-footer.govukHelp.url = https://www.gov.uk/help
 general.serviceName = Accessibility statement
+general.pageTitle = Accessibility statement for {0} service - GOV.UK
 
 ## introduction
 introduction.heading=Accessibility statement for {0} service
 introduction.lede=This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.
 introduction.scope.part1='This service is part of the wider GOV.UK website. There is a '
-introduction.scope.part2=separate accessibility statement for the main GOV.UK website.
+introduction.scope.part2=separate accessibility statement for the main GOV.UK website
 introduction.service-name=This page only contains information about the {0} service, available at {1}.
 
 ## Using the service
@@ -47,8 +39,8 @@ contact.extra-support.part3=' if you need help with filling in forms or getting 
 
 ## Reporting problems
 reporting.heading=Reporting accessibility problems with this service
-reporting.report-problem.part1=We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements, report the
-reporting.report-problem.part2=accessibility problem (opens in a new window or tab)
+reporting.report-problem.part1='We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements, '
+reporting.report-problem.part2=report the accessibility problem (opens in a new tab)
 
 ## Complaints
 complaints.heading=If you are not happy with our response
@@ -63,7 +55,7 @@ in-person-contact.heading=Contacting us by phone or getting a visit from us in p
 in-person-contact.text-relay=We provide a text relay service if you are deaf, hearing impaired or have a speech impediment.
 in-person-contact.bsl=We can provide a British Sign Language (BSL) interpreter, or you can arrange a visit from an HMRC advisor to help you complete the service.
 in-person-contact.find-out-how.part1='Find out ' 
-in-person-contact.find-out-how.part2=how to get extra support from HMRC.
+in-person-contact.find-out-how.part2=how to get extra support from HMRC
 
 ## Technical information
 technical.heading=Technical information about this service’s accessibility
@@ -73,9 +65,9 @@ technical.compliance.partial='This service is partially compliant with the '
 technical.compliance.noncompliant='This service is non compliant with the '
 technical.compliance.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
 technical.compliance.partial.reasons=, due to the non-compliances listed below.
-technical.non-compliance.header=Non-accessible content
+technical.non-compliance.header=Non‐accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
-technical.non-compliance.accessibility=Non-compliance with the accessibility regulations
+technical.non-compliance.accessibility=Non‐compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by {0}.
 technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.
 technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 December 2020.

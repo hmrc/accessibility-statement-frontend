@@ -3,7 +3,7 @@ serviceHeaderName: Register as a pension scheme administrator
 serviceDescription: |
   You can use this service to register as a pension scheme administrator.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /www.gov.uk/guidance/pension-administrators-register-as-an-administrator
+serviceUrl: /register-as-pension-scheme-administrator
 contactFrontendServiceId: PODS
 complianceStatus: full
 serviceLastTestedDate: 2020-03-19

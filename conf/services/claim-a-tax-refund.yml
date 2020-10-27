@@ -1,0 +1,11 @@
+serviceName: Claim a tax refund
+serviceHeaderName: Claim a tax refund
+serviceDescription: |
+  You can use this service to claim a refund if you have paid HMRC too much tax.
+serviceDomain: tax.service.gov.uk
+serviceUrl: /claim-tax-refund
+contactFrontendServiceId: claimtaxrefundfrontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18

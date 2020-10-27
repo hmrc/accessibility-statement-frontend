@@ -2,7 +2,7 @@ serviceName: Online Tax Registration Service (OTRS)
 serviceHeaderName: OTRS
 serviceDescription: "The Online Tax Registration Service (OTRS) allows users to register for tax services online."
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /otrs
+serviceUrl: /business-registration
 contactFrontendServiceId: hmrc-otrs
 complianceStatus: partial
 accessibilityProblems:
@@ -26,6 +26,6 @@ milestones:
   - description: "Users cannot always skip to the main content when using keyboard navigation or a screen reader, which means these users may have to go through the same information on multiple pages, for example, headers and menu links. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (bypass blocks)."
     date: 2021-09-23
 serviceLastTestedDate: 2020-07-13
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23

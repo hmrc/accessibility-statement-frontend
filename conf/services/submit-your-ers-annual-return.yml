@@ -1,0 +1,11 @@
+serviceName: Submit your ERS annual return
+serviceHeaderName: Submit your ERS annual return
+serviceDescription: |
+  Employers, or agents acting on their behalf, can use this service to submit annual employment related securities returns after the end of the tax year.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submit-your-ers-annual-return
+contactFrontendServiceId: ERS-RETURNS
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22

@@ -1,0 +1,55 @@
+serviceName: Gwiriwch eich Treth Incwm
+serviceHeaderName: Gwiriwch eich Treth Incwm
+serviceDescription: |
+  Yn y gwasanaeth ‘Gwiriwch eich Treth Incwm’, gallwch wirio gwybodaeth am eich blwyddyn dreth bresennol, gwirio blynyddoedd treth blaenorol, bwrw golwg dros eich cod treth a diweddaru’ch manylion treth.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-income-tax/what-do-you-want-to-do
+contactFrontendServiceId: check-income-tax
+complianceStatus: partial
+accessibilityProblems:
+  - mae rhai o’r cysylltiadau’n cael eu colli pan fo defnyddwyr yn mynd trwy’r dudalen gan ddefnyddio’r botwm tab. Mae yna hefyd gysylltiadau sydd wedi’u cuddio o’r golwg a all fod yn ddryslyd gan nad yw defnyddwyr yn gallu gweithio allan ble y maent ar y dudalen.
+  - mae rhai o benynnau’r tabl yn wag. Mae hyn yn golygu na fydd defnyddwyr yn cael gwybodaeth am bwrpas y tabl neu’r colofnau. Gall hyn ei gwneud hi’n anodd gweithio allan beth yw ystyr y tabl.
+  - nid yw rhai o’r negeseuon gwall yn ei gwneud yn glir beth sydd wedi mynd o’i le. Gall hyn ei gwneud hi’n anodd gweithio allan sut i gywiro’ch ateb.
+  - wrth ddefnyddio’r gwasanaeth ar ddyfais symudol, ni allwch gael mynediad at rai o’r cysylltiadau gyda thechnoleg gynorthwyol.
+  - ar rai tudalennau, mae yna gynnwys sy’n gysylltiedig ond nad yw’n cael ei ddarllen fel rhestr. Gall hyn ei gwneud hi’n anoddach i ddeall ar gyfer defnyddwyr sydd â darllenwyr sgrin.
+  - yn yr adran ‘Diweddaru’ch incwm amcangyfrifedig’, mae teitlau’r dudalen ar gyfer dwy dudalen ddilynol yr un fath. Gall hyn beri dryswch i rai defnyddwyr sydd â darllenwyr sgrin.
+  - mae yna gynnwys sy’n diflannu wrth i chi hofran drosto. Bydd hyn yn ei gwneud hi’n anodd i ddefnyddwyr sy’n defnyddio’r dechneg bwlch rhwng testun fel dull o wella’u profiad darllen.
+  - ar rai tudalennau, mae’n rhaid i chi sgrolio’n llorweddol er mwyn darllen popeth ar y sgrin.
+  - ar y dudalen ‘Enw’r gyflogaeth’, nid yw gwedd yr elfennau y gellir eu dewis ac sydd wedi’u huwcholeuo’n cyd-fynd â’r cyferbynnedd lliw a argymhellir gan System Ddylunio GOV.UK.
+  - ar rai tudalennau, mae’r pennyn a’r label wedi’u dyblygu. Mae hyn yn golygu y bydd darllenydd sgrin yn darllen yr wybodaeth hon ddwywaith.
+  - ar rai tudalennau, nid yw meysydd y ffurflen wedi’u clymu yn ei gilydd mewn modd sy’n ddefnyddiol i bobl na allant weld cynllun gweledol y ffurflen. Gall hyn wneud y cwestiwn a’r testun awgrym yn anodd eu deall.
+  - mewn rhai mannau, nid yw testun awgrym yn cael ei ddarllen gan ddarllenwyr sgrin wrth bori allan o’r cyd-destun gan ddefnyddio’r botwm ‘tab’. Gall symud drwy’r dudalen gymryd tipyn o amser o ganlyniad i hyn.
+  - ar y dudalen ‘Amcangyfrif Treth Incwm’, mae yna gelloedd gwag yn y tabl. Gallai hyn fod yn anodd ei ddeall ar gyfer pobl na allant weld cynllun gweledol y tabl.
+milestones:
+  - description: |
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 2.4.3 (Focus Order (Level A) Understanding Focus Order: How to Meet Focus Order).
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships: How to Meet Info and Relationships).
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 2.4.4 (Link Purpose – in context (Level A) Understanding Link Purpose (In Context): How to Meet Link Purpose (In Context)).
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 2.1.1 (Keyboard (Level A) Understanding Keyboard: How to Meet Keyboard).
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships: How to Meet Info and Relationships).
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.4.12 (Text Spacing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.4.10 (Reflow).
+    date: 2020-07-31
+  - description: |
+      Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.4.1 (Non-text Contrast).
+    date: 2020-07-31
+
+serviceLastTestedDate: 2020-07-08
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2020-09-23

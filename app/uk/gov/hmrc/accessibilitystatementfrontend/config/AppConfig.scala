@@ -22,30 +22,37 @@ import play.api.i18n.Lang
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
 @Singleton
-case class AppConfig @Inject()(config: Configuration, servicesConfig: ServicesConfig) {
-
-  private val platformFrontendHost = config.getOptional[String]("platform.frontend.host")
+case class AppConfig @Inject() (
+  config: Configuration,
+  servicesConfig: ServicesConfig
+) {
+  private val platformFrontendHost      =
+    config.getOptional[String]("platform.frontend.host")
   val languageControllerHostUrl: String = platformFrontendHost.getOrElse(
     servicesConfig.getString("language-controller.host")
   )
 
   private val contactFrontendHostUrl: String =
-    platformFrontendHost.getOrElse(servicesConfig.getString("contact.frontend.host"))
-  val reportAccessibilityProblemUrl = s"$contactFrontendHostUrl/contact/accessibility-unauthenticated"
-
-  val footerLinkItems: Seq[String] = config.getOptional[Seq[String]]("footerLinkItems").getOrElse(Seq())
-
-  val welshLanguageSupportEnabled: Boolean =
-    config.getOptional[Boolean]("features.welsh-language-support").getOrElse(false)
+    platformFrontendHost.getOrElse(
+      servicesConfig.getString("contact.frontend.host")
+    )
+  val reportAccessibilityProblemUrl          =
+    s"$contactFrontendHostUrl/contact/accessibility-unauthenticated"
 
   val showDraftStatementsEnabled: Boolean =
-    config.getOptional[Boolean]("features.show-draft-statements").getOrElse(false)
+    config
+      .getOptional[Boolean]("features.show-draft-statements")
+      .getOrElse(false)
 
   val en: String            = "en"
   val cy: String            = "cy"
   val defaultLanguage: Lang = Lang(en)
 
-  val trackingConsentUrl: String = servicesConfig.getString("tracking-consent-frontend.url")
+  val trackingConsentEnabled: Boolean =
+    config.getOptional[Boolean]("features.tracking-consent").getOrElse(false)
+
+  val trackingConsentUrl: String =
+    servicesConfig.getString("tracking-consent-frontend.url")
 
   val servicesDirectory: String = servicesConfig.getString("services.directory")
 }

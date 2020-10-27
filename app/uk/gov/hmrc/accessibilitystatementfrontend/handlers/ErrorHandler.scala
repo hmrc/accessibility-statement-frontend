@@ -25,10 +25,18 @@ import uk.gov.hmrc.accessibilitystatementfrontend.views.html.ErrorTemplate
 import uk.gov.hmrc.play.bootstrap.frontend.http.FrontendErrorHandler
 
 @Singleton
-class ErrorHandler @Inject()(errorTemplate: ErrorTemplate, val messagesApi: MessagesApi)(implicit appConfig: AppConfig)
+class ErrorHandler @Inject() (
+  errorTemplate: ErrorTemplate,
+  val messagesApi: MessagesApi
+)(implicit appConfig: AppConfig)
     extends FrontendErrorHandler {
 
-  override def standardErrorTemplate(pageTitle: String, heading: String, message: String)(
-    implicit request: Request[_]): Html =
+  override def standardErrorTemplate(
+    pageTitle: String,
+    heading: String,
+    message: String
+  )(implicit
+    request: Request[_]
+  ): Html =
     errorTemplate(pageTitle, heading, message)
 }

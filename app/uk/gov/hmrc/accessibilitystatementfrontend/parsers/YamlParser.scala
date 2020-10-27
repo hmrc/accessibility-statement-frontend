@@ -21,7 +21,7 @@ import play.api.Logging
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
 
 import scala.io.Source
-import scala.util.{Try, Success, Failure}
+import scala.util.{Failure, Success, Try}
 
 class YamlParser[T: Decoder] extends Logging {
   def parse(yaml: String): Either[Error, T] =
@@ -29,26 +29,31 @@ class YamlParser[T: Decoder] extends Logging {
       .parse(yaml)
       .flatMap(_.as[T])
 
-  def parseFromSource(statementSource: StatementSource): Either[Throwable, T] = {
-    logger.info(s"Parsing YAML source file for source: ${statementSource.filename}")
+  def parseFromSource(
+    statementSource: StatementSource
+  ): Either[Throwable, T] = {
+    logger.info(
+      s"Parsing YAML source file for source: ${statementSource.filename}"
+    )
 
     val parsedYaml = yamlAsString(statementSource.source).flatMap(parse)
 
     parsedYaml match {
       case Right(parsed) =>
         Right(parsed)
-      case Left(error) =>
-        logger.error(s"Parsing error for source ${statementSource.filename}, error is: $error")
+      case Left(error)   =>
+        logger.error(
+          s"Parsing error for source ${statementSource.filename}, error is: $error"
+        )
         Left(error)
     }
   }
 
-  private def yamlAsString(source: Source) = {
+  private def yamlAsString(source: Source) =
     Try(source.mkString) match {
       case Success(yamlAsString) =>
         source.close()
         Right(yamlAsString)
-      case Failure(exception) => Left(exception)
+      case Failure(exception)    => Left(exception)
     }
-  }
 }

@@ -1,0 +1,13 @@
+serviceName: Online PAYE registration for Agents
+serviceHeaderName: PAYE registration for agents
+serviceDescription: |
+  The Online PAYE registration for agents service lets a PAYE agent or
+  payroll bureau apply for an Agent Reference. This reference is needed
+  to register for the PAYE for Agents payroll service.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-epaye-registration/start
+contactFrontendServiceId: AGENT_EPAYE
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18

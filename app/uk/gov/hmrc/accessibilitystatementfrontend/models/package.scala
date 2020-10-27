@@ -18,6 +18,7 @@ package uk.gov.hmrc.accessibilitystatementfrontend
 
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.net.URLEncoder
 import io.circe.{Decoder, Encoder}
 import scala.util.Try
 import play.api.i18n.Messages
@@ -30,23 +31,35 @@ package object models {
   }
 
   def prettyPrintDate(date: Date)(implicit messages: Messages): String = {
-    val dayNumber = new SimpleDateFormat("dd").format(date)
+    val dayNumber   = new SimpleDateFormat("dd").format(date)
     val monthNumber = new SimpleDateFormat("M").format(date)
-    val year = new SimpleDateFormat("YYYY").format(date)
-    val monthName = messages(s"dates.month.$monthNumber")
+    val year        = new SimpleDateFormat("yyyy").format(date)
+    val monthName   = messages(s"dates.month.$monthNumber")
     s"$dayNumber $monthName $year"
   }
 
-  implicit val dateEncoder: Encoder[Date] = Encoder.encodeString.contramap[Date](format.format)
+  implicit val dateEncoder: Encoder[Date] =
+    Encoder.encodeString.contramap[Date](format.format)
 
-  def reportAccessibilityProblemLink(reportAccessibilityProblemUrl: String,
-                                     serviceId: String,
-                                     referrerUrl: Option[String]): String = {
+  def reportAccessibilityProblemLink(
+    reportAccessibilityProblemUrl: String,
+    serviceId: String,
+    referrerUrl: Option[String]
+  ): String = {
+    val queryString = encodedQueryString(serviceId, referrerUrl)
+    s"$reportAccessibilityProblemUrl?$queryString"
+  }
+
+  private def encodedQueryString(
+    serviceId: String,
+    referrerUrl: Option[String]
+  ): String = {
+    val encodedReferrerUrl    =
+      referrerUrl.map(url => URLEncoder.encode(url, "UTF-8"))
     val queryStringParameters = Seq(
       Some(s"service=$serviceId"),
-      referrerUrl.map(ru => s"referrerUrl=$ru")
+      encodedReferrerUrl.map(ru => s"referrerUrl=$ru")
     )
-    val queryString = queryStringParameters.flatten.mkString("&")
-    s"$reportAccessibilityProblemUrl?$queryString"
+    queryStringParameters.flatten.mkString("&")
   }
 }

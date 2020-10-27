@@ -1,0 +1,26 @@
+serviceName: cefnogaeth gan y ddesg gymorth ar gyfer defnyddwyr gwasanaethau asiant dros y ffôn
+serviceHeaderName: Cefnogaeth gan y ddesg gymorth ar gyfer defnyddwyr gwasanaethau asiant dros y ffôn
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn galluogi staff CThEM i helpu cleientiaid asiantau i ddelio â cheisiadau am awdurdodiad neu geisiadau gan asiantau tramor er mwyn cymeradwyo cyfrif gwasanaethau asiant ac adolygu gwiriadau sicrwydd asiant.
+serviceDomain: www.admin.tax.service.gov.uk
+serviceUrl: /agent-services/check-application
+contactFrontendServiceId: AOSS
+complianceStatus: partial
+accessibilityProblems:
+  - Mae’n bosibl nad yw’r cyferbynnedd rhwng y testun a’r cefndir ar y botwm cychwyn ar y dudalen “Awdurdodi asiant neu dynnu ei awdurdodiad” yn bodloni trothwyon cymhareb gyferbynnedd safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+  - Yn y siwrne ar gyfer tynnu awdurdodiad, mae yna nifer o negeseuon gwall ar gyfer yr un maes, a gallai hyn beri dryswch
+  - Nid yw’r dudalen rheswm dros wrthod yn cynnwys gwallau maes ffurflen, dim ond crynodeb o wallau, sy’n golygu efallai na fydd y defnyddiwr yn gwybod pa faes ffurflen y mae’r gwall ar ei gyfer
+milestones:
+  - description: |
+      Mae’n bosibl nad yw’r cyferbynnedd rhwng y testun a’r cefndir ar y botwm cychwyn ar y dudalen “Awdurdodi asiant neu dynnu ei awdurdodiad” yn bodloni trothwyon cymhareb gyferbynnedd safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+    date: 2020-12-31
+  - description: |
+      Yn y siwrne ar gyfer tynnu awdurdodiad, mae yna nifer o negeseuon gwall ar gyfer yr un maes, a gallai hyn beri dryswch
+    date: 2020-12-31
+  - description: |
+      Nid yw’r dudalen rheswm dros wrthod yn cynnwys gwallau maes ffurflen, dim ond crynodeb o wallau, sy’n golygu efallai na fydd y defnyddiwr yn gwybod pa faes ffurflen y mae’r gwall ar ei gyfer
+    date: 2020-12-31
+serviceLastTestedDate: 2020-9-21
+statementVisibility: public
+statementCreatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-09-22

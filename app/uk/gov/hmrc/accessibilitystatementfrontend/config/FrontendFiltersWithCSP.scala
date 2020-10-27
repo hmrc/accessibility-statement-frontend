@@ -22,5 +22,7 @@ import play.filters.csp.CSPFilter
 import uk.gov.hmrc.play.bootstrap.frontend.filters.FrontendFilters
 
 @Singleton
-class FrontendFiltersWithCSP @Inject()(defaultFilters: FrontendFilters, cspFilter: CSPFilter)
-    extends DefaultHttpFilters(cspFilter +: defaultFilters.filters: _*)
+class FrontendFiltersWithCSP @Inject() (
+  defaultFilters: FrontendFilters,
+  cspFilter: CSPFilter
+) extends DefaultHttpFilters(cspFilter +: defaultFilters.filters: _*)

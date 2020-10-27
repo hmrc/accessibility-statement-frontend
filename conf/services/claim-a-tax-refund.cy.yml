@@ -1,0 +1,11 @@
+serviceName: Hawlio ad-daliad treth
+serviceHeaderName: Hawlio ad-daliad treth
+serviceDescription: |
+  Gallwch ddefnyddio’r gwasanaeth hwn i hawlio ad-daliad os ydych wedi talu gormod o dreth i CThEM.
+serviceDomain: tax.service.gov.uk
+serviceUrl: /claim-tax-refund
+contactFrontendServiceId: claimtaxrefundfrontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18

@@ -1,0 +1,11 @@
+serviceName: Income Tax Submission
+serviceHeaderName: Income Tax Submission
+serviceDescription: |
+  Service for users and agents to submit a Self Assessment.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /income-tax-submission
+contactFrontendServiceId: income-tax-submission
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-09-21

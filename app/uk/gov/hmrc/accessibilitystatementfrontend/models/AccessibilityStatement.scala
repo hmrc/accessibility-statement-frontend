@@ -21,22 +21,22 @@ import io.circe.{Decoder, Encoder}
 import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 
 case class AccessibilityStatement(
-                                   serviceName: String,
-                                   serviceHeaderName: String,
-                                   serviceDescription: String,
-                                   serviceDomain: String,
-                                   serviceUrl: String,
-                                   contactFrontendServiceId: String,
-                                   complianceStatus: ComplianceStatus,
-                                   accessibilityProblems: Option[Seq[String]],
-                                   milestones: Option[Seq[Milestone]],
-                                   automatedTestingOnly: Option[Boolean],
-                                   statementVisibility: Visibility,
-                                   serviceLastTestedDate: Option[Date],
-                                   statementCreatedDate: Date,
-                                   statementLastUpdatedDate: Date,
-                                   automatedTestingDetails: Option[String]
-                                 ) {
+  serviceName: String,
+  serviceHeaderName: String,
+  serviceDescription: String,
+  serviceDomain: String,
+  serviceUrl: String,
+  contactFrontendServiceId: String,
+  complianceStatus: ComplianceStatus,
+  accessibilityProblems: Option[Seq[String]],
+  milestones: Option[Seq[Milestone]],
+  automatedTestingOnly: Option[Boolean],
+  statementVisibility: Visibility,
+  serviceLastTestedDate: Option[Date],
+  statementCreatedDate: Date,
+  statementLastUpdatedDate: Date,
+  automatedTestingDetails: Option[String]
+) extends Ordered[AccessibilityStatement] {
 
   val isFullyCompliant: Boolean = complianceStatus match {
     case FullCompliance => true
@@ -52,9 +52,14 @@ case class AccessibilityStatement(
     case PartialCompliance => true
     case _                 => false
   }
+
+  def compare(that: AccessibilityStatement): Int =
+    this.serviceName.compare(that.serviceName)
 }
 
 object AccessibilityStatement {
-  implicit val e: Encoder[AccessibilityStatement] = deriveEncoder[AccessibilityStatement]
-  implicit val d: Decoder[AccessibilityStatement] = deriveDecoder[AccessibilityStatement]
+  implicit val e: Encoder[AccessibilityStatement] =
+    deriveEncoder[AccessibilityStatement]
+  implicit val d: Decoder[AccessibilityStatement] =
+    deriveDecoder[AccessibilityStatement]
 }

@@ -1,0 +1,10 @@
+serviceName: Credydau Treth
+serviceHeaderName: Gwasanaeth Credydau Treth
+serviceDescription: Gall unrhyw un sy’n cael credydau treth ar hyn o bryd ddefnyddio’r gwasanaeth Credydau Treth i wirio taliadau ar y gweill, neu roi gwybod am newid yn eu hamgylchiadau, neu amgylchiadau unrhyw un arall, ar eu hawliad.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-credits-service
+contactFrontendServiceId: tax-credits-service
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-09-23
