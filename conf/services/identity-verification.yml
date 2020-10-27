@@ -19,7 +19,7 @@ milestones:
   - description: Add legend to fieldset -
     date: 2020-09-28
   - description: Add timeout warning -
-    date: 2020-10-30
+    date: 2020-11-30
   - description: Associate fieldset -
     date: 2020-10-30
 serviceLastTestedDate: 2020-09-01
