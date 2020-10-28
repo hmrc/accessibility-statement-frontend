@@ -11,11 +11,11 @@ accessibilityProblems:
   - Ar un dudalen, mae rhai cysylltiadau ag geiriad tebyg, ond maent yn mynd i wahanol lefydd
   - Mae’n anodd llywio rhai o’r tabiau gan ddefnyddio bysellfwrdd yn unig
 milestones:
-  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEM sydd yn y troedyn yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEM sydd yn y faner yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2020-12-31
-  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEM sydd yn y troedyn yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEM sydd yn y troedyn yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2020-12-31
-  - description: Ar un dudalen, mae cysylltiadau sy’n mynd â’r defnyddiwr i newid gwahanol fewnbynnau yn defnyddio’r un geiriad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.9 (Link Purpose (Link Only)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Ar un dudalen, mae cysylltiadau sy’n mynd â’r defnyddiwr i newid gwahanol fewnbynnau yn defnyddio’r un geiriad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.9 (Link Purpose (Link Only)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2020-12-31
 statementVisibility: draft
 serviceLastTestedDate: 2020-09-16
