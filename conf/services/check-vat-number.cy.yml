@@ -1,0 +1,15 @@
+serviceName: Gwirio rhif TAW yn y DU
+serviceHeaderName: Gwirio rhif TAW yn y DU
+serviceDescription: |
+  Defnyddiwch y gwasanaeth hwn i wirio a yw rhif cofrestru TAW yn y DU yn ddilys,
+  yn ogystal ag enw a chyfeiriad y busnes y mae'r rhif TAW yn y DU wedi'i gofrestru
+  iddynt. Os ydych yn fusnes sydd wedi'i gofrestru ar gyfer TAW yn y DU, gallwch
+  hefyd ddefnyddio'r gwasanaeth hwn i brofi pryd y gwnaethoch wirio rhif TAW yn y DU.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-vat-number
+contactFrontendServiceId: vat-registered-companies-frontend
+complianceStatus: full
+serviceLastTestedDate: 2020-03-20
+statementVisibility: public
+statementCreatedDate: 2020-10-19
+statementLastUpdatedDate: 2020-10-19
