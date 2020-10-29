@@ -1,0 +1,15 @@
+serviceName: Check a UK VAT number
+serviceHeaderName: Check a UK VAT number
+serviceDescription: |
+  Use this service to check if a UK VAT registration number is valid,
+  and the name and address of the business that the UK VAT number is
+  registered to. If you are a UK VAT-registered business, you can also
+  use this service to prove when you checked a UK VAT number.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-vat-number
+contactFrontendServiceId: vat-registered-companies-frontend
+complianceStatus: full
+serviceLastTestedDate: 2020-03-20
+statementVisibility: public
+statementCreatedDate: 2020-10-19
+statementLastUpdatedDate: 2020-10-19
