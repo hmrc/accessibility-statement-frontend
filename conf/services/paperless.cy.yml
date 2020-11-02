@@ -17,7 +17,7 @@ milestones:
     date: 2020-12-31
   - description: Ar un dudalen, mae cysylltiadau sy’n mynd â’r defnyddiwr i newid gwahanol fewnbynnau yn defnyddio’r un geiriad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.9 (Link Purpose (Link Only)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2020-12-31
-statementVisibility: draft
+statementVisibility: public
 serviceLastTestedDate: 2020-09-16
 statementCreatedDate: 2020-09-22
 statementLastUpdatedDate: 2020-09-22
