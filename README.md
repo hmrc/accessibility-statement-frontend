@@ -219,14 +219,7 @@ Gatling performance tests designed to be run against a production-like environme
 
 While the service expects to attract a low volume of traffic, the fact that the
 accessibility statements load into memory at start-up means the service may require
-more memory than a regular service. For this reason, performance testing has
-been carried out with the service ingesting well above the maximum number of statements
-expected to exist on the platform for the foreseeable future.
-
-The shell script `./generate_test_data.sh` creates fake accessibility statement
-YAML files in testOnlyConf/testOnlyServices for the purposes of load testing the application.
-
-To run the application using this test data run `./run_with_test_data.sh`
+more memory than a regular service. 
 
 ## Running ZAP scan locally
 
