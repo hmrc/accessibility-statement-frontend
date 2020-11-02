@@ -75,8 +75,5 @@ lazy val microservice = Project(appName, file("."))
     resolvers += Resolver.jcenterRepo
   )
 
-val generateFakeStatements = inputKey[Unit]("Generate fake accessibility statements.")
-fullRunInputTask(generateFakeStatements, Test, "helpers.FakeStatementGenerator")
-
 val generateReport = inputKey[Unit]("Generate a report on the accessibility statements.")
 fullRunInputTask(generateReport, Compile, "uk.gov.hmrc.accessibilitystatementfrontend.tasks.ReportTask")
