@@ -55,7 +55,8 @@ lazy val microservice = Project(appName, file("."))
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
       "uk.gov.hmrc.govukfrontend.views.html.components._",
       "uk.gov.hmrc.govukfrontend.views.html.helpers._",
-      "uk.gov.hmrc.hmrcfrontend.views.html.components._"
+      "uk.gov.hmrc.hmrcfrontend.views.html.components._",
+      "uk.gov.hmrc.hmrcfrontend.views.html.helpers._"
     ),
     // ***************
     // Use the silencer plugin to suppress warnings

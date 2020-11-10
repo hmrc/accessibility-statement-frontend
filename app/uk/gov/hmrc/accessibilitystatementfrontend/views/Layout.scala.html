@@ -20,7 +20,7 @@
 @this(
         govukLayout: GovukLayout,
         govukHeader: GovukHeader,
-        hmrcFooter: HmrcFooter,
+        hmrcStandardFooter: HmrcStandardFooter,
         head: Head,
         languageSelect: LanguageSelect
 )
@@ -49,5 +49,5 @@
     headerBlock = Some(headerBlock),
     scriptsBlock = None,
     beforeContentBlock = Some(beforeContentBlock),
-    footerBlock = Some(hmrcFooter())
+    footerBlock = Some(hmrcStandardFooter())
 )(contentBlock)
