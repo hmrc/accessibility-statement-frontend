@@ -55,10 +55,8 @@ class StatementController @Inject() (
         language = messagesApi.preferred(request).lang
       ) match {
         case Some((accessibilityStatement, language)) =>
-          Future.successful(
-            Ok(
-              getStatementPageInLanguage(
-                accessibilityStatement,
+          Future.successful(Ok(
+              getStatementPageInLanguage(accessibilityStatement,
                 referrerUrl,
                 language,
                 isWelshTranslationAvailable
@@ -75,9 +73,7 @@ class StatementController @Inject() (
     language: Lang
   ): Option[(AccessibilityStatement, Lang)] = {
     lazy val statementInDefaultLanguage = {
-      logger.warn(
-        s"No statement found for service: $service for language $language"
-      )
+      logger.warn(s"No statement found for service: $service for language $language")
       logger.warn(s"Checking for statement for $service using default language")
 
       statementsRepo.findByServiceKeyAndLanguage(service, defaultLanguage)
@@ -85,8 +81,7 @@ class StatementController @Inject() (
     val statementInRequestedLanguage =
       statementsRepo.findByServiceKeyAndLanguage(service, language)
 
-    statementInRequestedLanguage
-      .orElse(statementInDefaultLanguage)
+    statementInRequestedLanguage.orElse(statementInDefaultLanguage)
   }
 
   private def getStatementPageInLanguage(
