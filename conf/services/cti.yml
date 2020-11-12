@@ -7,27 +7,18 @@ serviceUrl: /cti
 contactFrontendServiceId: cti
 complianceStatus: partial
 accessibilityProblems:
-  - The focus order of the page when navigating via keyboard commands is not always logical.
-  - The colour contrast of some fonts fails to meet the expected ratio to meet WCAG 2.1 AA.
-  - Some links lack description for screen reader users.
-  - When the page is resized to 400% via browser controls, two-way scrolling is forced.
-  - Some tables contain empty table cells which can be confusing for screen reader users.
-milestones:
-  - description: Resolve focus issue for keyboard navigation.
-    date: 2020-10-31
-  - description: Ensure colour contrast complies with the expected ratio to meet WCAG 2.1 AA.
-    date: 2020-10-31
-  - description: Provide suitable link descriptions for screen reader users.
-    date: 2020-10-31	
-  - description: Prevent two-way scrolling when page is resized to 400%.
-    date: 2020-10-31
-  - description: Ensure tables do not contain empty table cells.
-    date: 2020-10-31
+   - When the page is resized to 400% via browser controls the table data is not fully visible on the property search results page
+   - Screen reader does not start by reading the error message at beginning of Advanced Search page
+ milestones:
+  - description: Enable horizontal scrolling for pages with table data
+    date: 2020-12-31
+  - description: Ensure screen readers are able to correctly read the error message at beginning of the Advanced Search page 
+    date: 2020-12-31
   - description: |
       Further accessibility testing is required in order to determine the changes necessary to reach AA compliance
       for the whole site.
-    date: 2020-11-30	
-serviceLastTestedDate: 2019-11-28
+    date: 2020-12-31	
+serviceLastTestedDate: 2020-11-12
 statementVisibility: public
 statementCreatedDate: 2020-09-16
-statementLastUpdatedDate: 2020-09-22
+statementLastUpdatedDate: 2020-11-11
