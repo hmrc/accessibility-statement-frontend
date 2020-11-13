@@ -1,6 +1,6 @@
-serviceName: Take-home pay calculator
-serviceHeaderName: Estimate your take-home pay
-serviceDescription: This service lets people calculate their take-home pay.
+serviceName: Cyfrifiannell cyflog clir
+serviceHeaderName: Amcangyfrif eich cyflog clir
+serviceDescription: Mae’r gwasanaeth hwn yn galluogi pobl i gyfrifo eu cyflog clir.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /estimate-paye-take-home-pay/your-pay
 contactFrontendServiceId: PayeTaxCalculator
