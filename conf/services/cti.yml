@@ -9,7 +9,7 @@ complianceStatus: partial
 accessibilityProblems:
    - When the page is resized to 400% via browser controls the table data is not fully visible on the property search results page
    - Screen reader does not start by reading the error message at beginning of Advanced Search page
- milestones:
+milestones:
   - description: Enable horizontal scrolling for pages with table data
     date: 2020-12-31
   - description: Ensure screen readers are able to correctly read the error message at beginning of the Advanced Search page 
