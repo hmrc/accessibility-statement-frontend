@@ -7,6 +7,7 @@ serviceUrl: /home
 contactFrontendServiceId: uktradeinfo
 complianceStatus: partial
 accessibilityProblems:
+  - the feedback form, dropdown menus below search fields, and Intrastat services have not been tested for accessibility issues
   - some pages may be difficult for assistive technologies to parse because of an incorrect meta element
   - on pages with Related content sections, the navigation elements do not all have unique labels, which may make navigating the page difficult
   - on the Privacy page, there is no visible keyboard focus on links in the main content
@@ -44,7 +45,7 @@ accessibilityProblems:
   - screen reader users may have difficulty using the interactive data tables
   - data tables are not introduced with a heading to help screen reader users to know what the main topic of the page is
   - the icon used to expand down one level in a hierarchy in data tables is not labelled, and the expand and collapse icons in the grid do not have accessible names, which may cause difficulties for screen reader users
-  - text size in data tables and the feedback page does not increase with zoom or font size
+  - text size in data tables does not increase with zoom or font size
   - keyboard users will not be able to access all of the functionality of the interactive data tables
   - keyboard users are not able to navigate to content below interactive data tables
   - there are 2 aria-labels for the main navigation, which may cause difficulty for screen reader users
@@ -56,23 +57,31 @@ accessibilityProblems:
   - the link provided on selecting Share or link to this table is not visible and alerted to screen readers
   - the input to share or link to a table does not have a label describing its purpose and is not updating when changing data
   - data table grids do not have an accessible name describing their purpose, which may cause difficulties for screen reader users
-  - some links in the feedback page open in a new tab without informing the user. Also, the report abuse link takes users to a page from which they cannot go back
-  - page titles on the feedback form do not identify their purpose
   - the Cookies we use on UK Trade Info page does not use captions on tables to help screen reader users to identify the table
   - the table headings on the Cookies we use on UK Trade Info page are not announced when using the table shortcut keys in NVDA on Firefox
   - selecting Accept all cookies on all pages and Save changes on the Set your cookie preferences for UK Trade Info page does not alert screen reader users using JAWS on Internet Explorer 11 and NVDA on Firefox
   - the Set your cookie preferences page for UK Trade Info contains a code error
   - the Set cookie preferences button does not have Javascript polyfill to make sure it acts like a button
+  - the Latest from UK Trade Info page may cause difficulties for screen reader users when navigating the list of news articles
+  - when tabbing on the unsubscribe from email alerts page, a subtle focus is displayed on the buttons which can cause disorientation
+  - when subscribing to or unsubscribing email alerts, the code used on the page may cause issues for users of assistive technologies
+  - subscribing to email alerts uses an iframe that does not have a title to describe its purpose, which may cause difficulty for screen reader users
+  - the titles of the subscribe to or unsubscribe from email alerts pages do not identify these as being part of the UK Trade Info website
   - callout boxes used on some pages do not meet the required contrast ratio of 4.5:1 between text and the background behind the text
   - some pages do not have breadcrumb trail navigation
   - on the homepage, the links See all news and See all statistical releases do not have sufficient spacing between them, making the links difficult to read and comprehend
   - search results are not introduced by a heading
   - when larger text is set on iOS, the menu button is displayed behind the service name
-  - the feedback form does not allow keyboard users to tab to all options on the form
   - parts of the data tables interface does not have sufficient colour contrast against the background
   - 400% zoom causes the drill options in data tables to overlap
-  - the data tables and feedback form do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus
+  - the data tables do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus
   - on the cookie banner, the purpose of the "Hide" button (styled as a link) is ambiguous for screen reader users when using shortcut keys
+  - when subscribing to email alerts, the email address field does not have the spellcheck attribute set to false so that browsers do not spell-check the email address. Also, the autocomplete attribute is not set to email so that browsers can fill in the email address automatically. The hint text for the field has not been associated using aria-describedby
+  - the message displayed when a user is already signed up to email alerts does not have enough contrast for users with moderately low vision to read it without contrast-enhancing technology
+  - when subscribing to or unsubscribing from email alerts, increasing the font size of the page does not increase the text size
+  - when subscribing to or unsubscribing from to email alerts, some pages do not have heading level 1 tags or references to UKTi Trade Info to help users understand what the pages contain
+  - when subscribing to email alerts, the email address field uses client-side validation built into browsers to check for correct input, which has usability and accessibility issues
+  - when subscribing to email alerts, some screen reader users are not made aware of the success message or if they have already subscribed
 milestones:
   - description: Some pages may be difficult for assistive technologies to parse because of an incorrect meta element. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
     date: 2020-12-31
@@ -148,7 +157,7 @@ milestones:
     date: 2020-12-31
   - description: The icon used to expand down one level in a hierarchy in data tables is not labelled, and the expand and collapse icons in the grid do not have accessible names, which may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
     date: 2020-12-31
-  - description: Text size in data tables and the feedback page does not increase with zoom or font size. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
+  - description: Text size in data tables does not increase with zoom or font size. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
     date: 2020-12-31
   - description: Keyboard users will not be able to access all of the functionality of the interactive data tables. This does not meet WCAG 2.1 success criterion 2.1.1 (Keyboard).
     date: 2020-12-31
@@ -172,10 +181,6 @@ milestones:
     date: 2020-12-31
   - description: Data table grids do not have an accessible name describing their purpose, which may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 3.2.2 (Labels Or Instructions).
     date: 2020-12-31
-  - description: Some links in the feedback page open in a new tab without informing the user. Also, the report abuse link takes users to a page from which they cannot go back. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
-    date: 2020-12-31
-  - description: Page titles on the feedback form do not identify their purpose. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
-    date: 2020-12-31
   - description: The Cookies we use on UK Trade Info page does not use captions on tables to help screen reader users to identify the table. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.1 (Info and Relationships).
     date: 2020-12-31
   - description: The table headings on the Cookies we use on UK Trade Info page are not announced when using the table shortcut keys in NVDA on Firefox. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.1 (Info and Relationships).
@@ -185,6 +190,16 @@ milestones:
   - description: The Set your cookie preferences page for UK Trade Info contains a code error. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
     date: 2020-12-31
   - description: The Set cookie preferences button does not have Javascript polyfill to make sure it acts like a button. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
+    date: 2020-12-31
+  - description: The Latest from UK Trade Info page may cause difficulties for screen reader users when navigating the list of news articles. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.1 (Info and Relationships).
+    date: 2020-12-31
+  - description: When tabbing on the unsubscribe from email alerts page, a subtle focus is displayed on the buttons which can cause disorientation. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
+    date: 2020-12-31
+  - description: When subscribing to or unsubscribing email alerts, the code used on the page may cause issues for users of assistive technologies. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2020-12-31
+  - description: Subscribing to email alerts uses an iframe that does not have a title to describe its purpose, which may cause difficulty for screen reader users. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
+    date: 2020-12-31
+  - description: The titles of the subscribe to or unsubscribe from email alerts pages do not identify these as being part of the UK Trade Info website. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
     date: 2020-12-31
   - description: Callout boxes used on some pages do not meet the required contrast ratio of 4.5:1 between text and the background behind the text. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast (Minimum)).
     date: 2020-12-31
@@ -196,17 +211,27 @@ milestones:
     date: 2020-12-31
   - description: When larger text is set on iOS, the menu button is displayed behind the service name. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
     date: 2020-12-31
-  - description: The feedback form does not allow keyboard users to tab to all options on the form. This does not meet WCAG 2.1 success criterion 2.1.1 (Keyboard). We plan to replace this temporary form with an accessible version.
-    date: 2020-12-31
   - description: Parts of the data tables interface does not have sufficient colour contrast against the background. This does not meet WCAG 2.1 success criterion 1.4.3 Contrast (Minimum).
     date: 2020-12-31
   - description: 400% zoom causes the drill options in data tables to overlap. This does not meet WCAG 2.1 success criterion 1.4.10 (Reflow).
     date: 2020-12-31
-  - description: The data tables and feedback form do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
+  - description: The data tables do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
     date: 2020-12-31
   - description: On the cookie banner, the purpose of the "Hide" button (styled as a link) is ambiguous for screen reader users when using shortcut keys. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 2.4.6 ( Headings and Labels).
     date: 2020-12-31
-serviceLastTestedDate: 2020-07-09
+  - description: When subscribing to email alerts, the email address field does not have the spellcheck attribute set to false so that browsers do not spell-check the email address. Also, the autocomplete attribute is not set to email so that browsers can fill in the email address automatically. The hint text for the field has not been associated using aria-describedby. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.5 (Identify Input Purpose).
+    date: 2020-12-31
+  - description: The message displayed when a user is already signed up to email alerts does not have enough contrast for users with moderately low vision to read it without contrast-enhancing technology. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast (Minimum)).
+    date: 2020-12-31
+  - description: When subscribing to or unsubscribing from email alerts, increasing the font size of the page does not increase the text size. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
+    date: 2020-12-31
+  - description: When subscribing to or unsubscribing from to email alerts, some pages do not have heading level 1 tags or references to UKTi Trade Info to help users understand what the pages contain. This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels).
+    date: 2020-12-31
+  - description: When subscribing to email alerts, the email address field uses client-side validation built into browsers to check for correct input, which has usability and accessibility issues. This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2020-12-31
+  - description: When subscribing to email alerts, some screen reader users are not made aware of the success message or if they have already subscribed. This does not meet WCAG 2.1 success criterion 4.1.3 (Status Messages).
+    date: 2020-12-31
+serviceLastTestedDate: 2020-11-10
 statementVisibility: public
 statementCreatedDate: 2020-10-19
-statementLastUpdatedDate: 2020-10-21
+statementLastUpdatedDate: 2020-11-17
