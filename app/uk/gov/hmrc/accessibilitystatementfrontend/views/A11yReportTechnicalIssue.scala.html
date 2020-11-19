@@ -16,10 +16,10 @@
 
 @this(hmrcReportTechnicalIssue: HmrcReportTechnicalIssue)
 
-@()(implicit request: Request[_], messages: Messages)
+@()(implicit appConfig: AppConfig, request: Request[_], messages: Messages)
+@import appConfig._
 
 @hmrcReportTechnicalIssue(ReportTechnicalIssue(
     serviceCode = "accessibility-statement",
-    language = Some(messages.lang.code),
-    classList = None
+    if (messages.lang.code == cy) Cy else En
 ))

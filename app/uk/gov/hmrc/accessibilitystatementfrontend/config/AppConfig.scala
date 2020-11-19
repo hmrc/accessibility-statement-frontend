@@ -26,11 +26,8 @@ case class AppConfig @Inject() (
   config: Configuration,
   servicesConfig: ServicesConfig
 ) {
-  private val platformFrontendHost      =
+  private val platformFrontendHost =
     config.getOptional[String]("platform.frontend.host")
-  val languageControllerHostUrl: String = platformFrontendHost.getOrElse(
-    servicesConfig.getString("language-controller.host")
-  )
 
   private val contactFrontendHostUrl: String =
     platformFrontendHost.getOrElse(
