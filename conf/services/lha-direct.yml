@@ -8,14 +8,10 @@ contactFrontendServiceId: lhadirect
 complianceStatus: partial
 accessibilityProblems:
   - Inaccessible PDF
-  - The state of an element was not clear to users
 milestones:
   - description: The PDF documents are inaccessible for screen reader users.
     date: 2021-03-31
-  - description: When the show help buttons are actioned, screen reader users are not informed of the change of content
-      and the arrows do not change position to indicate the change to sighted users of the service.
-    date: 2020-10-31
-serviceLastTestedDate: 2020-10-16
+serviceLastTestedDate: 2020-11-20
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-10-28
+statementLastUpdatedDate: 2020-11-20
