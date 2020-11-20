@@ -66,8 +66,13 @@ e.g. `conf/services/discounted-icecreams.yml` will create an accessibility state
 
 The filename can contain only lower case letters, dashes or numbers, and the filename extension must be `.yml`
 
+## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run the unit and integration tests locally as described below.
+
+If your team would like repository write access to create branches and submit PRs without forking the repository, contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). Having write access will mean your team will receive alerts regarding production deployments.
+
+If you do not have write access to the repository, you are welcome to fork the repository using the Github user interface and submit PRs via your forked copy. In this case you will need to contact us to request PRs are approved and merged.
 
 ## Release an accessibility statement to Production
 Production releases for ```accessibility-statement-frontend``` are managed by PlatUI. If you would like the team to release your accessibility statement to Production, please contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/).
