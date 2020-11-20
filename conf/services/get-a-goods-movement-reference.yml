@@ -1,0 +1,39 @@
+serviceName: Get a goods movement reference
+serviceHeaderName: Get a goods movement reference
+serviceDescription: >
+  You need a goods movement reference to move goods between Great Britain and
+  countries in the European Union and Northern Ireland. This service is part of
+  the goods vehicle movement service (GVMS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /goods-movement-system
+contactFrontendServiceId: GaGMR
+complianceStatus: partial
+accessibilityProblems:
+  - on the Check direction and check your answers pages the screen reader reads
+    'change' . It should read "change" and give the context of what the
+    user would be changing, for example "change direction".
+  - when a screen reader gets to the grey footer, it reads support links but
+    there are none there
+  - on the task list, customs declaration reference and safety and security
+    number pages there are missing ARIA labels on some fields.
+milestones:
+  - date: 2021-03-31
+    description: >-
+      On the check direction and check your answers pages the screen reader
+      reads 'change' . It should read "change" and give the context of what
+      the user would be changing. e.g. "change direction". This doesn't meet
+      WCAG success criterion 2.4.4 (link purpose).
+  - date: 2021-03-31
+    description: >-
+      When a screen reader gets to the grey footer, it reads "support links" but
+      there are none there. This does not meet WCAG success criterion 1.3.1
+      (info and relationships).
+  - date: 2021-03-31
+    description: >-
+      On the task list, customs declaration reference and safety and security
+      number pages there are missing ARIA labels on some fields. This doesn't
+      meet WCAG success criterion 3.3.2 (labels and instructions).
+serviceLastTestedDate: 2019-08-19
+statementVisibility: public
+statementCreatedDate: 2020-11-16
+statementLastUpdatedDate: 2020-11-16
