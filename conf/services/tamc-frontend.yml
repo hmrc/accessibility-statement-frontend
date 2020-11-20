@@ -1,0 +1,101 @@
+serviceName: Check your eligibility for Marriage Allowance
+serviceHeaderName: Check if you are eligible for Marriage Allowance
+serviceDescription: Marriage Allowance eligibility
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /browse/tax/marriage-allowance
+contactFrontendServiceId: marriage-allowance
+complianceStatus: partial
+accessibilityProblems:
+  - some of the buttons are not descriptive enough for screen readers, and do not make sense out of context. We plan to change the buttons so they refere back to the question asked.
+  - some numerical values are not updated in line with the actual amount needed to answer the question. We will update the numerical value so it no longer just reads '0' for screen readers.
+  - a few questions are described as a series of letters and symbols on screen readers, instead of words. In future we plan to check every line of descriptive text, and rewrite them to fix it.
+  - some pages do not read out the error state text for people who use screen readers. We will fix this so an error state loads and is read out with the rest of the page.
+  - some questions are visually different to the words read out by a screen reader. We will fix this by checking each visual question and described question, and make sure that they match.
+  - some of the page titles and page information is read out twice by a screen reader because the designs do not follow the gov.uk pattern. We will fix this so that all of the information is only read once, and in the right context.
+milestones:
+  - description: |
+      The button stating no thanks in the eligibility checks is not descriptive enough for screen readers. 
+      This fails WCAG 4.1.2 Name, Role, Value (Level A) Understanding Name, Role, Value, How to Meet Name, Role, Value. 
+      We plan to fix this error and add the correct context to this button.
+    date: 2021-07-31
+  - description: |
+      On some pages, the radio buttons may not make sense out of context. 
+      It may not be clear which question the radio buttons refer to. 
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships, 
+      How to Meet Info and Relationships 
+      We plan to clearly group the headline question with the correct buttons when building the page.
+    date: 2021-07-31
+  - description: |
+      Some questions with numerical values only reads out the number 0 for people using screen readers, regardless of the amount. 
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships, 
+      How to Meet Info and Relationships
+      We plan to fix this, so that the screen reader will read the actual numerical value on the page.
+    date: 2021-07-31
+  - description: |
+      On some pages, the radio buttons are read out as a series of letters and symbols instead of words, which may confuse screen reader users.
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships, 
+      How to Meet Info and Relationships 
+      We plan to make sure that the text is clearly readable by screen readers with spaces between words, instead of punctuation.
+    date: 2021-07-31
+  - description: |
+      When the page loads an error message, some error messages (with vital information) will not automatically be described to people using screenreaders.
+      This fails WCAG 4.1.3 Status Messages (Level AA) Understanding Status Messages, How to Meet Status Messages.
+      We plan to make sure that all error messages are displayed and described as soon as the error state loads.
+    date: 2021-07-31
+  - description: |
+      The Marriage Allowance service loads the same title over multiple pages, which means that screen reader users have the same page read out two or more times.
+      This fails WCAG 4.1.3 Status Messages (Level AA) Understanding Status Messages, How to Meet Status Messages.
+      We plan to make sure that all error messages are displayed and described as soon as the page loads.
+    date: 2021-07-31
+  - description: |
+      Some pages miss out error state messages out on screen readers, when the error is visible on the page. 
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships, 
+      How to Meet Info and Relationships
+      We plan to make sure that all error messages are displayed and described as soon as the page loads.
+    date: 2021-07-31
+  - description: |
+      Some pages read a different question out on screen readers, instead of the question shown on the page. 
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships, 
+      How to Meet Info and Relationships
+      We will make sure that all questions match visually and within the screen reader text.
+    date: 2021-07-31
+  - description: |
+      Some questions refer to 'this tax year' instead of a specific tax year, which does not make sense out of context. 
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships, 
+      How to Meet Info and Relationships
+      We plan to edit all questions so that they give proper context to the question, instead of asking the user to assume context.
+    date: 2021-07-31
+  - description: |
+      Some pages read a different question out on screen readers instead of the question visible on the page. 
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships, 
+      How to Meet Info and Relationships
+      We will make sure that all questions match visually and within the screen reader text.
+    date: 2021-07-31
+  - description: |
+      Titles are duplicated across multiple pages, meaning that screen readers will read out the same title for different (possibly unrelated) pages. 
+      This fails WCAG 2.4.2 Page Titled (Level A) Understanding Page Titled  How to Meet Page Titled We will create new titles for all pages, avoiding confusing for screen reader users.
+    date: 2021-07-31
+  - description: |
+      Titles are duplicated across multiple pages, meaning that screen readers will read out the same title for different (possibly unrelated) pages. 
+      This fails WCAG 2.4.2 Page Titled (Level A)
+      Understanding Page Titled  How to Meet Page Titled
+      We will create new titles for all pages, avoiding confusing for screen reader users.
+    date: 2021-07-31
+  - description: |
+      Some links are not descriptive for screen readers, for example having multiple change buttons on the same page. It is not clear which change' link goes to which service.  
+      This fails WCAG 2.4.4 Link Purpose – In Context – (Level A) Understanding Link Purpose (In Context) How to Meet Link Purpose (In Context) and 2.4.9 Link Purpose – Link Only – (Level AAA) Understanding Link Purpose (Link Only) How to Meet Link Purpose (Link Only)
+      We plan to add context to these links, so a screen reader user can tell which change link goes to which service.
+    date: 2021-07-31
+  - description: |
+      Some images do not need to be described by screen readers because the title reads out the same image. For example, Marriage Allowance application successful.
+      This fails WCAG 1.1.1 Non-text Content (Level A) Understanding Non-text Content How to Meet Non-text Content
+      We will remove certain images and their descriptive text, because the page title already reads this out.
+    date: 2021-07-31
+  - description: |
+      Some tables do not follow the gov.uk design pattern, and may be hard to make changes  with a screen reader. 
+      This fails WCAG 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships | How to Meet Info and Relationships
+      We will update tables in line with the gov.uk design pattern, which should make it easier for screen reader users to make changes.
+    date: 2021-07-31
+serviceLastTestedDate: 2020-03-27
+statementVisibility: public
+statementCreatedDate: 2020-10-01
