@@ -7,7 +7,7 @@ serviceUrl: /home
 contactFrontendServiceId: uktradeinfo
 complianceStatus: partial
 accessibilityProblems:
-  - the feedback form, dropdown menus below search fields, and Intrastat services have not been tested for accessibility issues
+  - the feedback form, dropdown menus below search fields, Intrastat services, and view trader details as a table feature have not been tested for accessibility issues
   - some pages may be difficult for assistive technologies to parse because of an incorrect meta element
   - on pages with Related content sections, the navigation elements do not all have unique labels, which may make navigating the page difficult
   - on the Privacy page, there is no visible keyboard focus on links in the main content
