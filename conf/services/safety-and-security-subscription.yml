@@ -1,0 +1,26 @@
+serviceName: Enrol with the Safety and Security
+serviceHeaderName: Enrol with the Safety and Security Service
+serviceDescription: |
+  The service allows a user to enrol for the Safety and Security (S&S GB) service
+  so that they can submit Entry Summary declarations (sometimes called an ENS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /safety-and-security-subscription
+contactFrontendServiceId: safety-and-security-enrol
+complianceStatus: partial
+accessibilityProblems:
+  - Insufficient colour contrast between foreground text and the background when
+    the "Sign out" link is in focus
+  - Page titles do not let the user know what information is being asked for or provided
+  - Certain link text does not convey the meaning of the link
+  - Certain buttons do not behave like buttons
+  - Parsing issues with the timeout page that may affect screen readers
+  - Print preview contains no styling on all pages
+  - Footer is missing the crown logo
+  - Full stops in links which may affect screen readers
+milestones:
+  - description: Fix all outstanding accessibility issues mentioned in the “How accessible this service is” section above.
+    date: 2021-01-31
+serviceLastTestedDate: 2020-12-01
+statementVisibility: public
+statementCreatedDate: 2020-12-11
+statementLastUpdatedDate: 2020-12-11
