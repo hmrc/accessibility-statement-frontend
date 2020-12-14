@@ -1,0 +1,11 @@
+serviceName: HMRC Interactive Guidance
+serviceHeaderName: Interactive Guidance
+serviceDescription: HMRC interactive guidance gives users targeted information based on their answers to a series of questions.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /
+contactFrontendServiceId: EGVWR
+complianceStatus: full
+serviceLastTestedDate: 2020-12-16
+statementVisibility: public
+statementCreatedDate: 2020-08-05
+statementLastUpdatedDate: 2020-12-16
