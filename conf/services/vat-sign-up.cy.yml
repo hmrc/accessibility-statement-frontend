@@ -1,0 +1,12 @@
+serviceName: Cofrestru am y cynllun Troi Treth yn Ddigidol ar gyfer TAW
+serviceHeaderName: Cofrestru am y cynllun Troi Treth yn Ddigidol ar gyfer TAW
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn galluogi busnesau sydd wedi’u cofrestru ar gyfer TAW, a’u hasiantau, i gofrestru ar gyfer Troi Treth yn Ddigidol ar gyfer TAW fel y gallant ddefnyddio meddalwedd sy’n gydnaws â CThEM i reoli a chyflwyno eu Ffurflenni TAW.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /vat-through-software/sign-up
+contactFrontendServiceId: MTDVAT
+complianceStatus: full
+serviceLastTestedDate: 2019-09-11
+statementVisibility: public
+statementCreatedDate: 2019-09-19
+statementLastUpdatedDate: 2019-09-19
