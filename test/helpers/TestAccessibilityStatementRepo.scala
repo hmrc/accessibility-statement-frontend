@@ -55,11 +55,15 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     milestones = Some(
       Seq(
         Milestone(
-          "milestone 1",
+          "Some links, headings and labels may not provide enough information about what to do next, or what happens next.\nThis does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).\n",
           new GregorianCalendar(2020, Calendar.MAY, 1).getTime
         ),
         Milestone(
-          "milestone 2",
+          "Some error messages may not include all of the information you need to help you to correct an error.\nThis does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).\n",
+          new GregorianCalendar(2020, Calendar.MAY, 10).getTime
+        ),
+        Milestone(
+          "Milestone without WCAG issue listed.\n",
           new GregorianCalendar(2020, Calendar.MAY, 10).getTime
         )
       )

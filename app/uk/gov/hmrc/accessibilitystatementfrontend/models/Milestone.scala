@@ -21,7 +21,13 @@ import java.util.Date
 import io.circe.{Decoder, Encoder}
 import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 
-case class Milestone(description: String, date: Date)
+case class Milestone(description: String, date: Date) {
+  def getWcagCriteria: Seq[String] = {
+    val wcagRegex = """([0-9]+\.[0-9]+\.[0-9]+)""".r
+
+    wcagRegex.findAllIn(description).matchData.map(m => m.group(1)).toSeq
+  }
+}
 
 object Milestone {
   implicit val e: Encoder[Milestone] = deriveEncoder[Milestone]
