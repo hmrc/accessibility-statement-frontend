@@ -19,106 +19,27 @@ package uk.gov.hmrc.accessibilitystatementfrontend.tasks
 import java.io.{File, PrintWriter}
 import java.util.Date
 
-import javax.inject.Inject
-import play.api.Application
-import play.api.i18n.Lang
-import play.api.inject.guice.GuiceApplicationBuilder
-import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
-
-class ReportTask @Inject() (
-  accessibilityStatementRepo: AccessibilityStatementsRepo
-) {
-  private val isoDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd")
-  private val mkRow         = (cells: Seq[String]) => cells.mkString("\t")
-
-  private val headerCells = Seq(
-    "url",
-    "language",
-    "serviceName",
-    "serviceHeaderName",
-    "serviceAbsoluteUrl",
-    "contactFrontendServiceId",
-    "complianceStatus",
-    "problemCount",
-    "milestoneCount",
-    "earliestMilestoneDate",
-    "automatedTestingOnly",
-    "statementVisibility",
-    "serviceLastTestedDate",
-    "statementCreatedDate",
-    "statementLastUpdatedDate"
-  )
-
+abstract class ReportTask(filename: String) {
   def generate(args: Seq[String]): Unit =
-    writeRows(args.headOption.getOrElse("report.tsv"))
+    writeRows(args.headOption.getOrElse(filename))
 
   private def writeRows(filename: String): Unit = {
     val reportWriter = new PrintWriter(new File(s"target/$filename"))
-    try for (row <- getRows)
-      reportWriter.println(row)
+    try for (row <- getHeader +: getBodyRows)
+      reportWriter.println(mkRow(row))
     finally reportWriter.close()
   }
 
-  private def getRows =
-    getHeader +: accessibilityStatementRepo.findAll.map(getRow)
+  def getHeader: Seq[String]
 
-  private def getHeader = mkRow(headerCells)
+  def getBodyRows: Seq[Seq[String]]
 
-  private def getRow(
-    statementTuple: (String, Lang, AccessibilityStatement)
-  ): String =
-    mkRow(getRowCells(statementTuple))
+  private def mkRow(cells: Seq[String]) = cells.mkString("\t")
 
-  private def getRowCells(
-    statementTuple: (String, Lang, AccessibilityStatement)
-  ): Seq[String] = {
-    val (serviceKey, language, statement) = statementTuple
+  private val isoDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd")
 
-    import statement._
+  def getIsoDate(date: Date) = isoDateFormat.format(date)
 
-    val milestoneCount        = milestones.getOrElse(Seq.empty).size.toString
-    val problemsCount         = accessibilityProblems.getOrElse(Seq.empty).size.toString
-    val lastTestedDate        = serviceLastTestedDate.map(getIsoDate).getOrElse("")
-    val earliestMilestoneDate =
-      milestones
-        .getOrElse(Seq.empty)
-        .map(_.date)
-        .sorted
-        .headOption
-        .map(getIsoDate)
-        .getOrElse("")
-    val languageCode          = language.code
-    val url                   =
-      s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
-    val serviceAbsoluteUrl    = s"https://$serviceDomain$serviceUrl"
-
-    Seq(
-      url,
-      languageCode,
-      serviceName,
-      serviceHeaderName,
-      serviceAbsoluteUrl,
-      contactFrontendServiceId,
-      complianceStatus.toString,
-      problemsCount,
-      milestoneCount,
-      earliestMilestoneDate,
-      automatedTestingOnly.getOrElse(false).toString,
-      statementVisibility.toString,
-      lastTestedDate,
-      getIsoDate(statementCreatedDate),
-      getIsoDate(statementLastUpdatedDate)
-    )
-  }
-
-  private def getIsoDate(date: Date) = isoDateFormat.format(date)
-}
-
-object ReportTask extends App {
-  val app: Application = new GuiceApplicationBuilder().build()
-  val task             = app.injector.instanceOf[ReportTask]
-
-  task.generate(args)
-  app.stop()
+  def url(serviceKey: String) =
+    s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
 }

@@ -77,4 +77,11 @@ lazy val microservice = Project(appName, file("."))
   )
 
 val generateReport = inputKey[Unit]("Generate a report on the accessibility statements.")
-fullRunInputTask(generateReport, Compile, "uk.gov.hmrc.accessibilitystatementfrontend.tasks.ReportTask")
+fullRunInputTask(generateReport, Compile, "uk.gov.hmrc.accessibilitystatementfrontend.tasks.StatementReportTask")
+
+val generateMilestoneReport = inputKey[Unit]("Generate a milestone report on the accessibility statements.")
+fullRunInputTask(
+  generateMilestoneReport,
+  Compile,
+  "uk.gov.hmrc.accessibilitystatementfrontend.tasks.MilestoneReportTask"
+)
