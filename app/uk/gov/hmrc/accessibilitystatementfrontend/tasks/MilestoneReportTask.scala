@@ -31,10 +31,10 @@ class MilestoneReportTask @Inject() (
     "criterion"
   )
 
-  override def getBodyRows: Seq[Seq[String]] = for (
-    statement <- accessibilityStatementRepo.findAll if isEnglishStatement(statement);
+  override def getBodyRows: Seq[Seq[String]] = for {
+    statement <- accessibilityStatementRepo.findAll if isEnglishStatement(statement)
     row       <- getWcagCriterion(statement) ++ getUnmatchedMilestones(statement)
-  ) yield getMilestoneCells(row)
+  } yield getMilestoneCells(row)
 
   private def isEnglishStatement(statementTuple: (String, Lang, AccessibilityStatement)) = {
     val (_, lang, _) = statementTuple
@@ -46,10 +46,10 @@ class MilestoneReportTask @Inject() (
   ): Seq[(String, Milestone, String)] = {
     val (serviceKey, _, statement) = statementTuple
 
-    for (
-      milestone <- statementMilestones(statement);
+    for {
+      milestone <- statementMilestones(statement)
       criterion <- milestone.getWcagCriteria
-    ) yield (serviceKey, milestone, criterion)
+    } yield (serviceKey, milestone, criterion)
   }
 
   private def statementMilestones(statement: AccessibilityStatement) = statement.milestones.getOrElse(Seq.empty)
