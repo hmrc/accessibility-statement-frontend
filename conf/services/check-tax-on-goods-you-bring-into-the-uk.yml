@@ -1,0 +1,76 @@
+serviceName: Check tax on goods you bring into the UK
+serviceHeaderName: Check tax on goods you bring into the UK
+serviceDescription: |
+  You can use this service to check, declare and pay tax on goods you bring into the UK for personal use.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-tax-on-goods-you-bring-into-the-uk
+contactFrontendServiceId: check-tax-on-goods-you-bring-into-the-uk
+complianceStatus: partial
+
+accessibilityProblems:
+  - Some of the tables in the service are formatted as a grid or are missing column headers. This may make it difficult to understand the contents of the tables for users with assistive technology
+  - On the page ‘Card billing address’, some of the error messages you get when incorrectly filling in the form are unclear. This may make completing the page correctly difficult for some users
+  - On the page ‘Did you, or will you pay UK excise duty when buying all of your alcohol and tobacco?’, the question is not announced by some screen readers. This may make it difficult to interact with the page for users with assistive technology
+  - On the page ‘Tax and duty exemptions for non-UK residents’, the question is not announced by some screen readers. This may make it difficult to interact with the page for users with assistive technology
+  - The page ‘What other goods do you want to add?’ is missing a heading label. Also on this page, if you do not add any information in the ‘Enter your goods’ input box and try to continue, you’re taken to the previous page rather than given an error message. These issues may make it difficult to interact with the page for users with assistive technology
+  - When you add items to the page ‘What other goods do you want to add’, you are not told by a screen reader that they have been added. Additionally, the ‘Remove’ links next to each item do not have unique labels. These issues may make it difficult for users with assistive technology to know when they have added an item and which items they may be removing
+  - On the page ‘Enter your details’, the options for ‘Type of identification number’ are not appropriately labelled. This may make it difficult to interact with the page for users with assistive technology
+  - On the page ‘Enter your details’, the input boxes asking for personal details such as name and email address do not have an autocomplete function that would fill in answers given previously on other websites. This would help avoid potential mistakes
+  - If you are using Internet Explorer, you cannot add ‘Other goods’ to your declaration as the page ‘What other goods do you want to add’ does not work properly in this browser
+  - Some text input boxes for details about goods are incorrectly labelled. This results in extra information being announced by screen readers making it difficult to know how to correctly fill in the boxes
+  - On the page ‘Make your payment’, the headings are incorrectly labelled. This may make it difficult for users with assistive technology to determine the layout of the page
+  - On the page ‘Make your payment’, when you use keyboard tabbing to focus on an input box, the border that surrounds the box is not bold or contrasted enough. This may make it difficult for visually impaired users to see what they’re focusing on
+  - When you use keyboard tabbing to focus on any circular checkbox (called a ‘radio button’), the border that surrounds the button is not bold enough. This may make it difficult for visually impaired users to see what they’re focusing on
+  - Some page headings are the same which may make navigating through the service confusing for users with screen readers
+  - Some page headings may not be announced on some pages by the JAWS screen reader
+  - Some users using VoiceOver for iPhone may have difficulties interacting with the autocomplete input boxes for ‘Country’ and ‘Port of arrival’
+
+
+milestones:
+  - description: |
+      Some of the tables in the service are formatted as a grid or are missing column headers. This may make it difficult to understand the contents of the tables for users with assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2021-03-01
+  - description: |
+      On the page ‘Card billing address’, some of the error messages you get when incorrectly filling in the form are unclear. This may make completing the page correctly difficult for some users. This does not meet WCAG 2.1 success criteria 3.3.1 (Error Identification) and 3.3.3 (Error Suggestion).
+    date: 2021-03-01
+  - description: |
+      On the page ‘Did you, or will you pay UK excise duty when buying all of your alcohol and tobacco?’, the question is not announced by some screen readers. This may make it difficult to interact with the page for users with assistive technology. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and Relationships) and 3.3.2 (Labels or Instructions).
+    date: 2021-03-01
+  - description: |
+      On the page ‘Tax and duty exemptions for non-UK residents’, the question is not announced by some screen readers. This may make it difficult to interact with the page for users with assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2021-03-01
+  - description: |
+      The page ‘What other goods do you want to add?’ is missing a heading label. Also on this page, if you do not add any information in the ‘Enter your goods’ input box and try to continue, you’re taken to the previous page rather than given an error message. These issues may make it difficult to interact with the page for users with assistive technology. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and Relationships), 3.3.1 (Error Identification) and 4.1.1 (Parsing).
+    date: 2021-03-01
+  - description: |
+      When you add items to the page ‘What other goods do you want to add’, you are not told by a screen reader that they have been added. Additionally, the ‘Remove’ links next to each item do not have unique labels. These issues may make it difficult for users with assistive technology to know when they have added an item and which items they may be removing. This does not meet WCAG 2.1 success criteria 2.4.6 (Headings and Labels), 2.4.3 (Focus Order) and 4.1.3 (Status Messages).
+    date: 2021-03-01
+  - description: |
+      On the page ‘Enter your details’, the options for ‘Type of identification number’ are not appropriately labelled. This may make it difficult to interact with the page for users with assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2021-03-01
+  - description: |
+      On the page ‘Enter your details’, the input boxes asking for personal details such as name and email address do not have an autocomplete function that would fill in answers given previously on other websites. This would help avoid potential mistakes. This does not meet WCAG 2.1 success criterion 1.3.5 (Identify Input Purpose).
+    date: 2021-03-01
+  - description: |
+      If you are using Internet Explorer, you cannot add ‘Other goods’ to your declaration as the page ‘What other goods do you want to add’ does not work properly in this browser. This does not meet WCAG 2.1 success criteria 2.1.1 (Keyboard) and 4.1.1 (Parsing).
+    date: 2021-03-01
+  - description: |
+      Some text input boxes for details about goods are incorrectly labelled. This results in extra information being announced by screen readers making it difficult to know how to correctly fill in the boxes. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2021-03-01
+  - description: |
+      On the page ‘Make your payment’, the headings are incorrectly labelled. This may make it difficult for users with assistive technology to determine the layout of the page. This does not meet WCAG 2.1 success criterion 2.4.10 (Section Headings).
+    date: 2021-03-01
+  - description: |
+      On the page ‘Make your payment’, when you use keyboard tabbing to focus on an input box, the border that surrounds the box is not bold or contrasted enough. This may make it difficult for visually impaired users to see what they’re focusing on. This does not meet WCAG 2.1 success criterion 1.4.11 (Non-text Contrast).
+    date: 2021-03-01
+  - description: |
+      When you use keyboard tabbing to focus on any circular checkbox (called a ‘radio button’), the border that surrounds the button is not bold enough. This may make it difficult for visually impaired users to see what they’re focusing on. This does not meet WCAG 2.1 success criterion 1.4.11 (Non-text Contrast).
+    date: 2021-03-01
+  - description: |
+      Some page headings are the same which may make navigating through the service confusing for users with screen readers. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
+    date: 2021-03-01
+
+serviceLastTestedDate: 2020-11-30
+statementVisibility: public
+statementCreatedDate: 2020-12-17
+statementLastUpdatedDate: 2020-12-17
