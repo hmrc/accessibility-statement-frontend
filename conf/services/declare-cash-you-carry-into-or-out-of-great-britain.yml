@@ -1,7 +1,7 @@
 serviceName: Declare cash you carry into or out of Great Britain
 serviceHeaderName: Declare cash you carry into or out of Great Britain
 serviceDescription: |
-  Use this form to declare cash you carry into or out of Northern Ireland.
+  Use this form to declare cash you carry into or out of great britain.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/declare-cash-you-carry-into-or-out-of-great-britain
 contactFrontendServiceId: GForm
