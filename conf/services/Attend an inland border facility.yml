@@ -1,4 +1,4 @@
-serviceName: Attend an Inland border facility
+serviceName: Attend an Inland Border facility
 serviceHeaderName: Attend an Inland Border facility
 serviceDescription: The service let’s you give HMRC advance notice that you will be attending an inland border facility to help make the journey more streamlined.
   Use this paragraph to describe your service. It can go over multiple lines
@@ -62,7 +62,7 @@ milestones:
     date: 2021-03-31
   - description: When a user chooses to change their password, there is an invalid aria attribute/missing hint association. This does not meet WCAG 2.1 success criterion 3.3.2 Labels or Instructions success criterion 4.1.1 Parsing. 
     date: 2021-03-31
-serviceLastTestedDate: 2021-12-07
+serviceLastTestedDate: 2020-12-07
 statementVisibility: draft
-statementCreatedDate: 2021-12-23
-statementLastUpdatedDate: 2021-12-23
+statementCreatedDate: 2020-12-23
+statementLastUpdatedDate: 2020-12-23
