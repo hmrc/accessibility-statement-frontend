@@ -1,0 +1,104 @@
+serviceName: Disclose cross-border arrangements for DAC6
+
+serviceHeaderName: Disclose cross-border arrangements for DAC6
+serviceDescription: This service informs Users how to disclose a cross-border arrangement (DAC6) to HMRC via a file upload process.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /disclose-cross-border-arrangements
+contactFrontendServiceId: DAC6
+complianceStatus: partial
+accessibilityProblems:
+  - there is an issue with incorrect sign out styles
+  - there are missing focus styles on links
+  - there are issues with the link purpose and a confusing link that needs to be updated
+  - there are a couple of missing autocomplete attributes
+  - there is a timeout dialogue missing
+  - there is a missing error summary
+  - there is a HTML error to resolve
+  - a zoom resize option is required
+  - reference numbers are incorrectly cut on large fonts
+  - there is a missing search role &amp; service name
+  - there is not a hint associated with the input
+  - there is an incorrect and a confusing page title
+  - there is native validation
+  - there is a wrong file type error notification
+milestones:
+  - description: |
+      Incorrect Signout styles
+      This does not meet WCAG 1.4.3 contrast minimum 2.1 violation
+    date: 2021-02-15
+  - description: |
+      Missing focus styles on link
+      This does not meet WCAG 2.4.7 focus visible.
+    date: 2021-02-15
+  - description: |
+      Link purpose
+      This does not meet WCAG 2.4.4 link purpose (in context)
+    date: 2021-02-15
+  - description: |
+      Link purpose
+      This does not meet WCAG 2.4.4 link purpose (in context)
+    date: 2021-02-15
+  - description: |
+      Hint not associated with the input
+      This does not meet WCAG 1.3.1 info and relationships
+    date: 2021-02-15
+  - description: |
+      Incorrect "type" attribute and missing autocomplete
+      This does not meet WCAG 1.3.5 identify input purpose
+    date: 2021-02-15
+  - description: |
+      missing autocomplete for the name field
+      This does not meet WCAG 1.3.5 identity input purpose
+    date: 2021-02-15
+  - description: |
+      Incorrect "type" attribute and missing autocomplete for a telephone number
+      This does not meet WCAG 1.3.5 identity input purpose
+    date: 2021-02-15
+  - description: |
+      Missing Search role on form
+      This does not meet WCAG 4.1.2 name, role, value
+    date: 2021-02-15
+  - description: |
+      No timeout dialogue when the session expires
+      This does not meet WCAG 2.2.6 timeouts
+    date: 2021-02-15
+  - description: |
+      Missing service name on the page title
+      This does not meet WCAG 2.4.2 page titled & 2.4.8 location
+    date: 2021-02-15
+  - description: |
+      Incorrect Page title
+      This does not meet WCAG 2.4.2 page titled & 2.4.8 location
+    date: 2021-02-15
+  - description: |
+      Confusing Page title and heading
+      This does not meet WCAG 2.4.2 page titled & 2.4.6 Headings & Labels
+    date: 2021-02-15
+  - description: |
+      Native validation
+      This does not meet WCAG 3.3.3. page titled error suggestion
+    date: 2021-02-15
+  - description: |
+      Wrong file type error notification
+      This does not meet WCAG This does not meet WCAG 3.3.3. page titled error suggestion
+    date: 2021-02-15
+  - description: |
+      Missing Error summary
+      This does not meet WCAG 3.3.3. page titled error suggestion
+    date: 2021-02-15
+  - description: |
+      Invalid HTML
+      This does not meet WCAG 4.1.1. parsing
+    date: 2021-02-15
+  - description: |
+      File input does not resize on zoom
+      This does not meet WCAG 1.4.10 reflow
+    date: 2021-02-15
+  - description: |
+      Reference number is cut on on large fonts
+      This does not meet WCAG 1.4.4. re-size test
+    date: 2021-02-15
+serviceLastTestedDate: 2020-12-07
+statementVisibility: public
+statementCreatedDate: 2020-12-29
+statementLastUpdatedDate: 2020-12-29
