@@ -1,0 +1,24 @@
+serviceName: Apply for an Advance Tariff Ruling (ATaR)
+serviceHeaderName: Apply for an Advance Tariff Ruling (ATaR)
+serviceDescription: |
+
+
+
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /search-for-advance-tariff-rulings
+contactFrontendServiceId:     # A unique identifier for your service
+complianceStatus: partial
+accessibilityProblems:
+
+
+
+
+milestones:
+  - description:  ""
+    date: 2021-02-26
+
+serviceLastTestedDate: 2020-12-30
+statementVisibility: public
+statementCreatedDate: 2020-12-30
+statementLastUpdatedDate: 2020-12-30
+
