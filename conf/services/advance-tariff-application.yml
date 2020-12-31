@@ -4,7 +4,7 @@ serviceDescription: |
   The Apply for an Advance Tariff Ruling (ATaR) service allows a trader to apply for a commodity code. It can also allow them to view the status of their application and download a certificate.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /advance-tariff-application
-contactFrontendServiceId: BindingTariffApplication    # A unique identifier for your service
+contactFrontendServiceId: AdvanceTariffApplication    # A unique identifier for your service
 complianceStatus: partial
 accessibilityProblems:
    - on the first page of the service, the links in the table header change the order of the content. This is not described to users so it can make it difficult to understand the content.
