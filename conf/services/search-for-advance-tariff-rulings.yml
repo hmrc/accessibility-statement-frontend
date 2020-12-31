@@ -18,21 +18,21 @@ accessibilityProblems:
 
 milestones:
  - description: "The “Only show rulings that include images” on the Search page is not labelled correctly. This means it’s not readily available to users with screen readers. This fails WCAG 2.1: 2.5.3 Label in Name."
-  date: 2021-02-26
+   date: 2021-02-26
  - description: "In some places, the presentational layout is achieved by structural markup. For example, the search results are using a table for presentational layout. This means they are not readily adaptable to users with screen readers. This fails WCAG 2.1: 1.3.1 Info and Relationships and 1.4.10 Reflow."
-  date: 2021-02-26
+   date: 2021-02-26
  - description: "When multiple results display on the Search page, all links are announced as “view ruling”. This makes the purpose of the links difficult to understand for those using a screen reader. This fails WCAG 2.1: 2.4.4 Link Purpose (In Context) and 3.2.4 Consistent Identification."
-  date: 2021-02-26
+   date: 2021-02-26
  - description: "Search “results” are also referred to as “rulings”. This can make it difficult for users to understand the content. This fails WCAG 2.1: 3.2.4 Consistent Identification."
-  date: 2021-02-26
+   date: 2021-02-26
  - description: "In some places, there are empty spaces. This can make it difficult for users to understand the content. This fails WCAG 2.1: 1.3.1 Info and Relationships."
-  date: 2021-02-26
+   date: 2021-02-26
  - description: "When an empty form is submitted in the search box no feedback is provided. This could mean that the users are not aware they provided no entry in the box. This fails WCAG 2.1: 3.3.1 Error Identification, 3.3.2 Labels or Instructions, 3.3.3 Error Suggestion and 4.1.3 Status Messages."
-  date: 2021-02-26
+   date: 2021-02-26
  - description: "In some places, the focus is not visible. For example, the focus on the links on the pages is not always visible. This can make it difficult for users to navigate through the service, especially those who rely on the keyboard to operate the page. This fails WCAG 2.1: 2.4.7 Focus visible."
-  date: 2021-02-26
+   date: 2021-02-26
  - description: "The keywords that display on the Information for ruling page lack sufficient focus. This can make it difficult for users to navigate through the service. This fails WCAG 2.1: 1.4.11 Non-text contrast and 2.4.7 Focus visible."
-  date: 2021-02-26
+   date: 2021-02-26
 
 serviceLastTestedDate: 2020-12-30
 statementVisibility: public
