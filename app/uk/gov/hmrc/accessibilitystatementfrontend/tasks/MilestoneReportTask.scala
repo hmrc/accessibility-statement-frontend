@@ -32,42 +32,33 @@ class MilestoneReportTask @Inject() (
   )
 
   override def getBodyRows: Seq[Seq[String]] = for {
-    statement <- accessibilityStatementRepo.findAll
-    if isEnglishStatement(statement) && isPublicStatement(statement)
-    row       <- getWcagCriterion(statement) ++ getUnmatchedMilestones(statement)
+    (serviceKey, statement) <- findAllPublicEnglishStatements
+    row                     <- getWcagCriterion(serviceKey, statement) ++ getUnmatchedMilestones(serviceKey, statement)
   } yield getMilestoneCells(row)
 
-  private def isEnglishStatement(statementTuple: (_, Lang, _)) = {
-    val (_, lang, _) = statementTuple
-    lang.code == "en"
-  }
-
-  private def isPublicStatement(statementTuple: (_, _, AccessibilityStatement)) = {
-    val (_, _, statement) = statementTuple
-    statement.statementVisibility == Public
-  }
+  private def findAllPublicEnglishStatements: Seq[(String, AccessibilityStatement)] =
+    accessibilityStatementRepo.findAll.collect {
+      case (serviceKey, lang: Lang, statement) if statement.statementVisibility == Public && lang.code == "en" =>
+        (serviceKey, statement)
+    }
 
   private def getWcagCriterion(
-    statementTuple: (String, Lang, AccessibilityStatement)
-  ): Seq[(String, Milestone, String)] = {
-    val (serviceKey, _, statement) = statementTuple
-
+    serviceKey: String,
+    statement: AccessibilityStatement
+  ): Seq[(String, Milestone, String)] =
     for {
       milestone <- statementMilestones(statement)
       criterion <- milestone.getWcagCriteria
     } yield (serviceKey, milestone, criterion)
-  }
 
   private def statementMilestones(statement: AccessibilityStatement) = statement.milestones.getOrElse(Seq.empty)
 
   private def getUnmatchedMilestones(
-    statementTuple: (String, Lang, AccessibilityStatement)
-  ): Seq[(String, Milestone, String)] = {
-    val (serviceKey, _, statement) = statementTuple
-
+    serviceKey: String,
+    statement: AccessibilityStatement
+  ): Seq[(String, Milestone, String)] =
     for (milestone <- statementMilestones(statement) if milestone.getWcagCriteria.isEmpty)
       yield (serviceKey, milestone, "")
-  }
 
   private def getMilestoneCells(row: (String, Milestone, String)): Seq[String] = {
     val (serviceKey, milestone, criterion) = row

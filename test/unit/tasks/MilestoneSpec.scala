@@ -61,7 +61,7 @@ class MilestoneSpec extends WordSpec with Matchers with TryValues {
       report.close()
     }
 
-    "not include draft milestones" in {
+    "not include milestones from draft statements" in {
       val reportFilename = createReportFile
 
       reportTask.generate(Seq(reportFilename))
