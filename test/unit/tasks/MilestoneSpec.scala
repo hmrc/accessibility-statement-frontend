@@ -60,5 +60,19 @@ class MilestoneSpec extends WordSpec with Matchers with TryValues {
 
       report.close()
     }
+
+    "not include milestones from draft statements" in {
+      val reportFilename = createReportFile
+
+      reportTask.generate(Seq(reportFilename))
+
+      val report = Source.fromFile(s"target/$reportFilename", "UTF-8")
+      val result = Try(report.getLines.toSeq)
+
+      result     should be a 'success
+      result.get should not contain "A draft milestone"
+
+      report.close()
+    }
   }
 }
