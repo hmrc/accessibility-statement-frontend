@@ -47,11 +47,12 @@ class ReportSpec extends WordSpec with Matchers with TryValues {
       result.get should equal(
         Seq(
           "url\tlanguage\tserviceName\tserviceHeaderName\tserviceAbsoluteUrl\tcontactFrontendServiceId\tcomplianceStatus\tproblemCount\tmilestoneCount\tearliestMilestoneDate\tautomatedTestingOnly\tstatementVisibility\tserviceLastTestedDate\tstatementCreatedDate\tstatementLastUpdatedDate",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\ten\tTest (English)\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t\tfalse\tdraft\t2020-02-28\t2020-03-15\t2020-05-01",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\tcy\tTest (Welsh)\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t\tfalse\tdraft\t2020-02-28\t2020-03-15\t2020-05-01",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/english-service\ten\tEnglish Only\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t\tfalse\tdraft\t2020-02-28\t2020-03-15\t2020-05-01",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/with-milestones\ten\tWith Milestones\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t3\t2020-05-01\tfalse\tdraft\t2020-02-28\t2020-03-15\t2020-05-01",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/with-automated-testing\ten\tWith Automated Testing\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t3\t2020-05-01\ttrue\tdraft\t2020-02-28\t2020-03-15\t2020-05-01"
+          "https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\ten\tTest (English)\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01",
+          "https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\tcy\tTest (Welsh)\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01",
+          "https://www.qa.tax.service.gov.uk/accessibility-statement/english-service\ten\tEnglish Only\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01",
+          "https://www.qa.tax.service.gov.uk/accessibility-statement/with-milestones\ten\tWith Milestones\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t3\t2020-05-01\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01",
+          "https://www.qa.tax.service.gov.uk/accessibility-statement/with-automated-testing\ten\tWith Automated Testing\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t3\t2020-05-01\ttrue\tpublic\t2020-02-28\t2020-03-15\t2020-05-01",
+          "https://www.qa.tax.service.gov.uk/accessibility-statement/draft-with-milestones\ten\tDraft With Milestones\tTest Service Name\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t1\t2020-05-01\tfalse\tdraft\t2020-02-28\t2020-03-15\t2020-05-01"
         )
       )
 

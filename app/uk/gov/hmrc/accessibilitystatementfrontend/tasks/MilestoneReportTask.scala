@@ -18,7 +18,7 @@ package uk.gov.hmrc.accessibilitystatementfrontend.tasks
 
 import javax.inject.Inject
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Milestone}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Milestone, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 
 class MilestoneReportTask @Inject() (
@@ -32,13 +32,19 @@ class MilestoneReportTask @Inject() (
   )
 
   override def getBodyRows: Seq[Seq[String]] = for {
-    statement <- accessibilityStatementRepo.findAll if isEnglishStatement(statement)
+    statement <- accessibilityStatementRepo.findAll
+    if isEnglishStatement(statement) && isPublicStatement(statement)
     row       <- getWcagCriterion(statement) ++ getUnmatchedMilestones(statement)
   } yield getMilestoneCells(row)
 
-  private def isEnglishStatement(statementTuple: (String, Lang, AccessibilityStatement)) = {
+  private def isEnglishStatement(statementTuple: (_, Lang, _)) = {
     val (_, lang, _) = statementTuple
     lang.code == "en"
+  }
+
+  private def isPublicStatement(statementTuple: (_, _, AccessibilityStatement)) = {
+    val (_, _, statement) = statementTuple
+    statement.statementVisibility == Public
   }
 
   private def getWcagCriterion(
