@@ -207,7 +207,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       ) should not include """First milestone to be fixed"""
       contentAsString(
         statementPageHtml
-      ) should not include """We plan to fix this compliance issue by"""
+      ) should not include """This will be fixed by"""
     }
 
     "should return information on accessibility problems if problems are non-empty" in new Setup {
@@ -308,15 +308,15 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """First milestone to be fixed. We plan to fix this compliance issue by 15 January 2022."""
+        """First milestone to be fixed. This will be fixed by 15 January 2022."""
       )
 
       contentAsString(statementPageHtml) should include(
-        """Second milestone we&#x27;ll look at. We plan to fix this compliance issue by 20 June 2022."""
+        """Second milestone we&#x27;ll look at. This will be fixed by 20 June 2022."""
       )
 
       contentAsString(statementPageHtml) should include(
-        """Then we&#x27;ll get to this third milestone. We plan to fix this compliance issue by 02 September 2022."""
+        """Then we&#x27;ll get to this third milestone. This will be fixed by 02 September 2022."""
       )
     }
 
@@ -408,7 +408,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       ) should not include """<p class="govuk-body">First milestone to be fixed</p>"""
       contentAsString(
         statementPageHtml
-      ) should not include """<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>"""
+      ) should not include """<p class="govuk-body">This will be fixed by 15 January 2022</p>"""
     }
 
     "should return HTML with a fixed date for carrying out an assessment" in new Setup {
@@ -453,7 +453,7 @@ class StatementPageSpec extends WordSpec with Matchers {
           )
 
         contentAsString(statementPageHtml) should include(
-          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 December 2020.</p>"""
+          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 March 2021.</p>"""
         )
       }
 
