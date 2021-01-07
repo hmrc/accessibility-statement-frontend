@@ -1,8 +1,8 @@
 serviceName: Attend an Inland Border facility
 serviceHeaderName: Attend an Inland Border facility
 serviceDescription: The service let’s you give HMRC advance notice that you will be attending an inland border facility to help make the journey more streamlined.
-serviceDomain: www.hmrc.gov.uk
-serviceUrl: /attend-an-inland-border-facility.hmrc.gov.uk
+serviceDomain: attend-an-inland-border-facility.hmrc.gov.uk
+serviceUrl: /
 contactFrontendServiceId: Inland border facility
 complianceStatus: partial
 accessibilityProblems:
@@ -51,7 +51,7 @@ milestones:
   - description: When a user is presented with a timeout dialog box, screen reader users are told that there are only 5 seconds left. There is much more time remaining. This does not meet WCAG 2.1success criterion 2.2.1 Timing Adjustable.
     date: 2021-03-31
   - description: On some pages the hint texts alongside each radio option is not associated with the input, so as a screen-reader user moves from input to input they will not hear the hints. This does not meet WCAG 2.1 success criterion 3.3.2 Labels or Instructions.
-    date: 2020-07-31
+    date: 2021-03-31
   - description: On some pages there is an issue where the role of links is not identified as links because an href attribute has not used. This affects VoiceOver on iOS. This does not meet WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
     date: 2021-03-31
   - description: When a user is viewing their profile page, all ‘Change’ links are not unique. We need to include additional context for screen reader users. This does not meet WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context).
