@@ -5,7 +5,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /
 contactFrontendServiceId: EGVWR
 complianceStatus: full
-serviceLastTestedDate: 2020-12-16
+serviceLastTestedDate: 2021-01-08
 statementVisibility: public
 statementCreatedDate: 2020-08-05
-statementLastUpdatedDate: 2020-12-16
+statementLastUpdatedDate: 2021-01-08
