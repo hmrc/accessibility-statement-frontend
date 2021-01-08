@@ -1,0 +1,12 @@
+serviceName: Home Office Settled Status
+serviceHeaderName: Home Office Settled Status
+serviceDescription: |
+  HMRC check settled status service integrates with a Home Office API, enabling faster retrieval of an applicants settled status when applying for public funds.
+serviceDomain: www.admin.tax.service.gov.uk
+serviceUrl: /check-settled-status
+contactFrontendServiceId: home-office-settled-status-frontend
+complianceStatus: full
+serviceLastTestedDate: 2020-03-30
+statementVisibility: public
+statementCreatedDate: 2020-04-30
+statementLastUpdatedDate: 2021-01-07
