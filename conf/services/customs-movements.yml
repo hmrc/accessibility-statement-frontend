@@ -1,0 +1,26 @@
+serviceName: Customs Declarations Service (CDS) ‘Tell HMRC when goods arrive at or leave a UK port’
+serviceHeaderName: Tell HMRC when goods arrive at or leave a UK port
+serviceDescription: |
+  This service allows you to report customs movements such as arriving and departing goods.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /customs-movements
+contactFrontendServiceId: customs-movements
+complianceStatus: partial
+accessibilityProblems:
+  - Headings are not always positioned correctly in the page code, making it difficult to use heading shortcut keys.
+  - Some error messages fail to meet requirements for wording.
+  - The thematic break (horizontal rule) element has been used where it is not necessary.
+  - The focus indicator does not give enough colour contrast.
+milestones:
+  - description: Headings are not always positioned correctly in the page code, making it difficult to use heading shortcut keys.
+    date: 2021-04-30
+  - description: Some error messages fail to meet requirements for wording.
+    date: 2021-04-30
+  - description: The thematic break (horizontal rule) element has been used where it is not necessary.
+    date: 2021-04-30
+  - description: The focus indicator does not give enough colour contrast.
+    date: 2021-04-30
+serviceLastTestedDate: 2020-12-21
+statementVisibility: public
+statementCreatedDate: 2021-01-12
+statementLastUpdatedDate: 2021-01-12
