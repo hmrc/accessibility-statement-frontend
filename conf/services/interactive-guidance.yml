@@ -1,5 +1,5 @@
 serviceName: HMRC Interactive Guidance
-serviceHeaderName: HMRC Interactive Guidance
+serviceHeaderName: Interactive Guidance
 serviceDescription: HMRC interactive guidance gives users targeted information based on their answers to a series of questions.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /guidance
