@@ -29,7 +29,6 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
   private val repo                 = mock[AccessibilityStatementsSourceRepo]
   private val englishStatement     = AccessibilityStatement(
     serviceName = "Test (English)",
-    serviceHeaderName = "Test Service Name",
     serviceDescription = "Test description.",
     serviceDomain = "www.tax.service.gov.uk/test/",
     serviceUrl = "some.test.service",

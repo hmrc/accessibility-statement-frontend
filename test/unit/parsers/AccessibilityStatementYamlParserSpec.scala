@@ -28,7 +28,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
   private val fullyAccessibleStatement = AccessibilityStatement(
     serviceName = "Send your loan charge details",
-    serviceHeaderName = "Send your loan charge details",
     serviceDescription =
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",
@@ -49,7 +48,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     "parse a fully accessible statement" in {
       val statementYaml =
         """serviceName: Send your loan charge details
-          |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
@@ -67,7 +65,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     "parse a fully accessible public statement" in {
       val statementYaml =
         """serviceName: Send your loan charge details
-          |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
@@ -87,7 +84,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     "parse a partially accessible statement" in {
       val statementYaml =
         """serviceName: Online Payments
-          |serviceHeaderName: Pay your tax
           |serviceDescription: |
           |  The Online Payments service is HMRC’s Digital card payment journey.
           |  It allows users to pay their tax liabilities.
@@ -117,7 +113,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       parsed.right.value should equal(
         AccessibilityStatement(
           serviceName = "Online Payments",
-          serviceHeaderName = "Pay your tax",
           serviceDescription =
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
           serviceDomain = "www.tax.service.gov.uk",
@@ -155,7 +150,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     "parse a partially accessible statement with automated testing" in {
       val statementYaml =
         """serviceName: Online Payments
-          |serviceHeaderName: Pay your tax
           |serviceDescription: |
           |  The Online Payments service is HMRC’s Digital card payment journey.
           |  It allows users to pay their tax liabilities.
@@ -187,7 +181,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       parsed.right.value should equal(
         AccessibilityStatement(
           serviceName = "Online Payments",
-          serviceHeaderName = "Pay your tax",
           serviceDescription =
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
           serviceDomain = "www.tax.service.gov.uk",
@@ -225,7 +218,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     "parse a non compliant service statement" in {
       val statementYaml =
         """serviceName: Discounted Doughnuts
-          |serviceHeaderName: Discounts
           |serviceDescription: This is a non compliant service. People can eat doughnuts.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /discounted-doughnuts
@@ -240,7 +232,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       parsed.right.value should equal(
         AccessibilityStatement(
           serviceName = "Discounted Doughnuts",
-          serviceHeaderName = "Discounts",
           serviceDescription = "This is a non compliant service. People can eat doughnuts.",
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/discounted-doughnuts",
@@ -280,7 +271,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val problemStatementYaml =
         """
         |serviceName: Send your loan charge details
-        |serviceHeaderName: Send your loan charge details
         |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
         |serviceDomain: www.tax.service.gov.uk
         |serviceUrl: /disguised-remuneration
@@ -302,7 +292,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val problemStatementYaml =
         """
           |serviceName: Send your loan charge details
-          |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
@@ -323,7 +312,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     "throw an error if the serviceName is missing" in {
       val problemStatementYaml =
         """serviceName:
-          |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
@@ -345,7 +333,6 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val problemStatementYaml =
         """
           |serviceName: Send your loan charge details
-          |serviceHeaderName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration

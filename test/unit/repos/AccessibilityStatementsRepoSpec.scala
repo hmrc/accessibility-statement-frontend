@@ -68,7 +68,6 @@ class AccessibilityStatementsRepoSpec
 
   private val fooStatement      = AccessibilityStatement(
     serviceName = "Send your loan charge details",
-    serviceHeaderName = "Send your loan charge details",
     serviceDescription =
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",
