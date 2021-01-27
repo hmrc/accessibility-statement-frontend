@@ -1,11 +1,41 @@
-serviceName: Digital Engagement Platform
-serviceHeaderName: Digital Engagement Platform
+serviceName: webchat and digital assistant
+serviceHeaderName: Ask HMRC - Webchat
 serviceDescription: |
-  This is the Digital Engagement Platform.
+  The Ask HMRC webchat and digital assistant are services that enable you to communicate with an HMRC adviser or digital assistant over the internet.
+  Both services are built and run by Nuance, a provider of customer engagement software.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /digital-engagement-platform
+serviceUrl: /ask-hmrc
 contactFrontendServiceId: digital-engagement-platform-frontend
-complianceStatus: noncompliant
-statementVisibility: draft
-statementCreatedDate: 2021-01-26
-statementLastUpdatedDate: 2021-01-26
+complianceStatus: partial
+accessibilityProblems:
+  - Mobile users using screen readers may find it difficult to navigate or interact with the chat window or the other content on the launch page
+  - There is styling on the ‘Support for coronavirus’ digital assistant page that may make interaction difficult for users who use style overlays to make pages more readable
+  - Some answers in the digital assistant that have links have ‘(opens in a new tab)’ after each link, whereas others have ‘Links will open in a new tab’ once at the start of the answer. This could be frustrating for users with assistive technologies as link behaviour may not be clear or consistent
+  - Users using the JAWS screen reader may experience confusing changes in focus when being given multiple answers
+  - Users using VoiceOver on iPhone and Mac and users using NVDA may experience confusing changes in focus when interacting with answers, links and new tabs
+  - Users using Chrome on Android are unable to use pinch and zoom gestures once the chat window has launched
+  - The button icon used to turn alerts on and off does not look different enough in its on or off state, or different enough from the print icon. It also behaves differently to the print icon. Additionally, users with assistive technologies may find it difficult to interact with the button
+  - Users on smaller screens may see a menu link that does not give any interactive options
+milestones:
+  - description: Mobile users using screen readers may find it difficult to navigate or interact with the chat window or the other content on the launch page. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2021-02-28
+  - description: There is styling on the ‘Support for coronavirus’ digital assistant page that may make interaction difficult for users who use style overlays to make pages more readable. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
+    date: 2021-02-28
+  - description: Some answers in the digital assistant that have links have ‘(opens in a new tab)’ after each link, whereas others have ‘Links will open in a new tab’ once at the start of the answer. This could be frustrating for users with assistive technologies as link behaviour may not be clear or consistent. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
+    date: 2021-03-01 [DEP-910 & DEP-947]
+  - description: Users using the JAWS screen reader may experience confusing changes in focus when being given multiple answers. This does not meet WCAG 2.1 success criteria 2.4.3 (Focus Order) and 3.2.3 (Consistent Navigation).
+    date: 2021-03-01 [CIV2]
+  - description: Users using VoiceOver on iPhone and Mac and users using NVDA may experience confusing changes in focus when interacting with answers, links and new tabs. This does not meet WCAG 2.1 success criterion 3.2.5 (Change on Request).
+    date: 2021-03-01 [CIV2]
+  - description: Users using Chrome on Android are unable to use pinch and zoom gestures once the chat window has launched. This does not meet WCAG 2.1 success criteria 1.4.4 (Resize Text) and 1.4.10 (Reflow).
+    date: 2021-03-01 [CIV2]
+  - description: The button icon used to turn alerts on and off does not look different enough in its on or off state, or different enough from the print icon. It also behaves differently to the print icon. Additionally, users with assistive technologies may find it difficult to interact with the button. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2021-03-01 [Cristina & Adam]
+  - description: Users on smaller screens may see a menu link that does not give any interactive options. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and Relationships) and 4.1.2 (Name Role, Value) and 2.4.4 (Link Purpose (In Context)).
+    date: 2021-01-19
+
+serviceLastTestedDate: 2020-09-20
+statementVisibility: public
+statementCreatedDate: 2020-07-06
+statementLastUpdatedDate: 2021-01-25
+
