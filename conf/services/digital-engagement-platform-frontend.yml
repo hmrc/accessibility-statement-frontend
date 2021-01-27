@@ -1,0 +1,11 @@
+serviceName: Digital Engagement Platform
+serviceHeaderName: Digital Engagement Platform
+serviceDescription: |
+  This is the Digital Engagement Platform.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /digital-engagement-platform
+contactFrontendServiceId: digital-engagement-platform-frontend
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2021-01-26
+statementLastUpdatedDate: 2021-01-26
