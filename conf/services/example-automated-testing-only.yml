@@ -1,5 +1,4 @@
 serviceName: Discounted Shortbread (Automated)
-serviceHeaderName: Discounted Shortbread Automated
 serviceDescription: |
   This is a partially compliant service which has only had automated testing.
 serviceDomain: www.tax.service.gov.uk
