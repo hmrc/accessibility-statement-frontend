@@ -24,7 +24,7 @@
 
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
 
-@layout(pageTitle = messages("general.pageTitle", statement.serviceName), serviceUrl = serviceAbsoluteUrl.body, serviceName = statement.serviceHeaderName, isWelshTranslationAvailable = isWelshTranslationAvailable) {
+@layout(pageTitle = messages("general.pageTitle", statement.serviceName), isWelshTranslationAvailable = isWelshTranslationAvailable) {
     @accessibilityStatementTemplate(statement, referrerUrl)
     @hmrcReportTechnicalIssueHelper()
 }

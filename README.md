@@ -21,7 +21,6 @@ that the text following the # characters are comments and will not appear in the
 ```yaml
 serviceName: Discounted Icecreams       # The service name that will appear in the title of the accessibility statement.
                                         # Do not include the word service at the end, as this will be added by the templates
-serviceHeaderName: Icecreams            # The service name as it should appear in the grey Gov.UK header bar
 serviceDescription: |                   # A description of the service
   Use this paragraph to describe your service. It can go over multiple lines
   like this.
@@ -162,7 +161,7 @@ version and save with the suffix `.cy.yml`. For example, if your English languag
 `/conf/services/discounted-icecreams.yml`, the Welsh version should be saved as
 `/conf/services/discounted-icecreams.cy.yml`.
 
-Translate the following fields into Welsh only: serviceName, serviceHeaderName, serviceDescription, accessibilityProblems
+Translate the following fields into Welsh only: serviceName, serviceDescription, accessibilityProblems
 and milestone description. All other fields must be left untouched.
 
 Open a PR to get the file merged into the repository. Once merged and deployed, the language toggle will 

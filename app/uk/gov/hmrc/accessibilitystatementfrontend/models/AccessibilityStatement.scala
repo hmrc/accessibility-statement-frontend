@@ -22,7 +22,6 @@ import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 
 case class AccessibilityStatement(
   serviceName: String,
-  serviceHeaderName: String,
   serviceDescription: String,
   serviceDomain: String,
   serviceUrl: String,

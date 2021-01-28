@@ -41,7 +41,6 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
 
   private val fooStatement      = AccessibilityStatement(
     serviceName = "Foo",
-    serviceHeaderName = "Foo",
     serviceDescription = "The foo service allows you to do foo",
     serviceDomain = "www.example.com",
     serviceUrl = "/foo",
@@ -61,7 +60,6 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
   )
   private val barStatement      = AccessibilityStatement(
     serviceName = "Bar",
-    serviceHeaderName = "Bar",
     serviceDescription = "The bar service allows you to do bar",
     serviceDomain = "www.example.com",
     serviceUrl = "/bar",

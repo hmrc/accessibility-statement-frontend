@@ -18,11 +18,7 @@
 
 @()(implicit request: MessagesRequest[_], messages: Messages, appConfig: AppConfig)
 
-@layout(
- pageTitle = messages("notFound.pageTitle"),
- serviceUrl = "//gov.uk",
- serviceName = messages("general.serviceName"),
- isWelshTranslationAvailable = true) {
+@layout(pageTitle = messages("notFound.pageTitle"), isWelshTranslationAvailable = true) {
  <h1 class="govuk-heading-xl">@{messages("notFound.heading")}</h1>
  <p class="govuk-body">@{messages("notFound.paragraph1")}</p>
  <p class="govuk-body">@{messages("notFound.paragraph2")}</p>

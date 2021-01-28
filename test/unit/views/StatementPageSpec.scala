@@ -19,7 +19,6 @@ package unit.views
 import java.util.{Calendar, GregorianCalendar}
 
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
 import org.scalatest.{Matchers, WordSpec}
 import play.api.Configuration
 import play.api.i18n.{Messages, MessagesApi}
@@ -421,7 +420,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         )
 
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 29 January 2021.</p>"""
+        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2021.</p>"""
       )
     }
   }
@@ -492,7 +491,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     val fullyAccessibleServiceStatement = AccessibilityStatement(
       serviceName = "fully accessible service name",
-      serviceHeaderName = "Fully Accessible Name",
       serviceDescription = "Fully accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
@@ -510,7 +508,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
       serviceName = "partially accessible service name",
-      serviceHeaderName = "Partially Accessible Name",
       serviceDescription = "Partially accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
@@ -548,7 +545,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     val nonCompliantServiceStatement = partiallyAccessibleServiceStatement.copy(
       serviceName = "non accessible service name",
-      serviceHeaderName = "Non Accessible Name",
       serviceDescription = "Non accessible description.",
       serviceUrl = "/non-accessible",
       contactFrontendServiceId = "nas",
@@ -558,7 +554,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     val automatedTestingServiceStatement =
       partiallyAccessibleServiceStatement.copy(
         serviceName = "automated accessible service name",
-        serviceHeaderName = "Automated Accessible Name",
         serviceDescription = "Automated accessible description.",
         serviceDomain = "www.tax.service.gov.uk",
         serviceUrl = "/automated-accessible",

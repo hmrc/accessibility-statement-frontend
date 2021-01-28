@@ -26,7 +26,7 @@ accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
 accessibility.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 accessibility.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol '
 accessibility.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
-accessibility.compliance.noncompliant.explanation=. Nid yw’r gwasanaeth hwn wedi cael ei wirio eto i weld a yw’n cydymffurfio neu beidio, felly gall rhai defnyddwyr ei chael yn anodd defnyddio rhannau o’r gwasanaeth. 
+accessibility.compliance.noncompliant.explanation=. Nid yw’r gwasanaeth hwn wedi cael ei wirio eto i weld a yw’n cydymffurfio neu beidio, felly gall rhai defnyddwyr ei chael yn anodd defnyddio rhannau o’r gwasanaeth.
 accessibility.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
 accessibility.no-issues=Nid oes unrhyw broblemau hygyrchedd hysbys yn y gwasanaeth hwn.
 accessibility.has-issues=Mae’n bosibl y bydd rhai pobl yn cael anhawster i ddefnyddio rhannau o’r gwasanaeth hwn:
@@ -69,7 +69,7 @@ technical.non-compliance.header=Cynnwys nad yw’n hygyrch
 technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
 technical.non-compliance.milestone.fix-by=Bydd hyn yn cael ei drwsio erbyn {0}.
-technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 29 Ionawr 2021.
+technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 31 Mawrth 2021.
 technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Mawrth 2021.
 
 ## Testing

@@ -4,7 +4,6 @@ statementLastUpdatedDate: '2019-04-01'
 accessibilitySupportPhone: 08081 570000
 serviceDomain: www.example.com
 serviceUrl: /foo
-serviceHeaderName: Foo
 serviceName: Foo
 contactFrontendServiceId: foo
 complianceStatus: full
