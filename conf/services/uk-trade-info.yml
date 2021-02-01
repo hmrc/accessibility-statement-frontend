@@ -7,231 +7,107 @@ serviceUrl: /home
 contactFrontendServiceId: uktradeinfo
 complianceStatus: partial
 accessibilityProblems:
-  - the feedback form, dropdown menus below search fields, Intrastat services, and view trader details as a table feature have not been tested for accessibility issues
-  - some pages may be difficult for assistive technologies to parse because of an incorrect meta element
-  - on pages with Related content sections, the navigation elements do not all have unique labels, which may make navigating the page difficult
-  - on the Privacy page, there is no visible keyboard focus on links in the main content
-  - screen readers users may have difficulty using the breadcrumb trail navigation displayed on some pages
-  - top navigation links do not indicate to screen reader users which section they are currently in
-  - on some pages, screen readers users will hear the same text repeated for the search heading and label
-  - on the Find commodity data page, the code used for the Related content section may cause issues for screen readers users
-  - the Bulk datasets guidance and technical specifications page contains repeated text, which may cause issues for screen reader users
-  - the main content of the Bulk datasets guidance and technical specifications page does not have hierarchical headings and subheadings
-  - search fields do not have a search role on the heading to identify the section
-  - some search fields do not correctly identify the type of input required
-  - some pages have skipped heading levels, which could be confusing for users of assistive technologies
-  - some page titles do not match the page heading
-  - some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute
-  - on the homepage, images and link text do not appear in high contrast for the items under Featured, and the keyboard focus (the vertical white line) is partly displayed
-  - the pagination of search results pages may be confusing for users of screen readers
-  - the filename of the trader search results and data tables CSV file is always the same when downloading results, which may be confusing for users
-  - some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute
-  - the fieldset for filtering trader search results by trader type has a missing legend to describe the purpose of the radio buttons
-  - company details pages have a duplicate class attribute
-  - on search results pages, the purpose of the Traders search type link is not obvious
-  - some links do not have unique accessible names to allow users of screen readers to distinguish them
-  - some of the links in the website are not descriptive
-  - on search results pages, the error message when no text is entered does not match the hint text page on the page
-  - on some pages, error messages are not differentiated from other text when viewing in greyscale
-  - commodity details pages have multiple heading level 1 tags
-  - on pages with Related content sections, the Related content heading level 2 tag should be within the nav element to define the relationship and allow screen readers to bypass it
-  - on the Find commodity data page, the search heading and label are not wrapped in the search role to identify the section
-  - commodity codes shown in search results and commodity details pages are read out as individual digits for users of screen readers
-  - trying to search without entering any text into the search field may cause an error in the service
-  - search result pages may be difficult for assistive technologies to parse because of incorrect markup. compliance issue by 31 December 2020
-  - on search results pages, aria-label is used on an element that does not reliably convey this attribute
-  - links in search results are not read out as a single link with a screen reader on mobile devices, which makes the information hard to follow
-  - the error message displayed when trying to search without entering any search term is not associated with the input field
-  - screen reader users may have difficulty using the interactive data tables
-  - data tables are not introduced with a heading to help screen reader users to know what the main topic of the page is
-  - the icon used to expand down one level in a hierarchy in data tables is not labelled, and the expand and collapse icons in the grid do not have accessible names, which may cause difficulties for screen reader users
-  - text size in data tables does not increase with zoom or font size
-  - keyboard users will not be able to access all of the functionality of the interactive data tables
-  - keyboard users are not able to navigate to content below interactive data tables
-  - there are 2 aria-labels for the main navigation, which may cause difficulty for screen reader users
-  - the pages titles of data tables include acronyms that are not well known
-  - data tables may be difficult to use with Voice Over on iOS
-  - when changing the inputs on data tables, users are not alerted of a change in the grid
-  - using the context menu on data tables may cause difficulties for screen reader users
-  - the guide to using data tables is not linked to at the beginning of the page
-  - the link provided on selecting Share or link to this table is not visible and alerted to screen readers
-  - the input to share or link to a table does not have a label describing its purpose and is not updating when changing data
-  - data table grids do not have an accessible name describing their purpose, which may cause difficulties for screen reader users
-  - the Cookies we use on UK Trade Info page does not use captions on tables to help screen reader users to identify the table
-  - the table headings on the Cookies we use on UK Trade Info page are not announced when using the table shortcut keys in NVDA on Firefox
-  - selecting Accept all cookies on all pages and Save changes on the Set your cookie preferences for UK Trade Info page does not alert screen reader users using JAWS on Internet Explorer 11 and NVDA on Firefox
-  - the Set your cookie preferences page for UK Trade Info contains a code error
-  - the Set cookie preferences button does not have Javascript polyfill to make sure it acts like a button
-  - the Latest from UK Trade Info page may cause difficulties for screen reader users when navigating the list of news articles
-  - when tabbing on the unsubscribe from email alerts page, a subtle focus is displayed on the buttons which can cause disorientation
-  - when subscribing to or unsubscribing email alerts, the code used on the page may cause issues for users of assistive technologies
-  - subscribing to email alerts uses an iframe that does not have a title to describe its purpose, which may cause difficulty for screen reader users
-  - the titles of the subscribe to or unsubscribe from email alerts pages do not identify these as being part of the UK Trade Info website
-  - callout boxes used on some pages do not meet the required contrast ratio of 4.5:1 between text and the background behind the text
-  - some pages do not have breadcrumb trail navigation
-  - on the homepage, the links See all news and See all statistical releases do not have sufficient spacing between them, making the links difficult to read and comprehend
-  - search results are not introduced by a heading
-  - when larger text is set on iOS, the menu button is displayed behind the service name
-  - parts of the data tables interface does not have sufficient colour contrast against the background
-  - 400% zoom causes the drill options in data tables to overlap
-  - the data tables do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus
-  - on the cookie banner, the purpose of the "Hide" button (styled as a link) is ambiguous for screen reader users when using shortcut keys
-  - when subscribing to email alerts, the email address field does not have the spellcheck attribute set to false so that browsers do not spell-check the email address. Also, the autocomplete attribute is not set to email so that browsers can fill in the email address automatically. The hint text for the field has not been associated using aria-describedby
-  - the message displayed when a user is already signed up to email alerts does not have enough contrast for users with moderately low vision to read it without contrast-enhancing technology
-  - when subscribing to or unsubscribing from email alerts, increasing the font size of the page does not increase the text size
-  - when subscribing to or unsubscribing from to email alerts, some pages do not have heading level 1 tags or references to UKTi Trade Info to help users understand what the pages contain
-  - when subscribing to email alerts, the email address field uses client-side validation built into browsers to check for correct input, which has usability and accessibility issues
-  - when subscribing to email alerts, some screen reader users are not made aware of the success message or if they have already subscribed
+  - users of assistive technologies may have difficulty using the interactive tables
+  - keyboard users are not able to navigate away from the interactive tables
+  - when using the interactive tables, screen reader users are not informed of important information when it becomes available
+  - when using the interactive tables, the instructions for how to show years and months may cause difficulty for users who may not be able to follow them
+  - when using the interactive tables, some screen reader users may be unaware that filter options are available or having difficulty using them
+  - screen reader users may have difficulty accessing the keyboard shortcuts for interactive tables
+  - screen reader users are unable to access an interactive table easily as it is not marked up as a standard HTML table
+  - interactive tables are contained within an iframe that does not have a title attribute to describe its contents
+  - the drill on option in interactive tables is not labelled, which may cause difficulty for some users of assistive technology
+  - the filter options in interactive tables convey some information by colour alone
+  - the purpose of the diamond-shaped symbol used in interactive tables is not explained
+  - on the Get trade data page and interactive tables, some headings have skipped heading levels, which could be confusing for users of assistive technologies
+  - when subscribing to email alerts, the input field's aria-describedby attribute does not recognise the hint text id attribute value that it refers to
+  - when subscribing to email alerts, input error messages are not accessible to screen readers users
+  - when subscribing to or unsubscribing from email alerts, some pages do not include a language attribute, which means that screen reader software cannot identify the primary language of the page
+  - when unsubscribing from email alerts, the code used on the page may cause issues for screen reader users
+  - when unsubscribing from email alerts, the page content is not introduced by a heading
+  - the homepage search feature may cause difficulty for voice activation users when trying to use standard voice commands
+  - some users may find the search filters on the trader search results page difficult to use, as the page refreshes when filters receive focus
+  - commodity code links on trader details pages are not accessible to keyboard commands
+  - the CSV file of trader search results may cause difficulty for screen reader users when trying to navigate the table content
+  - some pages do not have page titles that uniquely describe or introduce the content
+  - the Help with using the new UK Trade Info website page has sections that are not marked up as headings, which may cause difficulty for some screen reader users
+  - on the bulk datasets guidance and technical specifications page, links to non-HTML documents do not indicate their file type or size
+  - some page elements on the register for Intrastat service have the same attribute id values, so may be being overlooked by some assistive technologies
+  - some images have unnecessary alt text
+  - some page elements of interactive tables are not highlighted by a visible focus indicator to help a user know clearly which element has the keyboard focus
+  - when using the interactive tables, increasing text size can result in column headers being partly obscured by the data table
+  - when the page is magnified to 400% and the width is set to 1280px, interactive tables do not enlarge, and the link to download search results in CSV format will require horizontal scrolling
+  - when unsubscribing from email alerts, the focus indicator on buttons does not have sufficient colour contrast
+  - some form field labels may be confusing for screen reader users navigating out of context
+  - when saving changes to cookie preferences, some screen reader users may not be aware of the success message
+  - some pages have headings that are not uniquely descriptive of the content they introduce
 milestones:
-  - description: Some pages may be difficult for assistive technologies to parse because of an incorrect meta element. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: On pages with Related content sections, the navigation elements do not all have unique labels, which may make navigating the page difficult. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: On the Privacy page, there is no visible keyboard focus on links in the main content. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
-    date: 2020-12-31
-  - description: Screen readers users may have difficulty using the breadcrumb trail navigation displayed on some pages. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: Top navigation links do not indicate to screen reader users which section they are currently in. This does not meet WCAG 2.1 success criterion 1.3.3 (Sensory Characteristics).
-    date: 2020-12-31
-  - description: On some pages, screen readers users will hear the same text repeated for the search heading and label. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or Instructions).
-    date: 2020-12-31
-  - description: On the Find commodity data page, the code used for the Related content section may cause issues for screen readers users. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
-    date: 2020-12-31
-  - description: The Bulk datasets guidance and technical specifications page contains repeated text, which may cause issues for screen reader users. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value) and 2.4.4 (Link Purpose (in Context)).
-    date: 2020-12-31
-  - description: The main content of the Bulk datasets guidance and technical specifications page does not have hierarchical headings and subheadings. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: Search fields do not have a search role on the heading to identify the section. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
-    date: 2020-12-31
-  - description: Some search fields do not correctly identify the type of input required. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or Instructions).
-    date: 2020-12-31
-  - description: Some pages have skipped heading levels, which could be confusing for users of assistive technologies. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: Some page titles do not match the page heading. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
-    date: 2020-12-31
-  - description: Some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute . This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: On the homepage, images and link text do not appear in high contrast for the items under Featured, and the keyboard focus (the vertical white line) is partly displayed. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: The pagination of search results pages may be confusing for users of screen readers. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: The filename of the trader search results and data tables CSV file is always the same when downloading results, which may be confusing for users. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
-    date: 2020-12-31
-  - description: Some pages have a missing or incorrect aria-controls attribute or empty aria-live attribute . This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: The fieldset for filtering trader search results by trader type has a missing legend to describe the purpose of the radio buttons. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2020-12-31
-  - description: Company details pages have a duplicate class attribute. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: On search results pages, the purpose of the Traders search type link is not obvious. This does not meet WCAG 2.1 success criterion 2.4.4 (Link Purpose (in Context)).
-    date: 2020-12-31
-  - description: Some links do not have unique accessible names to allow users of screen readers to distinguish them. This does not meet WCAG 2.1 success criterion 2.4.4 (Link Purpose (in Context)).
-    date: 2020-12-31
-  - description: Some of the links in the website are not descriptive. This does not meet WCAG 2.1 success criterion 2.4.4 (Link Purpose (in Context)).
-    date: 2020-12-31
-  - description: On search results pages, the error message when no text is entered does not match the hint text page on the page. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification).
-    date: 2020-12-31
-  - description: On some pages, error messages are not differentiated from other text when viewing in greyscale. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification).
-    date: 2020-12-31
-  - description: Commodity details pages have multiple heading level 1 tags. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
-    date: 2020-12-31
-  - description: On pages with Related content sections, the Related content heading level 2 tag should be within the nav element to define the relationship and allow screen readers to bypass it. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
-    date: 2020-12-31
-  - description: On the Find commodity data page, the search heading and label are not wrapped in the search role to identify the section. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
-    date: 2020-12-31
-  - description: Commodity codes shown in search results and commodity details pages are read out as individual digits for users of screen readers. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: Trying to search without entering any text into the search field may cause an error in the service. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: Search result pages may be difficult for assistive technologies to parse because of incorrect markup. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: On search results pages, aria-label is used on an element that does not reliably convey this attribute. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2020-12-31
-  - description: Links in search results are not read out as a single link with a screen reader on mobile devices, which makes the information hard to follow. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: The error message displayed when trying to search without entering any search term is not associated with the input field. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification).
-    date: 2020-12-31
-  - description: Screen reader users may have difficulty using the interactive data tables. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: Data tables are not introduced with a heading to help screen reader users to know what the main topic of the page is. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: The icon used to expand down one level in a hierarchy in data tables is not labelled, and the expand and collapse icons in the grid do not have accessible names, which may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: Text size in data tables does not increase with zoom or font size. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
-    date: 2020-12-31
-  - description: Keyboard users will not be able to access all of the functionality of the interactive data tables. This does not meet WCAG 2.1 success criterion 2.1.1 (Keyboard).
-    date: 2020-12-31
-  - description: Keyboard users are not able to navigate to content below interactive data tables. This does not meet WCAG 2.1 success criterion 2.1.2 (No Keyboard Trap).
-    date: 2020-12-31
-  - description: There are 2 aria-labels for the main navigation, which may cause difficulty for screen reader users. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
-    date: 2020-12-31
-  - description: The pages titles of data tables include acronyms that are not well known. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
-    date: 2020-12-31
-  - description: Data tables may be difficult to use with Voice Over on iOS. This does not meet WCAG 2.1 success criterion 2.5.1 (Pointer Gestures).
-    date: 2020-12-31
-  - description: When changing the inputs on data tables, users are not alerted of a change in the grid. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
-    date: 2020-12-31
-  - description: Using the context menu on data tables may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
-    date: 2020-12-31
-  - description: The guide to using data tables is not linked to at the beginning of the page. This does not meet WCAG 2.1 success criterion 3.2.2 (Labels Or Instructions).
-    date: 2020-12-31
-  - description: The link provided on selecting Share or link to this table is not visible and alerted to screen readers. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2020-12-31
-  - description: The input to share or link to a table does not have a label describing its purpose and is not updating when changing data. This does not meet WCAG 2.1 success criterion 3.2.2 (Labels Or Instructions).
-    date: 2020-12-31
-  - description: Data table grids do not have an accessible name describing their purpose, which may cause difficulties for screen reader users. This does not meet WCAG 2.1 success criterion 3.2.2 (Labels Or Instructions).
-    date: 2020-12-31
-  - description: The Cookies we use on UK Trade Info page does not use captions on tables to help screen reader users to identify the table. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: The table headings on the Cookies we use on UK Trade Info page are not announced when using the table shortcut keys in NVDA on Firefox. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: Selecting Accept all cookies on all pages and Save changes on the Set your cookie preferences for UK Trade Info page does not alert screen reader users using JAWS on Internet Explorer 11 and NVDA on Firefox. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification).
-    date: 2020-12-31
-  - description: The Set your cookie preferences page for UK Trade Info contains a code error. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: The Set cookie preferences button does not have Javascript polyfill to make sure it acts like a button. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2020-12-31
-  - description: The Latest from UK Trade Info page may cause difficulties for screen reader users when navigating the list of news articles. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
-  - description: When tabbing on the unsubscribe from email alerts page, a subtle focus is displayed on the buttons which can cause disorientation. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
-    date: 2020-12-31
-  - description: When subscribing to or unsubscribing email alerts, the code used on the page may cause issues for users of assistive technologies. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2020-12-31
-  - description: Subscribing to email alerts uses an iframe that does not have a title to describe its purpose, which may cause difficulty for screen reader users. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2020-12-31
-  - description: The titles of the subscribe to or unsubscribe from email alerts pages do not identify these as being part of the UK Trade Info website. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
-    date: 2020-12-31
-  - description: Callout boxes used on some pages do not meet the required contrast ratio of 4.5:1 between text and the background behind the text. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast (Minimum)).
-    date: 2020-12-31
-  - description: Some pages do not have breadcrumb trail navigation. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
-    date: 2020-12-31
-  - description: On the homepage, the links See all news and See all statistical releases do not have sufficient spacing between them, making the links difficult to read and comprehend. This does not meet WCAG 2.1 success criterion 1.4.12 (Text Spacing).
-    date: 2020-12-31
-  - description: Search results are not introduced by a heading. This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels).
-    date: 2020-12-31
-  - description: When larger text is set on iOS, the menu button is displayed behind the service name. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
-    date: 2020-12-31
-  - description: Parts of the data tables interface does not have sufficient colour contrast against the background. This does not meet WCAG 2.1 success criterion 1.4.3 Contrast (Minimum).
-    date: 2020-12-31
-  - description: 400% zoom causes the drill options in data tables to overlap. This does not meet WCAG 2.1 success criterion 1.4.10 (Reflow).
-    date: 2020-12-31
-  - description: The data tables do not have a consistent keyboard focus indicator to help a user know clearly which element has the keyboard focus. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible).
-    date: 2020-12-31
-  - description: On the cookie banner, the purpose of the "Hide" button (styled as a link) is ambiguous for screen reader users when using shortcut keys. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 2.4.6 ( Headings and Labels).
-    date: 2020-12-31
-  - description: When subscribing to email alerts, the email address field does not have the spellcheck attribute set to false so that browsers do not spell-check the email address. Also, the autocomplete attribute is not set to email so that browsers can fill in the email address automatically. The hint text for the field has not been associated using aria-describedby. This does not meet WCAG 2.1 success criterion Understanding Success Criterion 1.3.5 (Identify Input Purpose).
-    date: 2020-12-31
-  - description: The message displayed when a user is already signed up to email alerts does not have enough contrast for users with moderately low vision to read it without contrast-enhancing technology. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast (Minimum)).
-    date: 2020-12-31
-  - description: When subscribing to or unsubscribing from email alerts, increasing the font size of the page does not increase the text size. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize text).
-    date: 2020-12-31
-  - description: When subscribing to or unsubscribing from to email alerts, some pages do not have heading level 1 tags or references to UKTi Trade Info to help users understand what the pages contain. This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels).
-    date: 2020-12-31
-  - description: When subscribing to email alerts, the email address field uses client-side validation built into browsers to check for correct input, which has usability and accessibility issues. This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
-    date: 2020-12-31
-  - description: When subscribing to email alerts, some screen reader users are not made aware of the success message or if they have already subscribed. This does not meet WCAG 2.1 success criterion 4.1.3 (Status Messages).
-    date: 2020-12-31
-serviceLastTestedDate: 2020-11-10
+  - description: Users of assistive technologies may have difficulty using the interactive tables. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing) and 4.1.2 (Name, Role, Value)
+    date: 2021-12-31
+  - description: Keyboard users are not able to navigate away from the interactive tables. This does not meet WCAG 2.1 success criterion 2.1.2 (No Keyboard Trap)
+    date: 2021-12-31
+  - description: When using the interactive tables, screen reader users are not informed of important information when it becomes available. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships)
+    date: 2021-12-31
+  - description: When using the interactive tables, the instructions for how to show years and months may cause difficulty for users who may not be able to follow them. This does not meet WCAG 2.1 success criterion 1.3.3 (Sensory Characteristics)
+    date: 2021-12-31
+  - description: When using the interactive tables, some screen reader users may be unaware that filter options are available or having difficulty using them. This does not meet WCAG 2.1 success criterion 2.4.3 (Focus Order)
+    date: 2021-12-31
+  - description: Screen reader users may have difficulty accessing the keyboard shortcuts for interactive tables. This does not meet WCAG 2.1 success criterion 2.1.4 (Character Key Shortcuts)
+    date: 2021-12-31
+  - description: Screen reader users are unable to access an interactive table easily as it is not marked up as a standard HTML table. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships)
+    date: 2021-12-31
+  - description: Interactive tables are contained within an iframe that does not have a title attribute to describe its contents. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks) and 4.1.2 (Name, Role, Value)
+    date: 2021-12-31
+  - description: The drill on option in interactive tables is not labelled, which may cause difficulty for some users of assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships), 3.3.2 (Labels or Instructions) and (4.1.2 Name, Role, Value)
+    date: 2021-12-31
+  - description: The filter options in interactive tables convey some information by colour alone. This does not meet WCAG 2.1 success criterion 1.4.1 (Use of Color)
+    date: 2021-12-31
+  - description: The purpose of the diamond-shaped symbol used in interactive tables is not explained. This does not meet WCAG 2.1 success criterion 1.3.3 (Sensory Characteristics)
+    date: 2021-12-31
+  - description: On the Get trade data page and interactive tables, some headings have skipped heading levels, which could be confusing for users of assistive technologies.  WCAG 2.1 success criterion 1.3.1 (Info and Relationships) and 2.4.10 (Section Headings)
+    date: 2021-12-31
+  - description: When subscribing to email alerts, the input field's aria-describedby attribute does not recognise the hint text id attribute value that it refers to. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value)
+    date: 2021-12-31
+  - description: When subscribing to email alerts, input error messages are not accessible to screen readers users. This does not meet WCAG 2.1 success criterion 3.3.1 (Error Identification) and 3.3.3 (Error Suggestion)
+    date: 2021-12-31
+  - description: When subscribing to or unsubscribing from email alerts, some pages do not include a language attribute, which means that screen reader software cannot identify the primary language of the page. This does not meet WCAG 2.1 success criterion 3.1.1 (Language of Page)
+    date: 2021-12-31
+  - description: When unsubscribing from email alerts, the code used on the page may cause issues for screen reader users. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships)
+    date: 2021-12-31
+  - description: When unsubscribing from email alerts, the page content is not introduced by a heading. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships) and 2.4.1 (Bypass Blocks)
+    date: 2021-12-31
+  - description: The homepage search feature may cause difficulty for voice activation users when trying to use standard voice commands. This does not meet WCAG 2.1 success criterion 2.5.3 (Label in Name)
+    date: 2021-12-31
+  - description: Some users may find the search filters on the trader search results page difficult to use, as the page refreshes when filters receive focus. This does not meet WCAG 2.1 success criterion 3.2.1 (On Focus)
+    date: 2021-12-31
+  - description: Commodity code links on trader details pages are not accessible to keyboard commands. This does not meet WCAG 2.1 success criterion 2.1.1 (Keyboard)
+    date: 2021-12-31
+  - description: The CSV file of trader search results may cause difficulty for screen reader users when trying to navigate the table content. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships)
+    date: 2021-12-31
+  - description: Some pages do not have page titles that uniquely describe or introduce the content. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled)
+    date: 2021-12-31
+  - description: The Help with using the new UK Trade Info website page has sections that are not marked up as headings, which may cause difficulty for some screen reader users. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships)
+    date: 2021-12-31
+  - description: On the bulk datasets guidance and technical specifications page, links to non-HTML documents do not indicate their file type or size. This does not meet WCAG 2.1 success criterion 2.4.4 (Link Purpose - In Context) and 3.2.5 (Change on Request)
+    date: 2021-12-31
+  - description: Some page elements on the register for Intrastat service have the same attribute id values, so may be being overlooked by some assistive technologies. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing)
+    date: 2021-12-31
+  - description: Some images have unnecessary alt text. This does not meet WCAG 2.1 success criterion 1.1.1 (Non-text Content)
+    date: 2021-12-31
+  - description: Some page elements of interactive tables are not highlighted by a visible focus indicator to help a user know clearly which element has the keyboard focus. This does not meet WCAG 2.1 success criterion 2.4.7 (Focus Visible)
+    date: 2021-12-31
+  - description: When using the interactive tables, increasing text size can result in column headers being partly obscured by the data table. This does not meet WCAG 2.1 success criterion 1.4.12 (Text Spacing)
+    date: 2021-12-31
+  - description: When the page is magnified to 400% and the width is set to 1280px, interactive tables do not enlarge, and the link to download search results in CSV format will require horizontal scrolling. This does not meet WCAG 2.1 success criterion 1.4.10 (Reflow)
+    date: 2021-12-31
+  - description: When unsubscribing from email alerts, the focus indicator on buttons does not have sufficient colour contrast. This does not meet WCAG 2.1 success criterion 1.4.11 (Non-text Contrast)
+    date: 2021-12-31
+  - description: Some form field labels may be confusing for screen reader users navigating out of context. This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels)
+    date: 2021-12-31
+  - description: When saving changes to cookie preferences, some screen reader users may not be aware of the success message. This does not meet WCAG 2.1 success criterion 4.1.3 (Status Messages)
+    date: 2021-12-31
+  - description: Some pages have headings that are not uniquely descriptive of the content they introduce. This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels)
+    date: 2021-12-31
+serviceLastTestedDate: 2020-11-24
 statementVisibility: public
 statementCreatedDate: 2020-10-19
-statementLastUpdatedDate: 2020-11-17
+statementLastUpdatedDate: 2021-02-01
