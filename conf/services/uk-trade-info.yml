@@ -7,7 +7,7 @@ serviceUrl: /home
 contactFrontendServiceId: uktradeinfo
 complianceStatus: partial
 accessibilityProblems:
-   - users of assistive technologies may have difficulty using the interactive tables
+  - users of assistive technologies may have difficulty using the interactive tables
   - keyboard users are not able to navigate away from the interactive tables
   - when using the interactive tables, screen reader users are not informed of important information when it becomes available
   - when using the interactive tables, the instructions for how to show years and months may cause difficulty for users who may not be able to follow them
@@ -40,8 +40,8 @@ accessibilityProblems:
   - some form field labels may be confusing for screen reader users navigating out of context
   - when saving changes to cookie preferences, some screen reader users may not be aware of the success message
   - some pages have headings that are not uniquely descriptive of the content they introduce
- milestones:
-   - description: Users of assistive technologies may have difficulty using the interactive tables. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing) and 4.1.2 (Name, Role, Value)
+milestones:
+  - description: Users of assistive technologies may have difficulty using the interactive tables. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing) and 4.1.2 (Name, Role, Value)
     date: 2021-12-31
   - description: Keyboard users are not able to navigate away from the interactive tables. This does not meet WCAG 2.1 success criterion 2.1.2 (No Keyboard Trap)
     date: 2021-12-31
