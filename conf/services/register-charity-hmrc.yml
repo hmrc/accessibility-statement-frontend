@@ -1,0 +1,11 @@
+serviceName: Get recognition from HMRC for your charity
+serviceHeaderName: Get recognition from HMRC for your charity
+serviceDescription: |
+  Charities use this service to register their details with HMRC. Only once they are successfully registered as a charity are they able to get tax back on things like Gift Aid donations.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-charity-hmrc.yml
+contactFrontendServiceId: iCharities
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2021-01-21
+statementLastUpdatedDate: 2021-01-21

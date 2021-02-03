@@ -55,7 +55,8 @@ lazy val microservice = Project(appName, file("."))
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
       "uk.gov.hmrc.govukfrontend.views.html.components._",
       "uk.gov.hmrc.govukfrontend.views.html.helpers._",
-      "uk.gov.hmrc.hmrcfrontend.views.html.components._"
+      "uk.gov.hmrc.hmrcfrontend.views.html.components._",
+      "uk.gov.hmrc.hmrcfrontend.views.html.helpers._"
     ),
     // ***************
     // Use the silencer plugin to suppress warnings
@@ -75,8 +76,12 @@ lazy val microservice = Project(appName, file("."))
     resolvers += Resolver.jcenterRepo
   )
 
-val generateFakeStatements = inputKey[Unit]("Generate fake accessibility statements.")
-fullRunInputTask(generateFakeStatements, Test, "helpers.FakeStatementGenerator")
-
 val generateReport = inputKey[Unit]("Generate a report on the accessibility statements.")
-fullRunInputTask(generateReport, Compile, "uk.gov.hmrc.accessibilitystatementfrontend.tasks.ReportTask")
+fullRunInputTask(generateReport, Compile, "uk.gov.hmrc.accessibilitystatementfrontend.tasks.StatementReportTask")
+
+val generateMilestoneReport = inputKey[Unit]("Generate a milestone report on the accessibility statements.")
+fullRunInputTask(
+  generateMilestoneReport,
+  Compile,
+  "uk.gov.hmrc.accessibilitystatementfrontend.tasks.MilestoneReportTask"
+)

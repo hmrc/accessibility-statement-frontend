@@ -1,0 +1,65 @@
+serviceName: Advance Tariff Rulings Case Manager
+serviceHeaderName: Advance Tariff Rulings Case Manager
+serviceDescription: |
+  The service allows the HMRC Tariff Classification Team in Southend to process Advance Tariff Ruling (ATaR) applications and liabilities cases. The service also provides a view only service for HMRC Customer Compliance Group.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /manage-tariff-classifications
+contactFrontendServiceId: tariff-classification-frontend    # A unique identifier for your service
+complianceStatus: partial
+accessibilityProblems:
+  - when users with screen readers add a keyword, they are taken to a remove link without being given any context. This can be disorienting as users are not sure if they have added a keyword.
+  - when selecting the ‘Take off referral’ button on the applicant page, users with screen readers are not given any confirmation. This can make it difficult to know what to do next.
+  - on several pages, the focus order is not logical. This means that both keyboard-only and screen reader users will find it hard to understand the content.
+  - in some places, the link text is not descriptive.
+  - on the keyword page, the autocomplete function is not easy to use with a screen reader. Once screen reader users have added a phrase, it can be time consuming to find the ‘Add keyword’ button as users are taken back to the top of the page after pressing the arrow key.
+  - where users are asked to select files to add to a ruling, there is visual content that is not announced by screen readers. This could make it difficult for users with screen readers to understand the page.
+  - on some pages, the tab function does not work through the content in a logical order. This means that both keyboard-only and screen reader users will find it hard to understand the content.
+  - in some places, the link text is abbreviations which are not explained. This makes the purpose of the links difficult to understand for all users, especially those using a screen reader.
+  - some heading text that has been used to introduce a list of links is not marked up as a heading. This means that users with screen readers will find it difficult to understand the content.
+  - in some places, the page headings are the same. This can be confusing for users as it’s not immediately clear what the page is asking them to do.
+  - the ‘Search by case reference’ field is not labelled properly. This means it’s not readily available to users with screen readers.
+  - if a user leaves mandatory fields blank on the ‘Edit ruling’ page, they are not given an error message until they reach the final stage. This could make it disorientating as they have to go back and amend a page much earlier on in the journey.
+  - some form fields are not descriptive enough for screen reader users. This can make it difficult to work out what to select on the page.
+  - some page headings are not descriptive. This can make it difficult for users to orientate themselves and work out what they’re being asked to do.
+  - on the keyword search page, it’s not possible to dismiss the auto-suggested content. This can make it difficult for keyboard-only and screen reader users to continue with the service.
+  - on some pages, it’s difficult to view the page, select radio buttons and access links when users are zoomed in. This means that users who magnify their screen won’t be able to continue through the service very easily.
+milestones:
+
+  - description: "When users with screen readers add a keyword, they are taken to a remove link without being given any context. This can be disorienting as users are not sure if they have added a keyword. This fails WCAG 2.1: 2.4.3 Focus Order and 1.3.1 Info and Relationships."
+    date: 2021-02-26
+  - description: "When selecting the ‘Take off referral’ button on the applicant page, users with screen readers are not given any confirmation. This can make it difficult to know what to do next. This fails WCAG 2.1: 2.4.3 Focus Order and 1.3.1 Info and Relationships."
+    date: 2021-02-26
+  - description: "On several pages, the focus order is not logical. This means that both keyboard-only and screen reader users will find it hard to understand the content. This fails 2.4.3 Focus Order."
+    date: 2021-02-26
+  - description: "In some places, the link text is not descriptive. This can make it difficult for all users to navigate through the service - especially those using screen readers. This fails WCAG 2.1: 2.4.4 Link Purpose (In Context)."
+    date: 2021-02-26
+  - description: "On the keyword page, the autocomplete function is not easy to use with a screen reader. Once screen reader users have added a phrase, it can be time consuming to find the ‘Add keyword’ button as users are taken back to the top of the page after pressing the arrow key. This fails WCAG 2.1: 2.4.4 Link Purpose (In Context)."
+    date: 2021-02-26
+  - description: "Where users are asked to select files to add to a ruling, there is visual content that is not announced by screen readers. This could make it difficult for users with screen readers to understand the page. This fails WCAG 2.1: 1.3.1 Info and Relationships."
+    date: 2021-02-26
+  - description: "On some pages, the tab function does not work through the content in a logical order. This means that both keyboard-only and screen reader users will find it hard to understand the content. This fails WCAG 2.1: 4.1.2 Name, Role, Value."
+    date: 2021-02-26
+  - description: "In some places, the link text is abbreviations which are not explained. This makes the purpose of the links difficult to understand for all users, especially those using a screen reader. This fails WCAG 2.1: 2.4.4 Link Purpose (In Context)."
+    date: 2021-02-26
+  - description: "Some heading text that has been used to introduce a list of links is not marked up as a heading. This means that users with screen readers will find it difficult to understand the content. This fails WCAG 2.1: 1.3.1 Info and Relationships."
+    date: 2021-02-26
+  - description: "In some places, the page headings are the same. This can be confusing for users as it’s not immediately clear what the page is asking them to do. This fails WCAG 2.1: 1.3.1 Info and Relationships."
+    date: 2021-02-26
+  - description: "The ‘Search by case reference’ field is not labelled properly. This means it’s not readily available to users with screen readers. This fails WCAG 2.1: 1.3.1 Info and Relationships."
+    date: 2021-02-26
+  - description: "If a user leaves mandatory fields blank on the ‘Edit ruling’ page, they are not given an error message until they reach the final stage. This could make it disorientating as they have to go back and amend a page much earlier on in the journey. This fails WCAG 2.1: 3.3.1 Error Identification."
+    date: 2021-02-26
+  - description: "Some form fields are not descriptive enough for screen reader users. This can make it difficult to work out what to select on the page. This fails WCAG 2.1: 2.4.6 Headings and Labels."
+    date: 2021-02-26
+  - description: "Some page headings are not descriptive. This can make it difficult for users to orientate themselves and work out what they’re being asked to do. This fails WCAG 2.1: 2.4.6 Headings and Labels."
+    date: 2021-02-26
+  - description: "On the keyword search page, it’s not possible to dismiss the auto-suggested content. This can make it difficult for keyboard-only and screen reader users to continue with the service. This fails WCAG 2.1: 1.4.13 Content on Hover or Focus."
+    date: 2021-02-26
+  - description: "On some pages, it’s difficult to view the page, select radio buttons and access links when users are zoomed in. This means that users who magnify their screen won’t be able to continue through the service very easily. This fails WCAG 2.1: 1.4.10 Reflow."
+    date: 2021-02-26
+
+serviceLastTestedDate:     2020-12-18
+statementVisibility: public
+statementCreatedDate:       2020-12-23
+statementLastUpdatedDate:     2020-12-23
+

@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2021 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@ package uk.gov.hmrc.accessibilitystatementfrontend.controllers
 
 import com.google.inject.Inject
 import javax.inject.Singleton
-import play.api.Configuration
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.play.language.{LanguageController, LanguageUtils}
@@ -26,11 +25,10 @@ import play.api.mvc._
 
 @Singleton
 case class LanguageSwitchController @Inject() (
-  configuration: Configuration,
   languageUtils: LanguageUtils,
   cc: ControllerComponents,
   appConfig: AppConfig
-) extends LanguageController(configuration, languageUtils, cc) {
+) extends LanguageController(languageUtils, cc) {
   import appConfig._
 
   override def fallbackURL: String =

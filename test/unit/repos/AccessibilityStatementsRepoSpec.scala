@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2021 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -68,7 +68,6 @@ class AccessibilityStatementsRepoSpec
 
   private val fooStatement      = AccessibilityStatement(
     serviceName = "Send your loan charge details",
-    serviceHeaderName = "Send your loan charge details",
     serviceDescription =
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",

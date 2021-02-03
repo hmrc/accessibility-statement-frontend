@@ -1,0 +1,12 @@
+serviceName: Signing up to Making Tax Digital for VAT
+serviceHeaderName: Signing up to Making Tax Digital for VAT
+serviceDescription: |
+  This service enables VAT registered businesses, and their agents, to sign up to Making Tax Digital for VAT so they can use software compatible with HMRC to manage and submit their VAT Returns.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /vat-through-software/sign-up
+contactFrontendServiceId: MTDVAT
+complianceStatus: full
+serviceLastTestedDate: 2019-09-11
+statementVisibility: public
+statementCreatedDate: 2019-09-19
+statementLastUpdatedDate: 2019-09-19

@@ -1,0 +1,50 @@
+serviceName: Datgan nwyddau masnachol a gaiff eu cludo mewn bagiau sy’n cael eu hebrwng neu gerbydau bach
+serviceHeaderName: Datgan nwyddau masnachol a gaiff eu cludo mewn bagiau sy’n cael eu hebrwng neu gerbydau bach
+serviceDescription: |
+  Gallwch ddefnyddio’r gwasanaeth hwn i wirio, datgan a thalu am nwyddau yr ydych yn dod â nhw i mewn i Brydain Fawr at ddefnydd masnach neu fusnes. Gallwch hefyd ddatgan nwyddau masnachol yr ydych yn eu cymryd allan o Brydain Fawr.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /declare-commercial-goods
+contactFrontendServiceId: mib
+complianceStatus: partial
+accessibilityProblems:
+  -     nid oes penawdau wedi’u trefnu gan rai tudalennau, sy’n ei gwneud yn anodd i ddarllenwyr sgrin lywio’r cynnwys
+  -     mae strwythur y dudalen chwilio am wlad yn achosi nifer o broblemau – er enghraifft, nid yw technoleg gynorthwyol yn gallu darllen y label
+  -     ar y dudalen ‘A ydych yn dod ag unrhyw un o’r nwyddau canlynol?’, wrth glicio ar unrhyw un o’r botymau radio, ni chaiff y testun awgrym ei ailadrodd
+  -     os yw’r defnyddiwr wedi bod yn segur am gyfnod, mae’r gwasanaeth yn dangos tudalen cais annilys yn hytrach na dangos rhybudd
+  -     ar y tudalennau ‘Adolygu’ch nwyddau’ a ‘Gwirio’ch atebion’, mae llawer o gysylltiadau ‘Newid’ ac nid oes modd i ddefnyddwyr darllenwyr sgrin wahaniaethu rhyngddynt
+  -     mae’r negeseuon gwall ar gyfer y ddau faes ‘cyfeiriad e-bost’ wedi’u gosod fel ‘Nodwch gyfeiriad e-bost’, ac felly nid oes modd i ddefnyddwyr darllenwyr sgrin wahaniaethu rhyngddynt – dylai’r negeseuon gwall hyn fod yn unigryw
+  -     gallai fod yn anodd i dechnolegau cynorthwyol ddarllen rhai tudalennau oherwydd marcio a labelu anghywir
+  -     ar y tudalennau ‘Adolygu’ch nwyddau’ a ‘Gwirio’ch atebion’, nid yw’r cysylltiad ‘Dileu’ yn y drefn gywir fel rhan o’r rhestr grynodeb
+  -     nid oes rhifau adnabod (ID) unigryw gan rai elfennau, sy’n gallu ei gwneud yn anodd i dechnoleg gynorthwyol lywio’r cynnwys
+  -     ar y dudalen ‘Gwirio’ch atebion’, mae’r elfen mewnbwn ar gyfer y taliad sy’n ddyledus yn y drefn anghywir
+  -     ar y dudalen crynodeb o daliadau, mae cysylltiad nad yw’n ymddwyn yn gywir – nid yw’n cael ei gyhoeddi gan ddarllenwyr sgrin ac nid yw’n ymateb yn briodol pan gaiff y bylchwr ei wasgu
+milestones:
+  -     description: Nid oes gan rai tudalennau benawdau hierarchaidd. Gall hyn ei gwneud yn anodd i ddarllenwyr sgrin lywio’r cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Nid yw strwythur y dudalen chwilio am wlad yn gywir. Mae angen hyn ar y rhan fwyaf o dechnolegau cynorthwyol er mwyn gweithio. Hefyd, mae’r cynnwys cudd ar label yn anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) na 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Ar y dudalen ‘A ydych yn dod ag unrhyw un o’r nwyddau canlynol?’, nid yw’r testun awgrym yn gysylltiedig â’r maes mewnbwn. Mae hyn yn golygu na chaiff y testun awgrym ei ailadrodd wrth glicio ar y naill na’r llall o’r botymau radio. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Nid yw’r gwasanaeth yn defnyddio swyddogaeth terfyn amser sy’n rhybuddio’r defnyddiwr y bydd ei sesiynau’n dod i ben. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Ar y dudalen ‘Adolygu’ch nwyddau’, nid oes gan y cysylltiadau ‘Newid’ labeli unigryw, sy’n ei gwneud yn anodd i ddarllenwyr sgrin ddeall y cyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (in Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Nid yw’r neges gwall ar gyfer y maes ‘cadarnhau e-bost’ yn unigryw. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (in Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description:  Gallai fod yn anodd i dechnolegau cynorthwyol ddosrannu rhai tudalennau oherwydd elfen arddullio anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Ar y dudalen ‘Adolygu’ch nwyddau’, nid yw’r cysylltiad ‘Dileu’ yn y drefn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Mae gan rai tudalennau rifau adnabod dyblyg, sy’n gallu achosi problemau o ran technolegau’n prosesu’r cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Ar y dudalen ‘Gwirio’ch atebion’, nid yw’r cysylltiad ‘Dileu’ yn y drefn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+        date: 2021-06-01
+  -     description: Ar y dudalen ‘Gwirio’ch atebion’, mae’r elfen mewnbwn ar gyfer swm y taliad wedi’i strwythuro’n anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+  -     description: Ar y dudalen crynodeb o daliadau, nid yw’r cysylltiad yn ymddwyn fel botwm. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+        date: 2021-06-01
+serviceLastTestedDate: 2020-12-14
+statementVisibility: public
+statementCreatedDate: 2020-12-22
+statementLastUpdatedDate: 2020-12-22
+

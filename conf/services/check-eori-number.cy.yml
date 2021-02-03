@@ -1,0 +1,12 @@
+serviceName: Gwirio rhif EORI
+serviceHeaderName: Gwirio rhif EORI
+serviceDescription: |
+  Gwiriwch rif EORI busnes, sy’n cael ei ddefnyddio i fewnforio nwyddau i’r DU a’u hallforio oddi yno.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-eori-number
+contactFrontendServiceId: CHEN
+complianceStatus: full
+serviceLastTestedDate: 2020-12-14
+statementVisibility: public
+statementCreatedDate: 2020-12-14
+statementLastUpdatedDate: 2020-12-14

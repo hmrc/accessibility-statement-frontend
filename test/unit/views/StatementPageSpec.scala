@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2021 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,6 @@ package unit.views
 import java.util.{Calendar, GregorianCalendar}
 
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
 import org.scalatest.{Matchers, WordSpec}
 import play.api.Configuration
 import play.api.i18n.{Messages, MessagesApi}
@@ -207,7 +206,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       ) should not include """First milestone to be fixed"""
       contentAsString(
         statementPageHtml
-      ) should not include """We plan to fix this compliance issue by"""
+      ) should not include """This will be fixed by"""
     }
 
     "should return information on accessibility problems if problems are non-empty" in new Setup {
@@ -308,15 +307,15 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """First milestone to be fixed. We plan to fix this compliance issue by 15 January 2022."""
+        """First milestone to be fixed. This will be fixed by 15 January 2022."""
       )
 
       contentAsString(statementPageHtml) should include(
-        """Second milestone we&#x27;ll look at. We plan to fix this compliance issue by 20 June 2022."""
+        """Second milestone we&#x27;ll look at. This will be fixed by 20 June 2022."""
       )
 
       contentAsString(statementPageHtml) should include(
-        """Then we&#x27;ll get to this third milestone. We plan to fix this compliance issue by 02 September 2022."""
+        """Then we&#x27;ll get to this third milestone. This will be fixed by 02 September 2022."""
       )
     }
 
@@ -408,7 +407,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       ) should not include """<p class="govuk-body">First milestone to be fixed</p>"""
       contentAsString(
         statementPageHtml
-      ) should not include """<p class="govuk-body">We plan to fix this compliance issue by 15 January 2022</p>"""
+      ) should not include """<p class="govuk-body">This will be fixed by 15 January 2022</p>"""
     }
 
     "should return HTML with a fixed date for carrying out an assessment" in new Setup {
@@ -421,7 +420,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         )
 
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.</p>"""
+        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2021.</p>"""
       )
     }
   }
@@ -453,7 +452,7 @@ class StatementPageSpec extends WordSpec with Matchers {
           )
 
         contentAsString(statementPageHtml) should include(
-          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 December 2020.</p>"""
+          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 March 2021.</p>"""
         )
       }
 
@@ -492,7 +491,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     val fullyAccessibleServiceStatement = AccessibilityStatement(
       serviceName = "fully accessible service name",
-      serviceHeaderName = "Fully Accessible Name",
       serviceDescription = "Fully accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
@@ -510,7 +508,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
       serviceName = "partially accessible service name",
-      serviceHeaderName = "Partially Accessible Name",
       serviceDescription = "Partially accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
@@ -548,7 +545,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
     val nonCompliantServiceStatement = partiallyAccessibleServiceStatement.copy(
       serviceName = "non accessible service name",
-      serviceHeaderName = "Non Accessible Name",
       serviceDescription = "Non accessible description.",
       serviceUrl = "/non-accessible",
       contactFrontendServiceId = "nas",
@@ -558,7 +554,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     val automatedTestingServiceStatement =
       partiallyAccessibleServiceStatement.copy(
         serviceName = "automated accessible service name",
-        serviceHeaderName = "Automated Accessible Name",
         serviceDescription = "Automated accessible description.",
         serviceDomain = "www.tax.service.gov.uk",
         serviceUrl = "/automated-accessible",

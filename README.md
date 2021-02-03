@@ -21,7 +21,6 @@ that the text following the # characters are comments and will not appear in the
 ```yaml
 serviceName: Discounted Icecreams       # The service name that will appear in the title of the accessibility statement.
                                         # Do not include the word service at the end, as this will be added by the templates
-serviceHeaderName: Icecreams            # The service name as it should appear in the grey Gov.UK header bar
 serviceDescription: |                   # A description of the service
   Use this paragraph to describe your service. It can go over multiple lines
   like this.
@@ -66,8 +65,13 @@ e.g. `conf/services/discounted-icecreams.yml` will create an accessibility state
 
 The filename can contain only lower case letters, dashes or numbers, and the filename extension must be `.yml`
 
+## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run the unit and integration tests locally as described below.
+
+If your team would like repository write access to create branches and submit PRs without forking the repository, contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). Having write access will mean your team will receive alerts regarding production deployments.
+
+If you do not have write access to the repository, you are welcome to fork the repository using the Github user interface and submit PRs via your forked copy. In this case you will need to contact us to request PRs are approved and merged.
 
 ## Release an accessibility statement to Production
 Production releases for ```accessibility-statement-frontend``` are managed by PlatUI. If you would like the team to release your accessibility statement to Production, please contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/).
@@ -94,7 +98,7 @@ accessibility-statement.service-path = "/discounted-icecreams"
 Once this is set, the play-ui [FooterLinks](https://github.com/hmrc/play-ui/blob/master/src/main/twirl/uk/gov/hmrc/play/views/layouts/FooterLinks.scala.html)
   component will auto-generate the correct link to your accessibility statement, including
 the full referrerUrl parameter as described below. Likewise, the new
- [hmrcFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-26/twirl/uk/gov/hmrc/hmrcfrontend/views/components/hmrcFooter.scala.html)
+ [hmrcStandardFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-26/twirl/uk/gov/hmrc/hmrcfrontend/views/helpers/hmrcStandardFooter.scala.html)
  component will deliver the full govukFooter including the standardised links.
  
 Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
@@ -157,7 +161,7 @@ version and save with the suffix `.cy.yml`. For example, if your English languag
 `/conf/services/discounted-icecreams.yml`, the Welsh version should be saved as
 `/conf/services/discounted-icecreams.cy.yml`.
 
-Translate the following fields into Welsh only: serviceName, serviceHeaderName, serviceDescription, accessibilityProblems
+Translate the following fields into Welsh only: serviceName, serviceDescription, accessibilityProblems
 and milestone description. All other fields must be left untouched.
 
 Open a PR to get the file merged into the repository. Once merged and deployed, the language toggle will 
@@ -219,14 +223,7 @@ Gatling performance tests designed to be run against a production-like environme
 
 While the service expects to attract a low volume of traffic, the fact that the
 accessibility statements load into memory at start-up means the service may require
-more memory than a regular service. For this reason, performance testing has
-been carried out with the service ingesting well above the maximum number of statements
-expected to exist on the platform for the foreseeable future.
-
-The shell script `./generate_test_data.sh` creates fake accessibility statement
-YAML files in testOnlyConf/testOnlyServices for the purposes of load testing the application.
-
-To run the application using this test data run `./run_with_test_data.sh`
+more memory than a regular service. 
 
 ## Running ZAP scan locally
 

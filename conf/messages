@@ -54,7 +54,7 @@ complaints.additional-contacts.part5=if you live in Northern Ireland.
 in-person-contact.heading=Contacting us by phone or getting a visit from us in person
 in-person-contact.text-relay=We provide a text relay service if you are deaf, hearing impaired or have a speech impediment.
 in-person-contact.bsl=We can provide a British Sign Language (BSL) interpreter, or you can arrange a visit from an HMRC advisor to help you complete the service.
-in-person-contact.find-out-how.part1='Find out ' 
+in-person-contact.find-out-how.part1='Find out '
 in-person-contact.find-out-how.part2=how to get extra support from HMRC
 
 ## Technical information
@@ -68,9 +68,9 @@ technical.compliance.partial.reasons=, due to the non-compliances listed below.
 technical.non-compliance.header=Non‐accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non‐compliance with the accessibility regulations
-technical.non-compliance.milestone.fix-by=We plan to fix this compliance issue by {0}.
-technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020.
-technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 December 2020.
+technical.non-compliance.milestone.fix-by=This will be fixed by {0}.
+technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2021.
+technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 March 2021.
 
 ## Testing
 testing.heading=How we tested this service

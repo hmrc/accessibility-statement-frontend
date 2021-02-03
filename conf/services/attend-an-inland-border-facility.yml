@@ -1,0 +1,66 @@
+serviceName: Attend an Inland Border facility
+serviceHeaderName: Attend an Inland Border facility
+serviceDescription: The service let’s you give HMRC advance notice that you will be attending an inland border facility to help make the journey more streamlined.
+serviceDomain: attend-an-inland-border-facility.hmrc.gov.uk
+serviceUrl: /
+contactFrontendServiceId: Inland border facility
+complianceStatus: partial
+accessibilityProblems:
+  - Some users of screen readers may experience some contextual issues with links and or text.
+  - In some cases when a user navigates away from a page this isn’t communicated.
+  - In some cases, keyboard users submit data when they choose a change link.
+  - There is an occasion where a user views location on a map, when moving back up the page the user is trapped and is unable to progress beyond the open pin.
+  - Help for a set number format has not been included.
+  - The main heading on the page does not always describe the page content.
+  - The offices link in the page header repeats the service name instead of describing the name in the link.
+milestones:
+  - description: When navigating between pages, the new page is not announced to the screen-reader. The user does not know a new page has opened. This does not meet WCAG 2.1, success criterion 1.3.1 info and relationships.
+    date: 2021-03-31
+  - description: On some pages when using JAWS screen reading software moving to the select input and hitting Enter key should open the select input and display all the options. Instead the form is submitted. This does not meet WCAG 2.1 success criterion 3.2.2 On Input.
+    date: 2021-03-31
+  - description: The skip to main content link should take the user to the main content, but on some pages clicking it takes the user to the sign in page (when on the sign in page it reloads the page). This does not meet WCAG 2.1 - success criterion 2.4.1 Bypass Blocks and success criterion 2.4.4 Link Purpose (In Context).
+    date: 2021-03-31
+  - description: When using keyboard only the focus remains on the clicked link when the page is updated. This means the user is left at the bottom of the page and has to make their way back up the page to begin reading. For a user of screen magnification software, they might not realise the page has changed at all. This does not meet WCAG 2.1 success criterion 2.4.3 Focus Order.
+    date: 2021-03-31
+  - description: When you create an account and/or confirm your details a keyboard-only user cannot change any profile/transit details until after they have been submitted. This does not meet WCAG 2.1 success criterion 3.2.2 On Input and success criterion 3.3.4 Error Prevention (Legal, Financial, Data).
+    date: 2021-03-31
+  - description: In the offices sections there is a map, if a keyboard-only user opens one of the pins on the map and then navigates beyond the map, when moving back up the page (and so through the map) they cannot progress beyond the open pin as the keyboard becomes trapped between the open pin's card title and close icon. This does not meet WCAG 2.1 success criterion 2.1.2 No Keyboard Trap.
+    date: 2021-03-31
+  - description: On check your answers pages, some change links are ambiguous for screen reader user when read out of context. We need to add hidden copy to make the links more specific. This does not meet WCAG 2.1 success criterion 2.4.9 Link Purpose (Link Only).
+    date: 2021-03-31
+  - description: Where a field requires data in a specific format the user should be given an example of the format to prevent errors. This does not meet WCAG 2.1 success criterion 3.3.2 Labels or Instructions.
+    date: 2021-03-31
+  - description: On the offices page the main heading (the H1) does not describe the purpose of the page, it just repeats the service name. This does not meet WCAG 2.1 success criterion 2.4.2 Page Titled.
+    date: 2021-03-31
+  - description: On the submission summary page, following the link for "Create another transit movement" redirects the user to the "Your submission summary" page. This does not meet WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context) and Understanding success criterion 3.2.5 Change on Request (AAA).
+    date: 2021-03-31
+  - description: On the sign into your account page, both fieldsets on this page have aria values which are not valid. This does not meet WCAG 2.1, success criterion 4.1.2 Name, Role, Value.
+    date: 2021-03-31
+  - description: On the sign into your account page, The hidden "Error" copy which is meant to prefix the error messages for screen-reader users is being rendered as {{ 'app-login.error' | translate }, this does not meet WCAG 2.1. success criterion 1.3.1 Info and Relationships.
+    date: 2021-03-31
+  - description: Throughout the service the service name doesn’t link to the service homepage. This does not meet WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context).
+    date: 2021-03-31
+  - description: Where we request a vehicle registration number, there is a label missing from the input. This does not meet WCAG 2.1 success criterion 1.3.1 Info and Relationships success criterion 4.1.2 Name, Role, Value.
+    date: 2021-03-31
+  - description: On some pages the radio fieldset has an H1 text inside the legend which does not make hierarchical sense, this does not meet WCAG 2.1 success criterion 1.3.1 Info and Relationships.
+    date: 2021-03-31
+  - description: When we ask for a Movement Reference Number (MRN), the hint text is linked in the aria until the error state is present at which point the hint is removed and the error message ID is added. This does not meet WCAG 2.1 success criterion 3.3.2 Labels or Instructions.
+    date: 2021-03-31
+  - description: On the list of offices page, the list of offices has aria-labelledby="officename" for every list item. There is no matching element, so this is an invalid attribute value. In addition, there is no need for the role="listitem" on every li. This does not meet WCAG 2.1 success criterion 4.1.1 parsing.
+    date: 2021-03-31
+  - description: When a user is presented with a timeout dialog box, screen reader users are told that there are only 5 seconds left. There is much more time remaining. This does not meet WCAG 2.1success criterion 2.2.1 Timing Adjustable.
+    date: 2021-03-31
+  - description: On some pages the hint texts alongside each radio option is not associated with the input, so as a screen-reader user moves from input to input they will not hear the hints. This does not meet WCAG 2.1 success criterion 3.3.2 Labels or Instructions.
+    date: 2021-03-31
+  - description: On some pages there is an issue where the role of links is not identified as links because an href attribute has not used. This affects VoiceOver on iOS. This does not meet WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
+    date: 2021-03-31
+  - description: When a user is viewing their profile page, all ‘Change’ links are not unique. We need to include additional context for screen reader users. This does not meet WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context).
+    date: 2021-03-31
+  - description: When a user chooses to update their profile, there is an issue between h1 and link purpose mismatch. Screen-reader users will not get confirmation they selected the correct link until they have moved to the actual form. This does not meet WCAG 2.1 success criterion 2.4.2 Page Titled.
+    date: 2021-03-31
+  - description: When a user chooses to change their password, there is an invalid aria attribute/missing hint association. This does not meet WCAG 2.1 success criterion 3.3.2 Labels or Instructions success criterion 4.1.1 Parsing.
+    date: 2021-03-31
+serviceLastTestedDate: 2020-12-07
+statementVisibility: public
+statementCreatedDate: 2020-12-23
+statementLastUpdatedDate: 2020-12-23

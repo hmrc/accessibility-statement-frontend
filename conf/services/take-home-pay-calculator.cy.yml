@@ -1,0 +1,11 @@
+serviceName: Cyfrifiannell cyflog clir
+serviceHeaderName: Amcangyfrif eich cyflog clir
+serviceDescription: Mae’r gwasanaeth hwn yn galluogi pobl i gyfrifo eu cyflog clir.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /estimate-paye-take-home-pay/your-pay
+contactFrontendServiceId: PayeTaxCalculator
+complianceStatus: full
+serviceLastTestedDate: 2020-10-20
+statementVisibility: public
+statementCreatedDate: 2020-09-09
+statementLastUpdatedDate: 2020-11-13

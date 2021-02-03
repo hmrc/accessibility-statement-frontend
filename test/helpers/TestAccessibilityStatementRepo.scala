@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2021 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import java.util.{Calendar, GregorianCalendar}
 
 import org.mockito.scalatest.MockitoSugar
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
@@ -29,7 +29,6 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
   private val repo                 = mock[AccessibilityStatementsSourceRepo]
   private val englishStatement     = AccessibilityStatement(
     serviceName = "Test (English)",
-    serviceHeaderName = "Test Service Name",
     serviceDescription = "Test description.",
     serviceDomain = "www.tax.service.gov.uk/test/",
     serviceUrl = "some.test.service",
@@ -38,7 +37,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     accessibilityProblems = None,
     milestones = None,
     automatedTestingOnly = None,
-    statementVisibility = Draft,
+    statementVisibility = Public,
     serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
     statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
@@ -55,16 +54,35 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     milestones = Some(
       Seq(
         Milestone(
-          "milestone 1",
+          "Some links, headings and labels may not provide enough information about what to do next, or what happens next.\nThis does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).\n",
           new GregorianCalendar(2020, Calendar.MAY, 1).getTime
         ),
         Milestone(
-          "milestone 2",
+          "Some error messages may not include all of the information you need to help you to correct an error.\nThis does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).\n",
+          new GregorianCalendar(2020, Calendar.MAY, 10).getTime
+        ),
+        Milestone(
+          "Milestone without WCAG issue listed.\n",
           new GregorianCalendar(2020, Calendar.MAY, 10).getTime
         )
       )
     )
   )
+  private val draftWithMilestones  = englishStatement.copy(
+    serviceName = "Draft With Milestones",
+    statementVisibility = Draft,
+    complianceStatus = PartialCompliance,
+    accessibilityProblems = Some(Seq("problem 1", "problem 2")),
+    milestones = Some(
+      Seq(
+        Milestone(
+          "A draft milestone",
+          new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+        )
+      )
+    )
+  )
+
   private val withAutomatedTesting = withMilestones.copy(
     serviceName = "With Automated Testing",
     automatedTestingOnly = Some(true),
@@ -85,6 +103,9 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
   when(repo.findByServiceKeyAndLanguage("english-service", cy)) thenReturn None
   when(repo.findByServiceKeyAndLanguage("with-milestones", en)) thenReturn Some(
     (withMilestones, en)
+  )
+  when(repo.findByServiceKeyAndLanguage("draft-with-milestones", en)) thenReturn Some(
+    (draftWithMilestones, en)
   )
   when(
     repo.findByServiceKeyAndLanguage("with-automated-testing", en)
@@ -108,6 +129,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
       ("test-service", cy, welshStatement),
       ("english-service", en, englishOnlyStatement),
       ("with-milestones", en, withMilestones),
-      ("with-automated-testing", en, withAutomatedTesting)
+      ("with-automated-testing", en, withAutomatedTesting),
+      ("draft-with-milestones", en, draftWithMilestones)
     )
 }

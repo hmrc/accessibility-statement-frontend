@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2021 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -121,7 +121,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
           .toList
           .map(_.getText) should
           contain(
-            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 November 2020."
+            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2021."
           )
       }
     }
