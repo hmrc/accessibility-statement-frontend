@@ -1,12 +1,41 @@
 serviceName: Payrolling benefits and expenses
 serviceHeaderName: Payrolling benefits and expenses
 serviceDescription: |
-  The Payrolling benefits and expenses service allows employers to 'tax at source' some or
-  all of the benefits and expenses they offer their employees.
+  The Payrolling benefits and expenses service allows employers to 'tax at source' some or all of the benefits and expenses they offer their employees.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /payrollbik
 contactFrontendServiceId: pbik
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  -  If you’re inactive for a period of time, the service automatically logs you out without giving you any warning or notification. 
+  -  On some pages, there is text in a table that might be difficult for screen readers to read. For example, when searching for an employee it may be difficult to understand the search results as the table headings are not linked to the content in the table.
+  -  On the page where you choose benefits and expenses, users with screen readers may find it difficult to use the checkboxes.
+  -  On the page where you search for an employee, users with screen readers may find it difficult to access the text fields.
+  -  On the page where you remove a benefit or expense, the structure of the page may make it difficult for users with screen readers to understand the question. 
+  -  On some pages, the radio buttons are unlabelled. This means that users with screen readers may find it difficult to select the correct radio button. 
+  -  On the page that shows search results, the back link disappears when you use keyboard navigation. This will mean that keyboard-only users will find it difficult to go back to the last page.
+  -  All of the buttons and some of the text in the service is difficult to read when using keyboard focus. This is because the colour contrast isn’t strong enough. 
+  -  The error messages throughout the service are not descriptive. This can make it hard for users to understand what they’ve done wrong.
+milestones:
+  - description: If you’re inactive for a period of time, the service automatically logs you out without giving you any warning or notification. This fails WCAG 2.1 - Timing Adjustable, Re-authenticating and Timeouts.
+    date: 2021-07-31
+  - description: On some pages, there is text in a table that might be difficult for screen readers to read. For example, when searching for an employee it may be difficult to understand the search results as the table headings are not linked to the content in the table. This fails WCAG 2.1 - Info and Relationships and Meaningful Sequence.
+    date: 2021-07-31
+  - description: On the page where you choose benefits and expenses, users with screen readers may find it difficult to use the checkboxes. This fails WCAG 2.1 - Info and relationships.
+    date: 2021-07-31
+  - description: On the page where you search for an employee, users with screen readers may find it difficult to access the text fields. This fails WCAG 2.1 - Info and relationships.
+    date: 2021-07-31
+  - description: On the page where you remove a benefit or expense, the structure of the page may make it difficult for users with screen readers to understand the question. This fails WCAG 2.1 - Headings and labels.
+    date: 2021-07-31
+  - description:  On some pages, the radio buttons are unlabelled. This means that users with screen readers may find it difficult to select the correct radio button. This fails WCAG 2.1 - Info and relationships and Name, Role, Value.
+    date: 2021-07-31
+  - description:  On the page that shows search results, the back link disappears when you use keyboard navigation. This will mean that keyboard-only users will find it difficult to go back to the last page. This fails WCAG 2.1 - Focus Visible.
+    date: 2021-07-31
+  - description:  All of the buttons and some of the text in the service is difficult to read when using keyboard focus. This is because the colour contrast isn’t strong enough. This fails WCAG 2.1 - Non-text Contrast.
+    date: 2021-07-31
+  - description:  The error messages throughout the service are not descriptive. This can make it hard for users to understand what they’ve done wrong. This fails WCAG 2.1 - Error suggestion. 
+    date: 2021-07-31
+serviceLastTestedDate: 2020-01-15
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-22
+statementLastUpdatedDate: 2021-02-03
