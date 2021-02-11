@@ -7,8 +7,7 @@ serviceUrl: /payrollbik
 contactFrontendServiceId: pbik
 complianceStatus: partial
 accessibilityProblems:
-  -  If you’re inactive for a perio
-  d of time, the service automatically logs you out without giving you any warning or notification. 
+  -  If you’re inactive for a period of time, the service automatically logs you out without giving you any warning or notification. 
   -  On some pages, there is text in a table that might be difficult for screen readers to read. For example, when searching for an employee it may be difficult to understand the search results as the table headings are not linked to the content in the table.
   -  On the page where you choose benefits and expenses, users with screen readers may find it difficult to use the checkboxes.
   -  On the page where you search for an employee, users with screen readers may find it difficult to access the text fields.
