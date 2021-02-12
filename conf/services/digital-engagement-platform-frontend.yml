@@ -4,7 +4,7 @@ serviceDescription: |
   The Ask HMRC webchat and digital assistant are services that enable you to communicate with an HMRC adviser or digital assistant over the internet.
   Both services are built by Nuance, a provider of customer engagement software.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /ask-hmrc pages
+serviceUrl: /ask-hmrc
 contactFrontendServiceId: digital-engagement-platform-frontend
 complianceStatus: partial
 accessibilityProblems:
