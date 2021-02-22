@@ -12,7 +12,7 @@ accessibilityProblems:
   - some non-text elements do not meet the colour ratio standard
   - screen reader users are not always informed when content has been added to a page when a filter component has been activated
 milestones:
-  - description: Fix the accessibility problems.
+  - description: Fix the WCAG 2.1 A and AA accessibility problems.
     date: 2021-03-31
 serviceLastTestedDate: 2020-11-25
 statementVisibility: public
