@@ -4,7 +4,6 @@ serviceDescription: |
   You can use this service to allow pension scheme practitioners to register and amend their details.
   You can view details of a scheme, access to which has been authorized to them by an authorizing pension scheme administrator.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /pension-scheme-practitioner
 contactFrontendServiceId: PODS
 complianceStatus: partial
 accessibilityProblems:
@@ -26,4 +25,4 @@ milestones:
 serviceLastTestedDate: 2020-08-30
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2021-02-03
+statementLastUpdatedDate: 2021-02-22
