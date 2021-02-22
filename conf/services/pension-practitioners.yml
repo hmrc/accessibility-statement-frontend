@@ -1,9 +1,9 @@
 serviceName: Managing Pension Schemes
-serviceHeaderName: Managing Pension Schemes
 serviceDescription: |
   You can use this service to allow pension scheme practitioners to register and amend their details.
   You can view details of a scheme, access to which has been authorized to them by an authorizing pension scheme administrator.
 serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pension-scheme-practitioner
 contactFrontendServiceId: PODS
 complianceStatus: partial
 accessibilityProblems:
