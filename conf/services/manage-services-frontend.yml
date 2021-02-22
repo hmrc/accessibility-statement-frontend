@@ -6,11 +6,11 @@ serviceUrl: /manage-services-frontend
 contactFrontendServiceId: manage-services-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - Some table columns do not have headings
-  - The timeout overlay prevents users from delaying the timeout with a mouse
-  - Some form fields are not labelled descriptively
-  - Some non-text elements do not meet the colour ratio standard
-  - Screen reader users are not always informed when content has been added to a page when a filter component has been activated
+  - some table columns do not have headings
+  - the timeout overlay prevents users from delaying the timeout with a mouse
+  - some form fields are not labelled descriptively
+  - some non-text elements do not meet the colour ratio standard
+  - screen reader users are not always informed when content has been added to a page when a filter component has been activated
 milestones:
   - description: Fix the accessibility problems.
     date: 2021-03-31
