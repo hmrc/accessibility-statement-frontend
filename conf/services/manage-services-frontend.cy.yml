@@ -6,11 +6,11 @@ serviceUrl: /manage-services-frontend
 contactFrontendServiceId: manage-services-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - Nid oes penawdau ar rai colofnau yn y tablau
-  - Mae’r droshaen terfyn amser yn atal defnyddwyr rhag gohirio’r terfyn amser gyda llygoden
-  - Nid yw rhai meysydd y ffurflen wedi’u labelu’n ddisgrifiadol
-  - Nid yw rhai elfennau nad ydynt yn destun yn bodloni’r safon cymhareb lliw
-  - Nid yw defnyddwyr darllenwyr sgrin yn cael gwybod bob tro pan fo cynnwys wedi’i ychwanegu i dudalen pan fo elfen hidlo wedi’i roi ar waith
+  - nid oes penawdau ar rai colofnau yn y tablau
+  - mae’r droshaen terfyn amser yn atal defnyddwyr rhag gohirio’r terfyn amser gyda llygoden
+  - nid yw rhai meysydd y ffurflen wedi’u labelu’n ddisgrifiadol
+  - nid yw rhai elfennau nad ydynt yn destun yn bodloni’r safon cymhareb lliw
+  - nid yw defnyddwyr darllenwyr sgrin yn cael gwybod bob tro pan fo cynnwys wedi’i ychwanegu i dudalen pan fo elfen hidlo wedi’i roi ar waith
 milestones:
   - description: Fix the accessibility problems.
     date: 2021-03-31
