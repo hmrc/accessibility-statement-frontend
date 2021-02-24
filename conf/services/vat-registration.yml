@@ -15,6 +15,9 @@ accessibilityProblems:
   - the colour contrast on some of the links is poor
   - some tables have unnecessary labels
   - the character count on one of the text input fields is not read out
+  - on some of the input fields the labels are announced but not the question or hint
+  - the language toggle on some pages is not contained in a landmark, and does not use the latest design pattern
+  - some pages should have JavaScript polyfill enabled to ensure a link acts as a button
 milestones:
   - description: A timeout occurs without prior warning that a timeout may occur. This means that users will not realise they have to complete a task within a time limit. This fails WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
     date: 2021-01-31
@@ -32,6 +35,18 @@ milestones:
     date: 2021-01-31
   - description: One of the text input fields has a character count which updates to indicate the amount of remaining characters, but this is not announced to screen reader users. This means some users will be unaware they have entered too many characters. This fails WCAG 2.1 success criterion 4.1.3 (Status Messages).
     date: 2021-01-31
+  - description: On some pages, when the user has focused on an input field the label gets announced, but not the question or hint. This could be confusing for some screen reader users. This fails WCAG 2.1: Success criterion 3.3.2 (Labels or Instructions).
+    date: 2021-03-31
+  - description: The Language toggle on some pages is not contained in a landmark. This could be confusing for some screen reader users. This fails WCAG 2.1: Success Criterion 2.4.1 (Bypass Blocks).
+    date: 2021-03-31
+  - description: The language toggle on some pages does not use the latest design pattern. This could be confusing for some screen reader users. This fails WCAG 2.1: Success Criterion 2.4.7 (Focus Visible).
+    date: 2021-03-31
+  - description: The error handling on some pages does not focus or highlight the the actual input field. This could be confusing for some screen reader users. This fails WCAG 2.1:  Success Criterion 3.3.1:(Error Identification).
+    date: 2021-03-31
+  - description: On some pages error messages are misleading and hint text is not getting announced by screen readers. This could be confusing for some screen reader users. This fails WCAG 2.1:  Success Criterion 3.3.1:(Error Identification).
+    date: 2021-03-31
+  - description: Some pages do not have JavaScript polyfill enabled to ensure a link acts as a button. This fails WCAG 2.1: Success Criterion 4.1.2: (Name, Role, Value).
+    date: 2021-03-31
 serviceLastTestedDate: 2020-11-12
 statementVisibility: public
 statementCreatedDate: 2020-11-13
