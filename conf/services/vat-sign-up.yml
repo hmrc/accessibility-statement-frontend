@@ -6,7 +6,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /vat-through-software/sign-up
 contactFrontendServiceId: MTDVAT
 complianceStatus: full
-serviceLastTestedDate: 2019-09-11
+serviceLastTestedDate: 2021-02-04
 statementVisibility: public
 statementCreatedDate: 2019-09-19
 statementLastUpdatedDate: 2019-09-19
