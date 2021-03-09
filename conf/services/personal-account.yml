@@ -7,7 +7,10 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /personal-account
 contactFrontendServiceId: personal-account
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - In this service there are some links in the navigation that lose focus and don't work as they should for screen readers. We are fixing this issue to make the service more usable.
+serviceLastTestedDate: 2021-01-04
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2021-03-09
