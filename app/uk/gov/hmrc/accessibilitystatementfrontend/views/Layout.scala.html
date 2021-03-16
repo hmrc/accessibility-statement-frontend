@@ -15,13 +15,14 @@
  *@
 
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
-@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.header.Header
+@import views.html.helper.CSPNonce
 
 @this(
         govukLayout: GovukLayout,
-        hmrcHeader: hmrcHeader,
+        hmrcHead: HmrcHead,
+        hmrcStandardHeader: hmrcStandardHeader,
         hmrcStandardFooter: HmrcStandardFooter,
-        head: Head,
+        hmrcScripts: HmrcScripts,
         languageSelect: LanguageSelect
 )
 @(
@@ -33,18 +34,11 @@
     @if(isWelshTranslationAvailable) {@languageSelect()}
 }
 
-@headerBlock = {
-    @hmrcHeader(Header(
-      language = if(messages.lang.code == "cy") Cy else En,
-      displayHmrcBanner = true
-    ))
-}
-
 @govukLayout(
     pageTitle = Some(pageTitle),
-    headBlock = Some(head()),
-    headerBlock = Some(headerBlock),
-    scriptsBlock = None,
+    headBlock = Some(hmrcHead(nonce = CSPNonce.get)),
+    headerBlock = Some(hmrcStandardHeader(displayHmrcBanner = true)),
+    scriptsBlock = Some(hmrcScripts(nonce = CSPNonce.get)),
     beforeContentBlock = Some(beforeContentBlock),
     footerBlock = Some(hmrcStandardFooter())
 )(contentBlock)
