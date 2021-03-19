@@ -1,0 +1,11 @@
+serviceName: Claim for reimbursement of import duties
+serviceHeaderName: Claim for a reimbursement of import duties
+serviceDescription: |
+  Claimants can use the service to apply to claim reimbursements on overpayments for import charges, including Customs Duties, Excise Duties, Countervailing Duties and other specific customs duties. They can use the service if the amount already paid in the import declaration is inaccurate or the import declaration was rejected so they need to claim back all or some of the amount already paid.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /claim-for-reimbursement-of-import-duties
+contactFrontendServiceId: claim-for-reimbursement-of-import-duties
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2021-03-18
+statementLastUpdatedDate: 2021-03-19
