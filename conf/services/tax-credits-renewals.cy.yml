@@ -1,4 +1,5 @@
 serviceName: Tax Credits Renewals
+serviceHeaderName: Gwasanaeth Adnewyddu Credydau Treth
 serviceDescription: |
   Gall unrhyw un sy’n cael credydau treth ar hyn o bryd ddefnyddio’r gwasanaeth Adnewyddu Credydau Treth i adnewyddu eu
   hawliad yn ystod y cyfnod adnewyddu rhwng mis Ebrill a mis Awst.
@@ -6,5 +7,5 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /tax-credits-service/renewals
 contactFrontendServiceId: tax-credits-renewals
 complianceStatus: noncompliant
-statementCreatedDate: 2021-03-01
-statementLastUpdatedDate: 2021-03-01
+statementCreatedDate: 2021-03-22
+statementLastUpdatedDate: 2021-03-22
