@@ -1,0 +1,10 @@
+serviceName: Tax Credits Renewals
+serviceDescription: |
+  The Tax Credits Renewals service can be used by anyone currently receiving tax credits to renew their claim during the
+  April to August renewals window.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-credits-service/renewals
+contactFrontendServiceId: tax-credits-renewals
+complianceStatus: noncompliant
+statementCreatedDate: 2021-03-01
+statementLastUpdatedDate: 2021-03-01
