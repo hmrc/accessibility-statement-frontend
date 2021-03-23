@@ -1,5 +1,4 @@
 serviceName: Tax Credits Renewals
-serviceHeaderName: Tax Credits Renewals service
 serviceDescription: |
   The Tax Credits Renewals service can be used by anyone currently receiving tax credits to renew their claim during the
   April to August renewals window.
@@ -8,4 +7,5 @@ serviceUrl: /tax-credits-service/renewals
 contactFrontendServiceId: tax-credits-renewals
 complianceStatus: noncompliant
 statementCreatedDate: 2021-03-22
+statementVisibility: public
 statementLastUpdatedDate: 2021-03-22
