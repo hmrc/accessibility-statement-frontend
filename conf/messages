@@ -70,7 +70,7 @@ technical.non-compliance.introduction=The content listed below is non-accessible
 technical.non-compliance.accessibility=Non‐compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=This will be fixed by {0}.
 technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2021.
-technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 March 2021.
+technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 30 June 2021.
 
 ## Testing
 testing.heading=How we tested this service

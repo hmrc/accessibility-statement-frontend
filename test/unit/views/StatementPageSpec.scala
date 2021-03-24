@@ -452,7 +452,7 @@ class StatementPageSpec extends WordSpec with Matchers {
           )
 
         contentAsString(statementPageHtml) should include(
-          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 March 2021.</p>"""
+          """ <p class="govuk-body">The service will also book a full accessibility audit by 30 June 2021.</p>"""
         )
       }
 
