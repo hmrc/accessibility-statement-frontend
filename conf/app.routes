@@ -3,4 +3,3 @@
 ->         /govuk-frontend          govuk.Routes
 ->         /hmrc-frontend           hmrcfrontend.Routes
 GET        /:service                uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController.getStatement(service: String, referrerUrl: Option[String])
-GET        /language/:lang          uk.gov.hmrc.accessibilitystatementfrontend.controllers.LanguageSwitchController.switchToLanguage(lang: String)
