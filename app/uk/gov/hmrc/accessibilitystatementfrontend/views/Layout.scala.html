@@ -23,22 +23,18 @@
         hmrcStandardHeader: hmrcStandardHeader,
         hmrcStandardFooter: HmrcStandardFooter,
         hmrcScripts: HmrcScripts,
-        languageSelect: LanguageSelect
+        hmrcLanguageSelectHelper: HmrcLanguageSelectHelper
 )
 @(
         pageTitle: String,
         isWelshTranslationAvailable: Boolean)(
         contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
-@beforeContentBlock = {
-    @if(isWelshTranslationAvailable) {@languageSelect()}
-}
-
 @govukLayout(
     pageTitle = Some(pageTitle),
     headBlock = Some(hmrcHead(nonce = CSPNonce.get)),
     headerBlock = Some(hmrcStandardHeader(displayHmrcBanner = true)),
     scriptsBlock = Some(hmrcScripts(nonce = CSPNonce.get)),
-    beforeContentBlock = Some(beforeContentBlock),
+    beforeContentBlock = if (isWelshTranslationAvailable) Some(hmrcLanguageSelectHelper()) else None,
     footerBlock = Some(hmrcStandardFooter())
 )(contentBlock)
