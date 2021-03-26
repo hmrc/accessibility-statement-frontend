@@ -4,7 +4,22 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-for-reimbursement-of-import-duties
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
-complianceStatus: noncompliant
-statementVisibility: draft
+complianceStatus: partial
+accessibilityProblems:
+  - Some elements do not have unique IDs which may make it difficult for assistive technology to navigate the content.
+  - There may be some links that do not provide enough information about what to do next, or what happens next.
+  - Some error messages are not descriptive enough.
+  - Some pages do not have ordered headings, which makes it hard for screen readers to navigate the content.
+milestones:
+  - description: Some elements do not have unique IDs which may make it difficult for assistive technology to navigate the content.
+    date: 2021-04-18
+  - description: There may be some links that do not provide enough information about what to do next, or what happens next.
+    date: 2021-04-18
+  - description: Some error messages are not descriptive enough.
+    date: 2021-04-18
+  - description: Some pages do not have ordered headings, which makes it hard for screen readers to navigate the content.
+    date: 2021-04-18
+serviceLastTestedDate: 2021-03-23
+statementVisibility: public
 statementCreatedDate: 2021-03-18
-statementLastUpdatedDate: 2021-03-19
+statementLastUpdatedDate: 2021-03-26
