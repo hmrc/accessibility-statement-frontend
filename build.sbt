@@ -67,6 +67,7 @@ lazy val microservice = Project(appName, file("."))
       "com.github.ghik" % "silencer-lib" % silencerVersion % Provided cross CrossVersion.full
     ),
     // ***************
+    pipelineStages in Assets := Seq(gzip),
     unitTestSettings,
     acceptanceTestSettings,
     integrationTestSettings,
