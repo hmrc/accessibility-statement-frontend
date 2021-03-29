@@ -1,6 +1,6 @@
 serviceName: Attend an Inland Border facility
 serviceHeaderName: Attend an Inland Border facility
-serviceDescription: The service let’s you give HMRC advance notice that you will be attending an inland border facility to help make the journey more streamlined.
+serviceDescription: The service lets you give HMRC advance notice that you will be attending an inland border facility to help make the journey more streamlined.
 serviceDomain: attend-an-inland-border-facility.hmrc.gov.uk
 serviceUrl: /
 contactFrontendServiceId: Inland border facility
