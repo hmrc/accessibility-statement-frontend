@@ -1,7 +1,7 @@
 import uk.gov.hmrc.sbtdistributables.SbtDistributablesPlugin.publishingSettings
 import play.sbt.PlayImport.PlayKeys.playDefaultPort
 import sbt.Keys.testOptions
-import uk.gov.hmrc.DefaultBuildSettings.{addTestReportOption, integrationTestSettings}
+import uk.gov.hmrc.DefaultBuildSettings.addTestReportOption
 
 val appName = "accessibility-statement-frontend"
 
@@ -67,8 +67,8 @@ lazy val microservice = Project(appName, file("."))
       "com.github.ghik" % "silencer-lib" % silencerVersion % Provided cross CrossVersion.full
     ),
     // ***************
-    unitTestSettings,
     pipelineStages in Assets := Seq(gzip),
+    unitTestSettings,
     acceptanceTestSettings,
     integrationTestSettings,
     zapTestSettings,
