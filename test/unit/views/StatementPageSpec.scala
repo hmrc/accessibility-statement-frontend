@@ -420,7 +420,7 @@ class StatementPageSpec extends WordSpec with Matchers {
         )
 
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2021.</p>"""
+        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2021.</p>"""
       )
     }
   }
