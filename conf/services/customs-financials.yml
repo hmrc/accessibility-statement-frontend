@@ -12,6 +12,21 @@ accessibilityProblems:
   - PDFs contain images without a text alternative
   - some PDFs contain incorrect page numbering in the footer
   - selecting the download link downloads documents to the device but does not always open within the browser
+  - Content order
+  - Incorrect use of definition list
+  - Error message not associated with fields
+  - Hint not associated with fieldset
+  - No timeout dialog
+  - Missing visual label
+  - Error identification missing
+  - HTML validation - closing tag with no opening tag
+  - HTML validation
+  - Old focus styles being used
+  - 2.4.7 Focus visible
+  - Missing inputmode and type attributes
+  - Missing autocomplete attributes
+  - Missing Sign Out option
+  - Accessible name does not match visible name
 milestones:
   - description: PDF documents do not have a title. This means screen reader users are not presented with the document purpose and must rely on the filename which is ambiguous. This fails WCAG 2.1 success criterion 2.4.2 (Page Titled).
     date: 2021-08-31
