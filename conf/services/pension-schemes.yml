@@ -3,7 +3,7 @@ serviceDescription: |
   You can use this service to check the status and details of any scheme you are the administrator of.
   You can view details of a scheme by selecting the scheme name and also check the status and details of any scheme that you have applied to register.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /register-pension-scheme
+serviceUrl: /manage-pension-schemes
 contactFrontendServiceId: PODS
 complianceStatus: full
 serviceLastTestedDate: 2020-05-21
