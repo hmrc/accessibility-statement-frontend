@@ -1,27 +1,16 @@
 serviceName: Check and challenge your Council Tax band
-
 serviceHeaderName: Check and challenge your Council Tax band
-
 serviceDescription: The website enables users to check the Council Tax band of every residential property in England and Wales and enables users to challenge a band if required.
-
 serviceDomain: www.tax.service.gov.uk
-
 serviceUrl: /check-council-tax-band/search
-
 contactFrontendServiceId: CTI
-
 complianceStatus: partial
-
 automatedTestingOnly: true
-
 automatedTestingDetails: Automated Accessibility Test job on Jenkins, including AXE.
-
-accessibilityProblems:
-  - On the search page, radio buttons are used to change the search fields presented to the user for searching. This change is not communicated to screen reader users.
-
+accessibilityProblems: On the search page, radio buttons are used to change the search fields presented to the user for searching. This change is not communicated to screen reader users.
 milestones:
-  - description: On the search page, radio buttons are used to change the search fields presented to the user for searching. This change is not communicated to screen reader users. This fails WCAG 4.1.2 - Name, role and value.
-    date: 2021-06-04
+  description: On the search page, radio buttons are used to change the search fields presented to the user for searching. This change is not communicated to screen reader users. This fails WCAG 4.1.2 - Name, role and value.
+  date: 2021-06-04
 
 serviceLastTestedDate: 2021-03-25
 statementVisibility: public
