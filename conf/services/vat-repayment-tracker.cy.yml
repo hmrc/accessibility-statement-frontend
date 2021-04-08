@@ -1,0 +1,12 @@
+serviceName: VAT repayments service
+serviceHeaderName: Apply for an Advance Tariff Ruling (ATaR)
+serviceDescription: |
+  This service allows you to view the details and estimated payment date of your VAT repayments.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /vat-repayment-tracker
+contactFrontendServiceId: vat-repayment-tracker-frontend   # A unique identifier for your service
+complianceStatus: full
+serviceLastTestedDate: 2021-03-01
+statementVisibility: public
+statementCreatedDate: 2020-03-24
+statementLastUpdatedDate: 2021-03-29
