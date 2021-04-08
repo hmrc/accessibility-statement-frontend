@@ -94,7 +94,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support" target="_blank">contact HMRC for extra support</a>"""
+        """<a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support" target="_blank">contact HMRC for extra support (opens in a new tab)</a>"""
       )
     }
 
