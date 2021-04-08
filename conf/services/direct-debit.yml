@@ -59,7 +59,7 @@ milestones:
       have a focus state which means it is not compatible with keyboard navigation.
       This does not meet WCAG success criterion 2.4.7 (Focus Visible).
     date: 2020-09-30
-serviceLastTestedDate: 2020-06-16
-statementVisibility: draft
+serviceLastTestedDate: 2020-07-06
+statementVisibility: public
 statementCreatedDate: 2020-06-30
-statementLastUpdatedDate: 2020-06-30
+statementLastUpdatedDate: 2021-02-12
