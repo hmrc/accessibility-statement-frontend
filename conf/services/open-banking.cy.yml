@@ -1,0 +1,47 @@
+serviceName: Bancio Agored
+serviceHeaderName: Bancio Agored
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn caniatáu i chi sicrhau bod taliad i CThEM yn dod yn syth allan o’ch cyfrif banc.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pay-by-bank
+contactFrontendServiceId: open-banking
+complianceStatus: partial
+accessibilityProblems:
+  - ar y dudalen ‘Dewis eich banc’, mae yna ddewis pellach i’w wneud ar ôl dewis banc - fallai y bydd yr elfen ychwanegol hon yn cael ei chuddio neu’n achosi problemau i bobl sy’n llywio gan ddefnyddio bysellfwrdd.
+  - ar y dudalen ‘Dewis eich banc’, mae yna grynodeb o wallau sydd ddim yn amlygu’r maes mewnbwn - gall hyn atal rhai defnyddwyr rhag deall yr hyn y mae’n rhaid iddynt ei wneud i drwsio’r gwall
+  - ar rai tudalennau, nid yw’r cysylltiad ‘Ewch yn syth i’r prif gynnwys’ yn gweithio’n iawn i bobl sy’n defnyddio darllenydd sgrin
+  - ar rai tudalennau, dangosir gwybodaeth mewn tablau, sydd ddim yn cael ei darllen mewn modd pwrpasol gan dechnoleg gynorthwyol
+  - mae’r cadarnhad argraffedig o’r taliad yn cynnwys gwybodaeth ddiangen, megis hypergysylltiadau
+  - nid yw rhai penawdau’n gyson
+milestones:
+  - desceiption: |
+      Mae opsiynau radio ar y dudalen ‘Dewis eich banc’ wedi’u grwpio mewn modd sy’n atal darllenwyr sgrin a thechnoleg gynorthwyol arall rhag darllen eu safle ar y rhestr yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      Ar y dudalen ‘Dewis eich banc’, mae angen i ddefnyddwyr wneud dewis ychwanegol ar ôl dewis eu banc. Ar gyfer pobl sy’n defnyddio meddalwedd VoiceOver, nid yw rôl y dewis ychwanegol yn glir ac mae’r gwasanaeth yn mynd i’r opsiwn gyntaf yn ddiofyn. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      Mae rhai botymau radio ar y dudalen ‘Dewis eich banc’ wedi’u nodi’n anghywir fel bod mewn cyflwr hyblyg, gan wneud pwrpas y botwm radio yn aneglur i rai defnyddwyr. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      Mae rhai rhifau adnabod dyblyg ar y dudalen ‘Dewis eich banc’, a gall hyn peri i ddarllenwyr sgrin a thechnoleg gynorthwyol eraill i gyhoeddi’r elfen gyntaf yn unig. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.3 (Focus Order) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      Mae rhai tudalennau lle nad yw actifadu’r botwm ‘Ewch yn syth i’r prif gynnwys’ yn symud y ffocws i’r prif gynnwys. 2.4.1 (Bypass Blocks)
+    date: 2021-12-15
+  - description: |
+      Mae yna rai crynodebau o wallau yn y gwasanaeth hwn sydd ddim yn nodi’r meysydd sydd angen eu llenwi gan y defnyddiwr. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      Mewn rhai mannau o fewn y gwasanaeth rydym yn dangos gwybodaeth mewn tablau nad ydynt wedi’u fformatio er mwyn gwneud synnwyr pan fyddant wedi’u lliniaru. Mae hyn yn golygu na ellir darllen y cynnwys mewn modd pwrpasol gan dechnoleg darllen sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.2 (Meaningful Sequence) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      Rydym yn defnyddio teitlau tab i ddisgrifio cynnwys ein tudalennau gwe. Mewn rhai lleoedd, nid yw’r teitlau tab yn cyfateb i bennawd y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      TMae’r dudalen cadarnhau taliad yn cynnwys toriadau tudalen all achosi problem i ddefnyddwyr technoleg gynorthwyol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.2 (Meaningful Sequence) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+serviceLastTestedDate: 2021-03-12
+statementVisibility: public
+statementCreatedDate: 2021-03-24
+statementLastUpdatedDate: 2019-03-21
