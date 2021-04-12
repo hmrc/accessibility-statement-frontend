@@ -25,6 +25,7 @@ serviceDescription: |                   # A description of the service
   Use this paragraph to describe your service. It can go over multiple lines
   like this.
 serviceDomain: www.tax.service.gov.uk   # The domain name under which this service exists (exclude the https:// and the path)
+mobilePlatform:                         # android|ios (optional)
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
 contactFrontendServiceId: icecreams     # A unique identifier for your service (see notes below)
 complianceStatus: partial               # full|partial|noncompliant
