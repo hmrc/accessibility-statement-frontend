@@ -1,5 +1,5 @@
 serviceName: VAT repayments service
-serviceHeaderName: Apply for an Advance Tariff Ruling (ATaR)
+serviceHeaderName: VAT repayments service
 serviceDescription: |
   This service allows you to view the details and estimated payment date of your VAT repayments.
 serviceDomain: www.tax.service.gov.uk

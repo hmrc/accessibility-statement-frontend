@@ -1,7 +1,7 @@
-serviceName: VAT repayments service
-serviceHeaderName: Apply for an Advance Tariff Ruling (ATaR)
+serviceName: Ad-daliadau TAW
+serviceHeaderName: Ad-daliadau TAW
 serviceDescription: |
-  This service allows you to view the details and estimated payment date of your VAT repayments.
+  Mae’r gwasanaeth hwn yn caniatáu i chi fwrw golwg dros fanylion eich ad-daliadau TAW a’r dyddiadau talu amcangyfrifedig.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /vat-repayment-tracker
 contactFrontendServiceId: vat-repayment-tracker-frontend   # A unique identifier for your service
