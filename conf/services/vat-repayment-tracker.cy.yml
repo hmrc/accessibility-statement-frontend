@@ -1,0 +1,12 @@
+serviceName: Ad-daliadau TAW
+serviceHeaderName: Ad-daliadau TAW
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn caniatáu i chi fwrw golwg dros fanylion eich ad-daliadau TAW a’r dyddiadau talu amcangyfrifedig.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /vat-repayment-tracker
+contactFrontendServiceId: vat-repayment-tracker-frontend   # A unique identifier for your service
+complianceStatus: full
+serviceLastTestedDate: 2021-03-01
+statementVisibility: public
+statementCreatedDate: 2020-03-24
+statementLastUpdatedDate: 2021-03-29
