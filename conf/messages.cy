@@ -34,7 +34,7 @@ accessibility.has-issues=Mae’n bosibl y bydd rhai pobl yn cael anhawster i dde
 ## Contact
 contact.heading=Yr hyn i’w wneud os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn
 contact.extra-support.part1='Gallwch '
-contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol
+contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol (yn agor ffenestr neu dab newydd)
 contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwahanol, megis print bras, recordiad sain neu Braille.'
 
 ## Reporting problems
