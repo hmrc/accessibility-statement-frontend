@@ -3,12 +3,95 @@ serviceHeaderName: Apply for the Fulfilment House Due Diligence Scheme
 serviceDescription: |
   The Fulfilment House Due Diligence Scheme service lets third country goods fulfilment businesses (houses) register
   for the scheme online, to ensure that they perform proper due diligence on the goods they fulfil, on their overseas
-  clients, and carry out “fit and proper” person checks.
+  clients, and carry out 'fit and proper' person checks.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /fhdds
 contactFrontendServiceId: fulfilment-house-due-diligence-scheme
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - when using a keyboard to navigate, or a screen reader you cannot skip to the main content
+  - some labels for screen readers and keyboard navigation may be missing, repeated or in the wrong order
+  - the service displays some questions only when previous ones are answered, this may cause stress for users who are unable to answer them in one go
+  - some pages can be refreshed before many users have completed tasks and with no option to continue from where they left off
+  - the timeout period for inactivity is too short, occurs without warning and does not give users the option to extend the session
+  - the service is not using GOV.UK new colour contrast changes so some features may be difficult to navigate for colour blind and low vision users
+milestones:
+  - description: |
+      The menu toggle sometimes disappears on a small screen.
+      Also, when JavaScript is switched off, it unnecessarily appears (as there is a single sign out link).
+      This does not meet WCAG 2.1 Reference 1.3.1 - Info and Relationships.
+    date: 2022-04-01
+  - description: |
+      Some hint text is not associated with relevant inputs in code
+      as it uses aria landmarks incorrectly.
+      This means screen readers may miss important information.
+      This does not meet WCAG 2.1 Reference 1.3.1 - Info and Relationships.
+    date: 2022-04-01
+  - description: |
+      The service displays some information, known as conditionally revealed content,
+      only when users need to see it. In some cases, multiple questions are revealed.
+      This can cause stress for users who may not be able to answer them in one go.
+      This does not meet WCAG 2.1 Reference 1.3.1 - Info and Relationships.
+    date: 2022-04-01
+  - description: |
+      The service times out too quickly and does not warn assistive technology users
+      or give them the option to extend the session.
+      Pages also refresh too quickly, with no option given to navigate easily back to where the user was in the service.
+      This does not meet WCAG 2.1 Reference 2.2.1 Timing Adjustable.
+    date: 2022-04-01
+  - description: |
+      One back link is not bypassed by a skip link.
+      This means keyboard users will have to tab through links to get to main content.
+      This does not meet WCAG 2.1 Reference 2.4.1 - Bypass Blocks.
+    date: 2022-04-01
+  - description: |
+      There are two consecutive yes/no questions, the second of which appears when the first is answered.
+      This could cause screen readers to navigate to the wrong answer and miss important information.
+    date: 2022-04-01
+  - description: |
+      Some error messages have been incorrectly labelled.
+      This stops screen readers from reading them when an input is focussed.
+      These do not meet WCAG 2.1 Reference 3.3.2 - Labels or Instructions.
+    date: 2022-04-01
+  - description: |
+      There are instances where elements have incomplete start and end tags,
+      resulting in HTML tags incorrectly appearing on pages.
+      These issues do not meet WCAG 2.1 Reference 4.1.1 - Parsing.
+    date: 2022-04-01
+  - description: |
+      A link styled as a button does not respond to the spacebar for keyboard only users.
+      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
+    date: 2022-04-01
+  - description: |
+      The service displays some information, known as conditionally revealed content,
+      only when users need to see it. In some cases, multiple questions are revealed.
+      This can cause stress for users who may not be able to answer them in one go.
+      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
+    date: 2022-04-01
+  - description: |
+      The service displays some information - known as conditionally revealed content - only when users need to see it.
+      However, some has been incorrectly added to inline radio buttons.
+      This means that users will not be able to determine which radio the information is relevant to.
+      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
+    date: 2022-04-01
+  - description: |
+      Some collapsed content contains focusable elements.
+      This means that screen readers may read content in the wrong order.
+      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
+    date: 2022-04-01
+  - description: |
+      There is no autocomplete on first and last name.
+      The attributes for telephone numbers and email addresses have not been set.
+      These issues do not meet WCAG 2.1 Reference 1.3.5 - Identify Input Purpose.
+    date: 2022-04-01
+  - description: |
+      We use colour contrast to help low vision users navigate the service,
+      however in some areas the expected colour contrast ratio of 4.5:1. was not in place.
+      There is not enough contrast between text and background for people with moderately low vision to read without contrast-enhancing technology.
+      These issues do not meet WCAG 2.1 Reference 1.4.3 - Contrast (Minimum).
+    date: 2022-04-01
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+serviceLastTestedDate: 2021-02-10
+statementLastUpdatedDate: 2021-04-08
 
