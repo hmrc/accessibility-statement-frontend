@@ -32,51 +32,51 @@ accessibilityProblems:
   - Some users may see a version of the chat window that has incorrect labelling for the sound alerts button. Users with screen readers may be confused about the function of the button
 milestones:
   - description: Mobile users using screen readers may find it difficult to navigate or interact with the chat window or the other content on the launch page. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: There is styling on the ‘Support for coronavirus’ digital assistant page that may make interaction difficult for users who use style overlays to make pages more readable. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Some answers in the digital assistant that have links have ‘(opens in a new tab)’ after each link, whereas others have ‘Links will open in a new tab’ once at the start of the answer. This could be frustrating for users with assistive technologies as link behaviour may not be clear or consistent. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Users using the JAWS screen reader may experience confusing changes in focus when being given multiple answers. This does not meet WCAG 2.1 success criteria 2.4.3 (Focus Order) and 3.2.3 (Consistent Navigation).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Users using VoiceOver on iPhone and Mac and users using NVDA may experience confusing changes in focus when interacting with answers, links and new tabs. This does not meet WCAG 2.1 success criterion 3.2.5 (Change on Request).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Users using Chrome on Android are unable to use pinch and zoom gestures once the chat window has launched. This does not meet WCAG 2.1 success criteria 1.4.4 (Resize Text) and 1.4.10 (Reflow).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: The button icon used to turn alerts on and off does not look different enough in its on or off state, or different enough from the print icon. It also behaves differently to the print icon. Additionally, users with assistive technologies may find it difficult to interact with the button. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2021-05-28
+    date: 2021-07-31
   - description: Users on smaller screens may see a menu link that does not give any interactive options. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and Relationships) and 4.1.2 (Name Role, Value) and 2.4.4 (Link Purpose (In Context)).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Some users may find it difficult to locate this accessibility statement from the footer of this service. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: On some pages, when you use keyboard tabbing to focus on a link, the colour and underline that surround the link are not bold or contrasted enough. This may make it difficult for visually impaired users to see what they’re focusing on. This does not meet WCAG 2.1 success criterion 1.4.11 (Non-text Contrast).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: The ‘Ask HMRC’ title on the chat window lacks useful labelling for screen readers. This does not meet WCAG 2.1 success criteria 4.2.6 (Headings) and 1.3.1 (Info & Relationships).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Keyboard-only users may find it time-consuming to navigate back to the ‘print’, ‘close’ and ‘hide’ chat options when at the end of a chat conversation. This does not meet WCAG 2.1 success criteria 2.4.1 (By-pass Blocks) and 1.3.1 (Info & Relationships).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Some buttons have been incorrectly labelled as banners which may make them confusing to interact with. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: If you set the font size to 200%, the text in the chat window overflows or cuts off which may make the service difficult to use for people with visual impairment. This does not meet WCAG 2.1 success criterion 1.4.4 (Resize Text).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: The ability to minimise and maximise the chat window is not announced by some screen readers, which may make interacting with the service difficult. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: When minimising the chat window, the minimised window may not be visible to some users, making it difficult to continue using the chat service. This does not meet WCAG 2.1 success criterion 1.4.10 (Reflow).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Some screen readers may announce the chat window content a second time after the ‘send’ button, which may make the service confusing. This does not meet WCAG 2.1 success criteria 1.3.1 (Info & Relationships) and 1.3.2 (Meaningful Sequence).
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Users using VoiceOver on iPhone may not have new content announced to them when they click or type a response, which makes interacting with the service difficult. This does not meet WCAG 2.1 success criterion 4.1.3 (Status)
-    date: 2021-04-05
+    date: 2021-07-31
   - description: The icons for ‘minimise’, ‘close’, ‘print’ and ‘alert’ are lacking clear labels that would make interacting with them easier for people using voice controls. This does not meet WCAG 2.1 success criterion 2.5.3 (Label in Name)
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Some users may see a version of the chat window that has a loading animation. The animation lacks an alt tag which helps screen readers describe the animation. This does not meet WCAG 2.1 success criterion 1.1.1 (Non-text Content)
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Some users may see a version of the end of chat survey that has radio buttons which may not function correctly when the user clicks them. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation)
-    date: 2021-04-05
+    date: 2021-07-31
   - description: Some users may see a version of the chat window that has incorrect labelling for the sound alerts button. Users with screen readers may be confused about the function of the button. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing)
-    date: 2021-04-05
+    date: 2021-07-31
 
 serviceLastTestedDate: 2020-09-20
 statementVisibility: public
 statementCreatedDate: 2020-07-06
-statementLastUpdatedDate: 2021-02-01
+statementLastUpdatedDate: 2021-03-31
