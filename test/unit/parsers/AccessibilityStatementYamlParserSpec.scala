@@ -19,8 +19,9 @@ package unit.parsers
 import java.util.{Calendar, GregorianCalendar}
 import org.scalatest.{EitherValues, Matchers, WordSpec}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
+
 import scala.io.Source
 
 class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with EitherValues {
@@ -79,6 +80,26 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
         fullyAccessibleStatement.copy(statementVisibility = Public)
+      )
+    }
+
+    "parse a fully accessible public statement for a mobile application" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |mobilePlatform: android
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: public
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(statementVisibility = Public, mobilePlatform = Some(Android))
       )
     }
 
@@ -310,6 +331,28 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
       parsed.left.value.getMessage should startWith(
         "Unrecognised compliance status \"unrecognised\""
+      )
+    }
+
+    "throw a DecodingError if the mobile platform is incorrect" in {
+      val problemStatementYaml =
+        """
+          |serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |mobilePlatform: sausage
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: public
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
+
+      val parsed = parser.parse(problemStatementYaml)
+
+      parsed.left.value.getMessage should startWith(
+        "Unrecognised mobile platform \"sausage\""
       )
     }
 
