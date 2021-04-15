@@ -14,8 +14,8 @@
  * limitations under the License.
  *@
 
-@import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.MobilePlatform
 
 @this()
-@(statement: AccessibilityStatement)(implicit request: Request[_], messages: Messages)
-@if(statement.mobilePlatform.isDefined) {@messages("general.app")} else {@messages("general.service")}
+@(mobilePlatform: Option[MobilePlatform])(implicit request: Request[_], messages: Messages)
+@if(mobilePlatform.isDefined) {@messages("general.app")} else {@messages("general.service")}

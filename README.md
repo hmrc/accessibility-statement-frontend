@@ -25,7 +25,6 @@ serviceDescription: |                   # A description of the service
   Use this paragraph to describe your service. It can go over multiple lines
   like this.
 serviceDomain: www.tax.service.gov.uk   # The domain name under which this service exists (exclude the https:// and the path)
-mobilePlatform:                         # android|ios (optional)
 serviceUrl: /icecreams                  # The relative URL to the service (omitting www.tax.service.gov.uk)
 contactFrontendServiceId: icecreams     # A unique identifier for your service (see notes below)
 complianceStatus: partial               # full|partial|noncompliant
@@ -51,6 +50,9 @@ automatedTestingDetails: |             # Only add this value if your service has
   If your service has only had automated testing, add a text description of testing tools used, e.g.
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```
+
+If your statement is specifically for a mobile application, add the line `mobilePlatform: android` for an android application or
+`mobilePlatform: ios` for an iOS application. Do not add this for web-based services.
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)

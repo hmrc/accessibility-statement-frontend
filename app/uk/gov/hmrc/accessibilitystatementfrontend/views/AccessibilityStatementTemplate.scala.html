@@ -23,7 +23,7 @@
 @(statement: AccessibilityStatement, referrerUrl: Option[String])(
         implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
-@serviceOrApp = {@serviceOrAppHelper(statement)}
+@serviceOrApp = {@serviceOrAppHelper(statement.mobilePlatform)}
 <h1 class="govuk-heading-xl">@{messages("introduction.heading", statement.serviceName, serviceOrApp)}</h1>
 <p class="govuk-body-l">@{messages("introduction.lede", serviceOrApp)}</p>
 @if(statement.mobilePlatform.isEmpty) {
