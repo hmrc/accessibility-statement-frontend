@@ -51,6 +51,9 @@ automatedTestingDetails: |             # Only add this value if your service has
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```
 
+If your statement is specifically for a mobile application, add the line `mobilePlatform: android` for an android application or
+`mobilePlatform: ios` for an iOS application. Do not add this for web-based services.
+
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
 - [/conf/services/example-partially-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml)
