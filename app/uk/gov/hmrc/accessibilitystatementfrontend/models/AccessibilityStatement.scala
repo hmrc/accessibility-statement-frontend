@@ -25,6 +25,7 @@ case class AccessibilityStatement(
   serviceDescription: String,
   serviceDomain: String,
   serviceUrl: String,
+  mobilePlatform: Option[MobilePlatform],
   contactFrontendServiceId: String,
   complianceStatus: ComplianceStatus,
   accessibilityProblems: Option[Seq[String]],

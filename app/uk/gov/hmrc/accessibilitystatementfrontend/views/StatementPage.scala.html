@@ -17,14 +17,12 @@
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 
-@this(layout: Layout, accessibilityStatementTemplate: AccessibilityStatementTemplate, hmrcReportTechnicalIssueHelper: HmrcReportTechnicalIssueHelper)
-
+@this(layout: Layout, accessibilityStatementTemplate: AccessibilityStatementTemplate, hmrcReportTechnicalIssueHelper: HmrcReportTechnicalIssueHelper, serviceOrApp: ServiceOrApp)
 @(statement: AccessibilityStatement, referrerUrl: Option[String], isWelshTranslationAvailable: Boolean)(
         implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
-
-@layout(pageTitle = messages("general.pageTitle", statement.serviceName), isWelshTranslationAvailable = isWelshTranslationAvailable) {
+@layout(pageTitle = messages("general.pageTitle", statement.serviceName, serviceOrApp(statement.mobilePlatform)), isWelshTranslationAvailable = isWelshTranslationAvailable) {
     @accessibilityStatementTemplate(statement, referrerUrl)
     @hmrcReportTechnicalIssueHelper()
 }
