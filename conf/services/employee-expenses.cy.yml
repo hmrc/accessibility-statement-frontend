@@ -1,0 +1,13 @@
+serviceName: Hawlio ar gyfer gwisg unffurf ac offer
+serviceHeaderName: Hawlio ar gyfer gwisg unffurf ac offer
+serviceDescription: |
+  Mae'r gwasanaeth hwn yn caniatáu i rywun hawlio gostyngiad dreth ar
+  lanhau, atgyweirio neu amnewid ei wisg unffurf, dillad gwaith ac offer ar
+  gyfer y flwyddyn dreth gyfredol a'r 4 blynedd dreth flaenorol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /employee-expenses
+contactFrontendServiceId: EE
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2021-04-14
+statementLastUpdatedDate: 2021-04-14
