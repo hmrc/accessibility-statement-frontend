@@ -1,0 +1,50 @@
+serviceName: Taliadau Ar-lein
+serviceHeaderName: Taliadau Ar-lein
+serviceDescription: |
+  Y gwasanaeth Taliadau Ar-lein yw dull digidol CThEM o dalu gan ddefnyddio cerdyn.
+  Mae’n caniatáu i ddefnyddwyr dalu eu rhwymedigaethau treth ar gyfer cyfundrefnau
+  sy’n cynnwys, ond heb fod yn gyfyngedig i, TAW, Hunanasesiad, COTAX ac EPAYE.
+  Mae’n derbyn cardiau debyd busnes a phersonol yn ogystal â chardiau credyd busnes.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pay
+contactFrontendServiceId: pay-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - Ar un adeg, rydym yn dangos iFrame taliad, sy’n cael ei reoli gan Barclaycard. Efallai y bydd defnyddwyr â nam ar eu golwg yn ei chael yn anodd llywio’r gwasanaeth, hyd yn oed gyda thechnoleg gynorthwyol.
+  - Mae rhai negeseuon gwall yn y gwasanaeth hwn efallai’n na fydd yn ddigon disgrifiadol i rai defnyddwyr â nam ar eu golwg – fodd bynnag maent yn gydnaws ag offer technoleg gynorthwyol gyffredin.
+  - Ar ryw adeg, rydym yn dangos tudalennau lle nad yw’r fformatio ar gyfer elfennau unigol ar y sgrin yn gwbl addas ar gyfer technolegau darllen sgrin, ac felly’n arwain at dudalen sy’n anodd ei llywio o ganlyniad i wybodaeth anghyflawn. Fodd bynnag, bydd defnyddio darllenydd sgrin i ddarllen y dudalen gyfan yn uchel yn rhoi’r holl wybodaeth sydd ei hangen i lywio’r dudalen yn hyderus.
+milestones:
+  - description: |
+      Rydym yn defnyddio iFrame Barclaycard i gymryd manylion y cerdyn a’r taliadau
+      ar gyfer y tâl neu’r dreth y mae defnyddwyr yn eu talu. Nid yw’r iFrame hwn yn
+      rhoi cyfle i ddefnyddwyr gadarnhau eu manylion ar ôl iddynt eu nodi. Nid yw hyn
+      yn bodloni maen prawf llwyddiant 3.3.6 (Error Prevention) Canllawiau Hygyrchedd
+      Cynnwys y We, fersiwn 2.1.
+    date: 2021-12-15
+  - description: |
+      Rydym yn defnyddio teitlau ar ein tudalennau gwe er mwyn disgrifio pwnc neu
+      bwrpas y dudalen y mae’r defnyddiwr yn edrych arni ar hyn o bryd. Mewn rhai
+      achosion, nid yw’r teitlau ar y tabiau a’r prif deitlau yn gyson. Mae hyn yn
+      golygu nad yw’r gwasanaeth yn bodloni maen prawf llwyddiant 2.4.6
+      (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-12-15
+  - description: |
+      Rydym yn defnyddio penawdau ac is-benawdau tudalennau i ddisgrifio pwnc neu
+      bwrpas meysydd ar dudalen we. Ar rai tudalennau, mae yna benawdau lefel 3 sy’n
+      benawdau lefel 2 mewn gwirionedd. Mae hyn yn achosi i bobl sy’n defnyddio
+      darllenwyr sgrin gael gwybodaeth aneglur ynghylch y dudalen. Mae hyn yn golygu
+      nad yw’r gwasanaeth yn bodloni maen prawf llwyddiant 2.4.10 (Section Headings)
+      Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+  - description: |
+      Rydym yn defnyddio botymau radio i gyflwyno opsiynau i ddefnyddwyr ar ein
+      tudalennau gwe. Mae’r rhain yn cael eu grwpio gyda’i gilydd i alluogi llywio
+      haws i ddefnyddwyr sy’n defnyddio bysellfwrdd yn unig. Mewn rhai achosion,
+      mae’r grwpiau hyn yn colli eu labeli, sy’n atal rhai meddalwedd darllen sgrin
+      rhag adrodd y label. Mae hyn yn golygu nad yw’r gwasanaeth yn bodloni maen prawf
+      llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2021-12-15
+serviceLastTestedDate: 2019-09-25
+statementVisibility: public
+statementCreatedDate: 2019-10-09
+statementLastUpdatedDate: 2021-02-11
