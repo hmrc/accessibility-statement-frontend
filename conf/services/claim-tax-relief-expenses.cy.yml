@@ -1,0 +1,17 @@
+serviceName: Gwirio a allwch hawlio treuliau sy'n ymwneud â gwaith
+serviceHeaderName: Gwirio a allwch hawlio treuliau sy'n ymwneud â gwaith
+serviceDescription: |
+  Mae'r gwasanaeth hwn yn dweud wrthych os oes rhywun yn gymwys
+  i hawlio unrhyw dreuliau sy'n gysylltiedig â gwaith,
+  a pha fath o dreuliau y mae'n gallu eu hawlio.
+
+  Mae hefyd yn dweud wrthych ba wybodaeth y bydd ei hangen arnoch
+  er mwyn gwneud hawliad, a pha ddull hawlio y mae angen i chi ei
+  ddefnyddio (naill ai ar-lein, dros y ffôn, neu drwy'r post).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /claim-tax-relief-expenses
+contactFrontendServiceId: EE
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2021-04-20
+statementLastUpdatedDate: 2021-04-20
