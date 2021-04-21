@@ -7,22 +7,24 @@ serviceUrl: /manage-pension-schemes
 contactFrontendServiceId: PODS
 complianceStatus: partial
 accessibilityProblems:
-  - page titles do not always match page headers - this may cause issues for users with screen readers
-  - keyboard-only users can't always skip to the main content on a page
-  - screen readers will sometimes jumble up headers and sub headers
-  - some cells in tables are missing audio-only descriptions, which is not good for screen readers
+  - there are some table headers that contain misleading text which may cause confusion for users
+  - some search bars don’t behave as expected making navigation difficult for users of screen readers
+  - some of the colour combinations are low contrast and are likely to be difficult for people with low vision to read
+  - abbreviations have been used throughout the service, including within link text and headings on some pages. Some users may have difficulty in understanding the abbreviations, especially when navigating out of context
 milestones:
-  - description: The currency input pattern on fields where we ask for monetary amounts is not the latest version and may cause screen reader issues. This will be fixed by adopting the newly approved GDS currency input pattern.
+  - description: On many pages in the service, after a user submits a search the user’s focus is returned to the top of the page, without informing them of the search results. Screen reader users are also not informed if their search was successful or not and whether any results were returned. This does not meet WCAG 2.1 success criterion 2.4.3 Focus Order (Level A) Understanding Focus Order | How to Meet Focus Order and success criterion 4.1.3 Status Messages (Level AA) Understanding Status Messages | How to Meet Status Messages.
     date: 2021-04-30
-  - description: There are validation errors on some pages where data inputs are summarised that may cause issues with assistive technology. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships) (A) and 4.1.1 (Parsing) (A). This will be fixed by patching the new pattern.
+  - description: On some pages headings are missing on text introducing information, making navigation difficult for users who navigate the page using headings. This does not meet WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships | How to Meet Info and Relationships.
     date: 2021-04-30
-  - description: The link focus colour is incorrect in some cards, caused by over-specific style sheet styling. This will be fixed by lowering the specificity of the CSS.
+  - description: In many parts of the service the timeout modal does not contain a level 2 heading and the text also repeats twice. This can lead to some users missing the opportunity to dismiss the timeout warning.
     date: 2021-04-30
-  - description: Some tables use code that will cause issues with assistive technology. This will be fixed by updating the code used in tables.
+  - description: In the ‘your pension schemes’ section there is a non-interactive table that receives focus for users of keyboard only and screen reading assistive technologies. This is incorrect as only content which can be activated should receive focus. This does not meet WCAG 2.1 success criterion 2.4.3 Focus Order (Level A) Understanding Focus Order | How to Meet Focus Order.
     date: 2021-04-30
-  - description: The spacing between page titles and body text is not always consistent and results in a disjointed user experience. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (A) (Info and Relationships). This will be fixed by using the CSS for styling.
+  - description: In the ‘list of charges’ section of the service some visually hidden table headers were found to be non-descriptive or misleadingly labelled. This does not meet WCAG 2.1 success criterion 2.4.6 Headings and Labels (Level AA) Understanding Headings and Labels | How to Meet Headings and Labels.
+    date: 2021-04-30
+  - description: In mobile view, on the overview dashboards, the content does not behave responsively in relation to the reduced screen size. This results in the content being presented as being truncated in parts. This doesn’t meet WCAG 2.1 success criterion 1.4.10 Reflow (Level AA) Understanding Reflow | How to Meet Reflow.
     date: 2021-04-30
 serviceLastTestedDate: 2021-03-24
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2021-03-30
+statementLastUpdatedDate: 2021-04-21
