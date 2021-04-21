@@ -1,0 +1,13 @@
+serviceName: Check if you can claim work related expenses
+serviceHeaderName: Check if you can claim work related expenses
+serviceDescription: |
+  This service tells you if someone is eligible to claim any work related expenses, and which type of expenses they are able to claim.
+
+  It also tells you what information you will need in order to make a claim, and which claim method you need to use (either online, by phone, or by post).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /claim-tax-relief-expenses
+contactFrontendServiceId: EE
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2021-04-20
+statementLastUpdatedDate: 2021-04-20
