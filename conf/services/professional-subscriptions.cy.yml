@@ -1,0 +1,11 @@
+serviceName: Hawlio am eich tanysgrifiadau proffesiynol cysylltiedig â gwaith
+serviceHeaderName: Hawlio am eich tanysgrifiadau proffesiynol cysylltiedig â gwaith
+serviceDescription: |
+  Mae'r gwasanaeth hwn yn caniatáu i rywun hawlio rhyddhad treth ar ffioedd neu danysgrifiadau y mae wedi'u talu i sefydliadau proffesiynol cymeradwy am y flwyddyn dreth bresennol a'r 4 blynedd dreth flaenorol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /professional-subscriptions
+contactFrontendServiceId: EE
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2021-04-21
+statementLastUpdatedDate: 2021-04-21
