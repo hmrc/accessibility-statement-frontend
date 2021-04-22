@@ -29,8 +29,7 @@
 @if(statement.mobilePlatform.isEmpty) {
     <p class="govuk-body">
         @{messages("introduction.scope.part1")}
-        <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.scope.part2")}</a>
-        @{messages("general.fullstop")}
+        <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.scope.part2")}</a>@{messages("general.fullstop")}
     </p>
 }
 <p class="govuk-body">@{messages("introduction.service-name", statement.serviceName, serviceAbsoluteUrl, serviceOrApp)}</p>
@@ -109,13 +108,13 @@
     <h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
     <p class="govuk-body">
         @{messages("contact.extra-support.part1")}
-        <a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support" target="_blank">@{messages("contact.extra-support.part2")}</a>
+        <a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support">@{messages("contact.extra-support.part2")}</a>
         @{messages("contact.extra-support.part3")}
     </p>
 }
 <h2 class="govuk-heading-l">@{messages("reporting.heading", serviceOrApp)}</h2>
 <p class="govuk-body">@{messages("reporting.report-problem.part1", serviceOrApp)}
-    <a class="govuk-link" href="@{reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl)}"@if(statement.mobilePlatform.isEmpty){ target="_blank"}>@{messages("reporting.report-problem.part2")}@if(statement.mobilePlatform.isEmpty){@messages("reporting.report-problem.opens-in-new-tab")}</a>@messages("general.fullstop")
+    <a class="govuk-link" href="@{reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl)}">@messages("reporting.report-problem.part2")</a>@messages("general.fullstop")
 </p>
 
 <h2 class="govuk-heading-l">@{messages("complaints.heading")}</h2>
