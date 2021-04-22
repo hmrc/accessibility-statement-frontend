@@ -88,7 +88,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support" target="_blank">contact HMRC for extra support (opens in a new tab)</a>"""
+        """<a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support">contact HMRC for extra support</a>"""
       )
     }
 
@@ -100,7 +100,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas" target="_blank">report the accessibility problem (opens in a new tab)</a>."""
+        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas">report the accessibility problem</a>."""
       )
     }
 
@@ -112,7 +112,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas&amp;referrerUrl=came-from-here" target="_blank">report the accessibility problem (opens in a new tab)</a>"""
+        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas&amp;referrerUrl=came-from-here">report the accessibility problem</a>"""
       )
     }
 
@@ -244,7 +244,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
       )
 
       contentAsString(statementPageHtml) should include(
-        """report the accessibility problem (opens in a new tab)"""
+        """report the accessibility problem"""
       )
     }
   }
