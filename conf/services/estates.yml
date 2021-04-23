@@ -1,4 +1,4 @@
-serviceName: Estates
+serviceName: Register and Maintain an Estate
 serviceDescription: This service allows you to register and maintain an estate which has to pay tax.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /register-an-estate
