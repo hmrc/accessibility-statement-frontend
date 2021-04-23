@@ -287,6 +287,36 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
         """report the accessibility problem</a>."""
       )
     }
+
+    "return HTML including iOS specific link" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleIosAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """href="https://www.apple.com/uk/accessibility/""""
+      )
+
+      contentAsString(statementPageHtml) should not include
+        """href="https://www.android.com/intl/en_uk/accessibility/""""
+    }
+
+    "return HTML including Android specific link" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleAndroidAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """href="https://www.android.com/intl/en_uk/accessibility/""""
+      )
+
+      contentAsString(statementPageHtml) should not include
+        """href="https://www.apple.com/uk/accessibility/""""
+    }
   }
 
   "Given an Accessibility Statement for a partially compliant app, rendering a Statement Page" should {

@@ -17,6 +17,8 @@ using-service.this-service-or-app-is-run=This {0} is run by HM Revenue and Custo
 using-service.service.this-means=This means you should be able to:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
+using-service.app.accessibility-features.link.android=https://www.android.com/intl/en_uk/accessibility/
+using-service.app.accessibility-features.link.ios=https://www.apple.com/uk/accessibility/
 using-service.app.on-your-device=' on your device to:'
 
 using-service.bullet1=change colours, contrast levels and fonts

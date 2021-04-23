@@ -42,7 +42,9 @@
       @messages("using-service.service.this-means")
     } else {
         @messages("using-service.app.this-means")
-        <a class="govuk-link" href="https://www.apple.com/uk/accessibility/">@messages("using-service.app.accessibility-features")</a>
+        <a class="govuk-link"
+        href="@messages(s"using-service.app.accessibility-features.link.${statement.mobilePlatform.getOrElse("")}")"
+        >@messages("using-service.app.accessibility-features")</a>
         @messages("using-service.app.on-your-device")
     }
 </p>
