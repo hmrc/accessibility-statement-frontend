@@ -5,7 +5,55 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submit-your-ers-annual-return
 contactFrontendServiceId: ERS-RETURNS
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - Users can be timed out after a period of inactivity without prior warning. This can be difficult for users that need more time to read content or perform actions.
+  - On the annual return summary page, there is some text that is marked as important using a graphic with an exclamation mark. This graphic is not available to screen readers. The text reads ‘The person acting as the company secretary must agree that the information submitted is correct and complete’.
+  - When encountering an error on some pages, users with screen readers will be unable to use the skip link functionality to locate the input field that needs to be fixed. This can make it challenging to find where the error has happened.
+  - On the summary pages, there is a graphic of a tick which has been given an alt text. As this image is decorative, there is no need for it to be described. This can cause extra noise on the page for users with screen readers.
+  - On the ‘Scheme organiser’s company details’ page, the Company Registration Number field does not give you an error message if you enter the wrong type of number. This can be disorientating for users, especially those who use screen readers.
+  - On the check answers page, the ‘change’ and ‘delete’ links fail to tell users with screen readers what the links are related to. This can make it difficult to navigate through the page.
+  - The table on the check answers page does not contain a header for the ‘change’ links column. This can make it difficult for users to understand what this column is for.
+  - After completing the service, users are offered the option to download a PDF document. The PDF documents fail to contain page titles, headings or a reading language. It also has images without alt text and the reading order has not been set correctly. This can make it difficult for users to read and understand the content.
+  - On the ‘Companies in this group scheme’ page, the ‘change’ and ‘delete’ links fail to tell users with screen readers what the links are related to. They are also marked up as a header. This can make it difficult for some users to understand what the links are for and how the page is structured.
+  - When a user magnifies the screen to 400%, the content can be hard to navigate through. Some links in the service also overlap, making it more difficult for users to read the content.
+  - When a user magnifies the screen to 200%, some links overlap and become difficult to read. This can also make it hard to work out which link is selected.
+  - When selecting the ‘Upload file’ button, screen reader users are not made aware of the loading symbol which is presented to sighted users. This can make it hard to understand what is happening on the page.
+  - The colour of the confirmation background does not have a strong enough colour contrast. This can make it more difficult for some users to read the white text.
+  - The fields for address entry have not been labelled descriptively so users with screen readers will find it difficult to fill out the page.
+  - On every page, the colour of the focus indicator does not have a strong enough colour contrast. This might make it difficult for some users to see.
+milestones:
+  - description: Users can be timed out after a period of inactivity without prior warning.This can be difficult for users that need more time to read content or perform actions. This fails WCAG 2.1 success criterion 2.2.1 Timing Adjustable.
+    date: 2022-07-31
+  - description: On the annual return summary page, there is some text that is marked as important using a graphic with an exclamation mark. This graphic is not available to screen readers. The text reads ‘The person acting as the company secretary must agree that the information submitted is correct and complete’. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
+    date: 2022-07-31
+  - description: When encountering an error on some pages, users with screen readers will be unable to use the skip link functionality to locate the input field that needs to be fixed. This can make it challenging to find where the error has happened. This fails WCAG 2.1 success criterion 2.4.1 Bypass Blocks.
+    date: 2022-07-31
+  - description: On the summary pages, there is a graphic of a tick which has been given an alt text. As this image is decorative, there is no need for it to be described. This can cause extra noise on the page for users with screen readers. This fails WCAG 2.1 success criterion 1.1.1 Non-text Content.
+    date: 2022-07-31
+  - description: On the ‘Scheme organiser’s company details’ page, the Company Registration Number field does not give you an error message if you enter the wrong type of number. This can be disorientating for users, especially those who use screen readers. This fails WCAG 2.1 success criterion 3.3.1 Error Identification.
+    date: 2022-07-31
+  - description: On the check answers page, the ‘change’ and ‘delete’ links fail to tell users with screen readers what the links are related to. This can make it difficult to navigate through the page. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context).
+    date: 2022-07-31
+  - description: The table on the check answers page does not contain a header for the ‘change’ links column. This can make it difficult for users to understand what this column is for. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
+    date: 2022-07-31
+  - description: After completing the service, users are offered the option to download a PDF document. The PDF documents fail to contain page titles, headings or a reading language. It also has images without alt text and the reading order has not been set correctly. This can make it difficult for users to read and understand the content. This fails WCAG 2.1 success criterion 1.1.1 Non-text Content, 1.3.1 Info and Relationships, 1.3.2 Meaningful Sequence, 2.4.2 Page Titled and 3.1.1 Language of Page.
+    date: 2022-07-31
+  - description: On the ‘Companies in this group scheme’ page, the ‘change’ and ‘delete’ links fail to tell users with screen readers what the links are related to. They are also marked up as a header. This can make it difficult for some users to understand what the links are for and how the page is structured. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
+    date: 2022-07-31
+  - description: When a user magnifies the screen to 400%, the content can be hard to navigate through. Some links in the service also overlap, making it more difficult for users to read the content. This fails WCAG 2.1 success criterion. 1.4.10 Reflow.
+    date: 2022-07-31
+  - description: When a user magnifies the screen to 200%, some links overlap and become difficult to read. This can also make it hard to work out which link is selected. This fails WCAG 2.1 success criterion 1.4.4 Resize Text.
+    date: 2022-07-31
+  - description: When selecting the ‘Upload file’ button, screen reader users are not made aware of the loading symbol which is presented to sighted users. This can make it hard to understand what is happening on the page. This fails WCAG 2.1 success criterion 4.1.3 Status Messages.
+    date: 2022-07-31
+  - description: On every page, the colour of the focus indicator does not have a strong enough colour contrast. This might make it difficult for some users to see. This fails WCAG 2.1 success criterion 1.4.3 Contrast (Minimum).
+    date: 2022-07-31
+  - description: The fields for address entry have not been labelled descriptively so users with screen readers will find it difficult to fill out the page. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels.
+    date: 2022-07-31
+  - description: On every page, the colour of the focus indicator does not have a strong enough colour contrast. This might make it difficult for some users to see. This fails WCAG 2.1 success criterion 1.4.11 Non-text Contrast.
+    date: 2022-07-31
+
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2020-09-22
+statementLastUpdatedDate: 2021-03-29
