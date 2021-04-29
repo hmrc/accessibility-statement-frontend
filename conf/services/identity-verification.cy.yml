@@ -25,10 +25,7 @@ milestones:
     date: 2020-11-30
   - description: Cysylltu â’r maes -
     date: 2020-10-30
-serviceLastTestedDate: 2020-09-01
+serviceLastTestedDate: 2020-04-14
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
-automatedTestingOnly: true
-automatedTestingDetails: |
-  Cafodd ei brofi gan ddefnyddio’r offer awtomaidd, Axe gan Deque.
+statementLastUpdatedDate: 2021-04-29
