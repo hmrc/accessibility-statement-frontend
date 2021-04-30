@@ -13,18 +13,18 @@ accessibilityProblems:
   - abbreviations have been used throughout the service, including within link text and headings on some pages. Some users may have difficulty in understanding the abbreviations, especially when navigating out of context
 milestones:
   - description: On many pages in the service, after a user submits a search the user’s focus is returned to the top of the page, without informing them of the search results. Screen reader users are also not informed if their search was successful or not and whether any results were returned. This does not meet WCAG 2.1 success criterion 2.4.3 Focus Order (Level A) Understanding Focus Order | How to Meet Focus Order and success criterion 4.1.3 Status Messages (Level AA) Understanding Status Messages | How to Meet Status Messages.
-    date: 2021-04-30
+    date: 2021-06-30
   - description: On some pages headings are missing on text introducing information, making navigation difficult for users who navigate the page using headings. This does not meet WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A) Understanding Info and Relationships | How to Meet Info and Relationships.
-    date: 2021-04-30
+    date: 2021-06-30
   - description: In many parts of the service the timeout modal does not contain a level 2 heading and the text also repeats twice. This can lead to some users missing the opportunity to dismiss the timeout warning.
-    date: 2021-04-30
+    date: 2021-06-30
   - description: In the ‘your pension schemes’ section there is a non-interactive table that receives focus for users of keyboard only and screen reading assistive technologies. This is incorrect as only content which can be activated should receive focus. This does not meet WCAG 2.1 success criterion 2.4.3 Focus Order (Level A) Understanding Focus Order | How to Meet Focus Order.
-    date: 2021-04-30
+    date: 2021-06-30
   - description: In the ‘list of charges’ section of the service some visually hidden table headers were found to be non-descriptive or misleadingly labelled. This does not meet WCAG 2.1 success criterion 2.4.6 Headings and Labels (Level AA) Understanding Headings and Labels | How to Meet Headings and Labels.
-    date: 2021-04-30
+    date: 2021-06-30
   - description: In mobile view, on the overview dashboards, the content does not behave responsively in relation to the reduced screen size. This results in the content being presented as being truncated in parts. This doesn’t meet WCAG 2.1 success criterion 1.4.10 Reflow (Level AA) Understanding Reflow | How to Meet Reflow.
-    date: 2021-04-30
+    date: 2021-06-30
 serviceLastTestedDate: 2021-03-24
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2021-04-21
+statementLastUpdatedDate: 2021-04-30
