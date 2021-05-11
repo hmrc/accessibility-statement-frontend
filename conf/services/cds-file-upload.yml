@@ -1,4 +1,4 @@
-serviceName: Customs Declarations Service (CDS) ‘Upload a customs document'
+serviceName: Customs Declarations Service (CDS) ‘Upload a customs document’
 serviceHeaderName: Upload a customs document
 serviceDescription: |
   This service allows you to upload files when requested by the Customs Declarations Service.
