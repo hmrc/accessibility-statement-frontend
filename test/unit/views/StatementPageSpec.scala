@@ -53,7 +53,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
 
       val title = content.select("title")
       title.size       shouldBe 1
-      title.first.text shouldBe "Accessibility statement for fully accessible service name service - GOV.UK"
+      title.first.text shouldBe "Accessibility statement for fully accessible service name service – GOV.UK"
     }
 
     "return HTML containing the expected introduction with service URL in the body" in new Setup {
@@ -167,7 +167,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
 
       val title = content.select("title")
       title.size       shouldBe 1
-      title.first.text shouldBe "Datganiad hygyrchedd ar gyfer fully accessible service name - GOV.UK"
+      title.first.text shouldBe "Datganiad hygyrchedd ar gyfer fully accessible service name – GOV.UK"
     }
 
     "return HTML containing the expected introduction with service URL in the body in Welsh" in new WelshSetup {

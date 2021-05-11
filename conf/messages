@@ -1,6 +1,6 @@
 service.homePageUrl = /
 general.serviceName = Accessibility statement
-general.pageTitle = Accessibility statement for {0} {1} - GOV.UK
+general.pageTitle = Accessibility statement for {0} {1} – GOV.UK
 general.service=service
 general.app=app
 
@@ -105,7 +105,7 @@ testing.details.noncompliant=The {0} has not been tested for compliance with WCA
 testing.created-and-updated=This page was published on {0}. It was last updated on {1}.
 
 ## Not Found Page
-notFound.pageTitle=Page not found
+notFound.pageTitle=Page not found – GOV.UK
 notFound.heading=Page not found
 notFound.paragraph1=If you typed the web address, check it is correct.
 notFound.paragraph2=If you pasted the web address, check you copied the entire address.
