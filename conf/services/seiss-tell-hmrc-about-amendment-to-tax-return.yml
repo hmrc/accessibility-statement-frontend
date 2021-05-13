@@ -1,9 +1,9 @@
-serviceName: Apply for transfer of residence tax relief
-serviceHeaderName: Apply for transfer of residence tax relief
+serviceName: SEISS - Tell HMRC about an amendment to your tax return
+serviceHeaderName: SEISS - Tell HMRC about an amendment to your tax return
 serviceDescription: |
-  Use this form to apply for transfer of residence tax relief or to make additions to an already approved application.
+  Use this form to tell HMRC about an amendment to your tax return affecting your entitlement to the SEISS grant.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/apply-for-transfer-of-residence
+serviceUrl: /submissions/new-form/seiss-tell-hmrc-about-amendment-to-tax-return
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -18,11 +18,7 @@ milestones:
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2021-09-30
-  - description: |
-      If the journey is more than a few screens then user may not able to save and come back later.
-      This does not meet WCAG 2.1 success criterion 2.2.5 (Re-authenticating).
-    date: 2021-09-30
 serviceLastTestedDate: 2021-04-26
 statementVisibility: public
-statementCreatedDate: 2020-12-16
-statementLastUpdatedDate: 2020-05-13
+statementCreatedDate: 2021-05-13
+statementLastUpdatedDate: 2021-05-13
