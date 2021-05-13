@@ -11,24 +11,23 @@ serviceUrl: /identity-verification
 contactFrontendServiceId: government-gateway-identity-verification-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - Ar hyn o bryd, ni allwn eich rhybuddio os yw’ch sesiwn ar fin dod i ben, ac nid ydym
-    yn cynnig ffordd o ymestyn amser y sesiwn. Mae hyn yn golygu nad yw defnyddwyr sydd ag anghenion
-    hygyrchedd bob amser yn cael digon o amser i gyflawni’r dasg. Nid yw hyn yn bodloni 2.2.1 (Timing Adjustable).
-  - Nid yw’r neges gwall yn gysylltiedig â’r maes. Nid yw hyn yn bodloni 3.3.1
-    (Error Identification) Canllawiau Hygyrchedd Cynnwys y We.
-  - Mae allwedd ar goll yn y maes. Nid yw hyn yn bodloni 1.3.1 (Info and Relationships)
-    Canllawiau Hygyrchedd Cynnwys y We.
+  - Nid yw’r cyfarwyddiadau ar gyfer nodi union swm yn glir. Nid yw hyn yn bodloni 3.2.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We.
+  - Mae cysylltiad yn cynnwys testun nad yw’n ddisgrifiadol. Nid yw hyn yn bodloni 2.4.4 a 2.4.9 (Link Purpose) Canllawiau Hygyrchedd Cynnwys y We.
+  - Mae meysydd mewnbwn heb awtogwblhau wedi’u galluogi. Nid yw hyn yn bodloni 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We.
+  - Mae yna allwedd sydd ddim yn ddisgrifiadol. Nid yw hyn yn bodloni 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We.
+  - Mae yna elfennau nad ydynt yn destun sydd ddim yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau. Nid yw hyn yn bodloni 1.4.11, (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We.
 milestones:
-  - description: Ychwanegu allwedd at y maes -
-    date: 2020-09-28
-  - description: Ychwanegu neges sy’n rhybuddio am derfyn amser -
-    date: 2020-11-30
-  - description: Cysylltu â’r maes -
-    date: 2020-10-30
-serviceLastTestedDate: 2020-09-01
+  - description: Nid yw’r cyfarwyddiadau ar gyfer nodi union swm yn glir -
+    date: 2021-07-31
+  - description: Mae cysylltiad yn cynnwys testun nad yw’n ddisgrifiadol -
+    date: 2021-07-31
+  - description: Mae meysydd mewnbwn heb awtogwblhau wedi’u galluogi -
+    date: 2021-07-31
+  - description: MMae yna allwedd sydd ddim yn ddisgrifiadol -
+    date: 2021-08-31
+  - description: Mae yna elfennau nad ydynt yn destun sydd ddim yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau -
+    date: 2020-08-31
+serviceLastTestedDate: 2020-04-14
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
-automatedTestingOnly: true
-automatedTestingDetails: |
-  Cafodd ei brofi gan ddefnyddio’r offer awtomaidd, Axe gan Deque.
+statementLastUpdatedDate: 2021-04-29
