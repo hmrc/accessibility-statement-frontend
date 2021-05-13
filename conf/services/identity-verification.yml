@@ -17,15 +17,15 @@ accessibilityProblems:
   - There are non-text elements which do not meet the minimum colour contrast ratio. This does not meet WCAG 1.4.11 Non-text Contrast.
 milestones:
   - description: The instructions for entering an exact amount are not clear -
-    date: 2021-05-31
+    date: 2021-07-31
   - description: A link contains text that is not descriptive -
-    date: 2021-05-31
+    date: 2021-07-31
   - description: There are input fields without autocomplete enabled -
-    date: 2021-05-31
+    date: 2021-07-31
   - description: There is a legend that is not descriptive -
-    date: 2021-06-30
+    date: 2021-08-31
   - description: There are non-text elements which do not meet the minimum colour contrast ratio -
-    date: 2021-06-30
+    date: 2021-08-31
 serviceLastTestedDate: 2020-04-14
 statementVisibility: public
 statementCreatedDate: 2020-09-17
