@@ -108,17 +108,3 @@ notFound.pageTitle=Heb ddod o hyd i’r dudalen – GOV.UK
 notFound.heading=Heb ddod o hyd i’r dudalen
 notFound.paragraph1=Os gwnaethoch deipio’r cyfeiriad gwe, dylech wirio ei fod yn gywir.
 notFound.paragraph2=Os gwnaethoch bastio’r cyfeiriad gwe, dylech wirio’ch bod wedi copïo’r cyfeiriad yn llawn.
-
-## Date formatting
-dates.month.1=Ionawr
-dates.month.2=Chwefror
-dates.month.3=Mawrth
-dates.month.4=Ebrill
-dates.month.5=Mai
-dates.month.6=Mehefin
-dates.month.7=Gorffennaf
-dates.month.8=Awst
-dates.month.9=Medi
-dates.month.10=Hydref
-dates.month.11=Tachwedd
-dates.month.12=Rhagfyr

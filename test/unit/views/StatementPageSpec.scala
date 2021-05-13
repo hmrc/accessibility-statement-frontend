@@ -127,7 +127,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
         """<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>"""
       )
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">This page was published on 15 March 2020. It was last updated on 01 May 2020.</p>"""
+        """<p class="govuk-body">This page was published on 15 March 2020. It was last updated on 1 May 2020.</p>"""
       )
     }
 
@@ -486,7 +486,7 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
       )
 
       contentAsString(statementPageHtml) should include(
-        """Then we&#x27;ll get to this third milestone. This will be fixed by 02 September 2022."""
+        """Then we&#x27;ll get to this third milestone. This will be fixed by 2 September 2022."""
       )
     }
 
