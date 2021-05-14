@@ -16,26 +16,17 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend
 
-import java.text.SimpleDateFormat
 import java.util.Date
 import java.net.URLEncoder
 import io.circe.{Decoder, Encoder}
+
 import scala.util.Try
-import play.api.i18n.Messages
 
 package object models {
   private val format = new java.text.SimpleDateFormat("yyyy-MM-dd")
 
   implicit val dateDecoder: Decoder[Date] = Decoder.decodeString.emapTry { (str: String) =>
     Try(format.parse(str))
-  }
-
-  def prettyPrintDate(date: Date)(implicit messages: Messages): String = {
-    val dayNumber   = new SimpleDateFormat("dd").format(date)
-    val monthNumber = new SimpleDateFormat("M").format(date)
-    val year        = new SimpleDateFormat("yyyy").format(date)
-    val monthName   = messages(s"dates.month.$monthNumber")
-    s"$dayNumber $monthName $year"
   }
 
   implicit val dateEncoder: Encoder[Date] =
