@@ -27,7 +27,7 @@ milestones:
     date: 2021-08-31
   - description: Mae yna elfennau nad ydynt yn destun sydd ddim yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau -
     date: 2020-08-31
-serviceLastTestedDate: 2020-04-14
+serviceLastTestedDate: 2021-04-14
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2021-04-29
