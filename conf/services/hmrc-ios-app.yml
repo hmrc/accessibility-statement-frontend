@@ -7,7 +7,7 @@ serviceDomain: apps.apple.com
 serviceUrl: /gb/app/hmrc/id514561561
 mobilePlatform: ios
 complianceStatus: full
-statementVisibility: draft
-serviceLastTestedDate: 2020-07-07
-statementCreatedDate: 2020-04-20
-statementLastUpdatedDate: 2020-04-20
+statementVisibility: public
+serviceLastTestedDate: 2021-06-07
+statementCreatedDate: 2021-05-12
+statementLastUpdatedDate: 2021-05-12
