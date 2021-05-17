@@ -8,6 +8,6 @@ serviceUrl: /store/apps/details?id=uk.gov.hmrc.ptcalc&hl=en_GB
 mobilePlatform: android
 complianceStatus: full
 statementVisibility: public
-serviceLastTestedDate: 2020-07-07
+serviceLastTestedDate: 2021-06-07
 statementCreatedDate: 2021-05-12
 statementLastUpdatedDate: 2021-05-12
