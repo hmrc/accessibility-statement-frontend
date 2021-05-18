@@ -7,110 +7,86 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  - Some missing end tags may cause visual content errors on pages. This may be more noticeable for people who use screen readers.
-  - The menu toggle when viewing the service on a small screen disappears when clicked.
-  - The service name is located within the navigation. This may cause confusion with screen readers.
-  - The back links are currently in the main landmark and are not bypassed using the skip link or possible to bypass with assistive technology.
-  - When there is an error on the page, it is not displayed in the page title so screen readers cannot read it out.
-  - The error summary font size is too small and error messages on inputs do not display as errors for screen readers.
-  - Hints are not read out by screen readers because of the current page structure.
-  - There are some incorrect HTML attributes, which may cause visual content errors on pages. This may be more noticeable for people who use screen readers.
-  - The page tabs do not give the user enough information about what page they are on in their titles.
-  - The menu toggle has issues when being used on a small screen.
-  - Screen readers cannot search for links using the first letter of the link, so users may not be able to search easily for terms.
-  - On ‘Check your answers’ pages, screen readers may not read out the right label for each answer.
-  - There are some incorrect HTML elements, which may cause visual content errors on pages. This may be more noticeable for people who use screen readers.
-  - Some hidden text for screen readers has not been set up correctly preventing some screen readers from working correctly.
-  - Some colours used within the service do not have a clear colour contrast, so some visually impaired users may struggle to read everything.
-  - Welsh translations are incomplete. The following copy is not translated to Welsh - ‘Skip to main content’ - ‘Use software to send Income Tax Updates’ (in page title and header) - ‘Help’ in ‘Help gyda'r dudalen hon.’ - ‘Help’ in ‘Help wrth ddefnyddio GOV.UK’ - ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’.
-  - The user is unable to increase font sizes on all pages. Some visually impaired users may struggle to read everything.
-  - The date of birth input is partially incomplete, so users cannot autofill values.
-  - The confirmation screen uses a light shade of green which affects colour contrast, so some visually impaired users may struggle to read everything on this page.
+  -   The language toggle may not be the correct size or colour on some screens. This may be more noticeable for people who use screen readers.
+  -   When there are errors on some pages, they may get skipped by screen readers.
+  -   There may be some visual colour errors for error messages on some pages. Some visually impared users may struggle to read everything.
+  -   Some links may not open correctly. This may be more noticeable for people who use screen readers.
+  -   On the ‘Confirm your details’ page, the descriptions don’t match the input field. This will be more noticeable for people using screen readers.
+  -   Some error messages aren’t specific enough to users, so they might not be easily understood.
+  -   Some hint texts might not get read out correctly by screen readers.
+  -   On the ‘For which tax year do you want to start filing updates?’ page, some conditionally revealing text might not be displayed properly. This will be more noticeable for people who use screen readers.
+  -   On the ‘What are your sources of income’ page, checkboxes may have too much information read out next to them by screen readers.
+  -   Some descriptions are missing from hint text and error messages on several pages. This will be more noticeable for people who use a screen reader.
+  -   On the ‘What is the trade of your business?’ page, some tags are missing from error messages. This will be more noticeable for people who use screen readers.
+  -   Some lists may not display correctly on several pages. This will be more noticeable for people using screen readers.
+  -   There is no timeout warning once signed in so people could be timed out without realising.
+  -   Welsh translations are incomplete. The following copy is not translated to Welsh
+      ‘Do you want to add another self-employed business?’
+      ‘Select yes if you want to add another self employed business’
+      ‘Business 1’
+      ‘Remove business 1’
 milestones:
   - description: |
-      Some missing end tags may cause visual content errors on pages. This may be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing). If we add new tags, we’ll make sure they meet accessibility standards.
-    date: 2021-05-31
+      The language toggle may not be the correct size or colour on some screens. This may be more noticeable for people who use screen readers.
+      This doesn’t meet WCAG 2.1 success criterion (2.4.1: Bypass Blocks).
+    date: 2021-07-31
   - description: |
-      The menu toggle when viewing the service on a small screen disappears when clicked. This doesn’t meet WCAG 2.1 success criterion
-      (1.3.1 Info and Relationships).
-    date: 2021-05-31
+      When there are errors on some pages, they may get skipped by screen readers.
+      This doesn’t meet WCAG 2.1 success criterion (3.3.1 : Error Identification).
+    date: 2021-07-31
   - description: |
-      The service name is located within the navigation. This may cause confusion with screen readers. This doesn’t meet WCAG 2.1 success
-      criterion (1.3.1 Info and Relationships).
-    date: 2021-05-31
+      There may be some visual colour errors for error messages on some pages. Some visually impared users may struggle to read everything.
+      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
+    date: 2021-07-31
   - description: |
-      The back links are currently in the main landmark and are not bypassed using the skip link or possible to bypass with assistive technology.
-      This doesn’t meet WCAG 2.1 success criterion (2.4.1 Bypass Blocks).
-    date: 2021-05-31
-  - description: |
-      When there is an error on the page, it is not displayed in the page title so screen readers cannot read it out. This doesn’t meet WCAG 2.1
-      success criterion (2.4.2 Page Titles). ‘Error:’ should be added to the beginning of the page title so screen readers read it out as soon as
-      possible.
-    date: 2021-05-31
-  - description: |
-      The error summary font size is too small and error messages on inputs do not display as errors for screen readers. This doesn’t meet WCAG 2.1
-      success criterion (3.3.2 Labels or Instructions).
-    date: 2021-05-31
-  - description: |
-      Hints are not read out by screen readers because of the current page structure. This doesn’t meet WCAG 2.1 success criterion
-      (3.3.2 Labels or Instructions).
-    date: 2021-05-31
-  - description: |
-      There are some incorrect HTML attributes, which may cause visual content errors on pages. This may be more noticeable for people who use screen
-      readers. This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing).
-    date: 2021-05-31
-  - description: |
-      The page tabs do not give the user enough information about what page they are on in their titles.
-      This doesn’t meet WCAG 2.1 success criterion (2.4.2 Page Titles).
-    date: 2021-05-31
-  - description: |
-      The menu toggle has issues when being used on a small screen. This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
-    date: 2021-05-31
-  - description: |
-      Screen readers cannot search for links using the first letter of the link, so users may not be able to search easily for terms. This doesn’t
-      meet WCAG 2.1 success criterion (4.1.2 Name, Role, Value).
-    date: 2021-05-31
-  - description: |
-      On ‘Check your answers’ pages, screen readers may not read out the right label for each answer. This doesn’t meet WCAG 2.1 success criterion
-      (1.3.1 Info and Relationships).
-    date: 2021-05-31
-  - description: |
-      There are some incorrect HTML elements, which may cause visual content errors on pages. This may be more noticeable for people who use screen readers.
+      Some links may not open correctly. This may be more noticeable for people who use screen readers.
       This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing).
-    date: 2021-05-31
+    date: 2021-07-31
   - description: |
-      Some hidden text for screen readers has not been set up correctly preventing some screen readers from working correctly.
+      On the ‘Confirm your details’ page, the descriptions don’t match the input field. This will be more noticeable for people using screen readers.
+      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (Parsing) and 4.2.1 (Name, Role, Value).
+    date: 2021-07-31
+  - description: |
+      Some error messages aren’t specific enough to users, so they might not be easily understood.
+      This doesn’t meet WCAG 2.1 success criterion (3.3.1 : Error Identification).
+    date: 2021-07-31
+  - description: |
+      Some hint texts might not get read out correctly by screen readers.
+      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
+    date: 2021-07-31
+  - description: |
+      On the ‘For which tax year do you want to start filing updates?’ page, some conditionally revealing text might not be displayed properly. This will be more noticeable for people who use screen readers.
+      This doesn’t meet WCAG 2.1 success criterion 4.2.1 (Name, Role, Value).
+    date: 2021-07-31
+  - description: |
+      On the ‘What are your sources of income’ page, checkboxes may have too much information read out next to them by screen readers.
+      This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
+    date: 2021-07-31
+  - description: |
+      Some descriptions are missing from hint text and error messages on several pages. This will be more noticeable for people who use a screen reader.
+      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
+    date: 2021-07-31
+  - description: |
+      On the ‘What is the trade of your business?’ page, some tags are missing from error messages. This will be more noticeable for people who use screen readers.
+      This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
+    date: 2021-07-31
+  - description: |
+      Some lists may not display correctly on several pages. This will be more noticeable for people using screen readers.
       This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing).
-    date: 2021-05-31
+    date: 2021-07-31
   - description: |
-      Some colours used within the service do not have a clear colour contrast, so some visually impaired users may struggle to read everything. This
-      doesn’t meet WCAG 2.1 success criterion 1.4.3 (Contrast minimum). The latest WCAG 2.1 updates for colour and focus states, which are more
-      accessible, are in place now and need to be applied. This should fix the issues relating to the breadcrumbs (currently a light grey),
-      as well as the skip link and other links against the focus state background colour not meeting the colour contrast guidelines.
-    date: 2021-05-31
+      There is no timeout warning once signed in so people could be timed out without realising.
+      This doesn’t meet WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
+    date: 2021-07-31
   - description: |
       Welsh translations are incomplete. The following copy is not translated to Welsh
-       ‘Skip to main content’
-       - ‘Use software to send Income Tax Updates’ (in page title and header)
-       - ‘Help’ in ‘Help gyda'r dudalen hon.’
-       - ‘Help’ in ‘Help wrth ddefnyddio GOV.UK’
-       - ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’.
+      ‘Do you want to add another self-employed business?’
+      ‘Select yes if you want to add another self employed business’
+      ‘Business 1’
+      ‘Remove business 1’
       This doesn’t meet WCAG 2.1 success criterion 3.2.1 (Language of parts).
-    date: 2021-05-31
-  - description: |
-      The user is unable to increase font sizes on all pages. Some visually impaired users may struggle to read everything.
-      This doesn’t meet WCAG 2.1 success criterion 1.4.4 (Resize text).
-    date: 2021-05-31
-  - description: |
-      The date of birth input is partially incomplete, so users cannot autofill values. This doesn’t meet WCAG 2.1 success criterion 1.3.5
-      (Identify Input Purpose).
-    date: 2021-05-31
-  - description: |
-      The confirmation screen uses a light shade of green which affects colour contrast, so some visually impaired users may struggle to read
-      everything on this page. This doesn’t meet WCAG 2.1 success criterion 1.4.3 (Contrast minimum).
-    date: 2021-05-31
+    date: 2021-07-31
 serviceLastTestedDate: 2020-08-28
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-03-26
+statementLastUpdatedDate: 2021-05-18
