@@ -1,0 +1,13 @@
+serviceName: Claim for your work uniform and tools
+serviceHeaderName: Claim for your work uniform and tools
+serviceDescription: |
+  This service allows someone to claim tax relief on cleaning, repairing or
+  replacing their uniform, work clothing and tools for the current tax year
+  and the previous 4 tax years.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /employee-expenses
+contactFrontendServiceId: EE
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2021-04-15
+statementLastUpdatedDate: 2021-04-15

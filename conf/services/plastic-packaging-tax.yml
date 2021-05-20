@@ -1,0 +1,11 @@
+serviceName: Plastic Packaging Tax
+serviceDescription: |
+  This service lets you register for the Plastic Packaging Tax, submit quarterly returns, pay your liability and manage your account.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /plastic-packaging-tax
+contactFrontendServiceId: plastic-packaging-tax
+complianceStatus: full
+serviceLastTestedDate: 2021-05-11
+statementVisibility: draft
+statementCreatedDate: 2021-05-11
+statementLastUpdatedDate: 2021-05-11

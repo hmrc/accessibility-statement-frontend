@@ -5,8 +5,54 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submit-your-ers-annual-return
 contactFrontendServiceId: ERS-RETURNS
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - Gall sesiwn defnyddwyr ddod i ben ar ôl cyfnod o anweithgarwch heb rybudd ymlaen llaw. Gall hyn fod yn anodd i ddefnyddwyr sydd angen rhagor o amser i ddarllen cynnwys neu i gwblhau camau.
+  - Ar dudalen y crynodeb o ddatganiad blynyddol, mae rhywfaint o destun sydd wedi’i nodi’n bwysig gan ddefnyddio llun gydag ebychnod. Nid yw’r llun hwn ar gael i ddarllenwyr sgrin. Mae’r testun yn darllen ‘Mae’n rhaid i’r person sy’n gweithredu fel ysgrifennydd y cwmni gytuno bod yr wybodaeth a gyflwynwyd yn gywir a chyflawn’.
+  - Wrth ddod ar draws gwall ar rai tudalennau, ni fydd defnyddwyr â darllenwyr sgrin yn gallu defnyddio’r swyddogaeth cysylltiad syth ymlaen i ddod o hyd i’r maes mewnbwn y mae angen ei drwsio. Gall hyn ei gwneud yn heriol dod o hyd i le mae’r gwall wedi digwydd.
+  - Ar y tudalennau crynodeb, mae llun o dic sydd â thestun amgen. Gan fod y ddelwedd hon yn addurnol, nid oes angen ei disgrifio. Gall hyn achosi sŵn ychwanegol ar y dudalen ar gyfer defnyddwyr sydd â darllenwyr sgrin.
+  - Ar y dudalen ‘Manylion cwmni trefnydd y cynllun’, nid yw’r maes ‘Rhif Cofrestru’r Cwmni’ yn rhoi neges gwall i chi os byddwch yn nodi’r math anghywir o rif. Gall hyn fod yn ddryslyd i ddefnyddwyr, yn enwedig y rhai sy’n defnyddio darllenwyr sgrin.
+  - Ar y dudalen gwirio atebion, mae’r cysylltiadau ‘newid’ a ‘dileu’ yn methu â dweud wrth ddefnyddwyr â darllenwyr sgrin i beth mae’r cysylltiadau yn perthyn. Gall hyn ei gwneud yn anodd llywio drwy’r dudalen.
+  - Nid yw’r tabl ar y dudalen gwirio atebion yn cynnwys pennyn ar gyfer colofn y cysylltiadau ‘newid’. Gall hyn ei gwneud yn anodd i ddefnyddwyr ddeall beth yw diben y golofn hon.
+  - Ar ôl cwblhau’r gwasanaeth, cynigir opsiwn i ddefnyddwyr lawrlwytho dogfen PDF. Mae’r ddogfen PDF yn methu â chynnwys teitlau tudalennau, penawdau nac iaith ddarllen. Mae ganddi hefyd ddelweddau heb destun amgen, ac nid yw’r drefn ddarllen wedi’i gosod yn gywir. Gall hyn ei gwneud yn anodd i ddefnyddwyr ddarllen a deall y cynnwys.
+  - Ar y dudalen ‘Cwmnïau yn y cynllun grŵp hwn’, mae’r cysylltiadau ‘newid’ a ‘dileu’ yn methu â dweud wrth ddefnyddwyr â darllenwyr sgrin i beth mae’r cysylltiadau yn perthyn. Maent hefyd wedi’u marcio fel pennyn. Gall hyn ei gwneud yn anodd i rai defnyddwyr ddeall beth yw diben y cysylltiadau a sut mae’r dudalen wedi’i strwythuro.
+  - Pan fydd defnyddiwr yn chwyddo’r sgrin i 400%, mae’n gallu bod yn anodd llywio drwy’r cynnwys. Mae rhai cysylltiadau yn y gwasanaeth hefyd yn gorgyffwrdd, sy’n ei gwneud yn anoddach i ddefnyddwyr ddarllen y cynnwys.
+  - Pan fydd defnyddiwr yn chwyddo’r sgrin i 200%, mae rhai cysylltiadau’n gorgyffwrdd ac yn dod yn anodd eu darllen. Gall hyn hefyd ei gwneud yn anodd gweithio allan pa gysylltiad sy’n cael ei ddewis.
+  - Wrth ddewis y botwm ‘Uwchlwytho ffeil’, nid yw defnyddwyr darllenwyr sgrin yn cael gwybod am y symbol llwytho a gyflwynir i ddefnyddwyr â golwg. Gall hyn ei gwneud yn anodd deall beth sy’n digwydd ar y dudalen.
+  - Nid yw’r cyferbyniad lliw ar gefndir y dudalen gadarnhau yn ddigon cryf. Gall hyn ei gwneud yn anoddach i rai defnyddwyr ddarllen y testun gwyn.
+  - Nid yw’r meysydd ar gyfer nodi cyfeiriad wedi’u labelu’n ddisgrifiadol, felly bydd defnyddwyr â darllenwyr sgrin yn ei chael yn anodd llenwi’r dudalen.
+  - Ar bob tudalen, nid yw’r cyferbyniad lliw ar y dangosydd ffocws yn ddigon cryf. Gall hyn ei gwneud yn anodd i rai defnyddwyr ei weld.
+milestones:
+  - description: Gall sesiwn defnyddwyr ddod i ben ar ôl cyfnod o anweithgarwch heb rybudd ymlaen llaw. Gall hyn fod yn anodd i ddefnyddwyr sydd angen rhagor o amser i ddarllen cynnwys neu i gwblhau camau. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar dudalen y crynodeb o ddatganiad blynyddol, mae rhywfaint o destun sydd wedi’i nodi’n bwysig gan ddefnyddio llun gydag ebychnod. Nid yw’r llun hwn ar gael i ddarllenwyr sgrin. Mae’r testun yn darllen ‘Mae’n rhaid i’r person sy’n gweithredu fel ysgrifennydd y cwmni gytuno bod yr wybodaeth a gyflwynwyd yn gywir a chyflawn’. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Wrth ddod ar draws gwall ar rai tudalennau, ni fydd defnyddwyr â darllenwyr sgrin yn gallu defnyddio’r swyddogaeth cysylltiad syth ymlaen i ddod o hyd i’r maes mewnbwn y mae angen ei drwsio. Gall hyn ei gwneud yn heriol dod o hyd i le mae’r gwall wedi digwydd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar y tudalennau crynodeb, mae llun o dic sydd â thestun amgen. Gan fod y ddelwedd hon yn addurnol, nid oes angen ei disgrifio. Gall hyn achosi sŵn ychwanegol ar y dudalen ar gyfer defnyddwyr sydd â darllenwyr sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 (Non-text Content) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar y dudalen ‘Manylion cwmni trefnydd y cynllun’, nid yw’r maes ‘Rhif Cofrestru’r Cwmni’ yn rhoi neges gwall i chi os byddwch yn nodi’r math anghywir o rif. Gall hyn fod yn ddryslyd i ddefnyddwyr, yn enwedig y rhai sy’n defnyddio darllenwyr sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar y dudalen gwirio atebion, mae’r cysylltiadau ‘newid’ a ‘dileu’ yn methu â dweud wrth ddefnyddwyr â darllenwyr sgrin i beth mae’r cysylltiadau yn perthyn. Gall hyn ei gwneud yn anodd llywio drwy’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Nid yw’r tabl ar y dudalen gwirio atebion yn cynnwys pennyn ar gyfer colofn y cysylltiadau ‘newid’. Gall hyn ei gwneud yn anodd i ddefnyddwyr ddeall beth yw diben y golofn hon. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar ôl cwblhau’r gwasanaeth, cynigir opsiwn i ddefnyddwyr lawrlwytho dogfen PDF. Mae’r ddogfen PDF yn methu â chynnwys teitlau tudalennau, penawdau nac iaith ddarllen. Mae ganddi hefyd ddelweddau heb destun amgen, ac nid yw’r drefn ddarllen wedi’i gosod yn gywir. Gall hyn ei gwneud yn anodd i ddefnyddwyr ddarllen a deall y cynnwys. Nid yw hyn yn bodloni meini prawf llwyddiant 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships), 1.3.2 (Meaningful Sequence), 2.4.2(Page Titled) na 3.1.1 (Language of Page) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar y dudalen ‘Cwmnïau yn y cynllun grŵp hwn’, mae’r cysylltiadau ‘newid’ a ‘dileu’ yn methu â dweud wrth ddefnyddwyr â darllenwyr sgrin i beth mae’r cysylltiadau yn perthyn. Maent hefyd wedi’u marcio fel pennyn. Gall hyn ei gwneud yn anodd i rai defnyddwyr ddeall beth yw diben y cysylltiadau a sut mae’r dudalen wedi’i strwythuro. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Pan fydd defnyddiwr yn chwyddo’r sgrin i 400%, mae’n gallu bod yn anodd llywio drwy’r cynnwys. Mae rhai cysylltiadau yn y gwasanaeth hefyd yn gorgyffwrdd, sy’n ei gwneud yn anoddach i ddefnyddwyr ddarllen y cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Pan fydd defnyddiwr yn chwyddo’r sgrin i 200%, mae rhai cysylltiadau’n gorgyffwrdd ac yn dod yn anodd eu darllen. Gall hyn hefyd ei gwneud yn anodd gweithio allan pa gysylltiad sy’n cael ei ddewis. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Wrth ddewis y botwm ‘Uwchlwytho ffeil’, nid yw defnyddwyr darllenwyr sgrin yn cael gwybod am y symbol llwytho a gyflwynir i ddefnyddwyr â golwg. Gall hyn ei gwneud yn anodd deall beth sy’n digwydd ar y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Status Messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw ar y dangosydd ffocws yn ddigon cryf. Gall hyn ei gwneud yn anodd i rai defnyddwyr ei weld. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Nid yw’r meysydd ar gyfer nodi cyfeiriad wedi’u labelu’n ddisgrifiadol, felly bydd defnyddwyr â darllenwyr sgrin yn ei chael yn anodd llenwi’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
+  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw ar y dangosydd ffocws yn ddigon cryf. Gall hyn ei gwneud yn anodd i rai defnyddwyr ei weld. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-07-31
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2020-09-22
-
+statementLastUpdatedDate: 2021-05-04

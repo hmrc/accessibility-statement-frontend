@@ -1,11 +1,16 @@
-serviceName: Income Tax Submission
-serviceHeaderName: Income Tax Submission
-serviceDescription: |
-  Service for users and agents to submit a Self Assessment.
+serviceName: Update and submit an Income Tax Return
+serviceHeaderName: Update and submit an Income Tax Return
+serviceDescription: Use this service to update and submit an Income Tax Return.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /income-tax-submission
-contactFrontendServiceId: income-tax-submission
-complianceStatus: noncompliant
-statementVisibility: draft
-statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2020-09-21
+serviceUrl: /income-through-software/return/2022/start
+contactFrontendServiceId: update-and-submit-income-tax-return
+complianceStatus: partial
+accessibilityProblems:
+  - Users are not always notified when conditionally revealed content is expanded or collapsed.
+milestones:
+  - description: Users are not always notified when conditionally revealed content is expanded or collapsed. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
+    date: 2021-05-31
+serviceLastTestedDate: 2021-03-15
+statementVisibility: public
+statementCreatedDate: 2021-04-19
+statementLastUpdatedDate: 2021-04-19

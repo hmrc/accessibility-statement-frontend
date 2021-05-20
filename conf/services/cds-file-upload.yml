@@ -12,18 +12,45 @@ accessibilityProblems:
   - Names and addresses will not autocomplete.
   - The focus indicator does not give enough colour contrast.
   - The word ‘Error’ may not appear in the page title to alert screenreaders to an error.
+  - Message counter in the subject of the message might be confusing.
+  - The classes of headings are mixed so it is not always clear what is the relationship between elements on the page.
+  - Page headings may be declaration reference numbers which do not convey clear meaning.
+  - Subject of the messages is duplicated, and difficult to pronounce.
+  - Incorrect usage of aria attributes could prevent screen readers from detecting some links or navigation.
+  - Repeated use of main elements make it difficult to interpret the page formally.
+  - Incorrect markup of tables means some elements may be shown incorrectly.
+  - Use of the same links with different hypertext cause difficulty in understanding their function.
+  - Long strings of text may be clipped if they cannot fit in the container width.
 milestones:
   - description: Some error messages are not descriptive enough.
-    date: 2021-04-30
+    date: 2021-07-31
   - description: Users may be timed out of the service with no prior warning.
-    date: 2021-04-30
+    date: 2021-07-31
   - description: Names and addresses will not autocomplete.
-    date: 2021-04-30
+    date: 2021-07-31
   - description: The focus indicator does not give enough colour contrast.
-    date: 2021-04-30
+    date: 2021-07-31
   - description: The word ‘Error’ may not appear in the page title to alert screenreaders to an error.
-    date: 2021-04-30
+    date: 2021-07-31
+  - description: Message counter in the subject of the message might be confusing.
+    date: 2021-07-31
+  - description: The classes of headings are mixed so it is not always clear what is the relationship between elements on the page.
+    date: 2021-07-31
+  - description: Page headings may be declaration reference numbers which do not convey clear meaning.
+    date: 2021-07-31
+  - description: Subject of the messages is duplicated, and difficult to pronounce.
+    date: 2021-07-31
+  - description: Incorrect usage of aria attributes could prevent screen readers from detecting some links or navigation.
+    date: 2021-07-31
+  - description: Repeated use of main elements make it difficult to interpret the page formally.
+    date: 2021-07-31
+  - description: Incorrect markup of tables means some elements may be shown incorrectly.
+    date: 2021-07-31
+  - description: Use of the same links with different hypertext cause difficulty in understanding their function.
+    date: 2021-07-31
+  - description: Long strings of text may be clipped if they cannot fit in the container width.
+    date: 2021-07-31
 serviceLastTestedDate: 2020-12-21
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2020-12-22
+statementLastUpdatedDate: 2021-05-06

@@ -3,24 +3,10 @@ serviceHeaderName: Cael cydnabyddiaeth gan CThEM ar gyfer eich elusen
 serviceDescription: |
   Mae elusennau’n defnyddio’r gwasanaeth hwn i gofrestru eu manylion gyda CThEM. Dim ond ar ôl iddynt gofrestru’n llwyddiannus fel elusen y gallant ad-ennill treth ar bethau megis cyfraniadau Rhodd Cymorth.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /register-charity-hmrc.yml
+serviceUrl: /register-charity-hmrc/check-eligibility/register-the-charity
 contactFrontendServiceId: iCharities
-complianceStatus: partial
-accessibilityProblems:
-  - Pan fydd y neges sy’n rhybuddio ynghylch terfyn amser yn ymddangos ar y sgrin, mae yna ddau bennawd bryd hynny ar yr un dudalen. Gall hyn ei gwneud yn anoddach i ddefnyddwyr darllenwyr sgrin ddeall cynllun a chynnwys y dudalen.
-  - Gall sesiwn defnyddwyr ddod i ben ar ôl cyfnod byr o anweithgarwch heb unrhyw rybudd ymlaen llaw. Gall hyn ei gwneud yn anoddach i ddefnyddwyr technoleg gynorthwyol oherwydd bod mewngofnodi i’r gwasanaeth o’r newydd yn gallu cymryd llawer o amser ac yn gallu bod yn heriol.
-  - Gall y cynnwys ar gyfer swyddogion awdurdodedig fod yn ddryslyd i ddefnyddwyr darllenwyr sgrin. Mae’r rhestr yn cael ei chyfleu dros un llinell, a gall hyn fod yn ddryslyd i wrando arni.
-  - Mae cael mynediad at y cysylltiad ‘Cymraeg’ yn anodd oherwydd y cyferbynnedd lliw gwael. Mae cyferbynnedd y lliwiau glas a gwyrdd yn golygu y bydd rhai defnyddwyr yn ei chael hi’n anodd gweld y ffont.
-milestones:
-  - description: Pan fydd y neges sy’n rhybuddio ynghylch terfyn amser yn ymddangos ar y sgrin, mae yna ddau bennawd bryd hynny ar yr un dudalen. Gall hyn ei gwneud yn anoddach i ddefnyddwyr darllenwyr sgrin ddeall cynllun a chynnwys y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-07-31
-  - description: Gall sesiwn defnyddwyr ddod i ben ar ôl cyfnod byr o anweithgarwch heb unrhyw rybudd ymlaen llaw. Gall hyn ei gwneud yn anoddach i ddefnyddwyr technoleg gynorthwyol oherwydd bod mewngofnodi i’r gwasanaeth o’r newydd yn gallu cymryd llawer o amser ac yn gallu bod yn heriol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-07-31
-  - description: Gall y cynnwys ar gyfer swyddogion awdurdodedig fod yn ddryslyd i ddefnyddwyr darllenwyr sgrin. Mae’r rhestr yn cael ei chyfleu dros un llinell, a gall hyn fod yn ddryslyd i wrando arni. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-07-31
-  - description: Mae cael mynediad at y cysylltiad ‘Cymraeg’ yn anodd oherwydd y cyferbynnedd lliw gwael. Mae cyferbynnedd y lliwiau glas a gwyrdd yn golygu y bydd rhai defnyddwyr yn ei chael hi’n anodd gweld y ffont. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-07-31
-serviceLastTestedDate: 2020-01-15
+complianceStatus: full
+serviceLastTestedDate: 2021-04-09
 statementVisibility: public
 statementCreatedDate: 2021-02-23
-statementLastUpdatedDate: 2021-02-23
+statementLastUpdatedDate: 2021-04-09

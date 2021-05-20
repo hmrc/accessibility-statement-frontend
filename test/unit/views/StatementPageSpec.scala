@@ -17,23 +17,21 @@
 package unit.views
 
 import java.util.{Calendar, GregorianCalendar}
-
 import org.jsoup.Jsoup
 import org.scalatest.{Matchers, WordSpec}
+import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Configuration
-import play.api.i18n.{Messages, MessagesApi}
-import play.api.inject.guice.GuiceApplicationBuilder
+import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
-class StatementPageSpec extends WordSpec with Matchers {
+class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite {
   "Given any Accessibility Statement for a service, rendering a Statement Page" should {
     "return HTML containing the header containing the service name" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -46,7 +44,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing the correct TITLE element" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -56,11 +53,10 @@ class StatementPageSpec extends WordSpec with Matchers {
 
       val title = content.select("title")
       title.size       shouldBe 1
-      title.first.text shouldBe "Accessibility statement for fully accessible service name service - GOV.UK"
+      title.first.text shouldBe "Accessibility statement for fully accessible service name service – GOV.UK"
     }
 
     "return HTML containing the expected introduction with service URL in the body" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -73,7 +69,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing the expected using service information with service description" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -86,7 +81,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing the default contact information" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -94,12 +88,11 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support" target="_blank">contact HMRC for extra support</a>"""
+        """<a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support">contact HMRC for extra support</a>"""
       )
     }
 
     "return HTML containing report a problem information with a contact link" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -107,12 +100,11 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas" target="_blank">report the accessibility problem (opens in a new tab)</a>."""
+        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas">report the accessibility problem</a>."""
       )
     }
 
     "return HTML containing report a problem information with a contact link and referrer URL" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         referrerUrl = Some("came-from-here"),
@@ -120,12 +112,11 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas&amp;referrerUrl=came-from-here" target="_blank">report the accessibility problem (opens in a new tab)</a>"""
+        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=fas&amp;referrerUrl=came-from-here">report the accessibility problem</a>"""
       )
     }
 
     "return HTML containing the correctly formatted dates of when the service was tested" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -136,12 +127,11 @@ class StatementPageSpec extends WordSpec with Matchers {
         """<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>"""
       )
       contentAsString(statementPageHtml) should include(
-        """<p class="govuk-body">This page was published on 15 March 2020. It was last updated on 01 May 2020.</p>"""
+        """<p class="govuk-body">This page was published on 15 March 2020. It was last updated on 1 May 2020.</p>"""
       )
     }
 
     "not include a list item of accessibility problems if accessibility problems is empty" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -154,9 +144,197 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
   }
 
+  "Given any Welsh Accessibility Statement for a service, rendering a Statement Page" should {
+    "return HTML containing the header containing the service name in Welsh" in new WelshSetup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleServiceStatement,
+        None,
+        isWelshTranslationAvailable = true
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """<h1 class="govuk-heading-xl">Datganiad hygyrchedd ar gyfer fully accessible service name</h1>"""
+      )
+    }
+
+    "return HTML containing the correct TITLE element in Welsh" in new WelshSetup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleServiceStatement,
+        None,
+        isWelshTranslationAvailable = true
+      )
+      val content           = Jsoup.parse(contentAsString(statementPageHtml))
+
+      val title = content.select("title")
+      title.size       shouldBe 1
+      title.first.text shouldBe "Datganiad hygyrchedd ar gyfer fully accessible service name – GOV.UK"
+    }
+
+    "return HTML containing the expected introduction with service URL in the body in Welsh" in new WelshSetup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleServiceStatement,
+        None,
+        isWelshTranslationAvailable = true
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth fully accessible service name, sydd ar gael yn https://www.tax.service.gov.uk/fully-accessible."""
+      )
+    }
+  }
+
+  "Given an Accessibility Statement for an iOS app, rendering a Statement Page" should {
+    "return HTML containing accessibility information specific to iOS devices" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleIosAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """get around the app using Voice Control"""
+      )
+    }
+  }
+
+  "Given an Accessibility Statement for an Android app, rendering a Statement Page" should {
+    "return HTML containing accessibility information specific to Android devices" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleAndroidAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """get around the app using Voice Access"""
+      )
+    }
+  }
+
+  "Given an Accessibility Statement for a browser-based service, rendering a Statement Page" should {
+    "return HTML containing accessibility information specific to browsers" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleServiceStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """get from the start of the service to the end using speech recognition software"""
+      )
+    }
+
+    "return HTML relating to what to do if you have difficulty using this service" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleServiceStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """What to do if you have difficulty"""
+      )
+    }
+
+    "return HTML including the text 'opens in a new tab' for the report problem link" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleServiceStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """report the accessibility problem"""
+      )
+    }
+  }
+
+  "Given an Accessibility Statement for a fully accessible app, rendering a Statement Page" should {
+    "return HTML containing the expected accessibility information stating that the app is fully compliant" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleIosAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """This app is fully compliant with the"""
+      )
+      contentAsString(statementPageHtml) should include(
+        """There are no known accessibility issues within this app"""
+      )
+    }
+
+    "not return HTML relating to what to do if you have difficulty using this service" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleIosAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should not include
+        """What to do if you have difficulty"""
+    }
+
+    "return HTML not including the text 'opens in a new tab' for the report problem link" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleAndroidAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """report the accessibility problem</a>."""
+      )
+    }
+
+    "return HTML including iOS specific link" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleIosAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """href="https://www.apple.com/uk/accessibility/""""
+      )
+
+      contentAsString(statementPageHtml) should not include
+        """href="https://www.android.com/intl/en_uk/accessibility/""""
+    }
+
+    "return HTML including Android specific link" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleAndroidAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """href="https://www.android.com/intl/en_uk/accessibility/""""
+      )
+
+      contentAsString(statementPageHtml) should not include
+        """href="https://www.apple.com/uk/accessibility/""""
+    }
+  }
+
+  "Given an Accessibility Statement for a partially compliant app, rendering a Statement Page" should {
+    "return HTML containing the expected accessibility information stating that the app is partially compliant" in new Setup {
+      val statementPageHtml = statementPage(
+        partiallyAccessibleIosAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """This app is partially compliant with the"""
+      )
+    }
+  }
+
   "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is fully compliant" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -172,7 +350,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should not return information on non compliance if milestones are empty" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
         None,
@@ -191,7 +368,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should not return information on non compliance even if milestones are non-empty" in new Setup {
-      val statementPage                 = app.injector.instanceOf[StatementPage]
       val fullyAccessibleWithMilestones = fullyAccessibleServiceStatement.copy(
         milestones = partiallyAccessibleServiceStatement.milestones
       )
@@ -210,7 +386,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should return information on accessibility problems if problems are non-empty" in new Setup {
-      val statementPage               = app.injector.instanceOf[StatementPage]
       val fullyAccessibleWithProblems = fullyAccessibleServiceStatement.copy(
         accessibilityProblems = partiallyAccessibleServiceStatement.accessibilityProblems
       )
@@ -237,7 +412,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is partially compliant" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           partiallyAccessibleServiceStatement,
@@ -251,7 +425,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing a list of the known accessibility issues" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           partiallyAccessibleServiceStatement,
@@ -274,7 +447,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML stating that the service has known compliance issues" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           partiallyAccessibleServiceStatement,
@@ -288,7 +460,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML containing a list of non-accessible content, and when it will be fixed" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           partiallyAccessibleServiceStatement,
@@ -315,12 +486,11 @@ class StatementPageSpec extends WordSpec with Matchers {
       )
 
       contentAsString(statementPageHtml) should include(
-        """Then we&#x27;ll get to this third milestone. This will be fixed by 02 September 2022."""
+        """Then we&#x27;ll get to this third milestone. This will be fixed by 2 September 2022."""
       )
     }
 
     "return HTML containing a language toggle" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           partiallyAccessibleServiceStatement,
@@ -335,7 +505,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "not return HTML containing a language toggle if only English is available" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           partiallyAccessibleServiceStatement,
@@ -352,7 +521,6 @@ class StatementPageSpec extends WordSpec with Matchers {
 
   "Given an Accessibility Statement for a non accessible service, rendering a Statement Page" should {
     "include a statement that the service is non compliant" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           nonCompliantServiceStatement,
@@ -366,7 +534,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML which does NOT contain a list  accessibility issues" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           nonCompliantServiceStatement,
@@ -380,7 +547,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "return HTML which states that the service has not been tested for accessibility" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           nonCompliantServiceStatement,
@@ -394,7 +560,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should not return information on non compliance even if milestones are non-empty" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           nonCompliantServiceStatement,
@@ -411,7 +576,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
     "should return HTML with a fixed date for carrying out an assessment" in new Setup {
-      val statementPage     = app.injector.instanceOf[StatementPage]
       val statementPageHtml =
         statementPage(
           nonCompliantServiceStatement,
@@ -429,7 +593,6 @@ class StatementPageSpec extends WordSpec with Matchers {
     "rendering a Statement Page"                                                              should {
 
       "return HTML with information that the testing was automated" in new Setup {
-        val statementPage     = app.injector.instanceOf[StatementPage]
         val statementPageHtml =
           statementPage(
             automatedTestingServiceStatement,
@@ -443,7 +606,6 @@ class StatementPageSpec extends WordSpec with Matchers {
       }
 
       "return HTML with the date for carrying out a full assessment" in new Setup {
-        val statementPage     = app.injector.instanceOf[StatementPage]
         val statementPageHtml =
           statementPage(
             automatedTestingServiceStatement,
@@ -457,7 +619,6 @@ class StatementPageSpec extends WordSpec with Matchers {
       }
 
       "return HTML with the description of the automated tools used" in new Setup {
-        val statementPage     = app.injector.instanceOf[StatementPage]
         val statementPageHtml =
           statementPage(
             automatedTestingServiceStatement,
@@ -472,7 +633,8 @@ class StatementPageSpec extends WordSpec with Matchers {
     }
 
   trait Setup {
-    val app                                  = new GuiceApplicationBuilder().build()
+    val statementPage = app.injector.instanceOf[StatementPage]
+
     implicit val fakeRequest: FakeRequest[_] = FakeRequest()
     val configuration                        = Configuration.from(
       Map("platform.frontend.host" -> "https://www.tax.service.gov.uk")
@@ -494,6 +656,7 @@ class StatementPageSpec extends WordSpec with Matchers {
       serviceDescription = "Fully accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
+      mobilePlatform = None,
       contactFrontendServiceId = "fas",
       complianceStatus = FullCompliance,
       accessibilityProblems = None,
@@ -506,11 +669,20 @@ class StatementPageSpec extends WordSpec with Matchers {
       automatedTestingDetails = None
     )
 
+    val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
+      mobilePlatform = Some(Ios)
+    )
+
+    val fullyAccessibleAndroidAppStatement = fullyAccessibleServiceStatement.copy(
+      mobilePlatform = Some(Android)
+    )
+
     val partiallyAccessibleServiceStatement = AccessibilityStatement(
       serviceName = "partially accessible service name",
       serviceDescription = "Partially accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
+      mobilePlatform = None,
       contactFrontendServiceId = "pas",
       complianceStatus = PartialCompliance,
       automatedTestingOnly = None,
@@ -543,6 +715,14 @@ class StatementPageSpec extends WordSpec with Matchers {
       automatedTestingDetails = None
     )
 
+    val partiallyAccessibleIosAppStatement = partiallyAccessibleServiceStatement.copy(
+      mobilePlatform = Some(Ios)
+    )
+
+    val partiallyAccessibleAndroidAppStatement = partiallyAccessibleServiceStatement.copy(
+      mobilePlatform = Some(Android)
+    )
+
     val nonCompliantServiceStatement = partiallyAccessibleServiceStatement.copy(
       serviceName = "non accessible service name",
       serviceDescription = "Non accessible description.",
@@ -561,5 +741,9 @@ class StatementPageSpec extends WordSpec with Matchers {
         automatedTestingDetails = Some("This service was tested using automated tools only."),
         automatedTestingOnly = Some(true)
       )
+  }
+
+  trait WelshSetup extends Setup {
+    override implicit val messages: Messages = messagesApi.preferred(Seq(Lang("cy")))
   }
 }

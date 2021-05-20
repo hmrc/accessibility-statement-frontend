@@ -1,6 +1,8 @@
 service.text = Dyma'ch gwasanaeth newydd
 general.serviceName = Datganiad hygyrchedd
-general.pageTitle = Datganiad hygyrchedd ar gyfer {0} - GOV.UK
+general.pageTitle = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
+general.service=service
+general.app=app
 
 ## introduction
 introduction.heading=Datganiad hygyrchedd ar gyfer {0}
@@ -11,12 +13,30 @@ introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasan
 
 ## Using the service
 using-service.heading=Defnyddio’r gwasanaeth hwn
-using-service.should-be-able=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn. Mae hyn yn golygu y dylech allu:
+using-service.this-service-or-app-is-run=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.service.this-means=Mae hyn yn golygu y dylech allu:
+using-service.app.this-means='This means you can use the built-in '
+using-service.app.accessibility-features=accessibility features
+using-service.app.on-your-device=' on your device to:'
+
 using-service.bullet1=newid lliwiau, lefelau cyferbyniad a ffontiau
 using-service.bullet2=chwyddo’r sgrin hyd at 300% heb i’r testun ddisgyn oddi ar y sgrin
 using-service.bullet3=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio bysellfwrdd yn unig
 using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio meddalwedd adnabod lleferydd
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
+
+using-service.android.bullet1=invert colours and adjust contrast levels
+using-service.android.bullet2=increase the text size without the text truncating or overlapping
+using-service.android.bullet3=navigate the app using Switch Access
+using-service.android.bullet4=get around the app using Voice Access
+using-service.android.bullet5=listen to the app using TalkBack
+
+using-service.ios.bullet1=invert colours and adjust contrast levels
+using-service.ios.bullet2=increase the text size without the text truncating or overlapping
+using-service.ios.bullet3=navigate the app using Switch Control
+using-service.ios.bullet4=get around the app using Voice Control
+using-service.ios.bullet5=listen to the app using VoiceOver
+
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
 using-service.making-device-easier.part1=Mae gan AbilityNet gyngor
 using-service.making-device-easier.part2=' ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
@@ -40,7 +60,8 @@ contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwah
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn
 reporting.report-problem.part1='Rydym bob amser yn ceisio gwella hygyrchedd y gwasanaeth hwn. Os byddwch yn dod o hyd i unrhyw broblem nad yw wedi’i rhestru ar y dudalen hon, neu os ydych o’r farn nad ydym yn bodloni gofynion hygyrchedd, '
-reporting.report-problem.part2=rhowch wybod am y broblem hygyrchedd (yn agor ffenestr neu dab newydd)
+reporting.report-problem.part2=rhowch wybod am y broblem hygyrchedd
+reporting.report-problem.opens-in-new-tab=' (yn agor ffenestr neu dab newydd)'
 
 ## Complaints
 complaints.heading=Os ydych yn anfodlon ar ein hymateb
@@ -83,21 +104,7 @@ testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei f
 testing.created-and-updated=Cyhoeddwyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page
-notFound.pageTitle=Heb ddod o hyd i’r dudalen
+notFound.pageTitle=Heb ddod o hyd i’r dudalen – GOV.UK
 notFound.heading=Heb ddod o hyd i’r dudalen
 notFound.paragraph1=Os gwnaethoch deipio’r cyfeiriad gwe, dylech wirio ei fod yn gywir.
 notFound.paragraph2=Os gwnaethoch bastio’r cyfeiriad gwe, dylech wirio’ch bod wedi copïo’r cyfeiriad yn llawn.
-
-## Date formatting
-dates.month.1=Ionawr
-dates.month.2=Chwefror
-dates.month.3=Mawrth
-dates.month.4=Ebrill
-dates.month.5=Mai
-dates.month.6=Mehefin
-dates.month.7=Gorffennaf
-dates.month.8=Awst
-dates.month.9=Medi
-dates.month.10=Hydref
-dates.month.11=Tachwedd
-dates.month.12=Rhagfyr
