@@ -19,7 +19,7 @@
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.reportAccessibilityProblemLink
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.{Android, Ios}
 @import uk.gov.hmrc.play.language.LanguageUtils
-@import org.joda.time.LocalDate
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.dateToLocalDate
 
 @this(serviceOrAppHelper: ServiceOrApp, utils: LanguageUtils)
 @(statement: AccessibilityStatement, referrerUrl: Option[String])(
@@ -159,7 +159,7 @@
 
 @if(statement.milestones.getOrElse(Seq()).nonEmpty && statement.isPartiallyCompliant) {
     @for(milestone <- statement.milestones.get) {
-        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by", utils.Dates.formatDate(LocalDate.fromDateFields(milestone.date)))}</p>
+        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by", utils.Dates.formatDate(dateToLocalDate(milestone.date)))}</p>
     }
 
     @if(statement.automatedTestingOnly.getOrElse(false)) {
@@ -178,9 +178,9 @@
 } else {
     @if(statement.serviceLastTestedDate.isDefined) {
         @if(statement.automatedTestingOnly.getOrElse(false)) {
-            <p class="govuk-body">@{messages("testing.last-tested.automated", utils.Dates.formatDate(LocalDate.fromDateFields(statement.serviceLastTestedDate.get)), serviceOrApp)}</p>
+            <p class="govuk-body">@{messages("testing.last-tested.automated", utils.Dates.formatDate(dateToLocalDate(statement.serviceLastTestedDate.get)), serviceOrApp)}</p>
         } else {
-            <p class="govuk-body">@{messages("testing.last-tested", utils.Dates.formatDate(LocalDate.fromDateFields(statement.serviceLastTestedDate.get)), serviceOrApp)}</p>
+            <p class="govuk-body">@{messages("testing.last-tested", utils.Dates.formatDate(dateToLocalDate(statement.serviceLastTestedDate.get)), serviceOrApp)}</p>
         }
     }
     <p class="govuk-body">@{messages("testing.details.part1", serviceOrApp)}
@@ -188,4 +188,4 @@
     </p>
 }
 
-<p class="govuk-body">@{messages("testing.created-and-updated", utils.Dates.formatDate(LocalDate.fromDateFields(statement.statementCreatedDate)), utils.Dates.formatDate(LocalDate.fromDateFields(statement.statementLastUpdatedDate)))}</p>
+<p class="govuk-body">@{messages("testing.created-and-updated", utils.Dates.formatDate(dateToLocalDate(statement.statementCreatedDate)), utils.Dates.formatDate(dateToLocalDate(statement.statementLastUpdatedDate)))}</p>
