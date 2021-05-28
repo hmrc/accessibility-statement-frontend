@@ -1,4 +1,4 @@
-serviceName: HMRC Android
+serviceName: HMRC Android app
 contactFrontendServiceId: hmrc-android-app
 serviceDescription: |
   You can use the HMRC app to do things like check your next salary payment from your employer,

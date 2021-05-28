@@ -26,7 +26,7 @@
         implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
 @serviceOrApp = {@serviceOrAppHelper(statement.mobilePlatform)}
-<h1 class="govuk-heading-xl">@{messages("introduction.heading", statement.serviceName, serviceOrApp)}</h1>
+<h1 class="govuk-heading-xl">@{messages(if (statement.mobilePlatform.isEmpty) "introduction.heading" else "introduction.app-heading", statement.serviceName)}</h1>
 <p class="govuk-body-l">@{messages("introduction.lede", serviceOrApp)}</p>
 @if(statement.mobilePlatform.isEmpty) {
     <p class="govuk-body">
@@ -34,7 +34,7 @@
         <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.scope.part2")}</a>@{messages("general.fullstop")}
     </p>
 }
-<p class="govuk-body">@{messages("introduction.service-name", statement.serviceName, serviceAbsoluteUrl, serviceOrApp)}</p>
+<p class="govuk-body">@{messages(if (statement.mobilePlatform.isEmpty) "introduction.service-name" else "introduction.app-service-name", statement.serviceName, serviceAbsoluteUrl)}</p>
 
 <h2 class="govuk-heading-l">@{messages("using-service.heading", serviceOrApp)}</h2>
 <p class="govuk-body">@{statement.serviceDescription}</p>
