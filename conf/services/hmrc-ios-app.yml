@@ -1,4 +1,4 @@
-serviceName: HMRC iOS
+serviceName: HMRC iOS app
 contactFrontendServiceId: hmrc-ios-app
 serviceDescription: |
   You can use the HMRC app to do things like check your next salary payment from your employer,

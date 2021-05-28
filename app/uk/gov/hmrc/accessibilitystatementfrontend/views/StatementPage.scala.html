@@ -22,7 +22,7 @@
         implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
 @serviceAbsoluteUrl = {https://@statement.serviceDomain@statement.serviceUrl}
-@layout(pageTitle = messages("general.pageTitle", statement.serviceName, serviceOrApp(statement.mobilePlatform)), isWelshTranslationAvailable = isWelshTranslationAvailable) {
+@layout(pageTitle = messages(if (statement.mobilePlatform.isEmpty) "general.page-title" else "general.app-page-title", statement.serviceName), isWelshTranslationAvailable = isWelshTranslationAvailable) {
     @accessibilityStatementTemplate(statement, referrerUrl)
     @hmrcReportTechnicalIssueHelper()
 }

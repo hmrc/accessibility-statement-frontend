@@ -43,6 +43,36 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
       )
     }
 
+    "return the correct title and heading for a mobile app" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleAndroidAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      val content = Jsoup.parse(contentAsString(statementPageHtml))
+
+      val title = content.select("title")
+      title.size       shouldBe 1
+      title.first.text shouldBe "Accessibility statement for the HMRC Android app – GOV.UK"
+      val heading = content.select("h1").first.text
+      heading should be(
+        """Accessibility statement for the HMRC Android app"""
+      )
+    }
+
+    "return the correct this page is for text for a mobile app" in new Setup {
+      val statementPageHtml = statementPage(
+        fullyAccessibleAndroidAppStatement,
+        None,
+        isWelshTranslationAvailable = false
+      )
+
+      contentAsString(statementPageHtml) should include(
+        """This page only contains information about the HMRC Android app"""
+      )
+    }
+
     "return HTML containing the correct TITLE element" in new Setup {
       val statementPageHtml = statementPage(
         fullyAccessibleServiceStatement,
@@ -670,10 +700,12 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
     )
 
     val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
+      serviceName = "HMRC iOS app",
       mobilePlatform = Some(Ios)
     )
 
     val fullyAccessibleAndroidAppStatement = fullyAccessibleServiceStatement.copy(
+      serviceName = "HMRC Android app",
       mobilePlatform = Some(Android)
     )
 

@@ -1,6 +1,6 @@
 service.text = Dyma'ch gwasanaeth newydd
-general.serviceName = Datganiad hygyrchedd
-general.pageTitle = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
+general.page-title = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
+general.app-page-title = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
 general.service=service
 general.app=app
 
@@ -10,6 +10,7 @@ introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw�
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
 introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK
 introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
+introduction.app-service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
 
 ## Using the service
 using-service.heading=Defnyddio’r gwasanaeth hwn
@@ -43,6 +44,7 @@ using-service.making-device-easier.part2=' ar wneud eich dyfais yn haws i’w de
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
+accessibility.app-heading=Pa mor hygyrch yw’r gwasanaeth hwn
 accessibility.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 accessibility.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol '
 accessibility.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
