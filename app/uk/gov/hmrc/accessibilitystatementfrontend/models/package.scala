@@ -16,10 +16,11 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend
 
-import java.util.Date
-import java.net.URLEncoder
 import io.circe.{Decoder, Encoder}
 
+import java.net.URLEncoder
+import java.time.LocalDate
+import java.util.{Date, GregorianCalendar}
 import scala.util.Try
 
 package object models {
@@ -31,6 +32,12 @@ package object models {
 
   implicit val dateEncoder: Encoder[Date] =
     Encoder.encodeString.contramap[Date](format.format)
+
+  def dateToLocalDate(date: Date): LocalDate = {
+    val calendar = new GregorianCalendar()
+    calendar.setTime(date)
+    calendar.toInstant.atZone(calendar.getTimeZone.toZoneId).toLocalDate;
+  }
 
   def reportAccessibilityProblemLink(
     reportAccessibilityProblemUrl: String,

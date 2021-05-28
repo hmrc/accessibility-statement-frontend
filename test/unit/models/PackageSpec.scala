@@ -17,9 +17,30 @@
 package unit.models
 
 import org.scalatest.{Matchers, WordSpec}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.reportAccessibilityProblemLink
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{dateToLocalDate, reportAccessibilityProblemLink}
+
+import java.time.LocalDate
+import java.util.GregorianCalendar
 
 class PackageSpec extends WordSpec with Matchers {
+
+  "Given a Date object, calling the toLocalDate helper" should {
+    "return the expected LocalDate" in {
+      // GregorianCalendar treats month as 0-based, ie January is 0
+      val dateInJanuary  = new GregorianCalendar(2020, 0, 9).getTime
+      val dateInFebruary = new GregorianCalendar(2020, 1, 29).getTime
+      val dateInDecember = new GregorianCalendar(2020, 11, 31).getTime
+
+      // LocalDate treats month as 1-based, ie January is 1
+      val localDateInJanuary  = LocalDate.of(2020, 1, 9)
+      val localDateInFebruary = LocalDate.of(2020, 2, 29)
+      val localDateInDecember = LocalDate.of(2020, 12, 31)
+
+      dateToLocalDate(dateInJanuary)  shouldBe localDateInJanuary
+      dateToLocalDate(dateInFebruary) shouldBe localDateInFebruary
+      dateToLocalDate(dateInDecember) shouldBe localDateInDecember
+    }
+  }
 
   "Given a contact frontend URL and a service name, calling the report problem link" should {
     val reportAccessibilityBaseUrl =
