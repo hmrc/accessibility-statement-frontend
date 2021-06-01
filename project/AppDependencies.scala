@@ -21,8 +21,7 @@ object AppDependencies {
     "org.scalatestplus.play" %% "scalatestplus-play"      % "4.0.3"  % "test",
     "org.mockito"            %% "mockito-scala-scalatest" % "1.14.8" % "test",
     "org.jsoup"               % "jsoup"                   % "1.10.2" % "test",
-    "com.typesafe.play"      %% "play-test"               % current  % "test",
     "uk.gov.hmrc"            %% "webdriver-factory"       % "0.18.0" % "test",
-    "uk.gov.hmrc"            %% "zap-automation"          % "2.9.0"  % "test"
+    "org.pegdown"             % "pegdown"                 % "1.6.0"  % "test"
   )
 }
