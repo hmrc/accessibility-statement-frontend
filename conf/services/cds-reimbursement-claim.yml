@@ -9,7 +9,7 @@ accessibilityProblems:
   - Some labels and instructions are ambiguous and do not match with what the user is required to do.
   - There are error messages that do not give enough information for users to correct the problem that has been identified.
   - Some back links do no behave in the way the user would expect.
-  - On the, "Enter bank account details" page the sort code input box does not allow entering with spaces.
+  - On the "Enter bank account details" page, the sort code input box does not allow entering with spaces.
   - The sign out link is present when the session is timed out and user has already signed out.
   - Some text is clipped and does not reflow.
   - Some form inputs are missing autocomplete and spellchecker.
@@ -27,7 +27,7 @@ milestones:
       This fails WCAG 2.1 Understanding Success Criterion - 2.4.4 Link purpose.
     date: 2021-07-05
   - description:
-      On the, "Enter bank account details" page the sort code input box does not allow entering the sort code with spaces.
+      On the "Enter bank account details" page, the sort code input box does not allow entering the sort code with spaces.
       This fails WCAG 2.1 Understanding Success Criterion - 3.3.2 Labels or Instructions.
     date: 2021-07-05
   - description:
