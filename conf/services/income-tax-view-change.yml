@@ -33,8 +33,8 @@ milestones:
     date: 2021-05-31
   - description: Welsh translations are incomplete. The following copy is not translated to Welsh - ‘Skip to main content’ - ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ - ‘Crown Copyright’.
       This doesn’t meet WCAG 2.1 success criterion 3.2.1 (Language of parts).
-    date: 2021-05-31
-serviceLastTestedDate: 2020-08-18
+    date: 2021-11-30
+serviceLastTestedDate: 2021-05-18
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-03-26
+statementLastUpdatedDate: 2021-06-02
