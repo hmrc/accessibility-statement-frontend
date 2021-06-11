@@ -5,7 +5,46 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /business-account
 contactFrontendServiceId: BTA
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - nid yw rhai elfennau tudalen yn cynnwys testun canfyddadwy neu nid ydynt yn ddigon disgrifiadol i ddefnyddwyr allu pennu eu swyddogaeth neu eu pwrpas
+  - mae rhai cysylltiadau’n agor mewn ffenestri newydd heb rybudd, neu’n aneglur ynghylch pen eu taith
+  - nid oedd rhai elfennau tudalen yn hygyrch i’r rhai sy’n defnyddio’r bysellfwrdd yn unig
+  - mae rhai cyfuniadau lliw o gyferbynnedd isel ac nid ydynt yn hawdd eu darllen
+milestones:
+  - description: Mae maes ffurflen yn cael ei ddangos ond nid yw wedi’i labelu yn yr adran ‘ychwanegu treth - Hunanasesiad’. Gall hyn ei gwneud yn anoddach i ddefnyddwyr technolegau cynorthwyol darllen sgrin i nodi eu gwybodaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Defnyddir yr un pennawd ddwywaith ar y cerdyn hafan TAW ac mae wedi’i labelu gyda’r un gwerth ID. Gall defnyddio dynodyddion nad ydynt yn unigryw ar yr un dudalen achosi canlyniadau anghywir i ddefnyddwyr technolegau cynorthwyol darllen sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Nid yw’r cysylltiad syth ymlaen yn gweithio yn ôl y disgwyl yn yr adran ‘Dileu TWE i gyflogwyr’. Gall hyn beri dryswch i ddefnyddwyr technolegau cynorthwyol darllen sgrin, na fyddant o reidrwydd yn gwybod mwyach ble maen nhw ar y dudalen pan fydd eu ffocws yn glanio ar elfen annisgwyl. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna bennawd ar goll ym moddol terfyn amser y gwasanaeth. Mae hyn yn golygu efallai na fydd defnyddwyr technolegau cynorthwyol darllen sgrin yn deall pwrpas y cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna gysylltiad sydd heb label ym maner y gwasanaeth treth busnes. Nid yw hyn yn ddefnyddiol i ddefnyddwyr technolegau cynorthwyol darllen sgrin sy’n ceisio gwelywio’r dudalen. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.4 (Link Purpose - In Context) a 2.4.9 (Link Purpose - Link Only) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna gysylltiad sydd heb label yn yr adran ‘manylion Treth Gorfforaeth’. Mae hyn yn golygu nad yw diben y cysylltiad na phen ei daith yn glir i ddefnyddwyr technolegau cynorthwyol darllen sgrin. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.4 (Link Purpose - In Context) a 2.4.9 (Link Purpose - Link Only) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae sawl cysylltiad ar goll o’r dudalen ‘Manylion y Cyfrif’. Mae’r testun disgrifiadol sydd wedi’i guddio o’r golwg ar goll o’r cysylltiadau i gyd ac maen nhw’n aneglur i ddefnyddwyr technolegau cynorthwyol darllen sgrin. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.4 (Link Purpose - In Context) a 2.4.9 (Link Purpose - Link Only) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna gysylltiad sydd heb label yn yr adran ‘ychwanegu treth - TAW’. Nid yw hyn yn ddefnyddiol i ddefnyddwyr technolegau cynorthwyol darllen sgrin. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.4 (Link Purpose - In Context) a 2.4.9 (Link Purpose - Link Only) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna gysylltiad sydd heb label yn yr adran ‘cyflwyniadau TWE’. Mae hyn yn golygu nad yw defnyddwyr technolegau cynorthwyol darllen sgrin yn cael gwybod yn glir pa werth maen nhw’n ei newid yn y cyflwyniad. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.4 (Link Purpose - In Context) a 2.4.9 (Link Purpose - Link Only) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae’r trawsgrifiadau yn yr adran ‘Help’ yn gorffen gyda chyfeiriad gwe sydd heb ei wneud yn hypergyswllt. Mae hyn yn golygu bod rhaid i nifer o grwpiau o ddefnyddwyr gopïo a gludo’r cyfeiriad i mewn i’w porwr. Gall hyn achosi anawsterau i’r grwpiau hyn o ddefnyddwyr. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Nid oes gan y cysylltiadau yn y cerdyn hafan Hunanasesiad y mynegeio tab cywir. Mae hyn yn golygu bod y cysylltiadau’n cael eu tynnu oddi ar drefn ffocws y dudalen ac yn dod yn anhygyrch i ddefnyddiwr sy’n defnyddio bysellfwrdd ar gyfer gwelywio. Nid yw hyn yn bodloni maen prawf llwyddiant 2.1.1 (Keyboard) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna gysylltiad sydd wedi’i labelu’n anghywir yn yr adran ‘ychwanegu treth - Hunanasesiad’. Mae hyn yn golygu y gall fod yn anodd i ddefnyddwyr gywiro cofnod wrth lenwi’r meysydd ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Nid yw defnyddwyr technolegau cynorthwyol darllen sgrin yn cael gwybod am wallau ar dudalen rhoi gwybod am broblem dechnegol. Bydd hyn yn ei gwneud yn anodd i’r grŵp hwn o ddefnyddwyr lenwi’r meysydd ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Status Messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Nid yw’r lliwiau a ddefnyddir yn yr adrannau ‘dileu treth - TWE’ ac ‘ychwanegu treth - Hunanasesiad’ yn bodloni’r gofynion sylfaenol o ran cyferbynnedd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna ddangosydd ffocws ar goll yn yr adran ‘ychwanegu treth - Hunanasesiad’. Gall hyn beri dryswch i ddefnyddwyr technolegau cynorthwyol darllen sgrin, sy’n dibynnu ar ddangosyddion ffocws er mwyn deall ble maen nhw ar dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.7 (Focus Visible) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+  - description: Mae yna bennawd ar goll yn yr adran ‘Help’. Mae hyn yn golygu nad yw defnyddwyr yn cael gwybod bod y dudalen yn drawsgrifiad fideo. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2021-09-30
+serviceLastTestedDate: 2021-02-21
 statementVisibility: public
 statementCreatedDate: 2020-09-15
-statementLastUpdatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-06-30
