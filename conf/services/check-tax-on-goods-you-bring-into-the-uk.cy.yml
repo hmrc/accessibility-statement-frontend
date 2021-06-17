@@ -5,41 +5,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-tax-on-goods-you-bring-into-the-uk
 contactFrontendServiceId: check-tax-on-goods-you-bring-into-the-uk
-complianceStatus: partial
-
-accessibilityProblems:
-  - Nid yw’r dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’ yn gweithio’n iawn ar gyfer y rhai sy’n defnyddio Internet Explorer. Mae hyn yn golygu nad yw’r defnyddwyr hyn yn gallu datgan unrhyw ‘nwyddau eraill’
-  - Nid yw’r pennawd ar y dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’ wedi’i labeli’n gywir. Gallai hyn ei gwneud hi’n anodd i ddefnyddwyr sy’n defnyddio technoleg gynorthwyol ryngweithio â’r dudalen
-  - Mae’r defnyddiwr yn gweld ffenestr naid os nad yw’n rhyngweithio â thudalen am 15 munud, sy’n dweud wrtho y bydd ei atebion yn cael eu dileu oni bai ei fod yn clicio er mwyn mynd yn ei flaen. Nid oes pennawd ar y ffenestr naid a fyddai’n helpu defnyddwyr sy’n defnyddio technoleg gynorthwyol i ddeall ei chynnwys a’i phwrpas
-  - Pan fo defnyddiwr yn dewis eitem o’r maes awtogwblhau ar y dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’, mae’r eitem yn cael ei hychwanegu at y dudalen ond nid yw darllenwyr sgrin yn cyhoeddi hyn ar Google Chrome neu Firefox. Hefyd, pan fo defnyddiwr yn tynnu eitem y mae wedi’i hychwanegu, nid yw’r darllenydd sgrin yn cyhoeddi a yw hyn wedi bod yn llwyddiannus ai peidio
-  - Pan fyddwch yn defnyddio’r botymau ‘Tab’ i ffocysu ar flwch mewnbwn ar y dudalen ‘Gwnewch eich taliad’, nid yw’r border sy’n amgylchynu’r blwch yn ddigon amlwg na chyferbyniol. Gallai hyn ei gwneud hi’n anodd i ddefnyddwyr â nam ar eu golwg weld yr hyn maent yn canolbwyntio arno
-  - Ar y dudalen ‘Nodwch eich manylion’, nid oes gan y blychau mewnbwn, sy’n gofyn am fanylion personol fel enw a chyfeiriad e-bost, swyddogaeth awtogwblhau a fyddai’n llenwi atebion a roddwyd yn flaenorol ar wefannau eraill. Byddai hyn yn helpu i osgoi camgymeriadau posibl
-  - Nid yw’r penawdau ar y dudalen ‘Gwnewch eich taliad’ wedi’u labeli yn ôl trefn rhesymegol. Gallai hyn ei gwneud hi’n anodd i ddefnyddwyr sy’n defnyddio technoleg gynorthwyol ryngweithio â’r dudalen
-
-milestones:
-  - description: |
-      Nid yw’r dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’ yn gweithio’n iawn ar gyfer y rhai sy’n defnyddio Internet Explorer. Mae hyn yn golygu nad yw’r defnyddwyr hyn yn gallu datgan unrhyw ‘nwyddau eraill’. Nid yw hyn yn bodloni maen prawf llwyddiant  2.1.1 (Keyboard), 2.1.3 (Keyboard (No Exception)) a 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-06-01
-  - description: |
-      Nid yw’r pennawd ar y dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’ wedi’i labeli’n gywir. Gallai hyn ei gwneud hi’n anodd i ddefnyddwyr sy’n defnyddio technoleg gynorthwyol ryngweithio â’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-06-01
-  - description: |
-      Mae’r defnyddiwr yn gweld ffenestr naid os nad yw’n rhyngweithio â thudalen am 15 munud, sy’n dweud wrtho y bydd ei atebion yn cael eu dileu oni bai ei fod yn clicio er mwyn mynd yn ei flaen. Nid oes pennawd ar y ffenestr naid a fyddai’n helpu defnyddwyr sy’n defnyddio technoleg gynorthwyol i ddeall ei chynnwys a’i phwrpas. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-06-01
-  - description: |
-      Pan fo defnyddiwr yn dewis eitem o’r maes awtogwblhau ar y dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’, mae’r eitem yn cael ei hychwanegu at y dudalen ond nid yw darllenwyr sgrin yn cyhoeddi hyn ar Google Chrome neu Firefox. Hefyd, pan fo defnyddiwr yn tynnu eitem y mae wedi’i hychwanegu, nid yw’r darllenydd sgrin yn cyhoeddi a yw hyn wedi bod yn llwyddiannus ai peidio. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Status Messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-06-01
-  - description: |
-      Pan fyddwch yn defnyddio’r botymau ‘Tab’ i ffocysu ar flwch mewnbwn ar y dudalen ‘Gwnewch eich taliad’, nid yw’r border sy’n amgylchynu’r blwch yn ddigon amlwg na chyferbyniol. Gallai hyn ei gwneud hi’n anodd i ddefnyddwyr â nam ar eu golwg weld yr hyn maent yn canolbwyntio arno. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-12-01
-  - description: |
-      Ar y dudalen ‘Nodwch eich manylion’, nid oes gan y blychau mewnbwn, sy’n gofyn am fanylion personol fel enw a chyfeiriad e-bost, swyddogaeth awtogwblhau a fyddai’n llenwi atebion a roddwyd yn flaenorol ar wefannau eraill. Byddai hyn yn helpu i osgoi camgymeriadau posibl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-06-01
-  - description: |
-      Nid yw’r penawdau ar y dudalen ‘Gwnewch eich taliad’ wedi’u labeli yn ôl trefn rhesymegol. Gallai hyn ei gwneud hi’n anodd i ddefnyddwyr sy’n defnyddio technoleg gynorthwyol ryngweithio â’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.10 (Section Headings) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-12-01
-
-serviceLastTestedDate: 2021-03-05
+complianceStatus: full
+serviceLastTestedDate: 2021-06-10
 statementVisibility: public
 statementCreatedDate: 2020-12-17
-statementLastUpdatedDate: 2021-04-29
+statementLastUpdatedDate: 2021-06-21
