@@ -1,0 +1,70 @@
+serviceName: Register and Maintain a Trust
+serviceDescription: |
+  This service allows you to register and maintain taxable and non-taxable trusts.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /trusts-registration
+contactFrontendServiceId: trusts
+complianceStatus: partial
+accessibilityProblems:
+  - users may be unable use the skip to focus text fields when an errors occurs
+  - keyboard Users may be unable to ‘Skip to main content’
+  - users of assistive technologies may have difficulty in understanding hierarchy of information on the page
+  - users of screen readers may have difficulty in navigating between pages with ‘change’ links
+  - users of assistive technologies may have difficulty understanding the ‘obliged entity’ PDF document that can be downloaded
+  - users of screen readers, when inputting a monetary value for an asset may not correctly understand it needs to be pounds sterling
+  - users of assistive technologies may have difficulty understanding the ‘obliged entity’ PDF document that can be downloaded
+  - users of screen readers, when inputting a monetary value for an asset may not correctly understand it needs to be pounds sterling
+  - users of screen readers may have difficulty understanding how many assets have been added that are ‘complete’
+  - users of screen readers may have difficulty navigating page by heading level
+  - users of low vision, may have difficulty viewing blue links against a white background due to insufficient contrast
+  - users of low vision, may have difficulty reading hint text against a white background
+milestones:
+  - description: |
+      The service has a ‘skip to main content link’ to enable screen readers to jump to the main content on the page.
+      This was found not to function as expected and does not meet WCAG 2.1 A success criterion 2.4.1: Bypass Blocks (Level A).
+    date: 2021-08-31
+  - description: |
+      The service informs the user when an error has occurred after submitting a form.
+      The skip link to focus the input field does not function as expected.
+      This does not meet WCAG 2.1 A success criterion 2.4.1: Bypass Blocks (Level A).
+    date: 2021-08-31
+  - description: |
+      The service allows a user to edit information with ‘change’ links on the page.
+      These were found not to function as expected for screen reader users.
+      This does not meet WCAG 2.1 success criterion 2.4.4: Link Purpose (Level A) or 2.4.9: Link Purpose (Level AAA).
+    date: 2021-08-31
+  - description: |
+      The service uses headings to categorise the hierarchy of information on the page. These were found not to function as expected.
+      This does not meet WCAG 2.1 success criterion 1.3.1: Info and Relationships (Level A).
+    date: 2021-08-31
+  - description: |
+      The service allows users to download the ‘obliged entity’ PDF document. This non-html document has not been marked up accessibly.
+      This does not meet WCAG 2.1 success criterion 1.1.1: Non-Text Content, 1.3.1: Info and Relationships, 2.4.2: Page Titled, 3.1.1: Language of Page or 1.4.6: Contrast (Enhanced) (Level A).
+    date: 2021-08-31
+  - description: |
+      The service asks users to input a monetary value. Users of screen readers may not correctly understand that it needs to be in pounds sterling.
+      This does not meet WCAG 2.1 success criterion 2.4.6: Headings and Labels (Level AA).
+    date: 2021-08-31
+  - description: |
+      The service asks users to complete a section for assets in the trust.
+      Users of screen readers may have difficulty understanding how many assets have been added that are ‘complete’.
+      This does not meet WCAG 2.1 success criterion 2.4.6: Headings and Labels (Level AA).
+    date: 2021-08-31
+  - description: |
+      The service allows users to see the information they have entered so far for a draft registration.
+      Users of screen readers may have difficulty navigating the page by heading level.
+      This does not meet WCAG 2.1 success criterion 2.4.10: Section Headings (Level AAA).
+    date: 2021-08-31
+  - description: |
+      The service has incorrect colour contrast in some places.
+      Users of low vision may have difficulty viewing blue links against a white background due to insufficient contrast.
+      This does not meet WCAG 2.1 success criterion 1.4.6: Contrast (Enhanced) (Level AAA).
+    date: 2021-08-31
+  - description: |
+      The service uses hint text to support a user when entering information. The hint text does not have sufficient contrast.
+      Users of low vision may have difficulty reading hint text against a white background.
+      This does not meet WCAG 2.1 success criterion 1.4.6: Contrast (Enhanced) (Level AAA).
+    date: 2021-08-31
+statementVisibility: draft
+statementCreatedDate: 2020-03-31
+statementLastUpdatedDate: 2021-06-24
