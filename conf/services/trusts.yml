@@ -1,9 +1,9 @@
 serviceName: Register and Maintain a Trust
 serviceDescription: |
-  This service allows you to register and maintain a trust which has to pay tax on the assets.
+  This service allows you to register and maintain taxable and non-taxable trusts.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trusts-registration
-contactFrontendServiceId: trusts-frontend
+contactFrontendServiceId: trusts
 complianceStatus: partial
 accessibilityProblems:
   - users may be unable use the skip to focus text fields when an errors occurs
