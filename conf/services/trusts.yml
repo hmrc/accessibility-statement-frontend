@@ -6,9 +6,9 @@ serviceUrl: /trusts-registration
 contactFrontendServiceId: trusts
 complianceStatus: partial
 accessibilityProblems:
-  - users may be unable use the skip link to focus an input field when an error occurs
+  - users may be unable to use the skip link to focus an input field when an error occurs
   - keyboard users may be unable to ‘skip to main content’
-  - users of assistive technologies may have difficulty in understanding the hierarchy of information on the page
+  - users of assistive technologies may have difficulty understanding the hierarchy of information on the page
   - users of screen readers may have difficulty navigating a page that has ‘change’ links
   - users of assistive technologies may have difficulty understanding the ‘obliged entity’ PDF document that can be downloaded
   - users of screen readers, when inputting a monetary value for an asset, may not correctly understand that it needs to be in pounds sterling
