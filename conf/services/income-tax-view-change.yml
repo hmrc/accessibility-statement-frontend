@@ -8,33 +8,28 @@ serviceUrl: /report-quarterly/income-and-expenses/view/
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
-  - Screen readers won’t be able to know the difference in some of the page navigation across the service. This may cause confusion when navigating through pages.
-  - The menu toggle disappears when clicked if it is being viewed the service on a small screen.
-  - The language selector is right aligned and the breadcrumbs are left aligned on the same visual row but the tabbing order sends you to the language selector first.
-    Also, on small screens, the breadcrumbs do not reflow.
-  - The HMRC banner logo visual display and reading out order for assistive technology is not consistent, so some users may get confused.
-  - The breadcrumb colour and focus states use a light grey, which affects colour contrast. Some visually impaired users may struggle to read everything on this page.
-  - Welsh translations are incomplete. The following copy is not translated to Welsh - ‘Skip to main content’ - ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ - ‘Crown Copyright’
+  - Keyboard only users may struggle with some backlinks and toggles. They will need to be tabbed through each time by a keyboard user after using a skip link to get to the main content.
+  - Screen reader users may struggle to use some of the tables on the ‘Tax Years’ page. Some tables do not describe their purposes or the rows and columns as a screen reader user moves between tables and cells.
+  - Screen reader users may struggle to find correct values in some lists. Some description lists are not identifying the term so some screen reader users are not notified of the number of items in the list.
+  - Keyboard only users might struggle to use some of the buttons and will need to use the enter key instead of the spacebar. Links styled as buttons are not labelled correctly for assistive technology users.
+  - When switching to the Welsh language, not all the content is translated and remains in English. This means content will be incorrectly pronounced for screen readers.
 milestones:
-  - description: Screen readers won’t be able to know the difference in some of the page navigation across the service.
-      This may cause confusion when navigating through pages. This doesn’t meet WCAG 2.1 success criterion (2.4.1 Bypass Blocks).
+  - description: Keyboard only users may struggle with some backlinks and toggles. They will need to be tabbed through each time by a keyboard user after using a skip link to get to the main content.
+      This fails WCAG 2.1 success criterion 2.4.1 (Bypass Blocks)
     date: 2021-11-30
-  - description: The menu toggle disappears when clicked if it is being viewed the service on a small screen.
-      This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
+  - description: Screen reader users may struggle to use some of the tables on the ‘Tax Years’ page. Some tables do not describe their purposes or the rows and columns as a screen reader user moves between tables and cells.
+      This fails WCAG 2.1 success criterion 1.3.1 Info and relationships.
     date: 2021-11-30
-  - description: The language selector is right aligned and the breadcrumbs are left aligned on the same visual row but the tabbing order sends you to the language selector first.
-      Also, on small screens, the breadcrumbs do not reflow. This doesn’t meet WCAG 2.1 success criterion (2.4.1 Bypass Blocks; 1.4.10 Reflow).
+  - description: Screen reader users may struggle to find correct values in some lists. Some description lists are not identifying the term so some screen reader users are not notified of the number of items in the list.
+      This fails WCAG 2.1 success criterion 4.1.1 Parsing.
     date: 2021-11-30
-  - description: The HMRC banner logo visual display and reading out order for assistive technology is not consistent, so some users may get confused.
-      This doesn’t meet WCAG 2.1 success criterion (2.4.1 Bypass Blocks).
+  - description: Keyboard only users might struggle to use some of the buttons and will need to use the enter key instead of the spacebar. Links styled as buttons are not labelled correctly for assistive technology users.
+      This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
     date: 2021-11-30
-  - description: The breadcrumb colour and focus states use a light grey, which affects colour contrast.
-      Some visually impaired users may struggle to read everything on this page. This doesn’t meet WCAG 2.1 success criterion 1.4.3 (Contrast minimum).
-    date: 2021-11-30
-  - description: Welsh translations are incomplete. The following copy is not translated to Welsh - ‘Skip to main content’ - ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ - ‘Crown Copyright’.
-      This doesn’t meet WCAG 2.1 success criterion 3.2.1 (Language of parts).
+  - description: When switching to the Welsh language, not all the content is translated and remains in English. This means content will be incorrectly pronounced for screen readers.
+      This fails WCAG 2.1 success criterion 3.1.2 Language of Parts.
     date: 2021-11-30
 serviceLastTestedDate: 2021-05-18
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-06-02
+statementLastUpdatedDate: 2021-06-29

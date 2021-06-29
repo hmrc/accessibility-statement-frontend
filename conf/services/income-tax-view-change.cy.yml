@@ -8,33 +8,28 @@ serviceUrl: /report-quarterly/income-and-expenses/view/
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
-  - Ni fydd darllenwyr sgrin yn gwybod y gwahaniaeth wrth lywio drwy rai o’r tudalennau ar draws y gwasanaeth. Gall hyn beri dryswch wrth lywio drwy dudalennau.
-  - Mae togl y ddewislen yn diflannu pan gaiff ei glicio os yw’r gwasanaeth yn cael ei weld ar sgrin fach.
-  - Mae’r dewisydd iaith wedi’i alinio ar y dde ac mae’r briwsion wedi’u halinio ar y chwith ar yr un rhes weledol, ond mae’r drefn ar ôl gwasgu’r botwm ‘Tab’ yn eich anfon at y dewisydd iaith yn gyntaf.
-    Yn ogystal, ar sgriniau bach, nid yw’r briwsion yn ail-lifo.
-  - Nid yw sgrin arddangos logo baner CThEM na’r drefn darllen ar gyfer technoleg gynorthwyol yn gyson, felly mae’n bosibl bydd rhai defnyddwyr yn cael eu drysu.
-  - Mae lliw a nodwedd ffocysu’r briwsion yn defnyddio llwyd golau, sy’n effeithio ar y gymhareb lliw. Efallai y bydd rhai defnyddwyr sydd â nam ar y golwg yn cael trafferth darllen popeth ar y dudalen hon.
-  - Nid yw’r cyfieithiadau Cymraeg yn gyflawn. Nid yw’r copi canlynol wedi ei gyfieithu i'r Gymraeg - ‘Ewch yn syth i’r prif gynnwys’ - ‘Mae’r holl gynnwys ar gael dan y Drwydded Llywodraeth Agored, fersiwn 3.0, oni nodir yn wahanol’ - ‘Hawlfraint y Goron’
+  - Mae’n bosibl y gall defnyddwyr bysellfwrdd yn unig gael trafferth gyda rhai cysylltiadau yn ôl a thoglau. Bydd angen i ddefnyddiwr bysellfwrdd yn unig dabio drwyddynt bob tro ar ôl defnyddio cysylltiad syth ymlaen i gyrraedd y prif gynnwys.
+  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd defnyddio rhai o’r tablau ar y dudalen ‘Blynyddoedd Treth’. Nid yw rhai tablau’n disgrifio eu dibenion na’r rhesi a’r colofnau wrth i ddefnyddiwr darllenydd sgrin symud rhwng tablau a chelloedd.
+  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd dod o hyd i werthoedd cywir mewn ambell i restr. Nid yw rhai rhestrau disgrifiadau yn nodi’r term felly nid yw rhai defnyddwyr darllenydd sgrin yn cael gwybod am nifer yr eitemau yn y rhestr.
+  - Mae’n bosibl y bydd defnyddwyr bysellfwrdd yn unig yn ei chael hi’n anodd defnyddio rhai o’r botymau a bydd angen iddynt ddefnyddio’r botwm Enter yn lle’r bar gofod. Nid yw cysylltiadau sydd wedi’u steilio fel botymau wedi’u labelu’n gywir ar gyfer defnyddwyr technoleg gynorthwyol.
+  - Wrth newid i’r Gymraeg, nid yw’r holl gynnwys wedi’i gyfieithu ac mae’n parhau i fod yn Saesneg. Mae hyn yn golygu y bydd cynnwys yn cael ei ynganu’n anghywir ar gyfer darllenwyr sgrin.
 milestones:
-  - description: Ni fydd darllenwyr sgrin yn gwybod y gwahaniaeth wrth lywio drwy rai o’r tudalennau ar draws y gwasanaeth. Gall hyn beri dryswch wrth lywio drwy dudalennau.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Mae’n bosibl y gall defnyddwyr bysellfwrdd yn unig gael trafferth gyda rhai cysylltiadau yn ôl a thoglau. Bydd angen i ddefnyddiwr bysellfwrdd yn unig dabio drwyddynt bob tro ar ôl defnyddio cysylltiad syth ymlaen i gyrraedd y prif gynnwys.
+      Mae hyn yn methu maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2021-11-30
-  - description: Mae togl y ddewislen yn diflannu pan gaiff ei glicio os yw’r gwasanaeth yn cael ei weld ar sgrin fach.
+  - description: Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd defnyddio rhai o’r tablau ar y dudalen ‘Blynyddoedd Treth’. Nid yw rhai tablau’n disgrifio eu dibenion na’r rhesi a’r colofnau wrth i ddefnyddiwr darllenydd sgrin symud rhwng tablau a chelloedd.
       Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2021-11-30
-  - description: Mae’r dewisydd iaith wedi’i alinio ar y dde ac mae’r briwsion wedi’u halinio ar y chwith ar yr un rhes weledol, ond mae’r drefn ar ôl gwasgu’r botwm ‘Tab’ yn eich anfon at y dewisydd iaith yn gyntaf.
-      Yn ogystal, ar sgriniau bach, nid yw’r briwsion yn ail-lifo. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks); 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd dod o hyd i werthoedd cywir mewn ambell i restr. Nid yw rhai rhestrau disgrifiadau yn nodi’r term felly nid yw rhai defnyddwyr darllenydd sgrin yn cael gwybod am nifer yr eitemau yn y rhestr.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2021-11-30
-  - description: Nid yw sgrin arddangos logo baner CThEM na’r drefn darllen ar gyfer technoleg gynorthwyol yn gyson, felly mae’n bosibl bydd rhai defnyddwyr yn cael eu drysu.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Mae’n bosibl y bydd defnyddwyr bysellfwrdd yn unig yn ei chael hi’n anodd defnyddio rhai o’r botymau a bydd angen iddynt ddefnyddio’r botwm Enter yn lle’r bar gofod. Nid yw cysylltiadau sydd wedi’u steilio fel botymau wedi’u labelu’n gywir ar gyfer defnyddwyr technoleg gynorthwyol.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2021-11-30
-  - description: Mae lliw a nodwedd ffocysu’r briwsion yn defnyddio llwyd golau, sy’n effeithio ar y gymhareb lliw. Efallai y bydd rhai defnyddwyr sydd â nam ar y golwg yn cael trafferth darllen popeth ar y dudalen hon.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast minimum) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-11-30
-  - description: Nid yw’r cyfieithiadau Cymraeg yn gyflawn. Nid yw’r copi canlynol wedi ei gyfieithu i'r Gymraeg - ‘Ewch yn syth i’r prif gynnwys’ - ‘Mae’r holl gynnwys ar gael dan y Drwydded Llywodraeth Agored, fersiwn 3.0, oni nodir yn wahanol’ - ‘Hawlfraint y Goron’.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.2.1 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Wrth newid i’r Gymraeg, nid yw’r holl gynnwys wedi’i gyfieithu ac mae’n parhau i fod yn Saesneg. Mae hyn yn golygu y bydd cynnwys yn cael ei ynganu’n anghywir ar gyfer darllenwyr sgrin.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of Parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2021-11-30
 serviceLastTestedDate: 2021-05-18
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-06-02
+statementLastUpdatedDate: 2021-06-29
