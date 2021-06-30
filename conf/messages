@@ -94,7 +94,7 @@ technical.non-compliance.introduction=The content listed below is non-accessible
 technical.non-compliance.accessibility=Non‐compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=This will be fixed by {0}.
 technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2021.
-technical.non-compliance.automated.test-by=The {0} will also book a full accessibility audit by 30 June 2021.
+technical.non-compliance.automated.test-by=The {0} will also book a full accessibility audit by 30 September 2021.
 
 ## Testing
 testing.heading=How we tested this {0}
@@ -104,7 +104,7 @@ testing.details.part1=The {0} was built using parts that were tested by the
 testing.details.part2=Digital Accessibility Centre
 testing.details.part3=. The full {0} was tested by HMRC and included disabled users.
 testing.details.noncompliant=The {0} has not been tested for compliance with WCAG 2.1 AA.
-testing.created-and-updated=This page was published on {0}. It was last updated on {1}.
+testing.created-and-updated=This page was prepared on {0}. It was last updated on {1}.
 
 ## Not Found Page
 notFound.pageTitle=Page not found – GOV.UK

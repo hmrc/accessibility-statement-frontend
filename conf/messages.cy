@@ -93,7 +93,7 @@ technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyr
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
 technical.non-compliance.milestone.fix-by=Bydd hyn yn cael ei drwsio erbyn {0}.
 technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 30 Medi 2021.
-technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 30 Mehefin 2021.
+technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 30 Medi 2021.
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
@@ -103,7 +103,7 @@ testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd 
 testing.details.part2=(Digital Accessibility Centre).
 testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
 testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.created-and-updated=Cyhoeddwyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
+testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page
 notFound.pageTitle=Heb ddod o hyd i’r dudalen – GOV.UK
