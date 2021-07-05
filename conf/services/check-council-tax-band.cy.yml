@@ -1,0 +1,61 @@
+serviceName: Gwirio eich band Treth Gyngor a’i herio
+serviceHeaderName: Gwirio eich band Treth Gyngor a’i herio
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn caniatáu i chi wirio band Treth Gyngor pob eiddo preswyl yng Nghymru a Lloegr.
+  Gallwch hefyd ddefnyddio’r gwasanaeth i herio band os oes angen.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-council-tax-band/search
+contactFrontendServiceId: CCYCTB
+complianceStatus: partial
+accessibilityProblems:
+  - Pan nad yw JavaScript ar gael, mae rhywfaint o gynnwys a ddatgelwyd ar gyfer opsiynau chwilio allan o’i
+    gyd-destun. Efallai y bydd rhai defnyddwyr yn ei chael hi’n anodd penderfynu pa feysydd sydd angen eu cwblhau.
+  - Mae testun awgrym yn un o’r opsiynau chwilio nad yw’n gysylltiedig â’r maes yn gywir. Efallai na fydd
+    darllenwyr sgrin yn darllen y testun awgrym yn iawn.
+  - Mae gan un dudalen deitl tudalen anghywir.
+  - Nid yw rhai defnyddwyr bob amser yn cael eu hysbysu pan fydd cynnwys a ddatgelir yn amodol yn cael ei ehangu neu ei ddymchwel.
+  - Nid oes gan rai meysydd mewnbwn cyfeiriad gydran awtogwblhau.
+  - Nid oes gan rai meysydd mewnbwn manylion cyswllt gydran awtogwblhau.
+  - Efallai y bydd rhai defnyddwyr yn cael anhawster defnyddio’r bar sgrolio llorweddol ar faint sgrin o 150% ac uwch.
+  - Nid yw meysydd ar rai tudalennau wedi’u grwpio’n gywir mewn set maes. Efallai y bydd rhai defnyddwyr yn ei chael
+    hi’n anodd gwybod pa opsiynau sy’n berthnasol i’w gilydd.
+  - Mae rhywfaint o destun yn y troedyn yn Saesneg er bod yr iaith wedi’i gosod i’r Gymraeg.
+milestones:
+  - description: |
+      Mae problem gyda chynnwys a ddatgelir yn amodol a ddefnyddir gyda botymau radio mewnol. Nid yw hyn yn bodloni
+      maen prawf llwyddiant WCAG 2.1 1.3.1 (Gwybodaeth a pherthnasoedd)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda thestun awgrym sydd ddim yn gysylltiedig. Nid yw hyn yn bodloni maen prawf llwyddiant
+      WCAG 2.1 1.3.1 (Gwybodaeth a pherthnasoedd)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda theitl tudalen anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.1 2.4.2 (Teitl tudalen)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda chynnwys a ddatgelir yn amodol. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.1 4.1.2
+      (Enw, rôl, gwerth)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda phriodoleddau awtogwblhau coll ar gyfer meysydd cyfeiriad. Nid yw hyn yn bodloni maen prawf
+      llwyddiant WCAG 2.1 1.3.5 (Nodi pwrpas mewnbwn)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda phriodoleddau awtogwblhau coll ar gyfer manylion cyswllt. Nid yw hyn yn bodloni maen prawf
+      llwyddiant WCAG 2.1 1.3.5 (Nodi pwrpas mewnbwn)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda’r bar sgrolio llorweddol. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.1 1.4.10 (Ail-lifo)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda rheolyddion radio ar goll yn y set maes. Nid yw hyn yn bodloni maen prawf llwyddiant
+      WCAG 2.1 2.4.6 (Penawdau a labeli)
+    date: 2021-12-31
+  - description: |
+      Mae problem gyda chyfieithiadau Cymraeg. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.1 3.1.2 (Iaith rhannau)
+    date: 2021-12-31
+
+serviceLastTestedDate: 2021-04-20
+statementVisibility: public
+statementCreatedDate: 2021-06-30
+statementLastUpdatedDate: 2021-06-30
