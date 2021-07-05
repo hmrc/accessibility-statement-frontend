@@ -7,14 +7,8 @@ contactFrontendServiceId: one-stop-shop-registration-frontend
 complianceStatus: partial
 accessibilityProblems:
   - you may not be able to choose to stay signed in when your session times out
-  - some abbreviations are not explained in full
-  - you may not be able to easily read some link text because the colour contrast is not high enough against the background
 milestones:
   - description: You may not be able to choose to stay signed in when your session times out. This does not meet WCAG 2.1 success criterion 2.2.1 (Timing Adjustable), success criterion 2.2.5 (Re-authenticating) and success criterion 2.2.6 (Timeouts).
-    date: 2021-10-01
-  - description: Some abbreviations are not explained in full. This does not meet WCAG 2.1 success criterion 2.4.6 Headings and Labels and 3.1.4 Abbreviations.
-    date: 2021-10-01
-  - description:  You may not be able to easily read some link text because the colour contrast is not high enough against the background. This does not meet WCAG 2.1 success criterion 1.4.6 (Contrast enhanced).
     date: 2021-10-01
 serviceLastTestedDate: 2021-06-28
 statementVisibility: public
