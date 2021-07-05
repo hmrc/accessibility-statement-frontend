@@ -1,0 +1,64 @@
+serviceName: Check and challenge your Council Tax band
+serviceHeaderName: Check and challenge your Council Tax band
+serviceDescription: |
+  This service allows you to check the Council Tax band of every residential property in England and Wales.
+  You may also use the service to challenge a band if required.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-council-tax-band/search
+contactFrontendServiceId: CCYCTB
+complianceStatus: partial
+accessibilityProblems:
+  - When JavaScript is not available, some revealed content for search options is out of context. Some users may
+    find it difficult to determine which fields need to be completed.
+  - There is hint text in one of the search options that is not associated with the field correctly. Screen readers
+    may not read the hint text properly.
+  - One page has an incorrect page title.
+  - Some users are not always notified when conditionally revealed content is expanded or collapsed.
+  - Some address input fields do not have an autocomplete component.
+  - Some contact details input fields do not have an autocomplete component.
+  - Some users may have difficulty using the horizontal scrollbar at screen size of 150% upwards.
+  - Fields on some pages are not correctly grouped in a fieldset. Some users may find it difficult to know which
+    options relate to each other.
+  - Some text in the footer is in English when the language has been set to Welsh.
+milestones:
+  - description: |
+      There is an issue with conditionally revealed content used with inline radios. This does not
+      meet WCAG 2.1 success criterion 1.3.1 (Info and relationships)
+    date: 2021-12-31
+  - description: |
+      There is an issue with hint text not being associated. This does not
+      meet WCAG 2.1 success criterion 1.3.1 (Info and relationships)
+    date: 2021-12-31
+  - description: |
+      There is an issue with an incorrect page title. This does not
+      meet WCAG 2.1 success criterion 2.4.2 (Page titled)
+    date: 2021-12-31
+  - description: |
+      There is an issue with conditionally revealed content. This does not
+      meet WCAG 2.1 success criterion 4.1.2 (Name, role, value)
+    date: 2021-12-31
+  - description: |
+      There is an issue with missing autocomplete attributes for address fields. This does not
+      meet WCAG 2.1 success criterion 1.3.5 (Identify input purpose)
+    date: 2021-12-31
+  - description: |
+      There is an issue with missing autocomplete attributes for contact details. This does not
+      meet WCAG 2.1 success criterion 1.3.5 (Identify input purpose)
+    date: 2021-12-31
+  - description: |
+      There is an issue with the horizontal scrollbar. This does not
+      meet WCAG 2.1 success criterion 1.4.10 (Reflow)
+    date: 2021-12-31
+  - description: |
+      There is an issue with radio controls missing fieldset. This does not
+      meet WCAG 2.1 success criterion 2.4.6 (Headings and labels)
+    date: 2021-12-31
+  - description: |
+      There is an issue with Welsh translations. This does not
+      meet WCAG 2.1 success criterion 3.1.2 (Language of parts)
+    date: 2021-12-31
+
+serviceLastTestedDate: 2021-04-20
+statementVisibility: public
+statementCreatedDate: 2021-06-30
+statementLastUpdatedDate: 2021-06-30
