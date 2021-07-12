@@ -20,6 +20,12 @@ accessibilityProblems:
   - Fields on some pages are not correctly grouped in a fieldset. Some users may find it difficult to know which
     options relate to each other.
   - Some text in the footer is in English when the language has been set to Welsh.
+  - The language toggle and back link are included in the main content. Users that select the skip to main content link
+    may not skip these other links.
+  - Language toggles may not inform screen reader users of the purpose of the link or which language has been selected.
+  - The contact details page is has an HTML validation error that can cause assistive technology to interpret the page
+    incorrectly.
+  - Some links may be set up in an incorrect style.
 milestones:
   - description: |
       There is an issue with conditionally revealed content used with inline radios. This does not
@@ -57,6 +63,23 @@ milestones:
       There is an issue with Welsh translations. This does not
       meet WCAG 2.1 success criterion 3.1.2 (Language of parts)
     date: 2021-12-31
+  - description: |
+      There is an issue with a language toggle and back link. This does not
+      meet WCAG 2.1 success criterion 2.4.1 (Bypass blocks)
+    date: 2021-06-31
+  - description: |
+      There are multiple issues with language toggles. This does not
+      meet WCAG 2.1 success criterion 3.1.2 (Language of parts), 3.1.1 (Language of page) and 2.4.4 (Link purpose
+      in context)
+    date: 2021-06-31
+  - description: |
+      There is an issue with stray closing li tag in contact details. This does not
+      meet WCAG 2.1 success criterion 4.1.1 (Parsing)
+    date: 2021-06-31
+  - description: |
+      There is an issue with link focus styling. This does not
+      meet WCAG 2.1 success criterion 2.4.7 (Focus visible)
+    date: 2021-06-31
 
 serviceLastTestedDate: 2021-04-20
 statementVisibility: public
