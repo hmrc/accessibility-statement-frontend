@@ -66,20 +66,20 @@ milestones:
   - description: |
       There is an issue with a language toggle and back link. This does not
       meet WCAG 2.1 success criterion 2.4.1 (Bypass blocks)
-    date: 2021-06-31
+    date: 2021-12-31
   - description: |
       There are multiple issues with language toggles. This does not
       meet WCAG 2.1 success criterion 3.1.2 (Language of parts), 3.1.1 (Language of page) and 2.4.4 (Link purpose
       in context)
-    date: 2021-06-31
+    date: 2021-12-31
   - description: |
       There is an issue with stray closing li tag in contact details. This does not
       meet WCAG 2.1 success criterion 4.1.1 (Parsing)
-    date: 2021-06-31
+    date: 2021-12-31
   - description: |
       There is an issue with link focus styling. This does not
       meet WCAG 2.1 success criterion 2.4.7 (Focus visible)
-    date: 2021-06-31
+    date: 2021-12-31
 
 serviceLastTestedDate: 2021-04-20
 statementVisibility: public
