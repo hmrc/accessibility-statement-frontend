@@ -6,7 +6,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /register-for-cross-border-arrangements
 contactFrontendServiceId: DAC6
 complianceStatus: full
-serviceLastTestedDate: 2021-07-12
+serviceLastTestedDate: 2021-07-05
 statementVisibility: public
 statementCreatedDate: 2021-07-13
 statementLastUpdatedDate: 2021-07-13
