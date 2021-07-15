@@ -7,11 +7,11 @@ serviceUrl: /home
 contactFrontendServiceId: uktradeinfo
 complianceStatus: partial
 accessibilityProblems:
-  - on the Latest from UK Trade Info page screen reader users will not hear information about the frequency of emails if they jump directly to the email field
-  - on the Overseas trade data table page speech recognition users won't be able to fill the form without using a mouse-grid.
-  - on the Overseas trade data table and the "Regional trade data table" pages the expand row option is not reachable via keyboard or exposed to screen-readers. Voice recognition users will need to use a mouse-grid to activate it.
-  - on the Overseas trade data table page there is a context menu that is only available using a mouse.
-  - on Overseas trade by commodity code and "Overseas trade by Standard International Trade Classification" pages have the same page title and heading, making it difficult to identify which page users on.
+  - on the "Latest from UK Trade Info" page screen reader users will not hear information about the frequency of emails if they jump directly to the email field
+  - on the "Overseas trade data table" page speech recognition users won't be able to fill the form without using a mouse-grid.
+  - on the "Overseas trade data table" and the "Regional trade data table" pages the expand row option is not reachable via keyboard or exposed to screen-readers. Voice recognition users will need to use a mouse-grid to activate it.
+  - on the "Overseas trade data table page" there is a context menu that is only available using a mouse.
+  - on "Overseas trade by commodity code" and "Overseas trade by Standard International Trade Classification" pages have the same page title and heading, making it difficult to identify which page users on.
   - on the "Register to submit Intrastat declarations" page the page title does not describe what the user is registering for, so screen-reader users will need to check the heading.
   - on the "UK trader company name" page keyboard user won't be able to access the "Commodity Code" links
   - on the "Overseas trade data table" page the meaning of the icons next to the commodities is unclear
@@ -19,7 +19,7 @@ accessibilityProblems:
   - on the "Overseas trade data table" and "Regional trade data table" pages screen-reader users will have difficulties with understanding and navigating the table content and might require assistance with it.
   - on the "Unsubscribe" page there are no headings, so screen-reader users will need to explore the content.
   - on the "Unsubscribe" page there is no main region so screen-reader users will need to explore the content.
-  - on the “Help with using the new Trade Info website” page people with motor impairments will have difficulties with reading or being made aware of error messages for the email updates form.
+  - on the "Help with using the new Trade Info website" page people with motor impairments will have difficulties with reading or being made aware of error messages for the email updates form.
   - on the "Overseas trade data table" page screen-reader users might be confused with a duplicated "Skip to the main content" button in the middle of the main content.
   - on the "Overseas trade data table" page screen-reader users won't be able to understand what each "Apply" button is related to when viewing them in an elements list
   - on the "Overseas trade data table" page people with vision and cognitive impairments will have difficulties with understanding and reading table content where text is too close to each other and some column headers are obstructed by the data table.
