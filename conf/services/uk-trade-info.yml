@@ -39,7 +39,8 @@ milestones:
     date: 2021-12-31
   - description: page title doesn't provide enough information for screen reader users about page content. This fails WCAG 2.1 success criterion 2.4.2 Page Titled
     date: 2021-12-31
-  - description:  "Commodity Code" links removed from tab order making it not accessible by keyboard users. This fails WCAG 2.1 success criterion 2.1.1 Keyboard
+  - description: | 
+       "Commodity Code" links removed from tab order making it not accessible by keyboard users. This fails WCAG 2.1 success criterion 2.1.1 Keyboard
     date: 2021-12-31
   - description:  icons don't provide additional information make it hard for some users to understand what they represent. This fails WCAG 2.1 success criterion 1.3.3 Sensory Characteristics
     date: 2021-12-31
@@ -53,7 +54,8 @@ milestones:
     date: 2021-12-31
   - description:  nested in the main region "Skip to main content" button creates confusion for screen reader users and might disorient them. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels 
     date: 2021-12-31
-  - description: "Apply" buttons additional information don't provide clarity for screen reader users what they are related to. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels
+  - description:  |
+        "Apply" buttons additional information don't provide clarity for screen reader users what they are related to. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels
     date: 2021-12-31
   - description: columns don't have enough spacing in between and column headings not fully visible. This fails WCAG 2.1 success criterion 1.4.12 Text Spacing
     date: 2021-12-31
