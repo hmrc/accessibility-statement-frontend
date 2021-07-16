@@ -1,0 +1,69 @@
+serviceName: Cofrestru Ymddiriedolaeth a’i Chynnal
+serviceDescription: |
+  This service allows you to register and maintain taxable and non-taxable trusts.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /trusts-registration
+contactFrontendServiceId: trusts
+complianceStatus: partial
+accessibilityProblems:
+  - mae’n bosibl na fydd defnyddwyr yn gallu defnyddio’r cysylltiad penodol i fynd yn syth i ffocysu maes mewnbwn pan fo gwall
+  - mae’n bosibl na fydd defnyddwyr bysellfwrdd yn gallu defnyddio’r cysylltiad ‘ewch yn syth i’r prif gynnwys’
+  - mae’n bosibl y gall defnyddwyr technolegau cynorthwyol gael anhawster deall hierarchaeth yr wybodaeth ar y dudalen
+  - mae’n bosibl y gall defnyddwyr darllenwyr sgrin gael anhawster wrth lywio drwy dudalen sydd â chysylltiadau ‘newid’
+  - mae’n bosibl y gall defnyddwyr technolegau cynorthwyol gael anhawster deall y ddogfen PDF ‘endid dan orfodaeth’ y gellir ei lawrlwytho
+  - mae’n bosibl na fydd defnyddwyr darllenwyr sgrin, wrth fewnbynnu gwerth ariannol ar gyfer ased, yn deall yn iawn bod rhaid iddo fod mewn punnoedd sterling
+  - mae’n bosibl y gall defnyddwyr darllenwyr sgrin gael anhawster deall faint o’r asedion a ychwanegwyd sy’n ‘gyflawn’
+  - mae’n bosibl y gall defnyddwyr darllenwyr sgrin gael anhawster wrth lywio drwy dudalen yn ôl lefel pennawd
+  - mae’n bosibl y gall defnyddwyr sydd â golwg gwan gael anhawster gweld cysylltiadau glas yn erbyn cefndir gwyn oherwydd cyferbynnedd annigonol
+  - mae’n bosibl y gall defnyddwyr sydd â golwg gwan gael anhawster darllen testun awgrym yn erbyn cefndir gwyn
+milestones:
+  - description: |
+      Mae gan y gwasanaeth gysylltiad ‘ewch yn syth i’r prif gynnwys’ er mwyn galluogi darllenwyr sgrin i neidio i’r prif gynnwys ar y dudalen.
+      Canfuwyd nad oedd hyn yn gweithredu yn ôl y disgwyl ac nid yw’n bodloni maen prawf llwyddiant 2.4.1 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 A: Bypass Blocks (Lefel A).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn rhoi gwybod i’r defnyddiwr pan fydd gwall wedi digwydd ar ôl cyflwyno ffurflen.
+      Nid yw’r cysylltiad penodol i fynd yn syth i ffocysu’r maes mewnbwn yn gweithio yn ôl y disgwyl.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 A: Bypass Blocks (Level A).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn galluogi defnyddiwr i olygu gwybodaeth gyda’r cysylltiadau ‘newid’ ar y dudalen.
+      Canfuwyd nad oedd y rhain yn gweithredu yn ôl y disgwyl ar gyfer defnyddwyr darllenwyr sgrin.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Link Purpose (Level A) neu 2.4.9: Link Purpose (Level AAA).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn defnyddio penawdau er mwyn categoreiddio hierarchaeth yr wybodaeth ar y dudalen. Canfuwyd nad oedd y rhain yn gweithredu yn ôl y disgwyl.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Info and Relationships (Level A).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn galluogi defnyddwyr i lawrlwytho’r ddogfen PDF ‘endid dan orfodaeth’. Nid yw’r ddogfen hon, nad yw’n html, wedi’i marcio er mwyn sicrhau ei bod yn hygyrch.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Non-Text Content, 1.3.1: Info and Relationships, 2.4.2: Page Titled, 3.1.1: Language of Page neu 1.4.6: Contrast (Enhanced) (Level A).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn gofyn i ddefnyddwyr fewnbynnu gwerth ariannol. Mae’n bosibl na fydd defnyddwyr darllenwyr sgrin yn deall yn iawn bod rhaid iddo fod mewn punnoedd sterling.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Headings and Labels (Level AA).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn gofyn i ddefnyddwyr gwblhau adran ar gyfer asedion yn yr ymddiriedolaeth.
+      Mae’n bosibl y gall defnyddwyr darllenwyr sgrin gael anhawster deall faint o’r asedion a ychwanegwyd sy’n ‘gyflawn’.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Headings and Labels (Level AA).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn galluogi defnyddwyr i weld yr wybodaeth maent wedi’i nodi hyd yn hyn ar gyfer cofrestriad drafft.
+      Mae’n bosibl y gall defnyddwyr darllenwyr sgrin gael anhawster wrth lywio’r drwy’r dudalen yn ôl lefel pennawd.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.10 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Section Headings (Level AAA).
+    date: 2021-08-31
+  - description: |
+      Mae gan y gwasanaeth gyferbynnedd lliw anghywir mewn rhai mannau.
+      Mae’n bosibl y gall defnyddwyr sydd â golwg gwan gael anhawster gweld cysylltiadau glas yn erbyn cefndir gwyn oherwydd cyferbynnedd annigonol.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.6 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Contrast (Enhanced) (Level AAA).
+    date: 2021-08-31
+  - description: |
+      Mae’r gwasanaeth yn defnyddio testun awgrym er mwyn cynorthwyo defnyddiwr wrth nodi gwybodaeth.
+      Nid oes gan y testun awgrym gyferbynnedd digonol.
+      Mae’n bosibl y gall defnyddwyr sydd â golwg gwan gael anhawster darllen testun awgrym yn erbyn cefndir gwyn.
+      Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.6 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Contrast (Enhanced) (Level AAA).
+    date: 2021-08-31
+statementVisibility: draft
+statementCreatedDate: 2020-03-31
+statementLastUpdatedDate: 2021-06-24
