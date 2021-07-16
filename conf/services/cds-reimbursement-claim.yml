@@ -13,15 +13,15 @@ accessibilityProblems:
   - not translated copy is not marked up correctly for pronunciation for screen readers.
 milestones:
   - description: missing error styles on fields that need to be corrected. This fails WCAG 2.1 success criterions 3.3.1 Error Identification
-    date: TBC
+    date: 2021-09-16
   - description: currency input doesn’t have correct error styles. Validation prevents users from entering values with allowed characters. This fails WCAG 2.1 success criterions 3.3.2 Labels or Instructions and 3.3.1 Error Identification
-    date: TBC
+    date: 2021-09-16
   - description: error messages are general and non-specific to the actual error. Don’t describe what action requires from the user. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
-    date: TBC
+    date: 2021-09-16
   - description: account header layout and long strings of the text gets clipped and not visible on the screen when the user increases the font size. This fails WCAG 2.1 success criterions 1.4.4 Resize text and 1.4.10 Reflow
-    date: TBC
+    date: 2021-09-16
   - description: the correct language attribute to identify the copy in the main document’s language is missing. This fails WCAG 2.1 success criterions 3.1.2 Language of Parts
-    date: TBC
+    date: 2021-09-16
 serviceLastTestedDate: 2021-07-09
 statementVisibility: public
 statementCreatedDate: 2021-03-18
