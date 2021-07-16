@@ -6,43 +6,23 @@ serviceUrl: /claim-for-reimbursement-of-import-duties
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
 complianceStatus: partial
 accessibilityProblems:
-  - Some labels and instructions are ambiguous and do not match with what the user is required to do.
-  - There are error messages that do not give enough information for users to correct the problem that has been identified.
-  - Some back links do no behave in the way the user would expect.
-  - On the "Enter bank account details" page, the sort code input box does not allow entering with spaces.
-  - The sign out link is present when the session is timed out and user has already signed out.
-  - Some text is clipped and does not reflow.
-  - Some form inputs are missing autocomplete and spellchecker.
+  - on the ‘Enter declaration details’ page, the date of import validation doesn’t work well as the error not clearly identifies which field is incorrect.
+  - on the ‘Enter the claim amount’ pages, currency input doesn‘t have error identification. It doesn’t allow to enter a value with pound symbol, spaces and commas, which will affect speech recognition users. And people with motor impairments who rely on pasting copy from somewhere else.
+  - on the ‘Enter declaration details’ and ‘Enter bank account details’ pages, error messages do not describe correctly what is wrong and what the user needs to do to correct it.
+  - the account header and some content don’t fit on the screen when the user needs to increase font size. that might cause issues for people with motor impairments who need to scroll to access this information.
+  - not translated copy is not marked up correctly for pronunciation for screen readers.
 milestones:
-  - description:
-      Some labels and instructions are ambiguous and do not match what the user is required to do.
-      This fails WCAG 2.1 Understanding Success Criterion - 3.3.2 Labels or Instructions.
-    date: 2021-07-05
-  - description:
-      There are error messages that do not give enough information for users to correct the problem that has been identified.
-      This fails WCAG 2.1 Understanding Success Criterion - 3.3.1 Error identification and 3.3.2 Labels or Instructions.
-    date: 2021-07-05
-  - description:
-      Some back links do no behave in the way the user would expect, resulting in the destination being ambiguous, which creates confusion for users.
-      This fails WCAG 2.1 Understanding Success Criterion - 2.4.4 Link purpose.
-    date: 2021-07-05
-  - description:
-      On the "Enter bank account details" page, the sort code input box does not allow entering the sort code with spaces.
-      This fails WCAG 2.1 Understanding Success Criterion - 3.3.2 Labels or Instructions.
-    date: 2021-07-05
-  - description:
-      The sign out link is present when the session is timed out and user already signed out.
-      This fails WCAG 2.1 Understanding Success Criterion - 2.4.4 Link purpose.
-    date: 2021-07-05
-  - description:
-      Some text is clipped and does not reflow.
-      This fails WCAG 2.1 Understanding Success Criterion - 1.4.4 Resize text and 1.4.10 Reflow.
-    date: 2021-07-05
-  - description:
-      Some form inputs are missing autocomplete and spellchecker.
-      This fails WCAG 2.1 Understanding Success Criterion - 1.3.5 Identify input purpose.
-    date: 2021-07-05
-serviceLastTestedDate: 2021-04-30
+  - description: missing error styles on fields that need to be corrected. This fails WCAG 2.1 success criterions 3.3.1 Error Identification
+    date: 2021-09-16
+  - description: currency input doesn’t have correct error styles. Validation prevents users from entering values with allowed characters. This fails WCAG 2.1 success criterions 3.3.2 Labels or Instructions and 3.3.1 Error Identification
+    date: 2021-09-16
+  - description: error messages are general and non-specific to the actual error. Don’t describe what action requires from the user. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
+    date: 2021-09-16
+  - description: account header layout and long strings of the text gets clipped and not visible on the screen when the user increases the font size. This fails WCAG 2.1 success criterions 1.4.4 Resize text and 1.4.10 Reflow
+    date: 2021-09-16
+  - description: the correct language attribute to identify the copy in the main document’s language is missing. This fails WCAG 2.1 success criterions 3.1.2 Language of Parts
+    date: 2021-09-16
+serviceLastTestedDate: 2021-07-09
 statementVisibility: public
 statementCreatedDate: 2021-03-18
-statementLastUpdatedDate: 2021-05-20
+statementLastUpdatedDate: 2021-07-16
