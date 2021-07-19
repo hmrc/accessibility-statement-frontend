@@ -16,7 +16,7 @@ milestones:
     date: 2021-09-16
   - description: currency input does not have correct error styles. Validation prevents users from entering values with allowed characters. This fails WCAG 2.1 success criterions 3.3.2 Labels or Instructions and 3.3.1 Error Identification.
     date: 2021-09-16
-  - description: error messages are general and non-specific to the actual error. Does not describe what action is required from the user. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
+  - description: error messages are general and non-specific to the actual error. They do not describe what action requires from the user. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
     date: 2021-09-16
   - description: account header layout and long strings of the text gets clipped and not visible on the screen when the user increases the font size. This fails WCAG 2.1 success criterions 1.4.4 Resize text and 1.4.10 Reflow.
     date: 2021-09-16
