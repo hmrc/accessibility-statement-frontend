@@ -1,6 +1,6 @@
 serviceName: Cofrestru Ymddiriedolaeth a’i Chynnal
 serviceDescription: |
-  This service allows you to register and maintain taxable and non-taxable trusts.
+  Mae’r gwasanaeth hwn yn caniatáu i chi gofrestru a chynnal ymddiriedolaethau trethadwy ac anhrethadwy.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trusts-registration
 contactFrontendServiceId: trusts
