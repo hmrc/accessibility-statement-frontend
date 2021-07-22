@@ -6,17 +6,17 @@ serviceUrl: /claim-for-reimbursement-of-import-duties
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
 complianceStatus: partial
 accessibilityProblems:
-  - on the ‘Enter declaration details’ page, the date of import validation doesn’t work well as the error not clearly identifies which field is incorrect.
-  - on the ‘Enter the claim amount’ pages, currency input doesn‘t have error identification. It doesn’t allow to enter a value with pound symbol, spaces and commas, which will affect speech recognition users. And people with motor impairments who rely on pasting copy from somewhere else.
+  - on the ‘Enter declaration details’ page, the date of import validation does not work well as the error not clearly identifies which field is incorrect.
+  - on the ‘Enter the claim amount’ pages, currency input does not have error identification. It does not allow to enter a value with pound symbol, spaces and commas, which will affect speech recognition users. And people with motor impairments who rely on pasting copy from somewhere else.
   - on the ‘Enter declaration details’ and ‘Enter bank account details’ pages, error messages do not describe correctly what is wrong and what the user needs to do to correct it.
-  - the account header and some content don’t fit on the screen when the user needs to increase font size. that might cause issues for people with motor impairments who need to scroll to access this information.
+  - the account header and some content do not fit on the screen when the user needs to increase font size. that might cause issues for people with motor impairments who need to scroll to access this information.
   - not translated copy is not marked up correctly for pronunciation for screen readers.
 milestones:
   - description: missing error styles on fields that need to be corrected. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
     date: 2021-09-16
-  - description: currency input doesn’t have correct error styles. Validation prevents users from entering values with allowed characters. This fails WCAG 2.1 success criterions 3.3.2 Labels or Instructions and 3.3.1 Error Identification.
+  - description: currency input does not have correct error styles. Validation prevents users from entering values with allowed characters. This fails WCAG 2.1 success criterions 3.3.2 Labels or Instructions and 3.3.1 Error Identification.
     date: 2021-09-16
-  - description: error messages are general and non-specific to the actual error. Don’t describe what action requires from the user. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
+  - description: error messages are general and non-specific to the actual error. They do not describe what action is required from the user. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
     date: 2021-09-16
   - description: account header layout and long strings of the text gets clipped and not visible on the screen when the user increases the font size. This fails WCAG 2.1 success criterions 1.4.4 Resize text and 1.4.10 Reflow.
     date: 2021-09-16
