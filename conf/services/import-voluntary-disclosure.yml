@@ -6,6 +6,6 @@ serviceUrl: /disclose-import-taxes-underpayment
 contactFrontendServiceId: IVD
 complianceStatus: full
 serviceLastTestedDate: 2021-07-19
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2021-07-21
 statementLastUpdatedDate: 2021-07-21
