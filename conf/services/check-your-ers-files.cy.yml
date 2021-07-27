@@ -1,5 +1,5 @@
 serviceName: Gwirio’ch ffeiliau ERS
-serviceHeaderName: Gwirio’ch ffeiliau ERS	
+serviceHeaderName: Gwirio’ch ffeiliau ERS
 serviceDescription: |
   Gall cyflogwyr, neu asiantau sy’n gweithredu ar eu rhan, ddefnyddio’r gwasanaeth hwn i wirio am wallau yn y ffeiliau y mae angen
   iddynt eu huwchlwytho fel rhan o’u Datganiad Blynyddol ar gyfer Gwarantau ar sail Cyflogaeth (ERS).
@@ -30,6 +30,7 @@ milestones:
     date: 2022-07-31
   - description: Ar bob tudalen, nid yw’r cyferbyniad lliw ar y dangosydd ffocws yn ddigon cryf. Gall hyn ei gwneud yn anodd i rai defnyddwyr ei weld. Nid yw hyn bodloni maen prawf llwyddiant 1.4.11 (Non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-07-31
+serviceLastTestedDate: 2021-03-01
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-04-14
+statementLastUpdatedDate: 2021-07-27

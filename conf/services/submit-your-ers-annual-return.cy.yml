@@ -53,6 +53,7 @@ milestones:
     date: 2022-07-31
   - description: Ar bob tudalen, nid yw’r cyferbyniad lliw ar y dangosydd ffocws yn ddigon cryf. Gall hyn ei gwneud yn anodd i rai defnyddwyr ei weld. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-07-31
+serviceLastTestedDate: 2021-03-15
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-05-04
+statementLastUpdatedDate: 2021-07-27
