@@ -17,13 +17,12 @@
 package it
 
 import java.io.File
-
 import cats.syntax.either._
 import org.scalatest.TryValues
 import org.scalatestplus.play.PlaySpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, NoCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.util.Try
@@ -56,6 +55,11 @@ class ServicesISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
         val domainRegex                       = "([a-z0-9-]*[\\.]*)*[a-z0-9]*"
         val statement: AccessibilityStatement = statementTry.get
         statement.serviceDomain.matches(domainRegex) must be(true)
+      }
+
+      s"enforce lastTestedDate provided unless non-compliant for $service" in {
+        val statement: AccessibilityStatement = statementTry.get
+        statement.serviceLastTestedDate.isDefined || statement.complianceStatus == NoCompliance must be(true)
       }
 
       s"enforce serviceUrl starting with / for $service" in {

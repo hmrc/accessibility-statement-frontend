@@ -30,6 +30,7 @@ milestones:
     date: 2022-07-31
   - description: On every page, the colour of the focus indicator does not have a strong enough colour contrast. This might make it difficult for some users to see. This fails WCAG 2.1 success criterion 1.4.11 Non-text Contrast.
     date: 2022-07-31
+serviceLastTestedDate: 2021-03-01
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-04-14
+statementLastUpdatedDate: 2021-07-27
