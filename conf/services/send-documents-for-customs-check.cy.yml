@@ -1,0 +1,12 @@
+serviceName: Send documents for customs check
+serviceHeaderName: Send documents for customs check
+serviceDescription: |
+  This service allows you to send documents for customs check
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /send-documents-for-customs-check
+contactFrontendServiceId: send-documents-for-customs-check
+complianceStatus: full
+serviceLastTestedDate: 2021-07-28
+statementVisibility: public
+statementCreatedDate: 2021-07-28
+statementLastUpdatedDate: 2021-07-28
