@@ -1,7 +1,7 @@
-serviceName: Send documents for customs check
-serviceHeaderName: Send documents for customs check
+serviceName: Anfon dogfennau i’w gwirio gan y tollau
+serviceHeaderName: Anfon dogfennau i’w gwirio gan y tollau
 serviceDescription: |
-  This service allows you to send documents for customs check
+  Mae'r gwasanaeth hwn yn caniatáu ichi anfon dogfennau ar gyfer gwiriad tollau
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /send-documents-for-customs-check
 contactFrontendServiceId: send-documents-for-customs-check
