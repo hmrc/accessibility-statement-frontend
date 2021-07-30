@@ -119,5 +119,5 @@ case class AccessibilityStatementsSourceRepo @Inject() (
       .valueOr(throw _)
 
   private def isStatementVisible(statement: AccessibilityStatement) =
-    showDraftStatementsEnabled || statement.statementVisibility == Public
+    visibleStatuses.contains(statement.statementVisibility)
 }

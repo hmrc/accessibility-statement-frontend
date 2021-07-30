@@ -25,7 +25,8 @@ import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, Visibility}
+import uk.gov.hmrc.accessibilitystatementfrontend.parsers.{VisibilityParser, YamlParser}
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
@@ -670,13 +671,15 @@ class StatementPageSpec extends WordSpec with Matchers with GuiceOneAppPerSuite 
       Map("platform.frontend.host" -> "https://www.tax.service.gov.uk")
     )
 
-    implicit val sourceConfig: SourceConfig     =
+    implicit val sourceConfig: SourceConfig         =
       app.injector.instanceOf[SourceConfig]
-    implicit val servicesConfig: ServicesConfig =
+    implicit val servicesConfig: ServicesConfig     =
       app.injector.instanceOf[ServicesConfig]
+    implicit val visibilityParser: VisibilityParser =
+      app.injector.instanceOf[VisibilityParser]
 
     implicit val appConfig: AppConfig =
-      AppConfig(configuration, servicesConfig)
+      AppConfig(configuration, servicesConfig, visibilityParser)
 
     val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
     implicit val messages: Messages = messagesApi.preferred(fakeRequest)
