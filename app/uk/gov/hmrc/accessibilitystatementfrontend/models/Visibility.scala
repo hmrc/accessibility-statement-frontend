@@ -22,9 +22,10 @@ sealed trait Visibility
 
 object Visibility {
   implicit val decoder: Decoder[Visibility] = Decoder.decodeString.emap {
-    case "public" => Right(Public)
-    case "draft"  => Right(Draft)
-    case status   => Left(s"""Unrecognised visibility "$status"""")
+    case "public"   => Right(Public)
+    case "draft"    => Right(Draft)
+    case "archived" => Right(Archived)
+    case status     => Left(s"""Unrecognised visibility "$status"""")
   }
   implicit val encoder: Encoder[Visibility] =
     Encoder.encodeString.contramap[Visibility](_.toString)
@@ -36,4 +37,8 @@ case object Public extends Visibility {
 
 case object Draft extends Visibility {
   override def toString = "draft"
+}
+
+case object Archived extends Visibility {
+  override def toString = "archived"
 }

@@ -42,7 +42,7 @@ milestones:                             # If there are no issues do not include 
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
 serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
-statementVisibility: public             # If set to public, the statement will be visible in production
+statementVisibility: public             # If set to public, the statement will be visible in production. One of: public|draft|archived.
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
