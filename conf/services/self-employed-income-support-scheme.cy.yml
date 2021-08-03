@@ -6,7 +6,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /self-employment-support
 contactFrontendServiceId: seiss
 complianceStatus: full
-serviceLastTestedDate: 2021-08-25
+serviceLastTestedDate: 2021-07-25
 statementVisibility: public
 statementCreatedDate: 2020-04-27
-statementLastUpdatedDate: 2021-08-26
+statementLastUpdatedDate: 2021-07-26
