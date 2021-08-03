@@ -1,0 +1,12 @@
+serviceName: Self Employment Income Support Scheme
+
+serviceHeaderName: Self Employment Income Support Scheme
+serviceDescription: This service allows you to claim for a self‐employment grant through the Self‐Employment Income Support scheme.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /self-employment-support
+contactFrontendServiceId: seiss
+complianceStatus: full
+serviceLastTestedDate: 2021-08-25
+statementVisibility: public
+statementCreatedDate: 2020-04-27
+statementLastUpdatedDate: 2021-08-26
