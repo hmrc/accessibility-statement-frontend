@@ -33,9 +33,9 @@ milestones:
     date: 2021-10-31
   - description: The ‘Ask HMRC’ title on the chat window lacks useful labelling for screen readers. This does not meet WCAG 2.1 success criteria 4.2.6 (Headings) and 1.3.1 (Info & Relationships).
     date: 2021-10-31
-  - description: The icons for ‘turn on alerts’ and ‘increase chat window size’ do not have labels that would make interaction easier for people using voice controls. This does not meet WCAG 2.1 success criterion 2.5.3 (Label in Name)
+  - description: The icons for ‘turn on alerts’ and ‘increase chat window size’ do not have labels that would make interaction easier for people using voice controls. This does not meet WCAG 2.1 success criterion 2.5.3 (Label in Name).
     date: 2021-10-31
-  - description: Some users may see a version of the end of chat survey that has radio buttons which may not function correctly when the user clicks them. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation)
+  - description: Some users may see a version of the end of chat survey that has radio buttons which may not function correctly when the user clicks them. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
     date: 2021-10-31
   - description: For end of chat surveys on NVDA no message or focus is read out after clicking submit. On voiceover for iPad/iOS some user focus is taken to the "Is this page not working properly (opens in a new tab)” link below the CUI frame. On Macbook voiceover, the focus stays on the ‘submit’ button the user clicked to submit the survey. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
     date: 2021-10-31
