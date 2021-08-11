@@ -7,22 +7,32 @@ serviceUrl: /pension-scheme-practitioner
 contactFrontendServiceId: PODS
 complianceStatus: partial
 accessibilityProblems:
-  - page titles do not always match page headers - this may cause issues for users with screen readers
-  - keyboard-only users can't always skip to the main content on a page
-  - screen readers will sometimes jumble up headers and sub headers
-  - some cells in tables are missing audio-only descriptions, which is not good for screen readers
+  - Users encountered timeouts without any indication, or method of prevention.
+  - Users were not provided with instructions on how to input data in a correct format.
+  - Text visually acted as a heading, without being programmatically marked up as a heading.
+  - Users were unable to identify the purpose and destination of a link, from the link text provided.
+  - Radio buttons provided users with expandable content without informing them prior to activation.
+  - Text did not achieve a high enough contrast ratio against the background colour.
+  - No status message was provided for screen reader users when encountering a change of content on a page.
+  - Suggestions to fix errors, were not clear enough for users.
 milestones:
-  - description: The currency input pattern on fields where we ask for monetary amounts is not the latest version and may cause screen reader issues. This will be fixed by adopting the newly approved GDS currency input pattern.
-    date: 2021-06-30
-  - description: There are validation errors on some pages where data inputs are summarised that may cause issues with assistive technology. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships) (A) and 4.1.1 (Parsing) (A). This will be fixed by patching the new pattern.
-    date: 2021-06-30
-  - description: The link focus colour is incorrect in some cards, caused by over-specific style sheet styling. This will be fixed by lowering the specificity of the CSS.
-    date: 2021-06-30
-  - description: Some tables use code that will cause issues with assistive technology. This will be fixed by updating the code used in tables.
-    date: 2021-06-30
-  - description: The spacing between page titles and body text is not always consistent and results in a disjointed user experience. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (A) (Info and Relationships). This will be fixed by using the CSS for styling.
-    date: 2021-06-30
+  - description: The service times out after a while without presenting a way to extend the session time. This doesn’t meet WCAG 2.1 success criterion 2.2.1 (Timing Adjustable). 
+    date: 2021-10-31
+  - description: Search inputs do not always have labels applied to them and do not always give sufficient instruction as to what is required for the input to work. Also, after submitting a search, the focus returns to the start of the page. This means that users who rely on a keyboard alone to navigate have to tab through all previous content to access the search resultsThis doesn’t meet WCAG 2.1 success criterion 3.3.2 (Labels or Instructions) or WCAG 2.1 success criterion 2.4.3 (Focus Order). 
+    date: 2021-10-31
+  - description: Some headings on tables and confirmation pages are either missing or not properly marked up with the correct HTML. This may cause screen reader issues. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships). 
+    date: 2021-10-31
+  - description: Some links, headers and fieldset legends have incorrect or undescriptive content which impacts the ability to navigate the service. This doesn’t meet WCAG 2.1 success criterion 2.4.4 (Link Purpose In Context) or WCAG 2.1 success criterion 1.3.1 (Info and Relationships). 
+    date: 2021-10-31
+  - description: On one page, it is not clear that selecting a radio button reveals additional content. This means that users who rely on audio feedback technologies may be unaware that this content is available. This doesn’t meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value). 
+    date: 2021-10-31
+  - description: The ‘sign out’ link text changes colour on focus. The colours used make the text difficult to read and means the link fails to meet the minimum required contrast ratio. This doesn’t meet WCAG 2.1 success criterion 1.4.3 (Contrast). 
+    date: 2021-10-31
+  - description: Some errors are not clearly indicated within the title, status message or error summary of the page. This can prevent screen reader users from identifying that an error has occurred. This doesn’t meet WCAG 2.1 success criterion 4.1.3 (Status Messages) or WCAG 2.1 success criterion 3.3.3 (Error Suggestion). 
+    date: 2021-10-31
+  - description: Postcode input fields have incorrect or misleading error messages. This can make the completion of these fields difficult. This doesn’t meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion). 
+    date: 2021-10-31
 serviceLastTestedDate: 2020-08-30
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2021-04-30
+statementLastUpdatedDate: 2021-08-11
