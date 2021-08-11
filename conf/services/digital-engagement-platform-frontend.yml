@@ -40,7 +40,7 @@ milestones:
   - description: For end of chat surveys on NVDA no message or focus is read out after clicking submit. On voiceover for iPad/iOS some user focus is taken to the "Is this page not working properly (opens in a new tab)” link below the CUI frame. On Macbook voiceover, the focus stays on the ‘submit’ button the user clicked to submit the survey. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
     date: 2021-10-31
 
-serviceLastTestedDate: 2020-09-20
+serviceLastTestedDate: 2021-07-23
 statementVisibility: public
-statementCreatedDate: 2020-07-06
-statementLastUpdatedDate: 2021-03-31
+statementCreatedDate: 2021-08-09
+statementLastUpdatedDate: 2021-08-11
