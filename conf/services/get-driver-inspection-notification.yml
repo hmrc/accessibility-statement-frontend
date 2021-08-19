@@ -1,0 +1,20 @@
+serviceName: Check if you need to report for an inspection
+serviceDescription: |
+  This service enables drivers and hauliers moving goods by Roll On/Roll Off into Great Britain and Northern Ireland to be notified during their crossing as to whether or not they need to report on arrival for a customs inspection. This service is part of the goods vehicle movement service (GVMS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /driver-inspection-notification
+contactFrontendServiceId: driver-inspection-notification-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - On all pages the ‘Back link’ is present when javascript is disabled. People with cognitive and motor impairments might find it hard to orient themselves within the service.
+  - On the Check if you need to report for an inspection page the language option links in a native language are not pronounced by screen reader correctly. This may result in the user not even being able to tell what it’s saying even if English was understood.
+milestones:
+  - description: On all pages the ’Back link’ is present when javascript is disabled. People with cognitive and motor impairments might find it hard to orient themselves to the This doesn't meet WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context).
+    date: 2021-10-31
+  - description: On the Check if you need to report for an inspection page the language option links in a native language are not pronounced by screen reader correctly. This may result in the user not even being able to tell what it’s saying even if English was understood. This doesn't meet WCAG 2.1 success criterion 3.1.2 Language of Parts.
+    date: 2021-10-31
+serviceLastTestedDate: 2021-06-29
+statementVisibility: public
+statementCreatedDate: 2021-08-03
+statementLastUpdatedDate: 2021-08-18
+
