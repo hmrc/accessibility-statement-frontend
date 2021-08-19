@@ -16,5 +16,5 @@ milestones:
       There is a missing label on the ‘Enter the vehicle registration number’ page, so it has no accessible name. This is a WCAG 2.1 violation: Understanding Success Criterion 4.1.2 Name, Role, Value.
 serviceLastTestedDate: 2020-11-23
 statementVisibility: public
-statementCreatedDate: 2021-08-13
+statementCreatedDate: 2020-11-16
 statementLastUpdatedDate: 2021-08-13
