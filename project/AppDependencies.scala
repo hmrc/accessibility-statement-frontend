@@ -1,6 +1,3 @@
-import play.core.PlayVersion.current
-import play.sbt.PlayImport._
-import sbt.Keys.libraryDependencies
 import sbt._
 
 object AppDependencies {
@@ -8,7 +5,7 @@ object AppDependencies {
 
   val compile = Seq(
     "uk.gov.hmrc" %% "bootstrap-frontend-play-28" % "5.6.0",
-    "uk.gov.hmrc" %% "play-frontend-hmrc"         % "0.82.0-play-28",
+    "uk.gov.hmrc" %% "play-frontend-hmrc"         % "1.0.0-play-28",
     "io.circe"    %% "circe-core"                 % circeVersion,
     "io.circe"    %% "circe-generic"              % circeVersion,
     "io.circe"    %% "circe-parser"               % circeVersion,
