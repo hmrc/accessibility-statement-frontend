@@ -1,8 +1,8 @@
-serviceName: gyfer Gwirio a oes angen i chi fod ar gael i fynychu arolygiad
+serviceName: Gwirio a oes angen i chi fod ar gael i fynychu arolygiad
 serviceDescription: |
   Mae’r gwasanaeth hwn yn galluogi gyrwyr a chludwyr sy’n symud nwyddau drwy ddull gyrru-ymlaen-ac-i-ffwrdd i Brydain Fawr a Gogledd Iwerddon i gael gwybod yn ystod eu taith ynghylch p’un oes angen iddynt fod ar gael i fynychu arolygiad tollau ar ôl cyrraedd ai peidio.  Mae’r gwasanaeth hwn yn rhan o’r gwasanaeth symud cerbydau nwyddau (GVMS).
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /driver-inspection-notification
+serviceUrl: /driver-inspection-notification/start
 contactFrontendServiceId: driver-inspection-notification-frontend
 complianceStatus: partial
 accessibilityProblems:
