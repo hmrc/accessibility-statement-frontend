@@ -1,4 +1,4 @@
-serviceName: ‘gwasanaeth Cael cyfeirnod symud nwyddau’
+serviceName: gwasanaeth Cael cyfeirnod symud nwyddau
 serviceHeaderName: gwasanaeth Cael cyfeirnod symud nwyddau
 serviceDescription: >
   Mae angen cyfeirnod symud nwyddau arnoch i symud nwyddau rhwng Prydain Fawr a gwledydd yn yr Undeb Ewropeaidd a Gogledd Iwerddon. Mae’r gwasanaeth hwn yn rhan o’r Gwasanaeth Symud Cerbydau Nwyddau (GVMS).
@@ -14,5 +14,5 @@ milestones:
       Mae’r dudalen ‘Nodwch rif cofrestru’r cerbyd’ heb label, felly nid oes ganddi enw hygyrch. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.: Maen Prawf Deall Llwyddiant 4.1.2 Name, Role, Value.
 serviceLastTestedDate: 2020-11-23
 statementVisibility: public
-statementCreatedDate: 2021-08-13
+statementCreatedDate: 2020-11-16
 statementLastUpdatedDate: 2021-08-13
