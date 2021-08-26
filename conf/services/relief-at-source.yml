@@ -6,7 +6,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /relief-at-source
 contactFrontendServiceId: RAS
-complianceStatus: partial
+complianceStatus: full
 accessibilityProblems:
   - The page that asks for the member’s date of birth is not structured correctly. This makes it difficult for users with screen readers to navigate through the page and answer the question.
   - On the page that asks for the member’s name, the focus indicator does not have strong enough colour contrast. This can make it difficult for some users to see what is selected.
@@ -18,5 +18,5 @@ milestones:
     date: 2022-02-28
 statementCreatedDate: 2020-09-18
 statementVisibility: public
-statementLastUpdatedDate: 2021-01-20
-serviceLastTestedDate: 2021-01-12
+statementLastUpdatedDate: 2021-08-19
+serviceLastTestedDate: 2021-08-17
