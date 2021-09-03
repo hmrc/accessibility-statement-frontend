@@ -1,5 +1,5 @@
 serviceName: Cofrestru a Chynnal Ystâd
-serviceDescription: This service allows you to register and maintain an estate which has to pay tax.
+serviceDescription: Mae’r gwasanaeth hwn yn caniatáu i chi gofrestru a chynnal ystâd sy’n gorfod talu treth.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /register-an-estate
 contactFrontendServiceId: estates
