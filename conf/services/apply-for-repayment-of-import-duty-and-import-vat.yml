@@ -8,7 +8,7 @@ complianceStatus: partial
 accessibilityProblems:
   - Some error summary links do not move focus to the relevant form elements
   - Additional information is not immediately visible on characters remaining counts
-  - A timeout occurs without prior warning and without the optiogit n of extending the session
+  - A timeout occurs without prior warning and without the option of extending the session
   - A status message is not announced for screen reader users when files are uploading
   - Text spacing is incorrect and does not wrap correctly
 milestones:
