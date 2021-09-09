@@ -17,14 +17,14 @@
 package acceptance.config
 
 import java.net.{ConnectException, HttpURLConnection, URL}
-
 import acceptance.config.AcceptanceTestConfiguration.env
-import org.scalatest.{BeforeAndAfterAll, Matchers, TryValues, WordSpec}
-
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
+import org.scalatest.{BeforeAndAfterAll, TryValues}
 import scala.util.Try
 
 class AcceptanceTestServerSpec
-    extends WordSpec
+    extends AnyWordSpec
     with AcceptanceTestServer
     with Matchers
     with TryValues

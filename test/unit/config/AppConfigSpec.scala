@@ -17,14 +17,15 @@
 package unit.config
 
 import org.mockito.MockitoSugar
-import org.scalatest.{Matchers, WordSpec}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import play.api.Configuration
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{Archived, Draft, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 
-class AppConfigSpec extends WordSpec with Matchers with MockitoSugar {
+class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
 
   "Given a configuration with an array of valid visibilities as strings, visibleStatuses" should {
     "return parsed valid statuses" in {

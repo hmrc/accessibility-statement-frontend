@@ -18,14 +18,16 @@ package it
 
 import java.util.{Calendar, GregorianCalendar}
 
-import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
+import org.scalatest.{BeforeAndAfterEach, EitherValues}
+import org.scalatest.wordspec.AnyWordSpec
+import org.scalatest.matchers.should.Matchers
 import play.api.Application
 import play.api.i18n.Lang
 import play.api.inject.guice.GuiceApplicationBuilder
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
-class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with EitherValues with BeforeAndAfterEach {
+class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with EitherValues with BeforeAndAfterEach {
 
   private val app: Application = new GuiceApplicationBuilder()
     .configure(

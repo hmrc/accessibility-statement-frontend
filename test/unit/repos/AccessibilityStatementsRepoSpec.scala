@@ -18,7 +18,9 @@ package unit.repos
 
 import java.util.{Calendar, GregorianCalendar}
 import org.mockito.MockitoSugar
-import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
+import org.scalatest.{BeforeAndAfterEach, EitherValues}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig, StatementSource}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Archived, Draft, FullCompliance, Public, Visibility}
@@ -28,7 +30,7 @@ import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsS
 import scala.io.Source
 
 class AccessibilityStatementsRepoSpec
-    extends WordSpec
+    extends AnyWordSpec
     with Matchers
     with EitherValues
     with MockitoSugar

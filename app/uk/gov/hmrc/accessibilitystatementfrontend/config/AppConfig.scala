@@ -37,7 +37,7 @@ case class AppConfig @Inject() (
       servicesConfig.getString("contact.frontend.host")
     )
   val reportAccessibilityProblemUrl          =
-    s"$contactFrontendHostUrl/contact/accessibility-unauthenticated"
+    s"$contactFrontendHostUrl/contact/accessibility"
 
   val visibleStatuses: Set[Visibility] = {
     config.getOptional[Seq[String]]("features.visibility") map (_.toSet) match {
