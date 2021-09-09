@@ -17,14 +17,16 @@
 package unit.parsers
 
 import java.util.{Calendar, GregorianCalendar}
-import org.scalatest.{EitherValues, Matchers, WordSpec}
+import org.scalatest.EitherValues
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.io.Source
 
-class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with EitherValues {
+class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers with EitherValues {
   private val parser = new AccessibilityStatementParser
 
   private val fullyAccessibleStatement = AccessibilityStatement(

@@ -22,8 +22,8 @@ import org.openqa.selenium.By
 import collection.JavaConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {
-  feature("Statement page") {
-    scenario(
+  Feature("Statement page") {
+    Scenario(
       "The user visits a statement page for a fully accessible service"
     ) {
       Given("the user does not have welsh language selected")
@@ -58,7 +58,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       }
     }
 
-    scenario(
+    Scenario(
       "The user visits a statement page for a partially accessible service"
     ) {
       Given("the user does not have welsh language selected")
@@ -93,7 +93,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       }
     }
 
-    scenario("The user visits a statement page for a non accessible service") {
+    Scenario("The user visits a statement page for a non accessible service") {
       Given("the user does not have welsh language selected")
       deleteAllCookies
 

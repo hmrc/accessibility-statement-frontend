@@ -17,7 +17,7 @@
 package acceptance.pages
 
 import acceptance.config.BrowserDriver
-import org.scalatest.Matchers
+import org.scalatest.matchers.should.Matchers
 import org.scalatestplus.selenium.{Page, WebBrowser}
 
 trait BasePage extends Matchers with Page with WebBrowser with BrowserDriver {
