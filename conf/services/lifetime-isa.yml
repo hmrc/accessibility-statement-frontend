@@ -1,4 +1,3 @@
-
 serviceName: Lifetime ISA
 serviceHeaderName: Lifetime ISA
 serviceDescription: Lifetime ISA is a savings product that attracts bonus payments from HMRC. They are usually set up by banks and other financial institutions.
@@ -7,43 +6,23 @@ serviceUrl: /lifetime-isa/company-structure
 contactFrontendServiceId: LISA
 complianceStatus: partial
 accessibilityProblems:
-  - when using the service on a small screen, the menu button disappears after it has been clicked
-  - on every page the focus colours are not contrasting enough. This can make the text more difficult to read
-  - on the page where you have to enter a reference number, the field expects a telephone number
-  - on some fields, the autocomplete function is missing. This means you will have to enter your answers manually rather than allowing your browser to fill it in for you 
-  - when entering your company’s reference number, you can only enter an uppercase ‘Z’. The error message says you should enter a lowercase ‘z’. This could be especially confusing if you use a screen reader
-  - on every page the link to the accessibility statement does not allow assistive technologies to easily interpret the content
-  - the link to sign out does not allow assistive technologies to easily interpret the content
-  - there is content in the footer that could be read out by screen readers that should not be there
-  -   there is a logo in the footer that should not be set as a link and a heading
-  - on every page, the back link is included in the main content. This can make it more time consuming to find the main content of the page
-  - on some pages the heading and page title is different
-  - when there is an error on the page, the word ‘error’ does not appear
-  - on some pages, the article tag appears before the heading at the start of the main content. This can make it more difficult for screen readers to locate the main content as it adds more noise
-  - on every page, the back link and the menu toggle appears on the page if you have disabled javascript. However the back link and the menu toggle only work when javascript is enabled. 
-  - the link to ‘Get help with this page’ is not announced when it is actioned. This can be confusing for screen readers.
+  - On the page that asks for your company’s reference numbers, there is a problem with the error messages. If you use a screen reader and face an error, it will be difficult for you to work out what’s gone wrong. You will have to work through the whole page to find the error.
+  - On the check your answers page, the table might be difficult to read if you’re using a screen reader. To avoid this issue, you should use Firefox, Chrome or Safari.
+  - The service does not tell you when it’s about to timeout. This means you won’t know when your data is about to be deleted. It will timeout after x minutes if you’re inactive.
+  - On the page that asks for your company’s details, the fields are not connected. This can make it difficult for users with screen readers to interpret the information and answer the questions.
+  - On the confirmation page, the text is clipped when you’re zoomed in at 200%. This means that users that magnify the page will miss part of the information.
 milestones:
-  - description:  When using the service on a small screen, the menu button disappears after it has been clicked. This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Info and Relationships.
-    date: 2022-02-28        
-  - description:  On every page the focus colours are not contrasting enough. This can make the text more difficult to read.  This fails WCAG 2.1 - Understanding success criterion 1.3.5 Identify Input Purpose.
-    date: 2022-02-28       
-  - description: On the page where you have to enter a reference number, the field expects a telephone number.  This fails WCAG 2.1 - Understanding Success Criterion 1.4.3 Contrast (Minimum).
-    date: 2022-02-28    
-  - description: On some fields, the autocomplete function is missing. This means you will have to enter your answers manually rather than allowing your browser to fill it in for you. This fails WCAG 2.1 - Understanding success criterion 1.3.5 Identify Input Purpose.
-    date: 2022-02-28      
-  - description: When entering your company’s reference number, you can only enter an uppercase ‘Z’. The error message says you should enter a lowercase ‘z’. This could be especially confusing if you use a screen reader. This fails WCAG 2.1 - Understanding success criterion 3.3.3 Error Suggestion.
-    date: 2022-02-28    
-  - description: On every page the link to the accessibility statement does not allow assistive technologies to easily interpret the content. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
-    date: 2022-02-28    
-  - description: The link to sign out does not allow assistive technologies to easily interpret the content. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
-    date: 2022-02-28    
-  - description: There is content in the footer that could be read out by screen readers that should not be there. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
-    date: 2022-02-28    
-  - description: There is a logo in the footer that should not be set as a link and a heading. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
-    date: 2022-02-28    
-  - description: There is content in the footer that could be read out by screen readers that should not be there. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
-    date: 2022-02-28    
-serviceLastTestedDate: 2020-10-22
+  - description: On the page that asks for your company’s reference numbers, there is a problem with the error messages. If you use a screen reader and face an error, it will be difficult for you to work out what’s gone wrong. You will have to work through the whole page to find the error. This fails WCAG 2.1 - Success Criterion 1.3.1 Info and Relationships.
+    date: 2021-09-08
+  - description: On the check your answers page, the table might be difficult to read if you’re using a screen reader. To avoid this issue, you should use Firefox, Chrome or Safari. This fails WCAG 2.1 - Success Criterion 4.1.1 Parsing.
+    date: 2021-09-08
+  - description: The service does not tell you when it’s about to timeout. This means you won’t know when your data is about to be deleted. It will timeout after 15 minutes if you’re inactive. This fails WCAG 2.1 - Success Criterion 2.2.1 Timing Adjustable.
+    date: 2021-09-08
+  - description: On the page that asks for your company’s details, the fields are not connected. This can make it difficult for users with screen readers to interpret the information and answer the questions.  This fails WCAG 2.1 - Success Criterion 1.3.1 Info and Relationships.
+    date: 2021-09-08
+  - description: On the confirmation page, the text is clipped when you’re zoomed in at 200%. This means that users that magnify the page will miss part of the information. This fails WCAG 2.1 - Success Criterion 1.4.4 Resize text.
+    date: 2021-09-08
 statementVisibility: public
+serviceLastTestedDate: 2021-09-07
 statementCreatedDate: 2020-09-07
-statementLastUpdatedDate: 2020-10-28
+statementLastUpdatedDate: 2021-09-08
