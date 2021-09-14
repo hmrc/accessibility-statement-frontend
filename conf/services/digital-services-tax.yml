@@ -5,57 +5,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /digital-services-tax
 contactFrontendServiceId: digital-services-tax
-complianceStatus: partial
-accessibilityProblems:
-  - On the ‘Contact person’s details’ page, the phone number field does not have an input type,
-    which may cause issues for people using a screen reader.
-  - Some of the page titles in the service are not descriptive, which may cause difficulty
-    for blind users who have multiple tabs open.
-  - The ‘Contact person’s details’ section of the ‘Check your answers’ page when registering
-    may cause difficulty for screen reader users.
-  - The ‘Change’ links on the ‘Check your answers’ page when submitting a return do not function as expected.
-  - The required format for entering numbers is not available to users of assistive technology.
-  - The timeout feature of the service may cause issues for screen reader users using JAWS and NVDA.
-  - The ‘Contact person’s details’ page does not use an autocomplete attribute to allow users to
-    fill in this information automatically.
-  - Some error messages within the service are not descriptive, which may prevent some users
-    from understanding what they need to correct.
-  - The colour used for the focus indicator on form elements does not meet the minimum required contrast ratio of 3:1.
-  - When submitting a return, the ‘Company details’ page does not have an error summary or error skip links,
-    and some fields do not have matching inline error validation messages.
-milestones:
-  - description: On the ‘Contact person’s details’ page, the phone number field does not have an input type, which may
-      cause issues for people using a screen reader. This does not meet WCAG Success Criterion 4.1.2 (Name, Role, Value).
-    date: 2021-09-02
-  - description: Some of the page titles in the service are not descriptive, which may cause difficulty for blind users
-      who have multiple tabs open. This does not meet WCAG 2.1 success criterion 2.4.2 (Page Titled).
-    date: 2021-09-02
-  - description: The ‘Contact person’s details’ section of the ‘Check your answers’ page when registering may cause
-      difficulty for screen reader users. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2021-09-02
-  - description: The ‘Change’ links on the ‘Check your answers’ page when submitting a return do not function as
-      expected. This does not meet WCAG Success Criterion 4.1.2 (Name, Role, Value).
-    date: 2021-09-02
-  - description: The required format for entering numbers is not available to users of assistive technology.
-      This does not meet WCAG Success Criterion 3.3.2 (Labels or Instructions).
-    date: 2021-09-02
-  - description: The timeout feature of the service may cause issues for screen reader users using JAWS and NVDA.
-      This does not meet WCAG Success Criterion 4.1.2 (Name, Role, Value).
-    date: 2021-09-02
-  - description: The ‘Contact person’s details’ page does not use an autocomplete attribute to allow users to fill
-      in this information automatically. This does not meet WCAG Success Criterion 1.3.5 (Identify Input Purpose).
-    date: 2021-09-02
-  - description: Some error messages within the service are not descriptive, which may prevent some users from
-      understanding what they need to correct. This does not meet WCAG Success Criterion 3.3.3 (Error Suggestion).
-    date: 2021-09-02
-  - description: The colour used for the focus indicator on form elements does not meet the minimum required contrast
-      ratio of 3:1. This does not meet WCAG Success Criterion 1.4.11 (Non-text Contrast).
-    date: 2021-09-02
-  - description: When submitting a return, the ‘Company details’ page does not have an error summary or error
-      skip links, and some fields do not have matching inline error validation messages.
-      This does not meet WCAG Success Criterion 3.3.3 (Error Suggestion).
-    date: 2021-09-02
-serviceLastTestedDate: 2020-03-18
+complianceStatus: full
+serviceLastTestedDate: 2021-08-30
 statementVisibility: public
 statementCreatedDate: 2020-04-01
-statementLastUpdatedDate: 2020-04-01
+statementLastUpdatedDate: 2021-09-14
