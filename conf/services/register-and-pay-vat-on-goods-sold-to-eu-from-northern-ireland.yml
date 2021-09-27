@@ -6,12 +6,12 @@ serviceUrl: /pay-vat-on-goods-sold-to-eu/northern-ireland-register
 contactFrontendServiceId: one-stop-shop-registration-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - description: Screen reader users will find it hard to understand the meaning of change links on the sales pages, as information about which country the sales are going to is missing.
-  - description: When entering a long string of text it does not break to fit the container it is being added to, so it will overflow. Users will have to scroll horizontally to read it. This will also be a problem if the text size is increased. Additionally, seeing it will be difficult as it is white text against a pale background.
+  - Change links on the sales pages do not include the country name. Screen reader users will find them hard to understand.
+  - Text boxes have poor colour contrast of white text on a pale background. Text boxes do not contain long strings of text correctly, especially when the text size is increased.
 milestones:
-  - description: Visually hidden text for 'Change' and 'remove' links missing country of goods departure and renders backend code instead. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose
+  - description: Visually hidden text for 'Change' and 'remove' links do not include country of goods departure, and renders the code instead. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose.
     date: 2021-11-01
-  - description: Copy on confirmation banner missing text wrapping CSS properties, what causes issues when the text font size increased. This fails WCAG 2.1 success criterion 1.4.4 Resize text
+  - description: Confirmation banner is missing text wrapping CSS properties. This causes issues when the font size is increased. This fails WCAG 2.1 success criterion 1.4.4 Resize text.
     date: 2021-11-01
 serviceLastTestedDate: 2021-09-22
 statementVisibility: public
