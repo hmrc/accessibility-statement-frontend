@@ -11,7 +11,6 @@ accessibilityProblems:
   - mae’r PDFs yn cynnwys delweddau heb destun amgen
   - mae rhai PDFs yn cynnwys rhifau tudalennau anghywir yn y troedyn
   - wrth ddewis y cysylltiad lawrlwytho, mae dogfennau’n lawrlwytho i’r ddyfais ond nid ydynt bob amser yn agor o fewn y porwr
-  - Bydd y gwasanaeth yn dod â sesiwn y defnyddiwr i ben heb roi’r dewis iddo o ymestyn y sesiwn.
   - O ran y meysydd ar gyfer y cyfeiriad e-bost a’r cyfeiriad, efallai na chaiff y defnyddiwr yr opsiwn o lenwi’r meysydd hyn ar sail data a gadwyd yn y porwr yn flaenorol.
   - Wrth newid i’r Gymraeg, nid yw’r cysylltiad syth ymlaen na’r cysylltiad allgofnodi wedi’u cyfieithu ac maent yn parhau i fod yn Saesneg.
 milestones:
@@ -23,8 +22,6 @@ milestones:
     date: 2021-08-31
   - description: Mae dogfennau PDF yn cael eu lawrlwytho, ond nid ydynt yn agor mewn tab newydd. Ni roddir gwybod am yr ymddygiad hwn yn nhestun y cysylltiad lawrlwytho gweladwy. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose In Context) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2021-08-31
-  - description: Pan mae’r sesiwn ar fin dod i ben, ni chaiff y defnyddiwr yr opsiwn o ymestyn ei sesiwn, ac nid oes rhybudd bod y sesiwn ar fin rhedeg allan o amser. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2021-08-31
   - description: O ran y meysydd mewnbwn ar gyfer y cyfeiriad a’r cyfeiriad e-bost, mae’r priodoleddau awtogwblhau ar goll, ac efallai y bydd hyn yn golygu na fydd y defnyddiwr yn gallu defnyddio’r data a gadwyd gan y porwr er mwyn llenwi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
     date: 2021-08-31
   - description: Pan gaiff y dudalen ei dangos yn Gymraeg, mae rhai cysylltiadau’n ymddangos yn Saesneg, ac nid oes ganddynt y briodoledd iaith berthnasol i ddangos eu bod mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of Parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
@@ -32,4 +29,4 @@ milestones:
 serviceLastTestedDate: 2021-04-12
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2021-05-04
+statementLastUpdatedDate: 2021-09-08

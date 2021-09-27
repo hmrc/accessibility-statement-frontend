@@ -1,0 +1,11 @@
+serviceName: Disclose an underpayment of Customs Duty or import VAT
+serviceDescription: |
+  Importers and their representatives can use this service to tell HMRC about underpayments of customs duty, excise duty and import VAT. The service can only be used for import declarations that were originally made using CHIEF.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /disclose-import-taxes-underpayment
+contactFrontendServiceId: import-voluntary-disclosure
+complianceStatus: full
+serviceLastTestedDate: 2021-07-19
+statementVisibility: public
+statementCreatedDate: 2021-07-21
+statementLastUpdatedDate: 2021-07-21

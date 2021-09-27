@@ -17,18 +17,19 @@
 package it
 
 import org.scalatest.TryValues
-import org.scalatestplus.play.PlaySpec
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 
 import scala.util.Try
 
-class RepositoryISpec extends PlaySpec with GuiceOneAppPerSuite with TryValues {
+class RepositoryISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
   "the repository" should {
     "instantiate without error" in {
       val repository = Try(app.injector.instanceOf[AccessibilityStatementsRepo])
 
-      repository must be a 'success
+      repository should be a 'success
     }
   }
 }

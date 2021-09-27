@@ -19,7 +19,8 @@ package unit.controllers
 import play.api.inject.bind
 import helpers.TestAccessibilityStatementRepo
 import org.jsoup.Jsoup
-import org.scalatest.{Matchers, WordSpec}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import play.api.http.Status
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
@@ -31,7 +32,7 @@ import play.api.Application
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.mvc.Cookie
 
-class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
+class StatementControllerSpec extends AnyWordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
   private val fakeRequest  = FakeRequest("GET", "/")
   private val welshRequest = fakeRequest.withCookies(
     Cookie(

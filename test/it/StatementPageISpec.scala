@@ -17,7 +17,8 @@
 package it
 
 import helpers.TestAccessibilityStatementRepo
-import org.scalatest.{Matchers, WordSpecLike}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.Application
 import play.api.inject.bind
@@ -26,7 +27,7 @@ import play.api.test.FakeRequest
 import play.api.test.Helpers.{GET, route, _}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 
-class StatementPageISpec extends WordSpecLike with Matchers with GuiceOneAppPerSuite {
+class StatementPageISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite {
 
   override lazy val app: Application = new GuiceApplicationBuilder()
     .configure(

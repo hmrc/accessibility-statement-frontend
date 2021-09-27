@@ -1,0 +1,12 @@
+serviceName: Digital Services Tax
+serviceDescription: |
+  This service enables you to register for the Digital Services Tax and
+  submit a return if you’re registered for the tax.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /digital-services-tax
+contactFrontendServiceId: digital-services-tax
+complianceStatus: full
+serviceLastTestedDate: 2021-08-30
+statementVisibility: public
+statementCreatedDate: 2020-04-01
+statementLastUpdatedDate: 2021-09-14

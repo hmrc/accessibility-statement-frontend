@@ -1,102 +1,39 @@
-serviceName: Gwiriwch eich cymhwystra i gael Lwfans Priodasol
-serviceHeaderName: Gwiriwch a ydych yn gymwys i gael Lwfans Priodasol
-serviceDescription: Cymhwystra Lwfans Priodasol
+serviceName: Gwneud cais am Lwfans Priodasol
+serviceHeaderName: Gwneud cais am Lwfans Priodasol
+serviceDescription: Mae Lwfans Priodasol yn caniatáu i chi drosglwyddo cyfran o’ch Lwfans Personol (incwm sy’n rhydd o dreth) i’ch gŵr, gwraig neu bartner sifil fel y gallant dalu llai o dreth. Mae’r gwasanaeth hwn yn caniatáu i chi wneud cais am Lwfans Priodasol, gan gynnwys ar gyfer blynyddoedd treth blaenorol, drwy wirio’ch cymhwystra a’ch statws priodasol.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /browse/tax/marriage-allowance
 contactFrontendServiceId: marriage-allowance
-complianceStatus: partial
+complianceStatus: noncompliant
 accessibilityProblems:
-  - nid yw rhai o’r botymau yn ddigon disgrifiadol i ddarllenwyr sgrin, ac nid ydynt yn gwneud synnwyr y tu allan i’w cyd-destun. Rydym yn bwriadu newid y botymau fel eu bod yn cyfeirio’n ôl at y cwestiwn a ofynnir.
-  - nid yw rhai gwerthoedd rhifol yn cael eu diweddaru yn ôl yr union swm sydd ei angen i ateb y cwestiwn. Byddwn yn diweddaru’r gwerth rhifol felly nid yw bellach ond yn darllen ‘0’ ar gyfer darllenwyr sgrin.
-  - disgrifir ychydig o gwestiynau fel cyfres o lythrennau a symbolau ar ddarllenwyr sgrin, yn hytrach na geiriau. Yn y dyfodol, rydym yn bwriadu gwirio pob llinell o destun disgrifiadol, a’u hailysgrifennu i drwsio hyn.
-  - nid yw rhai tudalennau’n darllen y testun gwall ar gyfer pobl sy’n defnyddio darllenwyr sgrin. Byddwn yn trwsio hyn fel bod y gwallau yn llwytho ac yn cael eu darllen yn uchel gyda gweddill y dudalen.
-  - mae rhai cwestiynau yn wahanol yn weledol i’r geiriau a ddarllenir gan ddarllenydd sgrin. Byddwn yn trwsio hyn drwy wirio pob cwestiwn gweledol a chwestiwn disgrifiedig, a sicrhau eu bod yn cyfateb.
-  - mae rhai o deitlau’r tudalennau a gwybodaeth am y tudalennau yn cael eu darllen yn uchel ddwywaith gan ddarllenwr sgrin oherwydd nad yw’r dyluniadau’n dilyn patrwm gov.uk. Byddwn yn trwsio hyn fel bod yr wybodaeth i gyd yn cael ei darllen yn uchel unwaith yn unig, ac yn y cyd-destun cywir.
+  - Ar sawl tudalen, nid yw’r allweddi ar gyfer y botymau radio yn ddigon disgrifiadol a gall hyn achosi dryswch i ddarllenwyr sgrin.
+  - Ar sawl tudalen, mae teitlau tudalen sydd wedi’u dyblygu a gall hyn achosi anhawster i ddarllenwyr sgrin sydd angen teitlau tudalen unigryw i’w galluogi i adnabod y dudalen yn gywir.
+  - Nid oes gan rai tudalennau lle mae angen i ddefnyddwyr nodi dyddiad allwedd a gall hyn achosi problemau i ddarllenwyr sgrin. Bydd yn anodd cysylltu’r maes mewnbynnu dyddiad â’r cwestiwn sy’n cael ei ofyn gan na fydd yn cael ei ddarllen gan y darllenydd sgrin.
+  - Ar sawl tudalen, nid oes negeseuon statws ar fotymau radio y gellir eu hehangu. Gall hyn achosi problemau i ddarllenwyr sgrin gan fod angen rhoi gwybod iddynt pan fydd elfennau y gellir eu hehangu yn ymddangos.
+  - Drwy gydol y gwasanaeth, nid yw’r ffordd y cyflwynir negeseuon gwallau yn glir i ddefnyddwyr. Gall hyn achosi problemau wrth nodi’r mater a’i gywiro.
 milestones:
   - description: |
-      Nid yw’r botwm sy’n nodi dim diolch yn y gwiriadau cymhwystra yn ddigon disgrifiadol i ddarllenwyr sgrin.
-      Nid yw hyn yn bodloni 4.1.2 (Name, Role, Value (Level A) Understanding Name, Role, Value, How to Meet Name, Role, Value), Canllawiau Hygyrchedd Cynnwys y We. 
-      Rydym yn bwriadu trwsio’r gwall hwn ac ychwanegu cymaint o gyd-destun â phosibl at ein botymau.
+      Ar sawl tudalen, nid yw’r allwedd a ddarperir yn ddisgrifiadol. Gall hyn fod yn ddryslyd i ddarllenwyr sgrin gan nad yw’n glir i beth mae'r cynnwys yn perthyn a pham y cafodd ei ddefnyddio.
+      Gall hyn hefyd fod yn ddryslyd i ddefnyddwyr gan nad ydynt yn gwneud synnwyr allan o’u cyd-destun.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1  Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Information and relationships.
     date: 2021-07-31
   - description: |
-      Ar rai tudalennau, mae’n bosibl na fydd y botymau radio yn gwneud synnwyr y tu allan i’w cyd-destun. 
-      Mae’n bosibl nad yw’n glir pa gwestiwn y mae’r botymau radio yn cyfeirio ato. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, 
-      How to Meet Info and Relationships), Canllawiau Hygyrchedd Cynnwys y We 
-      Rydym yn bwriadu grwpio’r prif gwestiwn gyda’r botymau cywir wrth adeiladu’r dudalen.
+      Ar y dudalen lle mae dewis dyddiad y briodas neu ffurfio’r bartneriaeth sifil, nid oes gan y meysydd allwedd. Gall hyn achosi problemau i ddarllenwyr sgrin oherwydd efallai na fyddant yn gallu dweud beth mae’r meysydd yn ymwneud ag ef y tu allan i’r cyd-destun.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Information and relationships.
     date: 2021-07-31
   - description: |
-      Mae rhai cwestiynau gyda gwerthoedd rhifol ond yn darllen rhif 0 ar gyfer pobl sy’n defnyddio darllenwyr sgrin, waeth beth fo’r swm. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, 
-      How to Meet Info and Relationships), Canllawiau Hygyrchedd Cynnwys y We 
-      Rydym yn bwriadu trwsio hyn, fel y bydd y darllenydd sgrin yn darllen y gwerth rhifol gwirioneddol ar y dudalen.
+      Drwy gydol y gwasanaeth, caiff teitlau tudalennau eu dyblygu ar draws sawl tudalen sy’n golygu efallai na fydd darllenwyr sgrin yn deall eu bod ar dudalen newydd os ydynt yn symud drwy dabiau.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.2 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Page titled.
     date: 2021-07-31
   - description: |
-      Ar rai tudalennau, darllenir y botymau radio fel cyfres o lythrennau a symbolau yn lle geiriau, a all ddrysu defnyddwyr darllenwyr sgrin. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, 
-      Sut i Gyfarfod Gwybodaeth a Pherthynas 
-      Rydym yn bwriadu gwneud yn siŵr bod y testun yn amlwg i’w ddarllen gan ddarllenwyr sgrin gyda bylchau rhwng geiriau, yn hytrach nag atalnodi.
+      Ar y tudalen  ‘A ydych yn briod neu mewn partneriaeth sifil?’, mae neges statws yn ymddangos ar ôl dewis ‘Na’ heb roi gwybod i ddarllenwyr sgrin. Bydd hyn yn broblem i ddarllenwyr sgrin sy’n pori allan o’u cyd-destun.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.3 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Status messages.
     date: 2021-07-31
   - description: |
-      Pan fo’r dudalen yn llwytho neges wall, ni fydd rhai negeseuon gwall (gyda gwybodaeth angenrheidiol) yn cael eu disgrifio’n awtomatig i bobl sy’n defnyddio darllenwyr sgrin. 
-      Nid yw hyn yn bodloni 4.1.3 (Status Messages (Level AA) Understanding Status Messages, How to Meet Status Messages), Canllawiau Hygyrchedd Cynnwys y We. 
-      Rydym yn bwriadu gwneud yn siŵr bod pob neges wall yn cael ei dangos a’i disgrifio cyn gynted â bod y gwall yn llwytho.
+      Ar y dudalen cadarnhau blynyddoedd treth cynharach, nid yw’r ffordd y mae’r gwallau’n cael eu trin yn ddisgrifiadol. Mae hyn yn ei gwneud yn anodd i ddarllenwyr sgrin ddeall beth mae’r neges gwall yn ymwneud ag ef.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.3 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Error suggestion.
     date: 2021-07-31
-  - description: |
-      Mae’r gwasanaeth Lwfans Priodasol yn llwytho’r un teitl dros nifer o dudalennau, sy’n golygu bod defnyddwyr darllenwyr sgrin yn cael yr un dudalen ei darllen dwywaith neu fwy.
-      Nid yw hyn yn bodloni 4.1.3 (Status Messages (Level AA) Understanding Status Messages, How to Meet Status Messages), Canllawiau Hygyrchedd Cynnwys y We. 
-      Rydym yn bwriadu gwneud yn siŵr bod pob neges wall yn cael ei dangos a’i disgrifio cyn gynted â bod y dudalen yn llwytho.
-    date: 2021-07-31
-  - description: |
-      Mae rhai tudalennau’n colli negeseuon gwall ar ddarllenwyr sgrin, pan fydd y gwall i’w weld ar y dudalen. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, 
-      How to Meet Info and Relationships), Canllawiau Hygyrchedd Cynnwys y We 
-      Rydym yn bwriadu gwneud yn siŵr bod pob neges wall yn cael ei dangos a’i disgrifio cyn gynted â bod y dudalen yn llwytho.
-    date: 2021-07-31
-  - description: |
-      Mae rhai tudalennau’n darllen cwestiwn gwahanol ar ddarllenwyr sgrin, yn hytrach na’r cwestiwn a ddangosir ar y dudalen. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, 
-      How to Meet Info and Relationships), Canllawiau Hygyrchedd Cynnwys y We 
-      Byddwn yn gwneud yn siŵr bod pob cwestiwn yn cyfateb yn weledol ac o fewn testun y darllenydd sgrin.
-    date: 2021-07-31
-  - description: |
-      Mae rhai cwestiynau’n cyfeirio at ‘y flwyddyn dreth hon’ yn hytrach na blwyddyn dreth benodol, nad yw’n gwneud synnwyr y tu allan i’w cyd-destun. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, 
-      How to Meet Info and Relationships), Canllawiau Hygyrchedd Cynnwys y We 
-      Rydym yn bwriadu golygu’r holl gwestiynau fel eu bod yn rhoi cyd-destun priodol i’r cwestiwn, yn hytrach na gofyn i’r defnyddiwr ddyfalu cyd-destun.
-    date: 2021-07-31
-  - description: |
-      Mae rhai tudalennau’n darllen cwestiwn gwahanol ar ddarllenwyr sgrin yn hytrach na’r cwestiwn sydd i’w weld ar y dudalen. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships, 
-      How to Meet Info and Relationships), Canllawiau Hygyrchedd Cynnwys y We 
-      Byddwn yn gwneud yn siŵr bod pob cwestiwn yn cyfateb yn weledol ac o fewn testun y darllenydd sgrin.
-    date: 2021-07-31
-  - description: |
-      Caiff teitlau eu dyblygu ar draws sawl tudalen, sy’n golygu y bydd darllenwyr sgrin yn darllen yr un teitl ar gyfer gwahanol dudalennau (nad ydynt o reidrwydd yn gysylltiedig). 
-      Nid yw hyn yn bodloni 2.4.2 ((Level A) Understanding Page Titled How to Meet Page Titled), Canllawiau Hygyrchedd Cynnwys y We. Byddwn yn creu teitlau newydd ar gyfer pob tudalen, gan osgoi drysu defnyddwyr darllenwyr sgrin.
-    date: 2021-07-31
-  - description: |
-      Caiff teitlau eu dyblygu ar draws sawl tudalen, sy’n golygu y bydd darllenwyr sgrin yn darllen yr un teitl ar gyfer gwahanol dudalennau (nad ydynt o reidrwydd yn gysylltiedig). 
-      Nid yw hyn yn bodloni 2.4.2 (Page Titled (Level A) 
-      Understanding Page Titled How to Meet Page Titled), Canllawiau Hygyrchedd Cynnwys y We 
-      Byddwn yn creu teitlau newydd ar gyfer pob tudalen, gan osgoi drysu defnyddwyr darllenwyr sgrin.
-    date: 2021-07-31
-  - description: |
-      Nid yw rhai cysylltiadau yn ddisgrifiadol ar gyfer darllenwyr sgrin, er enghraifft cael nifer o fotymau newid ar yr un dudalen. Nid yw’n glir pa gysylltiad newid sy’n mynd i ba wasanaeth. 
-      Nid yw hyn yn bodloni 2.4.4 (Link Purpose – In Context – (Level A) Understanding Link Purpose (In Context) How to Meet Link Purpose (In Context)) a 2.4.9 (Link Purpose – Link Only – (Level AAA) Understanding Link Purpose (Link Only) How to Meet Link Purpose (Link Only)), Canllawiau Hygyrchedd Cynnwys y We 
-      Rydym yn bwriadu ychwanegu cyd-destun at y cysylltiadau hyn, fel y gall defnyddiwr darllenydd sgrin wybod pa gysylltiad newid sy’n mynd i ba wasanaeth.
-    date: 2021-07-31
-  - description: |
-      Nid oes angen i ddarllenwyr sgrin ddisgrifio rhai delweddau oherwydd bod y teitl yn darllen yr un ddelwedd. Er enghraifft, cais am Lwfans Priodasol yn llwyddiannus. 
-      Nid yw hyn yn bodloni 1.1.1 (Non-text Content (Level A) Understanding Non-text Content How to Meet Non-text Content), Canllawiau Hygyrchedd Cynnwys y We 
-      Byddwn yn dileu rhai delweddau a’u testun disgrifiadol, oherwydd bod teitl y dudalen eisoes yn darllen hyn.
-    date: 2021-07-31
-  - description: |
-      Nid yw rhai tablau’n dilyn patrwm dylunio gov.uk, ac efallai y bydd yn anodd gwneud newidiadau gyda darllenydd sgrin. 
-      Nid yw hyn yn bodloni 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships| How to Meet Info and Relationships), Canllawiau Hygyrchedd Cynnwys y We 
-      Byddwn yn diweddaru tablau yn unol â phatrwm dylunio gov.uk, a dylai hynny ei gwneud yn haws i ddefnyddwyr darllenwyr sgrin wneud newidiadau.
-    date: 2021-07-31
-serviceLastTestedDate: 2020-03-27
+serviceLastTestedDate: 2021-04-23
 statementVisibility: public
 statementCreatedDate: 2020-10-01
-statementLastUpdatedDate: 2020-10-20
+statementLastUpdatedDate: 2021-06-02

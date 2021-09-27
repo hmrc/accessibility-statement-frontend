@@ -42,7 +42,7 @@ milestones:                             # If there are no issues do not include 
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
 serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
-statementVisibility: public             # If set to public, the statement will be visible in production
+statementVisibility: public             # If set to public, the statement will be visible in production. One of: public|draft|archived.
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
@@ -70,7 +70,7 @@ The filename can contain only lower case letters, dashes or numbers, and the fil
 
 ## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
-and run the unit and integration tests locally as described below.
+and run the integration tests with `sbt it:test` as described below.
 
 If your team would like repository write access to create branches and submit PRs without forking the repository, contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). Having write access will mean your team will receive alerts regarding production deployments.
 
@@ -181,11 +181,28 @@ Navigate to the desired accessibility statement e.g. http://localhost:12346/acce
 where disguised-remuneration is the filename of the accessibility statement YAML file with the language and yaml suffix
 removed.
 
-## Running unit and integration tests
+## Running unit tests
 
 ```
-sbt test it:test
+sbt a11yTest
 ```
+
+The above tests include accessibility checks via the
+[sbt-accessibility-linter](https://www.github.com/hmrc/sbt-accessibility-linter)
+plugin. This plugin requires Node.js v12 or above to be installed locally.
+
+If you are a member of a service team, contributing a new accessibility statement, it's not necessary
+to run these tests before opening a PR.
+
+## Running the integration tests
+
+```
+sbt it:test
+```
+
+The integration tests are responsible for enforcing a number of business rules for accessibility statements via
+[test/it/ServicesISpec.scala](). For this reason, it's recommended that service teams run these tests before
+opening a PR.
 
 ## Generating a report
 

@@ -1,0 +1,13 @@
+serviceName: Job Retention Scheme calculator
+serviceHeaderName: Job Retention Scheme calculator
+contactFrontendServiceId: jrsc
+serviceDescription: |
+  You can use this calculator to work out the figures you’ll need when you
+  complete an online claim through the Job Retention Scheme.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /job-retention-scheme-calculator
+complianceStatus: full
+statementVisibility: public
+serviceLastTestedDate: 2020-05-05
+statementCreatedDate: 2020-08-03
+statementLastUpdatedDate: 2020-08-03

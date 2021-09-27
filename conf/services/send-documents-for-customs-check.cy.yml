@@ -1,0 +1,12 @@
+serviceName: Anfon dogfennau i’w gwirio gan y tollau
+serviceHeaderName: Anfon dogfennau i’w gwirio gan y tollau
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn caniatáu i chi anfon dogfennau ar gyfer gwiriad tollau
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /send-documents-for-customs-check
+contactFrontendServiceId: send-documents-for-customs-check
+complianceStatus: full
+serviceLastTestedDate: 2021-07-28
+statementVisibility: public
+statementCreatedDate: 2021-07-28
+statementLastUpdatedDate: 2021-07-28
