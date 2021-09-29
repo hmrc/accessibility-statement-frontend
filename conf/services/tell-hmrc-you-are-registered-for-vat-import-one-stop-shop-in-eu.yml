@@ -1,7 +1,7 @@
 serviceName: Tell HMRC you are registered for the VAT Import One Stop Shop in the EU
 serviceHeaderName: Tell HMRC you are registered for the VAT Import One Stop Shop in the EU
 serviceDescription: |
-  Use this service to tell HMRC your VAT IOSS registration number if you have registered for the VAT Import One Stop Shop (IOSS) in the EU.
+  Use this service to tell HMRC about VAT IOSS registration numbers if you have registered for the VAT Import One Stop Shop (IOSS) in the EU.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/tell-hmrc-you-are-registered-for-vat-import-one-stop-shop-in-eu
 contactFrontendServiceId: GForm
