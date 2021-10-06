@@ -1,0 +1,24 @@
+serviceName: Rhowch wybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
+serviceHeaderName: Rhowch wybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
+serviceDescription: |
+  Defnyddiwch y ffurflen hon i roi gwybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/tell-hmrc-your-organisation-has-stopped-trading-or-has-never-traded
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2021-09-30
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2021-09-30
+serviceLastTestedDate: 2021-10-05
+statementVisibility: public
+statementCreatedDate: 2020-10-05
+statementLastUpdatedDate: 2021-10-05
