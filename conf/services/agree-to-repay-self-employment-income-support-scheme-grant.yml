@@ -1,9 +1,9 @@
-serviceName: Ask the Adjudicator's Office to investigate a complaint or review a decision
-serviceHeaderName: Ask the Adjudicator's Office to investigate a complaint or review a decision
+serviceName: Agree to repay Self-Employment Income Support Scheme (SEISS) grant
+serviceHeaderName: Agree to repay Self-Employment Income Support Scheme (SEISS) grant
 serviceDescription: |
-  Use this form to ask the Adjudicator's Office to investigate a complaint or review a decision.
+  Use this form to agree to repay Self-Employment Income Support Scheme (SEISS) grant.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/adjudicators-office-complaint-or-review-auth
+serviceUrl: /submissions/new-form/agree-to-repay-self-employment-income-support-scheme-grant
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -18,7 +18,7 @@ milestones:
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2021-09-30
-serviceLastTestedDate: 2021-04-26
+serviceLastTestedDate: 2021-10-08
 statementVisibility: public
-statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2021-04-26
+statementCreatedDate: 2021-10-08
+statementLastUpdatedDate: 2021-10-08
