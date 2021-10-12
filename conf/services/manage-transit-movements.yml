@@ -4,72 +4,22 @@ serviceDescription:
   The Common Transit Convention (CTC) is a treaty between EU member states and other countries for the transit of goods.
   The goods can pass through different customs regimes without them having to be declared at every border. This service processes those transit movements.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl:  /manage-transit-movements
+serviceUrl: /manage-transit-movements
 contactFrontendServiceId: http://tax.service.gov.uk/manage-transit-movements/what-do-you-want-to-do
 complianceStatus: partial
 accessibilityProblems:
-  - When the ‘sign out’ link has focus there is not enough contrast for some users to make out the text.
-  - Some fields, such as addresses, do not have any autocomplete attributes. These help users enter details more than once or to assist with future entries.
-  - When some of the country fields have focus there is not enough contrast. Some users will not know which element has keyboard focus.
-  - The tables on some pages are visual only. The column headings do not appear to have a relationship to the content aligned below them.
-  - The mobile version of some pages have no styling applied. This makes the content difficult to read. The headings appear to have no visual relationship to the content either. Some links appear to be a single link.
-  - The change links have repeated content. It will read to screen readers as “change change answers”. Some link texts are not specific enough and could apply to anything. The position of some links appear before the data. Some users will have to backtrack to select it, once they have heard all the data.
-  - Some of the visually-hidden support links in the footer are in Welsh when the rest of the page is in English. They do not have the right language mark-up to read it out in Welsh.
-  - All country autocomplete fields should let users know the number of results. This is not working for Mac Voiceover users.
-  - Some of the page titles and heading level 1 names do not match.
-  - On some pages the input field is missing a label. Also, the hint messaging is not associated with the input.
-  - The change link for consignee EORI confirmation does not include the correct information.
-  - When users input values using Voice Control, it inserts a leading space.
+  - The label for the place of declaration is from a different page. Screen-reader users will be presented with the wrong information and voice-recognition users may struggle with referencing the component.
+  - The legend for removing official customs seals does not describe the purpose of each selection available when screen-reader users navigate the page ‘out of context’.
 milestones:
-  - description: |
-      When the ‘sign out’ link has focus there is not enough contrast for some users to make out the text.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.4.11: Non-text contrast and 2.4.7: Focus visible.
-    date: 2021-09-30
-  - description: |
-      Some fields, such as addresses, do not have any autocomplete attributes. These help users enter details more than once or to assist with future entries.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.3.5: Identify input purpose.
-    date: 2021-09-30
-  - description: |
-      When some of the country fields have focus there is not enough contrast. Some users will not know which element has keyboard focus.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.4.11 Non-text contrast and 2.4.7 Focus visible.
-    date: 2021-09-30
-  - description: |
-      The tables on some pages are visual only. The column headings do not appear to have a relationship to the content aligned below them.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Information and relationships.
-    date: 2021-09-30
-  - description: |
-      The mobile version of some pages have no styling applied. This makes the content difficult to read. The headings appear to have no visual relationship to the content either. Some links appear to be a single link.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.4.10 Reflow and 2.5.8 Pointer target spacing.
-    date: 2021-09-30
-  - description: |
-      The change links have repeated content. It will read to screen readers as “change change answers”. Some link texts are not specific enough and could apply to anything. The position of some links appear before the data. Some users will have to backtrack to select it, once they have heard all the data.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Information and relationships, 1.3.2 Meaningful sequence and 2.4.4 Link purpose (in context).
-    date: 2021-09-30
-  - description: |
-      Some of the visually-hidden support links in the footer are in Welsh when the rest of the page is in English. They do not have the right language mark-up to read it out in Welsh.
-      This fails WCAG 2.1 - Understanding Success Criterion 3.1.2 Language of parts.
-    date: 2021-09-30
-  - description: |
-      All country autocomplete fields should let users know the number of results. This is not working for Mac Voiceover users.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Information and relationships and 4.1.3 Status messages.
-    date: 2021-09-30
-  - description: |
-      Some of the page titles and heading level 1 names do not match.
-      This fails WCAG 2.1 - Understanding Success Criterion 2.4.2 Page titled.
-    date: 2021-09-30
-  - description: |
-      On some pages the input field is missing a label. Also, the hint messaging is not associated with the input.
-      This fails WCAG 2.1 - Understanding Success Criterion 4.1.2 Name, role and value.
-    date: 2021-09-30
-  - description: |
-      The change link for consignee EORI confirmation does not include the correct information.
-      This fails WCAG 2.1 - Understanding Success Criterion 2.4.4 Link purpose (in context).
-    date: 2021-09-30
-  - description: |
-      When users input values using Voice Control, it inserts a leading space.
-      This fails WCAG 2.1 - Understanding Success Criterion 3.3.3 Error suggestion.
-    date: 2021-09-30
-serviceLastTestedDate: 2020-12-23
+  - description:
+      The accessible name for user interface components did not contain the text that is presented visually as the label.
+      This fails WCAG 2.5.3 Label in Name (Level A).
+    date: 2021-12-31
+  - description:
+      Labels did not sufficiently describe the topic or purpose of the content.
+      This fails WCAG 2.4.6 Headings and Labels (Level AA).
+    date: 2021-12-31
+serviceLastTestedDate: 2021-09-29
 statementVisibility: public
 statementCreatedDate: 2020-12-29
-statementLastUpdatedDate: 2021-07-13
+statementLastUpdatedDate: 2021-10-12
