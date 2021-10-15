@@ -6,11 +6,11 @@ serviceUrl: /income-through-software/return/2022/start
 contactFrontendServiceId: update-and-submit-income-tax-return
 complianceStatus: partial
 accessibilityProblems:
-  - Users are not always notified when conditionally revealed content is expanded or collapsed.
+  - On some pages, the page headings, sub-headings and paragraph text are all inside the label element.
 milestones:
-  - description: Users are not always notified when conditionally revealed content is expanded or collapsed. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
+  - description: On some pages, the page headings, sub-headings and paragraph text are all inside the label element. This creates issues for speech recognition and screen reader users when they read the label. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
     date: 2021-05-31
-serviceLastTestedDate: 2021-03-15
+serviceLastTestedDate: 2021-09-27
 statementVisibility: public
 statementCreatedDate: 2021-04-19
-statementLastUpdatedDate: 2021-04-19
+statementLastUpdatedDate: 2021-10-13
