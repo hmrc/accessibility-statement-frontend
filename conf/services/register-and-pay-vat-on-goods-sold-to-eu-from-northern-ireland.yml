@@ -4,16 +4,8 @@ serviceDescription: Use this service to register for the One Stop Shop Union sch
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-vat-on-goods-sold-to-eu/northern-ireland-register
 contactFrontendServiceId: one-stop-shop-registration-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - Change links on the sales pages do not include the country name. Screen reader users will find them hard to understand.
-  - Text boxes have poor colour contrast of white text on a pale background. Text boxes do not contain long strings of text correctly, especially when the text size is increased.
-milestones:
-  - description: Visually hidden text for 'Change' and 'remove' links do not include country of goods departure, and renders the code instead. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose.
-    date: 2021-11-01
-  - description: Confirmation banner is missing text wrapping CSS properties. This causes issues when the font size is increased. This fails WCAG 2.1 success criterion 1.4.4 Resize text.
-    date: 2021-11-01
-serviceLastTestedDate: 2021-09-22
+complianceStatus: full
+serviceLastTestedDate: 2021-10-15
 statementVisibility: public
 statementCreatedDate: 2021-07-01
-statementLastUpdatedDate: 2021-09-27
+statementLastUpdatedDate: 2021-10-18
