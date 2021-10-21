@@ -5,7 +5,10 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /personal-account
 contactFrontendServiceId: personal-account
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - Yn y gwasanaeth hwn, mae yna rai cysylltiadau yn y bar llywio sy’n colli ffocws ac nad ydynt yn gweithio fel y dylent ar gyfer darllenwyr sgrin. Rydym wrthi’n trwsio’r broblem hon er mwyn gwneud y gwasanaeth yn haws i’w ddefnyddio.
+serviceLastTestedDate: 2021-01-04
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2021-03-09
