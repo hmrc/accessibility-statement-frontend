@@ -4,8 +4,8 @@ object AppDependencies {
   private val circeVersion = "0.12.0"
 
   val compile = Seq(
-    "uk.gov.hmrc" %% "bootstrap-frontend-play-28" % "5.14.0",
-    "uk.gov.hmrc" %% "play-frontend-hmrc"         % "1.19.0-play-28",
+    "uk.gov.hmrc" %% "bootstrap-frontend-play-28" % "5.16.0",
+    "uk.gov.hmrc" %% "play-frontend-hmrc"         % "1.22.0-play-28",
     "io.circe"    %% "circe-core"                 % circeVersion,
     "io.circe"    %% "circe-generic"              % circeVersion,
     "io.circe"    %% "circe-parser"               % circeVersion,
@@ -13,7 +13,7 @@ object AppDependencies {
   )
 
   val test = Seq(
-    "uk.gov.hmrc"            %% "bootstrap-test-play-28"  % "5.14.0"  % "test",
+    "uk.gov.hmrc"            %% "bootstrap-test-play-28"  % "5.16.0"  % "test",
     "org.scalatest"          %% "scalatest"               % "3.2.3"   % "test",
     "org.scalatestplus"      %% "selenium-3-141"          % "3.2.0.0" % "test",
     "org.scalatestplus.play" %% "scalatestplus-play"      % "5.1.0"   % "test",
