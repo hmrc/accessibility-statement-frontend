@@ -7,7 +7,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /paye/company-car
 contactFrontendServiceId: company-car
-complianceStatus: noncompliant
+complianceStatus: full
+serviceLastTestedDate: 2021-08-26
 statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23
