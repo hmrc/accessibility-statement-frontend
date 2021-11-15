@@ -1,0 +1,12 @@
+serviceName: Discounted Applecake
+serviceDescription: |
+  Use this paragraph to describe your service. It can go over multiple lines
+  like this.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /applecake
+contactFrontendServiceId: applecake
+complianceStatus: full
+serviceLastTestedDate: 2021-11-15
+statementVisibility: draft
+statementCreatedDate: 2021-11-15
+statementLastUpdatedDate: 1021-11-15
