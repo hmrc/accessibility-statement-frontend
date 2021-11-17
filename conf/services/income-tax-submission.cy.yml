@@ -2,7 +2,7 @@ serviceName: Diweddaru a chyflwyno Ffurflen Dreth Incwm
 serviceHeaderName: Diweddaru a chyflwyno Ffurflen Dreth Incwm
 serviceDescription: Defnyddiwch y gwasanaeth hwn i ddiweddaru a chyflwyno Ffurflen Dreth Incwm.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /income-through-software/return/2022/start
+serviceUrl: /update-and-submit-income-tax-return/2022/start
 contactFrontendServiceId: update-and-submit-income-tax-return
 complianceStatus: partial
 accessibilityProblems:

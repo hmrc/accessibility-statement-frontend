@@ -2,7 +2,7 @@ serviceName: Update and submit an Income Tax Return
 serviceHeaderName: Update and submit an Income Tax Return
 serviceDescription: Use this service to update and submit an Income Tax Return.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /income-through-software/return/2022/start
+serviceUrl: /update-and-submit-income-tax-return/2022/start
 contactFrontendServiceId: update-and-submit-income-tax-return
 complianceStatus: partial
 accessibilityProblems:
