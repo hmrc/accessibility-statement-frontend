@@ -184,10 +184,16 @@ removed.
 ## Running unit tests
 
 ```
-sbt a11yTest
+sbt test
 ```
 
-The above tests include accessibility checks via the
+## Running accessibility tests
+
+```
+sbt a11y:test
+```
+
+The above tests are run via the
 [sbt-accessibility-linter](https://www.github.com/hmrc/sbt-accessibility-linter)
 plugin. This plugin requires Node.js v12 or above to be installed locally.
 

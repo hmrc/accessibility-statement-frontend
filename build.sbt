@@ -42,6 +42,7 @@ lazy val microservice = Project(appName, file("."))
     playDefaultPort := 12346,
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
+    A11yTest / unmanagedSourceDirectories += (baseDirectory.value / "test" / "a11y"),
     TwirlKeys.templateImports ++= Seq(
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
       "uk.gov.hmrc.govukfrontend.views.html.components._",

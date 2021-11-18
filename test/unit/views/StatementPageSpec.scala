@@ -29,14 +29,9 @@ import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
-import uk.gov.hmrc.scalatestaccessibilitylinter.AccessibilityMatchers
 
-class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with AccessibilityMatchers {
+class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite {
   "Given any Accessibility Statement for a service, rendering a Statement Page" should {
-    "pass accessibility checks" in new FullSetup {
-      fullyAccessibleStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing the header containing the service name" in new FullSetup {
       fullyAccessibleStatementHtml should include(
         """<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name service</h1>"""
@@ -126,10 +121,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       )
     }
 
-    "pass accessibility checks" in new WelshSetup {
-      fullyAccessibleWelshStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing the correct TITLE element in Welsh" in new WelshSetup {
       val content = Jsoup.parse(fullyAccessibleWelshStatementHtml)
 
@@ -146,10 +137,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for an iOS app, rendering a Statement Page" should {
-    "pass accessibility checks" in new FullSetup {
-      fullyAccessibleIosStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing accessibility information specific to iOS devices" in new FullSetup {
       fullyAccessibleIosStatementHtml should include(
         """get around the app using Voice Control"""
@@ -158,10 +145,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for an Android app, rendering a Statement Page" should {
-    "pass accessibility checks" in new FullSetup {
-      fullyAccessibleAndroidStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing accessibility information specific to Android devices" in new FullSetup {
       fullyAccessibleAndroidStatementHtml should include(
         """get around the app using Voice Access"""
@@ -293,10 +276,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
-    "pass accessibility checks" in new PartialSetup {
-      partiallyAccessibleStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing the expected accessibility information stating that the service is partially compliant" in new PartialSetup {
       partiallyAccessibleStatementHtml should include(
         """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>.</p>"""
@@ -371,10 +350,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for a non compliant service, rendering a Statement Page" should {
-    "pass accessibility checks" in new NonCompliantSetup {
-      nonCompliantAccessibleStatementHtml should passAccessibilityChecks
-    }
-
     "include a statement that the service is non compliant" in new NonCompliantSetup {
       nonCompliantAccessibleStatementHtml should include(
         """<p class="govuk-body">This service is non compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.</p>"""
@@ -405,10 +380,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
   "Given an accessibility statement that is partially compliant, where only automated testing has been carried out, " +
     "rendering a Statement Page"                                                             should {
-      "pass accessibility checks" in new PartialSetup {
-        automatedTestingStatementPage should passAccessibilityChecks
-      }
-
       "return HTML with information that the testing was automated" in new PartialSetup {
         automatedTestingStatementPage should include(
           """<p class="govuk-body">The service was last tested on 21 April 2019 using automated tools and was checked for compliance with WCAG 2.1 AA.</p>"""
