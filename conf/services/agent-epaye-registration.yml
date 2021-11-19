@@ -7,7 +7,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-epaye-registration/start
 contactFrontendServiceId: AGENT_EPAYE
-complianceStatus: noncompliant
+complianceStatus: full
+serviceLastTestedDate: 2021-10-29
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2020-09-18
+statementLastUpdatedDate: 2021-11-19
