@@ -5,72 +5,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /change-bank-account
 contactFrontendServiceId: bank-account-coc
-complianceStatus: partial
-accessibilityProblems:
-  - ar rai tudalennau, gall fod yn anodd gwybod pa elfen sydd â ffocws y bysellfwrdd oherwydd y cyferbynedd lliw a ddefnyddir
-  - mae problemau gyda rhai negeseuon gwall a allai atal defnyddwyr rhag sylwi bod camgymeriad wedi digwydd a’r hyn sydd o’i le
-  - mae rhai mannau lle nad yw actifadu’r botwm ‘ewch yn syth i’r prif gynnwys’ yn symud y ffocws i’r prif gynnwys
-  - efallai y bydd darllenwyr sgrin yn darllen rhywfaint o gynnwys mewn trefn ddryslyd
-  - mae problemau ar y dudalen ‘Nodwch fanylion banc’ a allai atal pobl sy’n defnyddio technoleg gynorthwyol rhag nodi eu manylion yn rhwydd
-  - nid yw’r cysylltiad newid ar ‘Cadarnhau manylion yr ad-daliad’ yn ei gwneud yn glir y gellir diweddaru pob maes
-  - nid yw rhai penawdau’n gyson
-milestones:
-  - description: |
-      Oherwydd y lliwiau ffocws a ddefnyddir, gall fod yn anodd i ddefnyddwyr
-      bysellfwrdd wybod ar ba elfen y maent ar hyn o bryd. Nid yw hyn yn bodloni
-      maen prawf llwyddiant 2.4.7 (Focus Visible) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-  - description: |
-      Nid yw crynodebau o’r gwallau yn nodi pa feysydd y mae angen eu cwblhau wrth
-      glicio arnynt. Mae hyn yn golygu efallai na fydd yn hawdd i defnyddwyr wybod
-      pa wybodaeth sydd ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3
-      (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-  - description: |
-      Mae rhai mannau lle nad yw actifadu’r botwm ‘ewch yn syth i’r prif gynnwys’
-      yn symud y ffocws i’r prif gynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant
-      2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-  - description: |
-      Mae’r rhagddodiad gwall ar goll o deitl y dudalen a’r negeseuon gwall. Mae hyn
-      yn golygu efallai na fydd defnyddwyr yn ymwybodol pan fydd gwall wedi digwydd.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification)
-      Canllawiau Hygyrchedd Cynnwys y We..
-    date: 2021-12-15
-  - description: |
-      Gallai gwall marciau HTML ar y dudalen ‘Nodwch fanylion banc’ atal technoleg
-      gynorthwyol rhag darllen rhywfaint o’r cynnwys yn glir. Nid yw hyn yn bodloni
-      maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-  - description: |
-      Dim ond 8 digid y mae’r maes rhif cyfrif yn eu caniatáu, ac nid yw’n caniatáu
-      i ddefnyddwyr nodi bylchau neu nodau eraill. Mae hyn yn golygu efallai na fydd
-      defnyddwyr technoleg gynorthwyol yn gallu nodi eu manylion banc newydd yn rhwydd.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification) Canllawiau
-      Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-  - description: |
-      Mae negeseuon gwall ar y dudalen ‘Diweddaru manylion y cyfrif’ wedi’u gosod o fewn
-      y label HTML. Gallai hyn achosi i ddarllenwyr sgrin adrodd y cynnwys mewn trefn ddryslyd.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification)
-      Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-  - description: |
-      Mae’r dudalen ‘Diweddaru manylion y cyfrif’ yn cynnwys allwedd a setiau maes gwag sy’n
-      golygu y gall darllenwyr sgrin ddarllen rhywfaint o gynnwys mewn trefn ddryslyd. 2.4.6.
-      (Headings and Labels).
-    date: 2021-12-15
-  - description: |
-      Dim ond un cysylltiad newid sydd ar y dudalen ‘Cadarnhau manylion yr ad-daliad’, ac nid
-      yw’r teitl yn ddisgrifiadol. Felly, efallai na fydd yn glir i ddefnyddwyr y gallant
-      ddiweddaru pob maes. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose)
-      Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-  - description: |
-      Mewn rhai mannau, nid yw teitlau’r dudalen yn cyfateb i bennawd y dudalen. Nid yw hyn
-      yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels), Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-serviceLastTestedDate: 2020-10-12
+complianceStatus: full
+serviceLastTestedDate: 2021-11-17
 statementVisibility: public
 statementCreatedDate: 2021-03-30
-statementLastUpdatedDate: 2021-03-30
+statementLastUpdatedDate: 2021-11-18
