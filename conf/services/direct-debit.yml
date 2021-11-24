@@ -6,60 +6,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /direct-debit
 contactFrontendServiceId: pay-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - the autocomplete function in this service may cause issues for people
-    using a screen reader
-  - some of the pages in the service use invalid markup language, which could prevent assistive technologies using the service easily
-  - some of the links in the service are not descriptive
-  - the ‘Verify your email’ page there is collapsible content which means the content is not easily accessible for people using assistive technology
-  - the 'Which email do you want to use?’ field does not have a legend, so the purpose of the radio buttons may be unclear for some users
-  - the service does not give the user the chance to extend their session if they are being timed out of using the service
-  - the hint text for 'Enter your email address' is not associated with the input field, which may prevent some users from understanding what they need to enter into the field
-  - the ‘Verify your email’ displays a link as a button, which means the interaction is different to what the user is told
-milestones:
-  - description: The ‘Verify your email address’ page does not use an autocomplete feature to allow users to fill this information in automatically. It also does not display the correct keyboard for email addresses to be entered easily. This doesn't meet WCAG success criterion 1.3.5 (Identify Input Purpose).
-    date: 2021-12-15
-  - description: |
-      The service has errors in the order of elements, attribute syntax, and
-      incorrectly nested start and end tags which means assistive technologies
-      cannot use the service reliably. This does not meet WCAG success criterion
-      4.1.1 (Parsing).
-    date: 2021-12-15
-  - description: |
-      The ‘change’ links on the ‘Check your details are correct’ page are not
-      descriptive enough and have the same name. This does not meet WCAG 2.1
-      success criterion 2.4.4 (Link Purpose (Link only)).
-    date: 2021-12-15
-  - description: |
-      On the ‘Verify your email’ page there is collapsible content which may
-      cause issues for people using a screen reader. This does not meet WCAG
-      success criterion 4.1.2 (Name, Role, Value).
-    date: 2021-12-15
-  - description: |
-      On the ‘Which email do you want to use?’ page there is a missing legend,
-      so the purpose of the radio buttons may be unclear for some users. This
-      does not meet WCAG success criterion 1.3.1 (Info and Relationships).
-    date: 2021-12-15
-  - description: |
-      The service ends the user’s session if they have been idle for 15 minutes,
-      however it does not give the user the chance to extend their session. This
-      does not meet WCAG success criteria 2.2.1 (Timing Adjustable).
-    date: 2021-12-15
-  - description: |
-      The hint text on the ‘Enter the new email address’ field is not associated
-      with the fieldset, this means if a screen-reader user moves directly to
-      the radio inputs they will not hear the hint text. This does not meet WCAG
-      success criterion 2.4.6 (Headings and Labels).
-    date: 2021-12-15
-  - description: |
-      On the ‘Verify your email’ page a button is used when displaying the link
-      ‘Send it again’. This means the interaction is different to what the user is
-      told, either visually or via a screen-reader. This button also does not
-      have a focus state which means it is not compatible with keyboard navigation.
-      This does not meet WCAG success criterion 2.4.7 (Focus Visible).
-    date: 2021-12-15
-serviceLastTestedDate: 2020-07-06
+complianceStatus: full
+serviceLastTestedDate: 2021-11-08
 statementVisibility: public
 statementCreatedDate: 2020-06-30
-statementLastUpdatedDate: 2021-02-12
+statementLastUpdatedDate: 2021-11-18
