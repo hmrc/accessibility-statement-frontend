@@ -5,62 +5,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /change-bank-account
 contactFrontendServiceId: bank-account-coc
-complianceStatus: partial
-accessibilityProblems:
-  - on some pages it may be hard to tell which element has the keyboard focus due to the colour contrast used
-  - there are issues with some error messages which might prevent users from noticing that an error has occurred and what is wrong
-  - there are some places where activating 'skip to main content' does not move the focus to the main content
-  - some content may be read out in a confusing order by screen readers
-  - there are issues on the 'Enter bank details' page which may prevent people using assistive technology from entering their details easily
-  - the change link on 'Confirm repayment details' does not make it clear that each field can be updated
-  - some headings are not consistent
-milestones:
-  - description: |
-      Due to the focus colours used, it may be difficult for keyboard users to
-      tell which element they are currently on. This does not meet WCAG success
-      criterion 2.4.7 (Focus Visible).
-    date: 2021-12-15
-  - description: |
-      Error summaries do not identify which fields need to be completed when
-      clicked. This means users might not be able to identify the missing information
-      easily. This does not meet WCAG success criterion 3.3.3 (Error Suggestion).
-    date: 2021-12-15
-  - description: |
-      There are some places where activating 'skip to main content' does not move the
-      focus to the main content. This does not meet WCAG success criterion 2.4.1 (Bypass Blocks).
-    date: 2021-12-15
-  - description: |
-      The error prefix is missing from the page title and error messages. This means users might
-      not be aware when an error has occurred.  This does not meet WCAG success criterion 3.3.1
-      (Error Identification).
-    date: 2021-12-15
-  - description: |
-      An HTML markup error on the the 'Enter bank details' page could prevent assistive technology
-      from reading out some of the content clearly. This does not meet WCAG success criterion 4.1.1 (Parsing).
-    date: 2021-12-15
-  - description: |
-      The account number field only permits exactly 8 digits and does not allow users to enter spaces or
-      other characters. This means users of assistive technology may not be able to enter their new bank
-      details easily. This does not meet WCAG success criterion 3.3.1 (Error Identification).
-    date: 2021-12-15
-  - description: |
-      Error messages on the 'Update account details' page are positioned within the HTML label.
-      This could cause screen readers to narrate the content in a confusing order. This does not
-      meet WCAG success criterion 3.3.1 (Error Identification).
-    date: 2021-12-15
-  - description: |
-      The 'Update account details' page contains an empty legend and fieldsets which means some
-      content may be read out in a confusing order by screen readers. 2.4.6. (Headings and Labels).
-    date: 2021-12-15
-  - description: |
-      There is only one change link on the 'Confirm repayment details' page, and the title is not descriptive.
-      Therefore it may not be clear to users that they can update each field. This does not meet WCAG success criterion 2.4.4 (Link Purpose).
-    date: 2021-12-15
-  - description: |
-      In some places, the page titles do not match the heading of the page. This does not meet WCAG
-      success criterion 2.4.6 (Headings and Labels).
-    date: 2021-12-15
-serviceLastTestedDate: 2020-10-12
+complianceStatus: full
+serviceLastTestedDate: 2021-11-17
 statementVisibility: public
 statementCreatedDate: 2021-03-30
-statementLastUpdatedDate: 2021-03-30
+statementLastUpdatedDate: 2021-11-18
