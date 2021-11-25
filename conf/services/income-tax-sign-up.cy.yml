@@ -7,86 +7,28 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  -   Mae’n bosibl na fydd y togl iaith y maint neu’r lliw cywir ar rhai sgriniau. Gall hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-  -   Pan fo gwallau ar rhai tudalennau, efallai bydd darllenwyr sgrin yn eu hepgor.
-  -   Mae’n bosibl y bydd gwallau lliw gweledol ar gyfer negeseuon gwall ar rhai tudalennau. Mae’n bosibl y bydd rhai defnyddwyr sydd â nam ar eu golwg yn ei chael hi’n anodd darllen popeth.
-  -   Mae’n bosibl na fydd rhai cysylltiadau’n agor yn gywir. Gall hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-  -   Ar y dudalen ‘Cadarnhewch eich manylion’, nid yw’r disgrifiadau’n cyd-  fynd â’r maes mewnbwn. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-  -   Nid yw rhai negeseuon gwall yn ddigon penodol ar gyfer rhai defnyddwyr, felly mae’n bosibl na fyddent yn cael eu deall yn rhwydd.
-  -   Mae’n bosibl na fydd ambell i destun awgrym yn cael ei ddarllen allan yn gywir gan ddarllenwyr sgrin.
-  -   Ar y dudalen ‘Ar gyfer pa flwyddyn dreth ydych am ddechrau cyflwyno diweddariadau?’, mae’n bosibl na fydd ambell i destun sy’n cael ei ddangos yn amodol yn cael ei ddangos yn gywir. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-  -   Ar y dudalen ‘Beth yw eich ffynonellau incwm?’, mae’n bosibl y bydd darllenwyr sgrin yn darllen allan gormod o wybodaeth o ran blychau gwirio.
-  -   Mae ambell i ddisgrifiad ar goll o destun awgrym a negeseuon gwall ar sawl tudalen. Bydd hyn yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-  -   Ar y dudalen ‘Beth yw masnach eich busnes?’, mae ambell i dag ar goll o’r negeseuon gwall. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-  -   Efallai na fydd ambell i restr yn dangos yn gywir ar sawl tudalen. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-  -   Nid oes rhybudd terfyn amser ar ôl mewngofnodi felly gall amser pobl ddod i ben heb iddynt sylweddoli.
-  -   Mae'r cyfieithiadau Cymraeg yn anghyflawn. Nid yw'r testun canlynol wedi'i gyfieithu i'r Gymraeg
-      ‘A hoffech ychwanegu busnes hunangyflogedig arall?’
-      ‘Dewiswch ‘Iawn’ os ydych am ychwanegu busnes hunangyflogedig arall’
-      ‘Busnes 1’
-      ‘Dileu busnes 1’
+  - Wrth ddewis ‘Blwyddyn dreth gyfredol’ neu ‘Blwyddyn dreth nesaf’, datgelir cynnwys cudd am yr hyn y mae angen i’r defnyddiwr ei wneud. Efallai na chaiff yr wybodaeth ychwanegol hon ei chyhoeddi i ddefnyddwyr VoiceOver neu Jaws.
+  - Nid yw’r cysylltiad i enw’r gwasanaeth ar frig pob tudalen yn mynd i unrhyw le.
+  - Ar nifer o dudalennau, ni fydd defnyddwyr chwyddhad sgrin yn gallu gweld rhywfaint o’r cynnwys gan ei fod yn gorgyffwrdd â chynnwys arall neu gan iddo fynd y tu hwnt i ymyl weledol y dudalen.
+  - Pan fo defnyddwyr yn cwblhau cofrestriad, nid yw’r negeseuon yn ffitio’n iawn ar y sgrin gadarnhau. Gall hyn achosi sgrolio llorweddol yn ychwanegol at sgrolio fertigol, a all achosi problemau i unrhyw un sydd ag anawsterau echddygol.
+  - Pan fydd y ffocws ar unrhyw neges gwall, mae cyferbynnedd lliw gwael a fydd yn ei gwneud hi’n anodd i ddefnyddwyr â nam ar eu golwg ei darllen.
 milestones:
   - description: |
-      Mae’n bosibl na fydd y togl iaith y maint neu’r lliw cywir ar rhai sgriniau. Gall hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
+      Nid yw cynnwys a ddatgelir yn amodol yn cael ei gyhoeddi bob amser oherwydd nad yw’r gweithredu’n bodloni ein safon gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Pan fo gwallau ar rhai tudalennau, efallai bydd darllenwyr sgrin yn eu hepgor.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
+      Nid yw enw’r gwasanaeth yn y pennawd yn cynnwys gwerth ar gyfer y priodoledd ‘href’ er mwyn cysylltu yn ôl i’r dudalen cychwyn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Mae’n bosibl y bydd gwallau lliw gweledol ar gyfer negeseuon gwall ar rhai tudalennau. Mae’n bosibl y bydd rhai defnyddwyr sydd â nam ar eu golwg yn ei chael hi’n anodd darllen popeth.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
+      Pan fydd y defnyddiwr yn cynyddu maint y testun, nid yw’n ffitio o fewn y dimensiynau cynhwysydd a ddarperir, sy’n gwneud y copi yn annarllenadwy. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Mae’n bosibl na fydd rhai cysylltiadau’n agor yn gywir. Gall hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
+      Mae nodweddion CSS  ar gyfer lapio testun ar goll o’r copi ar y faner gadarnhausy’n achosi problemau pan fydd maint ffont y testun yn cynyddu. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Ar y dudalen ‘Cadarnhewch eich manylion’, nid yw’r disgrifiadau’n cyd-fynd â’r maes mewnbwn. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-      Nid yw hyn yn bodloni meini prawf llwyddiant 4.1.1 (Parsing) a 4.2.1 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Nid yw rhai negeseuon gwall yn ddigon penodol ar gyfer rhai defnyddwyr, felly mae’n bosibl na fyddent yn cael eu deall yn rhwydd.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Mae’n bosibl na fydd ambell i destun awgrym yn cael ei ddarllen allan yn gywir gan ddarllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Ar y dudalen ‘Ar gyfer pa flwyddyn dreth ydych am ddechrau cyflwyno diweddariadau?’, mae’n bosibl na fydd ambell i destun sy’n cael ei ddangos yn amodol yn cael ei ddangos yn gywir. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 4.2.1 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Ar y dudalen ‘Beth yw eich ffynonellau incwm?’, mae’n bosibl y bydd darllenwyr sgrin yn darllen allan gormod o wybodaeth o ran blychau gwirio.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Mae ambell i ddisgrifiad ar goll o destun awgrym a negeseuon gwall ar sawl tudalen. Bydd hyn yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Ar y dudalen ‘Beth yw masnach eich busnes?’, mae ambell i dag ar goll o’r negeseuon gwall. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Efallai na fydd ambell i restr yn dangos yn gywir ar sawl tudalen. Bydd hyn fod yn fwy amlwg i bobl sy’n defnyddio darllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Nid oes rhybudd terfyn amser ar ôl mewngofnodi felly gall amser pobl ddod i ben heb iddynt sylweddoli.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-  - description: |
-      Mae'r cyfieithiadau Cymraeg yn anghyflawn. Nid yw'r testun canlynol wedi'i gyfieithu i'r Gymraeg
-      ‘A hoffech ychwanegu busnes hunangyflogedig arall?’
-      ‘Dewiswch ‘Iawn’ os ydych am ychwanegu busnes hunangyflogedig arall’
-      ‘Busnes 1’
-      ‘Dileu busnes 1’
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.2.1 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-07-31
-serviceLastTestedDate: 2020-08-28
+      Nid yw'r neges gwall ar ffocus yn bodloni’r gymhareb cyferbynnedd lliw. Dylai’r testun basio 4.5:1. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
+serviceLastTestedDate: 2021-08-17
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-05-18
+statementLastUpdatedDate: 2021-11-24

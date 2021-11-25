@@ -7,86 +7,28 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  -   The language toggle may not be the correct size or colour on some screens. This may be more noticeable for people who use screen readers.
-  -   When there are errors on some pages, they may get skipped by screen readers.
-  -   There may be some visual colour errors for error messages on some pages. Some visually impared users may struggle to read everything.
-  -   Some links may not open correctly. This may be more noticeable for people who use screen readers.
-  -   On the ‘Confirm your details’ page, the descriptions don’t match the input field. This will be more noticeable for people using screen readers.
-  -   Some error messages aren’t specific enough to users, so they might not be easily understood.
-  -   Some hint texts might not get read out correctly by screen readers.
-  -   On the ‘For which tax year do you want to start filing updates?’ page, some conditionally revealing text might not be displayed properly. This will be more noticeable for people who use screen readers.
-  -   On the ‘What are your sources of income’ page, checkboxes may have too much information read out next to them by screen readers.
-  -   Some descriptions are missing from hint text and error messages on several pages. This will be more noticeable for people who use a screen reader.
-  -   On the ‘What is the trade of your business?’ page, some tags are missing from error messages. This will be more noticeable for people who use screen readers.
-  -   Some lists may not display correctly on several pages. This will be more noticeable for people using screen readers.
-  -   There is no timeout warning once signed in so people could be timed out without realising.
-  -   Welsh translations are incomplete. The following copy is not translated to Welsh
-      ‘Do you want to add another self-employed business?’
-      ‘Select yes if you want to add another self employed business’
-      ‘Business 1’
-      ‘Remove business 1’
+  - When selecting ‘Current tax year’ or 'Next tax year', hidden content about what the user needs to do is revealed. This extra information may not be announced by users of VoiceOver or Jaws.
+  - The service name link at the top of each page does go anywhere.
+  - On a number of pages, users who use screen magnification will not be able to see some content as it overlaps other content or it goes beyond the visual edge of the page.
+  - When users have completed signing up, the messages do not fit properly on the confirmation screen. This can cause horizontal scrolling in addition to vertical scrolling, which can cause problems for anyone with motor impairment.
+  - When the focus is on any error message, there is poor colour contrast that will make it difficult for visually impaired users to read.
 milestones:
   - description: |
-      The language toggle may not be the correct size or colour on some screens. This may be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (2.4.1: Bypass Blocks).
-    date: 2021-07-31
+      Conditionally revealing content is not always announced due to the implementation not meeting our service standard. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value
+    date: 2022-03-31
   - description: |
-      When there are errors on some pages, they may get skipped by screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.1 : Error Identification).
-    date: 2021-07-31
+      Service name in the header does not contain a value for the href attribute to link back to the start page. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context)
+    date: 2022-03-31
   - description: |
-      There may be some visual colour errors for error messages on some pages. Some visually impared users may struggle to read everything.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
-    date: 2021-07-31
+      When the user increases the size of the text, it doesn't fit in provided container dimensions, which makes the copy illegible to read. This fails WCAG 2.1 success criterion 1.4.4 Resize text
+    date: 2022-03-31
   - description: |
-      Some links may not open correctly. This may be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing).
-    date: 2021-07-31
+      Copy on confirmation banner missing text wrapping CSS properties, what causes issues when the text font size increases. This fails WCAG 2.1 success criterion 1.4.10 Reflow
+    date: 2022-03-31
   - description: |
-      On the ‘Confirm your details’ page, the descriptions don’t match the input field. This will be more noticeable for people using screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (Parsing) and 4.2.1 (Name, Role, Value).
-    date: 2021-07-31
-  - description: |
-      Some error messages aren’t specific enough to users, so they might not be easily understood.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.1 : Error Identification).
-    date: 2021-07-31
-  - description: |
-      Some hint texts might not get read out correctly by screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
-    date: 2021-07-31
-  - description: |
-      On the ‘For which tax year do you want to start filing updates?’ page, some conditionally revealing text might not be displayed properly. This will be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.2.1 (Name, Role, Value).
-    date: 2021-07-31
-  - description: |
-      On the ‘What are your sources of income’ page, checkboxes may have too much information read out next to them by screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
-    date: 2021-07-31
-  - description: |
-      Some descriptions are missing from hint text and error messages on several pages. This will be more noticeable for people who use a screen reader.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
-    date: 2021-07-31
-  - description: |
-      On the ‘What is the trade of your business?’ page, some tags are missing from error messages. This will be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
-    date: 2021-07-31
-  - description: |
-      Some lists may not display correctly on several pages. This will be more noticeable for people using screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing).
-    date: 2021-07-31
-  - description: |
-      There is no timeout warning once signed in so people could be timed out without realising.
-      This doesn’t meet WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
-    date: 2021-07-31
-  - description: |
-      Welsh translations are incomplete. The following copy is not translated to Welsh
-      ‘Do you want to add another self-employed business?’
-      ‘Select yes if you want to add another self employed business’
-      ‘Business 1’
-      ‘Remove business 1’
-      This doesn’t meet WCAG 2.1 success criterion 3.2.1 (Language of parts).
-    date: 2021-07-31
-serviceLastTestedDate: 2020-08-28
+      Error message on focus fails colour contrast ratio. The text should pass 4.5:1. This fails WCAG 2.1 success criterion 1.4.3 Contrast (Minimum)
+    date: 2022-03-31
+serviceLastTestedDate: 2021-08-17
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-05-18
+statementLastUpdatedDate: 2021-11-24
