@@ -1,0 +1,13 @@
+﻿serviceName: Gwirio eich band Treth Gyngor a’i herio
+serviceHeaderName: Gwirio eich band Treth Gyngor a’i herio
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn caniatáu i chi wirio band Treth Gyngor pob eiddo preswyl yng Nghymru a Lloegr.
+  Gallwch hefyd ddefnyddio’r gwasanaeth i herio band os oes angen.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-council-tax-band/search
+contactFrontendServiceId: CCYCTB
+complianceStatus: full
+serviceLastTestedDate: 2021-11-26
+statementVisibility: public
+statementCreatedDate: 2021-11-29
+statementLastUpdatedDate: 2021-11-29
