@@ -11,10 +11,10 @@ accessibilityProblems:
   - nid yw’r lliwiau a ddefnyddir i ddangos ffocws y bysellfwrdd yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau
 milestones:
   - description: Nid yw’r ffocws wedi’i drapio o fewn y ddeialog ‘terfyn amser’, sy’n golygu bod defnyddwyr yn gallu mynd heibio i’r opsiynau a chael mynediad at elfennau tudalen sydd y tu ôl i’r ddeialog. Gall hyn ddrysu rhai defnyddwyr, na allant o reidrwydd weld yr hyn sy’n digwydd ar y sgrin. Mae hyn yn methu maen prawf llwyddiant 2.4.3 (Focus Order) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-02-26
+    date: 2022-08-26
   - description: Nid yw dangosydd ffocws y bysellfwrdd ar gyfer elfennau, gan gynnwys cysylltiadau, yn bodloni’r gofynion o ran cymarebau cyferbynnedd lliw. Mae’n bosibl y bydd defnyddwyr yn ei chael hi’n anodd llywio’r dudalen gan ddefnyddio bysellfwrdd gan y gallent dybio nad yw ffocws y bysellfwrdd yn bresennol. Mae hyn yn methu maen prawf llwyddiant 1.4.11 (non-text contrast ratio) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-02-26
+    date: 2022-08-26
 serviceLastTestedDate: 2020-10-14
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2020-12-10
+statementLastUpdatedDate: 2021-12-06
