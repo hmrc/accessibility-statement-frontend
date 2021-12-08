@@ -2,4 +2,4 @@
 sbt -mem 8192 \
   -Dbrowser=remote-chrome \
   -Denvironment=service-manager \
-  acceptance:test
+  a11y:test
