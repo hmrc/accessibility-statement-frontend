@@ -373,7 +373,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     "should return HTML with a fixed date for carrying out an assessment" in new NonCompliantSetup {
       nonCompliantAccessibleStatementHtml should include(
-        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 December 2021.</p>"""
+        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2022.</p>"""
       )
     }
   }
@@ -388,7 +388,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
       "return HTML with the date for carrying out a full assessment" in new PartialSetup {
         automatedTestingStatementPage should include(
-          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 December 2021.</p>"""
+          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 March 2022.</p>"""
         )
       }
 
