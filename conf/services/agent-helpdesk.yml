@@ -5,22 +5,8 @@ serviceDescription: |
 serviceDomain: www.admin.tax.service.gov.uk
 serviceUrl: /agent-services/check-application
 contactFrontendServiceId: AOSS
-complianceStatus: partial
-accessibilityProblems:
-  - On the "Authorise an agent or remove their authorisation" page the contrast between the text and the background on the start button may not meet WCAG 2.1 AA contrast ratio thresholds
-  - In the remove authorisation journey there are multiple error messages for the same field which could cause confusion
-  - The reject reason page does not contain form field errors, only an error summary, which means the user may not be able to identify which form field the error is for
-milestones:
-  - description: |
-      On the "Authorise an agent or remove their authorisation" page the contrast between the text and the background on the start button may not meet WCAG 2.1 AA contrast ratio thresholds
-    date: 2020-12-31
-  - description: |
-      In the remove authorisation journey there are multiple error messages for the same field which could cause confusion
-    date: 2020-12-31
-  - description: |
-      The reject reason page does not contain form field errors, only an error summary, which means the user may not be able to identify which form field the error is for
-    date: 2020-12-31
-serviceLastTestedDate: 2020-9-21
+complianceStatus: full
+serviceLastTestedDate: 2021-10-07
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2020-09-22
+statementLastUpdatedDate: 2021-12-13
