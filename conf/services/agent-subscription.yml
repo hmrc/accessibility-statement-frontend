@@ -7,40 +7,28 @@ serviceUrl: /agent-subscripion/start
 contactFrontendServiceId: AOSS
 complianceStatus: partial
 accessibilityProblems:
-  - Some of the links in the service are not descriptive
-  - The autocomplete functions on some pages in this service may cause issues for people using a screen reader
-  - Some of the pages in the service have a redundant fieldset, which could prevent users browsing out of context from understanding what is being selected
-  - The 'Have you applied for money laundering supervision with HMRC?' page does not have a fieldset and legend attribute, so the purpose of the radio buttons may be unclear for some users
-  - The input field on the 'What is your Corporation Tax Unique Tax Reference (UTR)?' page is unlabelled, which may prevent some users from understanding what they need to enter into the field
+  - Visual headings are present however the heading structure is not programmatically determined.This means that screen reader users may be unable to identify the structure and relationship of the proceeding page content.
+  - The ‘Select yes if this is your business’ error summary skip link does not link users to the corresponding input field. This means that users are unable to skip directly to the input field where and validation error has occurred.
+  - A visually hidden link element related to ‘Government Gateway user IDs entered’ receives keyboard focus; however, the link does not become visible when in focus. This means that some users may be unable to determine where their focusis on the pagewhen navigatingvia keyboard only.
+  - Some users struggled to read the text of some interactive elements due to the low contrastof foreground and background colours.
+  - Although the ‘LLP’ acronym is presented in brackets adjacent to its expanded form on the ‘What type of business are you?’ question page; some people may struggle to remember its expanded form as they continue progress through the process of ages.This means that users who are unfamiliar or do not remember the expanded form of the acronym may not understand its purpose or meaning.
 milestones:
   - description: |
-      Some of the links in the service are not descriptive. This doesn’t meet WCAG 2.1 success criterion 2.4.4 (Link Purpose in context).
-    date: 2020-12-31
+      Visual headings are present however the heading structure is not programmatically determined.This means that screen reader users may be unable to identify the structure and relationship of the proceeding page content. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2022-03-31
   - description: |
-      The autocomplete functions on some pages in this service may cause issues for people using a screen reader. This doesn't meet WCAG success criterion 4.1.2 (Name, Role, Value).
-    date: 2020-12-31
+      The ‘Select yes if this is your business’ error summary skip link does not link users to the corresponding input field. This means that users are unable to skip directly to the input field where and validation error has occurred. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
+    date: 2022-03-31
   - description: |
-      Some of the pages in the service have a redundant fieldset, which could prevent users browsing out of context from understanding what is being selected. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships) and 4.1.1 (Parsing).
-    date: 2020-12-31
+      A visually hidden link element related to ‘Government Gateway user IDs entered’ receives keyboard focus; however, the link does not become visible when in focus. This means that some users may be unable to determine where their focusis on the pagewhen navigatingvia keyboard only. This doesn’t meet WCAG 2.1 success criterion 2.4.3 (Focus Order).
+    date: 2022-03-31
   - description: |
-      The 'Have you applied for money laundering supervision with HMRC?' page does not have a fieldset and legend attribute, so the purpose of the radio buttons may be unclear for some users. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships).
-    date: 2020-12-31
+      Some users struggled to read the text of some interactive elements due to the low contrastof foreground and background colours. his doesn’t meet WCAG 2.1 success criterion 1.4.6 (Contrast)
+    date: 2022-03-31
   - description: |
-      The input field on the 'What is your Corporation Tax Unique Tax Reference (UTR)?' page is unlabelled, which may prevent some users from understanding what they need to enter into the field. This doesn’t meet WCAG success criterion 1.3.1 (Info and Relationships) and 3.3.2 (Labels or Instructions).
-    date: 2020-12-31
-  - description: |
-      The error link in the 'Client details' page does not link to the error. This doesn't meet WCAG success criterion 2.4.1 (Bypass Blocks).
-    date: 2020-12-31
-  - description: |
-      The error validation message in the 'What type of business are you?' page is not descriptive. This doesn’t meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
-    date: 2020-12-31
-  - description: |
-      We have carried out an in-house expert review of the service and fixed these accessibility issues.
-    date: 2020-12-31
-  - description: |
-      We will arrange a further formal external audit of the full service as soon as possible, as part of our roadmap for making sure the service is fully compliant.
-    date: 2020-12-31
-serviceLastTestedDate: 2019-8-22
+      Although the ‘LLP’ acronym is presented in brackets adjacent to its expanded form on the ‘What type of business are you?’ question page; some people may struggle to remember its expanded form as they continue progress through the process of ages.This means that users who are unfamiliar or do not remember the expanded form of the acronym may not understand its purpose or meaning. This doesn’t meet WCAG 2.1 success criterion 3.1.4 (Abbreviations).
+    date: 2022-03-31
+serviceLastTestedDate: 2021-10-07
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2019-09-23
+statementLastUpdatedDate: 2021-12-13

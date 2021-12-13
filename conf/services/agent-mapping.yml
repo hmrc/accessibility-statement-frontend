@@ -6,13 +6,25 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-mapping
 contactFrontendServiceId: AOSS
 complianceStatus: partial
-automatedTestingOnly: true
-automatedTestingDetails: It was tested using the automated tool Automated Accessibility Test job on Jenkins, including AXE.
+accessibilityProblems:
+  - The unordered list of language elements in the header of the page is not marked up correctly. The list must only directly contain <li>, <script> or <template> elements to be valid.This means that screen reader users may be unable to understand the correct structure/ relationship of list items.
+  - The table elements demonstrating how many client relationships have been found does not include table headers which means users may be unable to understand the structure or relationship of table data.
+  - The custom focus indicator presented when the ‘Save as draft’ link keyboard focus has insufficient colour contrast of approximately 1.04:1. The expected minimum contrast ratio of meaningful graphics is 3:1.
+  - Some users struggled to read the ‘For example, XXXX-XXXX-1234’ hint text due to the low contrast of foreground and background colours.
 milestones:
   - description: |
-      The contrast between the foreground and background colours may not meet WCAG 2.1 AA contrast ratio thresholds
-    date: 2020-12-31
-serviceLastTestedDate: 2020-9-21
+      The unordered list of language elements in the header of the page is not marked up correctly. The list must only directly contain <li>, <script> or <template> elements to be valid.This means that screen reader users may be unable to understand the correct structure/ relationship of list items. This doesn’t meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2022-03-31
+  - description: |
+      The table elements demonstrating how many client relationships have been found does not include table headers which means users may be unable to understand the structure or relationship of table data. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
+    date: 2022-03-31
+  - description: |
+      The custom focus indicator presented when the ‘Save as draft’ link keyboard focus has insufficient colour contrast of approximately 1.04:1. The expected minimum contrast ratio of meaningful graphics is 3:1. This doesn’t meet WCAG 2.1 success criterion (1.4.11 Non-text Contrast).
+    date: 2022-03-31
+  - description: |
+      Some users struggled to read the ‘For example, XXXX-XXXX-1234’ hint text due to the low contrast of foreground and background colours. This doesn’t meet WCAG 2.1 success criterion 1.4.6 (Contrast).
+    date: 2022-03-31
+serviceLastTestedDate: 2021-10-07
 statementVisibility: public
 statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2020-09-21
+statementLastUpdatedDate: 2021-12-13
