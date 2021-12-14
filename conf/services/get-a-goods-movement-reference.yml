@@ -11,7 +11,7 @@ complianceStatus: partial
 accessibilityProblems:
   - Some users may have difficulty negotiating the ‘Enter a vehicle registration number page’ as the input box is missing a label. Screen readers won’t announce this input box so entering a vehicle registration number will be difficult.
 milestones:
-  - date: 2021-09-30
+  - date: 2022-02-25
     description: >-
       There is a missing label on the ‘Enter the vehicle registration number’ page, so it has no accessible name. This is a WCAG 2.1 violation: Understanding Success Criterion 4.1.2 Name, Role, Value.
 serviceLastTestedDate: 2020-11-23
