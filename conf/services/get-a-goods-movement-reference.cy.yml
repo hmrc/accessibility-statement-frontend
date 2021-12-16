@@ -9,7 +9,7 @@ complianceStatus: partial
 accessibilityProblems:
   - Efallai y bydd rhai defnyddwyr yn cael anhawster yn defnyddio’r dudalen ‘Nodwch rif cofrestru cerbyd’ gan fod y blwch mewnbwn heb label. Nid yw darllenwyr sgrin yn cyhoeddi’r blwch mewnbwn hwn felly bydd yn anodd nodi rhif cofrestru cerbyd.
 milestones:
-  - date: 2021-09-30
+  - date: 2022-02-25
     description: >-
       Mae’r dudalen ‘Nodwch rif cofrestru’r cerbyd’ heb label, felly nid oes ganddi enw hygyrch. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.: Maen Prawf Deall Llwyddiant 4.1.2 Name, Role, Value.
 serviceLastTestedDate: 2020-11-23
