@@ -119,7 +119,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       mobilePlatform = None,
       contactFrontendServiceId = "pas",
       complianceStatus = PartialCompliance,
-      automatedTestingOnly = None,
+      automatedTestingOnly = Some(false),
       accessibilityProblems = Some(
         Seq(
           "This is the first accessibility problem",
@@ -198,7 +198,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       complianceStatus = FullCompliance,
       accessibilityProblems = None,
       milestones = None,
-      automatedTestingOnly = None,
+      automatedTestingOnly = Some(false),
       statementVisibility = Draft,
       serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
       statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,

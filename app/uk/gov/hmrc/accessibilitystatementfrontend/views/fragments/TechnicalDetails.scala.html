@@ -1,0 +1,57 @@
+@*
+ * Copyright 2022 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
+@import uk.gov.hmrc.play.language.LanguageUtils
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.dateToLocalDate
+
+@this(utils: LanguageUtils)
+
+@()(implicit request: Request[_], messages: Messages, appConfig: AppConfig, statement: AccessibilityStatement)
+
+@import statement._
+
+<h2 class="govuk-heading-l">@{messages("technical.heading", serviceOrApp)}</h2>
+<p class="govuk-body">@{messages("technical.commitment", serviceOrApp)}</p>
+
+@if(isFullyCompliant) {
+    <p class="govuk-body">@{messages("technical.compliance.full", serviceOrApp)} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("general.fullstop")}</p>
+} else {
+    @if(isNonCompliant) {
+        <p class="govuk-body">@{messages("technical.compliance.noncompliant", serviceOrApp)} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
+        </p>
+    } else {
+        <p class="govuk-body">@{messages("technical.compliance.partial", serviceOrApp)} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
+        </p>
+    }
+    <h3 class="govuk-heading-m">@{messages("technical.non-compliance.header")}</h3>
+    <p class="govuk-body">@{messages("technical.non-compliance.introduction")} @if(displayAutomatedTestingOnlyContent) {@automatedTestingDetails.getOrElse("")}</p>
+    <h4 class="govuk-heading-s">@{messages("technical.non-compliance.accessibility")}</h4>
+}
+
+@if(hasMilestones && isPartiallyCompliant) {
+    @for(milestone <- milestones.get) {
+        <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by", utils.Dates.formatDate(dateToLocalDate(milestone.date)))}</p>
+    }
+
+    @if(displayAutomatedTestingOnlyContent) {
+        <p class="govuk-body">@{messages("technical.non-compliance.automated.test-by", serviceOrApp)}</p>
+    }
+}
+
+@if(isNonCompliant) {
+    <p class="govuk-body">@messages("technical.non-compliance.not-tested")</p>
+}

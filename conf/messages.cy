@@ -1,19 +1,27 @@
 service.text = Dyma'ch gwasanaeth newydd
 general.page-title = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
-general.app-page-title = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
+general.page-title.ios = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
+general.page-title.android = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
 general.service=service
 general.app=app
 
 ## introduction
 introduction.heading=Datganiad hygyrchedd ar gyfer {0}
+introduction.heading.ios=Datganiad hygyrchedd ar gyfer {0}
+introduction.heading.android=Datganiad hygyrchedd ar gyfer {0}
+
 introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r gwasanaeth hwn, beth i’w wneud os ydych yn cael anhawster wrth ei ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r gwasanaeth.
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
 introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK
 introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
-introduction.app-service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
+introduction.service-name.ios=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
+introduction.service-name.android=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
 
 ## Using the service
 using-service.heading=Defnyddio’r gwasanaeth hwn
+using-service.heading.ios=Defnyddio’r gwasanaeth hwn
+using-service.heading.android=Defnyddio’r gwasanaeth hwn
+
 using-service.this-service-or-app-is-run=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
 using-service.app.this-means='This means you can use the built-in '
@@ -26,17 +34,17 @@ using-service.bullet3=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio
 using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio meddalwedd adnabod lleferydd
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
 
-using-service.android.bullet1=invert colours and adjust contrast levels
-using-service.android.bullet2=increase the text size without the text truncating or overlapping
-using-service.android.bullet3=navigate the app using Switch Access
-using-service.android.bullet4=get around the app using Voice Access
-using-service.android.bullet5=listen to the app using TalkBack
+using-service.bullet1.android=invert colours and adjust contrast levels
+using-service.bullet2.android=increase the text size without the text truncating or overlapping
+using-service.bullet3.android=navigate the app using Switch Access
+using-service.bullet4.android=get around the app using Voice Access
+using-service.bullet5.android=listen to the app using TalkBack
 
-using-service.ios.bullet1=invert colours and adjust contrast levels
-using-service.ios.bullet2=increase the text size without the text truncating or overlapping
-using-service.ios.bullet3=navigate the app using Switch Control
-using-service.ios.bullet4=get around the app using Voice Control
-using-service.ios.bullet5=listen to the app using VoiceOver
+using-service.bullet1.ios=invert colours and adjust contrast levels
+using-service.bullet2.ios=increase the text size without the text truncating or overlapping
+using-service.bullet3.ios=navigate the app using Switch Control
+using-service.bullet4.ios=get around the app using Voice Control
+using-service.bullet5.ios=listen to the app using VoiceOver
 
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
 using-service.making-device-easier.part1=Mae gan AbilityNet gyngor

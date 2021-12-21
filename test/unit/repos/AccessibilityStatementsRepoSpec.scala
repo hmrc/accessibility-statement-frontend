@@ -80,7 +80,7 @@ class AccessibilityStatementsRepoSpec
     mobilePlatform = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,
-    automatedTestingOnly = None,
+    automatedTestingOnly = Some(false),
     accessibilityProblems = None,
     milestones = None,
     statementVisibility = Public,

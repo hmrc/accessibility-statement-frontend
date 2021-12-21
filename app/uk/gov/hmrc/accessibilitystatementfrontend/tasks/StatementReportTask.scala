@@ -75,7 +75,7 @@ class StatementReportTask @Inject() (
       problemsCount,
       milestoneCount,
       earliestMilestoneDate,
-      automatedTestingOnly.getOrElse(false).toString,
+      displayAutomatedTestingOnlyContent.toString,
       statementVisibility.toString,
       lastTestedDate,
       getIsoDate(statementCreatedDate),

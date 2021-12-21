@@ -37,7 +37,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     complianceStatus = FullCompliance,
     accessibilityProblems = None,
     milestones = None,
-    automatedTestingOnly = None,
+    automatedTestingOnly = Some(false),
     statementVisibility = Public,
     serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
     statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
