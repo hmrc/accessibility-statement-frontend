@@ -8,28 +8,29 @@ serviceUrl: /report-quarterly/income-and-expenses/view/
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
-  - Keyboard only users may struggle with some backlinks and toggles. They will need to be tabbed through each time by a keyboard user after using a skip link to get to the main content.
-  - Screen reader users may struggle to use some of the tables on the ‘Tax Years’ page. Some tables do not describe their purposes or the rows and columns as a screen reader user moves between tables and cells.
-  - Screen reader users may struggle to find correct values in some lists. Some description lists are not identifying the term so some screen reader users are not notified of the number of items in the list.
+  - Screen reader users may struggle to use some of the tables on the 'tax year overview' and 'next updates' pages. Some tables do not describe their purpose or the columns as a screen reader user moves between tables and cells.
+  - The GOV.UK image link in the header links to the service home page instead of the GOV.UK home page.
+  - Screen reader users may struggle to find correct values in the 'tax year overview' list. The description list is not identifying the label so some screen reader users will not know how many items are in the list.
+  - Confirm your clients details may not correctly convey information for assistive technologies or display it inconsistently across browsers due to stray HTML tags.
   - Keyboard only users might struggle to use some of the buttons and will need to use the enter key instead of the spacebar. Links styled as buttons are not labelled correctly for assistive technology users.
-  - When switching to the Welsh language, not all the content is translated and remains in English. This means content will be incorrectly pronounced for screen readers.
+  - The service link in the header on the 'tax year overview' page will be difficult to distinguish against the background in hover state due to the colour contrast.
+  - When switching to the Welsh language on 'What is your client's Unique Taxpayer Reference?', the word 'error' remains in English and will be incorrectly pronounced for screen readers.
 milestones:
-  - description: Keyboard only users may struggle with some backlinks and toggles. They will need to be tabbed through each time by a keyboard user after using a skip link to get to the main content.
-      This fails WCAG 2.1 success criterion 2.4.1 (Bypass Blocks)
-    date: 2021-11-30
-  - description: Screen reader users may struggle to use some of the tables on the ‘Tax Years’ page. Some tables do not describe their purposes or the rows and columns as a screen reader user moves between tables and cells.
-      This fails WCAG 2.1 success criterion 1.3.1 Info and relationships.
-    date: 2021-11-30
-  - description: Screen reader users may struggle to find correct values in some lists. Some description lists are not identifying the term so some screen reader users are not notified of the number of items in the list.
-      This fails WCAG 2.1 success criterion 4.1.1 Parsing.
-    date: 2021-11-30
-  - description: Keyboard only users might struggle to use some of the buttons and will need to use the enter key instead of the spacebar. Links styled as buttons are not labelled correctly for assistive technology users.
-      This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
-    date: 2021-11-30
-  - description: When switching to the Welsh language, not all the content is translated and remains in English. This means content will be incorrectly pronounced for screen readers.
-      This fails WCAG 2.1 success criterion 3.1.2 Language of Parts.
-    date: 2021-11-30
-serviceLastTestedDate: 2021-05-18
+  - description: Some tables are missing captions and/or table headings making it difficult for screen reader users to understand the purpose of the tables and cells. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships.
+    date: 2022-04-30
+  - description: The purpose of the GOV.UK link cannot be determined from the link text. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose (in Context).
+    date: 2022-04-30
+  - description: The description list is missing the required description term element, which is invalid html and may cause issues for assistive technology to interpret the content correctly. This fails WCAG 2.1 success criterion 4.1.1 Parsing.
+    date: 2022-04-30
+  - description: Stray article tags which have not been nested/closed correctly and may result in assistive technology not conveying the information correctly or browsers displaying content inconsistently. This fails WCAG 2.1 success criterion 4.1.1 Parsing.
+    date: 2022-04-30
+  - description: For links styled as buttons, the role="button" and the JavaScript polyfill is missing to ensure it acts like a button. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
+    date: 2022-04-30
+  - description: The service link in the header does not meet the required contrast ratio level when compared to the background colour in hover state. This fails WCAG 2.1 success criterion 1.4.3 Contrast (Minimum).
+    date: 2022-04-30
+  - description: When the 'What is your client's Unique Taxpayer Reference?' page is displayed in Welsh, some content is shown in English and does not have the appropriate lang attribute to identify it as being in a different language. This will be incorrectly pronounced for screen readers. This fails WCAG 2.1 success criterion 3.1.2 - Language of Parts.
+    date: 2022-04-30
+serviceLastTestedDate: 2021-11-05
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-06-29
+statementLastUpdatedDate: 2022-01-05
