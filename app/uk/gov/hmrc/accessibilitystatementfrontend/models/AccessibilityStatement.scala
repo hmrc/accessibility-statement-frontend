@@ -19,6 +19,7 @@ package uk.gov.hmrc.accessibilitystatementfrontend.models
 import java.util.Date
 import io.circe.{Decoder, Encoder}
 import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
+import play.api.i18n.Messages
 
 case class AccessibilityStatement(
   serviceName: String,
@@ -38,6 +39,8 @@ case class AccessibilityStatement(
   automatedTestingDetails: Option[String]
 ) extends Ordered[AccessibilityStatement] {
 
+  val displayAutomatedTestingOnlyContent: Boolean = automatedTestingOnly.getOrElse(false)
+
   val isFullyCompliant: Boolean = complianceStatus match {
     case FullCompliance => true
     case _              => false
@@ -53,8 +56,26 @@ case class AccessibilityStatement(
     case _                 => false
   }
 
+  val hasMilestones: Boolean = milestones match {
+    case Some(milestones) => milestones.nonEmpty
+    case _                => false
+  }
+
+  val serviceAbsoluteURL = s"https://$serviceDomain$serviceUrl"
+
+  def platformSpecificMessage(key: String, args: Any*)(implicit messages: Messages): String = {
+    val platformSuffix = mobilePlatform.map(mp => s".${mp.toString}").getOrElse("")
+    messages(s"$key$platformSuffix", args: _*)
+  }
+
+  def serviceOrApp(implicit messages: Messages): String = mobilePlatform match {
+    case Some(_) => messages("general.app")
+    case None    => messages("general.service")
+  }
+
   def compare(that: AccessibilityStatement): Int =
     this.serviceName.compare(that.serviceName)
+
 }
 
 object AccessibilityStatement {

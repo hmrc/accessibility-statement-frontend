@@ -1,26 +1,33 @@
 service.homePageUrl = /
 general.page-title = Accessibility statement for {0} service – GOV.UK
-general.app-page-title = Accessibility statement for the {0} – GOV.UK
+general.page-title.ios = Accessibility statement for the {0} – GOV.UK
+general.page-title.android = Accessibility statement for the {0} – GOV.UK
 general.service=service
 general.app=app
 
 ## introduction
 introduction.heading=Accessibility statement for {0} service
-introduction.app-heading=Accessibility statement for the {0}
+introduction.heading.ios=Accessibility statement for the {0}
+introduction.heading.android=Accessibility statement for the {0}
+
 introduction.lede=This accessibility statement explains how accessible this {0} is, what to do if you have difficulty using it, and how to report accessibility problems with the {0}.
 introduction.scope.part1='This service is part of the wider GOV.UK website. There is a '
 introduction.scope.part2=separate accessibility statement for the main GOV.UK website
 introduction.service-name=This page only contains information about the {0} service, available at {1}.
-introduction.app-service-name=This page only contains information about the {0}, available at {1}.
+introduction.service-name.ios=This page only contains information about the {0}, available at {1}.
+introduction.service-name.android=This page only contains information about the {0}, available at {1}.
 
 ## Using the service
-using-service.heading=Using this {0}
+using-service.heading=Using this service
+using-service.heading.ios=Using this app
+using-service.heading.android=Using this app
+
 using-service.this-service-or-app-is-run=This {0} is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
 using-service.service.this-means=This means you should be able to:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
-using-service.app.accessibility-features.link.android=https://www.android.com/intl/en_uk/accessibility/
 using-service.app.accessibility-features.link.ios=https://www.apple.com/uk/accessibility/
+using-service.app.accessibility-features.link.android=https://www.android.com/intl/en_uk/accessibility/
 using-service.app.on-your-device=' on your device to:'
 
 using-service.bullet1=change colours, contrast levels and fonts
@@ -29,17 +36,17 @@ using-service.bullet3=get from the start of the service to the end using just a 
 using-service.bullet4=get from the start of the service to the end using speech recognition software
 using-service.bullet5=listen to the service using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
 
-using-service.android.bullet1=invert colours and adjust contrast levels
-using-service.android.bullet2=increase the text size without the text truncating or overlapping
-using-service.android.bullet3=navigate the app using Switch Access
-using-service.android.bullet4=get around the app using Voice Access
-using-service.android.bullet5=listen to the app using TalkBack
+using-service.bullet1.android=invert colours and adjust contrast levels
+using-service.bullet2.android=increase the text size without the text truncating or overlapping
+using-service.bullet3.android=navigate the app using Switch Access
+using-service.bullet4.android=get around the app using Voice Access
+using-service.bullet5.android=listen to the app using TalkBack
 
-using-service.ios.bullet1=invert colours and adjust contrast levels
-using-service.ios.bullet2=increase the text size without the text truncating or overlapping
-using-service.ios.bullet3=navigate the app using Switch Control
-using-service.ios.bullet4=get around the app using Voice Control
-using-service.ios.bullet5=listen to the app using VoiceOver
+using-service.bullet1.ios=invert colours and adjust contrast levels
+using-service.bullet2.ios=increase the text size without the text truncating or overlapping
+using-service.bullet3.ios=navigate the app using Switch Control
+using-service.bullet4.ios=get around the app using Voice Control
+using-service.bullet5.ios=listen to the app using VoiceOver
 
 using-service.simple-text=We have also made the text in the {0} as simple as possible to understand.
 using-service.making-device-easier.part1=AbilityNet has advice
