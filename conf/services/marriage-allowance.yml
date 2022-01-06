@@ -1,9 +1,9 @@
-serviceName: Apply for Marriage Allowance
+serviceName: Marriage Allowance
 serviceHeaderName: Apply for Marriage Allowance
-serviceDescription: Marriage Allowance lets you transfer a portion of your Personal Allowance (tax-free income) to your husband, wife or civil partner so they can pay less tax. This service allows you to apply for Marriage Allowance, including for previous tax years, by checking your eligibility and marital status.
+serviceDescription: The Marriage Allowance services allows qualifying couples to transfer part of their Personal Allowance to their partner. You can also reject or cancel  transfer of Personal Allowance.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /browse/tax/marriage-allowance
-contactFrontendServiceId: marriage-allowance
+serviceUrl: /marriage-allowance-application
+contactFrontendServiceId: marriage-allowance-application
 complianceStatus: partial
 serviceLastTestedDate: 2021-04-23
 statementVisibility: public
