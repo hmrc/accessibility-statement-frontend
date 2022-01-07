@@ -9,7 +9,7 @@ accessibilityProblems:
   - Some form fields are not labelled descriptively
 milestones:
   - description: Some fields are labelled in a non-descriptive way when a user navigates to them out of context. This doesn’t meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels).
-    date: 2021-08-31
+    date: 2022-03-31
 serviceLastTestedDate: 2020-11-25
 statementVisibility: public
 statementCreatedDate: 2022-01-07
