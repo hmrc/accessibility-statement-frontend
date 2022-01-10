@@ -14,12 +14,12 @@ milestones:
   - description:
       The accessible name for user interface components did not contain the text that is presented visually as the label.
       This fails WCAG 2.5.3 Label in Name (Level A).
-    date: 2021-12-31
+    date: 2022-08-31
   - description:
       Labels did not sufficiently describe the topic or purpose of the content.
       This fails WCAG 2.4.6 Headings and Labels (Level AA).
-    date: 2021-12-31
+    date: 2022-08-31
 serviceLastTestedDate: 2021-09-29
 statementVisibility: public
 statementCreatedDate: 2020-12-29
-statementLastUpdatedDate: 2021-10-12
+statementLastUpdatedDate: 2022-01-07
