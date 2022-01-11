@@ -100,5 +100,13 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
         any()
       )
     }
+
+    "return a list of services when services directory path has spaces in it" in {
+      val servicesFinder = buildServicesFinder("fixtures/services is a valid directory")
+
+      servicesFinder.findAll should equal(
+        Seq("service-1", "service-2", "service-3")
+      )
+    }
   }
 }
