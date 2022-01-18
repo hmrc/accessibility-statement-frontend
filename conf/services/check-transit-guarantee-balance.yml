@@ -5,8 +5,8 @@ serviceDescription:
   The goods can pass through different customs regimes without them having to be declared at every border.
   This service allows users to check the balance of their guarantee so that they know how much of their balance is available to use.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /check-guarantee-balance
-contactFrontendServiceId: http://tax.service.gov.uk/check-guarantee-balance/eori-number
+serviceUrl: /check-transit-guarantee-balance
+contactFrontendServiceId: http://tax.service.gov.uk/check-transit-guarantee-balance/eori-number
 complianceStatus: partial
 accessibilityProblems:
   - Switching to the Welsh language version does not translate the messaging. It displays unreadable text.
