@@ -1,0 +1,13 @@
+serviceName:  NCTS Status Page
+serviceHeaderName: New Computerised Transit System
+contactFrontendServiceId: NCTS
+serviceDescription: |
+  The NCTS Status Page allows users to see the availability of NCTS system cores, 
+  submission channels and view planned downtime.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /new-computerised-transit-system-service-availability-and-issues
+complianceStatus: full
+statementVisibility: public
+serviceLastTestedDate: 2022-01-06
+statementCreatedDate: 2020-01-19
+statementLastUpdatedDate: 2020-01-19
