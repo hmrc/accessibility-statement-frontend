@@ -5,7 +5,7 @@ serviceDescription:
   The goods can pass through different customs regimes without them having to be declared at every border. This service processes those transit movements.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-transit-movements
-contactFrontendServiceId: http://tax.service.gov.uk/manage-transit-movements/what-do-you-want-to-do
+contactFrontendServiceId: CTCTraders
 complianceStatus: partial
 accessibilityProblems:
   - The label for the place of declaration is from a different page. Screen-reader users will be presented with the wrong information and voice-recognition users may struggle with referencing the component.
