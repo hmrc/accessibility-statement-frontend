@@ -23,10 +23,10 @@ milestones:
       Pan fydd y defnyddiwr yn cynyddu maint y testun, nid yw’n ffitio o fewn y dimensiynau cynhwysydd a ddarperir, sy’n gwneud y copi yn annarllenadwy. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-03-31
   - description: |
-      Mae nodweddion CSS  ar gyfer lapio testun ar goll o’r copi ar y faner gadarnhausy’n achosi problemau pan fydd maint ffont y testun yn cynyddu. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Mae nodweddion CSS  ar gyfer lapio testun ar goll o’r copi ar y faner gadarnhau sy’n achosi problemau pan fydd maint ffont y testun yn cynyddu. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-03-31
   - description: |
-      Nid yw'r neges gwall ar ffocus yn bodloni’r gymhareb cyferbynnedd lliw. Dylai’r testun basio 4.5:1. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Nid yw'r neges gwall ar ffocws yn bodloni’r gymhareb cyferbynnedd lliw. Dylai’r testun basio 4.5:1. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-03-31
 serviceLastTestedDate: 2021-08-17
 statementVisibility: public
