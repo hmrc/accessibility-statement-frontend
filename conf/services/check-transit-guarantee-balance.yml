@@ -6,7 +6,7 @@ serviceDescription:
   This service allows users to check the balance of their guarantee so that they know how much of their balance is available to use.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-transit-guarantee-balance
-contactFrontendServiceId: http://tax.service.gov.uk/check-transit-guarantee-balance/eori-number
+contactFrontendServiceId: CTCTraders
 complianceStatus: partial
 accessibilityProblems:
   - Switching to the Welsh language version does not translate the messaging. It displays unreadable text.
