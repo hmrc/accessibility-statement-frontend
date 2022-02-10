@@ -16,16 +16,16 @@
 
 package it
 
-import java.io.File
 import cats.syntax.either._
 import org.scalatest.TryValues
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
+import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, NoCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
+import java.io.File
 import scala.util.Try
 
 class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
@@ -70,7 +70,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
 
       s"enforce serviceDescription exists for public statement $service" in {
         val statement: AccessibilityStatement = statementTry.get
-        statement.serviceDescription.trim.length > 0 || statement.statementVisibility == Draft should be(
+        statement.serviceDescription.trim.nonEmpty || statement.statementVisibility == Draft should be(
           true
         )
       }

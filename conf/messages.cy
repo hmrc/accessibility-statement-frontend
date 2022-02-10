@@ -22,7 +22,8 @@ using-service.heading=Defnyddio’r gwasanaeth hwn
 using-service.heading.ios=Defnyddio’r gwasanaeth hwn
 using-service.heading.android=Defnyddio’r gwasanaeth hwn
 
-using-service.this-service-or-app-is-run=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-or-app-is-run-voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn.' '
+using-service.this-service-or-app-is-run-standard=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
@@ -66,6 +67,10 @@ contact.heading=Yr hyn i’w wneud os ydych yn cael anhawster wrth ddefnyddio’
 contact.extra-support.part1='Gallwch '
 contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol
 contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwahanol, megis print bras, recordiad sain neu Braille.'
+contact.extra-support-voa.part1='Gallwch '
+contact.extra-support-voa.part2=gysylltu ag Asiantaeth y Swyddfa Brisio am gymorth pellach os oes angen help arnoch i lenwi ffurflenni neu gael fformat gwahanol, megis print bras, recordiad sain neu Braille.
+contact.extra-support-voa.part3=Ffôn: 03000 505 505
+contact.extra-support-voa.part4=Oriau agor: dydd Llun i ddydd Gwener: 9:30am tan 4:30pm
 
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn

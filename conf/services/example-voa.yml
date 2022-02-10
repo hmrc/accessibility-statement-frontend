@@ -1,0 +1,13 @@
+serviceName: Discounted Buns for VOA
+serviceDescription: |
+  Use this paragraph to describe your service. It can go over multiple lines
+  like this.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /voa-buns
+contactFrontendServiceId: voa-buns
+complianceStatus: full
+serviceLastTestedDate: 2022-02-01
+statementVisibility: draft
+statementCreatedDate: 2022-02-24
+statementLastUpdatedDate: 2022-02-24
+statementType: VOA

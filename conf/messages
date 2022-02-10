@@ -22,7 +22,8 @@ using-service.heading=Using this service
 using-service.heading.ios=Using this app
 using-service.heading.android=Using this app
 
-using-service.this-service-or-app-is-run=This {0} is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
+using-service.this-service-or-app-is-run-voa=This {0} is run by the Valuation Office Agency (VOA), an executive agency of HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
+using-service.this-service-or-app-is-run-standard=This {0} is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
 using-service.service.this-means=This means you should be able to:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
@@ -67,6 +68,10 @@ contact.heading=What to do if you have difficulty using this service
 contact.extra-support.part1='You can '
 contact.extra-support.part2=contact HMRC for extra support
 contact.extra-support.part3=' if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.'
+contact.extra-support-voa.part1='You can '
+contact.extra-support-voa.part2=contact VOA for extra support if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.
+contact.extra-support-voa.part3=Telephone: 03000 501 501
+contact.extra-support-voa.part4=Opening times: Monday to Friday: 9:30am to 4:30pm
 
 ## Reporting problems
 reporting.heading=Reporting accessibility problems with this {0}

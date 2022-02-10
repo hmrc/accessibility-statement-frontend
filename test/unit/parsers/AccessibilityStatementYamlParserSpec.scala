@@ -21,7 +21,7 @@ import org.scalatest.EitherValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public, VOA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.io.Source
@@ -35,6 +35,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",
     serviceUrl = "/disguised-remuneration",
+    statementType = None,
     mobilePlatform = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,
@@ -105,6 +106,56 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       )
     }
 
+    "parse a fully accessible statement for VOA" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /voa
+          |contactFrontendServiceId: voa
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: public
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |statementType: VOA""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(
+          statementVisibility = Public,
+          serviceUrl = "/voa",
+          contactFrontendServiceId = "voa",
+          statementType = Some(VOA)
+        )
+      )
+    }
+
+    "parse a fully accessible statement for C-HGV" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /c-hgv
+          |contactFrontendServiceId: c-hgv
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: public
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |statementType: C-HGV""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(
+          statementVisibility = Public,
+          serviceUrl = "/c-hgv",
+          contactFrontendServiceId = "c-hgv",
+          statementType = Some(CHGV)
+        )
+      )
+    }
+
     "parse a partially accessible statement" in {
       val statementYaml =
         """serviceName: Online Payments
@@ -141,6 +192,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/pay",
+          statementType = None,
           mobilePlatform = None,
           contactFrontendServiceId = "pay-frontend",
           complianceStatus = PartialCompliance,
@@ -210,6 +262,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/pay",
+          statementType = None,
           mobilePlatform = None,
           contactFrontendServiceId = "pay-frontend",
           complianceStatus = PartialCompliance,
@@ -261,6 +314,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           serviceDescription = "This is a non compliant service. People can eat doughnuts.",
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/discounted-doughnuts",
+          statementType = None,
           mobilePlatform = None,
           contactFrontendServiceId = "discounted-doughnuts",
           complianceStatus = NoCompliance,

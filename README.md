@@ -46,13 +46,16 @@ statementVisibility: public             # If set to public, the statement will b
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
-automatedTestingDetails: |             # Only add this value if your service has only had automated testing
+automatedTestingDetails: |              # Only add this value if your service has only had automated testing
   If your service has only had automated testing, add a text description of testing tools used, e.g.
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```
 
 If your statement is specifically for a mobile application, add the line `mobilePlatform: android` for an android application or
-`mobilePlatform: ios` for an iOS application. Do not add this for web-based services.
+`mobilePlatform: ios` for an iOS application. **Do not add this for web-based services.**
+
+If you are a service that requires a custom template like VOA or C-HGV, please include the property `statementType` and set the value
+to either `VOA` or `C-HGV`. **If you are not one of those services you do not need to include this property.** 
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
