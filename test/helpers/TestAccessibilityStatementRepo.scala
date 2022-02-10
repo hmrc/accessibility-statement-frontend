@@ -16,12 +16,12 @@
 
 package helpers
 
-import java.util.{Calendar, GregorianCalendar}
-
 import org.mockito.scalatest.MockitoSugar
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+
+import java.util.{Calendar, GregorianCalendar}
 
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
   private val en                   = Lang("en")
@@ -32,6 +32,7 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     serviceDescription = "Test description.",
     serviceDomain = "www.tax.service.gov.uk/test/",
     serviceUrl = "some.test.service",
+    templateOverride = None,
     mobilePlatform = None,
     contactFrontendServiceId = s"some.contact-frontend",
     complianceStatus = FullCompliance,

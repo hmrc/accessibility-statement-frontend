@@ -22,7 +22,8 @@ using-service.heading=Defnyddio’r gwasanaeth hwn
 using-service.heading.ios=Defnyddio’r gwasanaeth hwn
 using-service.heading.android=Defnyddio’r gwasanaeth hwn
 
-using-service.this-service-or-app-is-run=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-or-app-is-run-voa=Mae’r gwasanaeth hwn yn cael ei redeg gan Asiantaeth y Swyddfa Brisio (VOA), un o asiantaethau gweithredol Cyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-or-app-is-run-standard=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
@@ -66,6 +67,10 @@ contact.heading=Yr hyn i’w wneud os ydych yn cael anhawster wrth ddefnyddio’
 contact.extra-support.part1='Gallwch '
 contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol
 contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwahanol, megis print bras, recordiad sain neu Braille.'
+contact.extra-support-voa.part1='Gallwch '
+contact.extra-support-voa.part2=cysylltwch â VOA am gymorth ychwanegol os oes angen help arnoch i lenwi ffurflenni neu gael fformat gwahanol, fel print bras, recordiad sain neu Braille.
+contact.extra-support-voa.part3=Ffôn: 03000 501 501
+contact.extra-support-voa.part4=Oriau agor: Dydd Llun i Ddydd Gwener: 9:30yb i 2:30yp
 
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn

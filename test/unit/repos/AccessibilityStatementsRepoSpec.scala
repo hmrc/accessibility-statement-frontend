@@ -77,6 +77,7 @@ class AccessibilityStatementsRepoSpec
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",
     serviceUrl = "/disguised-remuneration",
+    templateOverride = None,
     mobilePlatform = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,

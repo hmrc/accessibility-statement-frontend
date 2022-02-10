@@ -69,5 +69,4 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     val config = Configuration.from(configurationMap)
     AppConfig(config, new ServicesConfig(config), new VisibilityParser)
   }
-
 }

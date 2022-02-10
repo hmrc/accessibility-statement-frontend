@@ -26,6 +26,7 @@ case class AccessibilityStatement(
   serviceDescription: String,
   serviceDomain: String,
   serviceUrl: String,
+  templateOverride: Option[StatementTemplateType] = None,
   mobilePlatform: Option[MobilePlatform],
   contactFrontendServiceId: String,
   complianceStatus: ComplianceStatus,
@@ -38,6 +39,11 @@ case class AccessibilityStatement(
   statementLastUpdatedDate: Date,
   automatedTestingDetails: Option[String]
 ) extends Ordered[AccessibilityStatement] {
+
+  val statementTemplate: StatementTemplateType = templateOverride match {
+    case Some(templateType) => templateType
+    case _                  => HMRC
+  }
 
   val displayAutomatedTestingOnlyContent: Boolean = automatedTestingOnly.getOrElse(false)
 
@@ -75,7 +81,6 @@ case class AccessibilityStatement(
 
   def compare(that: AccessibilityStatement): Int =
     this.serviceName.compare(that.serviceName)
-
 }
 
 object AccessibilityStatement {

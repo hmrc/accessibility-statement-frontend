@@ -16,10 +16,11 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.tasks
 
-import javax.inject.Inject
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
+
+import javax.inject.Inject
 
 class StatementReportTask @Inject() (
   accessibilityStatementRepo: AccessibilityStatementsRepo
@@ -38,7 +39,8 @@ class StatementReportTask @Inject() (
     "statementVisibility",
     "serviceLastTestedDate",
     "statementCreatedDate",
-    "statementLastUpdatedDate"
+    "statementLastUpdatedDate",
+    "statementTemplate"
   )
 
   override def getBodyRows: Seq[Seq[String]] =
@@ -79,7 +81,8 @@ class StatementReportTask @Inject() (
       statementVisibility.toString,
       lastTestedDate,
       getIsoDate(statementCreatedDate),
-      getIsoDate(statementLastUpdatedDate)
+      getIsoDate(statementLastUpdatedDate),
+      statementTemplate.toString
     )
   }
 }
