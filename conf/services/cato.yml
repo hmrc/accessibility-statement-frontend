@@ -28,7 +28,7 @@ milestones:
       are confusing for keyboard only users as the tab order is illogical. This makes the focus jump to the top of the
       page when tabbing through these hidden fields. This fails WCAG 2.1 Reference 2.1 - Keyboard Accessible, which
       requires all functionality of a service to be available from a keyboard. We are undertaking work to fix all these issues.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       There are elements in this service that appear visually as links, but are not accessible to voice activation or
       keyboard only users. There are also links that open in a new window but do not inform screen reader users this
@@ -39,14 +39,14 @@ milestones:
       They also fail WCAG 2.1 Reference 2.4 - Navigable, where ways should be provided to help users with accessibility
       issues navigate, find content and determine where they are. We are aware of the issues with the links in this
       service and will fix them all to be fully accessible.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       The service times-out after too short a period, and does not warn assistive technology users before-hand or give
       them the option to extend the session. Pages also refresh too quickly, with no option given to navigate easily
       back to where the user was in the service. This fails WCAG 2.1 Reference 2.2 - Enough time - provide users
       enough time to read and use content. We will make sure that users are not timed-out without warning
       and are given the option to extend the time-out period.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       There are many problems with accessibility of the fields in this service. Radio buttons throughout the site have
       groupings that are not consistent. Many text area elements throughout the service are unlabelled. There are also
@@ -54,34 +54,34 @@ milestones:
       WCAG 2.1 Reference 3.3 - Input assistance - help users avoid and correct mistakes, and WCAG 2.1 Reference 4.1 -
       Maximize compatibility - maximize compatibility with current and future user agents, including assistive technologies.
       We intend to resolve all accessibility issues with the fields in this service.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       There are PDF documents in the service that do not include information about the file name, type and size and if
       it opens in a new window. Some PDF documents in the service lack headings for screen readers within the documents
       themselves. This fails WCAG 2.1 Reference 2.4 - Navigable, where ways should be provided to help users with
       accessibility issues navigate, find content and determine where they are. We will make sure all PDFs in the
       service are correctly labelled.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       Layout inconsistencies within this service mean that text is not easy to read due to proximity of other elements.
       In addition, text resizing causes text, images or controls to become truncated or obscured. Other layout problems
       mean navigation is not consistent. These issues fail WCAG 2.1 Reference 3.1 - Text content - make text content
       readable and understandable, and WCAG 2.1 Reference 3.2 - Predictable - make web pages appear and operate in
       predictable ways. We intend to fix the inconsistencies throughout the layout of this service.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       The navigation in this service is not clear and consistent. In many areas the focus is not logical and the user
       has to re-navigate the page. Elements with the same functionality are also not identified consistently.
       These issues fail WCAG 2.1 Guideline 2.4: Navigable - provide ways to help users navigate, find content, and
       determine where they are. The navigation of this service is being updated and these issues should be fixed.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       We use headings in the service to introduce topics and guide users through the site. These are useful for screen
       readers as it lets them jump quickly to relevant content. Many headings are not structured in a logical and
       consistent way throughout the site, causing particular difficulties to users of screen readers.
       This fails WCAG 2.1 Reference 2.4 - Navigable - provide ways to help users with disabilities navigate,
       find content and determine where they are. We plan to make the headings in this site fully accessible.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       We use many tables in this service, however many are not marked-up correctly and are missing summaries, headings,
       captions and other elements that make navigating the tables difficult. Some tables are also incorrectly used just
@@ -89,38 +89,38 @@ milestones:
       different ways (for example simpler layout) without losing information or structure. The table elements also fail
       WCAG 2.1 Reference 4.1 - Maximize compatibility - maximize compatibility with current and future user agents,
       including assistive technologies. We plan to mark-up all tables within the service correctly.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       There are non-descriptive page titles present, and page titles do not change when progressing through the different
       steps. This occurs consistently throughout all stages of the service. This fails WCAG 2.1 Reference 2.4 -
       Navigable - provide ways to help users with disabilities navigate, find content and determine where they are.
       We are working to have all page titles correctly labelled.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       There are many inaccuracies in the mark-up which cause compatibility issues. There are improperly nested tags,
       duplicate IDs, duplicate attributes on the same element, a label element with a ‘for’ attribute that references a
       non-existent ID, and an ‘accesskey’ attribute value that is not unique. These fail WCAG 2.1 Reference 4.1 -
       Maximize compatibility - maximize compatibility with current and future user agents, including assistive
       technologies. We plan to fix all compatibility issues within this service.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       We use colour contrast to help low vision users navigate the service, however in many areas the expected colour
       contrast ratio of 4.5:1. was not in place. This fails WCAG 2.1 Reference 1.4 - Distinguishable content -
       make it easier for users to see and hear content including separating foreground from background.
       We are working to have all colour contrast issues fixed in this service.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       On many pages, particularly in the eligibility section, the fieldset element does not have a name available to an
       accessibility API. This fails WCAG 2.1 Reference 4.1.2 Name, Role, Value.
-    date: 2021-07-30
+    date: 2023-03-31
   - description: |
       We use names anchor links within our error messages to allow users to easily see what part of a form a certain
       error applies to. However on many pages the link points to a named anchor within the page, but no anchor exists
       with that name. This fails WCAG 2.1 Reference 2.4.1 - Bypass Blocks - a mechanism is available to bypass blocks
       of content that are repeated on multiple Web pages.
-    date: 2021-07-30
+    date: 2023-03-31
 
 serviceLastTestedDate: 2019-11-27
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-22
+statementLastUpdatedDate: 2022-02-14
