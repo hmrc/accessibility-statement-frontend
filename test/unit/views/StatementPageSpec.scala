@@ -117,7 +117,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   "Given any Welsh Accessibility Statement for a service, rendering a Statement Page" should {
     "return HTML containing the header containing the service name in Welsh" in new WelshSetup {
       fullyAccessibleWelshStatementHtml should include(
-        """<h1 class="govuk-heading-xl">Datganiad hygyrchedd ar gyfer fully accessible service name</h1>"""
+        """<h1 class="govuk-heading-xl">Datganiad hygyrchedd ar gyfer y gwasanaeth fully accessible service name</h1>"""
       )
     }
 
