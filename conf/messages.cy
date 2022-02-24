@@ -6,7 +6,7 @@ general.service=service
 general.app=app
 
 ## introduction
-introduction.heading=Datganiad hygyrchedd ar gyfer {0}
+introduction.heading=Datganiad hygyrchedd ar gyfer y gwasanaeth {0}
 introduction.heading.ios=Datganiad hygyrchedd ar gyfer {0}
 introduction.heading.android=Datganiad hygyrchedd ar gyfer {0}
 

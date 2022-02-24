@@ -77,7 +77,7 @@ class StatementControllerSpec extends AnyWordSpec with Matchers with MockitoSuga
 
       val headers = content.select("h1")
       headers.size       shouldBe 1
-      headers.first.text shouldBe "Datganiad hygyrchedd ar gyfer Test (Welsh)"
+      headers.first.text shouldBe "Datganiad hygyrchedd ar gyfer y gwasanaeth Test (Welsh)"
     }
 
     "fallback to the English statement if no Welsh translation is available" in {
