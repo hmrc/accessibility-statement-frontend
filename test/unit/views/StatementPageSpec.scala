@@ -25,7 +25,7 @@ import play.api.Configuration
 import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, Visibility}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, VOA, Visibility}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -111,6 +111,53 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     "not include a list item of accessibility problems if accessibility problems is empty" in new FullSetup {
       fullyAccessibleStatementHtml should not include """<ul class="govuk-list govuk-list--bullet" id="accessibility-problems">"""
+    }
+  }
+
+  "Given any Accessibility Statement for a service, rendering a VOA Statement Page" should {
+    "return HMTL containing correct `using this service` section content for VOA template" in new FullSetup {
+      fullyAccessibleVOAStatementHtml should include(
+        """<p class="govuk-body">
+          |    This service is run by the Valuation Office Agency (VOA), an executive agency of HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.""".stripMargin
+      )
+    }
+
+    "return HTML containing correct `What to do if you have difficulty using this service` section content" in new FullSetup {
+      fullyAccessibleVOAStatementHtml should include(
+        """contact VOA for extra support if you need help with filling in forms or getting a different format, like large print, audio recording or Braille."""
+      )
+
+      fullyAccessibleVOAStatementHtml should include(
+        """<p class="govuk-body">Telephone: 03000 501 501</p>"""
+      )
+
+      fullyAccessibleVOAStatementHtml should include(
+        """<p class="govuk-body">Opening times: Monday to Friday: 9:30am to 4:30pm</p>"""
+      )
+    }
+
+    "return HTML that does not contain the `Contacting us by phone or getting a visit from us in person` section" in new FullSetup {
+      fullyAccessibleVOAStatementHtml should not include
+        """<h2 class="govuk-heading-l">Contacting us by phone or getting a visit from us in person</h2>"""
+    }
+  }
+
+  "Given any Accessibility Statement for a service, rendering a C-HGV Statement Page" should {
+    "return HMTL containing correct `using this service` section content for VOA template" in new FullSetup {
+      fullyAccessibleCHGVStatementHtml should include(
+        """<p class="govuk-body">
+          |    This service is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.""".stripMargin
+      )
+    }
+
+    "return HTML that does not contain the `What to do if you have difficulty using this service` section" in new FullSetup {
+      fullyAccessibleCHGVStatementHtml should not include
+        """<h2 class="govuk-heading-l">What to do if you have difficulty using this service</h2>"""
+    }
+
+    "return HTML that does not contain the `Contacting us by phone or getting a visit from us in person` section" in new FullSetup {
+      fullyAccessibleCHGVStatementHtml should not include
+        """<h2 class="govuk-heading-l">Contacting us by phone or getting a visit from us in person</h2>"""
     }
   }
 
@@ -428,6 +475,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDescription = "Fully accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
+      statementType = None,
       mobilePlatform = None,
       contactFrontendServiceId = "fas",
       complianceStatus = FullCompliance,
@@ -451,6 +499,14 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       mobilePlatform = Some(Android)
     )
 
+    lazy val fullyAccessibleVOAAppStatement = fullyAccessibleServiceStatement.copy(
+      statementType = Some(VOA)
+    )
+
+    lazy val fullyAccessibleCHGVAppStatement = fullyAccessibleServiceStatement.copy(
+      statementType = Some(CHGV)
+    )
+
     lazy val fullyAccessibleStatementHtml =
       statementPage(
         fullyAccessibleServiceStatement,
@@ -466,6 +522,18 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     lazy val fullyAccessibleAndroidStatementHtml = statementPage(
       fullyAccessibleAndroidAppStatement,
+      None,
+      isWelshTranslationAvailable = false
+    ).body
+
+    lazy val fullyAccessibleVOAStatementHtml = statementPage(
+      fullyAccessibleVOAAppStatement,
+      None,
+      isWelshTranslationAvailable = false
+    ).body
+
+    lazy val fullyAccessibleCHGVStatementHtml = statementPage(
+      fullyAccessibleCHGVAppStatement,
       None,
       isWelshTranslationAvailable = false
     ).body
@@ -488,6 +556,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDescription = "Partially accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
+      statementType = None,
       mobilePlatform = None,
       contactFrontendServiceId = "pas",
       complianceStatus = PartialCompliance,

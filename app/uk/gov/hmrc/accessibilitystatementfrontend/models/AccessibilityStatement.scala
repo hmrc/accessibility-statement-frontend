@@ -36,8 +36,14 @@ case class AccessibilityStatement(
   serviceLastTestedDate: Option[Date],
   statementCreatedDate: Date,
   statementLastUpdatedDate: Date,
-  automatedTestingDetails: Option[String]
+  automatedTestingDetails: Option[String],
+  statementType: Option[StatementType] = None
 ) extends Ordered[AccessibilityStatement] {
+
+  val statementTemplate: StatementType = statementType match {
+    case Some(st) => st
+    case _        => HMRC
+  }
 
   val displayAutomatedTestingOnlyContent: Boolean = automatedTestingOnly.getOrElse(false)
 
@@ -75,7 +81,6 @@ case class AccessibilityStatement(
 
   def compare(that: AccessibilityStatement): Int =
     this.serviceName.compare(that.serviceName)
-
 }
 
 object AccessibilityStatement {

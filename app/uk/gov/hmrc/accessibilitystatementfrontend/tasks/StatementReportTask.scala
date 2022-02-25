@@ -38,7 +38,8 @@ class StatementReportTask @Inject() (
     "statementVisibility",
     "serviceLastTestedDate",
     "statementCreatedDate",
-    "statementLastUpdatedDate"
+    "statementLastUpdatedDate",
+    "statementType"
   )
 
   override def getBodyRows: Seq[Seq[String]] =
@@ -79,7 +80,8 @@ class StatementReportTask @Inject() (
       statementVisibility.toString,
       lastTestedDate,
       getIsoDate(statementCreatedDate),
-      getIsoDate(statementLastUpdatedDate)
+      getIsoDate(statementLastUpdatedDate),
+      statementTemplate.toString
     )
   }
 }

@@ -23,7 +23,7 @@ import play.api.Configuration
 import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, HMRC, Ios, Milestone, NoCompliance, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -116,6 +116,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDescription = "Partially accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
+      statementType = None,
       mobilePlatform = None,
       contactFrontendServiceId = "pas",
       complianceStatus = PartialCompliance,
@@ -193,6 +194,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDescription = "Fully accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
+      statementType = None,
       mobilePlatform = None,
       contactFrontendServiceId = "fas",
       complianceStatus = FullCompliance,

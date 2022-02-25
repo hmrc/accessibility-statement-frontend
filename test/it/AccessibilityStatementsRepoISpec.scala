@@ -16,16 +16,16 @@
 
 package it
 
-import java.util.{Calendar, GregorianCalendar}
-
-import org.scalatest.{BeforeAndAfterEach, EitherValues}
-import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
+import org.scalatest.{BeforeAndAfterEach, EitherValues}
 import play.api.Application
 import play.api.i18n.Lang
 import play.api.inject.guice.GuiceApplicationBuilder
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
+
+import java.util.{Calendar, GregorianCalendar}
 
 class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with EitherValues with BeforeAndAfterEach {
 
@@ -46,6 +46,7 @@ class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with Ei
     serviceDescription = "The foo service allows you to do foo",
     serviceDomain = "www.example.com",
     serviceUrl = "/foo",
+    statementType = None,
     mobilePlatform = None,
     contactFrontendServiceId = "foo",
     complianceStatus = FullCompliance,
@@ -66,6 +67,7 @@ class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with Ei
     serviceDescription = "The bar service allows you to do bar",
     serviceDomain = "www.example.com",
     serviceUrl = "/bar",
+    statementType = None,
     mobilePlatform = None,
     contactFrontendServiceId = "bar",
     complianceStatus = PartialCompliance,
