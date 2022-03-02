@@ -1,0 +1,42 @@
+serviceName: Check How to Import or Export Goods
+serviceHeaderName: Check How to Import or Export Goods
+serviceDescription: |
+  The Check How to Import or Export Goods service allows you to check what you need to have in place during the
+  import or export process. The service will help you to understand the rules, licences or certificates that apply
+  to your goods, to pay the right tax and duty for your goods, register your business for trading and declare your
+  goods to clear the UK border.
+serviceDomain: check-how-to-import-export-goods.service.gov.uk
+serviceUrl: /
+contactFrontendServiceId: STW-GS
+complianceStatus: partial
+accessibilityProblems:
+  - |
+    On the search results tables, the visual category numbers are not identical to the visually hidden category
+    numbers. This means that voice control users will not be able to target the links correctly and screen readers
+    will hear a different category number from the one they were expecting
+  - |
+    With search results tables, screen reader users are unable to tell where the beginning is, or end is for each
+    section. There is also no way for them to skip past sections. This means that they will have to navigate through
+    every row to find the code they need. For screen magnification users, the search results tables are difficult to
+    use as there is a large amount of information to get through with limited screen space. This will mean they will
+    have to navigate back and forth to ensure they are looking at the correct section
+  - |
+    When using a small screen, such as on a mobile phone or when using increased font sizes, the search table
+    results do not fit on the screen fully
+milestones:
+  - description: |
+      The "select" link hidden category text does not match the visual category. This fails WCAG 2.1 success criterion
+      1.3.1 Info and relationships (A)
+    date: 2021-12-31
+  - description: |
+      The table containing the search result data does not describe hierarchy between different rows. This fails WCAG
+      2.1 success criterion 1.3.1 Info and relationships (A)
+    date: 2021-12-31
+  - description: |
+      On small screens or when the font size has been increased the search results table overflows causing the user to
+      have to scroll in multiple directions. This fails WCAG 2.1 success criterion 1.4.10 Reflow (AA)
+    date: 2021-12-31
+serviceLastTestedDate: 2021-09-20
+statementVisibility: public
+statementCreatedDate: 2021-07-14
+statementLastUpdatedDate: 2021-09-24
