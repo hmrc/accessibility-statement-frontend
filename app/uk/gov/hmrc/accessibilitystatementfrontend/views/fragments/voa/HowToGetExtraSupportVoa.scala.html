@@ -23,7 +23,7 @@
 
 @import statement._
 
-@if(mobilePlatform.isEmpty) {
+@if(!isMobile) {
     <h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
     <p class="govuk-body">
         @{messages("contact.extra-support-voa.part1")}

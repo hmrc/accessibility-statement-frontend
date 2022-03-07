@@ -51,11 +51,11 @@ automatedTestingDetails: |              # Only add this value if your service ha
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
 ```
 
-If your statement is specifically for a mobile application, add the line `mobilePlatform: android` for an android application or
-`mobilePlatform: ios` for an iOS application. **Do not add this for web-based services.**
+If your statement is specifically for a mobile application, add the line `statementType: android` for an android application or
+`statementType: ios` for an iOS application. **Do not add this for web-based services.**
 
 If you are a service that requires a custom template like VOA or C-HGV, please include the property `statementType` and set the value
-to either `VOA` or `C-HGV`. **If you are not one of those services you do not need to include this property.** 
+to either `VOA` or `C-HGV`. **If you are not one of those services, or a mobile app, you do not need to include this property.** 
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)

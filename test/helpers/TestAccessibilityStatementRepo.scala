@@ -33,7 +33,6 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     serviceDomain = "www.tax.service.gov.uk/test/",
     serviceUrl = "some.test.service",
     statementType = None,
-    mobilePlatform = None,
     contactFrontendServiceId = s"some.contact-frontend",
     complianceStatus = FullCompliance,
     accessibilityProblems = None,
