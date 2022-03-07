@@ -20,27 +20,27 @@ accessibilityProblems:
   - For end of chat surveys on NVDA no message or focus is read out after clicking submit. On voiceover for iPad/iOS some user focus is taken to the "Is this page not working properly (opens in a new tab)” link below the CUI frame. On Macbook voiceover, the focus stays on the ‘submit’ button the user clicked to submit the survey.
 milestones:
   - description: Mobile users using screen readers may find it difficult to navigate or interact with the chat window or the other content on the launch page. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: There is styling on the ‘Support for coronavirus’ digital assistant page that may make interaction difficult for users who use style overlays to make pages more readable. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: Some answers in the digital assistant that have links have ‘(opens in a new tab)’ after each link, whereas others have ‘Links will open in a new tab’ once at the start of the answer. This could be frustrating for users with assistive technologies as link behaviour may not be clear or consistent. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: Users using Chrome on Android are unable to use pinch and zoom gestures once the chat window has launched. This does not meet WCAG 2.1 success criteria 1.4.4 (Resize Text) and 1.4.10 (Reflow).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: The button icon used to turn alerts on and off does not look different enough in its on or off state, or different enough from the print icon. It also behaves differently to the print icon. Additionally, users with assistive technologies may find it difficult to interact with the button. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: Some users may find it difficult to locate this accessibility statement from the footer of this service. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: The ‘Ask HMRC’ title on the chat window lacks useful labelling for screen readers. This does not meet WCAG 2.1 success criteria 4.2.6 (Headings) and 1.3.1 (Info & Relationships).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: The icons for ‘turn on alerts’ and ‘increase chat window size’ do not have labels that would make interaction easier for people using voice controls. This does not meet WCAG 2.1 success criterion 2.5.3 (Label in Name).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: Some users may see a version of the end of chat survey that has radio buttons which may not function correctly when the user clicks them. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
-    date: 2022-03-15
+    date: 2022-05-31
   - description: For end of chat surveys on NVDA no message or focus is read out after clicking submit. On voiceover for iPad/iOS some user focus is taken to the "Is this page not working properly (opens in a new tab)” link below the CUI frame. On Macbook voiceover, the focus stays on the ‘submit’ button the user clicked to submit the survey. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
-    date: 2022-03-15
+    date: 2022-05-31
 
 serviceLastTestedDate: 2021-07-23
 statementVisibility: public
 statementCreatedDate: 2021-08-09
-statementLastUpdatedDate: 2022-01-19
+statementLastUpdatedDate: 2022-03-07
