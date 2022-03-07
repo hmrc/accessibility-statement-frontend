@@ -1,0 +1,10 @@
+serviceName: Do a tax check when applying for a licence
+serviceDescription: This HMRC service allows a licence applicant to do a tax check. The service checks the applicant’s tax status, and provides a tax check code if all is in order. The tax check code can then be provided to the applicant's licensing body proving they are registered for tax. Only licence applications covered by Tax Conditionality legislation require a tax check code.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-check-for-licence/start
+contactFrontendServiceId: TC-APPLICANT
+complianceStatus: full
+serviceLastTestedDate: 2022-02-17
+statementVisibility: public
+statementCreatedDate: 2022-03-07
+statementLastUpdatedDate: 2022-03-07
