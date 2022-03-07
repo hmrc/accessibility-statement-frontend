@@ -23,12 +23,10 @@
 
 @import statement._
 
-<h1 class="govuk-heading-xl">@platformSpecificMessage("introduction.heading", serviceName)</h1>
-<p class="govuk-body-l">@{messages("introduction.lede", serviceOrApp)}</p>
-@if(mobilePlatform.isEmpty) {
-    <p class="govuk-body">
-        @{messages("introduction.scope.part1")}
-        <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.scope.part2")}</a>@{messages("general.fullstop")}
-    </p>
-}
-<p class="govuk-body">@platformSpecificMessage("introduction.service-name", serviceName, serviceAbsoluteURL)</p>
+<h1 class="govuk-heading-xl">@messages("introduction.heading", serviceName)</h1>
+<p class="govuk-body-l">@{messages("introduction.lede", messages("general.service"))}</p>
+<p class="govuk-body">
+    @{messages("introduction.scope.part1")}
+    <a class="govuk-link" href="https://www.gov.uk/help/accessibility">@{messages("introduction.scope.part2")}</a>@{messages("general.fullstop")}
+</p>
+<p class="govuk-body">@messages("introduction.service-name", serviceName, serviceAbsoluteURL)</p>

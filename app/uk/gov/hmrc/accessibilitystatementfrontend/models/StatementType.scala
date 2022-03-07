@@ -22,9 +22,11 @@ sealed trait StatementType
 
 object StatementType {
   implicit val decoder: Decoder[StatementType] = Decoder.decodeString.emap {
-    case "VOA"   => Right(VOA)
-    case "C-HGV" => Right(CHGV)
-    case other   => Left(s"""Unrecognised statementType "$other"""")
+    case "VOA"     => Right(VOA)
+    case "C-HGV"   => Right(CHGV)
+    case "android" => Right(Android)
+    case "ios"     => Right(Ios)
+    case other     => Left(s"""Unrecognised statementType "$other"""")
   }
 
   implicit val encoder: Encoder[StatementType] =
@@ -37,6 +39,14 @@ case object VOA extends StatementType {
 
 case object CHGV extends StatementType {
   override def toString = "C-HGV"
+}
+
+case object Ios extends StatementType {
+  override def toString = "ios"
+}
+
+case object Android extends StatementType {
+  override def toString = "android"
 }
 
 case object HMRC extends StatementType {

@@ -17,28 +17,12 @@
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 @import uk.gov.hmrc.play.language.LanguageUtils
 
-
 @this(utils: LanguageUtils)
 
 @()(implicit request: Request[_], messages: Messages, appConfig: AppConfig, statement: AccessibilityStatement)
 
 @import statement._
 
-<h2 class="govuk-heading-l">@messages("using-service.heading")</h2>
-<p class="govuk-body">@{serviceDescription}</p>
-<p class="govuk-body">
-    @messages("using-service.this-service-or-app-is-run-standard", messages("general.service"))
-    @messages("using-service.service.this-means")
-</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>@messages("using-service.bullet1")</li>
-  <li>@messages("using-service.bullet2")</li>
-  <li>@messages("using-service.bullet3")</li>
-  <li>@messages("using-service.bullet4")</li>
-  <li>@messages("using-service.bullet5")</li>
-</ul>
-<p class="govuk-body">@{messages("using-service.simple-text", messages("general.service"))}</p>
-<p class="govuk-body">
-    <a class="govuk-link" href="https://mcmw.abilitynet.org.uk">@messages("using-service.making-device-easier.part1")</a>
-    @messages("using-service.making-device-easier.part2")
-</p>
+<h1 class="govuk-heading-xl">@platformSpecificMessage("introduction.heading", serviceName)</h1>
+<p class="govuk-body-l">@{messages("introduction.lede", messages("general.app"))}</p>
+<p class="govuk-body">@platformSpecificMessage("introduction.service-name", serviceName, serviceAbsoluteURL)</p>

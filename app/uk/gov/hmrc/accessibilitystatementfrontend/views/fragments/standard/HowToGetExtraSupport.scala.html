@@ -21,13 +21,9 @@
 
 @()(implicit messages: Messages, statement: AccessibilityStatement)
 
-@import statement._
-
-@if(mobilePlatform.isEmpty) {
-    <h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
-    <p class="govuk-body">
-        @{messages("contact.extra-support.part1")}
-        <a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support">@{messages("contact.extra-support.part2")}</a>
-        @{messages("contact.extra-support.part3")}
-    </p>
-}
+<h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
+<p class="govuk-body">
+    @{messages("contact.extra-support.part1")}
+    <a class="govuk-link" href="https://www.gov.uk/get-help-hmrc-extra-support">@{messages("contact.extra-support.part2")}</a>
+    @{messages("contact.extra-support.part3")}
+</p>
