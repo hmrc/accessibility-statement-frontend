@@ -78,7 +78,6 @@ class AccessibilityStatementsRepoSpec
     serviceDomain = "www.tax.service.gov.uk",
     serviceUrl = "/disguised-remuneration",
     statementType = None,
-    mobilePlatform = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,
     automatedTestingOnly = Some(false),

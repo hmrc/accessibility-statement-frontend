@@ -23,7 +23,7 @@ import play.api.Configuration
 import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, HMRC, Ios, Milestone, NoCompliance, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -117,7 +117,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
       statementType = None,
-      mobilePlatform = None,
       contactFrontendServiceId = "pas",
       complianceStatus = PartialCompliance,
       automatedTestingOnly = Some(false),
@@ -151,7 +150,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     )
 
     lazy val partiallyAccessibleIosAppStatement = partiallyAccessibleServiceStatement.copy(
-      mobilePlatform = Some(Ios)
+      statementType = Some(Ios)
     )
 
     lazy val partiallyAccessibleIosStatementHtml = statementPage(
@@ -161,7 +160,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     ).body
 
     lazy val partiallyAccessibleAndroidAppStatement = partiallyAccessibleServiceStatement.copy(
-      mobilePlatform = Some(Android)
+      statementType = Some(Android)
     )
 
     lazy val partiallyAccessibleStatementHtml = statementPage(
@@ -195,7 +194,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
       statementType = None,
-      mobilePlatform = None,
       contactFrontendServiceId = "fas",
       complianceStatus = FullCompliance,
       accessibilityProblems = None,
@@ -217,7 +215,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     lazy val fullyAccessibleAndroidAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC Android app",
-      mobilePlatform = Some(Android)
+      statementType = Some(Android)
     )
 
     lazy val fullyAccessibleAndroidStatementHtml = statementPage(
@@ -228,7 +226,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     lazy val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC iOS app",
-      mobilePlatform = Some(Ios)
+      statementType = Some(Ios)
     )
 
     lazy val fullyAccessibleIosStatementHtml = statementPage(

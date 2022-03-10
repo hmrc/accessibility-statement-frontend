@@ -36,7 +36,6 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
     serviceDomain = "www.tax.service.gov.uk",
     serviceUrl = "/disguised-remuneration",
     statementType = None,
-    mobilePlatform = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,
     accessibilityProblems = None,
@@ -92,7 +91,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
-          |mobilePlatform: android
+          |statementType: android
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
           |serviceLastTestedDate: 2019-12-09
@@ -102,7 +101,10 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
 
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
-        fullyAccessibleStatement.copy(statementVisibility = Public, mobilePlatform = Some(Android))
+        fullyAccessibleStatement.copy(
+          statementVisibility = Public,
+          statementType = Some(Android)
+        )
       )
     }
 
@@ -193,7 +195,6 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/pay",
           statementType = None,
-          mobilePlatform = None,
           contactFrontendServiceId = "pay-frontend",
           complianceStatus = PartialCompliance,
           automatedTestingOnly = None,
@@ -263,7 +264,6 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/pay",
           statementType = None,
-          mobilePlatform = None,
           contactFrontendServiceId = "pay-frontend",
           complianceStatus = PartialCompliance,
           automatedTestingOnly = Some(true),
@@ -315,7 +315,6 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/discounted-doughnuts",
           statementType = None,
-          mobilePlatform = None,
           contactFrontendServiceId = "discounted-doughnuts",
           complianceStatus = NoCompliance,
           automatedTestingOnly = None,
@@ -390,14 +389,14 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       )
     }
 
-    "throw a DecodingError if the mobile platform is incorrect" in {
+    "throw a DecodingError if the statementType is incorrect" in {
       val problemStatementYaml =
         """
           |serviceName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
-          |mobilePlatform: sausage
+          |statementType: sausage
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
           |serviceLastTestedDate: 2019-12-09
@@ -408,7 +407,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       val parsed = parser.parse(problemStatementYaml)
 
       parsed.left.value.getMessage should startWith(
-        "Unrecognised mobile platform \"sausage\""
+        "Unrecognised statementType \"sausage\""
       )
     }
 

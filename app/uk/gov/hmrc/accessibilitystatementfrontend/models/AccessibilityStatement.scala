@@ -26,7 +26,6 @@ case class AccessibilityStatement(
   serviceDescription: String,
   serviceDomain: String,
   serviceUrl: String,
-  mobilePlatform: Option[MobilePlatform],
   contactFrontendServiceId: String,
   complianceStatus: ComplianceStatus,
   accessibilityProblems: Option[Seq[String]],
@@ -70,13 +69,12 @@ case class AccessibilityStatement(
   val serviceAbsoluteURL = s"https://$serviceDomain$serviceUrl"
 
   def platformSpecificMessage(key: String, args: Any*)(implicit messages: Messages): String = {
-    val platformSuffix = mobilePlatform.map(mp => s".${mp.toString}").getOrElse("")
+    val platformSuffix = statementType match {
+      case Some(Ios) | Some(Android) =>
+        statementType.map(st => s".${st.toString}").getOrElse("")
+      case _                         => ""
+    }
     messages(s"$key$platformSuffix", args: _*)
-  }
-
-  def serviceOrApp(implicit messages: Messages): String = mobilePlatform match {
-    case Some(_) => messages("general.app")
-    case None    => messages("general.service")
   }
 
   def compare(that: AccessibilityStatement): Int =

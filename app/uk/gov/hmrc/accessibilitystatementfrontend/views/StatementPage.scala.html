@@ -25,6 +25,7 @@
         hmrcStatementTemplate: StatementTemplate,
         voaStatementTemplate: VoaStatementTemplate,
         chgvStatementTemplate: ChgvStatementTemplate,
+        mobileStatementTemplate: MobileStatementTemplate,
         hmrcReportTechnicalIssueHelper: HmrcReportTechnicalIssueHelper)
 
 @(statement: AccessibilityStatement, referrerUrl: Option[String], isWelshTranslationAvailable: Boolean)(
@@ -34,9 +35,11 @@
 
 @layout(pageTitle = platformSpecificMessage("general.page-title", serviceName), isWelshTranslationAvailable) {
  @{statementTemplate match {
-    case VOA    => voaStatementTemplate(statement, referrerUrl)
-    case CHGV   => chgvStatementTemplate(statement, referrerUrl)
-    case _      => hmrcStatementTemplate(statement, referrerUrl)
+    case VOA     => voaStatementTemplate(statement, referrerUrl)
+    case CHGV    => chgvStatementTemplate(statement, referrerUrl)
+    case Ios     => mobileStatementTemplate(statement, referrerUrl)
+    case Android => mobileStatementTemplate(statement, referrerUrl)
+    case _       => hmrcStatementTemplate(statement, referrerUrl)
  }}
  @hmrcReportTechnicalIssueHelper()
 }

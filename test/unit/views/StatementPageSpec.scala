@@ -476,7 +476,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
       statementType = None,
-      mobilePlatform = None,
       contactFrontendServiceId = "fas",
       complianceStatus = FullCompliance,
       accessibilityProblems = None,
@@ -491,12 +490,12 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     lazy val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC iOS app",
-      mobilePlatform = Some(Ios)
+      statementType = Some(Ios)
     )
 
     lazy val fullyAccessibleAndroidAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC Android app",
-      mobilePlatform = Some(Android)
+      statementType = Some(Android)
     )
 
     lazy val fullyAccessibleVOAAppStatement = fullyAccessibleServiceStatement.copy(
@@ -557,7 +556,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
       statementType = None,
-      mobilePlatform = None,
       contactFrontendServiceId = "pas",
       complianceStatus = PartialCompliance,
       automatedTestingOnly = Some(false),
@@ -591,7 +589,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     )
 
     lazy val partiallyAccessibleIosAppStatement = partiallyAccessibleServiceStatement.copy(
-      mobilePlatform = Some(Ios)
+      statementType = Some(Ios)
     )
 
     lazy val partiallyAccessibleIosStatementHtml = statementPage(
@@ -601,7 +599,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     ).body
 
     lazy val partiallyAccessibleAndroidAppStatement = partiallyAccessibleServiceStatement.copy(
-      mobilePlatform = Some(Android)
+      statementType = Some(Android)
     )
 
     lazy val partiallyAccessibleStatementHtml = statementPage(

@@ -22,7 +22,7 @@ using-service.heading=Using this service
 using-service.heading.ios=Using this app
 using-service.heading.android=Using this app
 
-using-service.this-service-or-app-is-run-voa=This {0} is run by the Valuation Office Agency (VOA), an executive agency of HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
+using-service.this-service-or-app-is-run-voa=This service is run by the Valuation Office Agency (VOA), an executive agency of HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.' '
 using-service.this-service-or-app-is-run-standard=This {0} is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
 using-service.service.this-means=This means you should be able to:
 using-service.app.this-means='This means you can use the built-in '
