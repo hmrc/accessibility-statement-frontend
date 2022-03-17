@@ -3,7 +3,7 @@ serviceHeaderName: Ask the Adjudicator's Office to investigate a complaint or re
 serviceDescription: |
   Use this form to ask the Adjudicator's Office to investigate a complaint or review a decision.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/adjudicators-office-complaint-or-review-auth
+serviceUrl: /submissions/new-form/adjudicators-office-complaint-or-review
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
