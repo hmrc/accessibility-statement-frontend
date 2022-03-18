@@ -485,7 +485,11 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
       statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
       statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
-      automatedTestingDetails = None
+      automatedTestingDetails = None,
+      businessArea = None,
+      ddc = None,
+      liveOrClassic = None,
+      typeOfService = None
     )
 
     lazy val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
@@ -585,7 +589,11 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.APRIL, 21).getTime),
       statementCreatedDate = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
       statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime,
-      automatedTestingDetails = None
+      automatedTestingDetails = None,
+      businessArea = None,
+      ddc = None,
+      liveOrClassic = None,
+      typeOfService = None
     )
 
     lazy val partiallyAccessibleIosAppStatement = partiallyAccessibleServiceStatement.copy(
