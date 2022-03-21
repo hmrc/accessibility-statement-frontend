@@ -71,6 +71,10 @@ contact.extra-support-voa.part1='Gallwch '
 contact.extra-support-voa.part2=gysylltu ag Asiantaeth y Swyddfa Brisio am gymorth pellach os oes angen help arnoch i lenwi ffurflenni neu gael fformat gwahanol, megis print bras, recordiad sain neu Braille.
 contact.extra-support-voa.part3=Ffôn: 03000 505 505
 contact.extra-support-voa.part4=Oriau agor: dydd Llun i ddydd Gwener: 9:30am tan 4:30pm
+contact.extra-support-chgv.part1=Darperir cymorth ar gyfer y gwasanaeth hwn gan yr Adran Masnach Ryngwladol.
+contact.extra-support-chgv.part2=Tîm Cymorth Digidol
+contact.extra-support-chgv.part3=Ffôn: 020 7215 5000
+contact.extra-support-chgv.part4=Dydd Llun i ddydd Gwener, 9am tan 5pm
 
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn

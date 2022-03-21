@@ -72,6 +72,10 @@ contact.extra-support-voa.part1='You can '
 contact.extra-support-voa.part2=contact VOA for extra support if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.
 contact.extra-support-voa.part3=Telephone: 03000 501 501
 contact.extra-support-voa.part4=Opening times: Monday to Friday: 9:30am to 4:30pm
+contact.extra-support-chgv.part1=Support for this service is provided by the Department for International Trade.
+contact.extra-support-chgv.part2=Assisted Digital Team
+contact.extra-support-chgv.part3=Telephone: 020 7215 5000
+contact.extra-support-chgv.part4=Monday to Friday, 9am to 5pm
 
 ## Reporting problems
 reporting.heading=Reporting accessibility problems with this {0}
