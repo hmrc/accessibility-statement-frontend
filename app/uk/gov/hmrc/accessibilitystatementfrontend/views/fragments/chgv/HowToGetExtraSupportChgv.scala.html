@@ -14,16 +14,12 @@
  * limitations under the License.
  *@
 
-@import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
-
 @this()
 
-@()(implicit messages: Messages, statement: AccessibilityStatement)
+@()(implicit messages: Messages)
 
 <h2 class="govuk-heading-l">@{messages("contact.heading")}</h2>
-<p class="govuk-body">
-    @{messages("contact.extra-support-voa.part1")}
-    @{messages("contact.extra-support-voa.part2")}
-    <p class="govuk-body">@{messages("contact.extra-support-voa.part3")}</p>
-    <p class="govuk-body">@{messages("contact.extra-support-voa.part4")}</p>
-</p>
+<p class="govuk-body">@{messages("contact.extra-support-chgv.part1")}</p>
+<p class="govuk-body">@{messages("contact.extra-support-chgv.part2")}</p>
+<p class="govuk-body">@{messages("contact.extra-support-chgv.part3")}</p>
+<p class="govuk-body">@{messages("contact.extra-support-chgv.part4")}</p>

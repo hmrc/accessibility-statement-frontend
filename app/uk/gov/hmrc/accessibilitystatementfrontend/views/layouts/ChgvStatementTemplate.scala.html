@@ -19,12 +19,14 @@
 @import uk.gov.hmrc.play.language.LanguageUtils
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.dateToLocalDate
 @import uk.gov.hmrc.accessibilitystatementfrontend.views.html.fragments.standard._
+@import uk.gov.hmrc.accessibilitystatementfrontend.views.html.fragments.chgv._
 
 @this(
   utils: LanguageUtils,
   introduction: Introduction,
   aboutThisService: AboutThisService,
   howAccessibleIsThisService: HowAccessibleIsThisService,
+  howToGetExtraSupport: HowToGetExtraSupportChgv,
   reportingAccessibilityProblems: ReportingAccessibilityProblems,
   complaintsProcess: ComplaintsProcess,
   technicalDetails: TechnicalDetails,
@@ -40,6 +42,8 @@
  @aboutThisService()
 
  @howAccessibleIsThisService()
+
+ @howToGetExtraSupport()
 
  @reportingAccessibilityProblems(referrerUrl)
 

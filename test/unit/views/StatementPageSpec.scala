@@ -150,9 +150,12 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       )
     }
 
-    "return HTML that does not contain the `What to do if you have difficulty using this service` section" in new FullSetup {
-      fullyAccessibleCHGVStatementHtml should not include
-        """<h2 class="govuk-heading-l">What to do if you have difficulty using this service</h2>"""
+    "return HTML that contains the correct `What to do if you have difficulty using this service` section" in new FullSetup {
+      fullyAccessibleCHGVStatementHtml should include
+      """<h2 class="govuk-heading-l">What to do if you have difficulty using this service</h2>"""
+
+      fullyAccessibleCHGVStatementHtml should include
+      """<p class="govuk-body">Support for this service is provided by the Department for International Trade.</p>"""
     }
 
     "return HTML that does not contain the `Contacting us by phone or getting a visit from us in person` section" in new FullSetup {
