@@ -45,7 +45,11 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
     serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
 
   "parse" should {
@@ -158,6 +162,34 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       )
     }
 
+    "parse a fully accessible statement with metadata" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: draft
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |businessArea: Chief Digital & Information Officer (CDIO)
+          |ddc: DDC Worthing
+          |liveOrClassic: Live Services (Worthing)
+          |typeOfService: Public Beta""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(
+          businessArea = Some("Chief Digital & Information Officer (CDIO)"),
+          ddc = Some("DDC Worthing"),
+          liveOrClassic = Some("Live Services (Worthing)"),
+          typeOfService = Some("Public Beta")
+        )
+      )
+    }
+
     "parse a partially accessible statement" in {
       val statementYaml =
         """serviceName: Online Payments
@@ -220,7 +252,11 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
           statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails = None
+          automatedTestingDetails = None,
+          businessArea = None,
+          ddc = None,
+          liveOrClassic = None,
+          typeOfService = None
         )
       )
     }
@@ -289,7 +325,11 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
           statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails = Some("This has only been tested via automated tools.")
+          automatedTestingDetails = Some("This has only been tested via automated tools."),
+          businessArea = None,
+          ddc = None,
+          liveOrClassic = None,
+          typeOfService = None
         )
       )
     }
@@ -324,7 +364,11 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           serviceLastTestedDate = None,
           statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails = None
+          automatedTestingDetails = None,
+          businessArea = None,
+          ddc = None,
+          liveOrClassic = None,
+          typeOfService = None
         )
       )
     }

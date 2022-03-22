@@ -42,7 +42,11 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
     statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
   private val welshStatement       =
     englishStatement.copy(serviceName = "Test (Welsh)")

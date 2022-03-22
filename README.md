@@ -49,6 +49,10 @@ automatedTestingOnly: true              # Only add this value if your service ha
 automatedTestingDetails: |              # Only add this value if your service has only had automated testing
   If your service has only had automated testing, add a text description of testing tools used, e.g.
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
+businessArea: Chief Digital & Information Officer (CDIO) # See valid values below
+ddc: DDC Worthing                        # See valid values below
+liveOrClassic: Live Services (Worthing)  # See valid values below 
+typeOfService: Public beta               # Classic services|Live services|Public beta
 ```
 
 If your statement is specifically for a mobile application, add the line `statementType: android` for an android application or
@@ -70,6 +74,13 @@ e.g. `conf/services/discounted-icecreams.yml` will create an accessibility state
 `https://www.tax.service.gov.uk/accessibility-statement/discounted-icecreams`.
 
 The filename can contain only lower case letters, dashes or numbers, and the filename extension must be `.yml`
+
+| Parameter         | Valid values                                                                                                          |
+| ------------------| -------------------------------------------------------------------------------------------------------------------- |
+| `businessArea`    | `Adjudicator's Office`, `Borders & Trade`, `Chief Digital & Information Officer (CDIO)`, `Customer Compliance Group (CCG)`, `Customer Services Group (CSG)`, `Customer Strategy & Tax Design (CS&TD)`, `HMRC External - Cabinet Office`, `Valuation Office Agency (VOA)` |
+| `ddc`             | `DDC Edinburgh`, `DDC London`, `DDC Newcastle`, `DDC Telford`, `DDC Worthing`, `DDC Yorkshire`, `Non DDC Location` |
+| `liveOrClassic`   | `Classic Services`, `Live Services - Edinburgh`, `Live Services - Newcastle`, `Live Services - Telford`, `Live Services - Worthing` |
+
 
 ## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
