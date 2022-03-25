@@ -7,13 +7,12 @@ serviceUrl: /report-tax-fraud
 contactFrontendServiceId: tax-fraud-reporting-frontend    # A unique identifier for your service
 complianceStatus: partial
 accessibilityProblems:
-  - when switching to the Welsh language, some of the page content remains in English.
-  - These will be incorrectly pronounced by screen readers.
+  - when switching to the Welsh language, some of the page content remains in English. These will be incorrectly pronounced by screen readers
 milestones:
   - description: |
       Appropriate lang attributes are missing to identify content as being in a different language. These will be incorrectly pronounced by screen readers. This fails WCAG 2.1 success criterion 3.1.2: Language of Parts.
-    date: 2022-03-28
+    date: 2022-05-30
 serviceLastTestedDate: 2022-03-04
 statementVisibility: public
 statementCreatedDate: 2022-03-14
-statementLastUpdatedDate: 2022-03-14
+statementLastUpdatedDate: 2022-03-25

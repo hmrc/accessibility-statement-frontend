@@ -7,13 +7,12 @@ serviceUrl: /report-tax-fraud
 contactFrontendServiceId: tax-fraud-reporting-frontend    # A unique identifier for your service
 complianceStatus: partial
 accessibilityProblems:
-  - wrth newid i’r Gymraeg, mae peth cynnwys tudalennau yn aros yn Saesneg.
-  - Bydd y rhain yn cael eu ynganu'n anghywir gan ddarllenwyr sgrin.
+  - wrth newid i’r Gymraeg, mae peth cynnwys tudalennau yn aros yn Saesneg. Bydd y rhain yn cael eu ynganu'n anghywir gan ddarllenwyr sgrin.
 milestones:
   - description: |
       mae priodoleddau iaith ar goll i nodi cynnwys sydd wedi’i ysgrifennu mewn iaith wahanol. Bydd y geiriau hyn yn cael eu ynganu’n anghywir gan ddarllenwyr sgrin. Mae'r gwallau hyn yn methu WCAG 2.1 maen prawf llwyddiant 3.1.2: Rhannau Iaith.
-    date: 2022-03-28
+    date: 2022-05-30
 serviceLastTestedDate: 2022-03-04
 statementVisibility: public
 statementCreatedDate: 2022-03-14
-statementLastUpdatedDate: 2022-03-14
+statementLastUpdatedDate: 2022-03-25
