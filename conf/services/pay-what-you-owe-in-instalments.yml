@@ -15,18 +15,18 @@ milestones:
       navigated with only the keyboard. In some places, these groups are missing their
       labels which means screen reading software will not read out the description of the
       selected element. This does not meet WCAG success criterion 2.4.6 (Headings and Labels).
-    date: 2021-12-15
+    date: 2022-12-15
   - description: We use tab titles to describe the content of our web pages. In some places,
       the tab titles do not match the heading of the page. This does not meet WCAG 2.1 success
       criterion 2.4.6 (Headings and Labels).
-    date: 2021-12-15
+    date: 2022-12-15
   - description: Some error messages are not descriptive enough for people with visual
       impairments. This does not meet WCAG Success Criterion 3.3.3 (Error Suggestion).
-    date: 2021-12-15
+    date: 2022-12-15
   - description: The service is not fully compliant with WCAG 2.2.1 (timing adjustable) as
       there is not a warning for the service timeout.
-    date: 2021-12-15
+    date: 2022-12-15
 serviceLastTestedDate: 2020-04-02
 statementVisibility: public
 statementCreatedDate: 2020-02-26
-statementLastUpdatedDate: 2021-02-11
+statementLastUpdatedDate: 2022-03-29
