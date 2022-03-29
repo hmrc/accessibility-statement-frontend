@@ -8,33 +8,29 @@ serviceUrl: /report-quarterly/income-and-expenses/view/
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
-  - Ni fydd darllenwyr sgrin yn gwybod y gwahaniaeth wrth lywio drwy rai o’r tudalennau ar draws y gwasanaeth. Gall hyn beri dryswch wrth lywio drwy dudalennau.
-  - Mae togl y ddewislen yn diflannu pan gaiff ei glicio os yw’r gwasanaeth yn cael ei weld ar sgrin fach.
-  - Mae’r dewisydd iaith wedi’i alinio ar y dde ac mae’r briwsion wedi’u halinio ar y chwith ar yr un rhes weledol, ond mae’r drefn ar ôl gwasgu’r botwm ‘Tab’ yn eich anfon at y dewisydd iaith yn gyntaf.
-    Yn ogystal, ar sgriniau bach, nid yw’r briwsion yn ail-lifo.
-  - Nid yw sgrin arddangos logo baner CThEM na’r drefn darllen ar gyfer technoleg gynorthwyol yn gyson, felly mae’n bosibl bydd rhai defnyddwyr yn cael eu drysu.
-  - Mae lliw a nodwedd ffocysu’r briwsion yn defnyddio llwyd golau, sy’n effeithio ar y gymhareb lliw. Efallai y bydd rhai defnyddwyr sydd â nam ar y golwg yn cael trafferth darllen popeth ar y dudalen hon.
-  - Nid yw’r cyfieithiadau Cymraeg yn gyflawn. Nid yw’r copi canlynol wedi ei gyfieithu i'r Gymraeg - ‘Ewch yn syth i’r prif gynnwys’ - ‘Mae’r holl gynnwys ar gael dan y Drwydded Llywodraeth Agored, fersiwn 3.0, oni nodir yn wahanol’ - ‘Hawlfraint y Goron’
+  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd defnyddio rhai o’r tablau ar y tudalennau ’trosolwg o’r flwyddyn dreth’ a ’diweddariadau nesaf’. Nid yw rhai tablau’n disgrifio eu diben na’r colofnau wrth i ddefnyddiwr darllenydd sgrin symud rhwng tablau a chelloedd.
+  - Mae’r cysylltiad delwedd GOV.UK yn y pennawd yn cysylltu i hafan y gwasanaeth yn hytrach nag i hafan GOV.UK
+  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd dod o hyd i werthoedd cywir yn y rhestr ’trosolwg o’r flwyddyn dreth’. Nid yw’r rhestr o ddisgrifiadau yn nodi’r label, felly ni fydd rhai defnyddwyr darllenwyr sgrin yn gwybod faint o eitemau sydd yn y rhestr.
+  - Efallai na fydd ’cadarnhau manylion eich cleient’ yn cyfleu gwybodaeth yn gywir ar gyfer technolegau cynorthwyol neu efallai y bydd yn dangos yr wybodaeth yn anghyson ar draws porwyr oherwydd tagiau HTML sydd ar goll.
+  - Mae’n bosibl y bydd defnyddwyr bysellfwrdd yn unig yn ei chael hi’n anodd defnyddio rhai o’r botymau, a bydd angen iddynt ddefnyddio’r botwm Enter yn lle’r bar gofod. Nid yw’r cysylltiadau sy’n ymddangos fel botymau wedi’u labelu’n gywir ar gyfer defnyddwyr technoleg gynorthwyol.
+  - Bydd yn anodd gwahaniaethu rhwng y cysylltiad i’r gwasanaeth yn y pennawd ar y dudalen ’trosolwg o’r flwyddyn dreth’ a’r cefndir wrth hofran, oherwydd y cyferbynnedd lliw.
+  - Wrth newid i’r Gymraeg ar ’Beth yw Cyfeirnod Unigryw y Trethdalwr (UTR) eich cleient?’, mae’r gair ’error’ yn aros yn Saesneg a bydd yn cael ei ynganu’n anghywir ar gyfer defnyddwyr darllenydd sgrin.
 milestones:
-  - description: Ni fydd darllenwyr sgrin yn gwybod y gwahaniaeth wrth lywio drwy rai o’r tudalennau ar draws y gwasanaeth. Gall hyn beri dryswch wrth lywio drwy dudalennau.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-05-31
-  - description: Mae togl y ddewislen yn diflannu pan gaiff ei glicio os yw’r gwasanaeth yn cael ei weld ar sgrin fach.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-05-31
-  - description: Mae’r dewisydd iaith wedi’i alinio ar y dde ac mae’r briwsion wedi’u halinio ar y chwith ar yr un rhes weledol, ond mae’r drefn ar ôl gwasgu’r botwm ‘Tab’ yn eich anfon at y dewisydd iaith yn gyntaf.
-      Yn ogystal, ar sgriniau bach, nid yw’r briwsion yn ail-lifo. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks); 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-05-31
-  - description: Nid yw sgrin arddangos logo baner CThEM na’r drefn darllen ar gyfer technoleg gynorthwyol yn gyson, felly mae’n bosibl bydd rhai defnyddwyr yn cael eu drysu.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-05-31
-  - description: Mae lliw a nodwedd ffocysu’r briwsion yn defnyddio llwyd golau, sy’n effeithio ar y gymhareb lliw. Efallai y bydd rhai defnyddwyr sydd â nam ar y golwg yn cael trafferth darllen popeth ar y dudalen hon.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast minimum) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-05-31
-  - description: Nid yw’r cyfieithiadau Cymraeg yn gyflawn. Nid yw’r copi canlynol wedi ei gyfieithu i'r Gymraeg - ‘Ewch yn syth i’r prif gynnwys’ - ‘Mae’r holl gynnwys ar gael dan y Drwydded Llywodraeth Agored, fersiwn 3.0, oni nodir yn wahanol’ - ‘Hawlfraint y Goron’.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.2.1 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-05-31
-serviceLastTestedDate: 2020-08-18
+- description: Mae capsiynau a/neu benawdau ar goll o rai tablau, sy’n ei gwneud hi’n anodd i ddefnyddwyr darllenwyr sgrin ddeall diben y tablau a’r celloedd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  date: 2022-04-30
+- description: Ni ellir pennu diben y cysylltiad GOV.UK o destun y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  date: 2022-04-30
+- description: Mae’r elfen term disgrifiad gofynnol ar goll o’r rhestr o ddisgrifiadau, sy’n annilys o ran html ac a allai achosi problemau i dechnoleg gynorthwyol ddehongli’r cynnwys yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  date: 2022-04-30
+- description: Tagiau eitemau ar goll, nad ydynt wedi’u nythu/cau’n gywir, ac a allai achosi i dechnoleg gynorthwyol beidio ’ chyfleu’r wybodaeth yn gywir neu i borwyr ddangos y cynnwys yn anghyson. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  date: 2022-04-30
+- description: Ar gyfer cysylltiadau sy’n ymddangos fel botymau, mae’r r’l="button" a’r polyfill JavaScript ar goll i sicrhau ei fod yn gweithredu fel botwm. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  date: 2022-04-30
+- description: Nid yw’r cysylltiad i’r gwasanaeth yn y pennawd yn bodloni’r lefel cymhareb cyferbynnedd ofynnol o’i gymharu ’ lliw’r cefndir wrth hofran. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  date: 2022-04-30
+- description: Pan gaiff y dudalen ’Beth yw Cyfeirnod Unigryw y Trethdalwr (UTR) eich cleient?’ ei dangos yn Gymraeg, mae peth o’r cynnwys yn ymddangos yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Bydd hyn yn cael ei ynganu’n anghywir ar gyfer defnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 3.1.2 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Iaith Rhannau
+  date: 2022-04-30
+serviceLastTestedDate: 2021-11-05
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-03-26
+statementLastUpdatedDate: 2022-01-05

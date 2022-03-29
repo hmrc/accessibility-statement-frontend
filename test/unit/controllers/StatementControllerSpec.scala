@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,8 @@ package unit.controllers
 import play.api.inject.bind
 import helpers.TestAccessibilityStatementRepo
 import org.jsoup.Jsoup
-import org.scalatest.{Matchers, WordSpec}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import play.api.http.Status
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
@@ -31,7 +32,7 @@ import play.api.Application
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.mvc.Cookie
 
-class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
+class StatementControllerSpec extends AnyWordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
   private val fakeRequest  = FakeRequest("GET", "/")
   private val welshRequest = fakeRequest.withCookies(
     Cookie(
@@ -76,7 +77,7 @@ class StatementControllerSpec extends WordSpec with Matchers with MockitoSugar w
 
       val headers = content.select("h1")
       headers.size       shouldBe 1
-      headers.first.text shouldBe "Datganiad hygyrchedd ar gyfer Test (Welsh)"
+      headers.first.text shouldBe "Datganiad hygyrchedd ar gyfer y gwasanaeth Test (Welsh)"
     }
 
     "fallback to the English statement if no Welsh translation is available" in {

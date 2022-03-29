@@ -1,0 +1,10 @@
+serviceName: Confirm an applicant has done a tax check
+serviceDescription: This service allows licensing bodies to verify a tax check code that has been provided by a licence applicant. Only licence applications covered by Tax Conditionality legislation require a tax check code.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /confirm-tax-check-code/start
+contactFrontendServiceId: TC-LICENSING-BODY
+complianceStatus: full
+serviceLastTestedDate: 2022-02-17
+statementVisibility: public
+statementCreatedDate: 2022-03-07
+statementLastUpdatedDate: 2022-03-07

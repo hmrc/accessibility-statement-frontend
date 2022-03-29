@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@ import org.openqa.selenium.By
 import collection.JavaConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {
-  feature("Statement page") {
-    scenario(
+  Feature("Statement page") {
+    Scenario(
       "The user visits a statement page for a fully accessible service"
     ) {
       Given("the user does not have welsh language selected")
@@ -58,7 +58,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       }
     }
 
-    scenario(
+    Scenario(
       "The user visits a statement page for a partially accessible service"
     ) {
       Given("the user does not have welsh language selected")
@@ -93,7 +93,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       }
     }
 
-    scenario("The user visits a statement page for a non accessible service") {
+    Scenario("The user visits a statement page for a non accessible service") {
       Given("the user does not have welsh language selected")
       deleteAllCookies
 
@@ -121,7 +121,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
           .toList
           .map(_.getText) should
           contain(
-            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2021."
+            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2022."
           )
       }
     }

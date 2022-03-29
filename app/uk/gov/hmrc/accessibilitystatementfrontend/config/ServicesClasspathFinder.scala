@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,8 +23,8 @@ import play.api.Logging
 case class ServicesClasspathFinder @Inject() (appConfig: AppConfig) extends ServicesFinder with Logging {
   import appConfig._
 
-  def findAll: Seq[String] = {
-    val fileNames    = getFilenames()
+  def findAll(): Seq[String] = {
+    val fileNames    = getFilenames
     val yamlFilename = "([0-9a-z\\-]+)(\\.cy)?\\.yml".r
     fileNames flatMap {
       case yamlFilename(fileNameWithoutExtension, welshExtensionOrNull) =>
@@ -38,9 +38,9 @@ case class ServicesClasspathFinder @Inject() (appConfig: AppConfig) extends Serv
     }
   }
 
-  private def getFilenames(): Seq[String] = {
+  private def getFilenames: Seq[String] = {
     val servicesDirectoryPath = new File(
-      getClass.getClassLoader.getResource(servicesDirectory).getPath
+      getClass.getClassLoader.getResource(servicesDirectory).toURI.getPath
     )
     if (servicesDirectoryPath.isDirectory)
       servicesDirectoryPath

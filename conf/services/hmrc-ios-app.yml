@@ -1,13 +1,13 @@
-serviceName: HMRC iOS
+serviceName: HMRC iOS app
 contactFrontendServiceId: hmrc-ios-app
 serviceDescription: |
   You can use the HMRC app to do things like check your next salary payment from your employer,
   check your next tax credit payments, find your tax code and find out how much Income Tax you should pay.
 serviceDomain: apps.apple.com
 serviceUrl: /gb/app/hmrc/id514561561
-mobilePlatform: ios
+statementType: ios
 complianceStatus: full
-statementVisibility: draft
-serviceLastTestedDate: 2020-07-07
-statementCreatedDate: 2020-04-20
-statementLastUpdatedDate: 2020-04-20
+statementVisibility: public
+serviceLastTestedDate: 2021-06-07
+statementCreatedDate: 2021-06-10
+statementLastUpdatedDate: 2021-06-10

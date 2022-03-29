@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,12 @@ class StatementReportTask @Inject() (
     "statementVisibility",
     "serviceLastTestedDate",
     "statementCreatedDate",
-    "statementLastUpdatedDate"
+    "statementLastUpdatedDate",
+    "statementType",
+    "Business Area",
+    "DDC",
+    "Live or Classic",
+    "type of Service"
   )
 
   override def getBodyRows: Seq[Seq[String]] =
@@ -75,11 +80,16 @@ class StatementReportTask @Inject() (
       problemsCount,
       milestoneCount,
       earliestMilestoneDate,
-      automatedTestingOnly.getOrElse(false).toString,
+      displayAutomatedTestingOnlyContent.toString,
       statementVisibility.toString,
       lastTestedDate,
       getIsoDate(statementCreatedDate),
-      getIsoDate(statementLastUpdatedDate)
+      getIsoDate(statementLastUpdatedDate),
+      statementTemplate.toString,
+      businessArea.getOrElse(""),
+      ddc.getOrElse(""),
+      liveOrClassic.getOrElse(""),
+      typeOfService.getOrElse("")
     )
   }
 }

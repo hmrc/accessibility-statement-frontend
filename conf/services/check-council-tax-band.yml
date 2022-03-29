@@ -1,0 +1,13 @@
+serviceName: Check and challenge your Council Tax band
+serviceHeaderName: Check and challenge your Council Tax band
+serviceDescription: |
+  This service allows you to check the Council Tax band of every residential property in England and Wales.
+  You may also use the service to challenge a band if required.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-council-tax-band/search
+contactFrontendServiceId: CCYCTB
+complianceStatus: full
+serviceLastTestedDate: 2021-11-26
+statementVisibility: public
+statementCreatedDate: 2021-11-29
+statementLastUpdatedDate: 2021-11-29

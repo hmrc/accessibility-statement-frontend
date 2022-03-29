@@ -1,0 +1,10 @@
+serviceName: Cofrestru Ymddiriedolaeth a’i Chynnal
+serviceDescription: Mae’r gwasanaeth hwn yn caniatáu i chi gofrestru a chynnal ymddiriedolaethau trethadwy ac anhrethadwy.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /trusts-registration
+contactFrontendServiceId: trusts
+complianceStatus: full
+serviceLastTestedDate: 2021-09-14
+statementVisibility: public
+statementCreatedDate: 2021-09-30
+statementLastUpdatedDate: 2021-09-30

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend
 
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.net.URLEncoder
 import io.circe.{Decoder, Encoder}
+
+import java.net.URLEncoder
+import java.time.LocalDate
+import java.util.{Date, GregorianCalendar}
 import scala.util.Try
-import play.api.i18n.Messages
 
 package object models {
   private val format = new java.text.SimpleDateFormat("yyyy-MM-dd")
@@ -30,16 +30,14 @@ package object models {
     Try(format.parse(str))
   }
 
-  def prettyPrintDate(date: Date)(implicit messages: Messages): String = {
-    val dayNumber   = new SimpleDateFormat("dd").format(date)
-    val monthNumber = new SimpleDateFormat("M").format(date)
-    val year        = new SimpleDateFormat("yyyy").format(date)
-    val monthName   = messages(s"dates.month.$monthNumber")
-    s"$dayNumber $monthName $year"
-  }
-
   implicit val dateEncoder: Encoder[Date] =
     Encoder.encodeString.contramap[Date](format.format)
+
+  def dateToLocalDate(date: Date): LocalDate = {
+    val calendar = new GregorianCalendar()
+    calendar.setTime(date)
+    calendar.toInstant.atZone(calendar.getTimeZone.toZoneId).toLocalDate;
+  }
 
   def reportAccessibilityProblemLink(
     reportAccessibilityProblemUrl: String,

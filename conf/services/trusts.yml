@@ -1,0 +1,10 @@
+serviceName: Register and Maintain a Trust
+serviceDescription: This service allows you to register and maintain taxable and non-taxable trusts.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /trusts-registration
+contactFrontendServiceId: trusts
+complianceStatus: full
+serviceLastTestedDate: 2021-09-14
+statementVisibility: public
+statementCreatedDate: 2021-09-30
+statementLastUpdatedDate: 2021-09-30

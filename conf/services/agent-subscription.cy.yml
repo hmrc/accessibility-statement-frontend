@@ -7,40 +7,28 @@ serviceUrl: /agent-subscripion/start
 contactFrontendServiceId: AOSS
 complianceStatus: partial
 accessibilityProblems:
-  - Nid yw rhai o’r cysylltiadau yn y gwasanaeth yn ddisgrifiadol
-  - Gall y swyddogaethau awtogwblhau ar rai tudalennau yn y gwasanaeth hwn achosi problemau i bobl sy’n defnyddio darllenydd sgrin
-  - Mae gan rai o’r tudalennau yn y gwasanaeth set maes diangen, a gallai hyn atal defnyddwyr sy’n pori allan o gyd-destun rhag deall yr hyn sy’n cael ei ddewis
-  - Nid oes priodoledd set maes na phriodoledd allwedd gan y dudalen ‘A ydych wedi gwneud cais i CThEM ar gyfer goruchwyliaeth gwyngalchu arian?’, felly gallai pwrpas y botymau radio fod yn aneglur i rai defnyddwyr
-  - Nid yw’r maes mewnbwn ar y dudalen ‘Beth yw’ch Cyfeirnod Unigryw y Trethdalwr (UTR) ar gyfer Treth Gorfforaeth?’ wedi’i labelu, a gallai hyn atal rhai defnyddwyr rhag deall yr hyn y mae angen iddynt ei nodi yn y maes
+  - Mae penawdau gweledol yn bresennol ond nid yw strwythur y pennawd wedi’i bennu gan raglen. Mae hyn yn golygu efallai na fydd defnyddwyr darllenwyr sgrin yn gallu nodi strwythur a pherthynas y cynnwys ar y dudalen wedyn.
+  - Nid yw’r ddolen i symud ymlaen yn syth i grynodeb o wallau ‘Dewiswch ‘Iawn’ os mai’ch busnes chi yw hwn’ yn cysylltu defnyddwyr â’r maes mewnbwn cyfatebol. Mae hyn yn golygu na all defnyddwyr symud ymlaen yn uniongyrchol i’r maes mewnbwn lle mae gwall dilysu wedi digwydd.
+  - Mae elfen dolen sydd wedi’i chuddio o’r golwg sy’n gysylltiedig â ‘Dynodyddion Defnyddiwr (ID) Porth y Llywodraeth a nodwyd’ yn cael ffocws y bysellfwrdd; fodd bynnag, nid yw’r ddolen yn dod yn weladwy pan fydd mewn ffocws. Mae hyn yn golygu efallai na fydd rhai defnyddwyr yn gallu penderfynu ble mae eu ffocws ar y dudalen wrth lywio drwy fysellfwrdd yn unig.
+  - Roedd rhai defnyddwyr yn cael anhawster darllen testun rhai elfennau rhyngweithiol oherwydd cyferbyniad isel lliwiau’r blaendir a’r cefndir.
+  - Er bod yr acronym ‘LLP’ yn cael ei gyflwyno mewn cromfachau wrth ymyl ei ffurf estynedig ar dudalen y cwestiwn ‘Pa fath o fusnes ydych chi?’; efallai y bydd rhai pobl yn ei chael hi’n anodd cofio ei ffurf estynedig wrth iddynt barhau i symud ymlaen drwy’r broses oedrannau. Mae hyn yn golygu efallai na fydd defnyddwyr sy'n anghyfarwydd neu nad ydynt yn cofio ffurf estynedig yr acronym yn deall ei bwrpas na'i ystyr.
 milestones:
   - description: |
-      Nid yw rhai o’r cysylltiadau yn y gwasanaeth yn ddisgrifiadol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose in context) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2020-12-31
+      Mae penawdau gweledol yn bresennol ond nid yw strwythur y pennawd wedi’i bennu gan raglen. Mae hyn yn golygu efallai na fydd defnyddwyr darllenwyr sgrin yn gallu nodi strwythur a pherthynas y cynnwys ar y dudalen wedyn. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Gall y swyddogaethau awtogwblhau ar rai tudalennau yn y gwasanaeth hwn achosi problemau i bobl sy’n defnyddio darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2020-12-31
+      Nid yw’r ddolen i symud ymlaen yn syth i grynodeb o wallau ‘Dewiswch ‘Iawn’ os mai’ch busnes chi yw hwn’ yn cysylltu defnyddwyr â’r maes mewnbwn cyfatebol. Mae hyn yn golygu na all defnyddwyr symud ymlaen yn uniongyrchol i’r maes mewnbwn lle mae gwall dilysu wedi digwydd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Mae gan rai o’r tudalennau yn y gwasanaeth set maes diangen, a gallai hyn atal defnyddwyr sy’n pori allan o gyd-destun rhag deall yr hyn sy’n cael ei ddewis. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) a 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2020-12-31
+      Mae elfen dolen sydd wedi’i chuddio o’r golwg sy’n gysylltiedig â ‘Dynodyddion Defnyddiwr (ID) Porth y Llywodraeth a nodwyd’ yn cael ffocws y bysellfwrdd; fodd bynnag, nid yw’r ddolen yn dod yn weladwy pan fydd mewn ffocws. Mae hyn yn golygu efallai na fydd rhai defnyddwyr yn gallu penderfynu ble mae eu ffocws ar y dudalen wrth lywio drwy fysellfwrdd yn unig. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.3 (Focus Order) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Nid oes priodoledd set maes na phriodoledd allwedd gan y dudalen ‘A ydych wedi gwneud cais i CThEM ar gyfer goruchwyliaeth gwyngalchu arian?’, felly gallai pwrpas y botymau radio fod yn aneglur i rai defnyddwyr. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2020-12-31
+      Roedd rhai defnyddwyr yn cael anhawster darllen testun rhai elfennau rhyngweithiol oherwydd cyferbyniad isel lliwiau’r blaendir a’r cefndir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.6 (Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
   - description: |
-      Nid yw’r maes mewnbwn ar y dudalen ‘Beth yw’ch Cyfeirnod Unigryw y Trethdalwr (UTR) ar gyfer Treth Gorfforaeth?’ wedi’i labelu, a gallai hyn atal rhai defnyddwyr rhag deall yr hyn y mae angen iddynt ei nodi yn y maes. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) a 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2020-12-31
-  - description: |
-      Nid yw’r cysylltiad gwall ar y dudalen ‘Manylion cleient’ yn cysylltu â’r gwall. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2020-12-31
-  - description: |
-      Nid yw’r neges dilysu gwall ar y dudalen ‘Pa fath o fusnes ydych?’ yn ddisgrifiadol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2020-12-31
-  - description: |
-      Rydym wedi cynnal adolygiad arbenigol mewnol o’r gwasanaeth ac wedi trwsio’r materion hyn o ran hygyrchedd.
-    date: 2020-12-31
-  - description: |
-      Byddwn yn trefnu archwiliad allanol ffurfiol pellach o’r gwasanaeth cyfan cyn gynted â phosibl, fel rhan o’n cynllun ar gyfer sicrhau bod y gwasanaeth yn cydymffurfio’n llawn.
-    date: 2020-12-31
-serviceLastTestedDate: 2019-8-22
+      Er bod yr acronym ‘LLP’ yn cael ei gyflwyno mewn cromfachau wrth ymyl ei ffurf estynedig ar dudalen y cwestiwn ‘Pa fath o fusnes ydych chi?’; efallai y bydd rhai pobl yn ei chael hi’n anodd cofio ei ffurf estynedig wrth iddynt barhau i symud ymlaen drwy’r broses oedrannau. Mae hyn yn golygu efallai na fydd defnyddwyr sy'n anghyfarwydd neu nad ydynt yn cofio ffurf estynedig yr acronym yn deall ei bwrpas na'i ystyr. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.4 (Abbreviations) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-03-31
+serviceLastTestedDate: 2021-10-07
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2019-09-23
+statementLastUpdatedDate: 2021-12-13

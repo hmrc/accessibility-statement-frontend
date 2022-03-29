@@ -4,7 +4,36 @@ serviceDescription: Mae’r gwasanaethau Lwfans Priodasol yn galluogi cyplau cym
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /marriage-allowance-application
 contactFrontendServiceId: marriage-allowance-application
-complianceStatus: noncompliant
+complianceStatus: partial
+serviceLastTestedDate: 2021-04-23
 statementVisibility: public
-statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2020-09-23
+statementCreatedDate: 2020-10-01
+statementLastUpdatedDate: 2022-01-06
+accessibilityProblems:
+  - Ar sawl tudalen, nid yw’r allweddi ar gyfer y botymau radio yn ddigon disgrifiadol a gall hyn achosi dryswch i ddarllenwyr sgrin.
+  - Ar sawl tudalen, mae teitlau tudalen sydd wedi’u dyblygu a gall hyn achosi anhawster i ddarllenwyr sgrin sydd angen teitlau tudalen unigryw i’w galluogi i adnabod y dudalen yn gywir.
+  - Nid oes gan rai tudalennau lle mae angen i ddefnyddwyr nodi dyddiad allwedd a gall hyn achosi problemau i ddarllenwyr sgrin. Bydd yn anodd cysylltu’r maes mewnbynnu dyddiad â’r cwestiwn sy’n cael ei ofyn gan na fydd yn cael ei ddarllen gan y darllenydd sgrin.
+  - Ar sawl tudalen, nid oes negeseuon statws ar fotymau radio y gellir eu hehangu. Gall hyn achosi problemau i ddarllenwyr sgrin gan fod angen rhoi gwybod iddynt pan fydd elfennau y gellir eu hehangu yn ymddangos.
+  - Drwy gydol y gwasanaeth, nid yw’r ffordd y cyflwynir negeseuon gwallau yn glir i ddefnyddwyr. Gall hyn achosi problemau wrth nodi’r mater a’i gywiro.
+milestones:
+  - description: |
+      Ar sawl tudalen, nid yw’r allwedd a ddarperir yn ddisgrifiadol. Gall hyn fod yn ddryslyd i ddarllenwyr sgrin gan nad yw’n glir i beth mae'r cynnwys yn perthyn a pham y cafodd ei ddefnyddio.
+      Gall hyn hefyd fod yn ddryslyd i ddefnyddwyr gan nad ydynt yn gwneud synnwyr allan o’u cyd-destun.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1  Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Information and relationships.
+    date: 2023-03-31
+  - description: |
+      Ar y dudalen lle mae dewis dyddiad y briodas neu ffurfio’r bartneriaeth sifil, nid oes gan y meysydd allwedd. Gall hyn achosi problemau i ddarllenwyr sgrin oherwydd efallai na fyddant yn gallu dweud beth mae’r meysydd yn ymwneud ag ef y tu allan i’r cyd-destun.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Information and relationships.
+    date: 2023-03-31
+  - description: |
+      Drwy gydol y gwasanaeth, caiff teitlau tudalennau eu dyblygu ar draws sawl tudalen sy’n golygu efallai na fydd darllenwyr sgrin yn deall eu bod ar dudalen newydd os ydynt yn symud drwy dabiau.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.2 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Page titled.
+    date: 2023-03-31
+  - description: |
+      Ar y tudalen  ‘A ydych yn briod neu mewn partneriaeth sifil?’, mae neges statws yn ymddangos ar ôl dewis ‘Na’ heb roi gwybod i ddarllenwyr sgrin. Bydd hyn yn broblem i ddarllenwyr sgrin sy’n pori allan o’u cyd-destun.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.3 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Status messages.
+    date: 2023-03-31
+  - description: |
+      Ar y dudalen cadarnhau blynyddoedd treth cynharach, nid yw’r ffordd y mae’r gwallau’n cael eu trin yn ddisgrifiadol. Mae hyn yn ei gwneud yn anodd i ddarllenwyr sgrin ddeall beth mae’r neges gwall yn ymwneud ag ef.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.3 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Error suggestion.
+    date: 2023-03-31

@@ -1,16 +1,16 @@
-serviceName: (Welsh) Update and submit an Income Tax Return
-serviceHeaderName: (Welsh) Update and submit an Income Tax Return
-serviceDescription: (Welsh) Service for users and agents to submit a Self Assessment.
+serviceName: Diweddaru a chyflwyno Ffurflen Dreth Incwm
+serviceHeaderName: Diweddaru a chyflwyno Ffurflen Dreth Incwm
+serviceDescription: Defnyddiwch y gwasanaeth hwn i ddiweddaru a chyflwyno Ffurflen Dreth Incwm.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /income-through-software/return/2022/start
+serviceUrl: /update-and-submit-income-tax-return/2022/start
 contactFrontendServiceId: update-and-submit-income-tax-return
 complianceStatus: partial
 accessibilityProblems:
-  - (Welsh) Users are not always notified when conditionally revealed content is expanded or collapsed.
+  - Ar rai tudalennau cadarnhau, pan fydd maint y testun yn cynyddu 200% nid yw’r gair cadarnhau yn ffitio yn y rhiant-gynhwysydd. Mae’r testun wedi’i glipio ac nid yw cynnwys y dudalen yn ail-lifo.
 milestones:
-  - description: (Welsh) Users are not always notified when conditionally revealed content is expanded or collapsed. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
-    date: 2021-05-31
-serviceLastTestedDate: 2021-03-15
+  - description: Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 1.1.
+    date: 2022-04-13
+serviceLastTestedDate: 2022-03-11
 statementVisibility: public
 statementCreatedDate: 2021-04-19
-statementLastUpdatedDate: 2021-04-19
+statementLastUpdatedDate: 2022-03-21

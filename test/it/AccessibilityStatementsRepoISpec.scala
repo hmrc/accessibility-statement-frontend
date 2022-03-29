@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,16 +16,18 @@
 
 package it
 
-import java.util.{Calendar, GregorianCalendar}
-
-import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
+import org.scalatest.{BeforeAndAfterEach, EitherValues}
 import play.api.Application
 import play.api.i18n.Lang
 import play.api.inject.guice.GuiceApplicationBuilder
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
-class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with EitherValues with BeforeAndAfterEach {
+import java.util.{Calendar, GregorianCalendar}
+
+class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with EitherValues with BeforeAndAfterEach {
 
   private val app: Application = new GuiceApplicationBuilder()
     .configure(
@@ -44,7 +46,7 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceDescription = "The foo service allows you to do foo",
     serviceDomain = "www.example.com",
     serviceUrl = "/foo",
-    mobilePlatform = None,
+    statementType = None,
     contactFrontendServiceId = "foo",
     complianceStatus = FullCompliance,
     automatedTestingOnly = None,
@@ -54,7 +56,11 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription = "Mae'r gwasanaeth foo yn caniatáu ichi wneud foo"
@@ -64,7 +70,7 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceDescription = "The bar service allows you to do bar",
     serviceDomain = "www.example.com",
     serviceUrl = "/bar",
-    mobilePlatform = None,
+    statementType = None,
     contactFrontendServiceId = "bar",
     complianceStatus = PartialCompliance,
     automatedTestingOnly = None,
@@ -90,7 +96,11 @@ class AccessibilityStatementsRepoISpec extends WordSpec with Matchers with Eithe
     serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
 
   private val barStatementWelsh = barStatement.copy(

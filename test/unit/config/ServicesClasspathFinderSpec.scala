@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,11 +18,12 @@ package unit.config
 
 import org.mockito.ArgumentMatchers.{any, contains}
 import org.mockito.MockitoSugar
-import org.scalatest.{Matchers, WordSpec}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesClasspathFinder}
 import play.api.Logger
 
-class ServicesClasspathFinderSpec extends WordSpec with Matchers with MockitoSugar {
+class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with MockitoSugar {
 
   def buildServicesFinder(
     servicesPath: String,
@@ -97,6 +98,14 @@ class ServicesClasspathFinderSpec extends WordSpec with Matchers with MockitoSug
         )
       )(
         any()
+      )
+    }
+
+    "return a list of services when services directory path has spaces in it" in {
+      val servicesFinder = buildServicesFinder("fixtures/services is a valid directory")
+
+      servicesFinder.findAll should equal(
+        Seq("service-1", "service-2", "service-3")
       )
     }
   }

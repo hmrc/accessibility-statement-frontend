@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,14 +17,16 @@
 package unit.parsers
 
 import java.util.{Calendar, GregorianCalendar}
-import org.scalatest.{EitherValues, Matchers, WordSpec}
+import org.scalatest.EitherValues
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public, VOA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.io.Source
 
-class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with EitherValues {
+class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers with EitherValues {
   private val parser = new AccessibilityStatementParser
 
   private val fullyAccessibleStatement = AccessibilityStatement(
@@ -33,7 +35,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",
     serviceUrl = "/disguised-remuneration",
-    mobilePlatform = None,
+    statementType = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,
     accessibilityProblems = None,
@@ -43,7 +45,11 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
     serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
 
   "parse" should {
@@ -89,7 +95,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
-          |mobilePlatform: android
+          |statementType: android
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
           |serviceLastTestedDate: 2019-12-09
@@ -99,7 +105,88 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
 
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
-        fullyAccessibleStatement.copy(statementVisibility = Public, mobilePlatform = Some(Android))
+        fullyAccessibleStatement.copy(
+          statementVisibility = Public,
+          statementType = Some(Android)
+        )
+      )
+    }
+
+    "parse a fully accessible statement for VOA" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /voa
+          |contactFrontendServiceId: voa
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: public
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |statementType: VOA""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(
+          statementVisibility = Public,
+          serviceUrl = "/voa",
+          contactFrontendServiceId = "voa",
+          statementType = Some(VOA)
+        )
+      )
+    }
+
+    "parse a fully accessible statement for C-HGV" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /c-hgv
+          |contactFrontendServiceId: c-hgv
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: public
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |statementType: C-HGV""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(
+          statementVisibility = Public,
+          serviceUrl = "/c-hgv",
+          contactFrontendServiceId = "c-hgv",
+          statementType = Some(CHGV)
+        )
+      )
+    }
+
+    "parse a fully accessible statement with metadata" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: draft
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |businessArea: Chief Digital & Information Officer (CDIO)
+          |ddc: DDC Worthing
+          |liveOrClassic: Live Services (Worthing)
+          |typeOfService: Public Beta""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.right.value should equal(
+        fullyAccessibleStatement.copy(
+          businessArea = Some("Chief Digital & Information Officer (CDIO)"),
+          ddc = Some("DDC Worthing"),
+          liveOrClassic = Some("Live Services (Worthing)"),
+          typeOfService = Some("Public Beta")
+        )
       )
     }
 
@@ -139,7 +226,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/pay",
-          mobilePlatform = None,
+          statementType = None,
           contactFrontendServiceId = "pay-frontend",
           complianceStatus = PartialCompliance,
           automatedTestingOnly = None,
@@ -165,7 +252,11 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
           statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails = None
+          automatedTestingDetails = None,
+          businessArea = None,
+          ddc = None,
+          liveOrClassic = None,
+          typeOfService = None
         )
       )
     }
@@ -208,7 +299,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
             "The Online Payments service is HMRC’s Digital card payment journey.\nIt allows users to pay their tax liabilities.\n",
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/pay",
-          mobilePlatform = None,
+          statementType = None,
           contactFrontendServiceId = "pay-frontend",
           complianceStatus = PartialCompliance,
           automatedTestingOnly = Some(true),
@@ -234,7 +325,11 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.SEPTEMBER, 25).getTime),
           statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails = Some("This has only been tested via automated tools.")
+          automatedTestingDetails = Some("This has only been tested via automated tools."),
+          businessArea = None,
+          ddc = None,
+          liveOrClassic = None,
+          typeOfService = None
         )
       )
     }
@@ -259,7 +354,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceDescription = "This is a non compliant service. People can eat doughnuts.",
           serviceDomain = "www.tax.service.gov.uk",
           serviceUrl = "/discounted-doughnuts",
-          mobilePlatform = None,
+          statementType = None,
           contactFrontendServiceId = "discounted-doughnuts",
           complianceStatus = NoCompliance,
           automatedTestingOnly = None,
@@ -269,7 +364,11 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
           serviceLastTestedDate = None,
           statementCreatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
           statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 9).getTime,
-          automatedTestingDetails = None
+          automatedTestingDetails = None,
+          businessArea = None,
+          ddc = None,
+          liveOrClassic = None,
+          typeOfService = None
         )
       )
     }
@@ -334,14 +433,14 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       )
     }
 
-    "throw a DecodingError if the mobile platform is incorrect" in {
+    "throw a DecodingError if the statementType is incorrect" in {
       val problemStatementYaml =
         """
           |serviceName: Send your loan charge details
           |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
           |serviceDomain: www.tax.service.gov.uk
           |serviceUrl: /disguised-remuneration
-          |mobilePlatform: sausage
+          |statementType: sausage
           |contactFrontendServiceId: disguised-remuneration
           |complianceStatus: full
           |serviceLastTestedDate: 2019-12-09
@@ -352,7 +451,7 @@ class AccessibilityStatementYamlParserSpec extends WordSpec with Matchers with E
       val parsed = parser.parse(problemStatementYaml)
 
       parsed.left.value.getMessage should startWith(
-        "Unrecognised mobile platform \"sausage\""
+        "Unrecognised statementType \"sausage\""
       )
     }
 

@@ -1,22 +1,34 @@
 service.homePageUrl = /
-general.serviceName = Accessibility statement
-general.pageTitle = Accessibility statement for {0} {1} - GOV.UK
+general.page-title = Accessibility statement for {0} service – GOV.UK
+general.page-title.ios = Accessibility statement for the {0} – GOV.UK
+general.page-title.android = Accessibility statement for the {0} – GOV.UK
 general.service=service
 general.app=app
 
 ## introduction
-introduction.heading=Accessibility statement for {0} {1}
+introduction.heading=Accessibility statement for {0} service
+introduction.heading.ios=Accessibility statement for the {0}
+introduction.heading.android=Accessibility statement for the {0}
+
 introduction.lede=This accessibility statement explains how accessible this {0} is, what to do if you have difficulty using it, and how to report accessibility problems with the {0}.
 introduction.scope.part1='This service is part of the wider GOV.UK website. There is a '
 introduction.scope.part2=separate accessibility statement for the main GOV.UK website
-introduction.service-name=This page only contains information about the {0} {2}, available at {1}.
+introduction.service-name=This page only contains information about the {0} service, available at {1}.
+introduction.service-name.ios=This page only contains information about the {0}, available at {1}.
+introduction.service-name.android=This page only contains information about the {0}, available at {1}.
 
 ## Using the service
-using-service.heading=Using this {0}
-using-service.this-service-or-app-is-run=This {0} is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
+using-service.heading=Using this service
+using-service.heading.ios=Using this app
+using-service.heading.android=Using this app
+
+using-service.this-service-or-app-is-run-voa=This service is run by the Valuation Office Agency (VOA), an executive agency of HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.' '
+using-service.this-service-or-app-is-run-standard=This {0} is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
 using-service.service.this-means=This means you should be able to:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
+using-service.app.accessibility-features.link.ios=https://www.apple.com/uk/accessibility/
+using-service.app.accessibility-features.link.android=https://www.android.com/intl/en_uk/accessibility/
 using-service.app.on-your-device=' on your device to:'
 
 using-service.bullet1=change colours, contrast levels and fonts
@@ -25,17 +37,17 @@ using-service.bullet3=get from the start of the service to the end using just a 
 using-service.bullet4=get from the start of the service to the end using speech recognition software
 using-service.bullet5=listen to the service using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
 
-using-service.android.bullet1=invert colours and adjust contrast levels
-using-service.android.bullet2=increase the text size without the text truncating or overlapping
-using-service.android.bullet3=navigate the app using Switch Access
-using-service.android.bullet4=get around the app using Voice Access
-using-service.android.bullet5=listen to the app using TalkBack
+using-service.bullet1.android=invert colours and adjust contrast levels
+using-service.bullet2.android=increase the text size without the text truncating or overlapping
+using-service.bullet3.android=navigate the app using Switch Access
+using-service.bullet4.android=get around the app using Voice Access
+using-service.bullet5.android=listen to the app using TalkBack
 
-using-service.ios.bullet1=invert colours and adjust contrast levels
-using-service.ios.bullet2=increase the text size without the text truncating or overlapping
-using-service.ios.bullet3=navigate the app using Switch Control
-using-service.ios.bullet4=get around the app using Voice Control
-using-service.ios.bullet5=listen to the app using VoiceOver
+using-service.bullet1.ios=invert colours and adjust contrast levels
+using-service.bullet2.ios=increase the text size without the text truncating or overlapping
+using-service.bullet3.ios=navigate the app using Switch Control
+using-service.bullet4.ios=get around the app using Voice Control
+using-service.bullet5.ios=listen to the app using VoiceOver
 
 using-service.simple-text=We have also made the text in the {0} as simple as possible to understand.
 using-service.making-device-easier.part1=AbilityNet has advice
@@ -54,14 +66,21 @@ accessibility.has-issues=Some people may find parts of this {0} difficult to use
 ## Contact
 contact.heading=What to do if you have difficulty using this service
 contact.extra-support.part1='You can '
-contact.extra-support.part2=contact HMRC for extra support (opens in a new tab)
+contact.extra-support.part2=contact HMRC for extra support
 contact.extra-support.part3=' if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.'
+contact.extra-support-voa.part1='You can '
+contact.extra-support-voa.part2=contact VOA for extra support if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.
+contact.extra-support-voa.part3=Telephone: 03000 501 501
+contact.extra-support-voa.part4=Opening times: Monday to Friday: 9:30am to 4:30pm
+contact.extra-support-chgv.part1=Support for this service is provided by the Department for International Trade.
+contact.extra-support-chgv.part2=Assisted Digital Team
+contact.extra-support-chgv.part3=Telephone: 020 7215 5000
+contact.extra-support-chgv.part4=Monday to Friday, 9am to 5pm
 
 ## Reporting problems
 reporting.heading=Reporting accessibility problems with this {0}
 reporting.report-problem.part1=We are always looking to improve the accessibility of this {0}. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements,' '
 reporting.report-problem.part2=report the accessibility problem
-reporting.report-problem.opens-in-new-tab=' (opens in a new tab)'
 
 ## Complaints
 complaints.heading=If you are not happy with our response
@@ -90,8 +109,8 @@ technical.non-compliance.header=Non‐accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non‐compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=This will be fixed by {0}.
-technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2021.
-technical.non-compliance.automated.test-by=The {0} will also book a full accessibility audit by 30 June 2021.
+technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2022.
+technical.non-compliance.automated.test-by=The {0} will also book a full accessibility audit by 31 March 2022.
 
 ## Testing
 testing.heading=How we tested this {0}
@@ -101,26 +120,12 @@ testing.details.part1=The {0} was built using parts that were tested by the
 testing.details.part2=Digital Accessibility Centre
 testing.details.part3=. The full {0} was tested by HMRC and included disabled users.
 testing.details.noncompliant=The {0} has not been tested for compliance with WCAG 2.1 AA.
-testing.created-and-updated=This page was published on {0}. It was last updated on {1}.
+testing.created-and-updated=This page was prepared on {0}. It was last updated on {1}.
 
 ## Not Found Page
-notFound.pageTitle=Page not found
+notFound.pageTitle=Page not found – GOV.UK
 notFound.heading=Page not found
 notFound.paragraph1=If you typed the web address, check it is correct.
 notFound.paragraph2=If you pasted the web address, check you copied the entire address.
-
-## Date formatting
-dates.month.1=January
-dates.month.2=February
-dates.month.3=March
-dates.month.4=April
-dates.month.5=May
-dates.month.6=June
-dates.month.7=July
-dates.month.8=August
-dates.month.9=September
-dates.month.10=October
-dates.month.11=November
-dates.month.12=December
 
 general.fullstop=.

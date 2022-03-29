@@ -1,0 +1,18 @@
+serviceName: gwasanaeth Cael cyfeirnod symud nwyddau
+serviceHeaderName: gwasanaeth Cael cyfeirnod symud nwyddau
+serviceDescription: >
+  Mae angen cyfeirnod symud nwyddau arnoch i symud nwyddau rhwng Prydain Fawr a gwledydd yn yr Undeb Ewropeaidd a Gogledd Iwerddon. Mae’r gwasanaeth hwn yn rhan o’r Gwasanaeth Symud Cerbydau Nwyddau (GVMS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /goods-movement-system/dashboard
+contactFrontendServiceId: GaGMR
+complianceStatus: partial
+accessibilityProblems:
+  - Efallai y bydd rhai defnyddwyr yn cael anhawster yn defnyddio’r dudalen ‘Nodwch rif cofrestru cerbyd’ gan fod y blwch mewnbwn heb label. Nid yw darllenwyr sgrin yn cyhoeddi’r blwch mewnbwn hwn felly bydd yn anodd nodi rhif cofrestru cerbyd.
+milestones:
+  - date: 2022-02-25
+    description: >-
+      Mae’r dudalen ‘Nodwch rif cofrestru’r cerbyd’ heb label, felly nid oes ganddi enw hygyrch. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.: Maen Prawf Deall Llwyddiant 4.1.2 Name, Role, Value.
+serviceLastTestedDate: 2020-11-23
+statementVisibility: public
+statementCreatedDate: 2020-11-16
+statementLastUpdatedDate: 2021-12-16

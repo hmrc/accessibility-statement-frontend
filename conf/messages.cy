@@ -1,19 +1,29 @@
 service.text = Dyma'ch gwasanaeth newydd
-general.serviceName = Datganiad hygyrchedd
-general.pageTitle = Datganiad hygyrchedd ar gyfer {0} - GOV.UK
+general.page-title = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
+general.page-title.ios = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
+general.page-title.android = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
 general.service=service
 general.app=app
 
 ## introduction
-introduction.heading=Datganiad hygyrchedd ar gyfer {0}
+introduction.heading=Datganiad hygyrchedd ar gyfer y gwasanaeth {0}
+introduction.heading.ios=Datganiad hygyrchedd ar gyfer {0}
+introduction.heading.android=Datganiad hygyrchedd ar gyfer {0}
+
 introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r gwasanaeth hwn, beth i’w wneud os ydych yn cael anhawster wrth ei ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r gwasanaeth.
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
 introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK
 introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
+introduction.service-name.ios=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
+introduction.service-name.android=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
 
 ## Using the service
 using-service.heading=Defnyddio’r gwasanaeth hwn
-using-service.this-service-or-app-is-run=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.heading.ios=Defnyddio’r gwasanaeth hwn
+using-service.heading.android=Defnyddio’r gwasanaeth hwn
+
+using-service.this-service-or-app-is-run-voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn.' '
+using-service.this-service-or-app-is-run-standard=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
@@ -25,17 +35,17 @@ using-service.bullet3=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio
 using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio meddalwedd adnabod lleferydd
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
 
-using-service.android.bullet1=invert colours and adjust contrast levels
-using-service.android.bullet2=increase the text size without the text truncating or overlapping
-using-service.android.bullet3=navigate the app using Switch Access
-using-service.android.bullet4=get around the app using Voice Access
-using-service.android.bullet5=listen to the app using TalkBack
+using-service.bullet1.android=invert colours and adjust contrast levels
+using-service.bullet2.android=increase the text size without the text truncating or overlapping
+using-service.bullet3.android=navigate the app using Switch Access
+using-service.bullet4.android=get around the app using Voice Access
+using-service.bullet5.android=listen to the app using TalkBack
 
-using-service.ios.bullet1=invert colours and adjust contrast levels
-using-service.ios.bullet2=increase the text size without the text truncating or overlapping
-using-service.ios.bullet3=navigate the app using Switch Control
-using-service.ios.bullet4=get around the app using Voice Control
-using-service.ios.bullet5=listen to the app using VoiceOver
+using-service.bullet1.ios=invert colours and adjust contrast levels
+using-service.bullet2.ios=increase the text size without the text truncating or overlapping
+using-service.bullet3.ios=navigate the app using Switch Control
+using-service.bullet4.ios=get around the app using Voice Control
+using-service.bullet5.ios=listen to the app using VoiceOver
 
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
 using-service.making-device-easier.part1=Mae gan AbilityNet gyngor
@@ -43,6 +53,7 @@ using-service.making-device-easier.part2=' ar wneud eich dyfais yn haws i’w de
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
+accessibility.app-heading=Pa mor hygyrch yw’r gwasanaeth hwn
 accessibility.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 accessibility.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol '
 accessibility.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
@@ -54,8 +65,16 @@ accessibility.has-issues=Mae’n bosibl y bydd rhai pobl yn cael anhawster i dde
 ## Contact
 contact.heading=Yr hyn i’w wneud os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn
 contact.extra-support.part1='Gallwch '
-contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol (yn agor ffenestr neu dab newydd)
+contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol
 contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwahanol, megis print bras, recordiad sain neu Braille.'
+contact.extra-support-voa.part1='Gallwch '
+contact.extra-support-voa.part2=gysylltu ag Asiantaeth y Swyddfa Brisio am gymorth pellach os oes angen help arnoch i lenwi ffurflenni neu gael fformat gwahanol, megis print bras, recordiad sain neu Braille.
+contact.extra-support-voa.part3=Ffôn: 03000 505 505
+contact.extra-support-voa.part4=Oriau agor: dydd Llun i ddydd Gwener: 9:30am tan 4:30pm
+contact.extra-support-chgv.part1=Darperir cymorth ar gyfer y gwasanaeth hwn gan yr Adran Masnach Ryngwladol.
+contact.extra-support-chgv.part2=Tîm Cymorth Digidol
+contact.extra-support-chgv.part3=Ffôn: 020 7215 5000
+contact.extra-support-chgv.part4=Dydd Llun i ddydd Gwener, 9am tan 5pm
 
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn
@@ -90,8 +109,8 @@ technical.non-compliance.header=Cynnwys nad yw’n hygyrch
 technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
 technical.non-compliance.milestone.fix-by=Bydd hyn yn cael ei drwsio erbyn {0}.
-technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 30 Medi 2021.
-technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 30 Mehefin 2021.
+technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 31 Mawrth 2022.
+technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Mawrth 2022.
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
@@ -101,24 +120,10 @@ testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd 
 testing.details.part2=(Digital Accessibility Centre).
 testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
 testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.created-and-updated=Cyhoeddwyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
+testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page
-notFound.pageTitle=Heb ddod o hyd i’r dudalen
+notFound.pageTitle=Heb ddod o hyd i’r dudalen – GOV.UK
 notFound.heading=Heb ddod o hyd i’r dudalen
 notFound.paragraph1=Os gwnaethoch deipio’r cyfeiriad gwe, dylech wirio ei fod yn gywir.
 notFound.paragraph2=Os gwnaethoch bastio’r cyfeiriad gwe, dylech wirio’ch bod wedi copïo’r cyfeiriad yn llawn.
-
-## Date formatting
-dates.month.1=Ionawr
-dates.month.2=Chwefror
-dates.month.3=Mawrth
-dates.month.4=Ebrill
-dates.month.5=Mai
-dates.month.6=Mehefin
-dates.month.7=Gorffennaf
-dates.month.8=Awst
-dates.month.9=Medi
-dates.month.10=Hydref
-dates.month.11=Tachwedd
-dates.month.12=Rhagfyr

@@ -1,0 +1,11 @@
+serviceName: Apply for repayment of import duty and import VAT
+serviceHeaderName: Apply for repayment of import duty and import VAT
+serviceDescription: This service allows you to apply for repayment of import duty and import VAT
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /apply-for-repayment-of-import-duty-and-import-vat
+contactFrontendServiceId: NDRC
+complianceStatus: full
+serviceLastTestedDate: 2021-10-18
+statementVisibility: public
+statementCreatedDate: 2021-09-06
+statementLastUpdatedDate: 2021-10-19

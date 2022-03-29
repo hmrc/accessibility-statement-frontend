@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,10 +18,13 @@ package unit.models
 
 import java.util.{Calendar, GregorianCalendar}
 
-import org.scalatest.{Matchers, TryValues, WordSpec}
+import org.scalatest.TryValues
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
+
 import uk.gov.hmrc.accessibilitystatementfrontend.models.Milestone
 
-class MilestoneSpec extends WordSpec with Matchers with TryValues {
+class MilestoneSpec extends AnyWordSpec with Matchers with TryValues {
   "getWcagCriteria" should {
     val date = new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime
 

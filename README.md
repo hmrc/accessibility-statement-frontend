@@ -42,17 +42,24 @@ milestones:                             # If there are no issues do not include 
       X.Y.Z (Criterion Description).
     date: 2020-09-30                    # The date that this issue will be fixed by
 serviceLastTestedDate: 2019-09-15       # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
-statementVisibility: public             # If set to public, the statement will be visible in production
+statementVisibility: public             # If set to public, the statement will be visible in production. One of: public|draft|archived.
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
-automatedTestingDetails: |             # Only add this value if your service has only had automated testing
+automatedTestingDetails: |              # Only add this value if your service has only had automated testing
   If your service has only had automated testing, add a text description of testing tools used, e.g.
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
+businessArea: Chief Digital & Information Officer (CDIO) # See valid values below
+ddc: DDC Worthing                        # See valid values below
+liveOrClassic: Live Services (Worthing)  # See valid values below 
+typeOfService: Public beta               # Classic services|Live services|Public beta
 ```
 
-If your statement is specifically for a mobile application, add the line `mobilePlatform: android` for an android application or
-`mobilePlatform: ios` for an iOS application. Do not add this for web-based services.
+If your statement is specifically for a mobile application, add the line `statementType: android` for an android application or
+`statementType: ios` for an iOS application. **Do not add this for web-based services.**
+
+If you are a service that requires a custom template like VOA or C-HGV, please include the property `statementType` and set the value
+to either `VOA` or `C-HGV`. **If you are not one of those services, or a mobile app, you do not need to include this property.** 
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
@@ -68,9 +75,16 @@ e.g. `conf/services/discounted-icecreams.yml` will create an accessibility state
 
 The filename can contain only lower case letters, dashes or numbers, and the filename extension must be `.yml`
 
+| Parameter         | Valid values                                                                                                          |
+| ------------------| -------------------------------------------------------------------------------------------------------------------- |
+| `businessArea`    | `Adjudicator's Office`, `Borders & Trade`, `Chief Digital & Information Officer (CDIO)`, `Customer Compliance Group (CCG)`, `Customer Services Group (CSG)`, `Customer Strategy & Tax Design (CS&TD)`, `HMRC External - Cabinet Office`, `Valuation Office Agency (VOA)` |
+| `ddc`             | `DDC Edinburgh`, `DDC London`, `DDC Newcastle`, `DDC Telford`, `DDC Worthing`, `DDC Yorkshire`, `Non DDC Location` |
+| `liveOrClassic`   | `Classic Services`, `Live Services - Edinburgh`, `Live Services - Newcastle`, `Live Services - Telford`, `Live Services - Worthing` |
+
+
 ## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
-and run the unit and integration tests locally as described below.
+and run the integration tests with `sbt it:test` as described below.
 
 If your team would like repository write access to create branches and submit PRs without forking the repository, contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). Having write access will mean your team will receive alerts regarding production deployments.
 
@@ -181,11 +195,34 @@ Navigate to the desired accessibility statement e.g. http://localhost:12346/acce
 where disguised-remuneration is the filename of the accessibility statement YAML file with the language and yaml suffix
 removed.
 
-## Running unit and integration tests
+## Running unit tests
 
 ```
-sbt test it:test
+sbt test
 ```
+
+## Running accessibility tests
+
+```
+sbt a11y:test
+```
+
+The above tests are run via the
+[sbt-accessibility-linter](https://www.github.com/hmrc/sbt-accessibility-linter)
+plugin. This plugin requires Node.js v12 or above to be installed locally.
+
+If you are a member of a service team, contributing a new accessibility statement, it's not necessary
+to run these tests before opening a PR.
+
+## Running the integration tests
+
+```
+sbt it:test
+```
+
+The integration tests are responsible for enforcing a number of business rules for accessibility statements via
+[test/it/ServicesISpec.scala](). For this reason, it's recommended that service teams run these tests before
+opening a PR.
 
 ## Generating a report
 
@@ -230,17 +267,17 @@ more memory than a regular service.
 
 ## Running ZAP scan locally
 
-To run the ZAP scan, you will need a copy of the ZAP proxy running locally on port 11000: https://www.zaproxy.org/, with the 
-following options configured:
+To run the ZAP scan, use the Docker helper supplied by `dast-config-manager` (https://github.com/hmrc/dast-config-manager#running-zap-locally)
 
-* under HUD, uncheck 'Enable when using the ZAP Desktop' (stops ZAP converting requests to HTTPS)
-* under API, check 'Disable the API key'
+Follow the following steps:
+1. Clone the repo at: https://github.com/hmrc/dast-config-manager
+2. Enable port forwarding: `export ZAP_FORWARD_ENABLE="true"`
+3. Configure port forwarding: `export ZAP_FORWARD_PORTS=12346`
+4. In the `dast-config-manager` directory, start the ZAP docker container: `make local-zap-running`
+5. In the `accessibility-statement-frontend` directory, run the acceptance tests with ZAP proxying: `sbt -Dbrowser=chrome -Dzap.proxy=true acceptance:test`
+6. In the `dast-config-manager` directory, stop the ZAP docker container: `make local-zap-stop`
 
-```
-./run_zap_tests.sh
-```
-
-More information on HMRC's ZAP scanning automation library can be found at https://github.com/hmrc/zap-automation
+Information about the local ZAP test output can be found at https://github.com/hmrc/dast-config-manager#running-zap-locally.
 
 ## Service Manager config for local development
 

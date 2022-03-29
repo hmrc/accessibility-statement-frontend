@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,78 +16,30 @@
 
 package unit.models
 
-import java.util.{Calendar, GregorianCalendar}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{dateToLocalDate, reportAccessibilityProblemLink}
 
-import org.scalatest.{Matchers, WordSpec}
-import play.api.i18n.Messages
-import play.api.inject.guice.GuiceApplicationBuilder
-import play.api.mvc.{Cookie, MessagesControllerComponents}
-import play.api.test.FakeRequest
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{prettyPrintDate, reportAccessibilityProblemLink}
+import java.time.LocalDate
+import java.util.GregorianCalendar
 
-class PackageSpec extends WordSpec with Matchers {
-  "Given a date, calling prettyPrintDate" should {
-    "return the date as a string in the format 01 January 2020 in English if no language cookie set" in {
-      val app                         = new GuiceApplicationBuilder().build()
-      val mcc                         = app.injector.instanceOf[MessagesControllerComponents]
-      val requestDefaultLanguage      = FakeRequest()
-      implicit val messages: Messages =
-        mcc.messagesApi.preferred(requestDefaultLanguage)
+class PackageSpec extends AnyWordSpec with Matchers {
 
-      val firstDate  = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime
-      val secondDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime
-      val thirdDate  = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
+  "Given a Date object, calling the toLocalDate helper" should {
+    "return the expected LocalDate" in {
+      // GregorianCalendar treats month as 0-based, ie January is 0
+      val dateInJanuary  = new GregorianCalendar(2020, 0, 9).getTime
+      val dateInFebruary = new GregorianCalendar(2020, 1, 29).getTime
+      val dateInDecember = new GregorianCalendar(2020, 11, 31).getTime
 
-      prettyPrintDate(firstDate)  should equal("28 February 2020")
-      prettyPrintDate(secondDate) should equal("15 March 2020")
-      prettyPrintDate(thirdDate)  should equal("01 May 2020")
-    }
+      // LocalDate treats month as 1-based, ie January is 1
+      val localDateInJanuary  = LocalDate.of(2020, 1, 9)
+      val localDateInFebruary = LocalDate.of(2020, 2, 29)
+      val localDateInDecember = LocalDate.of(2020, 12, 31)
 
-    "return the date as a string in the format 01 January 2020 in English if language cookie set to en" in {
-      val app                         = new GuiceApplicationBuilder().build()
-      val mcc                         = app.injector.instanceOf[MessagesControllerComponents]
-      val requestEnglishLanguage      =
-        FakeRequest().withCookies(Cookie("PLAY_LANG", "en"))
-      implicit val messages: Messages =
-        mcc.messagesApi.preferred(requestEnglishLanguage)
-
-      val firstDate  = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime
-      val secondDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime
-      val thirdDate  = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
-
-      prettyPrintDate(firstDate)  should equal("28 February 2020")
-      prettyPrintDate(secondDate) should equal("15 March 2020")
-      prettyPrintDate(thirdDate)  should equal("01 May 2020")
-    }
-
-    "return the date as a string in the format 01 January 2020 in Welsh if language cookie set to cy" in {
-      val app                         = new GuiceApplicationBuilder().build()
-      val mcc                         = app.injector.instanceOf[MessagesControllerComponents]
-      val requestWelshLanguage        =
-        FakeRequest().withCookies(Cookie("PLAY_LANG", "cy"))
-      implicit val messages: Messages =
-        mcc.messagesApi.preferred(requestWelshLanguage)
-
-      val firstDate  = new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime
-      val secondDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime
-      val thirdDate  = new GregorianCalendar(2020, Calendar.MAY, 1).getTime
-
-      prettyPrintDate(firstDate)  should equal("28 Chwefror 2020")
-      prettyPrintDate(secondDate) should equal("15 Mawrth 2020")
-      prettyPrintDate(thirdDate)  should equal("01 Mai 2020")
-    }
-
-    // Known issue with using YYYY in openjdk for 31 December: https://bugs.openjdk.java.net/browse/JDK-8194625
-    "return the correct date for 31 December" in {
-      val app                         = new GuiceApplicationBuilder().build()
-      val mcc                         = app.injector.instanceOf[MessagesControllerComponents]
-      val requestDefaultLanguage      = FakeRequest()
-      implicit val messages: Messages =
-        mcc.messagesApi.preferred(requestDefaultLanguage)
-
-      val lastDateOfYear =
-        new GregorianCalendar(2020, Calendar.DECEMBER, 31).getTime
-      prettyPrintDate(lastDateOfYear) should equal("31 December 2020")
+      dateToLocalDate(dateInJanuary)  shouldBe localDateInJanuary
+      dateToLocalDate(dateInFebruary) shouldBe localDateInFebruary
+      dateToLocalDate(dateInDecember) shouldBe localDateInDecember
     }
   }
 

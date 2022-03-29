@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,13 +17,15 @@
 package unit.tasks
 
 import helpers.TestAccessibilityStatementRepo
-import org.scalatest.{Matchers, TryValues, WordSpec}
+import org.scalatest.TryValues
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.tasks.MilestoneReportTask
 
 import scala.io.Source
 import scala.util.Try
 
-class MilestoneSpec extends WordSpec with Matchers with TryValues {
+class MilestoneSpec extends AnyWordSpec with Matchers with TryValues {
   private def createReportFile: String = {
     import java.io.File
     val file = File.createTempFile("report-test", "txt", new File("target"))

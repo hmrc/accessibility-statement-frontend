@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,18 +17,20 @@
 package unit.repos
 
 import java.util.{Calendar, GregorianCalendar}
-
 import org.mockito.MockitoSugar
-import org.scalatest.{BeforeAndAfterEach, EitherValues, Matchers, WordSpec}
+import org.scalatest.{BeforeAndAfterEach, EitherValues}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig, StatementSource}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Archived, Draft, FullCompliance, Public, Visibility}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
+
 import scala.io.Source
 
 class AccessibilityStatementsRepoSpec
-    extends WordSpec
+    extends AnyWordSpec
     with Matchers
     with EitherValues
     with MockitoSugar
@@ -46,25 +48,28 @@ class AccessibilityStatementsRepoSpec
     Source.fromString("draft-source"),
     "services/draft-source.yml"
   )
+  private val archivedSource = StatementSource(
+    Source.fromString("archived-source"),
+    "services/archived-source.yml"
+  )
 
-  def buildAppConfig(showDraftStatementsEnabled: Boolean) = {
+  def buildAppConfig(visibilities: Set[Visibility]) = {
     val appConfig = mock[AppConfig]
 
     when(appConfig.en) thenReturn "en"
     when(appConfig.cy) thenReturn "cy"
     when(appConfig.defaultLanguage) thenReturn Lang("en")
-    when(
-      appConfig.showDraftStatementsEnabled
-    ) thenReturn showDraftStatementsEnabled
+    when(appConfig.visibleStatuses) thenReturn visibilities
     appConfig
   }
 
-  private val appConfig    = buildAppConfig(showDraftStatementsEnabled = false)
+  private val appConfig    = buildAppConfig(visibilities = Set(Public))
   private val sourceConfig = mock[SourceConfig]
   when(sourceConfig.statementSource("foo-service")) thenReturn fooSource
   when(sourceConfig.statementSource("foo-service.cy")) thenReturn fooSourceWelsh
   when(sourceConfig.statementSource("bar-service")) thenReturn barSource
   when(sourceConfig.statementSource("draft-service")) thenReturn draftSource
+  when(sourceConfig.statementSource("archived-service")) thenReturn archivedSource
 
   private val fooStatement      = AccessibilityStatement(
     serviceName = "Send your loan charge details",
@@ -72,17 +77,21 @@ class AccessibilityStatementsRepoSpec
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",
     serviceUrl = "/disguised-remuneration",
-    mobilePlatform = None,
+    statementType = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,
-    automatedTestingOnly = None,
+    automatedTestingOnly = Some(false),
     accessibilityProblems = None,
     milestones = None,
     statementVisibility = Public,
     serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription =
@@ -92,6 +101,10 @@ class AccessibilityStatementsRepoSpec
   private val draftStatement    = fooStatement.copy(
     serviceName = "Draft Service",
     statementVisibility = Draft
+  )
+  private val archivedStatement = fooStatement.copy(
+    serviceName = "Archived Service",
+    statementVisibility = Archived
   )
 
   private val statementParser = mock[AccessibilityStatementParser]
@@ -107,13 +120,17 @@ class AccessibilityStatementsRepoSpec
   when(statementParser.parseFromSource(draftSource)) thenReturn Right(
     draftStatement
   )
+  when(statementParser.parseFromSource(archivedSource)) thenReturn Right(
+    archivedStatement
+  )
 
   private val servicesFinder = mock[ServicesFinder]
   when(servicesFinder.findAll()) thenReturn Seq(
     "foo-service",
     "bar-service",
     "foo-service.cy",
-    "draft-service"
+    "draft-service",
+    "archived-service"
   )
 
   private val repo = AccessibilityStatementsSourceRepo(
@@ -150,7 +167,7 @@ class AccessibilityStatementsRepoSpec
 
     "find a draft service if feature show draft toggle is enabled" in {
       val appConfigWithDraftsEnabled =
-        buildAppConfig(showDraftStatementsEnabled = true)
+        buildAppConfig(visibilities = Set(Draft, Public))
       val repo                       =
         AccessibilityStatementsSourceRepo(
           appConfigWithDraftsEnabled,
@@ -161,6 +178,28 @@ class AccessibilityStatementsRepoSpec
 
       repo.findByServiceKeyAndLanguage("draft-service", Lang("en")) should be(
         Some((draftStatement, Lang("en")))
+      )
+    }
+
+    "not find an archived service" in {
+      repo.findByServiceKeyAndLanguage("archived-service", Lang("en")) should be(
+        None
+      )
+    }
+
+    "find an archived service if feature show archived toggle is enabled" in {
+      val appConfigWithDraftsEnabled =
+        buildAppConfig(Set(Public, Archived))
+      val repo                       =
+        AccessibilityStatementsSourceRepo(
+          appConfigWithDraftsEnabled,
+          servicesFinder,
+          statementParser,
+          sourceConfig
+        )
+
+      repo.findByServiceKeyAndLanguage("archived-service", Lang("en")) should be(
+        Some((archivedStatement, Lang("en")))
       )
     }
   }

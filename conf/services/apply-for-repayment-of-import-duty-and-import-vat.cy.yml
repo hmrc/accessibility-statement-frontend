@@ -1,0 +1,11 @@
+serviceName: Gwneud cais am ad-daliad o dollau mewnforio a TAW mewnforio
+serviceHeaderName: Gwneud cais am ad-daliad o dollau mewnforio a TAW mewnforio
+serviceDescription: Mae’r gwasanaeth hwn yn eich galluogi i wneud cais am ad-daliad o dollau mewnforio a TAW mewnforio
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /apply-for-repayment-of-import-duty-and-import-vat
+contactFrontendServiceId: NDRC
+complianceStatus: full
+serviceLastTestedDate: 2021-10-18
+statementVisibility: public
+statementCreatedDate: 2021-09-14
+statementLastUpdatedDate: 2021-10-19

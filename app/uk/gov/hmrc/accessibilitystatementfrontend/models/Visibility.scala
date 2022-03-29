@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,9 +22,10 @@ sealed trait Visibility
 
 object Visibility {
   implicit val decoder: Decoder[Visibility] = Decoder.decodeString.emap {
-    case "public" => Right(Public)
-    case "draft"  => Right(Draft)
-    case status   => Left(s"""Unrecognised visibility "$status"""")
+    case "public"   => Right(Public)
+    case "draft"    => Right(Draft)
+    case "archived" => Right(Archived)
+    case status     => Left(s"""Unrecognised visibility "$status"""")
   }
   implicit val encoder: Encoder[Visibility] =
     Encoder.encodeString.contramap[Visibility](_.toString)
@@ -36,4 +37,8 @@ case object Public extends Visibility {
 
 case object Draft extends Visibility {
   override def toString = "draft"
+}
+
+case object Archived extends Visibility {
+  override def toString = "archived"
 }

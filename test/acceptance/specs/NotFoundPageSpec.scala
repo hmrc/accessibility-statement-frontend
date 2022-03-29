@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@ import acceptance.pages.NotFoundPage
 import org.openqa.selenium.By
 
 class NotFoundPageSpec extends BaseAcceptanceSpec {
-  feature("Not Found page") {
+  Feature("Not Found page") {
 
-    scenario("The page has the correct title") {
+    Scenario("The page has the correct title") {
       Given("the user does not have welsh language selected")
       deleteAllCookies
 

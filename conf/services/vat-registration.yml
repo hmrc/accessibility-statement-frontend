@@ -18,36 +18,39 @@ accessibilityProblems:
   - on some of the input fields the labels are announced but not the question or hint
   - the language toggle on some pages is not contained in a landmark, and does not use the latest design pattern
   - some pages should have JavaScript polyfill enabled to ensure a link acts as a button
+  - a link has an empty 'href' attribute
 milestones:
   - description: A timeout occurs without prior warning that a timeout may occur. This means that users will not realise they have to complete a task within a time limit. This fails WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: When clicking the error summary link on some pages, the focus remains on the link, while visible focus is taken to the related form. This can be confusing for screen readers and keyboard reliant users. This fails WCAG 2.1 success criterion 2.4.3 (Focus Order).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: The error handling on some pages when entering an incorrect format diverges from the error handling used elsewhere. This tooltip style error handling is not announced by all screen reader software and does not remain visible on screen. This means that not all screen readers will identify the error. This fails WCAG 2.1 success criterion 3.3.1 (Error Identification).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: On some pages, some of the fields do not have labels. This could confuse some screen reader users as it may be implied that there is more than one input field. This fails WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: When clicking on a drop-down link, the content within remains hidden to screen reader users. This means that the content will not be visible to some users. This fails WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: The visible focus indicator used throughout the service does not meet the minimum contrast ratio of adjacent colours. This means the colour contrast is not clear enough to some users. This fails WCAG 2.1 success criterion 1.4.11 (Non-text Contrast).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: Some input fields have been given unnecessary labels and descriptions. This could prevent some users from understanding what the labels relate to. This fails WCAG 2.1 success criterion 2.4.6 (Headings and Labels).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: One of the text input fields has a character count which updates to indicate the amount of remaining characters, but this is not announced to screen reader users. This means some users will be unaware they have entered too many characters. This fails WCAG 2.1 success criterion 4.1.3 (Status Messages).
-    date: 2021-01-31
+    date: 2022-03-31
   - description: On some pages, when the user has focused on an input field the label gets announced, but not the question or hint. This could be confusing for some screen reader users. This fails WCAG 2.1 Success criterion 3.3.2 (Labels or Instructions).
-    date: 2021-03-31
+    date: 2022-03-31
   - description: The language toggle on some pages is not contained in a landmark. This could be confusing for some screen reader users. This fails WCAG 2.1 Success Criterion 2.4.1 (Bypass Blocks).
-    date: 2021-03-31
+    date: 2022-03-31
   - description: The language toggle on some pages does not use the latest design pattern. This could be confusing for some screen reader users. This fails WCAG 2.1 Success Criterion 2.4.7 (Focus Visible).
-    date: 2021-03-31
+    date: 2022-03-31
   - description: The error handling on some pages does not focus or highlight the the actual input field. This could be confusing for some screen reader users. This fails WCAG 2.1  Success Criterion 3.3.1 (Error Identification).
-    date: 2021-03-31
+    date: 2022-03-31
   - description: On some pages error messages are misleading and hint text is not getting announced by screen readers. This could be confusing for some screen reader users. This fails WCAG 2.1  Success Criterion 3.3.1 (Error Identification).
-    date: 2021-03-31
+    date: 2022-03-31
   - description: Some pages do not have JavaScript polyfill enabled to ensure a link acts as a button. This fails WCAG 2.1 Success Criterion 4.1.2 (Name, Role, Value).
-    date: 2021-03-31
+    date: 2022-03-31
+  - description: The ‘Entity Validation Service’ link contained within the header contains an empty ‘href’ attribute, meaning that when the link is activated, users are directed to the page which they are currently on. This fails WCAG 2.1 Success Criterion 4.1.2 (Name, Role, Value).
+    date: 2022-03-31
 serviceLastTestedDate: 2020-11-12
 statementVisibility: public
 statementCreatedDate: 2020-11-13
-statementLastUpdatedDate: 2021-02-24
+statementLastUpdatedDate: 2021-11-17

@@ -1,5 +1,5 @@
 @*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,24 +17,16 @@
 @import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 @import views.html.helper.CSPNonce
 
-@this(
-        govukLayout: GovukLayout,
-        hmrcHead: HmrcHead,
-        hmrcStandardHeader: hmrcStandardHeader,
-        hmrcStandardFooter: HmrcStandardFooter,
-        hmrcScripts: HmrcScripts,
-        hmrcLanguageSelectHelper: HmrcLanguageSelectHelper
-)
+@this(hmrcLayout: HmrcLayout)
+
 @(
         pageTitle: String,
         isWelshTranslationAvailable: Boolean)(
         contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
-@govukLayout(
+@hmrcLayout(
     pageTitle = Some(pageTitle),
-    headBlock = Some(hmrcHead(nonce = CSPNonce.get)),
-    headerBlock = Some(hmrcStandardHeader(displayHmrcBanner = true)),
-    scriptsBlock = Some(hmrcScripts(nonce = CSPNonce.get)),
-    beforeContentBlock = if (isWelshTranslationAvailable) Some(hmrcLanguageSelectHelper()) else None,
-    footerBlock = Some(hmrcStandardFooter())
+    displayHmrcBanner = true,
+    nonce = CSPNonce.get,
+    isWelshTranslationAvailable = isWelshTranslationAvailable
 )(contentBlock)

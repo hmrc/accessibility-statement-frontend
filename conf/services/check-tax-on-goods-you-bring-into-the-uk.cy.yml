@@ -5,72 +5,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-tax-on-goods-you-bring-into-the-uk
 contactFrontendServiceId: check-tax-on-goods-you-bring-into-the-uk
-complianceStatus: partial
-
-accessibilityProblems:
-  - Mae rhai o’r tablau yn y gwasanaeth wedi’u fformatio fel grid neu heb benawdau i golofnau. Gall hyn ei gwneud yn anodd i ddefnyddwyr sydd â thechnoleg gynorthwyol ddeall cynnwys y tablau
-  - Ar y dudalen ‘Cyfeiriad bilio’r cerdyn’, mae rhai o’r negeseuon gwall a gewch wrth lenwi’r ffurflen yn anghywir yn aneglur. Gall hyn ei gwneud yn anodd i rai defnyddwyr lenwi’r dudalen yn gywir
-  - Ar y dudalen ‘A wnaethoch, neu a fyddwch, yn talu tollau ecséis y DU wrth brynu eich holl alcohol a thybaco?’, nid yw’r cwestiwn yn cael ei ddarllen gan rai darllenwyr sgrin. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen
-  - Ar y dudalen ‘Eithriadau treth a thollau ar gyfer y rhai nad ydynt yn breswyl yn y DU’, nid yw’r cwestiwn yn cael ei ddarllen gan rai darllenwyr sgrin. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen
-  - Mae label pennawd ar goll o’r dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’. Hefyd ar y dudalen hon, os na fyddwch yn ychwanegu unrhyw wybodaeth at y blwch ‘Nodwch eich nwyddau’ a’ch bod yn ceisio mynd yn eich blaen, fe’ch cymerir i’r dudalen flaenorol yn hytrach na chael neges gwall. Gall y problemau hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen
-  - Pan fyddwch yn ychwanegu eitemau at y dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’, ni fydd darllenydd sgrin yn dweud wrthych eu bod wedi cael eu hychwanegu. Yn ogystal, nid oes gan y cysylltiadau ‘Dileu’ sydd wrth ymyl pob eitem labeli unigryw. Gall y problemau hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol wybod pryd maent wedi ychwanegu eitem a pha eitemau y gallent fod yn eu dileu
-  - Ar y dudalen ‘Nodwch eich manylion’, nid yw’r opsiynau ar gyfer ‘Math o rif adnabod’ wedi’u labelu’n briodol. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen
-  - Ar y dudalen ‘Nodwch eich manylion’, nid oes gan y blychau mewnbwn sy’n gofyn am fanylion personol (megis enw a chyfeiriad e-bost) swyddogaeth awtogwblhau a fyddai’n llenwi atebion a roddwyd yn flaenorol ar wefannau eraill. Byddai hyn yn helpu i osgoi camgymeriadau posibl
-  - Os ydych yn defnyddio Internet Explorer, ni allwch ychwanegu ‘Nwyddau eraill’ at eich datganiad gan nad yw’r dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’ yn gweithio’n iawn yn y porwr hwn
-  - Mae rhai blychau mewnbynnu testun ar gyfer manylion am nwyddau wedi’u labelu’n anghywir. Mae hyn yn arwain at ddarllenwyr sgrin yn cyhoeddi gwybodaeth ychwanegol gan ei gwneud yn anodd gwybod sut i lenwi’r blychau yn gywir
-  - Ar y dudalen ‘Gwnewch eich taliad’, mae’r penawdau wedi’u labelu’n anghywir. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol bennu cynllun y dudalen
-  - Ar y dudalen ‘Gwnewch eich taliad’, pan ddefnyddiwch bysellau tab i ganolbwyntio ar flwch mewnbwn, nid yw’r border sy’n amgylchynu’r blwch yn ddigon amlwg na chyferbyniol. Gall hyn ei gwneud yn anodd i ddefnyddwyr â nam ar eu golwg weld yr hyn y maent yn ffocysu arno
-  - Pan ddefnyddiwch bysellau tab i ganolbwyntio ar unrhyw flwch gwirio crwn (a elwir yn ‘fotwm radio’), nid yw’r border sy’n amgylchynu’r botwm yn ddigon amlwg. Gall hyn ei gwneud yn anodd i ddefnyddwyr â nam ar eu golwg weld yr hyn y maent yn ffocysu arno
-  - Mae rhai penawdau tudalennau yr un peth a allai olygu bod llywio drwy’r gwasanaeth yn ddryslyd i ddefnyddwyr sydd â darllenwyr sgrin
-  - Efallai na fydd rhai penawdau tudalennau yn cael eu cyhoeddi ar rai tudalennau gan y darllenydd sgrin JAWS
-  - Efallai y bydd rhai defnyddwyr sy’n defnyddio VoiceOver ar gyfer iPhone yn cael anawsterau wrth ryngweithio â’r blychau mewnbwn awtogwblhau ar gyfer ‘Gwlad’ a ‘Porthladd cyrraedd’
-
-
-milestones:
-  - description: |
-      Mae rhai o’r tablau yn y gwasanaeth wedi’u fformatio fel grid neu heb benawdau i golofnau. Gall hyn ei gwneud yn anodd i ddefnyddwyr sydd â thechnoleg gynorthwyol ddeall cynnwys y tablau. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Ar y dudalen ‘Cyfeiriad bilio’r cerdyn’, mae rhai o’r negeseuon gwall a gewch wrth lenwi’r ffurflen yn anghywir yn aneglur. Gall hyn ei gwneud yn anodd i rai defnyddwyr lenwi’r dudalen yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Identification) na 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Ar y dudalen ‘A wnaethoch, neu a fyddwch, yn talu tollau ecséis y DU wrth brynu eich holl alcohol a thybaco?’, nid yw’r cwestiwn yn cael ei ddarllen gan rai darllenwyr sgrin. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) na 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Ar y dudalen ‘Eithriadau treth a thollau ar gyfer y rhai nad ydynt yn breswyl yn y DU’, nid yw’r cwestiwn yn cael ei ddarllen gan rai darllenwyr sgrin. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Mae label pennawd ar goll o’r dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’. Hefyd ar y dudalen hon, os na fyddwch yn ychwanegu unrhyw wybodaeth at y blwch ‘Nodwch eich nwyddau’ a’ch bod yn ceisio mynd yn eich blaen, fe’ch cymerir i’r dudalen flaenorol yn hytrach na chael neges gwall. Gall y problemau hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships), 3.3.1 (Error Identification) na 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Pan fyddwch yn ychwanegu eitemau at y dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’, ni fydd darllenydd sgrin yn dweud wrthych eu bod wedi cael eu hychwanegu. Yn ogystal, nid oes gan y cysylltiadau ‘Dileu’ sydd wrth ymyl pob eitem labeli unigryw. Gall y problemau hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol wybod pryd maent wedi ychwanegu eitem a pha eitemau y gallent fod yn eu dileu. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels), 2.4.3 (Focus Order) na 4.1.3 (Status Messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Ar y dudalen ‘Nodwch eich manylion’, nid yw’r opsiynau ar gyfer ‘Math o rif adnabod’ wedi’u labelu’n briodol. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol ryngweithio â’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Ar y dudalen ‘Nodwch eich manylion’, nid oes gan y blychau mewnbwn sy’n gofyn am fanylion personol (megis enw a chyfeiriad e-bost) swyddogaeth awtogwblhau a fyddai’n llenwi atebion a roddwyd yn flaenorol ar wefannau eraill. Byddai hyn yn helpu i osgoi camgymeriadau posibl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Os ydych yn defnyddio Internet Explorer, ni allwch ychwanegu ‘Nwyddau eraill’ at eich datganiad gan nad yw’r dudalen ‘Pa nwyddau eraill rydych am eu hychwanegu?’ yn gweithio’n iawn yn y porwr hwn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.1.1 (Keyboard) na 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Mae rhai blychau mewnbynnu testun ar gyfer manylion am nwyddau wedi’u labelu’n anghywir. Mae hyn yn arwain at ddarllenwyr sgrin yn cyhoeddi gwybodaeth ychwanegol gan ei gwneud yn anodd gwybod sut i lenwi’r blychau yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Ar y dudalen ‘Gwnewch eich taliad’, mae’r penawdau wedi’u labelu’n anghywir. Gall hyn ei gwneud yn anodd i ddefnyddwyr â thechnoleg gynorthwyol bennu cynllun y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.10 (Section Headings) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Ar y dudalen ‘Gwnewch eich taliad’, pan ddefnyddiwch bysellau tab i ganolbwyntio ar flwch mewnbwn, nid yw’r border sy’n amgylchynu’r blwch yn ddigon amlwg na chyferbyniol. Gall hyn ei gwneud yn anodd i ddefnyddwyr â nam ar eu golwg weld yr hyn y maent yn ffocysu arno. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Pan ddefnyddiwch bysellau tab i ganolbwyntio ar unrhyw flwch gwirio crwn (a elwir yn ‘fotwm radio’), nid yw’r border sy’n amgylchynu’r botwm yn ddigon amlwg. Gall hyn ei gwneud yn anodd i ddefnyddwyr â nam ar eu golwg weld yr hyn y maent yn ffocysu arno. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-  - description: |
-      Mae rhai penawdau tudalennau yr un peth a allai olygu bod llywio drwy’r gwasanaeth yn ddryslyd i ddefnyddwyr sydd â darllenwyr sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-03-01
-
-serviceLastTestedDate: 2020-11-30
+complianceStatus: full
+serviceLastTestedDate: 2021-06-10
 statementVisibility: public
 statementCreatedDate: 2020-12-17
-statementLastUpdatedDate: 2020-12-17
+statementLastUpdatedDate: 2021-06-21

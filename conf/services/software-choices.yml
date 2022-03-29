@@ -6,18 +6,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /making-tax-digital-software
 contactFrontendServiceId: MSCC
-complianceStatus: partial
-accessibilityProblems:
-  - We use filters to help users find specific software. However, the filter headings are not currently
-    viewable by assistive technology which means screen readers cannot jump to these filters.
-  - The links to the various software providers doesn’t make it clear they will take the user to the vendor’s
-    home page where users can read more information about the vendor’s software products.
-milestones:
-  - description: We use filters to help users find specific software. However, the filter headings are not currently viewable by assistive technology which means screen readers cannot jump to these filters.This doesn’t meet WCAG 2.1 success criterion 1.3.1 (info and relationships).
-    date: 2021-02-01
-  - description: The links to the various software providers doesn’t make it clear they will take the user to the vendor’s home page where users can read more information about the vendor’s software products.This doesn’t meet WCAG 2.1 success criterion 2.4.4 (link purpose in context).
-    date: 2021-02-01
-serviceLastTestedDate: 2019-08-28
+complianceStatus: full
+serviceLastTestedDate: 2021-02-01
 statementVisibility: public
 statementCreatedDate: 2019-09-19
-statementLastUpdatedDate: 2020-12-17
+statementLastUpdatedDate: 2021-05-06

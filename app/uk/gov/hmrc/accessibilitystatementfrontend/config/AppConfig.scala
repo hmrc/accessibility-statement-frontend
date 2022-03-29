@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,15 +17,18 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.config
 
 import javax.inject.{Inject, Singleton}
-import play.api.Configuration
+import play.api.{Configuration, Logging}
 import play.api.i18n.Lang
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{Public, Visibility}
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
+import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 
 @Singleton
 case class AppConfig @Inject() (
   config: Configuration,
-  servicesConfig: ServicesConfig
-) {
+  servicesConfig: ServicesConfig,
+  visibilityParser: VisibilityParser
+) extends Logging {
   private val platformFrontendHost =
     config.getOptional[String]("platform.frontend.host")
 
@@ -34,12 +37,24 @@ case class AppConfig @Inject() (
       servicesConfig.getString("contact.frontend.host")
     )
   val reportAccessibilityProblemUrl          =
-    s"$contactFrontendHostUrl/contact/accessibility-unauthenticated"
+    s"$contactFrontendHostUrl/contact/accessibility"
 
-  val showDraftStatementsEnabled: Boolean =
-    config
-      .getOptional[Boolean]("features.show-draft-statements")
-      .getOrElse(false)
+  val visibleStatuses: Set[Visibility] = {
+    config.getOptional[Seq[String]]("features.visibility") map (_.toSet) match {
+      case None               =>
+        logger.error("Config key not found: features.visibility, using default visibilities of: Public")
+        Set(Public)
+      case Some(visibilities) =>
+        visibilities.flatMap { visibility =>
+          visibilityParser.parse(visibility) match {
+            case Right(visibility) => Some(visibility)
+            case Left(error)       =>
+              logger.error(s"Invalid visibility status in config: $visibility, with error: $error")
+              None
+          }
+        }
+    }
+  }
 
   val en: String            = "en"
   val cy: String            = "cy"

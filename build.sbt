@@ -32,29 +32,20 @@ lazy val acceptanceTestSettings =
       addTestReportOption(AcceptanceTest, "acceptance-test-reports")
     )
 
-lazy val ZapTest         = config("zap") extend Test
-lazy val zapTestSettings =
-  inConfig(ZapTest)(Defaults.testTasks) ++
-    Seq(
-      // Required for the ZAP test to accept the -D parameters passed to it
-      fork in ZapTest := false,
-      testOptions in ZapTest := Seq(Tests.Filter(_ startsWith "zap"))
-    )
-
 lazy val microservice = Project(appName, file("."))
-  .enablePlugins(play.sbt.PlayScala, SbtAutoBuildPlugin, SbtGitVersioning, SbtDistributablesPlugin)
+  .enablePlugins(play.sbt.PlayScala, SbtDistributablesPlugin)
   .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
-  .configs(AcceptanceTest, IntegrationTest, ZapTest)
+  .configs(AcceptanceTest, IntegrationTest)
   .settings(
     majorVersion := 0,
     scalaVersion := "2.12.11",
     playDefaultPort := 12346,
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
+    A11yTest / unmanagedSourceDirectories += (baseDirectory.value / "test" / "a11y"),
     TwirlKeys.templateImports ++= Seq(
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
       "uk.gov.hmrc.govukfrontend.views.html.components._",
-      "uk.gov.hmrc.govukfrontend.views.html.helpers._",
       "uk.gov.hmrc.hmrcfrontend.views.html.components._",
       "uk.gov.hmrc.hmrcfrontend.views.html.helpers._"
     ),
@@ -71,7 +62,6 @@ lazy val microservice = Project(appName, file("."))
     unitTestSettings,
     acceptanceTestSettings,
     integrationTestSettings,
-    zapTestSettings,
     publishingSettings,
     resolvers += Resolver.jcenterRepo
   )

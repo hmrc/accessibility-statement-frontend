@@ -1,0 +1,42 @@
+@*
+ * Copyright 2022 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
+@import uk.gov.hmrc.play.language.LanguageUtils
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.dateToLocalDate
+
+@this(utils: LanguageUtils)
+
+@()(implicit request: Request[_], messages: Messages, appConfig: AppConfig, statement: AccessibilityStatement)
+
+@import statement._
+
+<h2 class="govuk-heading-l">@{messages("testing.heading", messages("general.app"))}</h2>
+
+@if(isNonCompliant) {
+    <p class="govuk-body">@{messages("testing.details.noncompliant", messages("general.app"))}</p>
+} else {
+    @if(serviceLastTestedDate.isDefined) {
+        @if(displayAutomatedTestingOnlyContent) {
+            <p class="govuk-body">@{messages("testing.last-tested.automated", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)), messages("general.app"))}</p>
+        } else {
+            <p class="govuk-body">@{messages("testing.last-tested", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)), messages("general.app"))}</p>
+        }
+    }
+    <p class="govuk-body">@{messages("testing.details.part1", messages("general.app"))}
+        <a class="govuk-link" href="https://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>@{messages(if(displayAutomatedTestingOnlyContent) "general.fullstop" else "testing.details.part3", messages("general.app"))}
+    </p>
+}
