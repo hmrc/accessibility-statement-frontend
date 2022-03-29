@@ -10,7 +10,7 @@ contactFrontendServiceId: VFR
 complianceStatus: partial
 accessibilityProblems:
   - the menu toggle in the banner on a small screen disappears when clicked.
-  - "Home" navigation option is not selected using a voice command.
+  - ”Home” navigation option is not selected using a voice command.
   - some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
   - page <title> does not follow pattern.
   - error page title is the same as the original page title.
@@ -24,7 +24,7 @@ accessibilityProblems:
 milestones:
   - description: "The menu toggle in the banner on a small screen disappears when clicked. Also, when JS is disabled, the menu toggle is not hidden. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
     date: 2022-10-16
-  - description: ""Home" navigation option is not selected using a voice command as it's getting confused with the browser home button or device home button. This doesn’t meet WCAG 2.1 success criteria 2.4.4 (link purpose in context)."
+  - description: "“Home” navigation option is not selected using a voice command as it's getting confused with the browser home button or device home button. This doesn’t meet WCAG 2.1 success criteria 2.4.4 (link purpose in context)."
     date: 2022-10-16
   - description: "The colour of the focus indicator used throughout the service failed to meet the expected ratio of 3:1 to pass WCAG 2.1 success criteria 1.4.11 Non-text Contrast AA and may prove difficult for some users to perceive. This doesn’t meet WCAG 2.1 success criteria 1.4.11 (non-text contrast)."
     date: 2022-10-16
