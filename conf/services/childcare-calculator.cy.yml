@@ -1,0 +1,35 @@
+serviceName: Cyfrifiannell Gofal Plant
+serviceHeaderName: Cyfrifiannell Gofal Plant
+serviceDescription: |
+  Mae’r gyfrifiannell gofal plant yn helpu rhieni i ddarganfod faint o gymorth gallant ei gael tuag at ofal plant cymeradwy. Mae’r cymorth sydd ar gael yn cynnwys gofal plant rhad ac am ddim i blant rhwng 2 a 4 oed, a help gyda chostau gofal plant os yw’ch plentyn o dan 16 oed (neu o dan 17 oed os oes anabledd arno).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /childcare-calc
+contactFrontendServiceId: childcarecalculatorfrontend
+complianceStatus: partial
+accessibilityProblems:
+  - Nid yw’r labeli sydd wedi’u cuddio o’r golwg yn cyd-fynd â’r cwestiwn gweladwy.
+  - Ni wnaeth ffocws y bysellfwrdd lanio ar y dudalen newydd.
+  - Mae gan rai tudalennau yr un teitl tudalen.
+  - Ni ddarllenwyd gwallau i ddefnyddwyr darllenwyr sgrin cyn gynted ag yr oedd y dudalen wedi’i hadnewyddu.
+  - Roedd y negeseuon gwall a ddarparwyd yn anghywir.
+  - Nid oedd meysydd y ffurflen yn ddisgrifiadol i ddefnyddwyr darllenwyr sgrin.
+  - Roedd rhai elfennau yn bresennol nad oeddent yn bodloni’r gymhareb ddisgwyliedig o ran cyferbyniad lliw a ddefnyddir ar gyfer dangos ffocws arddull.
+milestones:
+  - description: "Mae’r enw hygyrch a roddir yn wahanol i’r testun sydd i’w weld ar y sgrin. Nid yw defnyddwyr ysgogi llais yn gallu cyrraedd y maes mewnbwn drwy adrodd y testun sydd ar y sgrin, e.e. ‘Faint ydych yn ei dalu i mewn i’ch pensiwn bob mis?’. Nid yw hyn yn bodloni maen prawf llwyddiant 2.5.3 (Labels in Name) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-14
+  - description: "Pan wnaeth defnyddiwr bysellfwrdd-yn-unig geisio llywio drwy’r gwasanaeth, nid oedd yn bosibl rhyngweithio â’r dudalen heb glicio ar y dudalen â llygoden. Nid yw hyn yn bodloni maen prawf llwyddiant 2.1.1 (Keyboard) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-14
+  - description: "Cafwyd hyd i dudalennau yn y gwasanaeth a oedd yn dangos yr un teitl tudalen. Mae teitlau unigryw ar dudalennau’n sicrhau bod defnyddwyr darllenwyr sgrin yn ymwybodol bod cynnwys y dudalen wedi newid ac yn rhoi cyd-destun o ran cynnwys y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-14
+  - description: "Nid oedd y modd o ymdrin â gwallau wedi’i gyflwyno fel y mae GOV.UK yn ei awgrymu. Nid oedd rhybudd wedi’i osod i hysbysu defnyddwyr darllenwyr sgrin bod gwall wedi’i gyflwyno ar y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Status Messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-14
+  - description: "Nid yw’r neges gwall a roddwyd yn awgrymu i ddefnyddwyr beth ddylai’r mewnbwn cywir fod. Gallai hyn beri dryswch i rai grwpiau defnyddwyr. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-14
+  - description: "Nid oedd y labeli, y negeseuon gwall na’r cysylltiadau’n ddisgrifiadol ar gyfer defnyddwyr darllenwyr sgrin – mae angen rhagor o gyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-14
+  - description: "Methodd lliw’r dangosydd ffocws a ddefnyddiwyd ar draws y gwasanaeth â bodloni’r gymhareb ddisgwyliedig o 3:1 i basio maen prawf llwyddiant 1.4.11 (Non-text Contrast AA) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1, a gall fod yn anodd i rai defnyddwyr ei ganfod. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-14
+serviceLastTestedDate: 2020-10-14
+statementVisibility: public
+statementCreatedDate: 2020-09-18
+statementLastUpdatedDate: 2020-09-18
