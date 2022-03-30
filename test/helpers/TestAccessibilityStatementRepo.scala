@@ -18,7 +18,7 @@ package helpers
 
 import org.mockito.scalatest.MockitoSugar
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
 import java.util.{Calendar, GregorianCalendar}
@@ -94,6 +94,21 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     automatedTestingDetails = Some("Details about automated testing")
   )
 
+  private val nonCompliant = englishStatement.copy(
+    serviceName = "Noncompliant",
+    statementVisibility = Public,
+    complianceStatus = NoCompliance,
+    serviceLastTestedDate = None
+  )
+
+  private val withMetadata = englishStatement.copy(
+    serviceName = "With Metadata",
+    ddc = Some("DDC Worthing"),
+    businessArea = Some("Chief Digital & Information Officer (CDIO)"),
+    liveOrClassic = Some("Live Services (Worthing)"),
+    typeOfService = Some("Public beta")
+  )
+
   when(repo.findByServiceKeyAndLanguage("test-service", en)) thenReturn Some(
     (englishStatement, en)
   )
@@ -135,6 +150,8 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
       ("english-service", en, englishOnlyStatement),
       ("with-milestones", en, withMilestones),
       ("with-automated-testing", en, withAutomatedTesting),
-      ("draft-with-milestones", en, draftWithMilestones)
+      ("draft-with-milestones", en, draftWithMilestones),
+      ("noncompliant", en, nonCompliant),
+      ("with-metadata", en, withMetadata)
     )
 }

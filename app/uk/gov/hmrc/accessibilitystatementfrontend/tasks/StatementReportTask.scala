@@ -20,6 +20,8 @@ import javax.inject.Inject
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
+import java.util.Date
+import java.util.{Calendar, GregorianCalendar}
 
 class StatementReportTask @Inject() (
   accessibilityStatementRepo: AccessibilityStatementsRepo
@@ -56,17 +58,17 @@ class StatementReportTask @Inject() (
 
     import statement._
 
+    val defaultDate           = new GregorianCalendar(1900, Calendar.JANUARY, 1).getTime
     val milestoneCount        = milestones.getOrElse(Seq.empty).size.toString
     val problemsCount         = accessibilityProblems.getOrElse(Seq.empty).size.toString
-    val lastTestedDate        = serviceLastTestedDate.map(getIsoDate).getOrElse("")
+    val lastTestedDate        = serviceLastTestedDate.getOrElse(defaultDate)
     val earliestMilestoneDate =
       milestones
         .getOrElse(Seq.empty)
         .map(_.date)
         .sorted
         .headOption
-        .map(getIsoDate)
-        .getOrElse("")
+        .getOrElse(defaultDate)
     val languageCode          = language.code
     val serviceAbsoluteUrl    = s"https://$serviceDomain$serviceUrl"
 
@@ -79,10 +81,10 @@ class StatementReportTask @Inject() (
       complianceStatus.toString,
       problemsCount,
       milestoneCount,
-      earliestMilestoneDate,
+      getIsoDate(earliestMilestoneDate),
       displayAutomatedTestingOnlyContent.toString,
       statementVisibility.toString,
-      lastTestedDate,
+      getIsoDate(lastTestedDate),
       getIsoDate(statementCreatedDate),
       getIsoDate(statementLastUpdatedDate),
       statementTemplate.toString,
