@@ -10,11 +10,11 @@ accessibilityProblems:
   - Ar y dudalen ‘Gwirio a oes angen i chi fod ar gael i fynychu arolygiad’, nid yw’r darllenydd sgrin yn ynganu cysylltiadau’r opsiwn iaith yn gywir mewn iaith frodorol. Gall hyn olygu na fydd y defnyddiwr hyd yn oed yn gallu deall yr hyn y mae’n ei ddweud hyd yn oed os oedd yn deall Saesneg.
 milestones:
   - description: Ar bob tudalen mae’r cysylltiad ‘Yn ôl’ yn bresennol pan fydd Javascript wedi’i analluogi. Efallai y bydd pobl sydd â nam gwybyddol ac echddygol yn ei chael yn anodd cael pen eu ffordd yn y gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Link Purpose (In Context).
-    date: 2022-02-25
+    date: 2022-06-30
   - description: Ar y dudalen ‘Gwirio a oes angen i chi fod ar gael i fynychu arolygiad’, nid yw’r darllenydd sgrin yn ynganu cysylltiadau’r opsiwn iaith yn gywir mewn iaith frodorol. Gall hyn olygu na fydd y defnyddiwr hyd yn oed yn gallu deall yr hyn y mae’n ei ddweud hyd yn oed os oedd yn deall Saesneg. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Language of Parts.
-    date: 2022-02-25
+    date: 2022-06-30
 serviceLastTestedDate: 2021-06-29
 statementVisibility: public
 statementCreatedDate: 2021-08-03
-statementLastUpdatedDate: 2021-12-16
+statementLastUpdatedDate: 2022-03-30
 
