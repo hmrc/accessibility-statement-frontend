@@ -246,6 +246,14 @@ sbt "generateReport alternativeName.tsv"
 
 will generate the report in `target/alternativeName.tsv`
 
+### Default dates in reports
+
+As part of the report, various dates are populated from the YAML files. In some circumstances, certain dates are not applicable to certain statements. Specifically:
+- A statement with a `complianceStatus` set to `full` will not have an `earliestMilestoneDate` (as there are no milestones in the statement)
+- A statement with a `complianceStatus` set to `noncompliant` will not have an `earliestMilestoneDate` (as there are no milestones in the statement) and will not have a `serviceLastTestedDate` (as it has not been tested).
+
+In both those cases, the date listed on the report will be hardcoded to **01/01/1900**, as per the request of the DIAS team.
+
 ## Running UI acceptance tests
 
 To run the UI acceptance tests locally, you will need a copy of Chrome
