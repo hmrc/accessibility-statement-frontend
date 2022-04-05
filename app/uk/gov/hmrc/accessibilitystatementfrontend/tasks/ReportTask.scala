@@ -36,9 +36,15 @@ abstract class ReportTask(filename: String) {
 
   private def mkRow(cells: Seq[String]) = cells.mkString("\t")
 
-  private val isoDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd")
+  private val isoDateFormat         = new java.text.SimpleDateFormat("yyyy-MM-dd")
+  private val firstDayOfMonthFormat = new java.text.SimpleDateFormat("yyyy-MM-01")
+  private val yearOnlyFormat        = new java.text.SimpleDateFormat("yyyy")
 
   def getIsoDate(date: Date) = isoDateFormat.format(date)
+
+  def getFirstDayOfMonth(date: Date) = firstDayOfMonthFormat.format(date)
+
+  def getYear(date: Date) = yearOnlyFormat.format(date)
 
   def url(serviceKey: String) =
     s"https://www.qa.tax.service.gov.uk/accessibility-statement/$serviceKey"
