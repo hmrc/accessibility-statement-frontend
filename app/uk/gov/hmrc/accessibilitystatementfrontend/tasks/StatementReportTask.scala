@@ -20,11 +20,12 @@ import javax.inject.Inject
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
-import java.util.Date
+
 import java.util.{Calendar, GregorianCalendar}
 
 class StatementReportTask @Inject() (
-  accessibilityStatementRepo: AccessibilityStatementsRepo
+  accessibilityStatementRepo: AccessibilityStatementsRepo,
+  dateProvider: DateProvider
 ) extends ReportTask("report.tsv") {
   override def getHeader = Seq(
     "url",
@@ -42,10 +43,13 @@ class StatementReportTask @Inject() (
     "statementCreatedDate",
     "statementLastUpdatedDate",
     "statementType",
+    "month",
+    "year",
     "Business Area",
     "DDC",
     "Live or Classic",
-    "type of Service"
+    "type of Service",
+    "In Statement Service"
   )
 
   override def getBodyRows: Seq[Seq[String]] =
@@ -59,6 +63,7 @@ class StatementReportTask @Inject() (
     import statement._
 
     val defaultDate           = new GregorianCalendar(1900, Calendar.JANUARY, 1).getTime
+    val currentDate           = dateProvider.getCurrentDate
     val milestoneCount        = milestones.getOrElse(Seq.empty).size.toString
     val problemsCount         = accessibilityProblems.getOrElse(Seq.empty).size.toString
     val lastTestedDate        = serviceLastTestedDate.getOrElse(defaultDate)
@@ -71,6 +76,7 @@ class StatementReportTask @Inject() (
         .getOrElse(defaultDate)
     val languageCode          = language.code
     val serviceAbsoluteUrl    = s"https://$serviceDomain$serviceUrl"
+    val isInStatementService  = "Yes"
 
     Seq(
       url(serviceKey),
@@ -88,10 +94,13 @@ class StatementReportTask @Inject() (
       getIsoDate(statementCreatedDate),
       getIsoDate(statementLastUpdatedDate),
       statementTemplate.toString,
+      getFirstDayOfMonth(currentDate),
+      getYear(currentDate),
       businessArea.getOrElse(""),
       ddc.getOrElse(""),
       liveOrClassic.getOrElse(""),
-      typeOfService.getOrElse("")
+      typeOfService.getOrElse(""),
+      isInStatementService
     )
   }
 }

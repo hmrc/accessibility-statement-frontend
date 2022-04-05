@@ -14,17 +14,15 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.accessibilitystatementfrontend
+package uk.gov.hmrc.accessibilitystatementfrontend.tasks
 
-import com.google.inject.AbstractModule
-import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
-import uk.gov.hmrc.accessibilitystatementfrontend.tasks.{DateProvider, SystemDateProvider}
+import java.util.Date
 
-class AccessibilityStatementModule extends AbstractModule {
-  override def configure() = {
-    bind(classOf[AccessibilityStatementsRepo]).to(
-      classOf[AccessibilityStatementsSourceRepo]
-    )
-    bind(classOf[DateProvider]).to(classOf[SystemDateProvider])
-  }
+trait DateProvider {
+  def getCurrentDate: Date
+}
+
+case class SystemDateProvider() extends DateProvider {
+  override def getCurrentDate: Date =
+    new Date(System.currentTimeMillis());
 }

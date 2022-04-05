@@ -246,13 +246,18 @@ sbt "generateReport alternativeName.tsv"
 
 will generate the report in `target/alternativeName.tsv`
 
-### Default dates in reports
+### Dates in reports
 
 As part of the report, various dates are populated from the YAML files. In some circumstances, certain dates are not applicable to certain statements. Specifically:
 - A statement with a `complianceStatus` set to `full` will not have an `earliestMilestoneDate` (as there are no milestones in the statement)
 - A statement with a `complianceStatus` set to `noncompliant` will not have an `earliestMilestoneDate` (as there are no milestones in the statement) and will not have a `serviceLastTestedDate` (as it has not been tested).
 
 In both those cases, the date listed on the report will be hardcoded to **01/01/1900**, as per the request of the DIAS team.
+
+Additionally, there are `month` and `year` fields in the generated report. These are the month and year **in which the
+report was generated**. In the build, this will based on the system time. The `month` field will display the 
+**first day** of the month in which it was generated. For example, a report generated on 17 March 2022 will display 
+`2022-03-01` in the `month` field. 
 
 ## Running UI acceptance tests
 
