@@ -5,13 +5,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-pension-schemes
 contactFrontendServiceId: PODS
-complianceStatus: partial
-accessibilityProblems:
-  - table headings include abbreviations. This means some users will not be able to understand these table headings.
-milestones:
-  - description: On one page, table headings include abbreviations. This means some users will not be able to understand these table headings. This doesn’t meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels).
-    date: 2022-02-28
-serviceLastTestedDate: 2021-12-03
+complianceStatus: full
+serviceLastTestedDate: 2022-03-28
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2022-01-07
+statementLastUpdatedDate: 2022-04-06
