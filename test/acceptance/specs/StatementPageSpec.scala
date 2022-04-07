@@ -121,7 +121,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
           .toList
           .map(_.getText) should
           contain(
-            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 March 2022."
+            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 October 2022."
           )
       }
     }
