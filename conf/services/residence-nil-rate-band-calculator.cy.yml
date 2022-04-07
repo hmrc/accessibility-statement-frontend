@@ -9,7 +9,19 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /calculate-additional-inheritance-tax-threshold/date-of-death
 contactFrontendServiceId: RNRB
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - nid yw’r cysylltiadau i symud yn syth ymlaen pan fo gwall yn gweithio’n gywir.
+  - mae rolau anghywir wedi’u defnyddio ar gyfer negeseuon gwall.
+  - nid yw’r lliw a ddefnyddir i nodi pan fo elfen wedi cael ffocws yn bodloni’r gymhareb ddisgwyliedig er mwyn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+milestones:
+  - description: "Nid yw’r ID yn cyfateb i ‘href’ y cysylltiad i symud yn syth ymlaen pan fo gwall. Mae hyn yn golygu na fydd ffocws yn cael ei anfon at adran gywir y dudalen wrth i’r rhai sy’n defnyddio bysellfwrdd yn unig geisio ei gyrraedd, a bydd y ffocws yn aros ar y cysylltiad gwall ar frig y dudalen, a’u bod yn aros ar y cysylltiad gwall ar frig y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (bypass blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-09-14
+  - description: "Mae gan negeseuon gwall rôl flwch diffinio sy’n anghywir neu nad yw’n unol â GOV.UK. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-09-14
+  - description: "Nid yw’r lliw a ddefnyddir ar gyfer nodi ffocws yn bodloni’r gymhareb ddisgwyliedig er mwyn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Nid yw ychwaith yn cyd-fynd â’r lliw sy’n cael ei awgrymu yn System Ddylunio GOV.UK. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-09-14
+serviceLastTestedDate: 2020-09-14
 statementVisibility: public
 statementCreatedDate: 2020-09-21
 statementLastUpdatedDate: 2020-09-21
