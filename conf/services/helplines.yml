@@ -11,9 +11,9 @@ accessibilityProblems:
   - ‘Call an HMRC helpline’ has been used as the page title and heading which does not identify the page contents.
   - when switching to Welsh, the visually hidden copy 'error' which starts the error message stays in English and will not be correctly pronounced by screen readers.
 milestones:
-  - description: More than one page has identical titles. This fails WCAG 2.1 success criterion 2.4.2 Page titles.
+  - description: More than one page has identical titles. This fails WCAG 2.1 success criterion 2.4.2 Page Titled.
     date: 2022-05-31
-  - description: Page title and heading does not identify the page contents. This fails WCAG 2.1 success criterion 2.4.2 Page titled and 2.4.6 Headings and Labels.
+  - description: Page title and heading does not identify the page contents. This fails WCAG 2.1 success criterion 2.4.2 Page Titled and 2.4.6 Headings and Labels.
     date: 2022-05-31
   - description: The visually hidden copy 'error' remains in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2 Language of Parts.
     date: 2022-05-31
