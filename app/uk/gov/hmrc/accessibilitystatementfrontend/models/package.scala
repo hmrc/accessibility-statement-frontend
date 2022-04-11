@@ -60,4 +60,22 @@ package object models {
     )
     queryStringParameters.flatten.mkString("&")
   }
+
+  trait EnumValue {
+    def value: String
+    override def toString: String = value
+  }
+
+  trait Enum[T <: EnumValue] {
+    def description: String
+    def values: Seq[T]
+
+    implicit val encoder: Encoder[T] = Encoder.encodeString.contramap[T](_.toString)
+    implicit val decoder: Decoder[T] = Decoder.decodeString.emap { value =>
+      values
+        .find(_.value == value)
+        .map(Right.apply)
+        .getOrElse(Left(s"""Unrecognised $description "$value""""))
+    }
+  }
 }
