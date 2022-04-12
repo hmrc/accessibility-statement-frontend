@@ -16,21 +16,21 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-sealed trait Visibility extends EnumValue
+sealed trait TypeOfService extends EnumValue
 
-object Visibility extends Enum[Visibility] {
-  def description: String     = "visibility"
-  def values: Seq[Visibility] = Seq(Public, Draft, Archived)
+object TypeOfService extends Enum[TypeOfService] {
+  def description: String        = "service type"
+  def values: Seq[TypeOfService] = Seq(ClassicServicesType, LiveServicesType, PublicBetaType)
 }
 
-case object Public extends Visibility {
-  val value = "public"
+case object ClassicServicesType extends TypeOfService {
+  val value = "Classic Services"
 }
 
-case object Draft extends Visibility {
-  val value = "draft"
+case object LiveServicesType extends TypeOfService {
+  val value = "Live services"
 }
 
-case object Archived extends Visibility {
-  val value = "archived"
+case object PublicBetaType extends TypeOfService {
+  val value = "Public beta"
 }

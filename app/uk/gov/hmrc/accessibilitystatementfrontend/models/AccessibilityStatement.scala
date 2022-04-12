@@ -37,10 +37,10 @@ case class AccessibilityStatement(
   statementLastUpdatedDate: Date,
   automatedTestingDetails: Option[String],
   statementType: Option[StatementType],
-  businessArea: Option[String],
-  ddc: Option[String],
-  liveOrClassic: Option[String],
-  typeOfService: Option[String]
+  businessArea: Option[BusinessArea],
+  ddc: Option[DDC],
+  liveOrClassic: Option[LiveOrClassic],
+  typeOfService: Option[TypeOfService]
 ) extends Ordered[AccessibilityStatement] {
 
   val statementTemplate: StatementType = statementType match {

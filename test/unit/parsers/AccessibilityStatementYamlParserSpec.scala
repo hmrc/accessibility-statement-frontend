@@ -21,7 +21,7 @@ import org.scalatest.EitherValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public, VOA}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, VOA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import scala.io.Source
@@ -176,16 +176,16 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01
           |businessArea: Chief Digital & Information Officer (CDIO)
           |ddc: DDC Worthing
-          |liveOrClassic: Live Services (Worthing)
-          |typeOfService: Public Beta""".stripMargin('|')
+          |liveOrClassic: Live Services - Worthing
+          |typeOfService: Public beta""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
       parsed.right.value should equal(
         fullyAccessibleStatement.copy(
-          businessArea = Some("Chief Digital & Information Officer (CDIO)"),
-          ddc = Some("DDC Worthing"),
-          liveOrClassic = Some("Live Services (Worthing)"),
-          typeOfService = Some("Public Beta")
+          businessArea = Some(ChiefDigitalAndInformationOfficer),
+          ddc = Some(DDCWorthing),
+          liveOrClassic = Some(LiveServicesWorthing),
+          typeOfService = Some(PublicBetaType)
         )
       )
     }
@@ -451,7 +451,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       val parsed = parser.parse(problemStatementYaml)
 
       parsed.left.value.getMessage should startWith(
-        "Unrecognised statementType \"sausage\""
+        "Unrecognised statement type \"sausage\""
       )
     }
 

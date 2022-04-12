@@ -16,39 +16,29 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-import io.circe.{Decoder, Encoder}
+sealed trait StatementType extends EnumValue
 
-sealed trait StatementType
-
-object StatementType {
-  implicit val decoder: Decoder[StatementType] = Decoder.decodeString.emap {
-    case "VOA"     => Right(VOA)
-    case "C-HGV"   => Right(CHGV)
-    case "android" => Right(Android)
-    case "ios"     => Right(Ios)
-    case other     => Left(s"""Unrecognised statementType "$other"""")
-  }
-
-  implicit val encoder: Encoder[StatementType] =
-    Encoder.encodeString.contramap[StatementType](_.toString)
+object StatementType extends Enum[StatementType] {
+  def description: String        = "statement type"
+  def values: Seq[StatementType] = Seq(VOA, CHGV, Android, Ios)
 }
 
 case object VOA extends StatementType {
-  override def toString = "VOA"
+  val value = "VOA"
 }
 
 case object CHGV extends StatementType {
-  override def toString = "C-HGV"
+  val value = "C-HGV"
 }
 
 case object Ios extends StatementType {
-  override def toString = "ios"
+  val value = "ios"
 }
 
 case object Android extends StatementType {
-  override def toString = "android"
+  val value = "android"
 }
 
 case object HMRC extends StatementType {
-  override def toString = "HMRC"
+  val value = "HMRC"
 }
