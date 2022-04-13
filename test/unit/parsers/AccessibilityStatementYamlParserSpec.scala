@@ -67,7 +67,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(fullyAccessibleStatement)
+      parsed.value should equal(fullyAccessibleStatement)
     }
 
     "parse a fully accessible public statement" in {
@@ -84,7 +84,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         fullyAccessibleStatement.copy(statementVisibility = Public)
       )
     }
@@ -104,7 +104,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         fullyAccessibleStatement.copy(
           statementVisibility = Public,
           statementType = Some(Android)
@@ -127,7 +127,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementType: VOA""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         fullyAccessibleStatement.copy(
           statementVisibility = Public,
           serviceUrl = "/voa",
@@ -152,7 +152,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementType: C-HGV""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         fullyAccessibleStatement.copy(
           statementVisibility = Public,
           serviceUrl = "/c-hgv",
@@ -180,7 +180,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |typeOfService: Public beta""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         fullyAccessibleStatement.copy(
           businessArea = Some(ChiefDigitalAndInformationOfficer),
           ddc = Some(DDCWorthing),
@@ -219,7 +219,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         AccessibilityStatement(
           serviceName = "Online Payments",
           serviceDescription =
@@ -292,7 +292,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         AccessibilityStatement(
           serviceName = "Online Payments",
           serviceDescription =
@@ -348,7 +348,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |""".stripMargin('|')
 
       val parsed = parser.parse(statementYaml)
-      parsed.right.value should equal(
+      parsed.value should equal(
         AccessibilityStatement(
           serviceName = "Discounted Doughnuts",
           serviceDescription = "This is a non compliant service. People can eat doughnuts.",
