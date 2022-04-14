@@ -14,3 +14,8 @@ serviceLastTestedDate: 2022-03-11
 statementVisibility: public
 statementCreatedDate: 2021-04-19
 statementLastUpdatedDate: 2022-03-21
+
+businessArea: Customer Services Group (CSG)
+ddc:
+liveOrClassic:
+typeOfService: Public beta

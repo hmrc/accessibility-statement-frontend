@@ -2,7 +2,7 @@ serviceName: find your business rates valuation
 serviceHeaderName: find your business rates valuation
 serviceDescription: |
   This service allows you to search for and check the rateable value of your
-  property - this is set by the Valuation Office Agency (VOA) and used by 
+  property - this is set by the Valuation Office Agency (VOA) and used by
   your local council to calculate your business rates bill.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /business-rates-find
@@ -12,3 +12,8 @@ serviceLastTestedDate: 2020-10-06
 statementVisibility: public
 statementCreatedDate: 2020-09-15
 statementLastUpdatedDate: 2020-10-07
+
+businessArea: Valutation Office Agency (VOA)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

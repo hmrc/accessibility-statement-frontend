@@ -48,3 +48,8 @@ milestones:
     date: 2023-03-31
   - description: Ar y dudalen i roi gwybod am newidiadau, defnyddir cysylltiad ‘agor pob un’ i ehangu cynnwys. Fodd bynnag, does dim testun disgrifiadol i ddweud wrth ddefnyddwyr darllenwyr sgrin beth fydd y cysylltiad hwn yn ei wneud. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context) (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
     date: 2023-03-31
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Telford
+typeOfService: Live services
