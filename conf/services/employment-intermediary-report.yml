@@ -43,7 +43,7 @@ milestones:
     date: 2022-12-31
   - description: High zoom levels or smaller screens might result in horizontal scrollbars appearing. This does not meet WCAG 2.1 success criterion 1.4.10 (Reflow).
     date: 2022-12-31
-serviceLastTestedDate: 2020-10-01
+serviceLastTestedDate: 2020-09-29
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2022-04-19
