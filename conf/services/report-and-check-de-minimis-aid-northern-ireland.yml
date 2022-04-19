@@ -5,10 +5,10 @@ serviceUrl: /report-and-check-de-minimis-aid-northern-ireland
 contactFrontendServiceId: DeminimisAidPayments
 complianceStatus: partial
 accessibilityProblems:
-  - On the 'reporting de minimis aid payments (less Customs Duty waivers) as a single undertaking' page, the heading is not set up correctly so that screen reader users do not know that it is a heading.
+  - On the 'reporting de minimis aid payments (less Customs Duty waivers) as a single undertaking' page, the heading is not set up correctly so that screen reader users do not know that it is a heading
   - On the 'report a de minimis aid payment' page, the table is stacked on smaller screens but has not been correctly set up which can cause confusion for screen reader users
 milestones:
-  - description: Content visually presented as a heading does not have the correct code semantics to identify it as this is a heading.
+  - description: Content visually presented as a heading does not have the correct code semantics to identify it as the heading.
       This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
     date: 2022-06-30
   - description: The table stacked on smaller screens does not have the correct code semantics to identify the table structure.
