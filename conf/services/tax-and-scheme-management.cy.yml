@@ -1,0 +1,11 @@
+serviceName: Gwasanaethau Rheoli
+serviceDescription: |
+  Mae Gwasanaethau Rheoli yn galluogi gweinyddwyr o fewn sefydliad i reoli pwy all gyrchu’r gwasanaethau y mae’r sefydliad wedi ymrestru ar eu cyfer.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-and-scheme-management
+contactFrontendServiceId: manage-services-frontend
+complianceStatus: full
+serviceLastTestedDate: 2020-11-25
+statementVisibility: public
+statementCreatedDate: 2022-04-26
+statementLastUpdatedDate: 2022-04-26
