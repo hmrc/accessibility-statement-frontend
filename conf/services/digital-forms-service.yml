@@ -6,7 +6,76 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /digital-forms
 contactFrontendServiceId: dfs-digital-forms-frontend
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - multiple main landmarks are present.
+  - page contained multiple level 1 headings.
+  - PDF document had not been tagged.
+  - the 'Start now' button does not appear to have a visible focus highlight.
+  - content should be marked up as part of a heading structure.
+  - duplicate IDs present.
+  - incorrect aria attributes had been used.
+  - radio buttons were not accessible to all users.
+  - in places focus order was illogical.
+  - information, structure and relationships on check your answers page is incorrect.
+  - page titles were not unique in some parts of the service.
+  - the menu link is hidden from users when activated.
+  - the menu was confusing for screen reader users on mobile devices.
+  - there is content which is visually hidden but not hidden from assistive technology.
+  - labels that remove the filter options are non descriptive.
+  - form fields have multiple label elements.
+  - tabpanel markup detectable for screen reader users navigating on desktop with JAWS and NVDA.
+  - change of context was not announced to screen reader users.
+  - users were not presented with any error handling when submitting incorrect data.
+  - labels were not descriptive.
+  - colour contrast of text failed to meet the expected ratio to pass WCAG 2.1 AA.
+  - colour used for styling focus indication of some elements did not pass the expected ratio.
+milestones:
+  - description: "Multiple main landmarks are present that are not implemented according to specification. Screen readers can use landmarks to determine the structure of the page and to navigate between different sections quickly. This fails WCAG 2.1 success criterion 4.1.1 (parsing), 1.3.1 (info and relationships) and 1.3.6 (identify purpose)."
+    date: 2022-10-06
+  - description: "A page contained multiple level 1 headings. Screen reader users rely on a sole descriptive level 1 heading, providing the user with a clear purpose of the page and the content contained within. This fails WCAG 2.1 success criterion 1.3.1 (info and relationships)."
+    date: 2022-10-06
+  - description: "The PDF document has not been tagged and therefore is not accessible for screen reader users as the content has not been provided using the correct tags allowing for users to discern the structure and relations of content. This fails WCAG 2.1 success criterion 1.3.1 (info and relationships) and 3.1.1 (language of page)."
+    date: 2022-10-06
+  - description: "When the ‘Start now’ button receives focus, the only change for users to distinguish the focus state, is the colour of the button changes from one shade of green, to a darker shade of green. This fails WCAG 2.1 success criterion 1.4.1 (use of colour)."
+    date: 2022-10-06
+  - description: "'Previous claims' and 'Tax year' introduces content but is not marked up as part of as heading structure. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships) and 4.1.2 (name, role, value)."
+    date: 2022-10-06
+  - description: "Every ID attribute has to be unique for the Assistive Technology to interact properly. This doesn’t meet WCAG 2.1 success criteria 4.1.1 (parsing)."
+    date: 2022-10-06
+  - description: "The ARIA attribute aria-selected indicates the current 'selected' state of various widgets; in this instance an aria-selected=false value has been associated with the input, which is not permitted for the elements role. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value)."
+    date: 2022-10-06
+  - description: "Each of the inputs contained within the fieldset have multiple labelling techniques applied; an aria-labelledby attribute has been used on the radio buttons that refers to the label used in the <legend>. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships), 3.3.2 (labels or instructions) and 4.1.2 (name, role, value)."
+    date: 2022-10-06
+  - description: "In places focus order was illogical, with content being bypassed, content which should not be focusable being included in the tab order, and in places, on page load focus was placed in the body of the page, rather than at the top which was confusing for screen readers. This doesn’t meet WCAG 2.1 success criteria 2.4.3 (focus order)."
+    date: 2022-10-06
+  - description: "The content has been presented using spans, divs and list items, rather than a definition list as would typically be expected to ensure that relationships between content is portrayed in the same way as it is visually. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
+    date: 2022-10-06
+  - description: "Page titles remained the same across different pages in parts of the service, for example the Tax Year page has the same page title as the Previous Claims page. This doesn’t meet WCAG 2.1 success criteria 2.4.2 (page titled)."
+    date: 2022-10-06
+  - description: "After the user activates the menu link in the header, the menu option itself disappears and is hidden using CSS and JavaScript. This means that users are unable to access the menu link again and close the menu once activated. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value)."
+    date: 2022-10-06
+  - description: "In reduced displays, a menu becomes available. The menu is not descriptively labelled, nor is it present when accessed on desktop unless the user navigates the page using mobile. This doesn’t meet WCAG 2.1 success criteria 2.1.1 (keyboard), 2.1.3 (keyboard no exception), 4.1.2 (name, role, value), 3.3.2 (labels or instructions), 1.4.1 (use of color), 1.4.13 (content on hover or focus), 1.4.3 (contrast minimum), 1.4.6 (contrast enhanced) and 1.4.11 (non-text contrast)."
+    date: 2022-10-06
+  - description: "Content in the menu has been visually hidden from the page by positioning it offscreen within the CSS, but it has not been hidden from assistive technology. Screen reader users encounter the content within the menu as if the menu was open on the page. This doesn’t meet WCAG 2.1 success criteria 2.4.3 (focus order) and 1.3.1 (info and relationships)."
+    date: 2022-10-06
+  - description: "A multiplication sign ‘✕’ has been used to act as a label but does not have an appropriate text alternative, which means this means that this component does not have a recognisable accessible name. This doesn’t meet WCAG 2.1 success criteria 1.1.1 (non-text content), 1.3.1 (info and relationships), 2.4.6 (headings and labels) and 4.1.2 (name, role, value)."
+    date: 2022-10-06
+  - description: "Screen reader users encountered the text 'National Insurance Number' repeatedly as it is duplicated on two separate lines. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships), 3.3.2 (labels or instructions) and 4.1.2 (name, role, value)."
+    date: 2022-10-06
+  - description: "There is tabpanel markup, which appears to be concealed from users, but is at times detectable for screen reader users navigating on desktop with JAWS and NVDA. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value) and 1.3.1 (info and relationships)."
+    date: 2022-10-06
+  - description: "When users encounter errors, screen reader users are not provided with any announcement to make the user aware of the errors encountered on the page. This doesn’t meet WCAG 2.1 success criteria 4.1.3 (status messages)."
+    date: 2022-10-06
+  - description: "After a user enters a date of birth from the future, no error handling is presented for users when activating the ‘save and continue’ button. This doesn’t meet WCAG 2.1 success criteria 3.3.4 (error prevention) and 3.3.6 (error prevention)."
+    date: 2022-10-06
+  - description: "The ‘hide this message’ button provided for users after actioning the cookie banner, does not provide enough description for screen reader users. This doesn’t meet WCAG 2.1 success criteria 2.4.6 (headings and labels)."
+    date: 2022-10-06
+  - description: "When the ‘GOV.UK’ logo and the ‘sign out’ link receive focus, the text is displayed in white colour against the yellow focus indicator. This doesn’t meet WCAG 2.1 success criteria 1.4.3 (contrast minimum) and 1.4.6 (contrast enhanced)."
+    date: 2022-10-06
+  - description: "The focus indicator throughout the service does not match that of the requirements set by the GOV.UK Design System. This doesn’t meet WCAG 2.1 success criteria 1.4.11 (non-text contrast)."
+    date: 2022-10-06
+serviceLastTestedDate: 2021-10-06
 statementVisibility: public
 statementCreatedDate: 2020-09-22
 statementLastUpdatedDate: 2020-09-22
