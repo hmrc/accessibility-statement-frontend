@@ -82,6 +82,7 @@ The filename can contain only lower case letters, dashes or numbers, and the fil
 | `liveOrClassic`   | `Classic Services`, `Live Services - Edinburgh`, `Live Services - Newcastle`, `Live Services - Telford`, `Live Services - Worthing` |
 | `typeOfService`   | `Classic services`, `Live services`, `Public beta` |
 
+Additional guidance for "typeOfService": If the service is being maintained by a Live Services team, then put "Live services" as the value even if the service is in the public beta lifecycle stage. If the service is still in active development by a scrum team outside of Live Services, then put "Public beta".
 
 ## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
