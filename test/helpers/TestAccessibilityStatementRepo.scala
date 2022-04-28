@@ -18,7 +18,7 @@ package helpers
 
 import org.mockito.scalatest.MockitoSugar
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, NoCompliance, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
 import java.util.{Calendar, GregorianCalendar}
@@ -103,10 +103,10 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
 
   private val withMetadata = englishStatement.copy(
     serviceName = "With Metadata",
-    ddc = Some("DDC Worthing"),
-    businessArea = Some("Chief Digital & Information Officer (CDIO)"),
-    liveOrClassic = Some("Live Services (Worthing)"),
-    typeOfService = Some("Public beta")
+    ddc = Some(DDCWorthing),
+    businessArea = Some(ChiefDigitalAndInformationOfficer),
+    liveOrClassic = Some(LiveServicesWorthing),
+    typeOfService = Some(PublicBetaType)
   )
 
   when(repo.findByServiceKeyAndLanguage("test-service", en)) thenReturn Some(

@@ -1,7 +1,7 @@
-serviceName: Rhoi gwybod am dwyll treth neu osgoi treth
-serviceHeaderName: Rhoi gwybod am dwyll treth neu osgoi treth
+serviceName: Rhoi gwybod i CThEM am achosion o dwyll treth neu arbed treth
+serviceHeaderName: Rhoi gwybod i CThEM am achosion o dwyll treth neu arbed treth
 serviceDescription: |
-  Rhowch wybod am achosion o dwyll treth neu osgoi treth a gyflawnwyd gan fusnes neu unigolyn, mae’n cymryd tua 10-15 munud i wneud hyn. Ni ofynnir i chi uwchlwytho dogfennau yn yr adroddiad, a chedwir unrhyw wybodaeth a ddarperir yn breifat ac yn gyfrinachol. Gallwch roi gwybod yn ddienw neu roi manylion cyswllt i CThEM, er mwyn i CThEM allu gwneud gwaith dilynol i gael gwybodaeth ategol sydd gennych.
+  Rhowch wybod i CThEM am achosion o dwyll treth neu arbed treth a gyflawnwyd gan fusnes neu unigolyn. Mae’n cymryd tua 10-15 munud i wneud hyn. Ni ofynnir i chi uwchlwytho dogfennau yn yr adroddiad, a chedwir unrhyw wybodaeth a ddarperir yn breifat ac yn gyfrinachol. Gallwch roi gwybod yn ddienw neu roi manylion cyswllt i CThEM, er mwyn i CThEM allu gwneud gwaith dilynol i gael gwybodaeth ategol sydd gennych.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /report-tax-fraud
 contactFrontendServiceId: tax-fraud-reporting-frontend    # A unique identifier for your service

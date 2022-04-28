@@ -80,6 +80,7 @@ The filename can contain only lower case letters, dashes or numbers, and the fil
 | `businessArea`    | `Adjudicator's Office`, `Borders & Trade`, `Chief Digital & Information Officer (CDIO)`, `Customer Compliance Group (CCG)`, `Customer Services Group (CSG)`, `Customer Strategy & Tax Design (CS&TD)`, `HMRC External - Cabinet Office`, `Valuation Office Agency (VOA)` |
 | `ddc`             | `DDC Edinburgh`, `DDC London`, `DDC Newcastle`, `DDC Telford`, `DDC Worthing`, `DDC Yorkshire`, `Non DDC Location` |
 | `liveOrClassic`   | `Classic Services`, `Live Services - Edinburgh`, `Live Services - Newcastle`, `Live Services - Telford`, `Live Services - Worthing` |
+| `typeOfService`   | `Classic services`, `Live services`, `Public beta` |
 
 
 ## Opening a PR to get your statement merged into the repository

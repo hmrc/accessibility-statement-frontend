@@ -16,21 +16,22 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-sealed trait Visibility extends EnumValue
+import io.circe.{Decoder, Encoder}
 
-object Visibility extends Enum[Visibility] {
-  def description: String     = "visibility"
-  def values: Seq[Visibility] = Seq(Public, Draft, Archived)
+trait EnumValue {
+  def value: String
+  override def toString: String = value
 }
 
-case object Public extends Visibility {
-  val value = "public"
-}
+trait Enum[T <: EnumValue] {
+  def description: String
+  def values: Seq[T]
 
-case object Draft extends Visibility {
-  val value = "draft"
-}
-
-case object Archived extends Visibility {
-  val value = "archived"
+  implicit val encoder: Encoder[T] = Encoder.encodeString.contramap[T](_.toString)
+  implicit val decoder: Decoder[T] = Decoder.decodeString.emap { value =>
+    values
+      .find(_.value == value)
+      .map(Right.apply)
+      .getOrElse(Left(s"""Unrecognised $description "$value""""))
+  }
 }

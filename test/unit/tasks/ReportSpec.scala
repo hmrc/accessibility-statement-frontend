@@ -20,6 +20,7 @@ import helpers.TestAccessibilityStatementRepo
 import org.scalatest.TryValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, HMRC, LiveServicesWorthing, NoCompliance, PartialCompliance, Public, PublicBetaType}
 import uk.gov.hmrc.accessibilitystatementfrontend.tasks.{DateProvider, StatementReportTask}
 
 import java.util.{Date, GregorianCalendar}
@@ -49,15 +50,15 @@ class ReportSpec extends AnyWordSpec with Matchers with TryValues {
       result     should be a 'success
       result.get should equal(
         Seq(
-          "url\tlanguage\tserviceName\tserviceAbsoluteUrl\tcontactFrontendServiceId\tcomplianceStatus\tproblemCount\tmilestoneCount\tearliestMilestoneDate\tautomatedTestingOnly\tstatementVisibility\tserviceLastTestedDate\tstatementCreatedDate\tstatementLastUpdatedDate\tstatementType\tmonth\tyear\tBusiness Area\tDDC\tLive or Classic\ttype of Service\tIn Statement Service",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\ten\tTest (English)\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t1900-01-01\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\t\t\t\t\tYes",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\tcy\tTest (Welsh)\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t1900-01-01\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\t\t\t\t\tYes",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/english-service\ten\tEnglish Only\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t1900-01-01\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\t\t\t\t\tYes",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/with-milestones\ten\tWith Milestones\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t3\t2020-05-01\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\t\t\t\t\tYes",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/with-automated-testing\ten\tWith Automated Testing\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t3\t2020-05-01\ttrue\tpublic\t2020-02-28\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\t\t\t\t\tYes",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/draft-with-milestones\ten\tDraft With Milestones\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tpartial\t2\t1\t2020-05-01\tfalse\tdraft\t2020-02-28\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\t\t\t\t\tYes",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/noncompliant\ten\tNoncompliant\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend	noncompliant\t0\t0\t1900-01-01\tfalse\tpublic\t1900-01-01\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\t\t\t\t\tYes",
-          "https://www.qa.tax.service.gov.uk/accessibility-statement/with-metadata\ten\tWith Metadata\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\tfull\t0\t0\t1900-01-01\tfalse\tpublic\t2020-02-28\t2020-03-15\t2020-05-01\tHMRC\t1987-04-01\t1987\tChief Digital & Information Officer (CDIO)\tDDC Worthing\tLive Services (Worthing)\tPublic beta\tYes"
+          "url\tlanguage\tserviceName\tserviceAbsoluteUrl\tcontactFrontendServiceId\tcomplianceStatus\tproblemCount\tmilestoneCount\tearliestMilestoneDate\tautomatedTestingOnly\tstatementVisibility\tserviceLastTestedDate\tstatementCreatedDate\tstatementLastUpdatedDate\tstatementType\tMonth\tYear\tBusiness Area\tDDC\tLive or Classic\ttype of Service\tIn Statement Service",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\ten\tTest (English)\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$FullCompliance\t0\t0\t1900-01-01\tfalse\t$Public\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\tcy\tTest (Welsh)\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$FullCompliance\t0\t0\t1900-01-01\tfalse\t$Public\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/english-service\ten\tEnglish Only\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$FullCompliance\t0\t0\t1900-01-01\tfalse\t$Public\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/with-milestones\ten\tWith Milestones\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$PartialCompliance\t2\t3\t2020-05-01\tfalse\t$Public\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/with-automated-testing\ten\tWith Automated Testing\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$PartialCompliance\t2\t3\t2020-05-01\ttrue\t$Public\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/draft-with-milestones\ten\tDraft With Milestones\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$PartialCompliance\t2\t1\t2020-05-01\tfalse\t$Draft\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/noncompliant\ten\tNoncompliant\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$NoCompliance\t0\t0\t1900-01-01\tfalse\t$Public\t1900-01-01\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
+          s"https://www.qa.tax.service.gov.uk/accessibility-statement/with-metadata\ten\tWith Metadata\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$FullCompliance\t0\t0\t1900-01-01\tfalse\t$Public\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t$ChiefDigitalAndInformationOfficer\t$DDCWorthing\t$LiveServicesWorthing\t$PublicBetaType\tYes"
         )
       )
 
