@@ -11,7 +11,7 @@ accessibilityProblems:
   - the required format for the input is unclear.
   - fieldset is missing a legend.
   - links were not descriptive.
-  - focus order becomes illogical when the sercice timeout is appears.
+  - focus is not restricted to the timeout modal when the timeout appears.
   - the auto-complete was not accessible for some screen reader users.
   - check your answers page was not marked up using of a definition list.
   - error handling on the page was not descriptive.
