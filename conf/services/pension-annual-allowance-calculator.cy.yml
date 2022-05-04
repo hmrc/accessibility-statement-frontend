@@ -7,88 +7,93 @@ serviceUrl: /pension-annual-allowance-calculator
 contactFrontendServiceId: pension-annual-allowance-calculator
 complianceStatus: partial
 accessibilityProblems:
-  - Nid yw teitlau ein tudalennu yn cynnwys enw’r gwasanaeth. 
-    Nid yw hyn yn dilyn ein patrwm dylunio ac nid yw’n gwneud yn glir pa wasanaeth yr ydych arno wrth ddefnyddio darllenwr sgrin. 
+  - Nid yw teitlau ein tudalennu yn cynnwys enw’r gwasanaeth.
+    Nid yw hyn yn dilyn ein patrwm dylunio ac nid yw’n gwneud yn glir pa wasanaeth yr ydych arno wrth ddefnyddio darllenwr sgrin.
     Byddwn yn diweddaru’r rhain fel eu bod yn dilyn ein patrwm.
   - Mae ychydig o’r wybodaeth yn cael ei ddarllen yn uchel ddwywaith gan ddarllenwr sgrin oherwydd nad yw’r cynlluniau’n dilyn y patrwm. Byddwn yn cywiro hyn fel bod yr wybodaeth i gyd yn cael ei ddarllen yn uchel unwaith yn unig.
-  - Ar un o’n tudalennau, mae cysylltiad i arweiniad sy’n agor yn yr un tab, sy’n golygu bod defnyddwyr yn colli eu cynnydd. 
+  - Ar un o’n tudalennau, mae cysylltiad i arweiniad sy’n agor yn yr un tab, sy’n golygu bod defnyddwyr yn colli eu cynnydd.
     Byddwn yn newid hyn fel ei fod yn agor tab newydd a gall defnyddwyr barhau â’r siwrne.
-  - Ar bob tudalen, nid yw’r negeseuon gwall yn gysylltiedig â’r meysydd y maent yn berthnasol iddynt. 
-    Mae hyn yn golygu na fyddant yn cael eu darllen gan y dechnoleg gynorthwyol os yw’r defnyddiwr yn symud yn syth i’r maes. 
-    Byddwn yn cywiro hyn fel eu bod i gyd yn cysylltu â’r maes ac yn cael eu darllen yn uchel yn gywir. 
+  - Ar bob tudalen, nid yw’r negeseuon gwall yn gysylltiedig â’r meysydd y maent yn berthnasol iddynt.
+    Mae hyn yn golygu na fyddant yn cael eu darllen gan y dechnoleg gynorthwyol os yw’r defnyddiwr yn symud yn syth i’r maes.
+    Byddwn yn cywiro hyn fel eu bod i gyd yn cysylltu â’r maes ac yn cael eu darllen yn uchel yn gywir.
     Gall defnyddwyr dal i ddefnyddio’r modd pori er mwyn dod o hyd i’r wybodaeth hon.
 milestones:
   - description: |
-      Mae gwybodaeth ychwanegol yn cael ei darllen yn uchel, ac ni ddylai defnyddwyr allu clywed hyn wrth ddefnyddio darllenwr sgrin. 
-      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.1 (Bypass Blocks) ac Maen Prawf Deall Llwyddiant 4.1.1 (Parsing): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
+      Mae gwybodaeth ychwanegol yn cael ei darllen yn uchel, ac ni ddylai defnyddwyr allu clywed hyn wrth ddefnyddio darllenwr sgrin.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.1 (Bypass Blocks) ac Maen Prawf Deall Llwyddiant 4.1.1 (Parsing): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
       Byddwn yn cywiro hyn er mwyn dileu unrhyw beth nad oes angen i’r defnyddiwr ei glywed.
     date: 2022-03-31
   - description: |
-      Pan fo gwall ar y dudalen, fel arfer rydym yn rhoi’r gair ‘Gwall’ yn nheitl y dudalen. Nid ydym wedi gwneud hyn yn y gwasanaeth. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.1 (Error Identification): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
+      Pan fo gwall ar y dudalen, fel arfer rydym yn rhoi’r gair ‘Gwall’ yn nheitl y dudalen. Nid ydym wedi gwneud hyn yn y gwasanaeth. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.1 (Error Identification): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
       Byddwn yn diweddaru teitlau ein tudalennau i gynnwys y gair ‘Gwall’ pan fo gwall ar y dudalen.
     date: 2022-03-31
   - description: |
-      Pan fo gwall, mae ffocws y bysellfwrdd ar ran anghywir y dudalen. Mae hyn yn ei gwneud yn anoddach i benderfynu a fu gwall. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.1 (Error Identification): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn fel bod ffocws y bysellfwrdd ar gyflwr y gwall ac fel bod y defnyddiwr yn gwybod y bu gwall. 
+      Pan fo gwall, mae ffocws y bysellfwrdd ar ran anghywir y dudalen. Mae hyn yn ei gwneud yn anoddach i benderfynu a fu gwall. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.1 (Error Identification): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn fel bod ffocws y bysellfwrdd ar gyflwr y gwall ac fel bod y defnyddiwr yn gwybod y bu gwall.
     date: 2022-03-31
   - description: |
-      Rydym yn gofyn am symiau ariannol, ac nid ydym wedi ychwanegu arwyddion punt er mwyn dangos mai dyma’r arian cyfred yr ydym am i ddefnyddwyr ei ddefnyddio. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.2 (Labels or Instructions): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn i ychwanegu arwyddion punt fel bod y defnyddiwr yn gwybod ein bod am gael symiau mewn punnoedd Prydain Fawr. 
+      Rydym yn gofyn am symiau ariannol, ac nid ydym wedi ychwanegu arwyddion punt er mwyn dangos mai dyma’r arian cyfred yr ydym am i ddefnyddwyr ei ddefnyddio. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.2 (Labels or Instructions): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn i ychwanegu arwyddion punt fel bod y defnyddiwr yn gwybod ein bod am gael symiau mewn punnoedd Prydain Fawr.
     date: 2022-03-31
   - description: |
-      Mae rhai cysylltiadau yn y troedyn nad ydynt yn cael eu darllen yn uchel gan y darllenwr sgrin. 
-      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1 (Info and Relationships): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn fel bod yr eitemau i gyd yn y troedyn yn cael eu darllen yn uchel gan ddarllenwr sgrin. 
+      Mae rhai cysylltiadau yn y troedyn nad ydynt yn cael eu darllen yn uchel gan y darllenwr sgrin.
+      Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1 (Info and Relationships): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn fel bod yr eitemau i gyd yn y troedyn yn cael eu darllen yn uchel gan ddarllenwr sgrin.
     date: 2022-03-31
   - description: |
-      Mae gennym derfyn amser yn y gwasanaeth cyn ein bod yn ailosod eich atebion i gyd er eich diogelwch. Nid oes gennym neges sy’n rhoi gwybod i ddefnyddwyr y byddwn yn gwneud hyn. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.2.1 oherwydd y defnydd o dechnegau ochr y gweinydd i ailgyfeirio tudalennau yn awtomatig ar ôl seibiant ac Maen Prawf Deall Llwyddiant 2.2.6 (Timeouts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: F58. 
-      Byddwn yn ychwanegu neges yn rhoi gwybod i ddefnyddwyr pryd y mae eu sesiwn am ddod i ben ac yn rhoi’r opsiwn i aros yn y gwasanaeth. 
+      Mae gennym derfyn amser yn y gwasanaeth cyn ein bod yn ailosod eich atebion i gyd er eich diogelwch. Nid oes gennym neges sy’n rhoi gwybod i ddefnyddwyr y byddwn yn gwneud hyn. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.2.1 oherwydd y defnydd o dechnegau ochr y gweinydd i ailgyfeirio tudalennau yn awtomatig ar ôl seibiant ac Maen Prawf Deall Llwyddiant 2.2.6 (Timeouts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: F58.
+      Byddwn yn ychwanegu neges yn rhoi gwybod i ddefnyddwyr pryd y mae eu sesiwn am ddod i ben ac yn rhoi’r opsiwn i aros yn y gwasanaeth.
     date: 2022-03-31
   - description: |
-      Mae gennym destun awgrym i helpu defnyddwyr i roi’r wybodaeth gywir. Mae hyn wedi’i godio’n anghywir, felly ni fydd yn cael ei ddarllen yn uchel gan ddarllenwr sgrin na chwyddwr sgrin. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.1 (Parsing): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn fel y gall darllenwr sgrin ddarllen yn uchel y testun awgrym i gyd. 
+      Mae gennym destun awgrym i helpu defnyddwyr i roi’r wybodaeth gywir. Mae hyn wedi’i godio’n anghywir, felly ni fydd yn cael ei ddarllen yn uchel gan ddarllenwr sgrin na chwyddwr sgrin. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.1 (Parsing): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn fel y gall darllenwr sgrin ddarllen yn uchel y testun awgrym i gyd.
     date: 2022-03-31
   - description: |
-      Mae gan rai o’r tudalennau flychau gwirio sydd heb ffocws wrth ddefnyddio modd cyferbynnedd uchel. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.7 (Focus Visible): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn fel bod gan y blychau gwirio ffocws y bysellfwrdd. 
+      Mae gan rai o’r tudalennau flychau gwirio sydd heb ffocws wrth ddefnyddio modd cyferbynnedd uchel. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.7 (Focus Visible): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn fel bod gan y blychau gwirio ffocws y bysellfwrdd.
     date: 2022-03-31
   - description: |
-      Ar dudalen lle rydym yn gofyn am ddyddiad, rydym yn defnyddio’r math anghywir o fewnbwn rhifol, a gall hyn achosi trafferth wrth ddefnyddio dyfeisiau penodol. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Maen Prawf Deall Llwyddiant 4.1.2: Enw, Rôl, Gwerth. 
+      Ar dudalen lle rydym yn gofyn am ddyddiad, rydym yn defnyddio’r math anghywir o fewnbwn rhifol, a gall hyn achosi trafferth wrth ddefnyddio dyfeisiau penodol. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Maen Prawf Deall Llwyddiant 4.1.2: Enw, Rôl, Gwerth.
       Byddwn yn diweddaru hyn er mwyn defnyddio’r math cywir o fewnbwn rhifol fel y gall defnyddwyr roi’r wybodaeth i ni heb anhawster.
     date: 2022-03-31
   - description: |
-      Ar dudalennau lle rydym yn gofyn am swm o arian, nid ydym yn dangos y bysellfwrdd ar gyfer rhifau ar ddyfeisiau symudol ar hyn o bryd. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.2 (Name, Role, Value): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
+      Ar dudalennau lle rydym yn gofyn am swm o arian, nid ydym yn dangos y bysellfwrdd ar gyfer rhifau ar ddyfeisiau symudol ar hyn o bryd. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.2 (Name, Role, Value): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
       Byddwn yn diweddaru hyn fel y gall defnyddiwr gael mynediad at y tudalennau hynny gan ddefnyddio bysellbad rhifol ar ddyfeisiau symudol.
     date: 2022-03-31
   - description: |
-      Ar rai tudalennau, nid oes testun awgrym i helpu defnyddwyr i roi’r wybodaeth gywir. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.2 (Labels or Instructions): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn ychwanegu testun awgrym er mwyn ei gwneud yn glir yr hyn y mae angen i ddefnyddwyr ei nodi. 
+      Ar rai tudalennau, nid oes testun awgrym i helpu defnyddwyr i roi’r wybodaeth gywir. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.2 (Labels or Instructions): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn ychwanegu testun awgrym er mwyn ei gwneud yn glir yr hyn y mae angen i ddefnyddwyr ei nodi.
     date: 2022-03-31
   - description: |
-      Ar rai tudalennau, wrth ddefnyddio darllenwr sgrin, rhoddir gwybodaeth i ddefnyddwyr y dylai fod wedi ei chuddio, megis bylchau. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.1 (Parsing): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn fel nad yw defnyddwyr yn clywed unrhyw beth nad yw’n ddefnyddiol neu a allai fod yn ddryslyd. 
+      Ar rai tudalennau, wrth ddefnyddio darllenwr sgrin, rhoddir gwybodaeth i ddefnyddwyr y dylai fod wedi ei chuddio, megis bylchau. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.1 (Parsing): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn fel nad yw defnyddwyr yn clywed unrhyw beth nad yw’n ddefnyddiol neu a allai fod yn ddryslyd.
     date: 2022-03-31
   - description: |
-      Ar rai tudalennau, mae gennym flychau i ychwanegu dyddiadau, ac nid yw’r rhain yn cael eu darllen yn uchel yn gywir gan y darllenwr sgrin. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.2 (Name, Role, Value): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn fel bod y meysydd hyn yn cael eu darllen yn uchel yn gywir ac fel bod defnyddwyr yn gwybod sut i ryngweithio â hwy. 
+      Ar rai tudalennau, mae gennym flychau i ychwanegu dyddiadau, ac nid yw’r rhain yn cael eu darllen yn uchel yn gywir gan y darllenwr sgrin. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.2 (Name, Role, Value): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn fel bod y meysydd hyn yn cael eu darllen yn uchel yn gywir ac fel bod defnyddwyr yn gwybod sut i ryngweithio â hwy.
     date: 2022-03-31
   - description: |
-      Pan fo ffocws ar feysydd, botymau radio a blychau gwirio yn y gwasanaeth, nid yw’r lliw yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.4.3 (Contrast (Minimum)): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
+      Pan fo ffocws ar feysydd, botymau radio a blychau gwirio yn y gwasanaeth, nid yw’r lliw yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.4.3 (Contrast (Minimum)): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
       Byddwn yn cywiro hyn er mwyn ei gwneud yn haws i ddefnyddwyr weld ble mae’r ffocws ar y dudalen.
     date: 2022-03-31
   - description: |
-      Pan fo ffocws ar wallau yn y gwasanaeth, nid yw’r lliw yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.4.3 (Contrast (Minimum)): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Byddwn yn cywiro hyn er mwyn ei gwneud yn haws i ddefnyddwyr weld ble mae’r ffocws ar y dudalen. 
+      Pan fo ffocws ar wallau yn y gwasanaeth, nid yw’r lliw yn bodloni’r gofynion sylfaenol o ran cyferbynnedd lliwiau. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.4.3 (Contrast (Minimum)): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Byddwn yn cywiro hyn er mwyn ei gwneud yn haws i ddefnyddwyr weld ble mae’r ffocws ar y dudalen.
     date: 2022-03-31
   - description: |
-      Nid yw rhai o’n negeseuon gwall yn gweithio’n iawn, sy’n gallu creu trafferth i ddefnyddwyr. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.3 (Error Suggestion): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. 
-      Rydym yn bwriadu cywiro hyn er mwyn gwneud yn siŵr bod ein negeseuon gwall i gyd yn gwneud synnwyr i ddefnyddwyr. 
+      Nid yw rhai o’n negeseuon gwall yn gweithio’n iawn, sy’n gallu creu trafferth i ddefnyddwyr. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 3.3.3 (Error Suggestion): Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+      Rydym yn bwriadu cywiro hyn er mwyn gwneud yn siŵr bod ein negeseuon gwall i gyd yn gwneud synnwyr i ddefnyddwyr.
     date: 2022-03-31
   - description: |
-      Wrth ddefnyddio darllenwr sgrin, mae geiriau ychwanegol yn cael eu darllen yn uchel sy’n ei gwneud yn anodd dilyn yr wybodaeth ar y dudalen. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Gwneud y testun yn haws i’w ddarllen. 
+      Wrth ddefnyddio darllenwr sgrin, mae geiriau ychwanegol yn cael eu darllen yn uchel sy’n ei gwneud yn anodd dilyn yr wybodaeth ar y dudalen. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: Gwneud y testun yn haws i’w ddarllen.
       Byddwn yn cywiro hyn fel bod yr wybodaeth yn haws i’w ddarllen a’i deall.
     date: 2022-03-31
 serviceLastTestedDate: 2019-09-14
 statementVisibility: public
 statementCreatedDate: 2019-09-14
 statementLastUpdatedDate: 2021-10-25
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Live services

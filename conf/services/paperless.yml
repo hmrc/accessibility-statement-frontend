@@ -23,3 +23,7 @@ statementCreatedDate: 2020-09-22
 statementLastUpdatedDate: 2020-09-22
 automatedTestingOnly: true
 automatedTestingDetails: This service was tested using automated tool Axe.
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc:
+liveOrClassic:
+typeOfService: Public beta

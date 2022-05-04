@@ -9,3 +9,8 @@ serviceLastTestedDate: 2021-03-30
 statementVisibility: public
 statementCreatedDate: 2020-12-30
 statementLastUpdatedDate: 2021-03-30
+
+businessArea: Borders & Trade
+ddc: DDC Edinburgh
+liveOrClassic:
+typeOfService: Public beta

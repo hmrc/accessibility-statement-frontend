@@ -60,3 +60,8 @@ milestones:
   - description: |
       On the tax credits choice page, the colour contrast does not meet the minimum requirements. This makes it difficult to see and read especially for users with low vision or colour blindness. This fails WCAG Reference: 1.4.6 Contrast – Enhanced – (Level AAA).
     date: 2023-03-31
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Live services

@@ -3,7 +3,7 @@ serviceHeaderName: Business tax account
 serviceDescription: |
   Employers use PAYE Online for employers to send payroll reports or expenses and
   benefit returns to HMRC. The service also allows employers to access tax codes and
-  notices about their employees. 
+  notices about their employees.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /business-account/epaye
 contactFrontendServiceId: BTA
@@ -46,3 +46,8 @@ serviceLastTestedDate: 2020-09-28
 statementVisibility: public
 statementCreatedDate: 2020-09-10
 statementLastUpdatedDate: 2020-09-10
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+liveOrClassic:
+typeOfService: Live services
