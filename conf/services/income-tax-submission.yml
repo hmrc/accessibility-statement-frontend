@@ -9,7 +9,7 @@ accessibilityProblems:
   - On some pages, the page headings, sub-headings and paragraph text are all inside the label element. This creates issues for speech recognition and screen reader users when they read the label.
 milestones:
   - description: On some pages, the page headings, sub-headings and paragraph text are all inside the label element. This creates issues for speech recognition and screen reader users when they read the label. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
-    date: 2022-04-13
+    date: 2022-08-18
 serviceLastTestedDate: 2022-04-11
 statementVisibility: public
 statementCreatedDate: 2021-04-19
