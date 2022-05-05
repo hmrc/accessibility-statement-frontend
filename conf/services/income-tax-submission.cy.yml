@@ -9,7 +9,7 @@ accessibilityProblems:
   - Ar rai tudalennau, mae penawdau’r dudalen, yr is-benawdau a thestun y paragraff i gyd y tu mewn i elfen y label.
 milestones:
   - description: Ar rai tudalennau, mae penawdau’r dudalen, yr is-benawdau a thestun y paragraff i gyd y tu mewn i elfen y label.  Mae hyn yn creu problemau i’r sawl sy’n defnyddio technoleg adnabod lleferydd a darllenwyr sgrin wrth i’r label gael ei ddarllen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-04-13
+    date: 2022-08-18
 serviceLastTestedDate: 2022-04-11
 statementVisibility: public
 statementCreatedDate: 2021-04-19
