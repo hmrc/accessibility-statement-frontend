@@ -23,7 +23,7 @@ accessibilityProblems:
   - the homepage search feature may cause difficulty for voice activation users when trying to use standard voice commands
   - commodity code links on trader details pages are not accessible to keyboard commands
   - the CSV file of trader search results may cause difficulty for screen reader users when trying to navigate the table content
-  - some pages do not have page titles that uniquely describe or introduce the content										
+  - some pages do not have page titles that uniquely describe or introduce the content
   - some page elements on the register for Intrastat service have the same attribute id values, so may be being overlooked by some assistive technologies
   - some page elements of interactive tables are not highlighted by a visible focus indicator to help a user know clearly which element has the keyboard focus
   - when using the interactive tables, increasing text size can result in column headers being partly obscured by the data table
@@ -81,4 +81,9 @@ serviceLastTestedDate: 2021-03-29
 statementVisibility: public
 statementCreatedDate: 2020-10-19
 statementLastUpdatedDate: 2022-03-23
+typeOfService: Public beta
+
+businessArea: Borders & Trade
+ddc: Non DDC Location
+liveOrClassic:
 typeOfService: Public beta

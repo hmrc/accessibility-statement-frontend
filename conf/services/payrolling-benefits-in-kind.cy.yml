@@ -8,12 +8,12 @@ serviceUrl: /payrollbik
 contactFrontendServiceId: pbik
 complianceStatus: partial
 accessibilityProblems:
-  -  Os ydych yn segur am gyfnod o amser, mae’r gwasanaeth yn eich allgofnodi’n awtomatig heb roi rhybudd na hysbysiad i chi. 
+  -  Os ydych yn segur am gyfnod o amser, mae’r gwasanaeth yn eich allgofnodi’n awtomatig heb roi rhybudd na hysbysiad i chi.
   -  Ar rai tudalennau, mae yna destun mewn tabl a all fod yn anodd i ddarllenwyr sgrin ei ddarllen. Er enghraifft, wrth chwilio am gyflogai, gall fod yn anodd deall canlyniadau’r chwilio gan nad yw penynnau’r tabl wedi’u cysylltu â’r cynnwys yn y tabl.
   -  Ar y dudalen lle rydych yn dewis buddiannau a threuliau, gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd defnyddio’r blychau ticio.
   -  Ar y dudalen lle rydych yn chwilio am gyflogai, gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd mynd at y meysydd testun.
-  -  Ar y dudalen lle rydych yn dileu buddiant neu draul, gall strwythur y dudalen ei gwneud hi’n anodd i ddefnyddwyr sydd â darllenydd sgrin ddeall y cwestiwn. 
-  -  Ar rai tudalennau, nid yw’r botymau radio wedi’u labelu. Mae hyn yn golygu y gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd dewis y botwm radio cywir. 
+  -  Ar y dudalen lle rydych yn dileu buddiant neu draul, gall strwythur y dudalen ei gwneud hi’n anodd i ddefnyddwyr sydd â darllenydd sgrin ddeall y cwestiwn.
+  -  Ar rai tudalennau, nid yw’r botymau radio wedi’u labelu. Mae hyn yn golygu y gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd dewis y botwm radio cywir.
   -  Ar y dudalen sy’n dangos canlyniadau’r chwilio, mae’r cysylltiad yn ôl yn diflannu wrth i chi lywio gyda’r bysellfwrdd. Mae hyn yn golygu y bydd y sawl sy’n defnyddio bysellfwrdd yn unig yn ei chael hi’n anodd mynd yn ôl i’r dudalen ddiwethaf.
   -  Mae pob un o’r botymau ac ychydig o’r testun yn anodd eu darllen wrth ddefnyddio ffocws y bysellfwrdd.  Mae hyn oherwydd nad yw’r cyferbyniad lliw yn ddigon cryf.
   -  Nid yw’r negeseuon gwall drwy’r gwasanaeth yn ddisgrifiadol. Gall hyn ei wneud yn anodd i ddefnyddwyr ddeall yr hyn y maent wedi’i wneud o’i le.
@@ -40,3 +40,8 @@ serviceLastTestedDate: 2020-01-15
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2022-02-25
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Edinburgh
+liveOrClassic:
+typeOfService: Live services

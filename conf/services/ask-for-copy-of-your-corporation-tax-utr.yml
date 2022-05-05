@@ -1,7 +1,7 @@
 serviceName: Ask for a copy of your Corporation Tax UTR
 serviceHeaderName: Ask for a copy of your Corporation Tax UTR
 serviceDescription: |
-  This service is for corporations that have lost or forgotten their Corporation Tax Unique Tax Reference (CT UTR). 
+  This service is for corporations that have lost or forgotten their Corporation Tax Unique Tax Reference (CT UTR).
   It enables users to ask for a copy of the CT UTR to be sent by post to the company’s registered address.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /ask-for-copy-of-your-corporation-tax-utr
@@ -11,3 +11,7 @@ serviceLastTestedDate: 2021-08-18
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2021-09-01
 statementVisibility: public
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Edinburgh
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services

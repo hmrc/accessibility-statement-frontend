@@ -48,3 +48,8 @@ milestones:
     date: 2023-03-31
   - description: On the report changes page, an ‘open all’ link is used to expand content. However, there is no descriptive text to tell screen reader users what this link will do. This fails WCAG Success Criterion 2.4.4 Link Purpose (In Context) (Level A) and Success Criterion 2.4.9 Link Purpose (Link Only) (Level AAA).
     date: 2023-03-31
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Telford
+typeOfService: Live services
