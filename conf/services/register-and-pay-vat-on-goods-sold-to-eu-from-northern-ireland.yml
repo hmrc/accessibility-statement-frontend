@@ -9,3 +9,8 @@ serviceLastTestedDate: 2021-10-15
 statementVisibility: public
 statementCreatedDate: 2021-07-01
 statementLastUpdatedDate: 2021-10-18
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta

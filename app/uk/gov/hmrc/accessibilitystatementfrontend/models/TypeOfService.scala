@@ -24,7 +24,7 @@ object TypeOfService extends Enum[TypeOfService] {
 }
 
 case object ClassicServicesType extends TypeOfService {
-  val value = "Classic Services"
+  val value = "Classic services"
 }
 
 case object LiveServicesType extends TypeOfService {

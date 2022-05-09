@@ -18,29 +18,54 @@ accessibilityProblems:
   - The icons for ‘turn on alerts’ and ‘increase chat window size’ do not have labels that would make interaction easier for people using voice controls.
   - Some users may see a version of the end of chat survey that has radio buttons which may not function correctly when the user clicks them.
   - For end of chat surveys on NVDA no message or focus is read out after clicking submit. On voiceover for iPad/iOS some user focus is taken to the "Is this page not working properly (opens in a new tab)” link below the CUI frame. On Macbook voiceover, the focus stays on the ‘submit’ button the user clicked to submit the survey.
+  - The ‘textarea’ for users to send messages has placeholder text but there is no constant visual label so that when the placeholder text is removed, users may not know the purpose of the form field.
+  - When a screen reader user moves to the chat box, this is not announced.
+  - When a user selects the ‘end chat’ button, a pop up appears asking the user if they want to end or return to the chat. A user’s focus is directed into the pop up but it does not stay inside it. This can cause confusion for keyboard only users and screen reader users.
+  - The ‘Ask HMRC online’ text and the ‘chat ended’ text have both been marked up as heading 1. This can cause confusion for screen reader users.
+  - The text ‘help improve our digital assistant’ heading is not set up correctly so that screen reader users do not know that it is a heading.
+  - Users who rely on text spacing or magnification options when navigating a page may not be able to easily access or discern the purpose of the ‘end chat’ button and the ‘is this page not working properly? (opens in a new tab)’ link, as they overlap.
+  - The chat messages sent by the user and the computer/adviser, have been set up as level 2 headings for a user and level 3 headings for the response. All the headings have been marked up as ‘you said’ and ‘automated message’ respectively. This means that each of the headings have been duplicated which will make it difficult for screen reader users to navigate the page out of context.
+  - The ‘no thanks’ button associated with the ‘help improve our digital assistant’ is not clearly relatable for screen reader users as it does not let them know it is referring to the digital assistant survey.
+
 milestones:
   - description: Mobile users using screen readers may find it difficult to navigate or interact with the chat window or the other content on the launch page. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: There is styling on the ‘Support for coronavirus’ digital assistant page that may make interaction difficult for users who use style overlays to make pages more readable. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: Some answers in the digital assistant that have links have ‘(opens in a new tab)’ after each link, whereas others have ‘Links will open in a new tab’ once at the start of the answer. This could be frustrating for users with assistive technologies as link behaviour may not be clear or consistent. This does not meet WCAG 2.1 success criterion 3.2.2 (On Input).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: Users using Chrome on Android are unable to use pinch and zoom gestures once the chat window has launched. This does not meet WCAG 2.1 success criteria 1.4.4 (Resize Text) and 1.4.10 (Reflow).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: The button icon used to turn alerts on and off does not look different enough in its on or off state, or different enough from the print icon. It also behaves differently to the print icon. Additionally, users with assistive technologies may find it difficult to interact with the button. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: Some users may find it difficult to locate this accessibility statement from the footer of this service. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: The ‘Ask HMRC’ title on the chat window lacks useful labelling for screen readers. This does not meet WCAG 2.1 success criteria 4.2.6 (Headings) and 1.3.1 (Info & Relationships).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: The icons for ‘turn on alerts’ and ‘increase chat window size’ do not have labels that would make interaction easier for people using voice controls. This does not meet WCAG 2.1 success criterion 2.5.3 (Label in Name).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: Some users may see a version of the end of chat survey that has radio buttons which may not function correctly when the user clicks them. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
-    date: 2022-05-31
+    date: 2022-10-31
   - description: For end of chat surveys on NVDA no message or focus is read out after clicking submit. On voiceover for iPad/iOS some user focus is taken to the "Is this page not working properly (opens in a new tab)” link below the CUI frame. On Macbook voiceover, the focus stays on the ‘submit’ button the user clicked to submit the survey. This does not meet WCAG 2.1 success criterion 3.2.3 (Consistent Navigation).
-    date: 2022-05-31
+    date: 2022-10-31
+  - description: An input field did not present a constant visual label for users. This fails WCAG 2.1 success criterion 3.3.2 Labels or Instructions.
+    date: 2022-10-31
+  - description: An aria attribute has been used on an element which does not support it. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value
+    date: 2022-10-31
+  - description: Focus did not follow a logical order as it was not trapped inside a pop-up. This fails WCAG 2.1 success criterion 2.4.3 Focus Order
+    date: 2022-10-31
+  - description: Multiple level 1 headings were present on a page providing an unclear structure for users of screen reading assistive technologies. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships
+    date: 2022-10-31
+  - description: Content visually presented as a heading does not have the correct code semantics to identify it as this. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships
+    date: 2022-10-31
+  - description: Content did not maintain its structure when a user required text spacing or magnification options to navigate the page. This fails WCAG 2.1 success criterion 1.4.12 Text Spacing and 1.4.10 Reflow
+    date: 2022-10-31
+  - description: Headings were duplicated providing an unclear structure and relation for users of screen reading assistive technologies. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels
+    date: 2022-10-31
+  - description: A button had not been sectioned and related to any surrounding content, meaning the label and accessible name it possessed was not descriptive enough for users of screen reading assistive technologies to determine its purpose. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels
+    date: 2022-10-31
 
-serviceLastTestedDate: 2021-07-23
+serviceLastTestedDate: 2022-04-13
 statementVisibility: public
 statementCreatedDate: 2021-08-09
-statementLastUpdatedDate: 2022-03-07
+statementLastUpdatedDate: 2022-05-05

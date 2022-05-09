@@ -11,3 +11,8 @@ complianceStatus: noncompliant
 statementVisibility: public
 statementCreatedDate: 2021-04-15
 statementLastUpdatedDate: 2021-04-15
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Telford
+liveOrClassic:
+typeOfService: Live services

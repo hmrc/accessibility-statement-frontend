@@ -1,0 +1,11 @@
+serviceName: Gwirio statws cyflogaeth ar gyfer treth
+serviceDescription: |
+  Mae’r gwasanaeth Gwirio Statws Cyflogaeth ar gyfer Treth yn caniatáu i ddefnyddwyr wirio eu statws cyflogaeth at ddibenion treth.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-employment-status-for-tax/disclaimer
+contactFrontendServiceId: CEST
+complianceStatus: full
+serviceLastTestedDate: 2020-03-01
+statementVisibility: public
+statementCreatedDate: 2019-11-22
+statementLastUpdatedDate: 2022-05-05

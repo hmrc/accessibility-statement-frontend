@@ -23,3 +23,8 @@ serviceLastTestedDate: 2021-09-29
 statementVisibility: public
 statementCreatedDate: 2020-12-29
 statementLastUpdatedDate: 2022-01-07
+
+businessArea: Borders & Trade
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Public beta

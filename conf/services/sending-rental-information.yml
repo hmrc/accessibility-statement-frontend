@@ -1,7 +1,7 @@
 serviceName: Rent and lease details
 serviceHeaderName: Rent and lease details
 serviceDescription: |
-  This service allows you to send the rent details from your lease to the 
+  This service allows you to send the rent details from your lease to the
   Valuation Office Agency (VOA). You can also tell the VOA if you are not
   connected to the property anymore.
 serviceDomain: www.tax.service.gov.uk
@@ -12,3 +12,8 @@ serviceLastTestedDate: 2020-06-02
 statementVisibility: public
 statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2020-09-23
+
+businessArea: Valuation Office Agency (VOA)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Newcastle
+typeOfService: Public beta
