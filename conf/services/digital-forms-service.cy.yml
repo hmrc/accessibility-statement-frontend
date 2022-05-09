@@ -6,7 +6,76 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /digital-forms
 contactFrontendServiceId: dfs-digital-forms-frontend
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - mae sawl prif dirnod yn bresennol.
+  - roedd y dudalen yn cynnwys sawl teitl lefel 1.
+  - nid oedd y ddogfen PDF wedi’i thagio.
+  - mae’n ymddangos nad oes gan y botwm ‘Dechrau nawr’ ffocws gweledol wedi’i amlygu.
+  - dylai’r cynnwys gael ei farcio fel rhan o strwythur pennawd.
+  - mae rhifau adnabod dyblyg yn bresennol.
+  - mae priodoleddau aria anghywir wedi’u defnyddio.
+  - nid oedd y botymau radio yn hygyrch i bob defnyddiwr.
+  - nid oedd y drefn ffocws yn rhesymegol mewn rhai mannau.
+  - mae’r wybodaeth, y strwythur a’r perthnasau sydd ar y dudalen gwirio’ch atebion yn anghywir.
+  - nid oedd teitlau’r tudalennau yn unigryw mewn rhannau o’r gwasanaeth.
+  - mae cysylltiad y ddewislen wedi’i guddio rhag defnyddwyr wrth ei actifadu.
+  - roedd y ddewislen yn ddryslyd i ddefnyddwyr darllenwyr sgrin ar ddyfeisiau symudol.
+  - mae rhan o’r cynnwys wedi’i guddio’n weledol ond nid yw wedi’i guddio rhag technolegau cynorthwyol.
+  - nid yw’r labeli sy’n cael gwared ar yr opsiynau hidlo yn ddisgrifiadol.
+  - mae’r meysydd ffurflen yn cynnwys elfennau labelu lluosog.
+  - mae’r panel tab sydd wedi’i farcio yn hawdd i’w ganfod i ddefnyddwyr darllenydd sgrin sy’n defnyddio cyfrifiadur bwrdd gwaith gyda JAWS a NVDA.
+  - ni chafodd y newid mewn cyd-destun ei ddatgan i ddefnyddwyr darllenydd sgrin.
+  - nid oedd defnyddwyr wedi cael gwybod sut i ymdrin â gwall wrth fewnbynnu data anghywir.
+  - nid oedd y labeli’n ddisgrifiadol.
+  - methodd cyferbynnedd lliw’r testun â bodloni’r gymhareb ddisgwyliedig i fodloni safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - nid oedd y lliw a ddefnyddir i ddangos ffocws arddull rhai elfennau yn pasio'r gymhareb ddisgwyliedig.
+milestones:
+  - description: "Mae sawl prif dirnod yn bresennol nad ydynt wedi’u nodi yn unol â’r fanyleb. Gall ddefnyddwyr darllenydd sgrin ddefnyddio tirnodau i adnabod strwythur y dudalen ac i lywio rhwng adrannau gwahanol yn gyflym. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (parsing), 1.3.1 (info and relationships) nac 1.3.6 (identify purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Roedd tudalen yn cynnwys sawl teitl lefel 1. Mae defnyddwyr darllenydd sgrin yn dibynnu’n llwyr ar deitl lefel 1 disgrifiadol, sy’n nodi diben clir o’r dudalen a’i chynnwys i’r defnyddiwr. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Nid yw’r ddogfen PDF wedi’i thagio ac felly nid yw’n hygyrch i ddefnyddwyr darllenydd sgrin am nad yw’r cynnwys wedi’i nodi gan ddefnyddio’r tagiau cywir sy’n galluogi defnyddwyr i ganfod strwythur a pherthnasedd y cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) nac 3.1.1 (language of page) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Wrth ffocysu ar y dudalen ‘Dechrau nawr’, yr unig ffordd y mae defnyddwyr yn gallu gweld y newid hwn mewn ffocws yw wrth i liw’r botwm newid o wyrdd golau i wyrdd tywyllach. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.1 (use of colour) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "mae’r geiriau ‘Hawliadau blaenorol’ a ‘Blwyddyn dreth’ yn cyflwyno cynnwys ond nid ydynt wedi’u marcio fel rhan o strwythur pennawd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) a 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Mae’n rhaid i bob priodoledd ID fod yn unigryw er mwyn i’r Dechnoleg Gynorthwyol allu rhyngweithio’n gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Mae’r priodoledd ARIA ‘aria-selected’ yn nodi ffurf bresennol y teclynnau amrywiol sydd wedi’u “dewis”; yn yr achos hwn, mae gwerth ‘aria-selected=false’ wedi’i gysylltu â’r mewnbwn ac nid oes modd caniatáu hyn fel rhan o rôl yr elfennau. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Mae pob un o’r mewnbynnau sydd wedi’u cynnwys yn y setiau maes yn defnyddio technegau labeli lluosog; priodoledd ‘aria-labelled’ nad yw wedi'i ddefnyddio ar y botymau radio sy’n cyfeirio at y label a ddefnyddir yn y <legend>. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (info and relationships), 3.3.2 (labels or instructions), na 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Nid oedd y drefn ffocws yn rhesymegol mewn mannau. Roedd cynnwys yn cael ei osgoi, ac roedd cynnwys wedi’i nodi fel rhan o drefn y tabiau er na ddylai fod dan ffocws. Mewn mannau, roedd ffocws llwytho’r dudalen wedi’i roi yng nghorff y dudalen, yn hytrach nag ar y brig, a oedd yn ddryslyd i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.3 (focus order) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Mae’r cynnwys wedi’i gyflwyno gan ddefnyddio spaniau, rhaniadau ac eitemau sydd ar y rhestr, yn hytrach na rhestrau diffinio a ddisgwylir fel arfer i sicrhau bod cysylltiad y cynnwys â’i gilydd wedi’i bortreadu yn yr un modd ag y mae’n ymddangos yn weledol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Roedd teitlau’r tudalennau wedi aros yr un fath ar wahanol dudalennau mewn rhannau o’r gwasanaeth. Er enghraifft mae teitl y dudalen ‘Blwyddyn Dreth’ yr un fath â theitl y dudalen ‘Hawliadau blaenorol’. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (page titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Ar ôl i’r defnyddiwr actifadu cysylltiad y ddewislen yn y teitl, mae opsiwn y ddewislen yn diflannu a chaiff ei guddio drwy ddefnyddio CSS a JavaScript. Mae hyn yn golygu nad yw defnyddwyr yn gallu cael mynediad at y cysylltiad eto na chau’r ddewislen ar ôl ei hactifadu. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Wrth leihau’r hyn sy’n weladwy, mae dewislen yn ymddangos. Nid yw’r ddewislen wedi’i labeli’n ddisgrifiadol, nac yn ymddangos ar gyfrifiadur bwrdd gwaith heblaw bod y defnyddiwr yn llywio’r dudalen drwy ddefnyddio dyfais symudol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.1.1 (keyboard), 2.1.3 (keyboard no exception), 4.1.2 (name, role, value), 3.3.2 (labels or instructions), 1.4.1 (use of color), 1.4.13 (content on hover or focus), 1.4.3 (contrast minimum), 1.4.6 (contrast enhanced) na 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Mae cynnwys y ddewislen wedi’i guddio’n weledol o’r dudalen am nad yw wedi’i leoli ar y sgrin o fewn y CSS, ond nid yw wedi’i guddio rhag y dechnoleg gynorthwyol. Mae defnyddwyr darllenydd sgrin yn dod ar draws y cynnwys o fewn y ddewislen fel petai’r ddewislen ar agor ar y dudalen. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.3 (focus order) a 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Mae arwydd lluosi ‘✕’ wedi'i ddefnyddio i weithredu fel label ond nid oes testun amgen priodol ar ei gyfer. Golyga hyn nad oes gan y gydran hon enw hygyrch cydnabyddedig. Nid yw hyn yn bodloni meini prawf llwyddiant 1.1.1 (non-text content), 1.3.1 (info and relationships), 2.4.6 (headings and labels) na 4.1.2 (name, role, value)."
+    date: 2022-10-06
+  - description: "Roedd defnyddwyr darllenydd sgrin yn dod ar draws y testun ‘Rhif Yswiriant Gwladol’ sawl gwaith am ei fod wedi’i ddyblu ar ddwy linell ar wahân. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (info and relationships), 3.3.2 (labels or instructions), na 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Mae’r panel tab sydd wedi’i farcio yn ymddangos fel petai wedi’i guddio rhag defnyddwyr, ond weithiau, mae defnyddwyr darllenwyr sgrin sy’n defnyddio cyfrifiadur bwrdd gwaith gyda JAWS a NVDA yn gallu’i ganfod. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) na 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Pan fo defnyddwyr yn dod ar draws gwallau, nid yw defnyddwyr darllenydd sgrin yn cael gwybod am y gwallau sydd ar y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (status messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Pan fo defnyddiwr yn nodi dyddiad geni yn y dyfodol, nid yw’n cael gwybod sut i ymdrin â gwall wrth actifadu’r botwm ‘cadw ac yn eich blaen’. Nid yw hyn yn bodloni meini prawf llwyddiant 3.3.4 (error prevention) nac 3.3.6 (error prevention) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Nid yw’r botwm ‘cuddio’r neges hon’ a ddarperir i ddefnyddwyr wedi iddynt ymateb i’r faner cwci, yn ddigon disgrifiadol i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6. (headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Wrth ffocysu ar logo ‘GOV.UK’ a’r cysylltiad ‘allgofnodi’, gwyn yw lliw’r testun a gaiff ei gyflwyno o flaen dangosydd ffocws melyn. Nid yw hyn yn bodloni meini prawf llwyddiant 1.4.3 (contrast minimum) nac 1.4.6 (contrast enhanced) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+  - description: "Nid yw’r dangosydd ffocws drwy gydol y gwasanaeth yn bodloni’r gofynion a nodir yn System Ddylunio GOV.UK. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
+    date: 2022-10-06
+serviceLastTestedDate: 2021-10-06
 statementVisibility: public
 statementCreatedDate: 2020-09-22
 statementLastUpdatedDate: 2020-09-22

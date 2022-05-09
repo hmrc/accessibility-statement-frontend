@@ -19,7 +19,7 @@ accessibilityProblems:
   - the language toggle on some pages is not contained in a landmark, and does not use the latest design pattern
   - some pages should have JavaScript polyfill enabled to ensure a link acts as a button
   - a link has an empty 'href' attribute
-  - on one page there are two heading level 1 headings 
+  - on one page there are two heading level 1 headings
   - some error messages are unclear
 
 milestones:
@@ -59,3 +59,8 @@ serviceLastTestedDate: 2020-11-12
 statementVisibility: public
 statementCreatedDate: 2020-11-13
 statementLastUpdatedDate: 2022-04-07
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc:
+liveOrClassic:
+typeOfService: Public beta

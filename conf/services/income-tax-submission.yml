@@ -6,11 +6,16 @@ serviceUrl: /update-and-submit-income-tax-return/2022/start
 contactFrontendServiceId: update-and-submit-income-tax-return
 complianceStatus: partial
 accessibilityProblems:
-  - On some confirmation pages, when the text size is increased 200% the word "Confirmation" does not fit in the parent container. The text is clipped and the content of the page is not reflowing.
+  - On some pages, the page headings, sub-headings and paragraph text are all inside the label element. This creates issues for speech recognition and screen reader users when they read the label.
 milestones:
-  - description: This fails WCAG 1.1 success criterion 1.4.4 Resize Text.
-    date: 2022-04-13
-serviceLastTestedDate: 2022-03-11
+  - description: On some pages, the page headings, sub-headings and paragraph text are all inside the label element. This creates issues for speech recognition and screen reader users when they read the label. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
+    date: 2022-08-18
+serviceLastTestedDate: 2022-04-11
 statementVisibility: public
 statementCreatedDate: 2021-04-19
-statementLastUpdatedDate: 2022-03-21
+statementLastUpdatedDate: 2022-04-27
+
+businessArea: Customer Services Group (CSG)
+ddc:
+liveOrClassic:
+typeOfService: Public beta

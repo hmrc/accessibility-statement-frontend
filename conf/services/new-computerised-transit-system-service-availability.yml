@@ -2,7 +2,7 @@ serviceName: NCTS service availability
 serviceHeaderName: New Computerised Transit System
 contactFrontendServiceId: NCTS
 serviceDescription: |
-  The NCTS service availability service allows users to see the availability of NCTS system cores and 
+  The NCTS service availability service allows users to see the availability of NCTS system cores and
   submission channels, view downtime history and view planned downtime.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /new-computerised-transit-system-service-availability
@@ -11,3 +11,8 @@ statementVisibility: public
 serviceLastTestedDate: 2022-01-06
 statementCreatedDate: 2022-01-19
 statementLastUpdatedDate: 2022-01-19
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta

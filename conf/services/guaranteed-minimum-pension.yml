@@ -1,7 +1,7 @@
 serviceName: Guaranteed Minimum Pension
 serviceHeaderName: Guaranteed Minimum Pension
-serviceDescription: The Guaranteed Minimum Pension (GMP) service is used by pension administrators to check a scheme member's 
-  Guaranteed Minimum Pension calculation. They can get an instant calculation for one member at a time, or request a bulk 
+serviceDescription: The Guaranteed Minimum Pension (GMP) service is used by pension administrators to check a scheme member's
+  Guaranteed Minimum Pension calculation. They can get an instant calculation for one member at a time, or request a bulk
   calculation.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /guaranteed-minimum-pension
@@ -40,7 +40,7 @@ milestones:
       On some pages in the service there is non-descriptive labelling, meaning the hint text, which is designed to help users,
       becomes difficult to understand, especially for users that rely on audio feedback, or users of JAWS, NVDA and VoiceOver for iPhone.
       This fails WCAG 2.1 Reference: 2.4.6 Headings and Labels. Correct labelling will resolve this issue.
-    date: 2021-06-30 
+    date: 2021-06-30
   - description: |
       We use error messages to help users navigate the service and they should be informative and descriptive. On the ‘Has the
       member left the scheme?’ question, the error message presented to users is not descriptive. This fails WCAG 2.1 Reference: 3.3.3 Error
@@ -55,3 +55,8 @@ serviceLastTestedDate: 2020-10-29
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2021-07-19
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

@@ -15,3 +15,8 @@ serviceLastTestedDate: 2020-11-20
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2020-11-20
+
+businessArea: Valuation Office Agency (VOA)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

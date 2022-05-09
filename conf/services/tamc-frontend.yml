@@ -37,3 +37,8 @@ milestones:
       On the confirm earlier tax years page, the error handling is not descriptive. This makes it difficult for screen readers to understand what the error message relates to.
       This fails WCAG 2.1 - Understanding Success Criterion 3.3.3: Error suggestion.
     date: 2023-03-31
+
+businessArea: Customer Services Group (CSG)
+ddc:
+liveOrClassic:
+typeOfService: Live services
