@@ -46,8 +46,8 @@ milestones:
 serviceLastTestedDate: 2020-09-29
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2022-05-09
-businessArea: Chief Digital & Information Officer (CDIO)
+statementLastUpdatedDate: 2020-09-17
+businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
-liveOrClassic: Live Services - Worthing
-typeOfService: Public beta
+liveOrClassic:
+typeOfService: Live services
