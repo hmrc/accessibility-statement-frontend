@@ -1,7 +1,7 @@
 serviceName: Report and check de minimis aid if you claimed a Northern Ireland waiver
 serviceDescription: Report and check de minimis aid if you claimed a Northern Ireland waiver
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /report-and-check-de-minimis-aid-northern-ireland
+serviceUrl: /report-or-check-de-minimis-aid-northern-ireland
 contactFrontendServiceId: DeminimisAidPayments
 complianceStatus: partial
 accessibilityProblems:
