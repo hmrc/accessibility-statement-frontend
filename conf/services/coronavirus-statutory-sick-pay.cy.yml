@@ -1,0 +1,11 @@
+  serviceName: Cynllun Ad-dalu Tâl Salwch Statudol Coronafeirws
+  serviceDescription: |
+    Bydd y gwasanaeth hwn yn ad-dalu’r Tâl Salwch Statudol i gyflogwyr bach a chanolig sydd eisoes wedi’i dalu i gyflogeion sydd wedi bod i ffwrdd o’r gwaith oherwydd coronafeirws (COVID-19).
+  serviceDomain: www.tax.service.gov.uk
+  serviceUrl: /coronavirus-statutory-sick-pay
+  contactFrontendServiceId: coronavirus-statutory-sick-pay
+  complianceStatus: full
+  serviceLastTestedDate: 2020-05-25
+  statementVisibility: public
+  statementCreatedDate: 2020-05-22
+  statementLastUpdatedDate: 2022-05-10

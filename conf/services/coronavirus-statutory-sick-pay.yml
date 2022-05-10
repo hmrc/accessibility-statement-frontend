@@ -1,0 +1,11 @@
+  serviceName: Coronavirus Statutory Sick Pay
+  serviceDescription: |
+    This service will reimburse small and medium employers Statutory Sick Pay that has already been paid to employees who have been off work because of coronavirus (COVID-19)
+  serviceDomain: www.tax.service.gov.uk
+  serviceUrl: /coronavirus-statutory-sick-pay
+  contactFrontendServiceId: coronavirus-statutory-sick-pay
+  complianceStatus: full
+  serviceLastTestedDate: 2020-05-25
+  statementVisibility: public
+  statementCreatedDate: 2020-05-22
+  statementLastUpdatedDate: 2022-05-10
