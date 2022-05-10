@@ -21,7 +21,7 @@ accessibilityProblems:
   - the PDF document which lists errors in uploaded data is missing language information, a document title, alt text on images, heading structure and tables without the correct structure for assistive technology.
   - some content may cause a horizontal scrollbar to appear at higher zoom levels or on smaller screens.
 milestones:
-  - description: A timeout occurs without the ability for the user to extend their session. This fails WCAG 2.1 success criterion 2.2.1 (Timing Adjustable)
+  - description: A timeout occurs without the ability for the user to extend their session. This fails WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
     date: 2022-12-31
   - description: Page updates are not communicated to the user. This fails WCAG 2.1 success criterion 4.1.3 (Status messages).
     date: 2022-12-31

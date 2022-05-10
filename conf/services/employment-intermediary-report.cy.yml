@@ -21,7 +21,7 @@ accessibilityProblems:
   - mae gwybodaeth ieithyddol ar goll yn y ddogfen PDF sy’n rhestru’r gwallau yn y data a uwchlwythwyd ynghyd â theitl y ddogfen, y testun amgen ar y delweddau, strwythur penawdau a thablau, a hynny heb y strwythur cywir i dechnoleg gynorthwyol.
   - efallai y bydd rhywfaint o’r cynnwys yn achosi i far sgrolio llorweddol ymddangos ar lefel chwyddo uwch ar sgriniau llai.
 milestones:
-  - description: Mae’r sesiwn yn cyrraedd ei therfyn amser ac nid yw’r defnyddiwr yn gallu ymestyn ei sesiwn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing djustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+  - description: Mae’r sesiwn yn cyrraedd ei therfyn amser ac nid yw’r defnyddiwr yn gallu ymestyn ei sesiwn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-12-31
   - description: Nid yw diweddariadau i’r dudalen yn cael eu cyfleu i’r defnyddiwr. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Status messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-12-31
