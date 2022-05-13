@@ -1,0 +1,63 @@
+serviceName: Hunanwasanaethu ar gyfer Asiantau
+serviceHeaderName: Gwasanaethau asiant
+serviceDescription: |
+  Mae’r gwasanaeth ‘Hunanwasanaethu ar gyfer Asiantau’ yn darparu dangosfwrdd treth cleientiaid lle gall asiantau fwrw golwg dros rwymedigaethau TWE a thaliadau ar gyfer eu cleientiaid, diwygio manylion cleient ar-lein, cael at wasanaethau cleient megis cyflwyno ar-lein a chynlluniau talu, cadarnhau eu bod yn dal i weithredu ar ran cleient a chael at nodweddion yr hen borth TWE ar gyfer Asiantau megis Codau treth.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent
+contactFrontendServiceId: agents-online-self-serve
+complianceStatus: partial
+accessibilityProblems:
+  - ar y dudalen sy’n dangos datganiadau blynyddol, nid yw’r maes â thabiau wedi ei drefnu’n gywir. Golyga hyn efallai na fydd rhai defnyddwyr technoleg gynorthwyol yn gallu newid rhwng yr wybodaeth ar y dudalen.
+  - nid yw’r cysylltiadau wedi’u huwcholeuo’n ddigonol pan fyddant yn cael eu dewis, sy’n gwneud gwe-lywio gan ddefnyddio’r bysellfwrdd yn anoddach, yn enwedig i’r defnyddwyr hynny sydd â nam ar eu golwg.
+  - defnyddir delwedd o faner ond nid oes testun amgen ar gael ac nid yw’r ystyr yn cael ei gyflwyno mewn ffordd arall, felly nid yw’r pwrpas yn glir.
+  - mae gan y tabl sy’n dangos y rhestr cleientiaid swyddogaeth ddidoli nad yw’n bosib ei defnyddio gan bob defnyddiwr sy’n defnyddio darllenwyr sgrin.
+  - wrth ddidoli tabl y rhestr cleientiaid, nid yw’r drefn ddidoli yn cael ei chyfathrebu i ddefnyddwyr darllenydd sgrin.
+  - nid yw’r tabl rhestr cleientiaid wedi’i sefydlu’n gywir felly mae celloedd a phenawdau gwag sy’n gwneud deall y cynnwys yn fwy anodd i ddefnyddwyr darllenydd sgrin.
+  - ar y dudalen rhestr cleientiaid nid yw’r pennawd ‘dod o hyd i gleient’ ar y lefel gywir.
+  - mae gwybodaeth i gynorthwyo gyda llenwi ffurflenni yn bresennol ar dudalennau ond nid yw’n cael ei chyhoeddi i ddefnyddwyr darllenydd sgrin a allai fod yn gwe-lywio yn ôl maes ffurflen.
+  - mae negeseuon gwall yn bresennol ar dudalennau ond nid ydynt yn cael eu cyhoeddi i ddefnyddwyr darllenwyr sgrin wrth we-lywio yn ôl maes ffurflen.
+  - ar sgriniau llai neu pan gaiff y testun ei chwyddo, mae cysylltiad i’r ddewislen yn y pennawd sydd, pan gaiff ei dewis, yn datgelu’r cysylltiad allgofnodi. Ni chaiff y cysylltiad i allgofnodi ei amlygu i ddefnyddwyr darllenydd sgrin. Gan fod y cysylltiad allgofnodi’n ymddangos ar ochr arall y dudalen, gall hyn achosi dryswch i ddefnyddwyr sy’n chwyddo’r testun ar y sgrin.
+  - ni ellir gwahaniaethu rhwng y cysylltiadau ‘tynnu’ ar y dudalen rhestr cleientiaid wrth edrych ar destun y cysylltiad yn unig, felly gall fod yn anodd i ddefnyddwyr darllenydd sgrin wybod beth mae pob un yn ei wneud.
+  - mae problemau gyda sut mae’r dudalen wedi’i sefydlu. Gall hyn effeithio ar dechnoleg gynorthwyol.
+  - mae rhai cysylltiadau wedi’u gwneud i edrych fel botymau ond nad ydynt wedi’u gwneud i weithredu fel botymau ar gyfer defnyddwyr bysellfwrdd ac nid ydynt yn cael eu hamlygu fel botymau i ddefnyddwyr darllenydd sgrin. Mae defnyddio’r bylchwr i ddewis y rhain yn achosi i’r dudalen sgrolio yn lle.
+  - nid yw’r ardal yn y faner a gyhoeddir i ddefnyddwyr darllenydd sgrin fel ardal we-lywio yn cynnwys unrhyw gysylltiadau. Dim ond enw’r safle y mae’n ei gynnwys.
+  - nid yw eiconau ar fotymau yn newid lliw pan fydd y botwm yn cael ei ffocysu a gall fod yn anodd ei weld. Serch hynny, mae’r testun ar y botwm yn weladwy.
+milestones:
+  - description: Mae rheolyddion y tabiau wedi’u codio’n anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Mae gan gysylltiadau ddangosyddion ffocws sy’n is na’r trothwy cyferbynnedd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast - minimum) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Defnyddir delweddau i gyfleu ystyr ond mae’r testun amgen ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 (Non-text content).
+    date: 2023-03-31
+  - description: Mae gan dablau swyddogaeth er mwyn didoli ond nid yw’r rhain yn cael eu hamlygu i dechnoleg gynorthwyol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Nid yw’r rhanbarthau byw wedi’u codio’n gywir sy’n golygu na chyflwynir diweddariadau i’r defnyddiwr. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Status messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Mae cynnwys ar goll yn y tablau, sy’n ddibynnol ar gyflwyniad gweledol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) a 1.3.2 (Meaningful sequence) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Mae hierarchaeth y penawdau’n anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Nid yw cynnwys yr awgrymiadau yn gysylltiedig â rhaglen y mewnbynnau, ac felly nid yw’n cael ei gyhoeddi pan fo angen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Nid yw’r cynnwys gwall yn gysylltiedig â rhaglen y mewnbynnau, ac felly nid yw’n cael ei gyhoeddi pan fo angen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Nid yw’r cysylltiadau gwe-lywio ychwanegol sy’n ymddangos wrth ddewis cysylltiad y ddewislen yn cael eu cyhoeddi i’r dechnoleg gynorthwyol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) a 2.4.4 (Link purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Mae gan rai o’r cysylltiadau’r un enw ond mae ganddynt ddiweddbwyntiau gwahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Mae trafferthion dilysu ar rai tudalennau. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Mae rhai cysylltiadau wedi’u steilio fel botymau ond nid oes ganddynt y rôl gywir na’r dynodyddion digwyddiad er mwyn gweithredu fel botymau. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Nid yw’r tirnod gwe-lywio yn y faner yn cynnwys cysylltiadau. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: Nid oes gan eiconau gyferbyniad da pan gaiff y rheolydd maent yr eistedd arno ei ffocysu. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text contrast), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+statementVisibility: public
+statementCreatedDate: 2020-09-17
+serviceLastTestedDate: 2021-03-25
+statementLastUpdatedDate: 2022-05-09
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta

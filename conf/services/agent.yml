@@ -7,10 +7,58 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent
 contactFrontendServiceId: agents-online-self-serve
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - on the annual statement page, the tabbed area has not been set up correctly which means that some assistive technology users may be unable to switch between the information on the page.
+  - links are not highlighted enough when they receive focus, making navigating by keyboard-only more difficult, especially for users with poor vision.
+  - an image of a flag is used but no alt text is provided and the meaning is not presented in another way, so its purpose is not clear.
+  - the client list table has a sort function which is not usable by all screen-reader users.
+  - when sorting the client list table, the sorting order is not communicated to screen-reader users.
+  - the client list table has not been set up correctly so there are empty cells and headers which make understanding the content more difficult for screen-reader users.
+  - on the client list page the ‘find a client’ heading is not the correct level.
+  - information to assist in the filling of forms is present on pages but is not announced to screen-reader users who may be navigating by form field.
+  - error messages are present on pages but are not announced to screen-reader users when navigating by form field.
+  - on smaller screens or when zoomed, there is a menu link in the header which when selected reveals the sign-out link. The appearance of the sign-out link is not announced to screen-reader users. As the sign-out link appears on the other side of the page this can cause confusion for screen-magnification users.
+  - the ‘remove’ links on the client list page cannot be distinguished from one another when looking just at the link text, so it can be difficult for screen-reader users to know what each one does.
+  - on some pages there are issues with how the page has been set up which can affect assistive technology.
+  - there are some links which have been made to look like buttons but have not been made to act as buttons for keyboard users and are not exposed as buttons to screen-reader users. Using the spacebar to select these will cause the page to scroll instead.
+  - the area in the banner which is announced to screen-reader users as a navigation area does not contain any links. It only contains the name of the site.
+  - icons on buttons do not change colour when the button is focussed and can become difficult to see. The text on the button is visible however.
+milestones:
+  - description: Tab controls have been incorrectly coded. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
+    date: 2023-03-31
+  - description: Links have focus indicators which are below the contrast threshold. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast - minimum).
+    date: 2023-03-31
+  - description: Images are used to convey meaning but are missing alternate text. This does not meet WCAG 2.1 success criterion 1.1.1 (Non-text content).
+    date: 2023-03-31
+  - description: Tables have sorting which is not exposed to assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
+    date: 2023-03-31
+  - description: Live regions are not coded correctly so do not present updates to the user. This does not meet WCAG 2.1 success criterion 4.1.3 (Status messages).
+    date: 2023-03-31
+  - description: Tables have missing content, relying on visual presentation. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and relationships) and 1.3.2 (Meaningful sequence).
+    date: 2023-03-31
+  - description: Heading hierarchy is incorrect. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
+    date: 2023-03-31
+  - description: The hint content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
+    date: 2023-03-31
+  - description: The error content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
+    date: 2023-03-31
+  - description: The appearance of additional navigation links when actioning the menu link is not announced to assistive technology. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and relationships) and 2.4.4 (Link purpose).
+    date: 2023-03-31
+  - description: Some links have the same name but different endpoints. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or instructions).
+    date: 2023-03-31
+  - description: There are validation issues on some pages. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2023-03-31
+  - description: Some links have been styled as buttons but do not have the correct role or event handlers to act as buttons. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
+    date: 2023-03-31
+  - description: The navigation landmark in the banner does not contain any links. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
+    date: 2023-03-31
+  - description: Icons do not have good contrast when the control they sit on is focussed. This does not meet WCAG 2.1 success criterion 1.4.11 (Non-text contrast).
+    date: 2023-03-31
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+serviceLastTestedDate: 2021-03-25
+statementLastUpdatedDate: 2022-05-09
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Telford
