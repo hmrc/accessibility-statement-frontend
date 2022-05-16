@@ -5,45 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /annual-tax-summary
 contactFrontendServiceId: annual-tax-summary
-complianceStatus: partial
-accessibilityProblems:
-  - Ar y dudalen ar gyfer dewis blynyddoedd treth, nid yw darllenwyr sgrin yn gallu cysylltu’r cwestiwn â’r botymau ateb. Gall hyn greu dryswch wrth fwrw golwg dros y dudalen y tu allan i’r cyd-destun.
-  - Ar y dudalen ar gyfer bwrw golwg dros dreth incwm, dangosir pennyn y tabl fel colofn yn hytrach na rhes. Gall hyn effeithio ar sut mae defnyddwyr darllenwyr sgrin yn dod o hyd i wybodaeth yn y tabl.
-  - Drwy gydol y gwasanaeth, daeth gwasanaeth defnyddwyr i ben heb rybudd ar ôl cyfnod o anweithgarwch. Gall hyn gymryd tipyn o amser i ddefnyddwyr a allai gymryd mwy o amser i ddefnyddio’r gwasanaeth.
-  - Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, nid yw delwedd argraffydd wedi’i chuddio rhag defnyddwyr darllenwyr sgrin. Gall hyn ddrysu defnyddwyr na fyddant yn deall pam mae’r ddelwedd ar y dudalen.
-  - Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, mae cysylltiad i newid y siart i dabl. Mae’r siart wedi’i chuddio rhag defnyddwyr darllenwyr sgrin. Gall hyn achosi dryswch ynghylch beth yw pwrpas y cysylltiad.
-  - Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, mae tabl sydd wedi’i guddio o’r golwg yn weladwy i ddefnyddwyr darllenwyr sgrin. Gall hyn achosi dryswch ynghylch pam mae angen iddynt glicio ar y cysylltiad i fwrw golwg dros y tabl.
-  - Ar y dudalen ar gyfer dewis blynyddoedd treth, mae’r ddewislen yn defnyddio delwedd nad yw’n ddisgrifiadol. Gall hyn ddrysu defnyddwyr darllenwyr sgrin gan nad yw’n glir at beth mae'r ddelwedd yn cyfeirio.
-  - Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, ceir disgrifiad o dabl sydd wedi’i guddio rhag defnyddwyr darllenwyr sgrin. Gall hyn fod yn ddryslyd i ddefnyddwyr nad ydynt yn gallu gweld yr wybodaeth y cyfeirir ati.
-milestones:
-  - description: |
-      Ar y dudalen ar gyfer dewis blynyddoedd treth, nid yw darllenwyr sgrin yn gallu cysylltu’r cwestiwn â’r botymau ateb. Gall hyn greu dryswch wrth fwrw golwg dros y dudalen y tu allan i’r cyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-  - description: |
-      Ar y dudalen ar gyfer bwrw golwg dros dreth incwm, dangosir pennyn y tabl fel colofn yn hytrach na rhes. Gall hyn effeithio ar sut mae defnyddwyr darllenwyr sgrin yn dod o hyd i wybodaeth yn y tabl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-  - description: |
-      Drwy gydol y gwasanaeth, daeth gwasanaeth defnyddwyr i ben heb rybudd ar ôl cyfnod o anweithgarwch. Gall hyn gymryd tipyn o amser i ddefnyddwyr a allai gymryd mwy o amser i ddefnyddio’r gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-  - description: |
-      Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, nid yw delwedd argraffydd wedi’i chuddio rhag defnyddwyr darllenwyr sgrin. Gall hyn ddrysu defnyddwyr na fyddant yn deall pam mae’r ddelwedd ar y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 (Non-text Content (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-  - description: |
-      Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, mae cysylltiad i newid y siart i dabl. Mae’r siart wedi’i chuddio rhag defnyddwyr darllenwyr sgrin. Gall hyn achosi dryswch ynghylch beth yw pwrpas y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context) (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-  - description: |
-      Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, mae tabl sydd wedi’i guddio o’r golwg yn weladwy i ddefnyddwyr darllenwyr sgrin. Gall hyn achosi dryswch ynghylch pam mae angen iddynt glicio ar y cysylltiad i fwrw golwg dros y tabl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-  - description: |
-      Ar y dudalen ar gyfer dewis blynyddoedd treth, mae’r ddewislen yn defnyddio delwedd nad yw’n ddisgrifiadol. Gall hyn ddrysu defnyddwyr darllenwyr sgrin gan nad yw’n glir at beth mae'r ddelwedd yn cyfeirio. Nid yw hyn yn bodloni meini prawf llwyddiant 4.1.2 (Name, Role, Value (Level A)), 2.4.4 (Link Purpose (In Context) (Level A)) na 2.4.3 (Focus Order (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-  - description: |
-      Ar y dudalen ar gyfer bwrw golwg dros drethi a gwariant cyhoeddus, ceir disgrifiad o dabl sydd wedi’i guddio rhag defnyddwyr darllenwyr sgrin. Gall hyn fod yn ddryslyd i ddefnyddwyr nad ydynt yn gallu gweld yr wybodaeth y cyfeirir ati. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.3 (Sensory Characteristics (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-03-31
-serviceLastTestedDate: 2021-10-14
+complianceStatus: full
+serviceLastTestedDate: 2022-05-04
 statementVisibility: public
 statementCreatedDate: 2021-03-22
-statementLastUpdatedDate: 2021-11-25
+statementLastUpdatedDate: 2022-05-11
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Newcastle
 liveOrClassic: Live Services - Telford
