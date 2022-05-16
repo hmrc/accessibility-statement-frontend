@@ -6,10 +6,40 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trusted-helpers
 contactFrontendServiceId: trusted-helpers
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - some heading text is duplicated
+  - some button labels are ambiguous
+  - some error messages are unclear
+  - some links are difficult to read when receiving focus
+  - voice activation users are unable to input into date fields
+milestones:
+  - description: |
+      A timeout occurs without warning and does not save the current step. This fails WCAG success criteria 2.2.1 Timing Adjustable (Level A), 2.2.5 Re-authenticating (Level AAA) and 2.2.6 Timeouts (Level AAA).
+    date: 2023-03-31
+  - description: |
+      The accessible name for user interface components did not contain the text that is presented visually as the label. This fails WCAG success criteria 2.5.3 Label in Name (Level A).
+    date: 2023-03-31
+  - description: |
+      There are actionable elements that have duplicated ID values present. This fails WCAG success criteria 4.1.1 Parsing (Level A).
+    date: 2023-03-31
+  - description: |
+      A heading appears multiple times on the same page, with identical text and heading level. This fails WCAG success criteria 2.4.6 Headings and Labels (Level AA).
+    date: 2023-03-31
+  - description: |
+      There is a button that does not clearly indicate the purpose when navigating out of context. This fails WCAG success criteria 2.4.6 Headings and Labels (Level AA).
+    date: 2023-03-31
+  - description: |
+      An error message is present which does not clearly indicate what the user must do to proceed. This fails WCAG success criteria 3.3.3 Error Suggestion (Level AA).
+    date: 2023-03-31
+  - description: |
+      Link text falls below minimum contrast requirements when in hover state. This fails WCAG success criteria 1.4.3 Contrast (Minimum) (Level AA).
+    date: 2023-03-31
+
+serviceLastTestedDate: 2022-03-09
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2022-03-30
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle

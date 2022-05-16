@@ -5,10 +5,40 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trusted-helpers
 contactFrontendServiceId: trusted-helpers
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - mae rhai o’r penawdau wedi’u dyblu
+  - mae rhai o’r botymau wedi’u labeli’n amwys
+  - mae rhai o’r negeseuon gwall yn aneglur
+  - mae rhai o’r cysylltiadau’n anodd eu darllen wrth ffocysu
+  - nid yw defnyddwyr ysgogi llais yn gallu mewnbynnu i feysydd dyddiad
+milestones:
+  - description: |
+      mae terfyn amser yn digwydd yn ddirybudd ac nid yw’n cadw’r cam dan sylw. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable (Level A)), 2.2.5 (Re-authenticating (Level AAA)) a 2.2.6 (Timeouts (Level AAA)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: |
+      Nid oedd yr enw hygyrch ar gyfer y cydrannau rhyngwyneb defnyddiwr yn cynnwys y testun a gaiff ei gyflwyno’n weledol fel y label. Nid yw hyn yn bodloni maen prawf llwyddiant 2.5.3 (Label in Name (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: |
+      Mae yna elfennau gweithredadwy sydd â gwerthoedd ID dyblyg. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: |
+      Mae pennawd yn ymddangos sawl gwaith ar yr un dudalen, gyda’r un testun a’r un lefel pennawd yn union. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels (Level AA)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: |
+      Mae botwm nad yw’n nodi ei bwrpas yn glir wrth lywio allan o’r cyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels (Level AA)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: |
+      Mae neges wall yn ymddangos nad yw’n nodi’n glir yr hyn y mae’n rhaid i ddefnyddiwr ei wneud i barhau. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion (Level AA)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: |
+      Nid yw’r testun cyswllt yn bodloni’r gofynion sylfaenol o ran cyferbynnedd wrth hofran. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum) (Level AA)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+
+serviceLastTestedDate: 2022-03-09
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2022-03-30
 
 
 businessArea: Customer Services Group (CSG)
