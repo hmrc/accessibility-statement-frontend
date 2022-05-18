@@ -6,8 +6,8 @@ serviceUrl: https://www.tax.service.gov.uk/fill-online/get-your-national-insuran
 contactFrontendServiceId: dfs-digital-forms-frontend
 complianceStatus: noncompliant
 statementVisibility: public
-statementCreatedDate: 18/05/2022
-statementLastUpdatedDate: 18/05/2022
+statementCreatedDate: 2022-05-18
+statementLastUpdatedDate: 2022-05-18
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing
 liveOrClassic: 
