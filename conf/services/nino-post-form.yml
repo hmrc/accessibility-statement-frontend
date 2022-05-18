@@ -2,7 +2,7 @@ serviceName: Get your National Insurance number by post
 serviceHeaderName: Get your National Insurance number by post
 serviceDescription: Use this form to get a letter with your National Insurance number sent to you by post.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: https://www.tax.service.gov.uk/fill-online/get-your-national-insurance-number-by-post
+serviceUrl: /fill-online/get-your-national-insurance-number-by-post
 contactFrontendServiceId: dfs-digital-forms-frontend
 complianceStatus: noncompliant
 statementVisibility: public
