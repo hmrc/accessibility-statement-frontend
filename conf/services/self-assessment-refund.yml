@@ -1,9 +1,9 @@
 serviceName: Request a Self Assessment refund
 serviceDescription: |
-  Use this service to request Self Assessment refunds and track the status of your claims
+  Use this service to request and track the progress of Self Assessment refunds.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /self-assessment-refund/refund-amount
-contactFrontendServiceId: itsa-refund
+contactFrontendServiceId: self-assessment-repayment
 complianceStatus: partial
 accessibilityProblems:
   - the service is undergoing an accessibility audit on Monday 23 May 2022
@@ -13,5 +13,4 @@ statementVisibility: draft
 statementCreatedDate: 2022-05-20
 statementLastUpdatedDate: 2022-05-20
 ddc: DDC Worthing
-liveOrClassic: Live Services (Worthing)
 typeOfService: Public beta
