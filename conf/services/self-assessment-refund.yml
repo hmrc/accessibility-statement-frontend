@@ -4,7 +4,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /self-assessment-refund/refund-amount
 contactFrontendServiceId: self-assessment-repayment
-complianceStatus: partial
+complianceStatus: noncompliant
 accessibilityProblems:
   - the service is undergoing an accessibility audit on Monday 23 May 2022
   - results of the audit will be published here
