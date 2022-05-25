@@ -7,31 +7,19 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  - Wrth ddewis ‘Blwyddyn dreth gyfredol’ neu ‘Blwyddyn dreth nesaf’, datgelir cynnwys cudd am yr hyn y mae angen i’r defnyddiwr ei wneud. Efallai na chaiff yr wybodaeth ychwanegol hon ei chyhoeddi i ddefnyddwyr VoiceOver neu Jaws.
-  - Nid yw’r cysylltiad i enw’r gwasanaeth ar frig pob tudalen yn mynd i unrhyw le.
-  - Ar nifer o dudalennau, ni fydd defnyddwyr chwyddhad sgrin yn gallu gweld rhywfaint o’r cynnwys gan ei fod yn gorgyffwrdd â chynnwys arall neu gan iddo fynd y tu hwnt i ymyl weledol y dudalen.
-  - Pan fo defnyddwyr yn cwblhau cofrestriad, nid yw’r negeseuon yn ffitio’n iawn ar y sgrin gadarnhau. Gall hyn achosi sgrolio llorweddol yn ychwanegol at sgrolio fertigol, a all achosi problemau i unrhyw un sydd ag anawsterau echddygol.
-  - Pan fydd y ffocws ar unrhyw neges gwall, mae cyferbynnedd lliw gwael a fydd yn ei gwneud hi’n anodd i ddefnyddwyr â nam ar eu golwg ei darllen.
+  - wrth ddefnyddio’r cyfieithiad Gymraeg, bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall y neges gwall ynghylch chwilio am gyfeiriad, gan y bydd eu darllenydd sgrin yn ynganu’r copi Saesneg fel Cymraeg.
+  - nid yw’r copi ‘eich cyfrifoldebau os dewiswch gael llythyrau ar-lein’ wedi’i adeiladu fel pennawd felly ni fydd defnyddwyr darllenwyr sgrin yn deall trefn y cynnwys.
 milestones:
   - description: |
-      Nid yw cynnwys a ddatgelir yn amodol yn cael ei gyhoeddi bob amser oherwydd nad yw’r gweithredu’n bodloni ein safon gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
+      nid oes gan y rhagddodiad ‘gwall’ ar negeseuon gwall y priodoledd ‘lang=en’ priodol, sy’n achosi i ddarllenwyr sgrin gamynganu’r geiriau. 3.1.2 (Language of Parts).
+    date: 2022-11-15
   - description: |
-      Nid yw enw’r gwasanaeth yn y pennawd yn cynnwys gwerth ar gyfer y priodoledd ‘href’ er mwyn cysylltu yn ôl i’r dudalen cychwyn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Pan fydd y defnyddiwr yn cynyddu maint y testun, nid yw’n ffitio o fewn y dimensiynau cynhwysydd a ddarperir, sy’n gwneud y copi yn annarllenadwy. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Mae nodweddion CSS  ar gyfer lapio testun ar goll o’r copi ar y faner gadarnhau sy’n achosi problemau pan fydd maint ffont y testun yn cynyddu. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Nid yw'r neges gwall ar ffocws yn bodloni’r gymhareb cyferbynnedd lliw. Dylai’r testun basio 4.5:1. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-serviceLastTestedDate: 2021-08-17
+      mae’r copi ‘eich cyfrifoldebau os dewiswch gael llythyrau ar-lein’ yn cyflwyno’r cynnwys dilynol ac yn gweithredu’n weledol fel pennawd, ond dim ond triniaeth weledol ydyw ac nid yw’n rhoi unrhyw ystyr semantig na strwythur tudalen i.
+    date: 2022-11-15
+serviceLastTestedDate: 2022-05-02
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-11-24
+statementLastUpdatedDate: 2022-05-23
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
