@@ -1,0 +1,19 @@
+serviceName: Discounted Shortbread (Automated) Welsh
+serviceDescription: |
+  Defnyddiwch y paragraff hwn i ddisgrifio'ch gwasanaeth. Gall fynd dros sawl llinell
+  fel hyn.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /the/url/of/your/service
+contactFrontendServiceId: automated-example-frontend
+complianceStatus: partial
+automatedTestingOnly: true
+accessibilityProblems:
+  - Dyma enghraifft o broblem hygyrchedd.
+milestones:
+  - description: Dyma atgyweiriad enghreifftiol.
+    date: 2022-08-31
+serviceLastTestedDate: 2022-04-01
+statementVisibility: draft
+statementCreatedDate: 2022-05-30
+statementLastUpdatedDate: 2022-05-30
+automatedTestingDetails: Profwyd y gwasanaeth hwn gan ddefnyddio offer awtomataidd My Test Tool One.
