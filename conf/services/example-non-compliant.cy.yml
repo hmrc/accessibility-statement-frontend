@@ -1,0 +1,11 @@
+serviceName: Discounted Doughnuts Welsh
+serviceDescription: |
+  Defnyddiwch y paragraff hwn i ddisgrifio'ch gwasanaeth. Gall fynd dros sawl llinell
+  fel hyn.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /doughnuts
+contactFrontendServiceId: doughnuts
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2022-05-30
+statementLastUpdatedDate: 2022-05-30
