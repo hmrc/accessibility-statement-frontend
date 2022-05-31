@@ -7,23 +7,16 @@ serviceUrl: /safety-and-security-subscription
 contactFrontendServiceId: safety-and-security-enrol
 complianceStatus: partial
 accessibilityProblems:
-  - Dim digon o gyferbyniad lliw rhwng testun y blaendir a’r cefndir pan fo’r cysylltiad "Allgofnodi" mewn ffocws
-  - Nid yw teitlau’r tudalennau yn rhoi gwybod i’r defnyddiwr pa wybodaeth y gofynnir amdani neu a roddir
-  - Nid yw testun cyswllt penodol yn cyfleu ystyr y cysylltiad
-  - Nid yw rhai botymau’n ymddwyn fel botymau
-  - Problemau dosrannu (Parsing) gyda’r dudalen terfyn amser a allai effeithio ar ddarllenwyr sgrin
-  - Nid yw’r rhagolwg argraffu yn cynnwys unrhyw arddull ar unrhyw dudalen
-  - Mae’r troedyn yn methu logo’r goron
-  - Mae atalnodau llawn mewn cysylltiadau a allai effeithio ar ddarllenwyr sgrin
+  - Mae cyfieithiad Cymraeg ar goll ar bob tudalen.
 milestones:
-  - description: Trwsio’r holl faterion hygyrchedd sy’n weddill a grybwyllir yn yr adran "Pa mor hygyrch yw’r gwasanaeth hwn" uchod.
-    date: 2021-01-31
-serviceLastTestedDate: 2020-12-01
+  - description: Mae angen cyfieithiadau o ‘Skip to main content’ ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ Crown Copyright’
+    date: 2022-11-22
+serviceLastTestedDate: 2021-02-22
 statementVisibility: public
 statementCreatedDate: 2020-12-08
-statementLastUpdatedDate: 2020-12-08
+statementLastUpdatedDate: 2022-05-31
 
 businessArea: Borders & Trade
 ddc: DDC Telford
-liveOrClassic:
+liveOrClassic: Live Services - Telford
 typeOfService: Live services
