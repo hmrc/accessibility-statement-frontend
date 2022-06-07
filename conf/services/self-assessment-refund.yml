@@ -4,9 +4,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /self-assessment-refund/refund-amount
 contactFrontendServiceId: self-assessment-repayment
-complianceStatus: noncompliant
-statementVisibility: draft
+complianceStatus: full
+serviceLastTestedDate: 2022-05-30
+statementVisibility: public
 statementCreatedDate: 2022-05-20
-statementLastUpdatedDate: 2022-05-20
+statementLastUpdatedDate: 2022-06-07
+businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 typeOfService: Public beta
