@@ -3,11 +3,20 @@ serviceHeaderName: Get your National Insurance number by post
 serviceDescription: Use this form to get a letter with your National Insurance number sent to you by post.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /fill-online/get-your-national-insurance-number-by-post
-contactFrontendServiceId: dfs-digital-forms-frontend
-complianceStatus: noncompliant
+contactFrontendServiceId: get-your-national-insurance-number-by-post
+complianceStatus: partial
+accessibilityProblems:
+  - description:  The downloaded National Insurance request form is not fully supported for all screen reader users. Sections of the document may be skipped and users will have difficulties understanding the content due to the order it is read out.
+  - description: The employer’s address fields are not configured correctly as personal address fields, this may cause autocomplete software to offer to fill in the fields with the wrong information.
+milestones:
+  - The downloaded PDF does not have a logical reading order. This will make it difficult to understand for users of assistive technology like screen readers. This fails WCAG 2.1 success criterion 1.3.2 Meaningful Sequence.
+  date: TBC
+  - The autocomplete attributes are present on the employer’s address fields. This may cause assistive technology to wrongly identify the fields as personal address fields. This fails WCAG 2.1 success criterion 1.3.5: Identify Input Purpose.
+  date: TBC
+serviceLastTestedDate: 2022-05-27
 statementVisibility: public
 statementCreatedDate: 2022-05-18
-statementLastUpdatedDate: 2022-05-18
+statementLastUpdatedDate: 2022-06-08
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing
 liveOrClassic: 
