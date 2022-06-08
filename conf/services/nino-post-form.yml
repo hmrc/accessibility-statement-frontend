@@ -11,7 +11,7 @@ accessibilityProblems:
 milestones:
   - The downloaded PDF does not have a logical reading order. This will make it difficult to understand for users of assistive technology like screen readers. This fails WCAG 2.1 success criterion 1.3.2 Meaningful Sequence.
   date: TBC
-  - The autocomplete attributes are present on the employer’s address fields. This may cause assistive technology to wrongly identify the fields as personal address fields. This fails WCAG 2.1 success criterion 1.3.5: Identify Input Purpose.
+  - The autocomplete attributes are present on the employer’s address fields. This may cause assistive technology to wrongly identify the fields as personal address fields. This fails WCAG 2.1 success criterion 1.3.5 Identify Input Purpose.
   date: TBC
 serviceLastTestedDate: 2022-05-27
 statementVisibility: public
