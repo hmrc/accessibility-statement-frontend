@@ -4,11 +4,16 @@ serviceDescription: HMRC interactive guidance gives users targeted information b
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /guidance
 contactFrontendServiceId: EGVWR
-complianceStatus: full
-serviceLastTestedDate: 2021-04-22
+complianceStatus: partial
+accessibilityProblems:
+  - when using the Welsh translation, screen reader users will have difficulties understanding the content as their screen reader will pronounce the English copy as Welsh.
+milestones:
+  - description: English content of the page does not have the appropriate ‘lang=en’ attribute that causes screen readers to mispronounce the words. 3.1.2 Language of parts.
+    date: 2022-12-09
+serviceLastTestedDate: 2022-05-09
 statementVisibility: public
 statementCreatedDate: 2020-08-05
-statementLastUpdatedDate: 2021-04-23
+statementLastUpdatedDate: 2022-06-09
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:

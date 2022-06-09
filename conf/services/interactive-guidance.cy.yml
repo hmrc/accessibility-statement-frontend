@@ -4,11 +4,16 @@ serviceDescription: Mae arweiniad rhyngweithiol CThEM yn rhoi gwybodaeth dargede
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /guidance
 contactFrontendServiceId: EGVWR
-complianceStatus: full
-serviceLastTestedDate: 2021-04-22
+complianceStatus: partial
+accessibilityProblems:
+  - wrth ddefnyddio’r cyfieithiad Cymraeg, bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall y cynnwys, gan y bydd eu darllenydd sgrin yn ynganu’r copi Saesneg fel pe bai’n Gymraeg.
+milestones:
+  - description: Nid oes gan gynnwys Saesneg y dudalen y priodoledd ‘lang=en’ priodol, sy’n achosi i ddarllenwyr sgrin gamynganu’r geiriau. 3.1.2 (Language of Parts).
+    date: 2022-12-09
+serviceLastTestedDate: 2022-05-09
 statementVisibility: public
 statementCreatedDate: 2020-08-05
-statementLastUpdatedDate: 2021-04-23
+statementLastUpdatedDate: 2022-06-09
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
