@@ -7,21 +7,11 @@ serviceDescription:
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-transit-guarantee-balance
 contactFrontendServiceId: CTCTraders
-complianceStatus: partial
-accessibilityProblems:
-  - Switching to the Welsh language version does not translate the messaging. It displays unreadable text.
-  - The continue waiting button does not allow users to wait but takes users to the next page in their journey.
-milestones:
-  - description:
-      Missing Welsh translations of the content causes rendering eligible copy when user switches to Welsh language version. 3.1.1 Language of page.
-    date: 2022-08-31
-  - description:
-      The meaning of the continue waiting button contradicts with action. This fails WCAG 2.1 success criterions 2.4.6 Headings and labels.
-    date: 2022-08-31
-serviceLastTestedDate: 2021-12-13
+complianceStatus: full
+serviceLastTestedDate: 2022-05-25
 statementVisibility: public
 statementCreatedDate: 2022-01-04
-statementLastUpdatedDate: 2022-01-04
+statementLastUpdatedDate: 2022-06-08
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:
