@@ -23,7 +23,7 @@ using-service.heading.ios=Defnyddio’r gwasanaeth hwn
 using-service.heading.android=Defnyddio’r gwasanaeth hwn
 
 using-service.this-service-or-app-is-run-voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn.' '
-using-service.this-service-or-app-is-run-standard=Mae’r gwasanaeth hwn wedi’i redeg gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-or-app-is-run-standard=Darperir y gwasanaeth hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
@@ -84,7 +84,7 @@ reporting.report-problem.opens-in-new-tab=' (yn agor ffenestr neu dab newydd)'
 
 ## Complaints
 complaints.heading=Os ydych yn anfodlon ar ein hymateb
-complaints.additional-contacts.part1=Mae’r Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) yn gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018 (y ’rheoliadau hygyrchedd’). Os nad ydych yn hapus â sut rydym yn ateb eich cwyn,
+complaints.additional-contacts.part1=Mae’r Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) yn gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018 (y ‘rheoliadau hygyrchedd’). Os nad ydych yn hapus â sut rydym yn ateb eich cwyn,
 complaints.additional-contacts.part2=cysylltwch â’r Gwasanaeth Cynghori a Chymorth Cydraddoldeb (EASS)
 complaints.additional-contacts.part3=neu’r
 complaints.additional-contacts.part4=Equality Commission for Northern Ireland (ECNI)
@@ -95,6 +95,7 @@ in-person-contact.heading=Cysylltu â ni dros y ffôn neu gael ymweliad personol
 in-person-contact.text-relay=Rydym yn cynnig gwasanaeth ‘text relay’ os ydych yn fyddar, â nam ar eich clyw neu os oes gennych nam ar eich lleferydd.
 in-person-contact.bsl=Gallwn ddarparu dehonglydd Iaith Arwyddion Prydain (BSL), neu gallwch drefnu ymweliad gan ymgynghorydd CThEM i’ch helpu i gwblhau’r gwasanaeth.
 in-person-contact.find-out-how.part1='Dysgwch '
+in-person-contact.find-out-how.link=https://www.gov.uk/cael-help-cthem-cymorth-ychwanegol
 in-person-contact.find-out-how.part2=sut i gael cymorth ychwanegol oddi wrth CThEM
 
 ## Technical information
@@ -102,9 +103,9 @@ technical.heading=Gwybodaeth dechnegol am hygyrchedd y gwasanaeth hwn
 technical.commitment=Mae CThEM wedi ymrwymo i wneud y gwasanaeth hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
 technical.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
 technical.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol '
-technical.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio '
-technical.compliance.guidelines=safon ’AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-technical.compliance.partial.reasons=, fersiwn 2.1, oherwydd y diffyg cydymffurfio a restrir isod.
+technical.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
+technical.compliance.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+technical.compliance.partial.reasons=, oherwydd y diffyg cydymffurfio a restrir isod.
 technical.non-compliance.header=Cynnwys nad yw’n hygyrch
 technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
