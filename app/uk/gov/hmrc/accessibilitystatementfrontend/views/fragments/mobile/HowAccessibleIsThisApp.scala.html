@@ -22,27 +22,27 @@
 
 @import statement._
 
-<h2 class="govuk-heading-l">@{messages("accessibility.heading", messages("general.app"))}</h2>
+<h2 class="govuk-heading-l">@{messages("accessibility.heading.app")}</h2>
 
 @fullyOrPartiallyCompliantContent = {
     @{if(isFullyCompliant) {
-        <p class="govuk-body">{messages("accessibility.compliance.full", messages("general.app"))} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>
+        <p class="govuk-body">{messages("accessibility.compliance.full.app")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>
     } else {
-        <p class="govuk-body">{messages("accessibility.compliance.partial", messages("general.app"))} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>
+        <p class="govuk-body">{messages("accessibility.compliance.partial.app")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>
     } }
     @{if(accessibilityProblems.isEmpty) {
-        <p class="govuk-body">{messages("accessibility.no-issues", messages("general.app"))}</p>
+        <p class="govuk-body">{messages("accessibility.no-issues.app")}</p>
     } else {
-        <p class="govuk-body">{messages("accessibility.has-issues", messages("general.app"))}</p>
+        <p class="govuk-body">{messages("accessibility.has-issues.app")}</p>
     } }
 }
 @if(isNonCompliant) {
     <p class="govuk-body">@{
-        messages("accessibility.compliance.noncompliant", messages("general.app"))
+        messages("accessibility.compliance.noncompliant.app")
     } <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{
         messages("accessibility.guidelines")
     }</a>@{
-        messages("accessibility.compliance.noncompliant.explanation", messages("general.app"))
+        messages("accessibility.compliance.noncompliant.explanation.app")
     }</p>
 } else {
     @fullyOrPartiallyCompliantContent

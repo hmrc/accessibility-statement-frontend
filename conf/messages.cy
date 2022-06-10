@@ -2,32 +2,30 @@ service.text = Dyma'ch gwasanaeth newydd
 general.page-title = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
 general.page-title.ios = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
 general.page-title.android = Datganiad hygyrchedd ar gyfer {0} – GOV.UK
-general.service=service
-general.app=app
 
 ## introduction
 introduction.heading=Datganiad hygyrchedd ar gyfer y gwasanaeth {0}
-introduction.heading.ios=Datganiad hygyrchedd ar gyfer {0}
-introduction.heading.android=Datganiad hygyrchedd ar gyfer {0}
+introduction.heading.app=Datganiad hygyrchedd ar gyfer {0}
 
 introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r gwasanaeth hwn, beth i’w wneud os ydych yn cael anhawster wrth ei ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r gwasanaeth.
+introduction.lede.app=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r ap hwn, beth i’w wneud os ydych yn cael anhawster wrth ei ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r ap.
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
 introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK
 introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
-introduction.service-name.ios=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
-introduction.service-name.android=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
+introduction.service-name.ios=Mae’r dudalen hon ond yn cynnwys gwybodaeth am {0}, sydd ar gael yn {1}.
+introduction.service-name.android=Mae’r dudalen hon ond yn cynnwys gwybodaeth am {0}, sydd ar gael yn {1}.
 
 ## Using the service
 using-service.heading=Defnyddio’r gwasanaeth hwn
-using-service.heading.ios=Defnyddio’r gwasanaeth hwn
-using-service.heading.android=Defnyddio’r gwasanaeth hwn
+using-service.heading.app=Defnyddio’r ap hwn
 
-using-service.this-service-or-app-is-run-voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn.' '
-using-service.this-service-or-app-is-run-standard=Darperir y gwasanaeth hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-is-run=Darperir y gwasanaeth hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-is-run.app=Darperir y ap hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r ap hwn.' '
+using-service.this-service-is-run.voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
-using-service.app.this-means='This means you can use the built-in '
-using-service.app.accessibility-features=accessibility features
-using-service.app.on-your-device=' on your device to:'
+using-service.app.this-means='Mae hyn yn golygu y gallwch ddefnyddio’r '
+using-service.app.accessibility-features=nodweddion hygyrchedd
+using-service.app.on-your-device=' ar eich dyfais i wneud y canlynol:'
 
 using-service.bullet1=newid lliwiau, lefelau cyferbyniad a ffontiau
 using-service.bullet2=chwyddo’r sgrin hyd at 300% heb i’r testun ddisgyn oddi ar y sgrin
@@ -41,26 +39,33 @@ using-service.bullet3.android=navigate the app using Switch Access
 using-service.bullet4.android=get around the app using Voice Access
 using-service.bullet5.android=listen to the app using TalkBack
 
-using-service.bullet1.ios=invert colours and adjust contrast levels
-using-service.bullet2.ios=increase the text size without the text truncating or overlapping
-using-service.bullet3.ios=navigate the app using Switch Control
-using-service.bullet4.ios=get around the app using Voice Control
-using-service.bullet5.ios=listen to the app using VoiceOver
+using-service.bullet1.ios=gwrth-droi’r lliwiau ac addasu lefelau cyferbynnedd
+using-service.bullet2.ios=cynyddu maint y testun heb i’r testun orgyffwrdd na chael ei docio
+using-service.bullet3.ios=llywio drwy’r ap gan ddefnyddio Rheolydd Switsh
+using-service.bullet4.ios=symud drwy’r ap gan ddefnyddio Rheolydd Llais
+using-service.bullet5.ios=gwrando ar yr ap gan ddefnyddio VoiceOver
 
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
+using-service.simple-text.app=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn yr app mor syml â phosibl i’w ddeall.
 using-service.making-device-easier.part1=Mae gan AbilityNet gyngor
 using-service.making-device-easier.part2=' ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
-accessibility.app-heading=Pa mor hygyrch yw’r gwasanaeth hwn
-accessibility.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
-accessibility.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol '
-accessibility.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
+accessibility.heading.app=Pa mor hygyrch yw’r ap hwn
+accessibility.compliance.full=Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â' '
+accessibility.compliance.full.app=Mae’r ap hwn yn cydymffurfio’n llawn â' '
+accessibility.compliance.partial=Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol' '
+accessibility.compliance.partial.app=Mae’r ap hwn yn cydymffurfio’n rhannol' '
+accessibility.compliance.noncompliant=Nid yw’r gwasanaeth hwn yn cydymffurfio â
+accessibility.compliance.noncompliant.app=Nid yw’r ap hwn yn cydymffurfio â
 accessibility.compliance.noncompliant.explanation=. Nid yw’r gwasanaeth hwn wedi cael ei wirio eto i weld a yw’n cydymffurfio neu beidio, felly gall rhai defnyddwyr ei chael yn anodd defnyddio rhannau o’r gwasanaeth.
+accessibility.compliance.noncompliant.explanation.app=. Nid yw’r ap hwn wedi cael ei wirio eto i weld a yw’n cydymffurfio neu beidio, felly gall rhai defnyddwyr ei chael yn anodd defnyddio rhannau o’r ap.
 accessibility.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-accessibility.no-issues=Nid oes unrhyw broblemau hygyrchedd hysbys yn y gwasanaeth hwn.
 accessibility.has-issues=Mae’n bosibl y bydd rhai pobl yn cael anhawster i ddefnyddio rhannau o’r gwasanaeth hwn:
+accessibility.has-issues.app=Mae’n bosibl y bydd rhai pobl yn cael anhawster i ddefnyddio rhannau o’r ap hwn:
+accessibility.no-issues=Nid oes unrhyw broblemau hygyrchedd hysbys yn y gwasanaeth hwn.
+accessibility.no-issues.app=Nid oes unrhyw broblemau hygyrchedd hysbys yn y ap hwn.
 
 ## Contact
 contact.heading=Yr hyn i’w wneud os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn
@@ -78,9 +83,10 @@ contact.extra-support-chgv.part4=Dydd Llun i ddydd Gwener, 9am tan 5pm
 
 ## Reporting problems
 reporting.heading=Rhoi gwybod am broblemau hygyrchedd gyda’r gwasanaeth hwn
+reporting.heading.app=Rhoi gwybod am broblemau hygyrchedd gyda’r app hwn
 reporting.report-problem.part1='Rydym bob amser yn ceisio gwella hygyrchedd y gwasanaeth hwn. Os byddwch yn dod o hyd i unrhyw broblem nad yw wedi’i rhestru ar y dudalen hon, neu os ydych o’r farn nad ydym yn bodloni gofynion hygyrchedd, '
+reporting.report-problem.part1.app='Rydym bob amser yn ceisio gwella hygyrchedd yr app hwn. Os byddwch yn dod o hyd i unrhyw broblem nad yw wedi’i rhestru ar y dudalen hon, neu os ydych o’r farn nad ydym yn bodloni gofynion hygyrchedd, '
 reporting.report-problem.part2=rhowch wybod am y broblem hygyrchedd
-reporting.report-problem.opens-in-new-tab=' (yn agor ffenestr neu dab newydd)'
 
 ## Complaints
 complaints.heading=Os ydych yn anfodlon ar ein hymateb
@@ -100,10 +106,15 @@ in-person-contact.find-out-how.part2=sut i gael cymorth ychwanegol oddi wrth CTh
 
 ## Technical information
 technical.heading=Gwybodaeth dechnegol am hygyrchedd y gwasanaeth hwn
+technical.heading.app=Gwybodaeth dechnegol am hygyrchedd yr app hwn
 technical.commitment=Mae CThEM wedi ymrwymo i wneud y gwasanaeth hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
-technical.compliance.full='Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â '
+technical.commitment.app=Mae CThEM wedi ymrwymo i wneud yr app hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
+technical.compliance.full=Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â' '
+technical.compliance.full.app=Mae’r ap hwn yn cydymffurfio’n llawn â' '
 technical.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol '
+technical.compliance.partial.app='Mae’r ap hwn yn cydymffurfio’n rhannol '
 technical.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
+technical.compliance.noncompliant.app='Nid yw’r ap hwn yn cydymffurfio â '
 technical.compliance.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
 technical.compliance.partial.reasons=, oherwydd y diffyg cydymffurfio a restrir isod.
 technical.non-compliance.header=Cynnwys nad yw’n hygyrch
@@ -112,15 +123,22 @@ technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hyg
 technical.non-compliance.milestone.fix-by=Bydd hyn yn cael ei drwsio erbyn {0}.
 technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 31 Hydref 2022.
 technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Hydref 2022.
+technical.non-compliance.automated.test-by.app=Bydd yr ap hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Hydref 2022.
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
+testing.heading=Sut gwnaethom brofi’r ap hwn
 testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.last-tested.app=Cafodd yr app ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y Ganolfan Hygyrchedd Digidol '
-testing.details.part2=(Digital Accessibility Centre).
-testing.details.part3=Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
+testing.last-tested.automated.app=Cafodd y ap ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y '
+testing.details.part1.app='Adeiladwyd yr app gan ddefnyddio rhannau a brofwyd gan y '
+testing.details.part2=Ganolfan Hygyrchedd Digidol
+testing.details.part3=. Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
+testing.details.part3.app=. Profwyd yr app llawn gan CThEM, ac roedd y gwaith o brofi’r app yn cynnwys defnyddwyr anabl.
 testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.details.noncompliant.app=Nid yw’r ap wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page

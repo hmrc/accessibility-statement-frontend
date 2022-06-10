@@ -22,10 +22,10 @@
 
 @import statement._
 
-<h2 class="govuk-heading-l">@platformSpecificMessage("using-service.heading")</h2>
+<h2 class="govuk-heading-l">@messages("using-service.heading.app")</h2>
 <p class="govuk-body">@{serviceDescription}</p>
 <p class="govuk-body">
-    @messages("using-service.this-service-or-app-is-run-standard", messages("general.app"))
+    @messages("using-service.this-service-is-run.app")
     @messages("using-service.app.this-means")
     <a class="govuk-link"
     href="@platformSpecificMessage("using-service.app.accessibility-features.link")"
@@ -39,7 +39,7 @@
   <li>@platformSpecificMessage("using-service.bullet4")</li>
   <li>@platformSpecificMessage("using-service.bullet5")</li>
 </ul>
-<p class="govuk-body">@{messages("using-service.simple-text", messages("general.app"))}</p>
+<p class="govuk-body">@{messages("using-service.simple-text.app")}</p>
 <p class="govuk-body">
     <a class="govuk-link" href="https://mcmw.abilitynet.org.uk">@messages("using-service.making-device-easier.part1")</a>
     @messages("using-service.making-device-easier.part2")
