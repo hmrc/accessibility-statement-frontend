@@ -72,6 +72,7 @@ accessibility.has-issues.app=Some people may find parts of this app difficult to
 contact.heading=What to do if you have difficulty using this service
 contact.extra-support.part1='You can '
 contact.extra-support.part2=contact HMRC for extra support
+contact.extra-support.part2.link=https://www.gov.uk/get-help-hmrc-extra-support
 contact.extra-support.part3=' if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.'
 contact.extra-support-voa.part1='You can '
 contact.extra-support-voa.part2=contact VOA for extra support if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.
