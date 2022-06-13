@@ -21,7 +21,7 @@ using-service.heading.app=Defnyddio’r ap hwn
 
 using-service.this-service-is-run=Darperir y gwasanaeth hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.this-service-is-run.app=Darperir y ap hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r ap hwn.' '
-using-service.this-service-is-run.voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn.' '
+using-service.this-service-is-run.voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn. Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
 using-service.app.this-means='Mae hyn yn golygu y gallwch ddefnyddio’r '
 using-service.app.accessibility-features=nodweddion hygyrchedd
@@ -93,7 +93,7 @@ complaints.heading=Os ydych yn anfodlon ar ein hymateb
 complaints.additional-contacts.part1=Mae’r Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) yn gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018 (y ‘rheoliadau hygyrchedd’). Os nad ydych yn hapus â sut rydym yn ateb eich cwyn,
 complaints.additional-contacts.part2=cysylltwch â’r Gwasanaeth Cynghori a Chymorth Cydraddoldeb (EASS)
 complaints.additional-contacts.part3=neu’r
-complaints.additional-contacts.part4=Equality Commission for Northern Ireland (ECNI)
+complaints.additional-contacts.part4=Comisiwn Cydraddoldeb Gogledd Iwerddon (ECNI)
 complaints.additional-contacts.part5=os ydych yn byw yng Ngogledd Iwerddon.
 
 ## In person contact
