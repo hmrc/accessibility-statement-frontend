@@ -24,19 +24,19 @@
 
 @import statement._
 
-<h2 class="govuk-heading-l">@{messages("testing.heading", messages("general.service"))}</h2>
+<h2 class="govuk-heading-l">@{messages("testing.heading")}</h2>
 
 @if(isNonCompliant) {
-    <p class="govuk-body">@{messages("testing.details.noncompliant", messages("general.service"))}</p>
+    <p class="govuk-body">@{messages("testing.details.noncompliant")}</p>
 } else {
     @if(serviceLastTestedDate.isDefined) {
         @if(displayAutomatedTestingOnlyContent) {
-            <p class="govuk-body">@{messages("testing.last-tested.automated", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)), messages("general.service"))}</p>
+            <p class="govuk-body">@{messages("testing.last-tested.automated", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)))}</p>
         } else {
-            <p class="govuk-body">@{messages("testing.last-tested", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)), messages("general.service"))}</p>
+            <p class="govuk-body">@{messages("testing.last-tested", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)))}</p>
         }
     }
-    <p class="govuk-body">@{messages("testing.details.part1", messages("general.service"))}
-        <a class="govuk-link" href="https://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>@{messages(if(displayAutomatedTestingOnlyContent) "general.fullstop" else "testing.details.part3", messages("general.service"))}
+    <p class="govuk-body">@{messages("testing.details.part1")}
+        <a class="govuk-link" href="https://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>@{messages(if(displayAutomatedTestingOnlyContent) "general.fullstop" else "testing.details.part3")}
     </p>
 }

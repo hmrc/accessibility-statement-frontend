@@ -22,6 +22,6 @@
 
 @import statement._
 
-<h1 class="govuk-heading-xl">@platformSpecificMessage("introduction.heading", serviceName)</h1>
-<p class="govuk-body-l">@{messages("introduction.lede", messages("general.app"))}</p>
-<p class="govuk-body">@platformSpecificMessage("introduction.service-name", serviceName, serviceAbsoluteURL)</p>
+<h1 class="govuk-heading-xl">@messages("introduction.heading.app", serviceName)</h1>
+<p class="govuk-body-l">@{messages("introduction.lede.app")}</p>
+<p class="govuk-body">@messages("introduction.service-name.app", serviceName, serviceAbsoluteURL)</p>
