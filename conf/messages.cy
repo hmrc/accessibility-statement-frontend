@@ -12,8 +12,7 @@ introduction.lede.app=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
 introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK
 introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
-introduction.service-name.ios=Mae’r dudalen hon ond yn cynnwys gwybodaeth am {0}, sydd ar gael yn {1}.
-introduction.service-name.android=Mae’r dudalen hon ond yn cynnwys gwybodaeth am {0}, sydd ar gael yn {1}.
+introduction.service-name.app=Mae’r dudalen hon ond yn cynnwys gwybodaeth am {0}, sydd ar gael yn {1}.
 
 ## Using the service
 using-service.heading=Defnyddio’r gwasanaeth hwn
@@ -33,11 +32,11 @@ using-service.bullet3=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio
 using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio meddalwedd adnabod lleferydd
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
 
-using-service.bullet1.android=invert colours and adjust contrast levels
-using-service.bullet2.android=increase the text size without the text truncating or overlapping
-using-service.bullet3.android=navigate the app using Switch Access
-using-service.bullet4.android=get around the app using Voice Access
-using-service.bullet5.android=listen to the app using TalkBack
+using-service.bullet1.android=gwrth-droi’r lliwiau ac addasu’r lefelau cyferbynnedd
+using-service.bullet2.android=cynyddu maint y testun heb fod y testun yn cael ei gwtogi neu’n gorgyffwrdd
+using-service.bullet3.android=chwilio drwy’r ap gan ddefnyddio ‘Switch Access’
+using-service.bullet4.android=defnyddio’r ap gan ddefnyddio ‘Voice Access’
+using-service.bullet5.android=gwrando ar yr ap gan ddefnyddio ‘TalkBack’
 
 using-service.bullet1.ios=gwrth-droi’r lliwiau ac addasu lefelau cyferbynnedd
 using-service.bullet2.ios=cynyddu maint y testun heb i’r testun orgyffwrdd na chael ei docio
