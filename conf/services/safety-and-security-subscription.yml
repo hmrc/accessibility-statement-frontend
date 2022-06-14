@@ -9,7 +9,7 @@ complianceStatus: partial
 accessibilityProblems:
   - Welsh language translation is missing on every page.
 milestones:
-  - description: Translations of 'Skip to main content' 'All content is available under the Open Government Licence v3.0, except where otherwise stated' Crown Copyright' are required
+  - description: "Translations of ‘Skip to main content’, ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ and ‘Crown Copyright’ are required."
     date: 2022-11-22
 serviceLastTestedDate: 2021-02-22
 statementVisibility: public

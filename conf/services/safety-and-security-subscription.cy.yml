@@ -9,7 +9,7 @@ complianceStatus: partial
 accessibilityProblems:
   - Mae cyfieithiad Cymraeg ar goll ar bob tudalen.
 milestones:
-  - description: Mae angen cyfieithiadau o ‘Skip to main content’ ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ Crown Copyright’
+  - description: "Mae angen cyfieithiadau o ‘Skip to main content’ ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ a ‘Crown Copyright’."
     date: 2022-11-22
 serviceLastTestedDate: 2021-02-22
 statementVisibility: public
