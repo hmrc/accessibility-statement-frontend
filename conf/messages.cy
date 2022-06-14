@@ -127,7 +127,7 @@ technical.non-compliance.automated.test-by.app=Bydd yr ap hefyd yn trefnu archwi
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
-testing.heading=Sut gwnaethom brofi’r ap hwn
+testing.heading.app=Sut gwnaethom brofi’r ap hwn
 testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.last-tested.app=Cafodd yr app ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
