@@ -93,6 +93,7 @@ reporting.report-problem.part2=report the accessibility problem
 ## Complaints
 complaints.heading=If you are not happy with our response
 complaints.additional-contacts.part1=The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ''accessibility regulations''). If you are not happy with how we respond to your complaint,
+complaints.additional-contacts.link=https://www.equalityadvisoryservice.com/
 complaints.additional-contacts.part2=contact the Equality Advisory and Support Service (EASS)
 complaints.additional-contacts.part3=or the
 complaints.additional-contacts.part4=Equality Commission for Northern Ireland (ECNI)

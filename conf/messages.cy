@@ -91,6 +91,7 @@ reporting.report-problem.part2=rhowch wybod am y broblem hygyrchedd
 ## Complaints
 complaints.heading=Os ydych yn anfodlon ar ein hymateb
 complaints.additional-contacts.part1=Mae’r Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) yn gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018 (y ‘rheoliadau hygyrchedd’). Os nad ydych yn hapus â sut rydym yn ateb eich cwyn,
+complaints.additional-contacts.link=https://eass-ws.custhelp.com/app/home
 complaints.additional-contacts.part2=cysylltwch â’r Gwasanaeth Cynghori a Chymorth Cydraddoldeb (EASS)
 complaints.additional-contacts.part3=neu’r
 complaints.additional-contacts.part4=Comisiwn Cydraddoldeb Gogledd Iwerddon (ECNI)
