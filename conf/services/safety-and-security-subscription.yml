@@ -7,24 +7,16 @@ serviceUrl: /safety-and-security-subscription
 contactFrontendServiceId: safety-and-security-enrol
 complianceStatus: partial
 accessibilityProblems:
-  - Insufficient colour contrast between foreground text and the background when
-    the "Sign out" link is in focus
-  - Page titles do not let the user know what information is being asked for or provided
-  - Certain link text does not convey the meaning of the link
-  - Certain buttons do not behave like buttons
-  - Parsing issues with the timeout page that may affect screen readers
-  - Print preview contains no styling on all pages
-  - Footer is missing the crown logo
-  - Full stops in links which may affect screen readers
+  - Welsh language translation is missing on every page.
 milestones:
-  - description: Fix all outstanding accessibility issues mentioned in the “How accessible this service is” section above.
-    date: 2021-01-31
-serviceLastTestedDate: 2020-12-01
+  - description: "Translations of ‘Skip to main content’, ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ and ‘Crown Copyright’ are required."
+    date: 2022-11-22
+serviceLastTestedDate: 2021-02-22
 statementVisibility: public
 statementCreatedDate: 2020-12-08
-statementLastUpdatedDate: 2020-12-08
+statementLastUpdatedDate: 2022-05-31
 
 businessArea: Borders & Trade
 ddc: DDC Telford
-liveOrClassic:
+liveOrClassic: Live Services - Telford
 typeOfService: Live services
