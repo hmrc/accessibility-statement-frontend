@@ -35,61 +35,61 @@ accessibilityProblems:
   - The autocomplete function is not fully accessible.
 milestones:
   - description: Headings are not always positioned correctly in the page code, making it difficult to use heading shortcut keys.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The hidden wording does not always reflect the purpose of the input fields.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Some buttons are positioned incorrectly in the page code, which could make browsing more time-consuming for screen reader users.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Hint information may be positioned incorrectly in the page code, which means screen readers may read it twice.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The word ‘Error’ may not appear in the page title to alert screen readers to an error.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The heading and the page title do not always match.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Optional input fields may not be marked as being optional.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Error validation may not be triggered by the ‘Save and continue’ button when fields are left blank.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Some error messages do not describe the error.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Users may be timed out of the service with no prior warning.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: ‘Your session will time out soon’ is in a duplicate font size that could perform badly on a screen reader.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: There is no alert to stop users writing too many characters in text boxes.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Navigation landmarks may be duplicated without a unique description to indicate what each navigation section contains.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The link colour is not consistent with other GOV.UK services.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The thematic break (horizontal rule) element has been used where it is not necessary.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Some information boxes do not have a descriptive label.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: There are some unexplained abbreviations in the service.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Some links that open a new tab do not advise the user this will happen.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The ‘Create an Export Accompanying Document (EAD)’ button does not indicate a file type or file size.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The ‘Remove procedure code’ table has a misleading heading for screen readers.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The ‘Back’ link does not follow the recommended style on all pages.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The address fields do not always follow the recommended style.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: There is some inconsistency with the focus indicator.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The focus indicator does not give enough colour contrast.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Colour contrast ratios are not high enough in some parts of the service.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The autocomplete function is not fully accessible.
-    date: 2021-11-30
+    date: 2022-09-30
 serviceLastTestedDate: 2020-12-21
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2021-09-16
+statementLastUpdatedDate: 2022-06-20
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
