@@ -1,5 +1,5 @@
-serviceName: Limiting access to your personal tax account to one Government Gateway user ID
-serviceDescription: This service checks that the Government Gateway user ID you have signed in with has access to your personal tax account. If you have multiple user IDs, it will limit access to one user ID and tell you which one you need to sign in with to access your personal tax account.
+serviceName: Cyfyngu mynediad at eich cyfrif treth personol i un Dynodydd Defnyddiwr (ID) ar gyfer Porth y Llywodraeth
+serviceDescription: Mae’r gwasanaeth hwn yn gwirio bod y Dynodydd Defnyddiwr (ID) ar gyfer Porth y Llywodraeth yr ydych wedi’i ddefnyddio wrth fewngofnodi â mynediad at eich cyfrif treth personol. Os oes gennych sawl Dynodydd Defnyddiwr, fe fydd yn cyfyngu mynediad at un Dynodydd Defnyddiwr ac yn rhoi gwybod i chi pa un sydd angen i chi ei ddefnyddio wrth fewngofnodi er mwyn cael mynediad at eich cyfrif treth personol.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /protect-tax-info?redirectUrl=%2Fpersonal-account
 contactFrontendServiceId: TAX_ENROLMENT_ASSIGNMENT_FRONTEND
