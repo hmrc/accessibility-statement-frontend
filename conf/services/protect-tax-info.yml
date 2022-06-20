@@ -1,0 +1,11 @@
+serviceName: Limiting access to your personal tax account to one Government Gateway user ID
+serviceDescription: This service checks that the Government Gateway user ID you have signed in with has access to your personal tax account. If you have multiple user IDs, it will limit access to one user ID and tell you which one you need to sign in with to access your personal tax account.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /protect-tax-info
+contactFrontendServiceId: TAX_ENROLMENT_ASSIGNMENT_FRONTEND
+complianceStatus: full
+serviceLastTestedDate: 2022-05-24
+statementVisibility: public
+statementCreatedDate: 2022-06-20
+statementLastUpdatedDate: 2022-06-20
+typeOfService: Live services
