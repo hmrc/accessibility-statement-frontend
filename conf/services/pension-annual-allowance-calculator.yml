@@ -21,7 +21,7 @@ milestones:
       There is extra information being read out that users should not hear when using a screen reader.
       This fails WCAG 2.1 - Understanding Success Criterion 2.4.1 - Bypass Blocks and Understanding Success Criterion 4.1.1 - Parsing.
       We will fix this to remove anything that a user doesn’t need to hear.
-    date: 2022-03-31
+    date: 2023-03-31
   - description: |
       When there is an error on the page, we usually put the word ‘Error’ into the page title. We have not done this in the service.
       This fails WCAG 2.1 - Understanding Success Criterion 3.3.1 - Error Identification. We will be updating our page titles to
