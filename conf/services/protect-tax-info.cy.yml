@@ -3,7 +3,7 @@ serviceDescription: Mae’r gwasanaeth hwn yn gwirio bod y Dynodydd Defnyddiwr (
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /protect-tax-info?redirectUrl=%2Fpersonal-account
 contactFrontendServiceId: TAX_ENROLMENT_ASSIGNMENT_FRONTEND
-complianceStatus: Llawn
+complianceStatus: full
 serviceLastTestedDate: 2022-05-24
 statementVisibility: public
 statementCreatedDate: 2022-06-20
