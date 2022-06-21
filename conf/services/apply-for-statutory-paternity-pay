@@ -1,0 +1,14 @@
+serviceName: Ask your employer for statutory paternity pay
+serviceHeaderName: Ask your employer for statutory paternity pay
+serviceDescription: Use this form to ask your employer for statutory paternity pay.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /fill-online/apply-for-statutory-paternity-pay
+contactFrontendServiceId: apply-for-statutory-paternity-pay
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2022-06-21
+statementLastUpdatedDate: 2022-06-21
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+liveOrClassic: 
+typeOfService: Public beta
