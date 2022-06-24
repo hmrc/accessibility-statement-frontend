@@ -2,7 +2,29 @@
 
 Accessibility Statement Frontend is a service for providing for accessibility statements across HMRC.
 
-## Prerequisites
+## Table of contents
+  * [Before you add your accessibility statement](#before-you-add-your-accessibility-statement)
+  * [How to add your service's accessibility statement](#how-to-add-your-services-accessibility-statement)
+  * [Opening a PR to get your statement merged into the repository](#opening-a-pr-to-get-your-statement-merged-into-the-repository)
+  * [How to release an accessibility statement to Production](#how-to-release-an-accessibility-statement-to-production)
+  * [Adding to your service](#adding-to-your-service)
+    + [Users of play-ui (version 8.12.0 or above) or play-frontend-hmrc (version 0.19.0 or above)](#users-of-play-ui-version-8120-or-above-or-play-frontend-hmrc-version-0190-or-above)
+    + [Users of older versions of play-ui or Java-based services](#users-of-older-versions-of-play-ui-or-java-based-services)
+  * [A note on contactFrontendServiceId](#a-note-on-contactfrontendserviceid)
+  * [Creating accessibility statements in the Welsh language](#creating-accessibility-statements-in-the-welsh-language)
+  * [To run locally](#to-run-locally)
+  * [Running unit tests](#running-unit-tests)
+  * [Running accessibility tests](#running-accessibility-tests)
+  * [Running the integration tests](#running-the-integration-tests)
+  * [Generating a report](#generating-a-report)
+    + [Dates in reports](#dates-in-reports)
+  * [Running UI acceptance tests](#running-ui-acceptance-tests)
+  * [Performance testing](#performance-testing)
+  * [Running ZAP scan locally](#running-zap-scan-locally)
+  * [Service Manager config for local development](#service-manager-config-for-local-development)
+    + [License](#license)
+
+## Before you add your accessibility statement
 
 Adding an accessibility statement involves creating a structured text file known as
 a [YAML](https://en.wikipedia.org/wiki/YAML) (YAML Ain't Markup Language) file and 
@@ -12,7 +34,7 @@ Creating such a file does not require any coding skills and can be done in a sim
  YAML editor or even directly within Github. However, if you are a developer you may 
 prefer to use your preferred IDE and Git to upload the YAML file to the repository.
 
-## To add your service's accessibility statement
+## How to add your service's accessibility statement
 
 First create a YAML file similar to the one listed below. This example includes all possible fields. Your statement
 may not need all of these fields depending on whether your service is fully, partially or non-compliant. Note 
@@ -88,11 +110,11 @@ Additional guidance for "typeOfService": If the service is being maintained by a
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run the integration tests with `sbt it:test` as described below.
 
-If your team would like repository write access to create branches and submit PRs without forking the repository, contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). Having write access will mean your team will receive alerts regarding production deployments.
+We ask that teams review, approve, and merge their own accessibility statements via pull requests. If your team doesn't have the required write access to merge your changes then contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/) and request access for your team. Having write access will mean your team will receive alerts regarding production deployments.
 
-If you do not have write access to the repository, you are welcome to fork the repository using the Github user interface and submit PRs via your forked copy. In this case you will need to contact us to request PRs are approved and merged.
+If your pull request contains changes to files other than your accessibility statements, then you'll need to request additional review and approval from [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). To avoid delays when proposing additional changes like this, please reach out to us first to discuss your request.
 
-## Release an accessibility statement to Production
+## How to release an accessibility statement to Production
 Production releases for ```accessibility-statement-frontend``` are managed by PlatUI. If you would like the team to release your accessibility statement to Production, please contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/).
 
 ## Adding to your service
