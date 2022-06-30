@@ -1,40 +1,20 @@
 serviceName: Plastic Packaging Tax
 serviceDescription: |
-  You can use the ‘Plastic Packaging Tax’ service to register for Plastic Packaging Tax if you’ve manufactured or imported 10 or more tonnes of finished plastic packaging components within the last 12 months or will do so in the next 30 days. Plastic Packaging Tax only applies to manufacturers and importers of plastic packaging components which contain less than 30% recycled plastic.
+  You can use this service to manage your Plastic Packaging Tax account, submit a return and make a payment.
 serviceDomain: www.gov.uk
-serviceUrl: /guidance/register-for-plastic-packaging-tax
+serviceUrl: /plastic-packaging-tax
 contactFrontendServiceId: plastic-packaging-tax
 complianceStatus: partial
 accessibilityProblems:
-  - text content may be difficult to read by low vision users due to the colour contrast of foreground and background colours – however, sufficient contrast ratio between text and background colours are in place
-  - acronyms may not be expanded in the first instance – however, expanded content will be used instead to ensure that users are able to determine what service they are accessing; this is particularly important for users who may experience cognitive difficulties
-  - the page structure may not follow the typical format
-  - page titles may not always match the heading of the page – however, where possible, the heading of the page and the page title content will be matched
-  - where numeric data is required, the input mode may not be correctly specified – however, the input mode attribute will be set to numeric
-  - no validation triggering – however, validation will be implemented
-  - the header component may not follow the typical pattern – however, the right pattern will be implemented for consistency
-  - upon selecting a 'change' link to amend data, the inputs on the page loaded have been cleared – however, the right pattern will be implemented
-  - the period of inactivity before the timeout triggers is very short – however, a greater period of time before the timeout will be implemented
+  - When the Welsh language is selected a screenreader will have problems because not all of the content in the service has Welsh translations. A screenreader will try to pronounce the English as Welsh
 milestones:
   - description: |
-      When the page loads, screen reader users focus is not consistently set to the top of the page; in this instance focus is set to the start of the main content. This is not the typically expected behaviour and may be disorienting for screen reader users. This failed to meet WCAG 2.1 A, success criterion 2.4.3 Focus Order - Level A.
-    date: 2022-07-01
-  - description: |
-      The error skip link provided is not a sufficient descriptive link text for screen reader users to determine the link's destination, either in or out of context of the page; all link text should clearly describe its purpose and destination. This failed to meet WCAG 2.1 A, success criterion 2.4.4 Link Purpose – in context (Level A) and 2.4.9 Link Purpose - Link Only (Level AAA).
-    date: 2022-07-01
-  - description: |
-      Page titles remained the same across different pages in parts of the service. Users will not be able to determine the specific page they are on, nor the purpose of different pages in places. This failed to meet WCAG 2.1 A, success criterion 2.4.2 Page Titled (Level A).
-    date: 2022-07-01
-  - description: |
-      Labels present contained confusing information, which made it difficult for screen reader user to easily determine the purpose of the form field. This failed to meet WCAG 2.1 AA, success criterion 2.4.6 Headings and Labels (Level AA).
-    date: 2022-07-01
-  - description: |
-      The error message that is returned when an error is committed is vague and does not help users to correct the issue. This failed to meet WCAG 2.1 AAA, success criterion 3.3.3 Error Suggestion (Level AA).
-    date: 2022-07-01
-serviceLastTestedDate: 2022-03-07
+      When the Welsh language is selected not all of the content on the page is translated or it is missing the required translations in the configuration file. This doesn’t meet WCAG 2.1 success criterion 3.1.2 Language of Parts. This will be fixed by ensuring all content is translated into Welsh and has an entry in the Welsh configuration file.
+    date: 2022-08-31
+serviceLastTestedDate: 2022-06-20
 statementVisibility: public
-statementCreatedDate: 2022-03-07
-statementLastUpdatedDate: 2022-03-07
+statementCreatedDate: 2022-06-30
+statementLastUpdatedDate: 2022-06-30
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Yorkshire
 liveOrClassic:
