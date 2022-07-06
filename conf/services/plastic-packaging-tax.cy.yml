@@ -1,15 +1,15 @@
-serviceName: Plastic Packaging Tax
+serviceName: Gwasanaeth Deunydd Pacio Plastig
 serviceDescription: |
-  You can use this service to manage your Plastic Packaging Tax account, submit a return and make a payment.
+  Gallwch ddefnyddio’r gwasanaeth hwn i reoli’ch cyfrif Treth Deunydd Pacio Plastig, cyflwyno Ffurflen Dreth a gwneud taliad.
 serviceDomain: www.gov.uk
 serviceUrl: /plastic-packaging-tax
 contactFrontendServiceId: plastic-packaging-tax
 complianceStatus: partial
 accessibilityProblems:
-  - when the Welsh language is selected a screenreader will have problems because not all of the content in the service has Welsh translations. A screenreader will try to pronounce the English as Welsh
+  - pan gaiff Cymraeg ei dewis, bydd darllenydd sgrin yn cael problemau oherwydd nad oes cyfieithiadau Cymraeg i’r holl gynnwys yn y gwasanaeth. Bydd darllenydd sgrin yn ceisio ynganu’r Saesneg fel Cymraeg
 milestones:
   - description: |
-      When the Welsh language is selected not all of the content on the page is translated or it is missing the required translations in the configuration file. This doesn’t meet WCAG 2.1 success criterion 3.1.2 Language of Parts. This will be fixed by ensuring all content is translated into Welsh and has an entry in the Welsh configuration file.
+      Pan ddewisir Cymraeg, nid yw’r holl gynnwys ar y dudalen wedi’i gyfieithu neu mae’r cyfieithiadau gofynnol ar goll yn y ffeil ffurfweddu. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio drwy sicrhau bod yr holl gynnwys yn cael ei gyfieithu i’r Gymraeg a bod ganddo gofnod yn y ffeil ffurfweddu Cymraeg.
     date: 2022-08-31
 serviceLastTestedDate: 2022-06-20
 statementVisibility: public
