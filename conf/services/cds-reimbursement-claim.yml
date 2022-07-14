@@ -1,8 +1,8 @@
-serviceName: Claim for reimbursement of import duties
+serviceName: Claim back import duty and VAT
 serviceDescription: |
   Claimants can use the service to apply to claim reimbursements on overpayments for import charges, including Customs Duties, Excise Duties, Countervailing Duties and other specific customs duties. They can use the service if the amount already paid in the import declaration is inaccurate or the import declaration was rejected so they need to claim back all or some of the amount already paid.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /claim-for-reimbursement-of-import-duties
+serviceUrl: /claim-back-import-duty-vat
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
 complianceStatus: partial
 accessibilityProblems:
@@ -13,19 +13,19 @@ accessibilityProblems:
   - not translated copy is not marked up correctly for pronunciation for screen readers.
 milestones:
   - description: missing error styles on fields that need to be corrected. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
-    date: 2022-03-31
+    date: 2022-08-15
   - description: currency input does not have correct error styles. Validation prevents users from entering values with allowed characters. This fails WCAG 2.1 success criterions 3.3.2 Labels or Instructions and 3.3.1 Error Identification.
-    date: 2022-03-31
+    date: 2022-08-15
   - description: error messages are general and non-specific to the actual error. They do not describe what action is required from the user. This fails WCAG 2.1 success criterions 3.3.1 Error Identification.
-    date: 2022-03-31
+    date: 2022-08-15
   - description: account header layout and long strings of the text gets clipped and not visible on the screen when the user increases the font size. This fails WCAG 2.1 success criterions 1.4.4 Resize text and 1.4.10 Reflow.
-    date: 2022-03-31
+    date: 2022-08-15
   - description: the correct language attribute to identify the copy in the main document’s language is missing. This fails WCAG 2.1 success criterions 3.1.2 Language of Parts.
-    date: 2022-03-31
+    date: 2022-08-15
 serviceLastTestedDate: 2021-07-09
 statementVisibility: public
 statementCreatedDate: 2021-03-18
-statementLastUpdatedDate: 2021-07-16
+statementLastUpdatedDate: 2022-07-14
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:
