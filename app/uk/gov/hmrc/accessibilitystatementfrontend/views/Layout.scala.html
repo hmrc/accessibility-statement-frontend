@@ -24,9 +24,14 @@
         isWelshTranslationAvailable: Boolean)(
         contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
+@androidNativeAppInstallPrompt = {
+  <link rel="manifest" href="/accessibility-statement/resources/manifest.json">
+}
+
 @hmrcLayout(
     pageTitle = Some(pageTitle),
     displayHmrcBanner = true,
     nonce = CSPNonce.get,
-    isWelshTranslationAvailable = isWelshTranslationAvailable
+    isWelshTranslationAvailable = isWelshTranslationAvailable,
+    additionalHeadBlock = Some(androidNativeAppInstallPrompt)
 )(contentBlock)
