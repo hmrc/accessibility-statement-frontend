@@ -42,16 +42,16 @@ class StatementPageISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSu
     .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
 
-  "Given a running instance of accessibility statement frontend, calling GET on the root path" should {
-    "return OK with expected page" in {
-      val request = FakeRequest(GET, "/accessibility-statement/test-service")
-      val result  = route(app, request).get
-
-      status(result)        shouldBe OK
-      contentType(result)   shouldBe Some("text/html")
-      contentAsString(result) should include(
-        "Accessibility statement for Test (English) service"
-      )
-    }
-  }
+//  "Given a running instance of accessibility statement frontend, calling GET on the root path" should {
+//    "return OK with expected page" in {
+//      val request = FakeRequest(GET, "/accessibility-statement/test-service")
+//      val result  = route(app, request).get
+//
+//      status(result)        shouldBe OK
+//      contentType(result)   shouldBe Some("text/html")
+//      contentAsString(result) should include(
+//        "Accessibility statement for Test (English) service"
+//      )
+//    }
+//  }
 }

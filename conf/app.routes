@@ -2,4 +2,5 @@
 
 ->         /hmrc-frontend           hmrcfrontend.Routes
 GET        /:service                uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController.getStatement(service: String, referrerUrl: Option[String])
+
 GET        /resources/*file        uk.gov.hmrc.hmrcfrontend.controllers.Assets.at(path="/public", file)
