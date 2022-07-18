@@ -34,5 +34,6 @@
     pageTitle = Some(pageTitle),
     displayHmrcBanner = true,
     nonce = CSPNonce.get,
-    isWelshTranslationAvailable = isWelshTranslationAvailable
+    isWelshTranslationAvailable = isWelshTranslationAvailable,
+    additionalHeadBlock = Some(androidNativeAppInstallPrompt)
 )(contentBlock)
