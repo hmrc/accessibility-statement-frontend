@@ -1,4 +1,7 @@
 # microservice specific routes
 
 ->         /hmrc-frontend           hmrcfrontend.Routes
+GET        /manifest.json           controllers.Assets.at(path="/public", file="manifest.json")
+GET        /app-install-prompt.js   controllers.Assets.at(path="/public", file="app-install-prompt.js")
+GET        /icon-3x.png             controllers.Assets.at(path="/public", file="icon-3x.png")
 GET        /:service                uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController.getStatement(service: String, referrerUrl: Option[String])

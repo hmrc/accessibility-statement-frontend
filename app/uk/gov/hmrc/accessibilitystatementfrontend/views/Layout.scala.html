@@ -24,6 +24,12 @@
         isWelshTranslationAvailable: Boolean)(
         contentBlock: Html)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
+@androidNativeAppInstallPrompt = {
+  <script src="app-install-prompt.js" nonce="@{CSPNonce.get}"></script>
+
+  <link rel="manifest" href="manifest.json">
+}
+
 @hmrcLayout(
     pageTitle = Some(pageTitle),
     displayHmrcBanner = true,
