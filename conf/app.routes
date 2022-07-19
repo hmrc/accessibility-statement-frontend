@@ -3,5 +3,10 @@
 ->         /hmrc-frontend           hmrcfrontend.Routes
 GET        /manifest.json           controllers.Assets.at(path="/public", file="manifest.json")
 GET        /app-install-prompt.js   controllers.Assets.at(path="/public", file="app-install-prompt.js")
+GET        /icon-0-75x.png          controllers.Assets.at(path="/public", file="icon-0-75x.png")
+GET        /icon-1x.png             controllers.Assets.at(path="/public", file="icon-1x.png")
+GET        /icon-1-5x.png           controllers.Assets.at(path="/public", file="icon-1-5x.png")
+GET        /icon-2x.png             controllers.Assets.at(path="/public", file="icon-2x.png")
 GET        /icon-3x.png             controllers.Assets.at(path="/public", file="icon-3x.png")
+GET        /icon-4x.png             controllers.Assets.at(path="/public", file="icon-4x.png")
 GET        /:service                uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController.getStatement(service: String, referrerUrl: Option[String])
