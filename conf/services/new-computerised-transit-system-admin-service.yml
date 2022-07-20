@@ -1,0 +1,19 @@
+serviceName: NCTS service availability
+serviceHeaderName: New Computerised Transit System (NCTS) Admin Frontend
+contactFrontendServiceId: NCTS
+serviceDescription: |
+  The New Computerised Transport System (NCTS) Admin Frontend allows users to add updates on estimated time of availability (ETA) and business continuity procedure (BCP) to the NCTS service.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /new-computerised-transit-system-service-availability
+complianceStatus: partial
+accessibilityProblems:
+  - If the user is inactive for a period of time, when they resume activity they are taken to the login page instead of the page where their activity stopped.
+statementVisibility: public
+serviceLastTestedDate: 2022-05-30
+statementCreatedDate: 2022-05-30
+statementLastUpdatedDate: 2022-05-30
+
+businessArea: Borders & Trade
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta
