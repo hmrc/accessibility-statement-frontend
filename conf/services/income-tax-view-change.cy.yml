@@ -1,4 +1,4 @@
-serviceName: Bwrw Golwg Dros a Newid eich cyfrif Troi Treth yn Ddigidol ar gyfer Treth Incwm
+serviceName: Bwrw golwg dros eich cynllun Troi Treth yn Ddigidol ar gyfer Treth Incwm a’i newid
 serviceHeaderName: Cyfrif Treth Busnes
 serviceDescription: |
   Mae’r gwasanaeth hwn yn eich caniatáu i fwrw golwg dros eich Ffurflenni Treth, eich taliadau a’ch hanes Treth Incwm ar gyfer CThEM.
@@ -8,33 +8,21 @@ serviceUrl: /report-quarterly/income-and-expenses/view/
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
-  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd defnyddio rhai o’r tablau ar y tudalennau ’trosolwg o’r flwyddyn dreth’ a ’diweddariadau nesaf’. Nid yw rhai tablau’n disgrifio eu diben na’r colofnau wrth i ddefnyddiwr darllenydd sgrin symud rhwng tablau a chelloedd.
-  - Mae’r cysylltiad delwedd GOV.UK yn y pennawd yn cysylltu i hafan y gwasanaeth yn hytrach nag i hafan GOV.UK
-  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd dod o hyd i werthoedd cywir yn y rhestr ’trosolwg o’r flwyddyn dreth’. Nid yw’r rhestr o ddisgrifiadau yn nodi’r label, felly ni fydd rhai defnyddwyr darllenwyr sgrin yn gwybod faint o eitemau sydd yn y rhestr.
-  - Efallai na fydd ’cadarnhau manylion eich cleient’ yn cyfleu gwybodaeth yn gywir ar gyfer technolegau cynorthwyol neu efallai y bydd yn dangos yr wybodaeth yn anghyson ar draws porwyr oherwydd tagiau HTML sydd ar goll.
-  - Mae’n bosibl y bydd defnyddwyr bysellfwrdd yn unig yn ei chael hi’n anodd defnyddio rhai o’r botymau, a bydd angen iddynt ddefnyddio’r botwm Enter yn lle’r bar gofod. Nid yw’r cysylltiadau sy’n ymddangos fel botymau wedi’u labelu’n gywir ar gyfer defnyddwyr technoleg gynorthwyol.
-  - Bydd yn anodd gwahaniaethu rhwng y cysylltiad i’r gwasanaeth yn y pennawd ar y dudalen ’trosolwg o’r flwyddyn dreth’ a’r cefndir wrth hofran, oherwydd y cyferbynnedd lliw.
-  - Wrth newid i’r Gymraeg ar ’Beth yw Cyfeirnod Unigryw y Trethdalwr (UTR) eich cleient?’, mae’r gair ’error’ yn aros yn Saesneg a bydd yn cael ei ynganu’n anghywir ar gyfer defnyddwyr darllenydd sgrin.
+  - Mae rhai botymau yn y gwasanaeth yn gweithredu fel cysylltiadau. Efallai y bydd defnyddwyr bysellfwrdd yn unig yn cael problemau gan fod yn rhaid iddynt ddefnyddio’r botwm ‘enter’ yn lle’r bylchwr. Bydd defnyddwyr technoleg gynorthwyol yn cael problemau gyda’r botymau hyn gan nad ydynt wedi’u sefydlu’n gywir.
+  - Wrth newid i’r Gymraeg ar y dudalen ‘Treth Incwm’ a ‘Taliad a wnaed i CThEM’, mae yna gysylltiadau sy’n aros yn Saesneg ac ni fyddant yn cael eu hynganu’n gywir ar gyfer darllenwyr sgrin.
+  - Ni fydd defnyddwyr cydnabyddiaeth llais yn gallu cael at y botwm ‘Gwneud taliad’ yn uniongyrchol ar y dudalen ‘Taliad mantoli’ gan nad yw’r copi gweledol yn cyfateb â’r label hygyrch.
 milestones:
-- description: Mae capsiynau a/neu benawdau ar goll o rai tablau, sy’n ei gwneud hi’n anodd i ddefnyddwyr darllenwyr sgrin ddeall diben y tablau a’r celloedd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-04-30
-- description: Ni ellir pennu diben y cysylltiad GOV.UK o destun y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-04-30
-- description: Mae’r elfen term disgrifiad gofynnol ar goll o’r rhestr o ddisgrifiadau, sy’n annilys o ran html ac a allai achosi problemau i dechnoleg gynorthwyol ddehongli’r cynnwys yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-04-30
-- description: Tagiau eitemau ar goll, nad ydynt wedi’u nythu/cau’n gywir, ac a allai achosi i dechnoleg gynorthwyol beidio ’ chyfleu’r wybodaeth yn gywir neu i borwyr ddangos y cynnwys yn anghyson. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-04-30
-- description: Ar gyfer cysylltiadau sy’n ymddangos fel botymau, mae’r r’l="button" a’r polyfill JavaScript ar goll i sicrhau ei fod yn gweithredu fel botwm. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-04-30
-- description: Nid yw’r cysylltiad i’r gwasanaeth yn y pennawd yn bodloni’r lefel cymhareb cyferbynnedd ofynnol o’i gymharu ’ lliw’r cefndir wrth hofran. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-04-30
-- description: Pan gaiff y dudalen ’Beth yw Cyfeirnod Unigryw y Trethdalwr (UTR) eich cleient?’ ei dangos yn Gymraeg, mae peth o’r cynnwys yn ymddangos yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Bydd hyn yn cael ei ynganu’n anghywir ar gyfer defnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 3.1.2 Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Iaith Rhannau
-  date: 2022-04-30
-serviceLastTestedDate: 2021-11-05
+  - description: Ar gyfer cysylltiadau sy’n ymddangos fel botymau, mae’r rôl="button" a’r polyfill JavaScript ar goll i sicrhau eu bod yn gweithredu fel botwm. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-08-31
+  - description: Pan gaiff y tudalennau ‘Treth Incwm’ a ‘Taliadau a wnaed i CThEM’ eu dangos yn Gymraeg, mae peth o’r cynnwys yn ymddangos yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 3.1.2 (Language of Parts), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-08-31
+  - description: Mae copi’r botwm ‘Gwneud taliad’ ar y dudalen ‘Taliad mantoli’ yn wahanol i’r label hygyrchedd. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 2.5.3 (Label in Name), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-08-31
+serviceLastTestedDate: 2022-05-20
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2022-01-05
+statementLastUpdatedDate: 2020-06-24
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
-liveOrClassic:
+liveOrClassic: Live Services - Telford
 typeOfService: Public beta
