@@ -28,6 +28,7 @@ class NotFoundPageSpec extends BaseAcceptanceSpec {
 
       When("the user visits a non-existent page")
       go to NotFoundPage
+      driver.switchTo.alert.accept()
 
       Then("the title should be visible in the default language")
       driver.findElement(By.cssSelector("h1")).getText shouldBe "Page not found"

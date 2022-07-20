@@ -36,6 +36,8 @@ class StatementPageSpec extends BaseAcceptanceSpec {
         "the fully accessible service statement page should be displayed in the default language"
       )
       eventually {
+        driver.switchTo.alert.accept()
+
         driver
           .findElement(By.cssSelector("h1"))
           .getText      shouldBe "Accessibility statement for Discounted Icecreams service"
@@ -71,6 +73,8 @@ class StatementPageSpec extends BaseAcceptanceSpec {
         "the partially accessible service statement page should be displayed in the default language"
       )
       eventually {
+        driver.switchTo.alert.accept()
+
         driver
           .findElement(By.cssSelector("h1"))
           .getText      shouldBe "Accessibility statement for Discounted Cupcakes service"
@@ -104,6 +108,8 @@ class StatementPageSpec extends BaseAcceptanceSpec {
         "the non accessible service statement page should be displayed in the default language"
       )
       eventually {
+        driver.switchTo.alert.accept()
+
         driver
           .findElement(By.cssSelector("h1"))
           .getText      shouldBe "Accessibility statement for Discounted Doughnuts service"
