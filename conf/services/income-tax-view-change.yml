@@ -4,7 +4,7 @@ serviceDescription: |
   This service allows you to view your tax returns, payments and income tax history for HMRC.
   You can also see previous and future updates.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /report-quarterly/income-and-expenses/view/
+serviceUrl: /report-quarterly/income-and-expenses/view
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
