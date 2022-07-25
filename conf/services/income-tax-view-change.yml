@@ -4,7 +4,7 @@ serviceDescription: |
   This service allows you to view your tax returns, payments and income tax history for HMRC.
   You can also see previous and future updates.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /report-quarterly/income-and-expenses/view/
+serviceUrl: /report-quarterly/income-and-expenses/view
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
@@ -20,11 +20,11 @@ milestones:
     date: 2022-09-30
   - description: |
       The 'Make a payment' button copy on the 'Balancing payment' page is different to the accessible label. This fails WCAG 2.1 success criterion 2.5.3: Label in Name.
-    date: 2022-04-30
+    date: 2022-09-30
 serviceLastTestedDate: 2022-05-20
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2022-01-05
+statementLastUpdatedDate: 2020-06-24
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
