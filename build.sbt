@@ -5,12 +5,12 @@ import uk.gov.hmrc.DefaultBuildSettings.addTestReportOption
 
 val appName = "accessibility-statement-frontend"
 
-val silencerVersion = "1.7.0"
+val silencerVersion = "1.7.9"
 
 lazy val unitTestSettings =
   inConfig(Test)(Defaults.testTasks) ++
     Seq(
-      testOptions in Test := Seq(Tests.Filter(_ startsWith "unit")),
+      Test / testOptions := Seq(Tests.Filter(_ startsWith "unit")),
       addTestReportOption(Test, "test-reports")
     )
 
@@ -18,7 +18,7 @@ lazy val IntegrationTest         = config("it") extend Test
 lazy val integrationTestSettings =
   inConfig(IntegrationTest)(Defaults.testTasks) ++
     Seq(
-      (testOptions in IntegrationTest) := Seq(Tests.Filter(_ startsWith "it")),
+      (IntegrationTest / testOptions) := Seq(Tests.Filter(_ startsWith "it")),
       addTestReportOption(IntegrationTest, "it-test-reports")
     )
 
@@ -27,8 +27,8 @@ lazy val acceptanceTestSettings =
   inConfig(AcceptanceTest)(Defaults.testTasks) ++
     Seq(
       // The following is needed to preserve the -Dbrowser option to the HMRC webdriver factory library
-      fork in AcceptanceTest := false,
-      (testOptions in AcceptanceTest) := Seq(Tests.Filter(_ startsWith "acceptance")),
+      AcceptanceTest / fork := false,
+      (AcceptanceTest / testOptions) := Seq(Tests.Filter(_ startsWith "acceptance")),
       addTestReportOption(AcceptanceTest, "acceptance-test-reports")
     )
 
@@ -38,7 +38,7 @@ lazy val microservice = Project(appName, file("."))
   .configs(AcceptanceTest, IntegrationTest)
   .settings(
     majorVersion := 0,
-    scalaVersion := "2.12.11",
+    scalaVersion := "2.12.15",
     playDefaultPort := 12346,
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
@@ -58,7 +58,7 @@ lazy val microservice = Project(appName, file("."))
       "com.github.ghik" % "silencer-lib" % silencerVersion % Provided cross CrossVersion.full
     ),
     // ***************
-    pipelineStages in Assets := Seq(gzip),
+    Assets / pipelineStages := Seq(gzip),
     unitTestSettings,
     acceptanceTestSettings,
     integrationTestSettings,
