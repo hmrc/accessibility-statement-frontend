@@ -1,7 +1,7 @@
-serviceName: Report and check de minimis aid if you claimed a Northern Ireland waiver
-serviceDescription: Report and check de minimis aid if you claimed a Northern Ireland waiver
+serviceName: Report and manage your allowance for Customs Duty waiver claims
+serviceDescription: Report and manage your allowance for Customs Duty waiver claims
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /report-or-check-de-minimis-aid-northern-ireland
+serviceUrl: /report-and-manage-your-allowance-for-customs-duty-waiver-claims
 contactFrontendServiceId: DeminimisAidPayments
 complianceStatus: partial
 accessibilityProblems:
