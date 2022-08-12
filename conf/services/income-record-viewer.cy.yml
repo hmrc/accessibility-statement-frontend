@@ -6,23 +6,20 @@ serviceUrl: /tax-history/select-client
 contactFrontendServiceId: IRV
 complianceStatus: partial
 accessibilityProblems:
-  - Nid yw teitlau tudalennau yn cyd-fynd â phennawd cyfatebol y dudalen. Pan fydd darllenydd sgrin yn cael ei ddefnyddio gallai hyn eich camarwain am ddiben y dudalen.
-  - Os ydych yn segur am gyfnod o amser, mae’r gwasanaeth yn eich allgofnodi’n awtomatig heb rybudd ac nid oes unrhyw ffordd i chi ymestyn eich sesiwn.
-  - Gall gwe-lywio o fewn y gwasanaeth fod yn anodd wrth ddefnyddio darllenydd sgrin gan nad yw rhai cysylltiadau’n hawdd i’w hadnabod ac mae angen gwrando ar holl brif gynnwys y dudalen yn gyntaf.
-  - Pan fydd maint y ffont yn cael ei newid neu pan ddefnyddir sgrin lai, gall eitemau eraill ar y dudalen guddio testun mewn tablau, gan ei gwneud yn anodd ei ddarllen. Hefyd, gall y tablau ymddangos i orlifo dros ymyl y sgrin, sy’n golygu nad yw rhan o’r tabl yn weladwy.
+  - Ar y dudalen ‘cofnodion incwm’, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd adnabod y math o gynnwys yn y golofn ‘cofnod’. Mae pennawd y golofn yn datgan ‘cofnod’ a allai gamarwain defnyddwyr i feddwl bod y golofn yn cynnwys gwerthoedd pan mewn gwirionedd mae’n cynnwys cysylltiadau i fwrw golwg dros gofnodion.
+  - Ar y dudalen lle gallwch ddewis blwyddyn dreth i fwrw golwg drosti, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd deall cynnwys y dudalen. Mae hyn oherwydd bod yr iaith wedi’i gosod i’r Gymraeg pan fydd y defnyddiwr yn disgwyl i’r dudalen gael ei darllen yn Saesneg.
+  - Ar y dudalen lle rydych yn bwrw golwg dros gofnod incwm, efallai y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd deall strwythur y dudalen. Mae hyn oherwydd bod lefelau pennawd anghywir wedi’u defnyddio yn y tabl.
 milestones:
-  - description: Nid yw teitlau tudalennau yn cyd-fynd â phennawd cyfatebol tudalennau. Pan fydd darllenydd sgrin yn cael ei ddefnyddio gallai hyn eich camarwain am ddiben y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-06-30
-  - description: Os ydych yn segur am gyfnod o amser mae’r gwasanaeth yn eich allgofnodi’n awtomatig, heb unrhyw ffordd i chi ymestyn eich sesiwn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-06-30
-  - description: Gall gwe-lywio o fewn y gwasanaeth fod yn anodd wrth ddefnyddio darllenydd sgrin gan nad yw rhai cysylltiadau’n hawdd i’w hadnabod ac mae angen gwrando ar holl brif gynnwys y dudalen yn gyntaf. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-06-30
-  - description: Pan fydd y ffont yn cael ei newid 200 y cant gall achosi i destun gael ei guddio gan elfennau eraill. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-06-30
-serviceLastTestedDate: 2022-04-21
+  - description: Ar y dudalen ‘cofnodion incwm’, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd adnabod y math o gynnwys yn y golofn ‘cofnod’. Mae pennawd y golofn yn datgan ‘cofnod’ a allai gamarwain defnyddwyr i feddwl bod y golofn yn cynnwys gwerthoedd pan mewn gwirionedd mae’n cynnwys cysylltiadau i fwrw golwg dros gofnodion. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-08-31
+  - description: Ar y dudalen lle gallwch ddewis blwyddyn dreth i fwrw golwg drosti, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd deall cynnwys y dudalen. Mae hyn oherwydd bod yr iaith wedi’i gosod i’r Gymraeg pan fydd y defnyddiwr yn disgwyl i’r dudalen gael ei darllen yn Saesneg. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.1 (Language of Page) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-08-31
+  - description: Ar y dudalen lle rydych yn bwrw golwg dros gofnod incwm, efallai y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd deall strwythur y dudalen. Mae hyn oherwydd bod lefelau pennawd anghywir wedi’u defnyddio yn y tabl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-08-31
+serviceLastTestedDate: 2022-07-22
 statementVisibility: public
 statementCreatedDate: 2022-04-26
-statementLastUpdatedDate: 2022-04-26
+statementLastUpdatedDate: 2022-07-27
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Edinburgh
 liveOrClassic: Live Services - Edinburgh

@@ -6,23 +6,20 @@ serviceUrl: /tax-history/select-client
 contactFrontendServiceId: IRV
 complianceStatus: partial
 accessibilityProblems:
-  - Page titles do not match the corresponding page heading. When a screen reader is being used this could mislead you about the purpose of the page.
-  - If you’re inactive for a period of time, the service automatically logs you out without giving a warning and there is no way for you to extend your session.
-  - Navigation within the service may be difficult when using a screen reader because some links are not easy to identify and require listening to all the page’s main content first.
-  - When the font size is resized or a smaller screen is used, text in tables can be obscured by other items on the page, making it hard to read. Also, the tables can appear to overflow the edge of the screen, meaning part of the table is not visible.
+  - On the ‘income records’ page, users with screen readers may find it difficult to identify the type of content in the ‘record’ column. The column heading announces ‘record’ which could mislead users to think that the column contains values when it actually contains links to view records.
+  - On the page where you can select a tax year to view, users with screen readers may find it difficult to understand the content of the page. This is because the language has been set to Welsh when the user will expect the page to be read in English.
+  - On the page where you view an income record, users with screen readers may find it difficult to understand the structure of the page. This is because incorrect heading levels have been used in the table.
 milestones:
-  - description: Page titles do not match the corresponding page heading. When a screen reader is being used this could mislead you about the purpose of the page. This fails WCAG 2.1 on success criterion 2.4.2 (Page Titled).
-    date: 2022-06-30
-  - description: If you’re inactive for a period of time the service automatically logs you out, with no way for you to extend your session. This fails WCAG 2.1 on success criterion 2.2.1 (Timing Adjustable).
-    date: 2022-06-30
-  - description: Navigation within the service may be difficult when using a screen reader as some links are not easy to identify and require listening to all the page’s main content first. This fails WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2022-06-30
-  - description: When the font is resized by 200 percent it can cause text to be obscured by other elements. This fails WCAG 2.1 on success criterion 1.4.4 (Resize text).
-    date: 2022-06-30
-serviceLastTestedDate: 2022-04-21
+  - description: On the ‘income records’ page, users with screen readers may find it difficult to identify the type of content in the ‘record’ column. The column heading announces ‘record’ which could mislead users to think that the column contains values when it actually contains links to view records. This fails WCAG 2.1 on success criterion 2.4.6 (Headings and Labels).
+    date: 2022-08-31
+  - description: On the page where you can select a tax year to view, users with screen readers may find it difficult to understand the content of the page. This is because the language has been set to Welsh when the user will expect the page to be read in English. This fails WCAG 2.1 on success criterion 3.1.1 (Language of Page).
+    date: 2022-08-31
+  - description: On the page where you view an income record, users with screen readers may find it difficult to understand the structure of the page. This is because incorrect heading levels have been used in the table. This fails WCAG 2.1 on success criterion 1.3.1 (Info and Relationships).
+    date: 2022-08-31
+serviceLastTestedDate: 2022-07-22
 statementVisibility: public
 statementCreatedDate: 2022-04-26
-statementLastUpdatedDate: 2022-04-26
+statementLastUpdatedDate: 2022-07-27
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Edinburgh
 liveOrClassic: Live Services - Edinburgh
