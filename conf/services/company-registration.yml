@@ -1,0 +1,35 @@
+serviceName: Set up a limited company and register for Corporation Tax
+serviceDescription: The Company Registration Service is to register your company with Companies House. You will be registered for Corporation Tax at the same time. You’ll get a ‘certificate of incorporation’. This confirms the company legally exists and shows the company number and date of formation. You can also use this service to register for PAYE to tell HMRC you’re employing staff (including yourself if you’re the only director) or continue an application if you’ve already started registering.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-your-company
+contactFrontendServiceId: companyregitration
+complianceStatus: partial
+accessibilityProblems:
+  - The menu does not behave as expected when navigating iOS.
+  - The colour contrast fails to meet WCAG 2.1 AA guidelines for contract minimum.
+milestones:
+  - description: The legend for the date inputs is unclear for screen reader users. This means screen reader users do not receive the information contained in the visible label.
+    date: 2022-01-28
+  - description: When an error is committed in the form field, the error handling fails to meet WCAG 2.1 guidelines for error identification.
+    date: 2022-01-28
+  - description: The menu does not behave as expected when navigating using iOS. Screen reader users may find this disorientating as there is no audible cue to announce that the menu has expanded and users are unable to access the ‘Sign in’ link or go back to the ‘Menu’ link as it disappears.
+    date: 2022-01-28
+  - description: An invalid role has been assigned to the list element. This issue may affect how screen reading software reads the list as the list has been structured incorrectly.
+    date: 2022-01-28
+  - description: The colour contrast fails to meet WCAG 2.1 AA guidelines for contrast minimum. This issue could affect low-vision users navigating the service who may have difficulty in distinguishing the white link text against the background colour. To meet AA guidelines, the contrast ratio should be at least 4.5.1 for regular sized text (it is currently 1.6:1).
+    date: 2022-01-28
+  - description: When a link receives focus it fails to meet WCAG AA guidelines for contrast minimum. To meet AA guidelines to contrast ratio should be at least 4.3.1 for regular sized text (it is currently 1.6:1).
+    date: 2022-01-28
+  - description: An input label is non-descriptive and screen reader users navigating the input page, using the form fields dialog list may find difficulty in understanding the purpose of the input field.
+    date: 2022-01-28
+  - description: When the page was set to reflow settings (1280 CSS pixels wide at 400% zoom), the text adjacent to the radio button spills off the page. This issue may affect low-vision users who use reflow settings to view web pages from being able to clearly read the content.
+    date: 2022-01-28
+  - description: The legend for the date inputs is unclear for screen reader users. This means screen reader users do not receive the information contained in the visible label which instructs the user.
+    date: 2022-01-28
+serviceLastTestedDate: 2021-08-31
+statementVisibility: public
+statementCreatedDate: 2021-11-25
+statementLastUpdatedDate: 2022-09-05
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+typeOfService: Public beta
