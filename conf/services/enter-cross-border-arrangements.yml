@@ -3,17 +3,17 @@ serviceName: Disclose cross-border arrangements for DAC6
 serviceHeaderName: Disclose cross-border arrangements for DAC6
 serviceDescription: This service informs Users how to disclose a cross-border arrangement (DAC6) to HMRC via a file upload process.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /disclose-cross-border-arrangements/upload
+serviceUrl: /disclose-cross-border-arrangements/manual
 contactFrontendServiceId: DAC6
 complianceStatus: partial
 accessibilityProblems:
-  - File re-direct may not be picked up by screen readers
+  - Some date error messages have issues
 milestones:
-  - description: In some instances, a service page change was not being announced by screenreaders. This does not meet WCAG 3.2.5 change on request.
-    date: 2022-03-01
-serviceLastTestedDate: 2021-07-12
+  - description: In some instances, error messages for dates could cause issues. This does not meet WCAG 3.3.1 error identification.
+    date: 2023-03-31
+serviceLastTestedDate: 2021-10-08
 statementVisibility: public
-statementCreatedDate: 2021-09-14
+statementCreatedDate: 2022-09-15
 statementLastUpdatedDate: 2022-09-15
 
 businessArea: Borders & Trade
