@@ -1,7 +1,7 @@
 serviceName: Disclose cross-border arrangements for DAC6
 
 serviceHeaderName: Disclose cross-border arrangements for DAC6
-serviceDescription: This service informs Users how to disclose a cross-border arrangement (DAC6) to HMRC via a file upload process.
+serviceDescription: This service informs Users how to disclose a cross-border arrangement (DAC6) to HMRC via a user interface.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /disclose-cross-border-arrangements/manual
 contactFrontendServiceId: DAC6
