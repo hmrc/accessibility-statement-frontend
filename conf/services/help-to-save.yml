@@ -1,0 +1,14 @@
+serviceName: Help to Save
+serviceDescription: |
+  Help to Save is a type of savings account. It is backed by the government so all savings in the scheme are secure. It allows certain people entitled to Working Tax Credit or receiving Universal Credit to get a bonus of 50p for every £1 they save over 4 years.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /help-to-save
+contactFrontendServiceId: help-to-save
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2022-09-20
+statementLastUpdatedDate: 2022-09-20
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services

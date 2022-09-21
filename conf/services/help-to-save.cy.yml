@@ -1,0 +1,14 @@
+serviceName: Cymorth i Gynilo
+serviceDescription: |
+  Math o gyfrif cynilo yw Cymorth i Gynilo. Mae wedi’i gefnogi gan y Llywodraeth sy’n golygu bod yr holl gynilion yn y cynllun yn ddiogel. Mae’n rhoi cyfle i rai pobl sydd ag hawl i gael Credyd Treth Gwaith, neu sy’n cael Credyd Cynhwysol, gael bonws o 50c am bob £1 y maent yn ei chynilo dros 4 blynedd.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /help-to-save
+contactFrontendServiceId: help-to-save
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2022-09-20
+statementLastUpdatedDate: 2022-09-20
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
