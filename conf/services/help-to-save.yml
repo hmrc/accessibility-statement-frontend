@@ -5,9 +5,9 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /help-to-save
 contactFrontendServiceId: help-to-save
 complianceStatus: noncompliant
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2022-09-20
-statementLastUpdatedDate: 2022-09-20
+statementLastUpdatedDate: 2022-09-23
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
