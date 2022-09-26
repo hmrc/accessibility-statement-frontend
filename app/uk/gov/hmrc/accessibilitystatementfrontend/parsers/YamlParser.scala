@@ -36,7 +36,8 @@ class YamlParser[T: Decoder] extends Logging {
       s"Parsing YAML source file for source: ${statementSource.filename}"
     )
 
-    val parsedYaml = yamlAsString(statementSource.source).flatMap(parse)
+    val maybeSource = Try(Source.fromResource(statementSource.filename)).toEither
+    val parsedYaml  = maybeSource.flatMap(yamlAsString).flatMap(parse)
 
     parsedYaml match {
       case Right(parsed) =>
