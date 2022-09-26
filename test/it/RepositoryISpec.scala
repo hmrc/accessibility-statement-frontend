@@ -29,7 +29,7 @@ class RepositoryISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite
     "instantiate without error" in {
       val repository = Try(app.injector.instanceOf[AccessibilityStatementsRepo])
 
-      repository should be a 'success
+      repository.isSuccess should be(true)
     }
   }
 }

@@ -62,7 +62,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
       val statementTry: Try[AccessibilityStatement] =
         Try(statementParser.parse(minimalPassingServiceYAML).valueOr(throw _))
 
-      statementTry should be a 'success
+      statementTry.isSuccess should be(true)
     }
 
     "validate businessArea field values" in new Context {
@@ -76,7 +76,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         HMRCExternalCabinetOffice,
         ValuationOfficeAgency
       ).foreach { propertyValue =>
-        withYAMLFieldProperty("businessArea", propertyValue.toString) should be a 'success
+        withYAMLFieldProperty("businessArea", propertyValue.toString).isSuccess should be(true)
       }
     }
 
@@ -90,7 +90,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         DDCYorkshire,
         NoDDCLocation
       ).foreach { propertyValue =>
-        withYAMLFieldProperty("ddc", propertyValue.toString) should be a 'success
+        withYAMLFieldProperty("ddc", propertyValue.toString).isSuccess should be(true)
       }
     }
 
@@ -102,7 +102,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         LiveServicesTelford,
         LiveServicesWorthing
       ).foreach { propertyValue =>
-        withYAMLFieldProperty("liveOrClassic", propertyValue.toString) should be a 'success
+        withYAMLFieldProperty("liveOrClassic", propertyValue.toString).isSuccess should be(true)
       }
     }
 
@@ -112,7 +112,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         LiveServicesType,
         PublicBetaType
       ).foreach { propertyValue =>
-        withYAMLFieldProperty("typeOfService", propertyValue.toString) should be a 'success
+        withYAMLFieldProperty("typeOfService", propertyValue.toString).isSuccess should be(true)
       }
     }
 
@@ -122,7 +122,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         Draft,
         Archived
       ).foreach { propertyValue =>
-        withYAMLFieldProperty("statementVisibility", propertyValue.toString) should be a 'success
+        withYAMLFieldProperty("statementVisibility", propertyValue.toString).isSuccess should be(true)
       }
     }
 
@@ -132,7 +132,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         PartialCompliance,
         NoCompliance
       ).foreach { propertyValue =>
-        withYAMLFieldProperty("complianceStatus", propertyValue.toString) should be a 'success
+        withYAMLFieldProperty("complianceStatus", propertyValue.toString).isSuccess should be(true)
       }
     }
 
@@ -143,7 +143,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         Ios,
         Android
       ).foreach { propertyValue =>
-        withYAMLFieldProperty("statementType", propertyValue.toString) should be a 'success
+        withYAMLFieldProperty("statementType", propertyValue.toString).isSuccess should be(true)
       }
     }
 
@@ -180,7 +180,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         Try(statementParser.parseFromSource(source).valueOr(throw _))
 
       s"enforce a correctly formatted accessibility statement yaml file for $service" in {
-        statementTry should be a 'success
+        statementTry.isSuccess should be(true)
       }
 
       s"enforce statement not contain missing milestones for $service" in {

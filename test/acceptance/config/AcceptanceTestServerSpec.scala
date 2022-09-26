@@ -43,13 +43,13 @@ class AcceptanceTestServerSpec
     finally con.disconnect()
   }
 
-  override def beforeAll() {
+  override def beforeAll(): Unit = {
     val connectException =
       the[ConnectException] thrownBy getTestPageResponseCode
     connectException.getMessage should include(expectedFailureMessage)
   }
 
-  override def afterAll() {
+  override def afterAll(): Unit = {
     val connectException =
       the[ConnectException] thrownBy getTestPageResponseCode
     connectException.getMessage should include(expectedFailureMessage)

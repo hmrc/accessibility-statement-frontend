@@ -40,7 +40,7 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
     "return a list of services" in {
       val servicesFinder = buildServicesFinder("fixtures/services")
 
-      servicesFinder.findAll should equal(
+      servicesFinder.findAll() should equal(
         Seq("service-1", "service-2", "service-3")
       )
     }
@@ -48,7 +48,7 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
     "generate a list of services including Welsh language statements" in {
       val servicesFinder = buildServicesFinder("fixtures/services-with-welsh")
 
-      servicesFinder.findAll should equal(
+      servicesFinder.findAll() should equal(
         Seq("service-1", "service-2.cy", "service-2", "service-3")
       )
     }
@@ -56,7 +56,7 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
     "ignore any directories" in {
       val servicesFinder = buildServicesFinder("fixtures/services-with-subdirs")
 
-      servicesFinder.findAll should equal(
+      servicesFinder.findAll() should equal(
         Seq("service-1", "service-2", "service-3")
       )
     }
@@ -66,7 +66,7 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
       val servicesFinder =
         buildServicesFinder("fixtures/services-suffix", mockLogger)
 
-      servicesFinder.findAll should equal(Seq("service-1", "service-2"))
+      servicesFinder.findAll() should equal(Seq("service-1", "service-2"))
       verify(mockLogger).warn(
         contains("service-3.ymls contains illegal characters")
       )(any())
@@ -77,7 +77,7 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
       val servicesFinder =
         buildServicesFinder("fixtures/services-illegal-characters", mockLogger)
 
-      servicesFinder.findAll should equal(Seq.empty)
+      servicesFinder.findAll() should equal(Seq.empty)
       verify(mockLogger).warn(
         contains("Service-7!*-.yml contains illegal characters")
       )(any())
@@ -91,7 +91,7 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
       val servicesFinder =
         buildServicesFinder("fixtures/services-not-a-directory", mockLogger)
 
-      servicesFinder.findAll should equal(Seq.empty)
+      servicesFinder.findAll() should equal(Seq.empty)
       verify(mockLogger).error(
         contains(
           "Services directory fixtures/services-not-a-directory is not a directory"
@@ -104,7 +104,7 @@ class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with Mockito
     "return a list of services when services directory path has spaces in it" in {
       val servicesFinder = buildServicesFinder("fixtures/services is a valid directory")
 
-      servicesFinder.findAll should equal(
+      servicesFinder.findAll() should equal(
         Seq("service-1", "service-2", "service-3")
       )
     }

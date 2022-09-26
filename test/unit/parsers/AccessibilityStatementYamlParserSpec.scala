@@ -24,7 +24,7 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, VOA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
-import scala.io.Source
+import java.io.FileNotFoundException
 
 class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers with EitherValues {
   private val parser = new AccessibilityStatementParser
@@ -497,12 +497,11 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
     }
 
     "return a wrapped error if the file is not found" in {
-      val filename     = "non-existent-service.yml"
       val servicesYaml =
-        StatementSource(Source.fromResource(filename), filename)
+        StatementSource("non-existent-service.yml")
       val parsed       = parser.parseFromSource(servicesYaml)
-      parsed.isLeft                                        shouldBe true
-      parsed.left.value.isInstanceOf[NullPointerException] shouldBe true
+      parsed.isLeft                                         shouldBe true
+      parsed.left.value.isInstanceOf[FileNotFoundException] shouldBe true
     }
   }
 }

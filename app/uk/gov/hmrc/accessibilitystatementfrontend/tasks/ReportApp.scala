@@ -24,6 +24,6 @@ class ReportApp[T <: ReportTask: ClassTag] extends App {
   val app: Application = new GuiceApplicationBuilder().build()
   val task             = app.injector.instanceOf[T]
 
-  task.generate(args)
+  task.generate(args.toIndexedSeq)
   app.stop()
 }
