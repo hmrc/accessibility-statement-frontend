@@ -19,7 +19,7 @@ package acceptance.specs
 import acceptance.pages.{FullyAccessibleStatementPage, NonAccessibleStatementPage, PartiallyAccessibleStatementPage}
 import org.openqa.selenium.By
 
-import collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {
   Feature("Statement page") {
