@@ -29,6 +29,7 @@ import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import java.io.File
+import java.net.URLDecoder
 import scala.util.Try
 
 class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
@@ -221,7 +222,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
 
     val servicesDirectoryPath =
       new File(
-        getClass.getClassLoader.getResource(appConfig.servicesDirectory).getPath
+        URLDecoder.decode(getClass.getClassLoader.getResource(appConfig.servicesDirectory).getPath, "UTF-8")
       )
     val fileNames             =
       servicesDirectoryPath
