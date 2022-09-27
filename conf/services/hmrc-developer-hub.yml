@@ -7,34 +7,43 @@ serviceUrl: /api-documentation
 contactFrontendServiceId: hmrc-developer-hub
 complianceStatus: partial
 accessibilityProblems:
- - Non-descriptive radio buttons - There are several radio buttons that were not descriptive of what the user would be subscribing to.
- - Skip Links - Skip link to enable users to skip to the relevant content on the page did not function.
- - List Items - There was a list present that had not been marked up as a list.
- - Focus Order - When a user chose to add another Client Secret, focus was returned to the top of the page.
- - Page Titles - The page titles and <h1> did not update as the user travels through the 'delete client' section.
- - Time-out - Users were timed out of the service.
- - Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
+- List Items - some lists have are not marked up as a list.
+- Ungrouped content - no grouping technique used to give radio buttons more context.
+- Tables - some table markups are challenging to understand for screen reader users.
+- Unlabelled radio button on the 'identify your organisation' page, part of the production credentials journey.
+- Colours of non-text elements - some colours used for styling focus indication did not pass the expected ratio.
+- Skip to content link does not function as expected on the 'Hello World API' documentation page.
+- Heading structure - some visual headers are not marked up correctly.
+- The combination of colours used in parts of the service does not meet the required minimum contrast ratio.
+- Image alt text needs improvement on the 'user restricted endpoints' page.
+- Content on the 'manage API subscriptions' page required horizontal scrolling.
 
 milestones:
-- description: Non-descriptive radio buttons - There are several radio buttons that were not descriptive of what the user would be subscribing to.
+- description: List Items - some lists have are not marked up as a list.
   date: 2023-03-31
-- description: Skip Links - Skip link to enable users to skip to the relevant content on the page did not function.
+- description: Ungrouped content - no grouping technique used to give radio buttons more context.
   date: 2023-03-31
-- description: List Items - There was a list present that had not been marked up as a list.
+- description: Tables - some table markups are challenging to understand for screen reader users.
   date: 2023-03-31
-- description: Focus Order - When a user chose to add another Client Secret, focus was returned to the top of the page.
+- description: Unlabelled radio button on the 'identify your organisation' page, part of the production credentials journey.
   date: 2023-03-31
-- description: Page Titles - The page titles and <h1> did not update as the user travels through the 'delete client' section.
+- description: Colours of non-text elements - some colours used for styling focus indication did not pass the expected ratio.
   date: 2023-03-31
-- description: Time-out - Users were timed out of the service.
+- description: Skip to content link does not function as expected on the 'Hello World API' documentation page.
   date: 2023-03-31
-- description: Colours of non-text elements - There were some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
+- description: Heading structure - some visual headers are not marked up correctly.
+  date: 2023-03-31
+- description: The combination of colours used in parts of the service does not meet the required minimum contrast ratio.
+  date: 2023-03-31
+- description: Image alt text needs improvement on the 'user restricted endpoints' page.
+  date: 2023-03-31
+- description: Content on the 'manage API subscriptions' page required horizontal scrolling.
   date: 2023-03-31
 
-serviceLastTestedDate: 2019-08-01
+serviceLastTestedDate: 2022-07-09
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2022-04-05
+statementLastUpdatedDate: 2022-08-12
 
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Yorkshire
