@@ -17,9 +17,8 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.config
 
 import javax.inject.{Inject, Singleton}
-import scala.io.Source
 
-case class StatementSource(source: Source, filename: String)
+case class StatementSource(filename: String)
 
 @Singleton
 case class SourceConfig @Inject() (appConfig: AppConfig) {
@@ -27,6 +26,6 @@ case class SourceConfig @Inject() (appConfig: AppConfig) {
 
   def statementSource(service: String): StatementSource = {
     val filename = s"$servicesDirectory/$service.yml"
-    StatementSource(Source.fromResource(filename), filename)
+    StatementSource(filename)
   }
 }

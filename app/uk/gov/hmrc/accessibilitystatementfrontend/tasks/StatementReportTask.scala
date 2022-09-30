@@ -96,10 +96,10 @@ class StatementReportTask @Inject() (
       statementTemplate.toString,
       getFirstDayOfMonth(currentDate),
       getYear(currentDate),
-      businessArea.getOrElse("").toString,
-      ddc.getOrElse("").toString,
-      liveOrClassic.getOrElse("").toString,
-      typeOfService.getOrElse("").toString,
+      businessArea.map(_.toString).getOrElse(""),
+      ddc.map(_.toString).getOrElse(""),
+      liveOrClassic.map(_.toString).getOrElse(""),
+      typeOfService.map(_.toString).getOrElse(""),
       isInStatementService
     )
   }

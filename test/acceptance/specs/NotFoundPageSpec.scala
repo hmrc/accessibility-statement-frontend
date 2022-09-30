@@ -24,7 +24,7 @@ class NotFoundPageSpec extends BaseAcceptanceSpec {
 
     Scenario("The page has the correct title") {
       Given("the user does not have welsh language selected")
-      deleteAllCookies
+      deleteAllCookies()
 
       When("the user visits a non-existent page")
       go to NotFoundPage

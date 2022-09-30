@@ -27,8 +27,6 @@ import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
-import scala.io.Source
-
 class AccessibilityStatementsRepoSpec
     extends AnyWordSpec
     with Matchers
@@ -36,22 +34,11 @@ class AccessibilityStatementsRepoSpec
     with MockitoSugar
     with BeforeAndAfterEach {
 
-  private val fooSource      =
-    StatementSource(Source.fromString("foo-source"), "services/foo-service.yml")
-  private val fooSourceWelsh = StatementSource(
-    Source.fromString("foo-source.cy"),
-    "services/foo-service.cy.yml"
-  )
-  private val barSource      =
-    StatementSource(Source.fromString("bar-source"), "services/bar-service.yml")
-  private val draftSource    = StatementSource(
-    Source.fromString("draft-source"),
-    "services/draft-source.yml"
-  )
-  private val archivedSource = StatementSource(
-    Source.fromString("archived-source"),
-    "services/archived-source.yml"
-  )
+  private val fooSource      = StatementSource("services/foo-service.yml")
+  private val fooSourceWelsh = StatementSource("services/foo-service.cy.yml")
+  private val barSource      = StatementSource("services/bar-service.yml")
+  private val draftSource    = StatementSource("services/draft-source.yml")
+  private val archivedSource = StatementSource("services/archived-source.yml")
 
   def buildAppConfig(visibilities: Set[Visibility]) = {
     val appConfig = mock[AppConfig]

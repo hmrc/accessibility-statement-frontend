@@ -45,10 +45,10 @@ class ReportSpec extends AnyWordSpec with Matchers with TryValues {
       reportTask.generate(Seq(reportFilename))
 
       val report = Source.fromFile(s"target/$reportFilename", "UTF-8")
-      val result = Try(report.getLines.toSeq)
+      val result = Try(report.getLines().toSeq)
 
-      result     should be a 'success
-      result.get should equal(
+      result.isSuccess should be(true)
+      result.get       should equal(
         Seq(
           "url\tlanguage\tserviceName\tserviceAbsoluteUrl\tcontactFrontendServiceId\tcomplianceStatus\tproblemCount\tmilestoneCount\tearliestMilestoneDate\tautomatedTestingOnly\tstatementVisibility\tserviceLastTestedDate\tstatementCreatedDate\tstatementLastUpdatedDate\tstatementType\tMonth\tYear\tBusiness Area\tDDC\tLive or Classic\ttype of Service\tIn Statement Service",
           s"https://www.qa.tax.service.gov.uk/accessibility-statement/test-service\ten\tTest (English)\thttps://www.tax.service.gov.uk/test/some.test.service\tsome.contact-frontend\t$FullCompliance\t0\t0\t1900-01-01\tfalse\t$Public\t2020-02-28\t2020-03-15\t2020-05-01\t$HMRC\t1987-04-01\t1987\t\t\t\t\tYes",
