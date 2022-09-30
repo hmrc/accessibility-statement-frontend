@@ -1,6 +1,6 @@
 serviceName: Claim back import duty and VAT
 serviceDescription: |
-  Claimants can use the service to apply to claim reimbursements on overpayments for import charges, including Customs Duties, Excise Duties, Countervailing Duties and other specific customs duties. They can use the service if the amount already paid in the import declaration is inaccurate or the import declaration was rejected so they need to claim back all or some of the amount already paid.
+  Claimants can use the service to claim back import duties, VAT and other customs charges. The service can be used if the claimant paid too much duty or VAT on goods they imported into the UK, if the goods were returned or rejected as they were damaged or not as ordered, or to claim a refund on an import security deposit or guarantee they paid to HMRC.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-back-import-duty-vat
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
