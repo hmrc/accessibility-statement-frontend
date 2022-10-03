@@ -1,0 +1,15 @@
+serviceName: Adborth
+serviceHeaderName: Adborth
+serviceDescription: Gallwch ddefnyddio’r arolwg adborth i roi gwybod i ni sut y gallwn wella ein gwasanaethau. Mae’n bosibl y byddwn yn cysylltu’r adborth a anfonwch atom â gwybodaeth arall amdanoch, fel eich rhyw a’ch oedran. Mae hyn yn ein helpu i ddeall yn well sut y gallwn wella ein gwasanaethau.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /feedback
+contactFrontendServiceId: feedback-survey
+complianceStatus: full
+serviceLastTestedDate: 2022-09-08
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2022-09-14
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Newcastle
+typeOfService: Live services
