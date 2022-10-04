@@ -1,0 +1,12 @@
+serviceName: Claim Child Benefit
+serviceHeaderName: Claim Child Benefit
+serviceDescription: Use this form to claim Child Benefit if you or your partner are responsible for a child who is under 16, or under 20 if they are in approved education or training.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /fill-online/claim-child-benefit
+contactFrontendServiceId: claim-child-benefit-frontend
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2022-10-04
+statementLastUpdatedDate: 2022-10-24
