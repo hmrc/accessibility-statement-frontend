@@ -1,6 +1,6 @@
-serviceName: Feedback
-serviceHeaderName: Feedback
-serviceDescription: You can use the feedback survey to tell us how we can make our services better. We might link the feedback you send us to other information about you, like your gender and age. This helps us to better understand how we can improve services.
+serviceName: Adborth
+serviceHeaderName: Adborth
+serviceDescription: Gallwch ddefnyddio’r arolwg adborth i roi gwybod i ni sut y gallwn wella ein gwasanaethau. Mae’n bosibl y byddwn yn cysylltu’r adborth a anfonwch atom â gwybodaeth arall amdanoch, fel eich rhyw a’ch oedran. Mae hyn yn ein helpu i ddeall yn well sut y gallwn wella ein gwasanaethau.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /feedback
 contactFrontendServiceId: feedback-survey
