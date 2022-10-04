@@ -5,17 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /invitations
 contactFrontendServiceId: AOSS
-complianceStatus: partial
-accessibilityProblems:
-  - The check your authorisation requests answer elements contain the same id attribute value.
-milestones:
-  - description: |
-      The check your authorisation requests answer elements contain the same id attribute value. This does not meet WCAG success criterion 4.1.1 (Parsing).
-    date: 2022-3-31
-serviceLastTestedDate: 2021-10-07
+complianceStatus: full
+serviceLastTestedDate: 2022-07-28
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-12-13
+statementLastUpdatedDate: 2022-10-04
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic:

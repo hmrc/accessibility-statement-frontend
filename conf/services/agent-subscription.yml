@@ -5,33 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-subscripion/start
 contactFrontendServiceId: AOSS
-complianceStatus: partial
-accessibilityProblems:
-  - Visual headings are present however the heading structure is not programmatically determined.This means that screen reader users may be unable to identify the structure and relationship of the proceeding page content.
-  - The ‘Select yes if this is your business’ error summary skip link does not link users to the corresponding input field. This means that users are unable to skip directly to the input field where and validation error has occurred.
-  - A visually hidden link element related to ‘Government Gateway user IDs entered’ receives keyboard focus; however, the link does not become visible when in focus. This means that some users may be unable to determine where their focusis on the pagewhen navigatingvia keyboard only.
-  - Some users struggled to read the text of some interactive elements due to the low contrastof foreground and background colours.
-  - Although the ‘LLP’ acronym is presented in brackets adjacent to its expanded form on the ‘What type of business are you?’ question page; some people may struggle to remember its expanded form as they continue progress through the process of ages.This means that users who are unfamiliar or do not remember the expanded form of the acronym may not understand its purpose or meaning.
-milestones:
-  - description: |
-      Visual headings are present however the heading structure is not programmatically determined.This means that screen reader users may be unable to identify the structure and relationship of the proceeding page content. This doesn’t meet WCAG 2.1 success criterion 1.3.1 (Info and Relationships).
-    date: 2022-03-31
-  - description: |
-      The ‘Select yes if this is your business’ error summary skip link does not link users to the corresponding input field. This means that users are unable to skip directly to the input field where and validation error has occurred. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (Bypass Blocks).
-    date: 2022-03-31
-  - description: |
-      A visually hidden link element related to ‘Government Gateway user IDs entered’ receives keyboard focus; however, the link does not become visible when in focus. This means that some users may be unable to determine where their focusis on the pagewhen navigatingvia keyboard only. This doesn’t meet WCAG 2.1 success criterion 2.4.3 (Focus Order).
-    date: 2022-03-31
-  - description: |
-      Some users struggled to read the text of some interactive elements due to the low contrastof foreground and background colours. his doesn’t meet WCAG 2.1 success criterion 1.4.6 (Contrast)
-    date: 2022-03-31
-  - description: |
-      Although the ‘LLP’ acronym is presented in brackets adjacent to its expanded form on the ‘What type of business are you?’ question page; some people may struggle to remember its expanded form as they continue progress through the process of ages.This means that users who are unfamiliar or do not remember the expanded form of the acronym may not understand its purpose or meaning. This doesn’t meet WCAG 2.1 success criterion 3.1.4 (Abbreviations).
-    date: 2022-03-31
-serviceLastTestedDate: 2021-10-07
+complianceStatus: full
+serviceLastTestedDate: 2022-07-28
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2021-12-13
+statementLastUpdatedDate: 2022-10-04
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic:

@@ -5,29 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-mapping
 contactFrontendServiceId: AOSS
-complianceStatus: partial
-accessibilityProblems:
-  - Nid yw’r rhestr o elfennau iaith heb drefn ym mhennyn y dudalen wedi’i marcio’n gywir. Mae’n rhaid i’r rhestr ond cynnwys elfennau <li>, <script> neu <template> yn uniongyrchol er mwyn bod yn ddilys. Mae hyn yn golygu efallai nad yw defnyddwyr darllenydd sgrin yn mynd i ddeall strwythur/perthynas eitemau ar y rhestr yn gywir.
-  - Nid yw elfennau’r tabl sy’n dangos faint o berthnasoedd â chleientiaid a ganfuwyd yn cynnwys penynnau tabl, sy’n golygu efallai na fydd defnyddwyr yn gallu deall strwythur na pherthynas data’r tabl.
-  - Daeth y dangosydd ffocws wedi’i deilwra i’r amlwg pan fo gan ddolen ffocws y bysellfwrdd ‘Cadw ar ffurf drafft’ gyferbyniad lliw annigonol o oddeutu 1.04:1. Y gymhareb ofynnol ddisgwyliedig o ran cyferbyniad graffeg ystyrlon yw 3:1.
-  - Roedd rhai defnyddwyr yn cael anhawster darllen y testun awgrym ‘Er enghraifft, XXXX-XXXX-1234’ oherwydd cyferbyniad isel lliwiau’r blaendir a’r cefndir.
-milestones:
-  - description: |
-      Nid yw’r rhestr o elfennau iaith heb drefn ym mhennyn y dudalen wedi’i marcio’n gywir. Mae’n rhaid i’r rhestr ond cynnwys elfennau <li>, <script> neu <template> yn uniongyrchol er mwyn bod yn ddilys. Mae hyn yn golygu efallai nad yw defnyddwyr darllenydd sgrin yn mynd i ddeall strwythur/perthynas eitemau ar y rhestr yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Nid yw elfennau’r tabl sy’n dangos faint o berthnasoedd â chleientiaid a ganfuwyd yn cynnwys penynnau tabl, sy’n golygu efallai na fydd defnyddwyr yn gallu deall strwythur na pherthynas data’r tabl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Daeth y dangosydd ffocws wedi’i deilwra i’r amlwg pan fo gan ddolen ffocws y bysellfwrdd ‘Cadw ar ffurf drafft’ gyferbyniad lliw annigonol o oddeutu 1.04:1. Y gymhareb ofynnol ddisgwyliedig o ran cyferbyniad graffeg ystyrlon yw 3:1. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Roedd rhai defnyddwyr yn cael anhawster darllen y testun awgrym ‘Er enghraifft, XXXX-XXXX-1234’ oherwydd cyferbyniad isel lliwiau’r blaendir a’r cefndir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.6 (Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-serviceLastTestedDate: 2021-10-07
+complianceStatus: full
+serviceLastTestedDate: 2022-07-28
 statementVisibility: public
 statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2021-12-13
+statementLastUpdatedDate: 2022-10-04
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic:

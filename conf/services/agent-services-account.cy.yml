@@ -5,21 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-services-account
 contactFrontendServiceId: AOSS
-complianceStatus: partial
-accessibilityProblems:
-  - Nid yw’r elfennau ‘Agor pob un’ a ‘Cau pob un’ sy’n gysylltiedig â chydrannau’r acordion yn ddigon disgrifiadol i ddefnyddwyr darllenwyr sgrin nodi’r hyn y maent yn ymwneud â nhw wrth lywio allan o’r cyd-destun.
-  - Pan fo’r ddolen ‘Cymraeg’ yn newid lliw wrth hofran drosti gyda’r llygoden, nid oes gan yr elfennau gyferbyniad lliw digonol o 1.34:1. Y gymhareb ofynnol ddisgwyliedig o ran cyferbyniad lliw ar gyfer testun o’r maint a’r pwysau hyn yw 4.5:1. Mae hyn yn berthnasol i bob achos lle mae’r cyfuniad lliw hwn yn digwydd.
-milestones:
-  - description: |
-      Nid yw’r elfennau ‘Agor pob un’ a ‘Cau pob un’ sy’n gysylltiedig â chydrannau’r acordion yn ddigon disgrifiadol i ddefnyddwyr darllenwyr sgrin nodi’r hyn y maent yn ymwneud â nhw wrth lywio allan o’r cyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6. (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Pan fo’r ddolen ‘Cymraeg’ yn newid lliw wrth hofran drosti gyda’r llygoden, nid oes gan yr elfennau gyferbyniad lliw digonol o 1.34:1. Y gymhareb ofynnol ddisgwyliedig o ran cyferbyniad lliw ar gyfer testun o’r maint a’r pwysau hyn yw 4.5:1. Mae hyn yn berthnasol i bob achos lle mae’r cyfuniad lliw hwn yn digwydd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-02-31
-serviceLastTestedDate: 2021-10-07
+complianceStatus: full
+serviceLastTestedDate: 2022-07-28
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2021-12-13
+statementLastUpdatedDate: 2022-10-04
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic:

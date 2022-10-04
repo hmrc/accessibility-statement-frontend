@@ -5,33 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-services/apply-from-outside-uk
 contactFrontendServiceId: AOSS
-complianceStatus: partial
-accessibilityProblems:
-  - Mae’r priodoledd ‘aria-expanded’ wedi’i ddefnyddio ar elfennau blwch gwirio sy’n dangos amodoldeb, ac ni chaniateir hynny. Hefyd, nid yw defnyddwyr darllenwyr sgrin bob amser yn cael eu hysbysu pan fydd elfennau blwch gwirio sy’n dangos amodoldeb yn cael eu hehangu neu eu cwympo.
-  - Mae’r elfennau ‘Golygu’ lluosog yn cynnwys yr un gwerth priodoledd ID.
-  - Mae elfennau ateb ‘Prawf cyfeiriad masnachu’ yn cynnwys yr un gwerth priodoledd ID.
-  - Nid yw botwm ‘Cadarnhau atebion ac anfon cais’ wedi’i amlygu gan ddangosydd ffocws gweladwy pan fydd mewn ffocws. Mae hyn yn golygu y gall defnyddwyr bysellfwrdd yn unig ei chael hi'n anodd penderfynu ble mae eu ffocws ar y dudalen.
-  - Nid yw’r ‘gwiriwch yr arweiniad (yn agor mewn ffenestr neu dab newydd)’ yn ddisgrifiadol o’i gyrchfan na’i bwrpas wrth lywio allan o’r cyd-destun.
-milestones:
-  - description: |
-      Mae’r priodoledd ‘aria-expanded’ wedi’i ddefnyddio ar elfennau blwch gwirio sy’n dangos amodoldeb, ac ni chaniateir hynny. Hefyd, nid yw defnyddwyr darllenwyr sgrin bob amser yn cael eu hysbysu pan fydd elfennau blwch gwirio sy’n dangos amodoldeb yn cael eu hehangu neu eu cwympo. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) a 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2022-03-31
-  - description: |
-      Mae’r elfennau ‘Golygu’ lluosog yn cynnwys yr un gwerth priodoledd ID. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Mae elfennau ateb ‘Prawf cyfeiriad masnachu’ yn cynnwys yr un gwerth priodoledd ID. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Nid yw botwm ‘Cadarnhau atebion ac anfon cais’ wedi’i amlygu gan ddangosydd ffocws gweladwy pan fydd mewn ffocws. Mae hyn yn golygu y gall defnyddwyr bysellfwrdd yn unig ei chael hi'n anodd penderfynu ble mae eu ffocws ar y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.7 (Focus Visible) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-  - description: |
-      Nid yw’r ‘gwiriwch yr arweiniad (yn agor mewn ffenestr neu dab newydd)’ yn ddisgrifiadol o’i gyrchfan na’i bwrpas wrth lywio allan o’r cyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.9 (Link Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-03-31
-serviceLastTestedDate: 2021-10-07
+complianceStatus: full
+serviceLastTestedDate: 2022-07-28
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2021-12-13
+statementLastUpdatedDate: 2022-10-04
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic:
