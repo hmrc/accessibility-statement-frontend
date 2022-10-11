@@ -178,8 +178,8 @@ end user discovered the accessibility issue.
 
 contactFrontendServiceId helps identify your service when members of the general public report accessibility problems.
 
-If your service is already integrating with contact-frontend's *Get help with this page* form, you will find it added 
-as a querystring parameter `service` in URLs to contact-frontend.
+If your service is already integrating with contact-frontend's [Get help with a technical problem](https://www.tax.service.gov.uk/contact/report-technical-problem) 
+form, you will find it added as a querystring parameter `service` in URLs to contact-frontend.
 
 If you look in your service's frontend source code, you should see URLs constructed similar to
 
