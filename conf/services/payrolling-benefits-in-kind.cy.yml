@@ -24,7 +24,7 @@ milestones:
     date: 2022-12-09
   - description: Ar y dudalen gwblhau, mae’n bosibl y bydd defnyddwyr darllenwyr sgrin yn ei chael yn anodd defnyddio’r cysylltiad. Mae hyn oherwydd nad oes gan y cysylltiad ddisgrifiad addas, ac nad yw’n hysbysu defnyddwyr y bydd y cysylltiad yn agor tudalen newydd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2022-12-09
-serviceLastTestedDate: 2020-01-15
+serviceLastTestedDate: 2022-06-22
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2022-09-29

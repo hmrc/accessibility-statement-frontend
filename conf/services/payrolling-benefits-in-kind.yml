@@ -24,7 +24,7 @@ milestones:
   - description: On the completion page, users with screen readers may find it difficult to use the link. This is because it is missing a suitable description and it doesn’t inform users that it will open a new page. This fails WCAG 2.1 - Headings and labels.
     date: 2022-12-09
 
-serviceLastTestedDate: 2020-01-15
+serviceLastTestedDate: 2022-06-22
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2022-09-29
