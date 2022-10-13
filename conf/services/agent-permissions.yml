@@ -21,7 +21,7 @@ milestones:
     date: 2022-12-31
   - description: On the 'Manage clients in this group' page, no error message is displayed if the user does not enter or select a search filter. This fails WCAG 2.1 success criterion 3.3.1 Error Identification
     date: 2022-12-31
-  - description: On the 'Welcome to your agent services account' page and the pages with a sortable table, some copy remains in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2: Language of Parts
+  - description: On the 'Welcome to your agent services account' page and the pages with a sortable table, some copy remains in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2 Language of Parts
     date: 2023-01-31
 serviceLastTestedDate: 2022-10-07
 statementVisibility: public
