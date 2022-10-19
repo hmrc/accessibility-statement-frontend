@@ -7,6 +7,6 @@ contactFrontendServiceId: claim-child-benefit
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
 complianceStatus: noncompliant
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2022-10-04
 statementLastUpdatedDate: 2022-10-24
