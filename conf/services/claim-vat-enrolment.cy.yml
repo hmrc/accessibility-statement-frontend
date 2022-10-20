@@ -1,0 +1,15 @@
+serviceName: Ymrestru ar gyfer Hawlio TAW
+serviceHeaderName: Ymrestru ar gyfer Hawlio TAW
+serviceDescription: Mae’r gwasanaeth Ymrestru ar gyfer Hawlio TAW yn galluogi busnesau sydd wedi’u cofrestru ar gyfer TAW i ychwanegu TAW at eu Cyfrif Treth Busnes, unwaith y byddant wedi rhoi rhif cofrestru TAW dilys.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /claim-vat-enrolment
+contactFrontendServiceId: MTDVAT
+complianceStatus: full
+serviceLastTestedDate: 2021-02-04
+statementVisibility: public
+statementCreatedDate: 2022-10-19
+statementLastUpdatedDate: 2022-10-19
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+liveOrClassic:
+typeOfService: Public beta
