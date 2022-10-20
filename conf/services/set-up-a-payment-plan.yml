@@ -1,5 +1,5 @@
 serviceName: Set Up a Payment Plan
-serviceDescription: Set up a payment plan is a service that provides employers with the option to pay their PAYE liability via affordable direct debit payments. The system displays what they owe and then gives them options to pay this off in scheduled instalments.
+serviceDescription: Set up a payment plan is a service that provides tax payers the ability to pay their tax liability via affordable direct debit payments. The system displays what they owe and then gives them options to pay this off in scheduled instalments.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /set-up-a-payment-plan
 contactFrontendServiceId: essttp-frontend
