@@ -1,0 +1,20 @@
+serviceName: cofrestru cyflogwr ar gyfer TWE
+serviceDescription: Mae’r Gwasanaeth Cofrestru Cwmnïau yn galluogi cwmnïau i gofrestru gyda Thŷ’r Cwmnïau. Mae’r mwyafrif o gwmnïau yn cael eu cofrestru ar gyfer Treth Gorfforaeth ar yr un pryd ag y maent yn cofrestru gyda Thŷ’r Cwmnïau. Gallwch hefyd ddefnyddio’r gwasanaeth hwn i gofrestru fel cyflogwr.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-for-paye
+contactFrontendServiceId: payeregistration
+complianceStatus: partial
+accessibilityProblems:
+  - Mae rhai o’r negeseuon gwall yn y gwasanaeth yn ailadroddus neu’n aneglur. Fodd bynnag, dylai’r cynnwys ychwanegol ar y sgrin ei gwneud hi’n haws deall camgymeriad.
+milestones:
+  - description: Pan fydd gwall yn cael ei wneud ar y dudalen, mae’r crynodeb o’r gwall yn cynnwys rhestr ddi-drefn. Mae’r eitem ar y rhestr sy’n cynnwys y geiriad ‘Rhowch wybod i ni os ydych yn sefydlu cwmni cyfyngedig newydd’ wedi cael rôl annilys fel ‘blwch diffinio’. Gall y broblem hon effeithio ar sut mae meddalwedd darllenydd sgrin yn darllen y rhestr, gan fod y rhestr wedi’i strwythuro’n anghywir.
+    date: 2022-01-28
+  - description: Pan fydd gwall yn cael ei wneud yn y meysydd mewnbwn ‘Yswiriant Gwladol’ ar y dudalen, mae’r cysylltiadau crynodeb gwall a’r negeseuon gwall mewnol i gyd yn cynnwys yr un wybodaeth. Gallai hyn achosi anhawster i ddefnyddwyr darllenydd sgrin nad ydynt efallai’n gallu gwahaniaethu rhwng pob gwall os oes nifer o wallau’n bresennol yn y meysydd mewnbwn. Mae’r broses o ymdrin â gwallau hefyd yn methu â bodloni canllawiau System Ddylunio GOV.UK.
+    date: 2022-01-28
+serviceLastTestedDate: 2021-08-31
+statementVisibility: public
+statementCreatedDate: 2021-11-25
+statementLastUpdatedDate: 2022-10-07
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+typeOfService: Public beta
