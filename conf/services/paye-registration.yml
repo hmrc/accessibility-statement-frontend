@@ -3,18 +3,11 @@ serviceDescription: The Company Registration Service enables companies to regist
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /register-for-paye
 contactFrontendServiceId: payeregistration
-complianceStatus: partial
-accessibilityProblems:
-  - Some of the error messages within the service are repetitive or unclear, however the additional content on the screen should make it easier to understand a mistake.
-milestones:
-  - description: When an error is committed on the page the error summary contains an unordered list, the list item which contains the ‘Tell us if you’re setting up a new limited company’ has been given an invalid role of ‘tooltip’. This issue may affect how screen reading software reads the list as the list has been structured incorrectly.
-    date: 2022-01-28
-  - description: When an error is committed in the ‘National Insurance’ input fields on the page, the error summary links and inline error messages all contain the same information. This may present difficulty to screen reader users who may be unable to distinguish between each error if multiple errors are present in the input fields. The error handling also fails to meet GOV.UK Design System guidelines.
-    date: 2022-01-28
-serviceLastTestedDate: 2021-08-31
+complianceStatus: full
+serviceLastTestedDate: 2022-11-01
 statementVisibility: public
 statementCreatedDate: 2021-11-25
-statementLastUpdatedDate: 2022-10-07
+statementLastUpdatedDate: 2022-11-09
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 typeOfService: Public beta
