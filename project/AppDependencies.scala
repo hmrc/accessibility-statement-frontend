@@ -4,7 +4,7 @@ object AppDependencies {
   private val circeVersion = "0.14.1"
 
   val compile = Seq(
-    "uk.gov.hmrc" %% "bootstrap-frontend-play-28" % "6.2.0",
+    "uk.gov.hmrc" %% "bootstrap-frontend-play-28" % "7.11.0",
     "uk.gov.hmrc" %% "play-frontend-hmrc"         % "3.24.0-play-28",
     "io.circe"    %% "circe-core"                 % circeVersion,
     "io.circe"    %% "circe-generic"              % circeVersion,
