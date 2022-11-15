@@ -8,7 +8,7 @@ contactFrontendServiceId: child-benefit-view-frontend
 complianceStatus: full
 AutomatedTestingOnly: true
 serviceLastTestedDate: 2022-10-24
-statementVisibility: private
+statementVisibility: draft
 statementCreatedDate: 2022-11-14
 statementLastUpdatedDate: 2022-11-15
 ddc: DDC NewCastle
