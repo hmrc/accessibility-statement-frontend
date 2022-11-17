@@ -1,11 +1,33 @@
 serviceName: Plastic Packaging Tax
 serviceDescription: |
-  This service lets you register for the Plastic Packaging Tax, submit quarterly returns, pay your liability and manage your account.
-serviceDomain: www.tax.service.gov.uk
+  You can use this service to register for Plastic Packaging Tax, manage your Plastic Packaging Tax account, submit or amend a return and make a payment.
+serviceDomain: www.gov.uk
 serviceUrl: /plastic-packaging-tax
 contactFrontendServiceId: plastic-packaging-tax
-complianceStatus: full
-serviceLastTestedDate: 2021-05-11
-statementVisibility: draft
-statementCreatedDate: 2021-05-11
-statementLastUpdatedDate: 2021-05-11
+complianceStatus: partial
+accessibilityProblems:
+  - Some headings do not have the correct mark up. Screen-reader users may struggle to understand the purpose of some headings and navigate easily
+  - Screen-reader users might not always be able to understand which buttons relate to which questions
+  - Some buttons need better descriptions so that screen-reader users can understand what the button relates to and what action the button carries out
+  - Some error messages could be more descriptive to help users correct errors
+milestones:
+  - description: |
+      The purpose of text acting as a heading is indicated via visual styling alone and is not programmatically determinable. This doesn’t meet WCAG 2.1 success criterion 1.3.1 Info and Relationships. This will be fixed by ensuring semantic markup is used where required.
+    date: 2022-12-31
+  - description: |
+      Content was not grouped in a fieldset and legend. This means users of screen reading assistive technologies are not provided with a clear relation and instruction. This doesn’t meet WCAG 2.1 success criterion 1.3.1 Info and Relationships and 3.3.2 Labels or Instructions. This will be fixed by ensuring that content is grouped within a fieldset and legend.
+    date: 2022-12-31
+  - description: |
+      A button is present that has insufficient description to enable screen reader users to easily determine the button’s purpose and what it relates to. This doesn’t meet WCAG 2.1 success criterion 2.4.6 Headings and Labels. This will be fixed by adding additional text to the button so that its purpose is clear to screen readers.
+    date: 2022-12-31
+  - description: |
+      Although the presence of an error is described in text, the presentation of the error message makes it difficult for some users to rectify the error. This doesn’t meet WCAG 2.1 success criterion 3.3.3 Error Suggestion. This will be fixed by updating the error messages to include more helpful information.
+    date: 2022-12-31
+serviceLastTestedDate: 2022-09-22
+statementVisibility: public
+statementCreatedDate: 2022-09-28
+statementLastUpdatedDate: 2022-09-28
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta

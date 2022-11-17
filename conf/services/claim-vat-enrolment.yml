@@ -1,0 +1,15 @@
+serviceName: Claim VAT Enrolment
+serviceHeaderName: Claim VAT Enrolment
+serviceDescription: The Claim VAT Enrolment service enables VAT-registered businesses to add VAT to their Business Tax Account, once they've provided a valid VAT registration number.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /claim-vat-enrolment
+contactFrontendServiceId: MTDVAT
+complianceStatus: full
+serviceLastTestedDate: 2021-02-04
+statementVisibility: public
+statementCreatedDate: 2022-10-19
+statementLastUpdatedDate: 2022-10-19
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+liveOrClassic:
+typeOfService: Public beta

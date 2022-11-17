@@ -1,0 +1,15 @@
+serviceName: Bwrw golwg dros gofnodion incwm a threth cleientiaid
+serviceHeaderName: Bwrw golwg dros gofnodion incwm a threth cleientiaid
+serviceDescription: Mae’r gwasanaeth Bwrw golwg dros gofnodion incwm a threth cleientiaid yn caniatáu i asiantau treth awdurdodedig fwrw golwg dros gofnodion incwm cyflogaeth a phensiwn eu cleientiaid, ynghyd ag unrhyw ad-daliadau treth incwm a benthyciadau myfyrwyr cysylltiedig.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-history/select-client
+contactFrontendServiceId: IRV
+complianceStatus: full
+serviceLastTestedDate: 2022-09-12
+statementVisibility: public
+statementCreatedDate: 2022-04-26
+statementLastUpdatedDate: 2022-09-28
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Edinburgh
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Public beta

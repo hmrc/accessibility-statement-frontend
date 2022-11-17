@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,13 +43,13 @@ class AcceptanceTestServerSpec
     finally con.disconnect()
   }
 
-  override def beforeAll() {
+  override def beforeAll(): Unit = {
     val connectException =
       the[ConnectException] thrownBy getTestPageResponseCode
     connectException.getMessage should include(expectedFailureMessage)
   }
 
-  override def afterAll() {
+  override def afterAll(): Unit = {
     val connectException =
       the[ConnectException] thrownBy getTestPageResponseCode
     connectException.getMessage should include(expectedFailureMessage)

@@ -5,94 +5,12 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pension-annual-allowance-calculator
 contactFrontendServiceId: pension-annual-allowance-calculator
-complianceStatus: partial
-accessibilityProblems:
-  - Page titles don’t include the service name. This does not follow HMRC's design pattern
-    and does not make it clear what service you are on when using a screen reader.
-    We will be updating these so they follow our pattern.
-  - Some of the information is read out twice by a screen reader because the designs do not follow the pattern. We will fix this so that all of the information is only read once.
-  - On one of the pages, there is a link to guidance which opens in the same tab, meaning users lose their progress.
-    We will change this so it opens in a new tab and users can carry on with the journey.
-  - On all pages, error messages are not linked to the fields they relate to. This means they will not be read by assistive technology
-    if the user moves straight to the field. We will fix this so they are all linked to the field and read out properly.
-    Users can still use the browse mode to find this information.
-milestones:
-  - description: |
-      There is extra information being read out that users should not hear when using a screen reader.
-      This fails WCAG 2.1 - Understanding Success Criterion 2.4.1 - Bypass Blocks and Understanding Success Criterion 4.1.1 - Parsing. 
-      We will fix this to remove anything that a user doesn’t need to hear.
-    date: 2021-07-31
-  - description: |
-      When there is an error on the page, we usually put the word ‘Error’ into the page title. We have not done this in the service.
-      This fails WCAG 2.1 - Understanding Success Criterion 3.3.1 - Error Identification. We will be updating our page titles to 
-      contain the word ‘Error’ when there is an error on the page.
-    date: 2021-07-31
-  - description: |
-      When there is an error, the keyboard focus is on the wrong part of the page. This makes it more difficult to work out if there has been an error.
-      This fails WCAG 2.1 - Understanding Success Criterion 3.3.1 - Error Identification. We will fix this so the error state has keyboard focus and the 
-      user knows there has been an error.
-    date: 2021-07-31
-  - description: |
-      We ask for money amounts within this service, and have not added pound signs to show that this is the currency we want users to use. 
-      This fails WCAG 2.1 - Understanding Success Criterion 3.3.2 - Labels or Instructions. 
-      We will fix this to add in pound signs so the user knows we want amounts in great british pounds.
-    date: 2021-07-31
-  - description: |
-      There are some links in the footer of the service that are not read out by a screen reader. 
-      This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 - Info and Relationships. 
-      We will fix this so that all items in the footer are read out by a screen reader.
-    date: 2021-07-31
-  - description: |
-      We have a time limit in the service before we reset all your answers for your security. We do not have a message that tells users we will do this. 
-      This fails WCAG 2.1 - F58 - Failure of Success Criterion 2.2.1 due to using server-side techniques to automatically redirect pages after a time-out 
-      and Understanding Success Criterion 2.2.6 - Timeouts. We will add a message telling users when they are going to be timed out and give the option to stay in the service.
-    date: 2021-07-31
-  - description: |
-      We have hint text to help users give the right information. This has been coded wrong so it will not be read out by a screen reader or screen magnifier. 
-      This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 - Parsing.
-      We will fix this so a screen reader can read out all hint text.
-    date: 2021-07-31
-  - description: |
-      Some of the pages in our service have checkboxes that do not have focus when using high contrast mode. This fails WCAG 2.1 - 
-      Understanding Success Criterion 2.4.7 - Focus Visible. We will fix this so the checkboxes have keyboard focus.
-    date: 2021-07-31
-  - description: |
-      On a page where we ask for a date, we use the wrong type of number input, which can cause issues when using certain devices. This fails WCAG 2.1: 
-      Understanding Success Criterion 4.1.2: Name, Role, Value. We will update this to use the right type of number input so users can give us the information without difficulty. 
-    date: 2021-07-31
-  - description: |
-      On pages where we ask for an amount of money, we currently do not show the keyboard for numbers on a mobile device. This fails WCAG 2.1 - 
-      Understanding Success Criterion 4.1.2 - Name, Role, Value. We will update the service so a user can access those pages using a number keypad on mobile devices.
-    date: 2021-07-31
-  - description: |
-      On some pages there is no hint text to help users give the right information. This fails WCAG 2.1 - Understanding Success Criterion 3.3.2 - 
-      Labels or Instructions. We will add hint text to make it clear what users need to enter.
-    date: 2021-07-31
-  - description: |
-      On some pages, when using a screen reader users are given information that should be hidden, like spaces. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 - 
-      Parsing. We will fix this so users do not hear anything that is not useful or could be confusing.
-    date: 2021-07-31
-  - description: |
-      On some pages, we have boxes to add dates, and these are not read out right by a screen reader. This fails WCAG 2.1 - Understanding Success Criterion 4.1.2 - 
-      Name, Role, Value. We will fix this so these fields are read out correctly and users know how to interact with them.
-    date: 2021-07-31
-  - description: |
-      When there is focus on fields, radios and checkboxes in the service, the colour does not meet the minimum colour contrast. This fails WCAG 2.1 - Understanding Success Criterion 1.4.3 - 
-      Contrast (Minimum). We will fix this to make it easier for users to see where the focus is on the page.
-    date: 2021-07-31
-  - description: |
-      When there is focus on errors in the service, the colour does not meet the minimum colour contrast. This fails WCAG 2.1 - Understanding Success Criterion 1.4.3 - Contrast (Minimum). 
-      We will fix this to make it easier for users to see where the focus is on the page.
-    date: 2021-07-31
-  - description: |
-      Some of our error messages do not work properly which can cause issues for users. This fails WCAG 2.1 - Understanding Success Criterion 3.3.3 - 
-      Error Suggestion. We plan to fix this to make sure all our error messages make sense to users.
-    date: 2021-07-31
-  - description: |
-      When using a screen reader, there are some extra words being read out which make it difficult to follow the information on the page. This fails WCAG 2.1 - 
-      Making the text easier to read. We will fix this so the information is easier to read and understand.
-    date: 2021-07-31
-serviceLastTestedDate: 2019-09-14
+complianceStatus: full
+serviceLastTestedDate: 2022-07-25
 statementVisibility: public
 statementCreatedDate: 2019-09-14
-statementLastUpdatedDate: 2019-09-14
+statementLastUpdatedDate: 2022-08-15
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Live services

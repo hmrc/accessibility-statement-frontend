@@ -9,89 +9,48 @@ serviceUrl: /fhdds
 contactFrontendServiceId: fulfilment-house-due-diligence-scheme
 complianceStatus: partial
 accessibilityProblems:
-  - when using a keyboard to navigate, or a screen reader you cannot skip to the main content
-  - some labels for screen readers and keyboard navigation may be missing, repeated or in the wrong order
-  - the service displays some questions only when previous ones are answered, this may cause stress for users who are unable to answer them in one go
-  - some pages can be refreshed before many users have completed tasks and with no option to continue from where they left off
-  - the timeout period for inactivity is too short, occurs without warning and does not give users the option to extend the session
-  - the service is not using GOV.UK new colour contrast changes so some features may be difficult to navigate for colour blind and low vision users
+  - users are not warned before being signed out when their session ends.
+  - on smaller screens or when zoomed there is a menu link in the header which when selected reveals the sign-out link. The appearance of the sign-out link is not announced to screen-reader users and as the sign-out link appears on the other side of the page this can also be an issue for screen-magnification users.
+  - information to assist in the filling of forms is present on pages but is not announced to screen-reader users who may be navigating by form field.
+  - on several pages more fields are revealed when selecting a particular answer and the way these are placed may result in screen-reader users not being able to work out what is being asked from the input alone.
+  - the ‘back’ link still has to be navigated by keyboard users even when using the skip to main content link.
+  - on the page ‘Are you sure you want to withdraw your application?’, the email address confirmation has a label which has the email address but not the question. The question is presented after the label. This can cause issues for screen-reader users.
+  - error messages are present on pages but are not announced to screen-reader users who may be navigating by form field.
+  - on the page ‘Application submitted’ there is a table which has been incorrectly coded so may cause issues for screen-reader users.
+  - there are some links which have been made to look like buttons but have not been made to act as buttons for keyboard users and which are not exposed as buttons to screen-reader users. Using the spacebar to action these will cause the page to scroll instead.
+  - some pages have a section of content which is revealed when actioning a link, but the content includes a link which can be focussed by a keyboard user even when the section is hidden.
+  - some pages which ask for personal information have not been set up so that you can fill them in easily using information stored in your browser.
+  - there are several places, such as the cookie banner, where colour contrast is not as good as it should be and so may cause difficulties with reading.
 milestones:
-  - description: |
-      The menu toggle sometimes disappears on a small screen.
-      Also, when JavaScript is switched off, it unnecessarily appears (as there is a single sign out link).
-      This does not meet WCAG 2.1 Reference 1.3.1 - Info and Relationships.
-    date: 2022-04-01
-  - description: |
-      Some hint text is not associated with relevant inputs in code
-      as it uses aria landmarks incorrectly.
-      This means screen readers may miss important information.
-      This does not meet WCAG 2.1 Reference 1.3.1 - Info and Relationships.
-    date: 2022-04-01
-  - description: |
-      The service displays some information, known as conditionally revealed content,
-      only when users need to see it. In some cases, multiple questions are revealed.
-      This can cause stress for users who may not be able to answer them in one go.
-      This does not meet WCAG 2.1 Reference 1.3.1 - Info and Relationships.
-    date: 2022-04-01
-  - description: |
-      The service times out too quickly and does not warn assistive technology users
-      or give them the option to extend the session.
-      Pages also refresh too quickly, with no option given to navigate easily back to where the user was in the service.
-      This does not meet WCAG 2.1 Reference 2.2.1 Timing Adjustable.
-    date: 2022-04-01
-  - description: |
-      One back link is not bypassed by a skip link.
-      This means keyboard users will have to tab through links to get to main content.
-      This does not meet WCAG 2.1 Reference 2.4.1 - Bypass Blocks.
-    date: 2022-04-01
-  - description: |
-      There are two consecutive yes/no questions, the second of which appears when the first is answered.
-      This could cause screen readers to navigate to the wrong answer and miss important information.
-    date: 2022-04-01
-  - description: |
-      Some error messages have been incorrectly labelled.
-      This stops screen readers from reading them when an input is focussed.
-      These do not meet WCAG 2.1 Reference 3.3.2 - Labels or Instructions.
-    date: 2022-04-01
-  - description: |
-      There are instances where elements have incomplete start and end tags,
-      resulting in HTML tags incorrectly appearing on pages.
-      These issues do not meet WCAG 2.1 Reference 4.1.1 - Parsing.
-    date: 2022-04-01
-  - description: |
-      A link styled as a button does not respond to the spacebar for keyboard only users.
-      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
-    date: 2022-04-01
-  - description: |
-      The service displays some information, known as conditionally revealed content,
-      only when users need to see it. In some cases, multiple questions are revealed.
-      This can cause stress for users who may not be able to answer them in one go.
-      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
-    date: 2022-04-01
-  - description: |
-      The service displays some information - known as conditionally revealed content - only when users need to see it.
-      However, some has been incorrectly added to inline radio buttons.
-      This means that users will not be able to determine which radio the information is relevant to.
-      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
-    date: 2022-04-01
-  - description: |
-      Some collapsed content contains focusable elements.
-      This means that screen readers may read content in the wrong order.
-      This does not meet WCAG 2.1 Reference 4.1.2 Name, Role, Value.
-    date: 2022-04-01
-  - description: |
-      There is no autocomplete on first and last name.
-      The attributes for telephone numbers and email addresses have not been set.
-      These issues do not meet WCAG 2.1 Reference 1.3.5 - Identify Input Purpose.
-    date: 2022-04-01
-  - description: |
-      We use colour contrast to help low vision users navigate the service,
-      however in some areas the expected colour contrast ratio of 4.5:1. was not in place.
-      There is not enough contrast between text and background for people with moderately low vision to read without contrast-enhancing technology.
-      These issues do not meet WCAG 2.1 Reference 1.4.3 - Contrast (Minimum).
-    date: 2022-04-01
+  - description: A timeout occurs without the ability for the user to extend their session. This fails WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
+    date: 2023-03-31
+  - description: The appearance of additional navigation links when actioning the menu link is not announced to assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
+    date: 2023-03-31
+  - description: The hint content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
+    date: 2023-03-31
+  - description: Several pages have conditional content which contain nested fieldsets and can cause difficulty in determining associated labels for screen-reader users. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and relationships) and 4.1.2 (Name, role, value).
+    date: 2023-03-31
+  - description: There is a global navigation link present which is not by-passed by the skip link and which is placed within the main landmark. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass blocks).
+    date: 2023-03-31
+  - description: There is content presented as a legend which is not correctly associated with the possible answers. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or instructions).
+    date: 2023-03-31
+  - description: The error content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or instructions).
+    date: 2023-03-31
+  - description: There is a table which uses a non-tabular markup instead of rows and cells. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
+    date: 2023-03-31
+  - description: Some links have been styled as buttons but do not have the correct role or event handlers to act as buttons. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
+    date: 2023-03-31
+  - description: Details components have links in their content which can be focussed when the element is in the closed state. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
+    date: 2023-03-31
+  - description: Personal contact information fields are missing autocomplete attributes. This does not meet WCAG 2.1 success criterion 1.3.5 (Identify input purpose).
+    date: 2023-03-31
+  - description: Colour contrast is below the required threshold in some places. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast - minimum).
+    date: 2023-03-31
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 serviceLastTestedDate: 2021-02-10
-statementLastUpdatedDate: 2021-04-08
-
+statementLastUpdatedDate: 2022-04-20
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta

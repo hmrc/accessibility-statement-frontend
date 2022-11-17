@@ -1,0 +1,27 @@
+serviceName: HMRC Helplines
+serviceHeaderName: HMRC Helplines
+serviceDescription: |
+  This service displays information pages for HMRC helplines
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /helpline
+contactFrontendServiceId: government-gateway-identity-verification-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - Mae’r teitl ‘Pa wasanaeth yr ydych yn ceisio cael ato?’ wedi cael ei ddefnyddio fel teitl ar gyfer sawl tudalen. Mae hyn yn ei gwneud yn anodd gwahaniaethu rhwng y tudalennau hynny.
+  - Mae’r teitl ‘Ffoniwch linell gymorth CThEM’ wedi cael ei ddefnyddio fel teitl a phennawd y dudalen. Nid yw hyn yn nodi cynnwys y dudalen yn glir.
+  - wrth newid i’r Gymraeg, mae’r ‘gwall’ copïo, sydd wedi’i guddio o’r golwg ac sy’n dechrau’r neges gwall, yn aros yn Saesneg ac ni fydd yn cael ei ynganu’n gywir gan ddarllenwyr sgrin.
+milestones:
+  - description: Mae gan fwy nag un dudalen union yr un teitlau â’i gilydd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-05-31
+  - description: Nid yw teitl a phennawd y dudalen yn nodi’r cynnwys yn glir. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) na 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-05-31
+  - description: Mae’r ‘gwall’ o ran copïo, sydd wedi’i guddio o’r golwg, yn aros yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i’w adnabod fel iaith wahanol. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 3.1.2 (Language of Parts), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-05-31
+serviceLastTestedDate: 2022-04-01
+statementVisibility: public
+statementCreatedDate: 2022-04-08
+statementLastUpdatedDate: 2022-04-08
+businessArea: Customer Services Group (CSG)
+ddc:
+liveOrClassic:
+typeOfService: Public beta

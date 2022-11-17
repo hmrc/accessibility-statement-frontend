@@ -1,57 +1,18 @@
 serviceName: Check or Update Your Medical Insurance Benefit
 serviceHeaderName: Check or update your medical insurance benefit
 serviceDescription: |
-  You can use this service to check the value of a benefit you’re currently getting, remove 
+  You can use this service to check the value of a benefit you’re currently getting, remove
   a benefit you’ve never had from an employer, and report that you’ve stopped getting a benefit.
-serviceDomain: www.tax.service.gov.uk 
+serviceDomain: www.tax.service.gov.uk
 serviceUrl: /paye/benefits/medical-benefit
 contactFrontendServiceId: medical-benefit
-complianceStatus: partial
-accessibilityProblems:
-  - On the first page of the service there are some messages we show when details have been updated. They all give the same information which can make it difficult to work out what that message relates to. We will be updating these messages to make them more helpful.
-  - On some of the pages in the service, the back links are at the bottom of the page. They also go back to the wrong page. We plan to move these links up to the top of the page to make them easier to find, and make sure they all go back to the last page the user was on. They can also use the browser back button which will take them to the right page.
-  - Some of the pages in the service need to be updated to the latest patterns. This will make them easier to read and use
-  - On some pages, we use brackets. We will be removing these to make the service more usable for screen reader users.
-milestones:
-  - description: |
-      We have buttons in the service to show you where to go next. Some of our buttons cannot be selected using a spacebar.
-      This fails WCAG 2.1 Understanding Success Criterion 2.1.1 Keyboard.
-      We plan to fix this so users can select all of the buttons using a keyboard.
-    date: 2021-07-31
-  - description: |
-      All of our pages have a page title which tells users where they are in the service.
-      Some of our page titles do not give enough information about where in the service users are. This fails WCAG 2.1
-      Understanding Success Criterion 2.4.2: Page Title.
-      We plan to make all of our page titles clear so users know where they are in the service.
-    date: 2021-07-31                   
-  - description: | 
-      On some of the pages in our service, there is a message showing when the user has updated their details.
-      This information is not currently visible as important information to a screen reader so users who are viewing this page using a screen reader might not see some of the information.
-      This fails WCAG 2.1: Understanding Success Criterion 4.1.3: Status Messages.
-      We plan to fix this to make sure all information in the service is read out by screen readers.
-    date: 2021-07-31
-  - description: |
-      When users update their details, there is a message to tell them how long this will take to show in the service. 
-      These messages are all the same, and have a visual connection to the sections, however they do not make sense out of context, so users who view the page using a screen reader will not be told what the message relates to.
-      This fails WCAG 2.1: Understanding Success Criterion 1.3.1: Info and Relationships.
-      We plan to fix this to make these messages more helpful and relate them to the information they are linked to so it’s clear what the message is about.
-    date: 2021-07-31
-  - description: |
-      There are fields in the service for telling us amounts of money. Some of these fail to make it clear what we are asking for, and the extra information we give is not linked to the field.
-      This fails WCAG 2.1: Understanding success criterion 2.4.6: Headings and Labels Level AA and Providing descriptive labels. 
-      We plan to fix this to make it clearer what we are asking users to tell us, and link all information to the field it relates to.
-    date: 2021-07-31                    
-  - description: |
-      Some pages in the service have fields that appear when a certain option is chosen.
-      Some of these fields are not picked up by screen readers and can be missed.
-      This fails WCAG 2.1: Understanding Success Criterion 3.2.1: On Focus. We plan to fix this so that users with screen readers can find all of the information in the service.
-    date: 2021-07-31                    
-  - description: |
-      We have a link to skip to the main content of the page. The skip to main content link is taking users to the wrong place.
-      This fails WCAG 2.1: Understanding Success Criterion 2.4.1: Bypass blocks.
-      We plan to fix this so the link goes to the main heading of the page.
-    date: 2021-07-31
-serviceLastTestedDate: 2020-03-27
+complianceStatus: full
+serviceLastTestedDate: 2022-06-20
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2022-07-27
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Newcastle
+typeOfService: Live services

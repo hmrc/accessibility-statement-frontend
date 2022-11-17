@@ -1,0 +1,17 @@
+serviceName: Gwneud cais am Ddyfarniad Tariffau Uwch (ATaR)
+serviceHeaderName: Gwneud cais am Ddyfarniad Tariffau Uwch (ATaR)
+serviceDescription: |
+  Mae’r gwasanaeth Gwneud cais am Ddyfarniad Tariffau Uwch (ATaR) yn caniatáu’r masnachwr i wneud cais am god nwyddau. Mae hefyd yn gallu caniatáu’r masnachwr i fwrw golwg dros statws ei gais a lawrlwytho tystysgrif.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /advance-tariff-application
+contactFrontendServiceId: AdvanceTariffApplication    # A unique identifier for your service
+complianceStatus: full
+serviceLastTestedDate: 2021-03-23
+statementVisibility: public
+statementCreatedDate: 2020-12-23
+statementLastUpdatedDate: 2021-03-30
+
+businessArea: Borders & Trade
+ddc: DDC Edinburgh
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Public beta

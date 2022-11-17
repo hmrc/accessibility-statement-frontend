@@ -1,26 +1,31 @@
 service.homePageUrl = /
 general.page-title = Accessibility statement for {0} service – GOV.UK
-general.app-page-title = Accessibility statement for the {0} – GOV.UK
-general.service=service
-general.app=app
+general.page-title.ios = Accessibility statement for the {0} – GOV.UK
+general.page-title.android = Accessibility statement for the {0} – GOV.UK
 
 ## introduction
 introduction.heading=Accessibility statement for {0} service
-introduction.app-heading=Accessibility statement for the {0}
-introduction.lede=This accessibility statement explains how accessible this {0} is, what to do if you have difficulty using it, and how to report accessibility problems with the {0}.
+introduction.heading.app=Accessibility statement for the {0}
+
+introduction.lede=This accessibility statement explains how accessible this service is, what to do if you have difficulty using it, and how to report accessibility problems with the service.
+introduction.lede.app=This accessibility statement explains how accessible this app is, what to do if you have difficulty using it, and how to report accessibility problems with the app.
 introduction.scope.part1='This service is part of the wider GOV.UK website. There is a '
 introduction.scope.part2=separate accessibility statement for the main GOV.UK website
 introduction.service-name=This page only contains information about the {0} service, available at {1}.
-introduction.app-service-name=This page only contains information about the {0}, available at {1}.
+introduction.service-name.app=This page only contains information about the {0}, available at {1}.
 
 ## Using the service
-using-service.heading=Using this {0}
-using-service.this-service-or-app-is-run=This {0} is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this {0}.' '
+using-service.heading=Using this service
+using-service.heading.app=Using this app
+
+using-service.this-service-is-run=This service is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.' '
+using-service.this-service-is-run.app=This app is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this app.' '
+using-service.this-service-is-run.voa=This service is run by the Valuation Office Agency (VOA), an executive agency of HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.' '
 using-service.service.this-means=This means you should be able to:
 using-service.app.this-means='This means you can use the built-in '
 using-service.app.accessibility-features=accessibility features
-using-service.app.accessibility-features.link.android=https://www.android.com/intl/en_uk/accessibility/
 using-service.app.accessibility-features.link.ios=https://www.apple.com/uk/accessibility/
+using-service.app.accessibility-features.link.android=https://www.android.com/intl/en_uk/accessibility/
 using-service.app.on-your-device=' on your device to:'
 
 using-service.bullet1=change colours, contrast levels and fonts
@@ -29,46 +34,66 @@ using-service.bullet3=get from the start of the service to the end using just a 
 using-service.bullet4=get from the start of the service to the end using speech recognition software
 using-service.bullet5=listen to the service using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
 
-using-service.android.bullet1=invert colours and adjust contrast levels
-using-service.android.bullet2=increase the text size without the text truncating or overlapping
-using-service.android.bullet3=navigate the app using Switch Access
-using-service.android.bullet4=get around the app using Voice Access
-using-service.android.bullet5=listen to the app using TalkBack
+using-service.bullet1.android=invert colours and adjust contrast levels
+using-service.bullet2.android=increase the text size without the text truncating or overlapping
+using-service.bullet3.android=navigate the app using Switch Access
+using-service.bullet4.android=get around the app using Voice Access
+using-service.bullet5.android=listen to the app using TalkBack
 
-using-service.ios.bullet1=invert colours and adjust contrast levels
-using-service.ios.bullet2=increase the text size without the text truncating or overlapping
-using-service.ios.bullet3=navigate the app using Switch Control
-using-service.ios.bullet4=get around the app using Voice Control
-using-service.ios.bullet5=listen to the app using VoiceOver
+using-service.bullet1.ios=invert colours and adjust contrast levels
+using-service.bullet2.ios=increase the text size without the text truncating or overlapping
+using-service.bullet3.ios=navigate the app using Switch Control
+using-service.bullet4.ios=get around the app using Voice Control
+using-service.bullet5.ios=listen to the app using VoiceOver
 
-using-service.simple-text=We have also made the text in the {0} as simple as possible to understand.
+using-service.simple-text=We have also made the text in the service as simple as possible to understand.
+using-service.simple-text.app=We have also made the text in the app as simple as possible to understand.
 using-service.making-device-easier.part1=AbilityNet has advice
 using-service.making-device-easier.part2=' on making your device easier to use if you have a disability.'
 
 ## Accessibility
-accessibility.heading=How accessible this {0} is
-accessibility.compliance.full=This {0} is fully compliant with the
-accessibility.compliance.partial=This {0} is partially compliant with the
-accessibility.compliance.noncompliant=This {0} is non compliant with the
-accessibility.compliance.noncompliant.explanation=. This {0} has not yet been checked for compliance so some users may find parts of the {0} difficult to use.
+accessibility.heading=How accessible this service is
+accessibility.heading.app=How accessible this app is
+accessibility.compliance.full=This service is fully compliant with the
+accessibility.compliance.full.app=This app is fully compliant with the
+accessibility.compliance.partial=This service is partially compliant with the
+accessibility.compliance.partial.app=This app is partially compliant with the
+accessibility.compliance.noncompliant=This service is non compliant with the
+accessibility.compliance.noncompliant.app=This app is non compliant with the
+accessibility.compliance.noncompliant.explanation=. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.
+accessibility.compliance.noncompliant.explanation.app=. This app has not yet been checked for compliance so some users may find parts of the app difficult to use.
 accessibility.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
-accessibility.no-issues=There are no known accessibility issues within this {0}.
-accessibility.has-issues=Some people may find parts of this {0} difficult to use:
+accessibility.no-issues=There are no known accessibility issues within this service.
+accessibility.no-issues.app=There are no known accessibility issues within this app.
+accessibility.has-issues=Some people may find parts of this service difficult to use:
+accessibility.has-issues.app=Some people may find parts of this app difficult to use:
 
 ## Contact
 contact.heading=What to do if you have difficulty using this service
 contact.extra-support.part1='You can '
 contact.extra-support.part2=contact HMRC for extra support
+contact.extra-support.part2.link=https://www.gov.uk/get-help-hmrc-extra-support
 contact.extra-support.part3=' if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.'
+contact.extra-support-voa.part1='You can '
+contact.extra-support-voa.part2=contact VOA for extra support if you need help with filling in forms or getting a different format, like large print, audio recording or Braille.
+contact.extra-support-voa.part3=Telephone: 03000 501 501
+contact.extra-support-voa.part4=Opening times: Monday to Friday: 9:30am to 4:30pm
+contact.extra-support-chgv.part1=Support for this service is provided by the Department for International Trade.
+contact.extra-support-chgv.part2=Assisted Digital Team
+contact.extra-support-chgv.part3=Telephone: 020 7215 5000
+contact.extra-support-chgv.part4=Monday to Friday, 9am to 5pm
 
 ## Reporting problems
-reporting.heading=Reporting accessibility problems with this {0}
-reporting.report-problem.part1=We are always looking to improve the accessibility of this {0}. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements,' '
+reporting.heading=Reporting accessibility problems with this service
+reporting.heading.app=Reporting accessibility problems with this app
+reporting.report-problem.part1=We are always looking to improve the accessibility of this service. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements,' '
+reporting.report-problem.part1.app=We are always looking to improve the accessibility of this app. If you find any problems that are not listed on this page or think we are not meeting accessibility requirements,' '
 reporting.report-problem.part2=report the accessibility problem
 
 ## Complaints
 complaints.heading=If you are not happy with our response
 complaints.additional-contacts.part1=The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ''accessibility regulations''). If you are not happy with how we respond to your complaint,
+complaints.additional-contacts.link=https://www.equalityadvisoryservice.com/
 complaints.additional-contacts.part2=contact the Equality Advisory and Support Service (EASS)
 complaints.additional-contacts.part3=or the
 complaints.additional-contacts.part4=Equality Commission for Northern Ireland (ECNI)
@@ -79,31 +104,44 @@ in-person-contact.heading=Contacting us by phone or getting a visit from us in p
 in-person-contact.text-relay=We provide a text relay service if you are deaf, hearing impaired or have a speech impediment.
 in-person-contact.bsl=We can provide a British Sign Language (BSL) interpreter, or you can arrange a visit from an HMRC advisor to help you complete the service.
 in-person-contact.find-out-how.part1='Find out '
+in-person-contact.find-out-how.link=https://www.gov.uk/get-help-hmrc-extra-support
 in-person-contact.find-out-how.part2=how to get extra support from HMRC
 
 ## Technical information
-technical.heading=Technical information about this {0}’s accessibility
-technical.commitment=HMRC is committed to making this {0} accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
-technical.compliance.full=This {0} is fully compliant with the' '
-technical.compliance.partial=This {0} is partially compliant with the' '
-technical.compliance.noncompliant=This {0} is non compliant with the' '
+technical.heading=Technical information about this service’s accessibility
+technical.heading.app=Technical information about this app’s accessibility
+technical.commitment=HMRC is committed to making this service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+technical.commitment.app=HMRC is committed to making this app accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+technical.compliance.full=This service is fully compliant with the' '
+technical.compliance.full.app=This app is fully compliant with the' '
+technical.compliance.partial=This service is partially compliant with the' '
+technical.compliance.partial.app=This app is partially compliant with the' '
+technical.compliance.noncompliant=This service is non compliant with the' '
+technical.compliance.noncompliant.app=This app is non compliant with the' '
 technical.compliance.guidelines=Web Content Accessibility Guidelines version 2.1 AA standard
 technical.compliance.partial.reasons=, due to the non-compliances listed below.
 technical.non-compliance.header=Non‐accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non‐compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=This will be fixed by {0}.
-technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2021.
-technical.non-compliance.automated.test-by=The {0} will also book a full accessibility audit by 30 September 2021.
+technical.non-compliance.not-tested=It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 October 2022.
+technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 31 October 2022.
+technical.non-compliance.automated.test-by.app=The app will also book a full accessibility audit by 31 October 2022.
 
 ## Testing
-testing.heading=How we tested this {0}
-testing.last-tested=The {1} was last tested on {0} and was checked for compliance with WCAG 2.1 AA.
-testing.last-tested.automated=The {1} was last tested on {0} using automated tools and was checked for compliance with WCAG 2.1 AA.
-testing.details.part1=The {0} was built using parts that were tested by the
+testing.heading=How we tested this service
+testing.heading.app=How we tested this app
+testing.last-tested=The service was last tested on {0} and was checked for compliance with WCAG 2.1 AA.
+testing.last-tested.app=The app was last tested on {0} and was checked for compliance with WCAG 2.1 AA.
+testing.last-tested.automated=The service was last tested on {0} using automated tools and was checked for compliance with WCAG 2.1 AA.
+testing.last-tested.automated.app=The app was last tested on {0} using automated tools and was checked for compliance with WCAG 2.1 AA.
+testing.details.part1=The service was built using parts that were tested by the
+testing.details.part1.app=The app was built using parts that were tested by the
 testing.details.part2=Digital Accessibility Centre
-testing.details.part3=. The full {0} was tested by HMRC and included disabled users.
-testing.details.noncompliant=The {0} has not been tested for compliance with WCAG 2.1 AA.
+testing.details.part3=. The full service was tested by HMRC and included disabled users.
+testing.details.part3.app=. The full app was tested by HMRC and included disabled users.
+testing.details.noncompliant=The service has not been tested for compliance with WCAG 2.1 AA.
+testing.details.noncompliant.app=The app has not been tested for compliance with WCAG 2.1 AA.
 testing.created-and-updated=This page was prepared on {0}. It was last updated on {1}.
 
 ## Not Found Page

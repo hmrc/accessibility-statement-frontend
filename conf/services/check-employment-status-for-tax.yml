@@ -1,0 +1,11 @@
+serviceName: Check employment status for tax
+serviceDescription: |
+  The Check Employment Status for Tax service allows users to check their employment status for tax purposes.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-employment-status-for-tax/disclaimer
+contactFrontendServiceId: CEST
+complianceStatus: full
+serviceLastTestedDate: 2020-03-01
+statementVisibility: public
+statementCreatedDate: 2019-11-22
+statementLastUpdatedDate: 2022-05-05

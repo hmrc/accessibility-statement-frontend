@@ -4,53 +4,12 @@ serviceDescription: You can use the feedback survey to tell us how we can make o
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /feedback
 contactFrontendServiceId: feedback-survey
-complianceStatus: partial
-accessibilityProblems:
-  - Headings on some pages are being read out twice by assistive technology. We will fix this so they are only read once.
-  - If users copy and paste information into the text fields, this can take them over the character limit as we do not remove any white space pasted into the boxes. We will fix this so all white space is removed before submitting where possible.
-  - Some of the fields are small but users can input a lot of information. We will make text fields relative to the amount of information users can enter to make this clearer.
-  - When an error has been triggered, it is missing the word error which is there to help users of screen readers. We will add this in to make it clearer for users with assistive technology that an error has been triggered.
-  - Some of the error messages do not match the question being asked, which could be confusing. We will make all error messages relate to the question.
-  - Some of our buttons say continue, which suggests there are more questions, however they should say submit, as the surveys are only one page. We will update the buttons so they all say submit feedback.
-  - When using smaller screens, a menu appears which does not do anything. We will remove this as it is not needed and could cause confusion.
-  - Some of the field labels are hidden, making it difficult for users of voice control technology to focus on the field. We will display all labels so they can be used to focus on fields.
-milestones:
-  - description: |
-      On some pages, we have a field that appears when an option is selected, and this is not read out by a screen reader.
-      This fails WCAG 2.1: Understanding success criterion 1.3.1: Info and relationships.
-      We will fix this so the field is read out by a screen reader and the user can interact with it.
-    date: 2021-07-31
-  - description: |
-      Error messages are not linked to the fields they relate to. This means they will not be read by assistive technology if the user moves straight to the field.
-      This fails WCAG 2.1: Understanding success criterion 3.3.2: Labels or Instructions.
-      We will fix this so the error messages are all linked to the fields and read out properly.
-    date: 2021-07-31
-  - description: |
-      The text boxes are missing a character count so users cannot tell how many characters they have left to use.
-      This fails WCAG 2.1: Understanding success criterion 3.3.2: Labels or Instructions.
-      We will fix this so all text boxes have a counter and this updates to tell users how many characters they have left.
-    date: 2021-07-31
-  - description: |
-      We have hint text in the service which is not linked to the field it relates to. This means it can be missed if users go straight to the field.
-      This fails WCAG 2.1 failure: Understanding success criterion 3.3.2: Labels or Instructions.
-      We will fix this so the hint text links to the field and users will be given this information when they are focussed on the field.
-    date: 2021-07-31
-  - description: |
-      Our page titles don’t match the heading on the page. This does not follow our design pattern and does not make it clear what the purpose of the page is.
-      This fails WCAG 2.1: Understanding success criterion 2.4.2 Page titled.
-      We will be updating these so they follow our pattern.
-    date: 2021-07-31
-  - description: |
-      Some of the error messages do not make it clear what has gone wrong, making it difficult for users to work out how to fix their answer.
-      This fails WCAG 2.1: Understanding success criterion 3.3.1 Error Identification.
-      We will make all error messages relate to the problem so it is clear what needs to be done to fix the error.
-    date: 2021-07-31
-  - description: |
-      On one page, the same label is used for two different things. This makes it hard to work out which field has focus.
-      This fails WCAG 2.1: Understanding success criterion 2.5.3 Label in Name.
-      We will fix this so all fields have a different label which describes the information we need users to put in the field.
-    date: 2021-07-31
-serviceLastTestedDate: 2020-06-26
+complianceStatus: full
+serviceLastTestedDate: 2022-09-08
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-03
+statementLastUpdatedDate: 2022-09-14
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Newcastle
+typeOfService: Live services

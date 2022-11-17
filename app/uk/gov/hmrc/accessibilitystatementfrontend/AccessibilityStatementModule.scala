@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,10 +18,13 @@ package uk.gov.hmrc.accessibilitystatementfrontend
 
 import com.google.inject.AbstractModule
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+import uk.gov.hmrc.accessibilitystatementfrontend.tasks.{DateProvider, SystemDateProvider}
 
 class AccessibilityStatementModule extends AbstractModule {
-  override def configure() =
+  override def configure() = {
     bind(classOf[AccessibilityStatementsRepo]).to(
       classOf[AccessibilityStatementsSourceRepo]
     )
+    bind(classOf[DateProvider]).to(classOf[SystemDateProvider])
+  }
 }

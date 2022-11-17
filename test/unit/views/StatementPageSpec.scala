@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,18 +25,13 @@ import play.api.Configuration
 import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, Visibility}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, VOA, Visibility}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
-import uk.gov.hmrc.scalatestaccessibilitylinter.AccessibilityMatchers
 
-class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with AccessibilityMatchers {
+class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite {
   "Given any Accessibility Statement for a service, rendering a Statement Page" should {
-    "pass accessibility checks" in new FullSetup {
-      fullyAccessibleStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing the header containing the service name" in new FullSetup {
       fullyAccessibleStatementHtml should include(
         """<h1 class="govuk-heading-xl">Accessibility statement for fully accessible service name service</h1>"""
@@ -119,15 +114,61 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     }
   }
 
-  "Given any Welsh Accessibility Statement for a service, rendering a Statement Page" should {
-    "return HTML containing the header containing the service name in Welsh" in new WelshSetup {
-      fullyAccessibleWelshStatementHtml should include(
-        """<h1 class="govuk-heading-xl">Datganiad hygyrchedd ar gyfer fully accessible service name</h1>"""
+  "Given any Accessibility Statement for a service, rendering a VOA Statement Page" should {
+    "return HMTL containing correct `using this service` section content for VOA template" in new FullSetup {
+      fullyAccessibleVOAStatementHtml should include(
+        """<p class="govuk-body">
+          |    This service is run by the Valuation Office Agency (VOA), an executive agency of HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.""".stripMargin
       )
     }
 
-    "pass accessibility checks" in new WelshSetup {
-      fullyAccessibleWelshStatementHtml should passAccessibilityChecks
+    "return HTML containing correct `What to do if you have difficulty using this service` section content" in new FullSetup {
+      fullyAccessibleVOAStatementHtml should include(
+        """contact VOA for extra support if you need help with filling in forms or getting a different format, like large print, audio recording or Braille."""
+      )
+
+      fullyAccessibleVOAStatementHtml should include(
+        """<p class="govuk-body">Telephone: 03000 501 501</p>"""
+      )
+
+      fullyAccessibleVOAStatementHtml should include(
+        """<p class="govuk-body">Opening times: Monday to Friday: 9:30am to 4:30pm</p>"""
+      )
+    }
+
+    "return HTML that does not contain the `Contacting us by phone or getting a visit from us in person` section" in new FullSetup {
+      fullyAccessibleVOAStatementHtml should not include
+        """<h2 class="govuk-heading-l">Contacting us by phone or getting a visit from us in person</h2>"""
+    }
+  }
+
+  "Given any Accessibility Statement for a service, rendering a C-HGV Statement Page" should {
+    "return HMTL containing correct `using this service` section content for VOA template" in new FullSetup {
+      fullyAccessibleCHGVStatementHtml should include(
+        """<p class="govuk-body">
+          |    This service is run by HM Revenue and Customs (HMRC). We want as many people as possible to be able to use this service.""".stripMargin
+      )
+    }
+
+    "return HTML that contains the correct `What to do if you have difficulty using this service` section" in new FullSetup {
+      fullyAccessibleCHGVStatementHtml should include
+      """<h2 class="govuk-heading-l">What to do if you have difficulty using this service</h2>"""
+
+      fullyAccessibleCHGVStatementHtml should include
+      """<p class="govuk-body">Support for this service is provided by the Department for International Trade.</p>"""
+    }
+
+    "return HTML that does not contain the `Contacting us by phone or getting a visit from us in person` section" in new FullSetup {
+      fullyAccessibleCHGVStatementHtml should not include
+        """<h2 class="govuk-heading-l">Contacting us by phone or getting a visit from us in person</h2>"""
+    }
+  }
+
+  "Given any Welsh Accessibility Statement for a service, rendering a Statement Page" should {
+    "return HTML containing the header containing the service name in Welsh" in new WelshSetup {
+      fullyAccessibleWelshStatementHtml should include(
+        """<h1 class="govuk-heading-xl">Datganiad hygyrchedd ar gyfer y gwasanaeth fully accessible service name</h1>"""
+      )
     }
 
     "return HTML containing the correct TITLE element in Welsh" in new WelshSetup {
@@ -146,10 +187,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for an iOS app, rendering a Statement Page" should {
-    "pass accessibility checks" in new FullSetup {
-      fullyAccessibleIosStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing accessibility information specific to iOS devices" in new FullSetup {
       fullyAccessibleIosStatementHtml should include(
         """get around the app using Voice Control"""
@@ -158,10 +195,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for an Android app, rendering a Statement Page" should {
-    "pass accessibility checks" in new FullSetup {
-      fullyAccessibleAndroidStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing accessibility information specific to Android devices" in new FullSetup {
       fullyAccessibleAndroidStatementHtml should include(
         """get around the app using Voice Access"""
@@ -293,10 +326,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
-    "pass accessibility checks" in new PartialSetup {
-      partiallyAccessibleStatementHtml should passAccessibilityChecks
-    }
-
     "return HTML containing the expected accessibility information stating that the service is partially compliant" in new PartialSetup {
       partiallyAccessibleStatementHtml should include(
         """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>.</p>"""
@@ -371,10 +400,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an Accessibility Statement for a non compliant service, rendering a Statement Page" should {
-    "pass accessibility checks" in new NonCompliantSetup {
-      nonCompliantAccessibleStatementHtml should passAccessibilityChecks
-    }
-
     "include a statement that the service is non compliant" in new NonCompliantSetup {
       nonCompliantAccessibleStatementHtml should include(
         """<p class="govuk-body">This service is non compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.</p>"""
@@ -398,17 +423,13 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     "should return HTML with a fixed date for carrying out an assessment" in new NonCompliantSetup {
       nonCompliantAccessibleStatementHtml should include(
-        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2021.</p>"""
+        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 October 2022.</p>"""
       )
     }
   }
 
   "Given an accessibility statement that is partially compliant, where only automated testing has been carried out, " +
     "rendering a Statement Page"                                                             should {
-      "pass accessibility checks" in new PartialSetup {
-        automatedTestingStatementPage should passAccessibilityChecks
-      }
-
       "return HTML with information that the testing was automated" in new PartialSetup {
         automatedTestingStatementPage should include(
           """<p class="govuk-body">The service was last tested on 21 April 2019 using automated tools and was checked for compliance with WCAG 2.1 AA.</p>"""
@@ -417,7 +438,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
       "return HTML with the date for carrying out a full assessment" in new PartialSetup {
         automatedTestingStatementPage should include(
-          """ <p class="govuk-body">The service will also book a full accessibility audit by 30 September 2021.</p>"""
+          """ <p class="govuk-body">The service will also book a full accessibility audit by 31 October 2022.</p>"""
         )
       }
 
@@ -457,27 +478,39 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDescription = "Fully accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/fully-accessible",
-      mobilePlatform = None,
+      statementType = None,
       contactFrontendServiceId = "fas",
       complianceStatus = FullCompliance,
       accessibilityProblems = None,
       milestones = None,
-      automatedTestingOnly = None,
+      automatedTestingOnly = Some(false),
       statementVisibility = Draft,
       serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
       statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
       statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
-      automatedTestingDetails = None
+      automatedTestingDetails = None,
+      businessArea = None,
+      ddc = None,
+      liveOrClassic = None,
+      typeOfService = None
     )
 
     lazy val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC iOS app",
-      mobilePlatform = Some(Ios)
+      statementType = Some(Ios)
     )
 
     lazy val fullyAccessibleAndroidAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC Android app",
-      mobilePlatform = Some(Android)
+      statementType = Some(Android)
+    )
+
+    lazy val fullyAccessibleVOAAppStatement = fullyAccessibleServiceStatement.copy(
+      statementType = Some(VOA)
+    )
+
+    lazy val fullyAccessibleCHGVAppStatement = fullyAccessibleServiceStatement.copy(
+      statementType = Some(CHGV)
     )
 
     lazy val fullyAccessibleStatementHtml =
@@ -495,6 +528,18 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     lazy val fullyAccessibleAndroidStatementHtml = statementPage(
       fullyAccessibleAndroidAppStatement,
+      None,
+      isWelshTranslationAvailable = false
+    ).body
+
+    lazy val fullyAccessibleVOAStatementHtml = statementPage(
+      fullyAccessibleVOAAppStatement,
+      None,
+      isWelshTranslationAvailable = false
+    ).body
+
+    lazy val fullyAccessibleCHGVStatementHtml = statementPage(
+      fullyAccessibleCHGVAppStatement,
       None,
       isWelshTranslationAvailable = false
     ).body
@@ -517,10 +562,10 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceDescription = "Partially accessible description.",
       serviceDomain = "www.tax.service.gov.uk",
       serviceUrl = "/partially-accessible",
-      mobilePlatform = None,
+      statementType = None,
       contactFrontendServiceId = "pas",
       complianceStatus = PartialCompliance,
-      automatedTestingOnly = None,
+      automatedTestingOnly = Some(false),
       accessibilityProblems = Some(
         Seq(
           "This is the first accessibility problem",
@@ -547,11 +592,15 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.APRIL, 21).getTime),
       statementCreatedDate = new GregorianCalendar(2019, Calendar.JUNE, 14).getTime,
       statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.OCTOBER, 7).getTime,
-      automatedTestingDetails = None
+      automatedTestingDetails = None,
+      businessArea = None,
+      ddc = None,
+      liveOrClassic = None,
+      typeOfService = None
     )
 
     lazy val partiallyAccessibleIosAppStatement = partiallyAccessibleServiceStatement.copy(
-      mobilePlatform = Some(Ios)
+      statementType = Some(Ios)
     )
 
     lazy val partiallyAccessibleIosStatementHtml = statementPage(
@@ -561,7 +610,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     ).body
 
     lazy val partiallyAccessibleAndroidAppStatement = partiallyAccessibleServiceStatement.copy(
-      mobilePlatform = Some(Android)
+      statementType = Some(Android)
     )
 
     lazy val partiallyAccessibleStatementHtml = statementPage(

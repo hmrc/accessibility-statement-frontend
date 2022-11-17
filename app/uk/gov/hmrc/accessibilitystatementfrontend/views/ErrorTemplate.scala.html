@@ -1,5 +1,5 @@
 @*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,9 @@
  * limitations under the License.
  *@
 
-@import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
-
 @this(layout: Layout)
 
-@(pageTitle: String, heading: String, message: String)(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
+@(pageTitle: String, heading: String, message: String)(implicit request: Request[_], messages: Messages)
 @layout(pageTitle = pageTitle, isWelshTranslationAvailable = false) {
     <h1 class="govuk-heading-xl">@{Text(heading).asHtml}</h1>
     <p class="govuk-body">@{Text(message).asHtml}</p>

@@ -13,14 +13,18 @@ accessibilityProblems:
   - The focus indicator does not give enough colour contrast.
 milestones:
   - description: Headings are not always positioned correctly in the page code, making it difficult to use heading shortcut keys.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: Some error messages fail to meet requirements for wording.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The thematic break (horizontal rule) element has been used where it is not necessary.
-    date: 2021-11-30
+    date: 2022-09-30
   - description: The focus indicator does not give enough colour contrast.
-    date: 2021-11-30
+    date: 2022-09-30
 serviceLastTestedDate: 2020-12-21
 statementVisibility: public
 statementCreatedDate: 2021-01-12
-statementLastUpdatedDate: 2021-09-17
+statementLastUpdatedDate: 2022-06-20
+businessArea: Borders & Trade
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta

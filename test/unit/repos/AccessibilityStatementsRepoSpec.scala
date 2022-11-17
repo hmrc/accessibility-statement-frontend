@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,8 +27,6 @@ import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
-import scala.io.Source
-
 class AccessibilityStatementsRepoSpec
     extends AnyWordSpec
     with Matchers
@@ -36,22 +34,11 @@ class AccessibilityStatementsRepoSpec
     with MockitoSugar
     with BeforeAndAfterEach {
 
-  private val fooSource      =
-    StatementSource(Source.fromString("foo-source"), "services/foo-service.yml")
-  private val fooSourceWelsh = StatementSource(
-    Source.fromString("foo-source.cy"),
-    "services/foo-service.cy.yml"
-  )
-  private val barSource      =
-    StatementSource(Source.fromString("bar-source"), "services/bar-service.yml")
-  private val draftSource    = StatementSource(
-    Source.fromString("draft-source"),
-    "services/draft-source.yml"
-  )
-  private val archivedSource = StatementSource(
-    Source.fromString("archived-source"),
-    "services/archived-source.yml"
-  )
+  private val fooSource      = StatementSource("services/foo-service.yml")
+  private val fooSourceWelsh = StatementSource("services/foo-service.cy.yml")
+  private val barSource      = StatementSource("services/bar-service.yml")
+  private val draftSource    = StatementSource("services/draft-source.yml")
+  private val archivedSource = StatementSource("services/archived-source.yml")
 
   def buildAppConfig(visibilities: Set[Visibility]) = {
     val appConfig = mock[AppConfig]
@@ -77,17 +64,21 @@ class AccessibilityStatementsRepoSpec
       "This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.",
     serviceDomain = "www.tax.service.gov.uk",
     serviceUrl = "/disguised-remuneration",
-    mobilePlatform = None,
+    statementType = None,
     contactFrontendServiceId = "disguised-remuneration",
     complianceStatus = FullCompliance,
-    automatedTestingOnly = None,
+    automatedTestingOnly = Some(false),
     accessibilityProblems = None,
     milestones = None,
     statementVisibility = Public,
     serviceLastTestedDate = Some(new GregorianCalendar(2019, Calendar.DECEMBER, 9).getTime),
     statementCreatedDate = new GregorianCalendar(2019, Calendar.SEPTEMBER, 23).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2019, Calendar.APRIL, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription =

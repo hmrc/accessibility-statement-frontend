@@ -8,35 +8,28 @@ serviceUrl: /payrollbik
 contactFrontendServiceId: pbik
 complianceStatus: partial
 accessibilityProblems:
-  -  Os ydych yn segur am gyfnod o amser, mae’r gwasanaeth yn eich allgofnodi’n awtomatig heb roi rhybudd na hysbysiad i chi. 
-  -  Ar rai tudalennau, mae yna destun mewn tabl a all fod yn anodd i ddarllenwyr sgrin ei ddarllen. Er enghraifft, wrth chwilio am gyflogai, gall fod yn anodd deall canlyniadau’r chwilio gan nad yw penynnau’r tabl wedi’u cysylltu â’r cynnwys yn y tabl.
-  -  Ar y dudalen lle rydych yn dewis buddiannau a threuliau, gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd defnyddio’r blychau ticio.
-  -  Ar y dudalen lle rydych yn chwilio am gyflogai, gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd mynd at y meysydd testun.
-  -  Ar y dudalen lle rydych yn dileu buddiant neu draul, gall strwythur y dudalen ei gwneud hi’n anodd i ddefnyddwyr sydd â darllenydd sgrin ddeall y cwestiwn. 
-  -  Ar rai tudalennau, nid yw’r botymau radio wedi’u labelu. Mae hyn yn golygu y gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd dewis y botwm radio cywir. 
-  -  Ar y dudalen sy’n dangos canlyniadau’r chwilio, mae’r cysylltiad yn ôl yn diflannu wrth i chi lywio gyda’r bysellfwrdd. Mae hyn yn golygu y bydd y sawl sy’n defnyddio bysellfwrdd yn unig yn ei chael hi’n anodd mynd yn ôl i’r dudalen ddiwethaf.
-  -  Mae pob un o’r botymau ac ychydig o’r testun yn anodd eu darllen wrth ddefnyddio ffocws y bysellfwrdd.  Mae hyn oherwydd nad yw’r cyferbyniad lliw yn ddigon cryf.
-  -  Nid yw’r negeseuon gwall drwy’r gwasanaeth yn ddisgrifiadol. Gall hyn ei wneud yn anodd i ddefnyddwyr ddeall yr hyn y maent wedi’i wneud o’i le.
+  -  Ar y dudalen lle rydych yn dileu buddiant neu draul, mae’n bosibl y bydd strwythur y dudalen yn ei gwneud yn anodd i ddefnyddwyr darllenwyr sgrin ddefnyddio’r botymau radio.
+  -  Nid yw rhai o’r negeseuon gwall yn y gwasanaeth yn ddisgrifiadol. Gall hyn ei gwneud yn anodd i ddefnyddwyr ddeall beth maent wedi’i wneud yn anghywir.
+  -  Ar y dudalen gychwyn, mae’n bosibl y bydd defnyddwyr darllenwyr sgrin yn ei chael yn anodd defnyddio un o’r cysylltiadau. Mae hyn oherwydd nad oes gan y cysylltiad ddisgrifiad. Gall hyn ei gwneud yn anodd i ddefnyddwyr darllenwyr sgrin ddeall diben y cysylltiad.
+  -  Ar y dudalen gychwyn, mae’n bosibl y bydd defnyddwyr ysgogi llais yn ei chael yn anodd defnyddio’r cysylltiadau. Mae hyn oherwydd bod y cysylltiadau wedi’u disgrifio fel botymau.
+  -  Ar y dudalen gwblhau, mae’n bosibl y bydd defnyddwyr darllenwyr sgrin yn ei chael yn anodd defnyddio’r cysylltiad. Mae hyn oherwydd nad oes gan y cysylltiad ddisgrifiad addas, ac nad yw’n hysbysu defnyddwyr y bydd y cysylltiad yn agor tudalen newydd.
 milestones:
-  - description: Os ydych yn segur am gyfnod o amser, mae’r gwasanaeth yn eich allgofnodi’n awtomatig heb roi rhybudd na hysbysiad i chi. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Timing Adjustable, Re-authenticating and Timeouts.
-    date: 2022-02-28
-  - description: Ar rai tudalennau, mae yna destun mewn tabl a all fod yn anodd i ddarllenwyr sgrin ei ddarllen. Er enghraifft, wrth chwilio am gyflogai, gall fod yn anodd deall canlyniadau’r chwilio gan nad yw penynnau’r tabl wedi’u cysylltu â’r cynnwys yn y tabl. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Info and Relationships and Meaningful Sequence.
-    date: 2022-02-28
-  - description: Ar y dudalen lle rydych yn dewis buddiannau a threuliau, gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd defnyddio’r blychau ticio. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Info and relationships.
-    date: 2022-02-28
-  - description: Ar y dudalen lle rydych yn chwilio am gyflogai, gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd mynd at y meysydd testun. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Info and relationships.
-    date: 2022-02-28
-  - description: Ar y dudalen lle rydych yn dileu buddiant neu draul, gall strwythur y dudalen ei gwneud hi’n anodd i ddefnyddwyr sydd â darllenydd sgrin ddeall y cwestiwn. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Headings and labels.
-    date: 2022-02-28
-  - description:  Ar rai tudalennau, nid yw’r botymau radio wedi’u labelu. Mae hyn yn golygu y gall defnyddwyr sydd â darllenydd sgrin ei chael hi’n anodd dewis y botwm radio cywir. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Info and relationships and Name, Role, Value.
-    date: 2022-02-28
-  - description:  Ar y dudalen sy’n dangos canlyniadau’r chwilio, mae’r cysylltiad yn ôl yn diflannu wrth i chi lywio gyda’r bysellfwrdd. Mae hyn yn golygu y bydd y sawl sy’n defnyddio bysellfwrdd yn unig yn ei chael hi’n anodd mynd yn ôl i’r dudalen ddiwethaf. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Focus Visible.
-    date: 2022-02-28
-  - description:  Mae pob un o’r botymau ac ychydig o’r testun yn anodd eu darllen wrth ddefnyddio ffocws y bysellfwrdd. Mae hyn oherwydd nad yw’r cyferbyniad lliw yn ddigon cryf. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Non-text Contrast.
-    date: 2022-02-28
-  - description:  Nid yw’r negeseuon gwall drwy’r gwasanaeth yn ddisgrifiadol. Gall hyn ei wneud yn anodd i ddefnyddwyr ddeall yr hyn y maent wedi’i wneud o’i le. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 - Error suggestion.
-    date: 2022-02-28
-serviceLastTestedDate: 2020-01-15
+  - description: Ar y dudalen lle rydych yn dileu buddiant neu draul, mae’n bosibl y bydd strwythur y dudalen yn ei gwneud yn anodd i ddefnyddwyr darllenwyr sgrin ddeall y cwestiwn. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and Relationships) na 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-12-09
+  - description: Ar y dudalen gychwyn, mae’n bosibl y bydd defnyddwyr darllenwyr sgrin yn ei chael yn anodd defnyddio un o’r cysylltiadau. Mae hyn oherwydd nad oes gan y cysylltiad ddisgrifiad. Gall hyn ei gwneud yn anodd i ddefnyddwyr darllenwyr sgrin ddeall diben y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-12-09
+  - description: Ar y dudalen gychwyn, mae’n bosibl y bydd defnyddwyr ysgogi llais yn ei chael yn anodd defnyddio’r cysylltiadau. Mae hyn oherwydd bod y cysylltiadau wedi’u disgrifio fel botymau. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-12-09
+  - description: Nid yw rhai o’r negeseuon gwall yn y gwasanaeth yn ddisgrifiadol. Gall hyn ei gwneud yn anodd i ddefnyddwyr ddeall beth maent wedi’i wneud yn anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-12-09
+  - description: Ar y dudalen gwblhau, mae’n bosibl y bydd defnyddwyr darllenwyr sgrin yn ei chael yn anodd defnyddio’r cysylltiad. Mae hyn oherwydd nad oes gan y cysylltiad ddisgrifiad addas, ac nad yw’n hysbysu defnyddwyr y bydd y cysylltiad yn agor tudalen newydd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-12-09
+serviceLastTestedDate: 2022-06-22
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2021-02-11
+statementLastUpdatedDate: 2022-09-29
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Edinburgh
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Live services

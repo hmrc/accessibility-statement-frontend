@@ -5,9 +5,14 @@ serviceDescription: |
   check your next tax credit payments, find your tax code and find out how much Income Tax you should pay.
 serviceDomain: apps.apple.com
 serviceUrl: /gb/app/hmrc/id514561561
-mobilePlatform: ios
+statementType: ios
 complianceStatus: full
 statementVisibility: public
 serviceLastTestedDate: 2021-06-07
 statementCreatedDate: 2021-06-10
 statementLastUpdatedDate: 2021-06-10
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

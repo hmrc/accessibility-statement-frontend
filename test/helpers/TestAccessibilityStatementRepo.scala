@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 
 package helpers
 
-import java.util.{Calendar, GregorianCalendar}
-
 import org.mockito.scalatest.MockitoSugar
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, FullCompliance, Milestone, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
+
+import java.util.{Calendar, GregorianCalendar}
 
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
   private val en                   = Lang("en")
@@ -32,17 +32,21 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     serviceDescription = "Test description.",
     serviceDomain = "www.tax.service.gov.uk/test/",
     serviceUrl = "some.test.service",
-    mobilePlatform = None,
+    statementType = None,
     contactFrontendServiceId = s"some.contact-frontend",
     complianceStatus = FullCompliance,
     accessibilityProblems = None,
     milestones = None,
-    automatedTestingOnly = None,
+    automatedTestingOnly = Some(false),
     statementVisibility = Public,
     serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
     statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
     statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
-    automatedTestingDetails = None
+    automatedTestingDetails = None,
+    businessArea = None,
+    ddc = None,
+    liveOrClassic = None,
+    typeOfService = None
   )
   private val welshStatement       =
     englishStatement.copy(serviceName = "Test (Welsh)")
@@ -90,6 +94,21 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
     automatedTestingDetails = Some("Details about automated testing")
   )
 
+  private val nonCompliant = englishStatement.copy(
+    serviceName = "Noncompliant",
+    statementVisibility = Public,
+    complianceStatus = NoCompliance,
+    serviceLastTestedDate = None
+  )
+
+  private val withMetadata = englishStatement.copy(
+    serviceName = "With Metadata",
+    ddc = Some(DDCWorthing),
+    businessArea = Some(ChiefDigitalAndInformationOfficer),
+    liveOrClassic = Some(LiveServicesWorthing),
+    typeOfService = Some(PublicBetaType)
+  )
+
   when(repo.findByServiceKeyAndLanguage("test-service", en)) thenReturn Some(
     (englishStatement, en)
   )
@@ -131,6 +150,8 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
       ("english-service", en, englishOnlyStatement),
       ("with-milestones", en, withMilestones),
       ("with-automated-testing", en, withAutomatedTesting),
-      ("draft-with-milestones", en, draftWithMilestones)
+      ("draft-with-milestones", en, draftWithMilestones),
+      ("noncompliant", en, nonCompliant),
+      ("with-metadata", en, withMetadata)
     )
 }

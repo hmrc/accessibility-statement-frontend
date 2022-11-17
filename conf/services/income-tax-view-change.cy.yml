@@ -1,35 +1,28 @@
-serviceName: Bwrw Golwg Dros a Newid eich cyfrif Troi Treth yn Ddigidol ar gyfer Treth Incwm
+serviceName: Bwrw golwg dros eich gwasanaeth Troi Treth yn Ddigidol ar gyfer Treth Incwm a’i newid
 serviceHeaderName: Cyfrif Treth Busnes
 serviceDescription: |
   Mae’r gwasanaeth hwn yn eich caniatáu i fwrw golwg dros eich Ffurflenni Treth, eich taliadau a’ch hanes Treth Incwm ar gyfer CThEM.
   Gallwch hefyd weld diweddariadau blaenorol a rhai yn y dyfodol.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /report-quarterly/income-and-expenses/view/
+serviceUrl: /report-quarterly/income-and-expenses/view
 contactFrontendServiceId: ITVC
 complianceStatus: partial
 accessibilityProblems:
-  - Mae’n bosibl y gall defnyddwyr bysellfwrdd yn unig gael trafferth gyda rhai cysylltiadau yn ôl a thoglau. Bydd angen i ddefnyddiwr bysellfwrdd yn unig dabio drwyddynt bob tro ar ôl defnyddio cysylltiad syth ymlaen i gyrraedd y prif gynnwys.
-  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd defnyddio rhai o’r tablau ar y dudalen ‘Blynyddoedd Treth’. Nid yw rhai tablau’n disgrifio eu dibenion na’r rhesi a’r colofnau wrth i ddefnyddiwr darllenydd sgrin symud rhwng tablau a chelloedd.
-  - Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd dod o hyd i werthoedd cywir mewn ambell i restr. Nid yw rhai rhestrau disgrifiadau yn nodi’r term felly nid yw rhai defnyddwyr darllenydd sgrin yn cael gwybod am nifer yr eitemau yn y rhestr.
-  - Mae’n bosibl y bydd defnyddwyr bysellfwrdd yn unig yn ei chael hi’n anodd defnyddio rhai o’r botymau a bydd angen iddynt ddefnyddio’r botwm Enter yn lle’r bar gofod. Nid yw cysylltiadau sydd wedi’u steilio fel botymau wedi’u labelu’n gywir ar gyfer defnyddwyr technoleg gynorthwyol.
-  - Wrth newid i’r Gymraeg, nid yw’r holl gynnwys wedi’i gyfieithu ac mae’n parhau i fod yn Saesneg. Mae hyn yn golygu y bydd cynnwys yn cael ei ynganu’n anghywir ar gyfer darllenwyr sgrin.
+  - Mae rhai botymau yn y gwasanaeth yn gweithredu fel cysylltiadau. Efallai y bydd defnyddwyr bysellfwrdd yn unig yn cael problemau gan fod yn rhaid iddynt ddefnyddio’r botwm ‘enter’ yn lle’r bylchwr. Bydd defnyddwyr technoleg gynorthwyol yn cael problemau gyda’r botymau hyn gan nad ydynt wedi’u sefydlu’n gywir.
+  - Wrth newid i’r Gymraeg ar y dudalen ‘Treth Incwm’ a ‘Taliad a wnaed i CThEM’, mae yna gysylltiadau sy’n aros yn Saesneg ac ni fyddant yn cael eu hynganu’n gywir ar gyfer darllenwyr sgrin.
+  - Ni fydd defnyddwyr cydnabyddiaeth llais yn gallu cael at y botwm ‘Gwneud taliad’ yn uniongyrchol ar y dudalen ‘Taliad mantoli’ gan nad yw’r copi gweledol yn cyfateb â’r label hygyrch.
 milestones:
-  - description: Mae’n bosibl y gall defnyddwyr bysellfwrdd yn unig gael trafferth gyda rhai cysylltiadau yn ôl a thoglau. Bydd angen i ddefnyddiwr bysellfwrdd yn unig dabio drwyddynt bob tro ar ôl defnyddio cysylltiad syth ymlaen i gyrraedd y prif gynnwys.
-      Mae hyn yn methu maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-11-30
-  - description: Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd defnyddio rhai o’r tablau ar y dudalen ‘Blynyddoedd Treth’. Nid yw rhai tablau’n disgrifio eu dibenion na’r rhesi a’r colofnau wrth i ddefnyddiwr darllenydd sgrin symud rhwng tablau a chelloedd.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-11-30
-  - description: Mae’n bosibl y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd dod o hyd i werthoedd cywir mewn ambell i restr. Nid yw rhai rhestrau disgrifiadau yn nodi’r term felly nid yw rhai defnyddwyr darllenydd sgrin yn cael gwybod am nifer yr eitemau yn y rhestr.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-11-30
-  - description: Mae’n bosibl y bydd defnyddwyr bysellfwrdd yn unig yn ei chael hi’n anodd defnyddio rhai o’r botymau a bydd angen iddynt ddefnyddio’r botwm Enter yn lle’r bar gofod. Nid yw cysylltiadau sydd wedi’u steilio fel botymau wedi’u labelu’n gywir ar gyfer defnyddwyr technoleg gynorthwyol.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-11-30
-  - description: Wrth newid i’r Gymraeg, nid yw’r holl gynnwys wedi’i gyfieithu ac mae’n parhau i fod yn Saesneg. Mae hyn yn golygu y bydd cynnwys yn cael ei ynganu’n anghywir ar gyfer darllenwyr sgrin.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of Parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-11-30
-serviceLastTestedDate: 2021-05-18
+  - description: Ar gyfer cysylltiadau sy’n ymddangos fel botymau, mae’r rôl="button" a’r polyfill JavaScript ar goll i sicrhau eu bod yn gweithredu fel botwm. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-09-30
+  - description: Pan gaiff y tudalennau ‘Treth Incwm’ a ‘Taliadau a wnaed i CThEM’ eu dangos yn Gymraeg, mae peth o’r cynnwys yn ymddangos yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 3.1.2 (Language of Parts), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-09-30
+  - description: Mae copi’r botwm ‘Gwneud taliad’ ar y dudalen ‘Taliad mantoli’ yn wahanol i’r label hygyrchedd. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 2.5.3 (Label in Name), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-09-30
+serviceLastTestedDate: 2022-05-20
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-06-29
+statementLastUpdatedDate: 2020-06-24
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+liveOrClassic: Live Services - Telford
+typeOfService: Public beta

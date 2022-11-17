@@ -1,0 +1,11 @@
+serviceName: Cyfyngu mynediad at eich cyfrif treth personol i un Dynodydd Defnyddiwr (ID) ar gyfer Porth y Llywodraeth
+serviceDescription: Mae’r gwasanaeth hwn yn gwirio bod y Dynodydd Defnyddiwr (ID) ar gyfer Porth y Llywodraeth yr ydych wedi’i ddefnyddio wrth fewngofnodi â mynediad at eich cyfrif treth personol. Os oes gennych sawl Dynodydd Defnyddiwr, fe fydd yn cyfyngu mynediad at un Dynodydd Defnyddiwr ac yn rhoi gwybod i chi pa un sydd angen i chi ei ddefnyddio wrth fewngofnodi er mwyn cael mynediad at eich cyfrif treth personol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /protect-tax-info?redirectUrl=%2Fpersonal-account
+contactFrontendServiceId: TAX_ENROLMENT_ASSIGNMENT_FRONTEND
+complianceStatus: full
+serviceLastTestedDate: 2022-05-24
+statementVisibility: public
+statementCreatedDate: 2022-06-20
+statementLastUpdatedDate: 2022-06-20
+typeOfService: Live services

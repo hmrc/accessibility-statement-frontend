@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,20 +16,159 @@
 
 package it
 
-import java.io.File
 import cats.syntax.either._
+import io.circe.CursorOp.DownField
+import io.circe.DecodingFailure
 import org.scalatest.TryValues
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import org.scalatest.matchers.should.Matchers
+import org.scalatest.prop.TableFor3
 import org.scalatest.wordspec.AnyWordSpec
+import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Draft, NoCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
+import java.io.File
+import java.net.URLDecoder
 import scala.util.Try
 
 class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
   private val statementParser = new AccessibilityStatementParser
+
+  "validate field values" should {
+    trait Context {
+      val minimalPassingServiceYAML: String = """
+                                        |serviceName: "test"
+                                        |serviceDescription: "test"
+                                        |serviceDomain: "domain"
+                                        |serviceUrl: "/test"
+                                        |contactFrontendServiceId: "serviceId"
+                                        |complianceStatus: "full"
+                                        |statementVisibility: "public"
+                                        |statementCreatedDate: "2022-01-01"
+                                        |statementLastUpdatedDate: "2022-01-01"
+                                        |""".stripMargin
+
+      def withYAMLFieldProperty(propertyName: String, propertyValue: String): Try[AccessibilityStatement] = {
+        val updatedYAML = s"""$minimalPassingServiceYAML
+           |$propertyName: "$propertyValue"
+           |""".stripMargin
+
+        Try(statementParser.parse(updatedYAML).valueOr(throw _))
+      }
+    }
+
+    "validate a minimal service yaml" in new Context {
+      val statementTry: Try[AccessibilityStatement] =
+        Try(statementParser.parse(minimalPassingServiceYAML).valueOr(throw _))
+
+      statementTry.isSuccess should be(true)
+    }
+
+    "validate businessArea field values" in new Context {
+      Seq(
+        AdjudicatorsOffice,
+        BordersAndTrade,
+        ChiefDigitalAndInformationOfficer,
+        CustomerComplianceGroup,
+        CustomerServicesGroup,
+        CustomerStrategyAndTaxDesign,
+        HMRCExternalCabinetOffice,
+        ValuationOfficeAgency
+      ).foreach { propertyValue =>
+        withYAMLFieldProperty("businessArea", propertyValue.toString).isSuccess should be(true)
+      }
+    }
+
+    "validate ddc field values" in new Context {
+      Seq(
+        DDCEdinburgh,
+        DDCLondon,
+        DDCNewcastle,
+        DDCTelford,
+        DDCWorthing,
+        DDCYorkshire,
+        NoDDCLocation
+      ).foreach { propertyValue =>
+        withYAMLFieldProperty("ddc", propertyValue.toString).isSuccess should be(true)
+      }
+    }
+
+    "validate live or classic service field values" in new Context {
+      Seq(
+        ClassicServices,
+        LiveServicesEdinburgh,
+        LiveServicesNewcastle,
+        LiveServicesTelford,
+        LiveServicesWorthing
+      ).foreach { propertyValue =>
+        withYAMLFieldProperty("liveOrClassic", propertyValue.toString).isSuccess should be(true)
+      }
+    }
+
+    "validate type of service field values" in new Context {
+      Seq(
+        ClassicServicesType,
+        LiveServicesType,
+        PublicBetaType
+      ).foreach { propertyValue =>
+        withYAMLFieldProperty("typeOfService", propertyValue.toString).isSuccess should be(true)
+      }
+    }
+
+    "validate statement visibility field values" in new Context {
+      Seq(
+        Public,
+        Draft,
+        Archived
+      ).foreach { propertyValue =>
+        withYAMLFieldProperty("statementVisibility", propertyValue.toString).isSuccess should be(true)
+      }
+    }
+
+    "validate compliance status field values" in new Context {
+      Seq(
+        FullCompliance,
+        PartialCompliance,
+        NoCompliance
+      ).foreach { propertyValue =>
+        withYAMLFieldProperty("complianceStatus", propertyValue.toString).isSuccess should be(true)
+      }
+    }
+
+    "validate statement type field values" in new Context {
+      Seq(
+        VOA,
+        CHGV,
+        Ios,
+        Android
+      ).foreach { propertyValue =>
+        withYAMLFieldProperty("statementType", propertyValue.toString).isSuccess should be(true)
+      }
+    }
+
+    "fail if YAML property has invalid field value" in new Context {
+      import org.scalatest.prop.TableDrivenPropertyChecks._
+
+      val invalidFieldValue                                        = "invalid"
+      val failingPropertyValues: TableFor3[String, String, String] = Table(
+        ("businessArea", invalidFieldValue, s"""Unrecognised business area "$invalidFieldValue""""),
+        ("ddc", invalidFieldValue, s"""Unrecognised ddc location "$invalidFieldValue""""),
+        ("liveOrClassic", invalidFieldValue, s"""Unrecognised live or classic service "$invalidFieldValue""""),
+        ("typeOfService", invalidFieldValue, s"""Unrecognised service type "$invalidFieldValue""""),
+        ("statementVisibility", invalidFieldValue, s"""Unrecognised visibility "$invalidFieldValue""""),
+        ("complianceStatus", invalidFieldValue, s"""Unrecognised compliance status "$invalidFieldValue""""),
+        ("statementType", invalidFieldValue, s"""Unrecognised statement type "$invalidFieldValue"""")
+      )
+
+      forAll(failingPropertyValues) { (propertyName, propertyValue, errorMsg) =>
+        withYAMLFieldProperty(propertyName, propertyValue).failure.exception shouldBe DecodingFailure(
+          errorMsg,
+          List(DownField(propertyName))
+        )
+      }
+    }
+  }
 
   "parsing the configuration files" should {
     val sourceConfig   = app.injector.instanceOf[SourceConfig]
@@ -41,7 +180,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         Try(statementParser.parseFromSource(source).valueOr(throw _))
 
       s"enforce a correctly formatted accessibility statement yaml file for $service" in {
-        statementTry should be a 'success
+        statementTry.isSuccess should be(true)
       }
 
       s"enforce statement not contain missing milestones for $service" in {
@@ -70,7 +209,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
 
       s"enforce serviceDescription exists for public statement $service" in {
         val statement: AccessibilityStatement = statementTry.get
-        statement.serviceDescription.trim.length > 0 || statement.statementVisibility == Draft should be(
+        statement.serviceDescription.trim.nonEmpty || statement.statementVisibility == Draft should be(
           true
         )
       }
@@ -83,7 +222,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
 
     val servicesDirectoryPath =
       new File(
-        getClass.getClassLoader.getResource(appConfig.servicesDirectory).getPath
+        URLDecoder.decode(getClass.getClassLoader.getResource(appConfig.servicesDirectory).getPath, "UTF-8")
       )
     val fileNames             =
       servicesDirectoryPath

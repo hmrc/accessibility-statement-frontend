@@ -2,15 +2,20 @@ serviceName: Diweddaru a chyflwyno Ffurflen Dreth Incwm
 serviceHeaderName: Diweddaru a chyflwyno Ffurflen Dreth Incwm
 serviceDescription: Defnyddiwch y gwasanaeth hwn i ddiweddaru a chyflwyno Ffurflen Dreth Incwm.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /income-through-software/return/2022/start
+serviceUrl: /update-and-submit-income-tax-return/2022/start
 contactFrontendServiceId: update-and-submit-income-tax-return
 complianceStatus: partial
 accessibilityProblems:
-  - Nid yw defnyddwyr bob amser yn cael eu hysbysu pan fydd cynnwys a ddatgelwyd yn amodol yn cael ei ehangu neu ei ddymchwel.
+  - Ar rai tudalennau, mae penawdau’r dudalen, yr is-benawdau a thestun y paragraff i gyd y tu mewn i elfen y label.
 milestones:
-  - description: Nid yw defnyddwyr bob amser yn cael eu hysbysu pan fydd cynnwys a ddatgelwyd yn amodol yn cael ei ehangu neu ei ddymchwel. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-05-31
-serviceLastTestedDate: 2021-03-15
+  - description: Ar rai tudalennau, mae penawdau’r dudalen, yr is-benawdau a thestun y paragraff i gyd y tu mewn i elfen y label.  Mae hyn yn creu problemau i’r sawl sy’n defnyddio technoleg adnabod lleferydd a darllenwyr sgrin wrth i’r label gael ei ddarllen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2022-08-18
+serviceLastTestedDate: 2022-04-11
 statementVisibility: public
 statementCreatedDate: 2021-04-19
-statementLastUpdatedDate: 2021-04-19
+statementLastUpdatedDate: 2022-04-27
+
+businessArea: Customer Services Group (CSG)
+ddc:
+liveOrClassic:
+typeOfService: Public beta

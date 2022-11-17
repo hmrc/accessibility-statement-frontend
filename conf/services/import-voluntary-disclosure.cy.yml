@@ -1,0 +1,16 @@
+serviceName: Datgelu tandaliad o ran Toll Dramor neu TAW mewnforio
+serviceDescription: |
+  Gall mewnforwyr a’u cynrychiolwyr ddefnyddio’r gwasanaeth hwn i roi gwybod i CThEM am dandaliadau o ran toll dramor, toll ecséis a TAW mewnforio, ar gyfer datganiadau mewnforio a wnaed gan ddefnyddio CHIEF. Gall mewnforwyr a’u cynrychiolwyr hefyd ddefnyddio’r gwasanaeth i ganslo neu ychwanegu gwybodaeth at ddatgeliadau blaenorol o ran TAW mewnforio neu dollau.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /disclose-import-taxes-underpayment
+contactFrontendServiceId: import-voluntary-disclosure
+complianceStatus: full
+serviceLastTestedDate: 2021-11-01
+statementVisibility: public
+statementCreatedDate: 2021-07-21
+statementLastUpdatedDate: 2021-07-21
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta

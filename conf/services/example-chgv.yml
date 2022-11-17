@@ -1,0 +1,13 @@
+serviceName: Discounted Pies for C-HGV
+serviceDescription: |
+  Use this paragraph to describe your service. It can go over multiple lines
+  like this.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /chgv-pies
+contactFrontendServiceId: chgv-pies
+complianceStatus: full
+serviceLastTestedDate: 2022-02-01
+statementVisibility: draft
+statementCreatedDate: 2022-02-24
+statementLastUpdatedDate: 2022-02-24
+statementType: C-HGV

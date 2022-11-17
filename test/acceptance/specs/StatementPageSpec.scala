@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ package acceptance.specs
 import acceptance.pages.{FullyAccessibleStatementPage, NonAccessibleStatementPage, PartiallyAccessibleStatementPage}
 import org.openqa.selenium.By
 
-import collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 class StatementPageSpec extends BaseAcceptanceSpec {
   Feature("Statement page") {
@@ -27,7 +27,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       "The user visits a statement page for a fully accessible service"
     ) {
       Given("the user does not have welsh language selected")
-      deleteAllCookies
+      deleteAllCookies()
 
       When("the user visits the fully accessible service statement page")
       go to FullyAccessibleStatementPage
@@ -62,7 +62,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
       "The user visits a statement page for a partially accessible service"
     ) {
       Given("the user does not have welsh language selected")
-      deleteAllCookies
+      deleteAllCookies()
 
       When("the user visits the partially accessible service statement page")
       go to PartiallyAccessibleStatementPage
@@ -95,7 +95,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
 
     Scenario("The user visits a statement page for a non accessible service") {
       Given("the user does not have welsh language selected")
-      deleteAllCookies
+      deleteAllCookies()
 
       When("the user visits the non accessible service statement page")
       go to NonAccessibleStatementPage
@@ -121,7 +121,7 @@ class StatementPageSpec extends BaseAcceptanceSpec {
           .toList
           .map(_.getText) should
           contain(
-            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2021."
+            "It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 31 October 2022."
           )
       }
     }

@@ -1,0 +1,19 @@
+serviceName: ap CThEM ar gyfer Android
+contactFrontendServiceId: hmrc-android-app
+serviceDescription: |
+  Gallwch ddefnyddio ap CThEM i wneud pethau fel gwirio’ch taliad cyflog nesaf gan eich cyflogwr,
+  gwiriwch eich taliadau credyd treth nesaf, darganfyddwch eich cod treth a darganfyddwch faint o Dreth Incwm y dylech
+  ei dalu.
+serviceDomain: play.google.com
+serviceUrl: /store/apps/details?id=uk.gov.hmrc.ptcalc&hl=en_GB
+statementType: android
+complianceStatus: full
+statementVisibility: draft
+serviceLastTestedDate: 2022-04-01
+statementCreatedDate: 2022-05-30
+statementLastUpdatedDate: 2022-05-30
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

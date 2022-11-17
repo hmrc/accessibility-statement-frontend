@@ -1,0 +1,13 @@
+serviceName: Register an employer for PAYE
+serviceDescription: The Company Registration Service enables companies to register with Companies House. Most companies are registered for Corporation Tax at the same time as registering with Companies House. The service is also used to register as an employer.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-for-paye
+contactFrontendServiceId: payeregistration
+complianceStatus: full
+serviceLastTestedDate: 2022-11-01
+statementVisibility: public
+statementCreatedDate: 2021-11-25
+statementLastUpdatedDate: 2022-11-09
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+typeOfService: Public beta

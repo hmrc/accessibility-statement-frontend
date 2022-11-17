@@ -1,0 +1,18 @@
+serviceName: Check your transit guarantee balance
+serviceHeaderName: Check your transit guarantee balance
+serviceDescription:
+  The Common Transit Convention (CTC) is a treaty between EU member states and other countries for the transit of goods.
+  The goods can pass through different customs regimes without them having to be declared at every border.
+  This service allows users to check the balance of their guarantee so that they know how much of their balance is available to use.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-transit-guarantee-balance
+contactFrontendServiceId: CTCTraders
+complianceStatus: full
+serviceLastTestedDate: 2022-05-25
+statementVisibility: public
+statementCreatedDate: 2022-01-04
+statementLastUpdatedDate: 2022-06-08
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta

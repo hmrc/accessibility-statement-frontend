@@ -1,0 +1,15 @@
+serviceName: View client income and tax records
+serviceHeaderName: View client income and tax records
+serviceDescription: The View client income and tax records service allows authorised tax agents to view their clients’ employment and pension income records, together with any associated income tax and student loan repayments.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-history/select-client
+contactFrontendServiceId: IRV
+complianceStatus: full
+serviceLastTestedDate: 2022-09-12
+statementVisibility: public
+statementCreatedDate: 2022-04-26
+statementLastUpdatedDate: 2022-09-28
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Edinburgh
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Public beta

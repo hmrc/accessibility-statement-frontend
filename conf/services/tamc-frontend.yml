@@ -4,7 +4,11 @@ serviceDescription: Marriage Allowance lets you transfer a portion of your Perso
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /browse/tax/marriage-allowance
 contactFrontendServiceId: marriage-allowance
-complianceStatus: noncompliant
+complianceStatus: partial
+serviceLastTestedDate: 2021-04-23
+statementVisibility: public
+statementCreatedDate: 2020-10-01
+statementLastUpdatedDate: 2022-01-06
 accessibilityProblems:
   - On several pages, the legends for the radio buttons are not descriptive enough and this can cause confusion for screen readers.
   - On several pages, there are page titles that are duplicated and this can cause difficulty for screen readers who need unique page titles to allow them to identify the page correctly.
@@ -16,24 +20,25 @@ milestones:
       On several pages, the legend provided is not descriptive. This can be confusing to screen readers as it is unclear what the content is relating to and why it has been used.
       This can also be confusing for users as they do not make sense out of context.
       This fails WCAG 2.1 - Understanding Success Criterion 1.3.1: Information and relationships.
-    date: 2021-07-31
+    date: 2023-03-31
   - description: |
       On the page where selecting the date of marriage or civil partnership, the fields have no legend. This can cause problems for screen readers as they may be unable to tell what the fields relate to out of context.
       This fails WCAG 2.1 Understanding success criterion 1.3.1: Information and relationships.
-    date: 2021-07-31
+    date: 2023-03-31
   - description: |
       Throughout the service, page titles are duplicated across multiple pages which means that screen readers may not understand they are on a new page if they are moving through tabs.
       This fails WCAG 2.1 - Understanding Success Criterion 2.4.2: Page titled.
-    date: 2021-07-31
+    date: 2023-03-31
   - description: |
       On the are you married or in a civil partnership page, a status message appears after selecting ‘No’ without letting screen readers know. This will be a problem for screen readers browsing out of context.
       This fails WCAG 2.1 - Understanding Success Criterion 4.1.3: Status messages.
-    date: 2021-07-31
+    date: 2023-03-31
   - description: |
       On the confirm earlier tax years page, the error handling is not descriptive. This makes it difficult for screen readers to understand what the error message relates to.
       This fails WCAG 2.1 - Understanding Success Criterion 3.3.3: Error suggestion.
-    date: 2021-07-31
-serviceLastTestedDate: 2021-04-23
-statementVisibility: public
-statementCreatedDate: 2020-10-01
-statementLastUpdatedDate: 2021-06-02
+    date: 2023-03-31
+
+businessArea: Customer Services Group (CSG)
+ddc:
+liveOrClassic:
+typeOfService: Live services
