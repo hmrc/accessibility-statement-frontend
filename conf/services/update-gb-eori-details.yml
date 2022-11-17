@@ -1,0 +1,12 @@
+serviceName: Update GB EORI number details
+serviceHeaderName: Update GB EORI number details
+serviceDescription: |
+  Use this form to update your GB EORI details.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/update-gb-eori-details
+contactFrontendServiceId: GForm
+complianceStatus: full
+serviceLastTestedDate: 2021-11-10
+statementVisibility: public
+statementCreatedDate: 2021-11-10
+statementLastUpdatedDate: 2021-11-10

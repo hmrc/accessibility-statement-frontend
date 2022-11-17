@@ -1,0 +1,12 @@
+serviceName: Cancel a GB EORI number
+serviceHeaderName: Cancel a GB EORI number
+serviceDescription: |
+  Use this form to update your GB EORI details.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/cancel-gb-eori-number
+contactFrontendServiceId: GForm
+complianceStatus: full
+serviceLastTestedDate: 2021-11-10
+statementVisibility: public
+statementCreatedDate: 2021-11-10
+statementLastUpdatedDate: 2021-11-10
