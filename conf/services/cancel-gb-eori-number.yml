@@ -6,7 +6,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/cancel-gb-eori-number
 contactFrontendServiceId: GForm
 complianceStatus: full
-serviceLastTestedDate: 2021-11-10
+serviceLastTestedDate: 2022-11-10
 statementVisibility: public
-statementCreatedDate: 2021-11-10
-statementLastUpdatedDate: 2021-11-10
+statementCreatedDate: 2022-11-10
+statementLastUpdatedDate: 2022-11-10
