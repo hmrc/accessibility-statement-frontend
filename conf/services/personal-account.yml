@@ -7,58 +7,47 @@ serviceUrl: /personal-account
 contactFrontendServiceId: personal-account
 complianceStatus: partial
 statementVisibility: public
-statementCreatedDate: 2021-12-10
-serviceLastTestedDate: 2021-01-04
-statementLastUpdatedDate: 2022-01-17
+statementCreatedDate: 2022-10-27
+serviceLastTestedDate: 2022-09-13
+statementLastUpdatedDate: 2022-11-22
 accessibilityProblems:
-  - On the page to change the main address, there are 3 ‘change’ links that are not descriptive. People using screen readers are unable to tell which link helps them to do which task.
-  - On the page to change the postal address, there are 3 ‘change’ links that are not descriptive. People using screen readers are unable to tell which link helps them to do which task.
-  - On the page to find user ID, there is no heading on the pop up that says the session is about to timeout.  This may be confusing for screen reader users as they may not understand that there is a pop up and what it is for.
-  - On the view messages page, the ‘skip to main to main content’ link is not working for people using assistive technology.
-  - On the page to enter an international address, there is no pop up that tells people that the session is about to timeout. This is confusing for people using screen readers.
-  - Throughout the service, when in the top navigation, people using a keyboard to tab through find that the link when activating the account expands into a drop down. The drop down remains open even when the user navigates away from it.  Users need to navigate back to close it.
-  - On the page to enter an international address, the error messages are too general. They are also repeated and do not give a good description.
-  - On the page to enter an international address, the option to auto complete the form does not appear. This option helps users to fill the address fields automatically which cuts down on errors.
-  - On the page to print a national insurance summary, an email address appears over 2 lines when the browser is significantly magnified. This will affect low vision users or any users that prefer to read the page in a single column.
-  - On the personal tax account page, National Insurance content overlaps and becomes hard to read when the text spacing technique is being used. Text spacing gives more space between content to help the user with reading.
-  - On the page to print a national insurance summary, the colour contrast does not meet the minimum requirements. This makes it difficult to see and read especially for users with low vision or colour blindness.
-  - On the tax credits choice page, the colour contrast does not meet the minimum requirements. This makes it difficult to see and read especially for users with low vision or colour blindness.
+  - the language for the document has not been set correctly and there are no headings
+  - screen readers may not load the correct pronunciation rules
+  - visual browsers may not display the characters and scripts correctly
+  - when the document is zoomed in, the content does not reflow and needs horizontal scrolling
+  - there are links in the document which can be actioned by the mouse but are read as plain text for screen reader users
+  - keyboard-only users cannot tab to links which are only actionable by the mouse
+  - there are actionable links on the page which cannot be distinguished because of insufficient colour contrast
+  - the PDF is missing heading structure and language entry
+  - the PDF is not tagged and links are not distinguishable through text or colour
+
 milestones:
   - description: |
-      On the page to change the main address, there are 3 ‘change’ links that are not descriptive. People using screen readers are unable to tell which link helps them to do which task. This fails WCAG Reference 1.3.1 Info and Relationships (Level A).
+      The language for the PDF document has not been set correctly and there are no headings.This doesn’t meet WCAG 2.1 success criteria 3.1.1 (language of page).
     date: 2023-03-31
   - description: |
-      On the page to change the postal address, there are 3 ‘change’ links that are not descriptive. People using screen readers are unable to tell which link helps them to do which task. This fails WCAG Reference(s) Success Criterion 2.4.4 Link Purpose – in context (Level A) and Success Criterion 2.4.9 Link Purpose - Link Only - (Level AAA).
+      Screen readers may not load the correct pronunciation rules. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships).
     date: 2023-03-31
   - description: |
-      On the page to find user ID, there is no heading on the pop up that says the session is about to timeout.  This may be confusing for screen reader users as they may not understand that there is a pop up and what it is for. This fails WCAG Reference 1.3.1 Info and Relationships (Level A).
+      Visual browsers may not display the characters and scripts correctly. This doesn’t meet WCAG 2.1 success criteria
     date: 2023-03-31
   - description: |
-      On the view messages page, the ‘skip to main to main content’ link is not working for people using assistive technology. This fails WCAG Reference 2.4.1 Bypass Blocks (Level A).
+      When the document is zoomed in, the content does not reflow and needs horizontal scrolling. This doesn’t meet WCAG 2.1 success criteria
     date: 2023-03-31
   - description: |
-      On the page to enter an international address, there is no pop up that tells people that the session is about to timeout. This is confusing for people using screen readers. This fails WCAG Reference 2.2.1 Timing Adjustable (Level A).
+      There are links in the document which can be actioned by the mouse but are read as plain text for screen reader users. This doesn’t meet WCAG 2.1 success criteria
     date: 2023-03-31
   - description: |
-      Throughout the service, when in the top navigation, people using a keyboard to tab through find that the link when activating the account expands into a drop down. The drop down remains open even when the user navigates away from it.  Users need to navigate back to close it. This fails WCAG Reference 4.1.2 Name, Role, Value (Level A) Understanding Name, Role, Value.
+      Keyboard-only users cannot tab to links which are only actionable by the mouse. This doesn’t meet WCAG 2.1 success criteria
     date: 2023-03-31
   - description: |
-      On the page to enter an international address, the error messages are too general. They are also repeated and do not give a good description. This fails WCAG Reference 3.3.3 Error Suggestion (Level AA).
+      There are actionable links on the page which cannot be distinguished because of insufficient colour contrast. This doesn’t meet WCAG 2.1 success criteria
     date: 2023-03-31
   - description: |
-      On the page to enter an international address, the option to auto complete the form does not appear. This option helps users to fill the address fields automatically which cuts down on errors. This fails WCAG Reference 1.3.5 Identify Input Purpose (Level AA).
+      The PDF is missing heading structure and language entry. This doesn’t meet WCAG 2.1 success criteria
     date: 2023-03-31
   - description: |
-      On the page to print a national insurance summary, an email address appears over 2 lines when the browser is significantly magnified. This will affect low vision users or any users that prefer to read the page in a single column. This fails WCAG Reference 1.4.10 Reflow (Level AA).
-    date: 2023-03-31
-  - description: |
-      On the personal tax account page, National Insurance content overlaps and becomes hard to read when the text spacing technique is being used. Text spacing gives more space between content to help the user with reading. This fails WCAG Reference: 1.4.12 Text Spacing (Level AA).
-    date: 2023-03-31
-  - description: |
-      On the page to print a national insurance summary, the colour contrast does not meet the minimum requirements. This makes it difficult to see and read especially for users with low vision or colour blindness. This fails WCAG Reference(s): 1.4.3 Contrast – minimum (Level AA).
-    date: 2023-03-31
-  - description: |
-      On the tax credits choice page, the colour contrast does not meet the minimum requirements. This makes it difficult to see and read especially for users with low vision or colour blindness. This fails WCAG Reference: 1.4.6 Contrast – Enhanced – (Level AAA).
+      The PDF is not tagged and links are not distinguishable through text or colour. This doesn’t meet WCAG 2.1 success criteria
     date: 2023-03-31
 
 businessArea: Customer Services Group (CSG)
