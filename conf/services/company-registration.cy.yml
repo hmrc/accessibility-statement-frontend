@@ -8,23 +8,13 @@ accessibilityProblems:
   - Nid yw’r ddewislen yn ymddwyn yn ôl y disgwyl wrth we-lywio gan ddefnyddio iOS.
   - Nid yw’r cyferbynnedd lliw yn bodloni safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1, ar gyfer isafswm contract.
 milestones:
-  - description: Mae’r allwedd ar gyfer y mewnbynnau dyddiad yn aneglur i ddefnyddwyr darllenydd sgrin. Mae hyn yn golygu nad yw defnyddwyr darllenydd sgrin yn cael yr wybodaeth sydd yn y label gweladwy.
+  - description: Mae yna bennawd gweledol nad yw wedi’i farcio fel pennawd at ddiben defnyddwyr darllenydd sgrin. Mae hyn yn golygu nad yw defnyddwyr darllenydd sgrin yn gallu dilyn y dudalen yn yr un modd â defnyddwyr â golwg. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2023-03-31
-  - description: Pan fydd gwall wedi’i wneud yn y maes ffurflen, nid yw’r modd o ymdrin â gwallau yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1, ar gyfer adnabod gwallau.
+  - description: Mae testun amgen wedi’i roi ar gyfer delwedd addurnol, ac mae’n darllen fel a ganlyn ‘[Image of Memorandum of Association front cover]’. Gall hyn fod yn ddryslyd i ddefnyddwyr darllenydd sgrin gan nad yw’n glir beth mae’r ddelwedd yn ei gynrychioli. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 1.1.1 (Non-text Content) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2023-03-31
-  - description: Nid yw’r ddewislen yn ymddwyn yn ôl y disgwyl wrth we-lywio gan ddefnyddio iOS. Efallai y bydd hyn yn ddryslyd i ddefnyddwyr darllenydd sgrin gan nad oes ciw clywadwy i gyhoeddi bod y ddewislen wedi ehangu, ac nid yw defnyddwyr yn gallu cael mynediad at y cysylltiad ‘Mewngofnodi’ na mynd yn ôl i’r cysylltiad ‘Dewislen’ gan ei fod yn diflannu.
+  - description: Ar un dudalen, pan ddewisir mwy nag un blwch dewis, maent yn ehangu i ddangos mewnbwn arall er mwyn i’r defnyddiwr ychwanegu ei fanylion. Fodd bynnag, mae’r mewnbynnau eraill ar y dudalen yn troi’n lliw llwyd golau. Gall hyn effeithio ar ddefnyddwyr â golwg gwan a allai ei chael hi’n anodd gweld y gwahaniaeth rhwng testun llwyd a chefndir gwyn. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 1.4.3 (Contrast minimum) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2023-03-31
-  - description: Mae rôl annilys wedi’i neilltuo i’r elfen rhestr. Gall y broblem hon effeithio ar sut mae meddalwedd darllenydd sgrin yn darllen y rhestr gan fod y rhestr wedi’i strwythuro’n anghywir.
-    date: 2023-03-31
-  - description: Nid yw’r cyferbynnedd lliw yn bodloni safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1, ar gyfer isafswm cyferbynnedd. Gallai’r broblem hon effeithio ar ddefnyddwyr sydd â golwg gwan sy’n gwe-lywio drwy’r gwasanaeth ac a allai ei chael hi’n anodd gweld y gwahaniaeth rhwng testun gwyn y cysylltiad a lliw’r cefndir. Er mwyn bodloni safon ‘AA’ y canllawiau, dylai’r gymhareb cyferbynnedd fod o leiaf 4.5.1 ar gyfer testun maint arferol (mae’n 1.6:1 ar hyn o bryd).
-    date: 2023-03-31
-  - description: Pan fydd cysylltiad yn cael ffocws, nid yw’n bodloni safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We ar gyfer isafswm cyferbynnedd. Er mwyn bodloni safon ‘AA’ y canllawiau, dylai’r gymhareb cyferbynnedd fod o leiaf 4.3.1 ar gyfer testun maint arferol (mae’n 1.6:1 ar hyn o bryd).
-    date: 2023-03-31
-  - description: Mae label mewnbwn yn ddi-ddisgrifiad a gall defnyddwyr darllenydd sgrin sy’n gwe-lywio drwy’r dudalen fewnbwn, gan ddefnyddio rhestr deialog y meysydd ffurflen, ei chael hi’n anodd deall diben y maes mewnbwn.
-    date: 2023-03-31
-  - description: Pan osodwyd y dudalen i osodiadau ail-lifo (1280 picsel CSS o led wrth chwyddo 400%), mae’r testun sy’n gyfagos i’r botwm radio yn syrthio oddi ar y dudalen. Gall y broblem hon rwystro defnyddwyr â golwg gwan sy’n defnyddio gosodiadau ail-lifo i weld tudalennau gwe rhag gallu darllen y cynnwys yn glir.
-    date: 2023-03-31
-  - description: Mae’r allwedd ar gyfer y mewnbynnau dyddiad yn aneglur i ddefnyddwyr darllenydd sgrin. Mae hyn yn golygu nad yw defnyddwyr darllenydd sgrin yn cael yr wybodaeth sydd yn y label gweladwy sy’n cyfarwyddo’r defnyddiwr.
+  - description: Pan osodir un dudalen i osodiadau ail-lifo, mae’r testun sy’n gyfagos i’r botwm radio yn syrthio oddi ar y dudalen. Gall y broblem hon rwystro defnyddwyr â golwg gwan sy’n defnyddio gosodiadau ail-lifo i weld tudalennau gwe rhag gallu darllen y cynnwys yn glir. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2023-03-31
 serviceLastTestedDate: 2021-08-31
 statementVisibility: public
