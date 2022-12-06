@@ -122,9 +122,10 @@ technical.non-compliance.header=Cynnwys nad yw’n hygyrch
 technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
 technical.non-compliance.milestone.fix-by=Bydd hyn yn cael ei drwsio erbyn {0}.
-technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 31 Hydref 2022.
-technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Hydref 2022.
-technical.non-compliance.automated.test-by.app=Bydd yr ap hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Hydref 2022.
+# these messages include Welsh translation of 31 March 2023 - update if this date changes again
+technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 31 Mawrth 2023.
+technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Mawrth 2023.
+technical.non-compliance.automated.test-by.app=Bydd yr ap hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 31 Mawrth 2023.
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
