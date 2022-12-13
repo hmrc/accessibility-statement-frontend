@@ -1,0 +1,14 @@
+serviceName: Gwneud cais am ad-daliad Hunanasesiad
+serviceDescription: |
+  Gwasanaeth i ddefnyddwyr Hunanasesiad ofyn am ad-daliad yn erbyn swm o gredyd Hunanasesiad cadarnhaol. Gallant hefyd ddefnyddio’r gwasanaeth i fwrw golwg dros hanes eu had-daliadau ac i wirio’u statws.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /self-assessment-refund/refund-amount
+contactFrontendServiceId: self-assessment-repayment
+complianceStatus: full
+serviceLastTestedDate: 2022-05-30
+statementVisibility: public
+statementCreatedDate: 2022-05-20
+statementLastUpdatedDate: 2022-06-07
+businessArea: Prif Swyddog Gwybodaeth a Gwasanaethau Digidol (CDIO)
+ddc: DDC Worthing
+typeOfService: Beta cyhoeddus
