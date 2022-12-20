@@ -6,7 +6,11 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-services-account
 contactFrontendServiceId: AOSS
 complianceStatus: full
-serviceLastTestedDate: 2019-8-22
+serviceLastTestedDate: 2022-07-28
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2019-9-23
+statementLastUpdatedDate: 2022-10-04
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

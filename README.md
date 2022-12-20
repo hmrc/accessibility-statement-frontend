@@ -2,7 +2,29 @@
 
 Accessibility Statement Frontend is a service for providing for accessibility statements across HMRC.
 
-## Prerequisites
+## Table of contents
+  * [Before you add your accessibility statement](#before-you-add-your-accessibility-statement)
+  * [How to add your service's accessibility statement](#how-to-add-your-services-accessibility-statement)
+  * [Opening a PR to get your statement merged into the repository](#opening-a-pr-to-get-your-statement-merged-into-the-repository)
+  * [How to release an accessibility statement to Production](#how-to-release-an-accessibility-statement-to-production)
+  * [Adding to your service](#adding-to-your-service)
+    + [Users of play-ui (version 8.12.0 or above) or play-frontend-hmrc (version 0.19.0 or above)](#users-of-play-ui-version-8120-or-above-or-play-frontend-hmrc-version-0190-or-above)
+    + [Users of older versions of play-ui or Java-based services](#users-of-older-versions-of-play-ui-or-java-based-services)
+  * [A note on contactFrontendServiceId](#a-note-on-contactfrontendserviceid)
+  * [Creating accessibility statements in the Welsh language](#creating-accessibility-statements-in-the-welsh-language)
+  * [To run locally](#to-run-locally)
+  * [Running unit tests](#running-unit-tests)
+  * [Running accessibility tests](#running-accessibility-tests)
+  * [Running the integration tests](#running-the-integration-tests)
+  * [Generating a report](#generating-a-report)
+    + [Dates in reports](#dates-in-reports)
+  * [Running UI acceptance tests](#running-ui-acceptance-tests)
+  * [Performance testing](#performance-testing)
+  * [Running ZAP scan locally](#running-zap-scan-locally)
+  * [Service Manager config for local development](#service-manager-config-for-local-development)
+    + [License](#license)
+
+## Before you add your accessibility statement
 
 Adding an accessibility statement involves creating a structured text file known as
 a [YAML](https://en.wikipedia.org/wiki/YAML) (YAML Ain't Markup Language) file and 
@@ -12,7 +34,7 @@ Creating such a file does not require any coding skills and can be done in a sim
  YAML editor or even directly within Github. However, if you are a developer you may 
 prefer to use your preferred IDE and Git to upload the YAML file to the repository.
 
-## To add your service's accessibility statement
+## How to add your service's accessibility statement
 
 First create a YAML file similar to the one listed below. This example includes all possible fields. Your statement
 may not need all of these fields depending on whether your service is fully, partially or non-compliant. Note 
@@ -46,13 +68,20 @@ statementVisibility: public             # If set to public, the statement will b
 statementCreatedDate: 2019-09-30        # In ISO format YYYY-MM-DD
 statementLastUpdatedDate: 2019-09-30    # In ISO format YYYY-MM-DD
 automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
-automatedTestingDetails: |             # Only add this value if your service has only had automated testing
+automatedTestingDetails: |              # Only add this value if your service has only had automated testing
   If your service has only had automated testing, add a text description of testing tools used, e.g.
   It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
+businessArea: Chief Digital & Information Officer (CDIO) # See valid values below
+ddc: DDC Worthing                        # See valid values below
+liveOrClassic: Live Services (Worthing)  # See valid values below 
+typeOfService: Public beta               # Classic services|Live services|Public beta
 ```
 
-If your statement is specifically for a mobile application, add the line `mobilePlatform: android` for an android application or
-`mobilePlatform: ios` for an iOS application. Do not add this for web-based services.
+If your statement is specifically for a mobile application, add the line `statementType: android` for an android application or
+`statementType: ios` for an iOS application. **Do not add this for web-based services.**
+
+If you are a service that requires a custom template like VOA or C-HGV, please include the property `statementType` and set the value
+to either `VOA` or `C-HGV`. **If you are not one of those services, or a mobile app, you do not need to include this property.** 
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
@@ -68,15 +97,24 @@ e.g. `conf/services/discounted-icecreams.yml` will create an accessibility state
 
 The filename can contain only lower case letters, dashes or numbers, and the filename extension must be `.yml`
 
+| Parameter         | Valid values                                                                                                          |
+| ------------------| -------------------------------------------------------------------------------------------------------------------- |
+| `businessArea`    | `Adjudicator's Office`, `Borders & Trade`, `Chief Digital & Information Officer (CDIO)`, `Customer Compliance Group (CCG)`, `Customer Services Group (CSG)`, `Customer Strategy & Tax Design (CS&TD)`, `HMRC External - Cabinet Office`, `Valuation Office Agency (VOA)` |
+| `ddc`             | `DDC Edinburgh`, `DDC London`, `DDC Newcastle`, `DDC Telford`, `DDC Worthing`, `DDC Yorkshire`, `Non DDC Location` |
+| `liveOrClassic`   | `Classic Services`, `Live Services - Edinburgh`, `Live Services - Newcastle`, `Live Services - Telford`, `Live Services - Worthing` |
+| `typeOfService`   | `Classic services`, `Live services`, `Public beta` |
+
+Additional guidance for "typeOfService": If the service is being maintained by a Live Services team, then put "Live services" as the value even if the service is in the public beta lifecycle stage. If the service is still in active development by a scrum team outside of Live Services, then put "Public beta".
+
 ## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run the integration tests with `sbt it:test` as described below.
 
-If your team would like repository write access to create branches and submit PRs without forking the repository, contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). Having write access will mean your team will receive alerts regarding production deployments.
+We ask that teams review, approve, and merge their own accessibility statements via pull requests. If your team doesn't have the required write access to merge your changes then contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/) and request access for your team. Having write access will mean your team will receive alerts regarding production deployments.
 
-If you do not have write access to the repository, you are welcome to fork the repository using the Github user interface and submit PRs via your forked copy. In this case you will need to contact us to request PRs are approved and merged.
+If your pull request contains changes to files other than your accessibility statements, then you'll need to request additional review and approval from [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). To avoid delays when proposing additional changes like this, please reach out to us first to discuss your request.
 
-## Release an accessibility statement to Production
+## How to release an accessibility statement to Production
 Production releases for ```accessibility-statement-frontend``` are managed by PlatUI. If you would like the team to release your accessibility statement to Production, please contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/).
 
 ## Adding to your service
@@ -140,8 +178,8 @@ end user discovered the accessibility issue.
 
 contactFrontendServiceId helps identify your service when members of the general public report accessibility problems.
 
-If your service is already integrating with contact-frontend's *Get help with this page* form, you will find it added 
-as a querystring parameter `service` in URLs to contact-frontend.
+If your service is already integrating with contact-frontend's [Get help with a technical problem](https://www.tax.service.gov.uk/contact/report-technical-problem) 
+form, you will find it added as a querystring parameter `service` in URLs to contact-frontend.
 
 If you look in your service's frontend source code, you should see URLs constructed similar to
 
@@ -184,10 +222,16 @@ removed.
 ## Running unit tests
 
 ```
-sbt a11yTest
+sbt test
 ```
 
-The above tests include accessibility checks via the
+## Running accessibility tests
+
+```
+sbt a11y:test
+```
+
+The above tests are run via the
 [sbt-accessibility-linter](https://www.github.com/hmrc/sbt-accessibility-linter)
 plugin. This plugin requires Node.js v12 or above to be installed locally.
 
@@ -225,6 +269,19 @@ sbt "generateReport alternativeName.tsv"
 ```
 
 will generate the report in `target/alternativeName.tsv`
+
+### Dates in reports
+
+As part of the report, various dates are populated from the YAML files. In some circumstances, certain dates are not applicable to certain statements. Specifically:
+- A statement with a `complianceStatus` set to `full` will not have an `earliestMilestoneDate` (as there are no milestones in the statement)
+- A statement with a `complianceStatus` set to `noncompliant` will not have an `earliestMilestoneDate` (as there are no milestones in the statement) and will not have a `serviceLastTestedDate` (as it has not been tested).
+
+In both those cases, the date listed on the report will be hardcoded to **01/01/1900**, as per the request of the DIAS team.
+
+Additionally, there are `month` and `year` fields in the generated report. These are the month and year **in which the
+report was generated**. In the build, this will based on the system time. The `month` field will display the 
+**first day** of the month in which it was generated. For example, a report generated on 17 March 2022 will display 
+`2022-03-01` in the `month` field. 
 
 ## Running UI acceptance tests
 

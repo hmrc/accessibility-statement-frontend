@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,8 +21,11 @@ import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 
+import java.util.{Calendar, GregorianCalendar}
+
 class StatementReportTask @Inject() (
-  accessibilityStatementRepo: AccessibilityStatementsRepo
+  accessibilityStatementRepo: AccessibilityStatementsRepo,
+  dateProvider: DateProvider
 ) extends ReportTask("report.tsv") {
   override def getHeader = Seq(
     "url",
@@ -38,7 +41,15 @@ class StatementReportTask @Inject() (
     "statementVisibility",
     "serviceLastTestedDate",
     "statementCreatedDate",
-    "statementLastUpdatedDate"
+    "statementLastUpdatedDate",
+    "statementType",
+    "Month",
+    "Year",
+    "Business Area",
+    "DDC",
+    "Live or Classic",
+    "type of Service",
+    "In Statement Service"
   )
 
   override def getBodyRows: Seq[Seq[String]] =
@@ -51,19 +62,21 @@ class StatementReportTask @Inject() (
 
     import statement._
 
+    val defaultDate           = new GregorianCalendar(1900, Calendar.JANUARY, 1).getTime
+    val currentDate           = dateProvider.getCurrentDate
     val milestoneCount        = milestones.getOrElse(Seq.empty).size.toString
     val problemsCount         = accessibilityProblems.getOrElse(Seq.empty).size.toString
-    val lastTestedDate        = serviceLastTestedDate.map(getIsoDate).getOrElse("")
+    val lastTestedDate        = serviceLastTestedDate.getOrElse(defaultDate)
     val earliestMilestoneDate =
       milestones
         .getOrElse(Seq.empty)
         .map(_.date)
         .sorted
         .headOption
-        .map(getIsoDate)
-        .getOrElse("")
+        .getOrElse(defaultDate)
     val languageCode          = language.code
     val serviceAbsoluteUrl    = s"https://$serviceDomain$serviceUrl"
+    val isInStatementService  = "Yes"
 
     Seq(
       url(serviceKey),
@@ -74,12 +87,20 @@ class StatementReportTask @Inject() (
       complianceStatus.toString,
       problemsCount,
       milestoneCount,
-      earliestMilestoneDate,
-      automatedTestingOnly.getOrElse(false).toString,
+      getIsoDate(earliestMilestoneDate),
+      displayAutomatedTestingOnlyContent.toString,
       statementVisibility.toString,
-      lastTestedDate,
+      getIsoDate(lastTestedDate),
       getIsoDate(statementCreatedDate),
-      getIsoDate(statementLastUpdatedDate)
+      getIsoDate(statementLastUpdatedDate),
+      statementTemplate.toString,
+      getFirstDayOfMonth(currentDate),
+      getYear(currentDate),
+      businessArea.map(_.toString).getOrElse(""),
+      ddc.map(_.toString).getOrElse(""),
+      liveOrClassic.map(_.toString).getOrElse(""),
+      typeOfService.map(_.toString).getOrElse(""),
+      isInStatementService
     )
   }
 }

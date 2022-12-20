@@ -1,0 +1,13 @@
+serviceName: Discounted Buns for VOA Welsh
+serviceDescription: |
+  Defnyddiwch y paragraff hwn i ddisgrifio'ch gwasanaeth. Gall fynd dros sawl llinell
+  fel hyn.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /voa-buns
+contactFrontendServiceId: voa-buns
+complianceStatus: full
+serviceLastTestedDate: 2022-04-01
+statementVisibility: draft
+statementCreatedDate: 2022-05-30
+statementLastUpdatedDate: 2022-05-30
+statementType: VOA

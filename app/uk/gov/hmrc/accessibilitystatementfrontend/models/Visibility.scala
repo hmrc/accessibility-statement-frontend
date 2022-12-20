@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,29 +16,21 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
-import io.circe.{Decoder, Encoder}
+sealed trait Visibility extends EnumValue
 
-sealed trait Visibility
-
-object Visibility {
-  implicit val decoder: Decoder[Visibility] = Decoder.decodeString.emap {
-    case "public"   => Right(Public)
-    case "draft"    => Right(Draft)
-    case "archived" => Right(Archived)
-    case status     => Left(s"""Unrecognised visibility "$status"""")
-  }
-  implicit val encoder: Encoder[Visibility] =
-    Encoder.encodeString.contramap[Visibility](_.toString)
+object Visibility extends Enum[Visibility] {
+  def description: String     = "visibility"
+  def values: Seq[Visibility] = Seq(Public, Draft, Archived)
 }
 
 case object Public extends Visibility {
-  override def toString = "public"
+  val value = "public"
 }
 
 case object Draft extends Visibility {
-  override def toString = "draft"
+  val value = "draft"
 }
 
 case object Archived extends Visibility {
-  override def toString = "archived"
+  val value = "archived"
 }

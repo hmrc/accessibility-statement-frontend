@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ class RepositoryISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite
     "instantiate without error" in {
       val repository = Try(app.injector.instanceOf[AccessibilityStatementsRepo])
 
-      repository should be a 'success
+      repository.isSuccess should be(true)
     }
   }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@ import javax.inject.{Inject, Singleton}
 import play.api.i18n.MessagesApi
 import play.api.mvc.Request
 import play.twirl.api.Html
-import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.ErrorTemplate
 import uk.gov.hmrc.play.bootstrap.frontend.http.FrontendErrorHandler
 
@@ -28,8 +27,7 @@ import uk.gov.hmrc.play.bootstrap.frontend.http.FrontendErrorHandler
 class ErrorHandler @Inject() (
   errorTemplate: ErrorTemplate,
   val messagesApi: MessagesApi
-)(implicit appConfig: AppConfig)
-    extends FrontendErrorHandler {
+) extends FrontendErrorHandler {
 
   override def standardErrorTemplate(
     pageTitle: String,

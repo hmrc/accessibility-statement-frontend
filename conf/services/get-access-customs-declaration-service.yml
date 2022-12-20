@@ -11,10 +11,14 @@ accessibilityProblems:
   - the colours used to show keyboard focus do not meet the minimum colour contrast requirements
 milestones:
   - description: Focus is not trapped within the timeout dialog, which means users are able to navigate past the options and access the page elements behind the dialog. This can be disorientating for some users who may be unable to see what is happening on screen. This fails WCAG 2.1 success criterion 2.4.3 (Focus Order).
-    date: 2021-02-26
+    date: 2022-08-26
   - description: The keyboard focus indicator for elements, including links, does not meet the colour contrast ratio requirements. Users may find it difficult to navigate the page using a keyboard as they may assume that keyboard focus is not present. This fails WCAG 2.1 success criterion 1.4.11 (non-text contrast ratio).
-    date: 2021-02-26
+    date: 2022-08-26
 serviceLastTestedDate: 2020-10-14
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2020-12-10
+statementLastUpdatedDate: 2021-12-06
+businessArea: Borders & Trade
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta

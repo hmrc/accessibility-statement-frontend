@@ -5,8 +5,12 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /annual-tax-summary
 contactFrontendServiceId: annual-tax-summary
-complianceStatus: noncompliant
+complianceStatus: full
+serviceLastTestedDate: 2022-05-04
 statementVisibility: public
-statementCreatedDate: 2020-09-24
-statementLastUpdatedDate: 2020-09-24
-
+statementCreatedDate: 2021-03-22
+statementLastUpdatedDate: 2022-05-11
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Telford
+typeOfService: Live services

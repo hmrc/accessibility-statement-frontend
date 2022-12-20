@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,10 +43,10 @@ class MilestoneSpec extends AnyWordSpec with Matchers with TryValues {
       reportTask.generate(Seq(reportFilename))
 
       val report = Source.fromFile(s"target/$reportFilename", "UTF-8")
-      val result = Try(report.getLines.toSeq)
+      val result = Try(report.getLines().toSeq)
 
-      result     should be a 'success
-      result.get should equal(
+      result.isSuccess should be(true)
+      result.get       should equal(
         Seq(
           "url\tdescription\tdate\tcriterion",
           "https://www.qa.tax.service.gov.uk/accessibility-statement/with-milestones\tSome links, headings and labels may not provide enough information about what to do next, or what happens next.\\nThis does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).\\n\t2020-05-01\t2.4.6",
@@ -69,10 +69,10 @@ class MilestoneSpec extends AnyWordSpec with Matchers with TryValues {
       reportTask.generate(Seq(reportFilename))
 
       val report = Source.fromFile(s"target/$reportFilename", "UTF-8")
-      val result = Try(report.getLines.toSeq)
+      val result = Try(report.getLines().toSeq)
 
-      result     should be a 'success
-      result.get should not contain "A draft milestone"
+      result.isSuccess should be(true)
+      result.get       should not contain "A draft milestone"
 
       report.close()
     }

@@ -6,26 +6,42 @@ serviceUrl: /stamp-taxes
 contactFrontendServiceId: hmrc-sdlt
 complianceStatus: partial
 accessibilityProblems:
-  - the service times out without giving users due warning or the option to extend their session
-  - some of the instructions for the service are only shown in images rather than explained in text
-  - some page titles, headings and links are not descriptive
-  - not all labels and functions have been put in place for keyboard navigation and screen readers, so the information given to users may be incomplete, in the wrong order or unclear
-  - pages cannot be formatted as a single column, which means users may have to scroll horizontally to find the information they need
-  - users cannot skip to the main content when using keyboard navigation or a screen reader
+  - the ‘Start now’ button does not receive focus.
+  - when the page loads focus starts at the content, bypassing the skip link at the top of the page.
+  - the ‘Skip to main content’ link does not function as expected.
+  - page titles throughout the service are not unique and are duplicated.
+  - heading structure on the Summary page is illogical and contains multiple h1 headings.
+  - the ‘Skip to main content’ link directs users to the previous page.
+  - bold heading text not marked up using headings
+  - visually hidden text 'Provide an answer to continue' on Check your answers page is confusing for screen reraders users
+  - the introduction page has two ‘main’ regions defined by the role=”main”.
+  - the ‘How does this work?’ details component have duplicate labels.
 milestones:
-  - description: "The service times out without giving users due warning or the option to extend their session, which can cause issues for people that cannot complete the task within the time limit. This doesn’t meet WCAG 2.1 success criterion 2.2.1 (timing adjustable)."
-    date: 2021-09-23
-  - description: "Some of the instructions for the service are only shown in images rather than explained in text, which makes the service harder to use for people with visual impairments. This doesn’t meet WCAG 2.1 success criteria 1.1.1 (non-text content) or 1.3.3 (sensory characteristics)."
-    date: 2021-09-23
-  - description: "Some page titles, headings and links are not descriptive, so users may find it harder to navigate the service using assistive technologies. This doesn’t meet WCAG 2.1 success criteria 2.4.2 (page titled), 2.4.4 (link purpose) or 2.4.6 (headings and labels)."
-    date: 2021-09-23
-  - description: "Not all labels and functions have been put in place for keyboard navigation and screen readers, so the information given to users may be incomplete, in the wrong order or unclear. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships), 2.4.3 (focus order), 2.4.7 (focus visible) or 4.1.3 (status messages)."
-    date: 2021-09-23
-  - description: "Pages cannot be formatted as a single column, which means users may have to scroll horizontally to find the information they need. This doesn’t meet WCAG 2.1 success criterion 1.4.10 (reflow)."
-    date: 2021-09-23
-  - description: "Users cannot always skip to the main content when using keyboard navigation or a screen reader, which means these users may have to go through the same information on multiple pages, for example, headers and menu links. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (bypass blocks)."
-    date: 2021-09-23
-serviceLastTestedDate: 2020-07-13
+  - description: "When navigating the page using keyboard only, the ‘Start now’ button does not receive focus. This issue may affect keyboard only users as well as screen reader users who navigate the page using keyboard, as they have no way of activating the button to continue their journey in the service. This doesn’t meet WCAG 2.1 success criteria 2.4.3 (focus order), 2.1.1 (keyboard) or 2.1.3 (keyboard no exception)."
+    date: 2022-06-21
+  - description: "When navigating the page using keyboard only, initially the focus is taken to the ‘freehold’ radio button. Keyboard users may find this disorientating and would expect focus to be placed on the first element on the page (skip link). This doesn’t meet WCAG 2.1 success criteria 2.4.3 (focus order)."
+    date: 2022-06-21
+  - description: "The ‘Skip to main content’ link does not function as expected and the users focus stays on the link instead of being directed to the main content region of the page. This issue may affect keyboard and screen reader users who rely on skip links to bypass repetitive content; such as headers and navigation regions on the page. This doesn’t meet WCAG 2.1 success criteria 2.4.1 (bypass blocks) or 2.4.3 (focus order)."
+    date: 2022-06-21
+  - description: "The page titles throughout the service are not unique and are duplicated. This issue may cause particular difficulty for screen reader users navigating the service as the page title is the first element in the users journey. Screen reader users may be unable to differentiate between different pages in the service as the title for each page is the same. This doesn’t meet WCAG 2.1 success criteria 2.4.2 (page titled)."
+    date: 2022-06-21
+  - description: "The heading structure on the page is illogical and contains multiple h1 headings. This issue may affect screen reader users who use headings to navigate and identify different sections of information on the page. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
+    date: 2022-06-21
+  - description: "When users activate the ‘Skip to main content’ link on the page they are directed back to the previous page. This issue may affect screen reader and keyboard only users who would expect the link to allow them to bypass the header and navigation region and enter the main content on the page. This doesn’t meet WCAG 2.1 success criteria 2.4.4 (link purpose in context), 2.4.1 (bypass blocks) or 2.4.9 (link purpose link only)."
+    date: 2022-06-21
+  - description: "When users expand the details component there are two spans containing visual headings which sighted users can distinguish by the bold font introducing new sections of information to the page. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
+    date: 2022-06-21
+  - description: "On the ‘Check your answers’ page, a visually hidden paragraph has been placed inside each <dt> element in the details list which reads out ‘Provide an answer to continue’ followed by ‘Freehold or leasehold’. As the page is a ‘Check your answers’ page, screen reader users may find the added information confusing as they have already provided the answers in previous pages in the service. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
+    date: 2022-06-21
+  - description: "The page has two ‘main’ regions defined by the role=”main”. This issue may affect screen reader users experience of navigating and identifying different areas of the page as screen reader users use landmarks to identify different areas on the page; such as: banner, main, complementary and contentinfo. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
+    date: 2022-06-21
+  - description: "The ‘How does this work’ details components on the page have duplicate labels. This issue may affect screen reader users who may find difficulty in distinguishing between the two components in their journey. This doesn’t meet WCAG 2.1 success criteria 2.4.6 (headings and labels)."
+    date: 2022-06-21
+serviceLastTestedDate: 2021-06-21
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2022-03-09
+businessArea: Customer Services Group (CSG)
+ddc:
+liveOrClassic:
+typeOfService: Classic services

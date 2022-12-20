@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,8 @@ class YamlParser[T: Decoder] extends Logging {
       s"Parsing YAML source file for source: ${statementSource.filename}"
     )
 
-    val parsedYaml = yamlAsString(statementSource.source).flatMap(parse)
+    val maybeSource = Try(Source.fromResource(statementSource.filename)).toEither
+    val parsedYaml  = maybeSource.flatMap(yamlAsString).flatMap(parse)
 
     parsedYaml match {
       case Right(parsed) =>

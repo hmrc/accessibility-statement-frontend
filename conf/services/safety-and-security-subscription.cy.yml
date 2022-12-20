@@ -1,0 +1,22 @@
+serviceName: Ymrestru ar gyfer Diogelwch
+serviceDescription: |
+  Mae’r gwasanaeth yn caniatáu i ddefnyddiwr ymrestru ar gyfer y gwasanaeth Diogelwch (S&S GB)
+  fel y gall gyflwyno Datganiadau Cryno Wrth Gyrraedd (a elwir weithiau yn ENS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /safety-and-security-subscription
+contactFrontendServiceId: safety-and-security-enrol
+complianceStatus: partial
+accessibilityProblems:
+  - Mae cyfieithiad Cymraeg ar goll ar bob tudalen.
+milestones:
+  - description: "Mae angen cyfieithiadau o ‘Skip to main content’ ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ a ‘Crown Copyright’."
+    date: 2022-11-22
+serviceLastTestedDate: 2021-02-22
+statementVisibility: public
+statementCreatedDate: 2020-12-08
+statementLastUpdatedDate: 2022-05-31
+
+businessArea: Borders & Trade
+ddc: DDC Telford
+liveOrClassic: Live Services - Telford
+typeOfService: Live services

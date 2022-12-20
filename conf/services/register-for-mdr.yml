@@ -1,0 +1,17 @@
+serviceName: Report cross border arrangements for MDR
+
+serviceHeaderName: Report cross border arrangements for MDR
+serviceDescription: This service informs Users how to register to tell HMRC about a cross-border arrangement
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-for-mdr/register/have utr
+contactFrontendServiceId: MDR
+complianceStatus: full
+serviceLastTestedDate: 2022-04-25
+statementVisibility: public
+statementCreatedDate: 2022-06-24
+statementLastUpdatedDate: 2022-04-29
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Newcastle
+typeOfService: Public beta
+

@@ -1,0 +1,13 @@
+serviceName: cofrestru cyflogwr ar gyfer TWE
+serviceDescription: Mae’r Gwasanaeth Cofrestru Cwmnïau yn galluogi cwmnïau i gofrestru gyda Thŷ’r Cwmnïau. Mae’r mwyafrif o gwmnïau yn cael eu cofrestru ar gyfer Treth Gorfforaeth ar yr un pryd ag y maent yn cofrestru gyda Thŷ’r Cwmnïau. Gallwch hefyd ddefnyddio’r gwasanaeth hwn i gofrestru fel cyflogwr.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-for-paye
+contactFrontendServiceId: payeregistration
+complianceStatus: full
+serviceLastTestedDate: 2022-11-01
+statementVisibility: public
+statementCreatedDate: 2021-11-25
+statementLastUpdatedDate: 2022-11-09
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+typeOfService: Public beta

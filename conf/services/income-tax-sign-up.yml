@@ -7,86 +7,20 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  -   The language toggle may not be the correct size or colour on some screens. This may be more noticeable for people who use screen readers.
-  -   When there are errors on some pages, they may get skipped by screen readers.
-  -   There may be some visual colour errors for error messages on some pages. Some visually impared users may struggle to read everything.
-  -   Some links may not open correctly. This may be more noticeable for people who use screen readers.
-  -   On the ‘Confirm your details’ page, the descriptions don’t match the input field. This will be more noticeable for people using screen readers.
-  -   Some error messages aren’t specific enough to users, so they might not be easily understood.
-  -   Some hint texts might not get read out correctly by screen readers.
-  -   On the ‘For which tax year do you want to start filing updates?’ page, some conditionally revealing text might not be displayed properly. This will be more noticeable for people who use screen readers.
-  -   On the ‘What are your sources of income’ page, checkboxes may have too much information read out next to them by screen readers.
-  -   Some descriptions are missing from hint text and error messages on several pages. This will be more noticeable for people who use a screen reader.
-  -   On the ‘What is the trade of your business?’ page, some tags are missing from error messages. This will be more noticeable for people who use screen readers.
-  -   Some lists may not display correctly on several pages. This will be more noticeable for people using screen readers.
-  -   There is no timeout warning once signed in so people could be timed out without realising.
-  -   Welsh translations are incomplete. The following copy is not translated to Welsh
-      ‘Do you want to add another self-employed business?’
-      ‘Select yes if you want to add another self employed business’
-      ‘Business 1’
-      ‘Remove business 1’
+  - when using the Welsh translation screen reader users will have difficulties understanding the address lookup error message as their screen reader will pronounce the English copy as Welsh.
+  - the ‘your responsibilities if you choose online’ has not been built as a heading so screen reader users will not understand the set up of content.
 milestones:
   - description: |
-      The language toggle may not be the correct size or colour on some screens. This may be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (2.4.1: Bypass Blocks).
-    date: 2021-07-31
+      the ‘error’ prefix on error messages does not have the appropriate ‘lang=en’ attribute that causes screen readers to mispronounce the words. 3.1.2 Language of parts.
+    date: 2022-011-15
   - description: |
-      When there are errors on some pages, they may get skipped by screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.1 : Error Identification).
-    date: 2021-07-31
-  - description: |
-      There may be some visual colour errors for error messages on some pages. Some visually impared users may struggle to read everything.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
-    date: 2021-07-31
-  - description: |
-      Some links may not open correctly. This may be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing).
-    date: 2021-07-31
-  - description: |
-      On the ‘Confirm your details’ page, the descriptions don’t match the input field. This will be more noticeable for people using screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (Parsing) and 4.2.1 (Name, Role, Value).
-    date: 2021-07-31
-  - description: |
-      Some error messages aren’t specific enough to users, so they might not be easily understood.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.1 : Error Identification).
-    date: 2021-07-31
-  - description: |
-      Some hint texts might not get read out correctly by screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
-    date: 2021-07-31
-  - description: |
-      On the ‘For which tax year do you want to start filing updates?’ page, some conditionally revealing text might not be displayed properly. This will be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.2.1 (Name, Role, Value).
-    date: 2021-07-31
-  - description: |
-      On the ‘What are your sources of income’ page, checkboxes may have too much information read out next to them by screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
-    date: 2021-07-31
-  - description: |
-      Some descriptions are missing from hint text and error messages on several pages. This will be more noticeable for people who use a screen reader.
-      This doesn’t meet WCAG 2.1 success criterion (3.3.2 Labels or Instructions).
-    date: 2021-07-31
-  - description: |
-      On the ‘What is the trade of your business?’ page, some tags are missing from error messages. This will be more noticeable for people who use screen readers.
-      This doesn’t meet WCAG 2.1 success criterion (1.3.1 Info and Relationships).
-    date: 2021-07-31
-  - description: |
-      Some lists may not display correctly on several pages. This will be more noticeable for people using screen readers.
-      This doesn’t meet WCAG 2.1 success criterion 4.1.1 (parsing).
-    date: 2021-07-31
-  - description: |
-      There is no timeout warning once signed in so people could be timed out without realising.
-      This doesn’t meet WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
-    date: 2021-07-31
-  - description: |
-      Welsh translations are incomplete. The following copy is not translated to Welsh
-      ‘Do you want to add another self-employed business?’
-      ‘Select yes if you want to add another self employed business’
-      ‘Business 1’
-      ‘Remove business 1’
-      This doesn’t meet WCAG 2.1 success criterion 3.2.1 (Language of parts).
-    date: 2021-07-31
-serviceLastTestedDate: 2020-08-28
+      the ‘your responsibilities if you choose online’ copy introduces the subsequent content and visually acts as a heading, but it is only a visual treatment and confers no semantic meaning or page structure to screen readers. This fails WCAG 2.1.
+    date: 2022-11-15
+serviceLastTestedDate: 2022-05-02
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2021-05-18
+statementLastUpdatedDate: 2022-05-23
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Public beta

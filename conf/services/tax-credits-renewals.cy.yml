@@ -1,11 +1,55 @@
-serviceName: Tax Credits Renewals
-serviceDescription: |
-  Gall unrhyw un sy’n cael credydau treth ar hyn o bryd ddefnyddio’r gwasanaeth Adnewyddu Credydau Treth i adnewyddu eu
-  hawliad yn ystod y cyfnod adnewyddu rhwng mis Ebrill a mis Awst.
+serviceName: Adnewyddu Credydau Treth
+serviceDescription: Mae’r gwasanaeth Adnewyddu Credydau Treth ar gyfer unrhyw un sy’n cael credydau treth i adnewyddu ei hawliad yn ystod y cyfnod adnewyddu rhwng mis Ebrill a mis Awst.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /tax-credits-service/renewals
 contactFrontendServiceId: tax-credits-renewals
-complianceStatus: noncompliant
-statementCreatedDate: 2021-03-22
+complianceStatus: partial
 statementVisibility: public
-statementLastUpdatedDate: 2021-03-22
+statementCreatedDate: 2021-06-22
+serviceLastTestedDate: 2021-03-22
+statementLastUpdatedDate: 2022-01-06
+
+accessibilityProblems:
+  - Drwy gydol y gwasanaeth, mae gwasanaeth defnyddwyr yn dod i ben heb rybudd ar ôl cyfnod o anweithgarwch. Gall hyn gymryd tipyn o amser i ddefnyddwyr a allai gymryd mwy o amser i ddefnyddio’r gwasanaeth.
+  - Ar y dudalen i adnewyddu’ch credydau treth, mae mwy nag un prif bennawd. Gall hyn greu dryswch i ddefnyddwyr darllenwyr sgrin wybod pryd mae’r prif gynnwys yn dechrau.
+  - Drwy gydol y gwasanaeth, gall defnyddwyr bysellfwrdd gael at gynnwys yn y cysylltiad ‘Eich cyfrif’ y dylai fod wedi ei guddio. Gall hyn synnu defnyddwyr na fyddent yn disgwyl cael eu cymryd i’r cysylltiadau hyn.
+  - Drwy gydol y gwasanaeth, mae cysylltiad ar gyfer ‘Eich cyfrif’ yn agor pan gaiff ei actifadu. Fodd bynnag, ni ellir cael mynediad at y cysylltiad mwyach os bydd defnyddwyr darllenwyr sgrin yn ceisio mynd yn ôl ato.
+  - Drwy gydol y gwasanaeth, wrth agor y cysylltiad ar gyfer ‘Eich cyfrif’, darllenir opsiynau fel rhai y gellir eu hehangu. Bydd dweud wrth ddefnyddwyr bod y cynnwys yn ehangu pan mai dim ond cysylltiad ydyw yn mynd â defnyddwyr i’r lle anghywir.
+  - Ar y dudalen gadarnhau, nid oes prif bennawd. Gall hyn ddrysu defnyddwyr darllenwyr sgrin sy’n dibynnu ar benawdau i gyflwyno’r prif gynnwys.
+  - Ar y dudalen dyfarniadau credydau treth, nid yw testun wedi’i guddio o’r golwg yn ymwneud â’r wybodaeth a ddangosir. Gall hyn ddrysu defnyddwyr darllenwyr sgrin gan nad yw’n glir sut mae’r wybodaeth yn berthnasol iddynt.
+  - Drwy gydol y gwasanaeth, darllenir eicon y ddewislen symudol i ddarllenwyr sgrin heb unrhyw gyd-destun. Gall hyn fod yn ddryslyd iawn i ddefnyddwyr darllenwyr sgrin nad ydynt efallai’n gwybod beth mae’r eicon yn ei gynrychioli.
+  - Ar y dudalen dyfarniadau credydau treth, mae darllenwyr sgrin yn darllen testun sydd wedi’i guddio yn hytrach na labeli botymau. Gall hyn fod yn ddryslyd i ddarllenwyr sgrin nad ydynt yn gwybod beth fydd y botwm yn ei wneud.
+  - Ar gyfer ffonau symudol, ar y dudalen ‘A gawsoch unrhyw un o’r budd-daliadau hyn’, nid oedd darllenwyr sgrin yn cyhoeddi y byddai’r cynnwys yn ehangu pan gaiff ei ddewis. Nid oedd y cynnwys hwn yn agor ychwaith wrth ddefnyddio bar gofod neu’r botwm ‘Enter’ ar fysellfwrdd. Mae hyn yn atal rhai defnyddwyr rhag cael at yr holl wybodaeth sydd ar gael.
+  - Ar draws y gwasanaeth, mae rhywfaint o wybodaeth yn dweud wrth ddarllenwyr sgrin i gyhoeddi cynnwys wrth gyrraedd tudalen, a hynny ar gam. Bydd hyn yn annisgwyl i ddefnyddwyr darllenwyr sgrin ac yn achosi dryswch.
+  - Ar y dudalen i roi gwybod am newidiadau, defnyddir cysylltiad ‘agor pob un’ i ehangu cynnwys. Fodd bynnag, does dim testun disgrifiadol i ddweud wrth ddefnyddwyr darllenwyr sgrin beth fydd y cysylltiad hwn yn ei wneud.
+
+milestones:
+  - description: Drwy gydol y gwasanaeth, mae gwasanaeth defnyddwyr yn dod i ben heb rybudd ar ôl cyfnod o anweithgarwch. Gall hyn gymryd tipyn o amser i ddefnyddwyr a allai gymryd mwy o amser i ddefnyddio’r gwasanaeth. Nid yw hyn yn bodloni meini prawf llwyddiant 2.2.1 (Timing Adjustable (Level A)), 2.2.5 Re-authenticating (Level AAA) na 2.2.6 Timeouts (Level AAA), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Ar y dudalen i adnewyddu’ch credydau treth, mae mwy nag un prif bennawd. Gall hyn greu dryswch i ddefnyddwyr darllenwyr sgrin wybod pryd mae’r prif gynnwys yn dechrau. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Drwy gydol y gwasanaeth, gall defnyddwyr bysellfwrdd gael at gynnwys yn y cysylltiad ‘Eich cyfrif’ y dylai fod wedi ei guddio. Gall hyn synnu defnyddwyr na fyddent yn disgwyl cael eu cymryd i’r cysylltiadau hyn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.3 (Focus Order (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Drwy gydol y gwasanaeth, mae cysylltiad ar gyfer ‘Eich cyfrif’ yn agor pan gaiff ei actifadu. Fodd bynnag, ni ellir cael mynediad at y cysylltiad mwyach os bydd defnyddwyr darllenwyr sgrin yn ceisio mynd yn ôl ato. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Drwy gydol y gwasanaeth, wrth agor y cysylltiad ar gyfer ‘Eich cyfrif’, darllenir opsiynau fel rhai y gellir eu hehangu. Bydd dweud wrth ddefnyddwyr bod y cynnwys yn ehangu pan mai dim ond cysylltiad ydyw yn mynd â defnyddwyr i’r lle anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Ar y dudalen gadarnhau, nid oes prif bennawd. Gall hyn ddrysu defnyddwyr darllenwyr sgrin sy’n dibynnu ar benawdau i gyflwyno’r prif gynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Ar y dudalen dyfarniadau credydau treth, nid yw testun wedi’i guddio o’r golwg yn ymwneud â’r wybodaeth a ddangosir. Gall hyn ddrysu defnyddwyr darllenwyr sgrin gan nad yw’n glir sut mae’r wybodaeth yn berthnasol iddynt. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Drwy gydol y gwasanaeth, darllenir eicon y ddewislen symudol i ddarllenwyr sgrin heb unrhyw gyd-destun. Gall hyn fod yn ddryslyd iawn i ddefnyddwyr darllenwyr sgrin nad ydynt efallai’n gwybod beth mae’r eicon yn ei gynrychioli. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 (Non-text Content (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Ar y dudalen dyfarniadau credydau treth, mae darllenwyr sgrin yn darllen testun sydd wedi’i guddio yn hytrach na labeli botymau. Gall hyn fod yn ddryslyd i ddarllenwyr sgrin nad ydynt yn gwybod beth fydd y botwm yn ei wneud. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Ar gyfer ffonau symudol, ar y dudalen ‘A gawsoch unrhyw un o’r budd-daliadau hyn’, nid oedd darllenwyr sgrin yn cyhoeddi y byddai’r cynnwys yn ehangu pan gaiff ei ddewis. Nid oedd y cynnwys hwn yn agor ychwaith wrth ddefnyddio bar gofod neu’r botwm ‘Enter’ ar fysellfwrdd. Mae hyn yn atal rhai defnyddwyr rhag cael at yr holl wybodaeth sydd ar gael. Nid yw hyn yn bodloni maen prawf llwyddiant 2.1.1 (Keyboard (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Ar draws y gwasanaeth, mae rhywfaint o wybodaeth yn dweud wrth ddarllenwyr y sgrin i gyhoeddi cynnwys wrth gyrraedd tudalen, a hynny ar gam. Bydd hyn yn annisgwyl i ddefnyddwyr darllenwyr sgrin ac yn achosi dryswch. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+  - description: Ar y dudalen i roi gwybod am newidiadau, defnyddir cysylltiad ‘agor pob un’ i ehangu cynnwys. Fodd bynnag, does dim testun disgrifiadol i ddweud wrth ddefnyddwyr darllenwyr sgrin beth fydd y cysylltiad hwn yn ei wneud. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context) (Level A)), Canllawiau Hygyrchedd Cynnwys y We.
+    date: 2023-03-31
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Telford
+typeOfService: Live services

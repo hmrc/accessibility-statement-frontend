@@ -4,40 +4,12 @@ serviceDescription: Mae’r gwasanaeth hwn yn eich galluogi i wneud cais am ad-d
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /apply-for-repayment-of-import-duty-and-import-vat
 contactFrontendServiceId: NDRC
-complianceStatus: partial
-accessibilityProblems:
-  - Nid yw rhai cysylltiadau crynodeb gwall yn symud ffocws i’r elfennau ffurflen perthnasol
-  - Nid yw gwybodaeth ychwanegol i’w gweld ar unwaith ar y cyfrifau o gymeriadau sy’n weddill
-  - Mae terfyn amser yn digwydd heb rybudd ymlaen llaw a heb yr opsiwn o ymestyn y sesiwn
-  - Ni chyhoeddir neges statws ar gyfer defnyddwyr darllenwyr sgrin pan fydd ffeiliau’n uwchlwytho
-  - Mae’r bylchau rhwng testun yn anghywir ac nid yw’n lapio’n gywir
-milestones:
-  - description: |
-      Nid yw rhai cysylltiadau crynodeb gwall yn symud ffocws yn gywir. Nid yw hyn yn bodloni maen prawf
-      llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-09-10
-  - description: |
-      Mae yna wybodaeth gyd-destunol ychwanegol sy’n cael ei chyhoeddi i ddefnyddwyr darllenwyr sgrin,
-      ond nid yw ar gael i ddefnyddwyr â golwg nad ydynt yn dibynnu ar dechnoleg gynorthwyol. Nid yw
-      hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or Instructions)
-      Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-09-10
-  - description: |
-      Mae terfyn amser yn digwydd heb rybudd ymlaen llaw a heb yr opsiwn o ymestyn y sesiwn.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing adjustable)
-      Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-09-10
-  - description: |
-      Ni chyhoeddir neges statws ar gyfer defnyddwyr darllenwyr sgrin pan fydd ffeiliau’n uwchlwytho.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships)
-      a 4.1.3 (Status Messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-09-30
-  - description: |
-      Mae testun yn cael ei gwtogi wrth brofi o dan baramedrau bylchau rhwng testun.
-      Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.12 (Text Spacing)
-      Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-09-10
-serviceLastTestedDate: 2021-08-31
+complianceStatus: full
+serviceLastTestedDate: 2021-10-18
 statementVisibility: public
 statementCreatedDate: 2021-09-14
-statementLastUpdatedDate: 2021-09-14
+statementLastUpdatedDate: 2021-10-19
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Live services

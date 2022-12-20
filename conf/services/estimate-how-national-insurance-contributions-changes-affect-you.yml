@@ -1,0 +1,11 @@
+serviceName: Estimate how the National Insurance contributions changes will affect you
+serviceDescription: |
+  This service lets employed users estimate how the National Insurance contributions changes will affect them.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /estimate-how-national-insurance-contributions-changes-affect-you
+contactFrontendServiceId: estimate-how-national-insurance-contributions-changes-affect-you
+complianceStatus: full
+serviceLastTestedDate: 2022-05-31
+statementVisibility: public
+statementCreatedDate: 2022-06-06
+statementLastUpdatedDate: 2022-06-06

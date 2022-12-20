@@ -16,18 +16,22 @@ milestones:
       hyn yn colli eu labeli sy’n golygu na fydd meddalwedd darllen sgrin yn darllen y
       disgrifiad o’r elfen a ddewiswyd. id yw hyn yn bodloni maen prawf llwyddiant 2.4.6
       (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
+    date: 2022-12-15
   - description: Rydym yn defnyddio teitlau tab i ddisgrifio cynnwys ein tudalennau gwe.
       Mewn rhai lleoedd, nid yw’r teitlau tab yn cyfateb i bennawd y dudalen. Nid yw hyn
       yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
+    date: 2022-12-15
   - description: Nid yw rhai negeseuon gwall yn ddigon disgrifiadol i’r rhai sydd â nam ar eu golwg.
       Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
+    date: 2022-12-15
   - description: Nid yw’r gwasanaeth yn cydymffurfio’n llawn â 2.2.1 (timing adjustable) Canllawiau Hygyrchedd
       Cynnwys y We gan nad oes neges sy’n rhybuddio am derfyn amser y gwasanaeth.
-    date: 2021-12-15
+    date: 2022-12-15
 serviceLastTestedDate: 2020-04-02
 statementVisibility: public
 statementCreatedDate: 2020-02-26
-statementLastUpdatedDate: 2021-02-11
+statementLastUpdatedDate: 2022-03-29
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

@@ -1,0 +1,16 @@
+serviceName: Making Tax Digital for VAT
+serviceHeaderName: Making Tax Digital for VAT
+serviceDescription: |
+  VAT registered businesses, and their agents, can sign up to use compatible software to submit VAT Returns to HMRC as part of the Making Tax Digital for VAT initiative.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /vat-through-software/vat-overview
+contactFrontendServiceId: VATVC
+complianceStatus: full
+serviceLastTestedDate: 2021-12-01
+statementVisibility: public
+statementCreatedDate: 2019-09-20
+statementLastUpdatedDate: 2021-12-21
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc:
+liveOrClassic:
+typeOfService: Public beta

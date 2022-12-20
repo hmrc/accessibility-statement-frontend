@@ -1,0 +1,22 @@
+serviceName: Set Up a Payment Plan
+serviceDescription: Set up a payment plan is a service that provides tax payers the ability to pay their tax liability via affordable direct debit payments. The system displays what they owe and then gives them options to pay this off in scheduled instalments.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /set-up-a-payment-plan
+contactFrontendServiceId: essttp-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - The downloaded PDF ‘your payment plan’ does not have a document title which will make it difficult to correctly identify. The language for the document has not been set correctly, so screen readers may not pronounce the content correctly. Visual browsers may not display the characters and content correctly. When the document is magnified, the content does not reflow and needs horizontal scrolling which makes it more difficult to read.
+  - The ‘set up Direct Debit’ page does not have a grouping label to tell screen readers how the form fields relate to each other.
+milestones:
+  - description: The downloaded PDF does not set the document title, the document language and is not following PDF/Universal Accessibility (PDF/UA). This means that the content does not reflow. This fails WCAG 2.1 success criterion 2.4.2 Page titled, 3.1.1 Language of page, 1.3.1 Info and relationships and 1.4.10 Reflow.
+    date: 2022-12-01
+  - description: The fieldset is missing the legend. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
+    date: 2022-12-01
+serviceLastTestedDate: 2022-10-14
+statementVisibility: public
+statementCreatedDate: 2022-10-14
+statementLastUpdatedDate: 2022-10-14
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta

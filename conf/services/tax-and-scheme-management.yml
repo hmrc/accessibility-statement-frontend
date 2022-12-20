@@ -1,0 +1,15 @@
+serviceName: Manage Services
+serviceDescription: |
+  Manage Services allows administrators within an organisation to manage who has access to services the organisation has enrolled for.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /tax-and-scheme-management
+contactFrontendServiceId: manage-services-frontend
+complianceStatus: full
+serviceLastTestedDate: 2020-11-25
+statementVisibility: public
+statementCreatedDate: 2022-06-17
+statementLastUpdatedDate: 2022-06-17
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Telford
+liveOrClassic: Live Services - Telford
+typeOfService: Live services

@@ -5,8 +5,33 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-tax-on-goods-you-bring-into-the-uk
 contactFrontendServiceId: check-tax-on-goods-you-bring-into-the-uk
-complianceStatus: full
+complianceStatus: partial
+accessibilityProblems:
+-  On the page that shows the tax due, users with screen readers may find the tables difficult to understand.
+-  On the page that requests user information, the content in the radio button isn’t announced to screen readers.
+-  On the page where you choose the type of tobacco to add, users with screen readers may find it difficult to use the checkboxes.
+-  On some pages, users with screen readers may find it difficult to interpret the content.
+-  On some payment pages, content isn’t translated into Welsh.
+-  The links that summarise errors a user has made direct users to the wrong destination. This can make it difficult for users to navigate to the issue that needs to be resolved on a page.
+milestones:
+- description: On the page that shows the tax due, users with screen readers may find the tables difficult to understand. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
+  date: 2022-07-31
+- description: On the page that requests user information, the content in the radio button isn’t announced to screen readers. This fails WCAG 2.1 - Understanding Success Criterion 4.1.2 Name, Role, Value.
+  date: 2022-07-31
+- description: On the page where you choose the type of tobacco to add, users with screen readers may find it difficult to use the checkboxes. This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Info and relationships.
+  date: 2022-07-31
+- description: On some pages, users with screen readers may find it difficult to interpret the content. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
+  date: 2022-07-31
+- description: On some payment pages, content isn’t translated into Welsh. Understanding Success Criterion 3.1.2 Language of Parts.
+  date: 2022-07-31
+- description: The links that summarise errors a user has made direct users to the wrong destination. This can make it difficult for users to navigate to the issue that needs to be resolved on a page. This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Info and relationships.
+  date: 2022-07-31
 serviceLastTestedDate: 2021-06-10
 statementVisibility: public
-statementCreatedDate: 2020-12-17
-statementLastUpdatedDate: 2021-06-21
+statementCreatedDate: 2022-05-17
+statementLastUpdatedDate: 2022-05-17
+businessArea: Borders & Trade
+ddc: DDC Edinburgh
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Public beta
+

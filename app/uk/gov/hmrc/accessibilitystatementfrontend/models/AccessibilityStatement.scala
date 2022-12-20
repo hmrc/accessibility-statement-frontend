@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,13 +19,13 @@ package uk.gov.hmrc.accessibilitystatementfrontend.models
 import java.util.Date
 import io.circe.{Decoder, Encoder}
 import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
+import play.api.i18n.Messages
 
 case class AccessibilityStatement(
   serviceName: String,
   serviceDescription: String,
   serviceDomain: String,
   serviceUrl: String,
-  mobilePlatform: Option[MobilePlatform],
   contactFrontendServiceId: String,
   complianceStatus: ComplianceStatus,
   accessibilityProblems: Option[Seq[String]],
@@ -35,8 +35,20 @@ case class AccessibilityStatement(
   serviceLastTestedDate: Option[Date],
   statementCreatedDate: Date,
   statementLastUpdatedDate: Date,
-  automatedTestingDetails: Option[String]
+  automatedTestingDetails: Option[String],
+  statementType: Option[StatementType],
+  businessArea: Option[BusinessArea],
+  ddc: Option[DDC],
+  liveOrClassic: Option[LiveOrClassic],
+  typeOfService: Option[TypeOfService]
 ) extends Ordered[AccessibilityStatement] {
+
+  val statementTemplate: StatementType = statementType match {
+    case Some(st) => st
+    case _        => HMRC
+  }
+
+  val displayAutomatedTestingOnlyContent: Boolean = automatedTestingOnly.getOrElse(false)
 
   val isFullyCompliant: Boolean = complianceStatus match {
     case FullCompliance => true
@@ -51,6 +63,22 @@ case class AccessibilityStatement(
   val isPartiallyCompliant: Boolean = complianceStatus match {
     case PartialCompliance => true
     case _                 => false
+  }
+
+  val hasMilestones: Boolean = milestones match {
+    case Some(milestones) => milestones.nonEmpty
+    case _                => false
+  }
+
+  val serviceAbsoluteURL = s"https://$serviceDomain$serviceUrl"
+
+  def platformSpecificMessage(key: String, args: Any*)(implicit messages: Messages): String = {
+    val platformSuffix = statementType match {
+      case Some(Ios) | Some(Android) =>
+        statementType.map(st => s".${st.toString}").getOrElse("")
+      case _                         => ""
+    }
+    messages(s"$key$platformSuffix", args: _*)
   }
 
   def compare(that: AccessibilityStatement): Int =

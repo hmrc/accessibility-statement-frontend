@@ -23,33 +23,37 @@ accessibilityProblems:
 milestones:
   - description: |
       Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 2.4.3 (Focus Order (Level A) Understanding Focus Order: How to Meet Focus Order).
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships: How to Meet Info and Relationships).
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 2.4.4 (Link Purpose – in context (Level A) Understanding Link Purpose (In Context): How to Meet Link Purpose (In Context)).
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 2.1.1 (Keyboard (Level A) Understanding Keyboard: How to Meet Keyboard).
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.3.1 (Info and Relationships (Level A) Understanding Info and Relationships: How to Meet Info and Relationships).
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.4.12 (Text Spacing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.4.10 (Reflow).
-    date: 2020-07-31
+    date: 2023-03-31
   - description: |
       Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1: 1.4.1 (Non-text Contrast).
-    date: 2020-07-31
+    date: 2023-03-31
 
 serviceLastTestedDate: 2020-07-08
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2021-10-25
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Public beta

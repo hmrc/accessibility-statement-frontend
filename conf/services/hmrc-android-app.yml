@@ -5,9 +5,33 @@ serviceDescription: |
   check your next tax credit payments, find your tax code and find out how much Income Tax you should pay.
 serviceDomain: play.google.com
 serviceUrl: /store/apps/details?id=uk.gov.hmrc.ptcalc&hl=en_GB
-mobilePlatform: android
-complianceStatus: full
+statementType: android
+complianceStatus: partial
+accessibilityProblems:
+  - Some buttons do not have a clear description or purpose.
+  - Some error messages are not clearly associated with form fields.
+  - When entering text in a field character count is not read out by a screenreader.
+milestones:
+  - description: On the Tax Calculator, errors are read before the field label, which can be confusing for screenreader users.
+    date: 2023-02-28
+  - description: The new message indicator on the bottom navigation is not labelled correctly for screen reader users.
+    date: 2023-02-28
+  - description: When screen reader users navigate using swipe controls, the focus remains on the first carousel slide.
+    date: 2023-02-28
+  - description: On the PIN entry screen, the button “More options” needs further description for screen readers.
+    date: 2023-02-28
+  - description: On the Tax Credits screen, the button “Learn more” needs further description for screenreaders.
+    date: 2023-02-28
+  - description: The colour of the inactive pagination icon for carousels does not meet colour contrast requirements.
+    date: 2023-02-28
+  - description: When entering text into a field, the character count is not read by the screen reader, so users do not know how many characters are remaining.
+    date: 2023-02-28
 statementVisibility: public
-serviceLastTestedDate: 2021-06-07
+serviceLastTestedDate: 2022-09-28
 statementCreatedDate: 2021-06-10
-statementLastUpdatedDate: 2021-06-10
+statementLastUpdatedDate: 2022-11-30
+
+businessArea: Customer Services Group (CSG)
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta

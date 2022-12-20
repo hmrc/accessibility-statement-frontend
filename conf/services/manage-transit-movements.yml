@@ -5,21 +5,14 @@ serviceDescription:
   The goods can pass through different customs regimes without them having to be declared at every border. This service processes those transit movements.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-transit-movements
-contactFrontendServiceId: http://tax.service.gov.uk/manage-transit-movements/what-do-you-want-to-do
-complianceStatus: partial
-accessibilityProblems:
-  - The label for the place of declaration is from a different page. Screen-reader users will be presented with the wrong information and voice-recognition users may struggle with referencing the component.
-  - The legend for removing official customs seals does not describe the purpose of each selection available when screen-reader users navigate the page ‘out of context’.
-milestones:
-  - description:
-      The accessible name for user interface components did not contain the text that is presented visually as the label.
-      This fails WCAG 2.5.3 Label in Name (Level A).
-    date: 2021-12-31
-  - description:
-      Labels did not sufficiently describe the topic or purpose of the content.
-      This fails WCAG 2.4.6 Headings and Labels (Level AA).
-    date: 2021-12-31
-serviceLastTestedDate: 2021-09-29
+contactFrontendServiceId: CTCTraders
+complianceStatus: full
+serviceLastTestedDate: 2022-09-05
 statementVisibility: public
 statementCreatedDate: 2020-12-29
-statementLastUpdatedDate: 2021-10-12
+statementLastUpdatedDate: 2022-09-13
+
+businessArea: Borders & Trade
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Public beta

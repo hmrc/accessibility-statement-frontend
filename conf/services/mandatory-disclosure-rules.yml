@@ -1,0 +1,15 @@
+serviceName: Report cross-border arrangements for MDR
+serviceDescription: |
+  This service informs Users how to report/upload files to HMRC with details about a cross-border arrangement.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /report-under-mandatory-disclosure-rules
+contactFrontendServiceId: MDR
+complianceStatus: full
+serviceLastTestedDate: 2022-05-26
+statementVisibility: public
+statementCreatedDate: 2022-06-29
+statementLastUpdatedDate: 2022-05-30
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Newcastle
+typeOfService: Public beta

@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +17,8 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.config
 
 import javax.inject.{Inject, Singleton}
-import scala.io.Source
 
-case class StatementSource(source: Source, filename: String)
+case class StatementSource(filename: String)
 
 @Singleton
 case class SourceConfig @Inject() (appConfig: AppConfig) {
@@ -27,6 +26,6 @@ case class SourceConfig @Inject() (appConfig: AppConfig) {
 
   def statementSource(service: String): StatementSource = {
     val filename = s"$servicesDirectory/$service.yml"
-    StatementSource(Source.fromResource(filename), filename)
+    StatementSource(filename)
   }
 }

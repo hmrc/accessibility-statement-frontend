@@ -5,13 +5,13 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-pension-schemes
 contactFrontendServiceId: PODS
-complianceStatus: partial
-accessibilityProblems:
-  - the page heading ‘paymentsAndCharges.h1’ is confusing and not descriptive.
-milestones:
-  - description: In one page of the service the heading is not descriptive. The inclusion of the h1 at the end may be confusing for some screen reader users, and also the adjoined words with no spacing means that screen reading software does not pronounce the heading correctly. This does not meet WCAG success criterion 2.4.6 (Headings and Labels).
-    date: 2021-07-31
-serviceLastTestedDate: 2021-06-15
+complianceStatus: full
+serviceLastTestedDate: 2022-03-28
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2021-06-30
+statementLastUpdatedDate: 2022-04-06
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Public beta

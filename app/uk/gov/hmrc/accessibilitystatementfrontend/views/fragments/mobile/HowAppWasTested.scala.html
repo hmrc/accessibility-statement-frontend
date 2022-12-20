@@ -1,0 +1,42 @@
+@*
+ * Copyright 2022 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
+@import uk.gov.hmrc.play.language.LanguageUtils
+@import uk.gov.hmrc.accessibilitystatementfrontend.models.dateToLocalDate
+
+@this(utils: LanguageUtils)
+
+@()(implicit messages: Messages, statement: AccessibilityStatement)
+
+@import statement._
+
+<h2 class="govuk-heading-l">@{messages("testing.heading.app")}</h2>
+
+@if(isNonCompliant) {
+    <p class="govuk-body">@{messages("testing.details.noncompliant.app")}</p>
+} else {
+    @if(serviceLastTestedDate.isDefined) {
+        @if(displayAutomatedTestingOnlyContent) {
+            <p class="govuk-body">@{messages("testing.last-tested.automated.app", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)))}</p>
+        } else {
+            <p class="govuk-body">@{messages("testing.last-tested.app", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)))}</p>
+        }
+    }
+    <p class="govuk-body">@{messages("testing.details.part1.app")}
+        <a class="govuk-link" href="https://www.digitalaccessibilitycentre.org/">@{messages("testing.details.part2")}</a>@{messages(if(displayAutomatedTestingOnlyContent) "general.fullstop" else "testing.details.part3.app")}
+    </p>
+}
