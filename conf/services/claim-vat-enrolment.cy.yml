@@ -5,10 +5,10 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-vat-enrolment
 contactFrontendServiceId: MTDVAT
 complianceStatus: full
-serviceLastTestedDate: 2021-02-04
+serviceLastTestedDate: 2022-12-12
 statementVisibility: public
 statementCreatedDate: 2022-10-19
-statementLastUpdatedDate: 2022-10-19
+statementLastUpdatedDate: 2022-12-19
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic:
