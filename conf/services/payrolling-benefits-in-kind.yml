@@ -5,29 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /payrollbik
 contactFrontendServiceId: pbik
-complianceStatus: partial
-accessibilityProblems:
-  -  On the page where you remove a benefit or expense, the structure of the page may make it difficult for users with screen readers to use the radio buttons.
-  -  Some error messages in the service are not descriptive. This can make it hard for users to understand what they’ve done wrong.
-  -  On the start page, users with screen readers may find it difficult to use one of the links. This is because the link is missing a description. This can make it hard for users with screen readers to understand the purpose of the link.
-  -  On the start page, voice activation users may find difficulty using the links. This is because the links have been described as buttons.
-  -  On the completion page, users with screen readers may find it difficult to use the link. This is because it is missing a suitable description and it doesn’t inform users that it will open a new page.
-milestones:
-  - description: On the page where you remove a benefit or expense, the structure of the page may make it difficult for users with screen readers to understand the question. This fails WCAG 2.1 - Info and relationships and Name, Role, Value.
-    date: 2022-12-09
-  - description: On the start page, users with screen readers may find it difficult to use one of the links. This is because the link is missing a description. This can make it hard for users with screen readers to understand the purpose of the link. This fails WCAG 2.1 - Headings and labels.
-    date: 2022-12-09
-  - description: On the start page, voice activation users may find difficulty using the links. This is because the links have been described as buttons. This fails WCAG 2.1 - Headings and labels.
-    date: 2022-12-09
-  - description: Some error messages in the service are not descriptive. This can make it hard for users to understand what they’ve done wrong. This fails WCAG 2.1 - Error suggestion.
-    date: 2022-12-09
-  - description: On the completion page, users with screen readers may find it difficult to use the link. This is because it is missing a suitable description and it doesn’t inform users that it will open a new page. This fails WCAG 2.1 - Headings and labels.
-    date: 2022-12-09
-
-serviceLastTestedDate: 2022-06-22
+complianceStatus: full
+serviceLastTestedDate: 2022-12-15
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2022-09-29
+statementLastUpdatedDate: 2022-12-16
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Edinburgh
