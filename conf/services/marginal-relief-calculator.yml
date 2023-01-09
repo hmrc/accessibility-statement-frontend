@@ -6,14 +6,15 @@ serviceUrl: /marginal-relief-calculatorª
 contactFrontendServiceId: MRC
 complianceStatus: partial
 accessibilityProblems:
-  - ‘Print or save your calculation‘ link doesn't take users to print or save dialogue.
-  - Welsh Language not available.
+  - input fields limited in the number of characters a user can enter
+  - input fields within radio buttons
+  - user could submit an invalid UTR - this field is optional
 milestones:
   - description: |
       'Print or save your calculation' link doesn't take users to print or save dialogue (A):  WCAG 2.1 violation: Understanding success criterion 2.4.4 Link Purpose (In Context)
-    date: 2023-01-09
-  - description: Welsh Language not available
-    date: 2023-01-09
+    date: 2023-01-12
+  - description: Welsh Language not available.
+    date: 2023-01-12
 serviceLastTestedDate: 2023-01-04
 statementVisibility: public
 statementCreatedDate: 2022-10-27
