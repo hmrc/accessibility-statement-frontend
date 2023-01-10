@@ -13,15 +13,15 @@ accessibilityProblems:
   - table is present that contains empty data cells.
 milestones:
   - description: "When using Internet Explorer 11 with JAWS, the contents of the details components are available to JAWS users without being visible on screen. This doesn’t meet WCAG 2.1 success criteria 2.4.3 (focus order)."
-    date: 2022-09-01
+    date: 2023-12-31
   - description: "The back links near the top and bottom of the page contain the same id attribute value: back. This doesn’t meet WCAG 2.1 success criteria 4.1.1 (parsing)."
-    date: 2022-09-01
+    date: 2023-12-31
   - description: "The ‘Your group business details’ table data is not introduced by table headers and the data cell introducing the type of details column is empty. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
-    date: 2022-09-01
+    date: 2023-12-31
 serviceLastTestedDate: 2022-03-03
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2020-04-29
+statementLastUpdatedDate: 2023-01-06
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic:
