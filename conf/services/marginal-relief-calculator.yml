@@ -1,0 +1,45 @@
+serviceName: Marginal Relief Calculator
+serviceDescription: |
+  The Marginal Relief calculator lets you work out whether you are eligible for a reduction in your Corporation Tax rate from the current main rate.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /marginal-relief-calculator
+contactFrontendServiceId: MRC
+complianceStatus: partial
+accessibilityProblems:
+  - The sequence in which the focus appears on the ‘You’re not eligible for Marginal Relief’ and ‘Save or print your calculation’ pages can confuse users since focus is only implied on non-interactive tables and is not consistent. This can cause issues for people who rely on keyboard navigation.
+  - ‘£0’ is marked up as a heading and does not describe the content which can make it difficult for screen-reader users to understand the ‘You’re not eligible for Marginal Relief’ and ‘Save or print your calculation’ pages.
+  - Screen-reader users will find it difficult to understand the tables on the ‘You’re not eligible for Marginal Relief’ and ‘Full Marginal Relief calculation in detail’ pages with missing column headings.
+  - On the ‘You’re not eligible for Marginal Relief’ page, screen-reader users are presented with visually hidden content that duplicates content from other parts of the page. This can make it difficult to understand how the page is structured. It will be difficult for screen magnification and screen-reader users to navigate.
+  - The downloaded PDF ‘your payment plan’ does not have a document title which will make it difficult to identify correctly. The language for the document has not been set correctly, so screen readers may not pronounce the content correctly. When the document is magnified, the content does not reflow and needs horizontal scrolling which makes it more difficult to read. Content of the PDF is presented as an image without text description for screen-reader users.
+  - The ‘Print or save your calculation’ link does not allow users to print or save their calculations, as would be expected. Instead, users are taken to another page to add company details.
+  - When switching to the Welsh version, some content is missing the Welsh translation and will not be correctly pronounced by screen readers. This includes visually hidden text that helps users to identify error messages and Welsh version of the PDF.
+milestones:
+  - description: |
+      'tabindex' applied on non-interactive tables and inconsistent. This fails WCAG 2.1 success criterion 2.4.3 Focus order.
+    date: 2022-10-28
+  - description: |
+      '£0' copy marked up as heading. It confuses users how the page is structured and does not describe the topic of the following content. This fails WCAG 2.1 success criterion 1.3.1: Info and relationships.
+    date: 2022-10-28
+  - description: |
+      the tables contain empty column headings. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships.
+    date: 2022-10-28
+  - description: |
+      visually hidden content added, that creates duplicate headings and makes it hard to understand the page. This fails WCAG 2.1 success criterion 1.3.1: Info and relationships.
+    date: 2022-10-28
+  - description: |
+      the downloaded PDF does not set the document title, the document language and is not following PDF/Universal Accessibility (PDF/UA). This means that the content does not reflow. Missing text alternative for PDF generated as an image snapshot. This fails WCAG 2.1 success criterion 2.4.2 Page titled, 3.1.1: Language of page, 1.4.10 Reflow, 1.1.1 Non-text content.
+    date: 2022-10-28
+  - description: |
+      'Print or save your calculation' link name is not describing action and misleading users about next step. This fails WCAG 2.1 success criterion 2.4.4 Link purpose (in context).
+    date: 2022-10-28
+  - description: |
+      this service is missing some Welsh translations and renders backend data and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2: Language of parts,
+    date: 2022-10-28
+serviceLastTestedDate: 2022-10-21
+statementVisibility: public
+statementCreatedDate: 2022-10-27
+statementLastUpdatedDate: 2022-10-28
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta
