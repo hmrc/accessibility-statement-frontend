@@ -2,7 +2,7 @@ serviceName: Marginal Relief Calculator
 serviceDescription: |
   The Marginal Relief calculator lets you work out whether you are eligible for a reduction in your Corporation Tax rate from the current main rate.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /marginal-relief-calculatorª
+serviceUrl: /marginal-relief-calculator
 contactFrontendServiceId: MRC
 complianceStatus: partial
 accessibilityProblems:
@@ -12,13 +12,13 @@ accessibilityProblems:
 milestones:
   - description: |
       'Print or save your calculation' link doesn't take users to print or save dialogue (A):  WCAG 2.1 violation: Understanding success criterion 2.4.4 Link Purpose (In Context)
-    date: 2023-01-12
+    date: 2023-02-01
   - description: Welsh Language not available.
-    date: 2023-01-12
-serviceLastTestedDate: 2023-01-04
+    date: 2023-02-01
+serviceLastTestedDate: 2022-10-24
 statementVisibility: public
 statementCreatedDate: 2022-10-27
-statementLastUpdatedDate: 2023-01-09
+statementLastUpdatedDate: 2023-01-10
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
