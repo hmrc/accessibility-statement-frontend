@@ -1,7 +1,7 @@
 serviceName: VAT Penalties and Appeals Reform
 serviceDescription: VAT-registered businesses, and their agents, can see penalties for late submission of VAT Returns and late payment of VAT, and appeal against those penalties online.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /penalties-appeals.yml
+serviceUrl: /penalties-appeals
 contactFrontendServiceId: vat-penalties
 complianceStatus: partial
 accessibilityProblems:
