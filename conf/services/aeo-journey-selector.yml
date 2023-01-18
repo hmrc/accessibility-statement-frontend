@@ -1,9 +1,9 @@
-serviceName: Election for exemption from tax on UK capital gains - offshore collective investment vehicles
-serviceHeaderName: Election for exemption from tax on UK capital gains - offshore collective investment vehicles
+serviceName: Apply for Authorised Economic Operator (AEO) status
+serviceHeaderName: Apply for Authorised Economic Operator (AEO) status
 serviceDescription: |
-  Use this form to elect an offshore collective investment vehicle for exemption from tax on UK capital gains.
+  Use this form to apply for Authorised Economic Operator (AEO) status.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-civ-unauth
+serviceUrl: /submissions/new-form/AEO-journey-selector
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

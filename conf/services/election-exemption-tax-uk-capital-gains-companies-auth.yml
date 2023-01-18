@@ -3,7 +3,7 @@ serviceHeaderName: Election for exemption from tax on UK capital gains - qualify
 serviceDescription: |
   Use this form to elect a qualifying company for exemption from tax on UK capital gains.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-companies-auth
+serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-companies
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

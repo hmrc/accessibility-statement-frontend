@@ -3,7 +3,7 @@ serviceHeaderName: Reclaim non-UK resident Stamp Duty Land Tax surcharge
 serviceDescription: |
   Use this form to apply for repayment of the Non-UK Resident Stamp Duty Land Tax Surcharge.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/reclaim-nonuk-resident-stamp-duty-land-tax-surcharge-auth
+serviceUrl: /submissions/new-form/reclaim-nonuk-resident-stamp-duty-land-tax-surcharge
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
