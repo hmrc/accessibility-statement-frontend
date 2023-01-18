@@ -3,7 +3,7 @@ serviceHeaderName: Apply for an advance payment of Statutory Parental Bereavemen
 serviceDescription: |
   Use this form to apply for an advance payment of Statutory Parental Bereavement Pay as an employer.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/apply-for-advance-payment-statutory-parental-bereavement-pay-unauth
+serviceUrl: /submissions/new-form/apply-for-advance-payment-statutory-parental-bereavement-pay
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

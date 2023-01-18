@@ -3,7 +3,7 @@ serviceHeaderName: Ask for a review of your eligibility to claim Self-Employment
 serviceDescription: |
   Use this form to ask for a review of your eligibility to claim Self-Employment Income Support.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/ask-for-review-of-eligibility-self-employment-income-support-unauth
+serviceUrl: /submissions/new-form/ask-for-review-of-eligibility-self-employment-income-support
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

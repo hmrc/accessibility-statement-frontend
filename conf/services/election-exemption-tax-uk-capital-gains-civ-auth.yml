@@ -3,7 +3,7 @@ serviceHeaderName: Election for exemption from tax on UK capital gains - offshor
 serviceDescription: |
   Use this form to elect an offshore collective investment vehicle for exemption from tax on UK capital gains.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-civ-auth
+serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-civ
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
