@@ -5,22 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /helpline
 contactFrontendServiceId: government-gateway-identity-verification-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - ‘Which service are you trying to access?’ has been used as the page title on more than one page which makes it difficult to tell those pages apart.
-  - ‘Call an HMRC helpline’ has been used as the page title and heading which does not identify the page contents.
-  - when switching to Welsh, the visually hidden copy 'error' which starts the error message stays in English and will not be correctly pronounced by screen readers.
-milestones:
-  - description: More than one page has identical titles. This fails WCAG 2.1 success criterion 2.4.2 Page Titled.
-    date: 2022-05-31
-  - description: Page title and heading does not identify the page contents. This fails WCAG 2.1 success criterion 2.4.2 Page Titled and 2.4.6 Headings and Labels.
-    date: 2022-05-31
-  - description: The visually hidden copy 'error' remains in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2 Language of Parts.
-    date: 2022-05-31
-serviceLastTestedDate: 2022-04-01
+complianceStatus: full
+serviceLastTestedDate: 2022-05-10
 statementVisibility: public
 statementCreatedDate: 2022-04-08
-statementLastUpdatedDate: 2022-04-08
+statementLastUpdatedDate: 2023-01-19
 businessArea: Customer Services Group (CSG)
 ddc:
 liveOrClassic:
