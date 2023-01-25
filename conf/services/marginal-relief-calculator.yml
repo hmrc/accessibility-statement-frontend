@@ -14,10 +14,10 @@ accessibilityProblems:
 milestones:
   - description: |
       the content of the downloaded PDF the content does not reflow. This fails WCAG 2.1 success criterion 1.4.10 Reflow.
-    date: TBC
+    date: 2023-03-31
   - description: |
       this service is missing some Welsh translations and renders backend data and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2: Language of parts.
-    date: TBC
+    date: 2023-03-31
 serviceLastTestedDate: 2023-01-19
 statementVisibility: public
 statementCreatedDate: 2022-10-27
