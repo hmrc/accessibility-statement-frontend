@@ -9,16 +9,19 @@ accessibilityProblems:
   - input fields limited in the number of characters a user can enter
   - input fields within radio buttons
   - user could submit an invalid UTR - this field is optional
+  - The content of the downloaded PDF 'Marginal Relief for Corporation Tax results'  does not reflow and needs horizontal scrolling which makes it more difficult to read.
+  - When switching to the Welsh version, some content is missing the Welsh translation and will not be correctly pronounced by screen readers. This includes visually hidden text that helps users to identify error messages and Welsh version of the PDF.
 milestones:
   - description: |
-      'Print or save your calculation' link doesn't take users to print or save dialogue (A):  WCAG 2.1 violation: Understanding success criterion 2.4.4 Link Purpose (In Context)
-    date: 2023-02-01
-  - description: Welsh Language not available.
-    date: 2023-02-01
-serviceLastTestedDate: 2022-10-24
+      the content of the downloaded PDF the content does not reflow. This fails WCAG 2.1 success criterion 1.4.10 Reflow.
+    date: 2023-03-31
+  - description: |
+      this service is missing some Welsh translations and renders backend data and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2: Language of parts.
+    date: 2023-03-31
+serviceLastTestedDate: 2023-01-19
 statementVisibility: public
 statementCreatedDate: 2022-10-27
-statementLastUpdatedDate: 2023-01-10
+statementLastUpdatedDate: 2023-01-25
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
