@@ -1,4 +1,4 @@
-serviceName: Marginal Relief Calculator
+serviceName: Calculate Marginal Relief for Corporation Tax
 serviceDescription: |
   The Marginal Relief calculator lets you work out whether you are eligible for a reduction in your Corporation Tax rate from the current main rate.
 serviceDomain: www.tax.service.gov.uk
