@@ -1,9 +1,9 @@
-serviceName: Election for exemption from tax on UK capital gains - qualifying companies
-serviceHeaderName: Election for exemption from tax on UK capital gains - qualifying companies
+serviceName: Submit a Seed Enterprise Investment Scheme compliance statement (SEIS1) to HMRC
+serviceHeaderName: Submit a Seed Enterprise Investment Scheme compliance statement (SEIS1) to HMRC
 serviceDescription: |
-  Use this form to elect a qualifying company for exemption from tax on UK capital gains.
+  Use this service to submit a Seed Enterprise Investment Scheme compliance statement (SEIS1) to HMRC.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-companies
+serviceUrl: /submissions/new-form/submit-seed-enterprise-investment-scheme-compliance-statement-seis1-to-hmrc
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -18,7 +18,7 @@ milestones:
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2023-03-31
-serviceLastTestedDate: 2021-04-26
+serviceLastTestedDate: 2023-01-30
 statementVisibility: public
-statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2022-03-31
+statementCreatedDate: 2023-01-30
+statementLastUpdatedDate: 2023-01-30
