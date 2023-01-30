@@ -1,18 +1,22 @@
 serviceName: Find software for Making Tax Digital for VAT
 serviceHeaderName: Find software for Making Tax Digital for VAT
 serviceDescription: |
-  "This service helps you find compatible software for keeping digital records and submitting VAT Returns to HMRC.
-  You can also find bridging software to connect non-compatible software (like spreadsheets) to HMRC systems."
+  "This service helps you find compatible software for keeping digital records and submitting VAT Returns to HMRC. You can also find bridging software to connect non-compatible software (like spreadsheets) to HMRC systems."
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /making-tax-digital-software
-contactFrontendServiceId: MSCC
-complianceStatus: full
-serviceLastTestedDate: 2021-02-01
+contactFrontendServiceId: vrs
+complianceStatus: partial
+accessibilityProblems:
+  - On the ‘Find software for Making Tax Digital for VAT’ page, the accessibility features criteria are not clear and can lead to selecting the wrong options.
+
+milestones:
+  - description: Accessibility feature options are not explained clearly to users and might cause misunderstanding and confusion. This fails WCAG 2.1 success criterion 3.3.2 (Labels or instructions).
+    date: 12/12/2022
+serviceLastTestedDate: 2022-12-20
 statementVisibility: public
 statementCreatedDate: 2019-09-19
-statementLastUpdatedDate: 2021-05-06
-
+statementLastUpdatedDate: 2023-01-30
 businessArea: Customer Strategy & Tax Design (CS&TD)
-ddc:
-liveOrClassic:
-typeOfService: Public beta
+ddc: DDC Telford
+liveOrClassic: Live Services - Telford
+typeOfService: Live services
