@@ -36,7 +36,7 @@ lazy val microservice = Project(appName, file("."))
   .configs(AcceptanceTest, IntegrationTest)
   .settings(
     majorVersion := 0,
-    scalaVersion := "2.13.8",
+    scalaVersion := "2.13.10",
     playDefaultPort := 12346,
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
