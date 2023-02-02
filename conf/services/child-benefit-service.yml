@@ -1,0 +1,16 @@
+serviceName: Display child benefit payments and entitlement details
+serviceHeaderName: Check and challenge your Child Benefit View Proof of Entitilement Service
+serviceDescription: |
+  This digital Child Benefit feature will provide new standalone functionality, via PTA, to display Child Benefit proof of entitlement and payments details to claimants that have successfully passed IDV&A checks via Government Gateway.
+serviceDomain: www.development.tax.service.gov.uk
+serviceUrl: /child-benefit/view-proof-entitlement
+contactFrontendServiceId: SCA
+complianceStatus: full
+serviceLastTestedDate: 2023-01-31
+statementVisibility: private
+statementCreatedDate: 2022-11-14
+statementLastUpdatedDate: 2023-01-31
+businessArea: Proof Of Entitlement
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Private beta
