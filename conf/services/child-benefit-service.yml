@@ -7,7 +7,7 @@ serviceUrl: /child-benefit/view-proof-entitlement
 contactFrontendServiceId: SCA
 complianceStatus: full
 serviceLastTestedDate: 2023-01-31
-statementVisibility: private
+statementVisibility: draft
 statementCreatedDate: 2022-11-14
 statementLastUpdatedDate: 2023-01-31
 businessArea: Proof Of Entitlement
