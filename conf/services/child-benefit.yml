@@ -1,0 +1,15 @@
+serviceName: Display child benefit payments and entitlement details (Automated)
+serviceDescription: |
+  This digital Child Benefit feature will provide new standalone functionality, via PTA, to display Child Benefit proof of entitlement and payments details to claimants that have successfully passed IDV&A checks via Government Gateway.
+note: This is a fully compliant service which has had automated testing and a audit by HMRC accessibility team.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /child-benefit
+contactFrontendServiceId: SCA
+complianceStatus: full
+AutomatedTestingOnly: true
+serviceLastTestedDate: 2023-01-31
+statementVisibility: draft
+statementCreatedDate: 2022-11-14
+statementLastUpdatedDate: 2023-01-31
+ddc: DDC Newcastle
+automatedTestingDetails: This service was tested using 1.chrome plugin axe DevTools(automated tool) which analyse the accessibility violations for WCAG 2.0 and Section 508 compliance .2.screen reader-NVDA. 3. HMRC accessibility team has conducted an internal audit on the service, reported few bugs which were fixed and retested.
