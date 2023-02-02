@@ -1,0 +1,15 @@
+serviceName: Send a country-by-country report
+serviceDescription: |
+  This service informs Users how to register to report/upload files to HMRC with details about a country by country report.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-to-send-a-country-by-country-report
+contactFrontendServiceId: register-country-by-country-reporting-frontend
+complianceStatus: full
+serviceLastTestedDate: 2019-09-15
+statementVisibility: public
+statementCreatedDate: 2019-09-30
+statementLastUpdatedDate: 2019-09-30
+
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Newcastle
+typeOfService: Public beta
