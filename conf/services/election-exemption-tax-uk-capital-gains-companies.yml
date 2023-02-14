@@ -1,9 +1,9 @@
-serviceName: Submit an Enterprise Investment Scheme compliance statement (EIS1) to HMRC
-serviceHeaderName: Submit an Enterprise Investment Scheme compliance statement (EIS1) to HMRC
+serviceName: Election for exemption from tax on UK capital gains - qualifying companies
+serviceHeaderName: Election for exemption from tax on UK capital gains - qualifying companies
 serviceDescription: |
-  Use this service to submit an Enterprise Investment Scheme (EIS1) compliance statement to HMRC.
+  Use this form to elect a qualifying company for exemption from tax on UK capital gains.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/submit-enterprise-investment-scheme-compliance-statement-eis1-to-hmrc-eligibility
+serviceUrl: /submissions/new-form/election-exemption-tax-uk-capital-gains-companies
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -18,7 +18,7 @@ milestones:
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2023-03-31
-serviceLastTestedDate: 2023-01-30
+serviceLastTestedDate: 2023-02-12
 statementVisibility: public
-statementCreatedDate: 2023-01-30
-statementLastUpdatedDate: 2023-01-30
+statementCreatedDate: 2023-02-12
+statementLastUpdatedDate: 2023-02-12
