@@ -7,48 +7,28 @@ serviceUrl: /personal-account
 contactFrontendServiceId: personal-account
 complianceStatus: partial
 statementVisibility: public
-statementCreatedDate: 2022-10-27
+statementCreatedDate: 2022-12-28
 serviceLastTestedDate: 2022-09-13
-statementLastUpdatedDate: 2022-11-22
+statementLastUpdatedDate: 2023-02-14
 accessibilityProblems:
-  - the language for the document has not been set correctly and there are no headings
-  - screen readers may not load the correct pronunciation rules
-  - visual browsers may not display the characters and scripts correctly
-  - when the document is zoomed in, the content does not reflow and needs horizontal scrolling
-  - there are links in the document which can be actioned by the mouse but are read as plain text for screen reader users
-  - keyboard-only users cannot tab to links which are only actionable by the mouse
-  - there are actionable links on the page which cannot be distinguished because of insufficient colour contrast
-  - the PDF is missing heading structure and language entry
-  - the PDF is not tagged and links are not distinguishable through text or colour
+  - there is a PDF which if downloaded, may cause problems because users may not be able to correctly identify the content
 
 milestones:
   - description: |
-      The language for the PDF document has not been set correctly and there are no headings.This doesn’t meet WCAG 2.1 success criteria 3.1.1 (language of page).
-    date: 2023-03-31
+      The PDF does not have a H1. This fails 1.3.1 Info and Relationships (Level A).
+    date: 2023-12-31
   - description: |
-      Screen readers may not load the correct pronunciation rules. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships).
-    date: 2023-03-31
+      The language entry within the PDF has not been set. This fails 3.1.1 Language of Page (Level A).
+    date: 2023-12-31
   - description: |
-      Visual browsers may not display the characters and scripts correctly. This doesn’t meet WCAG 2.1 success criteria
-    date: 2023-03-31
+      Content in the PDF is obscured when the reflow technique is implemented. This makes it more difficult for users with vision impairment to read. This fails 1.4.10 Reflow (Level AA).
+    date: 2023-12-31
   - description: |
-      When the document is zoomed in, the content does not reflow and needs horizontal scrolling. This doesn’t meet WCAG 2.1 success criteria
-    date: 2023-03-31
+      The PDF document was not tagged. This fails 1.3.1 Info and Relationships (Level A) and 1.3.2 Meaningful Sequence (Level A).
+    date: 2023-12-31
   - description: |
-      There are links in the document which can be actioned by the mouse but are read as plain text for screen reader users. This doesn’t meet WCAG 2.1 success criteria
-    date: 2023-03-31
-  - description: |
-      Keyboard-only users cannot tab to links which are only actionable by the mouse. This doesn’t meet WCAG 2.1 success criteria
-    date: 2023-03-31
-  - description: |
-      There are actionable links on the page which cannot be distinguished because of insufficient colour contrast. This doesn’t meet WCAG 2.1 success criteria
-    date: 2023-03-31
-  - description: |
-      The PDF is missing heading structure and language entry. This doesn’t meet WCAG 2.1 success criteria
-    date: 2023-03-31
-  - description: |
-      The PDF is not tagged and links are not distinguishable through text or colour. This doesn’t meet WCAG 2.1 success criteria
-    date: 2023-03-31
+      Links in the PDF are not discoverable for some users of assistive technology. This fails 1.3.1 Info and Relationships (Level A) and 2.1.1 Keyboard (Level A). There are links in the PDF present which may not be visually evident to users who cannot perceive colour. This fails 1.4.1 Use of Color (Level A).
+    date: 2023-12-31
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
