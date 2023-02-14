@@ -1,0 +1,28 @@
+serviceName: Cyfrifo Rhyddhad Ffiniol ar gyfer Treth Gorfforaeth
+serviceDescription: |
+  Mae’r Gyfrifiannell Rhyddhad Ffiniol yn eich galluogi i gyfrifo a ydych yn gymwys i gael gostyngiad o’r brif gyfradd bresennol o ran eich Treth Gorfforaeth.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /marginal-relief-calculator
+contactFrontendServiceId: MRC
+complianceStatus: partial
+accessibilityProblems:
+  - mae’r meysydd mewnbwn yn gyfyng o ran y nifer o gymeriadau gall y defnyddiwr eu nodi
+  - meysydd mewnbwn o fewn botymau radio
+  - gallai’r defnyddiwr gyflwyno UTR annilys – mae’r maes hwn yn opsiynol
+  - Nid yw cynnwys y PDF ‘Canlyniadau Rhyddhad Ffiniol ar gyfer Treth Gorfforaeth’ sydd wedi’i lawrlwytho yn ail-lifo ac mae angen sgrolio llorweddol sy’n ei gwneud yn anoddach i’w ddarllen.
+  - Wrth newid i’r fersiwn Gymraeg, mae rhywfaint o gynnwys heb gyfieithiad Cymraeg ac ni fydd yn cael ei ynganu’n gywir gan ddarllenwyr sgrin. Mae hyn yn cynnwys testun sydd wedi’i guddio’n weledol sy’n helpu defnyddwyr i adnabod negeseuon gwall a fersiwn Gymraeg o’r PDF.
+milestones:
+  - description: |
+      nid yw cynnwys y PDF a lawrlwythwyd yn ail-lifo. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-03-31
+  - description: |
+      mae rhai cyfieithiadau Cymraeg ar goll o’r gwasanaeth hwn; mae’r gwasanaeth hefyd yn rendro ôl-ddata, ac nid oes ganddo’r briodoledd iaith berthnasol i’w adnabod fel iaith wahanol. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 3.1.2: Iaith Rhannau.
+    date: 2023-03-31
+serviceLastTestedDate: 2023-01-19
+statementVisibility: public
+statementCreatedDate: 2022-10-27
+statementLastUpdatedDate: 2023-01-25
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta

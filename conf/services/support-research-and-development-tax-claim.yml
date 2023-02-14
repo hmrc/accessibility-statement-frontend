@@ -1,9 +1,9 @@
-serviceName: Apply for an advance payment of Statutory Parental Bereavement Pay (SPBP4)
-serviceHeaderName: Apply for an advance payment of Statutory Parental Bereavement Pay (SPBP4)
+serviceName: Support a research and development (R&D) tax claim
+serviceHeaderName: Support a research and development (R&D) tax claim
 serviceDescription: |
-  Use this form to apply for an advance payment of Statutory Parental Bereavement Pay as an employer.
+  Use this service to support a research and development (R&D) tax claim.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/apply-for-advance-payment-statutory-parental-bereavement-pay-auth
+serviceUrl: /submissions/new-form/support-research-and-development-tax-claim
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -13,12 +13,12 @@ milestones:
   - description: |
       Some links, headings and labels may not provide enough information about what to do next, or what happens next.
       This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
-    date: 2022-03-31
+    date: 2023-03-31
   - description: |
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
-    date: 2022-03-31
-serviceLastTestedDate: 2021-04-26
+    date: 2023-03-31
+serviceLastTestedDate: 2023-01-12
 statementVisibility: public
-statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2022-03-31
+statementCreatedDate: 2023-01-12
+statementLastUpdatedDate: 2023-01-12
