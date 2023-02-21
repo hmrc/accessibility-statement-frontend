@@ -1,0 +1,24 @@
+serviceName: Submit a HO5 return as a registered dealer in controlled oils (RDCO)
+serviceHeaderName: Submit a HO5 return as a registered dealer in controlled oils (RDCO)
+serviceDescription: |
+  Use this form to tell HMRC about HO5 returns of controlled oil supplied by Registered Dealers in Controlled Oils (RDCO).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/submit-ho5-return-as-registered-dealer-in-controlled-oils
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2023-03-31
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2023-03-31
+serviceLastTestedDate: 2023-02-21
+statementVisibility: public
+statementCreatedDate: 2023-02-21
+statementLastUpdatedDate: 2023-02-21
