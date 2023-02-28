@@ -1,7 +1,7 @@
 serviceName: Child Benefit
 serviceDescription: |
-  This digital Child Benefit service enables claimant's to
-  view their proof of entitlement and payments details.
+  This digital Child Benefit service enables claimants to view their proof of entitlement
+  to Child Benefit and their payment details.
 note: This is a fully compliant service which has had automated testing and a audit by HMRC accessibility team.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /child-benefit
