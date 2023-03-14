@@ -8,7 +8,7 @@ accessibilityProblems:
 - On the ‘Check or change your email address’ and the ‘Enter the code to confirm the email address’ pages, users may have difficulties identifying what needs to be entered into the text fields.
 milestones:
 - description: The code and email text fields do not have an associated label. This fails WCAG 2.1 success criterion 3.3.2 Labels or instructions and 4.1.2 Name, role, value.
-  date: TBC
+  date: 2024-03-14
 serviceLastTestedDate: 2023-03-10
 serviceLastTestedDate: 2023-03-10
 statementVisibility: public             
