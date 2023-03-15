@@ -1,7 +1,7 @@
-serviceName: Child Benefit
+serviceName: Budd-dal Plant
 serviceDescription: |
-  This digital Child Benefit service enables claimants to view their proof of entitlement
-  to Child Benefit and their payment details.
+  Mae’r gwasanaeth Budd-dal Plant digidol hwn yn galluogi hawlwyr i fwrw golwg dros
+  dystiolaeth o’u hawl i Fudd-dal Plant a manylion eu taliadau.
 note: This is a fully compliant service which has had automated testing and a audit by HMRC accessibility team.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /child-benefit
