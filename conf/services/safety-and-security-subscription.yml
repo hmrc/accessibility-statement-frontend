@@ -1,4 +1,4 @@
-serviceName: Enrol with the Safety and Security
+serviceName: Archived Enrol with the Safety and Security
 serviceDescription: |
   The service allows a user to enrol for the Safety and Security (S&S GB) service
   so that they can submit Entry Summary declarations (sometimes called an ENS).
@@ -12,9 +12,9 @@ milestones:
   - description: "Translations of ‘Skip to main content’, ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ and ‘Crown Copyright’ are required."
     date: 2023-12-31
 serviceLastTestedDate: 2021-02-22
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-12-08
-statementLastUpdatedDate: 2023-01-06
+statementLastUpdatedDate: 2023-03-29
 
 businessArea: Borders & Trade
 ddc: DDC Telford
