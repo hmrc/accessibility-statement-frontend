@@ -1,13 +1,13 @@
-serviceName: Repayments
+serviceName: Archived Repayments
 serviceHeaderName: Check how much Income Tax you paid
 serviceDescription: The Repayments service allows users that have overpaid tax to claim back money owed by HMRC.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /repayments
 contactFrontendServiceId: repayments
 complianceStatus: noncompliant
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2023-03-29
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
