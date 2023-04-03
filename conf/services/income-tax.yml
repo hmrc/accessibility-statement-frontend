@@ -1,4 +1,4 @@
-serviceName: Check how Much Income Tax You Paid This Year And Last Year
+serviceName: Archived Check how Much Income Tax You Paid This Year And Last Year
 serviceHeaderName: Check how Much Income Tax You Paid This Year And Last Year
 serviceDescription: view your current or previous years' income tax calculations.
 serviceDomain: www.tax.service.gov.uk
@@ -39,9 +39,9 @@ milestones:
       We plan to make sure that all error messages are displayed and described as soon as the page loads.
     date: 2021-07-31
 serviceLastTestedDate: 2020-03-27
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-10-01
-statementLastUpdatedDate: 2020-10-01
+statementLastUpdatedDate: 2023-03-29
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Newcastle
 liveOrClassic: Live Services - Edinburgh

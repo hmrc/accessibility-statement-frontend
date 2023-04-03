@@ -1,4 +1,4 @@
-serviceName:  Pay VAT deferred due to coronavirus (COVID-19)
+serviceName:  Archived Pay VAT deferred due to coronavirus (COVID-19)
 serviceDescription: |
   Pay VAT deferred due to coronavirus (COVID-19) is a new scheme that will be available to all customers who deferred
   their VAT payments between 20th March 2020 and 30th June 2020. Users will be able to set up an instalment plan with
@@ -60,9 +60,9 @@ milestones:
     date: 2021-04-30
 
 serviceLastTestedDate: 2021-02-15
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2021-02-22
-statementLastUpdatedDate: 2021-02-22
+statementLastUpdatedDate: 2023-03-29
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
 liveOrClassic:
