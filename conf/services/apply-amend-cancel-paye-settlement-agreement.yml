@@ -1,0 +1,12 @@
+serviceName: Apply for, amend or cancel a PAYE settlement agreement
+serviceHeaderName: Apply for, amend or cancel a PAYE settlement agreement
+serviceDescription: |
+  Use this form to apply for, amend or cancel a PAYE settlement agreement.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/apply-amend-cancel-paye-settlement-agreement
+contactFrontendServiceId: GForm
+complianceStatus: full
+serviceLastTestedDate: 2023-04-03
+statementVisibility: public
+statementCreatedDate: 2023-04-03
+statementLastUpdatedDate: 2023-04-03
