@@ -1,0 +1,19 @@
+serviceName: Gwirio neu newid eich cyfeiriad e-bost ar gyfer Debyd Uniongyrchol
+serviceDescription: Mae’r gwasanaeth hwn yn caniatáu i chi wirio neu newid eich cyfeiriad e-bost os nad yw CThEF yn gallu anfon e-bost atoch ynghylch eich Debyd Uniongyrchol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /direct-debit-verify-email
+contactFrontendServiceId: direct-debit-update-email-frontend
+complianceStatus: partial
+accessibilityProblems:
+- Ar y tudalennau ‘Check or change your email address’ a ‘Enter the code to confirm the email address’, mae’n bosib y bydd defnyddwyr yn cael trafferthion adnabod beth sydd angen nodi yn y meysydd testun.
+milestones:
+- description: Does dim label wedi’i chysylltu yn y meysydd testun ar gyfer y cod a’r e-bost. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) a 4.1.2 (Name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+  date: 2024-03-14
+serviceLastTestedDate: 2023-03-10
+statementVisibility: public
+statementCreatedDate: 2023-03-14
+statementLastUpdatedDate: 2023-03-14
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta
