@@ -1,0 +1,12 @@
+serviceName: cancel-paye-settlement-agreement
+serviceHeaderName: Cancel a PAYE settlement agreement
+serviceDescription: |
+  Cancel a PAYE settlement agreement.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/cancel-paye-settlement-agreement
+contactFrontendServiceId: GForm
+complianceStatus: full
+serviceLastTestedDate: 2023-14-04
+statementVisibility: public
+statementCreatedDate: 2023-14-04
+statementLastUpdatedDate: 2023-14-04
