@@ -10,7 +10,7 @@ accessibilityProblems:
   - On the 'Enter the code to confirm the email address' page the error prefix is not translated for Welsh speaking users, which could prevent them from correctly identifying text as an error.
   - On the 'Enter the code to confirm the email address' page users will not be able to select the input box by selecting the heading, as it has not been associated as the form control’s label.
 milestones:
-  - description: The downloaded PDF does not set the document title, the document language and is not following PDF/Universal Accessibility (PDF/UA). This means that the content does not reflow. This fails WCAG 2.1 success criterion 2.4.2 Page titled, 3.1.1 Language of page, 1.3.1 Info and relationships and 1.4.10 Reflow.
+  - description: The downloaded PDF does not set the document title, the document language, and is not following PDF/Universal Accessibility (PDF/UA). This means that the content does not reflow. This fails WCAG 2.1 success criterion 2.4.2 Page titled, 3.1.1 Language of page, 1.3.1 Info and relationships and 1.4.10 Reflow.
     date: 2023-12-01
   - description: The fieldset is missing the legend. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
     date: 2023-12-01

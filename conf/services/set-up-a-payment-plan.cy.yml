@@ -1,0 +1,28 @@
+serviceName: Trefnu cynllun talu
+serviceDescription: Mae’r gwasanaeth ‘trefnu cynllun talu’ yn caniatáu’r trethdalwr i dalu ei rwymedigaeth treth drwy daliadau debyd uniongyrchol fforddiadwy. Mae’r system yn arddangos yr hyn sydd arnynt. Yna, mae’n rhoi opsiynau iddynt ar y ffordd o fynd ati i dalu’r swm hwn fesul rhandaliad.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /set-up-a-payment-plan
+contactFrontendServiceId: essttp-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - Nid oes gan y PDF a lawrlwythwyd (‘your payment plan’) deitl dogfen. Bydd hyn yn ei gwneud yn anodd ei adnabod yn gywir. Nid yw iaith cynnwys y ddogfen wedi’i osod yn gywir, felly efallai na fydd darllenwyr sgrin yn ynganu’r cynnwys yn gywir. Efallai na fydd porwyr gweledol yn dangos y cymeriadau na’r cynnwys yn gywir. Pan fydd y ddogfen yn cael ei chwyddo nid yw’r cynnwys yn ail-lifo, ac mae gofyn i’r defnyddiwr sgrolio’n llorweddol sy’n ei gwneud yn anoddach i’w darllen.
+  - Nid oes gan y dudalen i drefnu Debyd Uniongyrchol label dosbarthu i ddweud wrth ddarllenwyr sgrin sut mae’r meysydd ffurflen yn perthyn i’w gilydd.
+  - Nid yw’r dudalen ‘Enter the code to confirm the email address page’ na’r rhagddodiad gwall wedi’u cyfieithu ar gyfer defnyddwyr iaith Gymraeg, a gallai hyn eu rhwystro rhag adnabod testun yn gywir fel gwall.
+  - Ar y dudalen ‘Enter the code to confirm the email address page’, ni fydd defnyddwyr yn gallu dewis y blwch mewnbwn drwy ddewis y pennawd, gan nad yw’r blwch wedi cael ei gysylltu fel label y rheolydd ffurflen.
+milestones:
+  - description: Nid yw’r PDF a lawrlwythwyd yn gosod teitl y ddogfen, iaith y ddogfen, ac nid yw’n dilyn meini prawf Hygyrchedd PDF/Cyffredinol (PDF/UA). Mae hyn yn golygu nad yw’r cynnwys yn ail-lifo. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.2 (Page titled), 3.1.1 (Language of page), 1.3.1 (Info and Relationships) a 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-01
+  - description: Does dim allwedd gan y set maes. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-01
+  - description: Nid yw’r rhagddodiad ‘error:’ ar dudalen ‘Enter the code to confirm the email address’ wedi’i gyfieithu i’r Gymraeg. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-01
+  - description: Nid oes gan y mewnbwn ar dudalen ‘Enter the code to confirm the email address’ label sydd wedi’i chysylltu. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+    date: 2023-12-01
+serviceLastTestedDate: 2023-03-03
+statementVisibility: public
+statementCreatedDate: 2022-10-14
+statementLastUpdatedDate: 2023-03-16
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta
