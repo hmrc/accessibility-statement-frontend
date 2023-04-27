@@ -14,8 +14,6 @@
  * limitations under the License.
  *@
 
-@import views.html.helper.CSPNonce
-
 @this(hmrcLayout: HmrcLayout)
 
 @(
@@ -26,6 +24,5 @@
 @hmrcLayout(
     pageTitle = Some(pageTitle),
     displayHmrcBanner = true,
-    nonce = CSPNonce.get,
     isWelshTranslationAvailable = isWelshTranslationAvailable
 )(contentBlock)
