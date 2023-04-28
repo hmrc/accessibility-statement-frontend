@@ -1,0 +1,22 @@
+serviceName: Face to face payments service
+serviceDescription: This service lets customers make a secure card payment in person to HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /face-to-face-payments
+contactFrontendServiceId: face-to-face-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - There is one parsing error in this service. This might cause screen readers to read out the content in a confusing order.
+  - For one of the input fields, the accessible name does not match up to the visual label. This might make the service harder to navigate for speech-based users and text-to-speech users.
+milestones:
+  - description: On the National Insurance and Paye As You Earn Sevice screen there is a parsing error. The error is 'Attribute aria-expanded not allowed on element input at this point'. Parsing errors in code can cause serious issues with a user’s understanding or interaction with content. This does not meet WCAG success criterion 4.1.1 (Parsing)
+    date: 2023-12-15
+  - description: The 'Payment amount' text box has the accessible name of 'Enter amount in pounds'. People who navigate the service using speech, or text-to-speech will have a worse experience reaching this field because the labels do not match. This does not meet WCAG success criterion 2.5.3 (Label in Name).
+    date: 2023-12-15
+serviceLastTestedDate: 2022-12-14
+statementVisibility: public
+statementCreatedDate: 2023-04-28
+statementLastUpdatedDate: 2023-04-28
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta
