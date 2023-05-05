@@ -1,0 +1,24 @@
+serviceName: Ask HMRC to check if you have declared too much National Insurance contributions in 2022 to 2023
+serviceHeaderName: Ask HMRC to check if you have declared too much National Insurance contributions in 2022 to 2023
+serviceDescription: |
+  Use this form to ask HMRC to check if you have declared too much National Insurance contributions in 2022 to 2023.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/ask-hmrc-to-check-if-you-have-declared-too-much-national-insurance-contributions-in-2022-2023
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2023-03-31
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2023-03-31
+serviceLastTestedDate: 2023-05-05
+statementVisibility: public
+statementCreatedDate: 2023-05-05
+statementLastUpdatedDate: 2023-05-05
