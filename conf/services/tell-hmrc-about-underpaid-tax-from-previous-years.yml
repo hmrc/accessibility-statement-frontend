@@ -6,25 +6,11 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /tell-hmrc-about-underpaid-tax-from-previous-years
 contactFrontendServiceId: tell-hmrc-about-underpaid-tax-from-previous-years
 
-complianceStatus: partial
-accessibilityProblems:
-- When the downloaded PDF is magnified, the content does not reflow and needs horizontal scrolling which makes it more difficult to read. Users’ answers and questions have not been marked up properly and will not be associated correctly by screen readers.
-- The address fields do not offer users the option to populate the fields from data that was previously saved in the browser.
-- On the ‘What is the country of your address?’ page, the error message has not been translated into Welsh, which could prevent Welsh-speaking users from correctly identifying it as an error.
-- On the ‘What is your full name?’ page there are details describing the format of the information required, that may be missed by screen-reader users.
-milestones:
-- description: the downloaded PDF has content that does not reflow when magnified, and the content not correctly tagged to show relationship. This fails WCAG 2.1 success criterion 1.4.10 Reflow and 1.3.1 Info and Relationships
-  date: 2023-05-30
-- description: address fields are missing correct autocomplete attributes which means users will be unable to use the browser’s saved data to populate these fields easily. This fails WCAG 2.1 success criterion 1.3.5 Identify Input Purpose
-  date: 2023-05-30
-- description: The 'What is the country of your address?' page is missing Welsh translation for the ‘No results found’ error message. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
-  date: 2023-05-30
-- description: Information required to assist in correctly filling out form fields is not programmatically associated with the field. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships
-  date: 2023-05-30
-serviceLastTestedDate: 2023-05-03
-
+complianceStatus: full
+  
+serviceLastTestedDate: 2023-05-11
 statementVisibility: public
 statementCreatedDate: 2023-04-12
-statementLastUpdatedDate: 2023-05-04
+statementLastUpdatedDate: 2023-05-11
 
 
