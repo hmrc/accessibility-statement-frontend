@@ -5,19 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-email-cds/start
 contactFrontendServiceId: manage-email-cds
-complianceStatus: partial
-accessibilityProblems:
-  - Users will have difficulties when using the Welsh version, as it does not provide a translation for the error message.
-  - The ‘related content’ links do not contain understandable text, which will prevent users from understanding the purpose of each link.
-milestones:
-  - description: When viewing the page in Welsh the content on the page is missing the required translations in the configuration file. This fails WCAG 2.1 success criterion 3.1.2 (AA) Language of parts
-    date: 2023-12-31
-  - description: The 'related content' section contains links without readable text descriptions. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context)
-    date: 2023-12-31
-serviceLastTestedDate: 2023-02-16
+complianceStatus: full
+serviceLastTestedDate: 2023-05-12
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2023-02-28
+statementLastUpdatedDate: 2023-05-19
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:

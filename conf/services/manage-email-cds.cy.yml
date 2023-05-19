@@ -5,19 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-email-cds/start
 contactFrontendServiceId: manage-email-cds
-complianceStatus: partial
-accessibilityProblems:
-  - Bydd defnyddwyr yn cael trafferth wrth ddefnyddio’r fersiwn Gymraeg, am nad oes cyfieithiad o’r neges gwall.
-  - Nid yw’r cysylltiadau ‘cynnwys cysylltiedig’ yn cynnwys testun dealladwy – bydd hyn yn atal defnyddwyr rhag deall pwrpas pob cysylltiad.
-milestones:
-  - description: Wrth edrych ar y dudalen Gymraeg, mae’r cyfieithiad sydd ei angen ar gyfer cynnwys y dudalen ar goll o’r ffeil ffurfweddu. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (AA) (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date:  2023-12-31
-  - description: Mae’r adran ‘cynnwys cysylltiedig’ yn cynnwys cysylltiadau heb destun disgrifiadol darllenadwy. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date:  2023-12-31
-serviceLastTestedDate: 2023-02-16
+complianceStatus: full
+serviceLastTestedDate: 2023-05-12
 statementVisibility: public
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2023-02-28
+statementLastUpdatedDate: 2023-05-19
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
