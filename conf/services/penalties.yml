@@ -5,15 +5,14 @@ serviceUrl: /penalties
 contactFrontendServiceId: vat-penalties
 complianceStatus: partial
 accessibilityProblems:
-  - On the ‘Late payment penalty’ page, the importance of the content is hidden from assistive technology. Screen-reader users may find it difficult to identify the importance of the information about the penalty.
-  - Welsh users will have difficulties when using the Welsh version, as the ‘view calculation’ link and the ‘contents’ copy is not translated into Welsh.
+  - matching penalty amounts duplicated headings. This will make it difficult for screen reader users to differentiate sections on the page.
 milestones:
-  - description: When viewing the page in Welsh some parts of the service are missing the necessary translations. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
-    date: 2023-05-13
-serviceLastTestedDate: 2022-12-21
+  - description: Matching penalty amounts marked up as duplicated headings. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels.
+    date: 2023-06-30
+serviceLastTestedDate: 2023-03-27
 statementVisibility: public
 statementCreatedDate: 2023-01-12
-statementLastUpdatedDate: 2023-01-12
+statementLastUpdatedDate: 2023-05-30
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 typeOfService: Public beta
