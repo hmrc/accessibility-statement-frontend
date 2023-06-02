@@ -1,0 +1,24 @@
+serviceName: Apply for a certificate to confirm you will pay National Insurance while self-employed abroad (CA3837)
+serviceHeaderName: Apply for a certificate to confirm you will pay National Insurance while self-employed abroad (CA3837)
+serviceDescription: |
+  Use this form to apply for a certificate to confirm you will pay National Insurance while self-employed in an EU country, Gibraltar, Iceland, Liechtenstein, Norway, or Switzerland.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/apply-certificate-national-insurance-self-employed-abroad3
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2024-03-31
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2024-03-31
+serviceLastTestedDate: 2023-06-02
+statementVisibility: public
+statementCreatedDate: 2023-06-02
+statementLastUpdatedDate: 2023-06-02
