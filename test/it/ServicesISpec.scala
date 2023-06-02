@@ -186,7 +186,8 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
       s"enforce statement not contain missing milestones for $service" in {
         val statement: AccessibilityStatement = statementTry.get
         val hasMilestones                     = statement.milestones.getOrElse(Seq.empty).nonEmpty
-        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant should be(
+        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant || statement.statementType
+          .contains(OpenBanking) should be(
           true
         )
       }

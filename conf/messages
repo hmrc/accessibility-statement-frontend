@@ -58,6 +58,7 @@ accessibility.compliance.full=This service is fully compliant with the
 accessibility.compliance.full.app=This app is fully compliant with the
 accessibility.compliance.partial=This service is partially compliant with the
 accessibility.compliance.partial.app=This app is partially compliant with the
+accessibility.compliance.openbanking=HMRC’s screens are compliant with WCAG 2.1 AA. However users visit their bank’s website or app to complete a payment. HMRC does not inspect each bank’s website or app so there might be some accessibility problems we don’t know about.
 accessibility.compliance.noncompliant=This service is non compliant with the
 accessibility.compliance.noncompliant.app=This app is non compliant with the
 accessibility.compliance.noncompliant.explanation=. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.
@@ -67,6 +68,7 @@ accessibility.no-issues=There are no known accessibility issues within this serv
 accessibility.no-issues.app=There are no known accessibility issues within this app.
 accessibility.has-issues=Some people may find parts of this service difficult to use:
 accessibility.has-issues.app=Some people may find parts of this app difficult to use:
+accessibility.has-issues.openbanking=As a result, some people may find parts of this service difficult to use:
 
 ## Contact
 contact.heading=What to do if you have difficulty using this service

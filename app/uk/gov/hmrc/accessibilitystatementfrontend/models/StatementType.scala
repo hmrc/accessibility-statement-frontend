@@ -20,7 +20,7 @@ sealed trait StatementType extends EnumValue
 
 object StatementType extends Enum[StatementType] {
   def description: String        = "statement type"
-  def values: Seq[StatementType] = Seq(VOA, CHGV, Android, Ios)
+  def values: Seq[StatementType] = Seq(VOA, CHGV, OpenBanking, Android, Ios)
 }
 
 case object VOA extends StatementType {
@@ -29,6 +29,10 @@ case object VOA extends StatementType {
 
 case object CHGV extends StatementType {
   val value = "C-HGV"
+}
+
+case object OpenBanking extends StatementType {
+  val value = "openbanking"
 }
 
 case object Ios extends StatementType {
