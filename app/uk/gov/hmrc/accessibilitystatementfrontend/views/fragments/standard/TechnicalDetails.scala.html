@@ -34,15 +34,16 @@
         <p class="govuk-body">@{messages("technical.compliance.noncompliant")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
         </p>
     } else {
-        <p class="govuk-body">@{messages("technical.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
+        <p class="govuk-body">@{messages("technical.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@if(hasMilestones){@{messages("technical.compliance.partial.reasons")}}else{@{messages("general.fullstop")}}
         </p>
     }
-    <h3 class="govuk-heading-m">@{messages("technical.non-compliance.header")}</h3>
-    <p class="govuk-body">@{messages("technical.non-compliance.introduction")} @if(displayAutomatedTestingOnlyContent) {@automatedTestingDetails.getOrElse("")}</p>
-    <h4 class="govuk-heading-s">@{messages("technical.non-compliance.accessibility")}</h4>
 }
 
 @if(hasMilestones && isPartiallyCompliant) {
+    <h3 class="govuk-heading-m">@{messages("technical.non-compliance.header")}</h3>
+    <p class="govuk-body">@{messages("technical.non-compliance.introduction")} @if(displayAutomatedTestingOnlyContent) {@automatedTestingDetails.getOrElse("")}</p>
+    <h4 class="govuk-heading-s">@{messages("technical.non-compliance.accessibility")}</h4>
+
     @for(milestone <- milestones.get) {
         <p class="govuk-body">@{milestone.description} @{messages("technical.non-compliance.milestone.fix-by", utils.Dates.formatDate(dateToLocalDate(milestone.date)))}</p>
     }
