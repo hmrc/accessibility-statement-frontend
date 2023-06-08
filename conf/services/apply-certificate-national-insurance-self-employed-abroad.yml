@@ -3,7 +3,7 @@ serviceHeaderName: Apply for a certificate to confirm you will pay National Insu
 serviceDescription: |
   Use this form to apply for a certificate to confirm you will pay National Insurance while self-employed in an EU country, Gibraltar, Iceland, Liechtenstein, Norway, or Switzerland.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/apply-certificate-national-insurance-self-employed-abroad3
+serviceUrl: /submissions/new-form/apply-certificate-national-insurance-self-employed-abroad
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
