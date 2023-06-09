@@ -3,7 +3,7 @@ serviceHeaderName: apply-for-uk-internal-market-scheme-authorisation
 serviceDescription: |
   Us this form to apply for a UK Internal Market Scheme authorisation.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/apply-for-uk-internal-market-scheme-authorisation
+serviceUrl: /submissions/new-form/apply-uk-internal-market-scheme-authorisation
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
