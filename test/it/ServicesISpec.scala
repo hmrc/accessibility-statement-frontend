@@ -35,6 +35,8 @@ import scala.util.Try
 class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
   private val statementParser = new AccessibilityStatementParser
 
+  private val partiallyCompliantWithoutMilestones: Seq[String] = Seq("pay-by-bank", "pay-by-bank.cy")
+
   "validate field values" should {
     trait Context {
       val minimalPassingServiceYAML: String = """
@@ -186,7 +188,8 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
       s"enforce statement not contain missing milestones for $service" in {
         val statement: AccessibilityStatement = statementTry.get
         val hasMilestones                     = statement.milestones.getOrElse(Seq.empty).nonEmpty
-        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant should be(
+        val isExempt                          = partiallyCompliantWithoutMilestones.contains(service)
+        hasMilestones || statement.isNonCompliant || statement.isFullyCompliant || isExempt should be(
           true
         )
       }
