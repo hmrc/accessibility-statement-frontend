@@ -35,7 +35,8 @@ import scala.util.Try
 class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
   private val statementParser = new AccessibilityStatementParser
 
-  private val partiallyCompliantWithoutMilestones: Seq[String] = Seq("pay-by-bank", "pay-by-bank.cy")
+  private val partiallyCompliantWithoutMilestones: Seq[String] =
+    Seq("pay-by-bank", "pay-by-bank.cy", "example-partially-compliant-no-milestones")
 
   "validate field values" should {
     trait Context {
