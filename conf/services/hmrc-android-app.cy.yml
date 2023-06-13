@@ -7,30 +7,11 @@ serviceDescription: |
 serviceDomain: play.google.com
 serviceUrl: /store/apps/details?id=uk.gov.hmrc.ptcalc&hl=en_GB
 statementType: android
-complianceStatus: partial
-accessibilityProblems:
-  - Nid oes gan rai botymau ddisgrifiad neu ddiben clir.
-  - Nid yw rhai negeseuon gwall wedi’u cysylltu’n glir â meysydd ffurflen.
-  - Wrth nodi testun mewn maes, nid yw nifer y cymeriadau’n cael ei ddarllen gan ddarllenydd sgrin.
-milestones:
-  - description: Ar y Gyfrifiannell Treth, darllenir gwallau cyn y label maes, a all fod yn ddryslyd i ddefnyddwyr darllenydd sgrin.
-    date: 2023-02-28
-  - description: Nid yw’r dangosydd neges newydd ar y llyw gwaelod wedi’i labelu’n gywir ar gyfer defnyddwyr darllenydd sgrin.
-    date: 2023-02-28
-  - description: Pan fydd defnyddwyr darllenydd sgrin yn llywio gan ddefnyddio rheolyddion swipe, mae’r ffocws yn parhau ar y sleid carwsél cyntaf.
-    date: 2023-02-28
-  - description: Ar y sgrin nodi PIN, mae angen disgrifiad pellach o’r botwm “Rhagor o opsiynau” ar gyfer darllenwyr sgrin.
-    date: 2023-02-28
-  - description: Ar y sgrin Credydau Treth, mae angen disgrifiad pellach o’r botwm “Dysgu mwy” ar gyfer darllenwyr sgrin.
-    date: 2023-02-28
-  - description: Nid yw lliw’r eicon tudaleniad anweithredol ar gyfer carwselau yn bodloni gofynion cyferbynnedd lliw.
-    date: 2023-02-28
-  - description: Wrth nodi testun mewn maes, nid yw’r cyfrif nodau yn cael ei ddarllen gan y darllenydd sgrin, felly nid yw defnyddwyr yn gwybod faint o nodau sydd ar ôl.
-    date: 2023-02-28
+complianceStatus: full
 statementVisibility: public
-serviceLastTestedDate: 2022-09-28
+serviceLastTestedDate: 2023-05-04
 statementCreatedDate: 2021-06-10
-statementLastUpdatedDate: 2022-11-30
+statementLastUpdatedDate: 2023-06-13
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing
