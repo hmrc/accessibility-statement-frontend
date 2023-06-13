@@ -8,39 +8,16 @@ serviceUrl: /gb/app/hmrc/id514561561
 statementType: ios
 complianceStatus: partial
 accessibilityProblems:
-  - Some carousel navigation does not work as expected when using VoiceOver with gestures.
-  - Some buttons do not have a clear description.
-  - Some content has not been correctly identified.
-  - Some error messages are not clearly associated with form actions.
-  - Some colours do not meet contrast guidelines.
-  - When entering text in a field character count is not read out by a screen reader.
+  - Screen reader users’ focus is not always sent to the correct area.
 milestones:
-  - description: On the Tax Calculator, errors are read before the field label, which can be confusing for screenreader users.
-    date: 2023-02-28
-  - description: The new message indicator on the bottom navigation is not labelled correctly for screen reader users.
-    date: 2023-02-28
-  - description: When screen reader users navigate using tabs, the focus does not work as expected and returns to the first tab rather than the tab being viewed.
-    date: 2023-02-28
-  - description: When screen reader users navigate using swipe controls, the focus remains on the first carousel slide.
-    date: 2023-02-28
-  - description: In Self Assessment, text that appears to be a heading is not labelled as one, resulting in the content being skipped by screen readers when focusing on headers.
-    date: 2023-02-28
-  - description: On the PIN entry screen, the button “More options” needs further description for screen readers.
-    date: 2023-02-28
-  - description: On the Tax Credits screen, the button “Learn more” needs further description for screenreaders.
-    date: 2023-02-28
-  - description: On the support information screen, the button “Copy this information” needs further description for screen readers.
-    date: 2023-02-28
-  - description: The colour of the icon to clear a form field does not meet colour contrast requirements.
-    date: 2023-02-28
-  - description: The colour of the inactive pagination icon for carousels does not meet colour contrast requirements.
-    date: 2023-02-28
-  - description: When entering text into a field, the character count is not read by the screen reader, so users do not know how many characters are remaining.
-    date: 2023-02-28
+  - description: On the Tax calculator screen, screen reader users’ focus is sent to the top of the page if errors are made in the ‘Tax code’ field. This fails WCAG 2.1 success criterion 2.4.3 (Focus Order).
+    date: 2023-06-30
+  - description: When a tab is selected on the Self Assessment screen, screen reader users’ focus is not sent to the correct area. This fails WCAG 2.1 success criterion 2.4.3 (Focus Order).
+    date: 2023-06-30
 statementVisibility: public
-serviceLastTestedDate: 2022-09-28
+serviceLastTestedDate: 2023-05-04
 statementCreatedDate: 2021-06-10
-statementLastUpdatedDate: 2022-11-30
+statementLastUpdatedDate: 2023-06-13
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing
