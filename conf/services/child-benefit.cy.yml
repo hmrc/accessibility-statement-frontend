@@ -12,11 +12,6 @@ statementCreatedDate: 2022-11-14
 statementLastUpdatedDate: 2023-06-15
 ddc: DDC Newcastle
 automatedTestingOnly: false
-automatedTestingDetails: |
-  This service was tested using
-  1. chrome plugin axe DevTools(automated tool) which analyse the accessibility violations for WCAG2.0 and Section 508 compliance.
-  2. screen reader-NVDA.
-  3. HMRC accessibility team has conducted an internal audit on the service, reported few bugs which were fixed and retested.
 complianceStatus: partial
 accessibilityProblems:
   # FT2: Change of Bank
