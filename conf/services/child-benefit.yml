@@ -6,10 +6,10 @@ note: This is a partially compliant service which has had automated testing and 
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /child-benefit
 contactFrontendServiceId: SCA
-serviceLastTestedDate: 2023-04-17
+serviceLastTestedDate: 2023-06-12
 statementVisibility: public
 statementCreatedDate: 2022-11-14
-statementLastUpdatedDate: 2023-04-24
+statementLastUpdatedDate: 2023-06-15
 ddc: DDC Newcastle
 automatedTestingOnly: false
 automatedTestingDetails: |
@@ -19,8 +19,6 @@ automatedTestingDetails: |
   3. HMRC accessibility team has conducted an internal audit on the service, reported few bugs which were fixed and retested.
 complianceStatus: partial
 accessibilityProblems:
-  # FT1: View Payments/Proof of Entitlements
-  - When viewing the page in Welsh the content on the page is missing the required translations in the configuration file. This fails WCAG 2.1 success criterion 3.1.2 (AA) Language of parts
   # FT2: Change of Bank
   - Screen-reader users will not be able to correctly identify the questions that they need to answer when populating the date fields and confirming the address.
   - On the 'Your Child Benefit is paid into this account' page, the tables have not been set up correctly so screen-reader users will find it difficult to understand the content in them.
