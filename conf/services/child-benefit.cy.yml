@@ -6,18 +6,14 @@ note: This is a fully compliant service which has had automated testing and a au
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /child-benefit
 contactFrontendServiceId: SCA
-complianceStatus: full
-AutomatedTestingOnly: true
-serviceLastTestedDate: 2023-01-31
+serviceLastTestedDate: 2023-06-12
 statementVisibility: public
 statementCreatedDate: 2022-11-14
-statementLastUpdatedDate: 2023-01-31
+statementLastUpdatedDate: 2023-06-15
 ddc: DDC Newcastle
-automatedTestingDetails: This service was tested using 1.chrome plugin axe DevTools(automated tool) which analyse the accessibility violations for WCAG 2.0 and Section 508 compliance .2.screen reader-NVDA. 3. HMRC accessibility team has conducted an internal audit on the service, reported few bugs which were fixed and retested.
+automatedTestingOnly: false
 complianceStatus: partial
 accessibilityProblems:
-  # FT1: View Payments/Proof of Entitlements
-  - Wrth edrych ar y dudalen Gymraeg, mae'r cyfieithiad sydd ei angen ar gyfer cynnwys y dudalen ar goll o'r ffeil ffurfweddu. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (AA) (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
   # FT2: Change of Bank
   - Ni fydd defnyddwyr darllenydd sgrin yn gallu adnabod y cwestiynau sydd angen iddynt eu hateb pan fyddant yn llenwi'r meysydd dyddiad a chadarnhau'r cyfeiriad.
   - Ar y dudalen sy'n nodi i ba cyfrif y bydd eich Budd-dal Plant yn cael ei dalu, nid yw'r tablau wedi'u gosod yn gywir felly bydd defnyddwyr darllenydd sgrin yn ei chael hi'n anodd deall eu cynnwys.
