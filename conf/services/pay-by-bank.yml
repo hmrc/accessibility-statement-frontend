@@ -6,13 +6,11 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-by-bank
 contactFrontendServiceId: open-banking
 complianceStatus: partial
-milestones:
-  - description: |
-      HMRC’s screens are compliant with WCAG 2.1 AA. However users visit their bank’s website or app to complete a payment.
-      HMRC does not inspect each bank’s website or app so there might be some accessibility problems we don’t know about.
-  - description: |
-      After selecting ‘approve this payment’, users are passed to their bank’s website or app to login and pay securely. 
-      Some of the individual bank’s accessibility statements indicate that their content may not be fully compliant to the standard that HMRC is obligated to meet.
+accessibilityProblems:
+      - HMRC’s screens are compliant with WCAG 2.1 AA. However users visit their bank’s website or app to complete a payment.
+      - HMRC does not inspect each bank’s website or app so there might be some accessibility problems we don’t know about.
+      - After selecting ‘approve this payment’, users are passed to their bank’s website or app to login and pay securely.
+      - Some of the individual bank’s accessibility statements indicate that their content may not be fully compliant to the standard that HMRC is obligated to meet.
 serviceLastTestedDate: 2023-02-15
 statementVisibility: public
 statementCreatedDate: 2021-03-24

@@ -6,14 +6,12 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-by-bank
 contactFrontendServiceId: open-banking
 complianceStatus: partial
-milestones:
-  - description: |
-      Mae sgriniau CThEF yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-      Fodd bynnag, bydd yn rhaid i ddefnyddiwr fynd i wefan neu ap ei fanc er mwyn cwblhau taliad.
-      Nid yw CThEF yn archwilio gwefan neu ap pob banc, felly mae’n bosibl y bydd ambell broblem o ran hygyrchedd nad ydym ni’n gwybod amdanynt.
-  - description: |
-      Ar ôl dewis yr opsiwn i gymeradwyo’r taliad, bydd y defnyddiwr yn cael ei drosglwyddo i ap neu wefan ei fanc er mwyn mewngofnodi a thalu mewn ffordd ddiogel. 
-      Mae datganiadau hygyrchedd rhai banciau yn dangos nad yw’r cynnwys yn cydymffurfio’n llwyr â’r safon mae CThEF gorfod ei bodloni.
+accessibilityProblems:
+  - Mae sgriniau CThEF yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    Fodd bynnag, bydd yn rhaid i ddefnyddiwr fynd i wefan neu ap ei fanc er mwyn cwblhau taliad.
+  - Nid yw CThEF yn archwilio gwefan neu ap pob banc, felly mae’n bosibl y bydd ambell broblem o ran hygyrchedd nad ydym ni’n gwybod amdanynt.
+  - Ar ôl dewis yr opsiwn i gymeradwyo’r taliad, bydd y defnyddiwr yn cael ei drosglwyddo i ap neu wefan ei fanc er mwyn mewngofnodi a thalu mewn ffordd ddiogel. 
+    Mae datganiadau hygyrchedd rhai banciau yn dangos nad yw’r cynnwys yn cydymffurfio’n llwyr â’r safon mae CThEF gorfod ei bodloni.
 serviceLastTestedDate: 2023-02-15
 statementVisibility: public
 statementCreatedDate: 2021-03-24
