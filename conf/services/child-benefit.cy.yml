@@ -6,10 +6,10 @@ note: This is a fully compliant service which has had automated testing and a au
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /child-benefit
 contactFrontendServiceId: SCA
-serviceLastTestedDate: 2023-06-12
+serviceLastTestedDate: 2023-06-22
 statementVisibility: public
 statementCreatedDate: 2022-11-14
-statementLastUpdatedDate: 2023-06-15
+statementLastUpdatedDate: 2023-06-22
 ddc: DDC Newcastle
 automatedTestingOnly: false
 complianceStatus: partial
@@ -19,6 +19,8 @@ accessibilityProblems:
   - Ar y dudalen sy'n nodi i ba cyfrif y bydd eich Budd-dal Plant yn cael ei dalu, nid yw'r tablau wedi'u gosod yn gywir felly bydd defnyddwyr darllenydd sgrin yn ei chael hi'n anodd deall eu cynnwys.
   - Wrth newid i'r fersiwn Gymraeg, mae'n bosibl na fydd defnyddwyr darllenydd sgrin yn gallu adnabod y rhagddodiad 'Error' ar gyfer teitl y dudalen pan fydd y dudalen wedi llwytho, gan nad yw'r rhagddodiad wedi'i gyfieithu.
   - Pan fydd defnyddwyr yn nodi manylion banc anghyson, maent yn cael eu cyfeirio at y dudalen 'Mae'n ddrwg gennym – mae problem gyda'r gwasanaeth' heb eglurhad clir na neges wall benodol.
+  # FT4: FTNAE (Full-Time Non-Advanced Education)
+  # Translation Pending
 milestones:
   # FT2: Change of Bank
   - description: Mae allwedd ar goll a fyddai'n helpu defnyddwyr darllenydd sgrin i adnabod y cwestiwn. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
@@ -29,3 +31,5 @@ milestones:
     date: 2023-10-31
   - description: Nid yw'r dilysiad ar gyfer y manylion banc yn arddangos negeseuon gwall penodol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2023-10-31
+    # FT4: FTNAE (Full-Time Non-Advanced Education)
+    # Translation Pending
