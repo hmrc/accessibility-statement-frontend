@@ -6,10 +6,10 @@ note: This is a partially compliant service which has had automated testing and 
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /child-benefit
 contactFrontendServiceId: SCA
-serviceLastTestedDate: 2023-06-12
+serviceLastTestedDate: 2023-06-22
 statementVisibility: public
 statementCreatedDate: 2022-11-14
-statementLastUpdatedDate: 2023-06-15
+statementLastUpdatedDate: 2023-06-26
 ddc: DDC Newcastle
 automatedTestingOnly: false
 complianceStatus: partial
@@ -19,6 +19,8 @@ accessibilityProblems:
   - On the 'Your Child Benefit is paid into this account' page, the tables have not been set up correctly so screen-reader users will find it difficult to understand the content in them.
   - When switching to the Welsh version, screen-reader users may not be able to identify the 'Error' prefix for page title when the page has loaded, as it has not been translated.
   - When users enter mismatching bank details, they are taken to the 'Sorry there is a problem with the service' page without a clear understanding or a specific error message.
+  # FT4: FTNAE (Full-Time Non-Advanced Education)
+  - When switching to the Welsh version, screen-reader users may not be able to identify the 'Error' prefix for error messages when the page has loaded, as it has not been translated.
 milestones:
   # FT2: Change of Bank
   - description: There is a missing legend that would help screen-reader users to identify the  question. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships.
@@ -28,4 +30,7 @@ milestones:
   - description: When viewing the page in Welsh, the content 'Error' prefix translation is missing in the configuration file. The page title presented to users will not be correctly pronounced by screen readers. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
     date: 2023-10-31
   - description: The validation for bank details is not displaying specific error messages. This fails WCAG 2.1 success criterion 3.3.3 Error suggestion.
+    date: 2023-10-31
+    # FT4: FTNAE (Full-Time Non-Advanced Education)
+  - description: When viewing the page in Welsh, the content 'Error' prefix translation is missing in the configuration file. The error message presented to users will not be correctly pronounced by screen readers. This fails WCAG 2.1 success criterion 3.1.2 Language of parts
     date: 2023-10-31
