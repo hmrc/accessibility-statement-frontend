@@ -1,13 +1,13 @@
 serviceName: Gwirio a diweddaru eich manylion gyda CThEF
 serviceDescription: |
- Mae’r gwasanaeth i wirio a diweddaru eich manylion gyda CThEF yn wasanaeth lle gallwch weld a diweddaru rhai o’ch manylion sydd wedi’u storio gyda CThEF.
+  Mae’r gwasanaeth i wirio a diweddaru eich manylion gyda CThEF yn wasanaeth lle gallwch weld a diweddaru rhai o’ch manylion sydd wedi’u storio gyda CThEF.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /hmrc-account/update-your-details
 contactFrontendServiceId: sca-change-of-circumstances-frontend
 complianceStatus:  partial
 accessibilityProblems:
   - Ni allwch ddod o hyd i’r cwestiwn ynghylch pa ddyddiad y symudoch i gyfeiriad gwahanol wrth ddefnyddio darllenydd sgrin
-  - TNid yw’r cysylltiad i’r ddewislen gwe-lywio yn dangos y testun cywir ar ddyfeisiau symudol
+  - Nid yw’r cysylltiad i’r ddewislen gwe-lywio yn dangos y testun cywir ar ddyfeisiau symudol
   - Nid yw’r ôl-gysylltiad ar y dudalen lle rydych chi’n nodi’ch prif gyfeiriad y tu allan i’r DU yn mynd â chi i’r dudalen flaenorol
   - Efallai y bydd rhai gwallau dyddiad yn cael eu methu gan ddefnyddio bysellfwrdd yn unig
   - Ni allwch lenwi meysydd cyfeiriad â data sydd wedi’u cadw gan eich porwr
