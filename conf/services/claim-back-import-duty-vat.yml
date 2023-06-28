@@ -12,7 +12,7 @@ accessibilityProblems:
   - on the file upload service pages, the ‘UPLOADED’ tag fails to meet WCAG 2.1 guidelines for contrast enhanced. This issue may affect users with low-vision who may find it difficult to read the white text against the blue background colour. (AAA)
   - on the file upload service pages, voice activation users were unable to reference the file upload component"
 milestones:
-  - description: "Link Purpose (In Context): 2.4.4 The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)
+  - description: "Link Purpose (In Context): 2.4.4 The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)"
     date: 2023-11-05
   - description: "Headings and Labels: 2.4.6 Headings and labels describe topic or purpose. (Level AA)"
     date: 2023-11-05
