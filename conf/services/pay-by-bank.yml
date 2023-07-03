@@ -1,5 +1,5 @@
-serviceName: Open Banking
-serviceHeaderName: Open Banking
+serviceName: pay by bank account
+serviceHeaderName: pay by bank account
 serviceDescription: |
   This service allows you to approve a payment to HMRC to come straight from your bank account.
 serviceDomain: www.tax.service.gov.uk
