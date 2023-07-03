@@ -6,12 +6,12 @@ serviceUrl: /pay-vat-on-goods-sold-to-eu/northern-ireland-register
 contactFrontendServiceId: one-stop-shop-registration-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - The ‘Remove’ link has been provided with a programmatic label that could be confusing for  screen reader users navigating both in and out of context.
-  - There is a form field that has not been labelled to provide the information as to whether it is optional.
+  - We have added a 'Remove' link with a label that might be confusing to screen reader users navigating the page.
+  - We have not labelled a form field to say that it's optional.
 milestones:
-  - description: The ‘Remove’ link has been provided with a programmatic label that could be confusing for  screen reader users navigating both in and out of context.
+  - description: We have added a 'Remove' link with a label that might be confusing to screen reader users navigating the page.
     date: 2023-06-30
-  - description: There is a form field that has not been labelled to provide the information as to whether it is optional.
+  - description: We have not labelled a form field to say that it's optional.
     date: 2023-06-30
 serviceLastTestedDate: 2021-10-15
 statementVisibility: public
