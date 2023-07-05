@@ -3,22 +3,11 @@ serviceDescription: VAT-registered businesses, and their agents, can see penalti
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /penalties-appeals
 contactFrontendServiceId: vat-penalties
-complianceStatus: partial
-accessibilityProblems:
-  - on the pages where service asking to enter the date error message asking users to enter real date when actual error is missing one of the date fields.
-  - on the ’Evidence to support this appeal’ page, screen-reader users are not aware that ’Files are being transferred’ message appears on the page when user tries to proceed when files is uploading.
-  - Welsh users will have difficulties when using the Welsh version, as month copy is not translated into Welsh.
-milestones:
-  - description: ’The date must be real date’ error is displayed when not relevant validation conditions are present. This fails WCAG 2.1 success criterion 3.3.1 Error Identification.
-    date: 2023-06-30
-  - description: File upload process missing live region implementation of status ’Files are being transferred’ messages, that would help screen-reader users to be notified about change. This fails WCAG 2.1 success criterion 4.1.3 Status messages.
-    date: 2023-06-30
-  - description: When viewing the page in Welsh some parts of the service are missing the necessary translations. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
-    date: 2023-06-30
-serviceLastTestedDate: 2023-03-27
+complianceStatus: full
+serviceLastTestedDate: 2023-06-08
 statementVisibility: public
 statementCreatedDate: 2023-01-12
-statementLastUpdatedDate: 2023-05-30
+statementLastUpdatedDate: 2023-07-05
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 typeOfService: Public beta

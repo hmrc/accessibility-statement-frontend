@@ -3,16 +3,11 @@ serviceDescription: VAT-registered businesses, and their agents, can see penalti
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /penalties
 contactFrontendServiceId: vat-penalties
-complianceStatus: partial
-accessibilityProblems:
-  - matching penalty amounts duplicated headings. This will make it difficult for screen reader users to differentiate sections on the page.
-milestones:
-  - description: Matching penalty amounts marked up as duplicated headings. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels.
-    date: 2023-06-30
-serviceLastTestedDate: 2023-03-27
+complianceStatus: full
+serviceLastTestedDate: 2023-06-08
 statementVisibility: public
 statementCreatedDate: 2023-01-12
-statementLastUpdatedDate: 2023-05-30
+statementLastUpdatedDate: 2023-07-05
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 typeOfService: Public beta
