@@ -1,0 +1,13 @@
+serviceName: Diwygio Cosbau ac Apeliadau TAW
+serviceDescription: Gall busnesau sydd wedi’u cofrestru ar gyfer TAW, a’u hasiantau, weld cosbau am gyflwyno Ffurflenni TAW yn hwyr a thalu TAW yn hwyr, ac apelio yn erbyn y cosbau hynny ar-lein.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /penalties
+contactFrontendServiceId: vat-penalties
+complianceStatus: full
+serviceLastTestedDate: 2023-06-08
+statementVisibility: public
+statementCreatedDate: 2023-01-12
+statementLastUpdatedDate: 2023-07-05
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Telford
+typeOfService: Public beta
