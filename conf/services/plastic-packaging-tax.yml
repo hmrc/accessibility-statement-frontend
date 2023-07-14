@@ -1,4 +1,4 @@
-serviceName: Plastic Packaging Tax
+serviceName: Plastic Packaging Tax service
 serviceDescription: |
   You can use this service to register for Plastic Packaging Tax, manage your Plastic Packaging Tax account, submit or amend a return and make a payment.
 serviceDomain: www.gov.uk
@@ -23,10 +23,10 @@ milestones:
   - description: |
       Although the presence of an error is described in text, the presentation of the error message makes it difficult for some users to rectify the error. This doesn’t meet WCAG 2.1 success criterion 3.3.3 Error Suggestion. This will be fixed by updating the error messages to include more helpful information.
     date: 2023-03-31
-serviceLastTestedDate: 2022-09-22
+serviceLastTestedDate: 2023-06-05
 statementVisibility: public
-statementCreatedDate: 2022-09-28
-statementLastUpdatedDate: 2022-12-02
+statementCreatedDate: 2023-07-05
+statementLastUpdatedDate: 2027-07-05
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Yorkshire
 liveOrClassic:

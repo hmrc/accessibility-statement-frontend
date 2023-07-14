@@ -23,10 +23,10 @@ milestones:
   - description: |
       Er bod presenoldeb gwall yn cael ei ddisgrifio mewn testun, mae cyflwyniad y neges gwall yn ei gwneud hi’n anodd i rai defnyddwyr unioni’r gwall. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio drwy ddiweddaru’r negeseuon gwall i gynnwys gwybodaeth fwy defnyddiol.
     date: 2023-03-31
-serviceLastTestedDate: 2022-09-22
+serviceLastTestedDate: 2023-06-05
 statementVisibility: public
-statementCreatedDate: 2022-09-28
-statementLastUpdatedDate: 2022-12-02
+statementCreatedDate: 2023-07-05
+statementLastUpdatedDate: 2023-07-05
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Yorkshire
 liveOrClassic:
