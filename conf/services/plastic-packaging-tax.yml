@@ -4,12 +4,8 @@ serviceDescription: |
 serviceDomain: www.gov.uk
 serviceUrl: /plastic-packaging-tax
 contactFrontendServiceId: plastic-packaging-tax
-complianceStatus: partial
+complianceStatus: full
 accessibilityProblems:
-  - Some headings do not have the correct mark up. Screen-reader users may struggle to understand the purpose of some headings and navigate easily
-  - Screen-reader users might not always be able to understand which buttons relate to which questions
-  - Some buttons need better descriptions so that screen-reader users can understand what the button relates to and what action the button carries out
-  - Some error messages could be more descriptive to help users correct errors
 milestones:
   - description: |
       The purpose of text acting as a heading is indicated via visual styling alone and is not programmatically determinable. This doesn’t meet WCAG 2.1 success criterion 1.3.1 Info and Relationships. This will be fixed by ensuring semantic markup is used where required.
@@ -26,7 +22,7 @@ milestones:
 serviceLastTestedDate: 2023-06-05
 statementVisibility: public
 statementCreatedDate: 2023-07-14
-statementLastUpdatedDate: 2027-07-14
+statementLastUpdatedDate: 2023-07-14
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Yorkshire
 liveOrClassic:

@@ -1,5 +1,8 @@
 # Accessibility Statement Frontend
 
+> **Warning**
+> Production releases are managed by PlatUI. If you would like the team to release your accessibility statement to Production, please contact us via Slack at #team-plat-ui
+
 Accessibility Statement Frontend is a service for providing for accessibility statements across HMRC.
 
 ## Table of contents
@@ -202,8 +205,8 @@ version and save with the suffix `.cy.yml`. For example, if your English languag
 `/conf/services/discounted-icecreams.yml`, the Welsh version should be saved as
 `/conf/services/discounted-icecreams.cy.yml`.
 
-Translate the following fields into Welsh only: serviceName, serviceDescription, accessibilityProblems
-and milestone description. All other fields must be left untouched.
+Translate the following fields into Welsh only: serviceName, serviceDescription, accessibilityProblems, milestone 
+descriptions, and automatedTestingDetails. All other fields must be left untouched.
 
 Open a PR to get the file merged into the repository. Once merged and deployed, the language toggle will 
 automatically appear on the statement and will translate all content, including the legal text into Welsh.

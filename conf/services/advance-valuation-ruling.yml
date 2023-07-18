@@ -1,0 +1,56 @@
+serviceName: Advance Valuation Ruling
+serviceDescription: |
+  This service is used for submitting an application for an Advance Valuation Ruling.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /advance-valuation-ruling
+contactFrontendServiceId: advance-valuation-rulings-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - Users are not being warned before being signed out when their session ends.
+  - Screen-reader users will not be able to correctly identify the questions pages that include radio buttons or checkboxes, as the pages have not been set up correctly.
+  - All text fields are missing labels that will make it difficult to understand what should be entered.
+  - The HTML has not been set up correctly which can cause issues for assistive technologies or it does not display consistently across browsers.
+  - On the 'Check the name and address for EORI number' page, the warning icon has no alternate text so its meaning is missing for screen-reader users.
+  - Welsh users will find it difficult using the Welsh version, as the information on the service is not translated into Welsh.
+  - The heading 'If we need to contact you about your application' does not provide sufficient context for users.
+  - Users might find it difficult to correctly identify the question on the 'Select the most appropriate method to value your goods' page.
+  - On the 'Your contact details' page, the name and telephone fields may not allow users to populate the information from data previously saved in their browser.
+  - When users do not enter the commodity code, the error message informs users that the format is wrong instead.
+  - When users try to upload a file in the right format, they get an error message that advises, 'You can only upload distinct files' which is wrong.
+  - Screen-reader users are not notified about file upload status.
+  - When using a small screen, such as on a mobile phone or when using increased font sizes, the EORI number on the 'Check the name and address for EORI number' page, does not fully fit on the screen.
+milestones:
+- description: Service missing timeout dialog. A timeout occurs without the ability for the user to extend their session. This fails WCAG 2.1 success criterion 2.2.1 Timing adjustable
+  date: 2023-07-01
+- description: There is a missing legend that would help screen-reader users to identify the question. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships
+  date: 2023-07-01
+- description: All textarea and text fields missing correctly associated labels. This fails WCAG 2.1 success criterion 3.3.2 Labels or instructions and 4.1.2 Name, role, value
+  date: 2023-07-01
+- description: HTML contains duplicated IDs. This fails WCAG 2.1 success criterion 4.1.1 Parsing
+  date: 2023-07-01
+- description: The warning icon has missing alternative text. This fails WCAG 2.1 success criterion 1.1.1 Non-text content
+  date: 2023-07-01
+- description: When viewing the service in Welsh all information is missing the necessary translations. This fails WCAG 2.1 success criterion 3.1.2 Language of parts
+  date: 2023-07-01
+- description: The page heading is not descriptive enough. This fails WCAG 2.1 success criterion 2.4.6 Headings and labels
+  date: 2023-07-01
+- description: The page heading does not describe whole page content.This fails WCAG 2.1 success criterion 2.4.6 Headings and labels
+  date: 2023-07-01
+- description: The name and telephone fields are missing autocomplete attributes which may mean the user will be unable to use the browser's saved data to populate these fields easily. This fails WCAG 2.1 success criterion 1.3.5 Identify input purpose
+  date: 2023-07-01
+- description: An incorrect error message is presented to users when they do not enter commodity code. This fails WCAG 2.1 success criterion 3.3.3 Error suggestion
+  date: 2023-07-01
+- description: An incorrect error message is presented to users when they try to upload a valid file. This fails WCAG 2.1 success criterion 3.3.3 Error suggestion
+  date: 2023-07-01
+- description: The file upload status is not marked up correctly preventing screen readers to notify users about file upload progress or completion. This fails WCAG 2.1 success criterion 4.1.3 Status messages
+  date: 2023-07-01
+- description: On small screens or when the font size has been increased the EORI number overflows, causing users to scroll in multiple directions. This fails WCAG 2.1 success criterion 1.4.10 Reflow
+  date: 2023-07-01
+serviceLastTestedDate: 2023-04-19
+statementVisibility: public
+statementCreatedDate: 2023-04-21
+statementLastUpdatedDate: 2023-04-21
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta

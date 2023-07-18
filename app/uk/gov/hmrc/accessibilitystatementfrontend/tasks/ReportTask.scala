@@ -25,9 +25,10 @@ abstract class ReportTask(filename: String) {
 
   private def writeRows(filename: String): Unit = {
     val reportWriter = new PrintWriter(new File(s"target/$filename"))
-    try for (row <- getHeader +: getBodyRows)
-      reportWriter.println(mkRow(row))
-    finally reportWriter.close()
+    try for (row <- getHeader +: getBodyRows) {
+      reportWriter.write(mkRow(row))
+      reportWriter.write("\n")
+    } finally reportWriter.close()
   }
 
   def getHeader: Seq[String]

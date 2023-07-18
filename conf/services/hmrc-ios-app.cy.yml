@@ -8,39 +8,16 @@ serviceUrl: /gb/app/hmrc/id514561561
 statementType: ios
 complianceStatus: partial
 accessibilityProblems:
-  - nid yw rhai elfennau o’r botymau llywio carwsél yn gweithio yn ôl y disgwyl wrth ddefnyddio VoiceOver gydag ystumiadau.
-  - nid oes gan rai botymau ddisgrifiad clir.
-  - nid yw pob cynnwys wedi’i nodi’n gywir.
-  - nid yw rhai negeseuon gwall wedi’u cysylltu’n glir â gweithredoedd ffurflenni.
-  - nid yw rhai lliwiau’n bodloni’r canllawiau cyferbynnedd lliw.
-  - wrth nodi testun mewn maes, nid yw nifer y cymeriadau’n cael ei ddarllen gan ddarllenydd sgrin.
+  - nid yw ffocws defnyddwyr darllenydd sgrin bob amser yn cael ei anfon i’r rhan gywir.
 milestones:
-  - description: Ar y Gyfrifiannell Treth, darllenir gwallau cyn y label maes, a all fod yn ddryslyd i ddefnyddwyr darllenydd sgrin.
-    date: 2023-02-28
-  - description: Nid yw’r dangosydd neges newydd ar y llyw gwaelod wedi’i labelu’n gywir ar gyfer defnyddwyr darllenydd sgrin.
-    date: 2023-02-28
-  - description: Pan fydd defnyddwyr darllenydd sgrin yn llywio gan ddefnyddio tabiau, nid yw’r ffocws yn gweithio yn ôl y disgwyl ac mae’n dychwelyd i’r tab cyntaf yn hytrach na’r tab o dan sylw.
-    date: 2023-02-28
-  - description: Pan fydd defnyddwyr darllenydd sgrin yn llywio gan ddefnyddio rheolyddion swipe, mae’r ffocws yn parhau ar y sleid carwsél cyntaf.
-    date: 2023-02-28
-  - description: O ran Hunanasesiad, nid yw testun sy’n ymddangos yn bennawd wedi’i labelu fel un, gan olygu bod darllenwyr sgrin yn hepgor y cynnwys wrth ffocysu ar benawdau.
-    date: 2023-02-28
-  - description: Ar y sgrin nodi PIN, mae angen disgrifiad pellach o’r botwm “Rhagor o opsiynau” ar gyfer darllenwyr sgrin.
-    date: 2023-02-28
-  - description: Ar y sgrin Credydau Treth, mae angen disgrifiad pellach o’r botwm “Dysgu mwy” ar gyfer darllenwyr sgrin.
-    date: 2023-02-28
-  - description: Ar y sgrin gwybodaeth cymorth, mae angen disgrifiad pellach o’r botwm “Copïo’r wybodaeth hon” ar gyfer darllenwyr sgrin.
-    date: 2023-02-28
-  - description: Nid yw lliw’r eicon i glirio maes ffurflen yn bodloni gofynion cyferbynnedd lliw.
-    date: 2023-02-28
-  - description: Nid yw lliw’r eicon tudaleniad anweithredol ar gyfer carwselau yn bodloni gofynion cyferbynnedd lliw.
-    date: 2023-02-28
-  - description: Wrth nodi testun mewn maes, nid yw’r cyfrif nodau yn cael ei ddarllen gan y darllenydd sgrin, felly nid yw defnyddwyr yn gwybod faint o nodau sydd ar ôl.
-    date: 2023-02-28
+  - description: Ar sgrin y Cyfrifiannell Treth, anfonir ffocws defnyddwyr y darllenydd sgrin i frig y dudalen os gwneir gwallau yn y maes ‘Cod Treth’. Mae hyn yn methu maen prawf llwyddiant 2.4.3 (Focus Order) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-06-30
+  - description: Pan ddewisir tab ar y sgrin Hunanasesiad, nid yw ffocws defnyddwyr darllenwyr sgrin yn cael ei anfon i’r rhan gywir. Mae hyn yn methu maen prawf llwyddiant 2.4.3 (Focus Order) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-06-30
 statementVisibility: public
-serviceLastTestedDate: 2022-09-28
+serviceLastTestedDate: 2023-05-04
 statementCreatedDate: 2021-06-10
-statementLastUpdatedDate: 2022-11-30
+statementLastUpdatedDate: 2023-06-13
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing

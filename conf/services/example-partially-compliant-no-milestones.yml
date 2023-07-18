@@ -1,0 +1,15 @@
+serviceName: Discounted Fig Rolls
+serviceDescription: |
+  Use this paragraph to describe your service. It can go over multiple lines
+  like this.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /fig-rolls
+contactFrontendServiceId: fig-rolls
+complianceStatus: partial
+accessibilityProblems:
+  - This is a statement that is allowed to have no milestones
+  - For example, it might link to third party which cannot be assessed
+serviceLastTestedDate: 2023-06-12
+statementVisibility: draft
+statementCreatedDate: 2023-06-12
+statementLastUpdatedDate: 2023-06-12
