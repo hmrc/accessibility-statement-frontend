@@ -7,10 +7,22 @@ contactFrontendServiceId: plastic-packaging-tax
 complianceStatus: full
 accessibilityProblems:
 milestones:
-serviceLastTestedDate: 2023-03-29
+  - description: |
+      Caiff pwrpas testun sy’n gweithredu fel pennawd ei nodi drwy arddull weledol yn unig ac ni ellir ei bennu gan raglen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio trwy sicrhau bod marcio semantig yn cael ei ddefnyddio lle bo angen.
+    date: 2023-03-31
+  - description: |
+      Ni chafodd y cynnwys ei grwpio mewn setiau maes ac allwedd. Mae hyn yn golygu nad yw defnyddwyr technolegau cynorthwyol darllen sgrin yn cael perthynas a chyfarwyddyd clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) a 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 . Bydd hyn yn cael ei drwsio drwy sicrhau bod cynnwys yn cael ei grwpio o fewn setiau maes ac allwedd.
+    date: 2023-03-31
+  - description: |
+      Mae botwm yn bresennol sydd â disgrifiad sy’n annigonol i alluogi defnyddwyr darllenydd sgrin i bennu pwrpas y botwm a’r hyn y mae’n ymwneud ag ef yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6. (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio drwy ychwanegu testun ychwanegol at y botwm fel bod ei ddiben yn glir i ddarllenwyr sgrin.
+    date: 2023-03-31
+  - description: |
+      Er bod presenoldeb gwall yn cael ei ddisgrifio mewn testun, mae cyflwyniad y neges gwall yn ei gwneud hi’n anodd i rai defnyddwyr unioni’r gwall. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio drwy ddiweddaru’r negeseuon gwall i gynnwys gwybodaeth fwy defnyddiol.
+    date: 2023-03-31
+serviceLastTestedDate: 2023-06-05
 statementVisibility: public
-statementCreatedDate: 2023-04-20
-statementLastUpdatedDate: 2023-04-20
+statementCreatedDate: 2023-07-14
+statementLastUpdatedDate: 2023-07-14
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Yorkshire
 liveOrClassic:
