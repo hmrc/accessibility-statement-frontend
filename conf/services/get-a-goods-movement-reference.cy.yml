@@ -6,10 +6,10 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /goods-movement-system/dashboard
 contactFrontendServiceId: GaGMR
 complianceStatus: full
-serviceLastTestedDate: 2022-03-22
+serviceLastTestedDate: 2022-07-18
 statementVisibility: public
 statementCreatedDate: 2020-11-16
-statementLastUpdatedDate: 2023-06-05
+statementLastUpdatedDate: 2023-07-24
 businessArea: Borders & Trade
 ddc: DDC Worthing
 liveOrClassic:
