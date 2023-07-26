@@ -6,20 +6,49 @@ serviceUrl: /customs/payment-records/
 contactFrontendServiceId: CDS-FIN
 complianceStatus: partial
 accessibilityProblems:
-  - mae rhywfaint o gynnwys ar wedd pennawd yn weledol er nad yw’n bennawd ynddo’i hun
-  - nid oes gan ffeiliau PDF deitl
-  - nid yw rhai labeli ar gyfer botymau yn ddigon disgrifiadol
+  - Ar y tudalennau ‘Cyfrif arian parod’ a ‘Rheoli awdurdodau eich cyfrif’, mae cynllun colofn y tabl wedi’i newid yn weledol ar gyfer sgriniau llai ond nid yw’r wybodaeth hon yn cael ei chyfleu i ddefnyddwyr darllenydd sgrin.
+  - Mae gan y PDFs a lawrlwythwyd benawdau ond nid ydynt yn cael eu hadnabod gan ddarllenydd sgrin defnyddwyr.
+  - Mae’r ffeiliau CSV a lawrlwythwyd yn cynnwys colofnau â chymysgedd o ddata, felly mae’n anodd adnabod cynnwys cysylltiedig.
+  - Mae ‘Defnyddiwr wedi’i ychwanegu yn llwyddiannus’ wedi’i osod fel teitl y tudalennau ar gyfer ychwanegu, newid a thynnu awdurdod, a all beri dryswch.
+  - Nid oes gan y PDFs na’r ffeiliau CSV a lawrlwythwyd deitl y ddogfen wedi’i osod, felly ni all defnyddwyr adnabod beth yw’r cynnwys yn gywir.
+  - Ar y dudalen ‘Pa drafodion cyfrif arian parod sydd eu hangen arnoch?’, pan fydd gwall yn codi, nid yw’n cael ei adnabod yn gywir gan ddefnyddio cysylltiad y neges wall.
+  - Ni fydd defnyddwyr cydnabyddiaeth llais yn gallu cael at rai cysylltiadau’n uniongyrchol gan nad yw’r copi gweledol yn cyfateb â’r label hygyrch.
+  - Nid yw’r iaith gywir wedi’i gosod ar gyfer y PDFs a lawrlwythwyd. Efallai na fydd darllenwyr sgrin yn ynganu’r cynnwys yn gywir.
+  - Ar y dudalen ‘Pa drafodion cyfrif arian parod sydd eu hangen arnoch?’, nid yw’r maes mewnbwn yn y gwall yn cael ei adnabod yn gywir gan ddefnyddio cysylltiad y neges wall.
+  - Nid yw’r tudalennau wedi’u gosod yn gywir, a all achosi trafferthion i dechnolegau cynorthwyol ac efallai na fyddant yn dangos yr un peth ar draws pob un o’r porwyr gwahanol.
+  - Nid yw’r PDFs a lawrlwythwyd yn ail-lifo’r cynnwys wrth i rywun chwyddo’r testun. Mae hyn yn golygu bod gofyn i rywun sgrolio’n llorweddol, a all ei gwneud hi’n anodd i’w ddarllen.
+  - Wrth newid i fersiwn Gymraeg tudalennau mewnbwn y ffurflen, mae’r gair cudd ‘error’ yn parhau i fod yn Saesneg ac ni fydd darllenydd sgrin yn ynganu’r gair yn gywir i ddefnyddwyr.
 milestones:
-  - description: Yn y faner ymchwil defnyddwyr, mae’r teitl ‘Helpwch i wella gwasanaethau CThEM’ yn edrych fel pennawd er nad yw’n bennawd. Mae hyn yn golygu y gall defnyddwyr darllenydd sgrin, sy’n mynd drwy’r dudalen yn ôl penawdau, fethu’r cynnwys hwn o bosibl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-08-31
-  - description: Nid oes gan ddogfennau PDF deitl. Mae hyn yn golygu nad yw diben y ddogfen yn cael ei gyflwyno i ddefnyddwyr darllenydd sgrin, sy’n gorfod dibynnu ar enw’r ffeil ac mae hwnnw’n amwys. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-08-31
-  - description: Yn y faner ymchwil defnyddwyr, nid yw label y botwm ‘Dim diolch’ yn ddigon disgrifiadol. Mae hyn yn golygu na fydd defnyddwyr darllenydd sgrin, o bosibl, yn deall diben y botwm os ydynt yn cyrraedd y botwm heb gyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels (Level AA)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-08-31
-serviceLastTestedDate: 2022-04-11
+  - description: Nid yw arddangosiad gweledol y tabl ymatebol yn cael ei gyfleu i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Nid yw penawdau PDFs wedi’u tagio’n gwyir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Mae ffeiliau CSV yn cynnwys cymysgedd o ddata, felly nid yw’r penawdau’n nodi beth yw’r cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Defnyddiwyd teitlau anghywir ar gyfer y tudalennau. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Nid oes gan PDFs na ffeiliau CSV deitlau dogfennau disgrifiadol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Ni ellir pennu diben cysylltiadau’r neges wall o destun y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Nid yw’r label gweledol ar gyfer rhai cysylltiadau’n cynnwys yr un geiriau â’r label hygyrch. Nid yw hyn yn bodloni maen prawf llwyddiant 2.5.3 (Label in Name) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Nid yw PDFs yn gosod iaith y ddogfen yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.1 (Language of Page) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Nid yw’r maes mewnbwn yn y gwall wedi’i adnabod yn gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Wedi ychwanegu cod y HTML cyn datganiad y math o ddogfen (Doctype). Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Nid yw’r PDFs a lawrlwythwyd yn dilyn Hygyrchedd PDF/Cyffredinol (PDF/UA). Mae hyn yn golygu nad yw’r cynnwys yn ail-lifo. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Nid yw’r PDFs a lawrlwythwyd yn dilyn Hygyrchedd PDF/Cyffredinol (PDF/UA). Mae hyn yn golygu nad yw’r cynnwys yn ail-lifo. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+  - description: Pan gaiff y tudalennau mewnbwn y ffurflen eu dangos yn Gymraeg, mae peth o’r cynnwys yn ymddangos yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of Parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 2023-12-31
+serviceLastTestedDate: 2023-05-26
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2022-06-22
+statementLastUpdatedDate: 2023-07-26
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
