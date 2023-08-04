@@ -26,7 +26,7 @@ accessibilityProblems:
   # Translation Pending
 milestones:
   # Global
-  - description: Wrth edrych ar y dudalen Gymraeg, mae’r cyfieithiad ar gyfer rhagddodiad ‘Error’ y gan ddarllenwyr sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Wrth edrych ar y dudalen Gymraeg, mae’r cyfieithiad ar gyfer rhagddodiad ‘Error’ y cynnwys ar goll o’r ffeil ffurfweddu. Ni fydd y neges gwall a gyflwynir i ddefnyddwyr yn cael ei hynganu’n gywir gan ddarllenwyr sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2023-10-31
   # FT1: Proof of Entitlement/View Payments
   # FT2: Change of Bank
