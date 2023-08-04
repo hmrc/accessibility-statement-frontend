@@ -26,39 +26,39 @@ accessibilityProblems:
   - icons on buttons do not change colour when the button is focussed and can become difficult to see. The text on the button is visible however.
 milestones:
   - description: Tab controls have been incorrectly coded. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Links have focus indicators which are below the contrast threshold. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast - minimum).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Images are used to convey meaning but are missing alternate text. This does not meet WCAG 2.1 success criterion 1.1.1 (Non-text content).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Tables have sorting which is not exposed to assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Live regions are not coded correctly so do not present updates to the user. This does not meet WCAG 2.1 success criterion 4.1.3 (Status messages).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Tables have missing content, relying on visual presentation. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and relationships) and 1.3.2 (Meaningful sequence).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Heading hierarchy is incorrect. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: The hint content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: The error content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: The appearance of additional navigation links when actioning the menu link is not announced to assistive technology. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and relationships) and 2.4.4 (Link purpose).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Some links have the same name but different endpoints. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or instructions).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: There are validation issues on some pages. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Some links have been styled as buttons but do not have the correct role or event handlers to act as buttons. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: The navigation landmark in the banner does not contain any links. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
-    date: 2023-03-31
+    date: 2024-01-31
   - description: Icons do not have good contrast when the control they sit on is focussed. This does not meet WCAG 2.1 success criterion 1.4.11 (Non-text contrast).
-    date: 2023-03-31
+    date: 2024-01-31
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 serviceLastTestedDate: 2021-03-25
-statementLastUpdatedDate: 2022-05-09
+statementLastUpdatedDate: 2023-08-03
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Telford
