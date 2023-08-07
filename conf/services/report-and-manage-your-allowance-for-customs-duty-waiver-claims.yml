@@ -8,16 +8,18 @@ accessibilityProblems:
   - On the 'reporting de minimis aid payments (less Customs Duty waivers) as a single undertaking' page, the heading is not set up correctly so that screen reader users do not know that it is a heading
   - On the 'report a de minimis aid payment' page, the table is stacked on smaller screens but has not been correctly set up which can cause confusion for screen reader users
 milestones:
-  - description: Content visually presented as a heading does not have the correct code semantics to identify it as the heading.
-      This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
+  - description: Fieldsets are missing the legend on some pages. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
     date: 2022-06-30
-  - description: The table stacked on smaller screens does not have the correct code semantics to identify the table structure.
-      This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
-    date: 2022-06-30
-serviceLastTestedDate: 2022-04-20
+  - description: There is no ability for the user to extend their session on the 'Enter the code to confirm the email address' page. This fails WCAG 2.1 success criterion 2.2.1 Timing Adjustable.
+    date: 2023-09-23
+  - description: The input on the 'Enter the code to confirm the email address' page does not have an associated label. This fails WCAG 2.1 success criterion 3.3.2 Labels or instructions and 4.1.2 Name, role, value.
+    date: 2023-09-23
+  - description: The 'Enter the code to confirm the email address' page is missing the Welsh translation for the ‘error:’ prefix. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
+    date: 2023-09-23
+serviceLastTestedDate: 2023-07-24
 statementVisibility: public
-statementCreatedDate: 2020-06-30
-statementLastUpdatedDate: 2020-06-30
+statementCreatedDate: 2023-08-04
+statementLastUpdatedDate: 2023-08-04
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:
