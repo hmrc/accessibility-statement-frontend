@@ -1,0 +1,69 @@
+serviceName: The API Hub
+serviceDescription: You can use this service to allow users to discover APIs, consume APIs and manage credentials with self-serve capabilities.
+serviceDomain: admin.tax.service.gov.uk
+serviceUrl: /api-hub
+contactFrontendServiceId: api-hub-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - There has been inconsistent use of heading levels in the service.
+  - When using the browsers zoom to magnify to 400% the service does not reflow correctly.
+  - When an error occurs, it is not always clear to the user the nature of the error.
+milestones:
+  - description: |
+      Located at – Login Page (Stride)> Your Applications > Application Details > Add a scope.
+      The header order does not match the visual layout and styling.
+      Screen reader users use headings as an exploration strategy to learn about the structure and content of the page, navigating through headings with the h key. So, ensuring that heading levels follow a logical order to match the screen layout is important.
+      This does not meet WCAG 2.1 success criterion 1.3.1 - Info and Relationships (Level A).
+    date: 2023-11-01
+  - description: |
+      Located at – Login Page (LDAP)> Your Applications > Pending Approvals > Review Scope Details.
+      The header order does not match the visual layout and styling.
+      Screen reader users use headings as an exploration strategy to learn about the content and structure of the page, navigating through headings with the h key. So, ensuring that heading levels follow a logical order to match the screen layout is important.
+      This does not meet WCAG 2.1 success criterion 1.3.1 - Info and Relationships (Level A).
+    date: 2023-11-01
+  - description: |
+      Located at – Login Page (Stride)> Your Applications > Application Details.
+      The header order is missing a Header 1 and does not match the visual layout and styling.
+      Screen reader users use headings as an exploration strategy to learn about the content and structure of the page, navigating through headings with the h key. So, ensuring that heading levels follow a logical order to match the screen layout is important.
+      This does not meet WCAG 2.1 success criterion 1.3.1 - Info and Relationships (Level A).
+    date: 2023-11-01
+  - description: |
+      Located at – Login Page (Stride)> Your Applications.
+      The header order does not match the visual layout and styling. The page has a H1, H2 and H5. The lack of H3 and H4 may confuse screen reader users
+      Screen reader users use headings as an exploration strategy to learn about the content and structure of the page, navigating through headings with the h key. So, ensuring that heading levels follow a logical order to match the screen layout is important.
+      This does not meet WCAG 2.1 success criterion 1.3.1 - Info and Relationships (Level A).
+    date: 2023-11-01
+  - description: |
+      Located at – API Hub Login.
+      Reflow issue with the Login area content when the screen is set to 400% zoom. The content does not reflow to a single column and users must horizontally scroll to ‘Sign in via Stride’.
+      This will cause issues for users with low vision and who require their zoom to be increased, to be able to use the full functionality of the page with ease. Also, users with motor control disabilities who also enlarge the webpage will not be able to navigate comfortably.
+      This does not meet WCAG 2.1 success criterion 1.4.10 - Reflow (Level AA).
+    date: 2023-11-01
+  - description: | 
+      Located at – Stride/LDAP Log in > Applications > Your Applications.
+      Reflow issue with the ‘Your Applications’ content when the screen is set to 400% zoom. The text content in the Registered applications area overlaps the content and becomes merged.
+      The content is not understandable to the user as the information loses its structure and becomes difficult to read and understand. Reflow should enable tracking (following along lines of text) to help users who are partially sighted, and neurodiverse users understand the contents.
+      This does not meet WCAG 2.1 success criterion 1.4.10 - Reflow (Level AA).
+    date: 2023-11-01
+  - description: | 
+      Located at – LDAP Log in > Applications > Pending Approvals.
+      Reflow issue with the content in second table column when the screen is set to 400% zoom. The Id content reflows away from the main body of the page.
+      The table information loses its structure and may become difficult to consume.
+      This does not meet WCAG 2.1 success criterion 1.4.10 - Reflow (Level AA).
+    date: 2023-11-01
+  - description: | 
+      Located at -Sign in via LDAP.
+      The error message “Valid email required” is given when an invalid entry is made in the ‘Email’ field. This message does not support the user to input the right type of data and recover from the error.
+      Providing clear information about how to correct input errors allows neurodiverse users to fill in a form successfully. Users who are blind or have impaired vision using screen readers can understand more easily the nature of the input error and how to correct it. People with motion impairment can also reduce the number of times they need to change an input.
+      This does not meet WCAG 2.1 success criterion 3.3.3 - Error Suggestion (Level AA).
+    date: 2023-11-01
+  - description: |
+      Located across the service.
+      In order to pass the WCAG success criterion 4.1.1, each page included in the user journey documentation must be found to contain no parsing errors.
+      To determine if a page contains parsing errors, the HTML code is extracted and checked for compliance via the W3C Markup Validation Service.
+      Several pages have been found to contain parsing errors. As such, these pages will need to be amended so that no errors are detected during re-testing.
+    date: 2023-11-01
+serviceLastTestedDate: 2023-06-23
+statementVisibility: public
+statementCreatedDate: 2023-02-16
+statementLastUpdatedDate: 2023-07-12
