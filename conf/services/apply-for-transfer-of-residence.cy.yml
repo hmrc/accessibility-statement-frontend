@@ -1,0 +1,12 @@
+serviceName: Apply for transfer of residence tax relief
+serviceHeaderName: Apply for transfer of residence tax relief
+serviceDescription: |
+  Use this form to apply for transfer of residence tax relief or to make additions to an already approved application.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/apply-for-transfer-of-residence
+contactFrontendServiceId: GForm
+complianceStatus: full
+serviceLastTestedDate: 2021-09-26
+statementVisibility: public
+statementCreatedDate: 2021-09-26
+statementLastUpdatedDate: 2021-09-26

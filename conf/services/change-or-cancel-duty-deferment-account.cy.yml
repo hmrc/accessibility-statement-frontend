@@ -1,9 +1,9 @@
-serviceName: Rhowch wybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
-serviceHeaderName: Rhowch wybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
+serviceName: Newid neu ganslo cyfrif gohirio tollau
+serviceHeaderName: Newid neu ganslo cyfrif gohirio tollau
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i roi gwybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu.
+  Defnyddiwch y ffurflen hon i newid neu ganslo cyfrif gohirio tollau.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/tell-hmrc-your-organisation-has-stopped-trading-or-has-never-traded
+serviceUrl: /submissions/new-form/change-or-cancel-duty-deferment-account
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -18,7 +18,7 @@ milestones:
       Efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall. 
       Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio erbyn 31 Mawrth 2023.
     date: 2024-06-30
-serviceLastTestedDate: 2021-10-05
+serviceLastTestedDate: 2020-09-18
 statementVisibility: public
-statementCreatedDate: 2020-10-05
+statementCreatedDate: 2020-09-23
 statementLastUpdatedDate: 2022-03-31
