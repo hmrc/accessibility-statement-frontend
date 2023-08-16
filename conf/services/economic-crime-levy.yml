@@ -1,0 +1,32 @@
+serviceName: Economic Crime Levy                # The service name that will appear in the title of the accessibility statement.
+# Do not include the word service at the end, as this will be added by the templates
+serviceDescription: |                           # A description of the service
+  The Economic Crime Levy (ECL) is an annual charge that will affect entities (organisations)
+  who are supervised under the Money Laundering Regulations (MLR)
+  and whose UK revenue exceeds £10.2 million per year.
+serviceDomain: www.tax.service.gov.uk           # The domain name under which this service exists (exclude the https:// and the path)
+serviceUrl: /register-for-economic-crime-levy   # The relative URL to the service (omitting www.tax.service.gov.uk)
+contactFrontendServiceId: economic-crime-levy   # A unique identifier for your service (see notes below)
+complianceStatus: partial                       # full|partial|noncompliant
+accessibilityProblems:                          # If there are no issues do not include this section
+  - On the pages 'what was your total UK revenue in your accounting period' and 'what was your UK revenue for the relevant accounting period', the currency input shows an error message when pound signs (£), spaces or commas are entered. This will make it difficult for speech-recognition software users, and users with motor impairment who rely on copying and pasting from another source.
+  - When using a small screen, such as mobile devices or when increasing font sizes, the content on some pages does not fit on the screen properly.
+  - When entering names, email addresses and telephone numbers in the service, users are not not offered the option to populate the fields from data that was previously saved in their browser.
+  - On the page 'what is your telephone number', the input type has not been correctly set up to use the number keypad on mobile devices.
+milestones:                             # If there are no issues do not include this section
+  - description: Currency input does not have correct error styles. Validation prevents users from entering values with allowed characters. This fails WCAG 2.1 success criterions 3.3.2 Labels or instructions.
+    date: 2023-10-27                    # The date that this issue will be fixed by in ISO format YYYY-MM-DD
+  - description: On small screens or when the font size has been increased, content on various pages overflows, causing users to scroll in multiple directions. This fails WCAG 2.1 success criterion 1.4.10 Reflow.
+    date: 2023-10-27                    # The date that this issue will be fixed by
+  - description: Contact name, email and telephone fields are missing autocomplete attributes which means users will be unable to use the browser’s saved data to populate these fields easily. This fails WCAG 2.1 success criterion 1.3.5 Identify Input Purpose.
+    date: 2023-10-27                    # The date that this issue will be fixed by
+  - description: Telephone input missing for telephone number field. This fails WCAG 2.1 success criterion 1.3.5 Identify Input Purpose.
+    date: 2023-10-27                    # The date that this issue will be fixed by
+serviceLastTestedDate: 2023-06-29       # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
+statementVisibility: public             # If set to public, the statement will be visible in production. One of: public|draft|archived.
+statementCreatedDate: 2023-08-31        # In ISO format YYYY-MM-DD
+statementLastUpdatedDate: 2023-08-31    # In ISO format YYYY-MM-DD
+businessArea: Customer Strategy & Tax Design (CS&TD) # See valid values below
+ddc: DDC Yorkshire                       # See valid values below
+liveOrClassic:                           # See valid values below
+typeOfService: Public beta               # Classic services|Live services|Public beta
