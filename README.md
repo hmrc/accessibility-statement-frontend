@@ -113,7 +113,7 @@ Additional guidance for "typeOfService": If the service is being maintained by a
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams
 and run the integration tests with `sbt it:test` as described below.
 
-We ask that teams review, approve, and merge their own accessibility statements via pull requests. If your team doesn't have the required write access to merge your changes then contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/) and request access for your team. Having write access will mean your team will receive alerts regarding production deployments.
+We ask that teams review, approve, and merge their own accessibility statements via pull requests. If your team doesn't have the required write access to merge your changes you will need to create a [TSR](https://jira.tools.tax.service.gov.uk/projects/TSR) requesting write permission on the `accessibility-statement-frontend`repository, you can tag in your teams DL on the TSR and if you have any problems please contact us via Slack at [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). Having write access will mean your team will receive alerts regarding production deployments.
 
 If your pull request contains changes to files other than your accessibility statements, then you'll need to request additional review and approval from [#team-plat-ui](https://hmrcdigital.slack.com/messages/team-plat-ui/). To avoid delays when proposing additional changes like this, please reach out to us first to discuss your request.
 
