@@ -7,12 +7,12 @@ serviceUrl: /pay-what-you-owe-in-instalments
 contactFrontendServiceId: pay-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - On the 'Which day do you want to pay each month?' and 'How much can you pay each month?' pages, the label is missing for the text inputs making it difficult to know what should be entered.
-  - On the 'Which day do you want to pay each month?' and 'How much can you pay each month?' pages, screen-reader users will not hear the hint copy or error message when moving directly to the input fields.
-  - On the 'Add your income and spending', 'Check your payment plan' and 'Your payment plan' pages, list items have not been grouped together which makes it difficult for screen-readers users to know what they relate to.
-  - On the 'Check your Direct Debit details' page, the change links do not provide enough context for screen-reader users to determine where the link will take them.
-  - The 'Set up Direct Debit' page does not have a grouping label to tell screen-reader users how the form fields relate to each other.
-  - On the 'Terms and conditions' page, when switching to the Welsh version, the hidden word 'warning' remains in English and will not be pronounced correctly for screen-reader users.
+  - On the ‘Which day do you want to pay each month?’ and ‘How much can you pay each month?’ pages, the label is missing for the text inputs making it difficult to know what should be entered.
+  - On the ‘Which day do you want to pay each month?’ and ‘How much can you pay each month?’ pages, screen-reader users will not hear the hint copy or error message when moving directly to the input fields.
+  - On the ‘Add your income and spending’, ‘Check your payment plan’ and ‘Your payment plan’ pages, list items have not been grouped together which makes it difficult for screen-readers users to know what they relate to.
+  - On the ‘Check your Direct Debit details’ page, the change links do not provide enough context for screen-reader users to determine where the link will take them.
+  - The ‘Set up Direct Debit’ page does not have a grouping label to tell screen-reader users how the form fields relate to each other.
+  - On the ‘Terms and conditions’ page, when switching to the Welsh version, the hidden word ‘warning’ remains in English and will not be pronounced correctly for screen-reader users.
 milestones:
   - description: Label missing for text inputs. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
     date: 2023-12-15
