@@ -5,7 +5,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-vat-on-goods-sold-to-eu/northern-ireland-register
 contactFrontendServiceId: one-stop-shop-registration-frontend
 complianceStatus: full
-serviceLastTestedDate: 2023-09-01
+serviceLastTestedDate: 2023-09-04
 statementVisibility: public
 statementCreatedDate: 2021-07-01
 statementLastUpdatedDate: 2023-09-05
