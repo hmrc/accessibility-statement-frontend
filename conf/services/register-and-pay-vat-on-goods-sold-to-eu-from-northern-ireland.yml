@@ -4,19 +4,11 @@ serviceDescription: Use this service to register for the One Stop Shop Union sch
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-vat-on-goods-sold-to-eu/northern-ireland-register
 contactFrontendServiceId: one-stop-shop-registration-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - We have added a 'Remove' link with a label that might be confusing to screen reader users navigating the page.
-  - We have not labelled a form field to say that it's optional.
-milestones:
-  - description: We have added a 'Remove' link with a label that might be confusing to screen reader users navigating the page.
-    date: 2023-06-30
-  - description: We have not labelled a form field to say that it's optional.
-    date: 2023-06-30
-serviceLastTestedDate: 2021-10-15
+complianceStatus: full
+serviceLastTestedDate: 2023-09-04
 statementVisibility: public
 statementCreatedDate: 2021-07-01
-statementLastUpdatedDate: 2021-10-18
+statementLastUpdatedDate: 2023-09-05
 
 businessArea: Borders & Trade
 ddc:
