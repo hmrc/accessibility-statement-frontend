@@ -26,37 +26,37 @@ accessibilityProblems:
   - On the Welsh version, the alt text for the loading image is in English but not marked up as English text for screen readers. This means that assistive technology may not pronounce it correctly.
 milestones:
   - description: On all currency input, the pound symbol is hidden for assistive technology and error instructions are ambiguous and hard to identify what exactly needs correcting. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships and 3.3.3 Error suggestion.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: On ‘choose 2 items we can ask you about’ page nested content and error messages are not associated with form elements and error instructions are ambiguous and hard to identify what exactly needs correcting. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships and 3.3.3 Error suggestion.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Missing text alternative of the information on the message. This fails WCAG 2.1 success criterion 1.1.1 Non-text content.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Incorrect implementation of address lookup leads to incorrect displaying of addresses. This fails WCAG 2.1 success criterion 1.3.2 Meaningful sequence.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Missing error messages on radio group on ‘when did you last open a personal current account?’ and ‘when did you last take out or renew a personal mobile phone contract?’ pages. This fails WCAG 2.1 success criterion 3.3.1 Error identification.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: New revealed content is not communicated to screen-reader users. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Question for button group does not use semantic markup to show relationship to buttons. This fails WCAG 2.1 success criterion 1.3.1 Info and relationships.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Incorrect error messages appear on date inputs for driving licence. This fails WCAG 2.1 success criterion 3.3.1 Error identification.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Missing Welsh translations for ‘error:’ prefix. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Date of birth fields are missing autocomplete attributes which may mean the user will be unable to use the browser’s saved data to populate these fields easily. This fails WCAG 2.1 success criterion 1.3.5 Identify input purpose.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Incorrect error message presented to users when they submit invalid postcodes. This fails WCAG 2.1 success criterion 3.3.3 Error suggestion.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Missing translations and incorrect implementation for English copy of radio labels. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Labels on ‘enter the pensions and benefits information from your tax return’ page are not describing information that users need to provide. This fails WCAG 2.1 success criterion 2.4.6 Headings and labels.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Missing Welsh translations for loading image alt text. This fails WCAG 2.1 success criterion 3.1.2 Language of parts.
-    date: 2023-03-31
+    date: 2023-10-31
 serviceLastTestedDate: 2022-08-19
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2022-08-24
+statementLastUpdatedDate: 2023-09-05
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic:

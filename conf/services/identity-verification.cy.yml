@@ -27,37 +27,37 @@ accessibilityProblems:
   - Ar y fersiwn Gymraeg, mae’r testun amgen ar gyfer y ddelwedd ‘llwytho’ yn Saesneg, ond nid yw wedi’i marcio fel testun Saesneg at ddiben darllenwyr sgrin. Mae hyn yn golygu efallai na fydd technoleg gynorthwyol yn ei ynganu’n gywir.
 milestones:
   - description: Ar bob mewnbwn arian cyfred, mae symbol y bunt wedi’i guddio rhag technoleg gynorthwyol, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Ar y dudalen ‘Dewiswch ddau opsiwn y gallwn ofyn i chi amdanynt’, nid yw negeseuon gwall na chynnwys sydd wedi’i nythu wedi’u cysylltu ag elfennau ffurflen, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Mae testun amgen ar gyfer yr wybodaeth yn y neges ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 (Non-text content) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Mae gweithredu’r chwiliad am gyfeiriad yn anghywir yn arwain at arddangos y cyfeiriadau’n anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.2 (Meaningful sequence) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Ar y tudalennau ‘Pryd y gwnaethoch agor cyfrif cyfredol personol ddiwethaf?’ a ‘Pryd y gwnaethoch drefnu neu adnewyddu contract ffôn symudol personol ddiwethaf?’, mae negeseuon gwall ar y grŵp radio ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Nid yw’r ffaith bod cynnwys newydd wedi’i ddatguddio yn cael ei gyfathrebu i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Nid yw’r cwestiwn ar gyfer y grŵp botymau’n defnyddio marcio semantig i ddangos y berthynas â botymau. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Mae negeseuon gwall anghywir yn ymddangos ar fewnbynnau dyddiad ar gyfer manylion trwydded yrru. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Mae cyfieithiadau Cymraeg ar gyfer y rhagddodiad ‘gwall:’ ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: O ran y meysydd ar gyfer y dyddiad geni, mae’r priodoleddau awtogwblhau ar goll, ac efallai y bydd hyn yn golygu na fydd y defnyddiwr yn gallu defnyddio’r data a gadwyd gan y porwr er mwyn llenwi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify input purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Pan fo defnyddwyr yn cyflwyno codau post annilys, caiff y neges gwall anghywir ei dangos. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Mae cyfieithiadau ar goll a bu gweithredu anghywir o ran y copi Saesneg o labeli radio. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Ar y dudalen ‘Nodwch yr wybodaeth pensiynau a budd-daliadau o’ch Ffurflen Dreth’, nid yw’r labeli’n disgrifio’r wybodaeth y mae angen i ddefnyddwyr ei darparu. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
   - description: Mae cyfieithiadau Cymraeg ar goll ar gyfer testun amgen y ddelwedd ‘llwytho’. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-03-31
+    date: 2023-10-31
 serviceLastTestedDate: 2022-08-19
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2022-08-24
+statementLastUpdatedDate: 2023-09-05
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic:
