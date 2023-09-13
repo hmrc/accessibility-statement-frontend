@@ -24,7 +24,7 @@ Accessibility Statement Frontend is a service for providing for accessibility st
   * [Running UI acceptance tests](#running-ui-acceptance-tests)
   * [Performance testing](#performance-testing)
   * [Running ZAP scan locally](#running-zap-scan-locally)
-  * [Service Manager config for local development](#service-manager-config-for-local-development)
+  * [Service Manager 2 config for local development](#service-manager-2-config-for-local-development)
     + [License](#license)
 
 ## Before you add your accessibility statement
@@ -319,12 +319,12 @@ Follow the following steps:
 
 Information about the local ZAP test output can be found at https://github.com/hmrc/dast-config-manager#running-zap-locally.
 
-## Service Manager config for local development
+## Service Manager 2 config for local development
 
 When developing locally you can run
 
 ```
-sm --start A11Y_STATEMENT_ALL
+sm2 --start A11Y_STATEMENT_ALL
 ```
 
 This is useful if you have already merged your accessibility statement into the repository and now wish to test
