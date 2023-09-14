@@ -11,7 +11,7 @@ accessibilityProblems:
 - On the ‘Member’s details’ page the National Insurance number error message does not clearly say what needs to be corrected.
 - On the ‘What you will need’ page screen-reader users will find it difficult to understand the information in the downloadable instruction file.
 - When switching to the Welsh version, some of the text has not been translated into Welsh. This gives information that is not complete to users and will not be correctly pronounced by screen readers.
-milestones
+milestones:
 - description: The file upload page presents error messages in a format that is not fully supported by all assistive technology. This fails WCAG 2.1 success criterion 3.3.1 Error identification.
   date: 2023-09-22
 - description: The unauthorised payments table contains data in cells that do not correspond to the column heading. This fails WCAG 2.1 success criterions 1.3.1 Info and relationships.
