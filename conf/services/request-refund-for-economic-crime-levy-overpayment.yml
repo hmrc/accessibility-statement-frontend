@@ -1,0 +1,12 @@
+serviceName: Request a refund for an Economic Crime Levy overpayment
+serviceHeaderName: Request a refund for an Economic Crime Levy overpayment
+serviceDescription: |
+  Use this form to ask HMRC for a refund for an Economic Crime Levy overpayment.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/request-refund-for-economic-crime-levy-overpayment
+contactFrontendServiceId: GForm
+complianceStatus: full
+serviceLastTestedDate: 2023-10-06
+statementVisibility: public
+statementCreatedDate: 2023-10-06
+statementLastUpdatedDate: 2023-10-06
