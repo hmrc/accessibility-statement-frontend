@@ -21,93 +21,12 @@ import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
-import java.util.{Calendar, GregorianCalendar}
-
 case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
   private val en                   = Lang("en")
   private val cy                   = Lang("cy")
   private val repo                 = mock[AccessibilityStatementsSourceRepo]
-  private val englishStatement     = AccessibilityStatement(
-    serviceName = "Test (English)",
-    serviceDescription = "Test description.",
-    serviceDomain = "www.tax.service.gov.uk/test/",
-    serviceUrl = "some.test.service",
-    statementType = None,
-    contactFrontendServiceId = s"some.contact-frontend",
-    complianceStatus = FullCompliance,
-    accessibilityProblems = None,
-    milestones = None,
-    automatedTestingOnly = Some(false),
-    statementVisibility = Public,
-    serviceLastTestedDate = Some(new GregorianCalendar(2020, Calendar.FEBRUARY, 28).getTime),
-    statementCreatedDate = new GregorianCalendar(2020, Calendar.MARCH, 15).getTime,
-    statementLastUpdatedDate = new GregorianCalendar(2020, Calendar.MAY, 1).getTime,
-    automatedTestingDetails = None,
-    businessArea = None,
-    ddc = None,
-    liveOrClassic = None,
-    typeOfService = None
-  )
-  private val welshStatement       =
-    englishStatement.copy(serviceName = "Test (Welsh)")
-  private val englishOnlyStatement =
-    englishStatement.copy(serviceName = "English Only")
-  private val withMilestones       = englishStatement.copy(
-    serviceName = "With Milestones",
-    complianceStatus = PartialCompliance,
-    accessibilityProblems = Some(Seq("problem 1", "problem 2")),
-    milestones = Some(
-      Seq(
-        Milestone(
-          "Some links, headings and labels may not provide enough information about what to do next, or what happens next.\nThis does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).\n",
-          new GregorianCalendar(2020, Calendar.MAY, 1).getTime
-        ),
-        Milestone(
-          "Some error messages may not include all of the information you need to help you to correct an error.\nThis does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).\n",
-          new GregorianCalendar(2020, Calendar.MAY, 10).getTime
-        ),
-        Milestone(
-          "Milestone without WCAG issue listed.\n",
-          new GregorianCalendar(2020, Calendar.MAY, 10).getTime
-        )
-      )
-    )
-  )
-  private val draftWithMilestones  = englishStatement.copy(
-    serviceName = "Draft With Milestones",
-    statementVisibility = Draft,
-    complianceStatus = PartialCompliance,
-    accessibilityProblems = Some(Seq("problem 1", "problem 2")),
-    milestones = Some(
-      Seq(
-        Milestone(
-          "A draft milestone",
-          new GregorianCalendar(2020, Calendar.MAY, 1).getTime
-        )
-      )
-    )
-  )
 
-  private val withAutomatedTesting = withMilestones.copy(
-    serviceName = "With Automated Testing",
-    automatedTestingOnly = Some(true),
-    automatedTestingDetails = Some("Details about automated testing")
-  )
-
-  private val nonCompliant = englishStatement.copy(
-    serviceName = "Noncompliant",
-    statementVisibility = Public,
-    complianceStatus = NoCompliance,
-    serviceLastTestedDate = None
-  )
-
-  private val withMetadata = englishStatement.copy(
-    serviceName = "With Metadata",
-    ddc = Some(DDCWorthing),
-    businessArea = Some(ChiefDigitalAndInformationOfficer),
-    liveOrClassic = Some(LiveServicesWorthing),
-    typeOfService = Some(PublicBetaType)
-  )
+  import TestAccessibilityStatements._
 
   when(repo.findByServiceKeyAndLanguage("test-service", en)) thenReturn Some(
     (englishStatement, en)
