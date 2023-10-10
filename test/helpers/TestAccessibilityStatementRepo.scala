@@ -21,7 +21,9 @@ import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
-case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo with MockitoSugar {
+case class TestAccessibilityStatementRepo(
+   additionalStatements: Seq[(String, Lang, AccessibilityStatement)] = Seq.empty
+  ) extends AccessibilityStatementsRepo with MockitoSugar {
   private val en                   = Lang("en")
   private val cy                   = Lang("cy")
   private val repo                 = mock[AccessibilityStatementsSourceRepo]
@@ -72,5 +74,5 @@ case class TestAccessibilityStatementRepo() extends AccessibilityStatementsRepo 
       ("draft-with-milestones", en, draftWithMilestones),
       ("noncompliant", en, nonCompliant),
       ("with-metadata", en, withMetadata)
-    )
+    ) ++ additionalStatements
 }

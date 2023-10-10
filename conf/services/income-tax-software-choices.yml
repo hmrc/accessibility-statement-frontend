@@ -1,5 +1,5 @@
 ---
-serviceName: >
+serviceName: |
   Find software that's compatible with Making Tax Digital for Income Tax
 serviceDescription: |
   Making Tax Digital for Income Tax is a new way of reporting earnings to HMRC.
@@ -21,11 +21,11 @@ serviceUrl: /making-tax-digital-income-tax-software
 contactFrontendServiceId: ITSC
 complianceStatus: partial
 accessibilityProblems:
-  - >
+  - |
     The heading for the software results count is not being recognised as a
     heading by assistive technology. The 'software results count' alerts are
     interrupting screen-readers' speech, making it difficult to understand.
-  - >
+  - |
     The accessibility features filters are ambiguous so users may not properly
     understand what they are selecting.
 milestones:
