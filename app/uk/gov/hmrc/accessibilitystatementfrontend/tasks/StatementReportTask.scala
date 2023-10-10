@@ -53,7 +53,10 @@ class StatementReportTask @Inject() (
   )
 
   override def getBodyRows: Seq[Seq[String]] =
-    accessibilityStatementRepo.findAll.map(getRow)
+    accessibilityStatementRepo.findAll
+      .map(
+        getRow(_).map(_.replace("\n", ""))
+      )
 
   private def getRow(
     statementTuple: (String, Lang, AccessibilityStatement)
