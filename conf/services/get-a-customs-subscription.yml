@@ -1,0 +1,15 @@
+serviceName: Subscribe to a customs service
+serviceHeaderName: Subscribe to a customs service
+serviceDescription: |
+  This service is for users who need to subscribe to a customs service.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /customs-enrolment-services
+contactFrontendServiceId: eori-common-component-frontend
+
+complianceStatus: full
+
+serviceLastTestedDate: 2023-11-22
+statementVisibility: public
+statementCreatedDate: 2022-12-07
+statementLastUpdatedDate: 2023-11-22
+

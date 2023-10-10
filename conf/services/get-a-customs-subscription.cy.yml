@@ -1,0 +1,15 @@
+serviceName: Tanysgrifio i wasanaeth tollau
+serviceHeaderName: Tanysgrifio i wasanaeth tollau
+serviceDescription: |
+  Mae’r gwasanaeth hwn i ddefnyddwyr sydd angen tanysgrifio i wasanaeth tollau.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /customs-enrolment-services
+contactFrontendServiceId: eori-common-component-frontend
+
+complianceStatus: full
+
+serviceLastTestedDate: 2023-11-22
+statementVisibility: public
+statementCreatedDate: 2022-12-07
+statementLastUpdatedDate: 2023-11-22
+

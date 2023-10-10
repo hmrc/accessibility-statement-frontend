@@ -1,38 +1,15 @@
 serviceName: Trefnu tanysgrifiad tollau a chael rhif EORI
 serviceHeaderName: Trefnu tanysgrifiad tollau a chael rhif EORI
 serviceDescription: |
-  Mae’r gwasanaeth hwn ar gyfer defnyddwyr y mae angen iddynt danysgrifio ar gyfer gwasanaeth tollau a chael rhif EORI sy’n dechrau gyda GB.
+  Mae’r gwasanaeth hwn i ddefnyddwyr sydd angen tanysgrifio i wasanaeth tollau ac nad oes ganddynt rif EORI.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-registration-services
 contactFrontendServiceId: eori-common-component-registration-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - Mae cyfeiriadau e-bost, sy’n helpu defnyddwyr darllenydd sgrin i gadarnhau y bydd eu rhif EORI yn cael ei anfon i’r cyfeiriad e-bost cywir, ar goll ar gyfer y penawdau neu’r testun awgrym cysylltiedig ar y tudalennau ‘Manylion cyswllt ar gyfer y cais am rif EORI’ ac ‘Ai dyma’r cyfeiriad e-bost rydych am ei ddefnyddio’.
-  - Ar y tudalennau ‘Manylion cyswllt ar gyfer y cais’, ‘Y dyddiad y sefydlwyd y cwmni’ a ‘Beth yw’ch Cod Dosbarthiad Diwydiannol Safonol (SIC)?’, mae gwybodaeth sy’n berthnasol i’r ffurflen y gellid ei cholli pe bai defnyddiwr yn gwe-lywio gyda darllenydd sgrin fesul maes ffurflen neu drwy symud yn uniongyrchol i’r meysydd.
-  - Ar y tudalennau ‘Y dyddiad y sefydlwyd y cwmni’, ‘Nodwch eich manylion’ ac ‘Eich manylion TAW yn y DU’, nid yw’r negeseuon gwall ar gyfer meysydd dyddiad yn ddigon penodol. Yn ogystal, mae’r negeseuon gwall yn gamarweiniol ac mae rhai o’r cysylltiadau ar negeseuon gwall yn wag. Gall hyn rwystro defnyddwyr rhag gwybod beth y mae angen ei gywiro.
-  - Nid yw’r meysydd dyddiad ar y tudalennau ‘Y dyddiad y sefydlwyd y cwmni’, ‘Nodwch eich manylion’ nac ‘Eich manylion TAW yn y DU’ yn nodi gwallau’n gywir, sy’n ei gwneud yn anodd i ddefnyddwyr sylwi arnynt a’u cywiro.
-  - Caiff y stamp amser ar gyfer y rhif EORI ei ddangos fel pennawd i ddefnyddwyr darllenydd sgrin. Gall hyn ddrysu defnyddwyr darllenydd sgrin ynghylch strwythur y dudalen. Nid yw’n disgrifio’r cynnwys pellach ar y dudalen ‘Cais am danysgrifiad wedi dod i law’.
-  - Nid yw’r ddogfen PDF sy’n cadarnhau tanysgrifiad ac a gaiff ei lawrlwytho yn cynnwys teitl dogfen. Bydd hyn yn ei gwneud hi’n anodd gwybod yn iawn beth yw hi.
-  - Wrth newid i’r fersiwn Gymraeg, nid oes cyfieithiad Cymraeg o’r rhagddodiad ‘Error’ sydd wedi’i guddio o’r golwg ar gyfer negeseuon gwall drwy gydol y gwasanaeth. Ni fydd yn cael ei ynganu’n gywir gan ddarllenwyr sgrin.
-milestones:
-  - description: nid yw’r cyfeiriad e-bost yn cael ei gyfathrebu i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni meini prawf llwyddiant 3.3.2 (Label or instructions) nac 1.3.1 (Info and relationship) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2022-12-01
-  - description: nid yw’r wybodaeth sydd ei hangen i helpu i lenwi meysydd y ffurflen yn gywir wedi’i chysylltu’n rhaglennol â’r maes. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2022-12-01
-  - description: mae’r negeseuon gwall ar gyfer y meysydd dyddiad yn generig ac nid ydynt yn cynnig negeseuon penodol i ddefnyddwyr ynghylch sut i wneud cywiriadau. Nid yw hyn yn bodloni meini prawf llwyddiant 3.3.3 (Error suggestion) na 4.1.2 (Name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date : 2022-12-01
-  - description: pan nad oes cofnod yn y maes dyddiad, ni chaiff hyn ei nodi fel gwall. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2022-12-01
-  - description: nid yw’r stamp amser yn defnyddio marciau semantig ac mae’n camgyfleu gwybodaeth i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2022-12-01
-  - description: |
-      nid yw’r ddogfen PDF a gaiff ei lawrlwytho yn gosod teitl y ddogfen nac iaith y ddogfen, ac nid yw’n dilyn safonau PDF/Hygyrchedd Cyffredinol (PDF/UA). Mae hyn yn golygu nad yw’r cynnwys yn ail-lifo. Nid oes testun amgen ar gyfer logo CThEF. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.2 (Page titled), 3.1.1 (Language of page), 1.4.10 (Reflow) nac 1.1.1 (Non-text content) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2022-12-01
-  - description: |
-      nid yw’r gwasanaeth hwn yn cynnwys y rhagddodiad ‘Error’ sydd wedi’i guddio o’r golwg ar gyfer negeseuon gwall, mae cyfieithiadau Cymraeg ar goll ohono ac nid oes ganddo’r nodwedd iaith briodol i wybod bod yr iaith yn wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2022-12-01
-serviceLastTestedDate: 2022-11-01
+
+complianceStatus: full
+
+serviceLastTestedDate: 2023-11-22
 statementVisibility: public
 statementCreatedDate: 2022-12-07
-statementLastUpdatedDate: 2022-12-07
+statementLastUpdatedDate: 2023-11-22
 
