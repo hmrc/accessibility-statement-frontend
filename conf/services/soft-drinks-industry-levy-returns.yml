@@ -7,6 +7,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /soft-drinks-industry-levy-returns
 contactFrontendServiceId: soft-drinks-industry-levy-returns
+serviceLastTestedDate: 2023-10-02
 complianceStatus: full
 statementVisibility: public
 statementCreatedDate: 2023-10-11
