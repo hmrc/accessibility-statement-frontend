@@ -22,11 +22,12 @@ import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
 
 case class TestAccessibilityStatementRepo(
-   additionalStatements: Seq[(String, Lang, AccessibilityStatement)] = Seq.empty
-  ) extends AccessibilityStatementsRepo with MockitoSugar {
-  private val en                   = Lang("en")
-  private val cy                   = Lang("cy")
-  private val repo                 = mock[AccessibilityStatementsSourceRepo]
+  additionalStatements: Seq[(String, Lang, AccessibilityStatement)] = Seq.empty
+) extends AccessibilityStatementsRepo
+    with MockitoSugar {
+  private val en   = Lang("en")
+  private val cy   = Lang("cy")
+  private val repo = mock[AccessibilityStatementsSourceRepo]
 
   import TestAccessibilityStatements._
 

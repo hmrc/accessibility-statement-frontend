@@ -38,8 +38,8 @@ class ReportSpec extends AnyWordSpec with Matchers with TryValues {
 
   "ReportTask" should {
     "generate a report" in {
-      val repo       = TestAccessibilityStatementRepo()
-      val reportTask = new StatementReportTask(repo, TestDateProvider())
+      val repo           = TestAccessibilityStatementRepo()
+      val reportTask     = new StatementReportTask(repo, TestDateProvider())
       val reportFilename = createReportFile
 
       reportTask.generate(Seq(reportFilename))
@@ -71,8 +71,8 @@ class ReportSpec extends AnyWordSpec with Matchers with TryValues {
         contactFrontendServiceId = "\nTest-Id-with-newline"
       )
 
-      val repo       = TestAccessibilityStatementRepo(Seq(("service-with-newline", Lang("en"), statementWithNewlines)))
-      val reportTask = new StatementReportTask(repo, TestDateProvider())
+      val repo           = TestAccessibilityStatementRepo(Seq(("service-with-newline", Lang("en"), statementWithNewlines)))
+      val reportTask     = new StatementReportTask(repo, TestDateProvider())
       val reportFilename = createReportFile
 
       reportTask.generate(Seq(reportFilename))
