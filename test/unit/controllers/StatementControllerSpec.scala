@@ -41,12 +41,14 @@ class StatementControllerSpec extends AnyWordSpec with Matchers with MockitoSuga
     )
   )
 
-  override def fakeApplication(): Application =
+  override def fakeApplication(): Application = {
+    val repo = TestAccessibilityStatementRepo()
     new GuiceApplicationBuilder()
       .overrides(
-        bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo]
+        bind[AccessibilityStatementsRepo].toInstance(repo)
       )
       .build()
+  }
 
   private val controller = app.injector.instanceOf[StatementController]
 

@@ -29,6 +29,8 @@ import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsR
 
 class StatementPageISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite {
 
+  val repo = TestAccessibilityStatementRepo()
+
   override lazy val app: Application = new GuiceApplicationBuilder()
     .configure(
       Map(
@@ -37,7 +39,7 @@ class StatementPageISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSu
       )
     )
     .overrides(
-      bind[AccessibilityStatementsRepo].to[TestAccessibilityStatementRepo]
+      bind[AccessibilityStatementsRepo].toInstance(repo)
     )
     .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
