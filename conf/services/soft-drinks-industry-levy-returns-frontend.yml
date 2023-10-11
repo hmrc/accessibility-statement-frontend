@@ -5,7 +5,7 @@ serviceDescription: |
   different rates according to the total sugar content.
   The service is designed to enable these business users to file a return for their Soft Drinks Industry Levy account..
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /soft-drinks-industry-levy-returns
+serviceUrl: /soft-drinks-industry-levy-returns-frontend
 contactFrontendServiceId: soft-drinks-industry-levy-returns
 serviceLastTestedDate: 2023-10-02
 complianceStatus: full
