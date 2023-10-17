@@ -1,0 +1,32 @@
+serviceName: Excise Movement and Control System
+serviceHeaderName: EMCS
+serviceDescription: |
+  The Excise Movement and Control System (EMCS) service lets users record duty suspended 
+  movements of excise goods taking place within the UK and the EU. It allows real time 
+  notification of the dispatch and receipt of duty suspended excise goods and the 
+  exchange of secure online messages between UK and EU trading partners.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /emcs/explain-shortage-or-excess
+contactFrontendServiceId: emcs-tfe-explain-shortage-excess-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - The items table on the ‘Select an item to give information about’ page have not been correctly implemented for smaller devices. The content of the table for screen readers does not match how it is presented visually.
+  - The legend on the ‘Do you want to give information about item 1 having broken seal(s)?’ and ‘Do you want to give information about item 2 being damaged?’ does not have an understandable question for screen-reader users.
+  - Screen-reader users will find it difficult to work out how the ‘Check your answers before submitting your receipt’ page is structured. Heading levels that visually show grouping do not indicate the same grouping to screen-reader users.
+  - When using a small screen, such as mobile devices or when increasing font sizes, the content on some pages does not fit on the screen properly.
+milestones:
+  - description: The table markup for smaller screens is not representing visual presentation. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships
+    date: 2024-04-01
+  - description: The legend does not render the correct text copy. This fails WCAG 2.2 success criterion 3.3.2 Labels or Instructions
+    date: 2024-04-01
+  - description: Heading levels do not describe page structure and how the content is organised on ‘Check your answers before submitting your receipt’. This fails WCAG 2.2 success criterion 1.3.1 Info and relationships
+    date: 2024-04-01
+  - description: The caption copy and reference number do not wrap when users rely on screen magnification or accessing on a smaller screened device on various pages, causing content to overflow and users to scroll in multiple directions. This fails WCAG 2.2 success criterion 1.4.10 Reflow
+    date: 2024-04-01
+serviceLastTestedDate: 2023-10-16
+statementVisibility: draft
+statementCreatedDate: 2023-10-17
+statementLastUpdatedDate: 2023-10-17
+ddc: DDC Telford
+liveOrClassic: Classic Services
+typeOfService: Public beta
