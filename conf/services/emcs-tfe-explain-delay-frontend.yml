@@ -7,7 +7,7 @@ serviceDescription: |
   exchange of secure online messages between UK and EU trading partners.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /emcs/explain-delay
-contactFrontendServiceId: emcs-tfe-explain-delay-frontend
+contactFrontendServiceId: emcstfe
 complianceStatus: partial
 accessibilityProblems:
   - The items table on the ‘Select an item to give information about’ page have not been correctly implemented for smaller devices. The content of the table for screen readers does not match how it is presented visually.
@@ -24,7 +24,7 @@ milestones:
   - description: The caption copy and reference number do not wrap when users rely on screen magnification or accessing on a smaller screened device on various pages, causing content to overflow and users to scroll in multiple directions. This fails WCAG 2.2 success criterion 1.4.10 Reflow
     date: 2024-04-01
 serviceLastTestedDate: 2023-10-16
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2023-10-17
 statementLastUpdatedDate: 2023-10-17
 ddc: DDC Telford
