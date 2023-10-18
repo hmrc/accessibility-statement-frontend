@@ -15,13 +15,13 @@ accessibilityProblems:
   - Screen-reader users will find it difficult to work out how the ‘Check your answers before submitting your receipt’ page is structured. Heading levels that visually show grouping do not indicate the same grouping to screen-reader users.
   - When using a small screen, such as mobile devices or when increasing font sizes, the content on some pages does not fit on the screen properly.
 milestones:
-  - description: The table markup for smaller screens is not representing visual presentation. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships
+  - description: The table markup for smaller screens is not representing visual presentation. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships.
     date: 2024-04-01
-  - description: The legend does not render the correct text copy. This fails WCAG 2.2 success criterion 3.3.2 Labels or Instructions
+  - description: The legend does not render the correct text copy. This fails WCAG 2.2 success criterion 3.3.2 Labels or Instructions.
     date: 2024-04-01
-  - description: Heading levels do not describe page structure and how the content is organised on ‘Check your answers before submitting your receipt’. This fails WCAG 2.2 success criterion 1.3.1 Info and relationships
+  - description: Heading levels do not describe page structure and how the content is organised on ‘Check your answers before submitting your receipt’. This fails WCAG 2.2 success criterion 1.3.1 Info and relationships.
     date: 2024-04-01
-  - description: The caption copy and reference number do not wrap when users rely on screen magnification or accessing on a smaller screened device on various pages, causing content to overflow and users to scroll in multiple directions. This fails WCAG 2.2 success criterion 1.4.10 Reflow
+  - description: The caption copy and reference number do not wrap when users rely on screen magnification or accessing on a smaller screened device on various pages, causing content to overflow and users to scroll in multiple directions. This fails WCAG 2.2 success criterion 1.4.10 Reflow.
     date: 2024-04-01
 serviceLastTestedDate: 2023-10-16
 statementVisibility: public
