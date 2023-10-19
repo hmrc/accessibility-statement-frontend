@@ -16,65 +16,65 @@ accessibilityProblems:
 milestones:
   - description: |
       On several pages, the radio buttons are not labelled correctly. This causes confusion for people using screen readers. This fails WCAG Success Criteria 4.1.2 Understanding Name, Role, Value and How to Meet Name, Role, Value (Level A). And 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On several pages, the summary skip link does not work. This means that the user must navigate manually. This fails WCAG Success Criteria 2.4.1 Understanding Bypass Blocks and How to Meet Bypass Blocks (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the page to report a change from self-employed to employed, the ‘Select which of these you will get?’ link does not take users to the place where they can choose their answer. There is no error message between the question and the answer options which makes it difficult for people using screen readers to navigate manually. This fails WCAG Success Criteria 2.4.1 Understanding Bypass Blocks and How to Meet Bypass Blocks (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the page where users confirm their address, the address we have for them is shown twice.  This is confusing for users who will not understand why this is or which to select. This fails WCAG Success Criteria 4.1.1 Understanding Parsing and How to Meet Parsing (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the children and childcare pages, there is a duplication in the code. This will be particularly difficult for people using assistive technology as part of the content may be missed. This fails WCAG Success Criteria 4.1.1 Understanding Parsing and How to Meet Parsing (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the page where users estimate their profit from self-employment, there is code terminology that will be read by a screen reader and should not be. This will be confusing as the user will not understand the terminology used.  This fails WCAG Success Criteria 4.1.1 Understanding Parsing and How to Meet Parsing (Level A)
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       Throughout the service, there is no heading on the pop-up that tells the user the session is about to timeout.  This may be confusing for screen reader users as they may not understand that there is a pop-up and what it is for. This fails WCAG Success Criteria WCAG Reference: 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the pages where you can report a change in your job and your partner's job, the ‘Change job’ labelling is the same. This will be confusing for people using screen readers as they will not be able to tell the difference. This fails WCAG Success Criteria 2.4.4 Understanding Link Purpose (In Context) and How to Meet Link Purpose (In Context) (Level A). WCAG Success Criteria 2.4.9  Understanding Link Purpose (Link Only) and How to Meet Link Purpose (Link Only) (Level AAA).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the page where users report how much they pay in child care each week, the hidden text is not being read out by screen readers due to a coding error. This is confusing for screen reader users as they are just given the option to edit without knowing what they’re editing. This fails WCAG Success Criteria 2.4.4 Understanding Link Purpose (In Context) and How to Meet Link Purpose (In Context) (Level A). WCAG Success Criteria 2.4.9  Understanding Link Purpose (Link Only) and How to Meet Link Purpose (Link Only) (Level AAA).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the ‘confirm your answers’ page that users see when they have added a child to the childcare list, the table is not coded correctly. This may be confusing for people using assistive technology. This fails WCAG Success Criteria WCAG Reference: 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the page where users can look at their payment schedule, the summary is not in a list format for people using screen readers. They will not be able to understand the structure of the items on the list and how they relate to each other. This fails WCAG Success Criteria WCAG Reference: 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the ‘started receiving a benefit’ page, the text box is not labelled correctly. This will be confusing for people using assistive technology. This fails WCAG Success Criteria WCAG Reference: Understanding Info and Relationships and How to Meet Info and Relationships (Level A) and 4.1.2  Understanding Name, Role, Value and How to Meet Name, Role, Value.
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On both of the pages where people can use the search function to find their address, there is a main heading. One lets the user search by postcode, the other by multiple address fields. A main heading on both is disorientating for the user. This fails WCAG Success Criteria  2.4.2 Understanding Page Titled and How to Meet Page Titled (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the page to select a statutory payment to be received, screen reader users do not get told that the content expands when they tick a box.  This may be confusing and could prevent screen reader users from giving HMRC the information needed efficiently. This fails WCAG Success Criteria 4.1.2 Name, Role, Value and How to Meet Role, Name, Value (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the tax credit summary, screen users are not told that the menu button can expand and retract. This means they may miss information that they need. This fails WCAG Success Criteria 4.1.2 Name, Role, Value and How to Meet Role, Name, Value (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On 2 pages, the group of checkboxes are not labelled meaningfully. This makes it confusing for the user.  This fails WCAG Success Criteria 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the Childcare provider page, multiple questions are asked at once making it confusing. This fails WCAG Success Criteria 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the How much did you earn page, the ‘How much did you earn between 6 April 2020 and 28 January 2021?’ input field is not labelled descriptively which means screen reader users may be unable to determine its purpose. This fails WCAG Success Criteria 2.4.6 Headings and Labels (Level AA)
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       On the Report change in child’s situation page, the ‘What is the change in their situation?’ text area contains a character limit; however, the number of characters remaining is not presented to screen reader users when populating the field. This means that some users may be unable to determine how many characters are remaining. This fails WCAG Success Criteria 4.1.3 Status Messages (Level AA)
-    date: 2023-12-31
+    date: 2024-03-31
 serviceLastTestedDate: 2021-01-18
 statementVisibility: public
 statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2023-02-27
+statementLastUpdatedDate: 2023-10-19
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
