@@ -1,17 +1,22 @@
 serviceName: Dewch o hyd i feddalwedd Troi Treth yn Ddigidol ar gyfer TAW
 serviceHeaderName: Dewch o hyd i feddalwedd Troi Treth yn Ddigidol ar gyfer TAW
 serviceDescription: |
-  Mae’r gwasanaeth hwn yn eich helpu i ddod o hyd i feddalwedd sy’n cydweddu ar gyfer cadw cofnodion digidol a chyflwyno Ffurflenni TAW i CThEM.
-  Gallwch hefyd ddod o hyd i feddalwedd bontio i gysylltu meddalwedd nad yw’n cydweddu (fel taenlenni) â systemau CThEM.
+  "Mae’r gwasanaeth hwn yn eich helpu i ddod o hyd i feddalwedd sy’n cydweddu ar gyfer cadw cofnodion digidol a chyflwyno Ffurflenni TAW i CThEM.  Gallwch hefyd ddod o hyd i feddalwedd bontio i gysylltu meddalwedd nad yw’n cydweddu (fel taenlenni) â systemau CThEM."
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /making-tax-digital-software
-contactFrontendServiceId: MSCC
-complianceStatus: full
-serviceLastTestedDate: 2021-02-01
+contactFrontendServiceId: vrs
+complianceStatus: partial
+accessibilityProblems:
+  - Ar dudalen ‘Dewch o hyd i feddalwedd Troi Treth yn Ddigidol ar gyfer TAW’, nid yw meini prawf y nodweddion hygyrchedd yn glir a gall hynny arwain at ddewis yr opsiynau anghywir.
+
+milestones:
+  - description: Nid yw opsiynau’r nodweddion hygyrchedd wedi’u hesbonio’n glir i ddefnyddwyr, a gallai hynny achosi dryswch. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+    date: 12/12/2022
+serviceLastTestedDate: 2022-12-20
 statementVisibility: public
 statementCreatedDate: 2019-09-19
-statementLastUpdatedDate: 2021-05-06
+statementLastUpdatedDate: 2023-01-30
 businessArea: Customer Strategy & Tax Design (CS&TD)
-ddc:
-liveOrClassic:
-typeOfService: Public beta
+ddc: DDC Telford
+liveOrClassic: Live Services - Telford
+typeOfService: Live services
