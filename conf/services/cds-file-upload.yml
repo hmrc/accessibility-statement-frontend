@@ -7,53 +7,44 @@ serviceUrl: /cds-file-upload-service
 contactFrontendServiceId: cds-file-upload-service
 complianceStatus: partial
 accessibilityProblems:
-  - Some error messages are not descriptive enough.
-  - Users may be timed out of the service with no prior warning.
-  - Names and addresses will not autocomplete.
-  - The focus indicator does not give enough colour contrast.
-  - The word ‘Error’ may not appear in the page title to alert screenreaders to an error.
-  - Message counter in the subject of the message might be confusing.
-  - The classes of headings are mixed so it is not always clear what is the relationship between elements on the page.
-  - Page headings may be declaration reference numbers which do not convey clear meaning.
-  - Subject of the messages is duplicated, and difficult to pronounce.
-  - Incorrect usage of aria attributes could prevent screen readers from detecting some links or navigation.
-  - Repeated use of main elements make it difficult to interpret the page formally.
-  - Incorrect markup of tables means some elements may be shown incorrectly.
-  - Use of the same links with different hypertext cause difficulty in understanding their function.
-  - Long strings of text may be clipped if they cannot fit in the container width.
+  - Page title was present that was not descriptive.
+  - Text introducing content was not marked up as headings.
+  - Headings or labels do not provide an accurate description of the content it introduces.
+  - Abbreviations are used without being expanded once.
+  - Text was found with an insufficient colour contrast ratio.
+  - When committing an error, the page title did not update to contain the ‘Error:’ prefix.
+  - Errors were not present.
+  - The link highlighting mechanism does not follow the GOV.UK Design System.
+  - The label for a form field was not presented close to the input.
+  - Navigation landmarks had been used where not required.
+  - When committing an error, the error summary does not receive focus automatically.
 milestones:
-  - description: Some error messages are not descriptive enough.
-    date: 2022-09-30
-  - description: Users may be timed out of the service with no prior warning.
-    date: 2022-09-30
-  - description: Names and addresses will not autocomplete.
-    date: 2022-09-30
-  - description: The focus indicator does not give enough colour contrast.
-    date: 2022-09-30
-  - description: The word ‘Error’ may not appear in the page title to alert screenreaders to an error.
-    date: 2022-09-30
-  - description: Message counter in the subject of the message might be confusing.
-    date: 2022-09-30
-  - description: The classes of headings are mixed so it is not always clear what is the relationship between elements on the page.
-    date: 2022-09-30
-  - description: Page headings may be declaration reference numbers which do not convey clear meaning.
-    date: 2022-09-30
-  - description: Subject of the messages is duplicated, and difficult to pronounce.
-    date: 2022-09-30
-  - description: Incorrect usage of aria attributes could prevent screen readers from detecting some links or navigation.
-    date: 2022-09-30
-  - description: Repeated use of main elements make it difficult to interpret the page formally.
-    date: 2022-09-30
-  - description: Incorrect markup of tables means some elements may be shown incorrectly.
-    date: 2022-09-30
-  - description: Use of the same links with different hypertext cause difficulty in understanding their function.
-    date: 2022-09-30
-  - description: Long strings of text may be clipped if they cannot fit in the container width.
-    date: 2022-09-30
-serviceLastTestedDate: 2020-12-21
+  - description: Page title was present that was not descriptive.
+    date: 2024-06-01
+  - description: Text introducing content was not marked up as headings.
+    date: 2024-06-01
+  - description: Headings or labels do not provide an accurate description of the content it introduces.
+    date: 2024-06-01
+  - description: Abbreviations are used without being expanded once.
+    date: 2024-06-01
+  - description: Text was found with an insufficient colour contrast ratio.
+    date: 2024-06-01
+  - description: When committing an error, the page title did not update to contain the ‘Error:’ prefix.
+    date: 2024-06-01
+  - description: Errors were not present.
+    date: 2024-06-01
+  - description: The link highlighting mechanism does not follow the GOV.UK Design System.
+    date: 2024-06-01
+  - description: The label for a form field was not presented close to the input.
+    date: 2024-06-01
+  - description: Navigation landmarks had been used where not required.
+    date: 2024-06-01
+  - description: When committing an error, the error summary does not receive focus automatically.
+    date: 2024-06-01
+serviceLastTestedDate: 2022-08-14
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2022-06-20
+statementLastUpdatedDate: 2023-10-20
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
