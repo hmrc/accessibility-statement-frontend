@@ -17,24 +17,24 @@ milestones:
   - description: |
       Mae’r enw defnyddiwr wedi’i guddio i bob defnyddiwr sy’n defnyddio dyfeisiau technoleg gynorthwyol.
       Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1  Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.: Info and Relationships.
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       Nid yw’r neges terfyn amser yn ymddangos felly mae defnyddwyr wedi’u cloi allan heb rybudd ar ôl 15 munud o anweithgarwch.
       Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       Yn eich tudalennau cofnod Yswiriant Cenedlaethol, mae teitl y dudalen yr un fath ar gyfer y ddwy dudalen oherwydd bod y pennawd yr un fath ar gyfer blynyddoedd gyda bylchau a blynyddoedd heb fylchau.
       Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 2.4.2  Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Page Titled.
-    date: 2023-12-31
+    date: 2024-03-31
   - description: |
       Pan gaiff ei ailfeintio drwy chwyddo mae’r testun yn y siartiau bar yn cael ei glipio.
       Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.4.4  Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Resized text.
-    date: 2023-12-31
+    date: 2024-03-31
 
 serviceLastTestedDate: 2023-01-16
 statementVisibility: public
 statementCreatedDate: 2020-03-17
-statementLastUpdatedDate: 2023-03-31
+statementLastUpdatedDate: 2023-10-19
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
 liveOrClassic: Live Services - Newcastle
