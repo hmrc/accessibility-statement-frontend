@@ -26,6 +26,8 @@
 
 @fullyOrPartiallyCompliantContent = {
     @{if(isFullyCompliant) {
+        // TODO href is hardcoded to the wcag 2.1 link
+        // TODO messages need to be parametrised so the wcag version can be switched in
         <p class="govuk-body">{messages("accessibility.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>
     } else {
         <p class="govuk-body">{messages("accessibility.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">{messages("accessibility.guidelines")}</a>{messages("general.fullstop")}</p>

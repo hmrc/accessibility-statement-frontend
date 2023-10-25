@@ -26,6 +26,7 @@ milestones:
   date: 2023-11-01
 - description: All textarea and text fields missing correctly associated labels. This fails WCAG 2.1 success criterion 3.3.2 Labels or instructions and 4.1.2 Name, role, value
   date: 2023-11-01
+# TODO we don't plan to populate these wcag version automatically but rather rely on teams to update them, but we might want to consider adding a test to save teams accidentally missing stuff
 - description: HTML contains duplicated IDs. This fails WCAG 2.1 success criterion 4.1.1 Parsing
   date: 2023-11-01
 - description: The warning icon has missing alternative text. This fails WCAG 2.1 success criterion 1.1.1 Non-text content
