@@ -55,3 +55,6 @@ businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Public beta
+
+# TODO new property to cater for updating the wcag version, do we need the AA / AAA on the version? This would be injected into any generic messaging referring to the wcag version
+wcagVersion: 2.1
