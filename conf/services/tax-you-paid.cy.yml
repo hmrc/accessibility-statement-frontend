@@ -10,13 +10,13 @@ accessibilityProblems:
   - Mae defnyddwyr yn cael eu hanfon yn uniongyrchol i’r maes mewnbwn yn lle dilyn y camau cywirmae defnyddwyr yn cael eu hanfon yn uniongyrchol i’r maes mewnbwn yn lle dilyn y camau cywir.
 milestones:
   - description: Mae maes ffurflen sydd heb ei labelu. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and Relationships (Level A)) na 4.1.2 (Name, Role, Value (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-12-31
+    date: 2024-03-31
   - description: Mae gosodiad awto-ffocws wedi cael ei ddefnyddio. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.3 (Focus Order (Level A)) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2023-12-31
+    date: 2024-03-31
 serviceLastTestedDate: 2023-02-03
 statementVisibility: public
 statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2023-03-28
+statementLastUpdatedDate: 2023-10-19
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
