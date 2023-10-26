@@ -40,7 +40,8 @@ case class AccessibilityStatement(
   businessArea: Option[BusinessArea],
   ddc: Option[DDC],
   liveOrClassic: Option[LiveOrClassic],
-  typeOfService: Option[TypeOfService]
+  typeOfService: Option[TypeOfService],
+  wcagVersion: Option[WCAGVersion]
 ) extends Ordered[AccessibilityStatement] {
 
   val statementTemplate: StatementType = statementType match {

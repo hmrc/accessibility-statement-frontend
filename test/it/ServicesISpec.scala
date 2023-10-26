@@ -20,6 +20,7 @@ import cats.syntax.either._
 import io.circe.CursorOp.DownField
 import io.circe.DecodingFailure
 import org.scalatest.TryValues
+import org.scalatest.matchers.{MatchResult, Matcher}
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.prop.TableFor3
 import org.scalatest.wordspec.AnyWordSpec
@@ -204,6 +205,27 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
       s"enforce lastTestedDate provided unless non-compliant for $service" in {
         val statement: AccessibilityStatement = statementTry.get
         statement.serviceLastTestedDate.isDefined || statement.complianceStatus == NoCompliance should be(true)
+      }
+
+      s"enforce WCAG version consistency for $service" in {
+        val statement: AccessibilityStatement = statementTry.get
+        val milestoneVersionRegex = "(?s).*(WCAG|fersiwn) ([\\d.]+).*".r
+        val wcagVersion = statement
+          .wcagVersion
+          .getOrElse(WCAG21AA) // TODO remove when no longer an Option[String]
+          .version
+
+        statement.milestones.map { milestones =>
+          milestones foreach { milestone =>
+            milestone.description match {
+              case milestoneVersionRegex(_, milestoneVersion) =>
+                withClue(milestone.description) {
+                  milestoneVersion should startWith(wcagVersion)
+                }
+              case _ => ()
+            }
+          }
+        }
       }
 
       s"enforce serviceUrl starting with / for $service" in {

@@ -78,6 +78,7 @@ businessArea: Chief Digital & Information Officer (CDIO) # See valid values belo
 ddc: DDC Worthing                        # See valid values below
 liveOrClassic: Live Services (Worthing)  # See valid values below 
 typeOfService: Public beta               # Classic services|Live services|Public beta
+wcagVersion: 2.1 AA                      # The Web Content Accessibility Guidelines version the service was tested against. One of: 2.1 AA|2.2 AA
 ```
 
 If your statement is specifically for a mobile application, add the line `statementType: android` for an android application or

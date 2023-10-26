@@ -23,7 +23,7 @@ import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig, StatementSource}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Archived, Draft, FullCompliance, Public, Visibility}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Archived, Draft, FullCompliance, Public, Visibility, WCAG21AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
@@ -78,7 +78,8 @@ class AccessibilityStatementsRepoSpec
     businessArea = None,
     ddc = None,
     liveOrClassic = None,
-    typeOfService = None
+    typeOfService = None,
+    wcagVersion = Some(WCAG21AA)
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription =

@@ -16,7 +16,7 @@
 
 package helpers
 
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, WCAG21AA}
 
 import java.util.{Calendar, GregorianCalendar}
 
@@ -40,7 +40,8 @@ object TestAccessibilityStatements {
     businessArea = None,
     ddc = None,
     liveOrClassic = None,
-    typeOfService = None
+    typeOfService = None,
+    wcagVersion = Some(WCAG21AA)
   )
   val welshStatement       =
     englishStatement.copy(serviceName = "Test (Welsh)")

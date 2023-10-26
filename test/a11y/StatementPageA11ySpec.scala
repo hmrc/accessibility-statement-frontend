@@ -23,7 +23,7 @@ import play.api.Configuration
 import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, WCAG21AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -31,7 +31,7 @@ import uk.gov.hmrc.scalatestaccessibilitylinter.AccessibilityMatchers
 
 import java.util.{Calendar, GregorianCalendar}
 
-class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with AccessibilityMatchers {
+class StatementPageA11ySpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with AccessibilityMatchers {
   "Given any Accessibility Statement for a service, rendering a Statement Page" should {
 
     "pass accessibility checks" in new FullSetup {
@@ -150,7 +150,8 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       businessArea = None,
       ddc = None,
       liveOrClassic = None,
-      typeOfService = None
+      typeOfService = None,
+      wcagVersion = Some(WCAG21AA)
     )
 
     lazy val partiallyAccessibleIosAppStatement = partiallyAccessibleServiceStatement.copy(
@@ -211,7 +212,8 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       businessArea = None,
       ddc = None,
       liveOrClassic = None,
-      typeOfService = None
+      typeOfService = None,
+      wcagVersion = Some(WCAG21AA)
     )
 
     lazy val fullyAccessibleStatementHtml =

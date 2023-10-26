@@ -21,7 +21,7 @@ import org.scalatest.EitherValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, VOA}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, VOA, WCAG21AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import java.io.FileNotFoundException
@@ -49,7 +49,8 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
     businessArea = None,
     ddc = None,
     liveOrClassic = None,
-    typeOfService = None
+    typeOfService = None,
+    wcagVersion = None
   )
 
   "parse" should {
@@ -256,7 +257,8 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           businessArea = None,
           ddc = None,
           liveOrClassic = None,
-          typeOfService = None
+          typeOfService = None,
+          wcagVersion = Some(WCAG21AA)
         )
       )
     }
@@ -329,7 +331,8 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           businessArea = None,
           ddc = None,
           liveOrClassic = None,
-          typeOfService = None
+          typeOfService = None,
+          wcagVersion = Some(WCAG21AA)
         )
       )
     }
@@ -368,7 +371,8 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           businessArea = None,
           ddc = None,
           liveOrClassic = None,
-          typeOfService = None
+          typeOfService = None,
+          wcagVersion = Some(WCAG21AA)
         )
       )
     }

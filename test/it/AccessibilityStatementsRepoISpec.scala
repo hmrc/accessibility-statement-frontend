@@ -22,7 +22,7 @@ import org.scalatest.{BeforeAndAfterEach, EitherValues}
 import play.api.Application
 import play.api.i18n.Lang
 import play.api.inject.guice.GuiceApplicationBuilder
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance, Public}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, FullCompliance, Milestone, PartialCompliance, Public, WCAG21AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsSourceRepo
 
 import java.util.{Calendar, GregorianCalendar}
@@ -60,7 +60,8 @@ class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with Ei
     businessArea = None,
     ddc = None,
     liveOrClassic = None,
-    typeOfService = None
+    typeOfService = None,
+    wcagVersion = Some(WCAG21AA)
   )
   private val fooStatementWelsh = fooStatement.copy(
     serviceDescription = "Mae'r gwasanaeth foo yn caniatáu ichi wneud foo"
@@ -100,7 +101,8 @@ class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with Ei
     businessArea = None,
     ddc = None,
     liveOrClassic = None,
-    typeOfService = None
+    typeOfService = None,
+    wcagVersion = Some(WCAG21AA)
   )
 
   private val barStatementWelsh = barStatement.copy(

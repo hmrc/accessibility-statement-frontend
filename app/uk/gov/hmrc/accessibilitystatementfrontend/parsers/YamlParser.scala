@@ -41,6 +41,7 @@ class YamlParser[T: Decoder] extends Logging {
 
     parsedYaml match {
       case Right(parsed) =>
+        // check wcag version yamlAsString
         Right(parsed)
       case Left(error)   =>
         logger.error(

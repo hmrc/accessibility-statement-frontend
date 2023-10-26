@@ -25,7 +25,7 @@ import play.api.Configuration
 import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, VOA}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, VOA, WCAG21AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -514,7 +514,8 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       businessArea = None,
       ddc = None,
       liveOrClassic = None,
-      typeOfService = None
+      typeOfService = None,
+      wcagVersion = Some(WCAG21AA)
     )
 
     lazy val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
@@ -611,7 +612,8 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       businessArea = None,
       ddc = None,
       liveOrClassic = None,
-      typeOfService = None
+      typeOfService = None,
+      wcagVersion = Some(WCAG21AA)
     )
 
     lazy val partiallyAccessibleIosAppStatement = partiallyAccessibleServiceStatement.copy(

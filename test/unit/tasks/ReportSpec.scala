@@ -21,7 +21,7 @@ import org.scalatest.TryValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import play.api.i18n.Lang
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, HMRC, LiveServicesWorthing, NoCompliance, PartialCompliance, Public, PublicBetaType}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, HMRC, LiveServicesWorthing, NoCompliance, PartialCompliance, Public, PublicBetaType}
 import uk.gov.hmrc.accessibilitystatementfrontend.tasks.{DateProvider, StatementReportTask}
 
 import java.util.{Date, GregorianCalendar}
