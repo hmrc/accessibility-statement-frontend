@@ -9,7 +9,7 @@ contactFrontendServiceId: SCA
 serviceLastTestedDate: 2023-06-22
 statementVisibility: public
 statementCreatedDate: 2022-11-14
-statementLastUpdatedDate: 2023-10/27
+statementLastUpdatedDate: 2023-10-27
 ddc: DDC Newcastle
 automatedTestingOnly: false
 complianceStatus: partial
