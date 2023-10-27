@@ -9,7 +9,7 @@ contactFrontendServiceId: SCA
 serviceLastTestedDate: 2023-06-22
 statementVisibility: public
 statementCreatedDate: 2022-11-14
-statementLastUpdatedDate: 2023-07-20
+statementLastUpdatedDate: 2023-10-27
 ddc: DDC Newcastle
 automatedTestingOnly: false
 complianceStatus: partial
@@ -27,13 +27,13 @@ accessibilityProblems:
 milestones:
   # Global
   - description: Wrth edrych ar y dudalen Gymraeg, mae’r cyfieithiad ar gyfer rhagddodiad ‘Error’ y cynnwys ar goll o’r ffeil ffurfweddu. Ni fydd y neges gwall a gyflwynir i ddefnyddwyr yn cael ei hynganu’n gywir gan ddarllenwyr sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
+    date: 2024-01-31
   # FT1: Proof of Entitlement/View Payments
   # FT2: Change of Bank
   - description: Mae allwedd ar goll a fyddai'n helpu defnyddwyr darllenydd sgrin i adnabod y cwestiwn. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
+    date: 2024-01-31
   - description: Mae capsiwn ar goll yn y tabl ar y dudalen 'Caiff eich Budd-dal Plant ei dalu i'r cyfrif hwn' ac nid oes gan y colofnau benawdau.  Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
+    date: 2024-01-31
   - description: Nid yw'r dilysiad ar gyfer y manylion banc yn arddangos negeseuon gwall penodol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
+    date: 2024-01-31
     # FT4: FTNAE (Full-Time Non-Advanced Education)
