@@ -56,5 +56,5 @@ ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Public beta
 
-# TODO new property to cater for updating the wcag version, do we need the AA / AAA on the version? This would be injected into any generic messaging referring to the wcag version
+# TODO This would be injected into any generic messaging referring to the wcag version
 wcagVersion: 2.1 AA
