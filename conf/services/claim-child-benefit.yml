@@ -9,10 +9,10 @@ ddc: DDC Newcastle
 complianceStatus: partial
 statementVisibility: public
 statementCreatedDate: 2022-10-04
-statementLastUpdatedDate: 2023-03-15
+statementLastUpdatedDate: 2023-10-30
 accessibilityProblems:
 - When the downloaded PDF is magnified, the content does not reflow and needs horizontal scrolling which makes it more difficult to read.
 milestones:
 - description: The downloaded PDF content does not reflow when magnified. This fails WCAG 2.1 success criterion 1.4.10 Reflow.
-  date: 2023-09-01
+  date: 2024-01-31
 serviceLastTestedDate: 2022-12-02
