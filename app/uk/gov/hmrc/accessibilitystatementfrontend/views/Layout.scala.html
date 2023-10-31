@@ -14,15 +14,17 @@
  * limitations under the License.
  *@
 
-@this(hmrcLayout: HmrcLayout)
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.{HmrcStandardPageParams, Banners}
+
+@this(hmrcLayout: HmrcStandardPage)
 
 @(
         pageTitle: String,
         isWelshTranslationAvailable: Boolean)(
         contentBlock: Html)(implicit request: Request[_], messages: Messages)
 
-@hmrcLayout(
+@hmrcLayout(HmrcStandardPageParams(
     pageTitle = Some(pageTitle),
-    displayHmrcBanner = true,
+    banners = Banners(displayHmrcBanner = true),
     isWelshTranslationAvailable = isWelshTranslationAvailable
-)(contentBlock)
+))(contentBlock)
