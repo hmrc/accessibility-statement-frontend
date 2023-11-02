@@ -1,0 +1,90 @@
+serviceName: Gwasanaeth Datganiadau Tollau (CDS) ‘Gwneud datganiad allforio’
+serviceHeaderName: Gwneud datganiad allforio
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn eich galluogi i wneud datganiad allforio ar y Gwasanaeth Datganiadau Tollau.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /customs-declare-exports
+contactFrontendServiceId: customs-declare-exports
+complianceStatus: partial
+accessibilityProblems:
+  - Roedd teitl y dudalen yn bresennol nad oedd yn ddisgrifiadol.
+  - Nid oedd testun yn cyflwyno cynnwys wedi’i farcio fel penawdau.
+  - Mae botymau radio yn methu’r berthynas raglennol â’r label gweladwy.
+  - Nid yw’r label gweladwy na’r label rhaglennol yn cyd-fynd â’i gilydd.
+  - Roedd elfennau’n bresennol nad oeddent yn hygyrch i ddefnyddwyr bysellfwrdd yn unig.
+  - Nid yw’r delweddau’n cynnwys testun amgen.
+  - Ni chafodd yr iaith ei gosod yn rhaglennol.
+  - Nid yw penawdau na labeli’n darparu disgrifiad cywir o’r cynnwys maent yn eu cyflwyno.
+  - Gall llywio’r dudalen drwy fysellfwrdd fynd yn ddryslyd ac yn rhwystredig os na ellir gweld canolbwynt.
+  - Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
+  - Canfuwyd bod cysylltiadau’n ddi-ddisgrifiad wrth lywio cyd-destun y dudalen.
+  - Mae cysylltiadau’n agor tab newydd heb rybudd ymlaen llaw.
+  - Wrth gyflawni gwall, ni wnaeth teitl y dudalen ddiweddaru i gynnwys y rhagddodiad ‘Gwall:’.
+  - Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
+  - Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
+  - Defnyddiwyd tirnodau llywio lle nad oedd eu hangen.
+  - Dull o adnabod y neges wall ar goll sy’n gysylltiedig â’r mewnbwn neu’r set maes.
+  - Nid oedd negeseuon gwall yn dilyn y fformat a gafodd ei awgrymu gan System Dylunio GOV.UK.
+  - Roedd pennawd dyblyg a thestun arysgrif yn bresennol.
+  - Roedd set maes ac arysgrif yn bresennol nad oedd ei angen.
+  - Nid yw’r cysylltiad neges wall ar goll yng nghrynodeb o’r gwall yn mynd â defnyddiwr i leoliad y gwall.
+  - Neges wall yn yr un llinell ar goll.
+  - Nid yw’r dudalen ‘Gwirio eich atebion’ yn gweithio yn ôl y disgwyl.
+  - Ni ddangoswyd yr iaith gywir.
+milestones:
+  - description: Roedd teitl y dudalen yn bresennol nad oedd yn ddisgrifiadol.
+    date: 2024-06-01
+  - description: Nid oedd testun yn cyflwyno cynnwys wedi’i farcio fel penawdau.
+    date: 2024-06-01
+  - description: Mae botymau radio yn methu’r berthynas raglennol â’r label gweladwy.
+    date: 2024-06-01
+  - description: Nid yw’r label gweladwy na’r label rhaglennol yn cyd-fynd â’i gilydd.
+    date: 2024-06-01
+  - description: Roedd elfennau’n bresennol nad oeddent yn hygyrch i ddefnyddwyr bysellfwrdd yn unig.
+    date: 2024-06-01
+  - description: Nid yw’r delweddau’n cynnwys testun amgen.
+    date: 2024-06-01
+  - description: Ni chafodd yr iaith ei gosod yn rhaglennol.
+    date: 2024-06-01
+  - description: Nid yw penawdau na labeli’n darparu disgrifiad cywir o’r cynnwys maent yn eu cyflwyno.
+    date: 2024-06-01
+  - description: Gall llywio’r dudalen drwy fysellfwrdd fynd yn ddryslyd ac yn rhwystredig os na ellir gweld canolbwynt.
+    date: 2024-06-01
+  - description: Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
+    date: 2024-06-01
+  - description: Canfuwyd bod cysylltiadau’n ddi-ddisgrifiad wrth lywio cyd-destun y dudalen.
+    date: 2024-06-01
+  - description: Mae cysylltiadau’n agor tab newydd heb rybudd ymlaen llaw.
+    date: 2024-06-01
+  - description: Wrth gyflawni gwall, ni wnaeth teitl y dudalen ddiweddaru i gynnwys y rhagddodiad ‘Gwall:’.
+    date: 2024-06-01
+  - description: Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
+    date: 2024-06-01
+  - description: Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
+    date: 2024-06-01
+  - description: Defnyddiwyd tirnodau llywio lle nad oedd eu hangen.
+    date: 2024-06-01
+  - description: Dull o adnabod y neges wall ar goll sy’n gysylltiedig â’r mewnbwn neu’r set maes.
+    date: 2024-06-01
+  - description: Nid oedd negeseuon gwall yn dilyn y fformat a gafodd ei awgrymu gan System Dylunio GOV.UK.
+    date: 2024-06-01
+  - description: Roedd pennawd dyblyg a thestun arysgrif yn bresennol.
+    date: 2024-06-01
+  - description: Roedd set maes ac arysgrif yn bresennol nad oedd ei angen.
+    date: 2024-06-01
+  - description: Nid yw’r cysylltiad neges wall ar goll yng nghrynodeb o’r gwall yn mynd â defnyddiwr i leoliad y gwall.
+    date: 2024-06-01
+  - description: Neges wall yn yr un llinell ar goll.
+    date: 2024-06-01
+  - description: Nid yw’r dudalen ‘Gwirio eich atebion’ yn gweithio yn ôl y disgwyl.
+    date: 2024-06-01
+  - description: Ni ddangoswyd yr iaith gywir.
+    date: 2024-06-01
+serviceLastTestedDate: 2022-08-14
+statementVisibility: public
+statementCreatedDate: 2021-01-08
+statementLastUpdatedDate: 2023-10-20
+businessArea: Borders & Trade
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta

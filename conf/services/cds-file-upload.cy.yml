@@ -1,0 +1,51 @@
+serviceName: Gwasanaeth Datganiadau Tollau (CDS) ‘Uwchlwytho dogfen tollau’
+serviceHeaderName: Uwchlwytho dogfen tollau
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn eich galluogi i uwchlwytho ffeiliau pan fydd gofyn am hyn gan y Gwasanaeth Datganiadau Tollau.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /cds-file-upload-service
+contactFrontendServiceId: cds-file-upload-service
+complianceStatus: partial
+accessibilityProblems:
+  - Roedd teitl y dudalen yn bresennol nad oedd yn ddisgrifiadol.
+  - Nid oedd testun yn cyflwyno cynnwys wedi’i farcio fel penawdau.
+  - Nid yw penawdau na labeli’n darparu disgrifiad cywir o’r cynnwys y maent yn eu cyflwyno.
+  - Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
+  - Canfuwyd testun gyda chymhareb cyferbyniad lliw annigonol.
+  - Wrth gyflawni gwall, ni wnaeth teitl y dudalen ddiweddaru i gynnwys y rhagddodiad ‘Gwall:’.
+  - Nid oedd gwallau’n bresennol.
+  - Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
+  - Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
+  - Defnyddiwyd tirnodau llywio lle nad oedd eu hangen.
+  - Wrth gyflawni gwall, nid oes canolbwynt ar grynodeb o’r gwall yn awtomatig.
+milestones:
+  - description: Roedd teitl y dudalen yn bresennol nad oedd yn ddisgrifiadol.
+    date: 2024-06-01
+  - description: Nid oedd testun yn cyflwyno cynnwys wedi’i farcio fel penawdau.
+    date: 2024-06-01
+  - description: Nid yw penawdau na labeli’n darparu disgrifiad cywir o’r cynnwys y maent yn eu cyflwyno.
+    date: 2024-06-01
+  - description: Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
+    date: 2024-06-01
+  - description: Canfuwyd testun gyda chymhareb cyferbyniad lliw annigonol.
+    date: 2024-06-01
+  - description: Wrth gyflawni gwall, ni wnaeth teitl y dudalen ddiweddaru i gynnwys y rhagddodiad ‘Gwall:’.
+    date: 2024-06-01
+  - description: Nid oedd gwallau’n bresennol.
+    date: 2024-06-01
+  - description: Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
+    date: 2024-06-01
+  - description: Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
+    date: 2024-06-01
+  - description: Defnyddiwyd tirnodau llywio lle nad oedd eu hangen.
+    date: 2024-06-01
+  - description: Wrth gyflawni gwall, nid oes canolbwynt ar grynodeb o’r gwall yn awtomatig.
+    date: 2024-06-01
+serviceLastTestedDate: 2022-08-14
+statementVisibility: public
+statementCreatedDate: 2019-09-16
+statementLastUpdatedDate: 2023-10-20
+businessArea: Borders & Trade
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta

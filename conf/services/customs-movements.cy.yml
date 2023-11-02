@@ -1,0 +1,33 @@
+serviceName: Gwasanaeth Datganiadau Tollau (CDS) ‘Rhoi gwybod i CThEF pan fydd nwyddau’n cyrraedd neu’n gadael porthladd yn y DU’
+serviceHeaderName: Rhoi gwybod i CThEF pan fydd nwyddau’n cyrraedd neu’n gadael porthladd yn y DU
+serviceDescription: |
+  Mae’r gwasanaeth hwn yn eich galluogi i adrodd am symudiadau tollau fel nwyddau sy’n cyrraedd a nwyddau sy’n ymadael.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /customs-movements
+contactFrontendServiceId: customs-movements
+complianceStatus: partial
+accessibilityProblems:
+  - Mae cysylltiadau’n agor tab newydd heb rybudd ymlaen llaw.
+  - Wrth gyflawni gwall, ni wnaeth teitl y dudalen ddiweddaru i gynnwys y rhagddodiad ‘Gwall:’.
+  - Dull o adnabod y neges wall ar goll, sy’n gysylltiedig â’r mewnbwn neu’r set maes.
+  - Roedd pennawd dyblyg a thestun arysgrif yn bresennol.
+  - Nid yw’r cysylltiad neges wall ar goll, yng nghrynodeb o’r gwall yn mynd â defnyddiwr i leoliad y gwall.
+milestones:
+  - description: Mae cysylltiadau’n agor tab newydd heb rybudd ymlaen llaw.
+    date: 2024-06-01
+  - description: Wrth gyflawni gwall, ni wnaeth teitl y dudalen ddiweddaru i gynnwys y rhagddodiad ‘Gwall:’.
+    date: 2024-06-01
+  - description: Dull o adnabod y neges wall ar goll, sy’n gysylltiedig â’r mewnbwn neu’r set maes.
+    date: 2024-06-01
+  - description: Roedd pennawd dyblyg a thestun arysgrif yn bresennol.
+    date: 2024-06-01
+  - description: Nid yw’r cysylltiad neges wall ar goll, yng nghrynodeb o’r gwall yn mynd â defnyddiwr i leoliad y gwall.
+    date: 2024-06-01
+serviceLastTestedDate: 2022-08-14
+statementVisibility: public
+statementCreatedDate: 2021-01-12
+statementLastUpdatedDate: 2023-10-20
+businessArea: Borders & Trade
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta
