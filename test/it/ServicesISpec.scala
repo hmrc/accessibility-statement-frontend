@@ -38,6 +38,21 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
   private val partiallyCompliantWithoutMilestones: Seq[String] =
     Seq("pay-by-bank", "pay-by-bank.cy", "example-partially-compliant-no-milestones")
 
+  // TODO: These statements have formatting in their milestones that fail the regex for WCAG version matches text in
+  // milestones. Will need to be manually amended, we should work with DIAS on this
+  private val wcagMilestoneFormattingKnownIssues: Seq[String] =
+    Seq(
+      "council-tax-band", // No WCAG version referenced in milestone
+      "enter-cross-border-arrangements", // No WCAG version referenced in milestone
+      "emcs-tfe-report-a-receipt-frontend", // References WCAG 2.2
+      "emcs-tfe-explain-shortage-excess-frontend", // References WCAG 2.2
+      "emcs-tfe-explain-delay-frontend", // References WCAG 2.2
+      "disclose-cross-border-arrangements", // WCAG in text followed by success criterion
+      "income-tax", // No WCAG version referenced in milestone
+      "ipt100-insurance-premium-tax", // References WCAG 2.0
+      "tax-you-paid" // No WCAG version referenced in milestone
+    )
+
   "validate field values" should {
     trait Context {
       val minimalPassingServiceYAML: String = """
@@ -204,6 +219,26 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
       s"enforce lastTestedDate provided unless non-compliant for $service" in {
         val statement: AccessibilityStatement = statementTry.get
         statement.serviceLastTestedDate.isDefined || statement.complianceStatus == NoCompliance should be(true)
+      }
+
+      s"enforce WCAG version consistency for $service" in {
+        val statement: AccessibilityStatement = statementTry.get
+        if (!wcagMilestoneFormattingKnownIssues.contains(service)) {
+          val findWcagVersionInMilestone = "(?s).*(WCAG|fersiwn) ([\\d.]+).*".r
+          val wcagVersion                = statement.wcagVersion.version
+
+          statement.milestones.map { milestones =>
+            milestones foreach { milestone =>
+              milestone.description match {
+                case findWcagVersionInMilestone(_, milestoneVersion) =>
+                  withClue(milestone.description) {
+                    milestoneVersion should startWith(wcagVersion)
+                  }
+                case _                                               => ()
+              }
+            }
+          }
+        }
       }
 
       s"enforce serviceUrl starting with / for $service" in {

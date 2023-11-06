@@ -28,13 +28,13 @@
 <p class="govuk-body">@{messages("technical.commitment")}</p>
 
 @if(isFullyCompliant) {
-    <p class="govuk-body">@{messages("technical.compliance.full")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("general.fullstop")}</p>
+    <p class="govuk-body">@{messages("technical.compliance.full")} <a class="govuk-link" href="@{statement.wcagVersion.href}">@{messages("technical.compliance.guidelines", statement.wcagVersion)}</a>@{messages("general.fullstop")}</p>
 } else {
     @if(isNonCompliant) {
-        <p class="govuk-body">@{messages("technical.compliance.noncompliant")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
+        <p class="govuk-body">@{messages("technical.compliance.noncompliant")}<a class="govuk-link" href="@{statement.wcagVersion.href}">@{messages("technical.compliance.guidelines", statement.wcagVersion)}</a>@{messages("technical.compliance.partial.reasons")}
         </p>
     } else {
-        <p class="govuk-body">@{messages("technical.compliance.partial")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@if(hasMilestones){@{messages("technical.compliance.partial.reasons")}}else{@{messages("general.fullstop")}}
+        <p class="govuk-body">@{messages("technical.compliance.partial")} <a class="govuk-link" href="@{statement.wcagVersion.href}">@{messages("technical.compliance.guidelines", statement.wcagVersion)}</a>@if(hasMilestones){@{messages("technical.compliance.partial.reasons")}}else{@{messages("general.fullstop")}}
         </p>
     }
 }
@@ -54,5 +54,5 @@
 }
 
 @if(isNonCompliant) {
-    <p class="govuk-body">@messages("technical.non-compliance.not-tested")</p>
+    <p class="govuk-body">@messages("technical.non-compliance.not-tested", statement.wcagVersion)</p>
 }

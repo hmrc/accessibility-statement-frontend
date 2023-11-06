@@ -25,7 +25,7 @@ import play.api.Configuration
 import play.api.i18n.{Lang, Messages, MessagesApi}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, VOA}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, Draft, FullCompliance, Ios, Milestone, NoCompliance, PartialCompliance, VOA, WCAG22AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
@@ -101,10 +101,13 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     }
 
     "return HTML containing the correctly formatted dates of when the service was tested" in new FullSetup {
-      fullyAccessibleStatementHtml should include(
+      fullyAccessibleStatementHtml       should include(
         """<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.1 AA.</p>"""
       )
-      fullyAccessibleStatementHtml should include(
+      fullyAccessibleWcag22StatementHtml should include(
+        """<p class="govuk-body">The service was last tested on 28 February 2020 and was checked for compliance with WCAG 2.2 AA.</p>"""
+      )
+      fullyAccessibleStatementHtml       should include(
         """<p class="govuk-body">This page was prepared on 15 March 2020. It was last updated on 1 May 2020.</p>"""
       )
     }
@@ -281,10 +284,13 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
   "Given an Accessibility Statement for a fully accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is fully compliant" in new FullSetup {
-      fullyAccessibleStatementHtml should include(
+      fullyAccessibleStatementHtml       should include(
         """<p class="govuk-body">This service is fully compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>.</p>"""
       )
-      fullyAccessibleStatementHtml should include(
+      fullyAccessibleWcag22StatementHtml should include(
+        """<p class="govuk-body">This service is fully compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines version 2.2 AA standard</a>.</p>"""
+      )
+      fullyAccessibleStatementHtml       should include(
         """<p class="govuk-body">There are no known accessibility issues within this service.</p>"""
       )
     }
@@ -336,8 +342,11 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
   "Given an Accessibility Statement for a partially accessible service, rendering a Statement Page" should {
     "return HTML containing the expected accessibility information stating that the service is partially compliant" in new PartialSetup {
-      partiallyAccessibleStatementHtml should include(
+      partiallyAccessibleStatementHtml       should include(
         """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>.</p>"""
+      )
+      partiallyAccessibleWcag22StatementHtml should include(
+        """<p class="govuk-body">This service is partially compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines version 2.2 AA standard</a>.</p>"""
       )
     }
 
@@ -357,8 +366,11 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     }
 
     "return HTML stating that the service has known compliance issues" in new PartialSetup {
-      partiallyAccessibleStatementHtml should include(
+      partiallyAccessibleStatementHtml       should include(
         """This service is partially compliant with the  <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>, due to the non-compliances listed below."""
+      )
+      partiallyAccessibleWcag22StatementHtml should include(
+        """This service is partially compliant with the  <a class="govuk-link" href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines version 2.2 AA standard</a>, due to the non-compliances listed below."""
       )
     }
 
@@ -542,6 +554,13 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
         isWelshTranslationAvailable = false
       ).body
 
+    lazy val fullyAccessibleWcag22StatementHtml =
+      statementPage(
+        fullyAccessibleServiceStatement.copy(wcagVersion = WCAG22AA),
+        None,
+        isWelshTranslationAvailable = false
+      ).body
+
     lazy val fullyAccessibleIosStatementHtml = statementPage(
       fullyAccessibleIosAppStatement,
       None,
@@ -640,6 +659,12 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     lazy val partiallyAccessibleStatementHtml = statementPage(
       partiallyAccessibleServiceStatement,
+      None,
+      isWelshTranslationAvailable = false
+    ).body
+
+    lazy val partiallyAccessibleWcag22StatementHtml = statementPage(
+      partiallyAccessibleServiceStatement.copy(wcagVersion = WCAG22AA),
       None,
       isWelshTranslationAvailable = false
     ).body

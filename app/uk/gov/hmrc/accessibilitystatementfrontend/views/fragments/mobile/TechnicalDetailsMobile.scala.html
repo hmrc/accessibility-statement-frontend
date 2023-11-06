@@ -28,13 +28,13 @@
 <p class="govuk-body">@{messages("technical.commitment.app")}</p>
 
 @if(isFullyCompliant) {
-    <p class="govuk-body">@{messages("technical.compliance.full.app")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("general.fullstop")}</p>
+    <p class="govuk-body">@{messages("technical.compliance.full.app")} <a class="govuk-link" href="@{statement.wcagVersion.href}">@{messages("technical.compliance.guidelines", statement.wcagVersion)}</a>@{messages("general.fullstop")}</p>
 } else {
     @if(isNonCompliant) {
-        <p class="govuk-body">@{messages("technical.compliance.noncompliant.app")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
+        <p class="govuk-body">@{messages("technical.compliance.noncompliant.app")} <a class="govuk-link" href="@{statement.wcagVersion.href}">@{messages("technical.compliance.guidelines", statement.wcagVersion)}</a>@{messages("technical.compliance.partial.reasons")}
         </p>
     } else {
-        <p class="govuk-body">@{messages("technical.compliance.partial.app")} <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">@{messages("technical.compliance.guidelines")}</a>@{messages("technical.compliance.partial.reasons")}
+        <p class="govuk-body">@{messages("technical.compliance.partial.app")} <a class="govuk-link" href="@{statement.wcagVersion.href}">@{messages("technical.compliance.guidelines", statement.wcagVersion)}</a>@{messages("technical.compliance.partial.reasons")}
         </p>
     }
     <h3 class="govuk-heading-m">@{messages("technical.non-compliance.header")}</h3>
