@@ -18,8 +18,10 @@ package uk.gov.hmrc.accessibilitystatementfrontend.models
 
 import java.util.Date
 import io.circe.{Decoder, Encoder}
-import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
+import io.circe.generic.semiauto.deriveEncoder
 import play.api.i18n.Messages
+import io.circe.generic.extras.semiauto
+import io.circe.generic.extras.Configuration
 
 case class AccessibilityStatement(
   serviceName: String,
@@ -40,7 +42,8 @@ case class AccessibilityStatement(
   businessArea: Option[BusinessArea],
   ddc: Option[DDC],
   liveOrClassic: Option[LiveOrClassic],
-  typeOfService: Option[TypeOfService]
+  typeOfService: Option[TypeOfService],
+  wcagVersion: WCAGVersion = WCAG21AA
 ) extends Ordered[AccessibilityStatement] {
 
   val statementTemplate: StatementType = statementType match {
@@ -86,8 +89,10 @@ case class AccessibilityStatement(
 }
 
 object AccessibilityStatement {
+  implicit val customConfig: Configuration = Configuration.default.withDefaults
+
   implicit val e: Encoder[AccessibilityStatement] =
     deriveEncoder[AccessibilityStatement]
   implicit val d: Decoder[AccessibilityStatement] =
-    deriveDecoder[AccessibilityStatement]
+    semiauto.deriveConfiguredDecoder[AccessibilityStatement]
 }

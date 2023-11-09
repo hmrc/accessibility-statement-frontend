@@ -27,13 +27,13 @@
 <h2 class="govuk-heading-l">@{messages("testing.heading.app")}</h2>
 
 @if(isNonCompliant) {
-    <p class="govuk-body">@{messages("testing.details.noncompliant.app")}</p>
+    <p class="govuk-body">@{messages("testing.details.noncompliant.app", statement.wcagVersion)}</p>
 } else {
     @if(serviceLastTestedDate.isDefined) {
         @if(displayAutomatedTestingOnlyContent) {
-            <p class="govuk-body">@{messages("testing.last-tested.automated.app", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)))}</p>
+            <p class="govuk-body">@{messages("testing.last-tested.automated.app", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)), statement.wcagVersion)}</p>
         } else {
-            <p class="govuk-body">@{messages("testing.last-tested.app", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)))}</p>
+            <p class="govuk-body">@{messages("testing.last-tested.app", utils.Dates.formatDate(dateToLocalDate(serviceLastTestedDate.get)), statement.wcagVersion)}</p>
         }
     }
     <p class="govuk-body">@{messages("testing.details.part1.app")}

@@ -21,7 +21,7 @@ import org.scalatest.EitherValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
-import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, VOA}
+import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, VOA, WCAG21AA, WCAG22AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import java.io.FileNotFoundException
@@ -373,6 +373,41 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       )
     }
 
+    "parse a statement with a default WCAG version of 2.1 if none specified" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: draft
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.value.wcagVersion should equal(WCAG21AA)
+    }
+
+    "parse a statement with a valid WCAG version specified" in {
+      val statementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: draft
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |wcagVersion: 2.2 AA""".stripMargin('|')
+
+      val parsed = parser.parse(statementYaml)
+      parsed.value.wcagVersion should equal(WCAG22AA)
+    }
+
     "let Circe parsing errors throw with malformed YAML" in {
       val malformed = """- 1
             |2""".stripMargin
@@ -493,6 +528,27 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
 
       parsed.left.value.getMessage should startWith(
         "String: DownField(complianceStatus)"
+      )
+    }
+
+    "throw a DecodingError if the WCAG version is incorrect" in {
+      val problemStatementYaml =
+        """serviceName: Send your loan charge details
+          |serviceDescription: This service allows you to report details of your disguised remuneration loan charge scheme and account for your loan charge liability.
+          |serviceDomain: www.tax.service.gov.uk
+          |serviceUrl: /disguised-remuneration
+          |contactFrontendServiceId: disguised-remuneration
+          |complianceStatus: full
+          |serviceLastTestedDate: 2019-12-09
+          |statementVisibility: draft
+          |statementCreatedDate: 2019-09-23
+          |statementLastUpdatedDate: 2019-04-01
+          |wcagVersion: 2.3 AA""".stripMargin('|')
+
+      val parsed = parser.parse(problemStatementYaml)
+
+      parsed.left.value.getMessage should startWith(
+        "Unrecognised WCAG version \"2.3 AA\""
       )
     }
 

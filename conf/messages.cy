@@ -60,7 +60,7 @@ accessibility.compliance.noncompliant=Nid yw’r gwasanaeth hwn yn cydymffurfio 
 accessibility.compliance.noncompliant.app=Nid yw’r ap hwn yn cydymffurfio â
 accessibility.compliance.noncompliant.explanation=. Nid yw’r gwasanaeth hwn wedi cael ei wirio eto i weld a yw’n cydymffurfio neu beidio, felly gall rhai defnyddwyr ei chael yn anodd defnyddio rhannau o’r gwasanaeth.
 accessibility.compliance.noncompliant.explanation.app=. Nid yw’r ap hwn wedi cael ei wirio eto i weld a yw’n cydymffurfio neu beidio, felly gall rhai defnyddwyr ei chael yn anodd defnyddio rhannau o’r ap.
-accessibility.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+accessibility.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {0}
 accessibility.has-issues=Mae’n bosibl y bydd rhai pobl yn cael anhawster i ddefnyddio rhannau o’r gwasanaeth hwn:
 accessibility.has-issues.app=Mae’n bosibl y bydd rhai pobl yn cael anhawster i ddefnyddio rhannau o’r ap hwn:
 accessibility.no-issues=Nid oes unrhyw broblemau hygyrchedd hysbys yn y gwasanaeth hwn.
@@ -116,31 +116,31 @@ technical.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol
 technical.compliance.partial.app='Mae’r ap hwn yn cydymffurfio’n rhannol â '
 technical.compliance.noncompliant='Nid yw’r gwasanaeth hwn yn cydymffurfio â '
 technical.compliance.noncompliant.app='Nid yw’r ap hwn yn cydymffurfio â '
-technical.compliance.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+technical.compliance.guidelines=safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {0}
 technical.compliance.partial.reasons=, oherwydd y diffyg cydymffurfio a restrir isod.
 technical.non-compliance.header=Cynnwys nad yw’n hygyrch
 technical.non-compliance.introduction=Nid yw’r cynnwys a restrir isod yn hygyrch oherwydd y rhesymau canlynol.
 technical.non-compliance.accessibility=Diffyg cydymffurfio â’r rheoliadau hygyrchedd
 technical.non-compliance.milestone.fix-by=Bydd hyn yn cael ei drwsio erbyn {0}.
 # these messages include Welsh translation of 1 December 2023 - update if this date changes again
-technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 1 Rhagfyr 2023.
+technical.non-compliance.not-tested=Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {0}. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 1 Rhagfyr 2023.
 technical.non-compliance.automated.test-by=Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 1 Rhagfyr 2023.
 technical.non-compliance.automated.test-by.app=Bydd yr ap hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 1 Rhagfyr 2023.
 
 ## Testing
 testing.heading=Sut gwnaethom brofi’r gwasanaeth hwn
 testing.heading.app=Sut gwnaethom brofi’r ap hwn
-testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.last-tested.app=Cafodd yr app ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.last-tested.automated.app=Cafodd y ap ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.last-tested=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {1}.
+testing.last-tested.app=Cafodd yr app ei brofi ddiwethaf ar {0} a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {1}.
+testing.last-tested.automated=Cafodd y gwasanaeth ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {1}.
+testing.last-tested.automated.app=Cafodd y ap ei brofi ddiwethaf ar {0} gan ddefnyddio offerynnau awtomataidd a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {1}.
 testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y '
 testing.details.part1.app='Adeiladwyd yr app gan ddefnyddio rhannau a brofwyd gan y '
 testing.details.part2=Ganolfan Hygyrchedd Digidol
 testing.details.part3=. Profwyd y gwasanaeth llawn gan CThEF, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
 testing.details.part3.app=. Profwyd yr app llawn gan CThEF, ac roedd y gwaith o brofi’r app yn cynnwys defnyddwyr anabl.
-testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-testing.details.noncompliant.app=Nid yw’r ap wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {0}.
+testing.details.noncompliant.app=Nid yw’r ap wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn {0}.
 testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.
 
 ## Not Found Page
