@@ -1,7 +1,7 @@
 serviceName: Dilyn ac Olrhain
 serviceHeaderName: Eich cyfrif treth personol
 serviceDescription: |
-  Mae’r gwasanaeth Dilyn ac Olrhain yn gadael i chi ddilyn hynt ffurflen a anfonoch i CThEM.
+  Mae’r gwasanaeth Dilyn ac Olrhain yn gadael i chi ddilyn hynt ffurflen a anfonoch i CThEF.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /track
 contactFrontendServiceId: TYF

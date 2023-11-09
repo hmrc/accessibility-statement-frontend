@@ -1,7 +1,7 @@
 serviceName: creu cyfrif gwasanaethau asiant
 serviceHeaderName: Creu cyfrif gwasanaethau asiant
 serviceDescription: |
-  Mae’r gwasanaeth hwn yn eich galluogi i greu cyfrif gwasanaethau asiant CThEM ar gyfer eich cwmni asiant treth.
+  Mae’r gwasanaeth hwn yn eich galluogi i greu cyfrif gwasanaethau asiant CThEF ar gyfer eich cwmni asiant treth.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-subscripion/start
 contactFrontendServiceId: AOSS

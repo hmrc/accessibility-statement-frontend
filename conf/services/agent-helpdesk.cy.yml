@@ -1,7 +1,7 @@
 serviceName: cefnogaeth gan y ddesg gymorth ar gyfer defnyddwyr gwasanaethau asiant dros y ffôn
 serviceHeaderName: Cefnogaeth gan y ddesg gymorth ar gyfer defnyddwyr gwasanaethau asiant dros y ffôn
 serviceDescription: |
-  Mae’r gwasanaeth hwn yn galluogi staff CThEM i helpu cleientiaid asiantau i ddelio â cheisiadau am awdurdodiad neu geisiadau gan asiantau tramor er mwyn cymeradwyo cyfrif gwasanaethau asiant ac adolygu gwiriadau sicrwydd asiant.
+  Mae’r gwasanaeth hwn yn galluogi staff CThEF i helpu cleientiaid asiantau i ddelio â cheisiadau am awdurdodiad neu geisiadau gan asiantau tramor er mwyn cymeradwyo cyfrif gwasanaethau asiant ac adolygu gwiriadau sicrwydd asiant.
 serviceDomain: www.admin.tax.service.gov.uk
 serviceUrl: /agent-services/check-application
 contactFrontendServiceId: AOSS

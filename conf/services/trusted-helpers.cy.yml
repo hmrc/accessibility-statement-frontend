@@ -1,7 +1,7 @@
 serviceName: Cynorthwywyr y Gellir Ymddiried Ynddynt
 serviceHeaderName: Cynorthwywyr y Gellir Ymddiried Ynddynt
 serviceDescription: |
-  Mae’r gwasanaeth Cynorthwywyr y Gellir Ymddiried Yndynt yn galluogi rhywun i weithredu ar ran rhywun arall wrth ddelio â CThEM drwy’r post, dros y ffôn ac ar-lein. Gall y naill berson neu’r llall ei sefydlu.
+  Mae’r gwasanaeth Cynorthwywyr y Gellir Ymddiried Yndynt yn galluogi rhywun i weithredu ar ran rhywun arall wrth ddelio â CThEF drwy’r post, dros y ffôn ac ar-lein. Gall y naill berson neu’r llall ei sefydlu.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trusted-helpers
 contactFrontendServiceId: trusted-helpers

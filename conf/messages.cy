@@ -18,9 +18,9 @@ introduction.service-name.app=Mae’r dudalen hon ond yn cynnwys gwybodaeth am {
 using-service.heading=Defnyddio’r gwasanaeth hwn
 using-service.heading.app=Defnyddio’r ap hwn
 
-using-service.this-service-is-run=Darperir y gwasanaeth hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
-using-service.this-service-is-run.app=Darperir y ap hwn gan Gyllid a Thollau EM (CThEM). Rydym am i gymaint o bobl â phosibl allu defnyddio’r ap hwn.' '
-using-service.this-service-is-run.voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EM (CThEM), sy’n rhedeg y gwasanaeth hwn. Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-is-run=Darperir y gwasanaeth hwn gan Gyllid a Thollau EF (CThEF). Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
+using-service.this-service-is-run.app=Darperir y ap hwn gan Gyllid a Thollau EF (CThEF). Rydym am i gymaint o bobl â phosibl allu defnyddio’r ap hwn.' '
+using-service.this-service-is-run.voa=Asiantaeth y Swyddfa Brisio, sef asiantaeth weithredol o dan Gyllid a Thollau EF (CThEF), sy’n rhedeg y gwasanaeth hwn. Rydym am i gymaint o bobl â phosibl allu defnyddio’r gwasanaeth hwn.' '
 using-service.service.this-means=Mae hyn yn golygu y dylech allu:
 using-service.app.this-means='Mae hyn yn golygu y gallwch ddefnyddio’r '
 using-service.app.accessibility-features=nodweddion hygyrchedd
@@ -69,7 +69,7 @@ accessibility.no-issues.app=Nid oes unrhyw broblemau hygyrchedd hysbys yn y ap h
 ## Contact
 contact.heading=Yr hyn i’w wneud os ydych yn cael anhawster wrth ddefnyddio’r gwasanaeth hwn
 contact.extra-support.part1='Gallwch '
-contact.extra-support.part2=gysylltu â CThEM os oes angen cymorth ychwanegol
+contact.extra-support.part2=gysylltu â CThEF os oes angen cymorth ychwanegol
 contact.extra-support.part2.link=https://www.gov.uk/cael-help-cthem-cymorth-ychwanegol
 contact.extra-support.part3=' arnoch i lenwi ffurflenni, neu i gael fformat gwahanol, megis print bras, recordiad sain neu Braille.'
 contact.extra-support-voa.part1='Gallwch '
@@ -100,16 +100,16 @@ complaints.additional-contacts.part5=os ydych yn byw yng Ngogledd Iwerddon.
 ## In person contact
 in-person-contact.heading=Cysylltu â ni dros y ffôn neu gael ymweliad personol gennym
 in-person-contact.text-relay=Rydym yn cynnig gwasanaeth ‘text relay’ os ydych yn fyddar, â nam ar eich clyw neu os oes gennych nam ar eich lleferydd.
-in-person-contact.bsl=Gallwn ddarparu dehonglydd Iaith Arwyddion Prydain (BSL), neu gallwch drefnu ymweliad gan ymgynghorydd CThEM i’ch helpu i gwblhau’r gwasanaeth.
+in-person-contact.bsl=Gallwn ddarparu dehonglydd Iaith Arwyddion Prydain (BSL), neu gallwch drefnu ymweliad gan ymgynghorydd CThEF i’ch helpu i gwblhau’r gwasanaeth.
 in-person-contact.find-out-how.part1='Dysgwch '
 in-person-contact.find-out-how.link=https://www.gov.uk/cael-help-cthem-cymorth-ychwanegol
-in-person-contact.find-out-how.part2=sut i gael cymorth ychwanegol oddi wrth CThEM
+in-person-contact.find-out-how.part2=sut i gael cymorth ychwanegol oddi wrth CThEF
 
 ## Technical information
 technical.heading=Gwybodaeth dechnegol am hygyrchedd y gwasanaeth hwn
 technical.heading.app=Gwybodaeth dechnegol am hygyrchedd yr app hwn
-technical.commitment=Mae CThEM wedi ymrwymo i wneud y gwasanaeth hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
-technical.commitment.app=Mae CThEM wedi ymrwymo i wneud yr app hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
+technical.commitment=Mae CThEF wedi ymrwymo i wneud y gwasanaeth hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
+technical.commitment.app=Mae CThEF wedi ymrwymo i wneud yr app hwn yn hygyrch, yn unol â Rheoliadau Hygyrchedd Cyrff Sector Cyhoeddus (Gwefannau a Chymwysiadau Symudol) (Rhif 2) 2018.
 technical.compliance.full=Mae’r gwasanaeth hwn yn cydymffurfio’n llawn â' '
 technical.compliance.full.app=Mae’r ap hwn yn cydymffurfio’n llawn â' '
 technical.compliance.partial='Mae’r gwasanaeth hwn yn cydymffurfio’n rhannol â '
@@ -137,8 +137,8 @@ testing.last-tested.automated.app=Cafodd y ap ei brofi ddiwethaf ar {0} gan ddef
 testing.details.part1='Adeiladwyd y gwasanaeth gan ddefnyddio rhannau a brofwyd gan y '
 testing.details.part1.app='Adeiladwyd yr app gan ddefnyddio rhannau a brofwyd gan y '
 testing.details.part2=Ganolfan Hygyrchedd Digidol
-testing.details.part3=. Profwyd y gwasanaeth llawn gan CThEM, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
-testing.details.part3.app=. Profwyd yr app llawn gan CThEM, ac roedd y gwaith o brofi’r app yn cynnwys defnyddwyr anabl.
+testing.details.part3=. Profwyd y gwasanaeth llawn gan CThEF, ac roedd y gwaith o brofi’r gwasanaeth yn cynnwys defnyddwyr anabl.
+testing.details.part3.app=. Profwyd yr app llawn gan CThEF, ac roedd y gwaith o brofi’r app yn cynnwys defnyddwyr anabl.
 testing.details.noncompliant=Nid yw’r gwasanaeth wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.details.noncompliant.app=Nid yw’r ap wedi’i brofi i sicrhau ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
 testing.created-and-updated=Paratowyd y dudalen hon ar {0}. Cafodd ei diweddaru ddiwethaf ar {1}.

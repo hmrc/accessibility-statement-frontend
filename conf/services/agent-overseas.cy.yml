@@ -1,7 +1,7 @@
 serviceName: gwneud cais am gyfrif gwasanaethau asiant, a chreu un, os nad ydych yn y DU
 serviceHeaderName: Gwneud cais am gyfrif gwasanaethau asiant, a chreu un, os nad ydych yn y DU
 serviceDescription: |
-  Rydych yn defnyddio’r gwasanaeth hwn i wneud cais i CThEM am gymeradwyaeth i greu cyfrif gwasanaethau asiant os yw’ch busnes asiant wedi’i leoli y tu allan i’r DU. Gallwch hefyd ei ddefnyddio i orffen creu’r cyfrif ar ôl i CThEM gymeradwyo’ch cais.
+  Rydych yn defnyddio’r gwasanaeth hwn i wneud cais i CThEF am gymeradwyaeth i greu cyfrif gwasanaethau asiant os yw’ch busnes asiant wedi’i leoli y tu allan i’r DU. Gallwch hefyd ei ddefnyddio i orffen creu’r cyfrif ar ôl i CThEF gymeradwyo’ch cais.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-services/apply-from-outside-uk
 contactFrontendServiceId: AOSS

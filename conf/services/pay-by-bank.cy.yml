@@ -1,7 +1,7 @@
 serviceName: talu drwy gyfrif banc
 serviceHeaderName: talu drwy gyfrif banc
 serviceDescription: |
-  Mae’r gwasanaeth hwn yn caniatáu i chi sicrhau bod taliad i CThEM yn dod yn syth allan o’ch cyfrif banc.
+  Mae’r gwasanaeth hwn yn caniatáu i chi sicrhau bod taliad i CThEF yn dod yn syth allan o’ch cyfrif banc.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-by-bank
 contactFrontendServiceId: open-banking
