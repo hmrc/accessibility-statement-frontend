@@ -49,6 +49,7 @@ class StatementReportTask @Inject() (
     "DDC",
     "Live or Classic",
     "type of Service",
+    "WCAG version",
     "In Statement Service"
   )
 
@@ -103,6 +104,7 @@ class StatementReportTask @Inject() (
       ddc.map(_.toString).getOrElse(""),
       liveOrClassic.map(_.toString).getOrElse(""),
       typeOfService.map(_.toString).getOrElse(""),
+      wcagVersion.value,
       isInStatementService
     )
   }
