@@ -187,11 +187,7 @@ form, you will find it added as a querystring parameter `service` in URLs to con
 
 If you look in your service's frontend source code, you should see URLs constructed similar to
 
-`s"$contactHost/contact/problem_reports_ajax?service=foo"`
-
-or
-
-`s"$contactHost/contact/problem_reports_nonjs?service=foo"`
+`s"$contactHost/contact/report-technical-problem?service=foo"`
 
 The contactFrontendServiceId here would be `foo`.
 
