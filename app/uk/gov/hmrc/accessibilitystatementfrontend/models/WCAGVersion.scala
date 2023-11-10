@@ -19,6 +19,7 @@ package uk.gov.hmrc.accessibilitystatementfrontend.models
 sealed trait WCAGVersion extends EnumValue {
   val href: String
   val version: String
+  val requiredSupportedZoomPercentage: String
   def value = s"$version AA"
 }
 
@@ -28,15 +29,17 @@ object WCAGVersion extends Enum[WCAGVersion] {
 }
 
 case object WCAG21AA extends WCAGVersion {
-  val version: String = "2.1"
-  val href            = "https://www.w3.org/TR/WCAG21/"
+  val version: String                         = "2.1"
+  val href                                    = "https://www.w3.org/TR/WCAG21/"
+  val requiredSupportedZoomPercentage: String = "300"
 
   override def toString: String = version
 }
 
 case object WCAG22AA extends WCAGVersion {
-  val version = "2.2"
-  val href    = "https://www.w3.org/TR/WCAG22/"
+  val version                                 = "2.2"
+  val href                                    = "https://www.w3.org/TR/WCAG22/"
+  val requiredSupportedZoomPercentage: String = "400"
 
   override def toString: String = version
 }

@@ -29,7 +29,7 @@ using-service.app.accessibility-features.link.android=https://www.android.com/in
 using-service.app.on-your-device=' on your device to:'
 
 using-service.bullet1=change colours, contrast levels and fonts
-using-service.bullet2=zoom in up to 300% without the text spilling off the screen
+using-service.bullet2=zoom in up to {0}% without the text spilling off the screen
 using-service.bullet3=get from the start of the service to the end using just a keyboard
 using-service.bullet4=get from the start of the service to the end using speech recognition software
 using-service.bullet5=listen to the service using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
