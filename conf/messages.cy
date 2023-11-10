@@ -27,7 +27,7 @@ using-service.app.accessibility-features=nodweddion hygyrchedd
 using-service.app.on-your-device=' ar eich dyfais i wneud y canlynol:'
 
 using-service.bullet1=newid lliwiau, lefelau cyferbyniad a ffontiau
-using-service.bullet2=chwyddo’r sgrin hyd at 300% heb i’r testun ddisgyn oddi ar y sgrin
+using-service.bullet2=chwyddo’r sgrin hyd at {0}% heb i’r testun ddisgyn oddi ar y sgrin
 using-service.bullet3=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio bysellfwrdd yn unig
 using-service.bullet4=mynd o ddechrau’r gwasanaeth i’r diwedd gan ddefnyddio meddalwedd adnabod lleferydd
 using-service.bullet5=gwrando ar y gwasanaeth drwy ddefnyddio darllenydd sgrin (gan gynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)
