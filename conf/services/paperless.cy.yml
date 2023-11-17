@@ -1,19 +1,19 @@
 serviceName: Dewis Cyswllt Digidol
 serviceHeaderName: Dewis Cyswllt Digidol
 serviceDescription: |
-  Mae’r gwasanaeth Dewis Cyswllt Digidol yn galluogi cwsmeriaid CThEM i ddewis sut maent yn cael eu llythyrau treth, megis hysbysiadau i gyflwyno Ffurflenni Treth, neu gosbau. Gall cwsmeriaid ddewis post traddodiadol, neu gallant ddewis cael llythyrau treth ar-lein. Mae dewis llythyrau treth ar-lein yn golygu bod y gwasanaeth yn anfon rhai o’r llythyrau treth allweddol hyn i fewnflwch diogel y cwsmer. Gall y cwsmer gael at y rhain ar unrhyw adeg. Mae CThEM yn cadw’r llythyrau hyn am 7 mlynedd.
+  Mae’r gwasanaeth Dewis Cyswllt Digidol yn galluogi cwsmeriaid CThEF i ddewis sut maent yn cael eu llythyrau treth, megis hysbysiadau i gyflwyno Ffurflenni Treth, neu gosbau. Gall cwsmeriaid ddewis post traddodiadol, neu gallant ddewis cael llythyrau treth ar-lein. Mae dewis llythyrau treth ar-lein yn golygu bod y gwasanaeth yn anfon rhai o’r llythyrau treth allweddol hyn i fewnflwch diogel y cwsmer. Gall y cwsmer gael at y rhain ar unrhyw adeg. Mae CThEF yn cadw’r llythyrau hyn am 7 mlynedd.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /paperless
 contactFrontendServiceId: paperless
 complianceStatus: partial
 accessibilityProblems:
-  - Nid oes gan y logo CThEM sydd yn y baneri a throedynnau ar bob tudalen ddigon o gyferbyniad lliw
+  - Nid oes gan y logo CThEF sydd yn y baneri a throedynnau ar bob tudalen ddigon o gyferbyniad lliw
   - Ar un dudalen, mae rhai cysylltiadau ag geiriad tebyg, ond maent yn mynd i wahanol lefydd
   - Mae’n anodd llywio rhai o’r tabiau gan ddefnyddio bysellfwrdd yn unig
 milestones:
-  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEM sydd yn y faner yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEF sydd yn y faner yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2020-12-31
-  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEM sydd yn y troedyn yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
+  - description: Ar bob tudalen, nid yw’r cyferbyniad lliw o ran y logo CThEF sydd yn y troedyn yn ddigon clir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2020-12-31
   - description: Ar un dudalen, mae cysylltiadau sy’n mynd â’r defnyddiwr i newid gwahanol fewnbynnau yn defnyddio’r un geiriad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.9 (Link Purpose (Link Only)), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2020-12-31

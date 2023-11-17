@@ -1,7 +1,7 @@
 serviceName: Gwirio neu ddiweddaru’ch treth car cwmni
 serviceHeaderName: Gwirio neu ddiweddaru’ch treth car cwmni
 serviceDescription: |
-  Mae’r gwasanaeth Gwirio neu ddiweddaru’ch treth car cwmni yn galluogi unrhyw un sy’n talu treth ar gar cwmni i ddiweddaru cofnodion CThEM drwy ychwanegu, dileu, diwygio neu ddisodli car cwmni. Gallant hefyd ddefnyddio’r gwasanaeth i hawlio am Fuddiant Tanwydd ar-lein.
+  Mae’r gwasanaeth Gwirio neu ddiweddaru’ch treth car cwmni yn galluogi unrhyw un sy’n talu treth ar gar cwmni i ddiweddaru cofnodion CThEF drwy ychwanegu, dileu, diwygio neu ddisodli car cwmni. Gallant hefyd ddefnyddio’r gwasanaeth i hawlio am Fuddiant Tanwydd ar-lein.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /paye/company-car
 contactFrontendServiceId: company-car

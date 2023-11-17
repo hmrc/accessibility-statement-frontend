@@ -1,7 +1,7 @@
-serviceName: Cael cydnabyddiaeth gan CThEM ar gyfer eich elusen
-serviceHeaderName: Cael cydnabyddiaeth gan CThEM ar gyfer eich elusen
+serviceName: Cael cydnabyddiaeth gan CThEF ar gyfer eich elusen
+serviceHeaderName: Cael cydnabyddiaeth gan CThEF ar gyfer eich elusen
 serviceDescription: |
-  Mae elusennau’n defnyddio’r gwasanaeth hwn i gofrestru eu manylion gyda CThEM. Dim ond ar ôl iddynt gofrestru’n llwyddiannus fel elusen y gallant ad-ennill treth ar bethau megis cyfraniadau Rhodd Cymorth.
+  Mae elusennau’n defnyddio’r gwasanaeth hwn i gofrestru eu manylion gyda CThEF. Dim ond ar ôl iddynt gofrestru’n llwyddiannus fel elusen y gallant ad-ennill treth ar bethau megis cyfraniadau Rhodd Cymorth.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /register-charity-hmrc/check-eligibility/register-the-charity
 contactFrontendServiceId: iCharities

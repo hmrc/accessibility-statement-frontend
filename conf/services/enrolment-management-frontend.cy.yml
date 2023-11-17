@@ -1,6 +1,6 @@
 serviceName: Gwasanaethau Ymrestru
 serviceDescription: |
-  Mae Gwasanaethau Ymrestru yn galluogi defnyddiwr i ymrestru neu i dadymrestru ar gyfer gwasanaethau’r Llywodraeth sydd wedi’i darparu gan Gyllid a Thollau EM.
+  Mae Gwasanaethau Ymrestru yn galluogi defnyddiwr i ymrestru neu i dadymrestru ar gyfer gwasanaethau’r Llywodraeth sydd wedi’i darparu gan Gyllid a Thollau EF.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /enrolment-management-frontend
 contactFrontendServiceId: enrolment-management-frontend

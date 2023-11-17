@@ -1,9 +1,9 @@
 serviceName: Cyfryngwyr Cyflogaeth
 serviceHeaderName:  Cyflwyno adroddiad cyfryngwr cyflogaeth
 serviceDescription: |
-  Mae’n rhaid i gyfryngwyr cyflogaeth anfon gwybodaeth i CThEM am weithwyr y mae wedi eu rhoi yn y gwaith ond sy’n
+  Mae’n rhaid i gyfryngwyr cyflogaeth anfon gwybodaeth i CThEF am weithwyr y mae wedi eu rhoi yn y gwaith ond sy’n
   disgyn y tu hwnt i’w system TWE/RTI. Mae’r gwasanaeth hwn yn galluogi cyfryngwyr cyflogaeth i fodloni eu gofynion
-  deddfwriaethol o ran rhoi gwybod drwy roi platfform lle y gallant uwchlwytho eu hadroddiadau i CThEM.
+  deddfwriaethol o ran rhoi gwybod drwy roi platfform lle y gallant uwchlwytho eu hadroddiadau i CThEF.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /employment-intermediary-report
 contactFrontendServiceId: employment-intermediaries

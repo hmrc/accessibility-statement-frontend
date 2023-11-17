@@ -1,7 +1,7 @@
-serviceName: Rhowch wybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
-serviceHeaderName: Rhowch wybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
+serviceName: Rhowch wybod i CThEF bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
+serviceHeaderName: Rhowch wybod i CThEF bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i roi gwybod i CThEM bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu.
+  Defnyddiwch y ffurflen hon i roi gwybod i CThEF bod eich sefydliad wedi rhoi’r gorau i fasnachu neu nad yw erioed wedi masnachu.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/tell-hmrc-your-organisation-has-stopped-trading-or-has-never-traded
 contactFrontendServiceId: GForm
