@@ -1,6 +1,6 @@
 serviceName: Gwirio faint o Dreth Incwm a daloch ac ad-daliadau
 serviceHeaderName: Gwirio faint o Dreth Incwm a daloch ac ad-daliadau
-serviceDescription: Mae’r gwasanaeth Gwirio faint o Dreth Incwm a daloch yn galluogi defnyddwyr sydd wedi cael Cyfrifiad Treth P800 i weld pam eu bod naill ai wedi gordalu neu dandalu treth. Mae hefyd yn caniatáu iddynt dalu unrhyw dreth sydd arnynt neu gael ad-daliad os oes ar CThEM arian iddynt.
+serviceDescription: Mae’r gwasanaeth Gwirio faint o Dreth Incwm a daloch yn galluogi defnyddwyr sydd wedi cael Cyfrifiad Treth P800 i weld pam eu bod naill ai wedi gordalu neu dandalu treth. Mae hefyd yn caniatáu iddynt dalu unrhyw dreth sydd arnynt neu gael ad-daliad os oes ar CThEF arian iddynt.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /tax-you-paid
 contactFrontendServiceId: tax-you-paid

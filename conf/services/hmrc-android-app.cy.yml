@@ -1,7 +1,7 @@
-serviceName: ap CThEM ar gyfer Android
+serviceName: ap CThEF ar gyfer Android
 contactFrontendServiceId: hmrc-android-app
 serviceDescription: |
-  Gallwch ddefnyddio ap CThEM i wneud pethau fel gwirio’ch taliad cyflog nesaf gan eich cyflogwr,
+  Gallwch ddefnyddio ap CThEF i wneud pethau fel gwirio’ch taliad cyflog nesaf gan eich cyflogwr,
   gwiriwch eich taliadau credyd treth nesaf, darganfyddwch eich cod treth a darganfyddwch faint o Dreth Incwm y dylech
   ei dalu.
 serviceDomain: play.google.com

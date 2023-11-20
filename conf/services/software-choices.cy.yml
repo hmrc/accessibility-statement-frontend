@@ -1,8 +1,8 @@
 serviceName: Dewch o hyd i feddalwedd Troi Treth yn Ddigidol ar gyfer TAW
 serviceHeaderName: Dewch o hyd i feddalwedd Troi Treth yn Ddigidol ar gyfer TAW
 serviceDescription: |
-  Mae’r gwasanaeth hwn yn eich helpu i ddod o hyd i feddalwedd sy’n cydweddu ar gyfer cadw cofnodion digidol a chyflwyno Ffurflenni TAW i CThEM.
-  Gallwch hefyd ddod o hyd i feddalwedd bontio i gysylltu meddalwedd nad yw’n cydweddu (fel taenlenni) â systemau CThEM.
+  Mae’r gwasanaeth hwn yn eich helpu i ddod o hyd i feddalwedd sy’n cydweddu ar gyfer cadw cofnodion digidol a chyflwyno Ffurflenni TAW i CThEF.
+  Gallwch hefyd ddod o hyd i feddalwedd bontio i gysylltu meddalwedd nad yw’n cydweddu (fel taenlenni) â systemau CThEF.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /making-tax-digital-software
 contactFrontendServiceId: MSCC

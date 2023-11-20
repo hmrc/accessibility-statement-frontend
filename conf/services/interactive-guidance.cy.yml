@@ -1,6 +1,6 @@
-serviceName: Arweiniad Rhyngweithiol CThEM
+serviceName: Arweiniad Rhyngweithiol CThEF
 serviceHeaderName: Arweiniad Rhyngweithiol
-serviceDescription: Mae arweiniad rhyngweithiol CThEM yn rhoi gwybodaeth dargededig i ddefnyddwyr ar sail eu hatebion i gyfres o gwestiynau.
+serviceDescription: Mae arweiniad rhyngweithiol CThEF yn rhoi gwybodaeth dargededig i ddefnyddwyr ar sail eu hatebion i gyfres o gwestiynau.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /guidance
 contactFrontendServiceId: EGVWR

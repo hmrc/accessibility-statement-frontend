@@ -1,7 +1,7 @@
 serviceName: Troi Treth yn Ddigidol ar gyfer TAW
 serviceHeaderName: Troi Treth yn Ddigidol ar gyfer TAW
 serviceDescription: |
-  Gall busnesau sydd wedi cofrestru ar gyfer TAW, a’u hasiantau, gofrestru i ddefnyddio meddalwedd sy’n cydweddu er mwyn cyflwyno Ffurflenni TAW i CThEM fel rhan o’r rhaglen Troi Treth yn Ddigidol ar gyfer TAW.
+  Gall busnesau sydd wedi cofrestru ar gyfer TAW, a’u hasiantau, gofrestru i ddefnyddio meddalwedd sy’n cydweddu er mwyn cyflwyno Ffurflenni TAW i CThEF fel rhan o’r rhaglen Troi Treth yn Ddigidol ar gyfer TAW.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /vat-through-software/vat-overview
 contactFrontendServiceId: VATVC

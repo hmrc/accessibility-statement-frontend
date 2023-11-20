@@ -1,7 +1,7 @@
 serviceName: cyfrif gwasanaethau asiant
 serviceHeaderName: Cyfrif gwasanaethau asiant
 serviceDescription: |
-  Rydych yn defnyddio’r gwasanaeth hwn i reoli’ch cyfrif gwasanaethau asiant CThEM ar gyfer eich asiant treth.
+  Rydych yn defnyddio’r gwasanaeth hwn i reoli’ch cyfrif gwasanaethau asiant CThEF ar gyfer eich asiant treth.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-services-account
 contactFrontendServiceId: AOSS

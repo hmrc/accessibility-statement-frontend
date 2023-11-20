@@ -1,7 +1,7 @@
 serviceName: Cyfrif treth personol
 serviceHeaderName: Cyfrif treth personol
 serviceDescription: |
-  Mae Cyfrif Treth Personol yn caniatáu i bobl wirio eu cofnodion a rheoli’r manylion sydd gan Gyllid a Thollau EM (CThEM) ar eu cyfer.
+  Mae Cyfrif Treth Personol yn caniatáu i bobl wirio eu cofnodion a rheoli’r manylion sydd gan Gyllid a Thollau EF (CThEF) ar eu cyfer.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /personal-account
 contactFrontendServiceId: personal-account

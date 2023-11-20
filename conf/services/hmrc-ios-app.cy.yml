@@ -1,7 +1,7 @@
-serviceName: ap iOS CThEM
+serviceName: ap iOS CThEF
 contactFrontendServiceId: hmrc-ios-app
 serviceDescription: |
-  Gallwch ddefnyddio ap CThEM i wneud pethau fel gwirio’ch taliad cyflog nesaf gan eich cyflogwr,
+  Gallwch ddefnyddio ap CThEF i wneud pethau fel gwirio’ch taliad cyflog nesaf gan eich cyflogwr,
   gwirio’ch taliadau credyd treth nesaf, cael hyd i’ch cod treth a darganfod faint o Dreth Incwm y dylech ei thalu.
 serviceDomain: apps.apple.com
 serviceUrl: /gb/app/hmrc/id514561561

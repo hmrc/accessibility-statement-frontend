@@ -1,7 +1,7 @@
 serviceName: gofyn i gleient eich awdurdodi
 serviceHeaderName: Gofyn i gleient eich awdurdodi
 serviceDescription: |
-  Mae’r gwasanaeth hwn ar gyfer asiantau, er mwyn iddynt greu cais am awdurdodiad i weithredu ar ran cleient ar gyfer gwasanaeth penodol CThEM. Mae hefyd ar gyfer cleientiaid, er mwyn iddynt ateb y cais hwn.
+  Mae’r gwasanaeth hwn ar gyfer asiantau, er mwyn iddynt greu cais am awdurdodiad i weithredu ar ran cleient ar gyfer gwasanaeth penodol CThEF. Mae hefyd ar gyfer cleientiaid, er mwyn iddynt ateb y cais hwn.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /invitations
 contactFrontendServiceId: AOSS
