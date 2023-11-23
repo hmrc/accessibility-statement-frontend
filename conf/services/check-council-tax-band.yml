@@ -1,4 +1,4 @@
-serviceName: Check and challenge your Council Tax band
+serviceName: Archived Check and challenge your Council Tax band
 serviceHeaderName: Check and challenge your Council Tax band
 serviceDescription: |
   This service allows you to check the Council Tax band of every residential property in England and Wales.
@@ -8,9 +8,9 @@ serviceUrl: /check-council-tax-band/search
 contactFrontendServiceId: CCYCTB
 complianceStatus: full
 serviceLastTestedDate: 2021-11-26
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2021-11-29
-statementLastUpdatedDate: 2023-03-29
+statementLastUpdatedDate: 2023-11-23
 businessArea: Valuation Office Agency (VOA)
 ddc: DDC Worthing
 liveOrClassic:
