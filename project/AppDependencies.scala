@@ -2,11 +2,11 @@ import sbt._
 
 object AppDependencies {
   private val circeVersion     = "0.14.1"
-  private val bootstrapVersion = "7.22.0"
+  private val bootstrapVersion = "8.0.0"
 
   val compile = Seq(
     "uk.gov.hmrc" %% "bootstrap-frontend-play-28" % bootstrapVersion,
-    "uk.gov.hmrc" %% "play-frontend-hmrc"         % "7.29.0-play-28",
+    "uk.gov.hmrc" %% "play-frontend-hmrc-play-28" % "8.0.0-SNAPSHOT",
     "io.circe"    %% "circe-core"                 % circeVersion,
     "io.circe"    %% "circe-generic"              % circeVersion,
     "io.circe"    %% "circe-parser"               % circeVersion,
