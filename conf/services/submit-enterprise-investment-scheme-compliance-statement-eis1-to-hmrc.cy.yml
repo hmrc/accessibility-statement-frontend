@@ -3,7 +3,7 @@ serviceHeaderName: Cyflwynwch ddatganiad cydymffurfio’r Cynllun Buddsoddi mewn
 serviceDescription: |
   Defnyddiwch y gwasanaeth hwn i gyflwyno datganiad cydymffurfio’r Cynllun Buddsoddi mewn Mentrau (EIS1) i CThEF.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/claim-refund-duty-reimbursement-scheme
+serviceUrl: /submissions/new-form/submit-enterprise-investment-scheme-compliance-statement-eis1-to-hmrc
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
