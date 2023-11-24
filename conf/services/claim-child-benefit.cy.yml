@@ -11,7 +11,7 @@ statementVisibility: public
 statementCreatedDate: 2022-10-04
 statementLastUpdatedDate: 2023-11-23
 accessibilityProblems:
-- Defnyddiwch y ffurflen hon i hawlio Budd-dal Plant os ydych chi neu’ch partner yn gyfrifol am blentyn sydd o dan 16 oed, neu o dan 20 oed os yw’n parhau ag addysg neu hyfforddiant cymeradwy.
+- Pan fydd y PDF a lawrlwythwyd yn cael ei chwyddo nid yw’r cynnwys yn ail-lifo, ac mae gofyn i’r defnyddiwr sgrolio’n llorweddol sy’n ei gwneud yn anoddach i’w darllen.
 milestones:
 - description: Nid yw cynnwys y PDF a lawrlwythwyd yn ail-lifo pan gaiff ei chwyddo. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
   date: 2024-01-31
