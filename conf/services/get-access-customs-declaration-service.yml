@@ -1,4 +1,4 @@
-serviceName: Get access to the Customs Declaration Service
+serviceName: Archived Get access to the Customs Declaration Service
 serviceHeaderName: Get access to the Customs Declaration Service
 serviceDescription: |
   This service is for users who need to get access to the Customs Declaration Service to move goods into or out of the EU (including the UK).
@@ -15,9 +15,9 @@ milestones:
   - description: The keyboard focus indicator for elements, including links, does not meet the colour contrast ratio requirements. Users may find it difficult to navigate the page using a keyboard as they may assume that keyboard focus is not present. This fails WCAG 2.1 success criterion 1.4.11 (non-text contrast ratio).
     date: 2022-08-26
 serviceLastTestedDate: 2020-10-14
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2019-09-23
-statementLastUpdatedDate: 2021-12-06
+statementLastUpdatedDate: 2023-11-24
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:

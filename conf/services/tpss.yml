@@ -1,4 +1,4 @@
-serviceName: The Pension Scheme Service (TPSS) (PABSe)
+serviceName: Archived The Pension Scheme Service (TPSS) (PABSe)
 serviceHeaderName: TPSS
 serviceDescription: "The Pension Scheme Service (TPSS) allows pension scheme administrators and practitioners to report on various aspects of schemes and events on those schemes, as required by current pension legislation."
 serviceDomain: pensionschemes.hmrc.gov.uk
@@ -23,9 +23,9 @@ milestones:
   - description: "Users cannot always skip to the main content when using keyboard navigation or a screen reader, which means users may have to go through the same information on multiple pages, for example, headers and menu links. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (bypass blocks)."
     date: 2021-09-23
 serviceLastTestedDate: 2020-09-02
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2023-11-24
 businessArea: Customer Services Group (CSG)
 ddc:
 liveOrClassic:

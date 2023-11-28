@@ -1,4 +1,4 @@
-﻿serviceName: Check and challenge your Council Tax band
+﻿serviceName: Archived Check and challenge your Council Tax band
 serviceHeaderName: Check and challenge your Council Tax band
 serviceDescription: The website enables users to check the Council Tax band of every residential property in England and Wales and enables users to challenge a band if required.
 serviceDomain: www.tax.service.gov.uk
@@ -12,9 +12,9 @@ milestones:
     date: 2021-06-04
 
 serviceLastTestedDate: 2021-03-25
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2021-03-31
-statementLastUpdatedDate: 2021-03-31
+statementLastUpdatedDate: 2023-11-23
 businessArea: Valuation Office Agency (VOA)
 ddc:
 liveOrClassic:
