@@ -1,6 +1,6 @@
-serviceName: Advance Valuation Ruling
+serviceName: Dyfarniadau Prisio Ymlaen Llaw
 serviceDescription: |
-  The Advance Valuation Ruling service allows traders and agents to apply for an advance valuation ruling that can be used to value imported goods for customs related charges.
+  Mae’r gwasanaeth Dyfarniadau Prisio Ymlaen Llaw yn galluogi masnachwyr ac asiantau i wneud cais am ddyfarniad prisio ymlaen llaw y gellir ei ddefnyddio i brisio nwyddau sydd wedi’u mewnforio ar gyfer ffioedd sy’n gysylltiedig â thollau.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /advance-valuation-ruling
 contactFrontendServiceId: advance-valuation-rulings-frontend
