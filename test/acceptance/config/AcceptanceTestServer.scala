@@ -27,7 +27,6 @@ trait AcceptanceTestServer extends TestSuiteMixin with GuiceFakeApplicationFacto
   lazy val port = servicePort("accessibility-statement-frontend").toInt
 
   implicit lazy val app: Application = new GuiceApplicationBuilder()
-    .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
 
   private def runSuiteWithTestServer(

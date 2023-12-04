@@ -37,7 +37,6 @@ class AccessibilityStatementsRepoISpec extends AnyWordSpec with Matchers with Ei
         "services.directory" -> "integrationTestServices"
       )
     )
-    .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
   private val repo             = app.injector.instanceOf[AccessibilityStatementsSourceRepo]
 

@@ -30,7 +30,6 @@ trait AppHelpers {
           "auditing.enabled" -> false
         )
       )
-      .disable[com.kenshoo.play.metrics.PlayModule]
       .build()
 
   def buildAppWithWelshLanguageSupport[A](
