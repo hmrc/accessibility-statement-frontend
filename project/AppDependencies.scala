@@ -2,26 +2,28 @@ import sbt._
 
 object AppDependencies {
   private val circeVersion     = "0.14.1"
-  private val bootstrapVersion = "7.22.0"
+  private val bootstrapVersion = "8.1.0"
+  private val frontendVersion  = "8.1.0"
+  private val playVersion      = "play-30"
 
   val compile = Seq(
-    "uk.gov.hmrc" %% "bootstrap-frontend-play-28" % bootstrapVersion,
-    "uk.gov.hmrc" %% "play-frontend-hmrc"         % "7.29.0-play-28",
-    "io.circe"    %% "circe-core"                 % circeVersion,
-    "io.circe"    %% "circe-generic"              % circeVersion,
-    "io.circe"    %% "circe-parser"               % circeVersion,
-    "io.circe"    %% "circe-yaml"                 % circeVersion,
-    "io.circe"    %% "circe-generic-extras"       % circeVersion
+    "uk.gov.hmrc" %% s"bootstrap-frontend-$playVersion" % bootstrapVersion,
+    "uk.gov.hmrc" %% s"play-frontend-hmrc-$playVersion" % frontendVersion,
+    "io.circe"    %% "circe-core"                       % circeVersion,
+    "io.circe"    %% "circe-generic"                    % circeVersion,
+    "io.circe"    %% "circe-parser"                     % circeVersion,
+    "io.circe"    %% "circe-yaml"                       % circeVersion,
+    "io.circe"    %% "circe-generic-extras"             % circeVersion
   )
 
   val test = Seq(
-    "uk.gov.hmrc"            %% "bootstrap-test-play-28"  % bootstrapVersion % "test",
-    "org.scalatest"          %% "scalatest"               % "3.2.13"         % "test",
-    "org.scalatestplus"      %% "selenium-4-2"            % "3.2.13.0"       % "test",
-    "org.scalatestplus.play" %% "scalatestplus-play"      % "5.1.0"          % "test",
-    "org.mockito"            %% "mockito-scala-scalatest" % "1.14.8"         % "test",
-    "org.jsoup"               % "jsoup"                   % "1.10.2"         % "test",
-    "uk.gov.hmrc"            %% "webdriver-factory"       % "0.41.0"         % "test",
-    "com.vladsch.flexmark"    % "flexmark-all"            % "0.62.2"         % "test"
+    "uk.gov.hmrc"            %% s"bootstrap-test-$playVersion" % bootstrapVersion % "test",
+    "org.scalatest"          %% "scalatest"                    % "3.2.13"         % "test",
+    "org.scalatestplus"      %% "selenium-4-2"                 % "3.2.13.0"       % "test",
+    "org.scalatestplus.play" %% "scalatestplus-play"           % "7.0.0"          % "test",
+    "org.mockito"            %% "mockito-scala-scalatest"      % "1.17.30"        % "test",
+    "org.jsoup"               % "jsoup"                        % "1.10.2"         % "test",
+    "uk.gov.hmrc"            %% "webdriver-factory"            % "0.41.0"         % "test",
+    "com.vladsch.flexmark"    % "flexmark-all"                 % "0.62.2"         % "test"
   )
 }

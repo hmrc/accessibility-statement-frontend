@@ -41,7 +41,6 @@ class StatementPageISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSu
     .overrides(
       bind[AccessibilityStatementsRepo].toInstance(repo)
     )
-    .disable[com.kenshoo.play.metrics.PlayModule]
     .build()
 
   "Given a running instance of accessibility statement frontend, calling GET on the root path" should {
