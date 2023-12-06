@@ -7,43 +7,16 @@ serviceUrl: /api-documentation
 contactFrontendServiceId: hmrc-developer-hub
 complianceStatus: partial
 accessibilityProblems:
-- List Items - some lists have are not marked up as a list.
-- Ungrouped content - no grouping technique used to give radio buttons more context.
-- Tables - some table markups are challenging to understand for screen reader users.
-- Unlabelled radio button on the 'identify your organisation' page, part of the production credentials journey.
-- Colours of non-text elements - some colours used for styling focus indication did not pass the expected ratio.
-- Skip to content link does not function as expected on the 'Hello World API' documentation page.
-- Heading structure - some visual headers are not marked up correctly.
-- The combination of colours used in parts of the service does not meet the required minimum contrast ratio.
-- Image alt text needs improvement on the 'user restricted endpoints' page.
-- Content on the 'manage API subscriptions' page required horizontal scrolling.
+- Non-descriptive page title page where the page title is not descriptive. This effects a single page in the desktop OAuth journey.
 
 milestones:
-- description: List Items - some lists have are not marked up as a list.
-  date: 2023-03-31
-- description: Ungrouped content - no grouping technique used to give radio buttons more context.
-  date: 2023-03-31
-- description: Tables - some table markups are challenging to understand for screen reader users.
-  date: 2023-03-31
-- description: Unlabelled radio button on the 'identify your organisation' page, part of the production credentials journey.
-  date: 2023-03-31
-- description: Colours of non-text elements - some colours used for styling focus indication did not pass the expected ratio.
-  date: 2023-03-31
-- description: Skip to content link does not function as expected on the 'Hello World API' documentation page.
-  date: 2023-03-31
-- description: Heading structure - some visual headers are not marked up correctly.
-  date: 2023-03-31
-- description: The combination of colours used in parts of the service does not meet the required minimum contrast ratio.
-  date: 2023-03-31
-- description: Image alt text needs improvement on the 'user restricted endpoints' page.
-  date: 2023-03-31
-- description: Content on the 'manage API subscriptions' page required horizontal scrolling.
-  date: 2023-03-31
+- description: Non-descriptive page title page where the page title is not descriptive. This effects a single page in the desktop OAuth journey.
+  date: 2025-01-31
 
-serviceLastTestedDate: 2022-07-09
+serviceLastTestedDate: 2023-11-29
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2022-08-12
+statementLastUpdatedDate: 2023-12-05
 
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Yorkshire
