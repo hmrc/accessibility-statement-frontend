@@ -8,22 +8,12 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /calculate-additional-inheritance-tax-threshold/date-of-death
 contactFrontendServiceId: RNRB
-complianceStatus: partial
-accessibilityProblems:
-  - error skip links do not function correctly.
-  - incorrect roles have been used for error messages.
-  - the colour used to indicate when an element has received focus does not meet the expected ratio to meet WCAG 2.1.
-milestones:
-  - description: "The ID does not match the href of the error skip link. This means that when keyboard only users try to access it, focus will not be sent the the correct section of the page and stays on the error link at the top of the page. This doesn’t meet WCAG 2.1 success criteria 2.4.1 (bypass blocks)."
-    date: 2023-12-31
-  - description: "Error messages have a role of tooltip which is not correct or inline with GOV.UK. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value)."
-    date: 2023-12-31
-  - description: "The colour used for the focus indication does not meet the expected ratio to meet WCAG 2.1. It also does not match the colour that is suggested within the GOV.UK Design System. This doesn’t meet WCAG 2.1 success criteria 1.4.11 (non-text contrast)."
-    date: 2023-12-31
-serviceLastTestedDate: 2020-09-14
+complianceStatus: full
+serviceLastTestedDate: 2023-11-29
 statementVisibility: public
 statementCreatedDate: 2020-09-21
-statementLastUpdatedDate: 2020-09-21
+statementLastUpdatedDate: 2020-12-08
+
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
