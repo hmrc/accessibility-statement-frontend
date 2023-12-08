@@ -17,13 +17,10 @@ object AppDependencies {
   )
 
   val test = Seq(
-    "uk.gov.hmrc"            %% s"bootstrap-test-$playVersion" % bootstrapVersion % "test",
-    "org.scalatest"          %% "scalatest"                    % "3.2.13"         % "test",
-    "org.scalatestplus"      %% "selenium-4-2"                 % "3.2.13.0"       % "test",
-    "org.scalatestplus.play" %% "scalatestplus-play"           % "7.0.0"          % "test",
-    "org.mockito"            %% "mockito-scala-scalatest"      % "1.17.30"        % "test",
-    "org.jsoup"               % "jsoup"                        % "1.10.2"         % "test",
-    "uk.gov.hmrc"            %% "webdriver-factory"            % "0.41.0"         % "test",
-    "com.vladsch.flexmark"    % "flexmark-all"                 % "0.62.2"         % "test"
+    "uk.gov.hmrc"       %% s"bootstrap-test-$playVersion" % bootstrapVersion % "test",
+    "org.scalatestplus" %% "selenium-4-2"                 % "3.2.13.0"       % "test",
+    "org.mockito"       %% "mockito-scala-scalatest"      % "1.17.30"        % "test",
+    "org.jsoup"          % "jsoup"                        % "1.10.2"         % "test",
+    "uk.gov.hmrc"       %% "webdriver-factory"            % "0.41.0"         % "test"
   )
 }
