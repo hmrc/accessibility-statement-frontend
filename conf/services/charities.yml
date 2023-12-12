@@ -1,4 +1,4 @@
-serviceName: Charities
+serviceName: Archived Charities
 serviceHeaderName: Charities
 serviceDescription: "The Charities application allows charities to claim back the tax from their Gift Aid donations."
 serviceDomain: www.tax.service.gov.uk
@@ -26,9 +26,9 @@ milestones:
   - description: "Users cannot always skip to the main content when using keyboard navigation or a screen reader, which means these users may have to go through the same information on multiple pages, for example, headers and menu links. This doesn’t meet WCAG 2.1 success criterion 2.4.1 (bypass blocks)."
     date: 2021-09-23
 serviceLastTestedDate: 2020-07-13
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2023-12-08
 businessArea: Customer Services Group (CSG)
 ddc: DDC Edinburgh
 liveOrClassic: Live Services - Edinburgh
