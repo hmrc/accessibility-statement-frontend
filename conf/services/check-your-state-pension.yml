@@ -7,34 +7,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-your-state-pension/account
 contactFrontendServiceId: check-your-state-pension
-complianceStatus: partial
-accessibilityProblems:
-  - user name is hidden for anyone using assistive technology devices
-  - timeout message does not appear so users are locked out without warning after 15 mins inactivity
-  - in Your National Insurance record pages, the page title is the same for two pages because the heading is the same for years with gaps and years without gaps
-  - when resized with zoom the text in the bar charts is clipped
-milestones:
-  - description: |
-      User name is hidden for all users using assistive technology devices
-      This fails WCAG 2.1 - 1.3.1: Info and Relationships
-    date: 2024-03-31
-  - description: |
-      Timeout dialogue does not appear so users are locked out after 15 mins inactivity without warning.
-      This fails WCAG 2.1 - Understanding Success Criterion 2.2.1 Timing Adjustable.
-    date: 2024-03-31
-  - description: |
-      In Your National Insurance record pages, the page title is the same for two pages because the H1 is the same for years with gaps and years without.
-      This fails WCAG 2.1 - Understanding Success Criterion 2.4.2: Page Titled.
-    date: 2024-03-31
-  - description: |
-      When  resized with zoom the text in the bar charts is clipped.
-      This fails WCAG 2.1 - Understanding Success Criterion 1.4.4: Resized text.
-    date: 2024-03-31
-
-serviceLastTestedDate: 2023-01-16
+complianceStatus: full
+serviceLastTestedDate: 2023-11-08
 statementVisibility: public
 statementCreatedDate: 2023-03-17
-statementLastUpdatedDate: 2023-10-19
+statementLastUpdatedDate: 2023-12-13
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
 liveOrClassic: Live Services - Newcastle
