@@ -3,8 +3,16 @@ serviceDescription: Gall busnesau sydd wedi’u cofrestru ar gyfer TAW, a’u ha
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /penalties-appeals
 contactFrontendServiceId: vat-penalties
-complianceStatus: full
-serviceLastTestedDate: 2023-06-08
+complianceStatus: partial
+accessibilityProblems:
+  - Ar y dudalen ynghylch cosbau ac apeliadau TAW, mae cynyddu maint y ffont ar sgrin fach yn achosi i’r cysylltiadau yn y troedyn ar y cerdyn crynodeb gael eu clipio.
+  - Ar y dudalen ynghylch cosbau ac apeliadau TAW, pan fydd y dudalen yn cael ei chwyddo neu ei gweld ar sgrin fach, nid yw’r cysylltiadau i fwrw golwg dros y cyfrifiad ac i ddysgu sut i apelio yn ddigon o faint er mwyn osgoi actifadu’r cysylltiad cyfagos ar ddamwain.
+milestones:
+  - description: Pan fydd maint y ffont yn cynyddu 200% ar sgrin fach, mae’n achosi i’r testun gael ei glipio. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: TBC
+  - description: Ar dudalen sydd wedi’i chwyddo gan 400% neu wrth edrych arno ar sgrin fach, mae gan y cysylltiadau llai na 24 wrth 24 o faint picsel a bylchau CSS. Nid yw hyn yn bodloni maen prawf llwyddiant 2.5.8 (Target Size (Minimum)) Canllawiau Hygyrchedd Cynnwys y targedu bach ar, fersiwn 2.2.
+    date: TBC
+serviceLastTestedDate: 2023-12-08
 statementVisibility: public
 statementCreatedDate: 2023-01-12
 statementLastUpdatedDate: 2023-07-05
