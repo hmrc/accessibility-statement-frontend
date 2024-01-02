@@ -9,9 +9,9 @@ accessibilityProblems:
   - On the 'VAT penalties and appeals' page when the page is zoomed or viewed on a small screen, the size and spacing of the 'View calculation' and 'Find out how to appeal' links are not enough to avoid accidental activation of the adjacent link.
 milestones:
   - description: When the font size is increased by 200% on a small screen, it causes the text to be clipped. This fails WCAG 2.2 success criterion 1.4.4 Resize text
-    date: TBC
+    date: 2024-01-26
   - description: On a 400% zoomed page or when viewed on a small screen, the links have less than 24 by 24 CSS pixel size and spacing. This fails WCAG 2.2 success criterion 2.5.8 Target Size (Minimum)
-    date: TBC
+    date: 2024-01-26
 serviceLastTestedDate: 2023-12-08
 statementVisibility: public
 statementCreatedDate: 2023-01-12
@@ -19,3 +19,4 @@ statementLastUpdatedDate: 2023-12-20
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 typeOfService: Public beta
+wcagVersion: 2.2 AA
