@@ -9,9 +9,9 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /country-by-country-reporting
 contactFrontendServiceId: country-by-country-reporting
 complianceStatus: noncompliant
-statementVisibility: public
+statementVisibility: full
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+statementLastUpdatedDate: 2024-01-03
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
