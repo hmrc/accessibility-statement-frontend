@@ -8,8 +8,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /country-by-country-reporting
 contactFrontendServiceId: country-by-country-reporting
-complianceStatus: noncompliant
-statementVisibility: full
+complianceStatus: full
+statementVisibility: public
 statementCreatedDate: 2020-09-17
 statementLastUpdatedDate: 2024-01-03
 businessArea: Customer Strategy & Tax Design (CS&TD)
