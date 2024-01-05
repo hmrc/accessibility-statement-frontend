@@ -19,3 +19,4 @@ milestones:
 - description: The "What is your annual salary?" is missing information about the required format of the data. This fails WCAG 2.2 success criterion 3.3.2 Labels or instructions.
   date: 2024-03-05
 serviceLastTestedDate: 2024-01-05
+wcagVersion: 2.2 AA
