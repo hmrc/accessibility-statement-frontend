@@ -1,0 +1,22 @@
+serviceName: Estimate how the January 2024 National Insurance contributions changes will affect you
+serviceHeaderName: Estimate how the January 2024 National Insurance contributions changes will affect you
+serviceDescription: Use this tool to estimate how the January 2024 National Insurance contributions changes will affect you.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /estimate-jan-24-nic-changes
+contactFrontendServiceId: jan-24-nic-change-calculator-frontend
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+complianceStatus: partial
+statementVisibility: public
+statementCreatedDate: 2024-01-05
+statementLastUpdatedDate: 2024-01-05
+accessibilityProblems:
+- When switching to the Welsh language the "back to guidance" link has not been translated.
+- The "What is your annual salary?" input does not provide the required format of the data to be entered.
+milestones:
+- description: When viewing the page in Welsh the content "back to guidance" has not been translated. This fails WCAG 2.2 success criterion 3.1.2 Language of Parts.
+  date: 2024-03-05
+- description: The "What is your annual salary?" is missing information about the required format of the data. This fails WCAG 2.2 success criterion 3.3.2 Labels or instructions.
+  date: 2024-03-05
+serviceLastTestedDate: 2024-01-05
+wcagVersion: 2.2 AA
