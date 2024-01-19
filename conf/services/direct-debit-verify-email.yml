@@ -5,15 +5,19 @@ serviceUrl: /direct-debit-verify-email
 contactFrontendServiceId: direct-debit-update-email-frontend
 complianceStatus: partial
 accessibilityProblems:
-- On the ‘Check or change your email address’ and the ‘Enter the code to confirm the email address’ pages, users may have difficulties identifying what needs to be entered into the text fields.
+  - On the ‘Check or change your email address’ page, users may have difficulty identifying what needs to be entered into the text field.
+  - On the ‘Enter the code to confirm the email address’ page, the error messages do not clearly state how to fix the error.
 milestones:
-- description: The code and email text fields do not have an associated label. This fails WCAG 2.1 success criterion 3.3.2 Labels or instructions and 4.1.2 Name, role, value.
-  date: 2024-03-14
-serviceLastTestedDate: 2023-03-10
+  - description: The email text field does not have an associated label. This fails WCAG 2.2 success criterion 3.3.2 Labels or instructions and 4.1.2 Name, role, value
+    date: 2024-10-01
+  - description: Error messages do not provide clear details to fix the error. This fails WCAG 2.2 success criterion 3.3.3 Error Suggestion
+    date: 2024-10-01
+serviceLastTestedDate: 2023-12-12
 statementVisibility: public
 statementCreatedDate: 2023-03-14
-statementLastUpdatedDate: 2023-03-14
+statementLastUpdatedDate: 2024-01-10
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Public beta
+wcagVersion: 2.2 AA
