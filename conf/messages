@@ -124,9 +124,9 @@ technical.non-compliance.header=Non‐accessible content
 technical.non-compliance.introduction=The content listed below is non-accessible for the following reasons.
 technical.non-compliance.accessibility=Non‐compliance with the accessibility regulations
 technical.non-compliance.milestone.fix-by=This will be fixed by {0}.
-technical.non-compliance.not-tested=It has not been tested for compliance with WCAG {0} AA. The service will book a full accessibility audit by 1 December 2023.
-technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 1 December 2023.
-technical.non-compliance.automated.test-by.app=The app will also book a full accessibility audit by 1 December 2023.
+technical.non-compliance.not-tested=It has not been tested for compliance with WCAG {0} AA. The service will book a full accessibility audit by 30 June 2024.
+technical.non-compliance.automated.test-by=The service will also book a full accessibility audit by 30 June 2024.
+technical.non-compliance.automated.test-by.app=The app will also book a full accessibility audit by 30 June 2024.
 
 ## Testing
 testing.heading=How we tested this service
