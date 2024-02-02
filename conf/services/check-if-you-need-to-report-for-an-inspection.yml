@@ -10,13 +10,13 @@ accessibilityProblems:
   - On the Check if you need to report for an inspection page the language option links in a native language are not pronounced by screen reader correctly. This may result in the user not even being able to tell what it’s saying even if English was understood.
 milestones:
   - description: On all pages the ‘Back link’ is present when javascript is disabled. People with cognitive and motor impairments might find it hard to orient themselves to the This doesn't meet WCAG 2.1 success criterion 2.4.4 Link Purpose (In Context).
-    date: 2024-01-31
+    date: 2024-03-31
   - description: On the Check if you need to report for an inspection page the language option links in a native language are not pronounced by screen reader correctly. This may result in the user not even being able to tell what it’s saying even if English was understood. This doesn't meet WCAG 2.1 success criterion 3.1.2 Language of Parts.
-    date: 2024-01-31
+    date: 2024-03-31
 serviceLastTestedDate: 2021-06-29
 statementVisibility: public
 statementCreatedDate: 2021-08-03
-statementLastUpdatedDate: 2023-11-10
+statementLastUpdatedDate: 2024-02-05
 businessArea: Borders & Trade
 ddc: 
 liveOrClassic:
