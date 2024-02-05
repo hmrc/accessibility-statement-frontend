@@ -11,7 +11,7 @@ Accessibility Statement Frontend is a service for providing for accessibility st
   * [Opening a PR to get your statement merged into the repository](#opening-a-pr-to-get-your-statement-merged-into-the-repository)
   * [How to release an accessibility statement to Production](#how-to-release-an-accessibility-statement-to-production)
   * [Adding to your service](#adding-to-your-service)
-    + [Adding via play-frontend-hmrc)(#adding-via-play-frontend-hmrc)
+    + [Adding via play-frontend-hmrc](#adding-via-play-frontend-hmrc)
     + [Manually adding a link to your accessibility statement](#manually-adding-a-link-to-your-accessibility-statement)
   * [A note on contactFrontendServiceId](#a-note-on-contactfrontendserviceid)
   * [Creating accessibility statements in the Welsh language](#creating-accessibility-statements-in-the-welsh-language)
