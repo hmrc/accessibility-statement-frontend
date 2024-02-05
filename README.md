@@ -11,8 +11,8 @@ Accessibility Statement Frontend is a service for providing for accessibility st
   * [Opening a PR to get your statement merged into the repository](#opening-a-pr-to-get-your-statement-merged-into-the-repository)
   * [How to release an accessibility statement to Production](#how-to-release-an-accessibility-statement-to-production)
   * [Adding to your service](#adding-to-your-service)
-    + [Users of play-ui (version 8.12.0 or above) or play-frontend-hmrc (version 0.19.0 or above)](#users-of-play-ui-version-8120-or-above-or-play-frontend-hmrc-version-0190-or-above)
-    + [Users of older versions of play-ui or Java-based services](#users-of-older-versions-of-play-ui-or-java-based-services)
+    + [Adding via play-frontend-hmrc)(#adding-via-play-frontend-hmrc)
+    + [Manually adding a link to your accessibility statement](#manually-adding-a-link-to-your-accessibility-statement)
   * [A note on contactFrontendServiceId](#a-note-on-contactfrontendserviceid)
   * [Creating accessibility statements in the Welsh language](#creating-accessibility-statements-in-the-welsh-language)
   * [To run locally](#to-run-locally)
@@ -126,10 +126,9 @@ Production releases for ```accessibility-statement-frontend``` are managed by Pl
 Adding the accessibility statement to your service requires basic knowledge of the Play framework, the MDTP platform, and
  the ability and permission to build & deploy your service.
  
-### Users of play-ui (version 8.12.0 or above) or play-frontend-hmrc (version 0.19.0 or above)
+### Adding via play-frontend-hmrc
 
-If you are using [hmrc/play-ui](https://github.com/hmrc/play-ui#accessibility-statements)
- or [hmrc/play-frontend-hmrc](https://github.com/hmrc/play-frontend-hmrc#accessibility-statements), you can add the 
+If you are using [hmrc/play-frontend-hmrc](https://github.com/hmrc/play-frontend-hmrc#accessibility-statements) (`v0.19.0` or above), you can add the 
  `accessibility-statement.service-path` key to your `conf/application.conf` file. This key is 
  the path to your accessibility statement under https://www.tax.service.gov.uk/accessibility-statement.
                                                                        
@@ -140,18 +139,15 @@ this property must be set to `/discounted-icecreams` as follows:
 accessibility-statement.service-path = "/discounted-icecreams"
 ```
 
-Once this is set, the play-ui [FooterLinks](https://github.com/hmrc/play-ui/blob/master/src/main/twirl/uk/gov/hmrc/play/views/layouts/FooterLinks.scala.html)
-  component will auto-generate the correct link to your accessibility statement, including
-the full referrerUrl parameter as described below. Likewise, the new
- [hmrcStandardFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-26/twirl/uk/gov/hmrc/hmrcfrontend/views/helpers/hmrcStandardFooter.scala.html)
- component will deliver the full govukFooter including the standardised links.
+The [hmrcStandardFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-26/twirl/uk/gov/hmrc/hmrcfrontend/views/helpers/hmrcStandardFooter.scala.html) component 
+will deliver the full govukFooter with standardised links, with an auto-generated link to your accessibility statement, including the full referrerUrl parameter.
  
 Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
 for occasions where it is not convenient to use hmrcFooter.
 
-### Users of older versions of play-ui or Java-based services
+### Manually adding a link to your accessibility statement
  
-If you are not able to upgrade to the minimum supported versions of play-ui or play-frontend-hmrc listed above, you 
+If you are not able to use the minimum supported versions of play-frontend-hmrc listed above, you 
 will need to manually add a footer link to the accessibility statement entitled 'Accessibility statement' after the 
 Cookies link in the gov.uk footer.
  
@@ -180,7 +176,7 @@ end user discovered the accessibility issue.
 
 ## A note on contactFrontendServiceId
 
-contactFrontendServiceId helps identify your service when members of the general public report accessibility problems.
+`contactFrontendServiceId` helps identify your service when members of the general public report accessibility problems.
 
 If your service is already integrating with contact-frontend's [Get help with a technical problem](https://www.tax.service.gov.uk/contact/report-technical-problem) 
 form, you will find it added as a querystring parameter `service` in URLs to contact-frontend.
