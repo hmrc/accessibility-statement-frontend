@@ -4,18 +4,19 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /marginal-relief-calculator
 contactFrontendServiceId: MRC
-complianceStatus: partial
 accessibilityProblems:
   - The content of the downloaded PDF 'Marginal Relief for Corporation Tax results'  does not reflow and needs horizontal scrolling which makes it more difficult to read.
 milestones:
   - description: |
       the content of the downloaded PDF the content does not reflow. This fails WCAG 2.1 success criterion 1.4.10 Reflow.
     date: 2024-02-29
-serviceLastTestedDate: 2023-01-19
 statementVisibility: public
 statementCreatedDate: 2022-10-27
-statementLastUpdatedDate: 2023-08-03
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Live services
+complianceStatus: full
+wcagVersion: 2.2 AA
+serviceLastTestedDate: 2024-01-19
+statementLastUpdatedDate: 2024-01-06
