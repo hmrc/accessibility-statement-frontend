@@ -7,7 +7,6 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /employment-intermediary-report
 contactFrontendServiceId: employment-intermediaries
-complianceStatus: partial
 accessibilityProblems:
   - users are not warned before being signed out when their session ends.
   - when a report is successfully uploaded, this update is not communicated to screen-reader users.
@@ -43,11 +42,13 @@ milestones:
     date: 2024-01-31
   - description: High zoom levels or smaller screens might result in horizontal scrollbars appearing. This does not meet WCAG 2.1 success criterion 1.4.10 (Reflow).
     date: 2024-01-31
-serviceLastTestedDate: 2020-09-29
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2023-08-03
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Live services
+complianceStatus: full
+wcagVersion: 2.2 AA
+serviceLastTestedDate: 2024-01-19
+statementLastUpdatedDate: 2024-01-06

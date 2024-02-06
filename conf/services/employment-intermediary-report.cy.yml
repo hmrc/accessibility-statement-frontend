@@ -7,7 +7,6 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /employment-intermediary-report
 contactFrontendServiceId: employment-intermediaries
-complianceStatus: partial
 accessibilityProblems:
   - nid yw’r defnyddwyr yn cael rhybudd cyn cael eu hallgofnodi pan fydd y sesiwn yn dod i ben.
   - pan fydd adroddiad yn cael ei uwchlwytho’n llwyddiannus, nid yw’r diweddariad hwn yn cael ei gyfathrebu i ddefnyddwyr darllenydd sgrin.
@@ -43,11 +42,13 @@ milestones:
     date: 2024-01-31
   - description: Mae’n bosibl y bydd lefelau chwyddo uwch ar sgriniau llai yn achosi i fariau sgrolio llorweddol ymddangos. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2024-01-31
-serviceLastTestedDate: 2020-09-29
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2023-08-03
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Live services
+complianceStatus: full
+wcagVersion: 2.2 AA
+serviceLastTestedDate: 2024-01-19
+statementLastUpdatedDate: 2024-01-06
