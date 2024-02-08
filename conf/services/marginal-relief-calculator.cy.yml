@@ -4,12 +4,6 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /marginal-relief-calculator
 contactFrontendServiceId: MRC
-accessibilityProblems:
-  - Nid yw cynnwys y PDF ‘Canlyniadau Rhyddhad Ffiniol ar gyfer Treth Gorfforaeth’ sydd wedi’i lawrlwytho yn ail-lifo ac mae angen sgrolio llorweddol sy’n ei gwneud yn anoddach i’w ddarllen.
-milestones:
-  - description: |
-      nid yw cynnwys y PDF a lawrlwythwyd yn ail-lifo. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2024-02-29
 statementVisibility: public
 statementCreatedDate: 2022-10-27
 businessArea: Customer Strategy & Tax Design (CS&TD)
