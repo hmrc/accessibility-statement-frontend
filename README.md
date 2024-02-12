@@ -1,6 +1,8 @@
 # Accessibility Statement Frontend
 
-> **Warning**
+> [!CAUTION]
+> Only merge changes into the main branch that can be deployed to production with the next release - test your changes locally, not in the staging environment
+>
 > Production releases are managed by PlatUI. If you would like the team to release your accessibility statement to Production, please contact us via Slack at #team-plat-ui
 
 Accessibility Statement Frontend is a service for providing for accessibility statements across HMRC.
