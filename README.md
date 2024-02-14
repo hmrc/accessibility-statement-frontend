@@ -283,13 +283,10 @@ report was generated**. In the build, this will based on the system time. The `m
 
 ## Running UI acceptance tests
 
-To run the UI acceptance tests locally, you will need a copy of Chrome
-and the Chrome browser driver installed at /usr/local/bin/chromedriver
+To execute the UI acceptance tests on your local machine, ensure that you have [selenium-grid](https://github.com/hmrc/docker-selenium-grid) installed. Once set up, you can proceed with running the tests with.
 ```
-sbt -Dbrowser=chrome acceptance:test
+./run_acceptance_tests.sh 
 ```
-
-The Chrome driver is available at https://chromedriver.chromium.org/
 
 ## Performance testing
 
