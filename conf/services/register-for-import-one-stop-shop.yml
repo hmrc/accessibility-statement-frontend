@@ -1,0 +1,17 @@
+serviceName: VAT Import One Stop Shop scheme registration
+serviceHeaderName: VAT Import One Stop Shop scheme registration
+serviceDescription: Use this service to register for the VAT Import One Stop Shop (IOSS) scheme to report and pay VAT due on imports of low value goods to consumers in the EU and Northern Ireland.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pay-vat-on-goods-sold-to-eu/register-for-import-one-stop-shop
+contactFrontendServiceId: ioss-registration-frontend
+complianceStatus: full
+serviceLastTestedDate: 2023-12-05
+statementVisibility: public
+statementCreatedDate: 2024-02-14
+statementLastUpdatedDate: 2024-02-14
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
