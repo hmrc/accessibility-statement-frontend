@@ -17,25 +17,28 @@
 package acceptance.specs
 
 import acceptance.config.{AcceptanceTestServer, BrowserDriver}
+import org.scalatest.{BeforeAndAfterEach, GivenWhenThen}
 import org.scalatest.concurrent.Eventually
-import org.scalatest.{BeforeAndAfterAll, GivenWhenThen}
-import org.scalatestplus.selenium.WebBrowser
-import uk.gov.hmrc.webdriver.SingletonDriver
 import org.scalatest.featurespec.AnyFeatureSpec
 import org.scalatest.matchers.should.Matchers
-
-import scala.util.Try
+import org.scalatestplus.selenium.WebBrowser
+import uk.gov.hmrc.selenium.webdriver.{Browser, ScreenshotOnFailure}
 
 trait BaseAcceptanceSpec
     extends AnyFeatureSpec
     with GivenWhenThen
-    with BeforeAndAfterAll
+    with BeforeAndAfterEach
     with Matchers
     with WebBrowser
     with AcceptanceTestServer
     with BrowserDriver
+    with Browser
+    with ScreenshotOnFailure
     with Eventually {
 
-  override def afterAll(): Unit =
-    Try(SingletonDriver.closeInstance())
+  override def beforeEach(): Unit =
+    startBrowser()
+
+  override def afterEach(): Unit =
+    quitBrowser()
 }
