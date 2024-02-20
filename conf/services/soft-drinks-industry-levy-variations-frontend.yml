@@ -12,6 +12,7 @@ complianceStatus: full
 statementVisibility: public
 statementCreatedDate: 2024-02-20
 statementLastUpdatedDate: 2024-02-20
+wcagVersion: 2.2 AA
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
