@@ -21,31 +21,31 @@ accessibilityProblems:
   - focus indicator fails colour contrast.
 milestones:
   - description: "The tables which are presented programmatically to screen reader users were difficult to understand. This is because there are a number of tables nested within other tables. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "There is content on the page which is announced as one block of content which will be confusing for some screen reader users. The relationship between the two pieces of conternt is ultimately lost in the way in which it has been marked up. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "On Messages page both the link ‘VAT messages (opens in a new tab) – includes VAT MOSS and NOVA messages’ and the text ‘5 unread messages’ are read as one list item. The relationship between both is not clear as it has not been marked up correctly. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "The details component was highly problematic for both keyboard-only and screen reader users using Internet Explorer version 11 and JAWS. The component is not accessible via the tab command, meaning keyboard-only users will be excluded from accessing the information within the component. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value) or 2.1.1 (keyboard)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "The details component on statements page is conveyed differently to screen reader users than previously reported on other details components. The component is still not discoverable out of context, however, in context it announces as a button and informs the user that the content is collapsed. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value) or 2.1.1 (keyboard)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "The page title has been duplicated across multiple pages whereby the h1 is entitled ‘PAYE for employers: annual statements’. This doesn’t meet WCAG 2.1 success criteria 2.4.2 (page titled)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "Duplicated nav elements can be confusing for screen readers who browse sections of the page via landmarks. Multiple navigational landmarks are allowed, but they should be separated from each other using a descriptive label. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "Screen readers encounter a list of 1 item which related to the £400 payment. It is unclear why this piece of text is in a list item on its own. This doesn’t meet WCAG 2.1 success criteria 1.3.2 (meaningful sequence)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "The autocomplete attribute has not been used on the ‘Name’ and ‘Email’ input fields. The auto-complete allows users to complete forms more quickly and efficiently. This doesn’t meet WCAG 2.1 success criteria 1.3.5 (identify input purpose)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "The errors are not presented in a way which follows the current patterns. When the ‘Send’ button is initiated a number of errors appear on the page with no alert for blind users. This doesn’t meet WCAG 2.1 success criteria 4.1.3 (status messages)."
-    date: 2022-05-28
+    date: 2024-05-28
   - description: "The current visible focus indicator colour does not meet the required ratio of 3:1 for AA standard. This doesn’t meet WCAG 2.1 success criteria 1.4.11 non-text contrast."
-    date: 2022-05-28
+    date: 2024-05-28
 serviceLastTestedDate: 2020-09-28
 statementVisibility: public
 statementCreatedDate: 2020-09-10
-statementLastUpdatedDate: 2020-09-10
+statementLastUpdatedDate: 2024-02-20
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
