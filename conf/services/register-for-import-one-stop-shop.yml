@@ -9,7 +9,7 @@ accessibilityProblems:
   - On the 'Change Your Registration' page, there is a H2 heading that does not introduce content. This affects screen reader users as they rely on headings, and their relative hierarchy, to understand the structure of the page and how content relates to each other.
 milestones:
   - description: H2 heading that does not introduce content. This fails WCAG 2.2 A success criterion 1.3.1 Info and Relationships (Level A).
-    date: 2024-04-27
+    date: 2024-04-26
 serviceLastTestedDate: 2024-02-15
 statementVisibility: public
 statementCreatedDate: 2024-02-14
