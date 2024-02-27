@@ -17,4 +17,4 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-gzip" % "1.0.2")
 
 addSbtPlugin("uk.gov.hmrc" % "sbt-accessibility-linter" % "0.39.0")
 
-addSbtPlugin("uk.gov.hmrc" % "sbt-test-report" % "0.22.0")
+addSbtPlugin("uk.gov.hmrc" % "sbt-test-report" % "0.24.0")
