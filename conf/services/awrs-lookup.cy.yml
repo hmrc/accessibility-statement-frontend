@@ -5,16 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-the-awrs-register
 contactFrontendServiceId: AWRS-LOOKUP
-complianceStatus: partial
-accessibilityProblems:
-  - Wrth newid i’r fersiwn Gymraeg, nid yw’r copi rhybudd wedi cael ei gyfieithu i’r Gymraeg ar gyfer defnyddwyr darllenydd sgrin. Mae hyn yn golygu y bydd gwybodaeth anghyflawn yn cael ei chyflwyno i ddefnyddwyr ac ni fydd yn cael ei hynganu’n gywir gan ddarllenwyr sgrin.
-milestones:
-  - description: Nid yw’r copi ‘Rhybudd’ sydd wedi’i guddio o’r golwg yn cael ei gyflwyno ac mae’n aros yn Saesneg. Nid oes ganddo’r priodoledd addas o ran iaith fel bod modd canfod ei fod mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-31
-serviceLastTestedDate: 2023-08-17
+complianceStatus: full
+serviceLastTestedDate: 2023-11-03
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2023-10-03
+statementLastUpdatedDate: 2024-02-28
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
