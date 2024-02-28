@@ -1,28 +1,13 @@
 serviceName: Report and manage your allowance for Customs Duty waiver claims
-serviceDescription: Report and manage your allowance for Customs Duty waiver claims
+serviceDescription: Use this online service to report non-customs state aid payments you’ve received to HMRC and view your state aid allowance if you’ve claimed customs duty waivers.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /report-and-manage-your-allowance-for-customs-duty-waiver-claims
 contactFrontendServiceId: DeminimisAidPayments
-complianceStatus: partial
-accessibilityProblems:
-  - After adding a business to your undertaking account, a ‘success banner’ displays. The focus for keyboard users is on the banner, and not at the top of the page, which can cause confusion.
-  - The table on the ‘Reported payment history’ page has 5 headings but 6 items in the row. The sixth item does not have a heading. Screen-reader users may not understand which payment is being removed when selecting the link.
-  - The ‘Reported payment history’ displays the content as a description list on a reduced screen size. As it is within a table, there is no description list. Screen-reader users may not understand how the items relate to each other.
-  - On the 'reporting de minimis aid payments (less Customs Duty waivers) as a single undertaking' page, the heading is not set up correctly so that screen reader users do not know that it is a heading
-  - On the 'report a de minimis aid payment' page, the table is stacked on smaller screens but has not been correctly set up which can cause confusion for screen reader users
-milestones:
-  - description: The order in which some interactive elements in the receive focus, is not logical or correct. This fails WCAG 2.2 success criterion 2.4.3 Understanding Focus Order
-    date: 2024-02-06
-  - description: Links were found that did not have a distinct meaning and leave screen-reader users unable to determine the link’s purpose. This fails WCAG 2.2  success criterion 2.4.4 Understanding Link Purpose (In Context), 2.4.9 Understanding Link Purpose (Link Only)
-    date: 2024-02-09
-  - description: A description list in ‘Reported payment history’ was not used to semantically mark-up content for screen-reader users. This fails WCAG 2.2  success criterion 1.3.1 Understanding Info and relationships
-    date: 2024-02-19
-  - description: The ‘Enter the code to confirm the email address’ page is missing the Welsh translation for the ‘error:’ prefix. This fails WCAG 2.2 success criterion 3.1.2 Language of parts
-    date: 2024-03-25
-serviceLastTestedDate: 2024-01-04
+complianceStatus: full
+serviceLastTestedDate: 2024-02-27
 statementVisibility: public
 statementCreatedDate: 2023-08-04
-statementLastUpdatedDate: 2024-02-08
+statementLastUpdatedDate: 2024-02-28
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:
