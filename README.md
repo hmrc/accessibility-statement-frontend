@@ -283,7 +283,7 @@ report was generated**. In the build, this will based on the system time. The `m
 
 ## Running UI acceptance tests
 
-To execute the UI acceptance tests on your local machine, ensure that you have [selenium-grid](https://github.com/hmrc/docker-selenium-grid) installed. Once set up, you can proceed with running the tests with.
+To execute the UI acceptance tests on your local machine, ensure that you have [local-selenium-grid](https://github.com/hmrc/local-selenium-grid) installed and running. Once set up, you can proceed with running the tests with.
 ```
 ./run_acceptance_tests.sh 
 ```
