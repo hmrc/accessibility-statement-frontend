@@ -1,0 +1,11 @@
+serviceName: Identity Provider Gateway Welsh
+serviceDescription: |
+  Defnyddiwch y paragraff hwn i ddisgrifio’ch gwasanaeth. Gall fynd dros sawl llinell
+  fel hyn.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /identity-provider-gateway
+contactFrontendServiceId: identity-provider-gateway
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2024-03-06
+statementLastUpdatedDate: 2024-03-06
