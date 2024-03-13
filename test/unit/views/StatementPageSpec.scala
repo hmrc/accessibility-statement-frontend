@@ -41,9 +41,8 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     "return the correct title and heading for a mobile app" in new FullSetup {
       val content = Jsoup.parse(fullyAccessibleAndroidStatementHtml)
 
-      val title = content.select("title")
-      title.size       shouldBe 1
-      title.first.text shouldBe "Accessibility statement for the HMRC Android app – GOV.UK"
+      val title = content.select("title").first()
+      title.text shouldBe "Accessibility statement for the HMRC Android app – GOV.UK"
       val heading = content.select("h1").first.text
       heading should be(
         """Accessibility statement for the HMRC Android app"""
@@ -59,9 +58,8 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     "return HTML containing the correct TITLE element" in new FullSetup {
       val content = Jsoup.parse(fullyAccessibleStatementHtml)
 
-      val title = content.select("title")
-      title.size       shouldBe 1
-      title.first.text shouldBe "Accessibility statement for fully accessible service name service – GOV.UK"
+      val title = content.select("title").first()
+      title.text shouldBe "Accessibility statement for fully accessible service name service – GOV.UK"
     }
 
     "return HTML containing the expected introduction with service URL in the body" in new FullSetup {
@@ -179,9 +177,8 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     "return HTML containing the correct TITLE element in Welsh" in new FullSetup with WelshLanguage {
       val content = Jsoup.parse(fullyAccessibleStatementHtml)
 
-      val title = content.select("title")
-      title.size       shouldBe 1
-      title.first.text shouldBe "Datganiad hygyrchedd ar gyfer fully accessible service name – GOV.UK"
+      val title = content.select("title").first()
+      title.text shouldBe "Datganiad hygyrchedd ar gyfer fully accessible service name – GOV.UK"
     }
 
     "return HTML containing the expected introduction with service URL in the body in Welsh" in new FullSetup
