@@ -12,7 +12,7 @@ accessibilityProblems:
   - the autocomplete was problematic for JAWS users.
 milestones:
   - description: "The autocomplete feature was problematic for our screen reader analyst. Users browsing on Internet Explorer 11 with JAWS could not use the feature due to severe keyboard input lag, which also shut down Internet Explorer several times. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value)."
-    date: 2023-12-31
+    date: 2024-12-31
 serviceLastTestedDate: 2019-09-19
 statementVisibility: public
 statementCreatedDate: 2021-04-15
