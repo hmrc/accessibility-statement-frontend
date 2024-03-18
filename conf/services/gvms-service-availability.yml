@@ -5,7 +5,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-service-status/service-availability
 contactFrontendServiceId: customs-service-status-frontend
 complianceStatus: full
-serviceLastTestedDate: 2024-03-18
+serviceLastTestedDate: 2024-02-23
 statementVisibility: public
 statementCreatedDate: 2024-03-18
 statementLastUpdatedDate: 2024-03-18
