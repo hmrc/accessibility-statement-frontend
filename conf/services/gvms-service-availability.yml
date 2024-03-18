@@ -1,0 +1,15 @@
+serviceName: GVMS Service Availability
+serviceHeaderName: GVMS Service Availability
+serviceDescription: This service is used for checking the availability of the Goods Vehicle Movement Service (GVMS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /customs-service-status/service-availability
+contactFrontendServiceId: customs-service-status-frontend
+complianceStatus: full
+serviceLastTestedDate: 2024-03-18
+statementVisibility: public
+statementCreatedDate: 2024-03-18
+statementLastUpdatedDate: 2024-03-18
+businessArea: Borders & Trade
+ddc: DDC Worthing
+liveOrClassic:
+typeOfService: Public beta
