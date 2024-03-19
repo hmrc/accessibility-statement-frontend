@@ -1,5 +1,5 @@
-serviceName: Argaeledd y Gwasanaeth Symud Cerbydau Nwyddau
-serviceHeaderName: Argaeledd y Gwasanaeth Symud Cerbydau Nwyddau
+serviceName: Gwirio Argaeledd y Gwasanaeth Symud Cerbydau Nwyddau
+serviceHeaderName: Gwirio Argaeledd y Gwasanaeth Symud Cerbydau Nwyddau
 serviceDescription: Mae’r gwasanaeth hwn yn cael ei ddefnyddio i wirio argaeledd ar gyfer y Gwasanaeth Symud Cerbydau Nwyddmau (GVMS).
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-service-status/service-availability
