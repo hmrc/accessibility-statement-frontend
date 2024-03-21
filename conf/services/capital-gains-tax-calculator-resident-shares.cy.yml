@@ -8,20 +8,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /calculate-your-capital-gains/resident/shares/disposal-date
 contactFrontendServiceId: CGT
-complianceStatus: partial
-milestones:
-  - description: "Daeth gwasanaeth defnyddwyr i ben heb rybudd neu heb gael cyfle i ymestyn eu hamser yn y gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (timing Adjustable) a 2.2.6 (timeouts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-12-31
-  - description: "Nid oedd <legend> yn cynnwys yr wybodaeth yn ymwneud â’r grŵp o feysydd mewnbwn. Cyflwynwyd <h1> cyn i <legend> adael <legend> sy’n cynnwys y testun awgrym yn unig. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-12-31
-  - description: "Nid oedd y berthynas rhwng y cynnwys ar y dudalen ‘Gwirio’ch atebion’ yn glir, roedd <divs> wedi’i ddefnyddio i arddangos cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-12-31
-  - description: "Ni wnaeth y cysylltiad i symud syth ymlaen ar gyfer gwall gweithio fel y disgwyl, gan nad oedd y Dynodydd Defnyddiwr yr oedd y ‘href’ yn cyfeirio ato yn bodoli. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (bypass blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-12-31
-  - description: "Methodd lliw’r dangosydd ffocws a ddefnyddiwyd ar draws y gwasanaeth â bodloni’r gymhareb ddisgwyliedig o 3:1 i basio maen prawf llwyddiant 1.4.11 ‘Non-text Contrast AA’, Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1, a gall fod yn anodd i rai defnyddwyr ei ganfod. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-12-31
-  - description: "Ni ddefnyddiwyd y pennawd i gyflwyno’r cynnwys, nodwyd swm gan <h1>. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6. (headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-12-31
+complianceStatus: full
 serviceLastTestedDate:  2024-02-29
 statementVisibility: public
 statementCreatedDate: 2020-09-22
