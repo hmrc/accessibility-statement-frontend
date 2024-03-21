@@ -8,14 +8,6 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /calculate-your-capital-gains/resident/shares/disposal-date
 contactFrontendServiceId: CGT
 complianceStatus: partial
-accessibilityProblems:
-  - users were timed out of the service without warning or the option to continue.
-  - legend did not describe the purpose of the grouped elements.
-  - relationships between content on the check your answers page was not clear.
-  - the error skip link did not function as expected.
-  - some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
-  - heading was not used to introduce content.
-  - text used for the ‘details’ component was not descriptive to screen reader users.
 milestones:
   - description: "Users were timed out of the service without warning or given the opportunity to extend their time in the service. This doesn’t meet WCAG 2.1 success criteria 2.2.1 (timing Adjustable) and 2.2.6 (timeouts)."
     date: 2023-12-31
@@ -29,11 +21,12 @@ milestones:
     date: 2023-12-31
   - description: "The heading had not been used to introduce the content, the <h1> stated an amount. This doesn’t meet WCAG 2.1 success criteria 2.4.6 (headings and labels)."
     date: 2023-12-31
-serviceLastTestedDate: 2020-10-22
+serviceLastTestedDate:  2024-02-29
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2023-01-06
+statementLastUpdatedDate: 2024-03-21
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Live services
+wcagVersion: 2.2 AA
