@@ -8,7 +8,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /calculate-your-capital-gains/resident/shares/disposal-date
 contactFrontendServiceId: CGT
 complianceStatus: full
-serviceLastTestedDate:  2024-02-29
+serviceLastTestedDate:  2024-03-01
 statementVisibility: public
 statementCreatedDate: 2020-09-22
 statementLastUpdatedDate: 2024-03-21
