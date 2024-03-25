@@ -141,10 +141,10 @@ this property must be set to `/discounted-icecreams` as follows:
 accessibility-statement.service-path = "/discounted-icecreams"
 ```
 
-The [hmrcStandardFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-26/twirl/uk/gov/hmrc/hmrcfrontend/views/helpers/hmrcStandardFooter.scala.html) component 
+The [hmrcStandardFooter](https://github.com/hmrc/play-frontend-hmrc/blob/main/play-frontend-hmrc-play-30/src/main/twirl/uk/gov/hmrc/hmrcfrontend/views/helpers/HmrcStandardFooter.scala.html) component 
 will deliver the full govukFooter with standardised links, with an auto-generated link to your accessibility statement, including the full referrerUrl parameter.
  
-Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
+Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/main/play-frontend-hmrc-play-30/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
 for occasions where it is not convenient to use hmrcFooter.
 
 ### Manually adding a link to your accessibility statement
@@ -171,7 +171,7 @@ http://www.tax.service.gov.uk/contact/accessibility-unauthenticated?service=icec
 The referrerUrl parameter should be dynamic, not hard-coded, and based on the request the user made to the page
 they were visiting when clicking on the 'Accessibility statement' link. It can be constructed from the
 `platform.frontend.host` configuration key (available only when running on the MDTP platform) and the `request.path` 
-as shown in the following code: https://github.com/hmrc/play-ui/blob/master/src/main/play-26/uk/gov/hmrc/play/config/AccessibilityStatementConfig.scala#L43
+as shown in the following code: https://github.com/hmrc/play-frontend-hmrc/blob/main/play-frontend-hmrc-play-30/src/main/scala/uk/gov/hmrc/hmrcfrontend/config/AccessibilityStatementConfig.scala
 
 This `referrerUrl` parameter is important in helping HMRC customer service agents find out exactly where the 
 end user discovered the accessibility issue.
