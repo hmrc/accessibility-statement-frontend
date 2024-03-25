@@ -141,10 +141,10 @@ this property must be set to `/discounted-icecreams` as follows:
 accessibility-statement.service-path = "/discounted-icecreams"
 ```
 
-The [hmrcStandardFooter](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/play-30/twirl/uk/gov/hmrc/hmrcfrontend/views/helpers/hmrcStandardFooter.scala.html) component 
+The [hmrcStandardFooter](https://github.com/hmrc/play-frontend-hmrc/blob/main/play-frontend-hmrc-play-30/src/main/twirl/uk/gov/hmrc/hmrcfrontend/views/helpers/HmrcStandardFooter.scala.html) component 
 will deliver the full govukFooter with standardised links, with an auto-generated link to your accessibility statement, including the full referrerUrl parameter.
  
-Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/master/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
+Also available is the [hmrcFooterItems](https://github.com/hmrc/play-frontend-hmrc/blob/main/play-frontend-hmrc-play-30/src/main/scala/uk/gov/hmrc/hmrcfrontend/views/config/HmrcFooterItems.scala) helper
 for occasions where it is not convenient to use hmrcFooter.
 
 ### Manually adding a link to your accessibility statement
