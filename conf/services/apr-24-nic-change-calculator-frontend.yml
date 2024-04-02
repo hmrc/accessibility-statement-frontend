@@ -1,0 +1,14 @@
+serviceName: Estimate how the April 2024 National Insurance contributions changes will affect you
+serviceHeaderName: Estimate how the April 2024 National Insurance contributions changes will affect you
+serviceDescription: Use this tool to estimate how the April 2024 National Insurance contributions changes will affect you.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /estimate-apr-24-nic-changes
+contactFrontendServiceId: apr-24-nic-change-calculator-frontend
+businessArea: Customer Services Group (CSG)
+ddc: DDC Newcastle
+complianceStatus: full
+statementVisibility: public
+statementCreatedDate: 2024-04-02
+statementLastUpdatedDate: 2024-04-02
+serviceLastTestedDate: 2024-03-27
+wcagVersion: 2.2 AA
