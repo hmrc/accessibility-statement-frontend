@@ -5,7 +5,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-vat-on-goods-sold-to-eu/register-for-import-one-stop-shop
 contactFrontendServiceId: ioss-registration-frontend
 complianceStatus: full
-serviceLastTestedDate: 2024-04-05
+serviceLastTestedDate: 2024-04-04
 statementVisibility: public
 statementCreatedDate: 2024-02-14
 statementLastUpdatedDate: 2024-04-09
