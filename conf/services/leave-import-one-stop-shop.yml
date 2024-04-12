@@ -1,0 +1,17 @@
+serviceName: Leave the Import One Stop Shop
+serviceHeaderName: Leave the Import One Stop Shop
+serviceDescription: Use this service to leave the VAT Import One Stop Shop (IOSS) scheme.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pay-vat-on-goods-sold-to-eu/leave-import-one-stop-shop
+contactFrontendServiceId: ioss-exclusions-frontend
+complianceStatus: full
+serviceLastTestedDate: 2024-04-04
+statementVisibility: public
+statementCreatedDate: 2024-04-12
+statementLastUpdatedDate: 2024-04-12
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
