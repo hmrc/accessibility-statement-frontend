@@ -7,26 +7,11 @@ serviceUrl: /pay-what-you-owe-in-instalments
 contactFrontendServiceId: pay-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - Ar y tudalennau ‘Ar ba ddiwrnod a ydych eisiau talu bob mis?’ a ‘Faint y gallwch ei dalu bob mis?’, mae’r label ar goll ar gyfer y meysydd mewnbwn testun, sy’n ei gwneud hi’n anodd gwybod beth y dylid ei nodi.
-  - Ar y tudalennau ‘Ar ba ddiwrnod a ydych eisiau talu bob mis?’ a ‘Faint y gallwch ei dalu bob mis?’, ni fydd defnyddwyr darllenydd sgrin yn clywed y copi awgrym na’r neges gwall wrth symud yn syth i’r meysydd mewnbwn.
-  - Ar y tudalennau ‘Ychwanegu eich incwm a’ch gwariant’, ‘Gwirio’ch cynllun talu’ ac ‘Eich cynllun talu’, nid yw’r eitemau rhestr wedi’u grwpio gyda’i gilydd, sy’n ei gwneud hi’n anodd i ddefnyddwyr darllenydd sgrin wybod at beth mae’r eitemau’n cyfeirio.
-  - Ar y dudalen ‘Gwirio manylion eich Debyd Uniongyrchol’, nid yw’r cysylltiadau ‘Newid’ yn rhoi digon o gyd-destun i ddefnyddwyr darllenydd sgrin allu pennu i ble y bydd y cysylltiad yn arwain.
-  - Nid oes gan y dudalen ‘Trefnu Debyd Uniongyrchol’ label grwpio i roi gwybod i ddefnyddwyr darllenydd sgrin sut mae’r meysydd ffurflen yn perthyn i’w gilydd.
-  - Ar y dudalen ‘Telerau ac amodau’, wrth newid i’r fersiwn Gymraeg, mae’r gair cudd ‘warning’ yn aros yn Saesneg ac ni fydd yn cael ei ynganu’n gywir ar gyfer defnyddwyr darllenydd sgrin.
+  - Ar y dudalen ‘Gwirio manylion eich Debyd Uniongyrchol’, nid yw’r eitemau rhestr wedi’u grwpio gyda’i gilydd, sy’n ei gwneud hi’n anodd i ddefnyddwyr darllenydd sgrin wybod at beth mae’r eitemau’n cyfeirio.
 milestones:
-  - description: Mae label ar goll ar gyfer meysydd mewnbwn testun. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-15
-  - description: Nid yw’r copi awgrym na’r neges gwall wedi cysylltu’n rhaglennol â rheolyddion y ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (A) (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-15
-  - description: Mae’r holl eitemau wedi’u gosod mewn rhestrau disgrifio ar wahân. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-15
-  - description: Ni ellir pennu diben y cysylltiadau ‘Newid’ ar sail testun y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-15
-  - description: Does dim allwedd gan y set maes. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-15
-  - description: Pan gaiff y dudalen ei dangos yn Gymraeg, mae peth o’r cynnwys yn ymddangos yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-12-15
-serviceLastTestedDate: 2023-05-23
+  - description: Mae’r holl eitemau wedi’u gosod mewn rhestrau disgrifio ar wahân. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
+    date: 2024-11-01
+serviceLastTestedDate: 2024-03-26
 statementVisibility: public
 statementCreatedDate: 2020-02-26
 statementLastUpdatedDate: 2023-08-29

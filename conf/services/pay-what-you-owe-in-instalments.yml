@@ -7,26 +7,11 @@ serviceUrl: /pay-what-you-owe-in-instalments
 contactFrontendServiceId: pay-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - On the ‘Which day do you want to pay each month?’ and ‘How much can you pay each month?’ pages, the label is missing for the text inputs making it difficult to know what should be entered.
-  - On the ‘Which day do you want to pay each month?’ and ‘How much can you pay each month?’ pages, screen-reader users will not hear the hint copy or error message when moving directly to the input fields.
-  - On the ‘Add your income and spending’, ‘Check your payment plan’ and ‘Your payment plan’ pages, list items have not been grouped together which makes it difficult for screen-readers users to know what they relate to.
-  - On the ‘Check your Direct Debit details’ page, the change links do not provide enough context for screen-reader users to determine where the link will take them.
-  - The ‘Set up Direct Debit’ page does not have a grouping label to tell screen-reader users how the form fields relate to each other.
-  - On the ‘Terms and conditions’ page, when switching to the Welsh version, the hidden word ‘warning’ remains in English and will not be pronounced correctly for screen-reader users.
+  - On the ’Check your Direct Debit details’ page, list items have not been grouped together which makes it difficult for screen-readers users to know what they relate to.
 milestones:
-  - description: Label missing for text inputs. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
-    date: 2023-12-15
-  - description: Hint copy and error message is not programmatically associated with the form controls. This fails WCAG 2.1 success criterion 1.3.1 (A) Info and relationships.
-    date: 2023-12-15
-  - description: All items have been placed in separate description lists. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships.
-    date: 2023-12-15
-  - description: Purpose of the change links cannot be determined from the link text. This fails WCAG 2.1 success criterion 2.4.4 Link Purpose (in Context).
-    date: 2023-12-15
-  - description: Fieldset is missing the legend. This fails WCAG 2.1 success criterion 4.1.2 Name, Role, Value.
-    date: 2023-12-15
-  - description: When the page is displayed in Welsh, some content is shown in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.1 success criterion 3.1.2 Language of Parts.
-    date: 2023-12-15
-serviceLastTestedDate: 2023-05-23
+  - description: All items have been placed in separate description lists. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships
+    date: 2024-11-01
+serviceLastTestedDate: 2024-03-26
 statementVisibility: public
 statementCreatedDate: 2020-02-26
 statementLastUpdatedDate: 2023-08-29
