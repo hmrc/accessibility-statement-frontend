@@ -7,20 +7,31 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  - wrth ddefnyddio’r cyfieithiad Gymraeg, bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall y neges gwall ynghylch chwilio am gyfeiriad, gan y bydd eu darllenydd sgrin yn ynganu’r copi Saesneg fel Cymraeg.
-  - nid yw’r copi ‘eich cyfrifoldebau os dewiswch gael llythyrau ar-lein’ wedi’i adeiladu fel pennawd felly ni fydd defnyddwyr darllenwyr sgrin yn deall trefn y cynnwys.
+  - where we use 'show me an example' in a link, we have not said that this is to show an example of accounting methods
+  - certain screen readers do not move to the top of the page when a new page is loaded
+  - if you go back to a previous page, some of the information you already entered will not always be shown - you may need to re-enter it
+  - some of our error messages will not help you to understand what the error may be or how to fix it
+  - the 'Back' link does not always appear below the Welsh language toggle
 milestones:
   - description: |
-      nid oes gan y rhagddodiad ‘gwall’ ar negeseuon gwall y priodoledd ‘lang=en’ priodol, sy’n achosi i ddarllenwyr sgrin gamynganu’r geiriau. 3.1.2 (Language of Parts).
-    date: 2022-11-15
+      Where we use 'show me an example' in a link, we have not said that this is to show an example of accounting methods.
+    date: 2024-07-31
   - description: |
-      mae’r copi ‘eich cyfrifoldebau os dewiswch gael llythyrau ar-lein’ yn cyflwyno’r cynnwys dilynol ac yn gweithredu’n weledol fel pennawd, ond dim ond triniaeth weledol ydyw ac nid yw’n rhoi unrhyw ystyr semantig na strwythur tudalen i.
-    date: 2022-11-15
-serviceLastTestedDate: 2022-05-02
+      Certain screen readers do not move to the top of the page when a new page is loaded.
+    date: 2024-07-31
+  - description: |
+      If you go back to a previous page, some of the information you already entered will not always be shown - you may need to re-enter it.
+    date: 2024-07-31
+  - description: |
+      Some of our error messages will not help you to understand what the error may be or how to fix it.
+    date: 2024-07-31
+  - description: |
+      The 'Back' link does not always appear below the Welsh language toggle.
+    date: 2024-07-31
+serviceLastTestedDate: 2024-02-26
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2022-05-23
-
+statementLastUpdatedDate: 2024-04-17
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic: Live Services - Edinburgh

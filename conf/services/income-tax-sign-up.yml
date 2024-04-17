@@ -7,19 +7,31 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  - when using the Welsh translation screen reader users will have difficulties understanding the address lookup error message as their screen reader will pronounce the English copy as Welsh.
-  - the ‘your responsibilities if you choose online’ has not been built as a heading so screen reader users will not understand the set up of content.
+  - pan fyddwn yn defnyddio ‘dangoswch enghraifft i mi’ mewn cysylltiad, nid ydym wedi rhoi gwybod bod hyn er mwyn dangos enghraifft o ddulliau cyfrifyddu
+  - nid yw rhai darllenwyr sgrin yn symud i frig y dudalen pan fydd tudalen newydd yn cael ei llwytho
+  - os ewch yn ôl i dudalen flaenorol, weithiau bydd rhywfaint o’r wybodaeth a nodwyd gennych eisoes ddim yn cael ei dangos - efallai y bydd angen i chi ei hail-nodi
+  - bydd rhai o’n negeseuon gwall ddim yn eich helpu i ddeall beth allai’r gwall fod, na sut i’w drwsio
+  - nid yw’r cysylltiad ‘Yn ôl’ bob amser yn ymddangos o dan y togl Gymraeg
 milestones:
   - description: |
-      the ‘error’ prefix on error messages does not have the appropriate ‘lang=en’ attribute that causes screen readers to mispronounce the words. 3.1.2 Language of parts.
-    date: 2022-011-15
+      Pan fyddwn yn defnyddio ‘dangoswch enghraifft i mi’ mewn cysylltiad, nid ydym wedi rhoi gwybod bod hyn er mwyn ‘dangos enghraifft o ddulliau cyfrifyddu’.
+    date: 2024-07-31
   - description: |
-      the ‘your responsibilities if you choose online’ copy introduces the subsequent content and visually acts as a heading, but it is only a visual treatment and confers no semantic meaning or page structure to screen readers. This fails WCAG 2.1.
-    date: 2022-11-15
-serviceLastTestedDate: 2022-05-02
+      Nid yw rhai darllenwyr sgrin yn symud i frig y dudalen pan fydd tudalen newydd yn cael ei llwytho.
+    date: 2024-07-31
+  - description: |
+      Os ewch yn ôl i dudalen flaenorol, weithiau bydd rhywfaint o’r wybodaeth a nodwyd gennych eisoes ddim yn cael ei dangos - efallai y bydd angen i chi ei hail-nodi.
+    date: 2024-07-31
+  - description: |
+      Bydd rhai o’n negeseuon gwall ddim yn eich helpu i ddeall beth allai’r gwall fod, na sut i’w drwsio.
+    date: 2024-07-31
+  - description: |
+      Nid yw’r cysylltiad ‘Yn ôl’ bob amser yn ymddangos o dan y togl Gymraeg.
+    date: 2024-07-31
+serviceLastTestedDate: 2024-02-26
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2022-05-23
+statementLastUpdatedDate: 2024-04-17
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic: Live Services - Edinburgh
