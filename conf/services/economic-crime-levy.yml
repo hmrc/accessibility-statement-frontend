@@ -1,19 +1,18 @@
-serviceName: Economic Crime Levy                     # The service name that will appear in the title of the accessibility statement.
-# Do not include the word service at the end, as this will be added by the templates
-serviceDescription: |                                # A description of the service
+serviceName: Economic Crime Levy
+serviceDescription: |
   The Economic Crime Levy (ECL) is an annual charge that will affect entities (organisations)
   who are supervised under the Money Laundering Regulations (MLR)
   and whose UK revenue exceeds £10.2 million per year.
-serviceDomain: www.tax.service.gov.uk                # The domain name under which this service exists (exclude the https:// and the path)
-serviceUrl: /register-for-economic-crime-levy        # The relative URL to the service (omitting www.tax.service.gov.uk)
-contactFrontendServiceId: economic-crime-levy        # A unique identifier for your service (see notes below)
-complianceStatus: full                               # full|partial|noncompliant
-serviceLastTestedDate: 2024-04-16                    # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
-statementVisibility: public                          # If set to public, the statement will be visible in production. One of: public|draft|archived.
-statementCreatedDate: 2023-08-31                     # In ISO format YYYY-MM-DD
-statementLastUpdatedDate: 2024-04-17                 # In ISO format YYYY-MM-DD
-businessArea: Customer Strategy & Tax Design (CS&TD) # See valid values below
-ddc: DDC Yorkshire                                   # See valid values below
-liveOrClassic:                                       # See valid values below
-typeOfService: Live services                         # Classic services|Live services|Public beta
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-for-economic-crime-levy
+contactFrontendServiceId: economic-crime-levy
+complianceStatus: full
+serviceLastTestedDate: 2024-04-16
+statementVisibility: public
+statementCreatedDate: 2023-08-31
+statementLastUpdatedDate: 2024-04-18
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Live services
 wcagVersion: 2.2 AA
