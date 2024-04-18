@@ -6,26 +6,13 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /register-for-economic-crime-levy
 contactFrontendServiceId: economic-crime-levy
-complianceStatus: partial
-accessibilityProblems:
-  - Ar y tudalennau ‘beth oedd cyfanswm eich refeniw yn y DU yn eich cyfnod cyfrifyddu’ a ‘beth oedd eich refeniw yn y DU ar gyfer y cyfnod cyfrifyddu perthnasol’, mae’r mewnbwn arian cyfred yn dangos neges gwall pan nodir arwyddion punt (£), bylchau neu atalnodau. Bydd hyn yn ei gwneud hi’n anodd i ddefnyddwyr meddalwedd adnabod lleferydd, a defnyddwyr sydd â nam echddygol sy’n dibynnu ar gopïo a gludo o ffynhonnell arall.
-  - Wrth ddefnyddio sgrin fach, fel dyfeisiau symudol neu wrth gynyddu maint ffont, nid yw’r cynnwys ar rai tudalennau yn ffitio ar y sgrin yn iawn.
-  - Wrth nodi enwau, cyfeiriadau e-bost a rhifau ffôn yn y gwasanaeth, nid yw defnyddwyr yn cael y dewis i boblogi’r meysydd o ddata a arbedwyd yn flaenorol yn eu porwr.
-  - Ar y tudalen ‘beth yw’ch rhif ffôn’, nid yw’r math o fewnbwn wedi ei osod yn gywir ar gyfer defnyddio’r bysellbad rhifol ar ddyfeisiau symudol.
-milestones:
-  - description: Nid oes gan y mewnbwn arian cyfred yr arddull gwall cywir. Mae dilysu yn atal defnyddwyr rhag nodi gwerthoedd gyda chymeriadau a ganiateir. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2023-10-27
-  - description: Ar sgriniau bach neu pan fydd maint y ffont wedi’i gynyddu, mae’r cynnwys ar wahanol dudalennau yn gorlifo, gan achosi i ddefnyddwyr sgrolio i gyfeiriadau lluosog. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2023-10-27
-  - description: Mae’r meysydd ar gyfer enw cyswllt, e-bost a ffôn heb nodweddion awtogwblhau sy’n golygu na fydd defnyddwyr yn gallu defnyddio data a arbedwyd gan y porwr i boblogi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2023-10-27
-  - description: Mewnbwn ffôn ar goll ar gyfer maes rhif ffôn. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1
-    date: 2023-10-27
-serviceLastTestedDate: 2023-06-29
+complianceStatus: full
+serviceLastTestedDate: 2024-04-16
 statementVisibility: public
 statementCreatedDate: 2023-08-31
-statementLastUpdatedDate: 2023-08-31
+statementLastUpdatedDate: 2024-04-17
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Yorkshire
 liveOrClassic:
-typeOfService: Public beta
+typeOfService: Live services
+wcagVersion: 2.2 AA
