@@ -7,26 +7,26 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  - where we use 'show me an example' in a link, we have not said that this is to show an example of accounting methods
-  - certain screen readers do not move to the top of the page when a new page is loaded
-  - if you go back to a previous page, some of the information you already entered will not always be shown - you may need to re-enter it
-  - some of our error messages will not help you to understand what the error may be or how to fix it
-  - the 'Back' link does not always appear below the Welsh language toggle
+  - pan fyddwn yn defnyddio ‘dangoswch enghraifft i mi’ mewn cysylltiad, nid ydym wedi rhoi gwybod bod hyn er mwyn dangos enghraifft o ddulliau cyfrifyddu
+  - nid yw rhai darllenwyr sgrin yn symud i frig y dudalen pan fydd tudalen newydd yn cael ei llwytho
+  - os ewch yn ôl i dudalen flaenorol, weithiau bydd rhywfaint o’r wybodaeth a nodwyd gennych eisoes ddim yn cael ei dangos - efallai y bydd angen i chi ei hail-nodi
+  - bydd rhai o’n negeseuon gwall ddim yn eich helpu i ddeall beth allai’r gwall fod, na sut i’w drwsio
+  - nid yw’r cysylltiad ‘Yn ôl’ bob amser yn ymddangos o dan y togl Gymraeg
 milestones:
   - description: |
-      Where we use 'show me an example' in a link, we have not said that this is to show an example of accounting methods.
+      Pan fyddwn yn defnyddio ‘dangoswch enghraifft i mi’ mewn cysylltiad, nid ydym wedi rhoi gwybod bod hyn er mwyn ‘dangos enghraifft o ddulliau cyfrifyddu’.
     date: 2024-07-31
   - description: |
-      Certain screen readers do not move to the top of the page when a new page is loaded.
+      Nid yw rhai darllenwyr sgrin yn symud i frig y dudalen pan fydd tudalen newydd yn cael ei llwytho.
     date: 2024-07-31
   - description: |
-      If you go back to a previous page, some of the information you already entered will not always be shown - you may need to re-enter it.
+      Os ewch yn ôl i dudalen flaenorol, weithiau bydd rhywfaint o’r wybodaeth a nodwyd gennych eisoes ddim yn cael ei dangos - efallai y bydd angen i chi ei hail-nodi.
     date: 2024-07-31
   - description: |
-      Some of our error messages will not help you to understand what the error may be or how to fix it.
+      Bydd rhai o’n negeseuon gwall ddim yn eich helpu i ddeall beth allai’r gwall fod, na sut i’w drwsio.
     date: 2024-07-31
   - description: |
-      The 'Back' link does not always appear below the Welsh language toggle.
+      Nid yw’r cysylltiad ‘Yn ôl’ bob amser yn ymddangos o dan y togl Gymraeg.
     date: 2024-07-31
 serviceLastTestedDate: 2024-02-26
 statementVisibility: public
