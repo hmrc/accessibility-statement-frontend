@@ -1,0 +1,15 @@
+serviceName: Report Pillar 2 top-up taxes
+serviceDescription: |
+  Report Pillar 2 top-up taxes is a digital service whereby groups with a turnover of €750m or more can register and subscribe to the tax service and enable compliance to the global tax policy.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /report-pillar2-top-up-taxes
+contactFrontendServiceId: pillar2-frontend
+complianceStatus: full
+serviceLastTestedDate: 2024-04-22
+statementVisibility: public
+statementCreatedDate: 2024-04-29
+statementLastUpdatedDate: 2024-04-29
+businessArea: Customer Compliance Group (CCG)
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Public beta
