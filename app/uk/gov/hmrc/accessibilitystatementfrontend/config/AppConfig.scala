@@ -16,12 +16,15 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.config
 
-import javax.inject.{Inject, Singleton}
-import play.api.{Configuration, Logging}
 import play.api.i18n.Lang
+import play.api.{Configuration, Logging}
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{Public, Visibility}
-import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.VisibilityParser
+import uk.gov.hmrc.play.bootstrap.binders.RedirectUrlPolicy.Id
+import uk.gov.hmrc.play.bootstrap.binders.{AbsoluteWithHostnameFromAllowlist, RedirectUrlPolicy}
+import uk.gov.hmrc.play.bootstrap.config.ServicesConfig
+
+import javax.inject.{Inject, Singleton}
 
 @Singleton
 case class AppConfig @Inject() (
@@ -61,4 +64,7 @@ case class AppConfig @Inject() (
   val defaultLanguage: Lang = Lang(en)
 
   val servicesDirectory: String = servicesConfig.getString("services.directory")
+
+  private lazy val mdtpTrustedDomains: Set[String] = config.get[Seq[String]]("mdtp.trustedDomains").toSet
+  lazy val urlPolicy: RedirectUrlPolicy[Id]        = AbsoluteWithHostnameFromAllowlist(mdtpTrustedDomains)
 }

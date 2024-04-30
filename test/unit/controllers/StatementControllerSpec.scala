@@ -16,6 +16,7 @@
 
 package unit.controllers
 
+import ch.qos.logback.classic.Level
 import play.api.inject.bind
 import helpers.TestAccessibilityStatementRepo
 import org.jsoup.Jsoup
@@ -28,11 +29,21 @@ import uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementControlle
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 import org.mockito.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import play.api.Application
+import play.api.{Application, Logger}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.mvc.Cookie
+import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl
+import unit.LogCapturing
 
-class StatementControllerSpec extends AnyWordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite {
+import scala.jdk.CollectionConverters._
+
+class StatementControllerSpec
+    extends AnyWordSpec
+    with Matchers
+    with MockitoSugar
+    with GuiceOneAppPerSuite
+    with LogCapturing {
+
   private val fakeRequest  = FakeRequest("GET", "/")
   private val welshRequest = fakeRequest.withCookies(
     Cookie(
@@ -40,6 +51,8 @@ class StatementControllerSpec extends AnyWordSpec with Matchers with MockitoSuga
       "cy"
     )
   )
+
+  private val logger = Logger("uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController")
 
   override def fakeApplication(): Application = {
     val repo = TestAccessibilityStatementRepo()
@@ -62,6 +75,68 @@ class StatementControllerSpec extends AnyWordSpec with Matchers with MockitoSuga
       val result = controller.getStatement("test-service", None)(fakeRequest)
       contentType(result) shouldBe Some("text/html")
       charset(result)     shouldBe Some("utf-8")
+    }
+
+    "include encoded referrerUrl in the 'Report an accessibility problem' link" in {
+      val result  =
+        controller.getStatement("test-service", Some(RedirectUrl("https://some.domain/some/service/path")))(fakeRequest)
+      val content = Jsoup.parse(contentAsString(result))
+
+      val reportAProblemLink =
+        content.select("a").asScala.toList.filter(_.text.equals("report the accessibility problem")).head
+      reportAProblemLink.attr("href") should include("referrerUrl=https%3A%2F%2Fsome.domain%2Fsome%2Fservice%2Fpath")
+    }
+
+    "log a relative referrerUrl that doesn't meet our policy, but include it anyway" in {
+      withCaptureOfLoggingFrom(logger) { logEvents =>
+        val result = controller.getStatement("test-service", Some(RedirectUrl("/some/service/path")))(fakeRequest)
+        logEvents.map(e => (e.getLevel, e.getMessage)) should be(
+          Seq(
+            (
+              Level.WARN,
+              "Service [test-service] - Provided URL [/some/service/path] doesn't comply with redirect policy"
+            )
+          )
+        )
+
+        val content = Jsoup.parse(contentAsString(result))
+
+        val reportAProblemLink =
+          content.select("a").asScala.toList.filter(_.text.equals("report the accessibility problem")).head
+        reportAProblemLink.attr("href") should include("referrerUrl=%2Fsome%2Fservice%2Fpath")
+      }
+    }
+
+    "log an absolute referrerUrl that doesn't meet our policy, but include it anyway" in {
+      withCaptureOfLoggingFrom(logger) { logEvents =>
+        val result =
+          controller.getStatement("test-service", Some(RedirectUrl("https://some.domain/some/service/path")))(
+            fakeRequest
+          )
+        logEvents.map(e => (e.getLevel, e.getMessage)) should be(
+          Seq(
+            (
+              Level.WARN,
+              "Service [test-service] - Provided URL [https://some.domain/some/service/path] doesn't comply with redirect policy"
+            )
+          )
+        )
+
+        val content = Jsoup.parse(contentAsString(result))
+
+        val reportAProblemLink =
+          content.select("a").asScala.toList.filter(_.text.equals("report the accessibility problem")).head
+        reportAProblemLink.attr("href") should include("referrerUrl=https%3A%2F%2Fsome.domain%2Fsome%2Fservice%2Fpath")
+      }
+    }
+
+    "don't log a referrerUrl that meets our policy" in {
+      withCaptureOfLoggingFrom(logger) { logEvents =>
+        controller.getStatement("test-service", Some(RedirectUrl("https://localhost:12345/some/service/path")))(
+          fakeRequest
+        )
+        logEvents shouldBe empty
+      }
     }
 
     "return the English statement by default" in {

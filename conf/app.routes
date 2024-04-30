@@ -1,4 +1,4 @@
 # microservice specific routes
 
 ->         /hmrc-frontend           hmrcfrontend.Routes
-GET        /:service                uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController.getStatement(service: String, referrerUrl: Option[String])
+GET        /:service                uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController.getStatement(service: String, referrerUrl: Option[RedirectUrl])

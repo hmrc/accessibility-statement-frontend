@@ -25,6 +25,8 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
+import uk.gov.hmrc.play.bootstrap.binders.{RedirectUrl, SafeRedirectUrl, UnsafePermitAll}
+import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl._
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 
 import scala.concurrent.Future
@@ -44,7 +46,7 @@ class StatementController @Inject() (
 
   def getStatement(
     service: String,
-    referrerUrl: Option[String]
+    referrerUrl: Option[RedirectUrl]
   ): Action[AnyContent] =
     Action.async { implicit request =>
       val isWelshTranslationAvailable =
@@ -55,11 +57,21 @@ class StatementController @Inject() (
         language = messagesApi.preferred(request).lang
       ) match {
         case Some((accessibilityStatement, language)) =>
+          val safeReferrerUrl: Option[SafeRedirectUrl] = referrerUrl match {
+            case None            => None
+            case Some(unsafeUrl) =>
+              unsafeUrl.getEither(appConfig.urlPolicy) match {
+                case Right(safeRedirectUrl: SafeRedirectUrl) => Some(safeRedirectUrl)
+                case Left(unsafeRedirectError)               =>
+                  logger.warn(s"Service [$service] - $unsafeRedirectError")
+                  Some(unsafeUrl.get(UnsafePermitAll))
+              }
+          }
           Future.successful(
             Ok(
               getStatementPageInLanguage(
                 accessibilityStatement,
-                referrerUrl,
+                safeReferrerUrl.map(_.url),
                 language,
                 isWelshTranslationAvailable
               )

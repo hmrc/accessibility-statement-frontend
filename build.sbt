@@ -1,5 +1,6 @@
 import uk.gov.hmrc.sbtdistributables.SbtDistributablesPlugin.publishingSettings
 import play.sbt.PlayImport.PlayKeys.playDefaultPort
+import play.sbt.routes.RoutesKeys
 import sbt.Keys.testOptions
 import uk.gov.hmrc.DefaultBuildSettings.addTestReportOption
 
@@ -47,6 +48,7 @@ lazy val microservice = Project(appName, file("."))
       "uk.gov.hmrc.hmrcfrontend.views.html.components._",
       "uk.gov.hmrc.hmrcfrontend.views.html.helpers._"
     ),
+    RoutesKeys.routesImport += "uk.gov.hmrc.play.bootstrap.binders.RedirectUrl",
     scalacOptions += "-Wconf:src=routes/.*:s",
     scalacOptions += "-Wconf:cat=unused-imports&src=html/.*:s",
     Assets / pipelineStages := Seq(gzip),

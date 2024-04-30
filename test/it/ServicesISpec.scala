@@ -43,11 +43,9 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
   private val wcagMilestoneFormattingKnownIssues: Seq[String] =
     Seq(
       "council-tax-band", // No WCAG version referenced in milestone
-      "enter-cross-border-arrangements", // No WCAG version referenced in milestone
       "emcs-tfe-report-a-receipt-frontend", // References WCAG 2.2
       "emcs-tfe-explain-shortage-excess-frontend", // References WCAG 2.2
       "emcs-tfe-explain-delay-frontend", // References WCAG 2.2
-      "disclose-cross-border-arrangements", // WCAG in text followed by success criterion
       "income-tax", // No WCAG version referenced in milestone
       "ipt100-insurance-premium-tax", // References WCAG 2.0
       "tax-you-paid" // No WCAG version referenced in milestone
