@@ -57,15 +57,13 @@ class StatementController @Inject() (
         language = messagesApi.preferred(request).lang
       ) match {
         case Some((accessibilityStatement, language)) =>
-          val safeReferrerUrl: Option[SafeRedirectUrl] = referrerUrl match {
-            case None            => None
-            case Some(unsafeUrl) =>
-              unsafeUrl.getEither(appConfig.urlPolicy) match {
-                case Right(safeRedirectUrl: SafeRedirectUrl) => Some(safeRedirectUrl)
-                case Left(unsafeRedirectError)               =>
-                  logger.warn(s"Service [$service] - $unsafeRedirectError")
-                  Some(unsafeUrl.get(UnsafePermitAll))
-              }
+          val safeReferrerUrl: Option[SafeRedirectUrl] = referrerUrl map { unvalidatedUrl =>
+            unvalidatedUrl.getEither(appConfig.urlPolicy) match {
+              case Right(safeRedirectUrl: SafeRedirectUrl) => safeRedirectUrl
+              case Left(unsafeRedirectError)               =>
+                logger.warn(s"Service [$service] - $unsafeRedirectError")
+                unvalidatedUrl.get(UnsafePermitAll)
+            }
           }
           Future.successful(
             Ok(
