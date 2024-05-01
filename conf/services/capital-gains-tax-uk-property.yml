@@ -1,0 +1,16 @@
+serviceName: Capital Gains Tax
+serviceHeaderName: Capital Gains Tax
+serviceDescription: You can use this service to report the disposal of UK residential property or land (made from 6 April 2020). You can also view your previous and current returns.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /capital-gains-tax-uk-property
+contactFrontendServiceId: CGTPD
+complianceStatus: full
+serviceLastTestedDate: 2020-05-15
+statementVisibility: public
+statementCreatedDate: 2020-04-06
+statementLastUpdatedDate: 2024-04-29
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
+wcagVersion: 2.1 AA

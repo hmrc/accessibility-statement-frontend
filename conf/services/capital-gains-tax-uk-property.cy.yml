@@ -1,0 +1,16 @@
+serviceName: Treth Enillion Cyfalaf
+serviceHeaderName: Treth Enillion Cyfalaf
+serviceDescription: Gallwch ddefnyddio’r gwasanaeth hwn i roi gwybod am warediad o dir neu eiddo preswyl yn y DU (a wnaed o 6 Ebrill 2020 ymlaen). Gallwch hefyd fwrw golwg dros eich Ffurflenni Treth blaenorol a’r rhai cyfredol.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /capital-gains-tax-uk-property
+contactFrontendServiceId: CGTPD
+complianceStatus: full
+serviceLastTestedDate: 2020-05-15
+statementVisibility: public
+statementCreatedDate: 2020-04-06
+statementLastUpdatedDate: 2024-04-29
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
+wcagVersion: 2.1 AA
