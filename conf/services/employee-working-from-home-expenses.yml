@@ -5,11 +5,16 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /employee-working-from-home-expenses
 contactFrontendServiceId: EEWFH
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - The autocomplete feature was problematic for some screen reader users.
+milestones:
+  - description: "The autocomplete feature was problematic for some screen reader users. Users browsing on Internet Explorer 11 with JAWS could not use the feature due to severe keyboard input lag, which also shut down Internet Explorer several times. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (understanding Name, Role, Value)."
+    date: 2024-12-31
+serviceLastTestedDate: 2019-09-19
 statementVisibility: public
 statementCreatedDate: 2020-09-28
-statementLastUpdatedDate: 2020-09-28
-
+statementLastUpdatedDate: 2024-05-02
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
