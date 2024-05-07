@@ -9,7 +9,7 @@ complianceStatus: partial
 accessibilityProblems:
   - The autocomplete feature was problematic for some screen reader users.
 milestones:
-  - description: description: "The autocomplete feature was problematic for some screen reader users. Users browsing on Internet Explorer 11 with JAWS could not use the feature due to severe keyboard input lag, which also shut down Internet Explorer several times. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (understanding Name, Role, Value)."
+  - description: "The autocomplete feature was problematic for some screen reader users. Users browsing on Internet Explorer 11 with JAWS could not use the feature due to severe keyboard input lag, which also shut down Internet Explorer several times. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (understanding Name, Role, Value)."
     date: 2024-12-31
 serviceLastTestedDate: 2019-09-19
 statementVisibility: public
