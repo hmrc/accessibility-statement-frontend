@@ -1,0 +1,24 @@
+serviceName: Register your partnership as a subcontractor and apply for gross payment status — CIS304
+serviceHeaderName: Register your partnership as a subcontractor and apply for gross payment status — CIS304
+serviceDescription: |
+  Use this form to register your partnership as a subcontractor and apply for gross payment status — CIS304
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/register-your-partnership-as-subcontractor-apply-for-gross-payment-status
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2025-03-31
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2025-03-31
+serviceLastTestedDate: 2024-05-02
+statementVisibility: public
+statementCreatedDate: 2024-05-02
+statementLastUpdatedDate: 2024-05-02
