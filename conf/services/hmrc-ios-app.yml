@@ -11,13 +11,13 @@ accessibilityProblems:
   - Screen reader users’ focus is not always sent to the correct area.
 milestones:
   - description: On the Tax calculator screen, screen reader users’ focus is sent to the top of the page if errors are made in the ‘Tax code’ field. This fails WCAG 2.1 success criterion 2.4.3 (Focus Order).
-    date: 2023-06-30
+    date: 2024-11-09
   - description: When a tab is selected on the Self Assessment screen, screen reader users’ focus is not sent to the correct area. This fails WCAG 2.1 success criterion 2.4.3 (Focus Order).
-    date: 2023-06-30
+    date: 2024-11-09
 statementVisibility: public
 serviceLastTestedDate: 2023-05-04
 statementCreatedDate: 2021-06-10
-statementLastUpdatedDate: 2023-06-13
+statementLastUpdatedDate: 2024-05-09
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing
