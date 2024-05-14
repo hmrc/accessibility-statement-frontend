@@ -7,83 +7,56 @@ serviceUrl: /customs-declare-exports
 contactFrontendServiceId: customs-declare-exports
 complianceStatus: partial
 accessibilityProblems:
-  - Page title was present that was not descriptive.
-  - Text introducing content was not marked up as headings.
-  - Radio buttons are missing the programmatic relation with the visible label.
-  - The visible label and the programmatic label do not match.
-  - Elements were present that were not accessible to keyboard only users.
-  - Images do not contain alternative text.
-  - The language had not been set programmatically.
-  - Headings or labels do not provide an accurate description of the content it introduces.
-  - Navigation of the page by keyboard can become confusing and frustrating if focus cannot be seen.
-  - Abbreviations are used without being expanded once.
-  - Links were found to be non-descriptive when navigating out of the context of the page.
-  - Links open in a new tab without prior warning.
-  - When committing an error, the page title did not update to contain the ‘Error:’ prefix.
-  - The link highlighting mechanism does not follow the GOV.UK Design System.
-  - The label for a form field was not presented close to the input.
-  - Navigation landmarks had been used where not required.
-  - Missing error message ID related to the input or fieldset.
-  - Error messages did not follow the format suggested by the GOV.UK Design System.
-  - Duplicate heading and legend text was present. 
-  - A fieldset and legend was present that was not required.
-  - Missing error message link in error summary does not take user to the location of the error.
-  - Missing inline error message.
-  - The check your answers page does not work as expected.
-  - The correct language was not displayed.
+   - Page title was present that was not descriptive.
+   - Tabbed content has not been implemented in a way that enables users to interact with them as they would typically expect to be able to
+   - Headings or labels do not provide an accurate description of the content it introduces.
+   - Abbreviations are used without being expanded once.
+   - Links were found to be non-descriptive when navigating out of the context of the page.
+   - Links open in a new tab without prior warning.
+   - The link highlighting mechanism does not follow the GOV.UK Design System.
+   - The label for a form field was not presented close to the input.
+   - Missing error message ID related to the input or fieldset.
+   - Error messages did not follow the format suggested by the GOV.UK Design System.
+   - Duplicate heading and legend text was present.
+   - A fieldset and legend was present that was not required.
+   - Missing error message link in error summary does not take user to the location of the error.
+   - Missing inline error message.
+   - The check your answers page does not work as expected.
 milestones:
   - description: Page title was present that was not descriptive.
-    date: 2024-06-01
-  - description: Text introducing content was not marked up as headings.
-    date: 2024-06-01
-  - description: Radio buttons are missing the programmatic relation with the visible label.
-    date: 2024-06-01
-  - description: The visible label and the programmatic label do not match.
-    date: 2024-06-01
-  - description: Elements were present that were not accessible to keyboard only users.
-    date: 2024-06-01
-  - description: Images do not contain alternative text.
-    date: 2024-06-01
-  - description: The language had not been set programmatically.
-    date: 2024-06-01
+    date: 2024-09-30
+  - description: Tabbed content has not been implemented in a way that enables users to interact with them as they would typically expect to be able to.
+    date: 2024-09-30
   - description: Headings or labels do not provide an accurate description of the content it introduces.
-    date: 2024-06-01
-  - description: Navigation of the page by keyboard can become confusing and frustrating if focus cannot be seen.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Abbreviations are used without being expanded once.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Links were found to be non-descriptive when navigating out of the context of the page.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Links open in a new tab without prior warning.
-    date: 2024-06-01
-  - description: When committing an error, the page title did not update to contain the ‘Error:’ prefix.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: The link highlighting mechanism does not follow the GOV.UK Design System.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: The label for a form field was not presented close to the input.
-    date: 2024-06-01
-  - description: Navigation landmarks had been used where not required.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Missing error message ID related to the input or fieldset.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Error messages did not follow the format suggested by the GOV.UK Design System.
-    date: 2024-06-01
-  - description: Duplicate heading and legend text was present. 
-    date: 2024-06-01
+    date: 2024-09-30
+  - description: Duplicate heading and legend text was present.
+    date: 2024-09-30
   - description: A fieldset and legend was present that was not required.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Missing error message link in error summary does not take user to the location of the error.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Missing inline error message.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: The check your answers page does not work as expected.
-    date: 2024-06-01
-  - description: The correct language was not displayed.
-    date: 2024-06-01
-serviceLastTestedDate: 2022-08-14
+    date: 2024-09-30
+serviceLastTestedDate: 2024-03-21
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2023-10-20
+statementLastUpdatedDate: 2024-05-03
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:

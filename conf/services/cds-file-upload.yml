@@ -7,44 +7,35 @@ serviceUrl: /cds-file-upload-service
 contactFrontendServiceId: cds-file-upload-service
 complianceStatus: partial
 accessibilityProblems:
-  - Page title was present that was not descriptive.
-  - Text introducing content was not marked up as headings.
-  - Headings or labels do not provide an accurate description of the content it introduces.
   - Abbreviations are used without being expanded once.
   - Text was found with an insufficient colour contrast ratio.
   - When committing an error, the page title did not update to contain the ‘Error:’ prefix.
-  - Errors were not present.
+  - No error handling was present if users left the input field empty
   - The link highlighting mechanism does not follow the GOV.UK Design System.
   - The label for a form field was not presented close to the input.
   - Navigation landmarks had been used where not required.
   - When committing an error, the error summary does not receive focus automatically.
 milestones:
-  - description: Page title was present that was not descriptive.
-    date: 2024-06-01
-  - description: Text introducing content was not marked up as headings.
-    date: 2024-06-01
-  - description: Headings or labels do not provide an accurate description of the content it introduces.
-    date: 2024-06-01
   - description: Abbreviations are used without being expanded once.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Text was found with an insufficient colour contrast ratio.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: When committing an error, the page title did not update to contain the ‘Error:’ prefix.
-    date: 2024-06-01
-  - description: Errors were not present.
-    date: 2024-06-01
+    date: 2024-09-30
+  - description: No error handling was present if users left the input field empty.
+    date: 2024-09-30
   - description: The link highlighting mechanism does not follow the GOV.UK Design System.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: The label for a form field was not presented close to the input.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: Navigation landmarks had been used where not required.
-    date: 2024-06-01
+    date: 2024-09-30
   - description: When committing an error, the error summary does not receive focus automatically.
-    date: 2024-06-01
-serviceLastTestedDate: 2022-08-14
+    date: 2024-09-30
+serviceLastTestedDate: 2024-03-21
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2023-10-20
+statementLastUpdatedDate: 2024-05-03
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
