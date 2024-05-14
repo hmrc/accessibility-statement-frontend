@@ -20,9 +20,9 @@ accessibilityProblems:
 milestones:
   - description: Nid yw’r testun awgrym yn cyfateb i’r dilysiad ar gyfer y mewnbwn yn y meysydd arian cyfred. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
     date: 2024-11-30
-  - description: Ar y dudalen ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’, nid yw negeseuon gwall na chynnwys sydd wedi’i nythu wedi’u cysylltu ag elfennau ffurflen, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships), 4.1.2 (Name, Role Value) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+  - description: Ar y dudalen ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’, nid yw negeseuon gwall na chynnwys sydd wedi’i nythu wedi’u cysylltu ag elfennau ffurflen, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships), 4.1.2 (Name, Role Value) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
     date: 2024-11-30
-  - description: Mae’r meysydd ar gyfer manylion pasbort a thrwydded yrru heb nodweddion awtogwblhau, sy’n golygu na fydd defnyddwyr yn gallu defnyddio data a gadwyd gan y porwr i boblogi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+  - description: Mae’r meysydd ar gyfer manylion pasbort a thrwydded yrru heb nodweddion awtogwblhau, sy’n golygu na fydd defnyddwyr yn gallu defnyddio data a gadwyd gan y porwr i boblogi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
     date: 2024-11-30
   - description: Mae dychwelyd i dudalennau blaenorol yn achosi i ddefnyddwyr ateb y meysydd dyddiad geni eto. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.7 (Redundant Entry) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
     date: 2024-11-30
