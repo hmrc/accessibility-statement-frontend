@@ -11,17 +11,29 @@ serviceUrl: /identity-verification
 contactFrontendServiceId: government-gateway-identity-verification-frontend
 complianceStatus: partial
 accessibilityProblems:
+  - Mae’r cyfarwyddiadau ar gyfer meysydd arian cyfred drwy gydol y gwasanaeth yn awgrymu y gellir cynnwys arwyddion punt ond nid yw’r gwasanaeth yn caniatáu hynny.
   - Ar y dudalen ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’, mae’r neges gwall ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’ yn ymddangos pan fo’r defnyddiwr wedi dewis 2 opsiwn. Mae’n bosibl y bydd rhai o’r camgymeriadau yn cael eu colli gan ddefnyddwyr darllenydd sgrin gan eu bod wedi’u nythu. Mae’r un broblem yn digwydd ar gyfer opsiynau wedi’u nythu ar gyfer slipiau cyflog, P60 neu wlad tarddiad ar gyfer trwyddedau gyrru. Mae’n bosibl y bydd yn anodd cywiro gwallau a nodi strwythur y dudalen ar gyfer defnyddwyr darllenydd sgrin.
   - Nid yw’r meysydd ar gyfer manylion pasbort a thrwydded yrru yn cynnig yr opsiwn i lenwi’r meysydd ar sail y data sydd wedi’u cadw yn eu porwr yn barod.
+  - Pan fydd defnyddwyr yn dychwelyd i’r dudalen flaenorol, mae eu hatebion o ran dyddiad geni a gofnodwyd ganddynt yn flaenorol yn cael eu dileu, felly mae angen iddynt ateb cwestiynau eto.
+  - Ni all defnyddwyr wirio eu hatebion cyn ceisio cyflwyno’r cais.
+  - Pan fydd defnyddwyr yn newid i’r Gymraeg ar y dudalen ‘Rydym yn prosesu eich manylion’, nid yw’r symbol llwytho yn cael ei gyfieithu ar gyfer defnyddwyr darllenwr sgrin.
 milestones:
-  - description: Ar y dudalen ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’, nid yw negeseuon gwall na chynnwys sydd wedi’i nythu wedi’u cysylltu ag elfennau ffurflen, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships), 4.1.2 (Name, Role Value) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+  - description: Nid yw’r testun awgrym yn cyfateb i’r dilysiad ar gyfer y mewnbwn yn y meysydd arian cyfred. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
     date: 2024-11-30
-  - description: Mae’r meysydd ar gyfer manylion pasbort a thrwydded yrru heb nodweddion awtogwblhau, sy’n golygu na fydd defnyddwyr yn gallu defnyddio data a gadwyd gan y porwr i boblogi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+  - description: Ar y dudalen ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’, nid yw negeseuon gwall na chynnwys sydd wedi’i nythu wedi’u cysylltu ag elfennau ffurflen, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships), 4.1.2 (Name, Role Value) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+    date: 2024-11-30
+  - description: Mae’r meysydd ar gyfer manylion pasbort a thrwydded yrru heb nodweddion awtogwblhau, sy’n golygu na fydd defnyddwyr yn gallu defnyddio data a gadwyd gan y porwr i boblogi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+    date: 2024-11-30
+  - description: Mae dychwelyd i dudalennau blaenorol yn achosi i ddefnyddwyr ateb y meysydd dyddiad geni eto. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.7 (Redundant Entry) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
+    date: 2024-11-30
+  - description: Nid yw defnyddwyr yn cael cyfle i wirio unrhyw gamgymeriadau. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.4 (Error prevention) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
+    date: 2024-11-30
+  - description: Nid yw fersiwn Gymraeg y gwasanaeth yn darparu cyfieithiadau Cymraeg ar gyfer troellwr llwytho. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
     date: 2024-11-30
 serviceLastTestedDate: 2023-12-08
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2024-04-23
+statementLastUpdatedDate: 2024-05-15
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic:

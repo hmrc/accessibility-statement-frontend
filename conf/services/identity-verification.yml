@@ -10,17 +10,29 @@ serviceUrl: /identity-verification
 contactFrontendServiceId: government-gateway-identity-verification-frontend
 complianceStatus: partial
 accessibilityProblems:
+  - The instructions for currency fields throughout the service suggests that pound signs can be included but service does not allow that.
   - On ‘choose 2 items we can ask you about’ page error, ‘select 2 items we can ask you about’ appears when the user has selected 2 options. Some of the errors may be missed by screen-reader users as they are nested. The same problem occurs for nested options for payslips, P60s or country of origin for driving licences. It may be hard to correct errors and identify the page structure for screen-reader users.
   - The name field for passport and driving licence details do not offer users the option to populate the fields from data that is already saved in their browser.
+  - When users return to the previous page, their previously entered date of birth answers are removed, so they need to answer questions again.
+  - Users are not able to check their answers before trying to submit the application.
+  - When users switch to Welsh on the ‘We are processing your details’ page, the loading symbol is not translated for screen-reader users.
 milestones:
+  - description: The hint text is not matching currency input validation. This fails WCAG 2.2 success criterion 3.3.2 Labels or Instructions
+    date: 2024-11-30
   - description: On ‘choose 2 items we can ask you about’ page nested content and error messages are not associated with form elements and error instructions are ambiguous and hard to identify what exactly needs correcting. This fails WCAG 2.2 success criterion 1.3.1 Info and relationships, 4.1.2 Name, Role, Value and 3.3.3 Error suggestion.
     date: 2024-11-30
   - description: Name field for passport and driving licence details are missing autocomplete attributes which means users will be unable to use the browser’s saved data to populate the name field easily. This fails WCAG 2.2 success criterion 1.3.5 Identify Input Purpose.
     date: 2024-11-30
+  - description: Returning to previous pages causes users to answer the date of birth fields again. This fails WCAG 2.2 success criterion 3.3.7 Redundant Entry 
+    date: 2024-11-30
+  - description: Users are not provided the opportunity to review any errors. This fails WCAG 2.2 success criterion 3.3.4 Error prevention
+    date: 2024-11-30
+  - description: Welsh version of the service does not provide Welsh translations for loading spinner. This fails WCAG 2.2 success criterion 3.1.2 Language of parts
+    date: 2024-11-30
 serviceLastTestedDate: 2023-12-08
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2024-04-23
+statementLastUpdatedDate: 2024-05-15
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic:
