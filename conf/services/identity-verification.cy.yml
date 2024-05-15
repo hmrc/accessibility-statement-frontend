@@ -11,54 +11,31 @@ serviceUrl: /identity-verification
 contactFrontendServiceId: government-gateway-identity-verification-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - Ar bob mewnbwn arian cyfred, ni fydd defnyddwyr darllenydd sgrin yn ymwybodol bod angen nodi’r gwerth mewn punnoedd (£). Nid yw’r negeseuon gwall ar gyfer y tudalennau hyn yn disgrifio’n glir y broblem y mae angen ei datrys.
-  - Ar y dudalen ‘Dewiswch ddau opsiwn y gallwn ofyn i chi amdanynt’, mae’r neges gwall ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’ yn ymddangos pan fo’r defnyddiwr wedi dewis 2 opsiwn. Nid yw defnyddwyr darllenydd sgrin yn gallu adnabod yn gywir y negeseuon gwall a’r cynnwys sy’n ymddangos wrth ddewis opsiynau.
-  - Nid yw defnyddwyr darllenydd sgrin yn gallu adnabod yn gywir yr wybodaeth a gyflwynir gan y delweddau.
-  - Mae’r cyfeiriadau yn y rhestr wedi’u cymysgu ac nid ydynt yn ymddangos yn y drefn gywir. Efallai y bydd defnyddwyr yn ei chael hi’n anodd dod o hyd i’r wybodaeth gywir.
-  - Ar y tudalennau ‘Pryd y gwnaethoch agor cyfrif cyfredol personol ddiwethaf?’ a ‘Pryd y gwnaethoch drefnu neu adnewyddu contract ffôn symudol personol ddiwethaf?’, mae’r negeseuon gwall ar goll.
-  - Ni chaiff defnyddwyr darllenydd sgrin wybod pan fo cynnwys newydd yn ymddangos ar ôl dewis ‘Na’ ar y dudalen ‘Ni allwn gadarnhau pwy ydych’.
-  - Efallai na fydd defnyddwyr darllenydd sgrin yn gallu adnabod y cwestiwn ar gyfer y grŵp botymau ‘Iawn – rhowch gynnig arall arni’ a ‘Na’.
-  - Ar y dudalen ‘Nodwch fanylion eich trwydded yrru cerdyn-llun yn y DU’, nid yw’r negeseuon gwall ynghylch mewnbynnu’r dyddiad yn rhoi’r cyfarwyddiadau cywir i ddefnyddwyr.
-  - Nid yw’r rhagddodiad gwall wedi’i gyfieithu ar gyfer defnyddwyr iaith Gymraeg, a gallai hyn eu rhwystro rhag adnabod testun yn gywir fel gwall. Yn ogystal, efallai na fydd technoleg gynorthwyol yn ei ynganu’n gywir.
-  - Nid yw’r meysydd ar gyfer dyddiad geni yn cynnig i ddefnyddwyr yr opsiwn o lenwi’r ateb ar sail y data sydd wedi’u cadw yn eu porwr.
-  - Pan fo defnyddwyr yn nodi cod post annilys, mae’r neges gwall yn awgrymu nad ydynt wedi nodi dim byd. Gall hyn eu camarwain o ran yr hyn y mae angen ei gywiro.
-  - Nid yw’r labeli ar gyfer opsiynau radio wedi’u cyfieithu ar gyfer defnyddwyr iaith Gymraeg. Yn ogystal, efallai na fydd technoleg gynorthwyol yn ei ynganu’n gywir, ar y tudalennau ‘Pryd y gwnaethoch agor cyfrif cyfredol personol ddiwethaf?’ a ‘Pryd y gwnaethoch drefnu neu adnewyddu contract ffôn symudol personol ddiwethaf?’.
-  - Ar y dudalen ‘Nodwch yr wybodaeth pensiynau a budd-daliadau o’ch Ffurflen Dreth’, nid yw’r labeli’n glir nac yn ddigon disgrifiadol. Gallai hyn rwystro defnyddwyr rhag cyflwyno’r wybodaeth gywir.
-  - Ar y fersiwn Gymraeg, mae’r testun amgen ar gyfer y ddelwedd ‘llwytho’ yn Saesneg, ond nid yw wedi’i marcio fel testun Saesneg at ddiben darllenwyr sgrin. Mae hyn yn golygu efallai na fydd technoleg gynorthwyol yn ei ynganu’n gywir.
+  - Mae’r cyfarwyddiadau ar gyfer meysydd arian cyfred drwy gydol y gwasanaeth yn awgrymu y gellir cynnwys arwyddion punt ond nid yw’r gwasanaeth yn caniatáu hynny.
+  - Ar y dudalen ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’, mae’r neges gwall ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’ yn ymddangos pan fo’r defnyddiwr wedi dewis 2 opsiwn. Mae’n bosibl y bydd rhai o’r camgymeriadau yn cael eu colli gan ddefnyddwyr darllenydd sgrin gan eu bod wedi’u nythu. Mae’r un broblem yn digwydd ar gyfer opsiynau wedi’u nythu ar gyfer slipiau cyflog, P60 neu wlad tarddiad ar gyfer trwyddedau gyrru. Mae’n bosibl y bydd yn anodd cywiro gwallau a nodi strwythur y dudalen ar gyfer defnyddwyr darllenydd sgrin.
+  - Nid yw’r meysydd ar gyfer manylion pasbort a thrwydded yrru yn cynnig yr opsiwn i lenwi’r meysydd ar sail y data sydd wedi’u cadw yn eu porwr yn barod.
+  - Pan fydd defnyddwyr yn dychwelyd i’r dudalen flaenorol, mae eu hatebion o ran dyddiad geni a gofnodwyd ganddynt yn flaenorol yn cael eu dileu, felly mae angen iddynt ateb cwestiynau eto.
+  - Ni all defnyddwyr wirio eu hatebion cyn ceisio cyflwyno’r cais.
+  - Pan fydd defnyddwyr yn newid i’r Gymraeg ar y dudalen ‘Rydym yn prosesu eich manylion’, nid yw’r symbol llwytho yn cael ei gyfieithu ar gyfer defnyddwyr darllenwr sgrin.
 milestones:
-  - description: Ar bob mewnbwn arian cyfred, mae symbol y bunt wedi’i guddio rhag technoleg gynorthwyol, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Ar y dudalen ‘Dewiswch ddau opsiwn y gallwn ofyn i chi amdanynt’, nid yw negeseuon gwall na chynnwys sydd wedi’i nythu wedi’u cysylltu ag elfennau ffurflen, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Mae testun amgen ar gyfer yr wybodaeth yn y neges ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 (Non-text content) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Mae gweithredu’r chwiliad am gyfeiriad yn anghywir yn arwain at arddangos y cyfeiriadau’n anghywir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.2 (Meaningful sequence) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Ar y tudalennau ‘Pryd y gwnaethoch agor cyfrif cyfredol personol ddiwethaf?’ a ‘Pryd y gwnaethoch drefnu neu adnewyddu contract ffôn symudol personol ddiwethaf?’, mae negeseuon gwall ar y grŵp radio ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Nid yw’r ffaith bod cynnwys newydd wedi’i ddatguddio yn cael ei gyfathrebu i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Nid yw’r cwestiwn ar gyfer y grŵp botymau’n defnyddio marcio semantig i ddangos y berthynas â botymau. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Mae negeseuon gwall anghywir yn ymddangos ar fewnbynnau dyddiad ar gyfer manylion trwydded yrru. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Mae cyfieithiadau Cymraeg ar gyfer y rhagddodiad ‘gwall:’ ar goll. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: O ran y meysydd ar gyfer y dyddiad geni, mae’r priodoleddau awtogwblhau ar goll, ac efallai y bydd hyn yn golygu na fydd y defnyddiwr yn gallu defnyddio’r data a gadwyd gan y porwr er mwyn llenwi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify input purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Pan fo defnyddwyr yn cyflwyno codau post annilys, caiff y neges gwall anghywir ei dangos. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Mae cyfieithiadau ar goll a bu gweithredu anghywir o ran y copi Saesneg o labeli radio. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Ar y dudalen ‘Nodwch yr wybodaeth pensiynau a budd-daliadau o’ch Ffurflen Dreth’, nid yw’r labeli’n disgrifio’r wybodaeth y mae angen i ddefnyddwyr ei darparu. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-  - description: Mae cyfieithiadau Cymraeg ar goll ar gyfer testun amgen y ddelwedd ‘llwytho’. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2023-10-31
-serviceLastTestedDate: 2022-08-19
+  - description: Nid yw’r testun awgrym yn cyfateb i’r dilysiad ar gyfer y mewnbwn yn y meysydd arian cyfred. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
+    date: 2024-11-30
+  - description: Ar y dudalen ‘Dewiswch 2 eitem y gallwn ofyn i chi amdanynt’, nid yw negeseuon gwall na chynnwys sydd wedi’i nythu wedi’u cysylltu ag elfennau ffurflen, ac mae cyfarwyddiadau’r gwallau’n amwys ac mae’n anodd adnabod beth yn union y mae angen ei gywiro. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (Info and relationships), 4.1.2 (Name, Role Value) na 3.3.3 (Error suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+    date: 2024-11-30
+  - description: Mae’r meysydd ar gyfer manylion pasbort a thrwydded yrru heb nodweddion awtogwblhau, sy’n golygu na fydd defnyddwyr yn gallu defnyddio data a gadwyd gan y porwr i boblogi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2. Bydd hyn yn cael ei drwsio erbyn 30 Tachwedd 2024.
+    date: 2024-11-30
+  - description: Mae dychwelyd i dudalennau blaenorol yn achosi i ddefnyddwyr ateb y meysydd dyddiad geni eto. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.7 (Redundant Entry) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
+    date: 2024-11-30
+  - description: Nid yw defnyddwyr yn cael cyfle i wirio unrhyw gamgymeriadau. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.4 (Error prevention) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
+    date: 2024-11-30
+  - description: Nid yw fersiwn Gymraeg y gwasanaeth yn darparu cyfieithiadau Cymraeg ar gyfer troellwr llwytho. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
+    date: 2024-11-30
+serviceLastTestedDate: 2023-12-08
 statementVisibility: public
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2023-09-05
+statementLastUpdatedDate: 2024-05-15
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.2 AA
