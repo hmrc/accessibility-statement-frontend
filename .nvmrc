@@ -1,1 +1,4 @@
 20.13.1
+
+# This file is included for use when running a11y tests via sbt-accessibility-linter
+# it is used by build-jobs for this
