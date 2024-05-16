@@ -1,1 +1,7 @@
 20.13.1
+
+# This file is included for use when running a11y tests via sbt-accessibility-linter
+# It is used by build-jobs for this
+
+# Note: This is a non-standard .nvmrc comment. If these comments cause an error,
+# see https://github.com/nvm-sh/nvm/issues/3336
