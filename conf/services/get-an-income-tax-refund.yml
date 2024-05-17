@@ -1,0 +1,24 @@
+serviceName: Get an Income Tax refund
+serviceDescription: |
+  P800 refunds is a service that allows customers to claim a tax refund via a ‘non-logged in’ user journey either requesting a bank transfer or claiming a Payable Order (cheque). In this way, customers can request a P800 repayment is repaid to their account without logging into (or setting up) a PTA.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /get-an-income-tax-refund
+contactFrontendServiceId: p800-refunds-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - There is a missing dialogue box that warns users that they need to extend the time allowed to complete tasks before their session ends.
+  - On the ‘What is the name of your bank?’ page, the error message has not been translated into Welsh, which could prevent Welsh-speaking users from correctly identifying it as an error.
+milestones:
+  - description: A timeout occurs without the ability for the user to extend their session. This fails WCAG 2.2 success criterion 2.2.1 Timing Adjustable.
+    date: 2024-08-31
+  - description: The 'What is the name of your bank?' page is missing Welsh translation for the ‘No results found’ error message. This fails WCAG 2.2 success criterion 3.1.2 Language of parts.
+    date: 2024-08-31
+serviceLastTestedDate: 2024-05-10
+statementVisibility: public
+statementCreatedDate: 2024-05-22
+statementLastUpdatedDate: 2024-05-22
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Public beta
+wcagVersion: 2.2 AA
