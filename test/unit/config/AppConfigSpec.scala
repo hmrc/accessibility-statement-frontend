@@ -31,9 +31,8 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     "return parsed valid statuses" in {
       val appConfig = appConfigFromMap(
         Map(
-          "features.visibility"   -> Seq("public", "archived", "draft"),
-          "contact.frontend.host" -> "tax.service.gov.uk",
-          "services.directory"    -> "config"
+          "features.visibility" -> Seq("public", "archived", "draft"),
+          "services.directory"  -> "config"
         )
       )
       appConfig.visibleStatuses shouldBe Set(Public, Archived, Draft)
@@ -44,9 +43,8 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     "return only valid statuses" in {
       val appConfig = appConfigFromMap(
         Map(
-          "features.visibility"   -> Seq("public", "archived", "draft", "nonesuch"),
-          "contact.frontend.host" -> "tax.service.gov.uk",
-          "services.directory"    -> "config"
+          "features.visibility" -> Seq("public", "archived", "draft", "nonesuch"),
+          "services.directory"  -> "config"
         )
       )
       appConfig.visibleStatuses shouldBe Set(Public, Archived, Draft)
@@ -57,11 +55,41 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     "return default set of Public status only" in {
       val appConfig = appConfigFromMap(
         Map(
-          "contact.frontend.host" -> "tax.service.gov.uk",
-          "services.directory"    -> "config"
+          "services.directory" -> "config"
         )
       )
       appConfig.visibleStatuses shouldBe Set(Public)
+    }
+  }
+
+  "When constructing an accessibility report URL" should {
+    "use platform host over local config if both set" in {
+      val appConfig = appConfigFromMap(
+        Map(
+          "services.directory"                      -> "config",
+          "platform.frontend.host"                  -> "www.tax.service.gov.uk",
+          "contact-frontend.base-url-local-testing" -> "localhost:9250"
+        )
+      )
+
+      appConfig.reportAccessibilityProblemUrl shouldBe "www.tax.service.gov.uk/contact/accessibility"
+    }
+
+    "use local config if no platform host set" in {
+      val appConfig = appConfigFromMap(
+        Map(
+          "services.directory"                      -> "config",
+          "contact-frontend.base-url-local-testing" -> "localhost:9250"
+        )
+      )
+
+      appConfig.reportAccessibilityProblemUrl shouldBe "localhost:9250/contact/accessibility"
+    }
+
+    "fallback to relative URL if no platform host or local config set" in {
+      val appConfig = appConfigFromMap(Map("services.directory" -> "config"))
+
+      appConfig.reportAccessibilityProblemUrl shouldBe "/contact/accessibility"
     }
   }
 
