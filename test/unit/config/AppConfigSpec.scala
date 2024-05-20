@@ -31,8 +31,8 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     "return parsed valid statuses" in {
       val appConfig = appConfigFromMap(
         Map(
-          "features.visibility"   -> Seq("public", "archived", "draft"),
-          "services.directory"    -> "config"
+          "features.visibility" -> Seq("public", "archived", "draft"),
+          "services.directory"  -> "config"
         )
       )
       appConfig.visibleStatuses shouldBe Set(Public, Archived, Draft)
@@ -43,8 +43,8 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     "return only valid statuses" in {
       val appConfig = appConfigFromMap(
         Map(
-          "features.visibility"   -> Seq("public", "archived", "draft", "nonesuch"),
-          "services.directory"    -> "config"
+          "features.visibility" -> Seq("public", "archived", "draft", "nonesuch"),
+          "services.directory"  -> "config"
         )
       )
       appConfig.visibleStatuses shouldBe Set(Public, Archived, Draft)
@@ -55,7 +55,7 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     "return default set of Public status only" in {
       val appConfig = appConfigFromMap(
         Map(
-          "services.directory"    -> "config"
+          "services.directory" -> "config"
         )
       )
       appConfig.visibleStatuses shouldBe Set(Public)
