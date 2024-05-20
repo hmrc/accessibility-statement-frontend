@@ -34,7 +34,7 @@ case class AppConfig @Inject() (
 ) extends Logging {
 
   private val contactFrontendHostUrl: String =
-    config.getOptional[String]("platform.frontend.host").getOrElse("")
+    config.getOptional[String]("platform.frontend.host").getOrElse(servicesConfig.baseUrl("contact-frontend"))
 
   val reportAccessibilityProblemUrl =
     s"$contactFrontendHostUrl/contact/accessibility"
