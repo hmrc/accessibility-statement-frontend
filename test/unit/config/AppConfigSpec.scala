@@ -32,7 +32,6 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
       val appConfig = appConfigFromMap(
         Map(
           "features.visibility"   -> Seq("public", "archived", "draft"),
-          "contact.frontend.host" -> "tax.service.gov.uk",
           "services.directory"    -> "config"
         )
       )
@@ -45,7 +44,6 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
       val appConfig = appConfigFromMap(
         Map(
           "features.visibility"   -> Seq("public", "archived", "draft", "nonesuch"),
-          "contact.frontend.host" -> "tax.service.gov.uk",
           "services.directory"    -> "config"
         )
       )
@@ -57,7 +55,6 @@ class AppConfigSpec extends AnyWordSpec with Matchers with MockitoSugar {
     "return default set of Public status only" in {
       val appConfig = appConfigFromMap(
         Map(
-          "contact.frontend.host" -> "tax.service.gov.uk",
           "services.directory"    -> "config"
         )
       )
