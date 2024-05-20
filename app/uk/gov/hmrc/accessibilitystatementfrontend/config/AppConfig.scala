@@ -32,14 +32,11 @@ case class AppConfig @Inject() (
   servicesConfig: ServicesConfig,
   visibilityParser: VisibilityParser
 ) extends Logging {
-  private val platformFrontendHost =
-    config.getOptional[String]("platform.frontend.host")
 
   private val contactFrontendHostUrl: String =
-    platformFrontendHost.getOrElse(
-      servicesConfig.getString("contact.frontend.host")
-    )
-  val reportAccessibilityProblemUrl          =
+    servicesConfig.getString("contact-frontend.host")
+
+  val reportAccessibilityProblemUrl =
     s"$contactFrontendHostUrl/contact/accessibility"
 
   val visibleStatuses: Set[Visibility] = {

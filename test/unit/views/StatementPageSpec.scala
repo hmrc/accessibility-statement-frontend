@@ -82,7 +82,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     "return HTML containing report a problem information with a contact link" in new FullSetup {
       fullyAccessibleStatementHtml should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility?service=fas">report the accessibility problem</a>."""
+        """<a class="govuk-link" href="http://localhost:9250/contact/accessibility?service=fas">report the accessibility problem</a>."""
       )
     }
 
@@ -94,7 +94,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       ).body
 
       statementPageHtml should include(
-        """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility?service=fas&amp;referrerUrl=came-from-here">report the accessibility problem</a>"""
+        """<a class="govuk-link" href="http://localhost:9250/contact/accessibility?service=fas&amp;referrerUrl=came-from-here">report the accessibility problem</a>"""
       )
     }
 
@@ -484,9 +484,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     val statementPage = app.injector.instanceOf[StatementPage]
 
     implicit val fakeRequest: FakeRequest[_] = FakeRequest()
-    val configuration                        = Configuration.from(
-      Map("platform.frontend.host" -> "https://www.tax.service.gov.uk")
-    )
 
     implicit val sourceConfig: SourceConfig         =
       app.injector.instanceOf[SourceConfig]
@@ -494,6 +491,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       app.injector.instanceOf[ServicesConfig]
     implicit val visibilityParser: VisibilityParser =
       app.injector.instanceOf[VisibilityParser]
+    val configuration                               = app.injector.instanceOf[Configuration]
 
     implicit val appConfig: AppConfig =
       AppConfig(configuration, servicesConfig, visibilityParser)
