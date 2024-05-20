@@ -208,9 +208,9 @@ automatically appear on the statement and will translate all content, including 
 
 ## To run locally
 
-To run the application:
+To run the application with correct local URLs to other services:
 ```
-sbt run
+./run_local.sh
 ```
 
 Navigate to the desired accessibility statement e.g. http://localhost:12346/accessibility-statement/disguised-remuneration
