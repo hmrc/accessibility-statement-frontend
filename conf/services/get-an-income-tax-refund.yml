@@ -1,6 +1,6 @@
 serviceName: Get an Income Tax refund
 serviceDescription: |
-  P800 refunds is a service that allows customers to claim a tax refund via a ‘non-logged in’ user journey either requesting a bank transfer or claiming a Payable Order (cheque). In this way, customers can request a P800 repayment is repaid to their account without logging into (or setting up) a PTA.
+  P800 refunds is a service that allows customers to claim a tax refund via a ‘non-logged in’ user journey by requesting a bank transfer or claiming a Payable Order (cheque). In this way, customers can request a P800 repayment to be repaid to their account without logging into (or setting up) a personal tax account (PTA).
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /get-an-income-tax-refund
 contactFrontendServiceId: p800-refunds-frontend
