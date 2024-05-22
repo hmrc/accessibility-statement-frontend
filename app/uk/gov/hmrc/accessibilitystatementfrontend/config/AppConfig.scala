@@ -36,10 +36,9 @@ case class AppConfig @Inject() (
     config.getOptional[String]("platform.frontend.host")
 
   private val contactFrontendHostUrl: String =
-    platformFrontendHost.getOrElse(
-      servicesConfig.getString("contact.frontend.host")
-    )
-  val reportAccessibilityProblemUrl          =
+    platformFrontendHost.orElse(config.getOptional[String]("contact-frontend.base-url-local-testing")).getOrElse("")
+
+  val reportAccessibilityProblemUrl =
     s"$contactFrontendHostUrl/contact/accessibility"
 
   val visibleStatuses: Set[Visibility] = {
