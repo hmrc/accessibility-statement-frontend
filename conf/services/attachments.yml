@@ -1,4 +1,4 @@
-serviceName: Attachments
+serviceName: Archived Attachments
 serviceHeaderName: Attachments
 serviceDescription: "The Attachments service allows users to attach and upload documentation to support their business registration."
 serviceDomain: www.tax.service.gov.uk
@@ -28,7 +28,7 @@ milestones:
 serviceLastTestedDate: 2020-07-13
 statementVisibility: archived
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2024-05-20
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Telford
 liveOrClassic:

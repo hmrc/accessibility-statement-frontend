@@ -1,4 +1,4 @@
-serviceName: Check an HGV is ready to cross the border
+serviceName: Archived Check an HGV is ready to cross the border
 serviceHeaderName: Check an HGV is ready to cross the border
 serviceDescription: >
   Check an HGV is ready to cross the border is used to check if you have the
@@ -51,9 +51,9 @@ milestones:
       An error state missing when the time is not selected.
       This does not meet WCAG success criterion 3.3.1 (error identification).
 serviceLastTestedDate: 2020-12-11
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-12-11
-statementLastUpdatedDate: 2020-12-11
+statementLastUpdatedDate: 2024-05-15
 businessArea: Borders & Trade
 ddc: Non DDC Location
 liveOrClassic:

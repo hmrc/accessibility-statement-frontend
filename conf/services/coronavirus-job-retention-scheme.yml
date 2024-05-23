@@ -1,4 +1,4 @@
-serviceName: Coronavirus Job Retention Scheme
+serviceName: Archived Coronavirus Job Retention Scheme
 serviceHeaderName: Coronavirus Job Retention Scheme
 contactFrontendServiceId: cjrs
 serviceDescription: |
@@ -8,10 +8,10 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /coronavirus-job-retention-scheme
 complianceStatus: full
-statementVisibility: public
+statementVisibility: archived
 serviceLastTestedDate: 2020-07-07
 statementCreatedDate: 2020-07-29
-statementLastUpdatedDate: 2020-07-29
+statementLastUpdatedDate: 2024-05-23
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
 liveOrClassic:

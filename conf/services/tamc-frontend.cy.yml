@@ -1,4 +1,4 @@
-serviceName: Gwneud cais am Lwfans Priodasol
+serviceName: Gwneud cais am Lwfans Priodasol, sydd wedi’i archifo
 serviceHeaderName: Gwneud cais am Lwfans Priodasol
 serviceDescription: Mae Lwfans Priodasol yn caniatáu i chi drosglwyddo cyfran o’ch Lwfans Personol (incwm sy’n rhydd o dreth) i’ch gŵr, gwraig neu bartner sifil fel y gallant dalu llai o dreth. Mae’r gwasanaeth hwn yn caniatáu i chi wneud cais am Lwfans Priodasol, gan gynnwys ar gyfer blynyddoedd treth blaenorol, drwy wirio’ch cymhwystra a’ch statws priodasol.
 serviceDomain: www.tax.service.gov.uk
@@ -6,9 +6,9 @@ serviceUrl: /browse/tax/marriage-allowance
 contactFrontendServiceId: marriage-allowance
 complianceStatus: partial
 serviceLastTestedDate: 2021-04-23
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-10-01
-statementLastUpdatedDate: 2022-01-06
+statementLastUpdatedDate: 2024-05-23
 accessibilityProblems:
   - Ar sawl tudalen, nid yw’r allweddi ar gyfer y botymau radio yn ddigon disgrifiadol a gall hyn achosi dryswch i ddarllenwyr sgrin.
   - Ar sawl tudalen, mae teitlau tudalen sydd wedi’u dyblygu a gall hyn achosi anhawster i ddarllenwyr sgrin sydd angen teitlau tudalen unigryw i’w galluogi i adnabod y dudalen yn gywir.

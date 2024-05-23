@@ -1,4 +1,4 @@
-serviceName: Treth Etifeddiant
+serviceName: Treth Etifeddiant, sydd wedi’i archifo
 serviceHeaderName: Cofrestru i lenwi adroddiad ystâd Treth Etifeddiant
 serviceDescription: |
   Mae cofrestru i lenwi adroddiad ystâd Treth Etifeddiant yn wasanaeth sy’n caniatáu
@@ -47,9 +47,9 @@ milestones:
   - description: "Nid yw’r cysylltiad ‘Allgofnodi’ yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 o ran cyferbyniad lliw wrth hofran drosto a’i actifadu drwy ddefnyddio llygoden. Byddai hyn yn achosi anawsterau sylweddol i ddefnyddwyr sydd â golwg gwan a allai gael anhawster i weld y cysylltiad yn y cyflyrau ffocws hyn. Nid yw hyn yn bodloni meini prawf llwyddiant 1.4.3 (contrast minimum) nac 1.4.6 (contrast enhanced) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
     date: 2023-01-01
 serviceLastTestedDate: 2021-01-28
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+statementLastUpdatedDate: 2024-05-23
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford

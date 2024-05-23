@@ -1,13 +1,13 @@
-serviceName: Ad-daliadau
+serviceName: Ad-daliadau, sydd wedi’i archifo
 serviceHeaderName: Gwiriwch faint o Dreth Incwm a daloch
 serviceDescription: Mae’r gwasanaeth Ad-daliadau yn galluogi defnyddwyr sydd wedi talu gormod o dreth i hawlio arian sydd ar CThEF yn ôl.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /repayments
 contactFrontendServiceId: repayments
 complianceStatus: noncompliant
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2020-09-23
+statementLastUpdatedDate: 2024-05-23
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle

@@ -1,4 +1,4 @@
-serviceName: Inheritance Tax
+serviceName: Archived Inheritance Tax
 serviceHeaderName: Register to complete an Inheritance Tax estate report
 serviceDescription: |
   Register to complete an Inheritance Tax estate report is a service that allows users
@@ -47,9 +47,9 @@ milestones:
   - description: "The ‘Sign out’ link fails WCAG 2.1 guidelines for colour contrast when hovered over and activated using a mouse. This would cause significant difficulties for low-vision users who may have difficulty viewing the link in these focus states. This doesn’t meet WCAG 2.1 success criteria 1.4.3 (contrast minimum) and 1.4.6 (contrast enhanced)."
     date: 2023-01-01
 serviceLastTestedDate: 2021-01-28
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-17
-statementLastUpdatedDate: 2020-09-17
+statementLastUpdatedDate: 2024-05-20
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford

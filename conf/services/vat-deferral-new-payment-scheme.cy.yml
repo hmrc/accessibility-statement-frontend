@@ -1,4 +1,4 @@
-serviceName:  Talu TAW a ohiriwyd oherwydd coronafeirws (COVID-19)
+serviceName:  Talu TAW a ohiriwyd oherwydd coronafeirws (COVID-19), sydd wedi’i archifo
 serviceDescription: |
   Mae Talu TAW a ohiriwyd oherwydd coronafeirws (COVID-19) yn gynllun newydd a fydd ar gael i bob cwsmer a ohiriodd
   ei daliadau TAW rhwng 20 Mawrth 2020 a 30 Mehefin 2020. Bydd defnyddwyr yn gallu trefnu cynllun rhandaliadau sy’n cynnwys
@@ -61,9 +61,9 @@ milestones:
     date: 2021-04-30
 
 serviceLastTestedDate: 2021-02-15
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2021-02-22
-statementLastUpdatedDate: 2021-02-22
+statementLastUpdatedDate: 2024-05-23
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
 liveOrClassic:
