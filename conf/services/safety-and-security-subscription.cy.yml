@@ -1,4 +1,4 @@
-serviceName: Ymrestru ar gyfer Diogelwch
+serviceName: Ymrestru ar gyfer Diogelwch, sydd wedi’i archifo
 serviceDescription: |
   Mae’r gwasanaeth yn caniatáu i ddefnyddiwr ymrestru ar gyfer y gwasanaeth Diogelwch (S&S GB)
   fel y gall gyflwyno Datganiadau Cryno Wrth Gyrraedd (a elwir weithiau yn ENS).
@@ -12,9 +12,9 @@ milestones:
   - description: "Mae angen cyfieithiadau o ‘Skip to main content’ ‘All content is available under the Open Government Licence v3.0, except where otherwise stated’ a ‘Crown Copyright’."
     date: 2023-12-31
 serviceLastTestedDate: 2021-02-22
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-12-08
-statementLastUpdatedDate: 2023-01-06
+statementLastUpdatedDate: 2024-05-23
 
 businessArea: Borders & Trade
 ddc: DDC Telford
