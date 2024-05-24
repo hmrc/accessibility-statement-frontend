@@ -16,61 +16,61 @@ accessibilityProblems:
 milestones:
   - description: |
       Nid yw’r botymau radio wedi’u labelu’n gywir ar sawl tudalen. Mae hyn yn achosi dryswch i bobl sy’n defnyddio darllenwyr sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 Understanding Name, Role, Value a How to Meet Name, Role, Value (Level A) Canllawiau Hygyrchedd Cynnwys y We. Na maen prawf llwyddiant 1.3.1 Understanding Info and Relationships a How to Meet Info and Relationships (Level A).
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Nid yw’r cysylltiad i symud ymlaen yn syth yn gweithio ar sawl tudalen. Mae hyn yn golygu bod rhaid i’r defnyddiwr we-lywio â llaw. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 Understanding Bypass Blocks and How to Meet Bypass Blocks (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ar y dudalen i roi gwybod am newid o hunangyflogedig i cyflogedig, nid yw’r cysylltiad ‘Dewiswch pa un o’r rhaid fyddwch yn ei gael?’ yn arwain y defnyddwyr i’r man lle gallan nhw ddewis eu hateb. Nid oes neges gwall yn ymddangos rhwng y cwestiwn a’r opsiynau ymateb sy'n ei gwneud yn anodd i'r rheiny sy’n defnyddio darllennydd sgrin we-lywio â llaw. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 Understanding Bypass Blocks and How to Meet Bypass Blocks (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ar y dudalen sy’n gofyn i’r defnyddwyr gadarnhau eu cyfeiriad, mae’r cyferiad sydd gennym ar eu cyfer yn ymddangos ddwywaith.  Mae hyn yn ddryslyd i’r defnyddwyr na fydd yn deall y rheswm dros hyn a pha un i'w ddewis. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 Understanding Parsing and How to Meet Parsing (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Mae’r cod wedi’i ddyblu ar y tudalennau plant a gofal plant. Bydd hyn yn arbennig o anodd i’r rheiny sy’n defnyddio technoleg gynorthwyol am y gellir methu rhan o’r cynnwys.  Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 Understanding Parsing and How to Meet Parsing (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ar y dudalen lle mae'r defnyddwyr yn amcangyfrif eu helw o hunangyflogaeth, mae terminoleg cod yn ymddangos a fydd yn cael ei ddarllen gan ddarllenydd sgrin ac ni ddylai hyn ddigwydd. Bydd hyn yn ddryslyd am na fydd y defnyddiwr yn deall y derminoleg a ddefnyddir.  Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 Understanding Parsing and How to Meet Parsing (Level A) Canllawiau Hygyrchedd Cynnwys y We
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Nid oes teitl ar y neges naid sy’n rhoi gwbod wrth y defnyddiwr bod y sesiwn ar fin cyrraedd ei therfyn amser drwy’r gwasanaeth gyfan.  Mae’n bosibl na fydd defnyddwyr darllenwyr sgrin yn gwybod bod neges naid yno na beth yw ei phwrpas. Gallai hyn achosi dryswch i’r defnyddiwr. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We sy’n cyfeirio at:  1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Mae’r label ‘Newid swydd’ yn un fath ar y tudalennau lle mae modd rhoi gwybod am newid yn swydd yr unigolyn ac am newid yn swydd partner yr unigolyn. Bydd hyn yn ddryslyd i’r rheiny sy’n defnyddio darllenwyr sgrin am na fyddan nhw’n gallu gwahaniaethu rhyngddynt. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 Understanding Link Purpose (In Context) and How to Meet Link Purpose (In Context) (Level A) Canllawiau Hygyrchedd Cynnwys y We. Maen prawf llwyddiant 2.4.9 Understanding Link Purpose (Link Only) and How to Meet Link Purpose (Link Only) (Level AAA) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Nid yw’r testun sydd wedi’i guddio yn cael ei ddarllen gan y darllenwyr sgrin ar y dudalen lle mae’r defnyddwyr yn nodi’u costau gofal plant wythnosol, o ganlyniad i wall codio.  Mae’r rheiny sy'n defnyddio darllenydd sgrin yn cael yr opsiwn i olygu ond nid ydyn nhw’n gwybod beth sy’n cael ei olygu ganddynt. Mae hyn yn ddryslyd iddynt.  Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 Understanding Link Purpose (In Context) and How to Meet Link Purpose (In Context) (Level A) Canllawiau Hygyrchedd Cynnwys y We. Maen prawf llwyddiant 2.4.9 Understanding Link Purpose (Link Only) and How to Meet Link Purpose (Link Only) (Level AAA) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Nid yw’r tabl wedi’i godio’n gywir ar y dudalen ‘cadarnhau eich atebion’ y mae defnyddwyr yn ei weld ar ôl ychwanegu plentyn at y rhestr gofal plant. Gall hyn achosi dryswch i bobl sy’n defnyddio technoleg gynorthwyol. Nid yw hyn yn bodloni Maen Prawf Llwyddiant Canllawiau Hygyrchedd Cynnwys y We sy’n cyfeirio at: 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ar y dudalen lle mae modd i ddefnyddwyr edrych ar eu hamserlen taliadau, nid yw’r crynodeb yn dilyn fformat rhestr ar gyfer y rheiny sy’n defnyddio darllenwyr sgrin. Ni fyddant yn gallu deall strwythur yr eitemau sydd ar y rhestr a sut maent yn berthnasol i’w gilydd. Nid yw hyn yn bodloni Maen Prawf Llwyddiant Canllawiau Hygyrchedd Cynnwys y We sy’n cyfeirio at: 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A).
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Nid yw’r blwch wedi'i labelu’n gywir ar y dudalen ‘wedi dechrau cael budd-dal’. Bydd hyn yn ddryslyd i’r rheiny sy’n defnyddio technoleg gynorthwyol. Nid yw hyn yn bodloni Maen Prawf Llwyddiant Canllawiau Hygyrchedd Cynnwys y We sy’n cyfeirio at: Understanding Info and Relationships and How to Meet Info and Relationships (Level A) a 4.1.2  Understanding Name, Role, Value a How to Meet Name, Role, Value.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Mae prif deitl ar y ddwy dudalen lle gall pobl ddefnyddio’r swyddogaeth chwilio i ddod o hyd i’w cyfeiriad.  Mae naill yn galluogi’r defnyddiwr i chwilio drwy ddefnyddio cod post, ac mae’r llall yn galluogi’r defnyddiwr i chwilio drwy ddefnyddio nifer o feysydd cyfeiriad.  Mae rhoi prif deitl ar y ddau opsiwn yn drysu’r defnyddiwr. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 Understanding Page Titled and How to Meet Page Titled (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ni roddir gwybod i’r rheiny sy’n defnyddio darllenydd sgrin bod y cynnwys yn chwyddo wrth iddynt dicio’r blwch ar y dudalen i ddewis cael taliad statudol.  Gall hyn fod yn ddryslyd i’r rheiny sy’n defnyddio darllenydd sgrin a gallai eu hatal rhag rhoi’r wybodaeth sydd ei hangen i CThEF yn effeithlon. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 Name, Role, Value and How to Meet Role, Name, Value (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ni roddir gwybod wrth y rheiny sy’n defnyddio darllenydd sgrin bod y botwm ar gyfer y ddewislen yn gallu chwyddo a lleihau ar y dudalen crynodeb credydau treth. Mae hyn yn golygu y gallan nhw golli gwybodaeth sydd ei hangen arnynt. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 Name, Role, Value and How to Meet Role, Name, Value (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Nid yw’r blychau gwirio wedi’u labelu’n ddigonol ar ddwy dudalen. Mae hyn yn drysu’r defnyddiwr.  Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Gofynnir sawl cwestiwn ar yr un pryd ar y dudalen darparwr gofal plant, sy’n achosi dryswch. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 Understanding Info and Relationships and How to Meet Info and Relationships (Level A) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ar y dudalen Faint y gwnaethoch ei ennill, nid yw’r maes mewnbwn ‘Faint y gwnaethoch ei ennill rhwng 6 Ebrill 2020 a 28 Ionawr 2021?’ wedi’i labelu’n ddisgrifiadol a olyga ei bod hi’n bosibl na all y rheiny sy’n defnyddio darllenydd sgrin ddeall ei bwrpas. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 Headings and Labels (Level AA) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
   - description: |
       Ar y dudalen Rhoi gwybod am newid mewn sefyllfa plentyn, mae’r testun ‘Beth yw’r newid yn ei sefyllfa?’ yn cynnwys terfyn geiriau. Fodd bynnag, nid yw nifer y geiriau sy’n weddill yn weladwy i’r rheiny sy’n defnyddio darllenydd sgrin wrth iddyn nhw lenwi’r maes.  Gall hyn atal rhai defnyddwyr rhag gweld faint o eiriau sy’n weddill. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Sensory Characteristics (Level AA) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2024-03-31
+    date: 2025-03-31
 serviceLastTestedDate: 2021-01-18
 statementVisibility: public
 statementCreatedDate: 2020-09-21
