@@ -27,9 +27,17 @@ import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
+import org.scalatest.AppendedClues.convertToClueful
+import play.api.libs.json.JsValue
+import play.api.test.WsTestClient
+import uk.gov.hmrc.http.HeaderCarrier
+import uk.gov.hmrc.http.client.HttpClientV2
 
 import java.io.File
-import java.net.URLDecoder
+import java.net.{URL, URLDecoder}
+import scala.concurrent.Await
+import scala.concurrent.duration._
+import java.util.concurrent.TimeUnit.SECONDS
 import scala.util.Try
 
 class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
@@ -279,6 +287,24 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         val services    = servicesFinder.findAll()
         services.contains(serviceName) should be(true)
       }
+    }
+
+    "match the files in Github" in {
+      import scala.concurrent.ExecutionContext.Implicits.global
+
+      val client   = app.injector.instanceOf[HttpClientV2]
+      val url: URL =
+        new URL("https://api.github.com/repos/hmrc/accessibility-statement-frontend/contents/conf/services")
+      val files    =
+        Await.result(client.get(url)(HeaderCarrier()).execute[Seq[JsValue]], Duration(2, SECONDS))
+
+      val fileNamesFromGithub = files.map(file => (file \ "name").as[String])
+
+      val maybeDeletedFiles = fileNamesFromGithub.diff(fileNames)
+      maybeDeletedFiles.isEmpty should be(
+        true
+      ) withClue (s", The following files from the Github are not found in the services directory: $maybeDeletedFiles")
+
     }
   }
 }
