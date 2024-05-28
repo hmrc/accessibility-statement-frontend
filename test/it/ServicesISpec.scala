@@ -27,10 +27,14 @@ import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
 import uk.gov.hmrc.accessibilitystatementfrontend.models._
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
+import org.scalatest.AppendedClues.convertToClueful
 
 import java.io.File
 import java.net.URLDecoder
+import java.nio.file.{Files, Paths}
+import java.util.stream.Collectors
 import scala.util.Try
+import scala.jdk.CollectionConverters._
 
 class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
   private val statementParser = new AccessibilityStatementParser
@@ -279,6 +283,19 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         val services    = servicesFinder.findAll()
         services.contains(serviceName) should be(true)
       }
+    }
+
+    "match the files in the index" in {
+      val path = Paths.get(getClass.getClassLoader.getResource("services-index.txt").toURI)
+
+      val lines                            = Files.lines(path)
+      val fileNamesFromIndex: List[String] = lines.collect(Collectors.toList()).asScala.toList
+      lines.close()
+
+      val maybeDeletedFiles = fileNamesFromIndex.diff(fileNames)
+      maybeDeletedFiles.isEmpty should be(
+        true
+      ) withClue (s", The following files from the index are not found in the services directory: $maybeDeletedFiles")
     }
   }
 }
