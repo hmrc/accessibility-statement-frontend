@@ -280,5 +280,18 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         services.contains(serviceName) should be(true)
       }
     }
+
+    "ensure that no files have been marked as deleted by Git" in {
+      import scala.sys.process._
+
+      val asProcess: ProcessBuilder = Process(
+        "git diff --name-status main...HEAD conf/services"
+      )
+      val pio: ProcessIO = new ProcessIO(_ => (),
+        stdout => scala.io.Source.fromInputStream(stdout)
+          .getLines.foreach(println),
+        _ => ())
+        asProcess.run(pio)
+    }
   }
 }
