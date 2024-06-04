@@ -288,7 +288,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
       val gitDiffProcess: ProcessBuilder = Process(
         "git diff --name-status origin/main conf/services"
       )
-      val deletedFileLines = gitDiffProcess.!!.split("\n").filter(_.startsWith("D"))
+      val deletedFileLines               = gitDiffProcess.!!.split("\n").filter(_.startsWith("D"))
 
       deletedFileLines.isEmpty should be(
         true
