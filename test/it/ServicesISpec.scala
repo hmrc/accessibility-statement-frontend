@@ -19,6 +19,7 @@ package it
 import cats.syntax.either._
 import io.circe.CursorOp.DownField
 import io.circe.DecodingFailure
+import org.scalatest.AppendedClues.convertToClueful
 import org.scalatest.TryValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.prop.TableFor3
@@ -278,6 +279,22 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         val serviceName = fileName.split("\\.").head
         val services    = servicesFinder.findAll()
         services.contains(serviceName) should be(true)
+      }
+    }
+
+    "ensure that no files have been marked as deleted by Git" in {
+      import scala.sys.process._
+
+      val gitDiffProcess: ProcessBuilder = Process(
+        "git diff --name-status origin/main conf/services"
+      )
+      val deletedFileLines               = gitDiffProcess.!!.split("\n").filter(_.startsWith("D"))
+
+      deletedFileLines.isEmpty should be(
+        true
+      ) withClue {
+        val fileNamesOnly = deletedFileLines.map(_.split("\t").last)
+        s"The following files have been deleted from the services directory: ${fileNamesOnly.mkString(",")}"
       }
     }
   }
