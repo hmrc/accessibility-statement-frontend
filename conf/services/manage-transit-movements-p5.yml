@@ -21,10 +21,10 @@ milestones:
     date: 2024-12-31
   - description: A link was found to function in a way that caused issues for screen reader users.
     date: 2024-12-31
-serviceLastTestedDate: 2024-01-02
+serviceLastTestedDate: 2024-05-30
 statementVisibility: public
 statementCreatedDate: 2023-10-17
-statementLastUpdatedDate: 2024-01-10
+statementLastUpdatedDate: 2024-06-11
 businessArea: Borders & Trade
 ddc: DDC Newcastle
 liveOrClassic:
