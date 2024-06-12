@@ -26,11 +26,11 @@ import scala.util.Try
 package object models {
   private val format = new java.text.SimpleDateFormat("yyyy-MM-dd")
 
-  implicit val dateDecoder: Decoder[Date] = Decoder.decodeString.emapTry { (str: String) =>
+  given Decoder[Date] = Decoder.decodeString.emapTry { (str: String) =>
     Try(format.parse(str))
   }
 
-  implicit val dateEncoder: Encoder[Date] =
+  given dateEncoder: Encoder[Date] =
     Encoder.encodeString.contramap[Date](format.format)
 
   def dateToLocalDate(date: Date): LocalDate = {

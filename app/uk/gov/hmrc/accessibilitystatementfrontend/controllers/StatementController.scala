@@ -19,14 +19,14 @@ package uk.gov.hmrc.accessibilitystatementfrontend.controllers
 import javax.inject.{Inject, Singleton}
 import play.api.Logging
 import play.api.i18n.{Lang, Messages}
-import play.api.mvc._
+import play.api.mvc.*
 import play.twirl.api.HtmlFormat
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
 import uk.gov.hmrc.play.bootstrap.binders.{RedirectUrl, SafeRedirectUrl, UnsafePermitAll}
-import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl._
+import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl.*
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 
 import scala.concurrent.Future
@@ -41,14 +41,16 @@ class StatementController @Inject() (
 ) extends FrontendController(mcc)
     with Logging {
 
-  implicit val config: AppConfig = appConfig
-  import appConfig._
+  given AppConfig = appConfig
+  import appConfig.*
 
   def getStatement(
     service: String,
     referrerUrl: Option[RedirectUrl]
   ): Action[AnyContent] =
-    Action.async { implicit request =>
+    Action.async { request =>
+      given MessagesRequest[AnyContent] = request
+
       val isWelshTranslationAvailable =
         statementsRepo.existsByServiceKeyAndLanguage(service, Lang(cy))
 
@@ -92,7 +94,7 @@ class StatementController @Inject() (
 
       statementsRepo.findByServiceKeyAndLanguage(service, defaultLanguage)
     }
-    val statementInRequestedLanguage =
+    val statementInRequestedLanguage    =
       statementsRepo.findByServiceKeyAndLanguage(service, language)
 
     statementInRequestedLanguage
@@ -104,8 +106,8 @@ class StatementController @Inject() (
     referrerUrl: Option[String],
     language: Lang,
     isWelshTranslationAvailable: Boolean
-  )(implicit request: Request[_]): HtmlFormat.Appendable = {
-    implicit val messages: Messages = messagesApi.preferred(Seq(language))
+  )(using request: Request[?]): HtmlFormat.Appendable = {
+    given Messages = messagesApi.preferred(Seq(language))
 
     statementPage(statement, referrerUrl, isWelshTranslationAvailable)
   }

@@ -24,10 +24,13 @@ import scala.io.Source
 import scala.util.{Failure, Success, Try}
 
 class YamlParser[T: Decoder] extends Logging {
-  def parse(yaml: String): Either[Error, T] =
+  def parse(yaml: String): Either[Exception, T] =
     circeYaml.parser
       .parse(yaml)
-      .flatMap(_.as[T])
+      .fold(
+        { case ParsingFailure(message, _) => Left(YamlParserException(s"Parsing of YAML string failed: $message")) },
+        json => json.as[T].fold(e => Left(YamlParserException(s"Failed to decode json result: ${e.message}")), Right(_))
+      )
 
   def parseFromSource(
     statementSource: StatementSource

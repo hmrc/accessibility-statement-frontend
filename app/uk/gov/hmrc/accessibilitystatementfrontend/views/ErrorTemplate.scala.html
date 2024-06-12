@@ -16,7 +16,7 @@
 
 @this(layout: Layout)
 
-@(pageTitle: String, heading: String, message: String)(implicit request: Request[_], messages: Messages)
+@(pageTitle: String, heading: String, message: String)(implicit request: RequestHeader, messages: Messages)
 @layout(pageTitle = pageTitle, isWelshTranslationAvailable = false) {
     <h1 class="govuk-heading-xl">@{Text(heading).asHtml}</h1>
     <p class="govuk-body">@{Text(message).asHtml}</p>

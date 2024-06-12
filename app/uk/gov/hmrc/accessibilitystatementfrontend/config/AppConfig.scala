@@ -41,7 +41,7 @@ case class AppConfig @Inject() (
   val reportAccessibilityProblemUrl =
     s"$contactFrontendHostUrl/contact/accessibility"
 
-  val visibleStatuses: Set[Visibility] = {
+  val visibleStatuses: Set[Visibility] =
     config.getOptional[Seq[String]]("features.visibility") map (_.toSet) match {
       case None               =>
         logger.error("Config key not found: features.visibility, using default visibilities of: Public")
@@ -56,7 +56,6 @@ case class AppConfig @Inject() (
           }
         }
     }
-  }
 
   val en: String            = "en"
   val cy: String            = "cy"

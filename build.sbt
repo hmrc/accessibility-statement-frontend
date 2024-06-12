@@ -1,8 +1,9 @@
-import uk.gov.hmrc.sbtdistributables.SbtDistributablesPlugin.publishingSettings
 import play.sbt.PlayImport.PlayKeys.playDefaultPort
 import play.sbt.routes.RoutesKeys
 import sbt.Keys.testOptions
 import uk.gov.hmrc.DefaultBuildSettings.addTestReportOption
+
+ThisBuild / scalaVersion := "3.3.3"
 
 val appName = "accessibility-statement-frontend"
 
@@ -37,16 +38,15 @@ lazy val microservice = Project(appName, file("."))
   .configs(AcceptanceTest, IntegrationTest)
   .settings(
     majorVersion := 0,
-    scalaVersion := "2.13.12",
     playDefaultPort := 12346,
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
     A11yTest / unmanagedSourceDirectories += (baseDirectory.value / "test" / "a11y"),
     TwirlKeys.templateImports ++= Seq(
       "uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig",
-      "uk.gov.hmrc.govukfrontend.views.html.components._",
-      "uk.gov.hmrc.hmrcfrontend.views.html.components._",
-      "uk.gov.hmrc.hmrcfrontend.views.html.helpers._"
+      "uk.gov.hmrc.govukfrontend.views.html.components.*",
+      "uk.gov.hmrc.hmrcfrontend.views.html.components.*",
+      "uk.gov.hmrc.hmrcfrontend.views.html.helpers.*"
     ),
     RoutesKeys.routesImport += "uk.gov.hmrc.play.bootstrap.binders.RedirectUrl",
     scalacOptions += "-Wconf:src=routes/.*:s",
@@ -55,7 +55,6 @@ lazy val microservice = Project(appName, file("."))
     unitTestSettings,
     acceptanceTestSettings,
     integrationTestSettings,
-    publishingSettings,
     resolvers += Resolver.jcenterRepo
   )
 

@@ -30,6 +30,6 @@ case class Milestone(description: String, date: Date) {
 }
 
 object Milestone {
-  implicit val e: Encoder[Milestone] = deriveEncoder[Milestone]
-  implicit val d: Decoder[Milestone] = deriveDecoder[Milestone]
+  given e: Encoder[Milestone] = deriveEncoder[Milestone]
+  given d: Decoder[Milestone] = deriveDecoder[Milestone]
 }

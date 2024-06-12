@@ -20,7 +20,7 @@ import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.test.FakeRequest
 
 trait AppHelpers {
-  implicit lazy val fakeRequest = FakeRequest("GET", "/foo")
+  given FakeRequest[?] = FakeRequest("GET", "/foo")
 
   def buildApp[A](elems: (String, _)*) =
     new GuiceApplicationBuilder()

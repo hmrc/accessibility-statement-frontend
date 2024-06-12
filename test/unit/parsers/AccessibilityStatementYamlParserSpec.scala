@@ -24,8 +24,6 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.StatementSource
 import uk.gov.hmrc.accessibilitystatementfrontend.models.{AccessibilityStatement, Android, CHGV, ChiefDigitalAndInformationOfficer, DDCWorthing, Draft, FullCompliance, LiveServicesWorthing, Milestone, NoCompliance, PartialCompliance, Public, PublicBetaType, VOA, WCAG21AA, WCAG22AA}
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
-import java.io.FileNotFoundException
-
 class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers with EitherValues {
   private val parser = new AccessibilityStatementParser
 
@@ -412,8 +410,9 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       val malformed = """- 1
             |2""".stripMargin
       val parsed    = parser.parse(malformed)
+
       parsed.left.value.getMessage should startWith(
-        "while scanning a simple key"
+        "YamlParser: Parsing of YAML string failed: while scanning a simple key\n in 'reader'"
       )
     }
 
@@ -421,9 +420,8 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
       val malformed = """- 1
                         |- 2""".stripMargin
       val parsed    = parser.parse(malformed)
-      parsed.left.value.getMessage should startWith(
-        "Attempt to decode value on failed cursor"
-      )
+
+      parsed.left.value.getMessage shouldEqual "YamlParser: Failed to decode json result: Got value '[1,2]' with wrong type, expecting object"
     }
 
     "let Java parsing errors throw when date input is unparseable" in {
@@ -441,9 +439,8 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
         |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(problemStatementYaml)
-
       parsed.left.value.getMessage should startWith(
-        "java.text.ParseException: Unparseable date: \"2019-x9-23\""
+        "YamlParser: Failed to decode json result: java.text.ParseException: Unparseable date: \"2019-x9-23\""
       )
     }
 
@@ -462,10 +459,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(problemStatementYaml)
-
-      parsed.left.value.getMessage should startWith(
-        "Unrecognised compliance status \"unrecognised\""
-      )
+      parsed.left.value.getMessage shouldBe "YamlParser: Failed to decode json result: Unrecognised compliance status \"unrecognised\""
     }
 
     "throw a DecodingError if the statementType is incorrect" in {
@@ -484,10 +478,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(problemStatementYaml)
-
-      parsed.left.value.getMessage should startWith(
-        "Unrecognised statement type \"sausage\""
-      )
+      parsed.left.value.getMessage shouldBe "YamlParser: Failed to decode json result: Unrecognised statement type \"sausage\""
     }
 
     "throw an error if the serviceName is missing" in {
@@ -504,10 +495,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(problemStatementYaml)
-
-      parsed.left.value.getMessage should startWith(
-        "String: DownField(serviceName)"
-      )
+      parsed.left.value.getMessage shouldBe "YamlParser: Failed to decode json result: Got value 'null' with wrong type, expecting string"
     }
 
     "throw an error if complianceStatus is missing" in {
@@ -525,10 +513,7 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |statementLastUpdatedDate: 2019-04-01""".stripMargin('|')
 
       val parsed = parser.parse(problemStatementYaml)
-
-      parsed.left.value.getMessage should startWith(
-        "String: DownField(complianceStatus)"
-      )
+      parsed.left.value.getMessage shouldBe "YamlParser: Failed to decode json result: Got value 'null' with wrong type, expecting string"
     }
 
     "throw a DecodingError if the WCAG version is incorrect" in {
@@ -546,18 +531,14 @@ class AccessibilityStatementYamlParserSpec extends AnyWordSpec with Matchers wit
           |wcagVersion: 2.3 AA""".stripMargin('|')
 
       val parsed = parser.parse(problemStatementYaml)
-
-      parsed.left.value.getMessage should startWith(
-        "Unrecognised WCAG version \"2.3 AA\""
-      )
+      parsed.left.value.getMessage shouldBe "YamlParser: Failed to decode json result: Unrecognised WCAG version \"2.3 AA\""
     }
 
     "return a wrapped error if the file is not found" in {
       val servicesYaml =
         StatementSource("non-existent-service.yml")
       val parsed       = parser.parseFromSource(servicesYaml)
-      parsed.isLeft                                         shouldBe true
-      parsed.left.value.isInstanceOf[FileNotFoundException] shouldBe true
+      parsed.left.value.getMessage shouldBe "resource 'non-existent-service.yml' was not found in the classpath from the given classloader."
     }
   }
 }

@@ -24,10 +24,10 @@ import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 import play.api.http.Status
 import play.api.test.FakeRequest
-import play.api.test.Helpers._
+import play.api.test.Helpers.*
 import uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
-import org.mockito.MockitoSugar
+import org.scalatestplus.mockito.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.{Application, Logger}
 import play.api.inject.guice.GuiceApplicationBuilder
@@ -35,7 +35,7 @@ import play.api.mvc.Cookie
 import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl
 import unit.LogCapturing
 
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 
 class StatementControllerSpec
     extends AnyWordSpec

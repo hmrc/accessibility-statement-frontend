@@ -20,10 +20,13 @@ import play.api.Application
 import play.api.inject.guice.GuiceApplicationBuilder
 import scala.reflect.ClassTag
 
-class ReportApp[T <: ReportTask: ClassTag] extends App {
+class ReportApp[T <: ReportTask: ClassTag] {
   val app: Application = new GuiceApplicationBuilder().build()
   val task             = app.injector.instanceOf[T]
 
-  task.generate(args.toIndexedSeq)
-  app.stop()
+  def main(arguments: Array[String]): Unit = {
+    task.generate(arguments.toIndexedSeq)
+    app.stop()
+  }
+
 }

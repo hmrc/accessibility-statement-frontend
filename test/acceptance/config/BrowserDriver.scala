@@ -25,5 +25,5 @@ trait BrowserDriver extends LazyLogging {
     s"Instantiating Browser: ${sys.props.getOrElse("browser", "'browser' System property not set. This is required")}"
   )
 
-  implicit def driver: WebDriver = Driver.instance
+  inline given driver: WebDriver = Driver.instance
 }

@@ -16,7 +16,8 @@
 
 package helpers
 
-import org.mockito.scalatest.MockitoSugar
+import org.mockito.Mockito.when
+import org.scalatestplus.mockito.MockitoSugar
 import play.api.i18n.Lang
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.{AccessibilityStatementsRepo, AccessibilityStatementsSourceRepo}
@@ -29,7 +30,7 @@ case class TestAccessibilityStatementRepo(
   private val cy   = Lang("cy")
   private val repo = mock[AccessibilityStatementsSourceRepo]
 
-  import TestAccessibilityStatements._
+  import TestAccessibilityStatements.*
 
   when(repo.findByServiceKeyAndLanguage("test-service", en)) thenReturn Some(
     (englishStatement, en)

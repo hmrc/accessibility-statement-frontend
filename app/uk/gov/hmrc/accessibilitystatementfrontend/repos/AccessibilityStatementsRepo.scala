@@ -18,9 +18,9 @@ package uk.gov.hmrc.accessibilitystatementfrontend.repos
 
 import javax.inject.{Inject, Singleton}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models._
-import uk.gov.hmrc.accessibilitystatementfrontend.parsers._
-import cats.syntax.either._
+import uk.gov.hmrc.accessibilitystatementfrontend.models.*
+import uk.gov.hmrc.accessibilitystatementfrontend.parsers.*
+import cats.syntax.either.*
 import play.api.Logging
 import play.api.i18n.Lang
 
@@ -41,10 +41,10 @@ case class AccessibilityStatementsSourceRepo @Inject() (
   sourceConfig: SourceConfig
 ) extends AccessibilityStatementsRepo
     with Logging {
-  import appConfig._
-  import sourceConfig._
+  import appConfig.*
+  import sourceConfig.*
 
-  implicit val langOrdering: Ordering[Lang] = (l1, l2) => l1.code compare l2.code
+  given Ordering[Lang] = (l1, l2) => l1.code compare l2.code
 
   type RepoKey   = (String, String)
   type RepoEntry = (RepoKey, AccessibilityStatement)
