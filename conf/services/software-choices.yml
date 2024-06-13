@@ -7,12 +7,13 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /making-tax-digital-software
 contactFrontendServiceId: MSCC
 complianceStatus: full
-serviceLastTestedDate: 2021-02-01
+serviceLastTestedDate: 2023-10-23
 statementVisibility: public
 statementCreatedDate: 2019-09-19
-statementLastUpdatedDate: 2021-05-06
+statementLastUpdatedDate: 2024-06-11
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.2 AA
