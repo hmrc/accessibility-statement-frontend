@@ -9,7 +9,7 @@ complianceStatus: partial
 accessibilityProblems:
   - File re-direct may not be picked up by screen readers
 milestones:
-  - description: In some instances, a service page change was not being announced by screenreaders. This does not meet WCAG 3.2.5 change on request.
+  - description: In some instances, a service page change was not being announced by screenreaders. This does not meet WCAG success criterion 3.2.5 change on request.
     date: 2023-03-01
 serviceLastTestedDate: 2021-07-12
 statementVisibility: archived
