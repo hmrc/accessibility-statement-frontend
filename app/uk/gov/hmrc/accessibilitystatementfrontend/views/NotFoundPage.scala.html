@@ -16,7 +16,7 @@
 
 @this(layout: Layout)
 
-@()(implicit request: MessagesRequest[_], messages: Messages)
+@()(implicit request: MessagesRequest[?], messages: Messages)
 
 @layout(pageTitle = messages("notFound.pageTitle"), isWelshTranslationAvailable = true) {
  <h1 class="govuk-heading-xl">@{messages("notFound.heading")}</h1>

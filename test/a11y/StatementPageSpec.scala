@@ -71,43 +71,42 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an accessibility statement that is partially compliant, where only automated testing has been carried out, " +
-    "rendering a Statement Page"                                                             should {
+    "rendering a Statement Page" should {
       "pass accessibility checks" in new PartialSetup {
         automatedTestingStatementPage should passAccessibilityChecks
       }
     }
 
   trait WelshSetup extends FullSetup {
-    override implicit val messages: Messages = messagesApi.preferred(Seq(Lang("cy")))
+    val cyMessages: Messages = messagesApi.preferred(Seq(Lang("cy")))
 
     lazy val fullyAccessibleWelshStatementHtml =
       statementPage(
         fullyAccessibleServiceStatement,
         None,
         isWelshTranslationAvailable = false
-      ).body
+      )(fakeRequest, cyMessages, appConfig).body
   }
 
   trait Setup {
     val statementPage = app.injector.instanceOf[StatementPage]
 
-    implicit val fakeRequest: FakeRequest[_] = FakeRequest()
-    val configuration                        = Configuration.from(
+    given fakeRequest: FakeRequest[?] = FakeRequest()
+    val configuration                 = Configuration.from(
       Map("platform.frontend.host" -> "https://www.tax.service.gov.uk")
     )
 
-    implicit val sourceConfig: SourceConfig         =
+    given sourceConfig: SourceConfig         =
       app.injector.instanceOf[SourceConfig]
-    implicit val servicesConfig: ServicesConfig     =
+    given servicesConfig: ServicesConfig     =
       app.injector.instanceOf[ServicesConfig]
-    implicit val visibilityParser: VisibilityParser =
+    given visibilityParser: VisibilityParser =
       app.injector.instanceOf[VisibilityParser]
 
-    implicit val appConfig: AppConfig =
+    given appConfig: AppConfig =
       AppConfig(configuration, servicesConfig, visibilityParser)
 
-    val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
-    implicit val messages: Messages = messagesApi.preferred(fakeRequest)
+    val messagesApi: MessagesApi = app.injector.instanceOf[MessagesApi]
   }
 
   trait PartialSetup extends Setup {
@@ -157,11 +156,12 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       statementType = Some(Ios)
     )
 
+    val messages: Messages                       = messagesApi.preferred(fakeRequest)
     lazy val partiallyAccessibleIosStatementHtml = statementPage(
       partiallyAccessibleIosAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val partiallyAccessibleAndroidAppStatement = partiallyAccessibleServiceStatement.copy(
       statementType = Some(Android)
@@ -171,7 +171,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       partiallyAccessibleServiceStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val automatedTestingServiceStatementHtml =
       partiallyAccessibleServiceStatement.copy(
@@ -188,7 +188,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       automatedTestingServiceStatementHtml,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
   }
 
   trait FullSetup extends Setup {
@@ -214,12 +214,13 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       typeOfService = None
     )
 
+    val messages: Messages                = messagesApi.preferred(fakeRequest)
     lazy val fullyAccessibleStatementHtml =
       statementPage(
         fullyAccessibleServiceStatement,
         None,
         isWelshTranslationAvailable = false
-      ).body
+      )(fakeRequest, messages, appConfig).body
 
     lazy val fullyAccessibleAndroidAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC Android app",
@@ -230,7 +231,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       fullyAccessibleAndroidAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val fullyAccessibleIosAppStatement = fullyAccessibleServiceStatement.copy(
       serviceName = "HMRC iOS app",
@@ -241,7 +242,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       fullyAccessibleIosAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
   }
 
   trait NonCompliantSetup extends PartialSetup {
@@ -257,6 +258,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       nonCompliantServiceStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
   }
 }

@@ -21,7 +21,7 @@ import javax.inject.Inject
 import play.api.Logging
 
 case class ServicesClasspathFinder @Inject() (appConfig: AppConfig) extends ServicesFinder with Logging {
-  import appConfig._
+  import appConfig.*
 
   def findAll(): Seq[String] = {
     val fileNames    = getFilenames

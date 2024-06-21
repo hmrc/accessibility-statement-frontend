@@ -65,7 +65,7 @@ class ReportSpec extends AnyWordSpec with Matchers with TryValues {
       report.close()
     }
     "generate a report with newline characters removed from fields" in {
-      import TestAccessibilityStatements._
+      import TestAccessibilityStatements.*
       val statementWithNewlines = englishStatement.copy(
         serviceName = "\nEnglish Test With Newline",
         contactFrontendServiceId = "\nTest-Id-with-newline"

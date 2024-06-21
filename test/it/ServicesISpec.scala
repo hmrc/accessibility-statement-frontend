@@ -16,16 +16,14 @@
 
 package it
 
-import cats.syntax.either._
-import io.circe.CursorOp.DownField
-import io.circe.DecodingFailure
+import cats.syntax.either.*
 import org.scalatest.TryValues
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.prop.TableFor3
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesFinder, SourceConfig}
-import uk.gov.hmrc.accessibilitystatementfrontend.models._
+import uk.gov.hmrc.accessibilitystatementfrontend.models.*
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 
 import java.io.File
@@ -164,7 +162,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
     }
 
     "fail if YAML property has invalid field value" in new Context {
-      import org.scalatest.prop.TableDrivenPropertyChecks._
+      import org.scalatest.prop.TableDrivenPropertyChecks.*
 
       val invalidFieldValue                                        = "invalid"
       val failingPropertyValues: TableFor3[String, String, String] = Table(
@@ -178,10 +176,10 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
       )
 
       forAll(failingPropertyValues) { (propertyName, propertyValue, errorMsg) =>
-        withYAMLFieldProperty(propertyName, propertyValue).failure.exception shouldBe DecodingFailure(
-          errorMsg,
-          List(DownField(propertyName))
-        )
+        withYAMLFieldProperty(
+          propertyName,
+          propertyValue
+        ).failure.exception.getMessage shouldBe s"YamlParser: Failed to decode json result: $errorMsg"
       }
     }
   }

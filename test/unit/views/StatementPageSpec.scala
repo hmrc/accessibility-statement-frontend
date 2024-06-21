@@ -91,7 +91,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
         fullyAccessibleServiceStatement,
         referrerUrl = Some("came-from-here"),
         isWelshTranslationAvailable = false
-      ).body
+      )(fakeRequest, messages, appConfig).body
 
       statementPageHtml should include(
         """<a class="govuk-link" href="https://www.tax.service.gov.uk/contact/accessibility?service=fas&amp;referrerUrl=came-from-here">report the accessibility problem</a>"""
@@ -306,7 +306,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
         ),
         None,
         isWelshTranslationAvailable = false
-      ).body
+      )(fakeRequest, messages, appConfig).body
 
       fullyAccessibleWithMilestonesPage should not include """First milestone to be fixed"""
       fullyAccessibleWithMilestonesPage should not include """This will be fixed by"""
@@ -320,7 +320,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
         fullyAccessibleWithProblems,
         None,
         isWelshTranslationAvailable = false
-      ).body
+      )(fakeRequest, messages, appConfig).body
 
       statementPageHtml should include(
         """<p class="govuk-body">Some people may find parts of this service difficult to use:</p>"""
@@ -401,7 +401,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
           partiallyAccessibleServiceStatement,
           None,
           isWelshTranslationAvailable = true
-        ).body
+        )(fakeRequest, messages, appConfig).body
 
       val content = Jsoup.parse(statementPageHtml)
 
@@ -454,7 +454,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   }
 
   "Given an accessibility statement that is partially compliant, where only automated testing has been carried out, " +
-    "rendering a Statement Page"                                                             should {
+    "rendering a Statement Page" should {
       "return HTML with information that the testing was automated" in new PartialSetup {
         automatedTestingStatementHtml should include(
           """<p class="govuk-body">The service was last tested on 21 April 2019 using automated tools and was checked for compliance with WCAG 2.1 AA.</p>"""
@@ -483,24 +483,23 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   trait Setup {
     val statementPage = app.injector.instanceOf[StatementPage]
 
-    implicit val fakeRequest: FakeRequest[_] = FakeRequest()
-    val configuration                        = Configuration.from(
+    given fakeRequest: FakeRequest[?] = FakeRequest()
+    val configuration                 = Configuration.from(
       Map("platform.frontend.host" -> "https://www.tax.service.gov.uk")
     )
 
-    implicit val sourceConfig: SourceConfig         =
+    given SourceConfig                       =
       app.injector.instanceOf[SourceConfig]
-    implicit val servicesConfig: ServicesConfig     =
+    given servicesConfig: ServicesConfig     =
       app.injector.instanceOf[ServicesConfig]
-    implicit val visibilityParser: VisibilityParser =
+    given visibilityParser: VisibilityParser =
       app.injector.instanceOf[VisibilityParser]
 
-    implicit val appConfig: AppConfig =
+    given appConfig: AppConfig =
       AppConfig(configuration, servicesConfig, visibilityParser)
 
-    val messagesApi: MessagesApi    = app.injector.instanceOf[MessagesApi]
-    implicit val messages: Messages = messagesApi.preferred(fakeRequest)
-
+    val messagesApi: MessagesApi = app.injector.instanceOf[MessagesApi]
+    val messages: Messages       = messagesApi.preferred(fakeRequest)
   }
 
   trait FullSetup extends Setup {
@@ -549,42 +548,42 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
         fullyAccessibleServiceStatement,
         None,
         isWelshTranslationAvailable = false
-      ).body
+      )(fakeRequest, messages, appConfig).body
 
     lazy val fullyAccessibleWcag22StatementHtml =
       statementPage(
         fullyAccessibleServiceStatement.copy(wcagVersion = WCAG22AA),
         None,
         isWelshTranslationAvailable = false
-      ).body
+      )(fakeRequest, messages, appConfig).body
 
     lazy val fullyAccessibleIosStatementHtml = statementPage(
       fullyAccessibleIosAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val fullyAccessibleAndroidStatementHtml = statementPage(
       fullyAccessibleAndroidAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val fullyAccessibleVOAStatementHtml = statementPage(
       fullyAccessibleVOAAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val fullyAccessibleCHGVStatementHtml = statementPage(
       fullyAccessibleCHGVAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
   }
 
   trait WelshLanguage extends Setup {
-    override implicit val messages: Messages = messagesApi.preferred(Seq(Lang("cy")))
+    override val messages: Messages = messagesApi.preferred(Seq(Lang("cy")))
   }
 
   trait PartialSetup extends Setup {
@@ -638,7 +637,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       partiallyAccessibleIosAppStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val partiallyAccessibleIosAppWithAutomatedTesting = partiallyAccessibleIosAppStatement.copy(
       automatedTestingOnly = Some(true)
@@ -648,7 +647,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       partiallyAccessibleIosAppWithAutomatedTesting,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val partiallyAccessibleAndroidAppStatement = partiallyAccessibleServiceStatement.copy(
       statementType = Some(Android)
@@ -658,13 +657,13 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       partiallyAccessibleServiceStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val partiallyAccessibleWcag22StatementHtml = statementPage(
       partiallyAccessibleServiceStatement.copy(wcagVersion = WCAG22AA),
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
 
     lazy val automatedTestingServiceStatement =
       partiallyAccessibleServiceStatement.copy(
@@ -681,7 +680,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       automatedTestingServiceStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
   }
 
   trait NonCompliantSetup extends PartialSetup {
@@ -697,6 +696,6 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
       nonCompliantServiceStatement,
       None,
       isWelshTranslationAvailable = false
-    ).body
+    )(fakeRequest, messages, appConfig).body
   }
 }

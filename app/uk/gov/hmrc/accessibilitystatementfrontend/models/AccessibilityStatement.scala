@@ -17,11 +17,9 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.models
 
 import java.util.Date
-import io.circe.{Decoder, Encoder}
-import io.circe.generic.semiauto.deriveEncoder
+import io.circe.Codec
+import io.circe.derivation.Configuration
 import play.api.i18n.Messages
-import io.circe.generic.extras.semiauto
-import io.circe.generic.extras.Configuration
 
 case class AccessibilityStatement(
   serviceName: String,
@@ -75,7 +73,7 @@ case class AccessibilityStatement(
 
   val serviceAbsoluteURL = s"https://$serviceDomain$serviceUrl"
 
-  def platformSpecificMessage(key: String, args: Any*)(implicit messages: Messages): String = {
+  def platformSpecificMessage(key: String, args: Any*)(using messages: Messages): String = {
     val platformSuffix = statementType match {
       case Some(Ios) | Some(Android) =>
         statementType.map(st => s".${st.toString}").getOrElse("")
@@ -89,10 +87,6 @@ case class AccessibilityStatement(
 }
 
 object AccessibilityStatement {
-  implicit val customConfig: Configuration = Configuration.default.withDefaults
-
-  implicit val e: Encoder[AccessibilityStatement] =
-    deriveEncoder[AccessibilityStatement]
-  implicit val d: Decoder[AccessibilityStatement] =
-    semiauto.deriveConfiguredDecoder[AccessibilityStatement]
+  given Configuration                 = Configuration.default.withDefaults
+  given Codec[AccessibilityStatement] = Codec.AsObject.derivedConfigured
 }

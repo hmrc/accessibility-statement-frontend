@@ -64,7 +64,7 @@ class StatementReportTask @Inject() (
   ): Seq[String] = {
     val (serviceKey, language, statement) = statementTuple
 
-    import statement._
+    import statement.*
 
     val defaultDate           = new GregorianCalendar(1900, Calendar.JANUARY, 1).getTime
     val currentDate           = dateProvider.getCurrentDate
