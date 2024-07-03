@@ -10,6 +10,7 @@ Accessibility Statement Frontend is a service for providing for accessibility st
 ## Table of contents
   * [Before you add your accessibility statement](#before-you-add-your-accessibility-statement)
   * [How to add your service's accessibility statement](#how-to-add-your-services-accessibility-statement)
+  * [When your service is being decommissioned](#when-your-service-is-being-decommissioned)
   * [Opening a PR to get your statement merged into the repository](#opening-a-pr-to-get-your-statement-merged-into-the-repository)
   * [How to release an accessibility statement to Production](#how-to-release-an-accessibility-statement-to-production)
   * [Adding to your service](#adding-to-your-service)
@@ -111,6 +112,29 @@ The filename can contain only lower case letters, dashes or numbers, and the fil
 | `typeOfService`   | `Classic services`, `Live services`, `Public beta` |
 
 Additional guidance for "typeOfService": If the service is being maintained by a Live Services team, then put "Live services" as the value even if the service is in the public beta lifecycle stage. If the service is still in active development by a scrum team outside of Live Services, then put "Public beta".
+
+## When your service is being decommissioned
+
+> [!WARNING]
+> Please don't delete your statement, instead you should follow the guidance in the MDTP handbook on archiving your digital services accessibility statement.
+
+If you try to delete a statement, you will receive an error message like this after tests have been executed both locally and on Jenkins.
+
+```
+[info] - should ensure that no files have been marked as deleted by Git *** FAILED ***
+[info]   false was not true
+[info]    The following files have been deleted from the services directory: 
+[info]          * conf/services/account.yml
+[info]          * conf/services/disclose-cross-border-arrangements.yml
+[info]          * conf/services/enter-cross-border-arrangements.yml
+[info]          * conf/services/register-for-cross-border-arrangements.yml
+[info]    NOTE:
+[info]          1. If you wish to unpublish these statements, please set the field `statementVisibility: archived` in the corresponding statement YAML file.
+[info]             This will prevent them from showing in production, but retain them for audit purposes.
+[info]          2. Please also ensure your branch is up to date with main. You can do this by performing a rebase.
+```
+
+You might also encounter this message if another team has added a service and it was merged into the main branch before you finished your work. To resolve this, simply update your branch with the main branch, which can be done via a rebase.
 
 ## Opening a PR to get your statement merged into the repository
 Before opening a pull request, check the service renders successfully at http://localhost:12346/accessibility-statement/discounted-icecreams

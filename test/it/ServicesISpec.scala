@@ -17,7 +17,7 @@
 package it
 
 import cats.syntax.either.*
-import org.scalatest.TryValues
+import org.scalatest.{AppendedClues, TryValues}
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.prop.TableFor3
 import org.scalatest.wordspec.AnyWordSpec
@@ -28,9 +28,10 @@ import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatement
 
 import java.io.File
 import java.net.URLDecoder
+import scala.Console.{BLUE, RESET}
 import scala.util.Try
 
-class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues {
+class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with TryValues with AppendedClues {
   private val statementParser = new AccessibilityStatementParser
 
   private val partiallyCompliantWithoutMilestones: Seq[String] =
@@ -276,6 +277,35 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         val serviceName = fileName.split("\\.").head
         val services    = servicesFinder.findAll()
         services.contains(serviceName) should be(true)
+      }
+    }
+
+    "ensure that no files have been marked as deleted by Git" in {
+      import scala.sys.process._
+
+      val fetchCommand  = "git fetch origin main:refs/remotes/origin/main"
+      val fetchExitCode = fetchCommand.!
+
+      if (fetchExitCode == 0) {
+        val gitDiffProcess: ProcessBuilder = Process(
+          "git diff --name-status origin/main conf/services"
+        )
+        val deletedFileLines               = gitDiffProcess.!!.split("\n").filter(_.startsWith("D"))
+
+        deletedFileLines.isEmpty should be(
+          true
+        ) withClue {
+          val fileNamesOnly = deletedFileLines.map(_.split("\t").last).map(fileName => s"\t* $fileName")
+          s"""
+             | The following files have been deleted from the services directory: \n${fileNamesOnly.mkString("\n")}
+             | ${BLUE}NOTE:$RESET
+             | \t${BLUE}1. If you wish to unpublish these statements, please set the field `statementVisibility: archived` in the corresponding statement YAML file.$RESET
+             | \t$BLUE   This will prevent them from showing in production, but retain them for audit purposes.$RESET
+             | \t${BLUE}2. Please also ensure your branch is up to date with main. You can do this by performing a rebase.\n$RESET
+          """.stripMargin
+        }
+      } else {
+        fail("failed to fetch origin main:refs/remotes/origin/main")
       }
     }
   }
