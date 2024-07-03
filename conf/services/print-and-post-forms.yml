@@ -1,0 +1,13 @@
+serviceName: Print and post forms
+serviceDescription: |
+  The Print and post forms service allows HMRC customers to fill out a form 
+  online. A PDF version of the populated form is then available so the customer
+  can print, sign and post it to HMRC.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /print-and-post
+contactFrontendServiceId: print-and-post-forms-frontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2024-07-01
+statementLastUpdatedDate: 2024-07-01
+typeOfService: Live services

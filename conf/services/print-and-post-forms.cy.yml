@@ -1,0 +1,13 @@
+serviceName: Ffurflenni argraffu ac anfon
+serviceDescription: |
+  Mae’r gwasanaeth argraffu ac anfon yn galluogi cwsmeriaid CThEF i lenwi ffurflen 
+  ar-lein. Mae fersiwn PDF o’r ffurflen wedi’i llenwi ar gael wedyn fel y gall y 
+  cwsmer ei hargraffu, ei harwyddo a’i hanfon i CThEF.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /print-and-post
+contactFrontendServiceId: print-and-post-forms-frontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2024-07-01
+statementLastUpdatedDate: 2024-07-01
+typeOfService: Live services
