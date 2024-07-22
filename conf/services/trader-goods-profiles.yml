@@ -1,0 +1,15 @@
+serviceName: Trader Goods Profile
+serviceHeaderName: Trader Goods Profile
+serviceDescription: |
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /trader-goods-profiles
+contactFrontendServiceId: TGP
+complianceStatus: partial
+serviceLastTestedDate: 2024-07-22
+statementVisibility: public
+statementCreatedDate: 2024-07-22
+statementLastUpdatedDate: 2024-07-22
+businessArea: Borders & Trade
+ddc: DDC London
+liveOrClassic:
+typeOfService: Public beta
