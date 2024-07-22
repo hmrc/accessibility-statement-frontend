@@ -1,0 +1,16 @@
+serviceName: Proffil Nwyddau Masnachwr
+serviceHeaderName: Proffil Nwyddau Masnachwr
+serviceDescription: |
+  Mae hwn yn wasanaeth newydd mewn beta preifat ar hyn o bryd
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /trader-goods-profiles
+contactFrontendServiceId: TGP
+complianceStatus: noncompliant
+serviceLastTestedDate: 2024-07-22
+statementVisibility: draft
+statementCreatedDate: 2024-07-22
+statementLastUpdatedDate: 2024-07-22
+businessArea: Borders & Trade
+ddc: DDC London
+liveOrClassic:
+typeOfService: Public beta
