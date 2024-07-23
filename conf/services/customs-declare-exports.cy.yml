@@ -1,5 +1,5 @@
-serviceName: Gwasanaeth Datganiadau Tollau (CDS) ‘Gwneud datganiad allforio’
-serviceHeaderName: Gwneud datganiad allforio
+serviceName: Gwasanaeth Datganiadau Tollau (CDS) ‘Gwneud a rheoli datganiad allforio ar-lein’
+serviceHeaderName: Gwneud a rheoli datganiad allforio ar-lein
 serviceDescription: |
   Mae’r gwasanaeth hwn yn eich galluogi i wneud datganiad allforio ar y Gwasanaeth Datganiadau Tollau.
 serviceDomain: www.tax.service.gov.uk
