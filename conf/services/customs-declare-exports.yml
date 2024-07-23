@@ -1,5 +1,5 @@
-serviceName: Customs Declarations Service (CDS) ‘Make an export declaration’
-serviceHeaderName: Make an export declaration
+serviceName: Customs Declarations Service (CDS) ‘Make and manage an export declaration online’
+serviceHeaderName: Make and manage an export declaration online
 serviceDescription: |
   This service allows you to make a declaration on the Customs Declarations Service.
 serviceDomain: www.tax.service.gov.uk
