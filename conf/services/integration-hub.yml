@@ -1,7 +1,7 @@
-serviceName: The API Hub
+serviceName: The Integration Hub
 serviceDescription: You can use this service to allow users to discover APIs, consume APIs and manage credentials with self-serve capabilities.
 serviceDomain: admin.tax.service.gov.uk
-serviceUrl: /api-hub
+serviceUrl: /integration-hub
 contactFrontendServiceId: api-hub-frontend
 complianceStatus: partial
 accessibilityProblems:
