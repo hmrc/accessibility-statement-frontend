@@ -1,18 +1,17 @@
 serviceName: Excise Movement and Control System
-serviceHeaderName: EMCS
 serviceDescription: |
   The Excise Movement and Control System (EMCS) service lets users record duty suspended 
   movements of excise goods taking place within the UK and the EU. It allows real time 
   notification of the dispatch and receipt of duty suspended excise goods and the 
   exchange of secure online messages between UK and EU trading partners.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /emcs/create-movement
+serviceUrl: /emcs
 contactFrontendServiceId: emcstfe
 complianceStatus: full
-serviceLastTestedDate: 2023-12-21
+serviceLastTestedDate: 2024-08-14
 statementVisibility: public
-statementCreatedDate: 2024-06-06
-statementLastUpdatedDate: 2024-06-06
+statementCreatedDate: 2024-08-14
+statementLastUpdatedDate: 2024-08-14
 ddc: DDC Telford
 liveOrClassic: Classic Services
 typeOfService: Public beta
