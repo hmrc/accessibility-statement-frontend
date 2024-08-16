@@ -24,7 +24,7 @@ milestones:
   - description: The caption copy and reference number do not wrap when users rely on screen magnification or accessing on a smaller screened device on various pages, causing content to overflow and users to scroll in multiple directions. This fails WCAG 2.2 success criterion 1.4.10 Reflow.
     date: 2024-04-01
 serviceLastTestedDate: 2023-10-16
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2023-10-17
 statementLastUpdatedDate: 2023-10-17
 ddc: DDC Telford

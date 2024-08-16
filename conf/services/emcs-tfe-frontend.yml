@@ -10,7 +10,7 @@ serviceUrl: /emcs/account
 contactFrontendServiceId: emcstfe
 complianceStatus: full
 serviceLastTestedDate: 2024-06-06
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2024-06-06
 statementLastUpdatedDate: 2024-06-06
 ddc: DDC Telford
