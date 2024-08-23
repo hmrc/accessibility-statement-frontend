@@ -1,4 +1,4 @@
-serviceName: Rhoi gwybod i CThEF am achosion o dwyll treth neu arbed treth
+serviceName: Rhoi gwybod i CThEF am achosion o dwyll treth neu arbed treth sydd wedi’i archifo
 serviceHeaderName: Rhoi gwybod i CThEF am achosion o dwyll treth neu arbed treth
 serviceDescription: |
   Rhowch wybod i CThEF am achosion o dwyll treth neu arbed treth a gyflawnwyd gan fusnes neu unigolyn. Mae’n cymryd tua 10-15 munud i wneud hyn. Ni ofynnir i chi uwchlwytho dogfennau yn yr adroddiad, a chedwir unrhyw wybodaeth a ddarperir yn breifat ac yn gyfrinachol. Gallwch roi gwybod yn ddienw neu roi manylion cyswllt i CThEF, er mwyn i CThEF allu gwneud gwaith dilynol i gael gwybodaeth ategol sydd gennych.
@@ -7,7 +7,7 @@ serviceUrl: /report-tax-fraud
 contactFrontendServiceId: tax-fraud-reporting-frontend    # A unique identifier for your service
 complianceStatus: full
 serviceLastTestedDate: 2022-04-25
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2022-03-14
 statementLastUpdatedDate: 2022-05-03
 businessArea: Customer Compliance Group (CCG)

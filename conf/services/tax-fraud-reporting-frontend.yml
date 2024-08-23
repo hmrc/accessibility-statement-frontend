@@ -1,4 +1,4 @@
-serviceName: Report tax fraud or avoidance to HMRC
+serviceName: Archived Report tax fraud or avoidance to HMRC
 serviceHeaderName: Report tax fraud or avoidance to HMRC
 serviceDescription: |
   Report tax fraud or avoidance to HMRC committed by a business or individual, which takes approximately 10-15 minutes to complete. You will not be asked to upload documentation in the report, and any information provided is kept private and confidential. You can report anonymously or provide contact details to HMRC, where HMRC may follow up to obtain supporting information you hold.
@@ -7,7 +7,7 @@ serviceUrl: /report-tax-fraud
 contactFrontendServiceId: tax-fraud-reporting-frontend    # A unique identifier for your service
 complianceStatus: full
 serviceLastTestedDate: 2022-04-25
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2022-03-14
 statementLastUpdatedDate: 2022-05-03
 businessArea: Customer Compliance Group (CCG)
