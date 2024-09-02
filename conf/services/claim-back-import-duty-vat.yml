@@ -4,7 +4,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-back-import-duty-vat
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
-complianceStatus: partial
+complianceStatus: full
 accessibilityProblems:
   - Some users may find it difficult to understand the purpose of pages with the file upload control as there are some inputs that do not have a label associated with it. They may find it difficult resolving any errors or removing uploaded files.
   - When navigating the 'Claims summary' section using the search or pagination, screen reader users may not realise a new page has loaded as the page title stays the same.
