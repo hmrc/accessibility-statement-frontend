@@ -1,9 +1,8 @@
 import play.sbt.PlayImport.PlayKeys.playDefaultPort
 import play.sbt.routes.RoutesKeys
 import sbt.Keys.testOptions
+import uk.gov.hmrc.DefaultBuildSettings
 import uk.gov.hmrc.DefaultBuildSettings.addTestReportOption
-
-ThisBuild / scalaVersion := "3.3.3"
 
 val appName = "accessibility-statement-frontend"
 
@@ -12,14 +11,6 @@ lazy val unitTestSettings =
     Seq(
       Test / testOptions := Seq(Tests.Filter(_ startsWith "unit")),
       addTestReportOption(Test, "test-reports")
-    )
-
-lazy val IntegrationTest         = config("it") extend Test
-lazy val integrationTestSettings =
-  inConfig(IntegrationTest)(Defaults.testTasks) ++
-    Seq(
-      (IntegrationTest / testOptions) := Seq(Tests.Filter(_ startsWith "it")),
-      addTestReportOption(IntegrationTest, "it-test-reports")
     )
 
 lazy val AcceptanceTest         = config("acceptance") extend Test
@@ -32,14 +23,19 @@ lazy val acceptanceTestSettings =
       addTestReportOption(AcceptanceTest, "acceptance-test-reports")
     )
 
+lazy val sharedSettings = Seq(
+  libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
+  majorVersion := 0,
+  scalaVersion := "3.3.3"
+)
+
 lazy val microservice = Project(appName, file("."))
   .enablePlugins(play.sbt.PlayScala, SbtDistributablesPlugin)
   .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
-  .configs(AcceptanceTest, IntegrationTest)
+  .configs(AcceptanceTest)
   .settings(
-    majorVersion := 0,
+    sharedSettings,
     playDefaultPort := 12346,
-    libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
     A11yTest / unmanagedSourceDirectories += (baseDirectory.value / "test" / "a11y"),
     TwirlKeys.templateImports ++= Seq(
@@ -54,9 +50,14 @@ lazy val microservice = Project(appName, file("."))
     Assets / pipelineStages := Seq(gzip),
     unitTestSettings,
     acceptanceTestSettings,
-    integrationTestSettings,
     resolvers += Resolver.jcenterRepo
   )
+
+lazy val it = project
+  .enablePlugins(PlayScala)
+  .dependsOn(microservice % "test->test")
+  .settings(DefaultBuildSettings.itSettings())
+  .settings(sharedSettings)
 
 val generateReport = inputKey[Unit]("Generate a report on the accessibility statements.")
 fullRunInputTask(generateReport, Compile, "uk.gov.hmrc.accessibilitystatementfrontend.tasks.StatementReportTask")
