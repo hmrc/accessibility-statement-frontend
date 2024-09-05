@@ -247,19 +247,6 @@ removed.
 sbt test
 ```
 
-## Running accessibility tests
-
-```
-sbt a11y:test
-```
-
-The above tests are run via the
-[sbt-accessibility-linter](https://www.github.com/hmrc/sbt-accessibility-linter)
-plugin. This plugin requires Node.js v12 or above to be installed locally.
-
-If you are a member of a service team, contributing a new accessibility statement, it's not necessary
-to run these tests before opening a PR.
-
 ## Running the integration tests
 
 ```
@@ -305,12 +292,10 @@ report was generated**. In the build, this will based on the system time. The `m
 **first day** of the month in which it was generated. For example, a report generated on 17 March 2022 will display 
 `2022-03-01` in the `month` field. 
 
-## Running UI acceptance tests
+## Running UI journey tests
 
-To execute the UI acceptance tests on your local machine, ensure that you have [local-selenium-grid](https://github.com/hmrc/local-selenium-grid) installed and running. Once set up, you can proceed with running the tests with.
-```
-./run_acceptance_tests.sh 
-```
+The UI journey tests are located in the [accessibility-statement-frontend-ui-tests](https://github.com/hmrc/accessibility-statement-frontend-ui-tests).
+Runing these locally or in Jenkins will also run the accessibility assessment via [ui-test-runner](https://github.com/hmrc/ui-test-runner).
 
 ## Performance testing
 
