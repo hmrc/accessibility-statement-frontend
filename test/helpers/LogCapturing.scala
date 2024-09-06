@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package unit
+package helpers
 
 import ch.qos.logback.classic.spi.ILoggingEvent
-import ch.qos.logback.classic.{Level, Logger => LogbackLogger}
+import ch.qos.logback.classic.{Level, Logger as LogbackLogger}
 import ch.qos.logback.core.read.ListAppender
 import play.api.LoggerLike
 

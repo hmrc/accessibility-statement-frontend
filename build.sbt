@@ -1,17 +1,8 @@
 import play.sbt.PlayImport.PlayKeys.playDefaultPort
 import play.sbt.routes.RoutesKeys
-import sbt.Keys.testOptions
 import uk.gov.hmrc.DefaultBuildSettings
-import uk.gov.hmrc.DefaultBuildSettings.addTestReportOption
 
 val appName = "accessibility-statement-frontend"
-
-lazy val unitTestSettings =
-  inConfig(Test)(Defaults.testTasks) ++
-    Seq(
-      Test / testOptions := Seq(Tests.Filter(_ startsWith "unit")),
-      addTestReportOption(Test, "test-reports")
-    )
 
 lazy val sharedSettings = Seq(
   libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
@@ -36,7 +27,6 @@ lazy val microservice = Project(appName, file("."))
     scalacOptions += "-Wconf:src=routes/.*:s",
     scalacOptions += "-Wconf:cat=unused-imports&src=html/.*:s",
     Assets / pipelineStages := Seq(gzip),
-    unitTestSettings,
     resolvers += Resolver.jcenterRepo
   )
 

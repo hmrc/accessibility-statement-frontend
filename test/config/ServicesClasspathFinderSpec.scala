@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package unit.config
+package config
 
 import org.mockito.Mockito.when
 import org.scalatest.matchers.should.Matchers
@@ -23,7 +23,7 @@ import org.scalatestplus.mockito.MockitoSugar
 import org.slf4j.LoggerFactory
 import play.api.Logger
 import uk.gov.hmrc.accessibilitystatementfrontend.config.{AppConfig, ServicesClasspathFinder}
-import unit.LogCapturing
+import helpers.LogCapturing
 
 class ServicesClasspathFinderSpec extends AnyWordSpec with Matchers with MockitoSugar with LogCapturing {
 
