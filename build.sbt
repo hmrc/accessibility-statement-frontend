@@ -27,7 +27,6 @@ lazy val microservice = Project(appName, file("."))
     scalacOptions += "-Wconf:src=routes/.*:s",
     scalacOptions += "-Wconf:cat=unused-imports&src=html/.*:s",
     Assets / pipelineStages := Seq(gzip),
-//    unitTestSettings,
     resolvers += Resolver.jcenterRepo
   )
 
