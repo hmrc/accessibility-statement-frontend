@@ -247,19 +247,6 @@ removed.
 sbt test
 ```
 
-## Running accessibility tests
-
-```
-sbt a11y:test
-```
-
-The above tests are run via the
-[sbt-accessibility-linter](https://www.github.com/hmrc/sbt-accessibility-linter)
-plugin. This plugin requires Node.js v12 or above to be installed locally.
-
-If you are a member of a service team, contributing a new accessibility statement, it's not necessary
-to run these tests before opening a PR.
-
 ## Running the integration tests
 
 ```
@@ -305,12 +292,10 @@ report was generated**. In the build, this will based on the system time. The `m
 **first day** of the month in which it was generated. For example, a report generated on 17 March 2022 will display 
 `2022-03-01` in the `month` field. 
 
-## Running UI acceptance tests
+## Running UI journey tests
 
-To execute the UI acceptance tests on your local machine, ensure that you have [local-selenium-grid](https://github.com/hmrc/local-selenium-grid) installed and running. Once set up, you can proceed with running the tests with.
-```
-./run_acceptance_tests.sh 
-```
+The UI journey tests are located in the [accessibility-statement-frontend-ui-tests](https://github.com/hmrc/accessibility-statement-frontend-ui-tests).
+Runing these locally or in Jenkins will also run the accessibility assessment via [ui-test-runner](https://github.com/hmrc/ui-test-runner).
 
 ## Performance testing
 
@@ -323,17 +308,8 @@ more memory than a regular service.
 
 ## Running ZAP scan locally
 
-To run the ZAP scan, use the Docker helper supplied by `dast-config-manager` (https://github.com/hmrc/dast-config-manager#running-zap-locally)
-
-Follow the following steps:
-1. Clone the repo at: https://github.com/hmrc/dast-config-manager
-2. Enable port forwarding: `export ZAP_FORWARD_ENABLE="true"`
-3. Configure port forwarding: `export ZAP_FORWARD_PORTS=12346`
-4. In the `dast-config-manager` directory, start the ZAP docker container: `make local-zap-running`
-5. In the `accessibility-statement-frontend` directory, run the acceptance tests with ZAP proxying: `sbt -Dbrowser=chrome -Dzap.proxy=true acceptance:test`
-6. In the `dast-config-manager` directory, stop the ZAP docker container: `make local-zap-stop`
-
-Information about the local ZAP test output can be found at https://github.com/hmrc/dast-config-manager#running-zap-locally.
+To run the ZAP scan, use  `dast-config-manager` and follow the instructions:
+[Running ZAP locally](https://github.com/hmrc/dast-config-manager?tab=readme-ov-file#running-zap-locally)
 
 ## Service Manager 2 config for local development
 

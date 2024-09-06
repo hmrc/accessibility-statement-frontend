@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package unit.controllers
+package controllers
 
 import ch.qos.logback.classic.Level
 import play.api.inject.bind
@@ -33,7 +33,7 @@ import play.api.{Application, Logger}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.mvc.Cookie
 import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl
-import unit.LogCapturing
+import helpers.LogCapturing
 
 import scala.jdk.CollectionConverters.*
 
