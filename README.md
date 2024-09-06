@@ -308,17 +308,8 @@ more memory than a regular service.
 
 ## Running ZAP scan locally
 
-To run the ZAP scan, use the Docker helper supplied by `dast-config-manager` (https://github.com/hmrc/dast-config-manager#running-zap-locally)
-
-Follow the following steps:
-1. Clone the repo at: https://github.com/hmrc/dast-config-manager
-2. Enable port forwarding: `export ZAP_FORWARD_ENABLE="true"`
-3. Configure port forwarding: `export ZAP_FORWARD_PORTS=12346`
-4. In the `dast-config-manager` directory, start the ZAP docker container: `make local-zap-running`
-5. In the `accessibility-statement-frontend` directory, run the acceptance tests with ZAP proxying: `sbt -Dbrowser=chrome -Dzap.proxy=true acceptance:test`
-6. In the `dast-config-manager` directory, stop the ZAP docker container: `make local-zap-stop`
-
-Information about the local ZAP test output can be found at https://github.com/hmrc/dast-config-manager#running-zap-locally.
+To run the ZAP scan, use  `dast-config-manager` and follow the instructions:
+[Running ZAP locally](https://github.com/hmrc/dast-config-manager?tab=readme-ov-file#running-zap-locally)
 
 ## Service Manager 2 config for local development
 
