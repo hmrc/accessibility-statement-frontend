@@ -15,6 +15,4 @@ addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-gzip" % "1.0.2")
 
-addSbtPlugin("uk.gov.hmrc" % "sbt-accessibility-linter" % "1.0.0")
-
 addSbtPlugin("uk.gov.hmrc" % "sbt-test-report" % "1.1.0")
