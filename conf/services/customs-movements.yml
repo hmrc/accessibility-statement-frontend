@@ -5,19 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-movements
 contactFrontendServiceId: customs-movements
-complianceStatus: partial
-accessibilityProblems:
-  - Links open in a new tab without prior warning.
-  - The link highlighting mechanism does not follow the GOV.UK Design System.
-milestones:
-  - description: Links open in a new tab without prior warning.
-    date: 2024-09-30
-  - description: The link highlighting mechanism does not follow the GOV.UK Design System.
-    date: 2024-09-30
-serviceLastTestedDate: 2024-03-21
+complianceStatus: full
+serviceLastTestedDate: 2024-08-08
 statementVisibility: public
 statementCreatedDate: 2021-01-12
-statementLastUpdatedDate: 2024-05-03
+statementLastUpdatedDate: 2024-09-11
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:

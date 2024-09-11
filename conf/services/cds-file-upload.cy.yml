@@ -5,37 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /cds-file-upload-service
 contactFrontendServiceId: cds-file-upload-service
-complianceStatus: partial
-accessibilityProblems:
-  - Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
-  - Canfuwyd testun gyda chymhareb cyferbyniad lliw annigonol.
-  - Wrth gyflawni gwall, ni ddiweddarodd teitl y dudalen i gynnwys y rhagddodiad ‘Gwall:’.
-  - Nid oedd modd cael gwybod sut i ymdrin â gwall os oedd defnyddwyr yn gadael y maes mewnbwn yn wag.
-  - Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
-  - Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
-  - Defnyddiwyd tirnodau llywio lle nad oedd eu hangen.
-  - Wrth gyflawni gwall, nid oes canolbwynt ar grynodeb y gwall yn awtomatig.
-milestones:
-  - description: Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
-    date: 2024-09-30
-  - description: Canfuwyd testun gyda chymhareb cyferbyniad lliw annigonol.
-    date: 2024-09-30
-  - description: Wrth gyflawni gwall, ni ddiweddarodd teitl y dudalen i gynnwys y rhagddodiad ‘Gwall:’.
-    date: 2024-09-30
-  - description: Nid oedd modd cael gwybod sut i ymdrin â gwall os oedd defnyddwyr yn gadael y maes mewnbwn yn wag.
-    date: 2024-09-30
-  - description: Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
-    date: 2024-09-30
-  - description: Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
-    date: 2024-09-30
-  - description: Defnyddiwyd tirnodau llywio lle nad oedd eu hangen.
-    date: 2024-09-30
-  - description: Wrth gyflawni gwall, nid oes canolbwynt ar grynodeb y gwall yn awtomatig.
-    date: 2024-09-30
-serviceLastTestedDate: 2024-03-21
+complianceStatus: full
+serviceLastTestedDate: 2024-08-08
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2024-05-03
+statementLastUpdatedDate: 2024-09-11
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
