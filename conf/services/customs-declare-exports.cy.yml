@@ -5,58 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-declare-exports
 contactFrontendServiceId: customs-declare-exports
-complianceStatus: partial
-accessibilityProblems:
-  - Roedd teitl y dudalen yn bresennol nad oedd yn ddisgrifiadol.
-  - Nid yw cynnwys sydd wedi’i dabio wedi’i roi ar waith mewn ffordd sy’n galluogi defnyddwyr i ryngweithio â nhw fel y bydden nhw’n ei ddisgwyl fel arfer.
-  - Nid yw penawdau na labeli’n darparu disgrifiad cywir o’r cynnwys maent yn ei gyflwyno.
-  - Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
-  - Canfuwyd bod cysylltiadau’n ddi-ddisgrifiad wrth lywio cyd-destun y dudalen.
-  - Mae cysylltiadau’n agor tab newydd heb rybudd ymlaen llaw.
-  - Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
-  - Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
-  - Mae ID y neges gwall, sy’n gysylltiedig â’r mewnbwn neu’r set maes, ar goll.
-  - Nid oedd negeseuon gwall yn dilyn y fformat a gafodd ei awgrymu gan System Ddylunio GOV.UK.
-  - Roedd pennawd dyblyg a thestun allwedd yn bresennol.
-  - Roedd set maes ac allwedd yn bresennol nad oedd eu hangen.
-  - Nid yw’r cysylltiad neges gwall ar goll yng nghrynodeb y gwall yn mynd â defnyddiwr i leoliad y gwall.
-  - Mae neges gwall yn yr un llinell ar goll.
-  - Nid yw’r dudalen ‘Gwirio eich atebion’ yn gweithio yn ôl y disgwyl.
-milestones:
-  - description: Roedd teitl y dudalen yn bresennol nad oedd yn ddisgrifiadol.
-    date: 2024-09-30
-  - description: Nid yw cynnwys sydd wedi’i dabio wedi’i roi ar waith mewn ffordd sy’n galluogi defnyddwyr i ryngweithio â nhw fel y bydden nhw’n ei ddisgwyl fel arfer.
-    date: 2024-09-30
-  - description: Nid yw penawdau na labeli’n darparu disgrifiad cywir o’r cynnwys maent yn ei gyflwyno.
-    date: 2024-09-30
-  - description: Caiff talfyriadau eu defnyddio heb gael eu hehangu unwaith.
-    date: 2024-09-30
-  - description: Canfuwyd bod cysylltiadau’n ddi-ddisgrifiad wrth lywio cyd-destun y dudalen.
-    date: 2024-09-30
-  - description: Mae cysylltiadau’n agor tab newydd heb rybudd ymlaen llaw.
-    date: 2024-09-30
-  - description: Nid yw’r mecanwaith tynnu sylw at gysylltiadau’n dilyn System Ddylunio GOV.UK.
-    date: 2024-09-30
-  - description: Ni chyflwynwyd y label ar gyfer maes ffurflen yn agos at y mewnbwn.
-    date: 2024-09-30
-  - description: Mae ID y neges gwall, sy’n gysylltiedig â’r mewnbwn neu’r set maes, ar goll.
-    date: 2024-09-30
-  - description: Nid oedd negeseuon gwall yn dilyn y fformat a gafodd ei awgrymu gan System Ddylunio GOV.UK.
-    date: 2024-09-30
-  - description: Roedd pennawd dyblyg a thestun allwedd yn bresennol.
-    date: 2024-09-30
-  - description: Roedd set maes ac allwedd yn bresennol nad oedd eu hangen.
-    date: 2024-09-30
-  - description: Nid yw’r cysylltiad neges gwall ar goll yng nghrynodeb y gwall yn mynd â defnyddiwr i leoliad y gwall.
-    date: 2024-09-30
-  - description: Mae neges gwall yn yr un llinell ar goll.
-    date: 2024-09-30
-  - description: Nid yw’r dudalen ‘Gwirio eich atebion’ yn gweithio yn ôl y disgwyl.
-    date: 2024-09-30
-serviceLastTestedDate: 2024-03-21
+complianceStatus: full
+serviceLastTestedDate: 2024-08-08
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2024-05-03
+statementLastUpdatedDate: 2024-09-11
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:

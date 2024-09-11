@@ -5,58 +5,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-declare-exports
 contactFrontendServiceId: customs-declare-exports
-complianceStatus: partial
-accessibilityProblems:
-   - Page title was present that was not descriptive.
-   - Tabbed content has not been implemented in a way that enables users to interact with them as they would typically expect to be able to
-   - Headings or labels do not provide an accurate description of the content it introduces.
-   - Abbreviations are used without being expanded once.
-   - Links were found to be non-descriptive when navigating out of the context of the page.
-   - Links open in a new tab without prior warning.
-   - The link highlighting mechanism does not follow the GOV.UK Design System.
-   - The label for a form field was not presented close to the input.
-   - Missing error message ID related to the input or fieldset.
-   - Error messages did not follow the format suggested by the GOV.UK Design System.
-   - Duplicate heading and legend text was present.
-   - A fieldset and legend was present that was not required.
-   - Missing error message link in error summary does not take user to the location of the error.
-   - Missing inline error message.
-   - The check your answers page does not work as expected.
-milestones:
-  - description: Page title was present that was not descriptive.
-    date: 2024-09-30
-  - description: Tabbed content has not been implemented in a way that enables users to interact with them as they would typically expect to be able to.
-    date: 2024-09-30
-  - description: Headings or labels do not provide an accurate description of the content it introduces.
-    date: 2024-09-30
-  - description: Abbreviations are used without being expanded once.
-    date: 2024-09-30
-  - description: Links were found to be non-descriptive when navigating out of the context of the page.
-    date: 2024-09-30
-  - description: Links open in a new tab without prior warning.
-    date: 2024-09-30
-  - description: The link highlighting mechanism does not follow the GOV.UK Design System.
-    date: 2024-09-30
-  - description: The label for a form field was not presented close to the input.
-    date: 2024-09-30
-  - description: Missing error message ID related to the input or fieldset.
-    date: 2024-09-30
-  - description: Error messages did not follow the format suggested by the GOV.UK Design System.
-    date: 2024-09-30
-  - description: Duplicate heading and legend text was present.
-    date: 2024-09-30
-  - description: A fieldset and legend was present that was not required.
-    date: 2024-09-30
-  - description: Missing error message link in error summary does not take user to the location of the error.
-    date: 2024-09-30
-  - description: Missing inline error message.
-    date: 2024-09-30
-  - description: The check your answers page does not work as expected.
-    date: 2024-09-30
-serviceLastTestedDate: 2024-03-21
+complianceStatus: full
+serviceLastTestedDate: 2024-08-08
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2024-05-03
+statementLastUpdatedDate: 2024-09-11
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
