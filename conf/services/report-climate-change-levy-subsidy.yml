@@ -1,5 +1,5 @@
 serviceName: Report Climate Change Levy subsidy details
-serviceHeaderName: Report a suspicious HMRC phone call
+serviceHeaderName: Report Climate Change Levy subsidy details
 serviceDescription: |
   Report Climate Change Levy subsidy details to HMRC.
 serviceDomain: www.tax.service.gov.uk
