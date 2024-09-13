@@ -1,7 +1,7 @@
 serviceName: Report Climate Change Levy subsidy details
 serviceHeaderName: Report Climate Change Levy subsidy details
 serviceDescription: |
-  Report Climate Change Levy subsidy details to HMRC.
+  Use this form to report Climate Change Levy subsidy details to HMRC.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/report-climate-change-levy-subsidy
 contactFrontendServiceId: GForm
