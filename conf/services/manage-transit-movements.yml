@@ -2,17 +2,32 @@ serviceName: Manage your transit movements
 serviceHeaderName: Manage your transit movements
 serviceDescription:
   The Common Transit Convention (CTC) is a treaty between EU member states and other countries for the transit of goods.
-  The goods can pass through different customs regimes without them having to be declared at every border. This service processes those transit movements.
+  The goods can pass through different customs regimes without them having to be declared at every border.
+  This service processes those transit movements.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-transit-movements
 contactFrontendServiceId: CTCTraders
 complianceStatus: full
-serviceLastTestedDate: 2022-09-05
+accessibilityProblems:
+  - WCAG 1.4.6 Contrast (Enhanced) (Level AAA)
+  - WCAG 2.4.9 Link Purpose (Link Only) (Level AAA)
+  - WCAG 3.1.4 Abbreviations (Level AAA)
+  - WCAG 3.2.5 Change on Request (Level AAA)
+milestones:
+  - description: The contrast of text compared to its background does not meet the WCAG enhanced requirements.
+    date: 2024-12-31
+  - description: Link text was found to cause confusion for screen reader users navigating out of context.
+    date: 2024-12-31
+  - description: Abbreviations have been used without explanation.
+    date: 2024-12-31
+  - description: A link was found to function in a way that caused issues for screen reader users.
+    date: 2024-12-31
+serviceLastTestedDate: 2024-01-02
 statementVisibility: public
-statementCreatedDate: 2020-12-29
-statementLastUpdatedDate: 2022-09-13
-
+statementCreatedDate: 2023-10-17
+statementLastUpdatedDate: 2024-01-10
 businessArea: Borders & Trade
 ddc: DDC Newcastle
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.1 AA
