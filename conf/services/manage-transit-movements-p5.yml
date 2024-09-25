@@ -4,6 +4,8 @@ serviceDescription:
   The Common Transit Convention (CTC) is a treaty between EU member states and other countries for the transit of goods.
   The goods can pass through different customs regimes without them having to be declared at every border.
   This service processes those transit movements.
+
+  This statement has been archived and replaced by /manage-transit-movements
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-transit-movements
 contactFrontendServiceId: CTCTraders
@@ -23,7 +25,7 @@ milestones:
   - description: A link was found to function in a way that caused issues for screen reader users.
     date: 2024-12-31
 serviceLastTestedDate: 2024-01-02
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2023-10-17
 statementLastUpdatedDate: 2024-01-10
 businessArea: Borders & Trade
