@@ -8,23 +8,9 @@ contactFrontendServiceId: one-stop-shop-exclusions-frontend
 statementVisibility: public
 statementCreatedDate: 2024-07-12
 
-complianceStatus: partial
-accessibilityProblems:
-  - A user's 'date of first sale' will disappear if they try to edit their sales information when reviewing their details.
-  - The Welsh version of the self-exclude service is not displayed or translated correctly. Users with screen-readers will not be able access the content.
-  - Date input pages can currently accept a space character. This returns an error message that does not clearly explain the issue or how to fix it.
-  - When rejoining the service, a user confirms their details are correct and text appears to keep them updated on the progress. This new text is not read out by screen readers.
-milestones:
-  - description: The system does not hold data that a user has added. This fails the WCAG 2.2 redundant entry (3.3.9) success criterion.
-    date: 2024-09-23
-  - description: If a user selects the Welsh language, some content remains in English. This content does not have the correct language attribute to identify it as being Welsh. This fails the WCAG 2.2 language of parts (3.1.2) success criterion.
-    date: 2024-09-23
-  - description: Some error messages do not include advice on how to fix the issue. This fails the WCAG 2.2 error suggestion (3.3.3) success criterion.
-    date: 2024-09-23
-  - description: Screen readers do not read out content tagged as aria-live="polite". This fails the WCAG 2.2 status messages (4.2.3) success criterion.
-    date: 2024-09-23
-serviceLastTestedDate: 2024-07-12
-statementLastUpdatedDate: 2024-08-13
+complianceStatus: full
+serviceLastTestedDate: 2024-09-25
+statementLastUpdatedDate: 2024-09-26
 
 businessArea: Borders & Trade
 ddc:
