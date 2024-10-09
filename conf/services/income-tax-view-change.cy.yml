@@ -1,28 +1,11 @@
-serviceName: Bwrw golwg dros eich gwasanaeth Troi Treth yn Ddigidol ar gyfer Treth Incwm a’i newid
-serviceHeaderName: Cyfrif Treth Busnes
+serviceName: Bwrw golwg dros eich cynllun Troi Treth yn Ddigidol ar gyfer Treth Incwm a’i newid
 serviceDescription: |
-  Mae’r gwasanaeth hwn yn eich caniatáu i fwrw golwg dros eich Ffurflenni Treth, eich taliadau a’ch hanes Treth Incwm ar gyfer CThEF.
-  Gallwch hefyd weld diweddariadau blaenorol a rhai yn y dyfodol.
+  Mae’r gwasanaeth hwn yn caniatáu i chi fwrw golwg dros eich Ffurflenni Treth, eich taliadau a’ch hanes Treth Incwm. Gallwch hefyd weld eich dyddiadau cau sydd ar ddod ac, yn dibynnu ar eich amgylchiadau, amlder eich adroddiadau.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /report-quarterly/income-and-expenses/view
-contactFrontendServiceId: ITVC
-complianceStatus: partial
-accessibilityProblems:
-  - Mae rhai botymau yn y gwasanaeth yn gweithredu fel cysylltiadau. Efallai y bydd defnyddwyr bysellfwrdd yn unig yn cael problemau gan fod yn rhaid iddynt ddefnyddio’r botwm ‘enter’ yn lle’r bylchwr. Bydd defnyddwyr technoleg gynorthwyol yn cael problemau gyda’r botymau hyn gan nad ydynt wedi’u sefydlu’n gywir.
-  - Wrth newid i’r Gymraeg ar y dudalen ‘Treth Incwm’ a ‘Taliad a wnaed i CThEF’, mae yna gysylltiadau sy’n aros yn Saesneg ac ni fyddant yn cael eu hynganu’n gywir ar gyfer darllenwyr sgrin.
-  - Ni fydd defnyddwyr cydnabyddiaeth llais yn gallu cael at y botwm ‘Gwneud taliad’ yn uniongyrchol ar y dudalen ‘Taliad mantoli’ gan nad yw’r copi gweledol yn cyfateb â’r label hygyrch.
-milestones:
-  - description: Ar gyfer cysylltiadau sy’n ymddangos fel botymau, mae’r rôl="button" a’r polyfill JavaScript ar goll i sicrhau eu bod yn gweithredu fel botwm. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-09-30
-  - description: Pan gaiff y tudalennau ‘Treth Incwm’ a ‘Taliadau a wnaed i CThEF’ eu dangos yn Gymraeg, mae peth o’r cynnwys yn ymddangos yn Saesneg, ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 3.1.2 (Language of Parts), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-09-30
-  - description: Mae copi’r botwm ‘Gwneud taliad’ ar y dudalen ‘Taliad mantoli’ yn wahanol i’r label hygyrchedd. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 2.5.3 (Label in Name), Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2022-09-30
-serviceLastTestedDate: 2022-05-20
+contactFrontendServiceId: MTDID
+complianceStatus: full
+serviceLastTestedDate: 2023-03-20
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2020-06-24
-businessArea: Customer Strategy & Tax Design (CS&TD)
-ddc: DDC Telford
-liveOrClassic: Live Services - Telford
-typeOfService: Public beta
+statementLastUpdatedDate: 2024-09-18
