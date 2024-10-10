@@ -5,7 +5,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trader-goods-profiles
 contactFrontendServiceId: TGP
-complianceStatus: noncompliant
+complianceStatus: partial
 serviceLastTestedDate: 2024-07-22
 statementVisibility: draft
 statementCreatedDate: 2024-07-22
@@ -14,3 +14,32 @@ businessArea: Borders & Trade
 ddc: DDC London
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.2 AA
+
+#
+#accessibilityProblems:
+#  - When switching to Welsh, some pages in the service are missing Welsh translations. They appear with unreadable messages in English. These messages will not be pronounced correctly for screen-reader users.
+#  - Screen-reader users presented with incorrect and mismatching questions alongside the visually displayed questions when they navigate to form elements such as text fields and radio buttons.
+#  - On the ‘goods profile’ page, the remove and change links do not provide sufficient context for screen-reader users to determine where the link will take them.
+#  - On the ‘asking HMRC for advice’ page, the warning icon does not have alternative text that describes the warning icon’s meaning for screen-reader users.
+#  - The table on the ‘goods profile’ page does not fit on the viewport width, it forces 2 dimensional scrolling for the rest of the content on the page which can be difficult for people with motor impairments to navigate.
+#  - Name and email fields do not allow users to autofill personal information from their browser on the ‘what is your name?’ and ‘what is your email address?’ pages.
+#
+#milestones:
+#  - description: >
+#     When users select Welsh language, some content is missing the Welsh translation.  This fails WCAG 2.2 success criterion 2.4.4: Link Purpose (In Context) and 3.1.2 Language of Parts
+#    date: 2023-01-31
+#  - description: The `legend` and `label` do not provide correct question text that corresponds with the visually displayed. This fails WCAG 2.2 success criterion 2.4.6 Headings and Labels
+#    date: 2023-01-31
+#  - description: The purpose of the remove and change links cannot be determined from the contextual copy for link text. This fails WCAG 2.2 success criterion 2.4.4 Link Purpose (in Context)
+#    date: 2023-01-31
+#  - description: The warning icon has missing descriptive alternative text. This fails WCAG 2.2 success criterion 1.1.1 Non-text Content
+#    date: 2023-01-31
+#  - description: The table is not responsive and is not wrapped in a scrollable container. This fails WCAG 2.2 success criterion 1.4.10 Reflow.
+#    date: 2023-01-31
+#  - description: >
+#     Missing `autocomplete` attribute on the name and email fields. This fails WCAG 2.2 success criterion 1.3.5: Identify Input Purpose
+#    date: 2023-01-31
+
+
+

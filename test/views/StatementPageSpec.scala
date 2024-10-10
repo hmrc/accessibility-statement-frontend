@@ -420,7 +420,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
   "Given an Accessibility Statement for a non compliant service, rendering a Statement Page" should {
     "include a statement that the service is non compliant" in new NonCompliantSetup {
       nonCompliantAccessibleStatementHtml should include(
-        """<p class="govuk-body">This service is non compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1 AA standard</a>. This service has not yet been checked for compliance so some users may find parts of the service difficult to use.</p>"""
+        """<p class="govuk-body">This service is not fully compliant with the <a class="govuk-link" href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.2 AA standard</a>. This service was check on 9 September for compliance so some users may find parts of the service difficult to use.</p>"""
       )
     }
 
