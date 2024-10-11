@@ -4,7 +4,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-back-import-duty-vat
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
-complianceStatus: full
+complianceStatus: partial
 accessibilityProblems:
   - On some 'check your answers' pages, when using the ‘change’ links, previously entered information will not have been saved and users will have to enter the information again.
   - There is a missing dialogue box that warns users that they need to extend the time allowed to complete tasks before their session ends.
