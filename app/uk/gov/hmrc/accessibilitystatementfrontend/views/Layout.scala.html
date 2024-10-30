@@ -16,14 +16,14 @@
 
 @import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.{HmrcStandardPageParams, Banners}
 
-@this(hmrcLayout: HmrcStandardPage)
+@this(hmrcStandardPage: HmrcStandardPage)
 
 @(
         pageTitle: String,
         isWelshTranslationAvailable: Boolean)(
         contentBlock: Html)(implicit request: RequestHeader, messages: Messages)
 
-@hmrcLayout(HmrcStandardPageParams(
+@hmrcStandardPage(HmrcStandardPageParams(
     pageTitle = Some(pageTitle),
     banners = Banners(displayHmrcBanner = true),
     isWelshTranslationAvailable = isWelshTranslationAvailable
