@@ -5,12 +5,21 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-declare-exports
 contactFrontendServiceId: customs-declare-exports
-complianceStatus: full
-serviceLastTestedDate: 2024-08-08
+complianceStatus: partial
+accessibilityProblems:
+  - Penawdau heb eu nodi’n rhaglennol
+  - Nid yw enw hygyrch yn cyfateb i enw gweladwy
+  - <fieldset> ar goll <legend>
+  - Gwerthoedd priodoledd awtogwblhau ar goll
+  - Does dim modd gwahaniaethu rhwng cysylltiadau bwrw golwg dros fanylion
+  - Nid yw cysylltiadau gweithredu o dan y pennawd priodol
+  - Nifer o faterion tudaleniad - nid yw’n dilyn patrwm
+serviceLastTestedDate: 2024-10-25
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2024-09-11
+statementLastUpdatedDate: 2024-11-01
 businessArea: Borders & Trade
-ddc: DDC Yorkshire
-liveOrClassic:
-typeOfService: Public beta
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
+wcagVersion: 2.2 AA
