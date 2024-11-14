@@ -14,10 +14,25 @@ accessibilityProblems:
   - Does dim modd gwahaniaethu rhwng cysylltiadau bwrw golwg dros fanylion
   - Nid yw cysylltiadau gweithredu o dan y pennawd priodol
   - Nifer o faterion tudaleniad - nid yw’n dilyn patrwm
+milestones:
+  - description: Penawdau heb eu nodi’n rhaglennol.
+    date: 2025-04-30
+  - description: Nid yw enw hygyrch yn cyfateb i enw gweladwy.
+    date: 2025-04-30
+  - description: <fieldset> ar goll <legend>.
+    date: 2025-04-30
+  - description: Gwerthoedd priodoledd awtogwblhau ar goll.
+    date: 2025-04-30
+  - description: Does dim modd gwahaniaethu rhwng cysylltiadau bwrw golwg dros fanylion.
+    date: 2025-04-30
+  - description: Nid yw cysylltiadau gweithredu o dan y pennawd priodol.
+    date: 2025-04-30
+  - description: Nifer o faterion tudaleniad - nid yw’n dilyn patrwm.
+    date: 2025-04-30
 serviceLastTestedDate: 2024-10-25
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2024-11-01
+statementLastUpdatedDate: 2024-11-15
 businessArea: Borders & Trade
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
