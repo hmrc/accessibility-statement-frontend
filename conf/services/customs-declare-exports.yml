@@ -5,12 +5,36 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-declare-exports
 contactFrontendServiceId: customs-declare-exports
-complianceStatus: full
-serviceLastTestedDate: 2024-08-08
+complianceStatus: partial
+accessibilityProblems:
+  - Headings not identified programmatically
+  - Accessible name does not match visible name
+  - <fieldset> missing <legend>
+  - Missing autocomplete attribute values
+  - View details links not distinguishable
+  - Action links not under appropriate heading
+  - Multiple pagination issues - does not follow pattern
+milestones:
+  - description: Headings not identified programmatically.
+    date: 2025-04-30
+  - description: Accessible name does not match visible name.
+    date: 2025-04-30
+  - description: <fieldset> missing <legend>.
+    date: 2025-04-30
+  - description: Missing autocomplete attribute values.
+    date: 2025-04-30
+  - description: View details links not distinguishable.
+    date: 2025-04-30
+  - description: Action links not under appropriate heading.
+    date: 2025-04-30
+  - description: Multiple pagination issues - does not follow pattern.
+    date: 2025-04-30
+serviceLastTestedDate: 2024-10-25
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2024-09-11
+statementLastUpdatedDate: 2024-11-15
 businessArea: Borders & Trade
-ddc: DDC Yorkshire
-liveOrClassic:
-typeOfService: Public beta
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
+wcagVersion: 2.2 AA
