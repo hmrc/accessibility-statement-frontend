@@ -5,12 +5,36 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /cds-file-upload-service
 contactFrontendServiceId: cds-file-upload-service
-complianceStatus: full
-serviceLastTestedDate: 2024-08-08
+complianceStatus: partial
+accessibilityProblems:
+  - Related links not grouped using nav
+  - Data not maintained
+  - Page title does not match h1
+  - Back links are not bypassed and do not take you back
+  - Message link and date focus
+  - Content not translated to Welsh
+  - Multiple issues with error handling on file upload page
+milestones:
+  - description: Related links not grouped using nav.
+    date: 2025-04-30
+  - description: Data not maintained.
+    date: 2025-04-30
+  - description: Page title does not match h1.
+    date: 2025-04-30
+  - description: Back links are not bypassed and do not take you back.
+    date: 2025-04-30
+  - description: Message link and date focus.
+    date: 2025-04-30
+  - description: Content not translated to Welsh.
+    date: 2025-04-30
+  - description: Multiple issues with error handling on file upload page.
+    date: 2025-04-30
+serviceLastTestedDate: 2024-10-25
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2024-09-11
+statementLastUpdatedDate: 2024-11-15
 businessArea: Borders & Trade
-ddc: DDC Yorkshire
-liveOrClassic:
-typeOfService: Public beta
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
+wcagVersion: 2.2 AA
