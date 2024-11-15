@@ -5,12 +5,27 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /customs-movements
 contactFrontendServiceId: customs-movements
-complianceStatus: full
-serviceLastTestedDate: 2024-08-08
+complianceStatus: partial
+accessibilityProblems:
+  - Table used for layout purposes
+  - Error message / hint not associated with input
+  - Consignment not found
+  - Incorrect error message
+milestones:
+  - description: Table used for layout purposes.
+    date: 2025-04-30
+  - description: Error message / hint not associated with input.
+    date: 2025-04-30
+  - description: Consignment not found.
+    date: 2025-04-30
+  - description: Incorrect error message.
+    date: 2025-04-30
+serviceLastTestedDate: 2024-10-25
 statementVisibility: public
 statementCreatedDate: 2021-01-12
-statementLastUpdatedDate: 2024-09-11
+statementLastUpdatedDate: 2024-11-15
 businessArea: Borders & Trade
-ddc: DDC Yorkshire
-liveOrClassic:
-typeOfService: Public beta
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
+wcagVersion: 2.2 AA
