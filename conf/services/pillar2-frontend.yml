@@ -8,12 +8,12 @@ complianceStatus: partial
 accessibilityProblems:
   - "The visible label for the link \"Change: Can we contact the primary and secondary contact by telephone?\" does not fully match its accessible name."
 milestones:
-  - description: "The visible label for the link \"Change: Can we contact the primary and secondary contact by telephone?\" does not fully match its accessible name. This doesn’t meet WCAG 2.2 success criteria 2.5.3  (label in name)."
+  - description: "The visible label for the link \"Change: Can we contact the primary and secondary contact by telephone?\" does not fully match its accessible name. This does not meet WCAG 2.2 success criteria 2.5.3  (label in name)."
     date: 2024-12-31
 serviceLastTestedDate: 2024-10-04
 statementVisibility: public
 statementCreatedDate: 2024-04-29
-statementLastUpdatedDate: 2024-11-15
+statementLastUpdatedDate: 2024-11-18
 businessArea: Customer Compliance Group (CCG)
 ddc: DDC Newcastle
 liveOrClassic:
