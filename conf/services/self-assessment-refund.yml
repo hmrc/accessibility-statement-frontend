@@ -2,13 +2,14 @@ serviceName: Request a Self Assessment refund
 serviceDescription: |
   A service for Self Assessment users to request a refund against a positive Self Assessment credit amount. They can also use the service to view the history of their refunds and check their status.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /self-assessment-refund/refund-amount
+serviceUrl: /request-a-self-assessment-refund/refund-amount
 contactFrontendServiceId: self-assessment-repayment
 complianceStatus: full
-serviceLastTestedDate: 2022-05-30
+serviceLastTestedDate: 2024-11-13
 statementVisibility: public
 statementCreatedDate: 2022-05-20
-statementLastUpdatedDate: 2022-06-07
+statementLastUpdatedDate: 2024-11-18
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 typeOfService: Public beta
+wcagVersion: 2.2 AA
