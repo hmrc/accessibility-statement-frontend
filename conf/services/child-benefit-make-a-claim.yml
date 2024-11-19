@@ -12,8 +12,8 @@ accessibilityProblems:
 milestones:
   - description: When pages are displayed in Welsh, some content remains in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.2 success criterion 3.1.2 Language of Parts.
     date: 2025-02-05
-serviceLastTestedDate: 2023-11-08
-statementVisibility: draft
+serviceLastTestedDate: 2024-09-17
+statementVisibility: public
 statementCreatedDate: 2024-11-12
 statementLastUpdatedDate: 2024-11-12
 businessArea: Chief Digital & Information Officer (CDIO)

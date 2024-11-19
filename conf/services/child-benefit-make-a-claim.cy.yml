@@ -12,8 +12,8 @@ accessibilityProblems:
 milestones:
   - description: Pan gaiff tudalennau eu dangos yn Gymraeg, mae peth o’r cynnwys yn aros yn Saesneg ac nid oes ganddo’r briodoledd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
     date: 2025-02-05
-serviceLastTestedDate: 2023-11-08
-statementVisibility: draft
+serviceLastTestedDate: 2024-09-17
+statementVisibility: public
 statementCreatedDate: 2024-11-12
 statementLastUpdatedDate: 2024-11-12
 businessArea: Chief Digital & Information Officer (CDIO)
