@@ -3,7 +3,7 @@ serviceDescription: |
   Use this paragraph to describe your service. It can go over multiple lines
   like this.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /identity-provider-gateway
+serviceUrl: /sign-in-to-hmrc-online-services/identity
 contactFrontendServiceId: identity-provider-gateway
 complianceStatus: noncompliant
 statementVisibility: draft
