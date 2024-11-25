@@ -5,12 +5,36 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /cds-file-upload-service
 contactFrontendServiceId: cds-file-upload-service
-complianceStatus: full
-serviceLastTestedDate: 2024-08-08
+complianceStatus: partial
+accessibilityProblems:
+  - Nid yw cysylltiadau sy’n gysylltiedig â’i gilydd wedi’u grwpio gan ddefnyddio’r elfen lywio
+  - Nid yw’r data wedi’u cynnal
+  - Nid yw teitl y dudalen yn cyd-fynd â h1
+  - Nid yw cysylltiadau ‘Yn ôl’ wedi’u dargyfeirio ac nid ydynt yn mynd â chi yn ôl
+  - Canolbwynt y dyddiad a chysylltiad y neges
+  - Nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg
+  - Sawl problem yn codi wrth ddelio â gwallau ar y dudalen uwchlwytho ffeiliau
+milestones:
+  - description: Nid yw cysylltiadau sy’n gysylltiedig â’i gilydd wedi’u grwpio gan ddefnyddio’r elfen lywio.
+    date: 2025-04-30
+  - description: Nid yw’r data wedi’u cynnal.
+    date: 2025-04-30
+  - description: Nid yw teitl y dudalen yn cyd-fynd â h1.
+    date: 2025-04-30
+  - description: Nid yw cysylltiadau ‘Yn ôl’ wedi’u dargyfeirio ac nid ydynt yn mynd â chi yn ôl.
+    date: 2025-04-30
+  - description: Canolbwynt y dyddiad a chysylltiad y neges.
+    date: 2025-04-30
+  - description: Nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg.
+    date: 2025-04-30
+  - description: Sawl problem yn codi wrth ddelio â gwallau ar y dudalen uwchlwytho ffeiliau.
+    date: 2025-04-30
+serviceLastTestedDate: 2024-10-25
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2024-09-11
+statementLastUpdatedDate: 2024-11-15
 businessArea: Borders & Trade
-ddc: DDC Yorkshire
-liveOrClassic:
-typeOfService: Public beta
+ddc: DDC Worthing
+liveOrClassic: Live Services - Worthing
+typeOfService: Live services
+wcagVersion: 2.2 AA

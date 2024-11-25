@@ -3,7 +3,7 @@ serviceDescription: |
   Defnyddiwch y paragraff hwn i ddisgrifio’ch gwasanaeth. Gall fynd dros sawl llinell
   fel hyn.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /identity-provider-gateway
+serviceUrl: /sign-in-to-hmrc-online-services/identity
 contactFrontendServiceId: identity-provider-gateway
 complianceStatus: noncompliant
 statementVisibility: draft

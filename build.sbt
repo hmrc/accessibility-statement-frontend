@@ -7,7 +7,7 @@ val appName = "accessibility-statement-frontend"
 lazy val sharedSettings = Seq(
   libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
   majorVersion := 0,
-  scalaVersion := "3.3.3"
+  scalaVersion := "3.3.4"
 )
 
 lazy val microservice = Project(appName, file("."))
@@ -25,7 +25,7 @@ lazy val microservice = Project(appName, file("."))
     ),
     RoutesKeys.routesImport += "uk.gov.hmrc.play.bootstrap.binders.RedirectUrl",
     scalacOptions += "-Wconf:src=routes/.*:s",
-    scalacOptions += "-Wconf:cat=unused-imports&src=html/.*:s",
+    scalacOptions += "-Wconf:msg=unused-imports&src=html/.*:s",
     Assets / pipelineStages := Seq(gzip),
     resolvers += Resolver.jcenterRepo
   )

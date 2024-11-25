@@ -8,8 +8,9 @@ complianceStatus: full
 serviceLastTestedDate: 2024-06-10
 statementVisibility: public
 statementCreatedDate: 2020-10-01
-statementLastUpdatedDate: 2024-07-23
+statementLastUpdatedDate: 2024-09-25
 businessArea: Customer Services Group (CSG)
 ddc: DDC Newcastle
 liveOrClassic: Live Services - Newcastle
 typeOfService: Live services
+wcagVersion: 2.2 AA
