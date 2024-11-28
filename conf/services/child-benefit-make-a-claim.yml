@@ -1,0 +1,23 @@
+serviceName: Claim Child Benefit
+serviceDescription: |
+  Use this form to claim Child Benefit if you or your partner are responsible 
+  for a child who is under 16, or under 20 if they are in approved education. 
+  or training
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /fill-online/claim-child-benefit
+contactFrontendServiceId: "463"
+complianceStatus: partial
+accessibilityProblems:
+  - When switching to the Welsh version, the page headings have not been translated. This could make it difficult for users to understand the purpose of the page.
+milestones:
+  - description: When pages are displayed in Welsh, some content remains in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.2 success criterion 3.1.2 Language of Parts.
+    date: 2025-02-05
+serviceLastTestedDate: 2024-09-17
+statementVisibility: public
+statementCreatedDate: 2024-11-12
+statementLastUpdatedDate: 2024-11-12
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: Non DDC Location
+liveOrClassic:
+typeOfService:
+wcagVersion: 2.2 AA
