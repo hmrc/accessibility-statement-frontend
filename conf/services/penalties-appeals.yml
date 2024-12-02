@@ -7,8 +7,8 @@ complianceStatus: full
 serviceLastTestedDate: 2024-01-22
 statementVisibility: public
 statementCreatedDate: 2023-01-12
-statementLastUpdatedDate: 2024-11-29
+statementLastUpdatedDate: 2024-12-02
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 typeOfService: Public beta
-wcagVersion: 2.1 AA
+wcagVersion: 2.2 AA
