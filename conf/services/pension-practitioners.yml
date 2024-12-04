@@ -6,11 +6,12 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pension-scheme-practitioner
 contactFrontendServiceId: PODS
 complianceStatus: full
-serviceLastTestedDate: 2021-02-15
+serviceLastTestedDate: 2024-11-27
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2022-03-01
+statementLastUpdatedDate: 2024-12-04
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Newcastle
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.2 AA
