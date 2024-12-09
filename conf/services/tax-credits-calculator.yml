@@ -1,4 +1,4 @@
-serviceName: Tax credits calculator
+serviceName: Archived Tax credits calculator
 serviceHeaderName: Tax credits calculator
 serviceDescription: |
   The Tax credits calculator lets individuals work out the tax credits they can claim.
@@ -36,9 +36,9 @@ milestones:
   - description: "The labelling of the button may be ambiguous for NVDA users that browse out of context. This doesn’t meet WCAG 2.1 success criteria 2.4.6 (headings and labels)."
     date: 2023-12-31
 serviceLastTestedDate: 2020-09-21
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2020-09-18
+statementLastUpdatedDate: 2024-12-09
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford

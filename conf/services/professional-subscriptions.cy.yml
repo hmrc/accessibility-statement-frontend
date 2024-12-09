@@ -1,4 +1,4 @@
-serviceName: Hawlio am eich tanysgrifiadau proffesiynol cysylltiedig â gwaith
+serviceName: Hawlio am eich tanysgrifiadau proffesiynol cysylltiedig â gwaith, sydd wedi’i archifo
 serviceHeaderName: Hawlio am eich tanysgrifiadau proffesiynol cysylltiedig â gwaith
 serviceDescription: |
   Mae'r gwasanaeth hwn yn caniatáu i rywun hawlio rhyddhad treth ar ffioedd neu danysgrifiadau y mae wedi'u talu i sefydliadau proffesiynol cymeradwy am y flwyddyn dreth bresennol a'r 4 blynedd dreth flaenorol.
@@ -12,9 +12,9 @@ milestones:
   - description: Roedd y nodwedd awtogwblhau yn achosi problemau i’n dadansoddwr darllenydd sgrin. Ni allai defnyddwyr sy’n pori drwy Internet Explorer 11 gyda JAWS ddefnyddio’r nodwedd oherwydd oedi difrifol o ran mewnbwn bysellfwrdd, a oedd hefyd wedi cau Internet Explorer sawl gwaith. Roedd awtogwblhau yn anhygyrch i’r grŵp hwn o ddefnyddwyr ac roedd ein dadansoddwr darllenydd sgrin wedi dibynnu ar gymorth er mwyn symud ymlaen â’r daith drwy fewnbynnu’r wybodaeth heb fod JAWS yn rhedeg. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
     date: 2024-09-20
 serviceLastTestedDate: 2019-09-16
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2021-04-21
-statementLastUpdatedDate: 2023-09-20
+statementLastUpdatedDate: 2024-12-09
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
