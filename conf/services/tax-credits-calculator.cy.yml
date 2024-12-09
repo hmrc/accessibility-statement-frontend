@@ -1,4 +1,4 @@
-serviceName: Cyfrifiannell credydau treth
+serviceName: Cyfrifiannell credydau treth, sydd wedi’i archifo
 serviceHeaderName: Cyfrifiannell credydau treth
 serviceDescription: |
   Mae’r gyfrifiannell credydau treth yn caniatáu unigolion i gyfrifo’r credydau treth y gallant eu hawlio.
@@ -36,9 +36,9 @@ milestones:
   - description: "Mae’n bosibl bod y modd y mae’r botwm wedi’i labelu yn amwys i ddefnyddwyr NVDA sy’n pori y tu allan i’r cyd-destun. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6. (headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
     date: 2023-12-31
 serviceLastTestedDate: 2020-09-21
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2020-09-18
+statementLastUpdatedDate: 2024-12-09
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
