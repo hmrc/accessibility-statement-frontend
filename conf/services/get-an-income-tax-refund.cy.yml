@@ -4,19 +4,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /get-an-income-tax-refund
 contactFrontendServiceId: p800-refunds-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - Mae blwch deialog ar goll sy’n rhybuddio defnyddwyr bod angen iddynt ymestyn yr amser a ganiateir i gwblhau tasgau cyn i’w sesiwn ddod i ben.
-  - Ar dudalen ‘Beth yw enw eich banc?’, nid yw’r neges gwall wedi ei chyfieithu i’r Gymraeg, a allai atal defnyddwyr Cymraeg rhag ei nodi’n gywir fel gwall.
-milestones:
-  - description: Mae’r sesiwn yn cyrraedd ei therfyn amser ac nid yw’r defnyddiwr yn gallu ymestyn ei sesiwn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
-    date: 2024-08-31
-  - description: Mae’r dudalen ‘Beth yw enw eich banc?’ yn methu cyfieithiad Cymraeg ar gyfer y neges gwall ‘No results found’. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
-    date: 2024-08-31
-serviceLastTestedDate: 2024-05-10
+complianceStatus: full
+serviceLastTestedDate: 2024-10-24
 statementVisibility: public
 statementCreatedDate: 2024-05-22
-statementLastUpdatedDate: 2024-05-22
+statementLastUpdatedDate: 2024-12-17
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
