@@ -1,0 +1,24 @@
+serviceName: Rhoi gwybod am fanylion ynghylch cymhorthdal Ardoll Newid yn yr Hinsawdd
+serviceHeaderName: Rhoi gwybod am fanylion ynghylch cymhorthdal Ardoll Newid yn yr Hinsawdd
+serviceDescription: |
+  Rhoi gwybod i CThEF am fanylion ynghylch cymhorthdal Ardoll Newid yn yr Hinsawdd
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/report-climate-change-levy-subsidy
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - efallai fod rhai cysylltiadau, penawdau neu labeli nad ydynt yn rhoi digon o wybodaeth am beth i’w wneud nesaf neu’r hyn sy’n digwydd nesaf
+  - efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall
+milestones:
+  - description: |
+      Efallai fod rhai cysylltiadau, penawdau a labeli nad ydynt yn rhoi digon o wybodaeth am yr hyn i’w wneud nesaf neu’r hyn sy’n digwydd nesaf. 
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) na maen prawf llwyddiant 2.4.9 (Link Purpose).
+    date: 2026-03-31
+  - description: |
+      Efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall. 
+      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion).
+    date: 2026-03-31
+serviceLastTestedDate: 2024-09-13
+statementVisibility: public
+statementCreatedDate: 2024-09-13
+statementLastUpdatedDate: 2024-09-13

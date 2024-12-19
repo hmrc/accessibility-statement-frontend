@@ -1,0 +1,12 @@
+serviceName: Gwneud cais am ad-dalu gordaliad o’r Ardoll Troseddau Economaidd
+serviceHeaderName: Gwneud cais am ad-dalu gordaliad o’r Ardoll Troseddau Economaidd
+serviceDescription: |
+  Defnyddiwch y ffurflen hon i ofyn i CThEF am ad-dalu gordaliad o’r Ardoll Troseddau Economaidd.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/request-refund-for-economic-crime-levy-overpayment
+contactFrontendServiceId: GForm
+complianceStatus: full
+serviceLastTestedDate: 2023-10-06
+statementVisibility: public
+statementCreatedDate: 2023-10-06
+statementLastUpdatedDate: 2023-10-06
