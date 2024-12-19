@@ -1,0 +1,24 @@
+serviceName: Hawlio ad-daliad TAW fel sefydliad sydd ddim wedi cofrestru ar gyfer TAW
+serviceHeaderName: Hawlio ad-daliad TAW fel sefydliad sydd ddim wedi cofrestru ar gyfer TAW
+serviceDescription: |
+  Defnyddiwch y ffurflen hon y tro cyntaf i chi hawlio ad-daliad TAW fel sefydliad nad yw wedi cofrestru ar gyfer TAW.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/register-and-claim-vat-refund-if-not-vat-registered-vat126
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - efallai fod rhai cysylltiadau, penawdau neu labeli nad ydynt yn rhoi digon o wybodaeth am beth i’w wneud nesaf neu’r hyn sy’n digwydd nesaf
+  - efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall
+milestones:
+  - description: |
+      Efallai fod rhai cysylltiadau, penawdau a labeli nad ydynt yn rhoi digon o wybodaeth am yr hyn i’w wneud nesaf neu’r hyn sy’n digwydd nesaf. 
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) na maen prawf llwyddiant 2.4.9 (Link Purpose).
+    date: 2026-03-31
+  - description: |
+      Efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall. 
+      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion).
+    date: 2026-03-31
+serviceLastTestedDate: 2021-04-26
+statementVisibility: public
+statementCreatedDate: 2020-09-23
+statementLastUpdatedDate: 2022-03-31

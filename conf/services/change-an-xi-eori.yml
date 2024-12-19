@@ -13,11 +13,11 @@ milestones:
   - description: |
       Some links, headings and labels may not provide enough information about what to do next, or what happens next.
       This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
-    date: 2023-09-30
+    date: 2026-09-30
   - description: |
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
-    date: 2023-09-30
+    date: 2026-09-30
 serviceLastTestedDate: 2021-11-17
 statementVisibility: public
 statementCreatedDate: 2021-11-17

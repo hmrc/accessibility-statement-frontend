@@ -1,9 +1,9 @@
-serviceName: Apply for transfer of residence tax relief
-serviceHeaderName: Apply for transfer of residence tax relief
+serviceName: Apply for a UK healthcare cover certificate for maternity, paternity or adoption leave abroad or for dependants (CA8454)
+serviceHeaderName: Apply for a UK healthcare cover certificate for maternity, paternity or adoption leave abroad or for dependants (CA8454)
 serviceDescription: |
-  Use this form to apply for transfer of residence tax relief or to make additions to an already approved application.
+  Use this form to apply for a certificate to confirm UK healthcare cover for maternity, paternity or adoption leave abroad or for dependants.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/apply-for-transfer-of-residence-v1
+serviceUrl: /submissions/new-form/apply-for-uk-healthcare-cover-certificate-for-maternity-paternity-adoption-leave-abroad-or-dependants
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -13,16 +13,12 @@ milestones:
   - description: |
       Some links, headings and labels may not provide enough information about what to do next, or what happens next.
       This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
-    date: 2023-03-31
+    date: 2026-03-31
   - description: |
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
-    date: 2023-03-31
-  - description: |
-      If the journey is more than a few screens then user may not able to save and come back later.
-      This does not meet WCAG 2.1 success criterion 2.2.5 (Re-authenticating).
-    date: 2023-03-31
-serviceLastTestedDate: 2021-12-07
+    date: 2026-03-31
+serviceLastTestedDate: 2024-05-02
 statementVisibility: public
-statementCreatedDate: 2021-12-07
-statementLastUpdatedDate: 2021-12-07
+statementCreatedDate: 2024-05-02
+statementLastUpdatedDate: 2024-05-02

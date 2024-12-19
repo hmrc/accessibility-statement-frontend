@@ -1,7 +1,7 @@
-serviceName: Tell HMRC about using a till system to reduce your tax bill
-serviceHeaderName: Tell HMRC about using a till system to reduce your tax bill
+serviceName: Dywedwch wrth CThEM am ddefnyddio system til i leihau eich bil treth
+serviceHeaderName: Dywedwch wrth CThEM am ddefnyddio system til i leihau eich bil treth
 serviceDescription: |
-  Use this form to tell HMRC about using a till system to reduce your tax bill.
+  Defnyddiwch y ffurflen hon i ddweud wrth CThEM am ddefnyddio system til i leihau eich bil treth.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/tell-hmrc-about-using-till-system-to-reduce-tax-bill
 contactFrontendServiceId: GForm
@@ -12,12 +12,12 @@ accessibilityProblems:
 milestones:
   - description: |
       Efallai fod rhai cysylltiadau, penawdau a labeli nad ydynt yn rhoi digon o wybodaeth am yr hyn i’w wneud nesaf neu’r hyn sy’n digwydd nesaf. 
-      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) na maen prawf llwyddiant 2.4.9 (Link Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio erbyn 31 Mawrth 2023.
-    date: 2024-03-31
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) na maen prawf llwyddiant 2.4.9 (Link Purpose). 
+    date: 2026-03-31
   - description: |
       Efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall. 
-      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd hyn yn cael ei drwsio erbyn 31 Mawrth 2023.
-    date: 2024-06-30
+      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion). 
+    date: 2026-03-31
 serviceLastTestedDate: 2020-09-18
 statementVisibility: public
 statementCreatedDate: 2020-09-23

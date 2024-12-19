@@ -12,10 +12,10 @@ accessibilityProblems:
 milestones:
   - description: |
       Some links, headings and labels may not provide enough information about what to do next, or what happens next.
-    date: 2022-03-31
+    date: 2026-03-31
   - description: |
       Some error messages may not include all of the information you need to help you to correct an error.
-    date: 2022-03-31
+    date: 2026-03-31
 serviceLastTestedDate: 2021-05-24
 statementVisibility: public
 statementCreatedDate: 2021-05-24

@@ -1,7 +1,7 @@
-serviceName: apply-for-uk-internal-market-scheme-authorisation
-serviceHeaderName: apply-for-uk-internal-market-scheme-authorisation
+serviceName: Apply for a UK Internal Market Scheme authorisation
+serviceHeaderName: Apply for a UK Internal Market Scheme authorisation
 serviceDescription: |
-  Us this form to apply for a UK Internal Market Scheme authorisation.
+  Use this form to apply for a UK Internal Market Scheme authorisation.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/apply-uk-internal-market-scheme-authorisation
 contactFrontendServiceId: GForm
@@ -13,11 +13,11 @@ milestones:
   - description: |
       Some links, headings and labels may not provide enough information about what to do next, or what happens next.
       This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
-    date: 2024-03-31
+    date: 2026-03-31
   - description: |
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
-    date: 2024-03-31
+    date: 2026-03-31
 serviceLastTestedDate: 2023-06-08
 statementVisibility: public
 statementCreatedDate: 2023-06-08
