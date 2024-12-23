@@ -1,7 +1,7 @@
-serviceName: Apply for transfer of residence tax relief
-serviceHeaderName: Apply for transfer of residence tax relief
+serviceName: Gwneud cais am ryddhad treth preswylio i drosglwyddo
+serviceHeaderName: Gwneud cais am ryddhad treth preswylio i drosglwyddo
 serviceDescription: |
-  Use this form to apply for transfer of residence tax relief or to make additions to an already approved application.
+  Defnyddiwch y ffurflen hon i wneud cais am drosglwyddo rhyddhad treth preswylio neu i wneud ychwanegiadau at gais a gymeradwywyd eisoes.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/apply-for-transfer-of-residence
 contactFrontendServiceId: GForm

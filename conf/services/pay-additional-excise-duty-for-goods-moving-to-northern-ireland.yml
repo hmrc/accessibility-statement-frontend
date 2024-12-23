@@ -1,7 +1,7 @@
-serviceName: pay-additional-excise-duty-for-goods-moving-to-northern-ireland
-serviceHeaderName: pay-additional-excise-duty-for-goods-moving-to-northern-ireland
+serviceName: Pay additional excise duty for goods moving to Northern Ireland
+serviceHeaderName: Pay additional excise duty for goods moving to Northern Ireland
 serviceDescription: |
-  Use this form to pay additional excise duty on alcohol, tobacco or oil that has moved from Great Britain or the Isle of Man to Northern Ireland.
+  Pay additional excise duty on alcohol, tobacco or oil that has moved from Great Britain or the Isle of Man to Northern Ireland. Additional duty is due if the rate has changed at the point the goods move to Northern Ireland, or if a discount was applied that does not apply in Northern Ireland, such as small brewers relief.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/pay-additional-excise-duty-for-goods-moving-to-northern-ireland
 contactFrontendServiceId: GForm
@@ -13,11 +13,11 @@ milestones:
   - description: |
       Some links, headings and labels may not provide enough information about what to do next, or what happens next.
       This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
-    date: 2024-03-31
+    date: 2026-03-31
   - description: |
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
-    date: 2024-03-31
+    date: 2026-03-31
 serviceLastTestedDate: 2023-09-12
 statementVisibility: public
 statementCreatedDate: 2023-09-12
