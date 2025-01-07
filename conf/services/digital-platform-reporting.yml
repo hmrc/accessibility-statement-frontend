@@ -1,6 +1,6 @@
-serviceName: Digital platform reporting
+serviceName: Carry out digital platform reporting
 serviceDescription: |
-  The digital service has been created for UK Platform Operators to provide seller information to the HMRC and exchange data related to other OECD countries.
+  The digital service has been created for UK operators of digital platforms to report the information of sellers using their platforms to HMRC.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /digital-platform-reporting/register
 contactFrontendServiceId: digital-platform-reporting
