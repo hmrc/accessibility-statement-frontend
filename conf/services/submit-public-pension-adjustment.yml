@@ -1,14 +1,9 @@
-serviceName: Submit Public Service Pension Adjustment
+serviceName: submit your public service pension adjustment
 serviceDescription: This service will help you correct your tax position if you have been affected by reformed public service pensions introduced in 2015. You can submit your information to HMRC for review or submit information on behalf of someone else to HMRC for review. You can only do this if you have power of attorney or deputy ship.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submit-public-pension-adjustment
 contactFrontendServiceId: submit-public-pension-adjustment-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - On the ‘What is the name and tax reference of the pension scheme?’ page and selected others, there are multiple H1 headings which is confusing, as screen-reader users are not getting the same information as other users.
-  - On the ‘Have you contributed to any other defined benefit or defined contribution scheme?’ page and selected others, there is text that visually appears to be a heading, but is not marked up as a heading, affecting screen-reader users.
-  - On the ‘check your answers’ pages, links appear to have placeholder text, rather than the same text as the label, affecting screen-reader users.
-  - On the ‘Enter bank details’ page, it has not been set up correctly so that screen readers will announce ‘view-bank-details-hidden’, which does not provide enough context for users.
+complianceStatus: full
 milestones:
   - description:  Information, structure, and relationships conveyed through presentation could not be  programmatically determined. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
     date: 2024-10-31
@@ -16,10 +11,10 @@ milestones:
     date: 2024-10-31
   - description: There is visually hidden placeholder text within a legend. This fails WCAG 2.1 success criterion 2.4.6 Headings and Labels (Level AA).
     date: 2024-10-31
-serviceLastTestedDate: 2023-09-11
+serviceLastTestedDate: 2025-01-16
 statementVisibility: public
 statementCreatedDate: 2023-09-25
-statementLastUpdatedDate: 2024-07-29
+statementLastUpdatedDate: 2025-02-03
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Edinburgh
 typeOfService: Public beta
