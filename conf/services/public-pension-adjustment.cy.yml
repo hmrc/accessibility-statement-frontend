@@ -1,0 +1,13 @@
+serviceName: cyfrifwch eich addasiad i bensiwn gwasanaeth cyhoeddus
+serviceDescription: Bydd y gwasanaeth hwn yn eich helpu gyda chywiro’ch sefyllfa o ran treth os yw’r pensiynau gwasanaeth cyhoeddus diwygiedig, a gyflwynwyd yn 2015, wedi effeithio arnoch. Gallwch gyfrifo unrhyw iawndal o daliadau lwfans blynyddol a/neu lwfans oes rydych wedi’u talu o’r blaen neu gyfrifo taliadau lwfans blynyddol a/neu lwfans oes ychwanegol, gostyngedig neu newydd y bydd angen i chi eu talu.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /public-pension-adjustment
+contactFrontendServiceId: calculate-public-pension-adjustment-frontend
+complianceStatus: full
+serviceLastTestedDate: 2025-01-16
+statementVisibility: public
+statementCreatedDate: 2023-09-25
+statementLastUpdatedDate: 2025-02-03
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Edinburgh
+typeOfService: Public beta
