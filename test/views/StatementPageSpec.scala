@@ -274,7 +274,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     "return HTML with the date for carrying out a full assessment, in Welsh" in new PartialSetup with WelshLanguage {
       partiallyAccessibleIosStatementWithAutomatedTestingHtml should include(
-        """ <p class="govuk-body">Bydd yr ap hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 30 Mehefin 2024.</p>"""
+        """ <p class="govuk-body">Bydd yr ap hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 30 Medi 2025.</p>"""
       )
     }
   }
@@ -441,14 +441,14 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
     "should return HTML with a fixed date for carrying out an assessment" in new NonCompliantSetup {
       nonCompliantAccessibleStatementHtml should include(
-        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 June 2024.</p>"""
+        """<p class="govuk-body">It has not been tested for compliance with WCAG 2.1 AA. The service will book a full accessibility audit by 30 September 2025.</p>"""
       )
     }
 
     "should return HTML with a fixed date for carrying out an assessment, in Welsh" in new NonCompliantSetup
       with WelshLanguage {
       nonCompliantAccessibleStatementHtml should include(
-        """<p class="govuk-body">Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 30 Mehefin 2024.</p>"""
+        """<p class="govuk-body">Ni wiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1. Bydd y gwasanaeth yn trefnu archwiliad hygyrchedd llawn erbyn 30 Medi 2025.</p>"""
       )
     }
   }
@@ -463,13 +463,13 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
 
       "return HTML with the date for carrying out a full assessment" in new PartialSetup {
         automatedTestingStatementHtml should include(
-          """ <p class="govuk-body">The service will also book a full accessibility audit by 30 June 2024.</p>"""
+          """ <p class="govuk-body">The service will also book a full accessibility audit by 30 September 2025.</p>"""
         )
       }
 
       "return HTML with the date for carrying out a full assessment, in Welsh" in new PartialSetup with WelshLanguage {
         automatedTestingStatementHtml should include(
-          """ <p class="govuk-body">Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 30 Mehefin 2024.</p>"""
+          """ <p class="govuk-body">Bydd y gwasanaeth hefyd yn trefnu archwiliad hygyrchedd llawn erbyn 30 Medi 2025.</p>"""
         )
       }
 
