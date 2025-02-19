@@ -20,27 +20,27 @@ accessibilityProblems:
   - mae’r dangosydd ffocws yn methu cyferbynnedd lliw.
 milestones:
   - description: "Roedd y tablau a gyflwynir gan raglen i ddefnyddwyr darllenydd sgrin yn anodd eu deall. Y rheswm am hyn yw bod nifer o dablau wedi’u nythu o fewn tablau eraill. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Mae cynnwys ar y dudalen sy’n cael ei gyhoeddi fel un bloc o gynnwys a fydd yn ddryslyd i rai defnyddwyr darllenydd sgrin. Mae’r berthynas rhwng y ddau ddarn o gynnwys yn cael ei cholli oherwydd y ffordd y mae wedi’i marcio. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Ar y tudalen Negeseuon mae’r cysylltiad ‘VAT messages (opens in a new tab) – includes VAT MOSS and NOVA messages’ a’r testun ‘5 unread messages’ yn cael eu darllen fel un eitem restr. Nid yw’r berthynas rhwng y ddau yn glir gan nad yw wedi’i marcio’n gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Roedd yr elfen manylion yn broblem fawr i ddefnyddwyr sy’n defnyddio bysellfwrdd yn unig a defnyddwyr darllenydd sgrin drwy ddefnyddio fersiwn 11 o Internet Explorer a JAWS. Nid yw’r elfen yn hygyrch drwy’r botwm tab, sy’n golygu y bydd defnyddwyr sy’n defnyddio bysellfwrdd yn unig yn cael eu heithrio rhag cael mynediad at y wybodaeth o fewn yr elfen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Mae’r elfen manylion ar y tudalen datganiadau yn cael ei chyfleu’n wahanol i ddefnyddwyr darllenydd sgrin nag a adroddwyd yn flaenorol ar elfennau manylion eraill. Does dal dim modd dod o hyd i'r eflen allan o’i chyd-destun. Fodd bynnag, yn ei chyd-destun mae’n cael ei chyhoeddi fel botwm ac yn hysbysu’r defnyddiwr bod y cynnwys wedi’i gywasgu. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Mae teitl y dudalen wedi’i ddyblygu ar draws sawl tudalen lle mae’r h1 yn dwyn y teitl ‘PAYE for employers: annual statements’. Nid yw hyn yn bodloni maen prawf llwyddiant (2.4.2 page titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Gall elfennau llywio sydd wedi’u dyblygu fod yn ddryslyd i ddarllenwyr sgrin sy’n pori adrannau o’r dudalen drwy dirnodau. Caniateir tirnodau llywio lluosog, ond dylid eu gwahanu oddi wrth ei gilydd gan ddefnyddio label ddisgrifiadol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Mae darllenwyr sgrin yn dod ar draws rhestr o 1 eitem a oedd yn ymwneud â’r taliad o £400. Nid yw’n glir pam mae’r darn hwn o destun mewn eitem restr ar ei ben ei hun. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.2 (meaningful sequence) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Nid yw’r priodoledd awtogwblhau wedi’i ddefnyddio ar y meysydd mewnbwn ‘Name’ ac ‘Email’. Mae’r awtogwblhau yn caniatáu i ddefnyddwyr gwblhau ffurflenni’n gyflymach ac yn fwy effeithlon. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (identify input purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Nid yw’r gwallau’n cael eu cyflwyno mewn ffordd sy’n dilyn y patrymau presennol. Pan fydd y botwm ‘Anfon’ yn cael ei gychwyn mae nifer o wallau’n ymddangos ar y dudalen heb unrhyw rybudd i ddefnyddwyr dall. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (status messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
   - description: "Nid yw lliw’r dangosydd ffocws gweladwy presennol yn bodloni’r gymhareb ofynnol o 3:1 ar gyfer safon AA. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2024-12-31
+    date: 2025-12-31
 serviceLastTestedDate: 2020-09-28
 statementVisibility: public
 statementCreatedDate: 2020-09-10

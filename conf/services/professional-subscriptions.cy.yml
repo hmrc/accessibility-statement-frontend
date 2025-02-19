@@ -10,7 +10,7 @@ accessibilityProblems:
   - ni fydd defnyddwyr darllenydd sgrin yn gallu defnyddio’r nodwedd awtogwblhau gan fod oedi o ran mewnbwn bysellfwrdd
 milestones:
   - description: Roedd y nodwedd awtogwblhau yn achosi problemau i’n dadansoddwr darllenydd sgrin. Ni allai defnyddwyr sy’n pori drwy Internet Explorer 11 gyda JAWS ddefnyddio’r nodwedd oherwydd oedi difrifol o ran mewnbwn bysellfwrdd, a oedd hefyd wedi cau Internet Explorer sawl gwaith. Roedd awtogwblhau yn anhygyrch i’r grŵp hwn o ddefnyddwyr ac roedd ein dadansoddwr darllenydd sgrin wedi dibynnu ar gymorth er mwyn symud ymlaen â’r daith drwy fewnbynnu’r wybodaeth heb fod JAWS yn rhedeg. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2024-09-20
+    date: 2025-12-31
 serviceLastTestedDate: 2019-09-16
 statementVisibility: archived
 statementCreatedDate: 2021-04-21

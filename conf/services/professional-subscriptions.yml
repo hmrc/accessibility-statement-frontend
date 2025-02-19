@@ -10,7 +10,7 @@ accessibilityProblems:
   - screen reader users will not be able to use the autocomplete feature as it has keyboard input lag
 milestones:
   - description: The autocomplete feature was problematic for our screen reader analyst. Users browsing on Internet Explorer 11 with JAWS could not use the feature due to severe keyboard input lag, which also shut down Internet Explorer several times. The autocomplete was inaccessible for this user group and our screen reader analyst relied on support to continue with the journey by inputting the information without JAWS running. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
-    date: 2024-09-20
+    date: 2025-12-31
 serviceLastTestedDate: 2019-09-16
 statementVisibility: archived
 statementCreatedDate: 2021-04-21
