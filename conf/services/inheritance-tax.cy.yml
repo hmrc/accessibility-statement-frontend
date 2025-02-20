@@ -23,29 +23,29 @@ accessibilityProblems:
   - nid yw’r cysylltiad ‘Allgofnodi’ yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 o ran cyferbyniad lliw.
 milestones:
   - description: "Nid yw’r testun yn y cysylltiad yn ddisgrifiadol a gall hyn achosi dryswch ar gyfer defnyddwyr darllenwyr sgrin sy’n llywio’r dudalen mewn ac allan o gyd-destun, oherwydd mae’n bosibl na fyddant yn deall pwrpas y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (link purpose), 2.4.9 (link purpose) a 3.1.4 (abbreviations) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Mae’r meysydd dyddiad wedi eu grwpio efo’i gilydd gan ddefnyddio <fieldset> ond nid ydynt wedi cael allwedd ddisgrifiadol, mae hwn wedi’i adael yn wag. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Nid yw’r testun yn y cysylltiad yn ddisgrifiadol ac nid yw’n caniatáu’r defnyddiwr i ddeall pwrpas y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (link purpose) a 2.4.9 (link purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Dylai’r neges gwall ar y cwestiwn olaf yn y ffurflen help o fewn y llinell hefyd efelychu’r cwestiwn ‘Gyda beth y mae angen help arnoch?’. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (error identification), 3.3.3 (error suggestion) a 3.3.6 (error prevention) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Mae’r botymau crynodeb ‘Sut i ddod o hyd i’r manylion hyn’ yn y gydran manylion â labeli sydd wedi dyblygu ac nid yw’n ddisgrifiadol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6. (headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Roedd yna sawl adeg yn ystod y proses profi pan ddaeth sesiwn i ben heb unrhyw hysbysiad. Nid yw hyn yn bodloni meini prawf llwyddiant 2.2.1 (timing adjustable), 2.2.5 (re-authenticating) a 2.2.6 (timeouts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Gall tudalennau dyblyg achosi dryswch o ddefnyddwyr darllenydd sgrin sy’n eu defnyddio i adnabod bob tudalen ac i greu amlinell o’r dudalen a’i wybodaeth bwysig. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Pan mae gwall yn digwydd ac mae’r crynodeb o wallau yn ymddangos, mae’r cysylltiad o fewn y crynodeb o wallau wedi’i dorri ac ni ellir ei actifadu. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (bypass blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Nid yw’r adran ‘Atebion blaenorol’ ar y dudalen wedi’i farcio’n gywir a dylai gael ei gyflwyno fel rhestr diffiniad. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Mae sawl elfen ryngweithiol ar draws y gwasanaeth nad yw’n bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 o ran cyferbynnedd lliw nad yw’n destun na chanllawiau System Ddylunio GOV.UK pan maent y cael ffocws. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Pan mae gwall yn digwydd ar y dudalen, nid yw’r neges gwall a’r crynodeb yn bodloni’r canllawiau. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
   - description: "Nid yw’r cysylltiad ‘Allgofnodi’ yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1 o ran cyferbyniad lliw wrth hofran drosto a’i actifadu drwy ddefnyddio llygoden. Byddai hyn yn achosi anawsterau sylweddol i ddefnyddwyr sydd â golwg gwan a allai gael anhawster i weld y cysylltiad yn y cyflyrau ffocws hyn. Nid yw hyn yn bodloni meini prawf llwyddiant 1.4.3 (contrast minimum) nac 1.4.6 (contrast enhanced) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2023-01-01
+    date: 2025-01-01
 serviceLastTestedDate: 2021-01-28
 statementVisibility: archived
 statementCreatedDate: 2020-09-17
