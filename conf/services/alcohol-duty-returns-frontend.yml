@@ -1,4 +1,4 @@
-serviceName: the Manage your Alcohol Duty       # The service name that will appear in the title of the accessibility statement.
+serviceName: Manage your Alcohol Duty       # The service name that will appear in the title of the accessibility statement.
                                             # Do not include the word service at the end, as this will be added by the templates
 serviceDescription: |                       # A description of the service
   If you are an approved
