@@ -4,10 +4,11 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /public-pension-adjustment
 contactFrontendServiceId: calculate-public-pension-adjustment-frontend
 complianceStatus: full
-serviceLastTestedDate: 2025-01-16
+serviceLastTestedDate: 2025-02-25
 statementVisibility: public
 statementCreatedDate: 2023-09-25
-statementLastUpdatedDate: 2025-02-03
+statementLastUpdatedDate: 2025-03-03
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Edinburgh
 typeOfService: Public beta
+wcagVersion: 2.2 AA
