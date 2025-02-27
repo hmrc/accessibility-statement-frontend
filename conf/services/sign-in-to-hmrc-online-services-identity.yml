@@ -1,11 +1,10 @@
-serviceName: Identity Provider Gateway Welsh
+serviceName: Sign in to HMRC Online Services Identity
 serviceDescription: |
-  Defnyddiwch y paragraff hwn i ddisgrifio’ch gwasanaeth. Gall fynd dros sawl llinell
-  fel hyn.
+  The primary purpose of this service is to identify interactions during sign in.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /sign-in-to-hmrc-online-services/identity
 contactFrontendServiceId: identity-provider-gateway
 complianceStatus: noncompliant
 statementVisibility: draft
 statementCreatedDate: 2024-03-06
-statementLastUpdatedDate: 2024-03-06
+statementLastUpdatedDate: 2025-02-19
