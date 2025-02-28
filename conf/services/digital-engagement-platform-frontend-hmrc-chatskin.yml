@@ -6,35 +6,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /ask-hmrc
 contactFrontendServiceId: digital-engagement-platform-frontend
-complianceStatus: partial
-accessibilityProblems:
-  - Inside the chat dialog box there is information which informs sighted users ‘you are currently chatting with a computer’ next to an icon that indicates the information is important but there are no auditory cues for screen reader users.
-  - The radio buttons have been grouped together using a fieldset but there is no label. Screen reader users may have difficulty identifying the purpose of the radio buttons.
-  - The ‘why did you give these scores’ text area input field has a visible label but it has not been correctly associated with the input field. Users of assistive technologies will be unable to identify and interact with it correctly.
-  - The ‘ask HMRC’ text in the chat dialog box is not marked up as a heading. Screen reader users may be confused as there is no indication that this is a new area of the page. The text duplicates the ‘ask HMRC’ text in the header of the page.
-  - When the radio buttons are viewed in high contrast mode, there is no visual cue to show that they have received focus.
-  - Low-vision users may be unable to distinguish the scroll bar or the focus indicator on the buttons in the chat dialog box as they do not have enough colour contrast.
-  - When screen-reader users use the chat dialog box, the reply messages appear above the dialog box but the focus remains inside the dialog box, so they are not informed of this status message. When errors occur, the message appears in the form but there is no alert for screen-reader users. When sending messages, unless the sound has been turned on, there is no indication that something has happened. Screen-reader users must manually navigate into the chat log to check whether something has occurred. Additionally, the messages in the chat log do not indicate who sent them or when they were sent.
-  - Low-vision users who magnify their screen to 200%, cannot view the chat inside the chat dialog box.
-  - The ‘textarea’ for users to send messages has placeholder text but there is no constant visual label so that when the placeholder text is removed, users may not know the purpose of the form field.
-  - When a screen reader user moves to the chat box, this is not announced.
-  - 'When keyboard only or screen reader users select the ‘end chat’ button, a pop up appears asking the user if they want to end or return to the chat. Their focus is directed into the pop up but it does not stay inside it which can cause confusion. When screen reader users enter the page navigating screen reading software and press the tab key, the focus lands on the ‘accept additional cookies’ button which is read out to the user but then the focus shifts to the ‘HMRC: Hello, I’m HMRC’s digital assistant…’ text in the dialog box which can be disorienting as they would expect the focus to remain on the ‘accept additional cookies’ buttons and the tab order to be logical and sequential.'
-  - The h1 and h2 headings have duplicated heading text which can confuse screen-reader users who use headings to identify the semantic structure of the page and different sections of information. The ‘Ask HMRC online’ text and the ‘chat ended’ text have both been marked up as heading 1 which can also cause confusion for screen-reader users.
-  - The text ‘help improve our digital assistant’ heading is not set up correctly so that screen reader users do not know that it is a heading.
-  - When the page is set to reflow settings (1280px at 400% magnification) information and links appear to be truncated and inaccessible to low-vision users who use reflow settings to navigate web pages. In this case, the text area where users enter their message becomes inaccessible. when navigating a page, they may not be able to easily access or discern the purpose of the ‘end chat’ button and the ‘is this page not working properly? (opens in a new tab)’ link, as they overlap.
-  - The chat messages sent by the user and the computer/adviser, have been set up as level 2 headings for a user and level 3 headings for the response. All the headings have been marked up as ‘you said’ and ‘automated message’ respectively. This means that each of the headings have been duplicated which will make it difficult for screen reader users to navigate the page out of context.
-  - The ‘print or save’ button label doesn’t provide sufficient context for screen-reader users to understand what will be printed and or saved if they activate the button. Additionally, when users activate the button, they are only given the option to print the page and not to save it. A further issue is that the button is styled as a link which may affect voice activation users who may use the command ‘click print or save link’ for the link not to work. The ‘no thanks’ button associated with the ‘help improve our digital assistant’ is not clearly relatable for screen reader users as it does not let them know it is referring to the digital assistant survey.
-
-milestones:
-  - description: The label on the submit button is visually cut off when zoom is set to 400% using Reflow. This fails WCAG 2.1 success criterion 1.4.10 Reflow.
-    date: 2025-02-28
- 
-
+complianceStatus: full
 serviceLastTestedDate: 2024-08-05
 statementVisibility: public
 statementCreatedDate: 2022-08-17
-statementLastUpdatedDate: 2024-11-29
+statementLastUpdatedDate: 2025-02-26
 businessArea: Customer Services Group (CSG)
 ddc: DDC Yorkshire
-liveOrClassic:
 typeOfService: Live services
