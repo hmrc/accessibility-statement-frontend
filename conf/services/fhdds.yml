@@ -23,33 +23,33 @@ accessibilityProblems:
   - there are several places, such as the cookie banner, where colour contrast is not as good as it should be and so may cause difficulties with reading.
 milestones:
   - description: A timeout occurs without the ability for the user to extend their session. This fails WCAG 2.1 success criterion 2.2.1 (Timing Adjustable).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: The appearance of additional navigation links when actioning the menu link is not announced to assistive technology. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: The hint content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 1.3.1 (Info and relationships).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: Several pages have conditional content which contain nested fieldsets and can cause difficulty in determining associated labels for screen-reader users. This does not meet WCAG 2.1 success criteria 1.3.1 (Info and relationships) and 4.1.2 (Name, role, value).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: There is a global navigation link present which is not by-passed by the skip link and which is placed within the main landmark. This does not meet WCAG 2.1 success criterion 2.4.1 (Bypass blocks).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: There is content presented as a legend which is not correctly associated with the possible answers. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or instructions).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: The error content is not programmatically associated with the inputs so is not announced when needed. This does not meet WCAG 2.1 success criterion 3.3.2 (Labels or instructions).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: There is a table which uses a non-tabular markup instead of rows and cells. This does not meet WCAG 2.1 success criterion 4.1.1 (Parsing).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: Some links have been styled as buttons but do not have the correct role or event handlers to act as buttons. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: Details components have links in their content which can be focussed when the element is in the closed state. This does not meet WCAG 2.1 success criterion 4.1.2 (Name, role, value).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: Personal contact information fields are missing autocomplete attributes. This does not meet WCAG 2.1 success criterion 1.3.5 (Identify input purpose).
-    date: 2024-01-31
+    date: 2026-04-03
   - description: Colour contrast is below the required threshold in some places. This does not meet WCAG 2.1 success criterion 1.4.3 (Contrast - minimum).
-    date: 2024-01-31
+    date: 2026-04-03
 statementVisibility: public
 statementCreatedDate: 2020-09-17
 serviceLastTestedDate: 2021-02-10
-statementLastUpdatedDate: 2023-08-03
+statementLastUpdatedDate: 2025-03-14
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
