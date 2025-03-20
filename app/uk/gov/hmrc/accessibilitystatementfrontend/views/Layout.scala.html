@@ -14,10 +14,10 @@
  * limitations under the License.
  *@
 
-@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.{HmrcStandardPageParams, Banners}
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.{HmrcStandardPageParams, Banners, TemplateOverrides}
+@import play.twirl.api.HtmlFormat._
 
-@this(hmrcStandardPage: HmrcStandardPage)
-
+@this(hmrcStandardPage: HmrcStandardPage, copyToClipboard: CopyToClipboard)
 @(
         pageTitle: String,
         isWelshTranslationAvailable: Boolean)(
@@ -26,5 +26,6 @@
 @hmrcStandardPage(HmrcStandardPageParams(
     pageTitle = Some(pageTitle),
     banners = Banners(displayHmrcBanner = true),
-    isWelshTranslationAvailable = isWelshTranslationAvailable
+    isWelshTranslationAvailable = isWelshTranslationAvailable,
+    templateOverrides = TemplateOverrides(additionalScriptsBlock = Some(copyToClipboard()))
 ))(contentBlock)

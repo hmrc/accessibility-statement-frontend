@@ -20,6 +20,8 @@ import java.util.Date
 import io.circe.Codec
 import io.circe.derivation.Configuration
 import play.api.i18n.Messages
+import play.api.data._
+import play.api.data.Forms._
 
 case class AccessibilityStatement(
   serviceName: String,
@@ -89,4 +91,46 @@ case class AccessibilityStatement(
 object AccessibilityStatement {
   given Configuration                 = Configuration.default.withDefaults
   given Codec[AccessibilityStatement] = Codec.AsObject.derivedConfigured
+
+  def applyForm(
+    serviceName: String,
+    serviceDescription: String,
+    serviceDomain: String,
+    serviceUrl: String
+  ): AccessibilityStatement =
+    AccessibilityStatement(
+      serviceName = serviceName,
+      serviceDescription = serviceDescription,
+      serviceDomain = serviceDomain,
+      serviceUrl = serviceUrl,
+      contactFrontendServiceId = "contactFrontendServiceId",
+      complianceStatus = PartialCompliance,
+      accessibilityProblems = Some(Seq("problem1", "problem2")),
+      milestones = Some(Seq(Milestone("Milestone1", Date()), Milestone("Milestone2", Date()))),
+      automatedTestingOnly = Some(true),
+      statementVisibility = Public,
+      serviceLastTestedDate = Some(Date()),
+      statementCreatedDate = Date(),
+      statementLastUpdatedDate = Date(),
+      automatedTestingDetails = Some("Automated Testing Details"),
+      statementType = None,
+      businessArea = Some(CustomerComplianceGroup),
+      ddc = Some(DDCYorkshire),
+      liveOrClassic = Some(ClassicServices),
+      typeOfService = Some(ClassicServicesType),
+      wcagVersion = WCAG21AA
+    )
+
+  def unapplyForm(statement: AccessibilityStatement): Option[(String, String, String, String)] =
+    Some((statement.serviceName, statement.serviceDescription, statement.serviceDomain, statement.serviceUrl))
+
+  val form: Form[AccessibilityStatement] =
+    Form.apply(
+      mapping(
+        "serviceName"        -> text,
+        "serviceDescription" -> text,
+        "serviceDomain"      -> text,
+        "serviceUrl"         -> text
+      )(AccessibilityStatement.applyForm)(AccessibilityStatement.unapplyForm)
+    )
 }
