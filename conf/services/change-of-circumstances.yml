@@ -1,6 +1,5 @@
-serviceName: Check and update your details with HMRC
-serviceDescription: |
-  Check and update your details with HMRC is a service where you can view and update some of your details stored with HMRC.
+serviceName: Archived Check and update your details with HMRC
+serviceDescription: Check and update your details with HMRC is a service where you can view and update some of your details stored with HMRC.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /hmrc-account/update-your-details
 contactFrontendServiceId: sca-change-of-circumstances-frontend
@@ -24,9 +23,9 @@ milestones:
   - description: Address fields are missing autocomplete attributes which means users will be unable to use the browser's saved data to populate these fields easily. This fails WCAG 2.1 success criterion 1.3.5 Identify Input Purpose.
     date: 2024-01-31
 serviceLastTestedDate: 2023-04-17
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2023-05-09
-statementLastUpdatedDate: 2023-10-27
+statementLastUpdatedDate: 2025-03-21
 automatedTestingOnly: false
 automatedTestingDetails: |
   UI tests were completed using Selenium with BDD. The Performance of the service was tested using Gatling.
