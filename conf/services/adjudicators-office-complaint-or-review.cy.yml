@@ -1,4 +1,4 @@
-serviceName: Gofyn i Swyddfa’r Dyfarnwr ymchwilio i gŵyn neu adolygu penderfyniad sydd wedi’i archifo
+serviceName: Gofyn i Swyddfa’r Dyfarnwr ymchwilio i gŵyn neu adolygu penderfyniad
 serviceHeaderName: Gofyn i Swyddfa’r Dyfarnwr ymchwilio i gŵyn neu adolygu penderfyniad
 serviceDescription: |
   Defnyddiwch y ffurflen hon i ofyn i Swyddfa’r Dyfarnwr ymchwilio i gŵyn neu adolygu penderfyniad.
@@ -19,6 +19,6 @@ milestones:
       Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion). 
     date: 2026-06-30
 serviceLastTestedDate: 2020-09-18
-statementVisibility: archived
+statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2025-03-21
+statementLastUpdatedDate: 2022-03-31
