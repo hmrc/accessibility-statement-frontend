@@ -4,25 +4,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /managing-pension-schemes
 contactFrontendServiceId: managing-pension-schemes-event-report
-complianceStatus: partial
-accessibilityProblems:
-  - On various pages throughout the service, data previously added by users is not kept when they return using the back link. When returning to the 'What is the postcode of the residential property' page using the change link from the 'Check your answers' page, the previously entered postcode is lost.
-  - When reviewing the addresses on the 'What is the address of the residential property?' page, the house number order is not numerically listed.
-  - On the 'What is the address of the residential property?' page, the country field does not allow users to use the data saved in their browser.
-  - On the search pages when the page is zoomed or viewed on a small screen, the size and spacing of the 'View' and 'Remove' links is not enough to avoid accidental activation of the adjacent link.
-milestones:
-  - description: Data previously added by users is not maintained. This fails WCAG 2.2 success criterion 3.3.7 Redundant Entry
-    date: 2025-04-30
-  - description: Order of content is not correct. This fails WCAG 2.2 success criterion 1.3.2 Meaningful Sequence
-    date: 2025-04-30
-  - description: Country field is missing the autocomplete attribute. This fails WCAG 2.2 success criterion 1.3.5 Identify input purpose
-    date: 2025-04-30
-  - description: On a 400% zoomed page or when viewed on a small screen, the links have less than 24 by 24 CSS pixels size and spacing. This fails WCAG 2.2 success criterion 2.5.8 Target Size (Minimum)
-    date: 2025-04-30
-serviceLastTestedDate: 2025-03-14
+complianceStatus: full
+serviceLastTestedDate: 2025-03-25
 statementVisibility: public
 statementCreatedDate: 2023-09-14
-statementLastUpdatedDate: 2025-03-20
+statementLastUpdatedDate: 2025-03-25
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Newcastle
 liveOrClassic: Live Services - Newcastle
