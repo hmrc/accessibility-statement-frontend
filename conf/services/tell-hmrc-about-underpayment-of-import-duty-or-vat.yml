@@ -1,0 +1,18 @@
+serviceName: Tell HMRC about an underpayment of import duty or VAT (C2001)
+serviceHeaderName: Tell HMRC about an underpayment of import duty or VAT (C2001)
+serviceDescription: |
+  Use this form to notify HMRC of an underpayment of import duty or VAT.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/tell-hmrc-about-underpayment-of-import-duty-or-vat
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+    date: 2026-06-31
+serviceLastTestedDate: 2025-03-28
+statementVisibility: public
+statementCreatedDate: 2025-03-28
+statementLastUpdatedDate: 2025-03-28

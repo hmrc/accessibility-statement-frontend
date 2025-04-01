@@ -4,30 +4,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-pension-scheme-accounting-for-tax
 contactFrontendServiceId: PODS
-complianceStatus: partial
-accessibilityProblems:
-  - The page titles do not describe the subject and purpose of the page.
-  - Content information is presented visually, making it inaccessible to users of screen reading technology.
-  - The purpose of links was indeterminable from both the link text and the programmatically determined link context.
-  - Users are not made aware of the time limit that is set on the service.
-  - Multiple autocomplete attributes on form fields contain invalid values.
-milestones:
-  - description: Page titles were found to be non-descriptive regarding the topic or purpose of the page. This fails WCAG 2.2 success criterion 2.4.2 Page Titled
-    date: 2025-04-30
-  - description: Information and relationships in content were not conveyed to users of screen reading assistive technologies as they were presented to users visually. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships
-    date: 2025-04-30
-  - description: Information and relationships in content were not conveyed to users of screen reading assistive technologies as they were presented to users visually. This fails WCAG 2.2 success criterion 2.4.3 Focus Order, 2.4.4 Link Purpose (In Context), 4.1.2 Name, Role, Value
-    date: 2025-04-30
-  - description: The purpose of links could not be determined from the link text together with the programmatically determined link context. This fails WCAG 2.2 success criterion 1.3.5 Identify input purpose
-    date: 2025-04-30
-  - description: Users are not made aware that there is a time limit set on the service. This fails WCAG 2.2 success criterion 2.2.1 Timing Adjustable
-    date: 2025-04-30
-  - description: Multiple autocomplete attributes on form fields contained invalid values. This fails WCAG 2.2 success criterion 1.3.5 Identify Input Purpose
-    date: 2025-04-30
-serviceLastTestedDate: 2025-03-25
+complianceStatus: full
+serviceLastTestedDate: 2025-03-28
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2025-03-26
+statementLastUpdatedDate: 2025-03-28
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
