@@ -2,9 +2,9 @@ serviceName: Gwasanaeth mewngofnodi CThEF
 serviceDescription: |
   Mae'r datganiad hygyrchedd hwn yn berthnasol i'r ffordd y mae pobl yn mewngofnodi i wasanaethau ar-lein CThEF.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /sign-in-to-hmrc-online-services/identity
-contactFrontendServiceId: identity-provider-gateway-frontend
+serviceUrl: /sign-in-to-hmrc-online-services/one-login
+contactFrontendServiceId: one-login-gateway-frontend
 complianceStatus: noncompliant
 statementVisibility: draft
-statementCreatedDate: 2024-03-06
-statementLastUpdatedDate: 2024-02-19
+statementCreatedDate: 2025-04-02
+statementLastUpdatedDate: 2025-04-02

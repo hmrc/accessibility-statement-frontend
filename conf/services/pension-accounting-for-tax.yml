@@ -5,12 +5,13 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-pension-scheme-accounting-for-tax
 contactFrontendServiceId: PODS
 complianceStatus: full
-serviceLastTestedDate: 2021-06-15
+serviceLastTestedDate: 2025-03-28
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2021-07-23
+statementLastUpdatedDate: 2025-03-28
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.2 AA

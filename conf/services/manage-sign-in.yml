@@ -1,0 +1,10 @@
+serviceName: manage HMRC sign in details
+serviceDescription: |
+  This accessibility statement applies to how people manage their HMRC sign in details.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /credential-management
+contactFrontendServiceId: credential-management-frontend
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2025-04-02
+statementLastUpdatedDate: 2025-04-02

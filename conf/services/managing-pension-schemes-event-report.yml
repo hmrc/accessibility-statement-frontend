@@ -4,29 +4,13 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /managing-pension-schemes
 contactFrontendServiceId: managing-pension-schemes-event-report
-complianceStatus: partial
-accessibilityProblems:
-- On the ‘Upload your annual allowance event file’ page, screen-reader users may find that errors are not correctly identified.
-- On the ‘Unauthorised payments’ page screen-reader users will find it difficult to understand the content in the tables.
-- On the ‘Member’s details’ page the National Insurance number error message does not clearly say what needs to be corrected.
-- On the ‘What you will need’ page screen-reader users will find it difficult to understand the information in the downloadable instruction file.
-- When switching to the Welsh version, some of the text has not been translated into Welsh. This gives information that is not complete to users and will not be correctly pronounced by screen readers.
-milestones:
-- description: The file upload page presents error messages in a format that is not fully supported by all assistive technology. This fails WCAG 2.1 success criterion 3.3.1 Error identification.
-  date: 2023-09-22
-- description: The unauthorised payments table contains data in cells that do not correspond to the column heading. This fails WCAG 2.1 success criterions 1.3.1 Info and relationships.
-  date: 2023-09-22
-- description: The error message for incorrect national insurance numbers informs the user that it is the format of the number that is incorrect. This fails WCAG 2.1 success criterions 3.3.1 Error identification.
-  date: 2023-09-22
-- description: The downloaded excel instruction file contains a table with merged cells which may be translated by screen readers incorrectly. This fails WCAG 2.1 success criterions 1.3.1 Info and relationships.
-  date: 2023-09-22
-- description: When viewed in Welsh, not all content has been translated. This fails WCAG 2.1 success criterions 3.1.2 Language of parts.
-  date: 2023-09-22
-serviceLastTestedDate: 2023-08-23
+complianceStatus: full
+serviceLastTestedDate: 2025-03-25
 statementVisibility: public
 statementCreatedDate: 2023-09-14
-statementLastUpdatedDate: 2023-09-14
+statementLastUpdatedDate: 2025-03-25
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Newcastle
 liveOrClassic: Live Services - Newcastle
 typeOfService: Public beta
+wcagVersion: 2.2 AA

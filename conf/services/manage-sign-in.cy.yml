@@ -1,0 +1,10 @@
+serviceName: rheoli manylion mewngofnodi CThEF
+serviceDescription: |
+  Mae'r datganiad hygyrchedd hwn yn berthnasol i'r ffordd y mae pobl yn rheoli eu manylion mewngofnodi CThEF.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /credential-management
+contactFrontendServiceId: credential-management-frontend
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2025-04-02
+statementLastUpdatedDate: 2025-04-02
