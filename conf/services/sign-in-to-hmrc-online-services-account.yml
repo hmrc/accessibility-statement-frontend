@@ -2,9 +2,9 @@ serviceName: HMRC sign in
 serviceDescription: |
   This accessibility statement applies to how people sign in to HMRC online services.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /sign-in-to-hmrc-online-services/identity
-contactFrontendServiceId: identity-provider-gateway-frontend
+serviceUrl: /sign-in-to-hmrc-online-services/account
+contactFrontendServiceId: account-context-fixer-frontend
 complianceStatus: noncompliant
 statementVisibility: draft
-statementCreatedDate: 2024-03-06
-statementLastUpdatedDate: 2025-02-19
+statementCreatedDate: 2025-04-02
+statementLastUpdatedDate: 2025-04-02
