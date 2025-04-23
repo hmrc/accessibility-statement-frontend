@@ -1,4 +1,4 @@
-serviceName: Hawlio ad-daliad treth
+serviceName: Hawlio ad-daliad treth sydd wedi’i archifo
 serviceHeaderName: Hawlio ad-daliad treth
 serviceDescription: |
   Gallwch ddefnyddio’r gwasanaeth hwn i hawlio ad-daliad os ydych wedi talu gormod o dreth i CThEF.
@@ -7,7 +7,7 @@ serviceUrl: /claim-tax-refund
 contactFrontendServiceId: claimtaxrefundfrontend
 complianceStatus: full
 serviceLastTestedDate: 2021-10-29
-statementVisibility: public
+statementVisibility: archived
 statementCreatedDate: 2020-09-18
 statementLastUpdatedDate: 2021-11-19
 businessArea: Customer Services Group (CSG)
