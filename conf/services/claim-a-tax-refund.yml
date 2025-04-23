@@ -1,4 +1,4 @@
-ArchivedServiceName: Claim a tax refund
+serviceName: Archived Claim a tax refund
 serviceHeaderName: Claim a tax refund
 serviceDescription: |
   You can use this service to claim a refund if you have paid HMRC too much tax.
