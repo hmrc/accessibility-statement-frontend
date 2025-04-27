@@ -4,16 +4,11 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-back-import-duty-vat
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
-complianceStatus: partial
-accessibilityProblems:
-  - When errors occur, the error prefix has not been translated into Welsh, which could prevent Welsh-speaking users from correctly identifying it as an error.
-milestones:
-  - description: All pages are missing the Welsh translation for the ‘error’ prefix. This fails WCAG 2.2 success criterion 3.1.2 Language of parts.
-    date: 2025-04-30
-serviceLastTestedDate: 2025-01-28
+complianceStatus: full
+serviceLastTestedDate: 2025-04-07
 statementVisibility: public
 statementCreatedDate: 2021-03-18
-statementLastUpdatedDate: 2025-03-18
+statementLastUpdatedDate: 2025-04-23
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:

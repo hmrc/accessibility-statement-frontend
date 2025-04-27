@@ -1,0 +1,13 @@
+serviceName: Managing Pension Schemes - Pension Scheme Return
+serviceDescription: |
+  PSR is an HMRC-prompted return of information that is accessed by our users via the Managing Pension Scheme (MPS) service which in itself can be accessed either directly or via BTA.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pension-scheme-return-sipp
+contactFrontendServiceId: pension-scheme-return-sipp-frontend
+complianceStatus: full
+serviceLastTestedDate: 2025-03-19
+statementVisibility: public
+statementCreatedDate: 2025-04-23
+statementLastUpdatedDate: 2025-04-23
+typeOfService: Public beta
+wcagVersion: 2.2 AA
