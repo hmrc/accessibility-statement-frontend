@@ -1,4 +1,4 @@
-serviceName: Archived Check if you can claim work related expenses
+serviceName: Check if you can claim work related expenses
 serviceHeaderName: Check if you can claim work related expenses
 serviceDescription: |
   This service tells you if someone is eligible to claim any work related expenses, and which type of expenses they are able to claim.
@@ -14,7 +14,7 @@ milestones:
   - description: "The autocomplete feature was problematic for some screen reader users. Users browsing on Internet Explorer 11 with JAWS could not use the feature due to severe keyboard input lag, which also shut down Internet Explorer several times. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (understanding Name, Role, Value)."
     date: 2025-12-31
 serviceLastTestedDate: 2019-09-19
-statementVisibility: archived
+statementVisibility: public
 statementCreatedDate: 2021-04-20
 statementLastUpdatedDate: 2024-12-09
 businessArea: Customer Services Group (CSG)
