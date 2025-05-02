@@ -1,0 +1,16 @@
+serviceName: Hawlio tollau mewnforio a TAW yn ôl
+serviceDescription: |
+  Gall hawlwyr ddefnyddio’r gwasanaeth i hawlio tollau mewnforio, TAW a chostau tollau eraill yn ôl. Gellir defnyddio’r gwasanaeth os yw’r hawliwr wedi talu gormod o dollau neu TAW ar nwyddau y maent wedi’u mewnforio i’r DU, os oedd y nwyddau wedi’u dychwelyd neu eu gwrthod gan eu bod wedi’u difrodi neu heb eu harchebu, neu i hawlio ad-daliad ar flaendal sicrwydd mewnforio neu warant a dalwyd ganddynt i CThEF.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /claim-back-import-duty-vat
+contactFrontendServiceId: claim-for-reimbursement-of-import-duties
+complianceStatus: full
+serviceLastTestedDate: 2025-04-07
+statementVisibility: public
+statementCreatedDate: 2021-03-18
+statementLastUpdatedDate: 2025-04-23
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
