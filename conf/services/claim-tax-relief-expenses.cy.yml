@@ -1,4 +1,4 @@
-serviceName: Gwirio a allwch hawlio treuliau sy'n ymwneud â gwaith, sydd wedi’i archifo
+serviceName: Gwirio a allwch hawlio treuliau sy'n ymwneud â gwaith
 serviceHeaderName: Gwirio a allwch hawlio treuliau sy'n ymwneud â gwaith
 serviceDescription: |
   Mae'r gwasanaeth hwn yn dweud wrthych os oes rhywun yn gymwys
@@ -18,9 +18,9 @@ milestones:
   - description: "Roedd y nodwedd awtogwblhau yn achosi problemau i rai defnyddwyr darllenydd sgrin. Ni allai defnyddwyr sy’n pori drwy Internet Explorer 11 gyda JAWS ddefnyddio’r nodwedd oherwydd oedi difrifol o ran mewnbwn bysellfwrdd, a oedd hefyd wedi cau Internet Explorer sawl gwaith. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (understanding Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
     date: 2025-12-31
 serviceLastTestedDate: 2019-09-19
-statementVisibility: archived
+statementVisibility: public
 statementCreatedDate: 2021-04-20
-statementLastUpdatedDate: 2024-12-09
+statementLastUpdatedDate: 2025-06-04
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
