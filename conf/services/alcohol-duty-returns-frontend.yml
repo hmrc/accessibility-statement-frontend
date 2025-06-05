@@ -8,10 +8,10 @@ serviceDomain: www.tax.service.gov.uk       # The domain name under which this s
 serviceUrl: /manage-alcohol-duty/start      # The relative URL to the service (omitting www.tax.service.gov.uk)
 contactFrontendServiceId: alcohol-duty-returns-frontend     # A unique identifier for your service (see notes below)
 complianceStatus: full                      # full|partial|noncompliant
-serviceLastTestedDate: 2025-02-21           # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
+serviceLastTestedDate: 2025-05-30           # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
 statementVisibility: public                 # If set to public, the statement will be visible in production. One of: public|draft|archived.
 statementCreatedDate: 2025-03-01            # In ISO format YYYY-MM-DD
-statementLastUpdatedDate: 2025-03-01        # In ISO format YYYY-MM-DD
+statementLastUpdatedDate: 2025-06-05        # In ISO format YYYY-MM-DD
 businessArea: Customer Strategy & Tax Design (CS&TD) # See valid values below
 ddc: DDC Newcastle                           # See valid values below
 liveOrClassic:                               # See valid values below
