@@ -5,10 +5,10 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /register-to-send-a-country-by-country-report
 contactFrontendServiceId: register-country-by-country-reporting-frontend
 complianceStatus: full
-serviceLastTestedDate: 2019-09-15
+serviceLastTestedDate: 2022-11-25
 statementVisibility: public
 statementCreatedDate: 2019-09-30
-statementLastUpdatedDate: 2019-09-30
+statementLastUpdatedDate: 2025-06-10
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Newcastle
