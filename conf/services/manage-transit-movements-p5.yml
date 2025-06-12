@@ -1,4 +1,4 @@
-serviceName: Manage your transit movements
+serviceName: Archived Manage your transit movements
 serviceHeaderName: Manage your transit movements
 serviceDescription:
   The Common Transit Convention (CTC) is a treaty between EU member states and other countries for the transit of goods.
@@ -27,7 +27,7 @@ milestones:
 serviceLastTestedDate: 2024-01-02
 statementVisibility: archived
 statementCreatedDate: 2023-10-17
-statementLastUpdatedDate: 2024-01-10
+statementLastUpdatedDate: 2025-06-10
 businessArea: Borders & Trade
 ddc: DDC Newcastle
 liveOrClassic:
