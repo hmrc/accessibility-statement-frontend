@@ -8,12 +8,12 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /agent-epaye-registration/start
 contactFrontendServiceId: AGENT_EPAYE
 complianceStatus: full
-serviceLastTestedDate: 2021-10-29
+serviceLastTestedDate: 2025-06-17
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2021-11-19
-
+statementLastUpdatedDate: 2025-06-18
+wcagVersion: 2.2 AA
 businessArea: Customer Strategy & Tax Design (CS&TD)
-ddc:
-liveOrClassic:
+ddc: DDC Telford
+liveOrClassic: Live Services - Telford
 typeOfService: Public beta

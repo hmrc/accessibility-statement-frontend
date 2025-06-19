@@ -5,8 +5,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /trader-goods-profiles
 contactFrontendServiceId: TGP
-complianceStatus: partial
-serviceLastTestedDate: 2025-05-12
+complianceStatus: full
+serviceLastTestedDate: 2025-06-06
 statementVisibility: draft
 statementCreatedDate: 2024-07-22
 statementLastUpdatedDate: 2024-12-23
