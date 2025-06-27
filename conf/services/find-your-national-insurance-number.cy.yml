@@ -1,0 +1,16 @@
+serviceName: Dod o hyd i’ch rhif Yswiriant Gwladol
+serviceDescription: |
+  Mae’r gwasanaeth Dod o hyd i’ch rhif Yswiriant Gwladol yn eich galluogi i ddod o hyd i’ch rhif Yswiriant Gwladol ar-lein yn ddiogel. Gallwch argraffu llythyr cadarnhau neu ofyn i gael copi wedi ei anfon atoch drwy’r post.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /find-your-national-insurance-number
+contactFrontendServiceId: findmynino
+complianceStatus: full
+serviceLastTestedDate: 2024-06-25
+statementVisibility: public
+statementCreatedDate: 2025-06-27
+statementLastUpdatedDate: 2025-06-27
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Newcastle
+typeOfService: Live services
+wcagVersion: 2.2 AA
