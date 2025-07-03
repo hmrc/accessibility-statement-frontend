@@ -1,0 +1,16 @@
+serviceName: Save your National Insurance number
+serviceDescription: |
+  The Save your National Insurance number service lets you save your National Insurance number securely. You can save it to a digital wallet, view it as an accessible PDF, or access it in a simple HTML format.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /save-your-national-insurance-number
+contactFrontendServiceId: storemynino
+complianceStatus: full
+serviceLastTestedDate: 2023-05-25
+statementVisibility: public
+statementCreatedDate: 2025-06-25
+statementLastUpdatedDate: 2025-06-25
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Newcastle
+typeOfService: Live services
+wcagVersion: 2.1 AA
