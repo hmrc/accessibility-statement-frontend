@@ -1,0 +1,16 @@
+serviceName: Find your National Insurance number
+serviceDescription: |
+  The Find your National Insurance number service lets you find your National Insurance number securely online. You can print a confirmation letter or ask for a copy to be sent by post.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /find-your-national-insurance-number
+contactFrontendServiceId: findmynino
+complianceStatus: full
+serviceLastTestedDate: 2024-06-25
+statementVisibility: public
+statementCreatedDate: 2025-06-27
+statementLastUpdatedDate: 2025-06-27
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Newcastle
+liveOrClassic: Live Services - Newcastle
+typeOfService: Live services
+wcagVersion: 2.2 AA
