@@ -6,7 +6,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /fill-online/claim-child-benefit
 contactFrontendServiceId: "463"
-complianceStatus: partial
+complianceStatus: noncompliant
 accessibilityProblems:
   - Wrth newid i’r fersiwn Gymraeg, nid yw penawdau’r dudalen wedi’u cyfieithu. Gallai hyn ei gwneud yn anodd i ddefnyddwyr ddeall diben y dudalen.
 milestones:
@@ -15,7 +15,7 @@ milestones:
 serviceLastTestedDate: 2024-09-17
 statementVisibility: public
 statementCreatedDate: 2024-11-12
-statementLastUpdatedDate: 2024-11-12
+statementLastUpdatedDate: 2025-07-03
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: Non DDC Location
 liveOrClassic:

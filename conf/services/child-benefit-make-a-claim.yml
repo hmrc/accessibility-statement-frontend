@@ -6,7 +6,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /fill-online/claim-child-benefit
 contactFrontendServiceId: "463"
-complianceStatus: partial
+complianceStatus: noncompliant
 accessibilityProblems:
   - When switching to the Welsh version, the page headings have not been translated. This could make it difficult for users to understand the purpose of the page.
 milestones:
