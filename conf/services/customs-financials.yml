@@ -7,28 +7,58 @@ serviceUrl: /customs/payment-records/
 contactFrontendServiceId: CDS-FIN
 complianceStatus: partial
 accessibilityProblems:
-  - On the ‘Cash account‘ and ‘Manage your account authorities‘ pages, the table column layout is changed visually for smaller screens but this information is not relayed to screen-reader user.
-  - The downloaded CSV files includes columns with a mixture of data so it is difficult to identify related content.
-  - The downloaded PDFs and CSV files do not have a document title set, so users may not correctly identify what the content is.
-  - Voice recognition users will not be able to directly access some links as the visible copy does not match the accessible label.
-  - The downloaded PDFs do not have the correct language set for the document. Screen-readers may not pronounce the content correctly.
-  - The downloaded PDFs do not reflow the content when zoomed. This means horizontal scrolling is needed which makes it difficult to read. 
-  - On the ’Which Import VAT certificates do you need?’ page, the input field in error is not easily identifiable as there is no error message associated with it
+  - On the "Manage import duties and VAT accounts" page in "Your customs financial accounts" - It is not possible for the software to announce a description list because semantic description list elements are not used to add the information to the page this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Which accounts do you want to add authority to?" - It is not possible for the software to announce a description list because semantic description list elements are not used to add the information to the page this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Authority added" - It is not possible for the software to announce a description list because semantic description list elements are not used to add the information to the page this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Duty deferment statements" - The level two account text heading is used for styling purpose which will cause the relationships of the page contents to be incorrect for a screen reader user. this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Cash account" - The level two account text heading is used for styling purpose which will cause the relationships of the page contents to be incorrect for a screen reader user. this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - In the "pvat-chief" document - Some PDF information is not table data so users will attempt to navigate the content and will find that the navigation will be difficult to achieve an understanding of the relationships between the information. this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - In the "statement-2018-09-13" document - The structure of the PDF contents is incorrectly conveyed to these users as scren readers are unable to announce a heading because the text is not tagged to be a heading level one this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Your details" - A user that is reading and interacting with the page using screen reading software will not be announced a group for the two related input elements as inputs are visually grouped - but not programatically this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Remove authority" - A user that is reading and interacting with the page using screen reading software will not be announced a group for the two related input elements as inputs are visually grouped - but not programatically this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT account" page in "Duty deferment personal details" - A user that is reading and interacting with the page using screen reading software will not be announced a group for the two related input elements as inputs are visually grouped - but not programatically this fails WCAG 2.2 success criterion 1.3.1 Info and Relationships (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Which import VAT certificates (C79) do you need?" - The browser does not refocus to the error that occurs when attempting to submit the form to search for ‘Which import VAT certificates do you need?’ without entering data, confusing screen readers. this fails WCAG 2.2 success criterion 2.4.3 Focus Order (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Which import VAT certificates (C79) do you need?" - The browser does not refocus to the error that occurs when attempting to submit the form to search for ‘Which import VAT certificates do you need?’ without entering data, confusing screen readers. this fails WCAG 2.2 success criterion 2.4.3 Focus Order (Level A)
+  - On the "Manage import duties and VAT accounts" page in "Cash account" - Searching an account, users will find that the service page title is duplicated. this fails WCAG 2.2 success criterion 2.4.2 Page Titled (Level A)
+  - On the "Manage import duties and VAT accounts" page in "General guarantee account" - Searching an account, users will find that the service page title is duplicated. this fails WCAG 2.2 success criterion 2.4.2 Page Titled (Level A)
+  - On the "Customs Declaration Service" page in "Enter a new email address" - The user might have entered their email address incorrectly and need to amend the data inputted however when returning it has not kept the data and they will have to re-enter it this fails WCAG 2.2 success criterion 3.3.7 Redundant Entry (Level A)
+  - In the "pvat-chief" document - The PDF document does not have a title set. this fails WCAG 2.2 success criterion 2.4.2 Page Titled (Level A)
+  - In the "pvat-chief" document - The PDF document does not have its language set. this fails WCAG 2.2 success criterion 3.1.1 Language of Page (Level A)
+  - In the "pvat-chief" document - In the PDF a screen reader user will hear the software announce ‘HMRC’ logo for the HM Revenue & Customs logo positioned at the beginning of the PDF. this fails WCAG 2.2 success criterion 1.1.1 Non-text Content (Level A)
+  - In the "statement-2018-09-13" document - The location of a Welsh town is shown within the statement information but the software is unable to read the town correctly because the language of the text is not set to Welsh. this fails WCAG 2.2 success criterion 3.1.2 Language of Parts (Level AA)
+  - On the "Manage import duties and VAT accounts" page in "Postponed import VAT statements" - A link contains an abbreviation, and this abbreviation is ‘Chief’. The abbreviation is not introduced to the user, and this means that the user may not know the purpose of the abbreviation.  this fails WCAG 2.2 success criterion 3.1.4 Abbreviations (Level AAA)
+  - On the "Manage import duties and VAT accounts" page in "Postponed import VAT statements" - A link contains an abbreviation, and this abbreviation is ‘Chief’. The abbreviation is not introduced to the user, and this means that the user may not know the purpose of the abbreviation.  this fails WCAG 2.2 success criterion 3.1.4 Abbreviations (Level AAA)
+  - On the "Manage import duties and VAT accounts" page in "Find accounts you have authority to use" - A link contains an abbreviation, and this abbreviation is ‘Chief’. The abbreviation is not introduced to the user, and this means that the user may not know the purpose of the abbreviation.  this fails WCAG 2.2 success criterion 3.1.4 Abbreviations (Level AAA)
+  - On the "Manage import duties and VAT accounts" page in "Postponed import VAT statements" - A link contains an abbreviation, and this abbreviation is ‘Chief’. The abbreviation is not introduced to the user, and this means that the user may not know the purpose of the abbreviation.  this fails WCAG 2.2 success criterion 3.1.4 Abbreviations (Level AAA)
+  - In the "pvat-chief" document - Screenreading the PDF, users will encounter information before the company name. Information is added by using the alternative text for images input within the object properties but is not present visually. this fails WCAG 2.2 success criterion Usability
+  - On the "Manage import duties and VAT accounts" page in "Your customs financial accounts" - The title of the service page does not completely include the main heading.  this fails WCAG 2.2 success criterion Usability & GOV.UK Design System
 milestones:
-  - description: Visual display of responsive table not relayed to screen-reader users. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships
+  - description: Visual display of responsive table is not relayed to screen-reader users. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships
     date: 2024-12-31
-  - description: CSV files contain a mixture of data so the headings do not identify the content. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships
-    date: 2024-12-31
-  - description: PDFs and CSV files do not have descriptive document titles. This fails WCAG 2.1 success criterion 2.4.2 Page Titled
-    date: 2024-12-31
-  - description: The visible label for some links does not contain the same words as the accessible label. This fails WCAG 2.1 success criterion 2.5.3 Label in Name.
-    date: 2024-12-31
-  - description: PDFs do not set the correct document language. This fails WCAG 2.1 success criterion 3.1.1 Language of page
-    date: 2024-12-31
-  - description: The downloaded PDFs are not following PDF/Universal Accessibility (PDF/UA). This means that the content does not reflow. This fails WCAG 2.1 success criterion 1.4.10 Reflow
-    date: 2024-12-31
-  - description: On the ’Which Import VAT certificates do you need?’ page, the input field error is not correctly identified. This fails WCAG 2.1 success criterions 3.3.1 Error Identification
-    date: 2024-12-31
+  - description: It is not possible for the software to announce a description list because semantic description list elements are not used to add the information to the page This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
+    date: 2025-06-23
+  - description: The level two account text heading is used for styling purpose which will cause the relationships of the page contents to be incorrect for a screen reader user. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
+    date: 2025-06-23
+  - description: Some PDF information is not table data so users will attempt to navigate the content and will find that the navigation will be difficult to achieve an understanding of the relationships between the information. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
+    date: 2025-06-23
+  - description: The structure of the PDF contents is incorrectly conveyed to these users as scren readers are unable to announce a heading because the text is not tagged to be a heading level one This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
+    date: 2025-06-23
+  - description: A user that is reading and interacting with the page using screen reading software will not be announced a group for the two related input elements as inputs are visually grouped - but not programatically This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
+    date: 2025-06-23
+  - description: The browser does not refocus to the error that occurs when attempting to submit the form to search for ‘Which import VAT certificates do you need?’ without entering data, confusing screen readers. This fails WCAG 2.1 success criterion 2.4.3 Focus Order (Level A).
+    date: 2025-06-23
+  - description: Searching an account, users will find that the service page title is duplicated. This fails WCAG 2.1 success criterion 2.4.2 Page Titled (Level A).
+    date: 2025-06-23
+  - description: The user might have entered their email address incorrectly and need to amend the data inputted however when returning it has not kept the data and they will have to re-enter it This fails WCAG 2.1 success criterion 3.3.7 Redundant Entry (Level A).
+    date: 2025-06-23
+  - description: The PDF document does not have a title set. This fails WCAG 2.1 success criterion 2.4.2 Page Titled (Level A).
+    date: 2025-06-23
+  - description: The PDF document does not have its language set. This fails WCAG 2.1 success criterion 3.1.1 Language of Page (Level A).
+    date: 2025-06-23
+  - description: In the PDF a screen reader user will hear the software announce ‘HMRC’ logo for the HM Revenue & Customs logo positioned at the beginning of the PDF. This fails WCAG 2.1 success criterion 1.1.1 Non-text Content (Level A).
+    date: 2025-06-23
+  - description: The location of a Welsh town is shown within the statement information but the software is unable to read the town correctly because the language of the text is not set to Welsh. This fails WCAG 2.1 success criterion 3.1.2 Language of Parts (Level AA).
+    date: 2025-06-23
 serviceLastTestedDate: 2024-02-16
 statementVisibility: public
 statementCreatedDate: 2019-09-16
