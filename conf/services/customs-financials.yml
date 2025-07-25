@@ -33,8 +33,6 @@ accessibilityProblems:
   - In the "pvat-chief" document - Screenreading the PDF, users will encounter information before the company name. Information is added by using the alternative text for images input within the object properties but is not present visually. this fails WCAG 2.2 success criterion Usability
   - On the "Manage import duties and VAT accounts" page in "Your customs financial accounts" - The title of the service page does not completely include the main heading.  this fails WCAG 2.2 success criterion Usability & GOV.UK Design System
 milestones:
-  - description: Visual display of responsive table is not relayed to screen-reader users. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships
-    date: 2024-12-31
   - description: It is not possible for the software to announce a description list because semantic description list elements are not used to add the information to the page This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
     date: 2025-06-23
   - description: The level two account text heading is used for styling purpose which will cause the relationships of the page contents to be incorrect for a screen reader user. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships (Level A).
@@ -59,10 +57,10 @@ milestones:
     date: 2025-06-23
   - description: The location of a Welsh town is shown within the statement information but the software is unable to read the town correctly because the language of the text is not set to Welsh. This fails WCAG 2.1 success criterion 3.1.2 Language of Parts (Level AA).
     date: 2025-06-23
-serviceLastTestedDate: 2024-02-16
+serviceLastTestedDate: 2025-06-23
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2024-03-15
+statementLastUpdatedDate: 2025-06-25
 businessArea: Borders & Trade
 ddc: DDC Yorkshire
 liveOrClassic:
