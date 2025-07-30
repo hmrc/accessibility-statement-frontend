@@ -7,8 +7,13 @@ serviceDescription:
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /manage-transit-movements
 contactFrontendServiceId: CTCTraders
-complianceStatus: full
-serviceLastTestedDate: 2024-01-02
+complianceStatus: partial
+accessibilityProblems:
+  - PDF documents lack a defined hierarchal structure. This will result in screen reader users experiencing difficulty navigating the content.
+milestones:
+  - description: PDF documents are missing headings and structural tagging for tables. This fails WCAG 2.2 success criterion 1.3.1 Info & Relationships.
+    date: 2026-07-22
+serviceLastTestedDate: 2025-07-23
 statementVisibility: public
 statementCreatedDate: 2023-10-17
 statementLastUpdatedDate: 2024-01-10
@@ -16,4 +21,4 @@ businessArea: Borders & Trade
 ddc: DDC Newcastle
 liveOrClassic:
 typeOfService: Public beta
-wcagVersion: 2.1 AA
+wcagVersion: 2.2 AA
