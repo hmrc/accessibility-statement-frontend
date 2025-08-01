@@ -7,11 +7,11 @@ serviceDescription: |
 serviceDomain: play.google.com
 serviceUrl: /store/apps/details?id=uk.gov.hmrc.ptcalc&hl=en_GB
 statementType: android
-complianceStatus: full
+complianceStatus: noncompliant
 statementVisibility: public
 serviceLastTestedDate: 2023-05-04
 statementCreatedDate: 2021-06-10
-statementLastUpdatedDate: 2023-06-13
+statementLastUpdatedDate: 2025-07-23
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing
