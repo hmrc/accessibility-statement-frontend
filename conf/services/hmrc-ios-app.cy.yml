@@ -6,7 +6,7 @@ serviceDescription: |
 serviceDomain: apps.apple.com
 serviceUrl: /gb/app/hmrc/id514561561
 statementType: ios
-complianceStatus: partial
+complianceStatus: noncompliant
 accessibilityProblems:
   - nid yw ffocws defnyddwyr darllenydd sgrin bob amser yn cael ei anfon i’r rhan gywir.
 milestones:
@@ -17,7 +17,7 @@ milestones:
 statementVisibility: public
 serviceLastTestedDate: 2023-05-04
 statementCreatedDate: 2021-06-10
-statementLastUpdatedDate: 2024-05-09
+statementLastUpdatedDate: 2025-08-01
 
 businessArea: Customer Services Group (CSG)
 ddc: DDC Worthing
