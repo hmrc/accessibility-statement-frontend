@@ -7,29 +7,49 @@ serviceUrl: /check-tax-on-goods-you-bring-into-the-uk
 contactFrontendServiceId: check-tax-on-goods-you-bring-into-the-uk
 complianceStatus: partial
 accessibilityProblems:
--  On the page that shows the tax due, users with screen readers may find the tables difficult to understand.
--  On the page that requests user information, the content in the radio button isn’t announced to screen readers.
--  On the page where you choose the type of tobacco to add, users with screen readers may find it difficult to use the checkboxes.
--  On some pages, users with screen readers may find it difficult to interpret the content.
--  On some payment pages, content isn’t translated into Welsh.
--  The links that summarise errors a user has made direct users to the wrong destination. This can make it difficult for users to navigate to the issue that needs to be resolved on a page.
+- On the 'What type of goods do you want to add?' pages, screen-reader users may find it difficult to understand the purpose of the radio options as the questions are not correctly associated with them.
+- On the 'Do you have evidence this item was originally produced or made in the EU?' page, screen-reader users may find it difficult to understand the purpose of the radio options as the question is not correctly associated with them.
+- On the
+  • 'What is your email address?',
+  • 'What are your journey details?'
+  • and 'Add goods to your previous declaration' pages,
+  screen-readers will not read out the hint or error messages when moving directly to the input fields as the page has not been set up properly.
+- On the
+  • 'Payment complete',
+  • 'Tax due on these goods'
+  • and 'Additional tax due on these goods' pages,
+  screen-reader users may struggle to understand the tables as they do not describe their purpose or distinguish the columns and rows correctly.
+- The back link does not always take users back to where they came from.
+- On the 'Payment complete' page, the service name link in the header does not take the user back to same page where they started.
+- On the 'Which number will you use to prove your identity?' page, the data added by users is not kept when they return using the back link.
+- On the 'Add goods to your previous declaration' page, the last name field does not allow users to use the data saved in their browser.
+- When switching to the Welsh version, on some pages the hidden 'error' prefix available to screen-reader users has not been translated. These will not be pronounced correctly for screen-reader users.
+- Check your answer pages are not always provided to allow users to review the information before submitting their declaration.
 milestones:
-- description: On the page that shows the tax due, users with screen readers may find the tables difficult to understand. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
-  date: 2022-07-31
-- description: On the page that requests user information, the content in the radio button isn’t announced to screen readers. This fails WCAG 2.1 - Understanding Success Criterion 4.1.2 Name, Role, Value.
-  date: 2022-07-31
-- description: On the page where you choose the type of tobacco to add, users with screen readers may find it difficult to use the checkboxes. This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Info and relationships.
-  date: 2022-07-31
-- description: On some pages, users with screen readers may find it difficult to interpret the content. This fails WCAG 2.1 - Understanding Success Criterion 4.1.1 Parsing.
-  date: 2022-07-31
-- description: On some payment pages, content isn’t translated into Welsh. Understanding Success Criterion 3.1.2 Language of Parts.
-  date: 2022-07-31
-- description: The links that summarise errors a user has made direct users to the wrong destination. This can make it difficult for users to navigate to the issue that needs to be resolved on a page. This fails WCAG 2.1 - Understanding Success Criterion 1.3.1 Info and relationships.
-  date: 2022-07-31
-serviceLastTestedDate: 2021-06-10
+- description: The question is not tagged as the legend. This fails WCAG 2.2 success criterion - 1.3.1 Info and Relationships and 2.4.6 Headings and Labels.
+  date: 2026-01-31
+- description: The question is not tagged as the legend. This fails WCAG 2.2 success criterion - 1.3.1 Info and Relationships and 4.1.2 Name, Role, Values.
+  date: 2026-01-31
+- description: Hint and error messages are not programmatically associated with the form controls. This fails WCAG 2.2 success criterion - 1.3.1 Info and relationships.
+  date: 2026-01-31
+- description: Tables have missing captions and scope attributes as well as headings not been marked-up semantically. This fails WCAG 2.2 success criterion - 1.3.1 Info and relationships.
+  date: 2026-01-31
+- description: Back links have been hard coded so can take users to illogical pages. This fails WCAG 2.2 success criterion - 2.4.4 Link purpose (in context).
+  date: 2026-01-31
+- description: Service name link takes users to a different start page. This fails WCAG 2.2 success criterion - 2.4.4 Link purpose (in context).
+  date: 2026-01-31
+- description: Data previously added by users is not maintained. This fails WCAG 2.2 success criterion - 3.3.7 Redundant Entry.
+  date: 2026-01-31
+- description: Last name field is missing the autocomplete attribute. This fails WCAG 2.2 success criterion - 1.3.5 Identify input purpose.
+  date: 2026-01-31
+- description: When pages are displayed in Welsh, some content remains in English and does not have the appropriate lang attribute to identify it as being in a different language. This fails WCAG 2.2 success criterion - 3.1.2 Language of Parts.
+  date: 2026-01-31
+- description: Users are not always provided the opportunity to review the data provided. This fails WCAG 2.2 success criterion - 3.3.4 Error Prevention (Legal, Financial, Data).
+  date: 2026-01-31
+serviceLastTestedDate: 2025-07-04
 statementVisibility: public
 statementCreatedDate: 2022-05-17
-statementLastUpdatedDate: 2022-05-17
+statementLastUpdatedDate: 2025-08-05
 businessArea: Borders & Trade
 ddc: DDC Edinburgh
 liveOrClassic: Live Services - Edinburgh
