@@ -7,30 +7,51 @@ serviceUrl: /check-tax-on-goods-you-bring-into-the-uk
 contactFrontendServiceId: check-tax-on-goods-you-bring-into-the-uk
 complianceStatus: partial
 accessibilityProblems:
--  Ar y dudalen sy’n dangos swm y dreth sy’n ddyledus, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd deall y tablau.
--  Ar y dudalen sy’n gofyn am wybodaeth y defnyddiwr, ni roddir gwybod am gynnwys y botwm radio i ddarllenwyr sgrin.
--  Ar y dudalen lle gallwch ddewis y math o dybaco i’w ychwanegu, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd defnyddio’r blychau gwirio.
--  Ar rai o'r tudalennau, mae’n bosibl y bydd darllenwyr sgrin yn ei chael yn anodd dehongli’r cynnwys.
--  Ar rai tudalennau talu, nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg.
--  Mae’r cysylltiadau sy’n crynhoi unrhyw wallau mae’r defnyddiwr wedi’u gwneud yn tywys y defnyddiwr i’r man anghywir. Gall hyn ei gwneud yn anodd i’r defnyddwyr fynd at y broblem sydd angen ei datrys ar dudalen benodol.
+- Ar y tudalennau ‘Pa fath o nwyddau ydych am eu hychwanegu?’, efallai y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall pwrpas yr opsiynau radio gan nad ydynt wedi’u cysylltu â’r cwestiynau’n gywir.
+- Ar y dudalen ‘A oes gennych unrhyw dystiolaeth sy’n dangos bod yr eitem hon wedi’i chynhyrchu neu ei gwneud yn yr UE yn wreiddiol?’, efallai y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall pwrpas yr opsiynau radio gan nad ydynt wedi’u cysylltu â’r cwestiwn yn gywir.
+- Ar y tudalennau
+  • ‘Beth yw’ch cyfeiriad e-bost?’,
+  • ‘Beth yw manylion eich taith?’
+  • ac ‘Ychwanegu nwyddau at eich datganiad blaenorol’,
+  ni fydd darllenwyr sgrin yn darllen yn uchel y testun awgrym na’r negeseuon gwall wrth symud yn syth i’r meysydd mewnbwn oherwydd nad yw’r dudalen wedi’i sefydlu’n gywir.
+- Ar y tudalennau
+  • ‘Taliad wedi’i gwblhau’,
+  • ‘Y dreth sy’n ddyledus ar y nwyddau hyn’
+  • a ‘Y dreth ychwanegol sy’n ddyledus ar y nwyddau hyn’
+  efallai y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall pwrpas y tablau gan nad oes nodyn i ddisgrifio'u pwrpas, na chwaith i wahaniaethau rhwng colofnau a rhesi’n gywir.
+- Nid yw’r cysylltiad i fynd yn ôl yn anfon y defnyddwyr yn ôl i’r dudalen berthnasol bob tro.
+- Ar y dudalen ‘Taliad wedi’i gwblhau’, nid yw cysylltiad enw’r gwasanaeth yn y pennawd yn anfon y defnyddiwr yn ôl i’r dudalen o ble wnaethant ddechrau.
+- Ar y dudalen ‘Pa rif fyddwch chi’n ei ddefnyddio i brofi pwy ydych?’, nid yw’r data a ychwanegwyd gan y defnyddwyr yn cael eu cadw pan fydd y defnyddwyr yn dychwelyd wrth ddefnyddio’r cysylltiad i fynd yn ôl.
+- Ar y dudalen ‘Ychwanegu nwyddau at eich datganiad blaenorol’, nid yw’r maes enw olaf yn caniatáu defnyddwyr i ddefnyddio’r data sydd wedi’u cadw yn eu porwr.
+- Wrth newid i’r fersiwn Gymraeg, nid yw'r neges rhagddodiad cudd ‘gwall’, sydd ar gael i ddefnyddwyr darllenydd sgrin, wedi cael ei gyfieithu ar bob dudalen.  Ni fydd y rhain yn cael eu hynganu’n gywir ar gyfer defnyddwyr darllenydd sgrin.
+- Nid yw’r tudalennau ‘Gwiriwch eich atebion’ pob tro yn cael eu darparu er mwyn galluogi defnyddwyr i adolygu’r wybodaeth cyn cyflwyno’u datganiad.
 milestones:
-- description: Ar y dudalen sy’n dangos swm y dreth sy’n ddyledus, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd deall y tablau. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-07-31
-- description: Ar y dudalen sy’n gofyn am wybodaeth y defnyddiwr, ni roddir gwybod am gynnwys y botwm radio i ddarllenwyr sgrin. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We.
-  date: 2022-07-31
-- description: Ar y dudalen lle gallwch ddewis y math o dybaco i’w ychwanegu, mae’n bosibl y bydd y rheiny sy’n defnyddio darllenwyr sgrin yn ei chael yn anodd defnyddio’r blychau gwirio. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-07-31
-- description: Ar rai o'r tudalennau, mae’n bosibl y bydd darllenwyr sgrin yn ei chael yn anodd dehongli’r cynnwys. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 4.1.1 (Parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-07-31
-- description: Ar rai tudalennau talu, nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg. Maen Prawf Deall Llwyddiant 3.1.2 (Language of Parts).
-  date: 2022-07-31
-- description: Mae’r cysylltiadau sy’n crynhoi unrhyw wallau mae’r defnyddiwr wedi’u gwneud yn tywys y defnyddiwr i’r man anghywir. Gall hyn ei gwneud yn anodd i’r defnyddwyr fynd at y broblem sydd angen ei datrys ar dudalen benodol. Nid yw hyn yn bodloni Maen Prawf Deall Llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-  date: 2022-07-31
-serviceLastTestedDate: 2021-06-10
+- description: Nid yw’r cwestiwn wedi’i dagio fel allwedd. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 1.3.1 Info and Relationships a 2.4.6 Headings and Labels.
+  date: 2026-01-30
+- description: Nid yw’r cwestiwn wedi’i dagio fel allwedd. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 1.3.1 Info and Relationships a 4.1.2 Name, Role, Values.
+  date: 2026-01-30
+- description: Nid yw’r testun awgrym na’r negeseuon gwall wedi cysylltu’n rhaglennol â rheolyddion y ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 1.3.1 Info and Relationships.
+  date: 2026-01-30
+- description: Mae capsiynau a nodweddion cwmpasu ar goll o’r tablau ac nid yw’r penawdau wedi’u marcio’n semantig chwaith. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 1.3.1 Info and Relationships.
+  date: 2026-01-30
+- description: Mae cysylltiadau i fynd yn ôl wedi’u codio’n galed, felly maent yn gallu mynd â’r defnyddwyr i dudalennau afresymegol. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 2.4.4 Link Purpose (in context).
+  date: 2026-01-30
+- description: Mae cysylltiad enw’r gwasanaeth yn mynd â’r defnyddwyr i dudalen dechrau gwahanol. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 2.4.4 Link Purpose (in context).
+  date: 2026-01-30
+- description: Nid yw’r data a ychwanegwyd gan y defnyddwyr yn flaenorol yn cael eu cadw. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 3.3.7 Redundant Entry.
+  date: 2026-01-30
+- description: Mae’r nodwedd awtogwblhau ar goll o’r maes enw olaf. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 1.3.5 Identify Input Purpose.
+  date: 2026-01-30
+- description: Pan gaiff tudalennau eu dangos yn Gymraeg, mae peth o’r cynnwys yn aros yn Saesneg ac nid oes ganddo’r nodwedd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 3.1.2 Language of Parts.
+  date: 2026-01-30
+- description: Nid yw defnyddwyr pob tro yn cael cyfle i adolygu’r data a ddarperir. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 3.3.4 Error Prevention (Legal, Financial, Data).
+  date: 2026-01-30
+serviceLastTestedDate: 2025-07-04
 statementVisibility: public
 statementCreatedDate: 2022-05-17
-statementLastUpdatedDate: 2022-05-17
+statementLastUpdatedDate: 2025-08-05
 businessArea: Borders & Trade
 ddc: DDC Edinburgh
 liveOrClassic: Live Services - Edinburgh
 typeOfService: Public beta
+wcagVersion: 2.2 AA
