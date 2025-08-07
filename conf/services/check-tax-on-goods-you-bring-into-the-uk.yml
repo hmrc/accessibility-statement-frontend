@@ -9,15 +9,9 @@ complianceStatus: partial
 accessibilityProblems:
 - On the 'What type of goods do you want to add?' pages, screen-reader users may find it difficult to understand the purpose of the radio options as the questions are not correctly associated with them.
 - On the 'Do you have evidence this item was originally produced or made in the EU?' page, screen-reader users may find it difficult to understand the purpose of the radio options as the question is not correctly associated with them.
-- On the
-  • 'What is your email address?',
-  • 'What are your journey details?'
-  • and 'Add goods to your previous declaration' pages,
+- On the 'What is your email address?', 'What are your journey details?' and 'Add goods to your previous declaration' pages,
   screen-readers will not read out the hint or error messages when moving directly to the input fields as the page has not been set up properly.
-- On the
-  • 'Payment complete',
-  • 'Tax due on these goods'
-  • and 'Additional tax due on these goods' pages,
+- On the 'Payment complete', 'Tax due on these goods' and 'Additional tax due on these goods' pages,
   screen-reader users may struggle to understand the tables as they do not describe their purpose or distinguish the columns and rows correctly.
 - The back link does not always take users back to where they came from.
 - On the 'Payment complete' page, the service name link in the header does not take the user back to same page where they started.
