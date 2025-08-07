@@ -9,15 +9,9 @@ complianceStatus: partial
 accessibilityProblems:
 - Ar y tudalennau ‘Pa fath o nwyddau ydych am eu hychwanegu?’, efallai y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall pwrpas yr opsiynau radio gan nad ydynt wedi’u cysylltu â’r cwestiynau’n gywir.
 - Ar y dudalen ‘A oes gennych unrhyw dystiolaeth sy’n dangos bod yr eitem hon wedi’i chynhyrchu neu ei gwneud yn yr UE yn wreiddiol?’, efallai y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall pwrpas yr opsiynau radio gan nad ydynt wedi’u cysylltu â’r cwestiwn yn gywir.
-- Ar y tudalennau
-  • ‘Beth yw’ch cyfeiriad e-bost?’,
-  • ‘Beth yw manylion eich taith?’
-  • ac ‘Ychwanegu nwyddau at eich datganiad blaenorol’,
+- Ar y tudalennau ‘Beth yw’ch cyfeiriad e-bost?’, ‘Beth yw manylion eich taith?’ ac ‘Ychwanegu nwyddau at eich datganiad blaenorol’,
   ni fydd darllenwyr sgrin yn darllen yn uchel y testun awgrym na’r negeseuon gwall wrth symud yn syth i’r meysydd mewnbwn oherwydd nad yw’r dudalen wedi’i sefydlu’n gywir.
-- Ar y tudalennau
-  • ‘Taliad wedi’i gwblhau’,
-  • ‘Y dreth sy’n ddyledus ar y nwyddau hyn’
-  • a ‘Y dreth ychwanegol sy’n ddyledus ar y nwyddau hyn’
+- Ar y tudalennau ‘Taliad wedi’i gwblhau’, ‘Y dreth sy’n ddyledus ar y nwyddau hyn’ a ‘Y dreth ychwanegol sy’n ddyledus ar y nwyddau hyn’
   efallai y bydd defnyddwyr darllenydd sgrin yn ei chael hi’n anodd deall pwrpas y tablau gan nad oes nodyn i ddisgrifio'u pwrpas, na chwaith i wahaniaethau rhwng colofnau a rhesi’n gywir.
 - Nid yw’r cysylltiad i fynd yn ôl yn anfon y defnyddwyr yn ôl i’r dudalen berthnasol bob tro.
 - Ar y dudalen ‘Taliad wedi’i gwblhau’, nid yw cysylltiad enw’r gwasanaeth yn y pennawd yn anfon y defnyddiwr yn ôl i’r dudalen o ble wnaethant ddechrau.
