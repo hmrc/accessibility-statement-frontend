@@ -19,12 +19,6 @@ wcagVersion: 2.2 AA
 
 accessibilityProblems:
   - When switching to Welsh, some pages in the service are missing Welsh translations. They appear with unreadable messages in English. These messages will not be pronounced correctly for screen-reader users.
-  - When switching to the Welsh version on the ‘goods profile’ page, the ‘country of origin’ hint text and ‘no results found’ text has not been translated. The ‘gwlad tarddiad’ text in the ‘related to’ list has been tagged as English. They will not be pronounced correctly for screen-reader users.
-  - Screen-reader users presented with incorrect and mismatching questions alongside the visually displayed questions when they navigate to form elements such as text fields and radio buttons.
-  - On the ‘goods profile’ page, the remove and change links do not provide sufficient context for screen-reader users to determine where the link will take them.
-  - On the ‘asking HMRC for advice’ page, the warning icon does not have alternative text that describes the warning icon’s meaning for screen-reader users.
-  - The table on the ‘goods profile’ page does not fit on the viewport width, it forces 2 dimensional scrolling for the rest of the content on the page which can be difficult for people with motor impairments to navigate.
-  - Name and email fields do not allow users to autofill personal information from their browser on the ‘what is your name?’ and ‘what is your email address?’ pages.
 
 milestones:
   - description: >
