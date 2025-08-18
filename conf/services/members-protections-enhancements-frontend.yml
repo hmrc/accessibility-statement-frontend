@@ -1,0 +1,16 @@
+serviceName: Check a pension scheme member’s protections and enhancements
+serviceDescription: |
+  The Check a pension scheme member’s protections and enhancements (MPE) is a trusted, easy to use, self-serve digital service which ensures that authenticated Pension Scheme Administrators/Pension Scheme Practitioners (PSAs/PSPs)  are able to view protection and enhancement information for their scheme member, and print it as required, to make sure they have the details they need to calculate the correct allowance charges and meet HMRC obligations.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /members-protections-and-enhancements
+contactFrontendServiceId: members-protections-enhancements-frontend
+complianceStatus: full
+serviceLastTestedDate: 2025-08-08
+statementVisibility: public
+statementCreatedDate: 2025-09-15
+statementLastUpdatedDate: 2025-09-15
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
