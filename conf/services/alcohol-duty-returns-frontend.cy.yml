@@ -1,0 +1,18 @@
+serviceName: Rheoli’ch Toll Alcohol       # The service name that will appear in the title of the accessibility statement.
+                                            # Do not include the word service at the end, as this will be added by the templates
+serviceDescription: |                       # A description of the service
+  Os ydych yn gynhyrchydd cynnyrch alcoholaidd cymeradwy, mae’n rhaid i chi ddefnyddio’r gwasanaeth hwn i gyflwyno’ch 
+   datganiadau Toll Alcohol ar gyfer eich cynhyrchion alcoholaidd.
+serviceDomain: www.tax.service.gov.uk       # The domain name under which this service exists (exclude the https:// and the path)
+serviceUrl: /manage-alcohol-duty/start      # The relative URL to the service (omitting www.tax.service.gov.uk)
+contactFrontendServiceId: alcohol-duty-returns-frontend     # A unique identifier for your service (see notes below)
+complianceStatus: full                      # full|partial|noncompliant
+serviceLastTestedDate: 2025-05-30           # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
+statementVisibility: public                 # If set to public, the statement will be visible in production. One of: public|draft|archived.
+statementCreatedDate: 2025-03-01            # In ISO format YYYY-MM-DD
+statementLastUpdatedDate: 2025-06-05        # In ISO format YYYY-MM-DD
+businessArea: Customer Strategy & Tax Design (CS&TD) # See valid values below
+ddc: DDC Newcastle                           # See valid values below
+liveOrClassic:                               # See valid values below
+typeOfService: Public beta                   # Classic services|Live services|Public beta
+wcagVersion: 2.2 AA                          # The Web Content Accessibility Guidelines version the service was tested against. Will default to WCAG 2.1 if none set. One of: 2.1 AA|2.2 AA
