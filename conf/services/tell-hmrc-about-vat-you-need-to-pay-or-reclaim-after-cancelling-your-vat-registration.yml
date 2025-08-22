@@ -3,7 +3,7 @@ serviceHeaderName: Tell HMRC about VAT you need to pay or reclaim after cancelli
 serviceDescription: |
   Use this form to pay or reclaim VAT after cancelling your VAT registration
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/tell-hmrc-about-vat-you-need-to-pay-or-reclaim-after-cancelling-your-VAT-registration
+serviceUrl: /submissions/new-form/tell-hmrc-about-vat-you-need-to-pay-or-reclaim-after-cancelling-your-vat-registration
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
