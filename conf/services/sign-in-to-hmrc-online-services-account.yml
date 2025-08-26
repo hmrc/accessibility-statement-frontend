@@ -4,7 +4,8 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /sign-in-to-hmrc-online-services/account
 contactFrontendServiceId: account-context-fixer-frontend
-complianceStatus: noncompliant
+complianceStatus: full
 statementVisibility: public
 statementCreatedDate: 2025-04-02
-statementLastUpdatedDate: 2025-04-02
+statementLastUpdatedDate: 2025-08-22
+serviceLastTestedDate: 2025-08-11
