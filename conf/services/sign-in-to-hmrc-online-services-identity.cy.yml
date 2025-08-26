@@ -4,7 +4,7 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /sign-in-to-hmrc-online-services/identity
 contactFrontendServiceId: identity-provider-gateway-frontend
-complianceStatus: noncompliant
+complianceStatus: full
 statementVisibility: public
 statementCreatedDate: 2024-03-06
-statementLastUpdatedDate: 2024-02-19
+statementLastUpdatedDate: 2024-08-22
