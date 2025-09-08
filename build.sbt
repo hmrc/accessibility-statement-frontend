@@ -25,6 +25,7 @@ lazy val microservice = Project(appName, file("."))
     ),
     RoutesKeys.routesImport += "uk.gov.hmrc.play.bootstrap.binders.RedirectUrl",
     scalacOptions += "-Wconf:src=routes/.*:s",
+    scalacOptions += "-Wconf:src=views/.*:s",
     scalacOptions += "-Wconf:msg=unused-imports&src=html/.*:s",
     Assets / pipelineStages := Seq(gzip)
   )
