@@ -39,7 +39,8 @@ class StatementGenerationController @Inject() (
   accessibilityStatementForm: AccessibilityStatementForm,
   generatorFormPage: GeneratorFormPage,
   displayYamlPage: DisplayYamlPage
-) extends FrontendController(mcc) with Logging {
+) extends FrontendController(mcc)
+    with Logging {
 
   given AppConfig = appConfig
 
@@ -64,7 +65,7 @@ class StatementGenerationController @Inject() (
             case Right(parsedStatement) =>
               Ok(statementPage(parsedStatement, None, false))
             case Left(error)            =>
-              logger.error(error)
+              logger.error(error.getMessage)
               BadRequest(
                 accessibilityStatementForm(
                   form
