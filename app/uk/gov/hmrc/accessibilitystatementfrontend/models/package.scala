@@ -33,6 +33,9 @@ package object models {
   given dateEncoder: Encoder[Date] =
     Encoder.encodeString.contramap[Date](format.format)
 
+  given wcagEncoder: Encoder[WCAGVersion] =
+    Encoder.encodeString.contramap[WCAGVersion](_.value)
+
   def dateToLocalDate(date: Date): LocalDate = {
     val calendar = new GregorianCalendar()
     calendar.setTime(date)
