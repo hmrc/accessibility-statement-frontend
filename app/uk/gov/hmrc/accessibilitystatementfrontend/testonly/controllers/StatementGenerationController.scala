@@ -25,6 +25,7 @@ import uk.gov.hmrc.accessibilitystatementfrontend.testonly.models.AccessibilityS
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
 import uk.gov.hmrc.accessibilitystatementfrontend.testonly.views.html.{AccessibilityStatementForm, DisplayYamlPage, GeneratorFormPage}
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
+import play.api.Logging
 
 import javax.inject.Inject
 import io.circe.syntax.*
@@ -38,7 +39,7 @@ class StatementGenerationController @Inject() (
   accessibilityStatementForm: AccessibilityStatementForm,
   generatorFormPage: GeneratorFormPage,
   displayYamlPage: DisplayYamlPage
-) extends FrontendController(mcc) {
+) extends FrontendController(mcc) with Logging {
 
   given AppConfig = appConfig
 
@@ -63,7 +64,7 @@ class StatementGenerationController @Inject() (
             case Right(parsedStatement) =>
               Ok(statementPage(parsedStatement, None, false))
             case Left(error)            =>
-              println(error)
+              logger.error(error)
               BadRequest(
                 accessibilityStatementForm(
                   form
