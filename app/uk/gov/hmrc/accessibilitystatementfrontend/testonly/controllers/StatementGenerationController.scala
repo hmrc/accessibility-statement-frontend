@@ -17,7 +17,7 @@
 package uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers
 
 import play.api.data.{Form, FormError}
-import play.api.mvc.{Action, AnyContent, Call, MessagesControllerComponents}
+import play.api.mvc.{Action, AnyContent, MessagesControllerComponents}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
@@ -57,11 +57,7 @@ class StatementGenerationController @Inject() (
     form
       .bindFromRequest()
       .fold(
-        formWithError =>
-          logger.error("formWithError here")
-          println(s"formWithError errors: ${formWithError.errors}")
-          BadRequest(validateYamlForm(formWithError))
-        ,
+        formWithError => BadRequest(validateYamlForm(formWithError)),
         statement =>
           val parsedStatementEither = statementParser.parse(statement.statement)
 
@@ -92,17 +88,17 @@ class StatementGenerationController @Inject() (
       YAML file values.
    */
   def statementGeneratorIndex(): Action[AnyContent] = Action { implicit request =>
-    Ok(generatorFormPage(AccessibilityStatement.form, Call("POST", "/test-only/generate")))
+    Ok(generatorFormPage(AccessibilityStatement.form))
   }
 
   def statementGeneratorSubmit(): Action[AnyContent] = Action { implicit request =>
     AccessibilityStatement.form
       .bindFromRequest()
       .fold(
-        formWithErrors => BadRequest("Incorrect form, display view with formWithErrors"),
+        formWithErrors => BadRequest(generatorFormPage(formWithErrors)),
         correctForm =>
           try
-            val yaml: String = correctForm.asJson.asYaml.spaces2
+            val yaml: String = correctForm.asJson.dropNullValues.asYaml.spaces2
             val rows         = yaml.count(char => char == '\n')
             Ok(displayYamlPage(yaml, rows))
           catch case _ => BadRequest("Cannot convert to yaml")

@@ -20,8 +20,14 @@
 @import uk.gov.hmrc.accessibilitystatementfrontend.views.html._
 @import uk.gov.hmrc.hmrcfrontend.views.html.components.implicits._
 
-@this(layout: Layout, formWithCsrf: FormWithCSRF, govukButton: GovukButton, govukInput: GovukInput, govukErrorSummary: GovukErrorSummary)
-@(statementForm: Form[AccessibilityStatement], action: Call)(implicit request: RequestHeader, messages: Messages)
+@this(layout: Layout,
+        formWithCsrf: FormWithCSRF,
+        govukButton: GovukButton,
+        govukInput: GovukInput,
+        govukErrorSummary: GovukErrorSummary,
+        govukSelect: GovukSelect,
+        govukTextarea: GovukTextarea)
+@(statementForm: Form[AccessibilityStatement])(implicit request: RequestHeader, messages: Messages)
 
 @layout(pageTitle = "Accessibility Statement Generator",
     isWelshTranslationAvailable = false) {
@@ -29,35 +35,249 @@
         @govukErrorSummary(ErrorSummary().withFormErrorsAsText(statementForm))
     }
     <h1 class="govuk-heading-xl">Accessibility Statement Generator</h1>
-    @formWithCsrf(action, Symbol("id") -> "statement-generator") {
+    @formWithCsrf(Call("POST", "/test-only/generate"), Symbol("id") -> "statement-generator") {
         @govukInput(Input(
             id = "serviceName",
             name = "serviceName",
             label = Label(
                 content = Text("Service Name")
             )
-        ))
+        ).withFormField(statementForm("serviceName")))
         @govukInput(Input(
             id = "serviceDescription",
             name = "serviceDescription",
             label = Label(
                 content = Text("Service Description")
             )
-        ))
+        ).withFormField(statementForm("serviceDescription")))
         @govukInput(Input(
             id = "serviceDomain",
             name = "serviceDomain",
             label = Label(
                 content = Text("Service Domain")
             )
-        ))
+        ).withFormField(statementForm("serviceDomain")))
         @govukInput(Input(
             id = "serviceUrl",
             name = "serviceUrl",
             label = Label(
                 content = Text("Service Url")
             )
+        ).withFormField(statementForm("serviceUrl")))
+        @govukInput(Input(
+            id = "contactFrontendServiceId",
+            name = "contactFrontendServiceId",
+            label = Label(
+                content = Text("contact-frontend id to help identify your service when issues raised")
+            )
+        ).withFormField(statementForm("contactFrontendServiceId")))
+        @govukSelect(Select(
+            id = "complianceStatus",
+            name = "complianceStatus",
+            label = Label(
+                content = Text("Compliance Status")
+            ),
+            items = Seq(
+                SelectItem(
+                    value = Some("noncompliant"),
+                    text = "Noncompliant",
+                    selected = true
+                ),
+                SelectItem(
+                    value = Some("partial"),
+                    text = "Partial"
+                ),
+                SelectItem(
+                    value = Some("Full"),
+                    text = "Full"
+                )
+            ),
         ))
+        @govukSelect(Select(
+            id = "statementVisibility",
+            name = "statementVisibility",
+            label = Label(
+                content = Text("Statement Visibility")
+            ),
+            items = Seq(
+                SelectItem(
+                    value = Some("public"),
+                    text = "Public",
+                    selected = true
+                ),
+                SelectItem(
+                    value = Some("draft"),
+                    text = "Draft"
+                ),
+                SelectItem(
+                    value = Some("archived"),
+                    text = "Archived"
+                )
+            ),
+        ))
+        @govukSelect(Select(
+            id = "wcagVersion",
+            name = "wcagVersion",
+            label = Label(
+                content = Text("WCAG Version")
+            ),
+            items = Seq(
+                SelectItem(
+                    value = Some("2.1"),
+                    text = "W2.1 AA",
+                    selected = true
+                ),
+                SelectItem(
+                    value = Some("2.2"),
+                    text = "W2.2 AA"
+                )
+            ),
+        ))
+
+
+        <h2 class="govuk-heading-m">For partially accessible services only</h2>
+        @govukTextarea(Textarea(
+            id = "accessibilityProblems",
+            name = "accessibilityProblems",
+            hint = Some(Hint(content = Text("Please enter one problem per line"))),
+            label = Label(
+                content = Text("Accessibility Problems")
+            ),
+        ))
+        <h2 class="govuk-heading-m">Service Metadata</h2>
+        <p class="govuk-body">This information will not be displayed to the public. It is used by DIAS for tracking your statement.</p>
+        @govukSelect(Select(
+            id = "businessArea",
+            name = "businessArea",
+            label = Label(
+                content = Text("Business Area")
+            ),
+            items = Seq(
+                SelectItem(
+                    value = Some("adjudicatorsoffice"),
+                    text = "Adjudicator's Office"
+                ),
+                SelectItem(
+                    value = Some("borderstrade"),
+                    text = "Borders & Trade"
+                ),
+                SelectItem(
+                    value = Some("cdio"),
+                    text = "Chief Digital & Information Officer (CDIO)",
+                    selected = true
+                ),
+                SelectItem(
+                    value = Some("ccg"),
+                    text = "Customer Compliance Group (CCG)"
+                ),
+                SelectItem(
+                    value = Some("csg"),
+                    text = "Customer Services Group (CSG)"
+                ),
+                SelectItem(
+                    value = Some("cstd"),
+                    text = "Customer Strategy & Tax Design (CS&TD)"
+                ),
+                SelectItem(
+                    value = Some("cabo"),
+                    text = "HMRC External - Cabinet Office"
+                ),
+                SelectItem(
+                    value = Some("voa"),
+                    text = "Valuation Office Agency (VOA)"
+                )
+            )
+        ))
+
+        @govukSelect(Select(
+            id = "ddc",
+            name = "ddc",
+            label = Label(
+                content = Text("DDC")
+            ),
+            items = Seq(
+                SelectItem(
+                    value = Some("edinburgh"),
+                    text = "DDC Edinburgh"
+                ),
+                SelectItem(
+                    value = Some("london"),
+                    text = "DDC London"
+                ),
+                SelectItem(
+                    value = Some("newcastle"),
+                    text = "DDC Newcastle"
+                ),
+                SelectItem(
+                    value = Some("telford"),
+                    text = "DDC Telford"
+                ),
+                SelectItem(
+                    value = Some("worthing"),
+                    text = "DDC Worthing"
+                ),
+                SelectItem(
+                    value = Some("yorkshire"),
+                    text = "DDC Yorkshire"
+                ),
+                SelectItem(
+                    value = Some("noddc"),
+                    text = "Non DDC Location"                )
+            )
+        ))
+
+        @govukSelect(Select(
+            id = "typeOfService",
+            name = "typeOfService",
+            label = Label(
+                content = Text("Type Of Service")
+            ),
+            items = Seq(
+                SelectItem(
+                    value = Some("classicServices"),
+                    text = "Classic services"
+                ),
+                SelectItem(
+                    value = Some("liveServices"),
+                    text = "Live services"
+                ),
+                SelectItem(
+                    value = Some("publicBeta"),
+                    text = "Public beta"
+                )
+            )
+        ))
+
+        @govukSelect(Select(
+            id = "liveOrClassic",
+            name = "liveOrClassic",
+            label = Label(
+                content = Text("Live or Classic")
+            ),
+            items = Seq(
+                SelectItem(
+                    value = Some("classicServices"),
+                    text = "Classic Services"
+                ),
+                SelectItem(
+                    value = Some("liveServicesEdinburgh"),
+                    text = "Live Services - Edinburgh"
+                ),
+                SelectItem(
+                    value = Some("liveServicesNewcastle"),
+                    text = "Live Services - Newcastle"
+                ),
+                SelectItem(
+                    value = Some("liveServicesTelford"),
+                    text = "Live Services - Telford"
+                ),
+                SelectItem(
+                    value = Some("liveServicesWorthing"),
+                    text = "Live Services - Worthing"
+                )
+            )
+        ))
+
         @govukButton(Button(
             content = Text(messages("Submit")),
             inputType = Some("submit"),
@@ -65,3 +285,4 @@
         ))
     }
 }
+
