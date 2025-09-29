@@ -44,14 +44,14 @@ class StatementControllerSpec
     with GuiceOneAppPerSuite
     with LogCapturing {
 
-  private val fakeRequest  = FakeRequest("GET", "/")
-  private val welshRequest = fakeRequest.withCookies(
+  private val fakeRequest                   = FakeRequest("GET", "/")
+  private val welshRequest                  = fakeRequest.withCookies(
     Cookie(
       "PLAY_LANG",
       "cy"
     )
   )
-  private val welshLangQueryStringRequest = FakeRequest("GET", "/?lang=cy")
+  private val welshLangQueryStringRequest   = FakeRequest("GET", "/?lang=cy")
   private val unknownLangQueryStringRequest = FakeRequest("GET", "/?lang=xyz")
 
   private val logger = Logger("uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController")
