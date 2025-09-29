@@ -82,13 +82,12 @@ class StatementController @Inject() (
       }
     }
 
-  private def getLanguageFromQueryString(request: Request[?]): Lang = {
+  private def getLanguageFromQueryString(request: Request[?]): Lang =
     request.getQueryString("lang") match {
       case Some("cy") => Lang(cy)
       case Some(_)    => Lang(en)
       case None       => messagesApi.preferred(request).lang
     }
-  }
 
   private def getStatementInLanguage(
     service: String,
