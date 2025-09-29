@@ -56,7 +56,7 @@ class StatementController @Inject() (
 
       getStatementInLanguage(
         service,
-        language = messagesApi.preferred(request).lang
+        language = getLanguageFromQueryString(request)
       ) match {
         case Some((accessibilityStatement, language)) =>
           val safeReferrerUrl: Option[SafeRedirectUrl] = referrerUrl map { unvalidatedUrl =>
@@ -81,6 +81,14 @@ class StatementController @Inject() (
           Future.successful(NotFound(notFoundPage()))
       }
     }
+
+  private def getLanguageFromQueryString(request: Request[?]): Lang = {
+    request.getQueryString("lang") match {
+      case Some("cy") => Lang(cy)
+      case Some(_)    => Lang(en)
+      case None       => messagesApi.preferred(request).lang
+    }
+  }
 
   private def getStatementInLanguage(
     service: String,
