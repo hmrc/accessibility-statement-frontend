@@ -21,11 +21,15 @@
 @import uk.gov.hmrc.accessibilitystatementfrontend.models._
 @import uk.gov.hmrc.accessibilitystatementfrontend.views.html._
 @import play.twirl.api.HtmlFormat.raw
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.TemplateOverrides
 
-@this(layout: Layout, hmrcNewTabLinkHelper: HmrcNewTabLinkHelper, govukButton: GovukButton)
+@this(layout: Layout, hmrcNewTabLinkHelper: HmrcNewTabLinkHelper, govukButton: GovukButton, copyToClipboard: CopyToClipboard)
 @(yaml: String, rows: Int)(implicit request: RequestHeader, messages: Messages)
 
-@layout(pageTitle = "Accessibility Statement Generator", isWelshTranslationAvailable = false) {
+@layout(pageTitle = "Accessibility Statement Generator",
+    isWelshTranslationAvailable = false,
+    maybeTemplateOverrides = TemplateOverrides(additionalScriptsBlock = Some(copyToClipboard()))
+) {
     <h1 class="govuk-heading-xl">Accessibility Statement Generator</h1>
     <div data-module="copy-to-clipboard">
         @govukButton(Button(
