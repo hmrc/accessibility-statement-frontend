@@ -1,3 +1,6 @@
+// This function is based on the implementation in GOVUK Publishing Components
+// https://github.com/alphagov/govuk_publishing_components/blob/main/app/assets/javascripts/govuk_publishing_components/components/copy-to-clipboard.js
+
 window.GOVUK = window.GOVUK || {}
 window.GOVUK.Modules = window.GOVUK.Modules || {};
 
