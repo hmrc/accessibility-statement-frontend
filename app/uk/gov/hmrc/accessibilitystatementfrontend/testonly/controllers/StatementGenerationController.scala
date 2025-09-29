@@ -16,14 +16,14 @@
 
 package uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers
 
-import play.api.data.FormError
+import play.api.data.{Form, FormError}
 import play.api.mvc.{Action, AnyContent, Call, MessagesControllerComponents}
 import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.parsers.AccessibilityStatementParser
 import uk.gov.hmrc.accessibilitystatementfrontend.testonly.models.AccessibilityStatementValidationForm
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.StatementPage
-import uk.gov.hmrc.accessibilitystatementfrontend.testonly.views.html.{AccessibilityStatementForm, DisplayYamlPage, GeneratorFormPage}
+import uk.gov.hmrc.accessibilitystatementfrontend.testonly.views.html.{DisplayYamlPage, GeneratorFormPage, ValidateYamlForm}
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import play.api.Logging
 
@@ -36,7 +36,7 @@ class StatementGenerationController @Inject() (
   mcc: MessagesControllerComponents,
   statementParser: AccessibilityStatementParser,
   statementPage: StatementPage,
-  accessibilityStatementForm: AccessibilityStatementForm,
+  validateYamlForm: ValidateYamlForm,
   generatorFormPage: GeneratorFormPage,
   displayYamlPage: DisplayYamlPage
 ) extends FrontendController(mcc)
@@ -44,20 +44,24 @@ class StatementGenerationController @Inject() (
 
   given AppConfig = appConfig
 
-  private val form = AccessibilityStatementValidationForm.form
+  private val form: Form[AccessibilityStatementValidationForm] = AccessibilityStatementValidationForm.form
 
   /*  The statementValidator methods take in the YAML for an accessibility statement as a
       text input which, if validated successfully, is displayed as a fully populated statement page
    */
   def statementValidatorIndex(): Action[AnyContent] = Action { implicit request =>
-    Ok(accessibilityStatementForm(form))
+    Ok(validateYamlForm(form))
   }
 
   def statementValidatorSubmit(): Action[AnyContent] = Action { implicit request =>
     form
       .bindFromRequest()
       .fold(
-        formWithError => BadRequest(accessibilityStatementForm(formWithError)),
+        formWithError =>
+          logger.error("formWithError here")
+          println(s"formWithError errors: ${formWithError.errors}")
+          BadRequest(validateYamlForm(formWithError))
+        ,
         statement =>
           val parsedStatementEither = statementParser.parse(statement.statement)
 
@@ -67,7 +71,7 @@ class StatementGenerationController @Inject() (
             case Left(error)            =>
               logger.error(error.getMessage)
               BadRequest(
-                accessibilityStatementForm(
+                validateYamlForm(
                   form
                     .fill(statement)
                     .withError(FormError("accessibilityStatement", "Statement is not correctly formatted"))

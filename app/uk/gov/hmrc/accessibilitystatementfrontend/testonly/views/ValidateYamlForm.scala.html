@@ -16,14 +16,18 @@
 
 @import uk.gov.hmrc.govukfrontend.views.html.components._
 @import uk.gov.hmrc.govukfrontend.views.html.components.implicits._
+@import uk.gov.hmrc.hmrcfrontend.views.html.components.implicits._
 @import uk.gov.hmrc.accessibilitystatementfrontend.views.html._
 @import uk.gov.hmrc.accessibilitystatementfrontend.testonly.models.AccessibilityStatementValidationForm
 
-@this(layout: Layout, govukTextarea : GovukTextarea, formWithCSRF: FormWithCSRF, govukButton: GovukButton)
+@this(layout: Layout, govukTextarea : GovukTextarea, formWithCSRF: FormWithCSRF, govukButton: GovukButton, govukErrorSummary: GovukErrorSummary)
 
 @(form: Form[AccessibilityStatementValidationForm])(implicit request: RequestHeader, messages: Messages)
 
 @layout(pageTitle = "Accessibility statement form", isWelshTranslationAvailable = false) {
+    @if(form.errors.nonEmpty) {
+        @govukErrorSummary(ErrorSummary().withFormErrorsAsText(form))
+    }
     <h1 class="govuk-heading-xl">@{Text("Test accessibility statement").asHtml}</h1>
 
     @formWithCSRF(action = uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.routes.StatementGenerationController.statementValidatorSubmit(), args = Symbol("class") -> "myForm", Symbol("id") -> "myFormId") {
