@@ -17,15 +17,16 @@
 @import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.{HmrcStandardPageParams, Banners, TemplateOverrides}
 @import play.twirl.api.HtmlFormat._
 
-@this(hmrcStandardPage: HmrcStandardPage, copyToClipboard: CopyToClipboard)
+@this(hmrcStandardPage: HmrcStandardPage)
 @(
         pageTitle: String,
-        isWelshTranslationAvailable: Boolean)(
+        isWelshTranslationAvailable: Boolean,
+        maybeTemplateOverrides: TemplateOverrides = TemplateOverrides())(
         contentBlock: Html)(implicit request: RequestHeader, messages: Messages)
 
 @hmrcStandardPage(HmrcStandardPageParams(
     pageTitle = Some(pageTitle),
     banners = Banners(displayHmrcBanner = true),
     isWelshTranslationAvailable = isWelshTranslationAvailable,
-    templateOverrides = TemplateOverrides(additionalScriptsBlock = Some(copyToClipboard()))
+    templateOverrides = maybeTemplateOverrides
 ))(contentBlock)

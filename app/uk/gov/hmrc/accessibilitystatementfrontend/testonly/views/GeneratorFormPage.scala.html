@@ -18,11 +18,15 @@
 @import uk.gov.hmrc.govukfrontend.views.html.components.implicits._
 @import uk.gov.hmrc.accessibilitystatementfrontend.models._
 @import uk.gov.hmrc.accessibilitystatementfrontend.views.html._
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.TemplateOverrides
 
-@this(layout: Layout, formWithCsrf: FormWithCSRF, govukButton: GovukButton, govukInput: GovukInput)
+@this(layout: Layout, formWithCsrf: FormWithCSRF, govukButton: GovukButton, govukInput: GovukInput, copyToClipboard: CopyToClipboard)
 @(statementForm: Form[AccessibilityStatement], action: Call)(implicit request: RequestHeader, messages: Messages)
 
-@layout(pageTitle = "Accessibility Statement Generator", isWelshTranslationAvailable = false) {
+@layout(pageTitle = "Accessibility Statement Generator",
+    isWelshTranslationAvailable = false,
+    maybeTemplateOverrides = TemplateOverrides(additionalScriptsBlock = Some(copyToClipboard()))
+) {
     <h1 class="govuk-heading-xl">Accessibility Statement Generator</h1>
 
     @formWithCsrf(action, Symbol("id") -> "statement-generator") {
