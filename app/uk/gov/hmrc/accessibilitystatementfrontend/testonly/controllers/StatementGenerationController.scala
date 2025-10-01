@@ -80,12 +80,9 @@ class StatementGenerationController @Inject() (
   /*  The statementGenerator methods provide a form and submission endpoint to take in the required information
       for an accessibility statement which, if validated successfully, is displayed formatted YAML
 
-      This was developed in a July 2025 team hackday. IT IS NOT YET GENERATING FULLY VALID YAML!!! There are issues
-      with correctly generating enum-type values such as statementType. Generated YAML still needs some manual editing
-      to pass the validator methods also defined in this controller.
-
-      Additionally, at the moment, most of the field values are hardcoded, so the form only takes in 4 of the potential
-      YAML file values.
+      This was developed in a July 2025 team hackday, and worked on further in September 2025. It currently hardcodes a
+      few fields (milestones, automatedTestingOnly, serviceLastTestedDate, statementCreatedDate, statementLastUpdatedDate,
+      automatedTestingDetails, statementType) but all others can be generated as valid YAML via the form.
    */
   def statementGeneratorIndex(): Action[AnyContent] = Action { implicit request =>
     Ok(generatorFormPage(AccessibilityStatement.form))
