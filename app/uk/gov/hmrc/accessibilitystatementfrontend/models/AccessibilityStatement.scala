@@ -20,6 +20,8 @@ import java.util.Date
 import io.circe.Codec
 import io.circe.derivation.Configuration
 import play.api.i18n.Messages
+import play.api.data.*
+import play.api.data.Forms.*
 
 case class AccessibilityStatement(
   serviceName: String,
@@ -89,4 +91,118 @@ case class AccessibilityStatement(
 object AccessibilityStatement {
   given Configuration                 = Configuration.default.withDefaults
   given Codec[AccessibilityStatement] = Codec.AsObject.derivedConfigured
+
+  def applyForm(
+    serviceName: String,
+    serviceDescription: String,
+    serviceDomain: String,
+    serviceUrl: String,
+    contactFrontendServiceId: String,
+    complianceStatus: String,
+    statementVisibility: String,
+    wcagVersion: String,
+    accessibilityProblems: String,
+    businessArea: String,
+    ddc: String,
+    typeOfService: String,
+    liveOrClassic: String
+  ): AccessibilityStatement =
+    AccessibilityStatement(
+      serviceName = serviceName,
+      serviceDescription = serviceDescription,
+      serviceDomain = serviceDomain,
+      serviceUrl = serviceUrl,
+      contactFrontendServiceId = contactFrontendServiceId,
+      complianceStatus = ComplianceStatus.values.find(_.value == complianceStatus).get,
+      accessibilityProblems =
+        if (accessibilityProblems.isEmpty) None else Some(accessibilityProblems.split("\r\n").toSeq),
+      milestones = Some(Seq(Milestone("Milestone1", Date()), Milestone("Milestone2", Date()))),
+      automatedTestingOnly = None,
+      statementVisibility = statementVisibility.toLowerCase match {
+        case "draft"    => Draft
+        case "archived" => Archived
+        case _          => Public
+      },
+      serviceLastTestedDate = Some(Date()),
+      statementCreatedDate = Date(),
+      statementLastUpdatedDate = Date(),
+      automatedTestingDetails = None,
+      statementType = None,
+      businessArea = businessArea.toLowerCase match {
+        case "adjudicatorsoffice" => Some(AdjudicatorsOffice)
+        case "borderstrade"       => Some(BordersAndTrade)
+        case "cdio"               => Some(ChiefDigitalAndInformationOfficer)
+        case "ccg"                => Some(CustomerComplianceGroup)
+        case "csg"                => Some(CustomerServicesGroup)
+        case "cstd"               => Some(CustomerStrategyAndTaxDesign)
+        case "cabo"               => Some(HMRCExternalCabinetOffice)
+        case "voa"                => Some(ValuationOfficeAgency)
+        case _                    => None
+      },
+      ddc = ddc match {
+        case "edinburgh" => Some(DDCEdinburgh)
+        case "london"    => Some(DDCLondon)
+        case "newcastle" => Some(DDCNewcastle)
+        case "telford"   => Some(DDCTelford)
+        case "worthing"  => Some(DDCWorthing)
+        case "yorkshire" => Some(DDCYorkshire)
+        case "noddc"     => Some(NoDDCLocation)
+        case _           => None
+      },
+      liveOrClassic = liveOrClassic match {
+        case "classicServices"       => Some(ClassicServices)
+        case "liveServicesEdinburgh" => Some(LiveServicesEdinburgh)
+        case "liveServicesNewcastle" => Some(LiveServicesNewcastle)
+        case "liveServicesTelford"   => Some(LiveServicesTelford)
+        case "liveServicesWorthing"  => Some(LiveServicesWorthing)
+        case _                       => None
+      },
+      typeOfService = typeOfService match {
+        case "classicServices" => Some(ClassicServicesType)
+        case "liveServices"    => Some(LiveServicesType)
+        case "publicBeta"      => Some(PublicBetaType)
+        case _                 => None
+      },
+      wcagVersion = WCAGVersion.values.find(_.version == wcagVersion).getOrElse(WCAG21AA)
+    )
+
+  def unapplyForm(
+    statement: AccessibilityStatement
+  ): Option[(String, String, String, String, String, String, String, String, String, String, String, String, String)] =
+    Some(
+      (
+        statement.serviceName,
+        statement.serviceDescription,
+        statement.serviceDomain,
+        statement.serviceUrl,
+        statement.contactFrontendServiceId,
+        statement.complianceStatus.toString,
+        statement.statementVisibility.toString,
+        statement.wcagVersion.toString,
+        statement.accessibilityProblems.map(_.toString()).getOrElse(""),
+        statement.businessArea.map(_.value).getOrElse(""),
+        statement.ddc.map(_.value).getOrElse(""),
+        statement.typeOfService.map(_.value).getOrElse(""),
+        statement.liveOrClassic.map(_.value).getOrElse("")
+      )
+    )
+
+  val form: Form[AccessibilityStatement] =
+    Form.apply(
+      mapping(
+        "serviceName"              -> text.verifying("Service Name must not be empty", _.trim.nonEmpty),
+        "serviceDescription"       -> text.verifying("Service Description must not be empty", _.trim.nonEmpty),
+        "serviceDomain"            -> text.verifying("Service Domain must not be empty", _.trim.nonEmpty),
+        "serviceUrl"               -> text.verifying("Service URL must not be empty", _.trim.nonEmpty),
+        "contactFrontendServiceId" -> text.verifying("contactFrontendServiceId must not be empty", _.trim.nonEmpty),
+        "complianceStatus"         -> text,
+        "statementVisibility"      -> text,
+        "wcagVersion"              -> text,
+        "accessibilityProblems"    -> text,
+        "businessArea"             -> text,
+        "ddc"                      -> text,
+        "typeOfService"            -> text,
+        "liveOrClassic"            -> text
+      )(AccessibilityStatement.applyForm)(AccessibilityStatement.unapplyForm)
+    )
 }
