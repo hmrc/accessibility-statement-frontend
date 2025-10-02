@@ -65,12 +65,11 @@ class StatementGenerationController @Inject() (
             case Right(parsedStatement) =>
               Ok(statementPage(parsedStatement, None, false))
             case Left(error)            =>
-              logger.error(error.getMessage)
               BadRequest(
                 validateYamlForm(
                   form
                     .fill(statement)
-                    .withError(FormError("accessibilityStatement", "Statement is not correctly formatted"))
+                    .withError(FormError("accessibilityStatement", error.getMessage))
                 )
               )
           }
