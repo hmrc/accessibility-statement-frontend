@@ -10,10 +10,10 @@
 # Failing to follow this rule may result in test routes deployed in production.
 
 # Add all the application routes to the prod.routes file
-GET        /test-only/validate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementValidatorIndex()
-POST       /test-only/validate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementValidatorSubmit()
+GET        /accessibility-statement/test-only/validate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementValidatorIndex()
+POST       /accessibility-statement/test-only/validate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementValidatorSubmit()
 
-GET        /test-only/generate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementGeneratorIndex()
-POST       /test-only/generate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementGeneratorSubmit()
+GET        /accessibility-statement/test-only/generate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementGeneratorIndex()
+POST       /accessibility-statement/test-only/generate        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.StatementGenerationController.statementGeneratorSubmit()
 
 ->         /                prod.Routes
