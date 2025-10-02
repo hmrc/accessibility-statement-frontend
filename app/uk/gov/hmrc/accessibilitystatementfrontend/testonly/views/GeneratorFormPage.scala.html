@@ -36,7 +36,9 @@
     }
 
     <h1 class="govuk-heading-xl">Accessibility Statement Generator</h1>
-    @formWithCsrf(Call("POST", "/test-only/generate"), Symbol("id") -> "statement-generator") {
+    @formWithCsrf(
+        uk.gov.hmrc.accessibilitystatementfrontend.testonly.controllers.routes.StatementGenerationController.statementGeneratorSubmit(),
+        Symbol("id") -> "statement-generator") {
         @govukInput(Input(
             id = "serviceName",
             name = "serviceName",
