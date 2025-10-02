@@ -34,6 +34,7 @@
     @if(statementForm.errors.nonEmpty) {
         @govukErrorSummary(ErrorSummary().withFormErrorsAsText(statementForm))
     }
+
     <h1 class="govuk-heading-xl">Accessibility Statement Generator</h1>
     @formWithCsrf(Call("POST", "/test-only/generate"), Symbol("id") -> "statement-generator") {
         @govukInput(Input(
@@ -43,6 +44,7 @@
                 content = Text("Service Name")
             )
         ).withFormField(statementForm("serviceName")))
+
         @govukInput(Input(
             id = "serviceDescription",
             name = "serviceDescription",
@@ -50,6 +52,7 @@
                 content = Text("Service Description")
             )
         ).withFormField(statementForm("serviceDescription")))
+
         @govukInput(Input(
             id = "serviceDomain",
             name = "serviceDomain",
@@ -57,6 +60,7 @@
                 content = Text("Service Domain")
             )
         ).withFormField(statementForm("serviceDomain")))
+
         @govukInput(Input(
             id = "serviceUrl",
             name = "serviceUrl",
@@ -64,6 +68,7 @@
                 content = Text("Service Url")
             )
         ).withFormField(statementForm("serviceUrl")))
+
         @govukInput(Input(
             id = "contactFrontendServiceId",
             name = "contactFrontendServiceId",
@@ -71,6 +76,7 @@
                 content = Text("contact-frontend id to help identify your service when issues raised")
             )
         ).withFormField(statementForm("contactFrontendServiceId")))
+
         @govukSelect(Select(
             id = "complianceStatus",
             name = "complianceStatus",
@@ -92,7 +98,8 @@
                     text = "Full"
                 )
             ),
-        ))
+        ).withFormField(statementForm("complianceStatus")))
+
         @govukSelect(Select(
             id = "statementVisibility",
             name = "statementVisibility",
@@ -114,7 +121,8 @@
                     text = "Archived"
                 )
             ),
-        ))
+        ).withFormField(statementForm("statementVisibility")))
+
         @govukSelect(Select(
             id = "wcagVersion",
             name = "wcagVersion",
@@ -132,8 +140,7 @@
                     text = "W2.2 AA"
                 )
             ),
-        ))
-
+        ).withFormField(statementForm("wcagVersion")))
 
         <h2 class="govuk-heading-m">For partially accessible services only</h2>
         @govukTextarea(Textarea(
@@ -143,7 +150,8 @@
             label = Label(
                 content = Text("Accessibility Problems")
             ),
-        ))
+        ).withFormField(statementForm("accessibilityProblems")))
+
         <h2 class="govuk-heading-m">Service Metadata</h2>
         <p class="govuk-body">This information will not be displayed to the public. It is used by DIAS for tracking your statement.</p>
         @govukSelect(Select(
@@ -187,7 +195,7 @@
                     text = "Valuation Office Agency (VOA)"
                 )
             )
-        ))
+        ).withFormField(statementForm("businessArea")))
 
         @govukSelect(Select(
             id = "ddc",
@@ -224,7 +232,7 @@
                     value = Some("noddc"),
                     text = "Non DDC Location"                )
             )
-        ))
+        ).withFormField(statementForm("ddc")))
 
         @govukSelect(Select(
             id = "typeOfService",
@@ -246,7 +254,7 @@
                     text = "Public beta"
                 )
             )
-        ))
+        ).withFormField(statementForm("typeOfService")))
 
         @govukSelect(Select(
             id = "liveOrClassic",
@@ -276,7 +284,7 @@
                     text = "Live Services - Worthing"
                 )
             )
-        ))
+        ).withFormField(statementForm("liveOrClassic")))
 
         @govukButton(Button(
             content = Text(messages("Submit")),
