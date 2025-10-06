@@ -44,15 +44,13 @@ class StatementControllerSpec
     with GuiceOneAppPerSuite
     with LogCapturing {
 
-  private val fakeRequest                   = FakeRequest("GET", "/")
-  private val welshRequest                  = fakeRequest.withCookies(
+  private val fakeRequest  = FakeRequest("GET", "/")
+  private val welshRequest = fakeRequest.withCookies(
     Cookie(
       "PLAY_LANG",
       "cy"
     )
   )
-  private val welshLangQueryStringRequest   = FakeRequest("GET", "/?lang=cy")
-  private val unknownLangQueryStringRequest = FakeRequest("GET", "/?lang=xyz")
 
   private val logger = Logger("uk.gov.hmrc.accessibilitystatementfrontend.controllers.StatementController")
 
@@ -148,24 +146,6 @@ class StatementControllerSpec
       val headers = content.select("h1")
       headers.size       shouldBe 1
       headers.first.text shouldBe "Accessibility statement for Test (English) service"
-    }
-
-    "return the English statement if the lang url query parameter is not set to 'cy'" in {
-      val result  = controller.getStatement("test-service", None)(unknownLangQueryStringRequest)
-      val content = Jsoup.parse(contentAsString(result))
-
-      val headers = content.select("h1")
-      headers.size       shouldBe 1
-      headers.first.text shouldBe "Accessibility statement for Test (English) service"
-    }
-
-    "return the Welsh statement if the lang url query parameter is set to 'cy'" in {
-      val result  = controller.getStatement("test-service", None)(welshLangQueryStringRequest)
-      val content = Jsoup.parse(contentAsString(result))
-
-      val headers = content.select("h1")
-      headers.size       shouldBe 1
-      headers.first.text shouldBe "Datganiad hygyrchedd ar gyfer y gwasanaeth Test (Welsh)"
     }
 
     "return the Welsh statement if requested" in {
