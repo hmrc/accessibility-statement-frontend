@@ -41,22 +41,9 @@ class LanguageChangeFilter @Inject() (implicit
                   case l: Lang => l.code == lang
                   case _       => false
                 } =>
-              val uri      = requestHeader.uri
-              val cleanUrl = LangParamRegex.replaceAllIn(
-                uri,
-                {
-                  case LangParamRegex("?", _, "")  => ""
-                  case LangParamRegex("&", _, "")  => ""
-                  case LangParamRegex("?", _, "&") => "?"
-                  case LangParamRegex("&", _, "&") => "&"
-                  case _                           => ""
-                }
-              )
-              val finalUrl = if (cleanUrl.endsWith("?") || cleanUrl.endsWith("&")) cleanUrl.dropRight(1) else cleanUrl
-
               Accumulator.done(
                 Results
-                  .Redirect(finalUrl)
+                  .Redirect(cleanedUrl(requestHeader.uri))
                   .withLang(Lang(lang))
               )
             case _ =>
@@ -65,5 +52,20 @@ class LanguageChangeFilter @Inject() (implicit
         case _     =>
           nextFilter(requestHeader).map(result => result)
       }
+  }
+
+  def cleanedUrl(uri: String): String = {
+    val urlToClean = LangParamRegex.replaceAllIn(
+      uri,
+      {
+        case LangParamRegex("?", _, "")  => ""
+        case LangParamRegex("&", _, "")  => ""
+        case LangParamRegex("?", _, "&") => "?"
+        case LangParamRegex("&", _, "&") => "&"
+        case _                           => ""
+      }
+    )
+    val finalUrl   = if (urlToClean.endsWith("?") || urlToClean.endsWith("&")) urlToClean.dropRight(1) else urlToClean
+    finalUrl
   }
 }
