@@ -31,7 +31,7 @@ class LanguageChangeFilter @Inject() (implicit
   ec: ExecutionContext
 ) extends EssentialFilter
     with I18nSupport {
-  private val LangParamRegex                              = "([?&])lang=(.*)(&?)".r
+  private val LangParamRegex                              = "([?&])lang=(en|cy)(&?)".r
   def apply(nextFilter: EssentialAction): EssentialAction = new EssentialAction {
     def apply(requestHeader: RequestHeader) =
       requestHeader.method match {
