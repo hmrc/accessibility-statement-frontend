@@ -47,7 +47,7 @@ class LanguageChangeFilter @Inject() (implicit
                     .Redirect(transformedUrl)
                     .withLang(lang)
                 )
-            case _ => nextFilter(requestHeader)
+            case _                                             => nextFilter(requestHeader)
           }
         case _     =>
           nextFilter(requestHeader)
