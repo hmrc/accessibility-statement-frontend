@@ -70,9 +70,37 @@ class LanguageChangeFilterSpec extends AnyWordSpec with Matchers with GuiceOneAp
     }
 
     "not redirect when no value is provided for the lang param" in {
-      val request = FakeRequest("GET", "/some-path?lang=")
-      val result  = filter.apply(okAction)(request)
-      status(result) shouldBe OK
+      val firstRequest  = FakeRequest("GET", "/some-path?lang=")
+      val secondRequest = FakeRequest("GET", "/some-path?lang")
+      val thirdRequest  = FakeRequest("GET", "/some-path?lang=&otherParam=value")
+      val fourthRequest = FakeRequest("GET", "/some-path?otherParam=value&lang")
+      val firstResult   = filter.apply(okAction)(firstRequest)
+      val secondResult  = filter.apply(okAction)(secondRequest)
+      val thirdResult   = filter.apply(okAction)(thirdRequest)
+      val fourthResult  = filter.apply(okAction)(fourthRequest)
+      status(firstResult)  shouldBe OK
+      status(secondResult) shouldBe OK
+      status(thirdResult)  shouldBe OK
+      status(fourthResult) shouldBe OK
+    }
+
+    "redirect when lang is passed with other query params" in {
+      val firstRequest  = FakeRequest("GET", "/some-path?lang=cy&otherParam=value")
+      val firstResult   = filter.apply(okAction)(firstRequest)
+      val secondRequest = FakeRequest("GET", "/some-path?otherParam=value&lang=en")
+      val secondResult  = filter.apply(okAction)(secondRequest)
+      val thirdRequest  = FakeRequest("GET", "/some-path?otherParam=value&lang=cy&favouriteFood=icecream")
+      val thirdResult   = filter.apply(okAction)(thirdRequest)
+
+      status(firstResult)                                 shouldBe SEE_OTHER
+      redirectLocation(firstResult)                       shouldBe Some("/some-path?otherParam=value")
+      cookies(firstResult).get("PLAY_LANG").map(_.value)  shouldBe Some("cy")
+      status(secondResult)                                shouldBe SEE_OTHER
+      redirectLocation(secondResult)                      shouldBe Some("/some-path?otherParam=value")
+      cookies(secondResult).get("PLAY_LANG").map(_.value) shouldBe Some("en")
+      status(thirdResult)                                 shouldBe SEE_OTHER
+      redirectLocation(thirdResult)                       shouldBe Some("/some-path?otherParam=value&favouriteFood=icecream")
+      cookies(thirdResult).get("PLAY_LANG").map(_.value)  shouldBe Some("cy")
     }
   }
 }
