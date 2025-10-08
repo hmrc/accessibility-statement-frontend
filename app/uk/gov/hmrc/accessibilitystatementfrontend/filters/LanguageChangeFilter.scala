@@ -37,7 +37,6 @@ class LanguageChangeFilter @Inject() (implicit
                   case null    => false
                 } =>
               val transformedUrl = urlWithoutLangQueryParam(requestHeader.uri)
-              println(transformedUrl)
               if (transformedUrl == requestHeader.uri)
                 nextFilter(requestHeader)
               else
