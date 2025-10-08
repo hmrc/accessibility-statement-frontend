@@ -23,15 +23,10 @@ import play.api.mvc._
 import play.api.test._
 import play.api.test.Helpers._
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import scala.concurrent.ExecutionContext.Implicits.global
 import play.api.libs.streams.Accumulator
 
-import scala.concurrent.Future
-
 import uk.gov.hmrc.accessibilitystatementfrontend.filters.LanguageChangeFilter
-import play.api.i18n.MessagesApi
-import play.i18n.Langs
-import play.api.mvc.Action
+import play.api.i18n.{Langs, MessagesApi}
 
 class LanguageChangeFilterSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite with Results {
 
@@ -64,6 +59,14 @@ class LanguageChangeFilterSpec extends AnyWordSpec with Matchers with GuiceOneAp
       val request = FakeRequest("GET", "/some-path?lang=fr")
       val result  = filter.apply(okAction)(request)
       status(result) shouldBe OK
+    }
+
+    "redirect on the last lang param when multiple lang params are provided" in {
+      val request = FakeRequest("GET", "/some-path?lang=en&lang=cy")
+      val result  = filter.apply(okAction)(request)
+      status(result)                                shouldBe SEE_OTHER
+      cookies(result).get("PLAY_LANG").map(_.value) shouldBe Some("cy")
+      cookies(result).get("PLAY_LANG").map(_.value)   should not be Some("en")
     }
   }
 }

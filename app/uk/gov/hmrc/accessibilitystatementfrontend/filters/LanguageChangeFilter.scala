@@ -18,44 +18,44 @@ package uk.gov.hmrc.accessibilitystatementfrontend.filters
 
 import javax.inject.Inject
 
-import scala.concurrent.ExecutionContext
-
 import play.api.libs.streams.Accumulator
 import play.api.mvc._
-import play.api.i18n.{I18nSupport, Lang, MessagesApi}
-import play.i18n.Langs
+import play.api.i18n.{I18nSupport, Lang, Langs, MessagesApi}
 
 class LanguageChangeFilter @Inject() (implicit
   val messagesApi: MessagesApi,
-  langs: Langs,
-  ec: ExecutionContext
+  langs: Langs
 ) extends EssentialFilter
     with I18nSupport {
-  private val LangParamRegex                              = "([?&])lang=(en|cy)(&?)".r
   def apply(nextFilter: EssentialAction): EssentialAction = new EssentialAction {
     def apply(requestHeader: RequestHeader) =
       requestHeader.method match {
         case "GET" =>
-          requestHeader.getQueryString("lang") match {
-            case Some(lang) if langs.availables().toArray.exists {
-                  case l: Lang => l.code == lang
-                  case _       => false
+          requestHeader.queryString.get("lang") match {
+            case Some(seqLangParams) if langs.availables.toArray.exists {
+                  case l: Lang => l.code == seqLangParams.last
+                  case null    => false
                 } =>
-              Accumulator.done(
-                Results
-                  .Redirect(cleanedUrl(requestHeader.uri))
-                  .withLang(Lang(lang))
-              )
-            case _ =>
-              nextFilter(requestHeader).map(result => result)
+              val transformedUrl = urlWithoutLangQueryParam(requestHeader.uri)
+              println(transformedUrl)
+              if (transformedUrl == requestHeader.uri)
+                nextFilter(requestHeader)
+              else
+                Accumulator.done(
+                  Results
+                    .Redirect(transformedUrl)
+                    .withLang(Lang(seqLangParams.last))
+                )
+            case _ => nextFilter(requestHeader)
           }
         case _     =>
-          nextFilter(requestHeader).map(result => result)
+          nextFilter(requestHeader)
       }
   }
 
-  def cleanedUrl(uri: String): String = {
-    val urlToClean = LangParamRegex.replaceAllIn(
+  def urlWithoutLangQueryParam(uri: String): String = {
+    val LangParamRegex = "([?&])lang=(en|cy)(&?)".r
+    val urlToClean     = LangParamRegex.replaceAllIn(
       uri,
       {
         case LangParamRegex("?", _, "")  => ""
@@ -65,7 +65,7 @@ class LanguageChangeFilter @Inject() (implicit
         case _                           => ""
       }
     )
-    val finalUrl   = if (urlToClean.endsWith("?") || urlToClean.endsWith("&")) urlToClean.dropRight(1) else urlToClean
+    val finalUrl       = if (urlToClean.endsWith("?") || urlToClean.endsWith("&")) urlToClean.dropRight(1) else urlToClean
     finalUrl
   }
 }
