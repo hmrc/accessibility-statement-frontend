@@ -68,5 +68,11 @@ class LanguageChangeFilterSpec extends AnyWordSpec with Matchers with GuiceOneAp
       cookies(result).get("PLAY_LANG").map(_.value) shouldBe Some("cy")
       cookies(result).get("PLAY_LANG").map(_.value)   should not be Some("en")
     }
+
+    "not redirect when no value is provided for the lang param" in {
+      val request = FakeRequest("GET", "/some-path?lang=")
+      val result  = filter.apply(okAction)(request)
+      status(result) shouldBe OK
+    }
   }
 }

@@ -19,6 +19,7 @@ package uk.gov.hmrc.accessibilitystatementfrontend.filters
 import javax.inject.Inject
 
 import play.api.libs.streams.Accumulator
+import play.api.Logging
 import play.api.mvc._
 import play.api.i18n.{I18nSupport, Lang, Langs, MessagesApi}
 
@@ -26,24 +27,25 @@ class LanguageChangeFilter @Inject() (implicit
   val messagesApi: MessagesApi,
   langs: Langs
 ) extends EssentialFilter
-    with I18nSupport {
+    with I18nSupport
+    with Logging {
   def apply(nextFilter: EssentialAction): EssentialAction = new EssentialAction {
     def apply(requestHeader: RequestHeader) =
       requestHeader.method match {
         case "GET" =>
-          requestHeader.queryString.get("lang") match {
-            case Some(seqLangParams) if langs.availables.toArray.exists {
-                  case l: Lang => l.code == seqLangParams.last
-                  case null    => false
-                } =>
+          requestHeader.queryString.get("lang").flatMap(_.lastOption.flatMap(Lang.get)) match {
+            case Some(lang) if langs.availables.contains(lang) =>
               val transformedUrl = urlWithoutLangQueryParam(requestHeader.uri)
               if (transformedUrl == requestHeader.uri)
+                logger.warn(
+                  s"LanguageChangeFilter: lang query param found but could not be removed from URL: ${requestHeader.uri}"
+                )
                 nextFilter(requestHeader)
               else
                 Accumulator.done(
                   Results
                     .Redirect(transformedUrl)
-                    .withLang(Lang(seqLangParams.last))
+                    .withLang(lang)
                 )
             case _ => nextFilter(requestHeader)
           }
@@ -64,7 +66,9 @@ class LanguageChangeFilter @Inject() (implicit
         case _                           => ""
       }
     )
-    val finalUrl       = if (urlToClean.endsWith("?") || urlToClean.endsWith("&")) urlToClean.dropRight(1) else urlToClean
-    finalUrl
+    if (urlToClean.endsWith("?") || urlToClean.endsWith("&"))
+      urlToClean.dropRight(1)
+    else
+      urlToClean
   }
 }
