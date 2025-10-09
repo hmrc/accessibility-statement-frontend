@@ -55,7 +55,7 @@ class LanguageChangeFilter @Inject() (implicit
   }
 
   def urlWithoutLangQueryParam(uri: String): String = {
-    val LangParamRegex = "([?&])lang=(en|cy)(&?)".r
+    val LangParamRegex = "([?&])lang=(?i)(en|cy)(&?)".r
     val urlToClean     = LangParamRegex.replaceAllIn(
       uri,
       {
