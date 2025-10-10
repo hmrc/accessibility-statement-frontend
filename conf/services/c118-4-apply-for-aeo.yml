@@ -3,7 +3,7 @@ serviceHeaderName: C118-4 Apply for AEO
 serviceDescription: |
   Use this form to apply for Authorised Economic Operator (AEO) status.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/C118-4-Apply-for-AEO-noneu
+serviceUrl: /submissions/new-form/c118-4-apply-for-aeo
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
