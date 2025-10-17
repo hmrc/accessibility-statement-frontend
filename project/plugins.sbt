@@ -9,7 +9,7 @@ addSbtPlugin("uk.gov.hmrc" % "sbt-auto-build" % "3.24.0")
 
 addSbtPlugin("uk.gov.hmrc" % "sbt-distributables" % "2.6.0")
 
-addSbtPlugin("org.playframework" % "sbt-plugin" % "3.0.8")
+addSbtPlugin("org.playframework" % "sbt-plugin" % "3.0.9")
 
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.0")
 
