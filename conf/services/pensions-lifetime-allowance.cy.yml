@@ -1,10 +1,10 @@
-serviceName: Diogelu'ch lwfans oes
-serviceHeaderName: Diogelu'ch lwfans oes
+serviceName: Gwirio’r diogelwch a’r diogelwch uwch ar gyfer eich pensiwn
+serviceHeaderName: Gwirio’r diogelwch a’r diogelwch uwch ar gyfer eich pensiwn
 serviceDescription: |
   Mae’r gwasanaeth Diogelu’ch lwfans oes yn gadael i unigolion wneud cais i ddiogelu eu lwfans oes ar gyfer pensiwn.
   Mae hefyd yn eich galluogi i fwrw golwg dros eich mesurau diogelu lwfans presennol yn eich cyfrif treth personol.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /protect-your-lifetime-allowance
+serviceUrl: /check-your-pension-protections-and-enhancements
 contactFrontendServiceId: PLA
 complianceStatus: partial
 accessibilityProblems:
