@@ -7,32 +7,29 @@ serviceUrl: /customs-declare-exports
 contactFrontendServiceId: customs-declare-exports
 complianceStatus: partial
 accessibilityProblems:
-  - Penawdau heb eu nodi’n rhaglennol
-  - Nid yw enw hygyrch yn cyfateb i enw gweladwy
-  - <fieldset> ar goll <legend>
-  - Gwerthoedd priodoledd awtogwblhau ar goll
-  - Does dim modd gwahaniaethu rhwng cysylltiadau bwrw golwg dros fanylion
-  - Nid yw cysylltiadau gweithredu o dan y pennawd priodol
-  - Nifer o faterion tudaleniad - nid yw’n dilyn patrwm
+  - Tabl wedi’i ddefnyddio at ddibenion y cynllun
+  - Nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg
+  - Nid yw’r neges wall yn gysylltiedig
+  - Nid yw “Gwall:” ar ddechrau’r neges wall
+  - Mae angen ail-nodi’r data
+  - Labelau dyblyg
 milestones:
-  - description: Penawdau heb eu nodi’n rhaglennol.
-    date: 2025-04-30
-  - description: Nid yw enw hygyrch yn cyfateb i enw gweladwy.
-    date: 2025-04-30
-  - description: <fieldset> ar goll <legend>.
-    date: 2025-04-30
-  - description: Gwerthoedd priodoledd awtogwblhau ar goll.
-    date: 2025-04-30
-  - description: Does dim modd gwahaniaethu rhwng cysylltiadau bwrw golwg dros fanylion.
-    date: 2025-04-30
-  - description: Nid yw cysylltiadau gweithredu o dan y pennawd priodol.
-    date: 2025-04-30
-  - description: Nifer o faterion tudaleniad - nid yw’n dilyn patrwm.
-    date: 2025-04-30
-serviceLastTestedDate: 2024-10-25
+  - description: Tabl wedi’i ddefnyddio at ddibenion y cynllun.
+    date: 2026-03-31
+  - description: Nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg.
+    date: 2026-03-31
+  - description: Nid yw’r neges wall yn gysylltiedig.
+    date: 2026-03-31
+  - description: Nid yw “Gwall:” ar ddechrau’r neges wall.
+    date: 2026-03-31
+  - description: Mae angen ail-nodi’r data.
+    date: 2026-03-31
+  - description: Labelau dyblyg.
+    date: 2026-03-31
+serviceLastTestedDate: 2024-12-09
 statementVisibility: public
 statementCreatedDate: 2021-01-08
-statementLastUpdatedDate: 2024-11-15
+statementLastUpdatedDate: 2025-10-27
 businessArea: Borders & Trade
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
