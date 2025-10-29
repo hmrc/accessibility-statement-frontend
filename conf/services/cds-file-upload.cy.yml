@@ -8,31 +8,22 @@ contactFrontendServiceId: cds-file-upload-service
 complianceStatus: partial
 accessibilityProblems:
   - Nid yw cysylltiadau sy’n gysylltiedig â’i gilydd wedi’u grwpio gan ddefnyddio’r elfen lywio
-  - Nid yw’r data wedi’u cynnal
-  - Nid yw teitl y dudalen yn cyd-fynd â h1
-  - Nid yw cysylltiadau ‘Yn ôl’ wedi’u dargyfeirio ac nid ydynt yn mynd â chi yn ôl
-  - Canolbwynt y dyddiad a chysylltiad y neges
+  - Tabl wedi’i ddefnyddio at ddibenion y cynllun
   - Nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg
-  - Sawl problem yn codi wrth ddelio â gwallau ar y dudalen uwchlwytho ffeiliau
+  - Gweld negeseuon am allforion neu fewnforion
 milestones:
   - description: Nid yw cysylltiadau sy’n gysylltiedig â’i gilydd wedi’u grwpio gan ddefnyddio’r elfen lywio.
-    date: 2025-04-30
-  - description: Nid yw’r data wedi’u cynnal.
-    date: 2025-04-30
-  - description: Nid yw teitl y dudalen yn cyd-fynd â h1.
-    date: 2025-04-30
-  - description: Nid yw cysylltiadau ‘Yn ôl’ wedi’u dargyfeirio ac nid ydynt yn mynd â chi yn ôl.
-    date: 2025-04-30
-  - description: Canolbwynt y dyddiad a chysylltiad y neges.
-    date: 2025-04-30
+    date: 2026-03-31
+  - description: Tabl wedi’i ddefnyddio at ddibenion y cynllun.
+    date: 2026-03-31
   - description: Nid yw’r cynnwys wedi’i gyfieithu i’r Gymraeg.
-    date: 2025-04-30
-  - description: Sawl problem yn codi wrth ddelio â gwallau ar y dudalen uwchlwytho ffeiliau.
-    date: 2025-04-30
-serviceLastTestedDate: 2024-10-25
+    date: 2026-03-31
+  - description: Gweld negeseuon am allforion neu fewnforion.
+    date: 2026-03-31
+serviceLastTestedDate: 2024-12-09
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2024-11-15
+statementLastUpdatedDate: 2025-10-27
 businessArea: Borders & Trade
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
