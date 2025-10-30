@@ -1,8 +1,9 @@
 serviceName: Gwirio’r diogelwch a’r diogelwch uwch ar gyfer eich pensiwn
 serviceHeaderName: Gwirio’r diogelwch a’r diogelwch uwch ar gyfer eich pensiwn
 serviceDescription: |
-  Mae’r gwasanaeth Diogelu’ch lwfans oes yn gadael i unigolion wneud cais i ddiogelu eu lwfans oes ar gyfer pensiwn.
-  Mae hefyd yn eich galluogi i fwrw golwg dros eich mesurau diogelu lwfans presennol yn eich cyfrif treth personol.
+  Mae’r gwasanaeth Gwirio’r diogelwch a’r diogelwch uwch ar gyfer eich pensiwn yn caniatáu iunigolion wneud cais i ddiogelu eu
+  lwfans pensiwn gydol oes. Mae hefyd yn caniatáu i chi fwrw golwg dros eich diogelu lwfans presennol yn eich cyfrif treth personol.
+
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-your-pension-protections-and-enhancements
 contactFrontendServiceId: PLA
