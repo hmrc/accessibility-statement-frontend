@@ -3,7 +3,7 @@ serviceHeaderName: Make a pension schemes enquiry
 serviceDescription: |
   Use this form to make a pension schemes enquiry.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/make-pension-schemes-enquiry
+serviceUrl: /submissions/new-form/make-pension-schemes-enquiry
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
