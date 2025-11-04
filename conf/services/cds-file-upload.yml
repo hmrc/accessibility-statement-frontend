@@ -8,31 +8,22 @@ contactFrontendServiceId: cds-file-upload-service
 complianceStatus: partial
 accessibilityProblems:
   - Related links not grouped using nav
-  - Data not maintained
-  - Page title does not match h1
-  - Back links are not bypassed and do not take you back
-  - Message link and date focus
+  - Table used for layout purposes
   - Content not translated to Welsh
-  - Multiple issues with error handling on file upload page
+  - Viewing export or import messages
 milestones:
   - description: Related links not grouped using nav.
-    date: 2025-04-30
-  - description: Data not maintained.
-    date: 2025-04-30
-  - description: Page title does not match h1.
-    date: 2025-04-30
-  - description: Back links are not bypassed and do not take you back.
-    date: 2025-04-30
-  - description: Message link and date focus.
-    date: 2025-04-30
+    date: 2026-03-31
+  - description: Table used for layout purposes.
+    date: 2026-03-31
   - description: Content not translated to Welsh.
-    date: 2025-04-30
-  - description: Multiple issues with error handling on file upload page.
-    date: 2025-04-30
-serviceLastTestedDate: 2024-10-25
+    date: 2026-03-31
+  - description: Viewing export or import messages.
+    date: 2026-03-31
+serviceLastTestedDate: 2024-12-09
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2024-11-15
+statementLastUpdatedDate: 2025-10-27
 businessArea: Borders & Trade
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
