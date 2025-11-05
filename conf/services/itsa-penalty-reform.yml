@@ -1,0 +1,13 @@
+serviceName: Self Assessment penalties and appeals
+serviceHeaderName: Self Assessment penalties and appeals
+serviceDescription: |
+  The Self Assessment Penalties and Appeals service lets users (including sole traders, landlords, and agents) check and view penalties. Users can see how late payment or late submission penalties are calculated and submit appeals against penalty decisions.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /view-penalty/self-assessment
+contactFrontendServiceId: itsa-penalty-reform
+complianceStatus: full
+statementVisibility: public
+statementCreatedDate: 2025-10-22
+serviceLastTestedDate: 2025-10-16
+statementLastUpdatedDate: 2025-10-22
+

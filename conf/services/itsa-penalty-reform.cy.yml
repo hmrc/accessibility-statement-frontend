@@ -1,0 +1,13 @@
+serviceName: Cosbau ac apeliadau Hunanasesiad
+serviceHeaderName: Cosbau ac apeliadau Hunanasesiad
+serviceDescription: |
+  Mae'r gwasanaeth Cosbau ac Apeliadau Hunanasesiad yn caniatáu i ddefnyddwyr (gan gynnwys unig fasnachwyr, landlordiaid ac asiantau) wirio a bwrw golwg dros gosbau. Gall defnyddwyr weld sut mae cosbau am dalu'n hwyr neu gyflwyno'n hwyr yn cael eu cyfrifo a chyflwyno apeliadau yn erbyn penderfyniadau cosb.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /view-penalty/self-assessment
+contactFrontendServiceId: itsa-penalty-reform
+complianceStatus: full
+statementVisibility: public
+statementCreatedDate: 2025-10-22
+serviceLastTestedDate: 2025-10-16
+statementLastUpdatedDate: 2025-10-22
+
