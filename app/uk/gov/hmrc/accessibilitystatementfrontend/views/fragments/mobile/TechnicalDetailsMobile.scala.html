@@ -53,5 +53,5 @@
 }
 
 @if(isNonCompliant) {
-    <p class="govuk-body">@messages("technical.non-compliance.not-tested")</p>
+    <p class="govuk-body">@messages("technical.non-compliance.not-tested", statement.wcagVersion)</p>
 }

@@ -1,0 +1,24 @@
+serviceName: Dispute an employer PAYE charge
+serviceHeaderName: Dispute an employer PAYE charge
+serviceDescription: |
+  Use this form to provide more information about disputed charges.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/dispute-an-employer-paye-charge
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2026-03-31
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2026-03-31
+serviceLastTestedDate: 2025-10-10
+statementVisibility: public
+statementCreatedDate: 2025-10-10
+statementLastUpdatedDate: 2025-10-10
