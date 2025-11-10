@@ -1,7 +1,7 @@
 serviceName: Rhoi gwybod i CThEF bod eich sefydliad wedi methu ag atal achosion o hwyluso osgoi treth
 serviceHeaderName: Rhoi gwybod i CThEF bod eich sefydliad wedi methu ag atal achosion o hwyluso osgoi treth
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i ddweud wrth CThEM bod eich sefydliad wedi methu ag atal hwyluso osgoi talu treth.
+  Defnyddiwch y ffurflen hon i ddweud wrth CThEF bod eich sefydliad wedi methu ag atal hwyluso osgoi talu treth.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/tell-hmrc-your-organisation-failed-to-prevent-the-facilitation-of-tax-evasion
 contactFrontendServiceId: GForm

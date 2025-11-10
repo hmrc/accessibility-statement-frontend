@@ -1,7 +1,7 @@
 serviceName: Rhoi gwybod am alwad ffôn amheus sy’n honni ei fod gan CThEF
 serviceHeaderName: Rhoi gwybod am alwad ffôn amheus sy’n honni ei fod gan CThEF
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i roi gwybod am alwad ffôn CThEM amheus.
+  Defnyddiwch y ffurflen hon i roi gwybod am alwad ffôn CThEF amheus.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/report-a-suspicious-hmrc-phone-call
 contactFrontendServiceId: GForm
