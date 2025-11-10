@@ -1,7 +1,7 @@
 serviceName: Gwneud cais am dystysgrif i gadarnhau y bydd gweithiwr yn talu Yswiriant Gwladol tra’n gweithio dramor (CA3822)
 serviceHeaderName: Gwneud cais am dystysgrif i gadarnhau y bydd gweithiwr yn talu Yswiriant Gwladol tra’n gweithio dramor (CA3822)
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i ofyn i CThEM gadarnhau y bydd cyflogai yn talu Yswiriant Gwladol am waith mewn gwlad yn yr UE, Gibraltar, Gwlad yr Iâ, Liechtenstein, Norwy neu’r Swistir.
+  Defnyddiwch y ffurflen hon i ofyn i CThEF gadarnhau y bydd cyflogai yn talu Yswiriant Gwladol am waith mewn gwlad yn yr UE, Gibraltar, Gwlad yr Iâ, Liechtenstein, Norwy neu’r Swistir.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/apply-certificate-employee-national-insurance-abroad
 contactFrontendServiceId: GForm

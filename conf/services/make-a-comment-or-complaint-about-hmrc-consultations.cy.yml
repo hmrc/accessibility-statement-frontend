@@ -1,7 +1,7 @@
 serviceName: Gwneud sylw neu gŵyn am ymgynghoriadau CThEF
 serviceHeaderName: Gwneud sylw neu gŵyn am ymgynghoriadau CThEF
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i wneud sylw neu gŵyn am ymgynghoriadau CThEM.
+  Defnyddiwch y ffurflen hon i wneud sylw neu gŵyn am ymgynghoriadau CThEF.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/make-a-comment-or-complaint-about-hmrc-consultations
 contactFrontendServiceId: GForm
