@@ -1,7 +1,7 @@
 serviceName: Make a claim for extended loss carry back
 serviceHeaderName: Make a claim for extended loss carry back
 serviceDescription: |
-  Use this form to make a claim with HMRC for extended loss carry back
+  Use this form to make a claim for extended loss carry back
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/make-claim-for-extended-loss-carry-back
 contactFrontendServiceId: GForm
