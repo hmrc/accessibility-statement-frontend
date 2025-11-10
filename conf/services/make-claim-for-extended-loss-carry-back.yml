@@ -1,7 +1,7 @@
 serviceName: Make a claim for extended loss carry back
 serviceHeaderName: Make a claim for extended loss carry back
 serviceDescription: |
-  Use this form to make a claim with HMRC for extended loss carry back for corporation tax.
+  Use this form to make a claim with HMRC for extended loss carry back
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/make-claim-for-extended-loss-carry-back
 contactFrontendServiceId: GForm
@@ -21,4 +21,4 @@ milestones:
 serviceLastTestedDate: 2020-07-22
 statementVisibility: public
 statementCreatedDate: 2020-07-22
-statementLastUpdatedDate: 2022-03-31
+statementLastUpdatedDate: 2025-11-10
