@@ -1,0 +1,16 @@
+serviceName: Subscribe to email preferences
+serviceHeaderName: Subscribe to email preferences
+serviceDescription: |
+  Users subscribe to interested information
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /subscribe-email-preferences
+contactFrontendServiceId: EmailSubPref
+complianceStatus: full
+serviceLastTestedDate: 2025-01-01
+statementVisibility: public
+statementCreatedDate: 2025-11-11
+statementLastUpdatedDate: 2025-11-11
+businessArea: Borders & Trade
+ddc: DDC Edinburgh
+liveOrClassic: Live Services - Edinburgh
+typeOfService: Public beta
