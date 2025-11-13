@@ -1,9 +1,9 @@
-serviceName: Request authorisation as a registered intermediary
-serviceHeaderName: Request authorisation as a registered intermediary
+serviceName: Make a VAT enquiry as a business that supplies to charities
+serviceHeaderName: Make a VAT enquiry as a business that supplies to charities
 serviceDescription: |
-  Use this form to request intermediary authorisation to act on behalf of a client for tax credits.
+  Use this form to make a VAT enquiry as a business that supplies goods or services to charities.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/request-authorisation-as-registered-intermediary
+serviceUrl: /submissions/new-form/make-vat-enquiry-charity-supplier
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -18,7 +18,7 @@ milestones:
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2026-03-31
-serviceLastTestedDate: 2025-11-03
+serviceLastTestedDate: 2025-11-13
 statementVisibility: public
-statementCreatedDate: 2025-11-03
-statementLastUpdatedDate: 2025-11-03
+statementCreatedDate: 2025-11-13
+statementLastUpdatedDate: 2025-11-13
