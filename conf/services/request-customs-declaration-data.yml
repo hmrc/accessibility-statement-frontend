@@ -1,0 +1,12 @@
+serviceName: Get customs data for import and export declarations
+serviceDescription: |
+  Get customs data for import and export declarations is a digital service that lets traders, declarants and third parties request and download import and export data held by HMRC. The service provides access to data from the CHIEF and Customs Declaration Service (CDS) systems.
+  Users can generate trade reports through a secure, self-service platform and download them as CSV files to help meet their business and compliance needs.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /request-customs-declaration-data
+contactFrontendServiceId: request-customs-declaration-data
+complianceStatus: full
+serviceLastTestedDate: 2025-11-12
+statementVisibility: public
+statementCreatedDate: 2025-11-12
+statementLastUpdatedDate: 2025-11-12
