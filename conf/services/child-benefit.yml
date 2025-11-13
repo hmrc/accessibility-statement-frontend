@@ -11,6 +11,8 @@ statementVisibility: public
 statementCreatedDate: 2022-11-14
 statementLastUpdatedDate: 2024-04-17
 ddc: DDC Newcastle
+liveOrClassic: Live Services - Newcastle
+typeOfService: Live services
 automatedTestingOnly: false
 complianceStatus: full
 wcagVersion: 2.2 AA

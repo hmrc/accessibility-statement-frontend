@@ -1,9 +1,9 @@
-serviceName: Make a claim for extended loss carry back
-serviceHeaderName: Make a claim for extended loss carry back
+serviceName: Make a pension schemes enquiry
+serviceHeaderName: Make a pension schemes enquiry
 serviceDescription: |
-  Use this form to make a claim for extended loss carry back
+  Use this form to make a pension schemes enquiry.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/make-claim-for-extended-loss-carry-back
+serviceUrl: /submissions/new-form/make-pension-schemes-enquiry
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
@@ -18,7 +18,7 @@ milestones:
       Some error messages may not include all of the information you need to help you to correct an error.
       This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
     date: 2026-03-31
-serviceLastTestedDate: 2020-07-22
+serviceLastTestedDate: 2025-11-03
 statementVisibility: public
-statementCreatedDate: 2020-07-22
-statementLastUpdatedDate: 2025-11-10
+statementCreatedDate: 2025-11-03
+statementLastUpdatedDate: 2025-11-03

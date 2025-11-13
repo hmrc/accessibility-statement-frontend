@@ -1,7 +1,7 @@
-serviceName: Dywedwch wrth CThEM am ddefnyddio system til i leihau eich bil treth
-serviceHeaderName: Dywedwch wrth CThEM am ddefnyddio system til i leihau eich bil treth
+serviceName: Dywedwch wrth CThEF am ddefnyddio system til i leihau eich bil treth
+serviceHeaderName: Dywedwch wrth CThEF am ddefnyddio system til i leihau eich bil treth
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i ddweud wrth CThEM am ddefnyddio system til i leihau eich bil treth.
+  Defnyddiwch y ffurflen hon i ddweud wrth CThEF am ddefnyddio system til i leihau eich bil treth.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/tell-hmrc-about-using-till-system-to-reduce-tax-bill
 contactFrontendServiceId: GForm

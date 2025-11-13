@@ -1,7 +1,7 @@
 serviceName: Gwneud hawliad i gario colled yn ôl dros gyfnod estynedig
 serviceHeaderName: Gwneud hawliad i gario colled yn ôl dros gyfnod estynedig
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i wneud cais gyda CThEM am golled estynedig a gariwyd yn ôl ar gyfer treth gorfforaeth.
+  Defnyddiwch y ffurflen hon i gwneud hawliad i gario colled yn ôl dros gyfnod estynedig
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/make-claim-for-extended-loss-carry-back
 contactFrontendServiceId: GForm
@@ -21,4 +21,4 @@ milestones:
 serviceLastTestedDate: 2020-09-18
 statementVisibility: public
 statementCreatedDate: 2020-09-23
-statementLastUpdatedDate: 2022-03-31
+statementLastUpdatedDate: 2025-11-10
