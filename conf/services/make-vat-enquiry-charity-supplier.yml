@@ -3,7 +3,7 @@ serviceHeaderName: Make a VAT enquiry as a business that supplies to charities
 serviceDescription: |
   Use this form to make a VAT enquiry as a business that supplies goods or services to charities.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/make-vat-enquiry-charity-supplier
+serviceUrl: /submissions/new-form/make-vat-enquiry-as-charity-supplier
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:

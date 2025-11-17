@@ -1,10 +1,10 @@
-serviceName: Check your pension protections
-serviceHeaderName: Check your pension protections
+serviceName: Check your pension protections and enhancements
+serviceHeaderName: Check your pension protections and enhancements
 serviceDescription: |
-  The Check your pension protections service lets individuals apply to protect their lifetime pension allowance.
+  The Check your pension protections and enhancements service lets individuals apply to protect their lifetime pension allowance.
   It also allows you to view your existing allowance protections in your personal tax account.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /check-your-pension-protections
+serviceUrl: /check-your-pension-protections-and-enhancements
 contactFrontendServiceId: PLA
 complianceStatus: partial
 accessibilityProblems:
