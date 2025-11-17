@@ -21,7 +21,7 @@ sealed trait DDC extends EnumValue
 object DDC extends Enum[DDC] {
   def description: String = "ddc location"
   def values: Seq[DDC]    =
-    Seq(DDCEdinburgh, DDCLondon, DDCNewcastle, DDCTelford, DDCWorthing, DDCYorkshire, NoDDCLocation)
+    Seq(DDCEdinburgh, DDCLondon, DDCNewcastle, DDCTelford, DDCWorthing, DDCYorkshire, DDCNorthumberland, NoDDCLocation)
 }
 
 case object DDCEdinburgh extends DDC {
@@ -46,6 +46,10 @@ case object DDCWorthing extends DDC {
 
 case object DDCYorkshire extends DDC {
   val value = "DDC Yorkshire"
+}
+
+case object DDCNorthumberland extends DDC {
+  val value = "DDC Northumberland"
 }
 
 case object NoDDCLocation extends DDC {

@@ -21,7 +21,14 @@ sealed trait LiveOrClassic extends EnumValue
 object LiveOrClassic extends Enum[LiveOrClassic] {
   def description: String        = "live or classic service"
   def values: Seq[LiveOrClassic] =
-    Seq(ClassicServices, LiveServicesEdinburgh, LiveServicesNewcastle, LiveServicesTelford, LiveServicesWorthing)
+    Seq(
+      ClassicServices,
+      LiveServicesEdinburgh,
+      LiveServicesNewcastle,
+      LiveServicesTelford,
+      LiveServicesWorthing,
+      LiveServicesNorthumberland
+    )
 }
 
 case object ClassicServices extends LiveOrClassic {
@@ -42,4 +49,8 @@ case object LiveServicesTelford extends LiveOrClassic {
 
 case object LiveServicesWorthing extends LiveOrClassic {
   val value = "Live Services - Worthing"
+}
+
+case object LiveServicesNorthumberland extends LiveOrClassic {
+  val value = "Live Services - Northumberland"
 }
