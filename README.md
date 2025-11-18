@@ -104,12 +104,12 @@ e.g. `conf/services/discounted-icecreams.yml` will create an accessibility state
 
 The filename can contain only lower case letters, dashes or numbers, and the filename extension must be `.yml`
 
-| Parameter         | Valid values                                                                                                          |
-| ------------------| -------------------------------------------------------------------------------------------------------------------- |
+| Parameter         | Valid values                                                                                                                                                                                                                                                             |
+| ------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `businessArea`    | `Adjudicator's Office`, `Borders & Trade`, `Chief Digital & Information Officer (CDIO)`, `Customer Compliance Group (CCG)`, `Customer Services Group (CSG)`, `Customer Strategy & Tax Design (CS&TD)`, `HMRC External - Cabinet Office`, `Valuation Office Agency (VOA)` |
-| `ddc`             | `DDC Edinburgh`, `DDC London`, `DDC Newcastle`, `DDC Telford`, `DDC Worthing`, `DDC Yorkshire`, `Non DDC Location` |
-| `liveOrClassic`   | `Classic Services`, `Live Services - Edinburgh`, `Live Services - Newcastle`, `Live Services - Telford`, `Live Services - Worthing` |
-| `typeOfService`   | `Classic services`, `Live services`, `Public beta` |
+| `ddc`             | `DDC Edinburgh`, `DDC London`, `DDC Newcastle`, `DDC Telford`, `DDC Worthing`, `DDC Yorkshire`, `DDC Northumberland`, `Non DDC Location`                                                                                                                                 |
+| `liveOrClassic`   | `Classic Services`, `Live Services - Edinburgh`, `Live Services - Newcastle`, `Live Services - Telford`, `Live Services - Worthing`, `Live Services - Northumberland`                                                                                                    |
+| `typeOfService`   | `Classic services`, `Live services`, `Public beta`                                                                                                                                                                                                                       |
 
 Additional guidance for "typeOfService": If the service is being maintained by a Live Services team, then put "Live services" as the value even if the service is in the public beta lifecycle stage. If the service is still in active development by a scrum team outside of Live Services, then put "Public beta".
 
