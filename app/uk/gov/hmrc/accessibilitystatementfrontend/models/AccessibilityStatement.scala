@@ -140,22 +140,24 @@ object AccessibilityStatement {
         case _                    => None
       },
       ddc = ddc match {
-        case "edinburgh" => Some(DDCEdinburgh)
-        case "london"    => Some(DDCLondon)
-        case "newcastle" => Some(DDCNewcastle)
-        case "telford"   => Some(DDCTelford)
-        case "worthing"  => Some(DDCWorthing)
-        case "yorkshire" => Some(DDCYorkshire)
-        case "noddc"     => Some(NoDDCLocation)
-        case _           => None
+        case "edinburgh"      => Some(DDCEdinburgh)
+        case "london"         => Some(DDCLondon)
+        case "newcastle"      => Some(DDCNewcastle)
+        case "telford"        => Some(DDCTelford)
+        case "worthing"       => Some(DDCWorthing)
+        case "yorkshire"      => Some(DDCYorkshire)
+        case "northumberland" => Some(DDCNorthumberland)
+        case "noddc"          => Some(NoDDCLocation)
+        case _                => None
       },
       liveOrClassic = liveOrClassic match {
-        case "classicServices"       => Some(ClassicServices)
-        case "liveServicesEdinburgh" => Some(LiveServicesEdinburgh)
-        case "liveServicesNewcastle" => Some(LiveServicesNewcastle)
-        case "liveServicesTelford"   => Some(LiveServicesTelford)
-        case "liveServicesWorthing"  => Some(LiveServicesWorthing)
-        case _                       => None
+        case "classicServices"            => Some(ClassicServices)
+        case "liveServicesEdinburgh"      => Some(LiveServicesEdinburgh)
+        case "liveServicesNewcastle"      => Some(LiveServicesNewcastle)
+        case "liveServicesTelford"        => Some(LiveServicesTelford)
+        case "liveServicesWorthing"       => Some(LiveServicesWorthing)
+        case "liveServicesNorthumberland" => Some(LiveServicesNorthumberland)
+        case _                            => None
       },
       typeOfService = typeOfService match {
         case "classicServices" => Some(ClassicServicesType)
