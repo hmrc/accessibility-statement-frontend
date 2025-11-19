@@ -1,0 +1,16 @@
+serviceName: Home Office Immigration Status
+serviceHeaderName: Home Office Immigration Status
+serviceDescription: |
+  You can use the Check Immigration Status service to view a customer's immigration status, as given by the Home Office. You can also view whether the customer has no recourse to public funds, their immigration route, and details on their previous nationality and immigration statuses from the past six months.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /check-immigration-status/search-by-nino
+contactFrontendServiceId: home-office-immigration-status
+complianceStatus: full
+serviceLastTestedDate: 2021-04-09
+statementVisibility: public
+statementCreatedDate: 2021-02-23
+statementLastUpdatedDate: 2021-04-09
+businessArea: Borders & Trade
+ddc: DDC Northumberland
+liveOrClassic: Live Services - Northumberland
+typeOfService: Live services
