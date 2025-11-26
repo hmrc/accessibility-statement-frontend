@@ -8,7 +8,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl:  /send-a-country-by-country-report
 contactFrontendServiceId: country-by-country-reporting-frontend
 complianceStatus: full
-serviceLastTestedDate: 2025-11-07
+serviceLastTestedDate: 2025-11-17
 statementVisibility: public
 statementCreatedDate: 2025-11-26
 statementLastUpdatedDate: 2025-11-17
