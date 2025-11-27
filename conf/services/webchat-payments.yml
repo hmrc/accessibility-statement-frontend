@@ -1,6 +1,5 @@
 serviceName: Webchat Payments
-serviceDescription: |
-  This service allows Webchat Advisers to generate a secure payment link via their HMRC stride machines and see when the payment has been successfully completed. Advisers will paste the link into the chat for the customer to use. The link will direct the customer to a new landing page on a HMRC’s existing online payment service, with reference and amount pre-populated. The Webchat Adviser will then use the new service to confirm when the payment has been made and continue setting up the plan with the customer over webchat. This service is an internal facing service.
+serviceDescription: This internal service allows Webchat Handlers, using a HMRC authenticated device (stride machine), to create and share secure payment links with tax payers. When selected by the tax payer, the secure payment link opens to an Online Payment Service landing page, pre-populated with the tax, reference and amount to be paid. Webchat Handlers can track the payment status while setting up a payment plan with tax payers.
 serviceDomain: admin.tax.service.gov.uk
 serviceUrl: /webchat-payment
 contactFrontendServiceId: webchat-payment-frontend
