@@ -7,9 +7,10 @@ contactFrontendServiceId: register-country-by-country-reporting-frontend
 complianceStatus: full
 serviceLastTestedDate: 2025-11-14
 statementVisibility: public
-statementCreatedDate: 2025-11-14
+statementCreatedDate: 2025-11-26
 statementLastUpdatedDate: 2025-11-14
 
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Newcastle
 typeOfService: Public beta
+wcagVersion: 2.2 AA
