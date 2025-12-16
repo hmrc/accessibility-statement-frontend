@@ -7,10 +7,13 @@ serviceUrl: /tell-hmrc-about-underpaid-tax-from-previous-years
 contactFrontendServiceId: tell-hmrc-about-underpaid-tax-from-previous-years
 
 complianceStatus: full
-  
+
 serviceLastTestedDate: 2023-05-11
 statementVisibility: public
 statementCreatedDate: 2023-04-12
 statementLastUpdatedDate: 2023-05-11
 
-
+businessArea: Customer Compliance Group (CCG)
+ddc: DDC Yorkshire
+liveOrClassic: Live Services - Yorkshire
+typeOfService: Public beta
