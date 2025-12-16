@@ -27,7 +27,8 @@ object LiveOrClassic extends Enum[LiveOrClassic] {
       LiveServicesNewcastle,
       LiveServicesTelford,
       LiveServicesWorthing,
-      LiveServicesNorthumberland
+      LiveServicesNorthumberland,
+      LiveServicesYorkshire
     )
 }
 
@@ -53,4 +54,8 @@ case object LiveServicesWorthing extends LiveOrClassic {
 
 case object LiveServicesNorthumberland extends LiveOrClassic {
   val value = "Live Services - Northumberland"
+}
+
+case object LiveServicesYorkshire extends LiveOrClassic {
+  val value = "Live Services - Yorkshire"
 }
