@@ -27,7 +27,7 @@ object LiveOrClassic extends Enum[LiveOrClassic] {
       LiveServicesNewcastle,
       LiveServicesTelford,
       LiveServicesWorthing,
-      LiveServicesNorthumberland,
+      LiveServicesNorthumberland
     )
 }
 
