@@ -2,7 +2,7 @@ serviceName: National Direct Debit
 serviceHeaderName: National Direct Debit
 serviceDescription: "The National Direct Debit Service (NDDS) allows users to set up and modify existing single payments, budget payment plans, repayments and variable payment plans."
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /national-direct-debit
+serviceUrl: /direct-debits
 contactFrontendServiceId: NDDS
 complianceStatus: partial
 accessibilityProblems:
