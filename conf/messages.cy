@@ -48,7 +48,7 @@ using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn 
 using-service.simple-text.app=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn yr app mor syml â phosibl i’w ddeall.
 using-service.making-device-easier.part1=Mae gan 
 using-service.making-device-easier.part2= ' AbilityNet'
-using-service.making-device-easier.part3= ' gyngor ar wneud eich dyfais yn haws i'w defnyddio os oes gennych anabledd.'
+using-service.making-device-easier.part3= ' gyngor ar sut i wneud eich dyfais yn haws ei defnyddio os oes gennych anabledd.'
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
