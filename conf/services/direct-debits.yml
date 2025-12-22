@@ -1,0 +1,28 @@
+serviceName: National Direct Debit
+serviceHeaderName: National Direct Debit
+serviceDescription: "The National Direct Debit Service (NDDS) allows users to set up and modify existing single payments, budget payment plans, repayments and variable payment plans."
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /direct-debits
+contactFrontendServiceId: NDDS
+complianceStatus: partial
+accessibilityProblems:
+  - Semantic heading hierarchy does not match visual hierarchy
+  - <fieldset> missing <legend>
+  - Incorrect copy marked as <legend> for inputs
+  - Error message not associated
+  - Contextual copy not rendered
+  - Misleading & non-specific error messages
+  - Confirm Form Resubmission when navigating back
+  - Bank details input issues
+milestones:
+  - description: "All these issues are expected to be fixed before going to private beta"
+    date: 2026-01-31
+serviceLastTestedDate: 2025-12-15
+statementVisibility: public
+statementCreatedDate: 2025-12-18
+statementLastUpdatedDate: 2025-12-18
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc:
+liveOrClassic: Classic Services
+typeOfService: Public beta
+wcagVersion: 2.2 AA

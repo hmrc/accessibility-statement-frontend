@@ -20,27 +20,27 @@ accessibilityProblems:
   - dylai negeseuon gwall fod yn ddisgrifiadol ac yn glir i’r defnyddiwr wybod pa faes sy’n anghywir a sut i’w ddiwygio.
 milestones:
   - description: "Roedd gwasanaeth defnyddwyr yn dod i ben ar ôl cyfnod o amser heb rybudd ymlaen llaw. Gall hyn fod yn ddryslyd i bobl ag anableddau megis dallineb, golwg gwan, namau ar ddeheurwydd, a chyfyngiadau gwybyddol. Nid yw hyn yn bodloni meini prawf llwyddiant 2.2.1 (timing adjustable), 2.2.6 (timeouts) na 2.2.5 (re-authenticating) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Mae testun disgrifiadol ar goll o’r holl gysylltiadau ‘newid’ a ‘dileu’ ar y dudalen hon, sy’n cyfeirio at yr wybodaeth rydych wedi’i mewnbynnu ar dudalennau blaenorol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Mae’r neges gwall ar y dudalen hon wedi’i marcio fel rhestr gyda rôl blwch diffinio. Nid blwch diffinio yw hwn gan ei fod bob amser i’w weld ar y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Ar y cam hwn o’r gwasanaeth, dangosir crynodeb o’r wybodaeth mewn tabl, ond nid oes penynnau tabl yn bresennol yn yr un o’r colofnau na’r rhesi, a darllenir meysydd gwag i ddefnyddwyr darllenwyr sgrin – nid yw’r berthynas rhwng y cynnwys yn glir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Wrth lywio’r dudalen hon yn Internet Explorer, mae’r gydran ‘manylion’ yn ei chyflwr estynedig ac mae’r label sy’n gysylltiedig â’r maes gofynnol mewn gwirionedd yn cynnwys yr holl wybodaeth y gellir ei hehangu. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.1 (parsing) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Mae penawdau yn rhan hanfodol o strwythur tudalennau ac fe’u defnyddir gan bob defnyddiwr ar gyfer llywio, deall cynllun a chyflwyno a gwahanu gwybodaeth yn rhesymegol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Nid yw’r testun ‘English’ yn y pennawd, i newid iaith y dudalen, yn bodloni’r gymhareb ddisgwyliedig o 4.5:1 a gall achosi anawsterau i ddefnyddwyr â golwg gwan. Nid yw hyn yn bodloni meini prawf llwyddiant 1.4.3 (contrast minimum) nac 1.4.6 (contrast enhanced) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Methodd lliw’r dangosydd ffocws a ddefnyddiwyd ar draws y gwasanaeth â bodloni’r gymhareb ddisgwyliedig o 3:1 i fodloni safon ‘AA’ maen prawf llwyddiant 1.4.11 ‘Non-text Contrast’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1, a gall fod yn anodd i rai defnyddwyr ganfon y dangosydd ffocws. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
   - description: "Wrth nodi’r dyddiad yn y fformat anghywir, mae’r neges gwall a ddangosir yn dangos yr ateb anghywir ar gyfer diwygio’r camgymeriad a wnaed ar y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2025-12-31
+    date: 2026-12-31
 serviceLastTestedDate: 2020-11-02
 statementVisibility: public
 statementCreatedDate: 2020-09-18
-statementLastUpdatedDate: 2025-03-20
+statementLastUpdatedDate: 2025-12-12
 businessArea: Customer Services Group (CSG)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
