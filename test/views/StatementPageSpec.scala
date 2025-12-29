@@ -184,7 +184,7 @@ class StatementPageSpec extends AnyWordSpec with Matchers with GuiceOneAppPerSui
     "return HTML containing the expected introduction with service URL in the body in Welsh" in new FullSetup
       with WelshLanguage {
       fullyAccessibleStatementHtml should include(
-        """Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth fully accessible service name, sydd ar gael yn https://www.tax.service.gov.uk/fully-accessible."""
+        """Mae’r dudalen hon ond yn cynnwys gwybodaeth am y gwasanaeth fully accessible service name, sydd ar gael yn https://www.tax.service.gov.uk/fully-accessible."""
       )
     }
   }
