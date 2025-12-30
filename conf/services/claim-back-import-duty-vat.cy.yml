@@ -4,42 +4,13 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-back-import-duty-vat
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
-complianceStatus: partial
-accessibilityProblems:
-  - Gall defnyddwyr darllenydd sgrin gael trafferth llywio tudalennau penodol, megis ‘Gwiriwch y Cyfeirnod Symud (MRN) a nodwyd gennych’, oherwydd strwythur pennawd anghywir.
-  - Gall defnyddwyr darllenydd sgrin gael trafferth deall y tablau ar y wefan oherwydd diffyg label colofn.
-  - Ar sawl tudalen, megis ‘Dewis dull ad-dalu’, gall defnyddwyr sgrin gael trafferth deall pwrpas y botymau radio oherwydd diffyg label.
-  - Ar y dudalen ‘Rhowch y rhif cyfrif gohirio newydd’, efallai y bydd defnyddwyr yn cael trafferth rhoi’r rhif cyfrif gohirio oherwydd diffyg label maes ffurflen.
-  - Efallai y bydd defnyddwyr darllenydd sgrin a bysellfwrdd yn cael trafferth llywio’r dudalen ‘Dewiswch ddull ad-dalu’ gan nad yw’r ffocws ar frig y dudalen i ddechrau.
-  - Wrth lywio i dudalen a gyflwynwyd eisoes, nid yw’r wybodaeth a gyflwynwyd gan y defnyddiwr yn cael ei chadw, ac mae’n rhaid i’r defnyddiwr ailgyflwyno’r wybodaeth.
-  - Ar y tudalennau ‘Manylion ychwanegol yr hawliad’, nid yw label y blwch testun a gyhoeddir i ddefnyddwyr sy’n defnyddio llais i lywio’r un fath â’r label gweledol, a gallai hyn ei gwneud yn anodd i ddefnyddwyr llais lywio’r dudalen.
-  - Ar y dudalen ‘Cyfeirnod Symud (MRN)’, nid yw’r neges sy’n ymddangos pan gyflwynir gwybodaeth anghywir yn egluro’n ddigonol sut i unioni’r broblem.
-  - Ar y dudalen uwchlwytho dogfennau, nid yw defnyddwyr darllenydd sgrin yn cael hysbysiadau am gynnydd uwchlwytho eu dogfennau.
-milestones:
-  - description: Mae hierarchaeth penawdau anghywir yn golygu nad yw strwythur gweledol y penawdau yn cyfateb i’r strwythur rhaglennol.
-    date: 2025-10-21
-  - description: Mae tablau ar y wefan yn methu â chynnwys tag <trefnolyn> priodol ar y golofn olaf.
-    date: 2025-10-21
-  - description: Ar sawl tudalen, mae’r cynnwys wedi’i grwpio mewn set maes sydd heb <legend> priodol.
-    date: 2025-10-21
-  - description: Ar y dudalen ‘Rhowch y rhif cyfrif gohirio newydd’, nid oes enw hygyrch ar y mewnbwn testun.
-    date: 2025-10-21
-  - description: Mae trefn ffocws y dudalen ‘Dewiswch ddull ad-dalu’ yn dechrau yn y prif gynnwys, nid ar ddechrau’r dudalen.
-    date: 2025-10-21
-  - description: Caiff y data a fewnbynnwyd yn flaenorol ei ddileu pan fydd defnyddwyr yn mynd yn ôl i dudalen flaenorol.
-    date: 2025-10-21
-  - description: Nid yw’r label sy’n gudd yn weledol ar gyfer y maes ffurflen ‘Manylion y nwyddau wedi’u gwrthod’ yn cyfateb i’r label gweledol.
-    date: 2025-10-21
-  - description: Mae’r negeseuon gwall a ddangosir ar y dudalen ‘Cyfeirnodau Symud (MRN)’ yn gyffredinol ac nid ydynt yn ddisgrifiadol.
-    date: 2025-10-21
-  - description: Ar y dudalen uwchlwytho dogfennau, nid yw defnyddwyr darllenydd sgrin yn cael gweld cynnydd yr uwchlwytho.
-    date: 2025-10-21
-serviceLastTestedDate: 2025-09-02
+complianceStatus: full
+serviceLastTestedDate: 2025-11-03
 statementVisibility: public
 statementCreatedDate: 2021-03-18
-statementLastUpdatedDate: 2025-10-03
+statementLastUpdatedDate: 2025-12-24
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:
-typeOfService: Public beta
+typeOfService: Live services
 wcagVersion: 2.2 AA
