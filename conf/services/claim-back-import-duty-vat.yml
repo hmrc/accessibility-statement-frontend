@@ -4,42 +4,13 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /claim-back-import-duty-vat
 contactFrontendServiceId: claim-for-reimbursement-of-import-duties
-complianceStatus: partial
-accessibilityProblems:
-  - Screenreader users may struggle to navigate certain pages, such as 'Check the Movement Reference Number (MRN) you entered', due to an incorrect heading structure.
-  - Screenreader users may struggle to understand the tables on the site due to a missing column label.
-  - On several pages, such as 'Choose repayment method', screenreader users may struggle to understand the purpose of radio buttons due to a missing label.
-  - On the 'Enter the new deferment account number' page, users may struggle to enter the deferment account number due to a missing form field label.
-  - Screenreader and keyboard users may struggle to navigate the 'Choose repayment method' page as they are not initially focused at the top of the page.
-  - When navigating to a previously submitted page, information that had been submitted by the user is not maintained and the user has to re-enter the information.
-  - On the 'Additional claim details' pages, the textbox label announced to voice activation users is not the same as the visual label, which might make it hard for voice activation users to navigate the page.
-  - On the 'Movement Reference Number (MRN)' page, the message that appears when incorrect information is submitted does not sufficiently tell the user how to fix their issue.
-  - On the document upload page, screenreader users do not get announcements about the progress of their document upload.
-milestones:
-  - description: Incorrect heading hierarchy means visual heading structure does not match programmatic structure. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships.
-    date: 2025-10-21
-  - description: Tables on the site are missing an appropriate <th> on the final column. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships.
-    date: 2025-10-21
-  - description: On multiple pages, content is grouped in a fieldset that is missing a <legend>. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships.
-    date: 2025-10-21
-  - description: The text input on the ‘Enter the new deferment account number’ page has not been provided an accessible name. This fails WCAG 2.2 success criteria 1.3.1 Info and Relationships, 4.1.2 Name, Role, Value, and 2.5.3 Label in Name.
-    date: 2025-10-21
-  - description: The focus order for the 'Choose repayment method' page begins in the main content, not at the start of the page. This fails WCAG 2.2 success criterion 2.4.3 Focus Order.
-    date: 2025-10-21
-  - description: Previously inputted data is removed when users navigate back to a previous page. This fails WCAG 2.2 success criterion 3.3.7 Redundant Entry.
-    date: 2025-10-21
-  - description: The visually hidden label for the 'Details of rejected goods' form field does not match the visual label. This fails WCAG 2.2 success criterion 2.5.3 Label in Name.
-    date: 2025-10-21
-  - description: The error messages shown on the 'Movement Reference Number (MRN)' page when validation is triggered are generic and not descriptive enough in helping the user fix their error. This fails WCAG 2.2 success criterion 3.3.3 Error Suggestion.
-    date: 2025-10-21
-  - description: On the document upload page, screenreader users are not presented with the information about the progress of their document upload that sighted users have, due to a <span> element not updating during upload. This fails WCAG 2.2 success criterion 4.1.3 Status Messages.
-    date: 2025-10-21
-serviceLastTestedDate: 2025-09-02
+complianceStatus: full
+serviceLastTestedDate: 2025-11-03
 statementVisibility: public
 statementCreatedDate: 2021-03-18
-statementLastUpdatedDate: 2025-10-03
+statementLastUpdatedDate: 2025-12-24
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:
-typeOfService: Public beta
+typeOfService: Live services
 wcagVersion: 2.2 AA
