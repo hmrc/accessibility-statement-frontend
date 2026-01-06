@@ -1,49 +1,62 @@
 serviceName: Online Payments
 serviceHeaderName: Online Payments
-serviceDescription: |
-  The Online Payments service is HMRC’s Digital card payment journey. It allows users to
-  pay their tax liabilities for regimes including but not limited to VAT, SA, COTAX and
-  EPAYE. It accepts business and personal Debit cards and business credit cards.
+serviceDescription: This service allows you to pay tax by debit or corporate credit card.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay
 contactFrontendServiceId: pay-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - At one point we display a payment iFrame, which is controlled by Barclaycard. Visually impaired users may find it difficult to navigate, even with assistive technology.
-  - There are some error messages in this service that may not be descriptive enough for some users with visual impairments - however they are compatible with common assistive technology tools.
-  - At some points we display pages where the formatting for individual elements on screen are not fully suitable for screen reading technologies and results in a difficult to navigate page due to incomplete information. However using a screen reader to read back the entire page will provide all the information needed to navigate the page with confidence.
+  - On the 'Make your payment' page, some error messages only make sense if you can see colour.
+  - On the 'Make your payment' page, people using screen readers may not be informed that a tax reference is connected to their payment.
+  - On the 'Make your payment' page, error links disappear after they are selected. This makes it harder to fix problems.
+  - On the 'Make your payment' page, screen readers will not be able to identify warning text.
+  - On the 'Make your payment' page, screen readers may not announce that a payment has timed out, because the heading does not change when the rest of the content updates.
+  - On the 'Make your payment' page, there are duplicated landmarks which have not been labelled correctly. This makes it hard to understand the page structure.
+  - On the 'Make your payment' page, some error messages do not say where the problem has happened.
+  - On the 'Make your payment' page, when the security code is missing the error message implies that it has been entered but it’s too short.
+  - On the 'Make your payment' page, card details cannot be automatically filled in by the browser.
+  - On the 'Make your payment' page, when you zoom in 200% you cannot interact with the content properly.
+  - On the 'Make your payment' page, card fees are not announced by screen readers.
 milestones:
   - description: |
-      We use a Barclaycard iFrame to take the card details and payments for the
-      charge or tax users are paying. This iFrame does not give users the chance
-      to confirm their details once they have entered them. This does not meet
-      WCAG 2.1 success criterion 3.3.6 (Error Prevention).
-    date: 2021-12-15
+      Error identification is not accessible by assistive technology. This fails WCAG 2.2 success criterion 3.3.1 (Error Identification), 1.1.1 (Non-text Content) and 1.4.1 (Use of Color).
+    date: 2026-12-21
   - description: |
-      We use titles on our webpages in order to describe the topic or purpose of
-      the page that the user is currently viewing. In some instances, the Tab titles
-      and main titles are not consistent. This means the service does not meet WCAG 2.1
-      success criterion 2.4.6 (Headings and Labels).
-    date: 2021-12-15
+      Associated content is not marked up correctly. This fails WCAG 2.2 success criterion 1.3.1 (Info and Relationships).
+    date: 2026-12-21
   - description: |
-      We use page headings and subheadings to describe the topic or purpose of fields
-      in a webpage. On certain pages there are level 3 headings that are actually level 2
-      headings, which causes people using screen readers to receive unclear information
-      regarding the page. This means the service does not meet WCAG success criterion
-      2.4.10 (Section Headings).
-    date: 2021-12-15
+      Error links remove when selected. This fails WCAG 2.2 success criterion 3.3.1 (Error Identification).
+    date: 2026-12-21
   - description: |
-      We use radio buttons to present users with options on our webpages, these are
-      grouped together to enable easier navigation for keyboard only users. In some
-      instances, these groups are missing their labelling, which prevents some screen
-      reading software from narrating the label. This means the service does not meet
-      WCAG success criterion 2.4.6 (Headings and Labels).
-    date: 2021-12-15
-serviceLastTestedDate: 2019-09-25
+      Exclamation mark icon is missing a text alternative. This fails WCAG 2.2 success criterion 1.1.1 (Non-text Content).
+    date: 2026-12-21
+  - description: |
+      When a payment session times out, the page heading does not update. This fails WCAG 2.2 success criterion 2.4.2 (Page Titled).
+    date: 2026-12-21
+  - description: |
+      Payment page contains multiple ‘main’ elements. This fails WCAG 2.2 success criterion 1.3.1 (Info and Relationships).
+    date: 2026-12-21
+  - description: |
+      Error messages do not always describe errors correctly on the payment page. This fails WCAG 2.2 success criterion 3.3.3 (Error Suggestion) and 3.3.1 (Error Identification).
+    date: 2026-12-21
+  - description: |
+      There is no specific error message for security code field. This fails WCAG 2.2 success criterion 3.3.3 (Error Suggestion).
+    date: 2026-12-21
+  - description: |
+      The autocomplete attribute is missing on payment fields. This fails WCAG 2.2 success criterion 1.3.5 (Identify Input Purpose).
+    date: 2026-12-21
+  - description: |
+      The page lets the text wrap to another line. This fails WCAG 2.2 success criterion 1.4.4 (Resize text).
+    date: 2026-12-21
+  - description: |
+      The status message is not marked up correctly to notify screen-reader users about content changes. This fails WCAG 2.2 success criterion 4.1.3 (Status Messages).
+    date: 2026-12-21
+serviceLastTestedDate: 2025-08-26
 statementVisibility: public
 statementCreatedDate: 2019-10-09
-statementLastUpdatedDate: 2021-02-11
+statementLastUpdatedDate: 2026-01-05
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.2 AA

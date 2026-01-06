@@ -1,54 +1,62 @@
 serviceName: Taliadau Ar-lein
 serviceHeaderName: Taliadau Ar-lein
-serviceDescription: |
-  Y gwasanaeth Taliadau Ar-lein yw dull digidol CThEF o dalu gan ddefnyddio cerdyn.
-  Mae’n caniatáu i ddefnyddwyr dalu eu rhwymedigaethau treth ar gyfer cyfundrefnau
-  sy’n cynnwys, ond heb fod yn gyfyngedig i, TAW, Hunanasesiad, COTAX ac EPAYE.
-  Mae’n derbyn cardiau debyd busnes a phersonol yn ogystal â chardiau credyd busnes.
+serviceDescription: Mae’r gwasanaeth hwn yn galluogi chi i dalu treth gyda cherdyn debyd neu gerdyn credyd corfforaethol.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay
 contactFrontendServiceId: pay-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - Ar un adeg, rydym yn dangos iFrame taliad, sy’n cael ei reoli gan Barclaycard. Efallai y bydd defnyddwyr â nam ar eu golwg yn ei chael yn anodd llywio’r gwasanaeth, hyd yn oed gyda thechnoleg gynorthwyol.
-  - Mae rhai negeseuon gwall yn y gwasanaeth hwn efallai’n na fydd yn ddigon disgrifiadol i rai defnyddwyr â nam ar eu golwg – fodd bynnag maent yn gydnaws ag offer technoleg gynorthwyol gyffredin.
-  - Ar ryw adeg, rydym yn dangos tudalennau lle nad yw’r fformatio ar gyfer elfennau unigol ar y sgrin yn gwbl addas ar gyfer technolegau darllen sgrin, ac felly’n arwain at dudalen sy’n anodd ei llywio o ganlyniad i wybodaeth anghyflawn. Fodd bynnag, bydd defnyddio darllenydd sgrin i ddarllen y dudalen gyfan yn uchel yn rhoi’r holl wybodaeth sydd ei hangen i lywio’r dudalen yn hyderus.
+  - Ar y dudalen ‘Gwneud eich taliad’, dim ond os gallwch weld lliw y mae rhai negeseuon gwall yn gwneud synnwyr.
+  - Ar y dudalen ‘Gwneud eich taliad’, efallai na fydd rhywun sy’n defnyddio darllenydd sgrin yn cael gwybod bod cyfeirnod treth wedi’i gysylltu â’i daliad.
+  - Ar y dudalen ‘Gwneud eich taliad’, mae cysylltiadau gwallau yn diflannu ar ôl cael eu dewis. Mae hyn yn ei gwneud yn anoddach datrys problemau.
+  - Ar y dudalen ‘Gwneud eich taliad’, ni fydd darllenwyr sgrin yn gallu adnabod neges rhybudd.
+  - Ar y dudalen ‘Gwneud eich taliad’, efallai na fydd darllenwyr sgrin yn cyhoeddi bod y sesiwn hon ar gyfer gwneud taliad wedi dod i ben, gan nad yw’r pennawd yn newid pan fydd gweddill y cynnwys yn cael ei ddiweddaru.
+  - Ar y dudalen ‘Gwneud eich taliad’, mae tirnodau dyblyg nad ydynt wedi’u labelu’n gywir. Mae hyn yn ei gwneud yn anodd deall strwythur y dudalen.
+  - Ar y dudalen ‘Gwneud eich taliad’, nid yw rhai negeseuon gwall yn dweud ble mae’r broblem wedi codi.
+  - Ar y dudalen ‘Gwneud eich taliad’, pan fydd y cod diogelwch ar goll, mae’r neges gwall yn awgrymu bod y cod wedi’i nodi ond bod y cod yn rhy fyr.
+  - Ar y dudalen ‘Gwneud eich taliad’, ni all y porwr lenwi manylion cerdyn yn awtomatig.
+  - Ar y dudalen ‘Gwneud eich taliad’, pan fyddwch yn chwyddo’r cynnwys gan 200%, ni allwch ryngweithio â’r cynnwys yn iawn.
+  - Ar y dudalen ‘Gwneud eich taliad’, nid yw ffioedd cerdyn yn cael eu cyhoeddi gan ddarllenwyr sgrin.
 milestones:
   - description: |
-      Rydym yn defnyddio iFrame Barclaycard i gymryd manylion y cerdyn a’r taliadau
-      ar gyfer y tâl neu’r dreth y mae defnyddwyr yn eu talu. Nid yw’r iFrame hwn yn
-      rhoi cyfle i ddefnyddwyr gadarnhau eu manylion ar ôl iddynt eu nodi. Nid yw hyn
-      yn bodloni maen prawf llwyddiant 3.3.6 (Error Prevention) Canllawiau Hygyrchedd
-      Cynnwys y We, fersiwn 2.1.
-    date: 2021-12-15
+      Nid yw’r cyfleuster adnabod gwallau ar gael wrth ddefnyddio technoleg gynorthwyol. Nid yw hyn yn bodloni meini prawf llwyddiant 3.3.1 (Error Identification), 1.1.1 (Non-text Content) a 1.4.1 (Use of Color) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
   - description: |
-      Rydym yn defnyddio teitlau ar ein tudalennau gwe er mwyn disgrifio pwnc neu
-      bwrpas y dudalen y mae’r defnyddiwr yn edrych arni ar hyn o bryd. Mewn rhai
-      achosion, nid yw’r teitlau ar y tabiau a’r prif deitlau yn gyson. Mae hyn yn
-      golygu nad yw’r gwasanaeth yn bodloni maen prawf llwyddiant 2.4.6
-      (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1.
-    date: 2021-12-15
+      Nid yw’r cynnwys cysylltiedig wedi’i farcio’n gywir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
   - description: |
-      Rydym yn defnyddio penawdau ac is-benawdau tudalennau i ddisgrifio pwnc neu
-      bwrpas meysydd ar dudalen we. Ar rai tudalennau, mae yna benawdau lefel 3 sy’n
-      benawdau lefel 2 mewn gwirionedd. Mae hyn yn achosi i bobl sy’n defnyddio
-      darllenwyr sgrin gael gwybodaeth aneglur ynghylch y dudalen. Mae hyn yn golygu
-      nad yw’r gwasanaeth yn bodloni maen prawf llwyddiant 2.4.10 (Section Headings)
-      Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
+      Mae cysylltiadau gwallau yn cael eu dileu ar ôl eu dewis. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.1 (Error Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
   - description: |
-      Rydym yn defnyddio botymau radio i gyflwyno opsiynau i ddefnyddwyr ar ein
-      tudalennau gwe. Mae’r rhain yn cael eu grwpio gyda’i gilydd i alluogi llywio
-      haws i ddefnyddwyr sy’n defnyddio bysellfwrdd yn unig. Mewn rhai achosion,
-      mae’r grwpiau hyn yn colli eu labeli, sy’n atal rhai meddalwedd darllen sgrin
-      rhag adrodd y label. Mae hyn yn golygu nad yw’r gwasanaeth yn bodloni maen prawf
-      llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We.
-    date: 2021-12-15
-serviceLastTestedDate: 2019-09-25
+      Nid oes gan yr eicon ebychnod destun amgen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.1.1 (Non-text Content) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+  - description: |
+      Pan fydd y sesiwn talu yn dod i ben, nid yw pennawd y dudalen yn cael ei ddiweddaru. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+  - description: |
+      Mae’r dudalen dalu yn cynnwys sawl ‘prif’ elfen. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+  - description: |
+      Nid yw negeseuon gwall bob amser yn disgrifio’r gwallau’n gywir ar y dudalen dalu. Nid yw hyn yn bodloni meini prawf llwyddiant 3.3.3 (Error Suggestion) a 3.3.1 (Error Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+  - description: |
+      Nid oes neges gwall penodol ar gyfer y maes cod diogelwch. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+  - description: |
+      Mae’r priodoledd rhagboblogi ar goll ar y meysydd talu. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+  - description: |
+      Mae’r dudalen yn gadael i’r testun lapio i linell arall. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.4 (Resize Text) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+  - description: |
+      Nid yw’r neges statws wedi’i marcio’n gywir i roi gwybod i ddefnyddwyr darllenwyr sgrin am newidiadau i’r cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.3 (Status Messages) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-21
+serviceLastTestedDate: 2025-08-26
 statementVisibility: public
 statementCreatedDate: 2019-10-09
-statementLastUpdatedDate: 2021-02-11
+statementLastUpdatedDate: 2026-01-05
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc:
 liveOrClassic:
 typeOfService: Public beta
+wcagVersion: 2.2 AA
