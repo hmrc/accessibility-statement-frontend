@@ -11,7 +11,7 @@ introduction.lede=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw�
 introduction.lede.app=Mae’r datganiad hygyrchedd hwn yn esbonio pa mor hygyrch yw’r ap hwn, beth i’w wneud os ydych yn cael anhawster wrth ei ddefnyddio, a sut i roi gwybod am broblemau hygyrchedd gyda’r ap.
 introduction.scope.part1=Mae’r gwasanaeth hwn yn rhan o wefan ehangach GOV.UK. Mae
 introduction.scope.part2=datganiad hygyrchedd ar wahân ar gyfer prif wefan GOV.UK
-introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am y gwasanaeth {0}, sydd ar gael yn {1}.
+introduction.service-name=Mae’r dudalen hon ond yn cynnwys gwybodaeth am wasanaeth {0}, sydd ar gael yn {1}.
 introduction.service-name.app=Mae’r dudalen hon ond yn cynnwys gwybodaeth am {0}, sydd ar gael yn {1}.
 
 ## Using the service
@@ -46,9 +46,8 @@ using-service.bullet5.ios=gwrando ar yr ap gan ddefnyddio VoiceOver
 
 using-service.simple-text=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn y gwasanaeth mor syml â phosibl i’w ddeall.
 using-service.simple-text.app=Rydym hefyd wedi sicrhau bod y testun a ddefnyddir yn yr app mor syml â phosibl i’w ddeall.
-using-service.making-device-easier.part1=Mae gan 
-using-service.making-device-easier.part2= ' AbilityNet'
-using-service.making-device-easier.part3= ' gyngor ar sut i wneud eich dyfais yn haws ei defnyddio os oes gennych anabledd.'
+using-service.making-device-easier.part1=Mae gan AbilityNet gyngor
+using-service.making-device-easier.part2=' ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.'
 
 ## Accessibility
 accessibility.heading=Pa mor hygyrch yw’r gwasanaeth hwn
