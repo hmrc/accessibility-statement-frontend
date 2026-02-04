@@ -1,0 +1,35 @@
+serviceName: Vaping Duty       # The service name that will appear in the title of the accessibility statement.
+                                        # Do not include the word service at the end, as this will be added by the templates
+serviceDescription: |                   # A description of the service
+  Use this paragraph to describe your service. It can go over multiple lines
+  like this.
+serviceDomain: www.tax.service.gov.uk   # The domain name under which this service exists (exclude the https:// and the path)
+serviceUrl: /vaping-duty-frontend                  # The relative URL to the service (omitting www.tax.service.gov.uk)
+contactFrontendServiceId: vaping-duty-frontend     # A unique identifier for your service (see notes below)
+complianceStatus: noncompliant               # full|partial|noncompliant
+accessibilityProblems:                  # If there are no issues do not include this section
+  - a description of the first problem
+  - another description of a problem
+  - a description of the last problem
+milestones:                             # If there are no issues do not include this section
+  - description: The X page does not have Y and also does not display Z. This doesn't meet WCAG success
+      criterion X.Y.Z (Criterion Description).
+    date: 2026-02-04                    # The date that this issue will be fixed by in ISO format YYYY-MM-DD
+  - description: |
+      The service has errors in X and incorrectly nested Z which means assistive technologies
+      cannot use the service reliably. This does not meet WCAG success criterion
+      X.Y.Z (Criterion Description).
+    date: 2026-02-04                    # The date that this issue will be fixed by
+serviceLastTestedDate: 2026-02-04       # In ISO format YYYY-MM-DD. If your statement's compliance status is noncompliant, you can omit this line
+statementVisibility: draft             # If set to public, the statement will be visible in production. One of: public|draft|archived.
+statementCreatedDate: 2026-02-04        # In ISO format YYYY-MM-DD
+statementLastUpdatedDate: 2026-02-04    # In ISO format YYYY-MM-DD
+automatedTestingOnly: true              # Only add this value if your service has only had automated testing. Otherwise, do not include
+automatedTestingDetails: |              # Only add this value if your service has only had automated testing
+  If your service has only had automated testing, add a text description of testing tools used, e.g.
+  It was tested using the automated tool(s) AATT by PayPal and Accessibility Checklist by Elsevier.
+businessArea: Chief Digital & Information Officer (CDIO) # See valid values below
+ddc: DDC Newcastle                        # See valid values below
+liveOrClassic: Classic Services  # See valid values below 
+typeOfService: Classic services               # Classic services|Live services|Public beta
+wcagVersion: 2.1 AA                      # The Web Content Accessibility Guidelines version the service was tested against. Will default to WCAG 2.1 if none set. One of: 2.1 AA|2.2 AA
