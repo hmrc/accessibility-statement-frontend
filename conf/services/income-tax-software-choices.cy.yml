@@ -1,7 +1,6 @@
 ---
 serviceName: |
-  Dod o hyd i feddalwedd am y cynllun Troi Treth yn Ddigidol ar gyfer Treth
-  Incwm
+  Dod o hyd i feddalwedd sy’n cydweddu â’r cynllun Troi Treth yn Ddigidol ar gyfer Treth Incwm
 serviceDescription: |
   Mae’r cynllun Troi Treth yn Ddigidol ar gyfer Treth Incwm (MTD ITSA) yn
   ffordd newydd o roi gwybod i CThEF am enillion. Mae’r cynllun yn galluogi
@@ -25,7 +24,7 @@ serviceUrl: /find-making-tax-digital-income-tax-software
 contactFrontendServiceId: ITSC
 complianceStatus: full
 serviceLastTestedDate: 2026-02-05
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2022-12-09
 statementLastUpdatedDate: 2026-02-06
 ddc: DDC Telford

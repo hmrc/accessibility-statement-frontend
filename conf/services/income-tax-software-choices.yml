@@ -1,6 +1,6 @@
 ---
 serviceName: |
-  Find software that's compatible with Making Tax Digital for Income Tax
+  Find software that works with Making Tax Digital for Income Tax
 serviceDescription: |
   Making Tax Digital for Income Tax is a new way of reporting earnings to HMRC.
   It allows individuals or their authorised agents to sign them up to MTD for
@@ -21,7 +21,7 @@ serviceUrl: /find-making-tax-digital-income-tax-software
 contactFrontendServiceId: ITSC
 complianceStatus: full
 serviceLastTestedDate: 2026-02-05
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2022-12-09
 statementLastUpdatedDate: 2026-02-06
 ddc: DDC Telford
