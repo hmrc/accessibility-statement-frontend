@@ -1,6 +1,6 @@
 ---
 serviceName: |
-  Find software that's compatible with Making Tax Digital for Income Tax
+  Find software that works with Making Tax Digital for Income Tax
 serviceDescription: |
   Making Tax Digital for Income Tax is a new way of reporting earnings to HMRC.
   It allows individuals or their authorised agents to sign them up to MTD for
@@ -17,29 +17,13 @@ serviceDescription: |
   needs; so that they can submit their data to HMRC and meet their MTD
   obligations.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /making-tax-digital-income-tax-software
+serviceUrl: /find-making-tax-digital-income-tax-software
 contactFrontendServiceId: ITSC
-complianceStatus: partial
-accessibilityProblems:
-  - |
-    The heading for the software results count is not being recognised as a
-    heading by assistive technology. The 'software results count' alerts are
-    interrupting screen-readers' speech, making it difficult to understand.
-  - |
-    The accessibility features filters are ambiguous so users may not properly
-    understand what they are selecting.
-milestones:
-  - description: The native role of the heading is overwritten by role="alert".
-      As this is not time-sensitive information, role="status" should have been
-      used. This fails WCAG 2.1 success criterion 4.1.2 Name, role, value and
-      4.1.3 Status messages
-    date: 2023-01-31
-  - description: Not enough information is provided to avoid confusion. This
-      fails WCAG 2.1 success criterion 3.3.2 Labels or instructions
-    date: 2023-01-31
-serviceLastTestedDate: 2022-11-21
-statementVisibility: draft
+complianceStatus: full
+serviceLastTestedDate: 2026-02-05
+statementVisibility: public
 statementCreatedDate: 2022-12-09
-statementLastUpdatedDate: 2022-12-09
+statementLastUpdatedDate: 2026-02-06
 ddc: DDC Telford
 typeOfService: Public beta
+wcagVersion: 2.2 AA
