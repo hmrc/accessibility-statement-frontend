@@ -4,11 +4,13 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /set-up-a-payment-plan
 contactFrontendServiceId: essttp-frontend
 complianceStatus: full
-serviceLastTestedDate: 2024-02-02
+serviceLastTestedDate: 2026-01-15
 statementVisibility: public
 statementCreatedDate: 2022-10-14
-statementLastUpdatedDate: 2024-02-06
+statementLastUpdatedDate: 2026-01-28
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Public beta
+wcagVersion: 2.1 AA
+
