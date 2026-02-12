@@ -4,7 +4,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /set-up-a-payment-plan
 contactFrontendServiceId: essttp-frontend
 complianceStatus: full
-serviceLastTestedDate: 2026-01-28
+serviceLastTestedDate: 2026-01-15
 statementVisibility: public
 statementCreatedDate: 2022-10-14
 statementLastUpdatedDate: 2026-01-28
