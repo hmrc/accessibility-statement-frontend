@@ -4,17 +4,9 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /report-transfer-qualifying-recognised-overseas-pension-scheme
 contactFrontendServiceId: report-transfer-qualifying-recognised-overseas-pension-scheme
-complianceStatus: partial
-accessibilityProblems:
-  - On the ‘What would you like to do?’ page when there’s an error, the error summary is missing and screen-reader users are not notified about the error state of the page in the page title. Users must go through the whole page to identify any problems that need to be corrected. This can be difficult and time consuming.
-  - Throughout the service, when users enter a date that’s not real but in the correct format, the error message does not give a helpful error message (Enter your date in the correct format). Users may not be able to correct the error with those instructions.
-milestones:
-  - description: Error summary is missing. This fails WCAG 2.2 success criterion 4.1.3 - Status Messages
-    date: 2025-12-15
-  - description: Date fields tell users to ‘enter in the correct format’ when the error is to enter a real date. This fails WCAG 2.2 success criterion 3.3.3 Error Suggestion
-    date: 2025-12-15
+complianceStatus: full
 serviceLastTestedDate: 2025-12-05
 statementVisibility: public
 statementCreatedDate: 2025-12-05
-statementLastUpdatedDate: 2025-12-05
+statementLastUpdatedDate: 2025-02-19
 wcagVersion: 2.2 AA
