@@ -1,0 +1,24 @@
+serviceName: Get a National Insurance contributions statement
+serviceHeaderName: Get a National Insurance contributions statement
+serviceDescription: |
+  Use this form to request a printed National Insurance contributions statement.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/get-a-national-insurance-contributions-statement
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2026-03-31
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2026-03-31
+serviceLastTestedDate: 2026-02-20
+statementVisibility: public
+statementCreatedDate: 2026-02-20
+statementLastUpdatedDate: 2026-02-20
