@@ -7,7 +7,7 @@ val appName = "accessibility-statement-frontend"
 lazy val sharedSettings = Seq(
   libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
   majorVersion := 0,
-  scalaVersion := "3.3.4"
+  scalaVersion := "3.3.6"
 )
 
 lazy val microservice = Project(appName, file("."))
