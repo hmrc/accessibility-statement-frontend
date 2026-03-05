@@ -15,6 +15,7 @@ lazy val microservice = Project(appName, file("."))
   .disablePlugins(JUnitXmlReportPlugin) // Required to prevent https://github.com/scalatest/scalatest/issues/1427
   .settings(
     sharedSettings,
+    resolvers += Resolver.mavenLocal,
     playDefaultPort := 12346,
     Compile / unmanagedResourceDirectories += baseDirectory.value / "testOnlyConf",
     TwirlKeys.templateImports ++= Seq(
