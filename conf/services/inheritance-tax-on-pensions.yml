@@ -1,0 +1,10 @@
+serviceName: Report inheritance tax on a pension
+serviceDescription: |
+  Use this service to report inheritance tax and interest due on a pension, and to name pension fund beneficiaries.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /inheritance-tax-on-pensions
+contactFrontendServiceId: inheritance-tax-on-pensions
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2026-03-17
+statementLastUpdatedDate: 2026-03-17
