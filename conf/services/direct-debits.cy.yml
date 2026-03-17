@@ -1,6 +1,6 @@
 serviceName: National Direct Debit
 serviceHeaderName: National Direct Debit
-serviceDescription: Mae Gwasanaeth Debyd Uniongyrchol Cenedlaethol (NDDS) yn caniatáu i ddefnyddwyr sefydlu a newid taliadau sengl presennol, cynlluniau talu cyllideb, ad-daliadau a chynlluniau talu amrywiol.
+serviceDescription: Mae’r Gwasanaeth Debyd Uniongyrchol Cenedlaethol (NDDS) yn caniatáu i ddefnyddwyr i sefydlu ac addasu taliadau unigol, cynlluniau talu cyllidebol a chynlluniau talu newidiol sydd eisoes yn bodoli.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /direct-debits
 contactFrontendServiceId: NDDS
