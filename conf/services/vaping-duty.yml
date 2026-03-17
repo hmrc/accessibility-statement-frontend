@@ -1,0 +1,13 @@
+serviceName: Vaping Duty
+serviceDescription: |
+  Vaping Duty is a service for UK manufacturers of Vaping Products (e-liquid) to submit and pay returns for the
+  Vaping Duty they owe.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /vaping-duty
+contactFrontendServiceId: vaping-duty-frontend
+complianceStatus: full
+serviceLastTestedDate: 2026-03-23
+statementVisibility: public
+statementCreatedDate: 2026-03-17
+statementLastUpdatedDate: 2026-03-23
+wcagVersion: 2.2 AA
