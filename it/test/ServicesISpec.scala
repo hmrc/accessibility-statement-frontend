@@ -104,6 +104,7 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         DDCWorthing,
         DDCYorkshire,
         DDCNorthumberland,
+        DDCBordersAndTrade,
         NoDDCLocation
       ).foreach { propertyValue =>
         withYAMLFieldProperty("ddc", propertyValue.toString).isSuccess should be(true)
@@ -117,7 +118,8 @@ class ServicesISpec extends AnyWordSpec with Matchers with GuiceOneAppPerSuite w
         LiveServicesNewcastle,
         LiveServicesTelford,
         LiveServicesWorthing,
-        LiveServicesNorthumberland
+        LiveServicesNorthumberland,
+        LiveServicesBordersAndTrade
       ).foreach { propertyValue =>
         withYAMLFieldProperty("liveOrClassic", propertyValue.toString).isSuccess should be(true)
       }
