@@ -1,7 +1,7 @@
 serviceName: Anfonwch eich datganiad Ardoll Agregau ar-lein
 serviceHeaderName: Anfonwch eich datganiad Ardoll Agregau ar-lein
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i anfon eich Ffurflen Ardoll Agregau.
+  Defnyddiwch y ffurflen hon i gyflwyno’ch Datganiad Ardoll Agregau.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/send-your-aggregates-levy-return
 contactFrontendServiceId: GForm
