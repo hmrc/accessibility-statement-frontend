@@ -1,0 +1,24 @@
+serviceName: Rhowch wybod i CThEF am blentyn sy’n derbyn gofal gan awdurdod lleol (CH193)
+serviceHeaderName: Rhowch wybod i CThEF am blentyn sy’n derbyn gofal gan awdurdod lleol (CH193)
+serviceDescription: |
+  Defnyddiwch y ffurflen hon i roi gwybod i CThEF am blentyn sydd yn derbyn gofal gan awdurdod lleol am 8 wythnos neu fwy.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/tell-hmrc-about-child-looked-after-by-local-authority
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - efallai fod rhai cysylltiadau, penawdau neu labeli nad ydynt yn rhoi digon o wybodaeth am beth i’w wneud nesaf neu’r hyn sy’n digwydd nesaf
+  - efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall
+milestones:
+  - description: |
+      Efallai fod rhai cysylltiadau, penawdau a labeli nad ydynt yn rhoi digon o wybodaeth am yr hyn i’w wneud nesaf neu’r hyn sy’n digwydd nesaf. 
+      Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) na maen prawf llwyddiant 2.4.9 (Link Purpose).
+    date: 2027-03-31
+  - description: |
+      Efallai fod rhai negeseuon gwall nad ydynt yn cynnwys yr holl wybodaeth sydd ei hangen arnoch er mwyn eich helpu i gywiro gwall. 
+      Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion).
+    date: 2027-03-31
+serviceLastTestedDate: 2026-03-23
+statementVisibility: public
+statementCreatedDate: 2026-03-23
+statementLastUpdatedDate: 2026-03-23
