@@ -1,0 +1,90 @@
+@*
+ * Copyright 2023 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import uk.gov.hmrc.govukfrontend.views.html.components.{GovukPhaseBanner, GovukServiceNavigation}
+@import uk.gov.hmrc.govukfrontend.views.html.helpers.GovukLogo
+@import uk.gov.hmrc.hmrcfrontend.views.html.components.{HmrcBanner, HmrcUserResearchBanner}
+@import uk.gov.hmrc.hmrcfrontend.views.Aliases.{Banner, HeaderParams, UserResearchBanner}
+@import uk.gov.hmrc.hmrcfrontend.views.Utils._
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.Cy
+@import uk.gov.hmrc.hmrcfrontend.views.Utils.nonEmptyStringOrDefault
+@import uk.gov.hmrc.hmrcfrontend.views.html.components.{NonEmptyString => nonEmpty}
+
+@this(
+        hmrcBanner: HmrcBanner,
+        hmrcUserResearchBanner: HmrcUserResearchBanner,
+        govukPhaseBanner: GovukPhaseBanner,
+        govukLogo: GovukLogo,
+        govukServiceNavigation: GovukServiceNavigation
+)
+
+@(params: HeaderParams)(implicit messages: Messages)
+@import params._
+
+@containerClassList = @{
+    Seq("govuk-header__container", nonEmptyStringOrDefault(Option(params.headerTemplateOverrides.containerClasses), "govuk-width-container")).mkString(" ")
+}
+
+<header class="govuk-template__header">
+    <div class="govuk-header hmrc-header"@if(params.headerUrls.signOutHref.exists(_.nonEmpty)){ hmrc-header--with-additional-navigation}" data-module="govuk-header">
+        <div class="govuk-header__container">
+            <div class="govuk-header__logo">
+                <a href="@nonEmptyStringOrDefault(Option(params.headerUrls.homepageUrl), "//gov.uk")" class="govuk-header__homepage-link">
+                    @govukLogo(
+                        useLogotype = true,
+                        svgClass = "govuk-header__logotype",
+                        ariaLabelText = Some("GOV.UK")
+                    )
+                    @params.headerNames.productName match {
+                        case Some(nonEmpty(name)) => {
+                            <span class="govuk-header__product-name">@name</span>
+                        }
+                        case _ => {}
+                    }
+                </a>
+            </div>
+            @if(params.headerUrls.signOutHref.exists(_.nonEmpty)) {
+                @params.headerUrls.signOutHref match {
+                    case Some(nonEmpty(s)) => {
+                        <nav class="hmrc-sign-out-nav">
+                            <a class="govuk-link hmrc-sign-out-nav__link" href="@s">
+                            @language match {
+                                case Cy => {Allgofnodi}
+                                case _ => {Sign out}
+                            }
+                            </a>
+                        </nav>
+                    }
+                }
+            }
+        </div>
+    </div>
+    @if(params.banners.displayHmrcBanner){
+        <div class="govuk-width-container">
+        @hmrcBanner(Banner(language))
+        </div>
+    }
+    @params.serviceNavigation.map { nav =>
+        @govukServiceNavigation(nav)
+    }
+    @params.banners.phaseBanner.map { pb =>
+        @govukPhaseBanner(pb)
+    }
+    @params.banners.userResearchBanner.map { urb =>
+        @hmrcUserResearchBanner(UserResearchBanner(language, urb.url))
+    }
+    @params.banners.additionalBannersBlock
+</header>

@@ -15,15 +15,16 @@
  *@
 
 @import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.{HmrcStandardPageParams, Banners, TemplateOverrides}
+@import uk.gov.hmrc.accessibilitystatementfrontend.views.html.layouts.AccessibleNavigationPage
 
-@this(hmrcStandardPage: HmrcStandardPage)
+@this(accessibleNavigationPage: AccessibleNavigationPage)
 @(
         pageTitle: String,
         isWelshTranslationAvailable: Boolean,
         maybeTemplateOverrides: TemplateOverrides = TemplateOverrides())(
         contentBlock: Html)(implicit request: RequestHeader, messages: Messages)
 
-@hmrcStandardPage(HmrcStandardPageParams(
+@accessibleNavigationPage(HmrcStandardPageParams(
     pageTitle = Some(pageTitle),
     banners = Banners(displayHmrcBanner = true),
     isWelshTranslationAvailable = isWelshTranslationAvailable,
