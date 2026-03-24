@@ -34,42 +34,18 @@
 @(params: HeaderParams)(implicit messages: Messages)
 @import params._
 
-@containerClassList = @{
-    Seq("govuk-header__container", nonEmptyStringOrDefault(Option(params.headerTemplateOverrides.containerClasses), "govuk-width-container")).mkString(" ")
-}
-
 <header class="govuk-template__header">
-    <div class="govuk-header hmrc-header"@if(params.headerUrls.signOutHref.exists(_.nonEmpty)){ hmrc-header--with-additional-navigation}" data-module="govuk-header">
+    <div class="govuk-header hmrc-header" data-module="govuk-header">
         <div class="govuk-header__container">
             <div class="govuk-header__logo">
-                <a href="@nonEmptyStringOrDefault(Option(params.headerUrls.homepageUrl), "//gov.uk")" class="govuk-header__homepage-link">
+                <a href=//gov.uk" class="govuk-header__homepage-link">
                     @govukLogo(
                         useLogotype = true,
                         svgClass = "govuk-header__logotype",
                         ariaLabelText = Some("GOV.UK")
                     )
-                    @params.headerNames.productName match {
-                        case Some(nonEmpty(name)) => {
-                            <span class="govuk-header__product-name">@name</span>
-                        }
-                        case _ => {}
-                    }
                 </a>
             </div>
-            @if(params.headerUrls.signOutHref.exists(_.nonEmpty)) {
-                @params.headerUrls.signOutHref match {
-                    case Some(nonEmpty(s)) => {
-                        <nav class="hmrc-sign-out-nav">
-                            <a class="govuk-link hmrc-sign-out-nav__link" href="@s">
-                            @language match {
-                                case Cy => {Allgofnodi}
-                                case _ => {Sign out}
-                            }
-                            </a>
-                        </nav>
-                    }
-                }
-            }
         </div>
     </div>
     @if(params.banners.displayHmrcBanner){
