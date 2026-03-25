@@ -48,6 +48,7 @@
     userResearchBanner = banners.userResearchBanner,
     phaseBanner = banners.phaseBanner,
     // By doing this, we force the service navigation language select to be hidden if using the deprecated language select
+    // This works because there is no service name. If serviceName were defined, the Service Navigation would still display
     isWelshTranslationAvailable = if(useServiceNavigation) isWelshTranslationAvailable else false
 )
 }
