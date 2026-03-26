@@ -15,4 +15,4 @@ addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.0")
 
 addSbtPlugin("com.github.sbt" % "sbt-gzip" % "2.0.0")
 
-addSbtPlugin("uk.gov.hmrc" % "sbt-sass-compiler" % "0.12.0")
+addSbtPlugin("uk.gov.hmrc" % "sbt-sass-compiler" % "0.13.0")
