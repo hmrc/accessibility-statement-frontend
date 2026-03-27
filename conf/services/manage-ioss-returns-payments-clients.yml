@@ -4,9 +4,9 @@ serviceDescription: Use this service to complete your clients’ Import One Stop
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/manage-ioss-returns-payments-clients
 contactFrontendServiceId: ioss-intermediary-dashboard-frontend
-complianceStatus: noncompliant
+complianceStatus: partial
 serviceLastTestedDate: 2026-03-30
-statementVisibility: public
+statementVisibility: draft
 statementCreatedDate: 2026-03-30
 statementLastUpdatedDate: 2026-03-30
 
