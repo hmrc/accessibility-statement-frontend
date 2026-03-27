@@ -4,7 +4,7 @@ serviceDescription: Use this service to leave the VAT Import One Stop Shop (IOSS
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/leave-import-one-stop-shop-intermediary
 contactFrontendServiceId: ioss-intermediary-exclusions-frontend
-complianceStatus: partial
+complianceStatus: noncompliant
 serviceLastTestedDate: 2026-03-30
 statementVisibility: draft
 statementCreatedDate: 2026-03-30
