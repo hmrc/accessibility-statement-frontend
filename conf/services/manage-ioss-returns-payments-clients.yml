@@ -1,0 +1,17 @@
+serviceName: Manage your clients’ Import One Stop Shop VAT
+serviceHeaderName: Manage your clients’ Import One Stop Shop VAT
+serviceDescription: Use this service to complete your clients’ Import One Stop Shop VAT returns for sales of low value goods to consumers in the EU and Northern Ireland.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pay-clients-vat-on-eu-sales/manage-ioss-returns-payments-clients
+contactFrontendServiceId: ioss-intermediary-dashboard-frontend
+complianceStatus: noncompliant
+serviceLastTestedDate: 2026-03-30
+statementVisibility: public
+statementCreatedDate: 2026-03-30
+statementLastUpdatedDate: 2026-03-30
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
