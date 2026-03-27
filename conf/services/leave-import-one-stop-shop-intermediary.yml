@@ -1,6 +1,6 @@
 serviceName: Leave the Import One Stop Shop Intermediary service
 serviceHeaderName: Leave the Import One Stop Shop Intermediary service
-serviceDescription: Use this service to leave the VAT Import One Stop Shop (IOSS) Intermediary service.
+serviceDescription: Use this service to leave the VAT Import One Stop Shop (IOSS) scheme.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/leave-import-one-stop-shop-intermediary
 contactFrontendServiceId: ioss-intermediary-exclusions-frontend

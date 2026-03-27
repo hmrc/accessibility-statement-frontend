@@ -1,6 +1,6 @@
 serviceName: Register a client to your Import One Stop Shop account
 serviceHeaderName: Register a client to your Import One Stop Shop account
-serviceDescription: Use this service to register a client to be able to submit and manage your clients’ Import One Stop Shop VAT returns for sales of low value goods to consumers in the EU and Northern Ireland.
+serviceDescription: Use this service to register new clients onto your VAT Import One Stop Shop (IOSS) account so you can manage their returns and payments.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/register-new-ioss-client
 contactFrontendServiceId: ioss-netp-registration-frontend
