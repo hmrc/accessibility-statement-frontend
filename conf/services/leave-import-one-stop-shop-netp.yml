@@ -1,0 +1,17 @@
+serviceName: Remove a client from your Import One Stop Shop account
+serviceHeaderName: Remove a client from your Import One Stop Shop account
+serviceDescription: Use this service to remove a client from the VAT Import One Stop Shop (IOSS) scheme.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pay-clients-vat-on-eu-sales/leave-import-one-stop-shop-netp
+contactFrontendServiceId: ioss-netp-exclusions-frontend
+complianceStatus: noncompliant
+serviceLastTestedDate: 2026-03-30
+statementVisibility: draft
+statementCreatedDate: 2026-03-30
+statementLastUpdatedDate: 2026-03-30
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
