@@ -1,6 +1,6 @@
 serviceName: Register to manage your clients’ Import One Stop Shop VAT
 serviceHeaderName: Register to manage your clients’ Import One Stop Shop VAT
-serviceDescription: Use this service to register as an intermediary on the Import One Stop Shop (IOSS) scheme, to manage your client's VAT IOSS returns and payments.
+serviceDescription: Use this service to register as an intermediary on the Import One Stop Shop (IOSS) scheme, to manage your client’s VAT IOSS returns and payments.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/register-import-one-stop-shop-intermediary
 contactFrontendServiceId: ioss-intermediary-registration-frontend

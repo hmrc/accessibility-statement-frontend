@@ -1,6 +1,6 @@
 serviceName: Manage your clients’ Import One Stop Shop VAT
 serviceHeaderName: Manage your clients’ Import One Stop Shop VAT
-serviceDescription: Use this to manage your clients' Import One Stop Shop (IOSS) registration details, and submit returns and payments on their behalf.
+serviceDescription: Use this to manage your clients’ Import One Stop Shop (IOSS) registration details, and submit returns and payments on their behalf.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/manage-ioss-returns-payments-clients
 contactFrontendServiceId: ioss-intermediary-dashboard-frontend
