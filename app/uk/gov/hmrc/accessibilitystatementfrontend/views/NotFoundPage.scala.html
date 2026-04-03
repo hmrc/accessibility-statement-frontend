@@ -18,7 +18,7 @@
 
 @()(implicit request: MessagesRequest[?], messages: Messages)
 
-@layout(pageTitle = messages("notFound.pageTitle"), isWelshTranslationAvailable = true) {
+@layout(pageTitle = messages("notFound.pageTitle"), isWelshTranslationAvailable = true, useServiceNavigation = true) {
  <h1 class="govuk-heading-xl">@{messages("notFound.heading")}</h1>
  <p class="govuk-body">@{messages("notFound.paragraph1")}</p>
  <p class="govuk-body">@{messages("notFound.paragraph2")}</p>
