@@ -6,26 +6,28 @@ serviceUrl: /pay-clients-vat-on-eu-sales/register-import-one-stop-shop-intermedi
 contactFrontendServiceId: ioss-intermediary-registration-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - Screen-reader users may find it misleading when they navigate to the ‘You have added 2 other trading names’ page, as the page title announces an incorrect number for this page.
-  - On some pages data is not maintained when the user navigates back using the back link.
-  - Screen-reader users may find the contextual copy for the change links cause issues as they may not match the visible label.
-  - Users may find error messages is misleading on the country entry pages.
+  - Screen-reader users may find it misleading when they navigate to the ‘You have added 2 other trading names’ page, as the page title announces an incorrect number for this page
+  - On some pages data is not maintained when the user navigates back using the back link
+  - Screen-reader users may find the contextual copy for the change links cause issues as they may not match the visible label
+  - Users may find error messages is misleading on the country entry pages
   - User may find auto-complete errors on the 'What is your business trading name and address?' page
 milestones:
   - description: Screen-reader users may find it misleading when they navigate to the ‘You have added 2 other trading names’ page, as the page title announces an incorrect number for this page.
-    date: 2026-03-31
+    date: 2026-04-30
   - description: On some pages data is not maintained when the user navigates back using the back link.
-    date: 2026-03-31
+    date: 2026-04-30
   - description: Screen-reader users may find the contextual copy for the change links cause issues as they may not match the visible label.
-    date: 2026-03-31
+    date: 2026-04-30
   - description: Users may find error messages is misleading on the country entry pages.
-    date: 2026-03-31
-  - description: User may find auto-complete errors on the 'What is your business trading name and address?' page
-    date: 2026-03-31
+    date: 2026-04-30
+  - description: User may find auto-complete errors on the 'What is your business trading name and address?' page.
+    date: 2026-04-30
+  - description: Users who are unfamiliar with the abbreviations on the bank details page may not understand its meaning.
+    date: 2026-04-30
 serviceLastTestedDate: 2025-10-30
 statementVisibility: public
 statementCreatedDate: 2026-03-27
-statementLastUpdatedDate: 2026-03-27
+statementLastUpdatedDate: 2026-04-08
 
 businessArea: Borders & Trade
 ddc:

@@ -4,12 +4,16 @@ serviceDescription: Use this service to remove clients from your VAT Import One 
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/leave-import-one-stop-shop-netp
 contactFrontendServiceId: ioss-netp-exclusions-frontend
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - Screen-reader users or users navigating with keyboard may find it difficult to locate and correct an error on the stopping eligible sales question page
+milestones:
+  - description: Screen-reader users or users navigating with keyboard may find it difficult to locate and correct an error on the stopping eligible sales question page.
+    date: 2026-04-30
 serviceLastTestedDate: 2026-03-30
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2026-03-30
-statementLastUpdatedDate: 2026-03-30
-
+statementLastUpdatedDate: 2026-04-08
 businessArea: Borders & Trade
 ddc:
 liveOrClassic:

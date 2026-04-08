@@ -4,11 +4,28 @@ serviceDescription: Use this service to complete Import One Stop Shop VAT return
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-vat-on-goods-sold-to-eu/import-one-stop-shop-returns-payments
 contactFrontendServiceId: ioss-returns-frontend
-complianceStatus: full
-serviceLastTestedDate: 2024-04-04
+complianceStatus: partial
+accessibilityProblems:
+  - Screen-reader users may find two identical headings at the same level, one after the other confusing
+  - Screen-reader users may find the hierarchy of headings difficult to understand
+  - Screen-reader users may find the structure of the content difficult to understand the relationship between sections
+  - Some users, particularly those with low vision or colour vision deficiencies, when viewing link text against this background
+  - Some users may find the light grey backgrounds of the your account page sections difficult to focus and keep track of
+milestones:
+  - description: Screen-reader users may find two identical headings at the same level, one after the other confusing.
+    date: 2026-04-30
+  - description: Screen-reader users may find the hierarchy of headings difficult to understand.
+    date: 2026-04-30
+  - description: Screen-reader users may find the structure of the content difficult to understand the relationship between sections.
+    date: 2026-04-30
+  - description: Some users, particularly those with low vision or colour vision deficiencies, when viewing link text against this background.
+    date: 2026-04-30
+  - description: Some users may find the light grey backgrounds of the your account page sections difficult to focus and keep track of.
+    date: 2026-04-30
+serviceLastTestedDate: 2026-03-30
 statementVisibility: public
 statementCreatedDate: 2024-02-28
-statementLastUpdatedDate: 2024-04-09
+statementLastUpdatedDate: 2026-04-08
 
 businessArea: Borders & Trade
 ddc:
