@@ -4,11 +4,16 @@ serviceDescription: Use this to manage your clients’ Import One Stop Shop (IOS
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/manage-ioss-returns-payments-clients
 contactFrontendServiceId: ioss-intermediary-dashboard-frontend
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - Some users, particularly those with low vision or colour vision deficiencies may find it difficult to see the link text against the background on the your account page.
+milestones:
+  - description: Some users, particularly those with low vision or colour vision deficiencies may find it difficult to see the link text against the background on the your account page.
+    date: 2026-04-30
 serviceLastTestedDate: 2026-03-30
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2026-03-30
-statementLastUpdatedDate: 2026-03-30
+statementLastUpdatedDate: 2026-04-08
 
 businessArea: Borders & Trade
 ddc:
