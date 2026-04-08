@@ -8,7 +8,7 @@ complianceStatus: partial
 accessibilityProblems:
   - Screen-reader users or users navigating with keyboard may find it difficult to locate and correct an error on the stopping eligible sales question page
 milestones:
-  - description: Screen-reader users or users navigating with keyboard may find it difficult to locate and correct an error on the stopping eligible sales question page
+  - description: Screen-reader users or users navigating with keyboard may find it difficult to locate and correct an error on the stopping eligible sales question page.
     date: 2026-04-30
 serviceLastTestedDate: 2026-03-30
 statementVisibility: public

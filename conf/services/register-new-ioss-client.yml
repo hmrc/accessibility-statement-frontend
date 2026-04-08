@@ -6,10 +6,10 @@ serviceUrl: /pay-clients-vat-on-eu-sales/register-new-ioss-client
 contactFrontendServiceId: ioss-netp-registration-frontend
 complianceStatus: partial
 accessibilityProblems:
-  - On some pages data is not maintained when the user navigates back using the back link.
-  - Screen-reader users may find the contextual copy for the change links cause issues as they may not match the visible label.
-  - Screen-reader users may find the form fields on the 'Remove this registration' page confusing.
-  - Users may find error messages is misleading on the country entry pages.
+  - On some pages data is not maintained when the user navigates back using the back link
+  - Screen-reader users may find the contextual copy for the change links cause issues as they may not match the visible label
+  - Screen-reader users may find the form fields on the 'Remove this registration' page confusing
+  - Users may find error messages is misleading on the country entry pages
 milestones:
   - description: On some pages data is not maintained when the user navigates back using the back link.
     date: 2026-04-30

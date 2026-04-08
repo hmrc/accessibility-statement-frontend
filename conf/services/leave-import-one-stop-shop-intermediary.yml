@@ -8,7 +8,7 @@ complianceStatus: partial
 accessibilityProblems:
   - Users using high contrast may find it difficult to see the indicator on the which country is your business moving to page
 milestones:
-  - description: Users using high contrast may find it difficult to see the indicator on the which country is your business moving to page
+  - description: Users using high contrast may find it difficult to see the indicator on the which country is your business moving to page.
     date: 2026-04-30
 serviceLastTestedDate: 2026-03-30
 statementVisibility: public
