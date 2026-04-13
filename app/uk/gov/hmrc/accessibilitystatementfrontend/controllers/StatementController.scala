@@ -46,7 +46,8 @@ class StatementController @Inject() (
 
   def getStatement(
     service: String,
-    referrerUrl: Option[RedirectUrl]
+    referrerUrl: Option[RedirectUrl],
+    useServiceNavigation: Option[Boolean]
   ): Action[AnyContent] =
     Action.async { request =>
       given MessagesRequest[AnyContent] = request
@@ -73,7 +74,8 @@ class StatementController @Inject() (
                 accessibilityStatement,
                 safeReferrerUrl.map(_.url),
                 language,
-                isWelshTranslationAvailable
+                isWelshTranslationAvailable,
+                useServiceNavigation.getOrElse(false)
               )
             )
           )
@@ -105,10 +107,11 @@ class StatementController @Inject() (
     statement: AccessibilityStatement,
     referrerUrl: Option[String],
     language: Lang,
-    isWelshTranslationAvailable: Boolean
+    isWelshTranslationAvailable: Boolean,
+    useServiceNavigation: Boolean
   )(using request: Request[?]): HtmlFormat.Appendable = {
     given Messages = messagesApi.preferred(Seq(language))
 
-    statementPage(statement, referrerUrl, isWelshTranslationAvailable)
+    statementPage(statement, referrerUrl, isWelshTranslationAvailable, useServiceNavigation)
   }
 }

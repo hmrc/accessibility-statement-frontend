@@ -1,0 +1,86 @@
+@*
+ * Copyright 2023 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import uk.gov.hmrc.govukfrontend.views.html.components.GovukLayout
+@import uk.gov.hmrc.govukfrontend.views.html.components.GovukBackLink
+@import uk.gov.hmrc.govukfrontend.views.html.components.TwoThirdsMainContent
+@import uk.gov.hmrc.hmrcfrontend.views.html.helpers.HmrcStandardFooter
+@import uk.gov.hmrc.hmrcfrontend.views.html.helpers.HmrcStandardHeader
+@import uk.gov.hmrc.hmrcfrontend.views.html.helpers.HmrcHead
+@import uk.gov.hmrc.hmrcfrontend.views.html.helpers.HmrcScripts
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.hmrcstandardpage.HmrcStandardPageParams
+@import uk.gov.hmrc.govukfrontend.views.html.components.FixedWidthPageLayout
+@import uk.gov.hmrc.govukfrontend.views.html.components.GovukExitThisPage
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language._
+
+@this(
+        govukLayout: GovukLayout,
+        hmrcStandardHeader: HmrcStandardHeader,
+        hmrcStandardFooter: HmrcStandardFooter,
+        hmrcHead: HmrcHead,
+        hmrcScripts: HmrcScripts,
+        govukBackLink: GovukBackLink,
+        govukExitThisPage: GovukExitThisPage,
+        defaultMainContent: TwoThirdsMainContent,
+        fixedWidthPageLayout: FixedWidthPageLayout,
+        deprecatedLanguageSelect: DeprecatedLanguageSelect
+)
+@(params: HmrcStandardPageParams, useServiceNavigation: Boolean = false)(contentBlock: Html)(implicit request: RequestHeader, messages: Messages)
+@import params._
+
+@headerBlock = {
+@hmrcStandardHeader(
+    serviceUrl = serviceURLs.serviceUrl,
+    serviceName = serviceName,
+    userResearchBanner = banners.userResearchBanner,
+    phaseBanner = banners.phaseBanner,
+    displayHmrcBanner = true,
+    // By doing this, we force the service navigation language select to be hidden if using the deprecated language select
+    // This works because there is no service name. If serviceName were defined, the Service Navigation would still display
+    isWelshTranslationAvailable = if(useServiceNavigation) isWelshTranslationAvailable else false
+)
+}
+
+@beforeContent = {
+@if(isWelshTranslationAvailable && !useServiceNavigation) {
+    @deprecatedLanguageSelect(LanguageSelect(
+        if (messages.lang.code == "cy") Cy else En,
+        (En, "/accessibility-statement/hmrc-frontend/language/en"),
+        (Cy, "/accessibility-statement/hmrc-frontend/language/cy")
+    ))
+}
+
+@backLink.map { link =>
+    @govukBackLink(link)
+}
+@exitThisPage.map { exit =>
+    @govukExitThisPage(exit)
+}
+
+    <link href='@controllers.routes.Assets.versioned("stylesheets/application.css")' media="screen" rel="stylesheet" type="text/css" />
+}
+
+@govukLayout(
+    pageTitle = pageTitle,
+    headBlock = Some(hmrcHead(headBlock = templateOverrides.additionalHeadBlock)),
+    headerBlock = Some(headerBlock),
+    scriptsBlock = Some(hmrcScripts(scriptsBlock = templateOverrides.additionalScriptsBlock)),
+    beforeContentBlock = templateOverrides.beforeContentBlock orElse Some(beforeContent),
+    footerBlock = Some(hmrcStandardFooter(accessibilityStatementUrl = serviceURLs.accessibilityStatementUrl)),
+    mainContentLayout = templateOverrides.mainContentLayout orElse Some(defaultMainContent(_)),
+    assetPath = None,
+    pageLayout = templateOverrides.pageLayout orElse Some(fixedWidthPageLayout(_))
+)(contentBlock)

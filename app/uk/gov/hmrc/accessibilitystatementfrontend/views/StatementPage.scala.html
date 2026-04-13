@@ -28,12 +28,12 @@
         mobileStatementTemplate: MobileStatementTemplate,
         hmrcReportTechnicalIssueHelper: HmrcReportTechnicalIssueHelper)
 
-@(statement: AccessibilityStatement, referrerUrl: Option[String], isWelshTranslationAvailable: Boolean)(
+@(statement: AccessibilityStatement, referrerUrl: Option[String], isWelshTranslationAvailable: Boolean, useServiceNavigation: Boolean = false)(
         implicit request: Request[?], messages: Messages, appConfig: AppConfig)
 
 @import statement.*
 
-@layout(pageTitle = platformSpecificMessage("general.page-title", serviceName), isWelshTranslationAvailable) {
+@layout(pageTitle = platformSpecificMessage("general.page-title", serviceName), isWelshTranslationAvailable, useServiceNavigation) {
  @{statementTemplate match {
     case VOA     => voaStatementTemplate(statement, referrerUrl)
     case CHGV    => chgvStatementTemplate(statement, referrerUrl)
