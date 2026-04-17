@@ -6,31 +6,64 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  - where we use 'show me an example' in a link, we have not said that this is to show an example of accounting methods
-  - certain screen readers do not move to the top of the page when a new page is loaded
-  - if you go back to a previous page, some of the information you already entered will not always be shown - you may need to re-enter it
-  - some of our error messages will not help you to understand what the error may be or how to fix it
-  - the 'Back' link does not always appear below the Welsh language toggle
+  - Throughout the service there are headings that are not marked up correctly, so they will not be read out correctly by screen readers.
+  - On the page where users have chosen to save their answers and come back later, the page title does not sufficiently describe the content of the page.
+  - There is an empty heading on the ‘Save and come back later’ page which may be read out as a blank heading by screen readers.
+  - On the ‘Choose how to get your tax letters’ page there is a list that has not been set up correctly and can cause issues with how it’s read out by screen readers.
+  - There is a table on the ‘Sign up complete’ page that does not have a caption, so screen readers navigating by table may not be able to identify the purpose of the table.
+  - On some of the start date pages, if users do not enter an allowable value for the day field, both the day and year fields are highlighted. This makes it hard to know which field is causing the error.
+  - On the final check your answers page, bold text is used to show users are in a new section. This causes the section to appear like a table when it is not. Partially-sighted screen-reader users may try to navigate by table but will not be able to find one on the page.
+  - On user-generated PDFs that save the confirmation page information, the GOV.UK logo link does not have a label and is read out as a blank value to screen-reader users.
+  - The user-generated PDFs that save the confirmation page information have not been coded correctly and screen readers may not pronounce the words correctly.
+  - Fields for business name and email address may allow users to populate these details from data saved in their browser.
+  - Different versions of the Welsh language toggle are shown throughout the service. This may cause confusion when changing the language.
+  - On the check answers pages, multiple ‘change’ links go to the same page, even though they have different visually-hidden link text. This may be confusing for screen-reader users.
+  - When Welsh is selected, there are multiple instances of visually hidden ‘Error’ text not being translated into Welsh. This text may not be pronounced correctly by screen readers as it has not been marked up with the correct language attribute.
 milestones:
   - description: |
-      Where we use 'show me an example' in a link, we have not said that this is to show an example of accounting methods.
-    date: 2024-07-31
+      Visual and semantic hierarchy do not match. This fails WCAG 2.2 Success Criterion 1.3.1 Info and Relationships.
+    date: 2026-05-29
   - description: |
-      Certain screen readers do not move to the top of the page when a new page is loaded.
-    date: 2024-07-31
+      The page title on the ‘save and come back later’ page is not descriptive. This fails WCAG 2.2 Success Criterion 2.4.2 Page Titled.
+    date: 2026-05-29
   - description: |
-      If you go back to a previous page, some of the information you already entered will not always be shown - you may need to re-enter it.
-    date: 2024-07-31
+      There is an empty `<h2>` tag on the notification banner on the ‘Save and come back later’ page. This fails WCAG 2.2 Success Criterion 4.1.2 Name, Role, Value.
+    date: 2026-05-29
   - description: |
-      Some of our error messages will not help you to understand what the error may be or how to fix it.
-    date: 2024-07-31
+      On the ‘Choose how to get your tax letters’ page the `<ol>` has child elements that are not allowed. This fails WCAG 2.2 Success Criterion 1.3.1 Info and Relationships.
+    date: 2026-05-29
   - description: |
-      The 'Back' link does not always appear below the Welsh language toggle.
-    date: 2024-07-31
-serviceLastTestedDate: 2024-02-26
+      On the ‘Sign up complete’ page there is a table with no caption. This fails WCAG 2.2 Success Criterion 1.3.1 Info and Relationships.
+    date: 2026-05-29
+  - description: |
+      On some start date pages both day and year fields are highlighted when only the day field is in error. This fails WCAG 2.2 Success Criterion 3.3.1 Error Identification.
+    date: 2026-05-29
+  - description: |
+      On the final check answers page some summary list elements are styled as tables. This fails WCAG 2.2 Success Criterion 1.3.1 Info and Relationships.
+    date: 2026-05-29
+  - description: |
+      In user-generated PDFs saving form results the GOV.UK label is not given an accessible name. This fails WCAG 2.2 Success Criterion 4.1.2 Name, Role, Value and 2.4.4 Link Purpose (In Context).
+    date: 2026-05-29
+  - description: |
+      In user-generated PDFs saving form results some words are not programmatically marked as separate words, meaning screen readers read them as one word. This fails WCAG 2.2 Success Criterion 1.3.1 Info and Relationships.
+    date: 2026-05-29
+  - description: |
+      Input fields are missing autocomplete attributes which may mean the user will not be able to use the browser's saved data to populate these fields easily. This fails WCAG 2.2 Success Criterion 1.3.5 Identify Input Purpose.
+    date: 2026-05-29
+  - description: |
+      There are different labels for the language toggle links on some pages despite links having the same purpose. This fails WCAG 2.2 Success Criterion 3.2.4 Consistent Identification.
+    date: 2026-05-29
+  - description: |
+      On check answers pages some change links go to the same destination despite having different visually hidden link text. This fails WCAG 2.2 Success Criterion Consistent Identification.
+    date: 2026-05-29
+  - description: |
+      When page language is set to Welsh there are multiple instances of visually hidden ‘Error’ text written in English but given ‘lang=”cy”’ attribute. This fails WCAG 2.2 Success Criterion 3.1.2 Language of Parts.
+    date: 2026-05-29
+serviceLastTestedDate: 2026-04-07
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2024-04-17
+statementLastUpdatedDate: 2026-04-17
+wcagVersion: 2.2 AA
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
 liveOrClassic: Live Services - Edinburgh
