@@ -34,7 +34,7 @@
 )
 
 @(statement: AccessibilityStatement, referrerUrl: Option[String])(
-        implicit messages: Messages, appConfig: AppConfig)
+        implicit messages: Messages, appConfig: AppConfig, requestHeader: RequestHeader)
 
 @defining(statement) { implicit statement =>
 
