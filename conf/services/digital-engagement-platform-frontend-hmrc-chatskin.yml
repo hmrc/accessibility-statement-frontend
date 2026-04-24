@@ -6,11 +6,46 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /ask-hmrc
 contactFrontendServiceId: digital-engagement-platform-frontend
-complianceStatus: full
-serviceLastTestedDate: 2024-08-05
+complianceStatus: partial
+accessibilityProblems:
+  - Keyboard-navigation users may be confused when their focus is transferred to a text field after selecting ‘turn notification sound off/on’, ‘decrease/increase chat size’ and ‘send message’ buttons.
+  - When users navigate to the page, the page title describes the chat pop-up, rather than main page content. Screen-reader users may not be able to correctly identify the page's purpose.
+  - Screen-reader users may find it difficult to correctly identify page structure with the chat pop up as it’s missing a landmark that helps screen-reader users to identify its purpose.
+  - Heading levels differ between the page’s markup structure and the page’s visual structure, which could be a problem for screen-reader users.
+  - When providing feedback, screen-reader users may not be able to identify important instructions as it has not been marked up correctly.
+  - Users are not notified that the service is in error when the chat has not loaded due to technical issues or when JavaScript has been disabled.  (this covers 2 separate issues 10690 and 10684)
+  - Chat pop-ups get in the way of the elements on the main page, which prevents keyboard-navigation users from correctly identifying which element the focus is on.
+  - The white icon on a yellow background that displays when the chat pop-up is expanded or collapsed is hardly visible.
+  - Screen-reader users may believe that a message is coming from an advisor when it is coming from the digital assistant (bot), as it is not announced correctly.
+  - The PDF of the chat transcript does not have a correct page structure and does not allow a ‘reflow’ state. The timestamped copies are marked up as heading but placed after the message, so heading does not describe content because it's placed after the relevant content. This makes it difficult to understand document structure correctly, especially users with motor impairment, who rely on a screen reader or screen magnification to view the PDF.
+  - Users who rely on screen magnification may find it difficult to use the chat, as the content gets obscured when the page is ‘zoomed in’.
+milestones:
+  - description: Focus shifted to ‘Enter the message’ text field when they interact with ‘Turn notification sound off/on’, ‘Decrease/increase chat size’ and ‘Send message’ buttons . This fails WCAG 2.2 success criterion 3.2.2 On Input Criterion Description.
+    date: 2026-05-31
+  - description: The page title on the page with chat pop up is set to 'popup- Ask [HMRC-GOV.UK](http://hmrc-gov.uk/)' and does not describe the main page content. This fails WCAG 2.2 success criterion 2.4.2 Page Titled Criterion Description.
+    date: 2026-05-31
+  - description: Message subheadings have different heading levels which can mislead screen-reader users about page structure. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships Criterion Description.
+    date: 2026-05-31
+  - description: Hint text is not associated with textarea. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships Criterion Description.
+    date: 2026-05-31
+  - description: Missing error pages or error messages when service is in error state. This fails WCAG 2.2 success criterion 3.3.1 Error Identification and 4.1.3 Status Messages Criterion Description.
+    date: 2026-05-31
+  - description: Chat pop-up obstructs elements in the focus. This fails WCAG 2.2 success criterion 2.4.11 Focus Not Obscured (Minimum) Criterion Description.
+    date: 2026-05-31
+  - description: Chat pop-up button icon is not passing minimum colour contrast ratio. This fails WCAG 2.2 success criterion 1.4.11 Non-text Contrast Criterion Description.
+    date: 2026-05-31
+  - description: Incorrect ‘Advisor said’ heading applied on messages from digital assistant This fails WCAG 2.2 success criterion 2.4.6 Headings and Labels Criterion Description.
+    date: 2026-05-31
+  - description: PDF does not provide correct tagging of elements and not accommodating `reflow` state. This fails WCAG 2.2 success criterion 2.4.6 Headings and Labels Criterion Description.
+    date: 2026-05-31
+  - description: Chat is not displaying content fully, preventing users from reading all content and accessing some of the functionality when the chat is zoomed in. This fails WCAG 2.2 success criterion 1.4.4 Resize Text Criterion Description.
+    date: 2026-05-31
+
+
+serviceLastTestedDate: 2026-01-27
 statementVisibility: public
-statementCreatedDate: 2022-08-17
-statementLastUpdatedDate: 2025-02-26
-businessArea: Customer Services Group (CSG)
+statementCreatedDate: 2026-01-28
+statementLastUpdatedDate: 2026-04-23
+businessArea: Digital Engagement Product (DEP) CDIO CDPO
 ddc: DDC Yorkshire
 typeOfService: Live services
