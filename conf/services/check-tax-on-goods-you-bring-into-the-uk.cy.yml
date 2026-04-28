@@ -39,7 +39,7 @@ milestones:
 - description: Pan gaiff tudalennau eu dangos yn Gymraeg, mae peth o’r cynnwys yn aros yn Saesneg ac nid oes ganddo’r nodwedd iaith berthnasol i ddangos ei fod mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 3.1.2 Language of Parts.
   date: 2026-08-30
 - description: Nid yw defnyddwyr pob tro yn cael cyfle i adolygu’r data a ddarperir. Nid yw hyn yn bodloni maen prawf llwyddiant Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 - 3.3.4 Error Prevention (Legal, Financial, Data).
-  date: 2026-04-30
+  date: 2026-08-30
 serviceLastTestedDate: 2025-07-04
 statementVisibility: public
 statementCreatedDate: 2022-05-17
