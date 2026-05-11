@@ -1,0 +1,10 @@
+serviceName: One Login Onboarding
+serviceDescription: |
+  This accessibility statement applies to how people onboard to GDS One Login.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /sign-in-to-hmrc-online-services/one-login-onboarding
+contactFrontendServiceId: one-login-onboarding-frontend
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2026-05-11
+statementLastUpdatedDate: 2026-05-11
