@@ -1,0 +1,10 @@
+serviceName: Agent Registration
+serviceDescription: |
+  Use this service to register for an HMRC agent services account.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /agent-registration
+contactFrontendServiceId: agent-registration
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2026-05-15
+statementLastUpdatedDate: 2026-05-15
