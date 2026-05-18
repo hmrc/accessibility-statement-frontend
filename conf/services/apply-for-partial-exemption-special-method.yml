@@ -1,7 +1,7 @@
 serviceName: Apply for a Partial exemption special method
-serviceHeaderName: Apply for a Partial exemption special method
+serviceHeaderName: Apply for a Partial Exemption Special Method
 serviceDescription: |
-  Use this form to apply for a Partial exemption special method.
+  Use this form to apply for a Partial Exemption Special Method.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/apply-for-partial-exemption-special-method
 contactFrontendServiceId: GForm
@@ -21,4 +21,4 @@ milestones:
 serviceLastTestedDate: 2021-04-26
 statementVisibility: public
 statementCreatedDate: 2021-08-03
-statementLastUpdatedDate: 2022-03-31
+statementLastUpdatedDate: 2026-05-15
