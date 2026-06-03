@@ -5,7 +5,7 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-clients-vat-on-eu-sales/manage-ioss-returns-payments-clients
 contactFrontendServiceId: ioss-intermediary-dashboard-frontend
 complianceStatus: full
-serviceLastTestedDate: 2026-03-30
+serviceLastTestedDate: 2026-06-03
 statementVisibility: public
 statementCreatedDate: 2026-03-30
 statementLastUpdatedDate: 2026-06-03
