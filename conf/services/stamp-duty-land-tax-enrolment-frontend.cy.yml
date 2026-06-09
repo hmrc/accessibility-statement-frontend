@@ -1,0 +1,9 @@
+serviceName: Ymrestru ar gyfer Trethi Stamp
+serviceDescription: Mae ymrestru ar gyfer Trethi Stamp yn galluogi defnyddiwr i gofrestru neu i ddatgofrestru ar gyfer gwasanaethau’r llywodraeth sy’n ymwneud â Threthi Stamp sydd wedi’i darparu gan Gyllid a Thollau EF.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /enrol-for-stamp-taxes
+contactFrontendServiceId: stamp-duty-land-tax-enrolment-frontend
+complianceStatus: noncompliant
+statementVisibility: public
+statementCreatedDate: 2026-06-09
+statementLastUpdatedDate: 2026-06-09
