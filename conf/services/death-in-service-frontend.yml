@@ -1,0 +1,10 @@
+serviceName: Report death in service
+serviceDescription: |
+  Use this service to report Death in Service from a registered pension scheme.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /death-in-service-frontend
+contactFrontendServiceId: death-in-service-frontend
+complianceStatus: noncompliant
+statementVisibility: draft
+statementCreatedDate: 2026-06-15
+statementLastUpdatedDate: 2026-06-15
