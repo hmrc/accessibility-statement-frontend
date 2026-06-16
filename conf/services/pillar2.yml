@@ -4,11 +4,21 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /report-pillar2-top-up-taxes
 contactFrontendServiceId: pillar2-frontend
-complianceStatus: full
-serviceLastTestedDate: 2025-08-27
+complianceStatus: partial
+accessibilityProblems:
+  - On ‘Manage group details’ and ‘Accounting period change successful’, the summary card headings and change links have the same text, making it difficult to tell them apart.
+  - When some of the scrollable tables have focus, there is not enough colour contrast. Some users will not know which element has keyboard focus.
+milestones:
+  - description: |
+      Identical headings and change links. This fails WCAG 2.2 success criterion 2.4.4: Link purpose (in context) and 2.4.6: Headings and Labels.
+    date: 2026-07-31
+  - description: |
+      The colour of the keyboard focus used for some of the scrollable tables does not meet the required contrast ratio. This fails WCAG 2.2 success criterion 1.4.11 Non-text Contrast.
+    date: 2026-07-31
+serviceLastTestedDate: 2026-06-03
 statementVisibility: public
 statementCreatedDate: 2024-04-29
-statementLastUpdatedDate: 2025-08-29
+statementLastUpdatedDate: 2026-06-16
 businessArea: Customer Compliance Group (CCG)
 ddc: DDC Newcastle
 liveOrClassic:
