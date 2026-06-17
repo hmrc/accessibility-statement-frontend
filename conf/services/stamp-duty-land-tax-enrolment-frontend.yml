@@ -1,14 +1,12 @@
 serviceName: Enrol for Stamp Taxes
-serviceHeaderName: Claim a VAT refund as an organisation not registered for VAT
-serviceDescription: |
-  Enrol for Stamp Taxes allows a user to enrol or de-enrol to Stamp Tax related government services provided by HM Revenue and Customs.
+serviceDescription: Enrol for Stamp Taxes allows a user to enrol or de-enrol to Stamp Tax related government services provided by HM Revenue and Customs.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /enrol-for-stamp-taxes
 contactFrontendServiceId: stamp-duty-land-tax-enrolment-frontend
 complianceStatus: noncompliant
 statementVisibility: public
 statementCreatedDate: 2026-06-08
-statementLastUpdatedDate: 2026-06-08
+statementLastUpdatedDate: 2026-06-16
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Telford
 liveOrClassic: Live Services - Telford
