@@ -2,23 +2,11 @@
 serviceName: |
   Dod o hyd i feddalwedd sy’n cydweddu â’r cynllun Troi Treth yn Ddigidol ar gyfer Treth Incwm
 serviceDescription: |
-  Mae’r cynllun Troi Treth yn Ddigidol ar gyfer Treth Incwm (MTD ITSA) yn
-  ffordd newydd o roi gwybod i CThEF am enillion. Mae’r cynllun yn galluogi
-  unigolion neu eu hasiantau awdurdodedig gofrestru ar gyfer y cynllun MTD ar
-  gyfer Treth Incwm, naill ai’n wirfoddol neu dan gyfarwyddyd.
-
-  Mae’r cyfarwyddyd yn berthnasol i gwsmeriaid busnes sydd naill ai â busnes
-  hunangyflogedig neu fusnes eiddo (neu’r ddau) sydd â throsiant sy’n fwy na
-  £10,000.
-
-  Y defnyddwyr y mae’r gwasanaeth hwn ar eu cyfer yw’r rhai sydd wedi
-  cofrestru, neu sydd wedi cael eu cofrestru ar gyfer MTD ITSA. Bydd hi’n
-  ofynnol iddynt gadw cofnodion digidol ar gyfer eu busnes ac i gyflwyno
-  data’n ymwneud ag incwm a threuliau i CThEF drwy ddefnyddio meddalwedd. Bydd
-  y gwasanaeth yn eu helpu i ddod o hyd i feddalwedd sy’n cydweddu ag MTD,
-  sydd wedi mynd drwy broses cymeradwyo CThEF, sy’n bodloni eu hanghenion
-  personol a’u hanghenion busnes; fel y gallant gyflwyno’u data i CThEF a
-  bodloni eu hymrwymiadau o ran MTD.
+  Mae’r cynllun Troi Treth yn Ddigidol ar gyfer Treth Incwm yn caniatáu unig
+  fasnachwyr, landlordiaid ac asiantau awdurdodedig i roi gwybod i CThEF am 
+  incwm a threuliau. Mae’r gwasanaeth hwn yn helpu defnyddwyr i ddod o hyd 
+  i gynhyrchion meddalwedd sydd ar gael ar gyfer y cynllun Troi Treth yn 
+  Ddigidol ar gyfer Treth Incwm sy’n bodloni eu hanghenion.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /find-making-tax-digital-income-tax-software
 contactFrontendServiceId: ITSC
