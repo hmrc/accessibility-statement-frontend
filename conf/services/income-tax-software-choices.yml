@@ -2,20 +2,11 @@
 serviceName: |
   Find software that works with Making Tax Digital for Income Tax
 serviceDescription: |
-  Making Tax Digital for Income Tax is a new way of reporting earnings to HMRC.
-  It allows individuals or their authorised agents to sign them up to MTD for
-  Income Tax, either voluntarily or because they are mandated.
+  Making Tax Digital for Income Tax allows sole traders, landlords and 
+  authorised agents to report income and expenses to HMRC. This service 
+  helps users find software products available for Making Tax Digital 
+  for Income Tax that meet their needs.
 
-  The mandation applies to business customers with either a self-employment
-  business and or property business with a turnover greater than £10,000.
-
-  Anyone who has signed up, or has been signed up, to MTD ITSA are the intended
-  users of the service. They will be required to keep digital records for their
-  business and submit income and expenses data to HMRC via software. The service
-  will help them find an MTD  compatible software product, which has gone
-  through the HMRC recognition process, that meets their business and personal
-  needs; so that they can submit their data to HMRC and meet their MTD
-  obligations.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /find-making-tax-digital-income-tax-software
 contactFrontendServiceId: ITSC
