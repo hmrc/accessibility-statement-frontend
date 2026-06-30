@@ -1,0 +1,26 @@
+serviceName:
+  "Opt to tax land and buildings: revoke an option to tax after 20 years (VAT1614J)"
+serviceHeaderName:
+  "Opt to tax land and buildings: revoke an option to tax after 20 years (VAT1614J)"
+serviceDescription: |
+  Use this form to tell HMRC about properties that you want to revoke an option after 20 years (VAT1614J)
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /submissions/new-form/opt-to-tax-land-and-buildings-revoke-option-to-tax-after-20-years-vat1614j
+contactFrontendServiceId: GForm
+complianceStatus: partial
+accessibilityProblems:
+  - there may be some links, headings or labels that do not provide enough information about what to do next, or what happens next
+  - some error messages may not include all of the information you need to help you to correct an error
+milestones:
+  - description: |
+      Some links, headings and labels may not provide enough information about what to do next, or what happens next.
+      This does not meet WCAG 2.1 success criterion 2.4.6 (Headings and Labels) and success criterion 2.4.9 (Link Purpose).
+    date: 2027-03-31
+  - description: |
+      Some error messages may not include all of the information you need to help you to correct an error.
+      This does not meet WCAG 2.1 success criterion 3.3.3 (Error Suggestion).
+    date: 2027-03-31
+serviceLastTestedDate: 2026-06-30
+statementVisibility: public
+statementCreatedDate: 2026-06-30
+statementLastUpdatedDate: 2026-06-30
