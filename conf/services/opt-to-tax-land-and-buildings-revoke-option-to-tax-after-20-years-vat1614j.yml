@@ -1,11 +1,11 @@
 serviceName:
-  "Opt to tax land and buildings: apply for permission to opt to tax (VAT1614H)"
+  "Opt to tax land and buildings: revoke an option to tax after 20 years (VAT1614J)"
 serviceHeaderName:
-  "Opt to tax land and buildings: apply for permission to opt to tax (VAT1614H)"
+  "Opt to tax land and buildings: revoke an option to tax after 20 years (VAT1614J)"
 serviceDescription: |
-  Use this form to apply for permission to opt to tax land and buildings (VAT1614H)
+  Use this form to tell HMRC about properties that you want to revoke an option after 20 years (VAT1614J)
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /submissions/new-form/opt-to-tax-land-and-buildings-apply-for-permission-to-opt-to-tax-vat1614H
+serviceUrl: /submissions/new-form/opt-to-tax-land-and-buildings-revoke-option-to-tax-after-20-years-vat1614j
 contactFrontendServiceId: GForm
 complianceStatus: partial
 accessibilityProblems:
