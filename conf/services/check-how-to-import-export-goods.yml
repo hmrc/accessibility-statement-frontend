@@ -1,0 +1,21 @@
+serviceName: Check How to Import or Export Goods
+serviceHeaderName: Check How to Import or Export Goods
+serviceDescription: |
+  The Check How to Import or Export Goods service allows you to check what you need to have in place during the
+  import or export process. The service will help you to understand the rules, licences or certificates that apply
+  to your goods, to pay the right tax and duty for your goods, register your business for trading and declare your
+  goods to clear the UK border.
+serviceDomain: check-how-to-import-export-goods.service.gov.uk
+serviceUrl: /
+contactFrontendServiceId: STW-GS
+complianceStatus: partial
+accessibilityProblems:
+  - All the filter search result pages have the same title which makes it difficult to distinguish between them
+milestones:
+  - description: All the filter search result page titles are identical. This fails WCAG 2.1 success criterion 2.4.2 Page titled
+    date: 2022-04-30
+serviceLastTestedDate: 2022-02-25
+statementVisibility: public
+statementType: C-HGV
+statementCreatedDate: 2021-07-14
+statementLastUpdatedDate: 2021-03-02
