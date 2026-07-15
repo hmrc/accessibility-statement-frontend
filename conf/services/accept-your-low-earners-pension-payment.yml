@@ -7,8 +7,13 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /accept-your-low-earners-pension-payment
 contactFrontendServiceId: low-earners-pensions-payment-frontend
 complianceStatus: partial
+accessibilityProblems:
+  - Placeholder problem
+milestones:
+  - description: Placeholder milestone
+    date: 2026-07-13
 serviceLastTestedDate: 2026-07-13
-statementVisibility: public
+statementVisibility: draft
 statementCreatedDate: 2026-07-15
 statementLastUpdatedDate: 2026-07-15
 businessArea: Customer Strategy & Tax Design (CS&TD)
