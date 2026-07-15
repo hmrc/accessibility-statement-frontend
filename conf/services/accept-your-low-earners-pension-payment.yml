@@ -1,0 +1,18 @@
+serviceName: Accept your low earners pension payment
+serviceDescription: |
+  Accept your low earners pension payment (LEPP) is a trusted, easy to use, self-serve digital service which allows 
+  eligible individuals to accept a tax-free payment. This payment is owed to certain individuals who have paid into a a
+  net pay workplace pension scheme while earning below or close to their Personal Allowance.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /accept-your-low-earners-pension-payment
+contactFrontendServiceId: low-earners-pensions-payment-frontend
+complianceStatus: partial
+serviceLastTestedDate: 2026-07-13
+statementVisibility: public
+statementCreatedDate: 2026-07-15
+statementLastUpdatedDate: 2026-07-15
+businessArea: Customer Strategy & Tax Design (CS&TD)
+ddc: DDC Yorkshire
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
