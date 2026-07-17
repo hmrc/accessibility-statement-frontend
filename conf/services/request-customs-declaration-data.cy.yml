@@ -1,0 +1,47 @@
+serviceName: Cael data tollau am ddatganiadau mewnforio ac allforio
+serviceDescription: |
+  Mae cael data tollau am ddatganiadau mewnforio ac allforio yn wasanaeth digidol sy’n galluogi masnachwyr, datganwyr a thrydydd partïon i ofyn am ddata mewnforio ac allforio a ddelir gan CThEF a’i lawrlwytho.
+  Mae’r gwasanaeth yn darparu mynediad at ddata o systemau CHIEF a’r Gwasanaeth Datganiadau Tollau (CDS).
+  Gall defnyddwyr gynhyrchu adroddiadau masnach drwy blatfform diogel hunanwasanaeth a’u lawrlwytho fel ffeiliau CSV i helpu i ddiwallu eu hanghenion busnes a chydymffurfio.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /request-customs-declaration-data
+contactFrontendServiceId: request-customs-declaration-data
+complianceStatus: partial
+accessibilityProblems:
+  - Ar rai tudalennau, gall defnyddwyr darllenydd sgrin ei chael yn anodd deall diben y meysydd mewnbwn gan nad yw’r meysydd cysylltiedig wedi’u grwpio gyda’i gilydd. Yn ogystal, nid yw’r cwestiynau a’r testunau awgrym wedi’u cysylltu’n gywir â’r rhain.
+  - Ar dudalen ‘Adroddiadau sydd ar gael’, gall defnyddwyr darllenydd sgrin ei chael yn anodd deall y tablau gan nad ydynt yn disgrifio eu diben yn uniongyrchol.
+  - Ar dudalen ‘Eich manylion cyswllt’, nid yw’r rhestr ddisgrifiadau wedi’i chodio’n gywir, felly efallai na fydd defnyddwyr darllenydd sgrin yn ymwybodol o nifer yr eitemau yn y rhestr o gyfeiriadau e-bost eilaidd na’r cynnwys pâr.
+  - Ar dudalen ‘Pa ystod dyddiadau rydych am i’r adroddiadau ei chynnwys?’, nid yw’r meysydd mewnbwn sydd mewn gwall wedi’u nodi, gan ei gwneud yn anodd i ddefnyddwyr gywiro’r gwall.
+  - Ar dudalen ‘Gwirio’ch atebion cyn cyflwyno’ch cais’, nid yw’r testun cudd yn weledol ar gyfer dolen newid ‘E-bost hysbysu’ yn disgrifio ei ddiben yn gywir i ddefnyddwyr darllenydd sgrin.
+  - Wrth newid i’r Gymraeg, mae’r testun ‘rhybudd’ cudd yn weledol ar dudalen ‘Cadarnhau rhif EORI ar gyfer mynediad trydydd parti’ yn aros yn Saesneg. Ni fydd yn cael ei ynganu’n gywir gan ddarllenwyr sgrin.
+  - Ar rai tudalennau, mae’r togl iaith yn defnyddio’r byrddau ‘ENG’ a ‘CYM’ ac ar rai eraill yn defnyddio’r geiriau ‘English’ a ‘Cymraeg’, a all beri dryswch i ddefnyddwyr.
+  - Wrth ddefnyddio sgrin fach, fel dyfeisiau symudol neu wrth gynyddu maint ffont, nid yw cynnwys fel cyfeiriadau e-bost yn ffitio’n llawn ar y sgrîn.
+milestones:
+  - description: |
+      Nid yw elfennau ffurflen cysylltiedig wedi’u grwpio’n gywir gan ddefnyddio maes-set a chwedl. Ac nid yw testunau awgrym wedi’u cysylltu’n rhaglennol â rheolyddion y ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+    date: 2027-03-31
+  - description: |
+      Mae capsiynau ar goll ar dablau. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+    date: 2027-03-31
+  - description: |
+      Nid yw’r rhestr ddisgrifiadau wedi’i chodio gyda thymor disgrifio. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+    date: 2027-03-31
+  - description: |
+      Nid oes adnabod gwall ar elfennau’r ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.3.1 Adnabod Gwallau dyddiad i’w gadarnhau
+    date: 2027-03-31
+  - description: |
+      Nid yw’r testun cudd ar gyfer y ddolen newid yn disgrifio ei ddiben. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 2.4.4: Diben Dolenni (mewn Cyd-destun) a 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+    date: 2027-03-31
+  - description: |
+      Mae’r briodoledd ‘lang’ briodol ar goll i nodi bod y cynnwys mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.1.2 Iaith Rhannau. dyddiad i’w gadarnhau
+    date: 2027-03-31
+  - description: |
+      Mae’r togl iaith yn defnyddio testun gwahanol ar gyfer yr opsiynau ar draws tudalennau. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.2.4 Adnabod Cyson. dyddiad i’w gadarnhau
+    date: 2027-03-31
+  - description: |
+      Wrth ddefnyddio sgrin fach, megis ar ddyfais symudol, neu wrth gynyddu maint y ffont, nid yw’r cynnwys yn ffitio ar y sgrîn ac mae’n rhaid sgrolio i’r ochr. Nid yw hyn yn bodloni methu maen prawf llwyddiant WCAG 2.2 1.4.10 Ail-lifo (AA). dyddiad i’w gadarnhau
+    date: 2027-03-31
+serviceLastTestedDate: 2026-06-06
+statementVisibility: public
+statementCreatedDate: 2025-11-12
+statementLastUpdatedDate: 2026-06-06
