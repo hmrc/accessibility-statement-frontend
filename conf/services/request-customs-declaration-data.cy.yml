@@ -18,7 +18,7 @@ accessibilityProblems:
   - Wrth ddefnyddio sgrin fach, fel dyfeisiau symudol neu wrth gynyddu maint ffont, nid yw cynnwys fel cyfeiriadau e-bost yn ffitio’n llawn ar y sgrîn.
 milestones:
   - description: |
-      Nid yw elfennau ffurflen cysylltiedig wedi’u grwpio’n gywir gan ddefnyddio maes-set a chwedl. Ac nid yw testunau awgrym wedi’u cysylltu’n rhaglennol â rheolyddion y ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+      Nid yw elfennau ffurflen cysylltiedig wedi’u grwpio’n gywir gan ddefnyddio maes-set a chwedl. Ac nid yw testunau awgrym wedi’u cysylltu’n rhaglennol â rheolyddion y ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. Dyddiad i’w gadarnhau.
     date: 2027-03-31
   - description: |
       Mae capsiynau ar goll ar dablau. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. Dyddiad i’w gadarnhau.
