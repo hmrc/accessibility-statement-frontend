@@ -21,25 +21,25 @@ milestones:
       Nid yw elfennau ffurflen cysylltiedig wedi’u grwpio’n gywir gan ddefnyddio maes-set a chwedl. Ac nid yw testunau awgrym wedi’u cysylltu’n rhaglennol â rheolyddion y ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
     date: 2027-03-31
   - description: |
-      Mae capsiynau ar goll ar dablau. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+      Mae capsiynau ar goll ar dablau. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. Dyddiad i’w gadarnhau.
     date: 2027-03-31
   - description: |
-      Nid yw’r rhestr ddisgrifiadau wedi’i chodio gyda thymor disgrifio. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+      Nid yw’r rhestr ddisgrifiadau wedi’i chodio gyda thymor disgrifio. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 1.3.1 Gwybodaeth a Pherthnasoedd. Dyddiad i’w gadarnhau.
     date: 2027-03-31
   - description: |
-      Nid oes adnabod gwall ar elfennau’r ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.3.1 Adnabod Gwallau dyddiad i’w gadarnhau
+      Nid oes adnabod gwall ar elfennau’r ffurflen. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.3.1 Adnabod Gwallau. Dyddiad i’w gadarnhau.
     date: 2027-03-31
   - description: |
-      Nid yw’r testun cudd ar gyfer y ddolen newid yn disgrifio ei ddiben. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 2.4.4: Diben Dolenni (mewn Cyd-destun) a 1.3.1 Gwybodaeth a Pherthnasoedd. dyddiad i’w gadarnhau
+      Nid yw’r testun cudd ar gyfer y ddolen newid yn disgrifio ei ddiben. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 2.4.4: Diben Dolenni (mewn Cyd-destun) a 1.3.1 Gwybodaeth a Pherthnasoedd. Dyddiad i’w gadarnhau.
     date: 2027-03-31
   - description: |
-      Mae’r briodoledd ‘lang’ briodol ar goll i nodi bod y cynnwys mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.1.2 Iaith Rhannau. dyddiad i’w gadarnhau
+      Mae’r briodoledd ‘lang’ briodol ar goll i nodi bod y cynnwys mewn iaith wahanol. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.1.2 Iaith Rhannau. Dyddiad i’w gadarnhau.
     date: 2027-03-31
   - description: |
-      Mae’r togl iaith yn defnyddio testun gwahanol ar gyfer yr opsiynau ar draws tudalennau. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.2.4 Adnabod Cyson. dyddiad i’w gadarnhau
+      Mae’r togl iaith yn defnyddio testun gwahanol ar gyfer yr opsiynau ar draws tudalennau. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.2 3.2.4 Adnabod Cyson. Dyddiad i’w gadarnhau.
     date: 2027-03-31
   - description: |
-      Wrth ddefnyddio sgrin fach, megis ar ddyfais symudol, neu wrth gynyddu maint y ffont, nid yw’r cynnwys yn ffitio ar y sgrîn ac mae’n rhaid sgrolio i’r ochr. Nid yw hyn yn bodloni methu maen prawf llwyddiant WCAG 2.2 1.4.10 Ail-lifo (AA). dyddiad i’w gadarnhau
+      Wrth ddefnyddio sgrin fach, megis ar ddyfais symudol, neu wrth gynyddu maint y ffont, nid yw’r cynnwys yn ffitio ar y sgrîn ac mae’n rhaid sgrolio i’r ochr. Nid yw hyn yn bodloni methu maen prawf llwyddiant WCAG 2.2 1.4.10 Ail-lifo (AA). Dyddiad i’w gadarnhau.
     date: 2027-03-31
 serviceLastTestedDate: 2026-06-06
 statementVisibility: public
