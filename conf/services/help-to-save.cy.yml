@@ -4,11 +4,114 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /help-to-save
 contactFrontendServiceId: help-to-save
-complianceStatus: noncompliant
+complianceStatus: partial
+accessibilityProblems:
+  - Ar sawl tudalen, nid yw strwythur y penawdau wedi’i osod mewn ffordd resymegol ac nid yw’r penawdau yn disgrifio’r cynnwys. Mae hyn yn golygu ei bod hi’n bosibl y gallai defnyddwyr darllenydd sgrin gael trafferth deall strwythur y dudalen a dod o hyd i’r wybodaeth berthnasol.
+  - Ar hafan y cyfrif, mae’r panel llywio ar ochr y dudalen wedi’i nodi fel rhan o’r bar llywio eilaidd. Mae’n bosibl y gallai defnyddwyr darllenydd sgrin gael trafferth wrth lywio’r cynnwys hwn.
+  - Ar y dudalen ‘rheoli’ch cyfeiriad e-bost’, mae yna destun ffont trwm sy’n edrych fel pennawd ond sydd heb gael ei nodi fel pennawd Mae’n bosibl y gallai defnyddwyr darllenydd sgrin gael trafferth deall strwythur y dudalen.
+  - Mae sawl problem gyda fersiwn PDF y neges ‘sut mae eich cyfrif yn gweithio’. Does dim teitl i’r ddogfen a does dim iaith wedi’i gosod. Nid yw’r penawdau, na’r elfennau strwythurol eraill, wedi’u nodi’n gywir. Nid yw’r PDF yn gweithio ar ffurf ‘ail-lifo PDF’ – mae hyn yn ei gwneud hi’n anodd chwyddo’r ddogfen.
+  - Yn yr adran ‘cyfrif’, nid yw’r cysylltiad ‘ewch yn syth i’r prif gynnwys’ yn osgoi’r cysylltiad i symud yn ôl. Mae hyn yn golygu na fydd defnyddwyr bysellfwrdd yn gallu hepgor gwybodaeth ailadroddus, a gall y defnyddwyr hyn golli eu lle ar y dudalen.
+  - Ar y dudalen ‘bwrw golwg dros drafodion’, mae yna sawl problem gyda’r gydran i hidlo yn ôl dyddiad. Nid yw’r testun awgrym wedi’i gysylltu’n gywir â’r meysydd mewnbwn ar gyfer nodi dyddiad, felly nid yw’r testun awgrym yn cael ei ddarllen gan y darllenydd sgrin wrth lywio drwy feysydd y ffurflen. Mae gan y cysylltiad ‘ailosod’ label hygyrch a gweladwy gwahanol, felly mae’n bosibl na all defnyddwyr meddalwedd adnabod lleferydd ddefnyddio’u llais i lywio’r dudalen.
+  - Y neges gwall sy’n gysylltiedig â’r meysydd mewnbwn ar gyfer nodi dyddiad ar y dudalen ‘bwrw golwg dros drafodion’ yw ‘Nodwch ddyddiad dilys’, ac nid yw’n rhoi rhagor o wybodaeth ynghylch sut i gywiro’r gwall penodol.
+  - Ar y dudalen ‘eich negeseuon’, mae’r negeseuon yn ymddangos mewn colofnau yn hytrach na mewn tabl, felly nid ydynt yn cael eu darllen gan ddarllenydd sgrin. Mae’r negeseuon wedi’u codio fel botymau, ond yn ymddangos fel cysylltiadau. Mae’n bosibl y gallai defnyddwyr darllenydd sgrin gael trafferth deall strwythur y dudalen.
+  - Os byddai defnyddwyr yn dewis y botwm ‘ail-anfon yr e-bost’ wrth gadarnhau eu cyfeiriad e-bost, nid oes neges yn ymddangos i gadarnhau bod y botwm wedi ail-anfon yr e-bost yn llwyddiannus.
+  - Ar y dudalen ‘eich manylion’, nid oes gan y cysylltiadau ‘newid’ y testun ychwanegol cywir er mwyn i dechnoleg gynorthwyol allu rhoi cyd-destun o ran pwrpas y cysylltiad. Mae hyn yn golygu bod pob cysylltiad yn ymddangos fel ‘change change’ i ddarllenydd sgrin.
+  - Os bydd defnyddwyr yn nodi e-bost yn y fformat anghywir, bydd y broses ddilysu yn dechrau. Wrth i’r defnyddwyr gywiro’r gwall a pharhau i’r tudalennau nesaf, bydd yr wybodaeth gywir a nodwyd yn cael ei dileu os byddant yn llywio yn ôl i’r dudalen ‘cyfeiriad e-bost’. Mae hyn yn golygu y bydd yn rhaid i ddefnyddwyr nodi’r wybodaeth eto.
+  - Os byddai mwy nag un gwall yn codi ar y dudalen ‘taliadau Barclaycard’, dim ond y gwall cyntaf sy’n cael ei nodi fel gwall. Mae hyn yn ei gwneud hi’n anoddach i ddefnyddwyr gywiro’r gwallau eraill.
+  - Mae yna achosion lle mae defnyddwyr yn cael eu hallgofnodi o’r gwasanaeth os nad oes gweithgarwch, a hynny heb rybudd na chyfle iddynt ymestyn eu sesiwn. Mae’n bosibl y gallai defnyddwyr gael trafferth os byddai angen rhagor o amser arnynt i gwblhau tasgau ac, o ganlyniad i hynny, byddant yn gorfod ail-ddechrau’r broses.
+  - Ar y dudalen ‘taliadau Barclaycard’, nid yw’r labelau gweladwy ar gyfer y maes ‘dyddiad dod i ben y cerdyn’ yn cyd-fynd â’r labelau sy’n ymddangos i’r sawl sy’n defnyddio technoleg gynorthwyol. O ganlyniad i hyn, mae’n bosibl na all defnyddwyr meddalwedd adnabod lleferydd ddefnyddio’u llais i lywio’r dudalen.
+  - Ar y dudalen ‘a ydych yn siŵr eich bod am gau eich cyfrif?’, mae 2 ranbarth yn rhannu’r un enw hygyrch. Mae hyn yn golygu ei bod hi’n bosibl y gallai defnyddwyr darllenydd sgrin gael trafferth llywio’r dudalen hon.
+  - Nid yw’r cwestiynau ‘faint o arian rydych am ei godi/ei dalu i mewn’ wedi’u strwythuro’n gywir. Nid yw’r labelau na’r testun awgrym wedi’u cysylltu â’r maes mewnbwn, ac felly mae’n bosibl y gallai defnyddwyr darllenydd sgrin golli’r wybodaeth hon. Nid yw’r label gweladwy yn cyd-fynd â’r label sy’n gysylltiedig â’r maes mewnbwn, a gallai hyn ddrysu defnyddwyr darllenydd sgrin.
+  - Nid yw’r labelau hygyrch ar gyfer logo’r Apple App Store a’r Google Store yn cyd-fynd â’r cysylltiadau gweladwy. Gallai hyn ddrysu defnyddwyr darllenwyr sgrin. Mae hyn yn waeth ar dudalennau sydd wedi’u gosod yn Gymraeg, gan nad yw’r testun delwedd wedi’i gyfieithu.
+  - Ar y tudalennau ‘faint o arian rydych am ei godi/ei dalu i mewn’, os bydd gwall yn codi, nid yw’r negeseuon gwall wedi’u cysylltu â’r blwch mewnbwn. Mae hyn yn golygu y gallai defnyddwyr darllenydd sgrin golli’r wybodaeth hon.
+  - Ar rai tudalennau, mae gan y dangosydd ffocws gyferbynnedd isel yn erbyn y cefndir. Mae hyn yn ei gwneud hi’n anodd i ddefnyddwyr â golwg gwan weld y dangosyddion hyn ar y dudalen.
+  - Ar y dudalen ‘os ydych o’r farn eich bod yn gymwys am gyfrif Cymorth i Gynilo’, nid oes modd defnyddio bysellfwrdd i gael mynediad at un o’r cysylltiadau. Mae hyn yn golygu na all defnyddwyr sy’n llywio gan ddefnyddio bysellfwrdd gael mynediad at y cysylltiad hwn.
+  - Ar y dudalen ‘taliadau Barclaycard’, os bydd gwall yn codi, mae’r holl wybodaeth a nodwyd gan y defnyddiwr yn cael ei dileu ac mae’n rhaid ei nodi eto.
+  - Os bydd y cysylltiad ‘allgofnodi’ ym mhennawd y dudalen yn cael ei ddefnyddio, neu os bydd ffenestr naid terfyn amser yn ymddangos, bydd y dudalen sy’n dilyn yn dangos y geiriau ‘nid oedd modd cwblhau’ch cais’. Mae’n bosibl na fydd y defnyddwyr yn cael cadarnhad eu bod wedi allgofnodi’n llwyddiannus.
+  - Ar y dudalen ‘taliadau Barclaycard’, mae’n bosibl nad yw’r meysydd mewnbwn ar gyfer nodi manylion y cerdyn yn rhoi’r cyfle i ddefnyddwyr ddefnyddio data sydd wedi’u cadw’n flaenorol yn ei borwr i ragboblogi’r meysydd.
+  - Mae gan rai o’r cysylltiadau a’r botymau gyferbynnedd isel yn erbyn y cefndir. Mae hynny’n ei gwneud hi’n anodd i ddefnyddwyr sy’n defnyddio ffocws y bysellfwrdd, neu sy’n hofran dros y cysylltiadau a’r botymau hyn, ddarllen y testun.
+  - Wrth chwyddo’r dudalen ‘taliadau Barclaycard’, mae’r testun ‘Visa’ yn y maes ar gyfer nodi rhif cerdyn yn gorgyffwrdd â’r rhif sy’n cael ei nodi gan y defnyddwyr, a hynny’n ei gwneud hi’n anodd ei ddarllen.
+  - Yn yr adran ‘cyfrif’, mae’r ffenestr naid terfyn amser wedi torri’n rhannol, a gall y cynnwys hwn fynd ar goll wrth chwyddo’r sgrin.
+  - Wrth osod yr iaith yn Gymraeg, mae gan y cysylltiadau ‘newid’ destun sydd wedi’i guddio o’r golwg sydd heb gael ei gyfieithu ac sydd heb ei godio’n gywir. Mae hyn yn gallu ei gwneud hi’n anodd i ddarllenwyr sgrin ynganu’r cynnwys yn gywir.
+  - Nid yw trefn yr elfennau llywio, megis y cysylltiad ‘polisi preifatrwydd’ yn y troedyn, yn gyson ar draws y gwasanaeth. Mae hyn yn golygu ei bod hi’n bosibl y gallai defnyddwyr sy’n dibynnu ar gysondeb gael trafferth dod o hyd i’r elfennau hyn.
+  - Nid yw lleoliad y togl Cymraeg na’r cysylltiad i roi gwybod am broblem dechnegol yn gyson ar draws y gwasanaeth. Mae hyn yn golygu ei bod hi’n bosibl na fyddai defnyddwyr yn sylweddoli bod gan yr eitemau yr un pwrpas.
+  - Nid yw’r neges gwall sy’n gysylltiedig â’r maes mewnbwn ‘a ydych am gael e-byst atgoffa ynghylch cynilion?’ yn berthnasol i’r gwall sy’n codi mewn gwirionedd. Mae hyn yn golygu y gallai defnyddwyr gael trafferth cywiro’r gwall.
+  - Ar y dudalen ‘taliadau Barclaycard’, mae’r dangosydd ffocws ar goll ar gyfer 2 dab olaf y bysellfwrdd, sy’n golygu ei bod hi’n bosibl y gallai defnyddwyr golli eu lle ar y dudalen.
+  - Ar y dudalen ‘taliadau Barclaycard’, nid yw’r negeseuon gwall sy’n gysylltiedig â’r maes mewnbwn ‘rhif y cerdyn’ yn ddigon penodol. Mae’n bosibl y gallai defnyddwyr gael trafferth gwybod yr hyn sydd o’i le gyda’r wybodaeth a nodwyd ganddynt.
+  - Ar y dudalen ‘taliadau Barclaycard’, mae yna bennawd sydd wedi’i guddio o’r golwg ac nid yw’n disgrifio’r cynnwys sy’n ei ddilyn. Mae’n bosibl y gallai defnyddwyr darllenydd sgrin gael trafferth deall strwythur y dudalen a dod o hyd i wybodaeth.
+milestones:
+  - description: Ar sawl tudalen, nid yw strwythur y penawdau wedi’i osod mewn ffordd resymegol, ac mae cynnwys wedi’i roi o dan benawdau amherthnasol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar hafan y cyfrif, mae’r panel llywio ar ochr y dudalen yn ymddangos fel elfen llywio, ond nid yw wedi’i nodi yn y rhanbarth llywio. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘rheoli’ch cyfeiriad e-bost’ mae yna destun sy’n ymddangos fel pennawd ond sydd heb ei nodi fel pennawd. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y PDF ‘sut mae eich cyfrif yn gweithio’, nid yw’r iaith wedi’i gosod, does dim teitl ar y dudalen, nid yw pob elfen wedi’u nodi’n gywir ac nid yw’r PDF yn gweithio ar ffurf ‘ail-lifo PDF’. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships), 2.4.2 (Page Titled), 3.1.1 (Language of Page) a 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: 'Yn yr adran ‘cyfrif’, nid yw’r cysylltiad i symud yn syth ymlaen yn osgoi’r cysylltiad i symud yn ôl. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.1 (Bypass Blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.'
+    date: 2026-12-31
+  - description: 'Ar y dudalen ‘bwrw golwg dros drafodion’, mae’r meysydd mewnbwn ar gyfer nodi dyddiad yn cynnwys testun awgrym nad yw’n gysylltiedig â’r meysydd hynny. Mae’r dudalen hefyd yn defnyddio cysylltiad hidlo gyda labelau gweladwy a labelau hygyrch gwahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) na 2.5.3 (Label in Name) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.'
+    date: 2026-12-31
+  - description: Ar y dudalen ‘bwrw golwg dros drafodion’, nid yw’r negeseuon gwall sy’n gysylltiedig â’r meysydd mewnbwn ar gyfer nodi dyddiad yn ddigon penodol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘eich negeseuon’, mae’r negeseuon yn ymddangos fel cysylltiadau ond wedi’u codio fel botymau, ac yn ymddangos mewn colofnau yn lle mewn tabl. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Wrth ddewis y botwm ‘ail-anfon yr e-bost’, nid yw’r defnyddwyr yn cael cadarnhad bod y botwm hwn wedi gweithio. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘eich manylion’, mae’r cysylltiadau i newid rhywbeth i gyd yn ymddangos fel cysylltiad ‘newid’, heb unrhyw gyd-destun o’r hyn y byddai’r defnyddwyr yn ei newid. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (Link Purpose (In Context)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: 'Os byddai’r broses o ddilysu yn codi, a’r broses honno yn cael ei bodloni ar gyfer y maes ‘cyfeiriad e-bost’, mae’r wybodaeth gywir a nodwyd yn cael ei dileu os byddai’r defnyddwyr yn llywio yn ôl i’r dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.7 (Redundant Entry) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.'
+    date: 2026-12-31
+  - description: Ar y dudalen ‘taliadau Barclaycard’, os byddai mwy nag un maes yn gofyn am broses o ddilysu, mae’r negeseuon gwall sy’n ymddangos dim ond yn nodi’r gwall sy’n gysylltiedig â’r maes cyntaf. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: UMae yna achosion lle mae defnyddwyr yn cael eu hallgofnodi o’r gwasanaeth heb unrhyw rybudd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘taliadau Barclaycard’, nid yw’r enwau hygyrch ar gyfer y meysydd mewnbwn ar gyfer nodi dyddiad dod i ben yn dechrau gyda’r label gweladwy. Nid yw hyn yn bodloni maen prawf llwyddiant 2.5.3 (Label in Name) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘a ydych yn siŵr eich bod am gau eich cyfrif?’, mae 2 ranbarth llywio sy’n rhannu’r un enw hygyrch, er bod ganddynt gynnwys gwahanol. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Mae’r cwestiynau ‘faint o arian rydych am ei godi/ei dalu i mewn’ yn cynnwys elfennau label a thestun awgrym nad yw’n gysylltiedig, a labelau gweladwy a labelau hygyrch gwahanol ar gyfer y meysydd mewnbwn. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) na 2.5.3 (Label in Name) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Nid yw’r labelau hygyrch ar gyfer logo’r Apple App Store a’r Google Store yn cyd-fynd â’r labelau gweladwy. Nid yw hyn yn bodloni maen prawf llwyddiant 2.5.3 (Label in Name) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Nid yw’r neges gwall sy’n gysylltiedig â’r meysydd mewnbwn ‘faint o arian rydych am ei godi/ei dalu i mewn’ yn gysylltiedig â’r hyn a nodwyd gan ddefnyddio aria-describedby. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Mae yna achosion lle mae cyferbynnedd y dangosydd ffocws yn rhy isel yn erbyn y cefndir. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.11 (Non-text Contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘os ydych o’r farn eich bod yn gymwys am gyfrif Cymorth i Gynilo’, mae yna gysylltiad nid oes modd defnyddio bysellfwrdd i gael mynediad ato. Nid yw hyn yn bodloni maen prawf llwyddiant 2.1.1 (Keyboard) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘taliadau Barclaycard’, mae’r broses o ddilysu yn dileu’r holl wybodaeth a nodwyd gan y defnyddwyr. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.7 (Redundant Entry) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Nid yw teitl y dudalen sy’n ymddangos ar ôl allgofnodi yn disgrifio cynnwys y dudalen. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘taliadau Barclaycard ’, nid yw’r meysydd mewnbwn yn cael eu rhagboblogi. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Mae cyferbynnedd rhai elfennau yn rhy isel wrth ddefnyddio ffocws y bysellfwrdd, neu wrth hofran dros y cynnwys. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Wrth chwyddo’r dudalen ‘taliadau Barclaycard’ 400%, mae’r testun ‘Visa’ yn y maes ar gyfer nodi rhif y cerdyn yn gorgyffwrdd â’r hyn sy’n cael ei nodi gan y defnyddwyr, ac mae’r cyferbynnedd yn rhy isel. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.3 (Contrast (Minimum)) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Yn yr adran ‘cyfrif’, mae cynnwys y ffenestr naid terfyn amser yn torri wrth chwyddo 400%. Nid yw hyn yn bodloni maen prawf llwyddiant 1.4.10 (Reflow) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘eich manylion’, mae priodoledd iaith berthnasol y cysylltiadau ‘newid’ yn ymddangos yn gywir ar y dudalen Saesneg, ond nid yn y Gymraeg. Nid yw hyn yn bodloni maen prawf llwyddiant 3.1.2 (Language of parts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: 'Nid yw trefn yr elfennau llywio yn y penawdau a throedynnau yn gyson ar draws y gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 3.2.3 (Consistent Navigation) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.'
+    date: 2026-12-31
+  - description: 'Nid yw’r togl Cymraeg na’r cysylltiad i roi gwybod am broblem dechnegol yn gyson ar draws y gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 3.2.4 (Consistent Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2'
+    date: 2026-12-31
+  - description: Nid yw’r neges gwall ar gyfer maes mewnbwn ‘a ydych am gael e-byst atgoffa ynghylch cynilion?’ yn ddefnyddiol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘taliadau Barclaycard’, mae’r dangosydd ffocws ar goll ar gyfer 2 dab y bysellfwrdd. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.7 (Focus Visible) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: r y dudalen ‘taliadau Barclaycard’, nid yw’r negeseuon gwall yn ddigon penodol. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+  - description: Ar y dudalen ‘taliadau Barclaycard’, mae yna bennawd sydd wedi’i guddio o’r golwg ac nid yw’n disgrifio’r cynnwys sy’n ei ddilyn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-12-31
+serviceLastTestedDate: 2026-06-04
 statementVisibility: public
 statementCreatedDate: 2022-09-20
-statementLastUpdatedDate: 2022-09-23
+statementLastUpdatedDate: 2026-07-30
 businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Live services
+wcagVersion: 2.2 AA
