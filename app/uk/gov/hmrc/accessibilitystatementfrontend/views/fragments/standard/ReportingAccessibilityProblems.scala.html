@@ -16,16 +16,15 @@
 
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.reportAccessibilityProblemLink
 @import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
-@import uk.gov.hmrc.hmrcfrontend.config.ServiceNavigationConfig
 
-@this(serviceNavigationConfig: ServiceNavigationConfig)
+@this()
 
 @(referrerUrl: Option[String])(implicit messages: Messages, appConfig: AppConfig, statement: AccessibilityStatement, requestHeader: RequestHeader)
 
 @import statement.*
 
 @accessibilityProblemUrl=@{
-  serviceNavigationConfig.propagateViaQueryParam(reportAccessibilityProblemLink(appConfig.reportAccessibilityProblemUrl, statement.contactFrontendServiceId, referrerUrl))
+ appConfig.reportAccessibilityProblemUrl
 }
 
 <h2 class="govuk-heading-l">@{messages("reporting.heading")}</h2>
