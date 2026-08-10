@@ -1,0 +1,13 @@
+serviceName: Make a charity tax repayment claim
+serviceDescription: |
+  The Make a charity tax repayment claim service allows organisations and agents to claim tax repayments 
+  for Gift Aid, Other Income and top-up payments under the Gift Aid Small Donations Scheme (GASDS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /charities-management
+contactFrontendServiceId: charities-claims
+complianceStatus: full
+serviceLastTestedDate: 2026-07-28
+statementVisibility: draft
+statementCreatedDate: 2026-07-30
+statementLastUpdatedDate: 2026-08-06
+wcagVersion: 2.2 AA

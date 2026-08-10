@@ -1,0 +1,13 @@
+serviceName: Gwneud hawliad am ad-daliad treth elusennau
+serviceDescription: |
+  Mae’r gwasanaeth Gwneud hawliad ad-daliad treth elusennau yn caniatáu i sefydliadau ac asiantau i hawlio ad-daliadau 
+  treth ar gyfer Rhodd Cymorth, Incwm arall a thaliadau atodol o dan y Cynllun Cyfraniadau Bach Rhodd Cymorth (GASDS).
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /charities-management
+contactFrontendServiceId: charities-claims
+complianceStatus: full
+serviceLastTestedDate: 2026-07-28
+statementVisibility: draft
+statementCreatedDate: 2026-07-30
+statementLastUpdatedDate: 2026-08-06
+wcagVersion: 2.2 AA
