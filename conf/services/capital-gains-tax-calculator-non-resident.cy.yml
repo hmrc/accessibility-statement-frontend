@@ -10,45 +10,37 @@ serviceUrl: /calculate-your-capital-gains/non-resident
 contactFrontendServiceId: CGT
 complianceStatus: partial
 accessibilityProblems:
-  - daeth gwasanaeth defnyddwyr i ben heb rybudd na’r opsiwn i barhau.
-  - nid oedd y berthynas rhwng y cynnwys ar y dudalen gwirio’ch atebion yn glir.
-  - ni wnaeth y cysylltiad i symud syth ymlaen ar gyfer gwall gweithio fel y disgwyl.
-  - nid oedd y cysylltiadau’n ddisgrifiadol.
-  - nid oedd trefn y dudalen yn cyd-fynd â’r cynllun gweledol.
-  - ni chafodd cyflwr y gydran manylion ei gyfleu i ddefnyddwyr darllenydd sgrin.
-  - nid oedd rhai elfennau a oedd yn bresennol gyda lliw a ddefnyddiwyd ar gyfer dangos ffocws arddull yn pasio’r gymhareb ddisgwyliedig.
-  - ni ddefnyddiwyd pennawd i gyflwyno cynnwys.
-  - nid oedd y testun a ddefnyddiwyd ar gyfer y gydran ‘manylion’ yn ddisgrifiadol i ddefnyddwyr darllenydd sgrin.
-  - Mae’n bosibl ni fydd darllenwyr sgrin yn gallu ynganu botymau radio sydd â chynnwys sydd wedi’i nythu’n gymhleth.
-  - Nid yw meysydd mewnbynnu arian cyfred pob tro yn rhoi arweiniad clir neu gymorth fformatio cyson. Gallai hyn gael effeith ar ddefnyddwyr sy’n dibynnu ar dechnolegau cynorthwyol.
+  - Ar derfyn amser y gwasanaeth, defnyddir teitl y dudalen i rybuddio defnyddwyr darllenwyr sgrin am y terfyn amser, ac o ganlyniad nid yw’n cael ei adnabod fel pennawd gan darllenydd sgrin.
+  - Ar sawl tudalen, nid yw’r testun awgrym sy’n ymwneud â’r cwsmer wedi’i osod yn gywir gyda phob botwm radio. Mae hyn yn golygu y caiff ei ddarllen sawl gwaith gan darllenwyr sgrin pan nad yw’n berthnasol.
+  - Ar dudalen ‘Treth Enillion Cyfalaf i’w thalu ar gyfer 2026/27’, mae penawdau dyblyg yn cael eu darllen gan ddarllenwyr sgrin, a all ddrysu defnyddwyr gan nad yw hyn yn cyd-fynd â hierarchaeth weledol y dudalen.
+  - Ar sawl tudalen, caiff gwybodaeth a fewnbynnir ei dileu wrth lywio’n ôl ac ymlaen drwy’r gwasanaeth. Mae hyn yn golygu y bydd yn rhaid i ddefnyddwyr ail-nodi’r wybodaeth.
+  - Ar dudalennau lle mae’r defnyddiwr yn nodi symiau arian, nid yw’r blwch mewnbwn wedi’i labelu’n gywir gan y symbol ‘£’, yn hytrach na label y cwestiwn ar gyfer technoleg gynorthwyol.
+  - Mae’r dudalen gwestiwn gyntaf yn dod i ben ar ôl 15 munud pan nad oes unrhyw weithgarwch. Nid yw’n rhoi’r cyfle i ddefnyddwyr ymestyn eu sesiwn, a gall hyn fod yn ddryslyd gan eu bod yn cael eu tywys yn annisgwyl i dudalen terfyn amser y gwasanaeth ac yn gorfod dechrau eto.
+  - Pan gaiff dilysu ei sbarduno ar dudalen ‘Rhyddhad Man Preswylio Preifat’, nid oes crynodeb o’r gwall. Mae hyn yn golygu y gallai defnyddwyr gael trafferth adnabod y broblem.
+  - Mae sawl tudalen yn dangos negeseuon gwall nad ydynt yn nodi’r broblem yn gywir. Mae hyn yn golygu y galli defnyddwyr gael trafferth eu cywiro.
 milestones:
-  - description: "Daeth gwasanaeth defnyddwyr i ben heb rybudd neu heb gael cyfle i ymestyn eu hamser yn y gwasanaeth. Gall hyn fod yn rhwystredig i ddefnyddwyr, yn enwedig y rhai sy’n cael trafferth mewnbynnu gwybodaeth. Nid yw hyn yn bodloni meini prawf llwyddiant 2.2.1 (timing adjustable) a 2.2.6 (timeouts) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Nid oedd y berthynas rhwng y cynnwys ar y dudalen ‘Gwirio’ch atebion’ yn glir, roedd <divs> wedi’i ddefnyddio i arddangos cynnwys. Gall hyn ei gwneud hi’n anodd i ddefnyddwyr darllenydd sgrin wybod pa wybodaeth sy’n berthnasol. Nid yw hyn yn bodloni meini prawf llwyddiant 1.3.1 (info and relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Ni wnaeth y cysylltiad i symud syth ymlaen ar gyfer gwall gweithio fel y disgwyl, gan nad oedd y Dynodydd Defnyddiwr yr oedd y ‘href’ yn cyfeirio ato yn bodoli. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.1 (bypass blocks) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Oherwydd y ffordd y mae’r tabl wedi’i farcio, nid yw’n glir at beth y mae'r cysylltiadau 'Newid' yn cyfeirio, ac yn ychwanegol at hyn, nid yw’r testun sydd wedi’i guddio’n weledol yn glir ychwaith. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.4 (link purpose in context) a 2.4.9 (link purpose link only) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Mae’r cysylltiadau Iaith yn ymddangos ar ôl y cysylltiad ‘yn ôl’ yn weledol ond yn cael ffocws ar gyfer defnyddwyr bysellfwrdd cyn hynny. Gall hyn ddrysu defnyddwyr. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.2 (meaningful sequence) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Yn Internet Explorer dangoswyd y gydran manylion yn ei chyflwr estynedig. Fodd bynnag, ni chafodd y cyflwr hwn ei gyfleu i ddefnyddwyr darllenydd sgrin. Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (name, role, value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Methodd lliw’r dangosydd ffocws a ddefnyddiwyd ar draws y gwasanaeth â bodloni’r gymhareb ddisgwyliedig o 3:1 i basio meini prawf llwyddiant 1.4.11 ‘Non-text Contrast AA’, Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1, a gall fod yn anodd i rai defnyddwyr ei ganfod. Nid yw hyn yn bodloni meini prawf llwyddiant 1.4.11 (non-text contrast) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Ni ddefnyddiwyd y pennawd i gyflwyno’r cynnwys, nodwyd swm gan y <h1>. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.6. (headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Nid oedd y testun a ddefnyddiwyd ar gyfer y gydran ‘manylion’ yn ddisgrifiadol i ddefnyddwyr darllenydd sgrin wrth lywio tu allan i gyd-destun y dudalen. Nid yw hyn yn bodloni meini prawf llwyddiant 2.4.6. (headings and labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Cynnwys cymhleth wedi’i nythu yn yr opsiwn radio (A). Nid yw hyn yn bodloni maen prawf llwyddiant 4.1.2 (Name, Role, Value) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-  - description: "Mewnbynnau arian cyfred (A). Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.2 (Labels or Instructions) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.1."
-    date: 2026-04-05
-serviceLastTestedDate: 2024-01-15
+  - description: "Ar dudalen terfyn amser y gwasanaeth, mae’r H1 wedi cael rôl rhybudd, sy’n disodli’r rôl y pennawd. Nid yw hyn yn bodloni maen Prawf Llwyddiant WCAG 2.2, sef 1.3.1 Gwybodaeth a Perthnasoedd."
+    date: 2026-10-30
+  - description: "Ar sawl tudalen, nid yw’r testun awgrym ar gyfer y set maes cyfan wedi’i gysylltu’n gywir â phob botwm radio. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2."
+    date: 2026-10-30
+  - description: "Ar dudalen ‘Treth Enillion Cyfalaf i’w thalu ar gyfer 2026/27’, mae H2au sydd wedi’u cuddio o’r golwg gyda’r un testun â’r H3au sy’n dod o’u blaen, ac nid yw hyn yn darparu hierarchaeth penawdau ystyrlon. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2."
+    date: 2026-10-30
+  - description: "Nid yw data bob amser yn cael ei gadw wrth lywio’n ôl ac ymlaen drwy’r gwasanaeth. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.7 (Redundant Entry) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2."
+    date: 2026-10-30
+  - description: "Mae blychau mewnbwn arian yn cael eu labelu gan ARIA gyda’r symbol ‘£’, sy’n disodli’r ‘label’ a fwriadwyd. Mae hyn yn methu meini prawf llwyddiant WCAG 2.2, sef 2.5.3 Label yn yr Enw a 1.3.1 Gwybodaeth a Perthnasoedd."
+    date: 2026-10-30
+  - description: "Mae tudalen y cwestiwn cyntaf ar goll deialog terfyn amser. Nid yw hyn yn bodloni maen prawf llwyddiant 2.2.1 (Timing Adjustable) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2."
+    date: 2026-10-30
+  - description: "Nid oes crynodeb gwallau ar dudalen ‘Rhyddhad Preswylfa Breifat’ pan gaiff dilysu ei sbarduno. Mae hyn yn methu maen prawf llwyddiant WCAG 2.2, sef 4.1.3 Negeseuon Statws."
+    date: 2026-10-30
+  - description: "Cafodd y gwasanaeth ei brofi ddiwethaf ar 27 Ebrill 2026, a gwiriwyd ei fod yn cydymffurfio â safon ‘AA’ Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2."
+    date: 2026-10-30
+serviceLastTestedDate: 2026-04-27
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2025-09-11
+statementLastUpdatedDate: 2026-08-11
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Live services
+wcagVersion: 2.2 AA

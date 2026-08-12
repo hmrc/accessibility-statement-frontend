@@ -9,45 +9,37 @@ serviceUrl: /calculate-your-capital-gains/non-resident
 contactFrontendServiceId: CGT
 complianceStatus: partial
 accessibilityProblems:
-  - users were timed out of the service without warning or the option to continue.
-  - relationships between content on the check your answers page was not clear.
-  - the error skip link did not function as expected.
-  - links were not descriptive.
-  - the sequence on the page did not match the visual layout.
-  - the state of the details component was not relayed to screen reader users.
-  - some elements present that had a colour used for styling focus indication that did not pass the expected ratio.
-  - heading was not used to introduce content.
-  - text used for the ‘details’ component was not descriptive to screen reader users.
-  - some radio buttons contain complex nested content which may not be announced properly by screen readers.
-  - currency input fields do not always provide clear guidance or consistent formatting support, which may affect users relying on assistive technologies.
+  - On the service timeout, the page heading is used to alert screen-reader users about the timeout, and as a result it is not recognised as a heading by screen readers.
+  - On several pages, the hint text relating to the question has not been set up correctly with each radio button. This means it will be read multiple times by screen readers when it’s not relevant.
+  - On the ‘Capital Gains Tax to pay for 2026/27’ page, there are duplicated headings read out by screen readers which may confuse users as it does not match the page’s visual hierarchy.
+  - On several pages, user-entered information is deleted when navigating backward and forward through the service. This means users will have re-enter the information.
+  - On pages where the user enters monetary amounts, the input box has not been labelled correctly by the ‘£’ symbol, instead of the question label for assistive technology.
+  - The first question page times out after 15 minutes when there’s no activity. It does not give users the opportunity to extend their session which may be disorientating as they are unexpectedly taken to a service timed out page and have to start again.
+  - When validation is triggered on the ‘private residence relief’ page, there is no error summary. This means users may have a harder time identifying the problem.
+  - Several pages display error messages that do not identify the problem correctly. This means users may struggle to correct them.
 milestones:
-  - description: "Users were timed out of the service without warning or given the opportunity to extend their time in the service. This doesn’t meet WCAG 2.1 success criteria 2.2.1 (timing Adjustable) and 2.2.6 (timeouts)."
-    date: 2026-04-05
-  - description: "The relationship between the content on the ‘Check your answers’ page was not clear, <divs> had been used to display content. This may make it difficult for screen reader users to tell which information is related. This doesn’t meet WCAG 2.1 success criteria 1.3.1 (info and relationships)."
-    date: 2026-04-05
-  - description: "The error skip link did not function as expected, as the ID that the ‘href’ referred to did not exist. This doesn’t meet WCAG 2.1 success criteria 2.4.1 (bypass blocks)."
-    date: 2026-04-05
-  - description: "Due to the way in which the table is marked up, it is not clear what the ‘Change’ links refer to and in addition to this, the visually hidden text is not clear either. This doesn’t meet WCAG 2.1 success criteria 2.4.4 (link purpose in context) and 2.4.9 (link purpose link only)."
-    date: 2026-04-05
-  - description: "The Language links appear after the ‘back’ link visually but receive focus for keyboard users prior to it. This may disorientate users. This doesn’t meet WCAG 2.1 success criteria 1.3.2 (meaningful sequence)."
-    date: 2026-04-05
-  - description: "In internet Explorer the details component was displayed in its expanded state. However, this state was not relayed to screen reader users. This doesn’t meet WCAG 2.1 success criteria 4.1.2 (name, role, value)."
-    date: 2026-04-05
-  - description: "The colour of the focus indicator used throughout the service failed to meet the expected ratio of 3:1 to pass WCAG 2.1 success criteria 1.4.11 Non-text Contrast AA and may prove difficult for some users to perceive. This doesn’t meet WCAG 2.1 success criteria 1.4.11 (non-text contrast)."
-    date: 2026-04-05
-  - description: "The heading had not been used to introduce the content, the <h1> stated an amount. This doesn’t meet WCAG 2.1 success criteria 2.4.6 (headings and labels)."
-    date: 2026-04-05
-  - description: "The text used for the ‘details’ component was not descriptive to screen reader users when navigating out of the context of the page. This doesn’t meet WCAG 2.1 success criteria 2.4.6 (headings and labels)."
-    date: 2026-04-05
-  - description: "Complex content nested in radio option (A). This doesn’t meet WCAG 2.1 success criterion 4.1.2 (Name, Role, Value)."
-    date: 2026-04-05
-  - description: "Currency inputs (A). This doesn’t meet WCAG 2.1 success criterion 3.3.2 (Labels or Instructions)."
-    date: 2026-04-05
-serviceLastTestedDate: 2024-01-15
+  - description: "On the service timeout page the H1 has been given the role of alert which overrides the heading role. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships."
+    date: 2026-10-30
+  - description: "On several pages hint text for the entire fieldset is not correctly associated with each radio. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships."
+    date: 2026-10-30
+  - description: "On the ‘Capital Gains Tax to pay for 2026/27’ page there are visually hidden H2s with the same text as the H3s before them which does not provide a meaningful heading hierarchy. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships."
+    date: 2026-10-30
+  - description: "Data is not always maintained when navigating backward and forward through the service. This fails WCAG 2.2 success criterion 3.3.7 Redundant Entry."
+    date: 2026-10-30
+  - description: "Currency input boxes are aria-labelled by a ‘£’ symbol, which overrides the intended ‘label’. This fails WCAG 2.2 success criteria 2.5.3 Label in Name and 1.3.1 Info and Relationships."
+    date: 2026-10-30
+  - description: "The first question page is missing a timeout dialog. This fails WCAG 2.2 success criterion 2.2.1 Timing Adjustable."
+    date: 2026-10-30
+  - description: "The ‘private residence relief’ page does not have an error summary when validation is triggered. This fails WCAG 2.2 success criteria 4.1.3 Status messages."
+    date: 2026-10-30
+  - description: "Several pages have misleading error messages. This fails WCAG 2.2 success criteria 3.3.3 Error Suggestion."
+    date: 2026-10-30
+serviceLastTestedDate: 2026-04-27
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2025-09-11
+statementLastUpdatedDate: 2026-08-11
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Worthing
 liveOrClassic: Live Services - Worthing
 typeOfService: Live services
+wcagVersion: 2.2 AA
