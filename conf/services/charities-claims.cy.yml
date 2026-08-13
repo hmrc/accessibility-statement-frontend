@@ -7,7 +7,7 @@ serviceUrl: /charities-management
 contactFrontendServiceId: charities-claims
 complianceStatus: full
 serviceLastTestedDate: 2026-07-28
-statementVisibility: draft
+statementVisibility: public
 statementCreatedDate: 2026-07-30
 statementLastUpdatedDate: 2026-08-06
 wcagVersion: 2.2 AA
