@@ -91,8 +91,11 @@ If you are a service that requires a custom template like VOA or C-HGV, please i
 to either `VOA` or `C-HGV`. **If you are not one of those services, or a mobile app, you do not need to include this property.** 
 
 `statementVisibility` controls if the statement should be visible only on test environments or on production too.
-Set value to `draft` if you are testing the statement and you don't want it to be visible on production or choose option
-`public` to make the statement visible on production environment.
+Set value to `draft` when you are first creating your statement and you don't want it to be visible on production yet.
+When you are ready to publish the statement, change it to `public` to make the statement visible on production environment.
+
+> [!WARNING]
+> Do not change your statementVisibility back to draft after making it public when making future changes, this will cause your statement to become hidden in production
 
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
