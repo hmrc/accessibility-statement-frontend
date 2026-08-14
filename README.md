@@ -90,6 +90,10 @@ If your statement is specifically for a mobile application, add the line `statem
 If you are a service that requires a custom template like VOA or C-HGV, please include the property `statementType` and set the value
 to either `VOA` or `C-HGV`. **If you are not one of those services, or a mobile app, you do not need to include this property.** 
 
+`statementVisibility` controls if the statement should be visible only on test environments or on production too.
+Set value to `draft` if you are testing the statement and you don't want it to be visible on production or choose option
+`public` to make the statement visible on production environment.
+
 You can also use the following files as examples to copy:
 - [/conf/services/example-fully-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-fully-compliant.yml)
 - [/conf/services/example-partially-compliant.yml](https://github.com/hmrc/accessibility-statement-frontend/blob/master/conf/services/example-partially-compliant.yml)
