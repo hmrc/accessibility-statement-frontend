@@ -1,7 +1,7 @@
-serviceName: Diweddaru manylion eich rhif EORI GB neu EU
-serviceHeaderName: Diweddaru manylion eich rhif EORI GB neu EU
+serviceName: Diweddaru manylion eich rhif EORI GB neu UE
+serviceHeaderName: Diweddaru manylion eich rhif EORI GB neu UE
 serviceDescription: |
-  Defnyddiwch y ffurflen hon i ddiweddaru manylion eich EORI GB neu EU
+ Defnyddiwch y ffurflen hon i ddiweddaru manylion eich EORI GB neu UE
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /submissions/new-form/update-gb-or-eu-eori-details
 contactFrontendServiceId: GForm
@@ -9,4 +9,4 @@ complianceStatus: full
 serviceLastTestedDate: 2022-11-10
 statementVisibility: public
 statementCreatedDate: 2022-11-10
-statementLastUpdatedDate: 2026-07-06
+statementLastUpdatedDate: 2026-08-17
