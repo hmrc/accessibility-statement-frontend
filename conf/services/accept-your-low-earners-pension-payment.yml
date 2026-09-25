@@ -1,17 +1,18 @@
 serviceName: Accept your low earner's pension payment
 serviceDescription: |
   Accept your low earner's pension payment (LEPP) is a trusted, easy to use digital service which ensures that PAYE 
-  individuals who earn up to or below the tax-free limit, and contribute to a NPA pension scheme, are able to view their 
-  entitlement, provide their bank details and view the status of their payment in order to receive tax-relief top-up 
-  payments easily and smoothly to ensure all paying into either a RAS or NPA pension receive the same tax relief.
+  individuals who earn up to or below the tax-free limit, and contribute to a Net Pay Arrangement (NPA) pension scheme, 
+  are able to view their entitlement, provide their bank details and view the status of their payment in order to 
+  receive tax-relief top-up payments easily and smoothly to ensure all paying into either a Relief At Source (RAS) or 
+  NPA pension receive the same tax relief.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /accept-your-low-earners-pension-payment
 contactFrontendServiceId: low-earners-pensions-payment-frontend
 complianceStatus: full
 serviceLastTestedDate: 2026-09-14
 statementVisibility: public
-statementCreatedDate: 2026-09-17
-statementLastUpdatedDate: 2026-09-17
+statementCreatedDate: 2026-09-25
+statementLastUpdatedDate: 2026-09-25
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Yorkshire
 liveOrClassic:
