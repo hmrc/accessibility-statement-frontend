@@ -6,63 +6,35 @@ serviceUrl: /report-quarterly/income-and-expenses/sign-up
 contactFrontendServiceId: MTDID
 complianceStatus: partial
 accessibilityProblems:
-  - Drwy gydol y gwasanaeth, mae penawdau nad ydynt wedi’u marcio’n gywir, felly ni fyddant yn cael eu darllen yn gywir gan ddarllenwyr sgrin.
-  - Ar y dudalen lle mae defnyddwyr wedi dewis cadw eu hatebion a dod yn ôl yn nes ymlaen, nid yw teitl y dudalen yn disgrifio cynnwys y dudalen yn ddigonol.
-  - Mae pennawd gwag ar dudalen ‘Cadw a dod yn ôl yn nes ymlaen’ a all gael ei ddarllen fel pennawd gwag gan ddarllenwyr sgrin.
-  - Ar y dudalen ‘Dewis sut i gael eich llythyrau treth’, mae rhestr nad yw wedi’i gosod yn gywir a gall achosi problemau gyda’r ffordd y caiff ei darllen gan ddarllenwyr sgrin.
-  - Mae tabl ar y dudalen ‘Rydych wedi gorffen cofrestru’ nad oes ganddo gapsiwn, felly efallai na fydd darllenwyr sgrin sy’n llywio drwy dablau yn gallu adnabod pwrpas y tabl.
-  - Ar rai o’r tudalennau dyddiad dechrau, os nad yw defnyddwyr yn nodi gwerth caniataol yn y maes diwrnod, caiff y meysydd diwrnod a blwyddyn eu hamlygu. Mae hyn yn ei gwneud yn anodd gwybod pa faes sy’n achosi’r gwall.
-  - Ar y dudalen ‘Gwirio’ch atebion’ terfynol, defnyddir testun mewn print trwm i ddangos bod defnyddwyr mewn adran newydd. Mae hyn yn achosi i’r adran ymddangos fel tabl pan nad yw’n un. Gall defnyddwyr darllenwyr sgrin sy’n rhannol ddall geisio gwe-lywio drwy dabl, ond ni fyddant yn gallu dod o hyd i un ar y dudalen.
-  - Ar PDFs a gynhyrchir gan ddefnyddwyr sy’n cadw gwybodaeth y dudalen gadarnhau, nid oes label ar gysylltiad logo GOV.UK, ac mae’n cael ei darllen fel gwerth gwag i ddefnyddwyr darllenwyr sgrin.
-  - Nid yw’r PDFs a gynhyrchir gan ddefnyddwyr sy’n cadw gwybodaeth y dudalen gadarnhau wedi’u codio’n gywir, ac efallai na fydd darllenwyr sgrin yn ynganu’r geiriau’n gywir.
-  - Gall y meysydd ar gyfer enw’r busnes a’r cyfeiriad e-bost ganiatáu i ddefnyddwyr lenwi’r manylion hyn o ddata sydd wedi’i gadw yn eu porwr.
-  - Dangosir gwahanol fersiynau o’r togl Cymraeg drwy gydol y gwasanaeth. Gall hyn achosi dryswch wrth newid yr iaith.
-  - Ar y tudalennau ‘Gwirio atebion’, mae nifer o gysylltiadau ‘newid’ sy’n mynd i’r un dudalen, er bod ganddynt destun gysylltu gwahanol sydd wedi’i guddio o’r golwg. Gall hyn fod yn ddryslyd i ddefnyddwyr darllenydd sgrin.
-  - Pan gaiff y Gymraeg ei dewis, mae sawl enghraifft o destun ‘Gwall’ sydd wedi’i guddio o’r golwg heb gael ei gyfieithu i’r Gymraeg. Efallai na fydd y testun hwn yn cael ei ynganu’n gywir gan ddarllenwyr sgrin gan nad yw wedi’i farcio gyda’r briodoledd iaith gywir.
+  - Ar y dudalen llythyrau treth, mae cynnwys o dan bennawd nad yw’n disgrifio ei gyd-destun. Mae hefyd 2 bennawd o lefelau gwahanol, ond maent o’r un maint. Gall defnyddwyr darllenwyr sgrin ei chael hi’n anodd dod o hyd i gynnwys, a gall defnyddwyr sy’n rhannol ddall sy’n defnyddio darllenwyr sgrin gael eu drysu gan y gwahaniaeth rhwng yr allbwn gweledol a’r allbwn darllenydd sgrin.
+  - Nid yw teitlau’r tudalennau ar gyfer y dudalen dyddiad dechrau’r busnes yn fersiwn asiant y gwasanaeth, a’r dudalen allgofnodi o’r gwasanaeth, yn disgrifio cynnwys y tudalennau yn ddigonol.
+  - Ar y dudalen wirio derfynol cyn cofrestru, mae’r testun sydd wedi’i guddio o’r golwg ar gyfer pob cysylltiad ‘newid’ ar gyfer pob busnes unig fasnachwr yn union yr un fath. Nid ydynt yn cyfateb i’r label gweledol, sy’n golygu y gallai defnyddwyr darllenwyr sgrin ei chael hi’n anodd deall pwrpas y cysylltiadau.
+  - Ar dudalen olaf yr asiant i wirio atebion, nid yw’r testun sydd wedi’i guddio o’r golwg ar gyfer nifer o’r cysylltiadau ‘newid’ yn cynnwys y label gweladwy; mae hyn yn golygu y gallai defnyddwyr sy’n defnyddio technoleg cydnabyddiaeth llais ei chael hi’n anodd actifadu’r cysylltiadau.
+  - Gall fod yn anodd i ddefnyddwyr sydd â namau gwybyddol ac echddygol ddychwelyd i gam blaenorol, gan ei fod yn defnyddio ateb blaenorol a oedd yn cynnwys gwall.
+  - Mae gan y cyfleuster newid yr iaith ar y tudalennau ‘cwcis’, ‘telerau ac amodau’, a ‘chael cymorth gyda phroblem dechnegol’ destun cysylltiad gwahanol i weddill y gwasanaeth. Mae’n bosibl nad yw defnyddwyr yn ymwybodol bod y rhain yn gwneud yr un peth.
+  - Ar sawl tudalen, nid yw’r label cwestiwn sy’n weladwy i dechnoleg gynorthwyol yn cyfateb i’r label cwestiwn arfaethedig. Mae hyn yn golygu y gallai defnyddwyr darllenwyr sgrin ei chael hi’n anodd deall yr hyn y gofynnir amdano.
+  - Ar y dudalen dewis gwlad, os yw defnyddwyr yn teipio enw eu gwlad ond heb ei dewis o’r rhestr ostwng cyn bwrw ymlaen, nid yw’r neges gwall yn rhoi gwybod iddynt fod angen iddynt ei dewis o’r rhestr. Gall hyn achosi anhawster wrth gywiro’r gwall.
 milestones:
-  - description: |
-      Nid yw’r hierarchaeth weledol a’r hierarchaeth semantig yn cyd-fynd. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 1.3.1 (Info and Relationships).
-    date: 2026-05-29
-  - description: |
-      Ar y dudalen ‘Cadw a dod yn ôl yn nes ymlaen’, nid yw’r teitl y dudalen yn ddisgrifiadol. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 2.4.2 (Page Titled).
-    date: 2026-05-29
-  - description: |
-      Mae tag gwag `<h2>` ar y faner hysbysu ar dudalen ‘Cadw a dod yn ôl yn nes ymlaen’. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 4.1.2 (Name, Role, Value).
-    date: 2026-05-29
-  - description: |
-      Ar y dudalen ‘Dewis sut i gael eich llythyrau treth’ mae gan yr `<ol>` elfennau plentyn na chaniateir. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 1.3.1 (Info and Relationships).
-    date: 2026-05-29
-  - description: |
-      Ar y dudalen ‘Rydych wedi gorffen cofrestru’ mae tabl heb gapsiwn. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 1.3.1 (Info and Relationships).
-    date: 2026-05-29
-  - description: |
-      Ar rai o’r tudalennau dyddiad dechrau, caiff y meysydd ar gyfer diwrnod a blwyddyn eu hamlygu, pan mai’r maes diwrnod yn unig sydd â gwall. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 3.3.1 (Error Identification).
-    date: 2026-05-29
-  - description: |
-      Ar y dudalen ‘Gwirio atebion’ terfynol, mae rhai elfennau rhestr crynodeb wedi’u llunio fel tablau. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 1.3.1 (Info and Relationships).
-    date: 2026-05-29
-  - description: |
-      Mewn PDFs a gynhyrchir gan ddefnyddwyr sy’n cadw canlyniadau ffurflenni, nid oes gan y label GOV.UK enw hygyrch. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 4.1.2 (Name, Role, Value) a 2.4.4 (Link Purpose (In Context)).
-    date: 2026-05-29
-  - description: |
-      Mewn PDFs a gynhyrchir gan ddefnyddwyr sy’n cadw canlyniadau ffurflenni, nid yw rhai geiriau wedi’u marcio’n rhaglennol fel geiriau ar wahân, sy’n golygu bod darllenwyr sgrin yn eu darllen fel un gair. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 1.3.1 (Info and Relationships).
-    date: 2026-05-29
-  - description: |
-      Mae’r meysydd mewnbynnu ar gyfer priodoleddau awtogwblhau ar goll, ac efallai y bydd hyn yn golygu na fydd y defnyddiwr yn gallu defnyddio’r data a gadwyd gan y porwr er mwyn llenwi’r meysydd hyn yn hawdd. Nid yw hyn yn bodloni Maen Prawf Llwyddiant 1.3.5 (Identify Input Purpose) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
-    date: 2026-05-29
-  - description: |
-      Mae labeli gwahanol ar gyfer cysylltiadau togl iaith ar rai tudalennau, er bod gan y cysylltiadau’r un pwrpas. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 3.2.4 (Consistent Identification).
-    date: 2026-05-29
-  - description: |
-      Ar y tudalennau ‘Gwirio atebion’, mae rhai cysylltiadau ‘newid’ yn mynd i’r un cyrchfan, er bod ganddynt destun cysylltiad gwahanol sydd wedi’i guddio o’r golwg. Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant (Consistent Identification).
-    date: 2026-05-29
-  - description: |
-      Pan gaiff iaith y dudalen ei gosod i’r Gymraeg, mae sawl enghraifft o destun ‘Gwall’ sydd wedi’i guddio o’r golwg wedi’i ysgrifennu yn Saesneg ond wedi cael y briodoledd lang="cy". Nid yw hyn yn bodloni Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2 Maen Prawf Llwyddiant 3.1.2 (Language of Parts).
-    date: 2026-05-29
-serviceLastTestedDate: 2026-04-07
+  - description: Nid yw’r hierarchaeth weledol a semantig yn cyd-fynd ar y dudalen llythyrau treth. Nid yw hyn yn bodloni maen prawf llwyddiant 1.3.1 (Info and Relationships) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-09-30
+  - description: Nid yw’r teitlau tudalen ar y dudalen ‘dechrau busnes’ yn nhaith yr asiant ac ar y dudalen ‘terfyn amser’ yn disgrifio’r cynnwys yn ddigonol. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.2 (Page Titled) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-09-30
+  - description: Ar y dudalen olaf i wirio atebion, mae gan gysylltiadau newid lluosog yr un testun cyd-destunol. Nid yw hyn yn bodloni maen prawf llwyddiant WCAG 2.4.4 Link Purpose (In Context) y We, fersiwn 2.2.
+    date: 2026-09-30
+  - description: Ar y dudalen wirio atebion derfynol yn llwybr yr asiant, nid yw cysylltiadau newid lluosog yn cynnwys y label gweladwy yn nhestun cyd-destunol y cysylltiad. Nid yw hyn yn bodloni maen prawf llwyddiant 2.5.3 (Label in Name) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2
+    date: 2026-09-30
+  - description: Mae dychwelyd i gamau blaenorol gan ddefnyddio’r cysylltiad ’yn ôl’ neu swyddogaeth botwm ’yn ôl’ y porwr yn dangos tudalennau yn y cyflyrau gwahanol y bu defnyddwyr ynddynt, ac yn clirio eu cofnodion. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.7 (Redundant Entry) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-09-30
+  - description: Nid yw testun y cysylltiad newid yr iaith yr un fath drwy’r gwasanaeth cyfan. Nid yw hyn yn bodloni maen prawf llwyddiant 3.2.4 (Consistent Identification) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-09-30
+  - description: Ar sawl tudalen, nid yw’r allwedd sydd wedi’i chuddio o’r golwg yn ystyrlon ar gyfer y mewnbwn. Nid yw hyn yn bodloni maen prawf llwyddiant 2.4.6 (Headings and Labels) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-09-30
+  - description: Mae’r neges gwall ar yr elfen dewis gwlad yn gamarweiniol ac nid yw’n helpu defnyddwyr i gywiro’r gwall. Nid yw hyn yn bodloni maen prawf llwyddiant 3.3.3 (Error Suggestion) Canllawiau Hygyrchedd Cynnwys y We, fersiwn 2.2.
+    date: 2026-09-30
+serviceLastTestedDate: 2026-08-14
 statementVisibility: public
 statementCreatedDate: 2020-09-22
-statementLastUpdatedDate: 2026-04-17
+statementLastUpdatedDate: 2026-09-28
 wcagVersion: 2.2 AA
 businessArea: Customer Strategy & Tax Design (CS&TD)
 ddc: DDC Telford
