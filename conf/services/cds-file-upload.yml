@@ -5,27 +5,13 @@ serviceDescription: |
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /cds-file-upload-service
 contactFrontendServiceId: cds-file-upload-service
-complianceStatus: partial
-accessibilityProblems:
-  - Related links not grouped using nav
-  - Table used for layout purposes
-  - Content not translated to Welsh
-  - Viewing export or import messages
-milestones:
-  - description: Related links not grouped using nav.
-    date: 2026-03-31
-  - description: Table used for layout purposes.
-    date: 2026-03-31
-  - description: Content not translated to Welsh.
-    date: 2026-03-31
-  - description: Viewing export or import messages.
-    date: 2026-03-31
-serviceLastTestedDate: 2024-12-09
+complianceStatus: full
+serviceLastTestedDate: 2026-10-13
 statementVisibility: public
 statementCreatedDate: 2019-09-16
-statementLastUpdatedDate: 2025-10-27
+statementLastUpdatedDate: 2026-10-13
 businessArea: Borders & Trade
-ddc: DDC Worthing
-liveOrClassic: Live Services - Worthing
+ddc: DDC Borders and Trade
+liveOrClassic: Live Services - Borders and Trade
 typeOfService: Live services
 wcagVersion: 2.2 AA
