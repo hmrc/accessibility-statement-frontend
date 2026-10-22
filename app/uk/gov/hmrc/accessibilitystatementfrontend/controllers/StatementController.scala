@@ -25,11 +25,12 @@ import uk.gov.hmrc.accessibilitystatementfrontend.config.AppConfig
 import uk.gov.hmrc.accessibilitystatementfrontend.models.AccessibilityStatement
 import uk.gov.hmrc.accessibilitystatementfrontend.repos.AccessibilityStatementsRepo
 import uk.gov.hmrc.accessibilitystatementfrontend.views.html.{NotFoundPage, StatementPage}
-import uk.gov.hmrc.play.bootstrap.binders.{RedirectUrl, SafeRedirectUrl, UnsafePermitAll}
+import uk.gov.hmrc.play.bootstrap.binders.{RedirectUrl, SafeRedirectUrl}
 import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl.*
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 
 import scala.concurrent.Future
+import scala.util.{Success, Try}
 
 @Singleton
 class StatementController @Inject() (
@@ -46,7 +47,7 @@ class StatementController @Inject() (
 
   def getStatement(
     service: String,
-    referrerUrl: Option[RedirectUrl]
+    referrerUrl: Option[String]
   ): Action[AnyContent] =
     Action.async { request =>
       given MessagesRequest[AnyContent] = request
@@ -59,19 +60,21 @@ class StatementController @Inject() (
         language = messagesApi.preferred(request).lang
       ) match {
         case Some((accessibilityStatement, language)) =>
-          val safeReferrerUrl: Option[SafeRedirectUrl] = referrerUrl map { unvalidatedUrl =>
-            unvalidatedUrl.getEither(appConfig.urlPolicy) match {
-              case Right(safeRedirectUrl: SafeRedirectUrl) => safeRedirectUrl
-              case Left(unsafeRedirectError)               =>
-                logger.warn(s"Service [$service] - $unsafeRedirectError")
-                unvalidatedUrl.get(UnsafePermitAll)
+          val referrerUrlForContactForms: Option[String] = referrerUrl map { unvalidatedUrl =>
+            Try(RedirectUrl(unvalidatedUrl).getEither(appConfig.urlPolicy)) match {
+              case Success(Right(safeRedirectUrl: SafeRedirectUrl)) => safeRedirectUrl.url
+              case _                                                =>
+                logger.warn(
+                  s"Service [$service] - referrerUrl [$unvalidatedUrl] invalid or from untrusted domain, might indicate misconfigured integration"
+                )
+                unvalidatedUrl
             }
           }
           Future.successful(
             Ok(
               getStatementPageInLanguage(
                 accessibilityStatement,
-                safeReferrerUrl.map(_.url),
+                referrerUrlForContactForms,
                 language,
                 isWelshTranslationAvailable
               )
