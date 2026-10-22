@@ -64,7 +64,9 @@ class StatementController @Inject() (
             Try(RedirectUrl(unvalidatedUrl).getEither(appConfig.urlPolicy)) match {
               case Success(Right(safeRedirectUrl: SafeRedirectUrl)) => safeRedirectUrl.url
               case _                                                =>
-                logger.warn(s"Service [$service] - referrerUrl [$unvalidatedUrl] is not a valid URL")
+                logger.warn(
+                  s"Service [$service] - referrerUrl [$unvalidatedUrl] invalid or from untrusted domain, might indicate misconfigured integration"
+                )
                 unvalidatedUrl
             }
           }

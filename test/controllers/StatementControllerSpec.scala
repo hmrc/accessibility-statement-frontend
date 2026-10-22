@@ -93,7 +93,7 @@ class StatementControllerSpec
           Seq(
             (
               Level.WARN,
-              "Service [test-service] - referrerUrl [/some/service/path] is not a valid URL"
+              "Service [test-service] - referrerUrl [/some/service/path] invalid or from untrusted domain, might indicate misconfigured integration"
             )
           )
         )
@@ -116,7 +116,7 @@ class StatementControllerSpec
           Seq(
             (
               Level.WARN,
-              "Service [test-service] - referrerUrl [https://some.domain/some/service/path] is not a valid URL"
+              "Service [test-service] - referrerUrl [https://some.domain/some/service/path] invalid or from untrusted domain, might indicate misconfigured integration"
             )
           )
         )
@@ -139,7 +139,7 @@ class StatementControllerSpec
           Seq(
             (
               Level.WARN,
-              "Service [test-service] - referrerUrl [not_a_url] is not a valid URL"
+              "Service [test-service] - referrerUrl [not_a_url] invalid or from untrusted domain, might indicate misconfigured integration"
             )
           )
         )
