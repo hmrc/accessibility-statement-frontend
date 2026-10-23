@@ -6,8 +6,8 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /vaping-duty
 contactFrontendServiceId: vaping-duty-frontend
 complianceStatus: full
-serviceLastTestedDate: 2026-03-23
+serviceLastTestedDate: 2026-10-15
 statementVisibility: public
 statementCreatedDate: 2026-03-17
-statementLastUpdatedDate: 2026-03-23
+statementLastUpdatedDate: 2026-10-23
 wcagVersion: 2.2 AA
