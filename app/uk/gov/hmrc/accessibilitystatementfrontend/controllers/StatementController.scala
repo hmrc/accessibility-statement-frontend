@@ -89,19 +89,16 @@ class StatementController @Inject() (
     service: String,
     language: Lang
   ): Option[(AccessibilityStatement, Lang)] = {
-    lazy val statementInDefaultLanguage = {
-      logger.warn(
-        s"No statement found for service: $service for language $language"
-      )
-      logger.warn(s"Checking for statement for $service using default language")
-
-      statementsRepo.findByServiceKeyAndLanguage(service, defaultLanguage)
-    }
-    val statementInRequestedLanguage    =
+    val statementInRequestedLanguage =
       statementsRepo.findByServiceKeyAndLanguage(service, language)
 
     statementInRequestedLanguage
-      .orElse(statementInDefaultLanguage)
+      .orElse {
+        logger.info(
+          s"No statement found for service: $service for language $language. Checking for statement for $service using default language"
+        )
+        statementsRepo.findByServiceKeyAndLanguage(service, defaultLanguage)
+      }
   }
 
   private def getStatementPageInLanguage(
