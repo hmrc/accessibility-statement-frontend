@@ -32,7 +32,6 @@ import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.{Application, Logger}
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.mvc.Cookie
-import uk.gov.hmrc.play.bootstrap.binders.RedirectUrl
 import helpers.LogCapturing
 
 import scala.jdk.CollectionConverters.*
@@ -79,7 +78,7 @@ class StatementControllerSpec
 
     "include encoded referrerUrl in the 'Report an accessibility problem' link" in {
       val result  =
-        controller.getStatement("test-service", Some(RedirectUrl("https://some.domain/some/service/path")))(fakeRequest)
+        controller.getStatement("test-service", Some("https://some.domain/some/service/path"))(fakeRequest)
       val content = Jsoup.parse(contentAsString(result))
 
       val reportAProblemLink =
@@ -89,12 +88,12 @@ class StatementControllerSpec
 
     "log a relative referrerUrl that doesn't meet our policy, but include it anyway" in {
       withCaptureOfLoggingFrom(logger) { logEvents =>
-        val result = controller.getStatement("test-service", Some(RedirectUrl("/some/service/path")))(fakeRequest)
+        val result = controller.getStatement("test-service", Some("/some/service/path"))(fakeRequest)
         logEvents.map(e => (e.getLevel, e.getMessage)) should be(
           Seq(
             (
               Level.WARN,
-              "Service [test-service] - Provided URL [/some/service/path] doesn't comply with redirect policy"
+              "Service [test-service] - referrerUrl [/some/service/path] invalid or from untrusted domain, might indicate misconfigured integration"
             )
           )
         )
@@ -110,14 +109,14 @@ class StatementControllerSpec
     "log an absolute referrerUrl that doesn't meet our policy, but include it anyway" in {
       withCaptureOfLoggingFrom(logger) { logEvents =>
         val result =
-          controller.getStatement("test-service", Some(RedirectUrl("https://some.domain/some/service/path")))(
+          controller.getStatement("test-service", Some("https://some.domain/some/service/path"))(
             fakeRequest
           )
         logEvents.map(e => (e.getLevel, e.getMessage)) should be(
           Seq(
             (
               Level.WARN,
-              "Service [test-service] - Provided URL [https://some.domain/some/service/path] doesn't comply with redirect policy"
+              "Service [test-service] - referrerUrl [https://some.domain/some/service/path] invalid or from untrusted domain, might indicate misconfigured integration"
             )
           )
         )
@@ -130,9 +129,32 @@ class StatementControllerSpec
       }
     }
 
+    "log a referrerUrl that is not a URL, but include it anyway" in {
+      withCaptureOfLoggingFrom(logger) { logEvents =>
+        val result =
+          controller.getStatement("test-service", Some("not_a_url"))(
+            fakeRequest
+          )
+        logEvents.map(e => (e.getLevel, e.getMessage)) should be(
+          Seq(
+            (
+              Level.WARN,
+              "Service [test-service] - referrerUrl [not_a_url] invalid or from untrusted domain, might indicate misconfigured integration"
+            )
+          )
+        )
+
+        val content = Jsoup.parse(contentAsString(result))
+
+        val reportAProblemLink =
+          content.select("a").asScala.toList.filter(_.text.equals("report the accessibility problem")).head
+        reportAProblemLink.attr("href") should include("referrerUrl=not_a_url")
+      }
+    }
+
     "don't log a referrerUrl that meets our policy" in {
       withCaptureOfLoggingFrom(logger) { logEvents =>
-        controller.getStatement("test-service", Some(RedirectUrl("https://localhost:12345/some/service/path")))(
+        controller.getStatement("test-service", Some("https://localhost:12345/some/service/path"))(
           fakeRequest
         )
         logEvents shouldBe empty
