@@ -1,0 +1,17 @@
+serviceName: Send a Cryptoasset Reporting Framework report
+serviceDescription: |
+  You can use this service to send cryptoasset data to HMRC under the Cryptoasset Reporting Framework (CARF),
+  if you're a reporting cryptoasset service provider (RCASP) or a third party sending cryptoasset data on behalf of an RCASP.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /register-for-cryptoasset-reporting
+contactFrontendServiceId: carf-registration-frontend
+complianceStatus: full
+serviceLastTestedDate: 2026-09-03
+statementVisibility: public
+statementCreatedDate: 2026-10-21
+statementLastUpdatedDate: 2026-10-21
+businessArea: Chief Digital & Information Officer (CDIO)
+ddc: DDC Newcastle
+liveOrClassic:
+typeOfService: Public beta
+wcagVersion: 2.2 AA
