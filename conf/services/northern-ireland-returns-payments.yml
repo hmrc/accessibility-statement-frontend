@@ -1,0 +1,21 @@
+serviceName: Submit a One Stop Shop return and pay VAT
+serviceHeaderName: Submit a One Stop Shop return and pay VAT
+serviceDescription: Use this service to complete One Stop Shop Union scheme VAT returns and pay VAT due on distance sales of goods from Northern Ireland to consumers in the EU.
+serviceDomain: www.tax.service.gov.uk
+serviceUrl: /pay-vat-on-goods-sold-to-eu/northern-ireland-returns-payments
+contactFrontendServiceId: one-stop-shop-returns-frontend
+complianceStatus: partial
+accessibilityProblems:
+  - Users may not be able to identify the structure and relation of content throughout the check your answers page
+milestones:
+  - description: Users may not be able to identify the structure and relation of content throughout the check your answers page
+    date: 2026-11-30
+serviceLastTestedDate: 2026-11-17
+statementVisibility: public
+statementCreatedDate: 2026-11-18
+statementLastUpdatedDate: 2026-11-18
+
+businessArea: Borders & Trade
+ddc:
+liveOrClassic:
+typeOfService: Public beta
