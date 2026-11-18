@@ -1,5 +1,5 @@
-serviceName: Register to pay VAT on distance sales of goods from Northern Ireland to the EU
-serviceHeaderName: Register to pay VAT on distance sales of goods from Northern Ireland to the EU
+serviceName: Submit a One Stop Shop return and pay VAT
+serviceHeaderName: Submit a One Stop Shop return and pay VAT
 serviceDescription: Use this service to complete One Stop Shop Union scheme VAT returns and pay VAT due on distance sales of goods from Northern Ireland to consumers in the EU.
 serviceDomain: www.tax.service.gov.uk
 serviceUrl: /pay-vat-on-goods-sold-to-eu/northern-ireland-returns-payments
