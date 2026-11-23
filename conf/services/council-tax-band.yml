@@ -5,12 +5,13 @@ serviceDomain: www.tax.service.gov.uk
 serviceUrl: /check-council-tax-band/search
 contactFrontendServiceId: CTI
 complianceStatus: partial
+automatedTestingOnly: true
+automatedTestingDetails: Automated Accessibility Test job on Jenkins, including AXE.
 accessibilityProblems:
   - On the search page, radio buttons are used to change the search fields presented to the user for searching. This change is not communicated to screen reader users.
 milestones:
   - description: On the search page, radio buttons are used to change the search fields presented to the user for searching. This change is not communicated to screen reader users. This fails WCAG 4.1.2 - Name, role and value.
     date: 2021-06-04
-
 serviceLastTestedDate: 2021-03-25
 statementVisibility: archived
 statementCreatedDate: 2021-03-31
