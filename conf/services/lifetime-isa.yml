@@ -1,17 +1,16 @@
-serviceName: Lifetime ISA
-serviceHeaderName: Lifetime ISA
-serviceDescription: Lifetime ISA is a savings product that attracts bonus payments from HMRC. They are usually set up by banks and other financial institutions.
+serviceName: Apply to be an approved Lifetime ISA Manager
+serviceDescription: |
+  Lifetime ISA is a savings product that attracts bonus payments from HMRC. They are usually set up by banks and other financial institutions. Use this service to apply to be an approved Lifetime Individual Savings Account (LISA) manager, or check the status of your application.
 serviceDomain: www.tax.service.gov.uk
-serviceUrl: /lifetime-isa/company-structure
+serviceUrl: /lifetime-isa
 contactFrontendServiceId: LISA
 complianceStatus: full
 serviceLastTestedDate: 2026-11-16
 statementVisibility: public
 statementCreatedDate: 2020-10-26
-statementLastUpdatedDate: 2026-11-23
-
-businessArea: Customer Services Group (CSG)
+statementLastUpdatedDate: 2026-11-24
+businessArea: Chief Digital & Information Officer (CDIO)
 ddc: DDC Edinburgh
-liveOrClassic:
+liveOrClassic: Live Services - Edinburgh
 typeOfService: Live services
 wcagVersion: 2.2 AA
